@@ -31,7 +31,7 @@ window.toID = (text) => {
 };
 
 window.getID = (obj, text) => {
-  return obj[toID(text)];
+  return obj[window.toID(text)];
 };
 
 for (let data of [BattlePokedex, BattleMovedex, BattleItems, BattleAbilities, BattleTypeChart]) {
@@ -46,16 +46,6 @@ for (let key in BattlePokedex) {
     if (target) target.prevo = toID(key);
   }
 }
-// ...existing code...
-// Compatibility helpers for legacy UI code (safe, idempotent)
-if (typeof window.escapeHTML !== 'function') {
-  window.escapeHTML = function (s) {
-    return String(s).replace(/[&<>"']/g, function (c) {
-      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
-    });
-  };
-}
-// Add other tiny helpers here if a crash shows another missing global
 // ...existing code...
 window.BattleStatNames = {
   hp: "HP",

@@ -8,7 +8,9 @@
 (async function bootstrap() {
   'use strict';
 
-  const baseUrl = '/Binary-Star-Pokedex/';
+  // Get baseUrl from the <base> tag or use default
+  const baseElement = document.querySelector('base');
+  const baseUrl = baseElement ? baseElement.getAttribute('href') : '/Binary-Star-Pokedex/';
 
   /**
    * Fetches a JSON file and returns the parsed object.
