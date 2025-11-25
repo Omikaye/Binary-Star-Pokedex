@@ -1,11 +1,55 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>Binary Star Pokedex</title>
-</head>
-<body>
-  <h1>Binary Star Pokedex</h1>
-  <p>Your site is now hosted on GitHub Pages.</p>
-</body>
-</html>
+<!DOCTYPE html>
+<html><head>
+
+	<meta charset="utf-8" />
+
+	<title>Pok&eacute;dex - Pok&eacute;mon Showdown</title>
+
+	<base href="/Binary-Star-Dex/"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8" />
+	<link rel="stylesheet" href="theme/font-awesome.css" />
+	<link rel="stylesheet" href="theme/panels.css" />
+	<link rel="stylesheet" href="theme/main.css" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="theme/utilichart.css" />
+	<link rel="stylesheet" href="theme/pokedex.css" />
+
+	<!-- Workarounds for IE bugs to display trees correctly. -->
+	<!--[if lte IE 6]><style> li.tree { height: 1px; } </style><![endif]-->
+	<!--[if IE 7]><style> li.tree { zoom: 1; } </style><![endif]-->
+
+</head><body>
+
+	<div class="pfx-topbar">
+		<div class="header">
+			<ul class="nav">
+				<li><a class="button nav-first" href="/Binary-Star-Dex/"><img src="images/pokemonshowdownbeta.png" alt="Pok&eacute;mon Showdown! (beta)" /> Showdown Custom Dex</a></li>
+				<li><a class="button nav-last" href=https://github.com/Strackeror/Static-Showdown-Dex>GitHub</a></li>
+			</ul>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+	<div class="pfx-panel"><div class="pfx-body">
+		<noscript><p>
+			<strong>Requires JavaScript!</strong>
+		</p></noscript>
+		<p>
+			Loading...
+		</p>
+	</div></div>
+	<script type="module">
+		window.$ = window.jQuery = require("jquery")
+		window.Backbone = require("backbone")
+		window._ = require("underscore")
+	</script>
+	<script type="module" src="js/panels.js"></script>
+	<script type="module" src="js/data.js"></script>
+	<script type="module" src="ts/battle-dex-search.ts"></script>
+	<script type="module" src="js/search.js"></script>
+	<script type="module" src="js/pokedex.js"></script>
+	<script type="module" src="js/pokedex-pokemon.js"></script>
+	<script type="module" src="js/pokedex-moves.js"></script>
+	<script type="module" src="js/pokedex-search.js"></script>
+	<script type="module" src="js/router.js"></script>
+
+</body></html>
