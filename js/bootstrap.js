@@ -83,14 +83,14 @@ function loadJSON(path) {
     window.Icons = Icons || {};
 
     // Now import the data initializer (which expects window.*) and the app modules
-    await import('./js/data.js');
-    await import('./js/panels.js');
-    await import('./js/search.js');
-    await import('./js/pokedex.js');
-    await import('./js/pokedex-pokemon.js');
-    await import('./js/pokedex-moves.js');
-    await import('./js/pokedex-search.js');
-    await import('./js/router.js');
+    await import('./data.js');
+    await import('./panels.js');
+    await import('./search.js');
+    await import('./pokedex.js');
+    await import('./pokedex-pokemon.js');
+    await import('./pokedex-moves.js');
+    await import('./pokedex-search.js');
+    await import('./router.js');
 
     console.info('[bootstrap] data loaded and app modules initialized.');
   } catch (err) {
