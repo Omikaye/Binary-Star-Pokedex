@@ -8,8 +8,8 @@ let dest = argv[2];
 rmSync(`./${dest}`, {recursive: true, force: true})
 mkdirSync(`./${dest}`)
 
-for (let folder of ["images"]) {
-  cpSync(`${folder}`, `./${dest}/`, {recursive: true})
+for (let folder of ["images", "data"]) {
+  cpSync(`${folder}`, `./${dest}/${folder}`, {recursive: true})
 }
 
 execSync(`npx parcel build --public-url ${config.baseurl} ./index.html`)
