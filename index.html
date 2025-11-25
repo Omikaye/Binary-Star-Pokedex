@@ -18,6 +18,22 @@
 	<!--[if lte IE 6]><style> li.tree { height: 1px; } </style><![endif]-->
 	<!--[if IE 7]><style> li.tree { zoom: 1; } </style><![endif]-->
 
+	<!--
+		Import map to resolve bare module specifiers for unbundled browser loading.
+		This is only used when serving the raw source files directly (e.g., for local dev/testing).
+		Production builds via `npm run dist` use Parcel bundling and don't need this.
+		Versions should match package.json dependencies.
+	-->
+	<script type="importmap">
+	{
+		"imports": {
+			"jquery": "https://cdn.skypack.dev/jquery@3.7.1",
+			"underscore": "https://cdn.skypack.dev/underscore@1.13.6",
+			"backbone": "https://cdn.skypack.dev/backbone@1.6.0"
+		}
+	}
+	</script>
+
 </head><body>
 
 	<div class="pfx-topbar">
