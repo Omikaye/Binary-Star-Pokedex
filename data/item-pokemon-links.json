@@ -1,0 +1,434 @@
+{
+  "pokemonToItems": {
+    "abomasnowmega": [
+      "abomasite"
+    ],
+    "absolmega": [
+      "absolite"
+    ],
+    "aerodactylmega": [
+      "aerodactylite",
+      "oldamber"
+    ],
+    "aggronmega": [
+      "aggronite"
+    ],
+    "alakazammega": [
+      "alakazite"
+    ],
+    "raichualola": [
+      "aloraichiumz",
+      "thunderstone"
+    ],
+    "altariamega": [
+      "altarianite"
+    ],
+    "ampharosmega": [
+      "ampharosite"
+    ],
+    "audinomega": [
+      "audinite"
+    ],
+    "banettemega": [
+      "banettite"
+    ],
+    "beedrillmega": [
+      "beedrillite"
+    ],
+    "blastoisemega": [
+      "blastoisinite"
+    ],
+    "blazikenmega": [
+      "blazikenite"
+    ],
+    "kyogreprimal": [
+      "blueorb"
+    ],
+    "cameruptmega": [
+      "cameruptite"
+    ],
+    "charizardmegax": [
+      "charizarditex",
+      "charizarditey"
+    ],
+    "gallademega": [
+      "dawnstone",
+      "galladite"
+    ],
+    "dianciemega": [
+      "diancite"
+    ],
+    "aegislashblade": [
+      "duskstone"
+    ],
+    "vulpixalola": [
+      "firestone",
+      "icestone"
+    ],
+    "ninetalesalola": [
+      "firestone",
+      "icestone"
+    ],
+    "garchompmega": [
+      "garchompite"
+    ],
+    "gardevoirmega": [
+      "gardevoirite"
+    ],
+    "gengarmega": [
+      "gengarite"
+    ],
+    "glaliemega": [
+      "glalitite"
+    ],
+    "giratinaorigin": [
+      "griseouscore",
+      "griseousorb"
+    ],
+    "gyaradosmega": [
+      "gyaradosite"
+    ],
+    "heracrossmega": [
+      "heracronite"
+    ],
+    "houndoommega": [
+      "houndoominite"
+    ],
+    "darmanitanmega": [
+      "icestone"
+    ],
+    "sandshrewalola": [
+      "icestone"
+    ],
+    "sandslashalola": [
+      "icestone"
+    ],
+    "kangaskhanmega": [
+      "kangaskhanite"
+    ],
+    "latiasmega": [
+      "latiasite",
+      "souldew"
+    ],
+    "latiosmega": [
+      "latiosite",
+      "souldew"
+    ],
+    "exeggutoralola": [
+      "leafstone"
+    ],
+    "pikachuoriginal": [
+      "lightball",
+      "pikaniumz",
+      "pikashuniumz",
+      "thunderstone"
+    ],
+    "lopunnymega": [
+      "lopunnite"
+    ],
+    "lucariomega": [
+      "lucarionite"
+    ],
+    "necrozmaduskmane": [
+      "lunaliumz",
+      "solganiumz",
+      "ultranecroziumz"
+    ],
+    "lycanrocmidnight": [
+      "lycaniumz"
+    ],
+    "manectricmega": [
+      "manectite"
+    ],
+    "mawilemega": [
+      "mawilite"
+    ],
+    "medichammega": [
+      "medichamite"
+    ],
+    "metagrossmega": [
+      "metagrossite"
+    ],
+    "scizormega": [
+      "metalcoat",
+      "scizorite"
+    ],
+    "steelixmega": [
+      "metalcoat",
+      "steelixite"
+    ],
+    "mewtwomegax": [
+      "mewtwonitex",
+      "mewtwonitey"
+    ],
+    "mimikyubusted": [
+      "mimikiumz"
+    ],
+    "pidgeotmega": [
+      "pidgeotite"
+    ],
+    "pinsirmega": [
+      "pinsirite"
+    ],
+    "groudonprimal": [
+      "redorb"
+    ],
+    "sableyemega": [
+      "sablenite"
+    ],
+    "salamencemega": [
+      "salamencite"
+    ],
+    "sceptilemega": [
+      "sceptilite"
+    ],
+    "sharpedomega": [
+      "sharpedonite"
+    ],
+    "floetteeternal": [
+      "shinystone"
+    ],
+    "slowbromega": [
+      "slowbronite"
+    ],
+    "swampertmega": [
+      "swampertite"
+    ],
+    "marowakalola": [
+      "thickclub"
+    ],
+    "vikavoltmegamax": [
+      "thunderstone"
+    ],
+    "tyranitarmega": [
+      "tyranitarite"
+    ],
+    "venusaurmega": [
+      "venusaurite"
+    ]
+  },
+  "itemToPokemon": {
+    "abomasite": [
+      "abomasnowmega"
+    ],
+    "absolite": [
+      "absolmega"
+    ],
+    "aerodactylite": [
+      "aerodactylmega"
+    ],
+    "aggronite": [
+      "aggronmega"
+    ],
+    "alakazite": [
+      "alakazammega"
+    ],
+    "aloraichiumz": [
+      "raichualola"
+    ],
+    "altarianite": [
+      "altariamega"
+    ],
+    "ampharosite": [
+      "ampharosmega"
+    ],
+    "audinite": [
+      "audinomega"
+    ],
+    "banettite": [
+      "banettemega"
+    ],
+    "beedrillite": [
+      "beedrillmega"
+    ],
+    "blastoisinite": [
+      "blastoisemega"
+    ],
+    "blazikenite": [
+      "blazikenmega"
+    ],
+    "blueorb": [
+      "kyogreprimal"
+    ],
+    "cameruptite": [
+      "cameruptmega"
+    ],
+    "charizarditex": [
+      "charizardmegax"
+    ],
+    "charizarditey": [
+      "charizardmegax"
+    ],
+    "dawnstone": [
+      "gallademega"
+    ],
+    "diancite": [
+      "dianciemega"
+    ],
+    "duskstone": [
+      "aegislashblade"
+    ],
+    "firestone": [
+      "vulpixalola",
+      "ninetalesalola"
+    ],
+    "galladite": [
+      "gallademega"
+    ],
+    "garchompite": [
+      "garchompmega"
+    ],
+    "gardevoirite": [
+      "gardevoirmega"
+    ],
+    "gengarite": [
+      "gengarmega"
+    ],
+    "glalitite": [
+      "glaliemega"
+    ],
+    "griseouscore": [
+      "giratinaorigin"
+    ],
+    "griseousorb": [
+      "giratinaorigin"
+    ],
+    "gyaradosite": [
+      "gyaradosmega"
+    ],
+    "heracronite": [
+      "heracrossmega"
+    ],
+    "houndoominite": [
+      "houndoommega"
+    ],
+    "icestone": [
+      "darmanitanmega",
+      "sandshrewalola",
+      "sandslashalola",
+      "vulpixalola",
+      "ninetalesalola"
+    ],
+    "kangaskhanite": [
+      "kangaskhanmega"
+    ],
+    "latiasite": [
+      "latiasmega"
+    ],
+    "latiosite": [
+      "latiosmega"
+    ],
+    "leafstone": [
+      "exeggutoralola"
+    ],
+    "lightball": [
+      "pikachuoriginal"
+    ],
+    "lopunnite": [
+      "lopunnymega"
+    ],
+    "lucarionite": [
+      "lucariomega"
+    ],
+    "lunaliumz": [
+      "necrozmaduskmane"
+    ],
+    "lycaniumz": [
+      "lycanrocmidnight"
+    ],
+    "manectite": [
+      "manectricmega"
+    ],
+    "mawilite": [
+      "mawilemega"
+    ],
+    "medichamite": [
+      "medichammega"
+    ],
+    "metagrossite": [
+      "metagrossmega"
+    ],
+    "metalcoat": [
+      "scizormega",
+      "steelixmega"
+    ],
+    "mewtwonitex": [
+      "mewtwomegax"
+    ],
+    "mewtwonitey": [
+      "mewtwomegax"
+    ],
+    "mimikiumz": [
+      "mimikyubusted"
+    ],
+    "oldamber": [
+      "aerodactylmega"
+    ],
+    "pidgeotite": [
+      "pidgeotmega"
+    ],
+    "pikaniumz": [
+      "pikachuoriginal"
+    ],
+    "pikashuniumz": [
+      "pikachuoriginal"
+    ],
+    "pinsirite": [
+      "pinsirmega"
+    ],
+    "redorb": [
+      "groudonprimal"
+    ],
+    "sablenite": [
+      "sableyemega"
+    ],
+    "salamencite": [
+      "salamencemega"
+    ],
+    "sceptilite": [
+      "sceptilemega"
+    ],
+    "scizorite": [
+      "scizormega"
+    ],
+    "sharpedonite": [
+      "sharpedomega"
+    ],
+    "shinystone": [
+      "floetteeternal"
+    ],
+    "slowbronite": [
+      "slowbromega"
+    ],
+    "solganiumz": [
+      "necrozmaduskmane"
+    ],
+    "souldew": [
+      "latiosmega",
+      "latiasmega"
+    ],
+    "steelixite": [
+      "steelixmega"
+    ],
+    "swampertite": [
+      "swampertmega"
+    ],
+    "thickclub": [
+      "marowakalola"
+    ],
+    "thunderstone": [
+      "raichualola",
+      "pikachuoriginal",
+      "vikavoltmegamax"
+    ],
+    "tyranitarite": [
+      "tyranitarmega"
+    ],
+    "ultranecroziumz": [
+      "necrozmaduskmane"
+    ],
+    "venusaurite": [
+      "venusaurmega"
+    ]
+  }
+}
