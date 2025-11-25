@@ -1,97 +1,24 @@
-// Import panels first to ensure jQuery and Backbone globals are set
-import './panels.js';
+// Data initialization module
+// This file assumes bootstrap.js has already loaded JSON data into window globals.
+// It sets up helper functions and performs additional initialization.
 
-import BattlePokedex from "../data/pokedex.json";
-import BattleMovedex from "../data/moves.json";
-import BattleItems from "../data/items.json";
-import BattleAbilities from "../data/abilities.json";
-import BattleTypeChart from "../data/typechart.json";
-import Learnsets from "../data/learnsets.json";
-import Icons from "../data/icons.json";
-import Config from "../data/config.json";
-import BaseGameStats from "../data/basegame.json";
-import ItemPokemonLinks from "../data/item-pokemon-links.json";
-// ...existing code...
-import './compat.js'; // ensure legacy helpers are available early
-// ...existing code...
-window.Config = Config;
-window.ResourcePrefix = window.Config.baseurl + "images/";
+// Use window-provided data (from bootstrap.js) with fallbacks
+const BattlePokedex = window.BattlePokedex || {};
+const BattleMovedex = window.BattleMovedex || {};
+const BattleItems = window.BattleItems || {};
+const BattleAbilities = window.BattleAbilities || {};
+const BattleTypeChart = window.BattleTypeChart || {};
+const Learnsets = window.Learnsets || {};
+const Icons = window.Icons || { pokemon: {}, items: {} };
+const Config = window.Config || { baseurl: '/Binary-Star-Pokedex/' };
+const BaseGameStats = window.BaseGameStats || {};
+const ItemPokemonLinks = window.ItemPokemonLinks || {};
 
-window.BattlePokedex = BattlePokedex;
-window.BattleMovedex = BattleMovedex;
-window.BattleItems = BattleItems;
-window.BattleAbilities = BattleAbilities;
-window.BattleTypeChart = BattleTypeChart;
-window.Learnsets = Learnsets;
-window.BaseGameStats = BaseGameStats;
-window.ItemPokemonLinks = ItemPokemonLinks;
-
-// Sanitization: remove external Pokemon Showdown data URLs (non-image) from loaded data
-(function sanitizeExternalDataUrls() {
-  // Regex to detect URLs containing "pokemonshowdown"
-  const psUrlPattern = /(https?:)?\/\/[^\s]*pokemonshowdown[^\s]*/i;
-  // Regex to detect image/sprite URLs (allowed to remain)
-  const imagePattern = /\.(png|jpe?g|gif|svg)(\?|$)/i;
-  const spritePathPattern = /\/(sprites|images)\//i;
-
-  let sanitizedCount = 0;
-
-  function isExternalDataUrl(value) {
-    if (typeof value !== 'string') return false;
-    if (!psUrlPattern.test(value)) return false;
-    // Allow image/sprite URLs
-    if (imagePattern.test(value) || spritePathPattern.test(value)) return false;
-    return true;
-  }
-
-  function sanitizeObject(obj) {
-    if (obj === null || obj === undefined) return;
-    if (typeof obj !== 'object') return;
-
-    if (Array.isArray(obj)) {
-      for (let i = 0; i < obj.length; i++) {
-        if (isExternalDataUrl(obj[i])) {
-          obj[i] = null;
-          sanitizedCount++;
-        } else if (typeof obj[i] === 'object') {
-          sanitizeObject(obj[i]);
-        }
-      }
-    } else {
-      for (const key in obj) {
-        if (!Object.prototype.hasOwnProperty.call(obj, key)) continue;
-        const value = obj[key];
-        if (isExternalDataUrl(value)) {
-          obj[key] = null;
-          sanitizedCount++;
-        } else if (typeof value === 'object') {
-          sanitizeObject(value);
-        }
-      }
-    }
-  }
-
-  // Sanitize all data objects assigned to window
-  const dataObjects = [
-    window.BattlePokedex,
-    window.BattleMovedex,
-    window.BattleItems,
-    window.BattleAbilities,
-    window.BattleTypeChart,
-    window.Learnsets,
-    window.BaseGameStats,
-    window.ItemPokemonLinks,
-    Icons,
-  ];
-
-  for (const obj of dataObjects) {
-    sanitizeObject(obj);
-  }
-
-  if (sanitizedCount > 0) {
-    console.info('[data.js] Sanitized ' + sanitizedCount + ' external Pokemon Showdown data URL(s) from loaded data.');
-  }
-})();
+// Ensure ResourcePrefix is set
+if (!window.ResourcePrefix) {
+  window.ResourcePrefix = (Config.baseurl || '/Binary-Star-Pokedex/') + 'images/';
+}
+const ResourcePrefix = window.ResourcePrefix;
 
 window.toID = (text) => {
   if (text?.id) {
