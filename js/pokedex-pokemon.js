@@ -1,3 +1,6 @@
+// Import pokedex.js to ensure PokedexResultPanel is available
+import './pokedex.js';
+
 window.PokedexPokemonPanel = PokedexResultPanel.extend({
 	initialize: function(id) {
 		id = toID(id);
