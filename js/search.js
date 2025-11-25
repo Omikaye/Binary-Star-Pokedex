@@ -781,6 +781,3 @@ import './battle-dex-search.js';
 	exports.BattleSearch = Search;
 
 })(window, jQuery);
-
-// Export for ES modules
-export { };
