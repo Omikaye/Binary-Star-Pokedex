@@ -1,6 +1,14 @@
 /*
  * Panels 0.1
  */
+import jQuery from 'jquery';
+import _ from 'underscore';
+import Backbone from 'backbone';
+
+// Make jQuery, underscore, and Backbone available globally for legacy code
+window.jQuery = window.$ = jQuery;
+window._ = _;
+window.Backbone = Backbone;
 
 // ES-5 15.3.4.5
 // http://es5.github.com/#x15.3.4.5
@@ -36,7 +44,7 @@ if (!Function.prototype.bind) {
 	var root = this;
 	var Panels = root.Panels = {};
 
-	var $ = root.jQuery || root.Zepto || root.ender;
+	var $ = jQuery;
 
 	// we extend Backbone.history a bit
 	Backbone.history.pause = function() {

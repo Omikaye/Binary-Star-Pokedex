@@ -1,3 +1,8 @@
+// Import all dependencies to ensure they're loaded before router initializes
+import './pokedex-pokemon.js';
+import './pokedex-moves.js';
+import './pokedex-search.js';
+
 var Pokedex = Panels.App.extend({
 	topbarView: Topbar,
 	backButtonPrefix: '<i class="fa fa-chevron-left"></i> ',

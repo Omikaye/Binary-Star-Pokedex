@@ -1,3 +1,6 @@
+// Import panels first to ensure jQuery and Backbone globals are set
+import './panels.js';
+
 import BattlePokedex from "../data/pokedex.json";
 import BattleMovedex from "../data/moves.json";
 import BattleItems from "../data/items.json";

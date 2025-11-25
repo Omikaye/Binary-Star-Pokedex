@@ -1,3 +1,6 @@
+// Import search.js to ensure BattleSearch is available
+import './search.js';
+
 BattleSearch.urlRoot = Config.baseurl;
 
 window.Topbar = Panels.Topbar.extend({

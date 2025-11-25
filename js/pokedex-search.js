@@ -1,3 +1,6 @@
+// Import pokedex.js to ensure Panels and BattleSearch are available
+import './pokedex.js';
+
 window.PokedexSearchPanel = Panels.Panel.extend({
 	minWidth: 639,
 	maxWidth: 639,

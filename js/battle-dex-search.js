@@ -7,6 +7,9 @@
  * @author Guangcong Luo <guangcongluo@gmail.com>
  * @license MIT
  */
+// Import data.js to ensure globals are available (BattlePokedex, etc.)
+import './data.js';
+
 /** ID, SearchType, index (if alias), offset (if offset alias) */
 let BattleSearchIndex = [];
 let BattleSearchIndexOffset;

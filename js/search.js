@@ -8,6 +8,9 @@
  *
  * @author Guangcong Luo <guangcongluo@gmail.com>
  */
+import jQuery from 'jquery';
+// Import battle-dex-search to ensure DexSearch is available
+import './battle-dex-search.js';
 
 (function (exports, $) {
 	'use strict';
