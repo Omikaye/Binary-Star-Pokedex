@@ -1,12 +1,15 @@
 // js/bootstrap.js
 // Imports jQuery and Underscore (via importmap), sets globals, then loads backbone UMD, then loads data and app modules.
 
+// js/bootstrap.js (top)
 import $ from 'jquery';
 import _ from 'underscore';
+import Backbone from 'backbone'; // resolves to /js/vendor/backbone-compat.js
 
-// expose legacy globals needed by the app
+// expose legacy globals
 window.$ = window.jQuery = $;
 window._ = _;
+window.Backbone = Backbone;
 
 // Helper: dynamically load a script and await it
 function loadScript(src) {
