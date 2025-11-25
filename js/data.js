@@ -23,6 +23,73 @@ window.Learnsets = Learnsets;
 window.BaseGameStats = BaseGameStats;
 window.ItemPokemonLinks = ItemPokemonLinks;
 
+// Sanitization: remove external Pokemon Showdown data URLs (non-image) from loaded data
+(function sanitizeExternalDataUrls() {
+  // Regex to detect URLs containing "pokemonshowdown"
+  const psUrlPattern = /(https?:)?\/\/[^\s]*pokemonshowdown[^\s]*/i;
+  // Regex to detect image/sprite URLs (allowed to remain)
+  const imagePattern = /\.(png|jpe?g|gif|svg)(\?|$)/i;
+  const spritePathPattern = /\/(sprites|images)\//i;
+
+  let sanitizedCount = 0;
+
+  function isExternalDataUrl(value) {
+    if (typeof value !== 'string') return false;
+    if (!psUrlPattern.test(value)) return false;
+    // Allow image/sprite URLs
+    if (imagePattern.test(value) || spritePathPattern.test(value)) return false;
+    return true;
+  }
+
+  function sanitizeObject(obj) {
+    if (obj === null || obj === undefined) return;
+    if (typeof obj !== 'object') return;
+
+    if (Array.isArray(obj)) {
+      for (let i = 0; i < obj.length; i++) {
+        if (isExternalDataUrl(obj[i])) {
+          obj[i] = null;
+          sanitizedCount++;
+        } else if (typeof obj[i] === 'object') {
+          sanitizeObject(obj[i]);
+        }
+      }
+    } else {
+      for (const key in obj) {
+        if (!Object.prototype.hasOwnProperty.call(obj, key)) continue;
+        const value = obj[key];
+        if (isExternalDataUrl(value)) {
+          obj[key] = null;
+          sanitizedCount++;
+        } else if (typeof value === 'object') {
+          sanitizeObject(value);
+        }
+      }
+    }
+  }
+
+  // Sanitize all data objects assigned to window
+  const dataObjects = [
+    window.BattlePokedex,
+    window.BattleMovedex,
+    window.BattleItems,
+    window.BattleAbilities,
+    window.BattleTypeChart,
+    window.Learnsets,
+    window.BaseGameStats,
+    window.ItemPokemonLinks,
+    Icons,
+  ];
+
+  for (const obj of dataObjects) {
+    sanitizeObject(obj);
+  }
+
+  if (sanitizedCount > 0) {
+    console.info('[data.js] Sanitized ' + sanitizedCount + ' external Pokemon Showdown data URL(s) from loaded data.');
+  }
+})();
+
 window.toID = (text) => {
   if (text?.id) {
     text = text.id;
