@@ -1,0 +1,41 @@
+{
+  "name": "static-showdown-dex",
+  "version": "1.0.0",
+  "description": "Pokémon Showdown Dex ========================================================================",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gendata": "tsx build/build-indexes.ts",
+    "dist": "tsx build/dist.ts dist",
+    "serve": "parcel serve index.html images/**/*.png --public-url /BinaryStar-Dex/",
+    "convert-levelup": "node scripts/convert-levelup.js",
+    "merge-tm-tutor": "node scripts/merge-tm-tutor.js",
+    "convert-pokedex": "node scripts/convert-pokedex-array.js",
+    "convert-gender": "node scripts/convert-gender-ratio.js",
+    "convert-evolutions": "node scripts/convert-evolutions.js",
+    "validate": "node scripts/validate-pokedex.js",
+    "import-all": "node scripts/import-all.js",
+    "import-moves": "node scripts/import-moves.js",
+    "import-basegame": "node scripts/import-basegame-stats.js",
+    "generate-links": "node scripts/generate-item-pokemon-links.js",
+    "deploy": "npm run dist && ts-node build/gh-pages.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@pkmn/data": "^0.7.59",
+    "@pkmn/dex": "^0.7.59",
+    "@pkmn/img": "^0.2.27",
+    "@types/gh-pages": "^3.2.3",
+    "@types/node": "^18.19.33",
+    "gh-pages": "^5.0.0",
+    "glob": "^10.4.1",
+    "parcel": "^2.12.0",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "backbone": "^1.6.0",
+    "jquery": "^3.7.1",
+    "underscore": "^1.13.6"
+  }
+}

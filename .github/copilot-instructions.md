@@ -1,0 +1,79 @@
+<!-- Copilot / AI agent guidance for Binary-Star-Pokedex -->
+# Quick orientation
+
+This repo is a static, client-side Pokédex that generates its JSON data from the `@pkmn/*` packages and bundles a vanilla JS UI (Backbone + jQuery). Key facts an AI coding agent needs immediately:
+
+- **Static site front-end**: entry `index.html` loads `js/pokedex.js` which depends on `data/*.json` produced by the build scripts.
+- **Data generation**: `build/build-indexes.ts` (run via `npm run gendata`) generates `data/pokedex.json`, `data/moves.json`, `data/items.json`, `data/abilities.json`, `data/typechart.json`, `data/learnsets.json`, and `data/icons.json`.
+- **Bundling / serving**: development server is `npm run serve` (Parcel). Production build is `npm run dist` and `npm run deploy` publishes via `gh-pages`.
+
+**Paths & examples**
+
+- Data files: `data/*.json` (consumed by `js/data.js`).
+- Data generator: `build/build-indexes.ts` (reads `build/mod-data.json` if present).
+- Build helper: `build/dist.ts` (copies `images/` and runs `parcel build`).
+- UI source: `js/*.js` (e.g. `js/pokedex.js`, `js/data.js`).
+- Articles: `articles/` (Markdown files). The running site expects rendered HTML under `/.articles-cached/*.html` which is gitignored — the HTML cache is not in repo.
+
+**Why the structure**
+
+- The repository separates data generation from the UI. The UI expects ready-to-use JSON to keep the client light and fast.
+- `@pkmn/*` libraries are used to derive canonical Poké data and sprites; the TypeScript generator normalizes and reduces that into the small JSON the client expects.
+
+Practical developer workflows (explicit commands)
+
+- Install dependencies (first time):
+
+  npm install
+
+- Regenerate all data (will download icons and many images; requires network and can be slow):
+
+  npm run gendata
+
+  - This runs `tsx build/build-indexes.ts` and writes into `data/`.
+  - It reads `build/mod-data.json` (empty `{}` by default) to allow optional modded data.
+
+- Serve locally for development (Parcel dev server):
+
+  npm run serve
+
+  - `package.json` runs: `parcel serve index.html images/**/*.png --public-url /Static-Showdown-Dex/`
+  - `data/config.json` contains `baseurl` which the client uses (see `js/data.js` -> `window.Config`). Keep `baseurl` consistent with how you serve files.
+
+- Produce a production bundle and deploy to `dist`:
+
+  npm run dist
+  npm run deploy
+
+  - `npm run dist` calls `tsx build/dist.ts dist` which copies `images/` into `dist` and runs `parcel build` using `data/config.json`'s `baseurl`.
+  - `npm run deploy` runs `npm run dist` then `ts-node build/gh-pages.ts` which publishes `dist` to GitHub Pages (repo URL configured in `build/gh-pages.ts`).
+
+Project-specific conventions and patterns
+
+- Global data layering: `js/data.js` imports generated JSON and attaches globals to `window` (e.g. `window.BattlePokedex`, `window.BattleMovedex`, `window.Config`). When editing UI code, use these globals rather than re-importing JSON.
+- ID conventions: objects in `data/*.json` use lower-case ID keys. The project uses a `toID` utility to canonicalize strings (see `js/data.js`). Prefer `toID(...)` and `getID(obj, text)` when matching user input to data.
+- Images & sprites:
+  - Sprite sheets live in `images/sprites/` and are referenced by `data/icons.json` produced by the generator.
+  - `js/data.js` uses `window.ResourcePrefix = window.Config.baseurl + "images/"` to build image URLs.
+- Articles: the frontend requests `/.articles-cached/<id>.html`. That cache is intentionally gitignored (`/.articles-cached` in `.gitignore`). If you change articles, you'll need to provide pre-rendered HTML to the server or adapt the client to read raw Markdown.
+- Small legacy JS style: UI is Backbone-based and written in ES modules (not React/TS). Keep edits consistent with current patterns (extend Panels, use `this.html()`, `setTimeout(...)` for deferred rendering) to avoid cross-style mixing.
+
+Integration & external dependencies
+
+- Node-based TS generators: the repo requires `tsx` / `ts-node` at build time (see `devDependencies`).
+- Runtime libs: `backbone`, `jquery`, `underscore` are used in the browser. Parcel handles bundling.
+- Data source: `@pkmn/dex`, `@pkmn/data`, `@pkmn/img` are authoritative sources used in `build/build-indexes.ts` to compose the `data/` JSON.
+
+Editing guidance for common tasks (examples)
+
+- To change how Pokédex entries render: edit `js/pokedex.js` and use global `BattlePokedex` objects created by `js/data.js`.
+- To add or override species/moves for a custom build: populate `build/mod-data.json` with mod objects and run `npm run gendata`.
+- To change site base path (for GitHub Pages), update `data/config.json`'s `baseurl` and run `npm run dist`.
+
+Limitations & gotchas discovered in the repo
+
+- Building images: `build/build-indexes.ts` downloads many images via `@pkmn/img`. Ensure network access and be patient — many files and rate limits may slow this step.
+- Article HTML cache is not generated by repo scripts; the UI expects `/.articles-cached/` and will 404 without those files.
+- JSON edits in `data/` are overwritten by `npm run gendata`. Edit source (mod-data.json or generator) if you want persistent changes.
+
+If anything above is unclear or you'd like the doc to be expanded with examples (code snippets for typical edits, a short troubleshooting checklist for failed `gendata` runs, or CI-friendly deploy steps), tell me which section to expand and I will iterate.
