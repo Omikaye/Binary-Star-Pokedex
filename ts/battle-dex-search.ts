@@ -159,8 +159,6 @@ function generateSearchIndex() {
   });
 }
 /**
-
-/**
  * Backend for search UIs.
  */
 class DexSearch {
