@@ -29,6 +29,13 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/" data-target="push">Coming soon</a></dd>';
     buf += '</dl>';
 
+    // Extra Notes (if present)
+    var notes = (window.TrainerNotes && window.TrainerNotes[norm] && window.TrainerNotes[norm].extraNotes) || '';
+    if (notes.trim()) {
+      buf += '<h3>Extra Notes</h3>';
+      buf += '<p>' + escapeHTML(notes) + '</p>';
+    }
+
     // Team
     buf += '<h3>Team</h3>';
     buf += '<ul class="utilichart nokbd">';
@@ -51,8 +58,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var monID = toID(dispName);
       var monData = BattlePokedex[monID];
 
-      var rowBg = (i % 2 === 1) ? '#f7f7f7' : '#ffffff';
-      buf += '<li class="result" style="background:' + rowBg + ';padding:12px 12px 14px;border-radius:6px;margin-bottom:240px">';
+      buf += '<li class="result" style="background:#f7f7f7;padding:12px 12px 14px;border-radius:6px;margin-bottom:220px">';
 
       // Row 1: Pokemon Sprite | Item Sprite | Name (Level)
       buf += '<div class="resultrow" style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">';
