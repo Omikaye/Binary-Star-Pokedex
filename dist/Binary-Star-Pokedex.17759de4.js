@@ -207,11 +207,11 @@
       });
     }
   }
-})({"kP0AL":[function(require,module,exports,__globalThis) {
+})({"3ouJI":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 1234;
+var HMR_SERVER_PORT = 51128;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -1413,6 +1413,6 @@ window.PokedexArticlePanel = PokedexResultPanel.extend({
     }
 });
 
-},{}]},["kP0AL","rXnTZ"], "rXnTZ", "parcelRequire6a64", {})
+},{}]},["3ouJI","rXnTZ"], "rXnTZ", "parcelRequire6a64", {})
 
 //# sourceMappingURL=Binary-Star-Pokedex.17759de4.js.map

@@ -207,11 +207,11 @@
       });
     }
   }
-})({"kBLB0":[function(require,module,exports,__globalThis) {
+})({"1wyBB":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 1234;
+var HMR_SERVER_PORT = 51128;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -853,23 +853,28 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
             var dispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(m.name || '') : m.name || '';
             var monID = toID(dispName);
             var monData = BattlePokedex[monID];
-            buf += '<li class="result" style="margin-bottom:22px">';
-            // Row 1: Name (Level) | Pokemon Sprite | Item Sprite | Types
-            buf += '<div class="resultrow" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">';
-            var nameHtml = '<span style="font-size:14px">' + escapeHTML(monData ? monData.name : m.name || '???') + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
-            buf += '<span class="col namecol" style="min-width:200px">' + nameHtml + '</span>';
-            if (monData) buf += '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(monData.name) + '">' + '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>' + '</a>';
-            else buf += '<span class="picon" style="' + getPokemonIcon(monID) + '"></span>';
+            buf += '<li class="result" style="margin-bottom:50px">';
+            // Row 1: Pokemon Sprite | Item Sprite | Name (Level) | Types
+            buf += '<div class="resultrow" style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">';
+            // Sprites block: keep on same plane and close together
+            var spritesBlock = '';
+            if (monData) spritesBlock += '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(monData.name) + '">' + '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>' + '</a>';
+            else spritesBlock += '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>';
             if (m.item) {
                 var itemID = toID(m.item);
                 var itemName = BattleItems[itemID]?.name || m.item;
                 var itemHref = BattleItems[itemID] ? Config.baseurl + 'items/' + itemID : null;
                 var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:24px;height:24px;vertical-align:middle"></span>';
-                buf += itemHref ? '<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '">' + itemIcon + '</a>' : itemIcon;
+                spritesBlock += itemHref ? '<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:4px">' + itemIcon + '</a>' : '<span style="margin-left:4px">' + itemIcon + '</span>';
             }
+            buf += '<span style="display:inline-flex;align-items:center;gap:4px">' + spritesBlock + '</span>';
+            var nameHtml = '<span style="font-size:14px">' + escapeHTML(monData ? monData.name : m.name || '???') + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
+            buf += '<span class="col namecol" style="min-width:200px">' + nameHtml + '</span>';
             // Types badges
             var types = monData?.types || [];
-            if (types.length) buf += '<span class="col" style="display:inline-flex;gap:4px">' + types.map((t)=>getTypeIcon(t)).join('') + '</span>';
+            if (types.length) buf += '<span class="col" style="display:inline-flex;gap:4px">' + types.map(function(t) {
+                return getTypeIcon(t);
+            }).join('') + '</span>';
             buf += '</div>';
             // Row 2: Ability | Nature with effects
             var abilHtml = '';
@@ -923,6 +928,6 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     }
 });
 
-},{}]},["kBLB0","fMa5c"], "fMa5c", "parcelRequire6a64", {})
+},{}]},["1wyBB","fMa5c"], "fMa5c", "parcelRequire6a64", {})
 
 //# sourceMappingURL=Binary-Star-Pokedex.76c83531.js.map
