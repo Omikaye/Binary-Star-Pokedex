@@ -738,9 +738,9 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         // Location placeholder (link to locations root for now)
         buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/" data-target="push">Coming soon</a></dd>';
         buf += '</dl>';
-        // Extra Notes (if present)
+        // Extra Notes (if present) — shown directly under Location
         var notes = window.TrainerNotes && window.TrainerNotes[norm] && window.TrainerNotes[norm].extraNotes || '';
-        if (notes.trim()) {
+        if (typeof notes === 'string' && notes.trim().length) {
             buf += '<h3>Extra Notes</h3>';
             buf += '<p>' + escapeHTML(notes) + '</p>';
         }
@@ -888,7 +888,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
                 var abilityObj = BattleAbilities[abilID];
                 if (abilityObj) {
                     var abilRow = '<li class="result" style="background:transparent"><a href="' + Config.baseurl + 'abilities/' + abilID + '" data-target="push">' + '<span class="col namecol">' + escapeHTML(abilityObj.name) + '</span> ' + '<span class="col abilitydesccol">' + escapeHTML(abilityObj.shortDesc || abilityObj.desc || '') + '</span> ' + '</a>' + '</li>';
-                    buf += '<ul class="utilichart nokbd" style="margin-top:4px;margin-bottom:2px">' + abilRow + '</ul>';
+                    buf += '<ul class="utilichart nokbd has-desc" style="margin-top:4px;margin-bottom:2px">' + abilRow + '</ul>';
                 } else // Fallback plain text if ability not found
                 buf += '<div class="resultsub" style="margin-top:4px"><strong>Ability:</strong> ' + escapeHTML(m.ability) + '</div>';
             }
@@ -921,7 +921,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
                     var rowInner = '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push" data-entry="move|' + escapeHTML(move.name) + '">' + '<span class="col movenamecol">' + escapeHTML(nameHtml) + '</span> ' + typeIcons + powerHtml + accHtml + ppHtml + descHtml + '</a>';
                     mvbuf += '<li class="result" style="background:transparent">' + rowInner + '</li>';
                 }
-                buf += '<ul class="utilichart nokbd" style="margin-top:6px">' + mvbuf + '</ul>';
+                buf += '<ul class="utilichart nokbd has-desc" style="margin-top:6px">' + mvbuf + '</ul>';
             }
             // Clear floats to ensure zebra container encloses all inner content
             buf += '<div style="clear:both"></div>';
