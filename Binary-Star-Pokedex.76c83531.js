@@ -853,18 +853,18 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
             var dispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(m.name || '') : m.name || '';
             var monID = toID(dispName);
             var monData = BattlePokedex[monID];
-            buf += '<li class="result" style="margin-bottom:10px">';
+            buf += '<li class="result" style="margin-bottom:22px">';
             // Row 1: Name (Level) | Pokemon Sprite | Item Sprite | Types
             buf += '<div class="resultrow" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">';
-            var nameHtml = escapeHTML(monData ? monData.name : m.name || '???') + ' <small>(Lv. ' + (m.level || '?') + ')</small>';
+            var nameHtml = '<span style="font-size:14px">' + escapeHTML(monData ? monData.name : m.name || '???') + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
             buf += '<span class="col namecol" style="min-width:200px">' + nameHtml + '</span>';
-            if (monData) buf += '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(monData.name) + '">' + '<span class="picon" style="' + getPokemonIcon(monID) + '"></span>' + '</a>';
+            if (monData) buf += '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(monData.name) + '">' + '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>' + '</a>';
             else buf += '<span class="picon" style="' + getPokemonIcon(monID) + '"></span>';
             if (m.item) {
                 var itemID = toID(m.item);
                 var itemName = BattleItems[itemID]?.name || m.item;
                 var itemHref = BattleItems[itemID] ? Config.baseurl + 'items/' + itemID : null;
-                var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + '"></span>';
+                var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:24px;height:24px;vertical-align:middle"></span>';
                 buf += itemHref ? '<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '">' + itemIcon + '</a>' : itemIcon;
             }
             // Types badges
@@ -882,13 +882,13 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
             var natureHtml = '';
             if (m.nature) {
                 var eff = NATURE_EFFECTS[m.nature] || null;
-                var effText = eff ? ' (' + eff[0] + "\u2191 / " + eff[1] + "\u2193)" : '';
-                natureHtml = '<strong>Nature:</strong> ' + escapeHTML(m.nature) + effText;
+                if (eff) natureHtml = '<strong>Nature:</strong> ' + escapeHTML(m.nature) + ' (<span style="color:#1f9d3a">' + eff[0] + '\u2191</span> / <span style="color:#c22e28">' + eff[1] + "\u2193</span>)";
+                else natureHtml = '<strong>Nature:</strong> ' + escapeHTML(m.nature) + ' (Neutral)';
             }
             var line2 = [
                 abilHtml,
                 natureHtml
-            ].filter(Boolean).join(' &nbsp; | &nbsp; ');
+            ].filter(Boolean).join(' ');
             if (line2) buf += '<div class="resultsub" style="margin-top:4px">' + line2 + '</div>';
             // Row 3: Moves (colored by type, bold if STAB)
             var moves = m.moves || [];
@@ -909,11 +909,11 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
                     var weightEnd = isSTAB ? '</strong>' : '';
                     mv.push(linkStart + style + '>' + weightStart + inner + weightEnd + linkEnd);
                 }
-                // Two per line formatting
-                var rowA = mv.slice(0, 2).join(' &nbsp; ');
-                var rowB = mv.slice(2, 4).join(' &nbsp; ');
-                buf += '<div class="resultsub" style="margin-top:4px">' + rowA + '</div>';
-                if (rowB) buf += '<div class="resultsub" style="margin-top:2px">' + rowB + '</div>';
+                // Two per line, consistent indentation via grid
+                var rowA = mv.slice(0, 2);
+                var rowB = mv.slice(2, 4);
+                buf += '<div class="resultsub" style="margin-top:4px;display:grid;grid-template-columns:auto 1fr;column-gap:12px"><span>' + (rowA[0] || '') + '</span><span>' + (rowA[1] || '') + '</span>' + '</div>';
+                if (rowB.length) buf += '<div class="resultsub" style="margin-top:2px;display:grid;grid-template-columns:auto 1fr;column-gap:12px"><span>' + (rowB[0] || '') + '</span><span>' + (rowB[1] || '') + '</span>' + '</div>';
             }
             buf += '</li>';
         }
