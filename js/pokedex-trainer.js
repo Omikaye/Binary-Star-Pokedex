@@ -18,7 +18,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     this.shortTitle = trainer.name;
 
     var buf = '<div class="pfx-body dexentry">';
-    buf += '<style>.dexentry .movedesccol, .dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; }</style>';
+    buf += '<style>.dexentry .movedesccol, .dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; }</style>';
     buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Trainers</a>';
     buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a></h1>';
 
