@@ -1,17 +1,17 @@
 import { execSync } from "child_process";
 import { argv } from "process";
 import config from "../data/config.json"
-import { cpSync, mkdirSync, rmSync } from "fs";
+import { cpSync, existsSync } from "fs";
 
 let dest = argv[2];
 
-rmSync(`./${dest}`, {recursive: true, force: true})
-mkdirSync(`./${dest}`)
+// Let Parcel handle creating and clearing the dist folder
+execSync(`npx parcel build --dist-dir ${dest} --public-url ${config.baseurl} ./index.html`)
 
-execSync(`npx parcel build --public-url ${config.baseurl} ./index.html`)
+// Copy images after Parcel is done
+cpSync("images", `./${dest}/images`, {recursive: true})
 
-for (let folder of ["images"]) {
-  cpSync(`${folder}`, `./${dest}/`, {recursive: true})
+// Create 404.html for GitHub Pages SPA routing
+if (existsSync(`./${dest}/index.html`)) {
+  cpSync(`./${dest}/index.html`, `./${dest}/404.html`)
 }
-
-cpSync(`./${dest}/index.html`, `./${dest}/404.html`)
