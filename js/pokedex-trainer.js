@@ -51,10 +51,10 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var monID = toID(dispName);
       var monData = BattlePokedex[monID];
 
-      buf += '<li class="result" style="margin-bottom:50px">';
+      buf += '<li class="result" style="margin-bottom:120px">';
 
-      // Row 1: Pokemon Sprite | Item Sprite | Name (Level) | Types
-      buf += '<div class="resultrow" style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">';
+      // Row 1: Pokemon Sprite | Item Sprite | Name (Level)
+      buf += '<div class="resultrow" style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">';
       // Sprites block: keep on same plane and close together
       var spritesBlock = '';
       if (monData) {
@@ -69,26 +69,36 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         var itemName = BattleItems[itemID]?.name || m.item;
         var itemHref = BattleItems[itemID] ? (Config.baseurl + 'items/' + itemID) : null;
         var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:24px;height:24px;vertical-align:middle"></span>';
-        spritesBlock += itemHref ? ('<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:4px">' + itemIcon + '</a>') : ('<span style="margin-left:4px">' + itemIcon + '</span>');
+        spritesBlock += itemHref ? ('<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:2px">' + itemIcon + '</a>') : ('<span style="margin-left:2px">' + itemIcon + '</span>');
       }
-      buf += '<span style="display:inline-flex;align-items:center;gap:4px">' + spritesBlock + '</span>';
+      buf += '<span style="display:inline-flex;align-items:center;gap:2px">' + spritesBlock + '</span>';
       var nameHtml = '<span style="font-size:14px">' + escapeHTML(monData ? monData.name : (m.name || '???')) + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
       buf += '<span class="col namecol" style="min-width:200px">' + nameHtml + '</span>';
-      // Types badges
+      buf += '</div>';
+      // Types directly below the sprite block
       var types = (monData?.types || []);
       if (types.length) {
-        buf += '<span class="col" style="display:inline-flex;gap:4px">' + types.map(function(t){return getTypeIcon(t);}).join('') + '</span>';
+        buf += '<div class="resultsub" style="margin-top:2px;margin-left:0">' + types.map(function(t){return getTypeIcon(t);}).join(' ') + '</div>';
       }
-      buf += '</div>';
 
-      // Row 2: Ability | Nature with effects
-      var abilHtml = '';
+      // Row 2a: Ability rendered as a button-style utilichart entry
       if (m.ability) {
         var abilID = toID(m.ability);
-        var abilName = BattleAbilities[abilID]?.name || m.ability;
-        var abilHref = BattleAbilities[abilID] ? (Config.baseurl + 'abilities/' + abilID) : null;
-        abilHtml = '<strong>Ability:</strong> ' + (abilHref ? ('<a href="' + abilHref + '" data-target="push">' + escapeHTML(abilName) + '</a>') : escapeHTML(abilName));
+        var abilityObj = BattleAbilities[abilID];
+        if (abilityObj) {
+          var abilRow = '<li class="result">' +
+            '<a href="' + Config.baseurl + 'abilities/' + abilID + '" data-target="push">' +
+              '<span class="col namecol">' + escapeHTML(abilityObj.name) + '</span> ' +
+              '<span class="col abilitydesccol">' + escapeHTML(abilityObj.shortDesc || abilityObj.desc || '') + '</span> ' +
+            '</a>' +
+          '</li>';
+          buf += '<ul class="utilichart nokbd" style="margin-top:6px">' + abilRow + '</ul>';
+        } else {
+          // Fallback plain text if ability not found
+          buf += '<div class="resultsub" style="margin-top:4px"><strong>Ability:</strong> ' + escapeHTML(m.ability) + '</div>';
+        }
       }
+      // Row 2b: Nature with effects
       var natureHtml = '';
       if (m.nature) {
         var eff = NATURE_EFFECTS[m.nature] || null;
@@ -99,39 +109,22 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
           natureHtml = '<strong>Nature:</strong> ' + escapeHTML(m.nature) + ' (Neutral)';
         }
       }
-      var line2 = [abilHtml, natureHtml].filter(Boolean).join(' ');
-      if (line2) buf += '<div class="resultsub" style="margin-top:4px">' + line2 + '</div>';
+      if (natureHtml) buf += '<div class="resultsub" style="margin-top:4px">' + natureHtml + '</div>';
 
-      // Row 3: Moves (colored by type, bold if STAB)
+      // Row 3: Moves as buttons like Pokédex learnset (no level)
       var moves = m.moves || [];
       if (moves.length) {
-        var mv = [];
-        var stabTypes = (monData?.types || []).map(t => toID(t));
+        var mvbuf = '';
         for (var j = 0; j < moves.length; j++) {
-          var moveName = moves[j];
-          var moveID = toID(moveName);
+          var moveID = toID(moves[j]);
           var move = BattleMovedex[moveID];
-          var color = move ? TYPE_COLORS[move.type] : null;
-          var isSTAB = move && stabTypes.indexOf(toID(move.type)) >= 0;
-          var inner = move ? escapeHTML(move.name) : escapeHTML(moveName);
-          var linkStart = move ? '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push"' : '<span';
-          var linkEnd = move ? '</a>' : '</span>';
-          var style = color ? (' style="background:' + color + ';color:#fff;padding:2px 6px;border-radius:4px;display:inline-block"') : '';
-          var weightStart = isSTAB ? '<strong>' : '';
-          var weightEnd = isSTAB ? '</strong>' : '';
-          mv.push(linkStart + style + '>' + weightStart + inner + weightEnd + linkEnd);
+          if (!move) {
+            mvbuf += '<li class="result">' + escapeHTML(moves[j]) + '</li>';
+            continue;
+          }
+          mvbuf += BattleSearch.renderMoveRowInner(move);
         }
-        // Two per line, consistent indentation via grid
-        var rowA = mv.slice(0, 2);
-        var rowB = mv.slice(2, 4);
-        buf += '<div class="resultsub" style="margin-top:4px;display:grid;grid-template-columns:auto 1fr;column-gap:12px">' +
-          '<span>' + (rowA[0] || '') + '</span><span>' + (rowA[1] || '') + '</span>' +
-        '</div>';
-        if (rowB.length) {
-          buf += '<div class="resultsub" style="margin-top:2px;display:grid;grid-template-columns:auto 1fr;column-gap:12px">' +
-            '<span>' + (rowB[0] || '') + '</span><span>' + (rowB[1] || '') + '</span>' +
-          '</div>';
-        }
+        buf += '<ul class="utilichart nokbd" style="margin-top:6px">' + mvbuf + '</ul>';
       }
 
       buf += '</li>';

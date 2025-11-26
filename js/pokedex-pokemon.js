@@ -339,7 +339,11 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 				case 'lvl': // level-up move
 					if (newCategory) buf += '<li class="resultheader"><h3>Level-up</h3></li>';
 					let level = learn.level
-					desc = level <= 1  ? '&ndash;' : '<small>L</small>'+level;
+					if (level === 0) {
+						desc = 'Evo';
+					} else {
+						desc = level <= 1 ? '&ndash;' : '<small>L</small>' + level;
+					}
 					break;
 				case 'prevo': // prevo
 					if (newCategory) buf += '<li class="resultheader"><h3>From preevo</h3></li>';

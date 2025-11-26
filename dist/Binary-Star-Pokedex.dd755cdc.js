@@ -207,11 +207,11 @@
       });
     }
   }
-})({"58KVB":[function(require,module,exports,__globalThis) {
+})({"fhkiH":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 51128;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -988,7 +988,8 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
                 case 'lvl':
                     if (newCategory) buf += '<li class="resultheader"><h3>Level-up</h3></li>';
                     let level = learn.level;
-                    desc = level <= 1 ? '&ndash;' : '<small>L</small>' + level;
+                    if (level === 0) desc = 'Evo';
+                    else desc = level <= 1 ? '&ndash;' : '<small>L</small>' + level;
                     break;
                 case 'prevo':
                     if (newCategory) buf += '<li class="resultheader"><h3>From preevo</h3></li>';
@@ -1023,6 +1024,6 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
     }
 });
 
-},{}]},["58KVB","1h4WV"], "1h4WV", "parcelRequire6a64", {})
+},{}]},["fhkiH","1h4WV"], "1h4WV", "parcelRequire6a64", {})
 
 //# sourceMappingURL=Binary-Star-Pokedex.dd755cdc.js.map

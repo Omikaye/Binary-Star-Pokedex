@@ -207,11 +207,11 @@
       });
     }
   }
-})({"7cpv7":[function(require,module,exports,__globalThis) {
+})({"jh36L":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 51128;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -1777,6 +1777,6 @@ class BattleTypeSearch extends BattleTypedSearch {
 }
 window.DexSearch = DexSearch;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["7cpv7","93STH"], "93STH", "parcelRequire6a64", {})
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["jh36L","93STH"], "93STH", "parcelRequire6a64", {})
 
 //# sourceMappingURL=Binary-Star-Pokedex.3e07801b.js.map

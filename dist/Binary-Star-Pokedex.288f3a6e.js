@@ -207,11 +207,11 @@
       });
     }
   }
-})({"dNbck":[function(require,module,exports,__globalThis) {
+})({"EO4vb":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 51128;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -1968,6 +1968,6 @@ if (!Function.prototype.bind) {
 })(jQuery);
 if (!jQuery.support.transition) jQuery.fn.transition = jQuery.fn.animate;
 
-},{}]},["dNbck","LGavx"], "LGavx", "parcelRequire6a64", {})
+},{}]},["EO4vb","LGavx"], "LGavx", "parcelRequire6a64", {})
 
 //# sourceMappingURL=Binary-Star-Pokedex.288f3a6e.js.map
