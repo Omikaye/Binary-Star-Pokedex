@@ -98,10 +98,11 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 				this.$('.buttonbar').remove();
 				this.$('.results').html('<p style="padding:20px;text-align:center;color:#999">Locations feature coming soon!</p>');
 			} else if (fragment === 'trainers/') {
-				// Trainers type - to be implemented later
-				$searchbox.attr('placeholder', 'Search trainers');
+				// Trainers list
+				$searchbox.attr('placeholder', 'Search trainers by name or id');
 				this.$('.buttonbar').remove();
-				this.$('.results').html('<p style="padding:20px;text-align:center;color:#999">Trainers feature coming soon!</p>');
+				this.trainersMode = true;
+				this.renderTrainers('');
 			}
 			this.search.externalFilter = true;
 		} else {
@@ -311,6 +312,10 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		$(this.activeLink).addClass('active');
 	},
 	find: function(val) {
+		if (this.trainersMode) {
+			this.renderTrainers(val || '');
+			return;
+		}
 		if (!this.search) return;
 		if (!val) val = '';
 		this.updateFilters();
@@ -323,6 +328,29 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 			this.$('.pokedex').removeClass('aboveresults');
 			this.activeLink = null;
 		}
+	},
+		renderTrainers: function(q) {
+		q = (q || '').toLowerCase();
+		const list = (window.Trainers || []);
+		let buf = '<ul class="utilichart nokbd">';
+		for (let i = 0; i < list.length; i++) {
+			const t = list[i];
+			const display = '[' + t.id + '] ' + escapeHTML(t.name);
+			if (q && display.toLowerCase().indexOf(q) === -1) continue;
+			const team = (t.team || []).map(m => escapeHTML(m.name) + ' (Lv. ' + (m.level || '?') + ')').join(', ');
+				buf += '<li class="result">' +
+					'<a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push">' +
+					'<span class="col namecol">' + display + '</span>' +
+					'<span class="col smallcol">$' + (t.prizeMoney || 0) + '</span>' +
+					'<span class="col">' + team + '</span>' +
+				'</a>' +
+			'</li>';
+		}
+		buf += '</ul>';
+		this.$('.results').html(buf);
+		this.$('.pokedex').addClass('aboveresults');
+		this.activeLink = this.$('.results a')[0] || null;
+		if (this.activeLink) $(this.activeLink).addClass('active');
 	},
 	checkExactMatch: function() {
 		if (this.search && this.search.exactMatch && this.search.q !== 'metronome' && this.search.q !== 'psychic') {

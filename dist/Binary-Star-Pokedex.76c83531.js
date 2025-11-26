@@ -207,7 +207,7 @@
       });
     }
   }
-})({"7kawL":[function(require,module,exports,__globalThis) {
+})({"kBLB0":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -215,7 +215,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "f9b0221d16f8a8e4";
+module.bundle.HMR_BUNDLE_ID = "c6812e6b76c83531";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -713,40 +713,78 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"hmJ6v":[function(require,module,exports,__globalThis) {
-var Pokedex = Panels.App.extend({
-    topbarView: Topbar,
-    backButtonPrefix: '<i class="fa fa-chevron-left"></i> ',
-    states2: {
-        'pokemon/:pokemon': PokedexPokemonPanel,
-        'moves/:move': PokedexMovePanel,
-        'items/:item': PokedexItemPanel,
-        'abilities/:ability': PokedexAbilityPanel,
-        'types/:type': PokedexTypePanel,
-        'categories/:category': PokedexCategoryPanel,
-        'tags/:tag': PokedexTagPanel,
-        'egggroups/:egggroup': PokedexEggGroupPanel,
-        'tiers/:tier': PokedexTierPanel,
-        'articles/:article': PokedexArticlePanel,
-        'trainers/:id': PokedexTrainerPanel,
-        '': PokedexSearchPanel,
-        'pokemon/': PokedexSearchPanel,
-        'moves/': PokedexSearchPanel,
-        'abilities/': PokedexSearchPanel,
-        'items/': PokedexSearchPanel,
-        'mechanics/': PokedexSearchPanel,
-        'locations/': PokedexSearchPanel,
-        'trainers/': PokedexSearchPanel,
-        ':q': PokedexSearchPanel
-    },
-    initialize: function() {
-        this.routePanel('*path', PokedexSearchPanel); // catch-all default
-        let root = Config.baseurl.slice(1);
-        for(var i in this.states2)this.routePanel(root + i, this.states2[i]);
+},{}],"fMa5c":[function(require,module,exports,__globalThis) {
+window.PokedexTrainerPanel = PokedexResultPanel.extend({
+    initialize: function(id) {
+        // Normalize id to 3 digits (e.g., "2" -> "002")
+        const raw = ('' + id).replace(/[^0-9]/g, '');
+        const norm = raw.padStart(3, '0');
+        this.id = norm;
+        const trainers = window.Trainers || [];
+        const trainer = trainers.find((t)=>t.id === norm);
+        if (!trainer) {
+            this.shortTitle = 'Trainer ' + norm;
+            this.html('<div class="pfx-body dexentry"><a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a><h1>Trainer ' + norm + '</h1><p>Trainer not found.</p></div>');
+            return;
+        }
+        this.trainer = trainer;
+        this.shortTitle = trainer.name;
+        var buf = '<div class="pfx-body dexentry">';
+        buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Trainers</a>';
+        buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a></h1>';
+        // Prize Money
+        buf += '<dl>';
+        buf += '<dt>Prize Money:</dt> <dd>$' + (trainer.prizeMoney || 0) + '</dd>';
+        // Location placeholder (link to locations root for now)
+        buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/" data-target="push">Coming soon</a></dd>';
+        buf += '</dl>';
+        // Team
+        buf += '<h3>Team</h3>';
+        buf += '<ul class="utilichart nokbd">';
+        for(var i = 0; i < (trainer.team || []).length; i++){
+            var m = trainer.team[i] || {};
+            var monID = toID(m.name);
+            var monData = BattlePokedex[monID];
+            buf += '<li class="result">';
+            buf += '<div class="resultrow">';
+            // Pokemon name (link if found)
+            if (monData) buf += '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push">' + '<span class="picon" style="' + getPokemonIcon(monID) + '"></span>' + '<span class="col namecol">' + escapeHTML(monData.name) + ' <small>(Lv. ' + (m.level || '?') + ')</small></span>' + '</a>';
+            else buf += '<span class="col namecol">' + escapeHTML(m.name || '???') + ' <small>(Lv. ' + (m.level || '?') + ')</small></span>';
+            buf += '</div>';
+            // Details line: item, ability, nature
+            var details = [];
+            if (m.item) {
+                var itemID = toID(m.item);
+                if (BattleItems[itemID]) details.push('<strong>Item:</strong> <a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push">' + escapeHTML(BattleItems[itemID].name) + '</a>');
+                else details.push('<strong>Item:</strong> ' + escapeHTML(m.item));
+            }
+            if (m.ability) {
+                var abilID = toID(m.ability);
+                if (BattleAbilities[abilID]) details.push('<strong>Ability:</strong> <a href="' + Config.baseurl + 'abilities/' + abilID + '" data-target="push">' + escapeHTML(BattleAbilities[abilID].name) + '</a>');
+                else details.push('<strong>Ability:</strong> ' + escapeHTML(m.ability));
+            }
+            if (m.nature) details.push('<strong>Nature:</strong> ' + escapeHTML(m.nature));
+            if (details.length) buf += '<div class="resultsub">' + details.join(' &nbsp; | &nbsp; ') + '</div>';
+            // Moves
+            var moves = m.moves || [];
+            if (moves.length) {
+                var mv = [];
+                for(var j = 0; j < moves.length; j++){
+                    var moveName = moves[j];
+                    var moveID = toID(moveName);
+                    if (BattleMovedex[moveID]) mv.push('<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push">' + escapeHTML(BattleMovedex[moveID].name) + '</a>');
+                    else mv.push(escapeHTML(moveName));
+                }
+                buf += '<div class="resultsub"><strong>Moves:</strong> ' + mv.join(' / ') + '</div>';
+            }
+            buf += '</li>';
+        }
+        buf += '</ul>';
+        buf += '</div>';
+        this.html(buf);
     }
 });
-var pokedex = new Pokedex();
 
-},{}]},["7kawL","hmJ6v"], "hmJ6v", "parcelRequire6a64", {})
+},{}]},["kBLB0","fMa5c"], "fMa5c", "parcelRequire6a64", {})
 
-//# sourceMappingURL=Binary-Star-Pokedex.16f8a8e4.js.map
+//# sourceMappingURL=Binary-Star-Pokedex.76c83531.js.map

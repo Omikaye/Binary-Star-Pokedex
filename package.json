@@ -15,6 +15,7 @@
     "validate": "node scripts/validate-pokedex.js",
     "import-all": "node scripts/import-all.js",
     "import-moves": "node scripts/import-moves.js",
+    "import-trainers": "node scripts/import-trainers.js",
     "import-basegame": "node scripts/import-basegame-stats.js",
     "generate-links": "node scripts/generate-item-pokemon-links.js",
     "deploy": "npm run dist && tsx build/gh-pages.ts"

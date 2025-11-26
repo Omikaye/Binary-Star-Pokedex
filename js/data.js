@@ -8,6 +8,7 @@ import Icons from "../data/icons.json";
 import Config from "../data/config.json";
 import BaseGameStats from "../data/basegame.json";
 import ItemPokemonLinks from "../data/item-pokemon-links.json";
+import Trainers from "../data/trainers.json";
 // ...existing code...
 import './compat.js'; // ensure legacy helpers are available early
 // ...existing code...
@@ -22,6 +23,7 @@ window.BattleTypeChart = BattleTypeChart;
 window.Learnsets = Learnsets;
 window.BaseGameStats = BaseGameStats;
 window.ItemPokemonLinks = ItemPokemonLinks;
+window.Trainers = Trainers;
 
 window.toID = (text) => {
   if (text?.id) {

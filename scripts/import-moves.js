@@ -45,7 +45,9 @@ function parseMovesTxt(src) {
   function mapTargeting(text) {
     // Map human-readable Targeting to simplified PS-like targets for UI
     const t = text.toLowerCase();
-    if (t.includes("everyone but user") || t.includes('all foes')) return 'allAdjacent';
+    // Distinguish between hitting only foes vs everyone except the user
+    if (t.includes('all foes')) return 'allAdjacentFoes';
+    if (t.includes("everyone but user")) return 'allAdjacent';
     if (t.includes("user's field") || t.includes('users field')) return 'allySide';
     if (t.includes('all allies')) return 'allyTeam';
     if (t === 'self') return 'self';
