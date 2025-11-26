@@ -85,7 +85,9 @@ window.getTypeIcon = (type) => {
 
 
 window.getPokemonIcon = (pokemon) => {
-  let [left, top] = Icons.pokemon[toID(pokemon)] ?? [0, 0];
+  // Allow display-name translations (e.g., "Diglett 1" -> "Diglett-Alola")
+  const translated = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(pokemon) : pokemon;
+  let [left, top] = Icons.pokemon[toID(translated)] ?? [0, 0];
   return `background:transparent url(${ResourcePrefix}sprites/pokemonicons-sheet.png?v14) no-repeat scroll ${left}px ${top}px`;
 };
 

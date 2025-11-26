@@ -207,7 +207,7 @@
       });
     }
   }
-})({"kBLB0":[function(require,module,exports,__globalThis) {
+})({"3HI0Z":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -215,7 +215,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "c6812e6b76c83531";
+module.bundle.HMR_BUNDLE_ID = "20cc0dc90239624e";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -713,216 +713,217 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"fMa5c":[function(require,module,exports,__globalThis) {
-window.PokedexTrainerPanel = PokedexResultPanel.extend({
-    initialize: function(id) {
-        // Normalize id to 3 digits (e.g., "2" -> "002")
-        const raw = ('' + id).replace(/[^0-9]/g, '');
-        const norm = raw.padStart(3, '0');
-        this.id = norm;
-        const trainers = window.Trainers || [];
-        const trainer = trainers.find((t)=>t.id === norm);
-        if (!trainer) {
-            this.shortTitle = 'Trainer ' + norm;
-            this.html('<div class="pfx-body dexentry"><a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a><h1>Trainer ' + norm + '</h1><p>Trainer not found.</p></div>');
-            return;
-        }
-        this.trainer = trainer;
-        this.shortTitle = trainer.name;
-        var buf = '<div class="pfx-body dexentry">';
-        buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Trainers</a>';
-        buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a></h1>';
-        // Prize Money
-        buf += '<dl>';
-        buf += '<dt>Prize Money:</dt> <dd>$' + (trainer.prizeMoney || 0) + '</dd>';
-        // Location placeholder (link to locations root for now)
-        buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/" data-target="push">Coming soon</a></dd>';
-        buf += '</dl>';
-        // Team
-        buf += '<h3>Team</h3>';
-        buf += '<ul class="utilichart nokbd">';
-        var TYPE_COLORS = {
-            Normal: '#A8A77A',
-            Fire: '#EE8130',
-            Water: '#6390F0',
-            Electric: '#F7D02C',
-            Grass: '#7AC74C',
-            Ice: '#96D9D6',
-            Fighting: '#C22E28',
-            Poison: '#A33EA1',
-            Ground: '#E2BF65',
-            Flying: '#A98FF3',
-            Psychic: '#F95587',
-            Bug: '#A6B91A',
-            Rock: '#B6A136',
-            Ghost: '#735797',
-            Dragon: '#6F35FC',
-            Dark: '#705746',
-            Steel: '#B7B7CE',
-            Fairy: '#D685AD'
-        };
-        var NATURE_EFFECTS = {
-            Adamant: [
-                'Atk',
-                'SpA'
-            ],
-            Modest: [
-                'SpA',
-                'Atk'
-            ],
-            Jolly: [
-                'Spe',
-                'SpA'
-            ],
-            Timid: [
-                'Spe',
-                'Atk'
-            ],
-            Impish: [
-                'Def',
-                'SpA'
-            ],
-            Bold: [
-                'Def',
-                'Atk'
-            ],
-            Careful: [
-                'SpD',
-                'SpA'
-            ],
-            Calm: [
-                'SpD',
-                'Atk'
-            ],
-            Naughty: [
-                'Atk',
-                'SpD'
-            ],
-            Lonely: [
-                'Atk',
-                'Def'
-            ],
-            Hasty: [
-                'Spe',
-                'Def'
-            ],
-            Naive: [
-                'Spe',
-                'SpD'
-            ],
-            Gentle: [
-                'SpD',
-                'Def'
-            ],
-            Lax: [
-                'Def',
-                'SpD'
-            ],
-            Rash: [
-                'SpA',
-                'SpD'
-            ],
-            Mild: [
-                'SpA',
-                'Def'
-            ],
-            Quiet: [
-                'SpA',
-                'Spe'
-            ],
-            Brave: [
-                'Atk',
-                'Spe'
-            ],
-            Relaxed: [
-                'Def',
-                'Spe'
-            ],
-            Sassy: [
-                'SpD',
-                'Spe'
-            ],
-            Bashful: null,
-            Docile: null,
-            Serious: null,
-            Hardy: null,
-            Quirky: null
-        };
-        for(var i = 0; i < (trainer.team || []).length; i++){
-            var m = trainer.team[i] || {};
-            var dispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(m.name || '') : m.name || '';
-            var monID = toID(dispName);
-            var monData = BattlePokedex[monID];
-            buf += '<li class="result" style="margin-bottom:10px">';
-            // Row 1: Name (Level) | Pokemon Sprite | Item Sprite | Types
-            buf += '<div class="resultrow" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">';
-            var nameHtml = escapeHTML(monData ? monData.name : m.name || '???') + ' <small>(Lv. ' + (m.level || '?') + ')</small>';
-            buf += '<span class="col namecol" style="min-width:200px">' + nameHtml + '</span>';
-            if (monData) buf += '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(monData.name) + '">' + '<span class="picon" style="' + getPokemonIcon(monID) + '"></span>' + '</a>';
-            else buf += '<span class="picon" style="' + getPokemonIcon(monID) + '"></span>';
-            if (m.item) {
-                var itemID = toID(m.item);
-                var itemName = BattleItems[itemID]?.name || m.item;
-                var itemHref = BattleItems[itemID] ? Config.baseurl + 'items/' + itemID : null;
-                var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + '"></span>';
-                buf += itemHref ? '<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '">' + itemIcon + '</a>' : itemIcon;
-            }
-            // Types badges
-            var types = monData?.types || [];
-            if (types.length) buf += '<span class="col" style="display:inline-flex;gap:4px">' + types.map((t)=>getTypeIcon(t)).join('') + '</span>';
-            buf += '</div>';
-            // Row 2: Ability | Nature with effects
-            var abilHtml = '';
-            if (m.ability) {
-                var abilID = toID(m.ability);
-                var abilName = BattleAbilities[abilID]?.name || m.ability;
-                var abilHref = BattleAbilities[abilID] ? Config.baseurl + 'abilities/' + abilID : null;
-                abilHtml = '<strong>Ability:</strong> ' + (abilHref ? '<a href="' + abilHref + '" data-target="push">' + escapeHTML(abilName) + '</a>' : escapeHTML(abilName));
-            }
-            var natureHtml = '';
-            if (m.nature) {
-                var eff = NATURE_EFFECTS[m.nature] || null;
-                var effText = eff ? ' (' + eff[0] + "\u2191 / " + eff[1] + "\u2193)" : '';
-                natureHtml = '<strong>Nature:</strong> ' + escapeHTML(m.nature) + effText;
-            }
-            var line2 = [
-                abilHtml,
-                natureHtml
-            ].filter(Boolean).join(' &nbsp; | &nbsp; ');
-            if (line2) buf += '<div class="resultsub" style="margin-top:4px">' + line2 + '</div>';
-            // Row 3: Moves (colored by type, bold if STAB)
-            var moves = m.moves || [];
-            if (moves.length) {
-                var mv = [];
-                var stabTypes = (monData?.types || []).map((t)=>toID(t));
-                for(var j = 0; j < moves.length; j++){
-                    var moveName = moves[j];
-                    var moveID = toID(moveName);
-                    var move = BattleMovedex[moveID];
-                    var color = move ? TYPE_COLORS[move.type] : null;
-                    var isSTAB = move && stabTypes.indexOf(toID(move.type)) >= 0;
-                    var inner = move ? escapeHTML(move.name) : escapeHTML(moveName);
-                    var linkStart = move ? '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push"' : '<span';
-                    var linkEnd = move ? '</a>' : '</span>';
-                    var style = color ? ' style="background:' + color + ';color:#fff;padding:2px 6px;border-radius:4px;display:inline-block"' : '';
-                    var weightStart = isSTAB ? '<strong>' : '';
-                    var weightEnd = isSTAB ? '</strong>' : '';
-                    mv.push(linkStart + style + '>' + weightStart + inner + weightEnd + linkEnd);
-                }
-                // Two per line formatting
-                var rowA = mv.slice(0, 2).join(' &nbsp; ');
-                var rowB = mv.slice(2, 4).join(' &nbsp; ');
-                buf += '<div class="resultsub" style="margin-top:4px">' + rowA + '</div>';
-                if (rowB) buf += '<div class="resultsub" style="margin-top:2px">' + rowB + '</div>';
-            }
-            buf += '</li>';
-        }
-        buf += '</ul>';
-        buf += '</div>';
-        this.html(buf);
-    }
-});
+},{}],"1cJWR":[function(require,module,exports,__globalThis) {
+// Name dictionary mapping display names like "Diglett 1" -> canonical forms used in data
+// Generated from data/rawtxt/Dictionary.cs
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "NameDictionary", ()=>NameDictionary);
+const NameDictionary = {
+    "Basculin 1": "Basculin-Blue-Striped",
+    "Deoxys 1": "Deoxys-Attack",
+    "Deoxys 2": "Deoxys-Defense",
+    "Deoxys 3": "Deoxys-Speed",
+    "Wormadam 1": "Wormadam-Sandy",
+    "Wormadam 2": "Wormadam-Trash",
+    "Shaymin 1": "Shaymin-Sky",
+    "Giratina 1": "Giratina-Origin",
+    "Rotom 1": "Rotom-Heat",
+    "Rotom 2": "Rotom-Wash",
+    "Rotom 3": "Rotom-Frost",
+    "Rotom 4": "Rotom-Fan",
+    "Rotom 5": "Rotom-Mow",
+    "Castform 1": "Castform-Sunny",
+    "Castform 2": "Castform-Rainy",
+    "Castform 3": "Castform-Snowy",
+    "Cherrim 1": "Cherrim-Sunshine",
+    "Shellos 1": "Shellos-East",
+    "Gastrodon 1": "Gastrodon-East",
+    "Darmanitan 1": "Darmanitan-Mega",
+    "Meloetta 1": "Meloetta-Pirouette",
+    "Kyurem 1": "Kyurem-White",
+    "Kyurem 2": "Kyurem-Black",
+    "Keldeo 1": "Keldeo-Resolute",
+    "Tornadus 1": "Tornadus-Therian",
+    "Thundurus 1": "Thundurus-Therian",
+    "Landorus 1": "Landorus-Therian",
+    "Gengar 1": "Gengar-Mega",
+    "Meowstic 1": "Meowstic-F",
+    "Furfrou 1": "Furfrou-Heart",
+    "Furfrou 2": "Furfrou-Star",
+    "Furfrou 3": "Furfrou-Diamond",
+    "Furfrou 4": "Furfrou-Debutante",
+    "Furfrou 5": "Furfrou-Matron",
+    "Furfrou 6": "Furfrou-Dandy",
+    "Furfrou 7": "Furfrou-La-Reine",
+    "Furfrou 8": "Furfrou-Kabuki",
+    "Furfrou 9": "Furfrou-Pharaoh",
+    "Charizard 1": "Charizard-Mega-X",
+    "Charizard 2": "Charizard-Mega-Y",
+    "Mewtwo 1": "Mewtwo-Mega-X",
+    "Mewtwo 2": "Mewtwo-Mega-Y",
+    "Aegislash 1": "Aegislash-Blade",
+    "Pumpkaboo 1": "Pumpkaboo-Small",
+    "Pumpkaboo 2": "Pumpkaboo-Large",
+    "Pumpkaboo 3": "Pumpkaboo-Super",
+    "Gourgeist 1": "Gourgeist-Small",
+    "Gourgeist 2": "Gourgeist-Large",
+    "Gourgeist 3": "Gourgeist-Super",
+    "Floette 5": "Floette-Eternal",
+    "Sawsbuck 1": "Sawsbuck",
+    "Sawsbuck 2": "Sawsbuck",
+    "Sawsbuck 3": "Sawsbuck",
+    "Vivillon 1": "Vivillon",
+    "Vivillon 2": "Vivillon",
+    "Vivillon 3": "Vivillon",
+    "Vivillon 4": "Vivillon",
+    "Vivillon 5": "Vivillon",
+    "Vivillon 6": "Vivillon",
+    "Vivillon 7": "Vivillon",
+    "Vivillon 8": "Vivillon",
+    "Vivillon 9": "Vivillon",
+    "Vivillon 10": "Vivillon",
+    "Vivillon 11": "Vivillon",
+    "Vivillon 12": "Vivillon",
+    "Vivillon 13": "Vivillon",
+    "Vivillon 14": "Vivillon",
+    "Vivillon 15": "Vivillon",
+    "Vivillon 16": "Vivillon",
+    "Vivillon 17": "Vivillon",
+    "Vivillon 18": "Vivillon",
+    "Vivillon 19": "Vivillon",
+    "Floette 1": "Floette",
+    "Floette 2": "Floette",
+    "Floette 3": "Floette",
+    "Floette 4": "Floette",
+    "Rattata 1": "Rattata-Alola",
+    "Raticate 1": "Raticate-Alola",
+    "Raichu 1": "Raichu-Alola",
+    "Sandshrew 1": "Sandshrew-Alola",
+    "Sandslash 1": "Sandslash-Alola",
+    "Vulpix 1": "Vulpix-Alola",
+    "Ninetales 1": "Ninetales-Alola",
+    "Diglett 1": "Diglett-Alola",
+    "Dugtrio 1": "Dugtrio-Alola",
+    "Meowth 1": "Meowth-Alola",
+    "Persian 1": "Persian-Alola",
+    "Geodude 1": "Geodude-Alola",
+    "Graveler 1": "Graveler-Alola",
+    "Golem 1": "Golem-Alola",
+    "Grimer 1": "Grimer-Alola",
+    "Muk 1": "Muk-Alola",
+    "Exeggutor 1": "Exeggutor-Alola",
+    "Marowak 1": "Marowak-Alola",
+    "Venusaur 1": "Venusaur-Mega",
+    "Blastoise 1": "Blastoise-Mega",
+    "Beedrill 1": "Beedrill-Mega",
+    "Pidgeot 1": "Pidgeot-Mega",
+    "Alakazam 1": "Alakazam-Mega",
+    "Slowbro 1": "Slowbro-Mega",
+    "Kangaskhan 1": "Kangaskhan-Mega",
+    "Pinsir 1": "Pinsir-Mega",
+    "Gyarados 1": "Gyarados-Mega",
+    "Aerodactyl 1": "Aerodactyl-Mega",
+    "Ampharos 1": "Ampharos-Mega",
+    "Steelix 1": "Steelix-Mega",
+    "Scizor 1": "Scizor-Mega",
+    "Heracross 1": "Heracross-Mega",
+    "Houndoom 1": "Houndoom-Mega",
+    "Tyranitar 1": "Tyranitar-Mega",
+    "Sceptile 1": "Sceptile-Mega",
+    "Blaziken 1": "Blaziken-Mega",
+    "Swampert 1": "Swampert-Mega",
+    "Gardevoir 1": "Gardevoir-Mega",
+    "Sableye 1": "Sableye-Mega",
+    "Mawile 1": "Mawile-Mega",
+    "Aggron 1": "Aggron-Mega",
+    "Medicham 1": "Medicham-Mega",
+    "Manectric 1": "Manectric-Mega",
+    "Sharpedo 1": "Sharpedo-Mega",
+    "Camerupt 1": "Camerupt-Mega",
+    "Altaria 1": "Altaria-Mega",
+    "Banette 1": "Banette-Mega",
+    "Absol 1": "Absol-Mega",
+    "Glalie 1": "Glalie-Mega",
+    "Salamence 1": "Salamence-Mega",
+    "Metagross 1": "Metagross-Mega",
+    "Latias 1": "Latias-Mega",
+    "Latios 1": "Latios-Mega",
+    "Rayquaza 1": "Rayquaza-Mega",
+    "Lopunny 1": "Lopunny-Mega",
+    "Garchomp 1": "Garchomp-Mega",
+    "Lucario 1": "Lucario-Mega",
+    "Abomasnow 1": "Abomasnow-Mega",
+    "Gallade 1": "Gallade-Mega",
+    "Audino 1": "Audino-Mega",
+    "Greninja 2": "Greninja-Mega-Y",
+    "Greninja 1": "Greninja-Mega-X",
+    "Diancie 1": "Diancie-Mega",
+    "Groudon 1": "Groudon-Primal",
+    "Kyogre 1": "Kyogre-Primal",
+    "Hoopa 1": "Hoopa-Unbound",
+    "Porygon-Z": "PorygonZ",
+    "Raticate 2": "Raticate-Megamax",
+    "Gumshoos 1": "Gumshoos-Megamax",
+    "Vikavolt 1": "Vikavolt-Megamax",
+    "Oricorio": "Oricorio",
+    "Oricorio 1": "Oricorio-Pom-Pom",
+    "Oricorio 2": "Oricorio-Pau",
+    "Oricorio 3": "Oricorio-Sensu",
+    "Ribombee 1": "Ribombee-Megamax",
+    "Rockruff 1": "Rockruff-Midnight",
+    "Lycanroc 1": "Lycanroc-Midnight",
+    "Lycanroc 2": "Lycanroc-Dusk",
+    "Wishiwashi 1": "Wishiwashi-School",
+    "Araquanid 1": "Araquanid-Megamax",
+    "Lurantis 1": "Lurantis-Megamax",
+    "Salazzle 1": "Salazzle-Megamax",
+    "Mimikyu 1": "Mimikyu-Busted",
+    "Mimikyu 2": "Mimikyu-Megamax",
+    "Mimikyu 3": "Mimikyu-Busted-Megamax",
+    "Jangmo-o": "Jangmoo",
+    "Hakamo-o": "Hakamoo",
+    "Kommo-o": "Kommoo",
+    "Kommo-o 1": "Kommoo-Megamax",
+    "Togedemaru 1": "Togedemaru-Megamax",
+    "Marowak 2": "Marowak-Megamax",
+    "Minior": "Minior-Meteor",
+    "Minior 1": "Minior-Meteor",
+    "Minior 2": "Minior-Meteor",
+    "Minior 3": "Minior-Meteor",
+    "Minior 4": "Minior-Meteor",
+    "Minior 5": "Minior-Meteor",
+    "Minior 6": "Minior-Meteor",
+    "Minior 7": "Minior",
+    "Minior 8": "Minior",
+    "Minior 9": "Minior",
+    "Minior 10": "Minior",
+    "Minior 11": "Minior",
+    "Minior 12": "Minior",
+    "Minior 13": "Minior",
+    "Zygarde 1": "Zygarde-10%",
+    "Zygarde 2": "Zygarde-10%",
+    "Zygarde 3": "Zygarde-50%",
+    "Zygarde 4": "Zygarde-Complete",
+    "Necrozma 1": "Necrozma-Dusk-Mane",
+    "Necrozma 2": "Necrozma-Dawn-Wings",
+    "Necrozma 3": "Necrozma-Ultra",
+    "Magearna 1": "Magearna-Original",
+    "Pikachu 1": "Pikachu-Original",
+    "Pikachu 2": "Pikachu-Hoenn",
+    "Pikachu 3": "Pikachu-Sinnoh",
+    "Pikachu 4": "Pikachu-Unova",
+    "Pikachu 5": "Pikachu-Kalos",
+    "Pikachu 6": "Pikachu-Alola",
+    "Pikachu 7": "Pikachu-Partner"
+};
+// Expose globally for existing UI helpers
+window.NameDictionary = NameDictionary;
+// Helper to translate display names to canonical species names
+window.translateDisplayName = function(name) {
+    return NameDictionary[name] || name;
+};
 
-},{}]},["kBLB0","fMa5c"], "fMa5c", "parcelRequire6a64", {})
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["3HI0Z","1cJWR"], "1cJWR", "parcelRequire6a64", {})
 
-//# sourceMappingURL=Binary-Star-Pokedex.76c83531.js.map
+//# sourceMappingURL=Binary-Star-Pokedex.0239624e.js.map

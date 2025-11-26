@@ -808,7 +808,9 @@ window.getTypeIcon = (type)=>{
     return `<img src="${ResourcePrefix}sprites/types/${sanitizedType}.png" alt="${type}" height="14" width="32" class="pixelated" />`;
 };
 window.getPokemonIcon = (pokemon)=>{
-    let [left, top] = (0, _iconsJsonDefault.default).pokemon[toID(pokemon)] ?? [
+    // Allow display-name translations (e.g., "Diglett 1" -> "Diglett-Alola")
+    const translated = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(pokemon) : pokemon;
+    let [left, top] = (0, _iconsJsonDefault.default).pokemon[toID(translated)] ?? [
         0,
         0
     ];
