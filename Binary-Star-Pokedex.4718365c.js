@@ -1070,8 +1070,13 @@ window.PokedexSearchPanel = Panels.Panel.extend({
             const t = list[i];
             const display = '[' + t.id + '] ' + escapeHTML(t.name);
             if (q && display.toLowerCase().indexOf(q) === -1) continue;
-            const team = (t.team || []).map((m)=>escapeHTML(m.name) + ' (Lv. ' + (m.level || '?') + ')').join(', ');
-            buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push">' + '<span class="col namecol">' + display + '</span>' + '<span class="col smallcol">$' + (t.prizeMoney || 0) + '</span>' + '<span class="col">' + team + '</span>' + '</a>' + '</li>';
+            // Right-justified party sprites; hide prize money per request
+            const teamSprites = (t.team || []).map((m)=>{
+                const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : m.name || '';
+                const monID = toID(disp);
+                return '<span class="picon" style="' + getPokemonIcon(monID) + '"></span>';
+            }).join('');
+            buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push">' + '<span class="col namecol">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap">' + teamSprites + '</span>' + '</a>' + '</li>';
         }
         buf += '</ul>';
         this.$('.results').html(buf);

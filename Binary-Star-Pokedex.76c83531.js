@@ -741,41 +741,179 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         // Team
         buf += '<h3>Team</h3>';
         buf += '<ul class="utilichart nokbd">';
+        var TYPE_COLORS = {
+            Normal: '#A8A77A',
+            Fire: '#EE8130',
+            Water: '#6390F0',
+            Electric: '#F7D02C',
+            Grass: '#7AC74C',
+            Ice: '#96D9D6',
+            Fighting: '#C22E28',
+            Poison: '#A33EA1',
+            Ground: '#E2BF65',
+            Flying: '#A98FF3',
+            Psychic: '#F95587',
+            Bug: '#A6B91A',
+            Rock: '#B6A136',
+            Ghost: '#735797',
+            Dragon: '#6F35FC',
+            Dark: '#705746',
+            Steel: '#B7B7CE',
+            Fairy: '#D685AD'
+        };
+        var NATURE_EFFECTS = {
+            Adamant: [
+                'Atk',
+                'SpA'
+            ],
+            Modest: [
+                'SpA',
+                'Atk'
+            ],
+            Jolly: [
+                'Spe',
+                'SpA'
+            ],
+            Timid: [
+                'Spe',
+                'Atk'
+            ],
+            Impish: [
+                'Def',
+                'SpA'
+            ],
+            Bold: [
+                'Def',
+                'Atk'
+            ],
+            Careful: [
+                'SpD',
+                'SpA'
+            ],
+            Calm: [
+                'SpD',
+                'Atk'
+            ],
+            Naughty: [
+                'Atk',
+                'SpD'
+            ],
+            Lonely: [
+                'Atk',
+                'Def'
+            ],
+            Hasty: [
+                'Spe',
+                'Def'
+            ],
+            Naive: [
+                'Spe',
+                'SpD'
+            ],
+            Gentle: [
+                'SpD',
+                'Def'
+            ],
+            Lax: [
+                'Def',
+                'SpD'
+            ],
+            Rash: [
+                'SpA',
+                'SpD'
+            ],
+            Mild: [
+                'SpA',
+                'Def'
+            ],
+            Quiet: [
+                'SpA',
+                'Spe'
+            ],
+            Brave: [
+                'Atk',
+                'Spe'
+            ],
+            Relaxed: [
+                'Def',
+                'Spe'
+            ],
+            Sassy: [
+                'SpD',
+                'Spe'
+            ],
+            Bashful: null,
+            Docile: null,
+            Serious: null,
+            Hardy: null,
+            Quirky: null
+        };
         for(var i = 0; i < (trainer.team || []).length; i++){
             var m = trainer.team[i] || {};
-            var monID = toID(m.name);
+            var dispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(m.name || '') : m.name || '';
+            var monID = toID(dispName);
             var monData = BattlePokedex[monID];
-            buf += '<li class="result">';
-            buf += '<div class="resultrow">';
-            // Pokemon name (link if found)
-            if (monData) buf += '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push">' + '<span class="picon" style="' + getPokemonIcon(monID) + '"></span>' + '<span class="col namecol">' + escapeHTML(monData.name) + ' <small>(Lv. ' + (m.level || '?') + ')</small></span>' + '</a>';
-            else buf += '<span class="col namecol">' + escapeHTML(m.name || '???') + ' <small>(Lv. ' + (m.level || '?') + ')</small></span>';
-            buf += '</div>';
-            // Details line: item, ability, nature
-            var details = [];
+            buf += '<li class="result" style="margin-bottom:10px">';
+            // Row 1: Name (Level) | Pokemon Sprite | Item Sprite | Types
+            buf += '<div class="resultrow" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">';
+            var nameHtml = escapeHTML(monData ? monData.name : m.name || '???') + ' <small>(Lv. ' + (m.level || '?') + ')</small>';
+            buf += '<span class="col namecol" style="min-width:200px">' + nameHtml + '</span>';
+            if (monData) buf += '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(monData.name) + '">' + '<span class="picon" style="' + getPokemonIcon(monID) + '"></span>' + '</a>';
+            else buf += '<span class="picon" style="' + getPokemonIcon(monID) + '"></span>';
             if (m.item) {
                 var itemID = toID(m.item);
-                if (BattleItems[itemID]) details.push('<strong>Item:</strong> <a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push">' + escapeHTML(BattleItems[itemID].name) + '</a>');
-                else details.push('<strong>Item:</strong> ' + escapeHTML(m.item));
+                var itemName = BattleItems[itemID]?.name || m.item;
+                var itemHref = BattleItems[itemID] ? Config.baseurl + 'items/' + itemID : null;
+                var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + '"></span>';
+                buf += itemHref ? '<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '">' + itemIcon + '</a>' : itemIcon;
             }
+            // Types badges
+            var types = monData?.types || [];
+            if (types.length) buf += '<span class="col" style="display:inline-flex;gap:4px">' + types.map((t)=>getTypeIcon(t)).join('') + '</span>';
+            buf += '</div>';
+            // Row 2: Ability | Nature with effects
+            var abilHtml = '';
             if (m.ability) {
                 var abilID = toID(m.ability);
-                if (BattleAbilities[abilID]) details.push('<strong>Ability:</strong> <a href="' + Config.baseurl + 'abilities/' + abilID + '" data-target="push">' + escapeHTML(BattleAbilities[abilID].name) + '</a>');
-                else details.push('<strong>Ability:</strong> ' + escapeHTML(m.ability));
+                var abilName = BattleAbilities[abilID]?.name || m.ability;
+                var abilHref = BattleAbilities[abilID] ? Config.baseurl + 'abilities/' + abilID : null;
+                abilHtml = '<strong>Ability:</strong> ' + (abilHref ? '<a href="' + abilHref + '" data-target="push">' + escapeHTML(abilName) + '</a>' : escapeHTML(abilName));
             }
-            if (m.nature) details.push('<strong>Nature:</strong> ' + escapeHTML(m.nature));
-            if (details.length) buf += '<div class="resultsub">' + details.join(' &nbsp; | &nbsp; ') + '</div>';
-            // Moves
+            var natureHtml = '';
+            if (m.nature) {
+                var eff = NATURE_EFFECTS[m.nature] || null;
+                var effText = eff ? ' (' + eff[0] + "\u2191 / " + eff[1] + "\u2193)" : '';
+                natureHtml = '<strong>Nature:</strong> ' + escapeHTML(m.nature) + effText;
+            }
+            var line2 = [
+                abilHtml,
+                natureHtml
+            ].filter(Boolean).join(' &nbsp; | &nbsp; ');
+            if (line2) buf += '<div class="resultsub" style="margin-top:4px">' + line2 + '</div>';
+            // Row 3: Moves (colored by type, bold if STAB)
             var moves = m.moves || [];
             if (moves.length) {
                 var mv = [];
+                var stabTypes = (monData?.types || []).map((t)=>toID(t));
                 for(var j = 0; j < moves.length; j++){
                     var moveName = moves[j];
                     var moveID = toID(moveName);
-                    if (BattleMovedex[moveID]) mv.push('<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push">' + escapeHTML(BattleMovedex[moveID].name) + '</a>');
-                    else mv.push(escapeHTML(moveName));
+                    var move = BattleMovedex[moveID];
+                    var color = move ? TYPE_COLORS[move.type] : null;
+                    var isSTAB = move && stabTypes.indexOf(toID(move.type)) >= 0;
+                    var inner = move ? escapeHTML(move.name) : escapeHTML(moveName);
+                    var linkStart = move ? '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push"' : '<span';
+                    var linkEnd = move ? '</a>' : '</span>';
+                    var style = color ? ' style="background:' + color + ';color:#fff;padding:2px 6px;border-radius:4px;display:inline-block"' : '';
+                    var weightStart = isSTAB ? '<strong>' : '';
+                    var weightEnd = isSTAB ? '</strong>' : '';
+                    mv.push(linkStart + style + '>' + weightStart + inner + weightEnd + linkEnd);
                 }
-                buf += '<div class="resultsub"><strong>Moves:</strong> ' + mv.join(' / ') + '</div>';
+                // Two per line formatting
+                var rowA = mv.slice(0, 2).join(' &nbsp; ');
+                var rowB = mv.slice(2, 4).join(' &nbsp; ');
+                buf += '<div class="resultsub" style="margin-top:4px">' + rowA + '</div>';
+                if (rowB) buf += '<div class="resultsub" style="margin-top:2px">' + rowB + '</div>';
             }
             buf += '</li>';
         }
