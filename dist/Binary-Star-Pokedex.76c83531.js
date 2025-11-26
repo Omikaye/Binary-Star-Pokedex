@@ -854,7 +854,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
             var monID = toID(dispName);
             var monData = BattlePokedex[monID];
             var rowBg = i % 2 === 1 ? '#f7f7f7' : '#ffffff';
-            buf += '<li class="result" style="background:' + rowBg + ';padding:12px 12px 14px;border-radius:6px;margin-bottom:24px;overflow:hidden">';
+            buf += '<li class="result" style="background:' + rowBg + ';padding:12px 12px 14px;border-radius:6px;margin-bottom:240px">';
             // Row 1: Pokemon Sprite | Item Sprite | Name (Level)
             buf += '<div class="resultrow" style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">';
             // Sprites block: keep on same plane and close together
@@ -866,7 +866,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
                 var itemName = BattleItems[itemID]?.name || m.item;
                 var itemHref = BattleItems[itemID] ? Config.baseurl + 'items/' + itemID : null;
                 var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:24px;height:24px;vertical-align:middle"></span>';
-                spritesBlock += itemHref ? '<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:-8px;position:relative;top:-4px">' + itemIcon + '</a>' : '<span style="margin-left:16px;position:relative;top:2px">' + itemIcon + '</span>';
+                spritesBlock += itemHref ? '<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:-12px;position:relative;top:4px">' + itemIcon + '</a>' : '<span style="margin-left:16px;position:relative;top:2px">' + itemIcon + '</span>';
             }
             buf += '<span style="display:inline-flex;align-items:center;gap:2px;margin-left:-8px">' + spritesBlock + '</span>';
             var nameHtml = '<span style="font-size:14px">' + escapeHTML(monData ? monData.name : m.name || '???') + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
