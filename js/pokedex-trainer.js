@@ -51,7 +51,8 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var monID = toID(dispName);
       var monData = BattlePokedex[monID];
 
-      buf += '<li class="result" style="margin-bottom:120px">';
+      var rowBg = (i % 2 === 1) ? '#f7f7f7' : '#ffffff';
+      buf += '<li class="result" style="background:' + rowBg + ';padding:8px;border-radius:6px;margin-bottom:120px">';
 
       // Row 1: Pokemon Sprite | Item Sprite | Name (Level)
       buf += '<div class="resultrow" style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">';
@@ -69,9 +70,9 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         var itemName = BattleItems[itemID]?.name || m.item;
         var itemHref = BattleItems[itemID] ? (Config.baseurl + 'items/' + itemID) : null;
         var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:24px;height:24px;vertical-align:middle"></span>';
-        spritesBlock += itemHref ? ('<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:2px">' + itemIcon + '</a>') : ('<span style="margin-left:2px">' + itemIcon + '</span>');
+        spritesBlock += itemHref ? ('<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:16px;position:relative;top:4px">' + itemIcon + '</a>') : ('<span style="margin-left:16px;position:relative;top:4px">' + itemIcon + '</span>');
       }
-      buf += '<span style="display:inline-flex;align-items:center;gap:2px">' + spritesBlock + '</span>';
+      buf += '<span style="display:inline-flex;align-items:center;gap:2px;margin-left:-8px">' + spritesBlock + '</span>';
       var nameHtml = '<span style="font-size:14px">' + escapeHTML(monData ? monData.name : (m.name || '???')) + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
       buf += '<span class="col namecol" style="min-width:200px">' + nameHtml + '</span>';
       buf += '</div>';
@@ -92,7 +93,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
               '<span class="col abilitydesccol">' + escapeHTML(abilityObj.shortDesc || abilityObj.desc || '') + '</span> ' +
             '</a>' +
           '</li>';
-          buf += '<ul class="utilichart nokbd" style="margin-top:6px">' + abilRow + '</ul>';
+          buf += '<ul class="utilichart nokbd" style="margin-top:4px;margin-bottom:2px">' + abilRow + '</ul>';
         } else {
           // Fallback plain text if ability not found
           buf += '<div class="resultsub" style="margin-top:4px"><strong>Ability:</strong> ' + escapeHTML(m.ability) + '</div>';
@@ -103,13 +104,13 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       if (m.nature) {
         var eff = NATURE_EFFECTS[m.nature] || null;
         if (eff) {
-          natureHtml = '<strong>Nature:</strong> ' + escapeHTML(m.nature) +
+          natureHtml = '<small>Nature:</small> ' + escapeHTML(m.nature) +
             ' (<span style="color:#1f9d3a">' + eff[0] + '↑</span> / <span style="color:#c22e28">' + eff[1] + '↓</span>)';
         } else {
-          natureHtml = '<strong>Nature:</strong> ' + escapeHTML(m.nature) + ' (Neutral)';
+          natureHtml = '<small>Nature:</small> ' + escapeHTML(m.nature) + ' (Neutral)';
         }
       }
-      if (natureHtml) buf += '<div class="resultsub" style="margin-top:4px">' + natureHtml + '</div>';
+      if (natureHtml) buf += '<div class="resultsub" style="margin-top:2px">' + natureHtml + '</div>';
 
       // Row 3: Moves as buttons like Pokédex learnset (no level)
       var moves = m.moves || [];
@@ -122,7 +123,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
             mvbuf += '<li class="result">' + escapeHTML(moves[j]) + '</li>';
             continue;
           }
-          mvbuf += BattleSearch.renderMoveRowInner(move);
+          mvbuf += '<li class="result">' + BattleSearch.renderMoveRowInner(move) + '</li>';
         }
         buf += '<ul class="utilichart nokbd" style="margin-top:6px">' + mvbuf + '</ul>';
       }
