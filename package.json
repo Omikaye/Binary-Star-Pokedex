@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "gendata": "tsx build/build-indexes.ts",
     "dist": "tsx build/dist.ts dist",
-    "serve": "parcel serve index.html images/**/*.png --public-url /BinaryStar-Dex/",
+    "serve": "parcel serve index.html images/**/*.png --public-url /Binary-Star-Pokedex/",
     "convert-levelup": "node scripts/convert-levelup.js",
     "merge-tm-tutor": "node scripts/merge-tm-tutor.js",
     "convert-pokedex": "node scripts/convert-pokedex-array.js",
