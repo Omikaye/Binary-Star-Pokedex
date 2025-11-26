@@ -854,7 +854,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
             var monID = toID(dispName);
             var monData = BattlePokedex[monID];
             var rowBg = i % 2 === 1 ? '#f7f7f7' : '#ffffff';
-            buf += '<li class="result" style="background:' + rowBg + ';padding:12px 12px 14px;border-radius:6px;margin-bottom:200px">';
+            buf += '<li class="result" style="background:' + rowBg + ';padding:12px 12px 14px;border-radius:6px;margin-bottom:24px;overflow:hidden">';
             // Row 1: Pokemon Sprite | Item Sprite | Name (Level)
             buf += '<div class="resultrow" style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">';
             // Sprites block: keep on same plane and close together
@@ -866,7 +866,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
                 var itemName = BattleItems[itemID]?.name || m.item;
                 var itemHref = BattleItems[itemID] ? Config.baseurl + 'items/' + itemID : null;
                 var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:24px;height:24px;vertical-align:middle"></span>';
-                spritesBlock += itemHref ? '<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:-4px;position:relative;top:0px">' + itemIcon + '</a>' : '<span style="margin-left:16px;position:relative;top:2px">' + itemIcon + '</span>';
+                spritesBlock += itemHref ? '<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:-8px;position:relative;top:-4px">' + itemIcon + '</a>' : '<span style="margin-left:16px;position:relative;top:2px">' + itemIcon + '</span>';
             }
             buf += '<span style="display:inline-flex;align-items:center;gap:2px;margin-left:-8px">' + spritesBlock + '</span>';
             var nameHtml = '<span style="font-size:14px">' + escapeHTML(monData ? monData.name : m.name || '???') + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
@@ -895,7 +895,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
                 else natureHtml = '<small>Nature:</small> ' + escapeHTML(m.nature) + ' (Neutral)';
             }
             if (natureHtml) buf += '<div class="resultsub" style="margin-top:2px">' + natureHtml + '</div>';
-            // Row 3: Moves as buttons like Pokédex learnset (no level)
+            // Row 3: Moves as buttons, show description like search page; PP shows base PP
             var moves = m.moves || [];
             if (moves.length) {
                 var mvbuf = '';
@@ -906,10 +906,20 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
                         mvbuf += '<li class="result">' + escapeHTML(moves[j]) + '</li>';
                         continue;
                     }
-                    mvbuf += '<li class="result" style="background:transparent">' + BattleSearch.renderMoveRowInner(move) + '</li>';
+                    // Custom move row: name, type/category icons, power/accuracy, base PP, desc
+                    var nameHtml = move.name;
+                    var typeIcons = '<span class="col typecol">' + getTypeIcon(move.type) + getCategoryIcon(move.category) + '</span> ';
+                    var powerHtml = '<span class="col labelcol">' + (move.category !== 'Status' ? '<em>Power</em><br />' + (move.basePower || '&mdash;') : '') + '</span> ';
+                    var accHtml = '<span class="col widelabelcol"><em>Accuracy</em><br />' + (move.accuracy && move.accuracy !== true ? move.accuracy + '%' : '&mdash;') + '</span> ';
+                    var ppHtml = '<span class="col pplabelcol"><em>PP</em><br />' + move.pp + '</span> ';
+                    var descHtml = '<span class="col movedesccol">' + escapeHTML(move.shortDesc || move.desc || '') + '</span> ';
+                    var rowInner = '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push" data-entry="move|' + escapeHTML(move.name) + '">' + '<span class="col movenamecol">' + escapeHTML(nameHtml) + '</span> ' + typeIcons + powerHtml + accHtml + ppHtml + descHtml + '</a>';
+                    mvbuf += '<li class="result" style="background:transparent">' + rowInner + '</li>';
                 }
                 buf += '<ul class="utilichart nokbd" style="margin-top:6px">' + mvbuf + '</ul>';
             }
+            // Clear floats to ensure zebra container encloses all inner content
+            buf += '<div style="clear:both"></div>';
             buf += '</li>';
         }
         buf += '</ul>';
