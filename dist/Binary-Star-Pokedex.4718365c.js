@@ -1074,9 +1074,9 @@ window.PokedexSearchPanel = Panels.Panel.extend({
             const teamSprites = (t.team || []).map((m)=>{
                 const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : m.name || '';
                 const monID = toID(disp);
-                return '<span class="picon" style="' + getPokemonIcon(monID) + '"></span>';
+                return '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>';
             }).join('');
-            buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push">' + '<span class="col namecol">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap">' + teamSprites + '</span>' + '</a>' + '</li>';
+            buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push">' + '<span class="col namecol" style="display:inline-block;vertical-align:middle">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px">' + teamSprites + '</span>' + '</a>' + '</li>';
         }
         buf += '</ul>';
         this.$('.results').html(buf);
