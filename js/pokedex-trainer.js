@@ -27,14 +27,12 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
 
     // Location placeholder (link to locations root for now)
     buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/" data-target="push">Coming soon</a></dd>';
-    buf += '</dl>';
-
-    // Extra Notes (if present) — shown directly under Location
+    // Extra Notes (if present) — directly under Location within the same DL
     var notes = (window.TrainerNotes && window.TrainerNotes[norm] && window.TrainerNotes[norm].extraNotes) || '';
     if (typeof notes === 'string' && notes.trim().length) {
-      buf += '<h3>Extra Notes</h3>';
-      buf += '<p>' + escapeHTML(notes) + '</p>';
+      buf += '<dt>Extra Notes:</dt> <dd>' + escapeHTML(notes) + '</dd>';
     }
+    buf += '</dl>';
 
     // Team
     buf += '<h3>Team</h3>';
@@ -88,18 +86,20 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         buf += '<div class="resultsub" style="margin-top:2px;margin-left:0">' + types.map(function(t){return getTypeIcon(t);}).join(' ') + '</div>';
       }
 
-      // Row 2a: Ability rendered as a button-style utilichart entry
+      // Row 2a: Ability rendered as a button-style utilichart entry (with description like search page)
       if (m.ability) {
         var abilID = toID(m.ability);
         var abilityObj = BattleAbilities[abilID];
         if (abilityObj) {
-          var abilRow = '<li class="result" style="background:transparent">' +
-            '<a href="' + Config.baseurl + 'abilities/' + abilID + '" data-target="push">' +
-              '<span class="col namecol">' + escapeHTML(abilityObj.name) + '</span> ' +
-              '<span class="col abilitydesccol">' + escapeHTML(abilityObj.shortDesc || abilityObj.desc || '') + '</span> ' +
-            '</a>' +
-          '</li>';
-          buf += '<ul class="utilichart nokbd has-desc" style="margin-top:4px;margin-bottom:2px">' + abilRow + '</ul>';
+          var abilRow = (window.BattleSearch && typeof BattleSearch.renderAbilityRow === 'function')
+            ? BattleSearch.renderAbilityRow(abilityObj)
+            : ('<li class="result" style="background:transparent">' +
+                '<a href="' + Config.baseurl + 'abilities/' + abilID + '" data-target="push">' +
+                  '<span class="col namecol">' + escapeHTML(abilityObj.name) + '</span> ' +
+                  '<span class="col abilitydesccol">' + escapeHTML(abilityObj.shortDesc || abilityObj.desc || '') + '</span> ' +
+                '</a>' +
+              '</li>');
+          buf += '<ul class="utilichart nokbd" style="margin-top:4px;margin-bottom:2px">' + abilRow + '</ul>';
         } else {
           // Fallback plain text if ability not found
           buf += '<div class="resultsub" style="margin-top:4px"><strong>Ability:</strong> ' + escapeHTML(m.ability) + '</div>';
@@ -129,19 +129,28 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
             mvbuf += '<li class="result">' + escapeHTML(moves[j]) + '</li>';
             continue;
           }
-          // Custom move row: name, type/category icons, power/accuracy, base PP, desc
-          var nameHtml = move.name;
-          var typeIcons = '<span class="col typecol">' + getTypeIcon(move.type) + getCategoryIcon(move.category) + '</span> ';
-          var powerHtml = '<span class="col labelcol">' + (move.category !== 'Status' ? ('<em>Power</em><br />' + (move.basePower || '&mdash;')) : '') + '</span> ';
-          var accHtml = '<span class="col widelabelcol"><em>Accuracy</em><br />' + (move.accuracy && move.accuracy !== true ? move.accuracy + '%' : '&mdash;') + '</span> ';
-          var ppHtml = '<span class="col pplabelcol"><em>PP</em><br />' + move.pp + '</span> ';
-          var descHtml = '<span class="col movedesccol">' + escapeHTML(move.shortDesc || move.desc || '') + '</span> ';
-          var rowInner = '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push" data-entry="move|' + escapeHTML(move.name) + '">' +
-            '<span class="col movenamecol">' + escapeHTML(nameHtml) + '</span> ' + typeIcons + powerHtml + accHtml + ppHtml + descHtml +
-          '</a>';
-          mvbuf += '<li class="result" style="background:transparent">' + rowInner + '</li>';
+          // Use search renderer to ensure description structure, then replace PP with base PP
+          var rowInner = (window.BattleSearch && typeof BattleSearch.renderMoveRowInner === 'function')
+            ? BattleSearch.renderMoveRowInner(move)
+            : '';
+          if (rowInner) {
+            var markerStart = '<span class="col pplabelcol"><em>PP</em><br />';
+            var markerEnd = '</span>';
+            var sidx = rowInner.indexOf(markerStart);
+            if (sidx >= 0) {
+              var after = sidx + markerStart.length;
+              var eidx = rowInner.indexOf(markerEnd, after);
+              if (eidx >= 0) {
+                rowInner = rowInner.slice(0, after) + move.pp + rowInner.slice(eidx);
+              }
+            }
+            mvbuf += '<li class="result" style="background:transparent">' + rowInner + '</li>';
+          } else {
+            // Fallback minimal row if renderer not available
+            mvbuf += '<li class="result"><a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push"><span class="col movenamecol">' + escapeHTML(move.name) + '</span> <span class="col movedesccol">' + escapeHTML(move.shortDesc || move.desc || '') + '</span></a></li>';
+          }
         }
-        buf += '<ul class="utilichart nokbd has-desc" style="margin-top:6px">' + mvbuf + '</ul>';
+        buf += '<ul class="utilichart nokbd" style="margin-top:6px">' + mvbuf + '</ul>';
       }
 
       // Clear floats to ensure zebra container encloses all inner content
