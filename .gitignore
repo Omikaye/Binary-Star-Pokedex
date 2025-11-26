@@ -1,6 +1,5 @@
 
 /.articles-cached
-/config/config.js
 node_modules
 .DS_Store
 .parcel-cache
