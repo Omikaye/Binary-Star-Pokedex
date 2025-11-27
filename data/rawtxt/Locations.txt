@@ -1,10 +1,10 @@
 Name: "Route 1"
-Extra Notes: ""
+Extra Notes: "This route is orange."
 Encounters: {
 Grass: (Levels 13-15): Rufflet (10%), Skiddo (10%), Phanpy (10%), Bagon (10%), Pawniard (10%), Mienfoo (10%), Rhyhorn (10%), Growlithe (10%), Jangmo-o (10%), Cyndaquil (10%)
 Sky: (Levels 12-13): Vullaby (30%, Bagon, Spearow), Pidgey (60%), Noibat (10%, Woobat)
 }
-Trades: Trader requests a Happiny in exchange for a Poipole
+Gifts/Trades: Trader requests a Happiny in exchange for a Poipole
 Static Pokemon: (001, 003)
 Trainers: (004, 023, 024)
 Boss Trainers: (056)
@@ -25,7 +25,7 @@ Miracle Medicine	North of the grass patch next to the Trainer Tips sign.
 Poké Ball x900	North of the second grassy patch on the east side
 Rare Candy x999	On the cliffs overlooking the bay, west of Youngster Jimmy
 Max Repel x900	West of the entrance to Iki Town
-Gumshoosite At the end of the west path behind the rocks south of Iki Town (requires Tauros Charge)
+Gumshoosite x1     At the end of the west path behind the rocks south of Iki Town (requires Tauros Charge)
 Haban Berry x900	At the end of the northern east path behind the rocks south of Iki Town (requires Tauros Charge)
 }
 
@@ -35,18 +35,33 @@ Encounters: {
 Grass: (Levels 3-5): Yungoos (10%), Rattata-1 (10%, Rattata), Pikipek (10%, Starly), Grubbin (10%, Wurmple), Pichu (10%, Happiny, Slaking), Bounsweet (10%), Scatterbug (10%), Swablu (10%), Igglybuff (10%), Sentret (10%)
 Surf: (Levels 3-5): Magikarp (50%), Zubat (50%)
 }
-Trades: None
+Gifts/Trades: None
 Static Pokemon: None
 Trainers: (012, 013)
-Boss Trainers: None
+Boss Trainers: ()
 Shops: {
 None
 }
 Items: {
 Exp. Share	From Professor Kukui outside the Trainers' School on the player's first visit
-Repeat Ball x 100	North of the rail to the east of the entrance to the Trainers' School grounds (hidden)
+Repeat Ball x100	North of the rail to the east of the entrance to the Trainers' School grounds (hidden)
 Ability Pillbox	Under a palm tree on the east side of the main entrance to the Trainers' School building
-Destiny Knot x 10	Under the second palm tree on the west side of the main entrance to the Trainers' School building
-Heal Ball x 100	In the center of the western battlefield in front of the Trainers' School building (hidden)
+Destiny Knot x10	Under the second palm tree on the west side of the main entrance to the Trainers' School building
+Heal Ball x100	In the center of the western battlefield in front of the Trainers' School building (hidden)
 }
 
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: None
+Shops: {
+None
+}
+Items: {
+None
+}

@@ -3,7 +3,7 @@
     {
       "id": "route1",
       "name": "Route 1",
-      "notes": "",
+      "notes": "This route is orange.",
       "encounters": [
         {
           "spot": "Grass",
@@ -94,7 +94,7 @@
           ]
         }
       ],
-      "giftsTrades": "",
+      "giftsTrades": "Trader requests a Happiny in exchange for a Poipole",
       "staticPokemon": [
         "001",
         "003"
@@ -173,9 +173,9 @@
           "obtain": "West of the entrance to Iki Town"
         },
         {
-          "item": "Gumshoosite At the end of the west path behind the rocks south of Iki Town (requires Tauros Charge)",
+          "item": "Gumshoosite",
           "quantity": 1,
-          "obtain": ""
+          "obtain": "At the end of the west path behind the rocks south of Iki Town (requires Tauros Charge)"
         },
         {
           "item": "Haban Berry",
@@ -277,7 +277,7 @@
           ]
         }
       ],
-      "giftsTrades": "",
+      "giftsTrades": "None",
       "staticPokemon": [],
       "trainers": [
         "012",
