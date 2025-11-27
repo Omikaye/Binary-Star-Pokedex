@@ -94,14 +94,6 @@ for (const item of items) {
     .replace(/[^a-z0-9]+/g, '')
     .replace(/^[0-9]+/, ''); // remove leading numbers if any
   
-  // Set shortDesc to first sentence or truncated desc
-  if (item.desc) {
-    const firstSentence = item.desc.split(/[.!?]/)[0];
-    item.shortDesc = firstSentence.length > 120 
-      ? item.desc.substring(0, 120).trim() + '...'
-      : firstSentence.trim();
-  }
-  
   itemsObj[id] = item;
 }
 
