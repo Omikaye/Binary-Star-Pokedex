@@ -1076,7 +1076,10 @@ window.PokedexSearchPanel = Panels.Panel.extend({
                 const monID = toID(disp);
                 return '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>';
             }).join('');
-            buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push">' + '<span class="col namecol" style="display:inline-block;vertical-align:middle">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px">' + teamSprites + '</span>' + '</a>' + '</li>';
+            // Get trainer class and sprite for background
+            const trainerClass = getTrainerClass(t.name);
+            const trainerSprite = getTrainerIcon(trainerClass);
+            buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' + '<div style="position:absolute;left:-10px;top:-10px;width:128px;height:128px;opacity:0.3;pointer-events:none;' + trainerSprite + '"></div>' + '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' + '</a>' + '</li>';
         }
         buf += '</ul>';
         this.$('.results').html(buf);
