@@ -13,6 +13,8 @@ const icons = JSON.parse(fs.readFileSync(iconsPath, 'utf8'));
 
 // Spritesheet configuration
 const SPRITE_SIZE = 32; // 32x32px per sprite
+const BORDER = 1; // 1px blue border around each sprite cell
+const PITCH = SPRITE_SIZE + BORDER; // distance between sprite starts (33px)
 const COLUMNS = 28; // 28 columns in the spritesheet
 
 // Create array of items sorted by index number
@@ -29,8 +31,9 @@ itemArray.forEach((item, index) => {
   const col = index % COLUMNS;
   
   // Calculate x and y offsets (negative because CSS background-position)
-  const x = -(col * SPRITE_SIZE);
-  const y = -(row * SPRITE_SIZE);
+  // Start at 1px to skip the left/top border, and move by 33px (32 + 1 border)
+  const x = -(BORDER + col * PITCH);
+  const y = -(BORDER + row * PITCH);
   
   newItemCoords[item.id] = [x, y];
 });
@@ -42,5 +45,5 @@ console.log('Writing updated icons.json...');
 fs.writeFileSync(iconsPath, JSON.stringify(icons, null, 2), 'utf8');
 
 console.log(`Done! Updated ${Object.keys(newItemCoords).length} item icon coordinates.`);
-console.log(`Spritesheet dimensions: ${COLUMNS} columns × ${Math.ceil(itemArray.length / COLUMNS)} rows`);
-console.log(`Total size: ${COLUMNS * SPRITE_SIZE}px × ${Math.ceil(itemArray.length / COLUMNS) * SPRITE_SIZE}px`);
+console.log(`Spritesheet grid: ${COLUMNS} columns × ${Math.ceil(itemArray.length / COLUMNS)} rows`);
+console.log(`Using offset ${BORDER}px and pitch ${PITCH}px (per axis).`);
