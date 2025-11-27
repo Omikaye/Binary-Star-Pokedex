@@ -19,7 +19,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
 
     var buf = '<div class="pfx-body dexentry">';
     buf += '<style>' +
-      '.dexentry .abilitydesccol, .dexentry .movedesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; }' +
+      '.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
       '.dexentry .namecol { float: none !important; display: inline !important; padding-top: 0 !important; height: auto !important; }' +
       '</style>';
     buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Trainers</a>';
@@ -133,26 +133,25 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
             mvbuf += '<li class="result">' + escapeHTML(moves[j]) + '</li>';
             continue;
           }
-          // Use search renderer to ensure description structure, then replace PP with base PP
-          var rowInner = (window.BattleSearch && typeof BattleSearch.renderMoveRowInner === 'function')
-            ? BattleSearch.renderMoveRowInner(move)
-            : '';
-          if (rowInner) {
+          // Use search renderer (full row) which includes the <li> wrapper
+          var rowHTML = (window.BattleSearch && typeof BattleSearch.renderMoveRow === 'function')
+            ? BattleSearch.renderMoveRow(move)
+            : ('<li class="result"><a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push"><span class="col movenamecol">' + escapeHTML(move.name) + '</span> <span class="col movedesccol">' + escapeHTML(move.shortDesc || move.desc || '') + '</span></a></li>');
+          
+          // Replace boosted PP with base PP
+          if (rowHTML) {
             var markerStart = '<span class="col pplabelcol"><em>PP</em><br />';
             var markerEnd = '</span>';
-            var sidx = rowInner.indexOf(markerStart);
+            var sidx = rowHTML.indexOf(markerStart);
             if (sidx >= 0) {
               var after = sidx + markerStart.length;
-              var eidx = rowInner.indexOf(markerEnd, after);
+              var eidx = rowHTML.indexOf(markerEnd, after);
               if (eidx >= 0) {
-                rowInner = rowInner.slice(0, after) + move.pp + rowInner.slice(eidx);
+                rowHTML = rowHTML.slice(0, after) + move.pp + rowHTML.slice(eidx);
               }
             }
-            mvbuf += '<li class="result" style="background:transparent">' + rowInner + '</li>';
-          } else {
-            // Fallback minimal row if renderer not available
-            mvbuf += '<li class="result"><a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push"><span class="col movenamecol">' + escapeHTML(move.name) + '</span> <span class="col movedesccol">' + escapeHTML(move.shortDesc || move.desc || '') + '</span></a></li>';
           }
+          mvbuf += rowHTML;
         }
         buf += '<ul class="utilichart nokbd" style="margin-top:6px">' + mvbuf + '</ul>';
       }

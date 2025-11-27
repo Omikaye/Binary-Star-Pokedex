@@ -488,12 +488,26 @@
 		if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'abilities/' + id + '" data-target="push"';
 		var buf = '<li class="result"><a' + attrs + ' data-entry="ability|' + escapeHTML(ability.name) + '">';
 
-		// name
+		// Count how many Pokémon have this ability
+		var count = 0;
+		for (var pokeId in BattlePokedex) {
+			var pokemon = BattlePokedex[pokeId];
+			if (pokemon.abilities) {
+				for (var slot in pokemon.abilities) {
+					if (toID(pokemon.abilities[slot]) === id) {
+						count++;
+						break; // Only count each Pokémon once
+					}
+				}
+			}
+		}
+
+		// name with count
 		var name = ability.name;
 		if (matchLength) {
 			name = name.substr(0, matchStart) + '<b>' + name.substr(matchStart, matchLength) + '</b>' + name.substr(matchStart + matchLength);
 		}
-		buf += '<span class="col namecol">' + name + '</span> ';
+		buf += '<span class="col namecol"><small style="color:#888">(' + count + ')</small> ' + name + '</span> ';
 
 		// error
 		if (errorMessage) {
