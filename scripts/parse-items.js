@@ -17,9 +17,12 @@ let inDescription = false;
 
 function finalizeItem() {
   if (currentItem && currentItem.name) {
-    // Join multi-line descriptions and remove newlines
+    // Join multi-line descriptions, remove newlines, and strip bracketed content
     if (currentDescription.length > 0) {
-      currentItem.desc = currentDescription.join(' ').replace(/\s+/g, ' ').trim();
+      currentItem.desc = currentDescription.join(' ')
+        .replace(/\s+/g, ' ')
+        .replace(/\[[^\]]*\]/g, '') // Remove anything in brackets
+        .trim();
     }
     items.push(currentItem);
   }

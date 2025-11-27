@@ -732,7 +732,8 @@ window.PokedexItemPanel = PokedexResultPanel.extend({
         this.shortTitle = item.name;
         var buf = '<div class="pfx-body dexentry">';
         buf += '<a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-        buf += '<h1><span class="itemicon" style="' + getItemIcon(item) + '"</span> <a href="' + Config.baseurl + 'items/' + id + '" data-target="push" class="subtle">' + item.name + '</a></h1>';
+        buf += '<h1 style="white-space:nowrap"><a href="' + Config.baseurl + 'items/' + id + '" data-target="push" class="subtle">' + item.name + '</a></h1>';
+        buf += '<div style="text-align:center;margin:10px 0"><span class="itemicon" style="' + getItemIcon(item) + '"</span></div>';
         // Buy and sell prices
         var buyPrice = item.buyPrice || 0;
         var sellPrice = item.sellPrice || 0;
