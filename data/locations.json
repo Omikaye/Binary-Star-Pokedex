@@ -1,0 +1,317 @@
+{
+  "locations": [
+    {
+      "id": "route1",
+      "name": "Route 1",
+      "notes": "",
+      "encounters": [
+        {
+          "spot": "Grass",
+          "levelRange": {
+            "min": 13,
+            "max": 15
+          },
+          "pokemon": [
+            {
+              "name": "Rufflet",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Skiddo",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Phanpy",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Bagon",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Pawniard",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Mienfoo",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Rhyhorn",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Growlithe",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Jangmo-o",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Cyndaquil",
+              "chance": 10,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Sky",
+          "levelRange": {
+            "min": 12,
+            "max": 13
+          },
+          "pokemon": [
+            {
+              "name": "Vullaby",
+              "chance": 30,
+              "sos": [
+                "Bagon",
+                "Spearow"
+              ]
+            },
+            {
+              "name": "Pidgey",
+              "chance": 60,
+              "sos": []
+            },
+            {
+              "name": "Noibat",
+              "chance": 10,
+              "sos": [
+                "Woobat"
+              ]
+            }
+          ]
+        }
+      ],
+      "giftsTrades": "",
+      "staticPokemon": [
+        "001",
+        "003"
+      ],
+      "trainers": [
+        "004",
+        "023",
+        "024"
+      ],
+      "bossTrainers": [
+        "056"
+      ],
+      "shops": [
+        {
+          "item": "Cherish Ball",
+          "price": "$300"
+        },
+        {
+          "item": "Quick Ball",
+          "price": "$1,000"
+        },
+        {
+          "item": "Heart Scale",
+          "price": "$100"
+        },
+        {
+          "item": "Rare Candy",
+          "price": "$10"
+        },
+        {
+          "item": "Max Repel",
+          "price": "$10"
+        },
+        {
+          "item": "Max Elixir",
+          "price": "$400"
+        },
+        {
+          "item": "Poké Doll",
+          "price": "$140"
+        },
+        {
+          "item": "Escape Rope",
+          "price": "$180"
+        }
+      ],
+      "items": [
+        {
+          "item": "Poké Ball",
+          "quantity": 10,
+          "obtain": "From Kukui after the capture tutorial"
+        },
+        {
+          "item": "Potion",
+          "quantity": 5,
+          "obtain": "From Kukui after the capture tutorial"
+        },
+        {
+          "item": "Miracle Medicine",
+          "quantity": 1,
+          "obtain": "North of the grass patch next to the Trainer Tips sign."
+        },
+        {
+          "item": "Poké Ball",
+          "quantity": 900,
+          "obtain": "North of the second grassy patch on the east side"
+        },
+        {
+          "item": "Rare Candy",
+          "quantity": 999,
+          "obtain": "On the cliffs overlooking the bay, west of Youngster Jimmy"
+        },
+        {
+          "item": "Max Repel",
+          "quantity": 900,
+          "obtain": "West of the entrance to Iki Town"
+        },
+        {
+          "item": "Gumshoosite At the end of the west path behind the rocks south of Iki Town (requires Tauros Charge)",
+          "quantity": 1,
+          "obtain": ""
+        },
+        {
+          "item": "Haban Berry",
+          "quantity": 900,
+          "obtain": "At the end of the northern east path behind the rocks south of Iki Town (requires Tauros Charge)"
+        }
+      ]
+    },
+    {
+      "id": "route2",
+      "name": "Route 2",
+      "notes": "Scatterbug here evolve into Fancy Pattern Vivillon",
+      "encounters": [
+        {
+          "spot": "Grass",
+          "levelRange": {
+            "min": 3,
+            "max": 5
+          },
+          "pokemon": [
+            {
+              "name": "Yungoos",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Rattata-1",
+              "chance": 10,
+              "sos": [
+                "Rattata"
+              ]
+            },
+            {
+              "name": "Pikipek",
+              "chance": 10,
+              "sos": [
+                "Starly"
+              ]
+            },
+            {
+              "name": "Grubbin",
+              "chance": 10,
+              "sos": [
+                "Wurmple"
+              ]
+            },
+            {
+              "name": "Pichu",
+              "chance": 10,
+              "sos": [
+                "Happiny",
+                "Slaking"
+              ]
+            },
+            {
+              "name": "Bounsweet",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Scatterbug",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Swablu",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Igglybuff",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Sentret",
+              "chance": 10,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Surf",
+          "levelRange": {
+            "min": 3,
+            "max": 5
+          },
+          "pokemon": [
+            {
+              "name": "Magikarp",
+              "chance": 50,
+              "sos": []
+            },
+            {
+              "name": "Zubat",
+              "chance": 50,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": "",
+      "staticPokemon": [],
+      "trainers": [
+        "012",
+        "013"
+      ],
+      "bossTrainers": [],
+      "shops": [],
+      "items": [
+        {
+          "item": "Exp. Share",
+          "quantity": 1,
+          "obtain": "From Professor Kukui outside the Trainers' School on the player's first visit"
+        },
+        {
+          "item": "Repeat Ball",
+          "quantity": 100,
+          "obtain": "North of the rail to the east of the entrance to the Trainers' School grounds (hidden)"
+        },
+        {
+          "item": "Ability Pillbox",
+          "quantity": 1,
+          "obtain": "Under a palm tree on the east side of the main entrance to the Trainers' School building"
+        },
+        {
+          "item": "Destiny Knot",
+          "quantity": 10,
+          "obtain": "Under the second palm tree on the west side of the main entrance to the Trainers' School building"
+        },
+        {
+          "item": "Heal Ball",
+          "quantity": 100,
+          "obtain": "In the center of the western battlefield in front of the Trainers' School building (hidden)"
+        }
+      ]
+    }
+  ]
+}

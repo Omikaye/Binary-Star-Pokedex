@@ -360,9 +360,12 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 		
 		const methods = ["lvl", "tm", "tutor", "egg"];
 		results.sort((a, b) => {
+			// First sort by learning method
 			if (a.how != b.how) return methods.indexOf(a.how) - methods.indexOf(b.how);
-			if (a.how == "lvl" && a.level != b.level) return a.level - b.level;
-			return a.poke.localeCompare(b.poke);
+			// Then sort by Pokedex number
+			var pokeA = BattlePokedex[a.poke];
+			var pokeB = BattlePokedex[b.poke];
+			return (pokeA?.num || 0) - (pokeB?.num || 0);
 		});
 
 		for (let method of methods) {

@@ -10,6 +10,7 @@ import BaseGameStats from "../data/basegame.json";
 import ItemPokemonLinks from "../data/item-pokemon-links.json";
 import Trainers from "../data/trainers.json";
 import TrainerNotes from "../data/trainer-notes.json";
+import LocationsJson from "../data/locations.json";
 // ...existing code...
 import './compat.js'; // ensure legacy helpers are available early
 // ...existing code...
@@ -26,6 +27,7 @@ window.BaseGameStats = BaseGameStats;
 window.ItemPokemonLinks = ItemPokemonLinks;
 window.Trainers = Trainers;
 window.TrainerNotes = TrainerNotes;
+window.Locations = LocationsJson.locations || [];
 
 window.toID = (text) => {
   if (text?.id) {

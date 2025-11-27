@@ -207,7 +207,7 @@
       });
     }
   }
-})({"7kawL":[function(require,module,exports,__globalThis) {
+})({"ecTKF":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -215,7 +215,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "f9b0221d16f8a8e4";
+module.bundle.HMR_BUNDLE_ID = "24591ef1dacc703b";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -713,41 +713,150 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"hmJ6v":[function(require,module,exports,__globalThis) {
-var Pokedex = Panels.App.extend({
-    topbarView: Topbar,
-    backButtonPrefix: '<i class="fa fa-chevron-left"></i> ',
-    states2: {
-        'pokemon/:pokemon': PokedexPokemonPanel,
-        'moves/:move': PokedexMovePanel,
-        'items/:item': PokedexItemPanel,
-        'abilities/:ability': PokedexAbilityPanel,
-        'types/:type': PokedexTypePanel,
-        'categories/:category': PokedexCategoryPanel,
-        'tags/:tag': PokedexTagPanel,
-        'egggroups/:egggroup': PokedexEggGroupPanel,
-        'tiers/:tier': PokedexTierPanel,
-        'articles/:article': PokedexArticlePanel,
-        'trainers/:id': PokedexTrainerPanel,
-        'locations/:locid': PokedexLocationPanel,
-        '': PokedexSearchPanel,
-        'pokemon/': PokedexSearchPanel,
-        'moves/': PokedexSearchPanel,
-        'abilities/': PokedexSearchPanel,
-        'items/': PokedexSearchPanel,
-        'mechanics/': PokedexSearchPanel,
-        'locations/': PokedexLocationsPanel,
-        'trainers/': PokedexSearchPanel,
-        ':q': PokedexSearchPanel
-    },
+},{}],"a0DMZ":[function(require,module,exports,__globalThis) {
+// Locations panels: list and detail
+window.PokedexLocationsPanel = PokedexResultPanel.extend({
     initialize: function() {
-        this.routePanel('*path', PokedexSearchPanel); // catch-all default
-        let root = Config.baseurl.slice(1);
-        for(var i in this.states2)this.routePanel(root + i, this.states2[i]);
+        this.shortTitle = 'Locations';
+        var buf = '<div class="pfx-body dexentry">';
+        buf += '<a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok\xe9dex</a>';
+        buf += '<h1><a href="' + Config.baseurl + 'locations/" data-target="push" class="subtle">Locations</a></h1>';
+        buf += '<ul class="utilichart nokbd">';
+        var list = (window.Locations || []).slice();
+        list.sort(function(a, b) {
+            return (a.name || '').localeCompare(b.name || '');
+        });
+        for(var i = 0; i < list.length; i++){
+            var loc = list[i];
+            if (!loc || !loc.id) continue;
+            buf += '<li class="result">';
+            buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push">';
+            buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span> ';
+            var notes = (loc.notes || '').trim();
+            if (notes) buf += '<span class="col abilitydesccol">' + escapeHTML(notes) + '</span>';
+            buf += '</a></li>';
+        }
+        buf += '</ul>';
+        buf += '</div>';
+        this.html(buf);
     }
 });
-var pokedex = new Pokedex();
+window.PokedexLocationPanel = PokedexResultPanel.extend({
+    initialize: function(locid) {
+        var id = toID(locid);
+        var loc = (window.Locations || []).find(function(l) {
+            return toID(l.id) === id;
+        });
+        if (!loc) {
+            this.shortTitle = 'Location';
+            this.html('<div class="pfx-body dexentry"><a href="' + Config.baseurl + 'locations/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Locations</a><h1>Location not found</h1></div>');
+            return;
+        }
+        this.shortTitle = loc.name || loc.id;
+        var buf = '<div class="pfx-body dexentry">';
+        buf += '<a href="' + Config.baseurl + 'locations/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Locations</a>';
+        buf += '<h1><a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" class="subtle">' + escapeHTML(loc.name || loc.id) + '</a></h1>';
+        if ((loc.notes || '').trim()) buf += '<p class="resultsub">' + escapeHTML(loc.notes) + '</p>';
+        // Encounters
+        var encounters = loc.encounters || [];
+        if (encounters.length) {
+            buf += '<h3>Encounters</h3>';
+            for(var s = 0; s < encounters.length; s++){
+                var spot = encounters[s];
+                if (!spot || !spot.pokemon || !spot.pokemon.length) continue;
+                var range = spot.levelRange && (spot.levelRange.min || spot.levelRange.max) ? ' (Lv. ' + (spot.levelRange.min === spot.levelRange.max ? spot.levelRange.min : spot.levelRange.min + '-' + spot.levelRange.max) + ')' : '';
+                buf += '<h4 style="margin:6px 0 4px">' + escapeHTML(spot.spot || 'Spot') + range + '</h4>';
+                buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
+                buf += '<thead><tr><th style="text-align:left">Pok\xe9mon</th><th style="width:60px">Chance</th></tr></thead><tbody>';
+                for(var p = 0; p < spot.pokemon.length; p++){
+                    var mon = spot.pokemon[p];
+                    var monID = toID(mon.name);
+                    buf += '<tr>';
+                    buf += '<td><span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>' + escapeHTML(mon.name) + '</td>';
+                    buf += '<td style="text-align:center">' + (mon.chance != null ? mon.chance + '%' : '&mdash;') + '</td>';
+                    buf += '</tr>';
+                    // SOS children rows
+                    var sos = mon.sos || [];
+                    for(var k = 0; k < sos.length; k++){
+                        var child = sos[k];
+                        var childID = toID(child);
+                        buf += '<tr>';
+                        buf += '<td style="padding-left:28px"><span class="picon" style="' + getPokemonIcon(childID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>' + escapeHTML(child) + '</td>';
+                        buf += '<td style="text-align:center">SOS</td>';
+                        buf += '</tr>';
+                    }
+                }
+                buf += '</tbody></table>';
+            }
+        }
+        // Gifts/Trades
+        if ((loc.giftsTrades || '').trim() && loc.giftsTrades.toLowerCase() !== 'none') {
+            buf += '<h3>Gifts / Trades</h3>';
+            buf += '<p>' + escapeHTML(loc.giftsTrades) + '</p>';
+        }
+        // Trainers
+        function renderTrainerList(ids) {
+            if (!ids || !ids.length) return '';
+            var out = '<ul class="utilichart nokbd">';
+            for(var i = 0; i < ids.length; i++){
+                var tid = (ids[i] || '').trim();
+                if (!tid) continue;
+                var t = (window.Trainers || []).find(function(tx) {
+                    return tx.id === tid;
+                });
+                var tname = t ? t.name : 'Trainer ' + tid;
+                out += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + tid + '" data-target="push">';
+                out += '<span class="col namecol">' + escapeHTML(tname) + '</span>';
+                out += '</a></li>';
+            }
+            out += '</ul>';
+            return out;
+        }
+        if (loc.trainers && loc.trainers.length) buf += '<h3>Trainers</h3>' + renderTrainerList(loc.trainers);
+        if (loc.bossTrainers && loc.bossTrainers.length) buf += '<h3>Boss Trainers</h3>' + renderTrainerList(loc.bossTrainers);
+        // Shops
+        if (loc.shops && loc.shops.length) {
+            buf += '<h3>Shops</h3>';
+            buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
+            buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:110px">Price</th></tr></thead><tbody>';
+            for(var si = 0; si < loc.shops.length; si++){
+                var sh = loc.shops[si];
+                var itemID = toID(sh.item);
+                buf += '<tr>';
+                buf += '<td><span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:24px;height:24px"></span>' + '</td>';
+                buf += '<td><a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push">' + escapeHTML(sh.item) + '</a>' + '</td>';
+                buf += '<td style="text-align:center">' + escapeHTML(sh.price || '') + '</td>';
+                buf += '</tr>';
+            }
+            buf += '</tbody></table>';
+        }
+        // Items
+        if (loc.items && loc.items.length) {
+            buf += '<h3>Items</h3>';
+            buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
+            buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th>Obtain</th></tr></thead><tbody>';
+            for(var ii = 0; ii < loc.items.length; ii++){
+                var it = loc.items[ii];
+                var iid = toID(it.item);
+                var label = escapeHTML(it.item) + (it.quantity && it.quantity !== 1 ? " \xd7" + it.quantity : '');
+                buf += '<tr>';
+                buf += '<td><span class="picon" style="' + getItemIcon(iid) + ';display:inline-block;width:24px;height:24px"></span>' + '</td>';
+                buf += '<td><a href="' + Config.baseurl + 'items/' + iid + '" data-target="push">' + label + '</a>' + '</td>';
+                buf += '<td>' + escapeHTML(it.obtain || '') + '</td>';
+                buf += '</tr>';
+            }
+            buf += '</tbody></table>';
+        }
+        // Static encounters placeholder (future)
+        if (loc.staticPokemon && loc.staticPokemon.length) {
+            buf += "<h3>Static Pok\xe9mon</h3>";
+            buf += '<p class="resultsub">Static encounter details coming soon.</p>';
+        }
+        buf += '</div>';
+        this.html(buf);
+    }
+});
 
-},{}]},["7kawL","hmJ6v"], "hmJ6v", "parcelRequire6a64", {})
+},{}]},["ecTKF","a0DMZ"], "a0DMZ", "parcelRequire6a64", {})
 
-//# sourceMappingURL=Binary-Star-Pokedex.16f8a8e4.js.map
+//# sourceMappingURL=Binary-Star-Pokedex.dacc703b.js.map

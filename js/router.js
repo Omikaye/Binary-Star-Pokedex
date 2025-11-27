@@ -13,6 +13,7 @@ var Pokedex = Panels.App.extend({
 		'tiers/:tier': PokedexTierPanel,
 		'articles/:article': PokedexArticlePanel,
 		'trainers/:id': PokedexTrainerPanel,
+        'locations/:locid': PokedexLocationPanel,
 
 		'': PokedexSearchPanel,
 		'pokemon/': PokedexSearchPanel,
@@ -20,7 +21,7 @@ var Pokedex = Panels.App.extend({
 		'abilities/': PokedexSearchPanel,
 		'items/': PokedexSearchPanel,
 		'mechanics/': PokedexSearchPanel,
-		'locations/': PokedexSearchPanel,
+		'locations/': PokedexLocationsPanel,
 		'trainers/': PokedexSearchPanel,
 		':q': PokedexSearchPanel
 	},
