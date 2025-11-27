@@ -34,6 +34,8 @@ const TMHM_ICON = [-133, -364];
 
 let row = 0;
 let col = 0;
+let startedNormal = false; // set start to (-694, -364) when needed
+let seenHM06 = false; // flip when we encounter hm06; next non-TM/HM (Explorer Kit) sets start
 
 // Precompute the grid coordinate for any (row,col)
 const coordAt = (r, c) => [-(BORDER + c * PITCH), -(BORDER + r * PITCH)];
@@ -44,7 +46,15 @@ for (let i = 0; i < itemArray.length; i++) {
   if (isTMHM(id)) {
     // Assign fixed TM/HM icon but DON'T advance grid (next item gets this slot)
     newItemCoords[id] = TMHM_ICON;
+    if (id === 'hm06') seenHM06 = true;
     continue;
+  }
+
+  // If we've just passed HM06, set next non-TM/HM (Explorer Kit) to start at (-694, -364)
+  if (seenHM06 && !startedNormal) {
+    row = 11; // 1 + row*33 = 364 => row = 11
+    col = 21; // 1 + col*33 = 694 => col = 21
+    startedNormal = true;
   }
 
   // Current grid coordinate
@@ -53,9 +63,11 @@ for (let i = 0; i < itemArray.length; i++) {
   // Normal assignment
   newItemCoords[id] = [gx, gy];
 
-  // Advance grid position
-  col++;
-  if (col >= COLUMNS) { col = 0; row++; }
+  // Advance grid position unless this item is thick club (uses rare bone icon and should not consume slot)
+  if (id !== 'thickclub') {
+    col++;
+    if (col >= COLUMNS) { col = 0; row++; }
+  }
 }
 
 // If both items exist, set thickclub to use rarebone's icon
