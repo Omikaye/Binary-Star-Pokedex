@@ -11,6 +11,7 @@ import ItemPokemonLinks from "../data/item-pokemon-links.json";
 import Trainers from "../data/trainers.json";
 import TrainerNotes from "../data/trainer-notes.json";
 import LocationsJson from "../data/locations.json";
+import TrainerSprites from "../data/trainer-sprites.json";
 // ...existing code...
 import './compat.js'; // ensure legacy helpers are available early
 // ...existing code...
@@ -28,6 +29,7 @@ window.ItemPokemonLinks = ItemPokemonLinks;
 window.Trainers = Trainers;
 window.TrainerNotes = TrainerNotes;
 window.Locations = LocationsJson.locations || [];
+window.TrainerSprites = TrainerSprites;
 
 window.toID = (text) => {
   if (text?.id) {
@@ -137,4 +139,27 @@ window.getLearnset = (pokemonId) => {
 window.canLearn = (pokemonId, moveId) => {
   const moveIdNorm = toID(moveId);
   return getLearnset(pokemonId).some((n) => toID(n.move) === moveIdNorm);
+};
+
+window.getTrainerClass = (trainerName) => {
+  // Extract trainer class from full name (e.g., "Lass Madison" -> "Lass")
+  if (!trainerName) return "";
+  const parts = trainerName.trim().split(/\s+/);
+  // Return everything except the last word (which is usually the trainer's personal name)
+  // Handle special cases like "Team Skull Grunt"
+  if (parts.length === 1) return parts[0];
+  if (parts.length === 2) return parts[0];
+  // For 3+ words, check if it's a known multi-word class
+  const multiWordClasses = ["Team Skull Grunt", "Aether Employee", "Rainbow Rocket Grunt", "Rising Star", "Ace Trainer", "Z-Ace Trainer", "Black Belt", "Z-Black Belt", "Office Worker", "Police Officer", "Young Athlete", "Trial Guide", "Z-Trial Guide", "Ultra Forest", "Masked Royal", "Youngster Amulet"];
+  for (let cls of multiWordClasses) {
+    if (trainerName.startsWith(cls)) return cls;
+  }
+  // Default: return first word
+  return parts[0];
+};
+
+window.getTrainerIcon = (trainerClass) => {
+  const classId = toID(trainerClass);
+  let [left, top] = TrainerSprites[classId] ?? [0, 0];
+  return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px`;
 };
