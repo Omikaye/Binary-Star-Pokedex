@@ -1006,9 +1006,14 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
     },
     getDistribution: function() {
         var results = [];
+        var moveId = this.id; // Store the move ID we're looking for
         for(let pokeId in BattlePokedex){
             let learnset = getLearnset(pokeId);
-            results = results.concat(learnset.filter((m)=>m.move == this.id).map((m)=>{
+            if (!learnset || learnset.length === 0) continue;
+            // Filter moves that match this move ID
+            let matchingMoves = learnset.filter((m)=>toID(m.move) === moveId);
+            // Add each matching move with the pokemon ID
+            results = results.concat(matchingMoves.map((m)=>{
                 return {
                     poke: pokeId,
                     ...m
