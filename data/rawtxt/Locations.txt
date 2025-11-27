@@ -58,7 +58,311 @@ None
 Gifts/Trades: None
 Static Pokemon: None
 Trainers: ()
-Boss Trainers: None
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+None
+}
+
+Name: ""
+Extra Notes: ""
+Encounters: {
+None
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: ()
+Boss Trainers: ()
 Shops: {
 None
 }

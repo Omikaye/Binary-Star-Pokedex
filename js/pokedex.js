@@ -20,7 +20,18 @@ window.PokedexItemPanel = PokedexResultPanel.extend({
 
 	var buf = '<div class="pfx-body dexentry">';
 	buf += '<a href="'+Config.baseurl+'" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-	buf += '<h1><span class="itemicon" style="'+getItemIcon(item)+'"></span> <a href="'+Config.baseurl+'items/'+id+'" data-target="push" class="subtle">'+item.name+'</a></h1>';
+	buf += '<h1><span class="itemicon" style="'+getItemIcon(item)+'"</span> <a href="'+Config.baseurl+'items/'+id+'" data-target="push" class="subtle">'+item.name+'</a></h1>';
+	
+	// Buy and sell prices
+	var buyPrice = item.buyPrice || 0;
+	var sellPrice = item.sellPrice || 0;
+	if (buyPrice > 0 || sellPrice > 0) {
+		buf += '<p class="resultsub">';
+		buf += '<strong>Buy:</strong> ' + (buyPrice > 0 ? '$' + buyPrice.toLocaleString() : 'N/A');
+		buf += ' &nbsp;&nbsp; <strong>Sell:</strong> ' + (sellPrice > 0 ? '$' + sellPrice.toLocaleString() : 'N/A');
+		buf += '</p>';
+	}
+	
 	buf += '<p>'+escapeHTML(item.desc||item.shortDesc)+'</p>';
 
 	// Related Pokémon - Pokémon mentioned in this item's description
