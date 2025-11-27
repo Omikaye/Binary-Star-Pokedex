@@ -12,6 +12,25 @@
 (function (exports, $) {
 	'use strict';
 
+	// Cache ability usage counts (number of Pokémon that can have each ability)
+	let __abilityUseCountCache = null;
+	function getAbilityUseCount(id) {
+		if (!__abilityUseCountCache) {
+			__abilityUseCountCache = {};
+			for (var pokeId in BattlePokedex) {
+				var p = BattlePokedex[pokeId];
+				if (!p || !p.abilities) continue;
+				for (var slot in p.abilities) {
+					var abilName = p.abilities[slot];
+					if (!abilName) continue;
+					var aid = toID(abilName);
+					__abilityUseCountCache[aid] = (__abilityUseCountCache[aid] || 0) + 1;
+				}
+			}
+		}
+		return __abilityUseCountCache[toID(id)] || 0;
+	}
+
 	function Search(elem, viewport) {
 		this.$el = $(elem);
 		this.el = this.$el[0];
@@ -79,6 +98,14 @@
 		}
 		if (this.filters) {
 			this.resultSet = [['html', this.getFilterText()]].concat(this.resultSet);
+		}
+
+		// Hide abilities with zero users in the plain abilities list view (no query/filters)
+		if (this.engine && this.engine.typedSearch && this.engine.typedSearch.searchType === 'ability' && !this.q && !this.filters) {
+			this.resultSet = this.resultSet.filter(function(row){
+				if (!row || row[0] !== 'ability') return true;
+				return getAbilityUseCount(row[1]) > 0;
+			});
 		}
 
 		this.renderedIndex = 0;
@@ -458,7 +485,7 @@
 
 		// icon
 		buf += '<span class="col itemiconcol">';
-		buf += '<span style="' + getItemIcon(item) + ';width:32px;height:32px;display:inline-block"></span>';
+		buf += '<span style="' + getItemIcon(item) + ';width:32px;height:32px;display:inline-block;margin-left:-6px;margin-top:-6px"></span>';
 		buf += '</span> ';
 
 		// name
@@ -488,19 +515,8 @@
 		if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'abilities/' + id + '" data-target="push"';
 		var buf = '<li class="result"><a' + attrs + ' data-entry="ability|' + escapeHTML(ability.name) + '">';
 
-		// Count how many Pokémon have this ability
-		var count = 0;
-		for (var pokeId in BattlePokedex) {
-			var pokemon = BattlePokedex[pokeId];
-			if (pokemon.abilities) {
-				for (var slot in pokemon.abilities) {
-					if (toID(pokemon.abilities[slot]) === id) {
-						count++;
-						break; // Only count each Pokémon once
-					}
-				}
-			}
-		}
+		// Count how many Pokémon have this ability (cached)
+		var count = getAbilityUseCount(id)
 
 		// name with count
 		var name = ability.name;

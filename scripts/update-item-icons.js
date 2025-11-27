@@ -41,23 +41,18 @@ const coordAt = (r, c) => [-(BORDER + c * PITCH), -(BORDER + r * PITCH)];
 for (let i = 0; i < itemArray.length; i++) {
   const { id } = itemArray[i];
 
-  // Current grid coordinate (before any exceptions)
-  const [gx, gy] = coordAt(row, col);
-
   if (isTMHM(id)) {
-    // Assign fixed TM/HM icon and skip this grid slot
+    // Assign fixed TM/HM icon but DON'T advance grid (next item gets this slot)
     newItemCoords[id] = TMHM_ICON;
-    // Advance grid position
-    col++;
-    if (col >= COLUMNS) { col = 0; row++; }
     continue;
   }
+
+  // Current grid coordinate
+  const [gx, gy] = coordAt(row, col);
 
   // Normal assignment
   newItemCoords[id] = [gx, gy];
 
-  // Special case: thick club should use rare bone icon
-  // We'll override after normal assignment if rarebone exists
   // Advance grid position
   col++;
   if (col >= COLUMNS) { col = 0; row++; }
