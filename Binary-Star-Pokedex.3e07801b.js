@@ -1593,7 +1593,13 @@ class BattleItemSearch extends BattleTypedSearch {
             "header",
             "Items"
         ]);
-        for(let id in BattleItems)results.push([
+        // Sort by index number
+        const sortedIds = Object.keys(BattleItems).sort((a, b)=>{
+            const numA = BattleItems[a].num || 0;
+            const numB = BattleItems[b].num || 0;
+            return numA - numB;
+        });
+        for (let id of sortedIds)results.push([
             "item",
             id
         ]);
