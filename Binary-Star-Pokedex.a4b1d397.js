@@ -1127,7 +1127,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
         var buf = '<li class="result"><a' + attrs + ' data-entry="item|' + escapeHTML(item.name) + '">';
         // icon
         buf += '<span class="col itemiconcol">';
-        buf += '<span style="' + getItemIcon(item) + '"></span>';
+        buf += '<span style="' + getItemIcon(item) + ';width:32px;height:32px;display:inline-block"></span>';
         buf += '</span> ';
         // name
         var name = item.name;
