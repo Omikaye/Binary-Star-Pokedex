@@ -330,6 +330,7 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 		}
 
 		// distribution
+		buf += '<h3>Pokémon that learn this move</h3>';
 		buf += '<ul class="utilichart metricchart nokbd">';
 		buf += '</ul>';
 
