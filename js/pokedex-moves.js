@@ -342,20 +342,26 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 	},
 	getDistribution: function() {
 		var results = []
+		var moveId = this.id; // Store the move ID we're looking for
 		for (let pokeId in BattlePokedex) {
 			let learnset = getLearnset(pokeId);
+			if (!learnset || learnset.length === 0) continue;
+			
+			// Filter moves that match this move ID
+			let matchingMoves = learnset.filter((m) => toID(m.move) === moveId);
+			
+			// Add each matching move with the pokemon ID
 			results = results.concat(
-        learnset
-          .filter((m) => m.move == this.id)
-          .map((m) => {
-            return { poke: pokeId, ...m };
-          })
-      );
+				matchingMoves.map((m) => {
+					return { poke: pokeId, ...m };
+				})
+			);
 		}
+		
 		const methods = ["lvl", "tm", "tutor", "egg"];
 		results.sort((a, b) => {
 			if (a.how != b.how) return methods.indexOf(a.how) - methods.indexOf(b.how);
-      if (a.how == "lvl" && a.level != b.level) return a.level - b.level;
+			if (a.how == "lvl" && a.level != b.level) return a.level - b.level;
 			return a.poke.localeCompare(b.poke);
 		});
 
