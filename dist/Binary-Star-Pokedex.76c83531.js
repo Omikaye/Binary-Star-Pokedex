@@ -873,7 +873,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
                 var itemID = toID(m.item);
                 var itemName = BattleItems[itemID]?.name || m.item;
                 var itemHref = BattleItems[itemID] ? Config.baseurl + 'items/' + itemID : null;
-                var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:24px;height:24px;vertical-align:middle"></span>';
+                var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:32px;height:32px;vertical-align:middle"></span>';
                 spritesBlock += itemHref ? '<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:-12px;position:relative;top:4px">' + itemIcon + '</a>' : '<span style="margin-left:16px;position:relative;top:2px">' + itemIcon + '</span>';
             }
             buf += '<span style="display:inline-flex;align-items:center;gap:2px;margin-left:-8px">' + spritesBlock + '</span>';

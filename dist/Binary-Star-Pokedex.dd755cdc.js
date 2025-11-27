@@ -903,7 +903,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
             for(var i = 0; i < relatedItems.length; i++){
                 if (i > 0) buf += ', ';
                 var relItem = relatedItems[i];
-                buf += `<span class="itemicon" style="${getItemIcon(relItem)}"></span><a href="${Config.baseurl}items/${relItem.id}" data-target="push">${relItem.name}</a>`;
+                buf += `<span class="itemicon" style="${getItemIcon(relItem)};width:32px;height:32px"></span><a href="${Config.baseurl}items/${relItem.id}" data-target="push">${relItem.name}</a>`;
             }
             buf += '</dd></dl>';
             buf += '<div style="clear:left"></div>';
@@ -997,7 +997,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
                     break;
                 case 'tm':
                     if (newCategory) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
-                    desc = `<span class="itemicon" style="margin-top:-3px;${getItemIcon("tr01")}"></span>`;
+                    desc = `<span class="itemicon" style="margin-top:-3px;${getItemIcon("tr01")};width:32px;height:32px"></span>`;
                     break;
                 case 'tutor':
                     if (newCategory) buf += '<li class="resultheader"><h3>Tutor</h3></li>';

@@ -829,7 +829,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
                 var sh = loc.shops[si];
                 var itemID = toID(sh.item);
                 buf += '<tr>';
-                buf += '<td><span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:24px;height:24px"></span>' + '</td>';
+                buf += '<td><span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:32px;height:32px"></span>' + '</td>';
                 buf += '<td><a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push">' + escapeHTML(sh.item) + '</a>' + '</td>';
                 buf += '<td style="text-align:center">' + escapeHTML(sh.price || '') + '</td>';
                 buf += '</tr>';
@@ -845,7 +845,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
                 var it = loc.items[ii];
                 var iid = toID(it.item);
                 buf += '<tr>';
-                buf += '<td><span class="picon" style="' + getItemIcon(iid) + ';display:inline-block;width:24px;height:24px"></span>' + '</td>';
+                buf += '<td><span class="picon" style="' + getItemIcon(iid) + ';display:inline-block;width:32px;height:32px"></span>' + '</td>';
                 buf += '<td><a href="' + Config.baseurl + 'items/' + iid + '" data-target="push">' + escapeHTML(it.item) + '</a>' + '</td>';
                 buf += '<td style="text-align:center">' + (it.quantity != null ? it.quantity : 1) + '</td>';
                 buf += '<td>' + escapeHTML(it.obtain || '') + '</td>';

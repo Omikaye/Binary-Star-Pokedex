@@ -24,19 +24,49 @@ const itemArray = Object.entries(items)
 
 console.log(`Processing ${itemArray.length} items...`);
 
-// Generate new coordinates
+// Generate new coordinates with exceptions
 const newItemCoords = {};
-itemArray.forEach((item, index) => {
-  const row = Math.floor(index / COLUMNS);
-  const col = index % COLUMNS;
-  
-  // Calculate x and y offsets (negative because CSS background-position)
-  // Start at 1px to skip the left/top border, and move by 33px (32 + 1 border)
-  const x = -(BORDER + col * PITCH);
-  const y = -(BORDER + row * PITCH);
-  
-  newItemCoords[item.id] = [x, y];
-});
+
+// Helper to detect TM/HM items
+const isTMHM = (id) => /^tm\d{1,2}$/.test(id) || /^hm\d{1,2}$/.test(id);
+// Fixed icon to use for all TM/HM items
+const TMHM_ICON = [-133, -364];
+
+let row = 0;
+let col = 0;
+
+// Precompute the grid coordinate for any (row,col)
+const coordAt = (r, c) => [-(BORDER + c * PITCH), -(BORDER + r * PITCH)];
+
+for (let i = 0; i < itemArray.length; i++) {
+  const { id } = itemArray[i];
+
+  // Current grid coordinate (before any exceptions)
+  const [gx, gy] = coordAt(row, col);
+
+  if (isTMHM(id)) {
+    // Assign fixed TM/HM icon and skip this grid slot
+    newItemCoords[id] = TMHM_ICON;
+    // Advance grid position
+    col++;
+    if (col >= COLUMNS) { col = 0; row++; }
+    continue;
+  }
+
+  // Normal assignment
+  newItemCoords[id] = [gx, gy];
+
+  // Special case: thick club should use rare bone icon
+  // We'll override after normal assignment if rarebone exists
+  // Advance grid position
+  col++;
+  if (col >= COLUMNS) { col = 0; row++; }
+}
+
+// If both items exist, set thickclub to use rarebone's icon
+if (newItemCoords['thickclub'] && newItemCoords['rarebone']) {
+  newItemCoords['thickclub'] = newItemCoords['rarebone'];
+}
 
 // Update icons.json with new item coordinates
 icons.items = newItemCoords;

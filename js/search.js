@@ -458,7 +458,7 @@
 
 		// icon
 		buf += '<span class="col itemiconcol">';
-		buf += '<span style="' + getItemIcon(item) + '"></span>';
+		buf += '<span style="' + getItemIcon(item) + ';width:32px;height:32px;display:inline-block"></span>';
 		buf += '</span> ';
 
 		// name
