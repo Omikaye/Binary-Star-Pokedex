@@ -48,15 +48,17 @@ const iconOrder = iconOrderText.trim().split('\n').map(line => parseInt(line.tri
 
 console.log(`Read ${iconOrder.length} icon indices from IconOrder.txt.`);
 
-// Validate that we have the right number of entries
-if (iconOrder.length !== itemArray.length) {
-  console.error(`ERROR: IconOrder.txt has ${iconOrder.length} entries, but we have ${itemArray.length} items.`);
-  process.exit(1);
+// Use the minimum of iconOrder length and itemArray length (ignore extras)
+const numToProcess = Math.min(iconOrder.length, itemArray.length);
+if (iconOrder.length < itemArray.length) {
+  console.warn(`WARNING: IconOrder.txt has only ${iconOrder.length} entries, but we have ${itemArray.length} items. Missing items will use default coordinates.`);
+} else if (iconOrder.length > itemArray.length) {
+  console.log(`Note: IconOrder.txt has ${iconOrder.length} entries, but we only have ${itemArray.length} items. Extra entries will be ignored.`);
 }
 
 // Assign icons to items based on the order
 const newItemCoords = {};
-for (let i = 0; i < itemArray.length; i++) {
+for (let i = 0; i < numToProcess; i++) {
   const item = itemArray[i];
   const iconIndex = iconOrder[i];
   
@@ -67,6 +69,12 @@ for (let i = 0; i < itemArray.length; i++) {
   
   // Assign the coordinate for this icon index (1-based)
   newItemCoords[item.id] = iconCoords[iconIndex - 1];
+}
+
+// If there are items without icon assignments, give them default coordinates
+for (let i = numToProcess; i < itemArray.length; i++) {
+  const item = itemArray[i];
+  newItemCoords[item.id] = [0, 0]; // Default to first icon
 }
 
 // Update icons.json with new item coordinates
