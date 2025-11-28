@@ -32,7 +32,7 @@
   "analytic": {
     "name": "Analytic",
     "num": 148,
-    "desc": "The power of this Pokemon's move is multiplied by 1.3 if it is the last to move in a turn. Does not affect Doom Desire and Future Sight.",
+    "desc": "The power of this Pokemon's move is multiplied by 1.3 if it is the last to move in a turn. Does not affect Doom Desire and Future Sight. User must be the LAST one to move. Including allies in doubles.",
     "shortDesc": "This Pokemon's attacks have 1.3x power if it is the last to move in a turn."
   },
   "angerpoint": {
@@ -134,7 +134,7 @@
   "berserk": {
     "name": "Berserk",
     "num": 201,
-    "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Special Attack is raised by 1 stage. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
+    "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Special Attack is raised by 1 stage. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. Can apply again if the user is healed above 50%.",
     "shortDesc": "This Pokemon's Sp. Atk is raised by 1 when it reaches 1/2 or less of its max HP."
   },
   "bigpecks": {
