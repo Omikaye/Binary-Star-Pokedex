@@ -31,6 +31,20 @@ window.TrainerNotes = TrainerNotes;
 window.Locations = LocationsJson.locations || [];
 window.TrainerSprites = TrainerSprites;
 
+// Build reverse mapping: coordinate -> icon index for debugging
+window.ItemIconIndices = {};
+const BORDER = 1;
+const PITCH = 33;
+const COLUMNS = 28;
+for (let itemId in Icons.items) {
+  const [x, y] = Icons.items[itemId];
+  // Reverse calculate: x = -(1 + col*33), y = -(1 + row*33)
+  const col = Math.round((-x - BORDER) / PITCH);
+  const row = Math.round((-y - BORDER) / PITCH);
+  const iconIndex = row * COLUMNS + col + 1; // 1-based
+  ItemIconIndices[itemId] = iconIndex;
+}
+
 window.toID = (text) => {
   if (text?.id) {
     text = text.id;
