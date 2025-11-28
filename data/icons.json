@@ -7379,39 +7379,39 @@
       -397
     ],
     "contestpass": [
-      -694,
-      -397
-    ],
-    "magmastone": [
       -727,
       -397
     ],
-    "parcel": [
+    "magmastone": [
       -760,
       -397
     ],
-    "coupon1": [
+    "parcel": [
       -793,
       -397
     ],
-    "coupon2": [
+    "coupon1": [
       -826,
       -397
     ],
-    "coupon3": [
+    "coupon2": [
       -859,
       -397
     ],
-    "miraclemeds": [
+    "coupon3": [
       -892,
       -397
     ],
+    "miraclemeds": [
+      -34,
+      -430
+    ],
     "vsrecorder": [
-      -1,
+      -133,
       -430
     ],
     "gracidea": [
-      -34,
+      -100,
       -430
     ],
     "secretkey": [
@@ -7419,1755 +7419,1755 @@
       -430
     ],
     "apricornbox": [
-      -100,
+      -166,
       -430
     ],
     "unownreport": [
-      -133,
+      -199,
       -430
     ],
     "berrypots": [
-      -166,
+      -232,
       -430
     ],
     "dowsingmachine": [
-      -199,
+      -265,
       -430
     ],
     "bluecard": [
-      -232,
+      -298,
       -430
     ],
     "slowpoketail": [
-      -265,
+      -331,
       -430
     ],
     "clearbell": [
-      -298,
+      -364,
       -430
     ],
     "cardkey": [
-      -331,
+      -397,
       -430
     ],
     "squirtbottle": [
-      -364,
+      -430,
       -430
     ],
     "redscale": [
-      -397,
+      -463,
       -430
     ],
     "lostitem": [
-      -430,
+      -496,
       -430
     ],
     "pass": [
-      -463,
+      -529,
       -430
     ],
     "machinepart": [
-      -496,
+      -562,
       -430
     ],
     "silverwing": [
-      -529,
+      -595,
       -430
     ],
     "rainbowwing": [
-      -562,
+      -628,
       -430
     ],
     "mysteryegg": [
-      -595,
+      -661,
       -430
     ],
     "redapricorn": [
-      -628,
+      -694,
       -430
     ],
     "blueapricorn": [
-      -661,
+      -727,
       -430
     ],
     "yellowapricorn": [
-      -694,
+      -760,
       -430
     ],
     "greenapricorn": [
-      -727,
+      -793,
       -430
     ],
     "pinkapricorn": [
-      -760,
+      -826,
       -430
     ],
     "whiteapricorn": [
-      -793,
+      -859,
       -430
     ],
     "blackapricorn": [
-      -826,
+      -892,
       -430
     ],
     "fastball": [
-      -859,
-      -430
+      -1,
+      -463
     ],
     "levelball": [
-      -892,
-      -430
+      -34,
+      -463
     ],
     "lureball": [
-      -1,
+      -67,
       -463
     ],
     "heavyball": [
-      -34,
+      -100,
       -463
     ],
     "loveball": [
-      -67,
+      -133,
       -463
     ],
     "friendball": [
-      -100,
+      -166,
       -463
     ],
     "moonball": [
-      -133,
+      -199,
       -463
     ],
     "sportball": [
-      -166,
+      -232,
       -463
     ],
     "parkball": [
-      -199,
+      -265,
       -463
     ],
     "photoalbum": [
-      -232,
+      -298,
       -463
     ],
     "gbsounds": [
-      -265,
+      -331,
       -463
     ],
     "tidalbell": [
-      -298,
+      -364,
       -463
     ],
     "ragecandybar": [
-      -331,
+      -397,
       -463
     ],
     "raticatite": [
-      -364,
+      -430,
       -463
     ],
     "marowakite": [
-      -397,
+      -463,
       -463
     ],
     "gumshoosite": [
-      -430,
+      -496,
       -463
     ],
     "vikavoltite": [
-      -463,
+      -529,
       -463
     ],
     "ribombite": [
-      -496,
+      -562,
       -463
     ],
     "araquanite": [
-      -529,
+      -595,
       -463
     ],
     "lurantite": [
-      -562,
+      -628,
       -463
     ],
     "salazzlite": [
-      -595,
+      -661,
       -463
     ],
     "togedemarinite": [
-      -628,
+      -694,
       -463
     ],
     "mimikyunite": [
-      -661,
+      -727,
       -463
     ],
     "kommoonite": [
-      -694,
+      -760,
       -463
     ],
     "greninjite": [
-      -727,
+      -793,
       -463
     ],
     "darmanitanite": [
-      -760,
+      -826,
       -463
     ],
     "datacard14": [
-      -793,
+      -859,
       -463
     ],
     "datacard15": [
-      -826,
+      -892,
       -463
     ],
     "datacard16": [
-      -859,
-      -463
+      -1,
+      -496
     ],
     "datacard17": [
-      -892,
-      -463
+      -34,
+      -496
     ],
     "datacard18": [
-      -1,
+      -67,
       -496
     ],
     "datacard19": [
-      -34,
+      -100,
       -496
     ],
     "datacard20": [
-      -67,
+      -133,
       -496
     ],
     "datacard21": [
-      -100,
+      -166,
       -496
     ],
     "datacard22": [
-      -133,
+      -199,
       -496
     ],
     "datacard23": [
-      -166,
+      -232,
       -496
     ],
     "datacard24": [
-      -199,
+      -265,
       -496
     ],
     "datacard25": [
-      -232,
+      -298,
       -496
     ],
     "datacard26": [
-      -265,
+      -331,
       -496
     ],
     "datacard27": [
-      -298,
+      -364,
       -496
     ],
     "jadeorb": [
-      -331,
+      -397,
       -496
     ],
     "lockcapsule": [
-      -364,
+      -430,
       -496
     ],
     "redorb": [
-      -397,
+      -463,
       -496
     ],
     "blueorb": [
-      -430,
+      -496,
       -496
     ],
     "enigmastone": [
-      -463,
+      -529,
       -496
     ],
     "prismscale": [
-      -496,
+      -562,
       -496
     ],
     "eviolite": [
-      -529,
+      -595,
       -496
     ],
     "floatstone": [
-      -562,
+      -628,
       -496
     ],
     "rockyhelmet": [
-      -595,
+      -661,
       -496
     ],
     "airballoon": [
-      -628,
+      -694,
       -496
     ],
     "redcard": [
-      -661,
+      -727,
       -496
     ],
     "ringtarget": [
-      -694,
+      -760,
       -496
     ],
     "bindingband": [
-      -727,
+      -793,
       -496
     ],
     "absorbbulb": [
-      -760,
+      -826,
       -496
     ],
     "cellbattery": [
-      -793,
+      -859,
       -496
     ],
     "ejectbutton": [
-      -826,
+      -892,
       -496
     ],
     "firegem": [
-      -859,
-      -496
+      -1,
+      -529
     ],
     "watergem": [
-      -892,
-      -496
+      -34,
+      -529
     ],
     "electricgem": [
-      -1,
+      -67,
       -529
     ],
     "grassgem": [
-      -34,
+      -100,
       -529
     ],
     "icegem": [
-      -67,
+      -133,
       -529
     ],
     "fightinggem": [
-      -100,
+      -166,
       -529
     ],
     "poisongem": [
-      -133,
+      -199,
       -529
     ],
     "groundgem": [
-      -166,
+      -232,
       -529
     ],
     "flyinggem": [
-      -199,
+      -265,
       -529
     ],
     "psychicgem": [
-      -232,
+      -298,
       -529
     ],
     "buggem": [
-      -265,
+      -331,
       -529
     ],
     "rockgem": [
-      -298,
+      -364,
       -529
     ],
     "ghostgem": [
-      -331,
+      -397,
       -529
     ],
     "dragongem": [
-      -364,
+      -430,
       -529
     ],
     "darkgem": [
-      -397,
+      -463,
       -529
     ],
     "steelgem": [
-      -430,
+      -496,
       -529
     ],
     "normalgem": [
-      -463,
+      -529,
       -529
     ],
     "healthwing": [
-      -496,
+      -562,
       -529
     ],
     "musclewing": [
-      -529,
+      -595,
       -529
     ],
     "resistwing": [
-      -562,
+      -628,
       -529
     ],
     "geniuswing": [
-      -595,
+      -661,
       -529
     ],
     "cleverwing": [
-      -628,
+      -694,
       -529
     ],
     "swiftwing": [
-      -661,
+      -727,
       -529
     ],
     "prettywing": [
-      -694,
+      -760,
       -529
     ],
     "coverfossil": [
-      -727,
+      -793,
       -529
     ],
     "plumefossil": [
-      -760,
+      -826,
       -529
     ],
     "libertypass": [
-      -793,
+      -859,
       -529
     ],
     "passorb": [
-      -826,
+      -892,
       -529
     ],
     "dreamball": [
-      -859,
-      -529
+      -1,
+      -562
     ],
     "poktoy": [
-      -892,
-      -529
+      -34,
+      -562
     ],
     "propcase": [
-      -1,
+      -67,
       -562
     ],
     "dragonskull": [
-      -34,
+      -100,
       -562
     ],
     "balmmushroom": [
-      -67,
+      -133,
       -562
     ],
     "bignugget": [
-      -100,
+      -166,
       -562
     ],
     "pearlstring": [
-      -133,
+      -199,
       -562
     ],
     "cometshard": [
-      -166,
+      -232,
       -562
     ],
     "reliccopper": [
-      -199,
+      -265,
       -562
     ],
     "relicsilver": [
-      -232,
+      -298,
       -562
     ],
     "relicgold": [
-      -265,
+      -331,
       -562
     ],
     "relicvase": [
-      -298,
+      -364,
       -562
     ],
     "relicband": [
-      -331,
+      -397,
       -562
     ],
     "relicstatue": [
-      -364,
+      -430,
       -562
     ],
     "reliccrown": [
-      -397,
+      -463,
       -562
     ],
     "casteliacone": [
-      -430,
+      -496,
       -562
     ],
     "direhit2": [
-      -463,
+      -529,
       -562
     ],
     "xspeed2": [
-      -496,
+      -562,
       -562
     ],
     "xspatk2": [
-      -529,
+      -595,
       -562
     ],
     "xspdef2": [
-      -562,
+      -628,
       -562
     ],
     "xdefense2": [
-      -595,
+      -661,
       -562
     ],
     "xattack2": [
-      -628,
+      -694,
       -562
     ],
     "xaccuracy2": [
-      -661,
+      -727,
       -562
     ],
     "xspeed3": [
-      -694,
+      -760,
       -562
     ],
     "xspatk3": [
-      -727,
+      -793,
       -562
     ],
     "xspdef3": [
-      -760,
+      -826,
       -562
     ],
     "xdefense3": [
-      -793,
+      -859,
       -562
     ],
     "xattack3": [
-      -826,
+      -892,
       -562
     ],
     "xaccuracy3": [
-      -859,
-      -562
+      -1,
+      -595
     ],
     "xspeed6": [
-      -892,
-      -562
+      -34,
+      -595
     ],
     "xspatk6": [
-      -1,
+      -67,
       -595
     ],
     "xspdef6": [
-      -34,
+      -100,
       -595
     ],
     "xdefense6": [
-      -67,
+      -133,
       -595
     ],
     "xattack6": [
-      -100,
+      -166,
       -595
     ],
     "xaccuracy6": [
-      -133,
+      -199,
       -595
     ],
     "abilityurge": [
-      -166,
+      -232,
       -595
     ],
     "itemdrop": [
-      -199,
+      -265,
       -595
     ],
     "itemurge": [
-      -232,
+      -298,
       -595
     ],
     "reseturge": [
-      -265,
+      -331,
       -595
     ],
     "direhit3": [
-      -298,
+      -364,
       -595
     ],
     "lightstone": [
-      -331,
+      -397,
       -595
     ],
     "darkstone": [
-      -364,
+      -430,
       -595
     ],
     "tm93": [
-      -397,
+      -463,
       -595
     ],
     "tm94": [
-      -430,
+      -496,
       -595
     ],
     "tm95": [
-      -463,
+      -529,
       -595
     ],
     "gram1": [
-      -496,
+      -562,
       -595
     ],
     "gram2": [
-      -529,
+      -595,
       -595
     ],
     "gram3": [
-      -562,
+      -628,
       -595
     ],
     "xtransceiver": [
-      -595,
+      -661,
       -595
     ],
     "medalbox": [
-      -628,
+      -694,
       -595
     ],
     "dnasplicers": [
-      -661,
+      -727,
       -595
     ],
     "permit": [
-      -694,
+      -760,
       -595
     ],
     "ovalcharm": [
-      -727,
+      -793,
       -595
     ],
     "shinycharm": [
-      -760,
+      -826,
       -595
     ],
     "plasmacard": [
-      -793,
+      -859,
       -595
     ],
     "grubbyhanky": [
-      -826,
+      -892,
       -595
     ],
     "colressmachine": [
-      -859,
-      -595
+      -1,
+      -628
     ],
     "droppeditem": [
-      -892,
-      -595
+      -34,
+      -628
     ],
     "revealglass": [
-      -1,
+      -67,
       -628
     ],
     "weaknesspolicy": [
-      -34,
+      -100,
       -628
     ],
     "assaultvest": [
-      -67,
+      -133,
       -628
     ],
     "profsletter": [
-      -100,
+      -166,
       -628
     ],
     "rollerskates": [
-      -133,
+      -199,
       -628
     ],
     "pixieplate": [
-      -166,
+      -232,
       -628
     ],
     "abilitypills": [
-      -199,
+      -265,
       -628
     ],
     "whippeddream": [
-      -232,
+      -298,
       -628
     ],
     "sachet": [
-      -265,
+      -331,
       -628
     ],
     "luminousmoss": [
-      -298,
+      -364,
       -628
     ],
     "snowball": [
-      -331,
+      -397,
       -628
     ],
     "safetygoggles": [
-      -364,
+      -430,
       -628
     ],
     "pokflute": [
-      -397,
+      -463,
       -628
     ],
     "richmulch": [
-      -430,
+      -496,
       -628
     ],
     "surprisemulch": [
-      -463,
+      -529,
       -628
     ],
     "boostmulch": [
-      -496,
+      -562,
       -628
     ],
     "amazemulch": [
-      -529,
+      -595,
       -628
     ],
     "gengarite": [
-      -562,
+      -628,
       -628
     ],
     "gardevoirite": [
-      -595,
+      -661,
       -628
     ],
     "ampharosite": [
-      -628,
+      -694,
       -628
     ],
     "venusaurite": [
-      -661,
+      -727,
       -628
     ],
     "charizarditex": [
-      -694,
+      -760,
       -628
     ],
     "blastoisinite": [
-      -727,
+      -793,
       -628
     ],
     "mewtwonitex": [
-      -760,
+      -826,
       -628
     ],
     "mewtwonitey": [
-      -793,
+      -859,
       -628
     ],
     "blazikenite": [
-      -826,
+      -892,
       -628
     ],
     "medichamite": [
-      -859,
-      -628
+      -1,
+      -661
     ],
     "houndoominite": [
-      -892,
-      -628
+      -34,
+      -661
     ],
     "aggronite": [
-      -1,
+      -67,
       -661
     ],
     "banettite": [
-      -34,
+      -100,
       -661
     ],
     "tyranitarite": [
-      -67,
+      -133,
       -661
     ],
     "scizorite": [
-      -100,
+      -166,
       -661
     ],
     "pinsirite": [
-      -133,
+      -199,
       -661
     ],
     "aerodactylite": [
-      -166,
+      -232,
       -661
     ],
     "lucarionite": [
-      -199,
+      -265,
       -661
     ],
     "abomasite": [
-      -232,
+      -298,
       -661
     ],
     "kangaskhanite": [
-      -265,
+      -331,
       -661
     ],
     "gyaradosite": [
-      -298,
+      -364,
       -661
     ],
     "absolite": [
-      -331,
+      -397,
       -661
     ],
     "charizarditey": [
-      -364,
+      -430,
       -661
     ],
     "alakazite": [
-      -397,
+      -463,
       -661
     ],
     "heracronite": [
-      -430,
+      -496,
       -661
     ],
     "mawilite": [
-      -463,
+      -529,
       -661
     ],
     "manectite": [
-      -496,
+      -562,
       -661
     ],
     "garchompite": [
-      -529,
+      -595,
       -661
     ],
     "latiasite": [
-      -562,
+      -628,
       -661
     ],
     "latiosite": [
-      -595,
+      -661,
       -661
     ],
     "roseliberry": [
-      -628,
+      -694,
       -661
     ],
     "keeberry": [
-      -661,
+      -727,
       -661
     ],
     "marangaberry": [
-      -694,
+      -760,
       -661
     ],
     "sprinklotad": [
-      -727,
+      -793,
       -661
     ],
     "tm96": [
-      -760,
+      -826,
       -661
     ],
     "tm97": [
-      -793,
+      -859,
       -661
     ],
     "tm98": [
-      -826,
+      -892,
       -661
     ],
     "tm99": [
-      -859,
-      -661
+      -1,
+      -694
     ],
     "tm100": [
-      -892,
-      -661
+      -34,
+      -694
     ],
     "powerplantpass": [
-      -1,
+      -67,
       -694
     ],
     "megaring": [
-      -34,
+      -100,
       -694
     ],
     "intriguingstone": [
-      -67,
+      -133,
       -694
     ],
     "commonstone": [
-      -100,
+      -166,
       -694
     ],
     "discountcoupon": [
-      -133,
+      -199,
       -694
     ],
     "elevatorkey": [
-      -166,
+      -232,
       -694
     ],
     "tmvpass": [
-      -199,
+      -265,
       -694
     ],
     "honorofkalos": [
-      -232,
+      -298,
       -694
     ],
     "adventurerules": [
-      -265,
+      -331,
       -694
     ],
     "strangesouvenir": [
-      -298,
+      -364,
       -694
     ],
     "lenscase": [
-      -331,
+      -397,
       -694
     ],
     "makeupbag": [
-      -364,
+      -430,
       -694
     ],
     "traveltrunk": [
-      -397,
+      -463,
       -694
     ],
     "lumiosegalette": [
-      -430,
+      -496,
       -694
     ],
     "shaloursable": [
-      -463,
+      -529,
       -694
     ],
     "jawfossil": [
-      -496,
+      -562,
       -694
     ],
     "sailfossil": [
-      -529,
+      -595,
       -694
     ],
     "lookerticket": [
-      -562,
+      -628,
       -694
     ],
     "bike": [
-      -595,
+      -661,
       -694
     ],
     "holocaster": [
-      -628,
+      -694,
       -694
     ],
     "fairygem": [
-      -661,
+      -727,
       -694
     ],
     "megacharm": [
-      -694,
+      -760,
       -694
     ],
     "megaglove": [
-      -727,
+      -793,
       -694
     ],
     "machbike": [
-      -760,
+      -826,
       -694
     ],
     "acrobike": [
-      -793,
+      -859,
       -694
     ],
     "wailmerpail": [
-      -826,
+      -892,
       -694
     ],
     "devonparts": [
-      -859,
-      -694
+      -1,
+      -727
     ],
     "sootsack": [
-      -892,
-      -694
+      -34,
+      -727
     ],
     "basementkey": [
-      -1,
+      -67,
       -727
     ],
     "pokblockkit": [
-      -34,
+      -100,
       -727
     ],
     "letter": [
-      -67,
+      -133,
       -727
     ],
     "eonticket": [
-      -100,
+      -166,
       -727
     ],
     "scanner": [
-      -133,
+      -199,
       -727
     ],
     "gogoggles": [
-      -166,
+      -232,
       -727
     ],
     "keytoroom1": [
-      -199,
+      -265,
       -727
     ],
     "keytoroom2": [
-      -232,
+      -298,
       -727
     ],
     "keytoroom4": [
-      -265,
+      -331,
       -727
     ],
     "keytoroom6": [
-      -298,
+      -364,
       -727
     ],
     "storagekey": [
-      -331,
+      -397,
       -727
     ],
     "devonscope": [
-      -364,
+      -430,
       -727
     ],
     "ssticket": [
-      -397,
+      -463,
       -727
     ],
     "hm07": [
-      -430,
+      -496,
       -727
     ],
     "devonscubagear": [
-      -463,
+      -529,
       -727
     ],
     "contestcostume": [
-      -496,
+      -562,
       -727
     ],
     "magmasuit": [
-      -529,
+      -595,
       -727
     ],
     "aquasuit": [
-      -562,
+      -628,
       -727
     ],
     "pairoftickets": [
-      -595,
+      -661,
       -727
     ],
     "megabracelet": [
-      -628,
+      -694,
       -727
     ],
     "megapendant": [
-      -661,
+      -727,
       -727
     ],
     "megaglasses": [
-      -694,
+      -760,
       -727
     ],
     "megaanchor": [
-      -727,
+      -793,
       -727
     ],
     "megastickpin": [
-      -760,
+      -826,
       -727
     ],
     "megatiara": [
-      -793,
+      -859,
       -727
     ],
     "megaanklet": [
-      -826,
+      -892,
       -727
     ],
     "swampertite": [
-      -859,
-      -727
+      -1,
+      -760
     ],
     "sceptilite": [
-      -892,
-      -727
+      -34,
+      -760
     ],
     "sablenite": [
-      -1,
+      -67,
       -760
     ],
     "altarianite": [
-      -34,
+      -100,
       -760
     ],
     "galladite": [
-      -67,
+      -133,
       -760
     ],
     "audinite": [
-      -100,
+      -166,
       -760
     ],
     "metagrossite": [
-      -133,
+      -199,
       -760
     ],
     "sharpedonite": [
-      -166,
+      -232,
       -760
     ],
     "slowbronite": [
-      -199,
+      -265,
       -760
     ],
     "steelixite": [
-      -232,
+      -298,
       -760
     ],
     "pidgeotite": [
-      -265,
+      -331,
       -760
     ],
     "glalitite": [
-      -298,
+      -364,
       -760
     ],
     "diancite": [
-      -331,
+      -397,
       -760
     ],
     "prisonbottle": [
-      -364,
+      -430,
       -760
     ],
     "megacuff": [
-      -397,
+      -463,
       -760
     ],
     "cameruptite": [
-      -430,
+      -496,
       -760
     ],
     "lopunnite": [
-      -463,
+      -529,
       -760
     ],
     "salamencite": [
-      -496,
+      -562,
       -760
     ],
     "beedrillite": [
-      -529,
+      -595,
       -760
     ],
     "meteorite": [
-      -562,
+      -628,
       -760
     ],
     "keystone": [
-      -595,
+      -661,
       -760
     ],
     "meteoriteshard": [
-      -628,
+      -694,
       -760
     ],
     "eonflute": [
-      -661,
+      -727,
       -760
     ],
     "normaliumz": [
-      -694,
+      -760,
       -760
     ],
     "firiumz": [
-      -727,
+      -793,
       -760
     ],
     "wateriumz": [
-      -760,
+      -826,
       -760
     ],
     "electriumz": [
-      -793,
+      -859,
       -760
     ],
     "grassiumz": [
-      -826,
+      -892,
       -760
     ],
     "iciumz": [
-      -859,
-      -760
+      -1,
+      -793
     ],
     "fightiniumz": [
-      -892,
-      -760
+      -34,
+      -793
     ],
     "poisoniumz": [
-      -1,
+      -67,
       -793
     ],
     "groundiumz": [
-      -34,
+      -100,
       -793
     ],
     "flyiniumz": [
-      -67,
+      -133,
       -793
     ],
     "psychiumz": [
-      -100,
+      -166,
       -793
     ],
     "buginiumz": [
-      -133,
+      -199,
       -793
     ],
     "rockiumz": [
-      -166,
+      -232,
       -793
     ],
     "ghostiumz": [
-      -199,
+      -265,
       -793
     ],
     "dragoniumz": [
-      -232,
+      -298,
       -793
     ],
     "darkiniumz": [
-      -265,
+      -331,
       -793
     ],
     "steeliumz": [
-      -298,
+      -364,
       -793
     ],
     "fairiumz": [
-      -331,
+      -397,
       -793
     ],
     "pikaniumz": [
-      -364,
+      -430,
       -793
     ],
     "bottlecap": [
-      -397,
+      -463,
       -793
     ],
     "goldbottlecap": [
-      -430,
+      -496,
       -793
     ],
     "zring": [
-      -463,
+      -529,
       -793
     ],
     "decidiumz": [
-      -496,
+      -562,
       -793
     ],
     "inciniumz": [
-      -529,
+      -595,
       -793
     ],
     "primariumz": [
-      -562,
+      -628,
       -793
     ],
     "tapuniumz": [
-      -595,
+      -661,
       -793
     ],
     "marshadiumz": [
-      -628,
+      -694,
       -793
     ],
     "raichiumz": [
-      -661,
+      -727,
       -793
     ],
     "snorliumz": [
-      -694,
+      -760,
       -793
     ],
     "eeviumz": [
-      -727,
+      -793,
       -793
     ],
     "mewniumz": [
-      -760,
+      -826,
       -793
     ],
     "normaliumznode": [
-      -793,
+      -859,
       -793
     ],
     "firiumznode": [
-      -826,
+      -892,
       -793
     ],
     "wateriumznode": [
-      -859,
-      -793
+      -1,
+      -826
     ],
     "electriumznode": [
-      -892,
-      -793
+      -34,
+      -826
     ],
     "grassiumznode": [
-      -1,
+      -67,
       -826
     ],
     "iciumznode": [
-      -34,
+      -100,
       -826
     ],
     "fightiniumznode": [
-      -67,
+      -133,
       -826
     ],
     "poisoniumznode": [
-      -100,
+      -166,
       -826
     ],
     "groundiumznode": [
-      -133,
+      -199,
       -826
     ],
     "flyiniumznode": [
-      -166,
+      -232,
       -826
     ],
     "psychiumznode": [
-      -199,
+      -265,
       -826
     ],
     "buginiumznode": [
-      -232,
+      -298,
       -826
     ],
     "rockiumznode": [
-      -265,
+      -331,
       -826
     ],
     "ghostiumznode": [
-      -298,
+      -364,
       -826
     ],
     "dragoniumznode": [
-      -331,
+      -397,
       -826
     ],
     "darkiniumznode": [
-      -364,
+      -430,
       -826
     ],
     "steeliumznode": [
-      -397,
+      -463,
       -826
     ],
     "fairiumznode": [
-      -430,
+      -496,
       -826
     ],
     "pikaniumznode": [
-      -463,
+      -529,
       -826
     ],
     "decidiumznode": [
-      -496,
+      -562,
       -826
     ],
     "inciniumznode": [
-      -529,
+      -595,
       -826
     ],
     "primariumznode": [
-      -562,
+      -628,
       -826
     ],
     "tapuniumznode": [
-      -595,
+      -661,
       -826
     ],
     "marshadiumznode": [
-      -628,
+      -694,
       -826
     ],
     "raichiumznode": [
-      -661,
+      -727,
       -826
     ],
     "snorliumznode": [
-      -694,
+      -760,
       -826
     ],
     "eeviumznode": [
-      -727,
+      -793,
       -826
     ],
     "mewniumznode": [
-      -760,
+      -826,
       -826
     ],
     "pikashuniumznode": [
-      -793,
+      -859,
       -826
     ],
     "pikashuniumz": [
-      -826,
+      -892,
       -826
     ],
     "alolansack": [
-      -859,
-      -826
+      -1,
+      -859
     ],
     "fishingrod": [
-      -892,
-      -826
+      -34,
+      -859
     ],
     "professorsmask": [
-      -1,
+      -67,
       -859
     ],
     "festivalticket": [
-      -34,
+      -100,
       -859
     ],
     "sparklingstone": [
-      -67,
+      -133,
       -859
     ],
     "adrenalineorb": [
-      -100,
+      -166,
       -859
     ],
     "zygardecube": [
-      -133,
+      -199,
       -859
     ],
     "icestone": [
-      -166,
+      -232,
       -859
     ],
     "ridepager": [
-      -199,
+      -265,
       -859
     ],
     "beastball": [
-      -232,
+      -298,
       -859
     ],
     "bigmalasada": [
-      -265,
+      -331,
       -859
     ],
     "rednectar": [
-      -298,
+      -364,
       -859
     ],
     "yellownectar": [
-      -331,
+      -397,
       -859
     ],
     "pinknectar": [
-      -364,
+      -430,
       -859
     ],
     "purplenectar": [
-      -397,
+      -463,
       -859
     ],
     "sunflute": [
-      -430,
+      -496,
       -859
     ],
     "moonflute": [
-      -463,
+      -529,
       -859
     ],
     "enigmaticcard": [
-      -496,
+      -562,
       -859
     ],
     "terrainext": [
-      -529,
+      -595,
       -859
     ],
     "protpads": [
-      -562,
+      -628,
       -859
     ],
     "electricseed": [
-      -595,
+      -661,
       -859
     ],
     "psychicseed": [
-      -628,
+      -694,
       -859
     ],
     "mistyseed": [
-      -661,
+      -727,
       -859
     ],
     "grassyseed": [
-      -694,
+      -760,
       -859
     ],
     "": [
-      -727,
+      -793,
       -859
     ],
     "fightingmem": [
-      -760,
+      -826,
       -859
     ],
     "flyingmem": [
-      -793,
+      -859,
       -859
     ],
     "poisonmem": [
-      -826,
+      -892,
       -859
     ],
     "groundmem": [
-      -859,
-      -859
+      -1,
+      -892
     ],
     "rockmem": [
-      -892,
-      -859
+      -34,
+      -892
     ],
     "bugmem": [
-      -1,
+      -67,
       -892
     ],
     "ghostmem": [
-      -34,
+      -100,
       -892
     ],
     "steelmem": [
-      -67,
+      -133,
       -892
     ],
     "firemem": [
-      -100,
+      -166,
       -892
     ],
     "watermem": [
-      -133,
+      -199,
       -892
     ],
     "grassmem": [
-      -166,
+      -232,
       -892
     ],
     "electricmem": [
-      -199,
+      -265,
       -892
     ],
     "psychicmem": [
-      -232,
+      -298,
       -892
     ],
     "icemem": [
-      -265,
+      -331,
       -892
     ],
     "dragonmem": [
-      -298,
+      -364,
       -892
     ],
     "darkmem": [
-      -331,
+      -397,
       -892
     ],
     "fairymem": [
-      -364,
+      -430,
       -892
     ],
     "solganiumz": [
-      -397,
+      -463,
       -892
     ],
     "lunaliumz": [
-      -430,
+      -496,
       -892
     ],
     "ultranecroziumz": [
-      -463,
+      -529,
       -892
     ],
     "mimikiumz": [
-      -496,
+      -562,
       -892
     ],
     "lycaniumz": [
-      -529,
+      -595,
       -892
     ],
     "kommoniumz": [
-      -562,
+      -628,
       -892
     ],
     "solganiumznode": [
-      -595,
+      -661,
       -892
     ],
     "lunaliumznode": [
-      -628,
-      -892
-    ],
-    "ultranecroziumzn": [
-      -661,
-      -892
-    ],
-    "mimikiumznode": [
       -694,
       -892
     ],
-    "lycaniumznode": [
+    "ultranecroziumzn": [
       -727,
       -892
     ],
-    "kommoniumznode": [
+    "mimikiumznode": [
       -760,
       -892
     ],
-    "zpowerring": [
+    "lycaniumznode": [
       -793,
       -892
     ],
-    "pinkpetal": [
+    "kommoniumznode": [
       -826,
       -892
     ],
-    "orangepetal": [
+    "zpowerring": [
       -859,
       -892
     ],
-    "bluepetal": [
+    "pinkpetal": [
       -892,
       -892
     ],
-    "redpetal": [
+    "orangepetal": [
       -1,
       -925
     ],
-    "greenpetal": [
+    "bluepetal": [
       -34,
       -925
     ],
-    "yellowpetal": [
+    "redpetal": [
       -67,
       -925
     ],
-    "purplepetal": [
+    "greenpetal": [
       -100,
       -925
     ],
-    "rainbowflower": [
+    "yellowpetal": [
       -133,
       -925
     ],
-    "kantobadge": [
+    "purplepetal": [
       -166,
       -925
     ],
-    "nsolarizer": [
+    "rainbowflower": [
       -199,
       -925
     ],
-    "nlunarizer": [
+    "kantobadge": [
       -232,
       -925
     ],
-    "ilimasnormaliumz": [
+    "nsolarizer": [
       -265,
       -925
     ],
-    "leftpokball": [
+    "nlunarizer": [
       -298,
       -925
     ],
-    "rotohatch": [
+    "ilimasnormaliumz": [
       -331,
       -925
     ],
-    "rotobargain": [
+    "leftpokball": [
       -364,
       -925
     ],
-    "rotoprizemoney": [
+    "rotohatch": [
       -397,
       -925
     ],
-    "rotoexppoints": [
+    "rotobargain": [
       -430,
       -925
     ],
-    "rotofriendship": [
+    "rotoprizemoney": [
       -463,
       -925
     ],
-    "rotoencounter": [
+    "rotoexppoints": [
       -496,
       -925
     ],
-    "rotostealth": [
+    "rotofriendship": [
       -529,
       -925
     ],
-    "rotohprestore": [
+    "rotoencounter": [
       -562,
       -925
     ],
-    "rotopprestore": [
+    "rotostealth": [
       -595,
       -925
     ],
-    "rotoboost": [
+    "rotohprestore": [
       -628,
       -925
     ],
-    "rotocatch": [
+    "rotopprestore": [
       -661,
+      -925
+    ],
+    "rotoboost": [
+      -694,
+      -925
+    ],
+    "rotocatch": [
+      -727,
       -925
     ]
   }
