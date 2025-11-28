@@ -39,7 +39,41 @@ const itemArray = Object.entries(items)
   .sort((a, b) => a.num - b.num);
 
 console.log(`Prepared ${itemArray.length} items for icon assignment.`);
-console.log(`Ready to accept icon order from IconOrder.txt.`);
 
-// To finish: read IconOrder.txt, assign iconCoords[iconIndex-1] to each item in order, and write to icons.json
-// (This step will be performed after you provide IconOrder.txt)
+// Read IconOrder.txt
+const iconOrderPath = path.join(process.cwd(), 'data/rawtxt/IconOrder.txt');
+console.log('Reading IconOrder.txt...');
+const iconOrderText = fs.readFileSync(iconOrderPath, 'utf8');
+const iconOrder = iconOrderText.trim().split('\n').map(line => parseInt(line.trim(), 10));
+
+console.log(`Read ${iconOrder.length} icon indices from IconOrder.txt.`);
+
+// Validate that we have the right number of entries
+if (iconOrder.length !== itemArray.length) {
+  console.error(`ERROR: IconOrder.txt has ${iconOrder.length} entries, but we have ${itemArray.length} items.`);
+  process.exit(1);
+}
+
+// Assign icons to items based on the order
+const newItemCoords = {};
+for (let i = 0; i < itemArray.length; i++) {
+  const item = itemArray[i];
+  const iconIndex = iconOrder[i];
+  
+  if (iconIndex < 1 || iconIndex > iconCoords.length) {
+    console.error(`ERROR: Invalid icon index ${iconIndex} for item ${item.id} (line ${i + 1} in IconOrder.txt)`);
+    process.exit(1);
+  }
+  
+  // Assign the coordinate for this icon index (1-based)
+  newItemCoords[item.id] = iconCoords[iconIndex - 1];
+}
+
+// Update icons.json with new item coordinates
+icons.items = newItemCoords;
+
+console.log('Writing updated icons.json...');
+fs.writeFileSync(iconsPath, JSON.stringify(icons, null, 2), 'utf8');
+
+console.log(`Done! Updated ${Object.keys(newItemCoords).length} item icon coordinates.`);
+console.log(`Using offset ${BORDER}px and pitch ${PITCH}px (per axis).`);
