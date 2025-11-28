@@ -7563,60 +7563,60 @@
       -463
     ],
     "raticatite": [
-      -1,
-      -1
+      -892,
+      -595
     ],
     "marowakite": [
-      -1,
-      -1
+      -100,
+      -727
     ],
     "gumshoosite": [
-      -1,
-      -1
+      -133,
+      -727
     ],
     "vikavoltite": [
-      -1,
-      -1
+      -67,
+      -628
     ],
     "ribombite": [
-      -1,
-      -1
+      -34,
+      -628
     ],
     "araquanite": [
-      -1,
-      -1
+      -232,
+      -628
     ],
     "lurantite": [
-      -1,
-      -1
+      -661,
+      -694
     ],
     "salazzlite": [
-      -1,
-      -1
+      -529,
+      -628
     ],
     "togedemarinite": [
-      -1,
-      -1
+      -463,
+      -628
     ],
     "mimikyunite": [
-      -1,
-      -1
+      -199,
+      -727
     ],
     "kommoonite": [
-      -1,
-      -1
+      -859,
+      -694
     ],
     "greninjite": [
-      -1,
-      -1
+      -529,
+      -694
     ],
     "darmanitanite": [
-      -1,
-      -1
+      -892,
+      -694
     ],
     "datacard14": [
-      -34,
-      -1
+      -166,
+      -727
     ],
     "datacard15": [
       -34,
@@ -9119,55 +9119,55 @@
       -859
     ],
     "ilimasnormaliumz": [
+      -364,
+      -760
+    ],
+    "leftpokball": [
+      -100,
+      -1
+    ],
+    "rotohatch": [
       -595,
       -859
     ],
-    "leftpokball": [
+    "rotobargain": [
       -628,
       -859
     ],
-    "rotohatch": [
+    "rotoprizemoney": [
       -661,
       -859
     ],
-    "rotobargain": [
+    "rotoexppoints": [
       -694,
       -859
     ],
-    "rotoprizemoney": [
+    "rotofriendship": [
       -727,
       -859
     ],
-    "rotoexppoints": [
+    "rotoencounter": [
       -760,
       -859
     ],
-    "rotofriendship": [
+    "rotostealth": [
       -793,
       -859
     ],
-    "rotoencounter": [
+    "rotohprestore": [
       -826,
       -859
     ],
-    "rotostealth": [
+    "rotopprestore": [
       -859,
       -859
     ],
-    "rotohprestore": [
+    "rotoboost": [
       -892,
       -859
     ],
-    "rotopprestore": [
-      -1,
-      -892
-    ],
-    "rotoboost": [
-      -34,
-      -892
-    ],
     "rotocatch": [
-      -67,
+      -1,
       -892
     ]
   }
