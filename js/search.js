@@ -148,37 +148,39 @@
 			}
 		}
 
+		// Determine active search type (normalize singular/plural)
+		var rawType = this.engine && this.engine.typedSearch && this.engine.typedSearch.searchType;
+		var activeType = rawType ? (rawType.indexOf('move') !== -1 ? 'move' : (rawType.indexOf('ability') !== -1 ? 'ability' : rawType)) : null;
+
 		// Custom sort by users for abilities or moves
 		if (this.sortCol === 'users') {
-			var searchType = this.engine && this.engine.typedSearch && this.engine.typedSearch.searchType;
 			this.resultSet = this.resultSet.slice(0); // shallow copy
 			var headerRows = [];
 			var dataRows = [];
 			for (var r of this.resultSet) {
 				if (r[0] === 'sortmove' || r[0] === 'sortability' || r[0] === 'html') headerRows.push(r);
-				else if (searchType === 'move' && r[0] === 'move') dataRows.push(r);
-				else if (searchType === 'ability' && r[0] === 'ability') dataRows.push(r);
+				else if (activeType === 'move' && r[0] === 'move') dataRows.push(r);
+				else if (activeType === 'ability' && r[0] === 'ability') dataRows.push(r);
 				else headerRows.push(r); // keep other types unsorted
 			}
 			dataRows.sort(function(a,b){
-				var aUsers = (searchType === 'move' ? getMoveUseCount(a[1]) : getAbilityUseCount(a[1]));
-				var bUsers = (searchType === 'move' ? getMoveUseCount(b[1]) : getAbilityUseCount(b[1]));
+				var aUsers = (activeType === 'move' ? getMoveUseCount(a[1]) : getAbilityUseCount(a[1]));
+				var bUsers = (activeType === 'move' ? getMoveUseCount(b[1]) : getAbilityUseCount(b[1]));
 				if (aUsers !== bUsers) return aUsers - bUsers; // ascending least to most
 				return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0; // tie-break alphabetically
 			});
 			this.resultSet = headerRows.concat(dataRows);
 		}
 
-		// Custom sort by name for abilities (engine may not handle this search type consistently)
+		// Custom sort by name for abilities/moves (engine may not handle these consistently)
 		if (this.sortCol === 'name') {
-			var searchTypeN = this.engine && this.engine.typedSearch && this.engine.typedSearch.searchType;
-			if (searchTypeN === 'ability' || searchTypeN === 'move') {
+			if (activeType === 'ability' || activeType === 'move') {
 				var headerRowsN = [];
 				var dataRowsN = [];
 				for (var rN of this.resultSet) {
 					if (rN[0] === 'sortmove' || rN[0] === 'sortability' || rN[0] === 'html') headerRowsN.push(rN);
-					else if (searchTypeN === 'move' && rN[0] === 'move') dataRowsN.push(rN);
-					else if (searchTypeN === 'ability' && rN[0] === 'ability') dataRowsN.push(rN);
+					else if (activeType === 'move' && rN[0] === 'move') dataRowsN.push(rN);
+					else if (activeType === 'ability' && rN[0] === 'ability') dataRowsN.push(rN);
 					else headerRowsN.push(rN);
 				}
 				dataRowsN.sort(function(a,b){ return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0; });
