@@ -89,11 +89,18 @@
 			e.preventDefault();
 			e.stopPropagation();
 			var sortCol = e.currentTarget.dataset.sort;
-				if (sortCol === 'users') {
+			// Custom sorts for Abilities/Moves list views
+			if (sortCol === 'users') {
 					self.sortCol = 'users';
 					self.find('');
 					return;
 				}
+			if (sortCol === 'name') {
+				// Ensure name sort works for abilities page too
+				self.sortCol = 'name';
+				self.find('');
+				return;
+			}
 				self.engine.toggleSort(sortCol);
 				self.sortCol = self.engine.sortCol;
 				self.find('');
@@ -160,6 +167,23 @@
 				return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0; // tie-break alphabetically
 			});
 			this.resultSet = headerRows.concat(dataRows);
+		}
+
+		// Custom sort by name for abilities (engine may not handle this search type consistently)
+		if (this.sortCol === 'name') {
+			var searchTypeN = this.engine && this.engine.typedSearch && this.engine.typedSearch.searchType;
+			if (searchTypeN === 'ability' || searchTypeN === 'move') {
+				var headerRowsN = [];
+				var dataRowsN = [];
+				for (var rN of this.resultSet) {
+					if (rN[0] === 'sortmove' || rN[0] === 'sortability' || rN[0] === 'html') headerRowsN.push(rN);
+					else if (searchTypeN === 'move' && rN[0] === 'move') dataRowsN.push(rN);
+					else if (searchTypeN === 'ability' && rN[0] === 'ability') dataRowsN.push(rN);
+					else headerRowsN.push(rN);
+				}
+				dataRowsN.sort(function(a,b){ return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0; });
+				this.resultSet = headerRowsN.concat(dataRowsN);
+			}
 		}
 
 		this.renderedIndex = 0;
@@ -370,8 +394,9 @@
 	};
 	Search.prototype.renderAbilitySortRow = function () {
 		var buf = '<li class="result"><div class="sortrow">';
-		buf += '<button class="sortcol abilitynamesortcol' + (this.sortCol === 'name' ? ' cur' : '') + '" data-sort="name">Name</button>';
+		// Order: Users then Name
 		buf += '<button class="sortcol userssortcol' + (this.sortCol === 'users' ? ' cur' : '') + '" data-sort="users">Users</button>';
+		buf += '<button class="sortcol abilitynamesortcol' + (this.sortCol === 'name' ? ' cur' : '') + '" data-sort="name">Name</button>';
 		buf += '</div></li>';
 		return buf;
 	};
