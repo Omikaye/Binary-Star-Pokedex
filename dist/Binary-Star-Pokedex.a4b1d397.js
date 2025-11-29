@@ -725,7 +725,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
  * @author Guangcong Luo <guangcongluo@gmail.com>
  */ (function(exports, $) {
     'use strict';
-    // Cache ability usage counts (number of Pokémon that can have each ability)
+    // Cache ability usage counts (distinct Pokémon per ability; duplicate slots count once)
     let __abilityUseCountCache = null;
     function getAbilityUseCount(id) {
         if (!__abilityUseCountCache) {
@@ -733,15 +733,39 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
             for(var pokeId in BattlePokedex){
                 var p = BattlePokedex[pokeId];
                 if (!p || !p.abilities) continue;
+                var seen = new Set();
                 for(var slot in p.abilities){
                     var abilName = p.abilities[slot];
                     if (!abilName) continue;
-                    var aid = toID(abilName);
-                    __abilityUseCountCache[aid] = (__abilityUseCountCache[aid] || 0) + 1;
+                    seen.add(toID(abilName));
                 }
+                seen.forEach((aid)=>{
+                    __abilityUseCountCache[aid] = (__abilityUseCountCache[aid] || 0) + 1;
+                });
             }
         }
         return __abilityUseCountCache[toID(id)] || 0;
+    }
+    // Cache move usage counts (distinct Pokémon that can learn the move; forms count separately)
+    let __moveUseCountCache = null;
+    function getMoveUseCount(id) {
+        if (!__moveUseCountCache) {
+            __moveUseCountCache = {};
+            for(var pokeId in BattlePokedex){
+                var ls = getLearnset(pokeId);
+                if (!ls || !ls.length) continue;
+                var seenMoves = new Set();
+                for(var i = 0; i < ls.length; i++){
+                    var mv = toID(ls[i].move);
+                    if (!mv) continue;
+                    seenMoves.add(mv);
+                }
+                seenMoves.forEach((mv)=>{
+                    __moveUseCountCache[mv] = (__moveUseCountCache[mv] || 0) + 1;
+                });
+            }
+        }
+        return __moveUseCountCache[toID(id)] || 0;
     }
     function Search(elem, viewport) {
         this.$el = $(elem);
@@ -776,6 +800,11 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
             e.preventDefault();
             e.stopPropagation();
             var sortCol = e.currentTarget.dataset.sort;
+            if (sortCol === 'users') {
+                self.sortCol = 'users';
+                self.find('');
+                return;
+            }
             self.engine.toggleSort(sortCol);
             self.sortCol = self.engine.sortCol;
             self.find('');
@@ -814,11 +843,41 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
                 this.getFilterText()
             ]
         ].concat(this.resultSet);
-        // Hide abilities with zero users in the plain abilities list view (no query/filters)
-        if (this.engine && this.engine.typedSearch && this.engine.typedSearch.searchType === 'ability' && !this.q && !this.filters) this.resultSet = this.resultSet.filter(function(row) {
-            if (!row || row[0] !== 'ability') return true;
-            return getAbilityUseCount(row[1]) > 0;
-        });
+        // Ability page: inject sort row if in ability search type (when first opening or after filters cleared)
+        if (this.engine && this.engine.typedSearch && this.engine.typedSearch.searchType === 'ability') {
+            // Prepend sort row if not already present
+            if (!this.resultSet.length || this.resultSet[0][0] !== 'sortability') this.resultSet = [
+                [
+                    'sortability',
+                    ''
+                ]
+            ].concat(this.resultSet);
+            // Hide zero-user abilities only when no query string (q) present (still show after user searches)
+            if (!this.q && !this.filters) this.resultSet = this.resultSet.filter(function(row) {
+                if (!row || row[0] !== 'ability') return true;
+                return getAbilityUseCount(row[1]) > 0;
+            });
+        }
+        // Custom sort by users for abilities or moves
+        if (this.sortCol === 'users') {
+            var searchType = this.engine && this.engine.typedSearch && this.engine.typedSearch.searchType;
+            this.resultSet = this.resultSet.slice(0); // shallow copy
+            var headerRows = [];
+            var dataRows = [];
+            for (var r of this.resultSet){
+                if (r[0] === 'sortmove' || r[0] === 'sortability' || r[0] === 'html') headerRows.push(r);
+                else if (searchType === 'move' && r[0] === 'move') dataRows.push(r);
+                else if (searchType === 'ability' && r[0] === 'ability') dataRows.push(r);
+                else headerRows.push(r); // keep other types unsorted
+            }
+            dataRows.sort(function(a, b) {
+                var aUsers = searchType === 'move' ? getMoveUseCount(a[1]) : getAbilityUseCount(a[1]);
+                var bUsers = searchType === 'move' ? getMoveUseCount(b[1]) : getAbilityUseCount(b[1]);
+                if (aUsers !== bUsers) return aUsers - bUsers; // ascending least to most
+                return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0; // tie-break alphabetically
+            });
+            this.resultSet = headerRows.concat(dataRows);
+        }
         this.renderedIndex = 0;
         this.renderingDone = false;
         this.updateScroll();
@@ -920,6 +979,8 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
                 return this.renderPokemonSortRow();
             case 'sortmove':
                 return this.renderMoveSortRow();
+            case 'sortability':
+                return this.renderAbilitySortRow();
             case 'pokemon':
                 var pokemon = getID(BattlePokedex, id);
                 return this.renderPokemonRow(pokemon, matchStart, matchLength, errorMessage, attrs);
@@ -1015,6 +1076,14 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
         buf += '<button class="sortcol powersortcol' + (this.sortCol === 'power' ? ' cur' : '') + '" data-sort="power">Pow</button>';
         buf += '<button class="sortcol accuracysortcol' + (this.sortCol === 'accuracy' ? ' cur' : '') + '" data-sort="accuracy">Acc</button>';
         buf += '<button class="sortcol ppsortcol' + (this.sortCol === 'pp' ? ' cur' : '') + '" data-sort="pp">PP</button>';
+        buf += '<button class="sortcol userssortcol' + (this.sortCol === 'users' ? ' cur' : '') + '" data-sort="users">Users</button>';
+        buf += '</div></li>';
+        return buf;
+    };
+    Search.prototype.renderAbilitySortRow = function() {
+        var buf = '<li class="result"><div class="sortrow">';
+        buf += '<button class="sortcol abilitynamesortcol' + (this.sortCol === 'name' ? ' cur' : '') + '" data-sort="name">Name</button>';
+        buf += '<button class="sortcol userssortcol' + (this.sortCol === 'users' ? ' cur' : '') + '" data-sort="users">Users</button>';
         buf += '</div></li>';
         return buf;
     };
@@ -1172,12 +1241,11 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
         var id = toID(ability.name);
         if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'abilities/' + id + '" data-target="push"';
         var buf = '<li class="result"><a' + attrs + ' data-entry="ability|' + escapeHTML(ability.name) + '">';
-        // Count how many Pokémon have this ability (cached)
+        // Distinct Pokémon count
         var count = getAbilityUseCount(id);
-        // name with count
         var name = ability.name;
         if (matchLength) name = name.substr(0, matchStart) + '<b>' + name.substr(matchStart, matchLength) + '</b>' + name.substr(matchStart + matchLength);
-        buf += '<span class="col namecol"><small style="color:#888">(' + count + ')</small> ' + name + '</span> ';
+        buf += '<span class="col namecol"><small style="color:#888">' + count + '</small> ' + name + '</span> ';
         // error
         if (errorMessage) {
             buf += errorMessage + '</a></li>';
@@ -1193,6 +1261,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
         var id = toID(move.name);
         if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'moves/' + id + '" data-target="push"';
         var buf = '<li class="result"><a' + attrs + ' data-entry="move|' + escapeHTML(move.name) + '">';
+        var users = getMoveUseCount(id);
         // name
         var name = move.name;
         var tagStart = name.substr(0, 12) === 'Hidden Power' ? 12 : 0;
@@ -1207,7 +1276,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
                 name += '<small>' + move.name.substr(tagStart, matchStart - tagStart) + '<b>' + move.name.substr(matchStart, matchLength) + '</b>' + move.name.substr(matchStart + matchLength) + '</small>';
             } else name += '<small>' + move.name.substr(tagStart) + '</small>';
         }
-        buf += '<span class="col movenamecol">' + name + '</span> ';
+        buf += '<span class="col movenamecol"><small style="color:#888">' + users + '</small> ' + name + '</span> ';
         // error
         if (errorMessage) {
             buf += errorMessage + '</a></li>';
@@ -1386,6 +1455,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     Search.renderMoveRow = Search.prototype.renderMoveRow;
     Search.renderMoveRowInner = Search.prototype.renderMoveRowInner;
     Search.renderTaggedMoveRow = Search.prototype.renderTaggedMoveRow;
+    Search.renderAbilitySortRow = Search.prototype.renderAbilitySortRow;
     Search.renderTypeRow = Search.prototype.renderTypeRow;
     Search.renderCategoryRow = Search.prototype.renderCategoryRow;
     Search.renderEggGroupRow = Search.prototype.renderEggGroupRow;

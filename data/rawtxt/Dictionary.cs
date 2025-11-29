@@ -149,6 +149,7 @@
         {"Kyogre 1",     "Kyogre-Primal" },
         {"Hoopa 1",      "Hoopa-Unbound" },
         {"Porygon-Z",  "PorygonZ" },
+		{"Ho-Oh",      "Hooh" },
 		// Totem Pokemon (Gen 7)
 		{ "Raticate 2",		"Raticate-Megamax" },
 		{ "Gumshoos 1",		"Gumshoos-Megamax" },
