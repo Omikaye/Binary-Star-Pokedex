@@ -351,18 +351,18 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 						desc = level <= 1 ? '&ndash;' : '<small>L</small>' + level;
 					}
 					break;
-				case 'prevo': // prevo
-					if (newCategory) buf += '<li class="resultheader"><h3>From preevo</h3></li>';
-					desc = ""
-					break;
-				case 'tm': // tm/hm
-					if (newCategory) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
-					desc = `<span class="itemicon" style="margin-top:-3px;background-position:-133px -364px;width:32px;height:32px"></span>`;
-					break;
-				case 'tutor': // tutor
-					if (newCategory) buf += '<li class="resultheader"><h3>Tutor</h3></li>';
-					desc = `<img src="${ResourcePrefix}sprites/tutor.png" style="margin-top:-4px;opacity:.7" width="27" height="26" alt="T" />`;
-					break;
+			case 'prevo': // prevo
+				if (newCategory) buf += '<li class="resultheader"><h3>From preevo</h3></li>';
+				desc = ""
+				break;
+			case 'tm': // tm/hm
+				if (newCategory) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
+				desc = `<span class="itemicon" style="margin-top:-3px;background:transparent url(${ResourcePrefix}sprites/itemicons-sheet.png) no-repeat scroll -133px -364px;width:32px;height:32px;display:inline-block"></span>`;
+				break;
+			case 'tutor': // tutor
+				if (newCategory) buf += '<li class="resultheader"><h3>Tutor</h3></li>';
+				desc = `<img src="${ResourcePrefix}sprites/tutor.png" style="margin-top:-4px;opacity:.7" width="27" height="26" alt="T" />`;
+				break;
 				case 'egg': // egg move
 					if (newCategory) buf += '<li class="resultheader"><h3>Egg</h3></li>';
 					desc = '<span class="picon" style="margin-top:-12px;'+getPokemonIcon('egg')+'"></span>';
@@ -380,20 +380,8 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		var pokemon = getID(BattlePokedex, this.id);
 		if (!pokemon) return;
 		
-		// Find pre-evolution by checking all Pokémon for evos pointing to this one
-		var prevoId = null;
-		for (var id in BattlePokedex) {
-			var p = BattlePokedex[id];
-			if (p.evos) {
-				for (var evo of p.evos) {
-					if (evo.target === pokemon.name || evo.target === pokemon.baseSpecies) {
-						prevoId = id;
-						break;
-					}
-				}
-			}
-			if (prevoId) break;
-		}
+		// Use the prevo field set up in data.js
+		var prevoId = pokemon.prevo;
 		
 		if (!prevoId) {
 			// No pre-evo, hide the section
@@ -448,7 +436,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 					break;
 				case 'tm': // tm/hm
 					if (newCategory) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
-					desc = `<span class="itemicon" style="margin-top:-3px;background-position:-133px -364px;width:32px;height:32px"></span>`;
+					desc = `<span class="itemicon" style="margin-top:-3px;background:transparent url(${ResourcePrefix}sprites/itemicons-sheet.png) no-repeat scroll -133px -364px;width:32px;height:32px;display:inline-block"></span>`;
 					break;
 				case 'tutor': // tutor
 					if (newCategory) buf += '<li class="resultheader"><h3>Tutor</h3></li>';

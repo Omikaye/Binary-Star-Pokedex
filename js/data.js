@@ -144,8 +144,8 @@ window.escapeHTML = (str, jsEscapeToo) => {
 
 window.getLearnset = (pokemonId) => {
   let learnset = Learnsets[pokemonId];
-  // If this form doesn't have its own learnset, try the base species
-  if (!learnset) {
+  // If this form doesn't have its own learnset (undefined, not empty array), try the base species
+  if (learnset === undefined) {
     const pokemon = BattlePokedex[pokemonId];
     if (pokemon?.baseSpecies) {
       learnset = Learnsets[toID(pokemon.baseSpecies)];
