@@ -253,11 +253,17 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		buf += '<div style="clear:left"></div>';
 	}
 
-	// learnset
-	buf += '<ul class="utilichart nokbd">';
-	buf += '<li class="resultheader"><h3>Level-up</h3></li>';
-	buf += '</ul>';
-	buf += '</div>';		this.html(buf);
+		// learnset
+		buf += '<ul class="utilichart nokbd">';
+		buf += '<li class="resultheader"><h3>Level-up</h3></li>';
+		buf += '</ul>';
+		
+		// Pre-evo only moves section placeholder
+		buf += '<ul class="utilichart nokbd prevo-moves" style="display:none">';
+		buf += '<li class="resultheader"><h3>Pre-evo only moves</h3></li>';
+		buf += '</ul>';
+		
+		buf += '</div>';		this.html(buf);
 		setTimeout(this.renderFullLearnset.bind(this));
 	},
 	events: {
@@ -351,7 +357,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 					break;
 				case 'tm': // tm/hm
 					if (newCategory) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
-					desc = `<span class="itemicon" style="margin-top:-3px;${getItemIcon("tr01")};width:32px;height:32px"></span>`;
+					desc = `<span class="itemicon" style="margin-top:-3px;background-position:-133px -364px;width:32px;height:32px"></span>`;
 					break;
 				case 'tutor': // tutor
 					if (newCategory) buf += '<li class="resultheader"><h3>Tutor</h3></li>';
@@ -366,6 +372,94 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 			buf += BattleSearch.renderTaggedMoveRow(move, desc);
 		}
 		this.$('.utilichart').html(buf);
+		
+		// Render pre-evo only moves
+		this.renderPreEvoMoves();
+	},
+	renderPreEvoMoves: function() {
+		var pokemon = getID(BattlePokedex, this.id);
+		if (!pokemon) return;
+		
+		// Find pre-evolution by checking all Pokémon for evos pointing to this one
+		var prevoId = null;
+		for (var id in BattlePokedex) {
+			var p = BattlePokedex[id];
+			if (p.evos) {
+				for (var evo of p.evos) {
+					if (evo.target === pokemon.name || evo.target === pokemon.baseSpecies) {
+						prevoId = id;
+						break;
+					}
+				}
+			}
+			if (prevoId) break;
+		}
+		
+		if (!prevoId) {
+			// No pre-evo, hide the section
+			this.$('.prevo-moves').hide();
+			return;
+		}
+		
+		// Get both learnsets
+		var prevoLearnset = getLearnset(prevoId);
+		var currentLearnset = getLearnset(this.id);
+		
+		// Build set of moves the current Pokémon can learn
+		var currentMoves = new Set();
+		for (var learn of currentLearnset) {
+			var moveId = toID(learn.move);
+			currentMoves.add(moveId);
+		}
+		
+		// Find moves only in pre-evo (level-up, tm, tutor)
+		var prevoOnlyMoves = [];
+		for (var learn of prevoLearnset) {
+			if (learn.how === 'egg') continue; // Skip egg moves
+			var moveId = toID(learn.move);
+			if (!currentMoves.has(moveId)) {
+				prevoOnlyMoves.push(learn);
+			}
+		}
+		
+		if (prevoOnlyMoves.length === 0) {
+			this.$('.prevo-moves').hide();
+			return;
+		}
+		
+		// Render the pre-evo only moves
+		var buf = '<li class="resultheader"><h3>Pre-evo only moves</h3></li>';
+		var last = null;
+		for (var learn of prevoOnlyMoves) {
+			var move = getID(BattleMovedex, learn.move);
+			if (!move) continue;
+			
+			var desc = "";
+			var newCategory = last == null || last.how != learn.how;
+			switch(learn.how) {
+				case 'lvl': // level-up move
+					if (newCategory) buf += '<li class="resultheader"><h3>Level-up</h3></li>';
+					var level = learn.level;
+					if (level === 0) {
+						desc = 'Evo';
+					} else {
+						desc = level <= 1 ? '&ndash;' : '<small>L</small>' + level;
+					}
+					break;
+				case 'tm': // tm/hm
+					if (newCategory) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
+					desc = `<span class="itemicon" style="margin-top:-3px;background-position:-133px -364px;width:32px;height:32px"></span>`;
+					break;
+				case 'tutor': // tutor
+					if (newCategory) buf += '<li class="resultheader"><h3>Tutor</h3></li>';
+					desc = `<img src="${ResourcePrefix}sprites/tutor.png" style="margin-top:-4px;opacity:.7" width="27" height="26" alt="T" />`;
+					break;
+			}
+			last = learn;
+			buf += BattleSearch.renderTaggedMoveRow(move, desc);
+		}
+		
+		this.$('.prevo-moves').html(buf).show();
 	},
 	getStat: function(baseStat, isHP, level, iv, ev, natureMult) {
 		if (isHP) {
