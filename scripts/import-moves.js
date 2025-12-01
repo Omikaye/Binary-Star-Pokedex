@@ -106,7 +106,10 @@ function parseMovesTxt(src) {
     if (!cur) continue; // skip anything until an ID appears
 
     if ((m = line.match(/^Name:\s*(.+)$/i))) {
-      cur.name = m[1].trim();
+      let moveName = m[1].trim();
+      // Remove (P) and (S) suffixes from Z-Move names
+      moveName = moveName.replace(/\s*\(P\)\s*$/, '').replace(/\s*\(S\)\s*$/, '');
+      cur.name = moveName;
       continue;
     }
     if ((m = line.match(/^Category:\s*(.+)$/i))) {

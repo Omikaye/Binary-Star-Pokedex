@@ -134,26 +134,36 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		}
 
 	// Show Z-Move information if available
-	buf += '<dt>Z-Move:</dt><dd>';
+	buf += '<dt>Z-Move:</dt><dd style="line-height:1.8">';
 	if (pokemon.zmove && pokemon.zmove.zMove) {
 		// Z-Crystal with item icon
 		var zCrystalId = toID(pokemon.zmove.zCrystal);
 		var zCrystalItem = BattleItems[zCrystalId];
-		buf += `<div><strong>Z-Crystal:</strong> ${pokemon.zmove.zCrystal} `;
+		buf += `<div style="margin-bottom:4px"><strong>Z-Crystal:</strong> ${pokemon.zmove.zCrystal} `;
 		if (zCrystalItem) {
 			buf += `<span class="itemicon" style="${getItemIcon(zCrystalItem)};width:32px;height:32px;margin-left:4px;display:inline-block;vertical-align:middle"></span>`;
 		}
 		buf += `</div>`;
 		
-		// Base Move
-		buf += `<div><strong>Base Move:</strong> ${pokemon.zmove.baseMove}</div>`;
+		// Base Move as clickable button
+		var baseMoveId = toID(pokemon.zmove.baseMove);
+		var baseMoveData = BattleMovedex[baseMoveId];
+		buf += `<div style="margin-bottom:4px"><strong>Base Move:</strong> `;
+		if (baseMoveData) {
+			buf += BattleSearch.renderTaggedMoveRow(baseMoveData, '');
+		} else {
+			buf += pokemon.zmove.baseMove;
+		}
+		buf += `</div>`;
 		
-		// Z-Move with move type icon
+		// Z-Move as clickable button
 		var zMoveId = toID(pokemon.zmove.zMove);
 		var zMoveData = BattleMovedex[zMoveId];
-		buf += `<div><strong>Z-Move:</strong> ${pokemon.zmove.zMove} `;
-		if (zMoveData && zMoveData.type) {
-			buf += getTypeIcon(zMoveData.type);
+		buf += `<div style="margin-bottom:4px"><strong>Z-Move:</strong> `;
+		if (zMoveData) {
+			buf += BattleSearch.renderTaggedMoveRow(zMoveData, '');
+		} else {
+			buf += pokemon.zmove.zMove;
 		}
 		buf += `</div>`;
 	} else {

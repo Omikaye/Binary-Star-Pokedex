@@ -12315,12 +12315,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "breakneckblitzp": {
+  "breakneckblitz": {
     "num": 622,
     "flags": {
       "animateally": 1
     },
-    "name": "Breakneck Blitz (P)",
+    "name": "Breakneck Blitz",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12332,12 +12332,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "breakneckblitzrs": {
+  "breakneckblitzr": {
     "num": 623,
     "flags": {
       "animateally": 1
     },
-    "name": "Breakneck Blitz-R (S)",
+    "name": "Breakneck Blitz-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12349,12 +12349,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "alloutpummelingp": {
+  "alloutpummeling": {
     "num": 624,
     "flags": {
       "animateally": 1
     },
-    "name": "All-Out Pummeling (P)",
+    "name": "All-Out Pummeling",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12366,12 +12366,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "alloutpummelingrs": {
+  "alloutpummelingr": {
     "num": 625,
     "flags": {
       "animateally": 1
     },
-    "name": "All-Out Pummeling-R (S)",
+    "name": "All-Out Pummeling-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12383,12 +12383,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "supersonicskystrikep": {
+  "supersonicskystrike": {
     "num": 626,
     "flags": {
       "animateally": 1
     },
-    "name": "Supersonic Skystrike (P)",
+    "name": "Supersonic Skystrike",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12400,12 +12400,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "supersonicskystrikers": {
+  "supersonicskystriker": {
     "num": 627,
     "flags": {
       "animateally": 1
     },
-    "name": "Supersonic Skystrike-R (S)",
+    "name": "Supersonic Skystrike-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12417,12 +12417,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "aciddownpourp": {
+  "aciddownpour": {
     "num": 628,
     "flags": {
       "animateally": 1
     },
-    "name": "Acid Downpour (P)",
+    "name": "Acid Downpour",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12434,12 +12434,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "aciddownpourrs": {
+  "aciddownpourr": {
     "num": 629,
     "flags": {
       "animateally": 1
     },
-    "name": "Acid Downpour-R (S)",
+    "name": "Acid Downpour-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12451,12 +12451,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "tectonicragep": {
+  "tectonicrage": {
     "num": 630,
     "flags": {
       "animateally": 1
     },
-    "name": "Tectonic Rage (P)",
+    "name": "Tectonic Rage",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12468,12 +12468,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "tectonicragers": {
+  "tectonicrager": {
     "num": 631,
     "flags": {
       "animateally": 1
     },
-    "name": "Tectonic Rage-R (S)",
+    "name": "Tectonic Rage-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12485,12 +12485,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "continentalcrushp": {
+  "continentalcrush": {
     "num": 632,
     "flags": {
       "animateally": 1
     },
-    "name": "Continental Crush (P)",
+    "name": "Continental Crush",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12502,12 +12502,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "continentalcrushrs": {
+  "continentalcrushr": {
     "num": 633,
     "flags": {
       "animateally": 1
     },
-    "name": "Continental Crush-R (S)",
+    "name": "Continental Crush-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12519,12 +12519,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "savagespinoutp": {
+  "savagespinout": {
     "num": 634,
     "flags": {
       "animateally": 1
     },
-    "name": "Savage Spin-Out (P)",
+    "name": "Savage Spin-Out",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12536,12 +12536,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "savagespinoutrs": {
+  "savagespinoutr": {
     "num": 635,
     "flags": {
       "animateally": 1
     },
-    "name": "Savage Spin-Out-R (S)",
+    "name": "Savage Spin-Out-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12553,12 +12553,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "neverendingnightmarep": {
+  "neverendingnightmare": {
     "num": 636,
     "flags": {
       "animateally": 1
     },
-    "name": "Never-Ending Nightmare (P)",
+    "name": "Never-Ending Nightmare",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12570,12 +12570,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "neverendingnightmarers": {
+  "neverendingnightmarer": {
     "num": 637,
     "flags": {
       "animateally": 1
     },
-    "name": "Never-Ending Nightmare-R (S)",
+    "name": "Never-Ending Nightmare-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12587,12 +12587,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "corkscrewcrashp": {
+  "corkscrewcrash": {
     "num": 638,
     "flags": {
       "animateally": 1
     },
-    "name": "Corkscrew Crash (P)",
+    "name": "Corkscrew Crash",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12604,12 +12604,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "corkscrewcrashrs": {
+  "corkscrewcrashr": {
     "num": 639,
     "flags": {
       "animateally": 1
     },
-    "name": "Corkscrew Crash-R (S)",
+    "name": "Corkscrew Crash-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12621,13 +12621,13 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "infernooverdrivep": {
+  "infernooverdrive": {
     "num": 640,
     "flags": {
       "defrost": 1,
       "animateally": 1
     },
-    "name": "Inferno Overdrive (P)",
+    "name": "Inferno Overdrive",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12639,13 +12639,13 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "infernooverdrivers": {
+  "infernooverdriver": {
     "num": 641,
     "flags": {
       "defrost": 1,
       "animateally": 1
     },
-    "name": "Inferno Overdrive-R (S)",
+    "name": "Inferno Overdrive-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12657,12 +12657,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "hydrovortexp": {
+  "hydrovortex": {
     "num": 642,
     "flags": {
       "animateally": 1
     },
-    "name": "Hydro Vortex (P)",
+    "name": "Hydro Vortex",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12674,12 +12674,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "hydrovortexrs": {
+  "hydrovortexr": {
     "num": 643,
     "flags": {
       "animateally": 1
     },
-    "name": "Hydro Vortex-R (S)",
+    "name": "Hydro Vortex-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12691,12 +12691,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "bloomdoomp": {
+  "bloomdoom": {
     "num": 644,
     "flags": {
       "animateally": 1
     },
-    "name": "Bloom Doom (P)",
+    "name": "Bloom Doom",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12708,12 +12708,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "bloomdoomrs": {
+  "bloomdoomr": {
     "num": 645,
     "flags": {
       "animateally": 1
     },
-    "name": "Bloom Doom-R (S)",
+    "name": "Bloom Doom-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12725,12 +12725,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "gigavolthavocp": {
+  "gigavolthavoc": {
     "num": 646,
     "flags": {
       "animateally": 1
     },
-    "name": "Gigavolt Havoc (P)",
+    "name": "Gigavolt Havoc",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12742,12 +12742,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "gigavolthavocrs": {
+  "gigavolthavocr": {
     "num": 647,
     "flags": {
       "animateally": 1
     },
-    "name": "Gigavolt Havoc-R (S)",
+    "name": "Gigavolt Havoc-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12759,12 +12759,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "shatteredpsychep": {
+  "shatteredpsyche": {
     "num": 648,
     "flags": {
       "animateally": 1
     },
-    "name": "Shattered Psyche (P)",
+    "name": "Shattered Psyche",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12776,12 +12776,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "shatteredpsychers": {
+  "shatteredpsycher": {
     "num": 649,
     "flags": {
       "animateally": 1
     },
-    "name": "Shattered Psyche-R (S)",
+    "name": "Shattered Psyche-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12793,12 +12793,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "subzeroslammerp": {
+  "subzeroslammer": {
     "num": 650,
     "flags": {
       "animateally": 1
     },
-    "name": "Subzero Slammer (P)",
+    "name": "Subzero Slammer",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12810,12 +12810,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "subzeroslammerrs": {
+  "subzeroslammerr": {
     "num": 651,
     "flags": {
       "animateally": 1
     },
-    "name": "Subzero Slammer-R (S)",
+    "name": "Subzero Slammer-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12827,12 +12827,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "devastatingdrakep": {
+  "devastatingdrake": {
     "num": 652,
     "flags": {
       "animateally": 1
     },
-    "name": "Devastating Drake (P)",
+    "name": "Devastating Drake",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12844,12 +12844,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "devastatingdrakers": {
+  "devastatingdraker": {
     "num": 653,
     "flags": {
       "animateally": 1
     },
-    "name": "Devastating Drake-R (S)",
+    "name": "Devastating Drake-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12861,12 +12861,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "blackholeeclipsep": {
+  "blackholeeclipse": {
     "num": 654,
     "flags": {
       "animateally": 1
     },
-    "name": "Black Hole Eclipse (P)",
+    "name": "Black Hole Eclipse",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12878,12 +12878,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "blackholeeclipsers": {
+  "blackholeeclipser": {
     "num": 655,
     "flags": {
       "animateally": 1
     },
-    "name": "Black Hole Eclipse-R (S)",
+    "name": "Black Hole Eclipse-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,
@@ -12895,12 +12895,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "twinkletacklep": {
+  "twinkletackle": {
     "num": 656,
     "flags": {
       "animateally": 1
     },
-    "name": "Twinkle Tackle (P)",
+    "name": "Twinkle Tackle",
     "category": "Physical",
     "basePower": 1,
     "accuracy": 101,
@@ -12912,12 +12912,12 @@
     "priority": 0,
     "shortDesc": ""
   },
-  "twinkletacklers": {
+  "twinkletackler": {
     "num": 657,
     "flags": {
       "animateally": 1
     },
-    "name": "Twinkle Tackle-R (S)",
+    "name": "Twinkle Tackle-R",
     "category": "Special",
     "basePower": 1,
     "accuracy": 101,

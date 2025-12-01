@@ -38,13 +38,36 @@
 		if (!__moveUseCountCache) {
 			__moveUseCountCache = {};
 			for (var pokeId in BattlePokedex) {
+				var pokemon = BattlePokedex[pokeId];
 				var ls = getLearnset(pokeId);
-				if (!ls || !ls.length) continue;
+				if (!ls || !ls.length) {
+					// Even if no learnset, check for Z-Move
+					if (pokemon.zmove && pokemon.zmove.zMove) {
+						var zMoveId = toID(pokemon.zmove.zMove);
+						__moveUseCountCache[zMoveId] = (__moveUseCountCache[zMoveId] || 0) + 1;
+						// Also count the base move
+						if (pokemon.zmove.baseMove) {
+							var baseMoveId = toID(pokemon.zmove.baseMove);
+							__moveUseCountCache[baseMoveId] = (__moveUseCountCache[baseMoveId] || 0) + 1;
+						}
+					}
+					continue;
+				}
 				var seenMoves = new Set();
 				for (var i=0; i<ls.length; i++) {
 					var mv = toID(ls[i].move);
 					if (!mv) continue;
 					seenMoves.add(mv);
+				}
+				// Also check if this Pokémon has the move as a Z-Move
+				if (pokemon.zmove && pokemon.zmove.zMove) {
+					var zMoveId = toID(pokemon.zmove.zMove);
+					seenMoves.add(zMoveId);
+					// Also add the base move
+					if (pokemon.zmove.baseMove) {
+						var baseMoveId = toID(pokemon.zmove.baseMove);
+						seenMoves.add(baseMoveId);
+					}
 				}
 				seenMoves.forEach(mv => { __moveUseCountCache[mv] = (__moveUseCountCache[mv] || 0) + 1; });
 			}
