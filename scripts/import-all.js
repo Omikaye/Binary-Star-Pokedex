@@ -186,6 +186,19 @@ for (const entry of entries) {
     ...genderData
   };
 
+  // Store Z-Move data if present
+  if (entry.zmove) {
+    const zm = entry.zmove;
+    // Only add zmove if at least one field has data
+    if (zm['Z-Move'] || zm['Base Move'] || zm['Z-Crystal']) {
+      pokedex[id].zmove = {
+        zMove: zm['Z-Move'] || '',
+        baseMove: zm['Base Move'] || '',
+        zCrystal: zm['Z-Crystal'] || ''
+      };
+    }
+  }
+
   // Store TM and tutor arrays temporarily for later merge into learnsets
   if (entry.tms && entry.tms.length > 0) {
     pokedex[id]._tempTMs = entry.tms;

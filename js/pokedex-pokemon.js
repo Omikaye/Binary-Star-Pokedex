@@ -133,6 +133,23 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 			buf += '</dd>';
 		}
 
+		// Show Z-Move information if available
+		buf += '<dt>Z-Move:</dt><dd>';
+		if (pokemon.zmove && pokemon.zmove.zMove) {
+			// Get the Z-Crystal item to display its icon
+			var zCrystalId = toID(pokemon.zmove.zCrystal);
+			var zCrystalItem = BattleItems[zCrystalId];
+			if (zCrystalItem) {
+				buf += `<span class="itemicon" style="${getItemIcon(zCrystalItem)};width:32px;height:32px;margin-right:8px;display:inline-block;vertical-align:middle"></span>`;
+			}
+			buf += `<strong>Z-Crystal:</strong> ${pokemon.zmove.zCrystal} | `;
+			buf += `<strong>Base Move:</strong> ${pokemon.zmove.baseMove} | `;
+			buf += `<strong>Z-Move:</strong> ${pokemon.zmove.zMove}`;
+		} else {
+			buf += '<em>No Z-Move</em>';
+		}
+		buf += '</dd>';
+
 		{
 			buf += '<dt>Evolution:</dt> <dd>';
 			var template = pokemon;

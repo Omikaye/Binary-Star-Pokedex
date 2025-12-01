@@ -419,6 +419,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Shattered Psyche-R",
+      "baseMove": "Psychic",
+      "zCrystal": "Buginium Z"
     }
   },
   "weedle": {
@@ -872,6 +877,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Catastropika",
+      "baseMove": "Volt Tackle",
+      "zCrystal": "Pikanium Z"
+    },
     "formes": [
       "Pikachu",
       "Pikachu-Original",
@@ -931,6 +941,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Stoked Sparksurfer",
+      "baseMove": "Volt Switch",
+      "zCrystal": "Raichium Z"
     },
     "formes": [
       "Raichu",
@@ -1009,6 +1024,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Slash",
+      "zCrystal": "Groundium Z"
     },
     "formes": [
       "Sandslash",
@@ -1267,6 +1287,11 @@
     "genderRatio": {
       "M": 0,
       "F": 1
+    },
+    "zmove": {
+      "zMove": "Corkscrew Crash-R",
+      "baseMove": "Meteor Mash",
+      "zCrystal": "Fairium Z"
     }
   },
   "vulpix": {
@@ -1410,6 +1435,11 @@
     "genderRatio": {
       "M": 0,
       "F": 1
+    },
+    "zmove": {
+      "zMove": "Twinkle Tackle-R",
+      "baseMove": "Relic Song",
+      "zCrystal": "Normalium Z"
     }
   },
   "zubat": {
@@ -1597,6 +1627,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Savage Spin-Out-R",
+      "baseMove": "Pollen Puff",
+      "zCrystal": "Grassium Z"
     }
   },
   "paras": {
@@ -1665,6 +1700,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Savage Spin-Out-R",
+      "baseMove": "X-Scissor",
+      "zCrystal": "Grassium Z"
     }
   },
   "venonat": {
@@ -1731,6 +1771,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Acid Downpour-R",
+      "baseMove": "Sludge Bomb",
+      "zCrystal": "Psychium Z"
     }
   },
   "diglett": {
@@ -1880,6 +1925,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Corkscrew Crash-R",
+      "baseMove": "Pay Day",
+      "zCrystal": "Normalium Z"
+    },
     "formes": [
       "Persian",
       "Persian-Alola"
@@ -1951,6 +2001,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Shattered Psyche-R",
+      "baseMove": "Zen Headbutt",
+      "zCrystal": "Waterium Z"
     }
   },
   "mankey": {
@@ -2017,6 +2072,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Tectonic Rage-R",
+      "baseMove": "Stomping Tantrum",
+      "zCrystal": "Fightinium Z"
     }
   },
   "growlithe": {
@@ -2397,6 +2457,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Corkscrew Crash-R",
+      "baseMove": "Bullet Punch",
+      "zCrystal": "Fightinium Z"
     }
   },
   "bellsprout": {
@@ -2499,6 +2564,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Acid Downpour-R",
+      "baseMove": "Belch",
+      "zCrystal": "Grassium Z"
     }
   },
   "tentacool": {
@@ -2748,6 +2818,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Tectonic Rage-R",
+      "baseMove": "High Horsepower",
+      "zCrystal": "Firium Z"
     }
   },
   "slowpoke": {
@@ -3474,6 +3549,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Corkscrew Crash-R",
+      "baseMove": "Guillotine",
+      "zCrystal": "Waterium Z"
     }
   },
   "voltorb": {
@@ -3615,6 +3695,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Egg Bomb",
+      "zCrystal": "Grassium Z"
+    },
     "formes": [
       "Exeggutor",
       "Exeggutor-Alola"
@@ -3708,6 +3793,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Never-Ending Nightmare-R",
+      "baseMove": "Shadow Bone",
+      "zCrystal": "Groundium Z"
+    },
     "formes": [
       "Marowak",
       "Marowak-Alola",
@@ -3738,7 +3828,12 @@
     "eggGroups": [
       "Human-Like"
     ],
-    "gender": "M"
+    "gender": "M",
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Mega Kick",
+      "zCrystal": "Fightinium Z"
+    }
   },
   "hitmonchan": {
     "num": 107,
@@ -3764,7 +3859,12 @@
     "eggGroups": [
       "Human-Like"
     ],
-    "gender": "M"
+    "gender": "M",
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Mega Punch",
+      "zCrystal": "Fightinium Z"
+    }
   },
   "lickitung": {
     "num": 108,
@@ -3863,6 +3963,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Inferno Overdrive-R",
+      "baseMove": "Flamethrower",
+      "zCrystal": "Poisonium Z"
     }
   },
   "rhyhorn": {
@@ -4171,6 +4276,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Horn Attack",
+      "zCrystal": "Waterium Z"
     }
   },
   "staryu": {
@@ -4230,7 +4340,12 @@
     "eggGroups": [
       "Water 3"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Continental Crush-R",
+      "baseMove": "Power Gem",
+      "zCrystal": "Waterium Z"
+    }
   },
   "mrmime": {
     "num": 122,
@@ -4323,7 +4438,12 @@
     "eggGroups": [
       "Human-Like"
     ],
-    "gender": "F"
+    "gender": "F",
+    "zmove": {
+      "zMove": "Shattered Psyche-R",
+      "baseMove": "Psyshock",
+      "zCrystal": "Icium Z"
+    }
   },
   "electabuzz": {
     "num": 125,
@@ -4555,6 +4675,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Hydro Vortex-R",
+      "baseMove": "Surf",
+      "zCrystal": "Icium Z"
     }
   },
   "ditto": {
@@ -4610,6 +4735,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Extreme Evoboost",
+      "baseMove": "Last Resort",
+      "zCrystal": "Eevium Z"
     },
     "evos": [
       {
@@ -4962,6 +5092,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Pulverizing Pancake",
+      "baseMove": "Giga Impact",
+      "zCrystal": "Snorlium Z"
     }
   },
   "articuno": {
@@ -5148,6 +5283,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Extreme Speed",
+      "zCrystal": "Dragonium Z"
     }
   },
   "mewtwo": {
@@ -5175,6 +5315,11 @@
       "Undiscovered"
     ],
     "gender": "N",
+    "zmove": {
+      "zMove": "Genesis Supernova",
+      "baseMove": "Psystrike",
+      "zCrystal": "Mewnium Z"
+    },
     "formes": [
       "Mewtwo",
       "Mewtwo-Mega-X",
@@ -5205,7 +5350,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Genesis Supernova",
+      "baseMove": "Psychic",
+      "zCrystal": "Mewnium Z"
+    }
   },
   "chikorita": {
     "num": 152,
@@ -5411,6 +5561,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Inferno Overdrive-R",
+      "baseMove": "Lava Plume",
+      "zCrystal": "Normalium Z"
     }
   },
   "totodile": {
@@ -6146,6 +6301,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Never-Ending Nightmare-R",
+      "baseMove": "Premonition",
+      "zCrystal": "Psychium Z"
     }
   },
   "mareep": {
@@ -6283,6 +6443,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Savage Spin-Out-R",
+      "baseMove": "Pollen Puff",
+      "zCrystal": "Fairium Z"
     }
   },
   "marill": {
@@ -6381,6 +6546,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Bloom Doom-R",
+      "baseMove": "Wood Hammer",
+      "zCrystal": "Rockium Z"
     }
   },
   "politoed": {
@@ -6845,6 +7015,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Shattered Psyche-R",
+      "baseMove": "Extrasensory",
+      "zCrystal": "Waterium Z"
     }
   },
   "misdreavus": {
@@ -7031,6 +7206,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Corkscrew Crash-R",
+      "baseMove": "Gyro Ball",
+      "zCrystal": "Buginium Z"
     }
   },
   "dunsparce": {
@@ -7198,6 +7378,11 @@
     "genderRatio": {
       "M": 0,
       "F": 1
+    },
+    "zmove": {
+      "zMove": "Twinkle Tackle-R",
+      "baseMove": "Sweet Tooth",
+      "zCrystal": "Fightinium Z"
     }
   },
   "qwilfish": {
@@ -7663,6 +7848,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Hydro Vortex-R",
+      "baseMove": "Octazooka",
+      "zCrystal": "Firium Z"
     }
   },
   "delibird": {
@@ -7694,6 +7884,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Subzero Slammer-R",
+      "baseMove": "Present",
+      "zCrystal": "Flyinium Z"
     }
   },
   "mantine": {
@@ -7724,6 +7919,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Hydro Vortex-R",
+      "baseMove": "Surf",
+      "zCrystal": "Flyinium Z"
     }
   },
   "skarmory": {
@@ -7981,6 +8181,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Shattered Psyche-R",
+      "baseMove": "Zen Headbutt",
+      "zCrystal": "Normalium Z"
     }
   },
   "smeargle": {
@@ -8091,7 +8296,12 @@
     "eggGroups": [
       "Human-Like"
     ],
-    "gender": "M"
+    "gender": "M",
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Rapid Spin",
+      "zCrystal": "Fightinium Z"
+    }
   },
   "smoochum": {
     "num": 238,
@@ -8272,7 +8482,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Hydro Vortex-R",
+      "baseMove": "Scald",
+      "zCrystal": "Electrium Z"
+    }
   },
   "entei": {
     "num": 244,
@@ -8298,7 +8513,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Tectonic Rage-R",
+      "baseMove": "Earthquake",
+      "zCrystal": "Firium Z"
+    }
   },
   "suicune": {
     "num": 245,
@@ -8324,7 +8544,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Subzero Slammer-R",
+      "baseMove": "Ice Beam",
+      "zCrystal": "Waterium Z"
+    }
   },
   "larvitar": {
     "num": 246,
@@ -9336,6 +9561,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Supersonic Skystrike-R",
+      "baseMove": "Razor Wind",
+      "zCrystal": "Darkinium Z"
     }
   },
   "taillow": {
@@ -9587,6 +9817,11 @@
       "Human-Like"
     ],
     "gender": "F",
+    "zmove": {
+      "zMove": "Twinkle Tackle-R",
+      "baseMove": "Moonblast",
+      "zCrystal": "Psychium Z"
+    },
     "formes": [
       "Gardevoir",
       "Gardevoir-Mega"
@@ -9658,6 +9893,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Savage Spin-Out-R",
+      "baseMove": "Signal Beam",
+      "zCrystal": "Waterium Z"
     }
   },
   "shroomish": {
@@ -11086,6 +11326,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Shattered Psyche-R",
+      "baseMove": "Dizzy Punch",
+      "zCrystal": "Normalium Z"
     }
   },
   "trapinch": {
@@ -11370,6 +11615,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Black Hole Eclipse-R",
+      "baseMove": "Night Slash",
+      "zCrystal": "Normalium Z"
     }
   },
   "seviper": {
@@ -11401,6 +11651,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Acid Downpour-R",
+      "baseMove": "Poison Fang",
+      "zCrystal": "Darkinium Z"
     }
   },
   "lunatone": {
@@ -11428,7 +11683,12 @@
     "eggGroups": [
       "Mineral"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Never-Ending Nightmare-R",
+      "baseMove": "Moongeist Beam",
+      "zCrystal": "Rockium Z"
+    }
   },
   "solrock": {
     "num": 338,
@@ -11455,7 +11715,12 @@
     "eggGroups": [
       "Mineral"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Corkscrew Crash-R",
+      "baseMove": "Sunsteel Strike",
+      "zCrystal": "Rockium Z"
+    }
   },
   "barboach": {
     "num": 339,
@@ -11848,6 +12113,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Devastating Drake-R",
+      "baseMove": "Dragon Pulse",
+      "zCrystal": "Waterium Z"
     }
   },
   "castform": {
@@ -11878,6 +12148,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Supersonic Skystrike-R",
+      "baseMove": "Weather Ball",
+      "zCrystal": "Flyinium Z"
     },
     "formes": [
       "Castform",
@@ -12085,6 +12360,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Devastating Drake-R",
+      "baseMove": "Dragon Hammer",
+      "zCrystal": "Grassium Z"
     }
   },
   "chimecho": {
@@ -12115,6 +12395,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Boomburst",
+      "zCrystal": "Psychium Z"
     }
   },
   "absol": {
@@ -12372,6 +12657,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Hydro Vortex-R",
+      "baseMove": "Skull Bash",
+      "zCrystal": "Icium Z"
     }
   },
   "clamperl": {
@@ -12506,6 +12796,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Hydro Vortex-R",
+      "baseMove": "Liquidation",
+      "zCrystal": "Rockium Z"
     }
   },
   "luvdisc": {
@@ -13138,6 +13433,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Tectonic Rage-R",
+      "baseMove": "Earthquake",
+      "zCrystal": "Grassium Z"
     }
   },
   "chimchar": {
@@ -13242,6 +13542,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "All-Out Pummeling-R",
+      "baseMove": "Mach Punch",
+      "zCrystal": "Firium Z"
     }
   },
   "piplup": {
@@ -13347,6 +13652,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Corkscrew Crash-R",
+      "baseMove": "Flash Cannon",
+      "zCrystal": "Waterium Z"
     }
   },
   "starly": {
@@ -13582,6 +13892,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Boomburst",
+      "zCrystal": "Buginium Z"
     }
   },
   "shinx": {
@@ -13683,6 +13998,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Black Hole Eclipse-R",
+      "baseMove": "Crunch",
+      "zCrystal": "Electrium Z"
     }
   },
   "budew": {
@@ -14091,6 +14411,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Super Fang",
+      "zCrystal": "Electrium Z"
     }
   },
   "buizel": {
@@ -14300,6 +14625,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Tectonic Rage-R",
+      "baseMove": "Mudslide",
+      "zCrystal": "Waterium Z"
     },
     "formes": [
       "Gastrodon",
@@ -14697,6 +15027,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Inferno Overdrive",
+      "baseMove": "Flamethrower",
+      "zCrystal": "Darkinium Z"
     }
   },
   "bronzor": {
@@ -14757,7 +15092,12 @@
     "eggGroups": [
       "Mineral"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Shattered Psyche-R",
+      "baseMove": "Zen Headbutt",
+      "zCrystal": "Steelium Z"
+    }
   },
   "bonsly": {
     "num": 438,
@@ -14894,6 +15234,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Supersonic Skystrike-R",
+      "baseMove": "Chatter",
+      "zCrystal": "Normalium Z"
     }
   },
   "spiritomb": {
@@ -15336,6 +15681,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Acid Downpour-R",
+      "baseMove": "Poison Jab",
+      "zCrystal": "Fightinium Z"
     }
   },
   "carnivine": {
@@ -15365,6 +15715,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Black Hole Eclipse-R",
+      "baseMove": "Crunch",
+      "zCrystal": "Grassium Z"
     }
   },
   "finneon": {
@@ -15569,6 +15924,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Corkscrew Crash-R",
+      "baseMove": "Cutting Edge",
+      "zCrystal": "Icium Z"
     }
   },
   "magnezone": {
@@ -15596,7 +15956,12 @@
     "eggGroups": [
       "Mineral"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Tri Attack",
+      "zCrystal": "Steelium Z"
+    }
   },
   "lickilicky": {
     "num": 463,
@@ -15625,6 +15990,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Continental Crush-R",
+      "baseMove": "Rollout",
+      "zCrystal": "Normalium Z"
     }
   },
   "rhyperior": {
@@ -15684,6 +16054,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Wring Out",
+      "zCrystal": "Grassium Z"
     }
   },
   "electivire": {
@@ -15714,6 +16089,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "All-Out Pummeling-R",
+      "baseMove": "Feint",
+      "zCrystal": "Electrium Z"
     }
   },
   "magmortar": {
@@ -15743,6 +16123,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "All-Out Pummeling-R",
+      "baseMove": "Aura Sphere",
+      "zCrystal": "Firium Z"
     }
   },
   "togekiss": {
@@ -15805,6 +16190,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Savage Spin-Out-R",
+      "baseMove": "Bug Buzz",
+      "zCrystal": "Dragonium Z"
     }
   },
   "leafeon": {
@@ -15949,7 +16339,12 @@
     "eggGroups": [
       "Mineral"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Tri Attack",
+      "zCrystal": "Electrium Z"
+    }
   },
   "gallade": {
     "num": 475,
@@ -16040,6 +16435,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Subzero Slammer-R",
+      "baseMove": "Ice Punch",
+      "zCrystal": "Ghostium Z"
     }
   },
   "froslass": {
@@ -16068,7 +16468,12 @@
       "Fairy",
       "Mineral"
     ],
-    "gender": "F"
+    "gender": "F",
+    "zmove": {
+      "zMove": "Never-Ending Nightmare-R",
+      "baseMove": "Shadow Ball",
+      "zCrystal": "Icium Z"
+    }
   },
   "rotom": {
     "num": 479,
@@ -16096,6 +16501,11 @@
       "Amorphous"
     ],
     "gender": "N",
+    "zmove": {
+      "zMove": "Never-Ending Nightmare-R",
+      "baseMove": "Hex",
+      "zCrystal": "Electrium Z"
+    },
     "formes": [
       "Rotom",
       "Rotom-Heat",
@@ -16826,6 +17236,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Hydro Vortex-R",
+      "baseMove": "Razor Shell",
+      "zCrystal": "Fightinium Z"
     }
   },
   "patrat": {
@@ -16891,6 +17306,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Shattered Psyche-R",
+      "baseMove": "Psychic Fangs",
+      "zCrystal": "Normalium Z"
     }
   },
   "lillipup": {
@@ -17120,6 +17540,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Bloom Doom-R",
+      "baseMove": "Grass Pledge",
+      "zCrystal": "Normalium Z"
     }
   },
   "pansear": {
@@ -17186,6 +17611,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Inferno Overdrive-R",
+      "baseMove": "Fire Pledge",
+      "zCrystal": "Normalium Z"
     }
   },
   "panpour": {
@@ -17252,6 +17682,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Hydro Vortex-R",
+      "baseMove": "Water Pledge",
+      "zCrystal": "Normalium Z"
     }
   },
   "munna": {
@@ -17483,6 +17918,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Inferno Overdrive-R",
+      "baseMove": "Blaze Kick",
+      "zCrystal": "Electrium Z"
     }
   },
   "roggenrola": {
@@ -18107,6 +18547,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Savage Spin-Out-R",
+      "baseMove": "Fell Stinger",
+      "zCrystal": "Grassium Z"
     }
   },
   "venipede": {
@@ -18704,6 +19149,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Black Hole Eclipse-R",
+      "baseMove": "Beat Up",
+      "zCrystal": "Fightinium Z"
     }
   },
   "sigilyph": {
@@ -19068,6 +19518,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Shattered Psyche-R",
+      "baseMove": "Extrasensory",
+      "zCrystal": "Darkinium Z"
     }
   },
   "minccino": {
@@ -19500,6 +19955,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Hydro Vortex-R",
+      "baseMove": "Water Pulse",
+      "zCrystal": "Icium Z"
     }
   },
   "deerling": {
@@ -19596,6 +20056,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Supersonic Skystrike-R",
+      "baseMove": "Wing Attack",
+      "zCrystal": "Electrium Z"
     }
   },
   "karrablast": {
@@ -19959,6 +20424,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Bloom Doom-R",
+      "baseMove": "Power Whip",
+      "zCrystal": "Steelium Z"
     }
   },
   "klink": {
@@ -20049,7 +20519,12 @@
     "eggGroups": [
       "Mineral"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Gigavolt Havoc-R",
+      "baseMove": "Wild Charge",
+      "zCrystal": "Steelium Z"
+    }
   },
   "tynamo": {
     "num": 602,
@@ -20148,6 +20623,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Hydro Vortex-R",
+      "baseMove": "Waterfall",
+      "zCrystal": "Electrium Z"
     }
   },
   "elgyem": {
@@ -20511,7 +20991,12 @@
     "eggGroups": [
       "Mineral"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Supersonic Skystrike-R",
+      "baseMove": "Razor Wind",
+      "zCrystal": "Icium Z"
+    }
   },
   "shelmet": {
     "num": 616,
@@ -20608,6 +21093,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Gigavolt Havoc-R",
+      "baseMove": "Discharge",
+      "zCrystal": "Groundium Z"
     }
   },
   "mienfoo": {
@@ -20674,6 +21164,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Shattered Psyche-R",
+      "baseMove": "Photon Geyser",
+      "zCrystal": "Fightinium Z"
     }
   },
   "druddigon": {
@@ -21208,6 +21703,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Inferno Overdrive-R",
+      "baseMove": "Fiery Dance",
+      "zCrystal": "Buginium Z"
     }
   },
   "cobalion": {
@@ -21656,6 +22156,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Bloom Doom-R",
+      "baseMove": "Petal Blizzard",
+      "zCrystal": "Fightinium Z"
     }
   },
   "fennekin": {
@@ -22304,7 +22809,12 @@
     "eggGroups": [
       "Fairy"
     ],
-    "gender": "F"
+    "gender": "F",
+    "zmove": {
+      "zMove": "Bloom Doom-R",
+      "baseMove": "Petal Dance",
+      "zCrystal": "Fairium Z"
+    }
   },
   "skiddo": {
     "num": 672,
@@ -23135,6 +23645,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Bloom Doom-R",
+      "baseMove": "Solar Beam",
+      "zCrystal": "Normalium Z"
     }
   },
   "tyrunt": {
@@ -23328,6 +23843,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Supersonic Skystrike-R",
+      "baseMove": "Flying Press",
+      "zCrystal": "Flyinium Z"
     }
   },
   "dedenne": {
@@ -23359,6 +23879,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Gigavolt Havoc-R",
+      "baseMove": "Parabolic Charge",
+      "zCrystal": "Fairium Z"
     }
   },
   "carbink": {
@@ -23800,6 +24325,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Boomburst",
+      "zCrystal": "Dragonium Z"
     }
   },
   "xerneas": {
@@ -24006,6 +24536,11 @@
       "M": 1,
       "F": 0
     },
+    "zmove": {
+      "zMove": "",
+      "baseMove": "Grassy Terrain",
+      "zCrystal": "Normalium Z"
+    },
     "evos": [
       {
         "target": "dartrix",
@@ -24042,6 +24577,11 @@
       "M": 1,
       "F": 0
     },
+    "zmove": {
+      "zMove": "Grassy Terrain",
+      "baseMove": "Grassy Terrain",
+      "zCrystal": "Normalium Z"
+    },
     "evos": [
       {
         "target": "decidueye",
@@ -24077,6 +24617,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Sinister Arrow Raid",
+      "baseMove": "Spirit Shackle",
+      "zCrystal": "Decidium Z"
     }
   },
   "litten": {
@@ -24178,6 +24723,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Malicious Moonsault",
+      "baseMove": "Darkest Lariat",
+      "zCrystal": "Incinium Z"
     }
   },
   "popplio": {
@@ -24282,6 +24832,11 @@
     "genderRatio": {
       "M": 1,
       "F": 0
+    },
+    "zmove": {
+      "zMove": "Oceanic Operetta",
+      "baseMove": "Sparkling Aria",
+      "zCrystal": "Primarium Z"
     }
   },
   "pikipek": {
@@ -24623,6 +25178,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Subzero Slammer-R",
+      "baseMove": "Ice Hammer",
+      "zCrystal": "Fightinium Z"
     }
   },
   "oricorio": {
@@ -24828,6 +25388,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Splintered Stormshards",
+      "baseMove": "Stone Edge",
+      "zCrystal": "Lycanium Z"
+    },
     "formes": [
       "Lycanroc",
       "Lycanroc-Midnight",
@@ -24861,6 +25426,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Black Hole Eclipse-R",
+      "baseMove": "Beat Up",
+      "zCrystal": "Waterium Z"
     },
     "formes": [
       "Wishiwashi",
@@ -24931,6 +25501,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Acid Downpour-R",
+      "baseMove": "Poison Jab",
+      "zCrystal": "Waterium Z"
     }
   },
   "mudbray": {
@@ -25433,7 +26008,12 @@
     "eggGroups": [
       "Grass"
     ],
-    "gender": "F"
+    "gender": "F",
+    "zmove": {
+      "zMove": "All-Out Pummeling-R",
+      "baseMove": "Kick-Step",
+      "zCrystal": "Grassium Z"
+    }
   },
   "comfey": {
     "num": 764,
@@ -25835,6 +26415,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Inferno Overdrive-R",
+      "baseMove": "Shell Trap",
+      "zCrystal": "Dragonium Z"
     }
   },
   "togedemaru": {
@@ -25900,6 +26485,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Let’s Snuggle Forever",
+      "baseMove": "Play Rough",
+      "zCrystal": "Mimikium Z"
     },
     "formes": [
       "Mimikyu",
@@ -25994,7 +26584,12 @@
     "eggGroups": [
       "Mineral"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Corkscrew Crash-R",
+      "baseMove": "Anchor Shot",
+      "zCrystal": "Ghostium Z"
+    }
   },
   "jangmoo": {
     "num": 782,
@@ -26096,6 +26691,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Clangorous Soulblaze",
+      "baseMove": "Clanging Scales",
+      "zCrystal": "Kommonium Z"
+    },
     "formes": [
       "Kommoo",
       "Kommoo-Megamax"
@@ -26126,7 +26726,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Guardian of Alola",
+      "baseMove": "Nature’s Madness",
+      "zCrystal": "Tapunium Z"
+    }
   },
   "tapulele": {
     "num": 786,
@@ -26153,7 +26758,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Guardian of Alola",
+      "baseMove": "Nature’s Madness",
+      "zCrystal": "Tapunium Z"
+    }
   },
   "tapubulu": {
     "num": 787,
@@ -26180,7 +26790,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Guardian of Alola",
+      "baseMove": "Nature’s Madness",
+      "zCrystal": "Tapunium Z"
+    }
   },
   "tapufini": {
     "num": 788,
@@ -26207,7 +26822,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Guardian of Alola",
+      "baseMove": "Nature’s Madness",
+      "zCrystal": "Tapunium Z"
+    }
   },
   "cosmog": {
     "num": 789,
@@ -26320,7 +26940,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Searing Sunraze Smash",
+      "baseMove": "Sunsteel Strike",
+      "zCrystal": "Solganium Z"
+    }
   },
   "lunala": {
     "num": 792,
@@ -26347,7 +26972,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Menacing Moonraze Maelstrom",
+      "baseMove": "Moongeist Beam",
+      "zCrystal": "Lunalium Z"
+    }
   },
   "nihilego": {
     "num": 793,
@@ -26626,7 +27256,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Soul-Stealing 7-Star Strike",
+      "baseMove": "Spectral Thief",
+      "zCrystal": "Marshadium Z"
+    }
   },
   "poipole": {
     "num": 803,
@@ -26693,6 +27328,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Devastating Drake-R",
+      "baseMove": "Dragon Pulse",
+      "zCrystal": "Poisonium Z"
     }
   },
   "stakataka": {
@@ -27038,6 +27678,11 @@
       "Amorphous"
     ],
     "gender": "N",
+    "zmove": {
+      "zMove": "Never-Ending Nightmare-R",
+      "baseMove": "Hex",
+      "zCrystal": "Firium Z"
+    },
     "formes": [
       "Rotom",
       "Rotom-Heat",
@@ -27075,6 +27720,11 @@
       "Amorphous"
     ],
     "gender": "N",
+    "zmove": {
+      "zMove": "Never-Ending Nightmare-R",
+      "baseMove": "Hex",
+      "zCrystal": "Waterium Z"
+    },
     "formes": [
       "Rotom",
       "Rotom-Heat",
@@ -27186,6 +27836,11 @@
       "Amorphous"
     ],
     "gender": "N",
+    "zmove": {
+      "zMove": "Never-Ending Nightmare-R",
+      "baseMove": "Hex",
+      "zCrystal": "Grassium Z"
+    },
     "formes": [
       "Rotom",
       "Rotom-Heat",
@@ -27227,6 +27882,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Bloom Doom-R",
+      "baseMove": "Weather Ball",
+      "zCrystal": "Flyinium Z"
+    },
     "formes": [
       "Castform",
       "Castform-Sunny",
@@ -27266,6 +27926,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Gigavolt Havoc-R",
+      "baseMove": "Weather Ball",
+      "zCrystal": "Flyinium Z"
+    },
     "formes": [
       "Castform",
       "Castform-Sunny",
@@ -27304,6 +27969,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Subzero Slammer-R",
+      "baseMove": "Weather Ball",
+      "zCrystal": "Flyinium Z"
     },
     "formes": [
       "Castform",
@@ -27422,6 +28092,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Tectonic Rage-R",
+      "baseMove": "Mudslide",
+      "zCrystal": "Waterium Z"
     },
     "formes": [
       "Gastrodon",
@@ -29638,6 +30313,11 @@
       "Undiscovered"
     ],
     "gender": "F",
+    "zmove": {
+      "zMove": "Never-Ending Nightmare-R",
+      "baseMove": "Light of Ruin",
+      "zCrystal": "Fairium Z"
+    },
     "formes": [
       "Floette",
       "Floette-Eternal"
@@ -30464,6 +31144,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Black Hole Eclipse-R",
+      "baseMove": "Beat Up",
+      "zCrystal": "Waterium Z"
+    },
     "formes": [
       "Wishiwashi",
       "Wishiwashi-School"
@@ -30614,6 +31299,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Splintered Stormshards",
+      "baseMove": "Stone Edge",
+      "zCrystal": "Lycanium Z"
+    },
     "formes": [
       "Lycanroc",
       "Lycanroc-Midnight",
@@ -30650,6 +31340,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Splintered Stormshards",
+      "baseMove": "Stone Edge",
+      "zCrystal": "Lycanium Z"
     },
     "formes": [
       "Lycanroc",
@@ -30700,7 +31395,7 @@
         "level": 25
       },
       {
-        "target": "raticatealola",
+        "target": "raticate",
         "item": "Kanto Badge"
       }
     ]
@@ -30812,6 +31507,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Stoked Sparksurfer",
+      "baseMove": "Volt Switch",
+      "zCrystal": "Raichium Z"
+    },
     "formes": [
       "Raichu",
       "Raichu-Alola"
@@ -30860,7 +31560,7 @@
         "level": 28
       },
       {
-        "target": "sandslashalola",
+        "target": "sandslash",
         "item": "Kanto Badge"
       }
     ]
@@ -30893,6 +31593,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Corkscrew Crash-R",
+      "baseMove": "Cutting Edge",
+      "zCrystal": "Icium Z"
     },
     "formes": [
       "Sandslash",
@@ -30941,7 +31646,7 @@
         "level": 33
       },
       {
-        "target": "ninetalesalola",
+        "target": "ninetales",
         "item": "Kanto Badge"
       }
     ]
@@ -31297,6 +32002,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Egg Bomb",
+      "zCrystal": "Grassium Z"
+    },
     "formes": [
       "Exeggutor",
       "Exeggutor-Alola"
@@ -31332,6 +32042,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Never-Ending Nightmare-R",
+      "baseMove": "Shadow Bone",
+      "zCrystal": "Firium Z"
     },
     "formes": [
       "Marowak",
@@ -31702,6 +32417,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Let’s Snuggle Forever",
+      "baseMove": "Play Rough",
+      "zCrystal": "Mimikium Z"
+    },
     "formes": [
       "Mimikyu",
       "Mimikyu-Busted",
@@ -31739,6 +32459,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Let’s Snuggle Forever",
+      "baseMove": "Play Rough",
+      "zCrystal": "Mimikium Z"
     },
     "formes": [
       "Mimikyu",
@@ -31780,6 +32505,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Let’s Snuggle Forever",
+      "baseMove": "Play Rough",
+      "zCrystal": "Mimikium Z"
     },
     "formes": [
       "Mimikyu",
@@ -31848,6 +32578,11 @@
       "Undiscovered"
     ],
     "gender": "M",
+    "zmove": {
+      "zMove": "10,000,000 Volt Thunderbolt",
+      "baseMove": "Thunderbolt",
+      "zCrystal": "Pikashunium Z"
+    },
     "formes": [
       "Pikachu",
       "Pikachu-Original",
@@ -31886,6 +32621,11 @@
       "Undiscovered"
     ],
     "gender": "M",
+    "zmove": {
+      "zMove": "10,000,000 Volt Thunderbolt",
+      "baseMove": "Thunderbolt",
+      "zCrystal": "Pikashunium Z"
+    },
     "formes": [
       "Pikachu",
       "Pikachu-Original",
@@ -31924,6 +32664,11 @@
       "Undiscovered"
     ],
     "gender": "M",
+    "zmove": {
+      "zMove": "10,000,000 Volt Thunderbolt",
+      "baseMove": "Thunderbolt",
+      "zCrystal": "Pikashunium Z"
+    },
     "formes": [
       "Pikachu",
       "Pikachu-Original",
@@ -31962,6 +32707,11 @@
       "Undiscovered"
     ],
     "gender": "M",
+    "zmove": {
+      "zMove": "10,000,000 Volt Thunderbolt",
+      "baseMove": "Thunderbolt",
+      "zCrystal": "Pikashunium Z"
+    },
     "formes": [
       "Pikachu",
       "Pikachu-Original",
@@ -32000,6 +32750,11 @@
       "Undiscovered"
     ],
     "gender": "M",
+    "zmove": {
+      "zMove": "10,000,000 Volt Thunderbolt",
+      "baseMove": "Thunderbolt",
+      "zCrystal": "Pikashunium Z"
+    },
     "formes": [
       "Pikachu",
       "Pikachu-Original",
@@ -32038,6 +32793,11 @@
       "Undiscovered"
     ],
     "gender": "M",
+    "zmove": {
+      "zMove": "10,000,000 Volt Thunderbolt",
+      "baseMove": "Thunderbolt",
+      "zCrystal": "Pikashunium Z"
+    },
     "formes": [
       "Pikachu",
       "Pikachu-Original",
@@ -32076,6 +32836,11 @@
       "Undiscovered"
     ],
     "gender": "M",
+    "zmove": {
+      "zMove": "10,000,000 Volt Thunderbolt",
+      "baseMove": "Thunderbolt",
+      "zCrystal": "Pikashunium Z"
+    },
     "formes": [
       "Pikachu",
       "Pikachu-Original",
@@ -32271,6 +33036,11 @@
       "M": 0.5,
       "F": 0.5
     },
+    "zmove": {
+      "zMove": "Clangorous Soulblaze",
+      "baseMove": "Clanging Scales",
+      "zCrystal": "Kommonium Z"
+    },
     "formes": [
       "Kommoo",
       "Kommoo-Megamax"
@@ -32307,6 +33077,11 @@
       "Undiscovered"
     ],
     "gender": "N",
+    "zmove": {
+      "zMove": "Searing Sunraze Smash",
+      "baseMove": "Sunsteel Strike",
+      "zCrystal": "Solganium Z"
+    },
     "formes": [
       "Necrozma",
       "Necrozma-Dusk-Mane",
@@ -32342,6 +33117,11 @@
       "Undiscovered"
     ],
     "gender": "N",
+    "zmove": {
+      "zMove": "Menacing Moonraze Maelstrom",
+      "baseMove": "Moongeist Beam",
+      "zCrystal": "Lunalium Z"
+    },
     "formes": [
       "Necrozma",
       "Necrozma-Dusk-Mane",
@@ -32377,6 +33157,11 @@
       "Undiscovered"
     ],
     "gender": "N",
+    "zmove": {
+      "zMove": "Light That Burns the Sky",
+      "baseMove": "Photon Geyser",
+      "zCrystal": "Ultranecrozium Z"
+    },
     "formes": [
       "Necrozma",
       "Necrozma-Dusk-Mane",

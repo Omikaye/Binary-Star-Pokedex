@@ -2742,7 +2742,7 @@ Lycanroc 2
 
 |======
 Rattata 1
-Level Up at level 25 into Raticate-1, Used Item [Kanto Badge] into Raticate-1, 
+Level Up at level 25 into Raticate-1, Used Item [Kanto Badge] into Raticate, 
 |======
 Raticate 1
 
@@ -2754,13 +2754,13 @@ Raichu 1
 
 |======
 Sandshrew 1
-Level Up at level 28 into Sandslash-1, Used Item [Kanto Badge] into Sandslash-1, 
+Level Up at level 28 into Sandslash-1, Used Item [Kanto Badge] into Sandslash, 
 |======
 Sandslash 1
 
 |======
 Vulpix 1
-Level Up at level 33 into Ninetales-1, Used Item [Kanto Badge] into Ninetales-1, 
+Level Up at level 33 into Ninetales-1, Used Item [Kanto Badge] into Ninetales, 
 |======
 Ninetales 1
 
