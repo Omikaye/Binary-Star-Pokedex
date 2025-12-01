@@ -145,29 +145,27 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		}
 		buf += `</div>`;
 		
-		// Base Move as clickable button on its own line
+		// Base Move as a short text link (no button)
 		var baseMoveId = toID(pokemon.zmove.baseMove);
 		var baseMoveData = BattleMovedex[baseMoveId];
-		buf += `<div style="margin-bottom:4px"><strong>Base Move:</strong></div>`;
+		buf += `<div style="margin-bottom:4px"><strong>Base Move:</strong> `;
 		if (baseMoveData) {
-			buf += '<ul class="utilichart nokbd" style="margin-top:0">';
-			buf += BattleSearch.renderTaggedMoveRow(baseMoveData, '');
-			buf += '</ul>';
+			buf += `<a href="${Config.baseurl}moves/${baseMoveId}" data-target="push">${baseMoveData.name}</a>`;
 		} else {
-			buf += `<div>${pokemon.zmove.baseMove}</div>`;
+			buf += `${pokemon.zmove.baseMove}`;
 		}
+		buf += `</div>`;
 		
-		// Z-Move as clickable button on its own line
+		// Z-Move as a short text link (no button)
 		var zMoveId = toID(pokemon.zmove.zMove);
 		var zMoveData = BattleMovedex[zMoveId];
-		buf += `<div style="margin-bottom:4px"><strong>Z-Move:</strong></div>`;
+		buf += `<div style="margin-bottom:4px"><strong>Z-Move:</strong> `;
 		if (zMoveData) {
-			buf += '<ul class="utilichart nokbd" style="margin-top:0">';
-			buf += BattleSearch.renderTaggedMoveRow(zMoveData, '');
-			buf += '</ul>';
+			buf += `<a href="${Config.baseurl}moves/${zMoveId}" data-target="push">${zMoveData.name}</a>`;
 		} else {
-			buf += `<div>${pokemon.zmove.zMove}</div>`;
+			buf += `${pokemon.zmove.zMove}`;
 		}
+		buf += `</div>`;
 	} else {
 		buf += '<em>No Z-Move</em>';
 	}
