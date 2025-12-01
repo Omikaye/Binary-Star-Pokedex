@@ -17349,7 +17349,7 @@
     "gender": 31,
     "tms": ["Protect","Dig","Hidden Power","Fly","Light Screen","Roost","Nasty Plot","Facade","Solar Beam","Swords Dance","Psycho Cut","Shadow Ball","Hurricane","X-Scissor","U-turn","Air Slash","Round","Razor Wind","Steel Wing","Energy Ball","Twister","Acrobatics","Cutting Edge","Meditate","Shadow Claw","Giga Drain","Aerial Ace","Seed Bomb","Knock Off","Nature Power","Trailblaze"],
     "tutors": ["Grass Pledge","Grassy Terrain","Rest","Substitute","Rain Dance","Tailwind","Grass Knot","Hyper Voice","False Swipe","Attract","Snore","Echoed Voice","Sky Attack","Sunny Day","Covet","Helping Hand","Toxic","Double Team","Sleep Talk"],
-    "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
+    "zmove": { "Z-Move": "", "Base Move": "Grassy Terrain", "Z-Crystal": "Normalium Z" }
   },
   {
     "num": 723,
@@ -17373,7 +17373,7 @@
     "gender": 31,
     "tms": ["Protect","Dig","Hidden Power","Fly","Foul Play","Light Screen","Roost","Nasty Plot","Facade","Solar Beam","Dragon Claw","Swords Dance","Psycho Cut","Shadow Ball","Hurricane","X-Scissor","Phantom Force","U-turn","Air Slash","Round","Razor Wind","Steel Wing","Energy Ball","Twister","Acrobatics","Cutting Edge","Meditate","Shadow Claw","Giga Drain","Aerial Ace","Seed Bomb","Knock Off","Nature Power","Trailblaze"],
     "tutors": ["Grass Pledge","Grassy Terrain","Rest","Tickle","Substitute","Rain Dance","Tailwind","Grass Knot","Hyper Voice","False Swipe","Attract","Snore","Confide","Echoed Voice","Sky Attack","Sunny Day","Covet","Helping Hand","Toxic","Double Team","Sleep Talk"],
-    "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
+    "zmove": { "Z-Move": "Grassy Terrain", "Base Move": "Grassy Terrain", "Z-Crystal": "Normalium Z" }
   },
   {
     "num": 724,

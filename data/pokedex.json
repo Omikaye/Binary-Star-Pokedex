@@ -8461,7 +8461,7 @@
   },
   "hooh": {
     "num": 250,
-    "name": "Ho-Oh",
+    "name": "Hooh",
     "types": [
       "Fire",
       "Flying"
@@ -8484,13 +8484,7 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N",
-    "formes": [
-      "Ho",
-      "Ho-Oh"
-    ],
-    "baseSpecies": "Ho",
-    "forme": "Oh"
+    "gender": "N"
   },
   "celebi": {
     "num": 251,

@@ -728,8 +728,8 @@
   "ironfist": {
     "name": "Iron Fist",
     "num": 89,
-    "desc": "This Pokemon's punch-based attacks have their power multiplied by 1.2.",
-    "shortDesc": "This Pokemon's punch-based attacks have 1.2x power. Sucker Punch is not boosted."
+    "desc": "This Pokemon's hand or punch-based attacks have their power multiplied by 1.2.",
+    "shortDesc": "This Pokemon's punch-based attacks have 1.2x power."
   },
   "justified": {
     "name": "Justified",
@@ -1514,8 +1514,8 @@
   "strongjaw": {
     "name": "Strong Jaw",
     "num": 173,
-    "desc": "This Pokemon's bite-based attacks have their power multiplied by 1.5.",
-    "shortDesc": "This Pokemon's bite-based attacks have 1.5x power. Bug Bite is not boosted."
+    "desc": "This Pokemon's jaw-based attacks have their power multiplied by 1.5.",
+    "shortDesc": "This Pokemon's jaw-based attacks have 1.5x power."
   },
   "sturdy": {
     "name": "Sturdy",

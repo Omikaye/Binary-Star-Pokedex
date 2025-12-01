@@ -470,10 +470,17 @@ for (const line of moveLines) {
   if (!trimmed) continue;
 
   if (!currentMon) {
-    const id = toID(trimmed);
+    // Apply dictionary translation before converting to ID
+    let pokemonName = trimmed;
+    if (nameMap[pokemonName]) {
+      pokemonName = nameMap[pokemonName];
+    }
+    const id = toID(pokemonName);
     if (pokedex[id]) {
       currentMon = id;
       learnsets[id] = [];
+    } else {
+      console.warn(`  Warning: Level-up moves for "${trimmed}" (mapped to "${pokemonName}", ID: "${id}") not found in pokedex`);
     }
     continue;
   }
