@@ -358,7 +358,15 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 			);
 		}
 		
-		const methods = ["lvl", "tm", "tutor", "egg"];
+		// Collect Pokemon that learn this move as a Z-Move
+		for (let pokeId in BattlePokedex) {
+			let pokemon = BattlePokedex[pokeId];
+			if (pokemon.zmove && toID(pokemon.zmove.zMove) === moveId) {
+				results.push({ poke: pokeId, how: 'zmove', level: 0 });
+			}
+		}
+		
+		const methods = ["lvl", "tm", "tutor", "egg", "zmove"];
 		results.sort((a, b) => {
 			// First sort by learning method
 			if (a.how != b.how) return methods.indexOf(a.how) - methods.indexOf(b.how);
@@ -422,6 +430,8 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 					return '<h3>Tutor</h3>';
 				case 'egg': // egg move
 					return '<h3>Egg</h3>';
+				case 'zmove': // Z-Move
+					return '<h3>Z-Move</h3>';
 			}
 		} else if (offscreen) {
 			return ''+template.name+' '+template.abilities['0']+' '+(template.abilities['1']||'')+' '+(template.abilities['H']||'')+'';
@@ -439,6 +449,9 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 				break;
 			case 'egg': // egg move
 				desc = '<span class="picon" style="margin-top:-12px;'+getPokemonIcon('egg')+'"></span>';
+				break;
+			case 'zmove': // Z-Move
+				desc = '<span style="font-size:20px;margin-right:4px">Z</span>';
 				break;
 			case 'event': // event
 				desc = '!';
