@@ -1,13 +1,13 @@
 Name: "Route 1"
-Extra Notes: "This route is orange."
+Extra Notes: "Route 1 is now only the road from your house to Iki Town, the beach and school are now officially labelled as different areas, check your Pokemon's caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon."
 Encounters: {
-Grass: (Levels 13-15): Rufflet (10%), Skiddo (10%), Phanpy (10%), Bagon (10%), Pawniard (10%), Mienfoo (10%), Rhyhorn (10%), Growlithe (10%), Jangmo-o (10%), Cyndaquil (10%)
-Sky: (Levels 12-13): Vullaby (30%, Bagon, Spearow), Pidgey (60%), Noibat (10%, Woobat)
+Grass: (Levels 3-5): Yungoos (10%), Rattata 1 (10%, Rattata), Pikpek (10%), Grubbin (10%), Pichu (10%), Bounsweet (10%), Swablu (10%), Igglybuff (10%), Sentret (10%), Scatterbug (10%)
+Grass (Behind Rocks): (Levels 17-20): Yungoos (10%), Rattata 1 (10%, Rattata), Pikpek (10%), Grubbin (10%), Pikachu (10%), Bounsweet (10%), Swablu (10%), Jigglypuff (10%), Sentret (10%), Spewpa (10%)
 }
-Gifts/Trades: Trader requests a Happiny in exchange for a Poipole
-Static Pokemon: (001, 003)
-Trainers: (004, 023, 024)
-Boss Trainers: (056)
+Gifts/Trades: Kukui gives the player their starter Pokemon. Rowlet, Litten, or Popplio, each holding an Oran Berry. Natures are random. IVs are random.
+Static Pokemon: (001, 002)
+Trainers: (459, 025, 028)
+Boss Trainers: (491, 492, 493)
 Shops: {
 Cherish Ball	$300
 Quick Ball	$1,000
@@ -17,6 +17,7 @@ Max Repel	$10
 Max Elixir	$400
 Poké Doll	$140
 Escape Rope	$180
+Shiny Charm	$250,000
 }
 Items: {
 Poké Ball ×10	From Kukui after the capture tutorial
@@ -29,8 +30,8 @@ Gumshoosite x1     At the end of the west path behind the rocks south of Iki Tow
 Haban Berry x900	At the end of the northern east path behind the rocks south of Iki Town (requires Tauros Charge)
 }
 
-Name: "Route 2"
-Extra Notes: "Scatterbug here evolve into Fancy Pattern Vivillon"
+Name: "Iki Town"
+Extra Notes: ""
 Encounters: {
 Grass: (Levels 3-5): Yungoos (10%), Rattata-1 (10%, Rattata), Pikipek (10%, Starly), Grubbin (10%, Wurmple), Pichu (10%, Happiny, Slaking), Bounsweet (10%), Scatterbug (10%), Swablu (10%), Igglybuff (10%), Sentret (10%)
 Surf: (Levels 3-5): Magikarp (50%), Zubat (50%)
