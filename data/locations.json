@@ -3,109 +3,145 @@
     {
       "id": "route1",
       "name": "Route 1",
-      "notes": "This route is orange.",
+      "notes": "Route 1 is now only the road from your house to Iki Town, the beach and school are now officially labelled as different areas, check your Pokemon's caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon.",
       "encounters": [
         {
           "spot": "Grass",
           "levelRange": {
-            "min": 13,
-            "max": 15
+            "min": 3,
+            "max": 5
           },
           "pokemon": [
             {
-              "name": "Rufflet",
+              "name": "Yungoos",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Skiddo",
+              "name": "Rattata 1",
+              "chance": 10,
+              "sos": [
+                "Rattata"
+              ]
+            },
+            {
+              "name": "Pikipek",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Phanpy",
+              "name": "Grubbin",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Bagon",
+              "name": "Pichu",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Pawniard",
+              "name": "Bounsweet",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Mienfoo",
+              "name": "Swablu",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Rhyhorn",
+              "name": "Igglybuff",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Growlithe",
+              "name": "Sentret",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Jangmo-o",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Cyndaquil",
+              "name": "Scatterbug",
               "chance": 10,
               "sos": []
             }
           ]
         },
         {
-          "spot": "Sky",
+          "spot": "Grass (Behind Rocks)",
           "levelRange": {
-            "min": 12,
-            "max": 13
+            "min": 17,
+            "max": 20
           },
           "pokemon": [
             {
-              "name": "Vullaby",
-              "chance": 30,
-              "sos": [
-                "Bagon",
-                "Spearow"
-              ]
-            },
-            {
-              "name": "Pidgey",
-              "chance": 60,
+              "name": "Yungoos",
+              "chance": 10,
               "sos": []
             },
             {
-              "name": "Noibat",
+              "name": "Rattata 1",
               "chance": 10,
               "sos": [
-                "Woobat"
+                "Rattata"
               ]
+            },
+            {
+              "name": "Pikipek",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Grubbin",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Pikachu",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Bounsweet",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Swablu",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Jigglypuff",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Sentret",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Spewpa",
+              "chance": 10,
+              "sos": []
             }
           ]
         }
       ],
-      "giftsTrades": "Trader requests a Happiny in exchange for a Poipole",
+      "giftsTrades": "Kukui gives the player their starter Pokemon. Rowlet, Litten, or Popplio, each holding an Oran Berry. Natures are random. IVs are random.",
       "staticPokemon": [
         "001",
-        "003"
+        "002"
       ],
       "trainers": [
-        "004",
-        "023",
-        "024"
+        "459",
+        "025",
+        "028"
       ],
       "bossTrainers": [
-        "056"
+        "491",
+        "492",
+        "493"
       ],
       "shops": [
         {
@@ -139,6 +175,10 @@
         {
           "item": "Escape Rope",
           "price": "$180"
+        },
+        {
+          "item": "Shiny Charm",
+          "price": "$250,000"
         }
       ],
       "items": [
@@ -153,7 +193,7 @@
           "obtain": "From Kukui after the capture tutorial"
         },
         {
-          "item": "Miracle Meds",
+          "item": "Miracle Medicine",
           "quantity": 1,
           "obtain": "North of the grass patch next to the Trainer Tips sign."
         },
@@ -185,93 +225,312 @@
       ]
     },
     {
-      "id": "route2",
-      "name": "Route 2",
-      "notes": "Scatterbug here evolve into Fancy Pattern Vivillon",
+      "id": "ikitown",
+      "name": "Iki Town",
+      "notes": "",
+      "encounters": [],
+      "giftsTrades": "None",
+      "staticPokemon": [],
+      "trainers": [
+        "012",
+        "013"
+      ],
+      "bossTrainers": [
+        "009",
+        "010",
+        "011",
+        "023",
+        "363",
+        "650"
+      ],
+      "shops": [],
+      "items": [
+        {
+          "item": "Pokédex",
+          "quantity": 1,
+          "obtain": "From Kukui after saving Nebby at Plank Bridge"
+        },
+        {
+          "item": "Trainer Passport",
+          "quantity": 1,
+          "obtain": "From Kukui after saving Nebby at Plank Bridge"
+        },
+        {
+          "item": "Z-Power Ring",
+          "quantity": 1,
+          "obtain": "From Hala after battling Hau during the festival"
+        },
+        {
+          "item": "Island challenge Amulet",
+          "quantity": 1,
+          "obtain": "From Hala after battling Hau during the festival"
+        },
+        {
+          "item": "Stardust",
+          "quantity": 1,
+          "obtain": "From a woman in the western house for telling her about the message in a bottle at Kala'e Bay"
+        },
+        {
+          "item": "Fightinium Z",
+          "quantity": 1,
+          "obtain": "From Hala for defeating him in the grand trial"
+        },
+        {
+          "item": "Ride Pager",
+          "quantity": 1,
+          "obtain": "From Hala after defeating him in the grand trial"
+        },
+        {
+          "item": "Tauros Charge",
+          "quantity": 1,
+          "obtain": "From Hala after defeating him in the grand trial"
+        },
+        {
+          "item": "TM54 (Twister)",
+          "quantity": 1,
+          "obtain": "From Kukui after defeating Hala in the grand trial"
+        },
+        {
+          "item": "Decidium Z",
+          "quantity": 1,
+          "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Rowlet"
+        },
+        {
+          "item": "Incinium Z",
+          "quantity": 1,
+          "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Litten"
+        },
+        {
+          "item": "Primarium Z",
+          "quantity": 1,
+          "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Popplio"
+        }
+      ]
+    },
+    {
+      "id": "tencaratbeach",
+      "name": "Ten Carat Beach",
+      "notes": "Formerly known as 'Route 1', now this is its own location. | Scatterbug found here will evolve into Marine Pattern Vivillon",
       "encounters": [
         {
           "spot": "Grass",
           "levelRange": {
-            "min": 3,
-            "max": 5
+            "min": 6,
+            "max": 8
           },
           "pokemon": [
             {
-              "name": "Yungoos",
+              "name": "Wingull",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Rattata-1",
+              "name": "Kricketot",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Corphish",
               "chance": 10,
               "sos": [
-                "Rattata"
+                "Krabby"
               ]
             },
             {
-              "name": "Pikipek",
+              "name": "Seel",
               "chance": 10,
               "sos": [
-                "Starly"
+                "Poliwag"
               ]
             },
             {
-              "name": "Grubbin",
+              "name": "Slowpoke",
               "chance": 10,
               "sos": [
-                "Wurmple"
+                "Wimpod"
               ]
             },
             {
-              "name": "Pichu",
+              "name": "Azurill",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Hoppip",
               "chance": 10,
               "sos": [
-                "Happiny",
-                "Slaking"
+                "Scatterbug"
               ]
             },
             {
-              "name": "Bounsweet",
+              "name": "Zigzagoon",
               "chance": 10,
-              "sos": []
+              "sos": [
+                "Bidoof"
+              ]
             },
             {
-              "name": "Scatterbug",
+              "name": "Piplup",
               "chance": 10,
-              "sos": []
+              "sos": [
+                "Panpour"
+              ]
             },
             {
-              "name": "Swablu",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Igglybuff",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Sentret",
+              "name": "Inkay",
               "chance": 10,
               "sos": []
             }
           ]
+        }
+      ],
+      "giftsTrades": "Technically not a gift, but Rotom's form can be changed in Kukui's Lab basement.",
+      "staticPokemon": [],
+      "trainers": [
+        "001",
+        "026",
+        "512"
+      ],
+      "bossTrainers": [],
+      "shops": [],
+      "items": [
+        {
+          "item": "Awakening",
+          "quantity": 1,
+          "obtain": "From Meowth the first time the player sleeps in their bed after getting their hat and Bag"
         },
         {
-          "spot": "Surf",
+          "item": "Rowap Berry",
+          "quantity": 900,
+          "obtain": "On the north side of the grass north of the beach, next to Swimmer Natasha"
+        },
+        {
+          "item": "Poké Ball",
+          "quantity": 1,
+          "obtain": "Random gift from the player's mom when first healing with her each day, after the capture tutorial (~90% chance) (daily)"
+        },
+        {
+          "item": "Great Ball",
+          "quantity": 1,
+          "obtain": "Random gift from the player's mom when first healing with her each day, after the capture tutorial (~5% chance) (daily)"
+        },
+        {
+          "item": "Heal Ball",
+          "quantity": 1,
+          "obtain": "Random gift from the player's mom when first healing with her each day, after the capture tutorial (~5% chance) (daily)"
+        },
+        {
+          "item": "$30,000",
+          "quantity": 1,
+          "obtain": "From the player's mom when Lillie comes to guide the player to the Pokémon Research Lab"
+        },
+        {
+          "item": "Premier Ball",
+          "quantity": 100,
+          "obtain": "At the south end of the beach, in front of the Pokémon Research Lab (hidden) (regenerates occasionally)"
+        },
+        {
+          "item": "Rotom Pokédex",
+          "quantity": 1,
+          "obtain": "Upgraded from the Pokédex by Kukui at the Pokémon Research Lab on the player's first visit"
+        },
+        {
+          "item": "Mind Plate",
+          "quantity": 1,
+          "obtain": "In front of the garage by the player's house, after defeating Nanu (hidden)"
+        },
+        {
+          "item": "Earth Plate",
+          "quantity": 1,
+          "obtain": "By the palm tree on the east end of the beach, after defeating Nanu (hidden)"
+        },
+        {
+          "item": "Lucky Egg",
+          "quantity": 1,
+          "obtain": "From Kukui at the Pokémon Research Lab, after becoming Champion and registering 50 Pokémon"
+        },
+        {
+          "item": "TM90 (Zen Headbutt)",
+          "quantity": 1,
+          "obtain": "From Kukui at the Pokémon Research Lab, after becoming Champion (if the Lucky Egg is received first, the player must leave and re-enter)"
+        },
+        {
+          "item": "PP Up",
+          "quantity": 1,
+          "obtain": "From Meowth after defeating Madame Meowth, after completing Episode RR"
+        }
+      ]
+    },
+    {
+      "id": "theschoolyard",
+      "name": "The Schoolyard",
+      "notes": "Formerly known as 'Route 1', now this is its own location. | Scatterbug found here evolve into Pokeball pattern Vivillon",
+      "encounters": [
+        {
+          "spot": "Grass",
           "levelRange": {
-            "min": 3,
-            "max": 5
+            "min": 7,
+            "max": 10
           },
           "pokemon": [
             {
-              "name": "Magikarp",
-              "chance": 50,
+              "name": "Grimer 1",
+              "chance": 10,
+              "sos": [
+                "Grimer"
+              ]
+            },
+            {
+              "name": "Meowth 1",
+              "chance": 10,
+              "sos": [
+                "Meowth"
+              ]
+            },
+            {
+              "name": "Caterpie",
+              "chance": 10,
+              "sos": [
+                "Scatterbug"
+              ]
+            },
+            {
+              "name": "Bellsprout",
+              "chance": 10,
               "sos": []
             },
             {
-              "name": "Zubat",
-              "chance": 50,
+              "name": "Drifloon",
+              "chance": 10,
+              "sos": [
+                "Swirlix"
+              ]
+            },
+            {
+              "name": "Scraggy",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Bonsly",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Magnemite",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Chikorita",
+              "chance": 10,
+              "sos": [
+                "Pansage"
+              ]
+            },
+            {
+              "name": "Zorua",
+              "chance": 10,
               "sos": []
             }
           ]
@@ -280,10 +539,22 @@
       "giftsTrades": "None",
       "staticPokemon": [],
       "trainers": [
-        "012",
-        "013"
+        "021",
+        "022",
+        "024",
+        "436",
+        "567"
       ],
-      "bossTrainers": [],
+      "bossTrainers": [
+        "485",
+        "486",
+        "487",
+        "396",
+        "361",
+        "380",
+        "386",
+        "502"
+      ],
       "shops": [],
       "items": [
         {
@@ -310,6 +581,56 @@
           "item": "Heal Ball",
           "quantity": 100,
           "obtain": "In the center of the western battlefield in front of the Trainers' School building (hidden)"
+        },
+        {
+          "item": "Jaboca Berry",
+          "quantity": 900,
+          "obtain": "At the southwest corner of first grassy area of the fenced off grassy area on the west side of the Trainers' School"
+        },
+        {
+          "item": "Mental Herb",
+          "quantity": 900,
+          "obtain": "West of the southernmost palm tree in the fenced off grassy area on the west side of the Trainers' School"
+        },
+        {
+          "item": "TM01 (Protect)",
+          "quantity": 1,
+          "obtain": "From Rising Star Joseph after defeating him"
+        },
+        {
+          "item": "Wise Glasses",
+          "quantity": 1,
+          "obtain": "From a Preschooler after solving the seven mysteries, after clearing Hala's grand trial (Night)"
+        },
+        {
+          "item": "Flame Plate",
+          "quantity": 1,
+          "obtain": "Next to the furnace on the northeast side of the Trainer's School, after clearing Nanu's grand trial (hidden)"
+        },
+        {
+          "item": "Quick Claw",
+          "quantity": 1,
+          "obtain": "1F, from a Beauty in the area left of the stairs"
+        },
+        {
+          "item": "Oran Berry",
+          "quantity": 3,
+          "obtain": "1F, from Preschooler Mia after defeating her"
+        },
+        {
+          "item": "Potion",
+          "quantity": 1,
+          "obtain": "2F, from a boy sitting in the front right seat in the classroom at the far end of the hall"
+        },
+        {
+          "item": "Great Ball",
+          "quantity": 5,
+          "obtain": "2F, from Teacher Emily after defeating her"
+        },
+        {
+          "item": "King's Rock",
+          "quantity": 1,
+          "obtain": "3F, from Principal Asuka for defeating her, after becoming Champion"
         }
       ]
     }
