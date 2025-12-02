@@ -37,7 +37,7 @@ None
 }
 Gifts/Trades: None
 Static Pokemon: None
-Trainers: (012, 013)
+Trainers: ()
 Boss Trainers: (009, 010, 011, 023, 363, 650)
 Shops: {
 None
