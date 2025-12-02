@@ -1,8 +1,8 @@
 Name: "Route 1"
 Extra Notes: "Route 1 is now only the road from your house to Iki Town, the beach and school are now officially labelled as different areas, check your Pokemon's caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon."
 Encounters: {
-Grass: (Levels 3-5): Yungoos (10%), Rattata 1 (10%, Rattata), Pikpek (10%), Grubbin (10%), Pichu (10%), Bounsweet (10%), Swablu (10%), Igglybuff (10%), Sentret (10%), Scatterbug (10%)
-Grass (Behind Rocks): (Levels 17-20): Yungoos (10%), Rattata 1 (10%, Rattata), Pikpek (10%), Grubbin (10%), Pikachu (10%), Bounsweet (10%), Swablu (10%), Jigglypuff (10%), Sentret (10%), Spewpa (10%)
+Grass: (Levels 3-5): Yungoos (10%), Rattata 1 (10%, Rattata), Pikipek (10%), Grubbin (10%), Pichu (10%), Bounsweet (10%), Swablu (10%), Igglybuff (10%), Sentret (10%), Scatterbug (10%)
+Grass (Behind Rocks): (Levels 17-20): Yungoos (10%), Rattata 1 (10%, Rattata), Pikipek (10%), Grubbin (10%), Pikachu (10%), Bounsweet (10%), Swablu (10%), Jigglypuff (10%), Sentret (10%), Spewpa (10%)
 }
 Gifts/Trades: Kukui gives the player their starter Pokemon. Rowlet, Litten, or Popplio, each holding an Oran Berry. Natures are random. IVs are random.
 Static Pokemon: (001, 002)
@@ -33,54 +33,86 @@ Haban Berry x900	At the end of the northern east path behind the rocks south of 
 Name: "Iki Town"
 Extra Notes: ""
 Encounters: {
-Grass: (Levels 3-5): Yungoos (10%), Rattata-1 (10%, Rattata), Pikipek (10%, Starly), Grubbin (10%, Wurmple), Pichu (10%, Happiny, Slaking), Bounsweet (10%), Scatterbug (10%), Swablu (10%), Igglybuff (10%), Sentret (10%)
-Surf: (Levels 3-5): Magikarp (50%), Zubat (50%)
+None
 }
 Gifts/Trades: None
 Static Pokemon: None
 Trainers: (012, 013)
+Boss Trainers: (009, 010, 011, 023, 363, 650)
+Shops: {
+None
+}
+Items: {
+Pokédex	From Kukui after saving Nebby at Plank Bridge
+Trainer Passport	From Kukui after saving Nebby at Plank Bridge
+Z-Power Ring	From Hala after battling Hau during the festival
+Island challenge Amulet	From Hala after battling Hau during the festival
+Stardust	From a woman in the western house for telling her about the message in a bottle at Kala'e Bay
+Fightinium Z	From Hala for defeating him in the grand trial
+Ride Pager	From Hala after defeating him in the grand trial
+Tauros Charge	From Hala after defeating him in the grand trial
+TM54 (Twister)	From Kukui after defeating Hala in the grand trial
+Decidium Z	From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Rowlet
+Incinium Z	From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Litten
+Primarium Z	From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Popplio
+}
+
+Name: "Ten Carat Beach"
+Extra Notes: "Formerly known as 'Route 1', now this is its own location. | Scatterbug found here will evolve into Marine Pattern Vivillon"
+Encounters: {
+Grass: (Levels 6-8): Wingull (10%), Kricketot (10%), Corphish (10%, Krabby), Seel (10%, Poliwag), Slowpoke (10%, Wimpod), Azurill (10%), Hoppip (10%, Scatterbug), Zigzagoon (10%, Bidoof), Piplup (10%, Panpour), Inkay (10%)
+}
+Gifts/Trades: Technically not a gift, but Rotom's form can be changed in Kukui's Lab basement.
+Static Pokemon: None
+Trainers: (001, 026, 512)
 Boss Trainers: ()
+Shops: {
+None
+}
+Items: {
+Awakening	From Meowth the first time the player sleeps in their bed after getting their hat and Bag
+Rowap Berry x 900	On the north side of the grass north of the beach, next to Swimmer Natasha
+Poké Ball	Random gift from the player's mom when first healing with her each day, after the capture tutorial (~90% chance) (daily)
+Great Ball	Random gift from the player's mom when first healing with her each day, after the capture tutorial (~5% chance) (daily)
+Heal Ball	Random gift from the player's mom when first healing with her each day, after the capture tutorial (~5% chance) (daily)
+$30,000	From the player's mom when Lillie comes to guide the player to the Pokémon Research Lab
+Premier Ball x 100	At the south end of the beach, in front of the Pokémon Research Lab (hidden) (regenerates occasionally)
+Rotom Pokédex	Upgraded from the Pokédex by Kukui at the Pokémon Research Lab on the player's first visit
+Mind Plate	In front of the garage by the player's house, after defeating Nanu (hidden)
+Earth Plate	By the palm tree on the east end of the beach, after defeating Nanu (hidden)
+Lucky Egg	From Kukui at the Pokémon Research Lab, after becoming Champion and registering 50 Pokémon
+TM90 (Zen Headbutt)	From Kukui at the Pokémon Research Lab, after becoming Champion (if the Lucky Egg is received first, the player must leave and re-enter)
+PP Up	From Meowth after defeating Madame Meowth, after completing Episode RR
+}
+
+Name: "The Schoolyard"
+Extra Notes: "Formerly known as 'Route 1', now this is its own location. | Scatterbug found here evolve into Pokeball pattern Vivillon"
+Encounters: {
+Grass: (Levels 7-10): Grimer 1 (10%, Grimer), Meowth 1 (10%, Meowth), Caterpie (10%, Scatterbug), Bellsprout (10%), Drifloon (10%, Swirlix), Scraggy (10%), Bonsly (10%), Magnemite (10%), Chikorita (10%, Pansage), Zorua (10%)
+}
+Gifts/Trades: None
+Static Pokemon: None
+Trainers: (021, 022, 024, 436, 567)
+Boss Trainers: (485, 486, 487, 396, 361, 380, 386, 502)
 Shops: {
 None
 }
 Items: {
 Exp. Share	From Professor Kukui outside the Trainers' School on the player's first visit
-Repeat Ball x100	North of the rail to the east of the entrance to the Trainers' School grounds (hidden)
+Repeat Ball x 100	North of the rail to the east of the entrance to the Trainers' School grounds (hidden)
 Ability Pillbox	Under a palm tree on the east side of the main entrance to the Trainers' School building
-Destiny Knot x10	Under the second palm tree on the west side of the main entrance to the Trainers' School building
-Heal Ball x100	In the center of the western battlefield in front of the Trainers' School building (hidden)
-}
-
-Name: ""
-Extra Notes: ""
-Encounters: {
-None
-}
-Gifts/Trades: None
-Static Pokemon: None
-Trainers: ()
-Boss Trainers: ()
-Shops: {
-None
-}
-Items: {
-None
-}
-
-Name: ""
-Extra Notes: ""
-Encounters: {
-None
-}
-Gifts/Trades: None
-Static Pokemon: None
-Trainers: ()
-Boss Trainers: ()
-Shops: {
-None
-}
-Items: {
-None
+Destiny Knot x 10	Under the second palm tree on the west side of the main entrance to the Trainers' School building
+Heal Ball x 100	In the center of the western battlefield in front of the Trainers' School building (hidden)
+Jaboca Berry x 900	At the southwest corner of first grassy area of the fenced off grassy area on the west side of the Trainers' School
+Mental Herb x 900	West of the southernmost palm tree in the fenced off grassy area on the west side of the Trainers' School
+TM01 (Protect)	From Rising Star Joseph after defeating him
+Wise Glasses	From a Preschooler after solving the seven mysteries, after clearing Hala's grand trial (Night)
+Flame Plate	Next to the furnace on the northeast side of the Trainer's School, after clearing Nanu's grand trial (hidden)
+Quick Claw	1F, from a Beauty in the area left of the stairs
+Oran Berry ×3	1F, from Preschooler Mia after defeating her
+Potion	2F, from a boy sitting in the front right seat in the classroom at the far end of the hall
+Great Ball ×5	2F, from Teacher Emily after defeating her
+King's Rock	3F, from Principal Asuka for defeating her, after becoming Champion
 }
 
 Name: ""
