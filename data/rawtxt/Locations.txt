@@ -1,5 +1,5 @@
 Name: "Route 1"
-Extra Notes: "Route 1 is now only the road from your house to Iki Town, the beach and school are now officially labelled as different areas, check your Pokemon's caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon."
+Extra Notes: "Route 1 is now only the road from your house to Iki Town. The beach and school are now officially labelled as different areas, check your Pokemon's caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon."
 Encounters: {
 Grass: (Levels 3-5): Yungoos (10%), Rattata 1 (10%, Rattata), Pikipek (10%), Grubbin (10%), Pichu (10%), Bounsweet (10%), Swablu (10%), Igglybuff (10%), Sentret (10%), Scatterbug (10%)
 Grass (Behind Rocks): (Levels 17-20): Yungoos (10%), Rattata 1 (10%, Rattata), Pikipek (10%), Grubbin (10%), Pikachu (10%), Bounsweet (10%), Swablu (10%), Jigglypuff (10%), Sentret (10%), Spewpa (10%)
