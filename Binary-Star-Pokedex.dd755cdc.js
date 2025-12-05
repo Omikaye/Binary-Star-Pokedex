@@ -820,6 +820,31 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
             else buf += '<em>No stat changes from base game</em>';
             buf += '</dd>';
         }
+        // Show Z-Move information if available
+        buf += '<dt>Z-Move:</dt><dd style="line-height:1.8">';
+        if (pokemon.zmove && pokemon.zmove.zMove) {
+            // Z-Crystal with item icon
+            var zCrystalId = toID(pokemon.zmove.zCrystal);
+            var zCrystalItem = BattleItems[zCrystalId];
+            buf += `<div style="margin-bottom:4px"><strong>Z-Crystal:</strong> ${pokemon.zmove.zCrystal} `;
+            if (zCrystalItem) buf += `<span class="itemicon" style="${getItemIcon(zCrystalItem)};width:32px;height:32px;margin-left:4px;display:inline-block;vertical-align:middle"></span>`;
+            buf += `</div>`;
+            // Base Move as a short text link (no button)
+            var baseMoveId = toID(pokemon.zmove.baseMove);
+            var baseMoveData = BattleMovedex[baseMoveId];
+            buf += `<div style="margin-bottom:4px"><strong>Base Move:</strong> `;
+            if (baseMoveData) buf += `<a href="${Config.baseurl}moves/${baseMoveId}" data-target="push">${baseMoveData.name}</a>`;
+            else buf += `${pokemon.zmove.baseMove}`;
+            buf += `</div>`;
+            // Z-Move as a short text link (no button)
+            var zMoveId = toID(pokemon.zmove.zMove);
+            var zMoveData = BattleMovedex[zMoveId];
+            buf += `<div style="margin-bottom:4px"><strong>Z-Move:</strong> `;
+            if (zMoveData) buf += `<a href="${Config.baseurl}moves/${zMoveId}" data-target="push">${zMoveData.name}</a>`;
+            else buf += `${pokemon.zmove.zMove}`;
+            buf += `</div>`;
+        } else buf += '<em>No Z-Move</em>';
+        buf += '</dd>';
         buf += '<dt>Evolution:</dt> <dd>';
         var template = pokemon;
         while(template.prevo)template = getID(BattlePokedex, template.prevo);
@@ -912,6 +937,10 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
         buf += '<ul class="utilichart nokbd">';
         buf += '<li class="resultheader"><h3>Level-up</h3></li>';
         buf += '</ul>';
+        // Pre-evo only moves section placeholder
+        buf += '<ul class="utilichart nokbd prevo-moves" style="display:none">';
+        buf += '<li class="resultheader"><h3>Pre-evo only moves</h3></li>';
+        buf += '</ul>';
         buf += '</div>';
         this.html(buf);
         setTimeout(this.renderFullLearnset.bind(this));
@@ -997,7 +1026,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
                     break;
                 case 'tm':
                     if (newCategory) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
-                    desc = `<span class="itemicon" style="margin-top:-3px;${getItemIcon("tr01")};width:32px;height:32px"></span>`;
+                    desc = `<span class="itemicon" style="margin-top:-3px;background:transparent url(${ResourcePrefix}sprites/itemicons-sheet.png) no-repeat scroll -133px -364px;width:32px;height:32px;display:inline-block"></span>`;
                     break;
                 case 'tutor':
                     if (newCategory) buf += '<li class="resultheader"><h3>Tutor</h3></li>';
@@ -1012,6 +1041,67 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
             buf += BattleSearch.renderTaggedMoveRow(move, desc);
         }
         this.$('.utilichart').html(buf);
+        // Render pre-evo only moves
+        this.renderPreEvoMoves();
+    },
+    renderPreEvoMoves: function() {
+        var pokemon = getID(BattlePokedex, this.id);
+        if (!pokemon) return;
+        // Use the prevo field set up in data.js
+        var prevoId = pokemon.prevo;
+        if (!prevoId) {
+            // No pre-evo, hide the section
+            this.$('.prevo-moves').hide();
+            return;
+        }
+        // Get both learnsets
+        var prevoLearnset = getLearnset(prevoId);
+        var currentLearnset = getLearnset(this.id);
+        // Build set of moves the current Pokémon can learn
+        var currentMoves = new Set();
+        for (var learn of currentLearnset){
+            var moveId = toID(learn.move);
+            currentMoves.add(moveId);
+        }
+        // Find moves only in pre-evo (level-up, tm, tutor)
+        var prevoOnlyMoves = [];
+        for (var learn of prevoLearnset){
+            if (learn.how === 'egg') continue; // Skip egg moves
+            var moveId = toID(learn.move);
+            if (!currentMoves.has(moveId)) prevoOnlyMoves.push(learn);
+        }
+        if (prevoOnlyMoves.length === 0) {
+            this.$('.prevo-moves').hide();
+            return;
+        }
+        // Render the pre-evo only moves
+        var buf = '<li class="resultheader"><h3>Pre-evo only moves</h3></li>';
+        var last = null;
+        for (var learn of prevoOnlyMoves){
+            var move = getID(BattleMovedex, learn.move);
+            if (!move) continue;
+            var desc = "";
+            var newCategory = last == null || last.how != learn.how;
+            switch(learn.how){
+                case 'lvl':
+                    if (newCategory) buf += '<li class="resultheader"><h3>Level-up</h3></li>';
+                    var level = learn.level;
+                    if (level === 0) desc = 'Evo';
+                    else desc = level <= 1 ? '&ndash;' : '<small>L</small>' + level;
+                    break;
+                case 'tm':
+                    if (newCategory) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
+                    desc = `<span class="itemicon" style="margin-top:-3px;background:transparent url(${ResourcePrefix}sprites/itemicons-sheet.png) no-repeat scroll -133px -364px;width:32px;height:32px;display:inline-block"></span>`;
+                    break;
+                case 'tutor':
+                    if (newCategory) buf += '<li class="resultheader"><h3>Tutor</h3></li>';
+                    desc = `<img src="${ResourcePrefix}sprites/tutor.png" style="margin-top:-4px;opacity:.7" width="27" height="26" alt="T" />`;
+                    break;
+            }
+            last = learn;
+            buf += BattleSearch.renderTaggedMoveRow(move, desc);
+        }
+        this.$('.prevo-moves').html(buf).show();
     },
     getStat: function(baseStat, isHP, level, iv, ev, natureMult) {
         if (isHP) {
