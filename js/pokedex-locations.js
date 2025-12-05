@@ -208,12 +208,6 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         buf += '</tr>';
       }
       buf += '</tbody></table>';
-    }   buf += '<td>' + '<a href="' + Config.baseurl + 'items/' + iid + '" data-target="push">' + escapeHTML(it.item) + '</a>' + '</td>';
-        buf += '<td style="text-align:center">' + (it.quantity != null ? it.quantity : 1) + '</td>';
-        buf += '<td>' + escapeHTML(it.obtain || '') + '</td>';
-        buf += '</tr>';
-      }
-      buf += '</tbody></table>';
     }
 
     // Static encounters placeholder (future)
