@@ -1117,7 +1117,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user cloaks itself and its allies in a white mist that prevents any of their stats from being lowered for five turns. 25% Heal. (+1 Prio) Z: +2 Sp.Def",
+    "desc": "The user cloaks itself and its allies in a white mist that prevents any of their stats from being lowered for five turns. (+1 Prio) Z: +2 Sp.Def",
     "shortDesc": ""
   },
   "watergun": {
@@ -2463,7 +2463,7 @@
     "pp": 25,
     "zMovePower": 35,
     "zMoveEffect": "+2 Attack",
-    "desc": "The target is licked with a long tongue, causing damage. This may also leave the target with paralysis. (30%)",
+    "desc": "The target is licked with a long tongue, causing damage. This may also leave the target with paralysis. (30%) Z: +2 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -3018,7 +3018,7 @@
     "pp": 15,
     "zMovePower": 35,
     "zMoveEffect": "+2 Special Attack",
-    "desc": "The target is attacked with an odd psychic wave. The attack varies in intensity. Z-Effect: +2 Atk",
+    "desc": "The target is attacked with an odd psychic wave. The attack varies in intensity and is based on the user's level. Z-Effect: +2 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -3661,7 +3661,7 @@
     "pp": 25,
     "zMovePower": 35,
     "zMoveEffect": "+2 Special Attack",
-    "desc": "The user attacks with a chilling gust of powdery snow. This may also freeze the opposing Pokémon. (10%)",
+    "desc": "The user attacks with a chilling gust of powdery snow. This may inflict frostbite on the opposing Pokémon. (20%) Z: +2 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -4805,7 +4805,8 @@
     "type": "Dragon",
     "target": "allAdjacentFoes",
     "pp": 15,
-    "zMovePower": 105,
+    "zMovePower": 90,
+    "zMoveEffect": "+1 Defense",
     "desc": "The user whips up a vicious tornado to tear at the opposing Pokémon. This also lowers the opponent's Attack stats.",
     "priority": 0,
     "shortDesc": ""
@@ -5732,7 +5733,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "recovers all of user's HP",
-    "desc": "The user rests to cure itself of poisoning, a burn, or paralysis. Z: Restores all HP.",
+    "desc": "The user cures itself and ally of poison, burn, or paralysis. Z: Restores all HP. WIP: Add Frostbite/Sleep",
     "priority": 0,
     "shortDesc": ""
   },
@@ -5769,7 +5770,7 @@
     "priority": 6,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user steals the effects of any attempts to use a healing, stat-changing, or other status move. Can even steal moves like Protect. Z: +2 Speed",
+    "desc": "The user steals the effects of any attempts to use a healing, stat-changing, or other self-target move. Can even steal moves like Protect. Z: +2 Speed",
     "shortDesc": ""
   },
   "secretpower": {
@@ -6719,7 +6720,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user howls loudly to raise its allies' spirits, which raises their Attack stats. (Sound)",
+    "desc": "The user howls loudly to raise its allies' spirits, which raises their Attack stats. (Sound) Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -6779,7 +6780,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Special Defense",
-    "desc": "The user tenses its muscles to bulk up its body, raising both its Attack and Defense stats.",
+    "desc": "The user tenses its muscles to bulk up its body, raising both its Attack and Defense stats. Z: +1 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -6803,7 +6804,7 @@
     "pp": 10,
     "zMovePower": 80,
     "zMoveEffect": "+1 Attack",
-    "desc": "The user bounces up high, then drops on the target on the second turn. This may also leave the target with paralysis. (30%)",
+    "desc": "The user bounces up high, then drops on the target on the second turn. This may also leave the target with paralysis. (30%) Z: +1 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -6923,7 +6924,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user soaks the battlefield with water. This weakens Fire-type moves for five turns. (+1 Priority)",
+    "desc": "The user soaks the battlefield with water. This weakens Fire-type moves for five turns. (+1 Priority) Z: +2 Sp.Def",
     "shortDesc": ""
   },
   "calmmind": {
@@ -6940,7 +6941,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Defense",
-    "desc": "The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats.",
+    "desc": "The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats. Z: +1 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -6978,7 +6979,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Special Defense",
-    "desc": "The user vigorously performs a mystic, powerful dance that raises its Attack and Speed stats.",
+    "desc": "The user vigorously performs a mystic, powerful dance that raises its Attack and Speed stats. Z: +1 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7038,7 +7039,7 @@
     "pp": 20,
     "zMovePower": 60,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user attacks the target with a pulsing blast of water. This may also confuse the target. (20%, Pulse)",
+    "desc": "The user attacks the target with a pulsing blast of water. This may also confuse the target. (20%, Pulse) Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7091,9 +7092,9 @@
     "type": "Flying",
     "target": "self",
     "pp": 5,
-    "zMovePower": 0,
-    "zMoveEffect": "resets lowered stats of the user",
-    "desc": "The user lands and rests its body. It restores the user’s HP by up to half of its max HP. The user loses the Flying-type until the end of the turn.",
+    "zMovePower": 70,
+    "zMoveEffect": "+3 Evasiveness",
+    "desc": "The user lands and rests its body. It restores the user’s HP by up to half of its max HP. The user loses its Flying-type for the rest of the turn.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7133,7 +7134,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Attack",
-    "desc": "Enables a Dark-type target to be hit by Psychic-type attacks. This also enables an evasive target to be hit.",
+    "desc": "Enables a Dark-type target to be hit by Psychic-type attacks. This also enables an evasive target to be hit. Z: +2 Sp.Atk",
     "shortDesc": ""
   },
   "wakeupslap": {
@@ -7213,7 +7214,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+1 to all (except Accuracy or Evasiveness)",
-    "desc": "The user faints. In return, the Pokémon taking its place will have its HP restored and status conditions cured.",
+    "desc": "The user faints. In return, the Pokémon taking its place will be fully healed. Z: +1 to all stats if no allies are available.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7310,7 +7311,7 @@
     "pp": 15,
     "zMovePower": 0,
     "zMoveEffect": "raises critical-hit ratio two stages",
-    "desc": "The user whips up a turbulent whirlwind that ups the Speed stat of the user and its allies for four turns.",
+    "desc": "The user whips up a turbulent whirlwind that ups the Speed stat of the user and its allies for four turns. Z: +2 Crit Stages",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7326,7 +7327,7 @@
     "pp": 30,
     "zMovePower": 0,
     "zMoveEffect": "raises critical-hit ratio two stages",
-    "desc": "The user applies pressure to stress points, sharply boosting one of its or its allies’ stats.",
+    "desc": "The user applies pressure to stress points, sharply boosting one of its or its allies’ stats. Z: +2 Crit Stages",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7346,7 +7347,7 @@
     "pp": 10,
     "zMovePower": 100,
     "zMoveEffect": "+1 Attack",
-    "desc": "The user retaliates with 50% greater force against the opponent that last inflicted damage on it.",
+    "desc": "The user retaliates with 50% greater force against the opponent that last inflicted damage on it. Z: +1 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7407,7 +7408,7 @@
     "target": "adjacentAlly",
     "pp": 15,
     "zMovePower": 150,
-    "desc": "The user stores power, then punches. If the user moves after the target, this attack’s power will be doubled. (Punch)",
+    "desc": "The user stores power, then punches. If the user moves after the target, the power will be doubled. 30% chance to Torment the foe for 3 turns. (Punch)",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7429,7 +7430,7 @@
     "pp": 10,
     "zMovePower": 70,
     "zMoveEffect": "+1 Special Attack",
-    "desc": "If the target has already taken some damage in the same turn, this attack’s power is doubled. (Punch)",
+    "desc": "If the target has already taken some damage in the same turn, this attack’s power is doubled. (Punch) Z: +1 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7451,7 +7452,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Attack",
-    "desc": "This move prevents the targets from using their held item for five turns. Its Trainer is also prevented from using items on it.",
+    "desc": "This move prevents the targets from using their held item for five turns. Its Trainer is also prevented from using items on it. Z: +2 Attack",
     "shortDesc": ""
   },
   "fling": {
@@ -7471,7 +7472,7 @@
     "pp": 10,
     "zMovePower": 100,
     "zMoveEffect": "+1 Attack",
-    "desc": "The user flings its held item at the target to attack. This move’s power and effects depend on the item. Thrown berries will be eaten. (Pulse)",
+    "desc": "The user flings its held item at the target to attack. This move’s power and effects depend on the item. Thrown berries will be eaten. (Pulse) Z: +1 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7491,7 +7492,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Attack",
-    "desc": "Using its psychic power of suggestion, the user transfers its status conditions to the target. Works on Brn, Prz, Psn, and Slp.",
+    "desc": "Using its psychic power of suggestion, the user transfers its status conditions to the target. Works on Brn, Prz, Psn, and Slp. WIP Z: +2 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7532,7 +7533,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Attack",
-    "desc": "For five turns, the user prevents the opposing team from using any moves, Abilities, or held items that recover HP.",
+    "desc": "For five turns, the user prevents the opposing team from using any moves, Abilities, or held items that recover HP. Z: +2 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7552,7 +7553,7 @@
     "target": "adjacentAlly",
     "pp": 5,
     "zMovePower": 140,
-    "desc": "The user powerfully wrings the target. The more HP the target has, the greater the move’s power. (120BP - 1BP)",
+    "desc": "The user envelops the target with toxin soaked tendrils. The more HP the target has, the greater the move’s power. (120BP - 1BP)",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7570,7 +7571,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user employs its psychic power to switch its Attack stat with its Defense stat.",
+    "desc": "The user employs its psychic power to switch its Attack stat with its Defense stat. Swaps the raw stats, not any stat modifiers. Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7593,7 +7594,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Attack",
-    "desc": "The user hurls up its stomach acids on the target. The fluid eliminates the effect of the target’s Ability.",
+    "desc": "The user hurls up its stomach acids on the target. The fluid eliminates the effect of the target’s Ability. (+1 Priority) Z: +2 Atk",
     "shortDesc": ""
   },
   "luckychant": {
@@ -7612,7 +7613,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "raises critical-hit ratio two stages",
-    "desc": "The user chants an incantation toward the sky, preventing opposing Pokémon from landing critical hits for five turns. (+1 Priority)",
+    "desc": "The user chants an incantation toward the sky, preventing opposing Pokémon from landing critical hits for five turns. (+1 Prio) Z: +2 Crit",
     "shortDesc": ""
   },
   "mefirst": {
@@ -7631,7 +7632,7 @@
     "pp": 20,
     "zMovePower": 0,
     "zMoveEffect": "raises critical-hit ratio two stages",
-    "desc": "The user cuts ahead of the target to copy and use the target’s intended move with 50% greater power. The move fails if not first. Z-Eff: +2 Spe",
+    "desc": "The user cuts ahead of the target to copy and use the target’s intended move with 50% greater power. The move fails if not first. Z: +2 Crit",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7649,7 +7650,7 @@
     "pp": 15,
     "zMovePower": 0,
     "zMoveEffect": "+2 Defense",
-    "desc": "The user mimics the move used immediately before it. The move fails if no other move has been used yet.",
+    "desc": "The user backflips to mimic the move used immediately before it. The move fails if no other move has been used yet. Z: +2 Defense",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7670,7 +7671,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+1 to all (except Accuracy or Evasiveness)",
-    "desc": "The user employs its psychic power to switch changes to its Attack and Sp. Atk stats with the target.",
+    "desc": "The user employs its psychic power to switch changes to its Attack and Sp. Atk stats with the target. Z: +1 All Stats",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7691,7 +7692,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+1 to all (except Accuracy or Evasiveness)",
-    "desc": "The user employs its psychic power to switch changes to its Defense and Sp. Def stats with the target.",
+    "desc": "The user employs its psychic power to switch changes to its Defense and Sp. Def stats with the target. Z: +1 All Stats",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7752,7 +7753,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Attack",
-    "desc": "A seed that causes worry is planted on the target. It prevents sleep by making the target’s Ability Insomnia.",
+    "desc": "A seed that causes worry is planted on the target. It prevents sleep by making the target’s Ability Insomnia. Z: +2 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7794,7 +7795,7 @@
     "pp": 15,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user lays a trap of poison spikes at the feet of the opposing team. The spikes will poison opposing Pokémon that switch into battle. 2 Layers badly poisons.",
+    "desc": "The user lays a trap of poison spikes at the feet of the enemy team. The spikes will poison those that swap in. 2 Layers badly poisons. Z: +2 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7815,7 +7816,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Defense",
-    "desc": "The user employs its psychic power to switch stat changes with the target.",
+    "desc": "The user employs its psychic power to switch stat changes with the target. Z: +2 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7835,7 +7836,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user envelops itself in a veil made of water. It regains 1/16 HP every turn.",
+    "desc": "The user envelops itself and its teammate in a veil made of water. It regains 1/16 HP every turn. Z: +2 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7855,7 +7856,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "makes the user the center of attention",
-    "desc": "The user levitates using electrically generated magnetism for five turns.",
+    "desc": "The user levitates itself or its ally using electrically generated magnetism for five turns. Z: Draws attacks to the user.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7899,7 +7900,7 @@
     "pp": 20,
     "zMovePower": 80,
     "zMoveEffect": "+1 Special Attack",
-    "desc": "The target is attacked with a shock of aura. This may also leave the target with paralysis. (Punch, Pulse)",
+    "desc": "The target is attacked with a shock of aura. This may also leave the target with paralysis. (Punch, Pulse) Z: +1 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7939,7 +7940,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user polishes its body to reduce drag. This sharply raises the Speed stat and raises Accuracy.",
+    "desc": "The user polishes its body to reduce drag. This sharply raises the Speed stat and raises Accuracy. Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8022,7 +8023,7 @@
     "pp": 20,
     "zMovePower": 80,
     "zMoveEffect": "+1 Attack",
-    "desc": "The user attacks by swinging its tail as if it were a vicious wave in a raging storm.",
+    "desc": "The user attacks by swinging its tail as if it were a vicious wave in a raging storm. Z: +1 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8043,7 +8044,7 @@
     "target": "adjacentAlly",
     "pp": 15,
     "zMovePower": 135,
-    "desc": "The user slams a barrage of hard-shelled seeds down on the target from above. (Bullet)",
+    "desc": "The user slams a barrage of hard-shelled seeds down on the target from above. (Bullet, Pulse)",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8083,7 +8084,7 @@
     "target": "adjacentAlly",
     "pp": 15,
     "zMovePower": 130,
-    "desc": "The user slashes at the target by crossing its scythes or claws as if they were a pair of scissors. Critical hits land more easily.(+1 Crit)",
+    "desc": "The user slashes at the target by crossing its scythes or claws as if they were a pair of scissors. Critical hits land more easily. (+1 Crit)",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8146,7 +8147,7 @@
     "pp": 15,
     "zMovePower": 90,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user tackles the target while exhibiting overwhelming menace. This attack raises the user's Speed.",
+    "desc": "The user tackles the target while exhibiting overwhelming menace. This attack raises the user's Speed. Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8210,7 +8211,7 @@
     "priority": 1,
     "zMovePower": 90,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user whirls its fists to send a wave of pure vacuum at the target. This move usually goes first. (+1 Prio, Punch, Pulse)",
+    "desc": "The user whirls its fists to send a wave of pure vacuum at the target. This move usually goes first. (+1 Prio, Punch, Pulse) Z: +1 Speed",
     "shortDesc": ""
   },
   "focusblast": {
@@ -8334,7 +8335,7 @@
     "target": "adjacentAlly",
     "pp": 5,
     "zMovePower": 170,
-    "desc": "The user charges at the target using every bit of its power. The user can’t move on the next turn and restores 15% of damage dealt",
+    "desc": "The user charges at the target using every bit of its power. The user can’t move on the next turn and restores 15% of damage dealt.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8352,7 +8353,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Accuracy",
-    "desc": "The user stimulates its brain by thinking bad thoughts. This sharply raises the user’s Sp. Atk stat.",
+    "desc": "The user stimulates its brain by thinking bad thoughts. This sharply raises the user’s Sp. Atk stat. Z: +1 Accuracy",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8376,7 +8377,7 @@
     "priority": 1,
     "zMovePower": 90,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user strikes the target with tough punches as fast as bullets. This move usually goes first. (+1 Priority, Punch, Bullet)",
+    "desc": "The user strikes the target with tough punches as fast as bullets. This move usually goes first. (+1 Priority, Punch, Bullet) Z: +1 Speed",
     "shortDesc": ""
   },
   "avalanche": {
@@ -8416,7 +8417,7 @@
     "priority": 1,
     "zMovePower": 90,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user flash-freezes chunks of ice and hurls them at the target. This move always goes first. (+1 Priority)",
+    "desc": "The user flash-freezes chunks of ice and hurls them at the target. This move always goes first. (+1 Priority) Z: +1 Speed",
     "shortDesc": ""
   },
   "shadowclaw": {
@@ -8435,7 +8436,7 @@
     "target": "adjacentAlly",
     "pp": 15,
     "zMovePower": 130,
-    "desc": "The user slashes with a sharp claw made from shadows. Critical hits land more easily.(+1 Crit)",
+    "desc": "The user slashes with a sharp claw made from shadows. Critical hits land more easily. (+1 Crit)",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8457,7 +8458,7 @@
     "pp": 20,
     "zMovePower": 80,
     "zMoveEffect": "+1 Attack",
-    "desc": "The user bites with electrified fangs. This may also make the target flinch or leave it with paralysis. (10% Flinch, 10% Paralysis, Jaw)",
+    "desc": "The user bites with electrified fangs. This may also make the target flinch or leave it with paralysis. (10% Flinch, 10% Paralysis, Jaw) Z: +1 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8479,7 +8480,7 @@
     "pp": 20,
     "zMovePower": 80,
     "zMoveEffect": "+1 Attack",
-    "desc": "The user bites with cold-infused fangs. This may also make the target flinch or leave it frozen. (10% Flinch, 10% Freeze, Jaw)",
+    "desc": "The user bites with cold-infused fangs. This may also make the target flinch or leave it frozen. (10% Flinch, 10% Freeze, Jaw) Z: +1 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8501,7 +8502,7 @@
     "pp": 20,
     "zMovePower": 80,
     "zMoveEffect": "+1 Attack",
-    "desc": "The user bites with flame-cloaked fangs. This may also make the target flinch or leave it with a burn. (10% Flinch, 10% Burn, Jaw)",
+    "desc": "The user bites with flame-cloaked fangs. This may also make the target flinch or leave it with a burn. (10% Flinch, 10% Burn, Jaw) Z: +1 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8523,7 +8524,7 @@
     "priority": 1,
     "zMovePower": 90,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user extends its shadow and attacks the target from behind. This move always goes first. (+1 Priority)",
+    "desc": "The user extends its shadow and attacks the target from behind. This move always goes first. (+1 Priority) Z: +1 Speed",
     "shortDesc": ""
   },
   "mudbomb": {
@@ -8664,7 +8665,7 @@
     "pp": 15,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "A strong wind blows away the target’s barriers such as Reflect or Light Screen. This also lowers the target’s Evasiveness.",
+    "desc": "A strong wind blows away the target’s barriers such as Reflect or Light Screen. This also lowers the target’s Evasiveness. Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8683,7 +8684,7 @@
     "priority": -7,
     "zMovePower": 0,
     "zMoveEffect": "+1 Special Attack",
-    "desc": "The user creates a bizarre area in which slower Pokémon get to move first for five turns.",
+    "desc": "The user creates a bizarre area in which slower Pokémon get to move first for five turns. Z: +1 Sp.Atk",
     "shortDesc": ""
   },
   "dracometeor": {
@@ -8777,7 +8778,7 @@
     "target": "adjacentAlly",
     "pp": 5,
     "zMovePower": 160,
-    "desc": "The user violently whirls its vines, tentacles, or the like to harshly lash the target.",
+    "desc": "The user violently whirls its vines, tentacles, or the like to harshly lash the target. The target may also be covered in a sapping leech seed. (15%)",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8882,7 +8883,7 @@
     "pp": 20,
     "zMovePower": 50,
     "zMoveEffect": "+1 Attack",
-    "desc": "The user launches steel bombs that stick to the target. This attack never misses. (Bullet, Pulse)",
+    "desc": "The user launches steel bombs that stick to the target. This attack never misses. (Bullet, Pulse) Z: +1 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8921,7 +8922,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "If the opposing Pokémon is the opposite gender of the user, it is charmed, which harshly lowers its Sp. Atk stat.",
+    "desc": "If the opposing Pokémon is the opposite gender of the user, it is charmed, which harshly lowers its Sp. Atk stat. Z: +2 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8940,7 +8941,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Defense",
-    "desc": "The user lays a trap of levitating stones around the opposing team. The trap damages enemy Pokémon that enter the field based on their matchup to Rock-Types.",
+    "desc": "The user lays a trap of levitating stones around the opposing team that damage enemy Pokémon that swap in based on their matchup to Rock-Types. Z: +2 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8984,7 +8985,7 @@
     "pp": 10,
     "zMovePower": 100,
     "zMoveEffect": "+1 Special Attack",
-    "desc": "The user attacks everyone with sound waves of deafening chatter. This may confuse the targets. (20%, Sound)",
+    "desc": "The user attacks all foes with sound waves of deafening chatter. This may confuse the targets. (20%, Sound) Z: +1 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9003,7 +9004,7 @@
     "target": "allAdjacentFoes",
     "pp": 10,
     "zMovePower": 200,
-    "desc": "The user releases countless shots of light at the target. This move’s type varies depending on the kind of Plate the user is holding.",
+    "desc": "The user releases countless shots of light at the targets. This move’s type varies depending on the kind of Plate the user is holding.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9086,7 +9087,7 @@
     "priority": 1,
     "zMovePower": 90,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user lunges at the target at a speed that makes it almost invisible. This move always goes first.",
+    "desc": "The user lunges at the target at a speed that makes it almost invisible. This move always goes first. (+1 Priority) Z: +1 Speed",
     "shortDesc": ""
   },
   "attackorder": {
@@ -9105,7 +9106,7 @@
     "pp": 15,
     "zMovePower": 75,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user calls out its underlings to pummel the target three times. Critical hits land more easily.(+1 Crit)",
+    "desc": "The user calls out its underlings to pummel the target three times. Critical hits land more easily. (+1 Crit) Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9124,7 +9125,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "makes the user the center of attention",
-    "desc": "The user calls out its underlings to shield its allies, raising their Defense and Sp. Def stats.",
+    "desc": "The user calls out its underlings to shield itself and its allies, raising their Defense and Sp. Def stats. Z: Draws in all attacks.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9186,7 +9187,7 @@
     "pp": 10,
     "zMovePower": 60,
     "zMoveEffect": "+1 Attack",
-    "desc": "The user slams the target with a long tail, vines, or a fist. The target is hit twice in a row. (Punch)",
+    "desc": "The user slams the target with a long tail, vines, or a fist. The target is hit twice in a row. (Punch) Z: +1 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9227,7 +9228,7 @@
     "target": "adjacentAlly",
     "pp": 5,
     "zMovePower": 150,
-    "desc": "The user tears the target along with the space around it. Critical hits land more easily.(+1 Crit)",
+    "desc": "The user tears the target along with the space around it. Critical hits land more easily. (+1 Crit)",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9247,7 +9248,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+1 to all (except Accuracy or Evasiveness)",
-    "desc": "The user faints. In return, the Pokémon taking its place will have its status and HP fully restored.",
+    "desc": "The user faints. In return, the Pokémon taking its place will have its status and HP fully restored. Z: +1 All Stats if no allies are left to swap in.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9307,7 +9308,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "resets lowered stats of the user",
-    "desc": "Opposing Pokémon are dragged into a world of total darkness that makes them sleep.",
+    "desc": "Opposing Pokémon are dragged into a world of total darkness that makes them sleep. Z: Resets lowered stats",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9326,7 +9327,7 @@
     "target": "adjacentAlly",
     "pp": 5,
     "zMovePower": 170,
-    "desc": "The user emits a shock wave from its body to attack its target. This may also harshly lower the target’s Sp. Def stat.",
+    "desc": "The user emits a shock wave from its body to attack its target. This may also harshly lower the target’s Sp. Def stat. (40%)",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9383,7 +9384,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "raises critical-hit ratio two stages",
-    "desc": "The user sharpens its claws to boost its Attack stat and Accuracy.",
+    "desc": "The user sharpens its claws to boost its Attack stat and Accuracy. Z: +2 Crit Stages",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9402,7 +9403,7 @@
     "priority": 3,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user and its allies are protected from wide-ranging attacks for one turn. (+3 Priority)",
+    "desc": "The user and its allies are protected from wide-ranging attacks for one turn. (+3 Priority) Z: Sp.Def +2",
     "shortDesc": ""
   },
   "guardsplit": {
@@ -9420,7 +9421,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+3 Special Defense",
-    "desc": "The user employs its psychic power to average its Defense and Sp. Def stats with those of the target.",
+    "desc": "The user employs its psychic power to average its Defense and Sp. Def stats with those of the target. Z: Sp.Def +3",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9439,7 +9440,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user employs its psychic power to average its Attack and Sp. Atk stats with those of the target.",
+    "desc": "The user employs its psychic power to average its Attack and Sp. Atk stats with those of the target. Z: Speed +2",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9458,7 +9459,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+3 Defense",
-    "desc": "The user creates a bizarre area in which Pokémon’s Defense and Sp. Def stats are swapped for five turns. (+1 Priority)",
+    "desc": "The user creates a bizarre area in which Pokémon’s Defense and Sp. Def stats are swapped for five turns. (+1 Priority) Z: Defense +3",
     "shortDesc": ""
   },
   "psyshock": {
@@ -9513,7 +9514,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+3 Speed",
-    "desc": "The user sheds part of its body to make itself lighter and sharply raise its Speed stat.",
+    "desc": "The user sheds part of its body to make itself lighter and sharply raise its Speed stat. Z: +3 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9530,7 +9531,7 @@
     "priority": 2,
     "zMovePower": 0,
     "zMoveEffect": "+1 Special Defense",
-    "desc": "The user scatters a cloud of irritating powder to draw attention to itself. Opponents aim only at the user. (+2 Priority)",
+    "desc": "The user scatters a cloud of irritating powder to draw attention to itself. Opponents aim only at the user. (+2 Priority) Z: +1 Sp.Def",
     "shortDesc": ""
   },
   "telekinesis": {
@@ -9551,7 +9552,7 @@
     "pp": 15,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Attack",
-    "desc": "The user makes the target float with its psychic power. The target is easier to hit for three turns.",
+    "desc": "The user makes the targets float with its psychic power. The targets are easier to hit for three turns. Z: +2 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9570,7 +9571,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Attack",
-    "desc": "The user creates a bizarre area in which Pokémon’s held items lose their effects for five turns. (+1 Priority)",
+    "desc": "The user creates a bizarre area in which Pokémon’s held items lose their effects for five turns. (+1 Priority) Z: +2 Sp.Atk",
     "shortDesc": ""
   },
   "smackdown": {
@@ -9579,7 +9580,9 @@
       "protect": 1,
       "mirror": 1,
       "failskybattle": 1,
-      "bullet": 1
+      "animateally": 1,
+      "bullet": 1,
+      "pulse": 1
     },
     "name": "Smack Down",
     "category": "Physical",
@@ -9588,7 +9591,8 @@
     "type": "Rock",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 100,
+    "zMovePower": 35,
+    "zMoveEffect": "+2 Attack",
     "desc": "The user throws a stone or similar projectile to attack an opponent. A flying Pokémon will fall to the ground when it’s hit. (Bullet)",
     "priority": 0,
     "shortDesc": ""
@@ -9598,7 +9602,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Storm Throw",
     "category": "Physical",
@@ -9607,7 +9612,7 @@
     "type": "Fighting",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 120,
+    "zMovePower": 130,
     "desc": "The user strikes the target with a fierce blow. This attack always results in a critical hit.",
     "priority": 0,
     "shortDesc": ""
@@ -9617,6 +9622,7 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
+      "animateally": 1,
       "pulse": 1
     },
     "name": "Flame Burst",
@@ -9644,7 +9650,7 @@
     "type": "Poison",
     "target": "allAdjacent",
     "pp": 5,
-    "zMovePower": 190,
+    "zMovePower": 155,
     "desc": "The user strikes everything around it by swamping the area with a giant sludge wave. This may also poison those hit. (10%)",
     "priority": 0,
     "shortDesc": ""
@@ -9683,7 +9689,7 @@
     "type": "Steel",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 140,
     "desc": "The user slams into the target with its heavy body. The more the user outweighs the target, the greater the move’s power. (40 - 120 Power)",
     "priority": 0,
     "shortDesc": ""
@@ -9694,7 +9700,8 @@
       "protect": 1,
       "mirror": 1,
       "sound": 1,
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Synchronoise",
     "category": "Special",
@@ -9703,7 +9710,7 @@
     "type": "Normal",
     "target": "allAdjacent",
     "pp": 5,
-    "zMovePower": 200,
+    "zMovePower": 180,
     "desc": "Using an odd sound wave, the user inflicts damage on any Pokémon of the same type in the area around it. (Sound)",
     "priority": 0,
     "shortDesc": ""
@@ -9713,6 +9720,7 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
+      "animateally": 1,
       "bullet": 1,
       "pulse": 1
     },
@@ -9723,7 +9731,8 @@
     "type": "Electric",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 40,
+    "zMoveEffect": "+2 Speed",
     "desc": "The user hurls an electric orb at the target. The faster the user is than the target, the greater the move’s power. (40 - 150 Power, Bullet, Pulse)",
     "priority": 0,
     "shortDesc": ""
@@ -9744,7 +9753,7 @@
     "target": "adjacentAlly",
     "pp": 5,
     "zMovePower": 0,
-    "zMoveEffect": "+1 Special Attack",
+    "zMoveEffect": "+1 Speed",
     "desc": "The user shoots a torrent of water at the target and changes the target’s type to Water.",
     "priority": 0,
     "shortDesc": ""
@@ -9755,7 +9764,8 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
-      "defrost": 1
+      "defrost": 1,
+      "animateally": 1
     },
     "name": "Flame Charge",
     "category": "Physical",
@@ -9764,7 +9774,8 @@
     "type": "Fire",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 100,
+    "zMovePower": 90,
+    "zMoveEffect": "+1 Speed",
     "desc": "Cloaking itself in flame, the user attacks. This, move raises the user's Speed.",
     "priority": 0,
     "shortDesc": ""
@@ -9792,7 +9803,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Low Sweep",
     "category": "Physical",
@@ -9801,7 +9813,7 @@
     "type": "Fighting",
     "target": "adjacentAlly",
     "pp": 20,
-    "zMovePower": 120,
+    "zMovePower": 115,
     "desc": "The user makes a swift attack on the target’s legs, which lowers the target’s Speed stat.",
     "priority": 0,
     "shortDesc": ""
@@ -9811,6 +9823,7 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
+      "animateally": 1,
       "bullet": 1,
       "pulse": 1
     },
@@ -9821,7 +9834,8 @@
     "type": "Poison",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 100,
+    "zMovePower": 70,
+    "zMoveEffect": "+1 Special Attack",
     "desc": "The user spits fluid that works to melt the target. This harshly lowers the target’s Sp. Def stat. (Bullet, Pulse)",
     "priority": 0,
     "shortDesc": ""
@@ -9831,7 +9845,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Foul Play",
     "category": "Physical",
@@ -9840,7 +9855,7 @@
     "type": "Dark",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 175,
+    "zMovePower": 145,
     "desc": "The user turns the target’s power against it. The higher the target’s Attack stat, the greater the move’s power.",
     "priority": 0,
     "shortDesc": ""
@@ -9912,7 +9927,8 @@
       "protect": 1,
       "mirror": 1,
       "sound": 1,
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Round",
     "category": "Special",
@@ -9921,7 +9937,8 @@
     "type": "Normal",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 120,
+    "zMovePower": 50,
+    "zMoveEffect": "+1 Special Attack",
     "desc": "The user attacks the target with a song. Others can use Round too to double the power of the attacks. (Sound)",
     "priority": 0,
     "shortDesc": ""
@@ -9932,7 +9949,8 @@
       "protect": 1,
       "mirror": 1,
       "sound": 1,
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Echoed Voice",
     "category": "Special",
@@ -9951,7 +9969,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Chip Away",
     "category": "Physical",
@@ -9960,7 +9979,8 @@
     "type": "Rock",
     "target": "adjacentAlly",
     "pp": 20,
-    "zMovePower": 140,
+    "zMovePower": 70,
+    "zMoveEffect": "+1 Attack",
     "desc": "Looking for an opening, the user strikes consistently. The target’s Def and Evasion changes don’t affect this attack’s damage.",
     "priority": 0,
     "shortDesc": ""
@@ -9969,7 +9989,8 @@
     "num": 499,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Clear Smog",
     "category": "Special",
@@ -9979,6 +10000,7 @@
     "target": "adjacentAlly",
     "pp": 15,
     "zMovePower": 100,
+    "zMoveEffect": "resets lowered stats of the user",
     "desc": "The user attacks by spewing a clump of special gases. All stat changes are returned to normal. This move cannot miss.",
     "priority": 0,
     "shortDesc": ""
@@ -9987,7 +10009,8 @@
     "num": 500,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Stored Power",
     "category": "Special",
@@ -9996,7 +10019,8 @@
     "type": "Psychic",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 115,
+    "zMoveEffect": "resets lowered stats of the user",
     "desc": "The user attacks the target with stored energy. The more the user’s stats are raised, the greater the move’s power. (+20 Power per raised stat)",
     "priority": 0,
     "shortDesc": ""
@@ -10015,7 +10039,7 @@
     "pp": 5,
     "priority": 3,
     "zMovePower": 0,
-    "zMoveEffect": "makes the user the center of attention",
+    "zMoveEffect": "raises critical-hit ratio two stages",
     "desc": "The user protects itself and its allies from priority moves. (+3 Priority)",
     "shortDesc": ""
   },
@@ -10033,7 +10057,7 @@
     "pp": 5,
     "priority": 2,
     "zMovePower": 0,
-    "zMoveEffect": "+2 Defense",
+    "zMoveEffect": "recovers all of user's HP",
     "desc": "The user teleports using a strange power and switches places with one of its allies. (+2 Priority)",
     "shortDesc": ""
   },
@@ -10042,7 +10066,8 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
-      "defrost": 1
+      "defrost": 1,
+      "animateally": 1
     },
     "name": "Scald",
     "category": "Special",
@@ -10051,7 +10076,7 @@
     "type": "Water",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "The user shoots boiling hot water at its target. This may also leave the target with a burn. (30%)",
     "priority": 0,
     "shortDesc": ""
@@ -10100,7 +10125,8 @@
     "num": 506,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Hex",
     "category": "Special",
@@ -10109,7 +10135,8 @@
     "type": "Ghost",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 75,
+    "zMoveEffect": "+2 Special Defense",
     "desc": "This relentless attack does double damage to a target affected by major status conditions.",
     "priority": 0,
     "shortDesc": ""
@@ -10122,7 +10149,8 @@
       "protect": 1,
       "mirror": 1,
       "gravity": 1,
-      "distancetriple": 1
+      "distancetriple": 1,
+      "animateally": 1
     },
     "name": "Sky Drop",
     "category": "Physical",
@@ -10131,7 +10159,8 @@
     "type": "Flying",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 150,
+    "zMovePower": 100,
+    "zMoveEffect": "+1 Attack",
     "desc": "The user takes the target into the sky, then drops it during the next turn. The target cannot attack while in the sky. Heavy Pokémon can't be lifted.",
     "priority": 0,
     "shortDesc": ""
@@ -10159,7 +10188,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Circle Throw",
     "category": "Physical",
@@ -10169,7 +10199,8 @@
     "target": "adjacentAlly",
     "pp": 10,
     "priority": -6,
-    "zMovePower": 120,
+    "zMovePower": 75,
+    "zMoveEffect": "+2 Defense",
     "desc": "The target is thrown, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority)",
     "shortDesc": ""
   },
@@ -10188,7 +10219,7 @@
     "type": "Fire",
     "target": "allAdjacentFoes",
     "pp": 15,
-    "zMovePower": 140,
+    "zMovePower": 120,
     "desc": "The user attacks opposing Pokémon with fire. If a Pokémon is holding a certain item, such as a Berry or Gem, the item burns up! (Pulse)",
     "priority": 0,
     "shortDesc": ""
@@ -10197,7 +10228,8 @@
     "num": 511,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Quash",
     "category": "Status",
@@ -10219,6 +10251,7 @@
       "protect": 1,
       "mirror": 1,
       "distancetriple": 1,
+      "animateally": 1,
       "dance": 1
     },
     "name": "Acrobatics",
@@ -10228,7 +10261,7 @@
     "type": "Flying",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 140,
+    "zMovePower": 135,
     "desc": "The user nimbly strikes the target. If the user is not holding an item, this attack inflicts double damage. (Dance)",
     "priority": 0,
     "shortDesc": ""
@@ -10244,7 +10277,7 @@
     "category": "Status",
     "basePower": 0,
     "accuracy": 101,
-    "type": "Normal",
+    "type": "Psychic",
     "target": "adjacentAlly",
     "pp": 10,
     "priority": 1,
@@ -10258,7 +10291,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Retaliate",
     "category": "Physical",
@@ -10267,7 +10301,7 @@
     "type": "Normal",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 140,
+    "zMovePower": 150,
     "desc": "The user gets revenge for a fainted ally. If an ally fainted in the previous turn, this move’s power is doubled.",
     "priority": 0,
     "shortDesc": ""
@@ -10275,7 +10309,8 @@
   "finalgambit": {
     "num": 515,
     "flags": {
-      "protect": 1
+      "protect": 1,
+      "animateally": 1
     },
     "name": "Final Gambit",
     "category": "Special",
@@ -10334,7 +10369,8 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
-      "failskybattle": 1
+      "failskybattle": 1,
+      "animateally": 1
     },
     "name": "Water Pledge",
     "category": "Special",
@@ -10343,7 +10379,7 @@
     "type": "Water",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "A column of water strikes the target. When combined with its fire equivalent, its power increases and a rainbow appears that doubles ally secondary effect chance.",
     "priority": 0,
     "shortDesc": ""
@@ -10354,7 +10390,8 @@
       "protect": 1,
       "mirror": 1,
       "defrost": 1,
-      "failskybattle": 1
+      "failskybattle": 1,
+      "animateally": 1
     },
     "name": "Fire Pledge",
     "category": "Special",
@@ -10363,7 +10400,7 @@
     "type": "Fire",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "A column of fire hits the target. When used with its grass equivalent, its power increases and a vast sea of fire appears that damages non-Fire foes for 1/8 per turn.",
     "priority": 0,
     "shortDesc": ""
@@ -10373,7 +10410,8 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
-      "failskybattle": 1
+      "failskybattle": 1,
+      "animateally": 1
     },
     "name": "Grass Pledge",
     "category": "Special",
@@ -10382,7 +10420,7 @@
     "type": "Grass",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "A column of grass hits the target. When used with its water equivalent, its power increases and a vast swamp appears that quarters grounded enemy Speed stats.",
     "priority": 0,
     "shortDesc": ""
@@ -10400,7 +10438,7 @@
     "type": "Electric",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 140,
+    "zMovePower": 120,
     "desc": "After making its attack, the user rushes back to switch places with a party Pokémon in waiting.",
     "priority": 0,
     "shortDesc": ""
@@ -10409,7 +10447,8 @@
     "num": 522,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Struggle Bug",
     "category": "Special",
@@ -10418,7 +10457,8 @@
     "type": "Bug",
     "target": "allAdjacentFoes",
     "pp": 20,
-    "zMovePower": 110,
+    "zMovePower": 90,
+    "zMoveEffect": "+1 Special Defense",
     "desc": "While resisting, the user attacks the opposing Pokémon. This lowers the Sp. Atk stat of those hit.",
     "priority": 0,
     "shortDesc": ""
@@ -10437,7 +10477,7 @@
     "type": "Ground",
     "target": "allAdjacent",
     "pp": 20,
-    "zMovePower": 120,
+    "zMovePower": 110,
     "desc": "The user strikes everything around it by stomping down on the ground. This lowers the Speed stat of those hit.",
     "priority": 0,
     "shortDesc": ""
@@ -10455,7 +10495,7 @@
     "type": "Ice",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 120,
+    "zMovePower": 130,
     "desc": "The user blows its cold breath on the target. This attack always results in a critical hit.",
     "priority": 0,
     "shortDesc": ""
@@ -10465,7 +10505,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Dragon Tail",
     "category": "Physical",
@@ -10475,7 +10516,8 @@
     "target": "adjacentAlly",
     "pp": 10,
     "priority": -6,
-    "zMovePower": 120,
+    "zMovePower": 75,
+    "zMoveEffect": "+2 Special Defense",
     "desc": "The target is knocked away, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority)",
     "shortDesc": ""
   },
@@ -10510,7 +10552,7 @@
     "type": "Electric",
     "target": "allAdjacentFoes",
     "pp": 15,
-    "zMovePower": 100,
+    "zMovePower": 110,
     "desc": "The user attacks and captures opposing Pokémon using an electric net. This lowers their Speed stat.",
     "priority": 0,
     "shortDesc": ""
@@ -10520,7 +10562,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Wild Charge",
     "category": "Physical",
@@ -10529,7 +10572,7 @@
     "type": "Electric",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 190,
+    "zMovePower": 160,
     "desc": "The user shrouds itself in electricity and smashes into its target. This also damages the user 33% of damage dealt. This may paralyze the target. (10%)",
     "priority": 0,
     "shortDesc": ""
@@ -10539,7 +10582,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Drill Run",
     "category": "Physical",
@@ -10548,7 +10592,7 @@
     "type": "Ground",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "The user crashes into its target while rotating its body like a drill. Critical hits land more easily.(+1 Crit)",
     "priority": 0,
     "shortDesc": ""
@@ -10559,7 +10603,8 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
-      "punch": 1
+      "punch": 1,
+      "animateally": 1
     },
     "name": "Dual Chop",
     "category": "Physical",
@@ -10578,7 +10623,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Heart Stamp",
     "category": "Physical",
@@ -10587,7 +10633,7 @@
     "type": "Psychic",
     "target": "adjacentAlly",
     "pp": 20,
-    "zMovePower": 120,
+    "zMovePower": 110,
     "desc": "The user unleashes a vicious blow after its cute act makes the target less wary. This may also make the target flinch (20%) or infatuate it for 2-4 turns. (20%)",
     "priority": 0,
     "shortDesc": ""
@@ -10598,7 +10644,8 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
-      "heal": 1
+      "heal": 1,
+      "animateally": 1
     },
     "name": "Horn Leech",
     "category": "Physical",
@@ -10607,7 +10654,7 @@
     "type": "Grass",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 140,
+    "zMovePower": 125,
     "desc": "The user drains the target’s energy with its horns. The user’s HP is restored by half the damage taken by the target.",
     "priority": 0,
     "shortDesc": ""
@@ -10617,7 +10664,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Sacred Sword",
     "category": "Physical",
@@ -10626,7 +10674,7 @@
     "type": "Fighting",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 175,
+    "zMovePower": 140,
     "desc": "The user attacks by slicing with a long horn. The target’s stat changes don’t affect this attack’s damage.",
     "priority": 0,
     "shortDesc": ""
@@ -10636,7 +10684,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Razor Shell",
     "category": "Physical",
@@ -10645,7 +10694,8 @@
     "type": "Water",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 140,
+    "zMovePower": 80,
+    "zMoveEffect": "+1 Attack",
     "desc": "The user cuts its target with sharp shells. This may also lower the target’s Defense stat. (50%)",
     "priority": 0,
     "shortDesc": ""
@@ -10657,7 +10707,8 @@
       "protect": 1,
       "mirror": 1,
       "defrost": 1,
-      "failskybattle": 1
+      "failskybattle": 1,
+      "animateally": 1
     },
     "name": "Heat Crash",
     "category": "Physical",
@@ -10666,7 +10717,8 @@
     "type": "Fire",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 80,
+    "zMoveEffect": "+2 Defense",
     "desc": "The user slams its target with its flame-covered body. The more the user outweighs the target, the greater the move’s power. (40 - 120 Power)",
     "priority": 0,
     "shortDesc": ""
@@ -10675,7 +10727,8 @@
     "num": 536,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Leaf Tornado",
     "category": "Special",
@@ -10684,7 +10737,8 @@
     "type": "Grass",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 150,
+    "zMovePower": 80,
+    "zMoveEffect": "raises critical-hit ratio two stages",
     "desc": "The user attacks its target by encircling it in sharp leaves. The target is trapped and damaged for 4-5 turns.",
     "priority": 0,
     "shortDesc": ""
@@ -10694,7 +10748,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Steamroller",
     "category": "Physical",
@@ -10703,7 +10758,8 @@
     "type": "Bug",
     "target": "adjacentAlly",
     "pp": 20,
-    "zMovePower": 145,
+    "zMovePower": 105,
+    "zMoveEffect": "+1 Speed",
     "desc": "The user crushes its target by rolling over the target with its rolled-up body. This may also make the target flinch. (30%)",
     "priority": 0,
     "shortDesc": ""
@@ -10721,7 +10777,7 @@
     "target": "self",
     "pp": 10,
     "zMovePower": 0,
-    "zMoveEffect": "resets lowered stats of the user",
+    "zMoveEffect": "makes the user the center of attention",
     "desc": "The user protects itself by wrapping its body in soft cotton, which drastically raises the user’s Defense stat.",
     "priority": 0,
     "shortDesc": ""
@@ -10730,7 +10786,8 @@
     "num": 539,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Night Daze",
     "category": "Special",
@@ -10739,7 +10796,7 @@
     "type": "Dark",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 190,
+    "zMovePower": 155,
     "desc": "The user lets loose a pitch-black shock wave at its target. If the target is Asleep, it will suffer terrible Nightmares, dealing 25% HP per turn.",
     "priority": 0,
     "shortDesc": ""
@@ -10748,16 +10805,17 @@
     "num": 540,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Psystrike",
     "category": "Special",
-    "basePower": 100,
+    "basePower": 50,
     "accuracy": 100,
     "type": "Psychic",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user materializes an odd psychic wave to attack the target. This attack does physical damage.",
     "priority": 0,
     "shortDesc": ""
@@ -10767,7 +10825,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Tail Slap",
     "category": "Physical",
@@ -10786,7 +10845,8 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
-      "distancetriple": 1
+      "distancetriple": 1,
+      "animateally": 1
     },
     "name": "Hurricane",
     "category": "Special",
@@ -10795,7 +10855,7 @@
     "type": "Flying",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 185,
+    "zMovePower": 155,
     "desc": "The user attacks by wrapping its opponent in a fierce wind that flies up into the sky. This may also confuse the target. (30%)",
     "priority": 0,
     "shortDesc": ""
@@ -10806,7 +10866,7 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
-      "punch": 1
+      "animateally": 1
     },
     "name": "Headlong Rush",
     "category": "Physical",
@@ -10815,7 +10875,7 @@
     "type": "Ground",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 190,
+    "zMovePower": 160,
     "desc": "The user smashes into the target in a full-body tackle. This also lowers the user's defenses. (Punch)",
     "priority": 0,
     "shortDesc": ""
@@ -10825,7 +10885,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Gear Grind",
     "category": "Physical",
@@ -10834,7 +10895,7 @@
     "type": "Steel",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user attacks by throwing steel gears at its target twice.",
     "priority": 0,
     "shortDesc": ""
@@ -10854,7 +10915,7 @@
     "type": "Fire",
     "target": "allAdjacent",
     "pp": 10,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user torches everything around it in an inferno of scarlet flames. This may also leave those it hits with a burn. (30%, Bullet)",
     "priority": 0,
     "shortDesc": ""
@@ -10893,7 +10954,7 @@
     "type": "Fairy",
     "target": "allAdjacentFoes",
     "pp": 10,
-    "zMovePower": 170,
+    "zMovePower": 135,
     "desc": "The user sings an ancient song and attacks by appealing to the hearts of the listening opposing Pokémon. This may also induce sleep. (15%, Sound, Dance)",
     "priority": 0,
     "shortDesc": ""
@@ -10902,7 +10963,8 @@
     "num": 548,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Secret Sword",
     "category": "Special",
@@ -10911,7 +10973,7 @@
     "type": "Fighting",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 135,
     "desc": "The user slices using a hidden technique. This power does physical damage to the target.",
     "priority": 0,
     "shortDesc": ""
@@ -10920,7 +10982,8 @@
     "num": 549,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Cold Snap",
     "category": "Physical",
@@ -10929,7 +10992,7 @@
     "type": "Ice",
     "target": "allAdjacent",
     "pp": 15,
-    "zMovePower": 120,
+    "zMovePower": 110,
     "desc": "The user attacks by blowing freezing cold air onto all nearby targets. This lowers their Speed stats.",
     "priority": 0,
     "shortDesc": ""
@@ -10939,7 +11002,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Draco Bolt",
     "category": "Physical",
@@ -10948,7 +11012,7 @@
     "type": "Dragon",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 195,
+    "zMovePower": 165,
     "desc": "The user surrounds itself with a great amount of electricity and charges its target. This may also leave the target with paralysis. (20%)",
     "priority": 0,
     "shortDesc": ""
@@ -10958,7 +11022,8 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
-      "defrost": 1
+      "defrost": 1,
+      "animateally": 1
     },
     "name": "Draco Flare",
     "category": "Special",
@@ -10967,7 +11032,7 @@
     "type": "Dragon",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 195,
+    "zMovePower": 165,
     "desc": "The user attacks by engulfing the target in an intense, yet beautiful, blue flame. This may also leave the target with a burn. (20%)",
     "priority": 0,
     "shortDesc": ""
@@ -10978,6 +11043,7 @@
       "protect": 1,
       "mirror": 1,
       "defrost": 1,
+      "animateally": 1,
       "dance": 1
     },
     "name": "Fiery Dance",
@@ -10987,7 +11053,7 @@
     "type": "Fire",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "Cloaked in flames, the user dances and flaps its wings. This may also raise the user’s Sp. Atk stat. (50%)",
     "priority": 0,
     "shortDesc": ""
@@ -10997,16 +11063,18 @@
     "flags": {
       "charge": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Freeze Shock",
     "category": "Physical",
     "basePower": 140,
-    "accuracy": 90,
+    "accuracy": 100,
     "type": "Ice",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 200,
+    "zMovePower": 100,
+    "zMoveEffect": "+1 Speed",
     "desc": "On the second turn, the user hits the target with electrically charged ice. This may also leave the target with paralysis. (30%)",
     "priority": 0,
     "shortDesc": ""
@@ -11017,16 +11085,18 @@
       "charge": 1,
       "protect": 1,
       "mirror": 1,
-      "defrost": 1
+      "defrost": 1,
+      "animateally": 1
     },
     "name": "Ice Burn",
     "category": "Special",
     "basePower": 140,
-    "accuracy": 90,
+    "accuracy": 100,
     "type": "Ice",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 200,
+    "zMovePower": 100,
+    "zMoveEffect": "+1 Speed",
     "desc": "On the second turn, an ultracold, freezing wind surrounds the target. This may leave the target with a burn. (30%)",
     "priority": 0,
     "shortDesc": ""
@@ -11046,7 +11116,8 @@
     "type": "Dark",
     "target": "allAdjacentFoes",
     "pp": 20,
-    "zMovePower": 110,
+    "zMovePower": 90,
+    "zMoveEffect": "+1 Special Defense",
     "desc": "The user yells as if it’s ranting about something, which lowers the Sp. Atk stat of opposing Pokémon. (Sound)",
     "priority": 0,
     "shortDesc": ""
@@ -11055,7 +11126,8 @@
     "num": 556,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Icicle Crash",
     "category": "Physical",
@@ -11064,7 +11136,7 @@
     "type": "Ice",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 135,
     "desc": "The user attacks by harshly dropping large icicles onto the target. This may also make the target flinch. (30%)",
     "priority": 0,
     "shortDesc": ""
@@ -11075,7 +11147,8 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
-      "defrost": 1
+      "defrost": 1,
+      "animateally": 1
     },
     "name": "V-create",
     "category": "Physical",
@@ -11084,7 +11157,7 @@
     "type": "Fire",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 220,
+    "zMovePower": 180,
     "desc": "With a hot flame on its forehead, the user hurls itself at its target. This lowers the user’s Defense, Sp. Def, and Speed stats.",
     "priority": 0,
     "shortDesc": ""
@@ -11094,7 +11167,8 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
-      "defrost": 1
+      "defrost": 1,
+      "animateally": 1
     },
     "name": "Fusion Flare",
     "category": "Special",
@@ -11103,7 +11177,7 @@
     "type": "Fire",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user brings down a giant flame. This move’s power is doubled when influenced by an enormous lightning bolt.",
     "priority": 0,
     "shortDesc": ""
@@ -11112,7 +11186,8 @@
     "num": 559,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Fusion Bolt",
     "category": "Physical",
@@ -11121,7 +11196,7 @@
     "type": "Electric",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user throws down a giant lightning bolt. This move’s power is doubled when influenced by an enormous flame.",
     "priority": 0,
     "shortDesc": ""
@@ -11134,16 +11209,17 @@
       "mirror": 1,
       "gravity": 1,
       "distancetriple": 1,
-      "failskybattle": 1
+      "failskybattle": 1,
+      "animateally": 1
     },
     "name": "Flying Press",
     "category": "Physical",
     "basePower": 110,
-    "accuracy": 95,
+    "accuracy": 100,
     "type": "Fighting",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 170,
+    "zMovePower": 155,
     "desc": "The user dives down onto the target from the sky. This move is Fighting and Flying type simultaneously.",
     "priority": 0,
     "shortDesc": ""
@@ -11172,7 +11248,8 @@
     "flags": {
       "protect": 1,
       "sound": 1,
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Belch",
     "category": "Special",
@@ -11230,7 +11307,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Fell Stinger",
     "category": "Physical",
@@ -11239,7 +11317,7 @@
     "type": "Bug",
     "target": "adjacentAlly",
     "pp": 25,
-    "zMovePower": 100,
+    "zMovePower": 105,
     "desc": "When the user knocks out a target with this move, the user’s Attack stat rises drastically.",
     "priority": 0,
     "shortDesc": ""
@@ -11249,7 +11327,8 @@
     "flags": {
       "contact": 1,
       "charge": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Phantom Force",
     "category": "Physical",
@@ -11258,7 +11337,7 @@
     "type": "Ghost",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 175,
+    "zMovePower": 140,
     "desc": "The user vanishes somewhere, then strikes the target on the next turn. This move hits even if the target protects itself.",
     "priority": 0,
     "shortDesc": ""
@@ -11279,7 +11358,7 @@
     "target": "adjacentAlly",
     "pp": 15,
     "zMovePower": 0,
-    "zMoveEffect": "+1 to all (except Accuracy or Evasiveness)",
+    "zMoveEffect": "+2 Special Defense",
     "desc": "The user takes the target trick-or-treating. This adds Ghost type to the target’s type.",
     "priority": 0,
     "shortDesc": ""
@@ -11315,7 +11394,7 @@
     "accuracy": 101,
     "type": "Electric",
     "target": "normal",
-    "pp": 25,
+    "pp": 10,
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Attack",
@@ -11357,7 +11436,7 @@
     "target": "adjacentAlly",
     "pp": 20,
     "zMovePower": 0,
-    "zMoveEffect": "+1 to all (except Accuracy or Evasiveness)",
+    "zMoveEffect": "+2 Defense",
     "desc": "The user puts a forest curse on the target. The target is now Grass type as well.",
     "priority": 0,
     "shortDesc": ""
@@ -11375,7 +11454,7 @@
     "type": "Grass",
     "target": "allAdjacent",
     "pp": 10,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user stirs up a violent petal blizzard and attacks everything around it.",
     "priority": 0,
     "shortDesc": ""
@@ -11384,7 +11463,8 @@
     "num": 573,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Freeze-Dry",
     "category": "Special",
@@ -11393,7 +11473,7 @@
     "type": "Ice",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 145,
+    "zMovePower": 125,
     "desc": "The user rapidly cools the target. This may also leave the target frozen. 10% This move is super effective on Water types.",
     "priority": 0,
     "shortDesc": ""
@@ -11413,7 +11493,7 @@
     "type": "Fairy",
     "target": "allAdjacentFoes",
     "pp": 15,
-    "zMovePower": 120,
+    "zMovePower": 110,
     "desc": "Letting out a charming cry, the user does emotional damage to opposing Pokémon. This attack never misses. (Sound)",
     "priority": 0,
     "shortDesc": ""
@@ -11425,7 +11505,8 @@
       "reflectable": 1,
       "mirror": 1,
       "sound": 1,
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Parting Shot",
     "category": "Status",
@@ -11456,7 +11537,7 @@
     "target": "adjacentAlly",
     "pp": 20,
     "zMovePower": 0,
-    "zMoveEffect": "resets lowered stats of the user",
+    "zMoveEffect": "raises critical-hit ratio two stages",
     "desc": "All stat changes affecting the target turn topsy-turvy and become the opposite of what they were.",
     "priority": 0,
     "shortDesc": ""
@@ -11467,7 +11548,8 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
-      "heal": 1
+      "heal": 1,
+      "animateally": 1
     },
     "name": "Draining Kiss",
     "category": "Special",
@@ -11476,7 +11558,7 @@
     "type": "Fairy",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 140,
+    "zMovePower": 125,
     "desc": "The user steals the target’s HP with a kiss. The user’s HP is restored by over half of the damage taken by the target.",
     "priority": 0,
     "shortDesc": ""
@@ -11571,7 +11653,7 @@
     "isZ": true,
     "priority": 1,
     "zMovePower": 0,
-    "zMoveEffect": "+1 Speed",
+    "zMoveEffect": "makes the user the center of attention",
     "desc": "If the target is electrified before it uses a move during that turn, the target’s move becomes Electric type. This usually moves first. (+1 Priority)",
     "shortDesc": ""
   },
@@ -11580,7 +11662,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Play Rough",
     "category": "Physical",
@@ -11589,7 +11672,7 @@
     "type": "Fairy",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 175,
+    "zMovePower": 140,
     "desc": "The user plays rough with the target and attacks it. This may also lower the target’s Attack stat. (10%)",
     "priority": 0,
     "shortDesc": ""
@@ -11598,7 +11681,8 @@
     "num": 584,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Fairy Wind",
     "category": "Special",
@@ -11616,7 +11700,8 @@
     "num": 585,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Moonblast",
     "category": "Special",
@@ -11625,7 +11710,7 @@
     "type": "Fairy",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 175,
+    "zMovePower": 140,
     "desc": "Borrowing the power of the moon, the user attacks the target. This may also lower the target’s Sp. Atk stat. (30%)",
     "priority": 0,
     "shortDesc": ""
@@ -11645,7 +11730,7 @@
     "type": "Normal",
     "target": "allAdjacent",
     "pp": 5,
-    "zMovePower": 185,
+    "zMovePower": 165,
     "desc": "The user attacks everything around it with the destructive power of a terrible, explosive sound. (Sound)",
     "priority": 0,
     "shortDesc": ""
@@ -11693,7 +11778,8 @@
       "reflectable": 1,
       "snatch": 1,
       "mirror": 1,
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Play Nice",
     "category": "Status",
@@ -11703,7 +11789,7 @@
     "target": "adjacentAlly",
     "pp": 10,
     "zMovePower": 0,
-    "zMoveEffect": "+2 Attack",
+    "zMoveEffect": "+2 Special Defense",
     "desc": "The user and the target become friends, and the target loses its will to fight. This lowers the target’s Sp.Atk stat and infatuates for 2-4 turns.",
     "priority": 0,
     "shortDesc": ""
@@ -11714,7 +11800,8 @@
       "reflectable": 1,
       "mirror": 1,
       "sound": 1,
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Confide",
     "category": "Status",
@@ -11733,7 +11820,8 @@
     "num": 591,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Diamond Storm",
     "category": "Special",
@@ -11742,7 +11830,7 @@
     "type": "Rock",
     "target": "allAdjacentFoes",
     "pp": 5,
-    "zMovePower": 180,
+    "zMovePower": 155,
     "desc": "The user whips up a storm of diamonds to damage opposing Pokémon. This may also raise the user’s Defense stat. (30%)",
     "priority": 0,
     "shortDesc": ""
@@ -11752,7 +11840,8 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
-      "defrost": 1
+      "defrost": 1,
+      "animateally": 1
     },
     "name": "Steam Eruption",
     "category": "Special",
@@ -11761,7 +11850,7 @@
     "type": "Water",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 185,
+    "zMovePower": 155,
     "desc": "The user immerses the target in superheated steam. This may also leave the target with a burn. (30%)",
     "priority": 0,
     "shortDesc": ""
@@ -11770,16 +11859,17 @@
     "num": 593,
     "flags": {
       "mirror": 1,
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Hyperspace Hole",
     "category": "Special",
-    "basePower": 80,
+    "basePower": 100,
     "accuracy": 101,
     "type": "Psychic",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 160,
+    "zMovePower": 150,
     "desc": "Using a hyperspace hole, the user appears right next to the target and strikes. This also hits a target using a move such as Protect or Detect.",
     "priority": 0,
     "shortDesc": ""
@@ -11788,7 +11878,8 @@
     "num": 594,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Water Shuriken",
     "category": "Special",
@@ -11798,7 +11889,8 @@
     "target": "adjacentAlly",
     "pp": 20,
     "priority": 1,
-    "zMovePower": 120,
+    "zMovePower": 70,
+    "zMoveEffect": "+1 Special Attack",
     "desc": "The user hits the target with throwing stars two to five times in a row. This move always goes first. (+1 Priority)",
     "shortDesc": ""
   },
@@ -11807,7 +11899,8 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
-      "defrost": 1
+      "defrost": 1,
+      "animateally": 1
     },
     "name": "Mystical Fire",
     "category": "Special",
@@ -11816,7 +11909,8 @@
     "type": "Fire",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 140,
+    "zMovePower": 70,
+    "zMoveEffect": "+1 Special Attack",
     "desc": "The user attacks by breathing a special, hot fire. This also lowers the target’s Sp. Atk stat.",
     "priority": 0,
     "shortDesc": ""
@@ -11835,14 +11929,15 @@
     "pp": 5,
     "priority": 4,
     "zMovePower": 0,
-    "zMoveEffect": "+1 Defense",
+    "zMoveEffect": "+2 Defense",
     "desc": "In addition to protecting the user from attacks, this move also damages any attacker who makes direct contact by 1/8 of their Max HP.",
     "shortDesc": ""
   },
   "aromaticmist": {
     "num": 597,
     "flags": {
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Aromatic Mist",
     "category": "Status",
@@ -11862,7 +11957,8 @@
     "flags": {
       "protect": 1,
       "reflectable": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Eerie Impulse",
     "category": "Status",
@@ -11882,7 +11978,8 @@
     "flags": {
       "protect": 1,
       "reflectable": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Venom Drench",
     "category": "Status",
@@ -12006,7 +12103,7 @@
     "type": "Fairy",
     "target": "allAdjacentFoes",
     "pp": 15,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "The user damages opposing Pokémon by emitting a powerful flash. This has a chance to drop the target's Evasion stat. (25%)",
     "priority": 0,
     "shortDesc": ""
@@ -12072,7 +12169,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Nuzzle",
     "category": "Physical",
@@ -12091,7 +12189,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Hold Back",
     "category": "Special",
@@ -12100,7 +12199,7 @@
     "type": "Psychic",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 200,
+    "zMovePower": 150,
     "desc": "The user holds back when it attacks, and the target is left with at least 1 HP.",
     "priority": 0,
     "shortDesc": ""
@@ -12110,7 +12209,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Infestation",
     "category": "Special",
@@ -12119,7 +12219,8 @@
     "type": "Bug",
     "target": "adjacentAlly",
     "pp": 20,
-    "zMovePower": 110,
+    "zMovePower": 75,
+    "zMoveEffect": "+2 Defense",
     "desc": "The target is infested and attacked for four to five turns. The target can’t flee during this time. The infestation deals 1/8HP per turn.",
     "priority": 0,
     "shortDesc": ""
@@ -12150,7 +12251,8 @@
       "protect": 1,
       "mirror": 1,
       "distancetriple": 1,
-      "heal": 1
+      "heal": 1,
+      "animateally": 1
     },
     "name": "Oblivion Wing",
     "category": "Special",
@@ -12159,7 +12261,7 @@
     "type": "Flying",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "The user absorbs its target’s HP. The user’s HP is restored by over half of the damage taken by the target.",
     "priority": 0,
     "shortDesc": ""
@@ -12178,7 +12280,7 @@
     "type": "Ground",
     "target": "allAdjacentFoes",
     "pp": 10,
-    "zMovePower": 180,
+    "zMovePower": 140,
     "desc": "This move also hits opposing Pokémon that are in the air. Those Pokémon are knocked down to the ground.",
     "priority": 0,
     "shortDesc": ""
@@ -12197,7 +12299,7 @@
     "type": "Ground",
     "target": "allAdjacentFoes",
     "pp": 10,
-    "zMovePower": 175,
+    "zMovePower": 140,
     "desc": "The user attacks with a wave that crawls along the ground. Those hit can’t flee from battle.",
     "priority": 0,
     "shortDesc": ""
@@ -12207,7 +12309,8 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
-      "failskybattle": 1
+      "failskybattle": 1,
+      "animateally": 1
     },
     "name": "Land’s Wrath",
     "category": "Special",
@@ -12216,7 +12319,7 @@
     "type": "Ground",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 190,
+    "zMovePower": 160,
     "desc": "The user gathers the energy of the land and focuses that power on an opposing Pokémon to damage them.",
     "priority": 0,
     "shortDesc": ""
@@ -12225,7 +12328,8 @@
     "num": 617,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Light of Ruin",
     "category": "Special",
@@ -12234,7 +12338,7 @@
     "type": "Ghost",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 200,
+    "zMovePower": 170,
     "desc": "Drawing power from the Eternal Flower, the user fires a powerful beam of light. This also damages the user quite a lot.",
     "priority": 0,
     "shortDesc": ""
@@ -12253,7 +12357,7 @@
     "type": "Water",
     "target": "allAdjacentFoes",
     "pp": 10,
-    "zMovePower": 185,
+    "zMovePower": 155,
     "desc": "The user attacks opposing Pokémon with countless beams of light that glow a deep and brilliant blue. (Pulse)",
     "priority": 0,
     "shortDesc": ""
@@ -12272,7 +12376,7 @@
     "type": "Ground",
     "target": "allAdjacentFoes",
     "pp": 10,
-    "zMovePower": 190,
+    "zMovePower": 160,
     "desc": "The user attacks opposing Pokémon by manifesting the power of the land in fearsome blades of stone.",
     "priority": 0,
     "shortDesc": ""
@@ -12283,7 +12387,8 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
-      "distancetriple": 1
+      "distancetriple": 1,
+      "animateally": 1
     },
     "name": "Dragon Ascent",
     "category": "Physical",
@@ -12292,7 +12397,7 @@
     "type": "Flying",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 190,
+    "zMovePower": 160,
     "desc": "After soaring upward, the user attacks its target by dropping out of the sky at high speeds. But it lowers its own Defense and Sp. Def stats in the process.",
     "priority": 0,
     "shortDesc": ""
@@ -12301,7 +12406,8 @@
     "num": 621,
     "flags": {
       "mirror": 1,
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Hyperspace Fury",
     "category": "Physical",
@@ -12310,7 +12416,7 @@
     "type": "Dark",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "Using its many arms, the user unleashes a barrage of attacks that ignore the effects of moves like Protect and Detect. But the user’s Defense stat falls.",
     "priority": 0,
     "shortDesc": ""
@@ -12936,7 +13042,7 @@
     },
     "name": "Catastropika",
     "category": "Physical",
-    "basePower": 170,
+    "basePower": 190,
     "accuracy": 101,
     "type": "Electric",
     "target": "adjacentAlly",
@@ -12970,7 +13076,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "First Impression",
     "category": "Physical",
@@ -12980,7 +13087,7 @@
     "target": "adjacentAlly",
     "pp": 10,
     "priority": 2,
-    "zMovePower": 175,
+    "zMovePower": 140,
     "desc": "Although this move has great power, it only works the first turn the user is in battle.",
     "shortDesc": ""
   },
@@ -13006,7 +13113,8 @@
     "num": 662,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Spirit Shackle",
     "category": "Physical",
@@ -13015,7 +13123,7 @@
     "type": "Ghost",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 135,
     "desc": "The user attacks while simultaneously stitching the target’s shadow to the ground to prevent the target from escaping.",
     "priority": 0,
     "shortDesc": ""
@@ -13025,7 +13133,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Darkest Lariat",
     "category": "Physical",
@@ -13034,7 +13143,7 @@
     "type": "Dark",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 135,
     "desc": "The user swings both arms and hits the target. The target’s stat changes don’t affect this attack’s damage.",
     "priority": 0,
     "shortDesc": ""
@@ -13054,7 +13163,7 @@
     "type": "Water",
     "target": "allAdjacentFoes",
     "pp": 10,
-    "zMovePower": 175,
+    "zMovePower": 140,
     "desc": "The user bursts into song, emitting many bubbles. Any Pokémon suffering from a burn will be healed by the touch of these bubbles. (Sound)",
     "priority": 0,
     "shortDesc": ""
@@ -13065,7 +13174,8 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
-      "punch": 1
+      "punch": 1,
+      "animateally": 1
     },
     "name": "Ice Hammer",
     "category": "Physical",
@@ -13074,7 +13184,7 @@
     "type": "Ice",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user swings and hits with its strong, heavy fist. It lowers the user’s Speed, however. (Punch)",
     "priority": 0,
     "shortDesc": ""
@@ -13105,7 +13215,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "High Horsepower",
     "category": "Physical",
@@ -13114,7 +13225,7 @@
     "type": "Ground",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 175,
+    "zMovePower": 145,
     "desc": "The user fiercely attacks the target using its entire body.",
     "priority": 0,
     "shortDesc": ""
@@ -13125,7 +13236,8 @@
       "protect": 1,
       "reflectable": 1,
       "mirror": 1,
-      "heal": 1
+      "heal": 1,
+      "animateally": 1
     },
     "name": "Strength Sap",
     "category": "Status",
@@ -13146,7 +13258,8 @@
       "contact": 1,
       "charge": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Solar Blade",
     "category": "Physical",
@@ -13155,7 +13268,7 @@
     "type": "Grass",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 190,
+    "zMovePower": 165,
     "desc": "In this two-turn attack, the user gathers light and fills a blade with the light’s energy, attacking the target on the next turn.",
     "priority": 0,
     "shortDesc": ""
@@ -13163,8 +13276,10 @@
   "trailblaze": {
     "num": 670,
     "flags": {
+      "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Trailblaze",
     "category": "Physical",
@@ -13173,7 +13288,8 @@
     "type": "Grass",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 100,
+    "zMovePower": 90,
+    "zMoveEffect": "+1 Speed",
     "desc": "The user attacks suddenly as if leaping out from tall grass. The user's nimble footwork boosts its Speed stat.",
     "priority": 0,
     "shortDesc": ""
@@ -13190,11 +13306,11 @@
     "basePower": 0,
     "accuracy": 101,
     "type": "Electric",
-    "target": "adjacentAlly",
-    "pp": 15,
-    "priority": 3,
+    "target": "normal",
+    "pp": 5,
+    "priority": 2,
     "zMovePower": 0,
-    "zMoveEffect": "+3 Special Attack",
+    "zMoveEffect": "+1 Special Defense",
     "desc": "The user shines a spotlight on the target so that only the target will be attacked during the turn. (+3 Prio)",
     "shortDesc": ""
   },
@@ -13203,7 +13319,8 @@
     "flags": {
       "protect": 1,
       "reflectable": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Toxic Thread",
     "category": "Status",
@@ -13231,7 +13348,7 @@
     "target": "self",
     "pp": 20,
     "zMovePower": 0,
-    "zMoveEffect": "+2 Attack",
+    "zMoveEffect": "+2 Speed",
     "desc": "The user concentrates intensely. The attack on the next turn always results in a critical hit.",
     "priority": 0,
     "shortDesc": ""
@@ -13250,7 +13367,7 @@
     "target": "allyTeam",
     "pp": 5,
     "zMovePower": 0,
-    "zMoveEffect": "raises critical-hit ratio two stages",
+    "zMoveEffect": "+2 Speed",
     "desc": "The user engages its gears to raise the Attack and Sp. Atk stats sharply of ally Pokémon with the Plus or Minus Ability, but lowers their Speed.",
     "priority": 0,
     "shortDesc": ""
@@ -13261,7 +13378,8 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
-      "punch": 1
+      "punch": 1,
+      "animateally": 1
     },
     "name": "Throat Chop",
     "category": "Physical",
@@ -13270,7 +13388,7 @@
     "type": "Dark",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "The user attacks the target’s throat, and the resultant suffering prevents the target from using moves that emit sound for 2-4 turns. (Punch)",
     "priority": 0,
     "shortDesc": ""
@@ -13280,16 +13398,17 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
+      "animateally": 1,
       "bullet": 1
     },
     "name": "Pollen Puff",
     "category": "Special",
-    "basePower": 85,
+    "basePower": 80,
     "accuracy": 100,
     "type": "Bug",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 175,
+    "zMovePower": 130,
     "desc": "The user attacks the enemy with an irritating puff that explodes. If the target is an ally, it gives the ally a soothing puff that restores 50% HP instead. (Bullet)",
     "priority": 0,
     "shortDesc": ""
@@ -13299,7 +13418,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Anchor Shot",
     "category": "Physical",
@@ -13308,7 +13428,7 @@
     "type": "Steel",
     "target": "adjacentAlly",
     "pp": 20,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "The user entangles the target with its anchor chain while attacking. The target becomes unable to flee.",
     "priority": 0,
     "shortDesc": ""
@@ -13336,7 +13456,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Lunge",
     "category": "Physical",
@@ -13345,7 +13466,7 @@
     "type": "Bug",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "The user makes a lunge at the target, attacking with full force. This also lowers the target’s Attack stat.",
     "priority": 0,
     "shortDesc": ""
@@ -13355,7 +13476,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Fire Lash",
     "category": "Physical",
@@ -13364,7 +13486,7 @@
     "type": "Fire",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "The user strikes the target with a burning lash. This also lowers the target’s Defense stat.",
     "priority": 0,
     "shortDesc": ""
@@ -13374,7 +13496,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Power Trip",
     "category": "Physical",
@@ -13383,7 +13506,8 @@
     "type": "Dark",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 115,
+    "zMoveEffect": "resets lowered stats of the user",
     "desc": "The user boasts its strength and attacks the target. The more the user’s stats are raised, the greater the move’s power. (20BP + 20 per raised stat)",
     "priority": 0,
     "shortDesc": ""
@@ -13393,7 +13517,8 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
-      "defrost": 1
+      "defrost": 1,
+      "animateally": 1
     },
     "name": "Burn Up",
     "category": "Special",
@@ -13402,7 +13527,7 @@
     "type": "Fire",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 195,
+    "zMovePower": 165,
     "desc": "To inflict massive damage, the user burns itself out. After using this move, the user will no longer be Fire type.",
     "priority": 0,
     "shortDesc": ""
@@ -13434,6 +13559,7 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
+      "animateally": 1,
       "bite": 1
     },
     "name": "Steel Trap",
@@ -13443,7 +13569,7 @@
     "type": "Steel",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 140,
+    "zMovePower": 120,
     "desc": "The user bites the target with teeth as hard as tempered steel. This has a 30% chance to trap and damage the target for 2 turns. (Jaw)",
     "priority": 0,
     "shortDesc": ""
@@ -13453,7 +13579,8 @@
     "flags": {
       "protect": 1,
       "reflectable": 1,
-      "heal": 1
+      "heal": 1,
+      "animateally": 1
     },
     "name": "Purify",
     "category": "Status",
@@ -13464,7 +13591,7 @@
     "pp": 5,
     "priority": 1,
     "zMovePower": 0,
-    "zMoveEffect": "+3 Defense",
+    "zMoveEffect": "+2 Special Defense",
     "desc": "The user heals the target’s status condition. If the move succeeds, it also restores the user’s HP by 75%. (+1 Prio)",
     "shortDesc": ""
   },
@@ -13473,6 +13600,7 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
+      "animateally": 1,
       "dance": 1
     },
     "name": "Revelation Dance",
@@ -13482,7 +13610,7 @@
     "type": "Normal",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 175,
+    "zMovePower": 140,
     "desc": "The user attacks the target by dancing very hard. The user’s PRIMARY type determines the type of this move. (Dance)",
     "priority": 0,
     "shortDesc": ""
@@ -13491,7 +13619,8 @@
     "num": 687,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Core Enforcer",
     "category": "Special",
@@ -13500,7 +13629,7 @@
     "type": "Dragon",
     "target": "allAdjacentFoes",
     "pp": 10,
-    "zMovePower": 140,
+    "zMovePower": 150,
     "desc": "If the Pokémon the user has inflicted damage on have already used their moves, this move eliminates the effect of the target’s Ability.",
     "priority": 0,
     "shortDesc": ""
@@ -13510,7 +13639,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Trop Kick",
     "category": "Physical",
@@ -13519,7 +13649,7 @@
     "type": "Grass",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 140,
+    "zMovePower": 120,
     "desc": "The user lands an intense kick of tropical origins on the target. This also lowers the target’s Attack stat.",
     "priority": 0,
     "shortDesc": ""
@@ -13548,6 +13678,7 @@
     "num": 690,
     "flags": {
       "protect": 1,
+      "animateally": 1,
       "bullet": 1,
       "pulse": 1
     },
@@ -13559,7 +13690,7 @@
     "target": "adjacentAlly",
     "pp": 15,
     "priority": -3,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user first heats up its beak, and then it attacks the target. Making direct contact with the Pokémon while it’s heating up results in a burn. (Bullet, Pulse)",
     "shortDesc": ""
   },
@@ -13579,7 +13710,7 @@
     "type": "Dragon",
     "target": "allAdjacentFoes",
     "pp": 5,
-    "zMovePower": 185,
+    "zMovePower": 155,
     "desc": "The user rubs the scales on its entire body and makes a huge noise to attack the opposing Pokémon. The user’s Defense stat goes down after the attack. (Sound, Dance)",
     "priority": 0,
     "shortDesc": ""
@@ -13589,7 +13720,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Dragon Hammer",
     "category": "Physical",
@@ -13598,7 +13730,7 @@
     "type": "Dragon",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 175,
+    "zMovePower": 140,
     "desc": "The user uses its body like a hammer to attack the target and inflict damage.",
     "priority": 0,
     "shortDesc": ""
@@ -13608,7 +13740,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Brutal Smash",
     "category": "Physical",
@@ -13617,7 +13750,7 @@
     "type": "Dark",
     "target": "normal",
     "pp": 5,
-    "zMovePower": 190,
+    "zMovePower": 165,
     "desc": "The user swings its body around violently to inflict damage. The effort lowers the user's Attack stat harshly.",
     "priority": 0,
     "shortDesc": ""
@@ -13645,7 +13778,7 @@
     "flags": {},
     "name": "Sinister Arrow Raid",
     "category": "Physical",
-    "basePower": 165,
+    "basePower": 145,
     "accuracy": 101,
     "type": "Ghost",
     "target": "allAdjacentFoes",
@@ -13663,7 +13796,7 @@
     },
     "name": "Malicious Moonsault",
     "category": "Physical",
-    "basePower": 165,
+    "basePower": 145,
     "accuracy": 101,
     "type": "Dark",
     "target": "allAdjacentFoes",
@@ -13681,7 +13814,7 @@
     },
     "name": "Oceanic Operetta",
     "category": "Special",
-    "basePower": 165,
+    "basePower": 145,
     "accuracy": 101,
     "type": "Water",
     "target": "allAdjacentFoes",
@@ -13695,7 +13828,8 @@
     "num": 698,
     "flags": {
       "punch": 1,
-      "heal": 1
+      "heal": 1,
+      "animateally": 1
     },
     "name": "Guardian of Alola",
     "category": "Special",
@@ -13714,11 +13848,12 @@
     "flags": {
       "contact": 1,
       "punch": 1,
-      "heal": 1
+      "heal": 1,
+      "animateally": 1
     },
     "name": "Soul-Stealing 7-Star Strike",
     "category": "Physical",
-    "basePower": 195,
+    "basePower": 160,
     "accuracy": 101,
     "type": "Ghost",
     "target": "adjacentAlly",
@@ -13731,11 +13866,12 @@
   "stokedsparksurfer": {
     "num": 700,
     "flags": {
-      "contact": 1
+      "contact": 1,
+      "animateally": 1
     },
     "name": "Stoked Sparksurfer",
     "category": "Special",
-    "basePower": 175,
+    "basePower": 150,
     "accuracy": 101,
     "type": "Electric",
     "target": "adjacentAlly",
@@ -13752,7 +13888,7 @@
     },
     "name": "Pulverizing Pancake",
     "category": "Physical",
-    "basePower": 190,
+    "basePower": 130,
     "accuracy": 101,
     "type": "Normal",
     "target": "adjacentAlly",
@@ -13779,10 +13915,12 @@
   },
   "genesissupernova": {
     "num": 703,
-    "flags": {},
+    "flags": {
+      "animateally": 1
+    },
     "name": "Genesis Supernova",
     "category": "Special",
-    "basePower": 185,
+    "basePower": 150,
     "accuracy": 101,
     "type": "Psychic",
     "target": "adjacentAlly",
@@ -13796,7 +13934,8 @@
     "num": 704,
     "flags": {
       "protect": 1,
-      "defrost": 1
+      "defrost": 1,
+      "animateally": 1
     },
     "name": "Shell Trap",
     "category": "Special",
@@ -13806,7 +13945,7 @@
     "target": "allAdjacentFoes",
     "pp": 5,
     "priority": -3,
-    "zMovePower": 200,
+    "zMovePower": 180,
     "desc": "The user sets a shell trap. If the user is hit by a physical move, the trap will explode and inflict damage on the opposing Pokémon.",
     "shortDesc": ""
   },
@@ -13823,7 +13962,7 @@
     "type": "Fairy",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 195,
+    "zMovePower": 165,
     "desc": "The user unleashes a strong beam. The attack’s recoil harshly lowers the user’s Sp. Atk stat.",
     "priority": 0,
     "shortDesc": ""
@@ -13834,6 +13973,7 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
+      "animateally": 1,
       "bite": 1
     },
     "name": "Psychic Fangs",
@@ -13843,7 +13983,7 @@
     "type": "Psychic",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 135,
     "desc": "The user bites the target with its psychic capabilities. This can also destroy Light Screen and Reflect. (Jaw)",
     "priority": 0,
     "shortDesc": ""
@@ -13853,7 +13993,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Stomping Tantrum",
     "category": "Physical",
@@ -13862,7 +14003,7 @@
     "type": "Ground",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 140,
+    "zMovePower": 125,
     "desc": "Driven by frustration, the user attacks the target. If the user’s previous move has failed, the power of this move doubles.",
     "priority": 0,
     "shortDesc": ""
@@ -13871,7 +14012,8 @@
     "num": 708,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Shadow Bone",
     "category": "Physical",
@@ -13880,7 +14022,7 @@
     "type": "Ghost",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 135,
     "desc": "The user attacks by beating the target with a bone that contains a spirit. This may also lower the target’s Defense stat. (20%)",
     "priority": 0,
     "shortDesc": ""
@@ -13890,7 +14032,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Accelerock",
     "category": "Physical",
@@ -13900,7 +14043,8 @@
     "target": "adjacentAlly",
     "pp": 20,
     "priority": 1,
-    "zMovePower": 100,
+    "zMovePower": 90,
+    "zMoveEffect": "+1 Speed",
     "desc": "The user smashes into the target at high speed. This move always goes first. (+1 Priority)",
     "shortDesc": ""
   },
@@ -13909,7 +14053,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Liquidation",
     "category": "Physical",
@@ -13918,7 +14063,7 @@
     "type": "Water",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user slams into the target using a full-force blast of water. This may also lower the target’s Defense stat. (20%)",
     "priority": 0,
     "shortDesc": ""
@@ -13929,7 +14074,8 @@
       "recharge": 1,
       "protect": 1,
       "mirror": 1,
-      "heal": 1
+      "heal": 1,
+      "animateally": 1
     },
     "name": "Prismatic Laser",
     "category": "Special",
@@ -13938,7 +14084,7 @@
     "type": "Rock",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 200,
+    "zMovePower": 180,
     "desc": "The user shoots powerful lasers using the power of a prism. The user can’t move on the next turn and heals for a portion of damage dealt.",
     "priority": 0,
     "shortDesc": ""
@@ -13949,7 +14095,8 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Spectral Thief",
     "category": "Physical",
@@ -13958,7 +14105,7 @@
     "type": "Ghost",
     "target": "normal",
     "pp": 10,
-    "zMovePower": 175,
+    "zMovePower": 140,
     "desc": "The user hides in the target’s shadow, steals the target’s stat boosts, and then attacks.",
     "priority": 0,
     "shortDesc": ""
@@ -13968,7 +14115,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Sunsteel Strike",
     "category": "Physical",
@@ -13977,7 +14125,7 @@
     "type": "Steel",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user slams into the target with the force of a meteor. This move can be used on the target regardless of its Abilities.",
     "priority": 0,
     "shortDesc": ""
@@ -13986,7 +14134,8 @@
     "num": 714,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Moongeist Beam",
     "category": "Special",
@@ -13995,7 +14144,7 @@
     "type": "Ghost",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user emits a sinister ray to attack the target. This move can be used on the target regardless of its Abilities.",
     "priority": 0,
     "shortDesc": ""
@@ -14004,7 +14153,8 @@
     "num": 715,
     "flags": {
       "reflectable": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Tearful Look",
     "category": "Status",
@@ -14024,7 +14174,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Zing Zap",
     "category": "Physical",
@@ -14033,7 +14184,7 @@
     "type": "Electric",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 160,
+    "zMovePower": 130,
     "desc": "A strong electric blast crashes down on the target, giving it an electric shock. This may also make the target flinch. (30%)",
     "priority": 0,
     "shortDesc": ""
@@ -14042,7 +14193,8 @@
     "num": 717,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Nature’s Madness",
     "category": "Special",
@@ -14051,7 +14203,7 @@
     "type": "Fairy",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 100,
+    "zMovePower": 150,
     "desc": "The user hits the target with the force of nature. It halves the target’s HP.",
     "priority": 0,
     "shortDesc": ""
@@ -14061,7 +14213,8 @@
     "flags": {
       "contact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Multi-Attack",
     "category": "Physical",
@@ -14070,14 +14223,16 @@
     "type": "Normal",
     "target": "adjacentAlly",
     "pp": 10,
-    "zMovePower": 185,
+    "zMovePower": 155,
     "desc": "Cloaking itself in high energy, the user slams into the target. The memory held determines the move’s type.",
     "priority": 0,
     "shortDesc": ""
   },
   "10000000voltthunderbolt": {
     "num": 719,
-    "flags": {},
+    "flags": {
+      "animateally": 1
+    },
     "name": "10,000,000 Volt Thunderbolt",
     "category": "Special",
     "basePower": 170,
@@ -14095,7 +14250,8 @@
     "flags": {
       "protect": 1,
       "mirror": 1,
-      "defrost": 1
+      "defrost": 1,
+      "animateally": 1
     },
     "name": "Mind Blown",
     "category": "Special",
@@ -14104,7 +14260,7 @@
     "type": "Fire",
     "target": "allAdjacent",
     "pp": 5,
-    "zMovePower": 200,
+    "zMovePower": 180,
     "desc": "The user attacks everything around it by causing its own head to explode. This also damages the user.",
     "priority": 0,
     "shortDesc": ""
@@ -14115,7 +14271,8 @@
       "contact": 1,
       "protect": 1,
       "mirror": 1,
-      "punch": 1
+      "punch": 1,
+      "animateally": 1
     },
     "name": "Plasma Fists",
     "category": "Physical",
@@ -14124,7 +14281,7 @@
     "type": "Electric",
     "target": "adjacentAlly",
     "pp": 15,
-    "zMovePower": 180,
+    "zMovePower": 140,
     "desc": "The user attacks with electrically charged fists. This move changes Normal-type moves to Electric-type moves. (Punch)",
     "priority": 0,
     "shortDesc": ""
@@ -14133,7 +14290,8 @@
     "num": 722,
     "flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "name": "Photon Geyser",
     "category": "Special",
@@ -14142,7 +14300,7 @@
     "type": "Psychic",
     "target": "adjacentAlly",
     "pp": 5,
-    "zMovePower": 180,
+    "zMovePower": 150,
     "desc": "The user attacks a target with a pillar of light. This move inflicts Attack or Sp. Atk damage—whichever stat is higher for the user.",
     "priority": 0,
     "shortDesc": ""
@@ -14150,11 +14308,12 @@
   "lightthatburnsthesky": {
     "num": 723,
     "flags": {
-      "bypasssub": 1
+      "bypasssub": 1,
+      "animateally": 1
     },
     "name": "Light That Burns the Sky",
     "category": "Special",
-    "basePower": 250,
+    "basePower": 220,
     "accuracy": 101,
     "type": "Psychic",
     "target": "adjacentAlly",
@@ -14167,7 +14326,8 @@
   "searingsunrazesmash": {
     "num": 724,
     "flags": {
-      "contact": 1
+      "contact": 1,
+      "animateally": 1
     },
     "name": "Searing Sunraze Smash",
     "category": "Physical",
@@ -14183,7 +14343,9 @@
   },
   "menacingmoonrazemaelstrom": {
     "num": 725,
-    "flags": {},
+    "flags": {
+      "animateally": 1
+    },
     "name": "Menacing Moonraze Maelstrom",
     "category": "Special",
     "basePower": 200,
@@ -14200,11 +14362,12 @@
     "num": 726,
     "flags": {
       "contact": 1,
-      "punch": 1
+      "punch": 1,
+      "animateally": 1
     },
     "name": "Let’s Snuggle Forever",
     "category": "Physical",
-    "basePower": 190,
+    "basePower": 150,
     "accuracy": 101,
     "type": "Fairy",
     "target": "adjacentAlly",
@@ -14217,11 +14380,12 @@
   "splinteredstormshards": {
     "num": 727,
     "flags": {
-      "contact": 1
+      "contact": 1,
+      "animateally": 1
     },
     "name": "Splintered Stormshards",
     "category": "Physical",
-    "basePower": 190,
+    "basePower": 150,
     "accuracy": 101,
     "type": "Rock",
     "target": "adjacentAlly",
@@ -14236,11 +14400,12 @@
     "flags": {
       "sound": 1,
       "bypasssub": 1,
+      "animateally": 1,
       "dance": 1
     },
     "name": "Clangorous Soulblaze",
     "category": "Special",
-    "basePower": 185,
+    "basePower": 125,
     "accuracy": 101,
     "type": "Dragon",
     "target": "allAdjacent",

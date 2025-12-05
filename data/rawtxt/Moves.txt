@@ -815,7 +815,7 @@ Z-Effect: +2 Special Defense
 Heal: 25
 Flags: Snatch, Heal, AnimateAlly
 Description:
-The user cloaks itself and its allies in a white mist that prevents any of their stats from being lowered for five turns. 25% Heal. (+1 Prio) Z: +2 Sp.Def
+The user cloaks itself and its allies in a white mist that prevents any of their stats from being lowered for five turns. (+1 Prio) Z: +2 Sp.Def
 
 ID: 55
 Name: Water Gun
@@ -1831,7 +1831,7 @@ Z-Power: 35
 Z-Effect: +2 Attack
 Flags: MakesContact, Protect, Mirror
 Description:
-The target is licked with a long tongue, causing damage. This may also leave the target with paralysis. (30%)
+The target is licked with a long tongue, causing damage. This may also leave the target with paralysis. (30%) Z: +2 Attack
 
 ID: 123
 Name: Smog
@@ -2241,7 +2241,7 @@ Z-Power: 35
 Z-Effect: +2 Special Attack
 Flags: Protect, Mirror
 Description:
-The target is attacked with an odd psychic wave. The attack varies in intensity. Z-Effect: +2 Atk
+The target is attacked with an odd psychic wave. The attack varies in intensity and is based on the user's level. Z-Effect: +2 Sp.Atk
 
 ID: 150
 Name: Splash
@@ -2716,7 +2716,7 @@ Z-Power: 35
 Z-Effect: +2 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user attacks with a chilling gust of powdery snow. This may also freeze the opposing Pokémon. (10%)
+The user attacks with a chilling gust of powdery snow. This may inflict frostbite on the opposing Pokémon. (20%) Z: +2 Sp.Atk
 
 ID: 182
 Name: Protect
@@ -3573,8 +3573,8 @@ Type: Dragon
 Targeting: All Foes
 Base PP: 15
 Stat Change: Attack -> -1 (100%)
-Z-Power: 105
-Z-Effect: None
+Z-Power: 90
+Z-Effect: +1 Defense
 Flags: Protect, Mirror, AnimateAlly
 Description:
 The user whips up a vicious tornado to tear at the opposing Pokémon. This also lowers the opponent's Attack stats.
@@ -4279,7 +4279,7 @@ Z-Power: 0
 Z-Effect: recovers all of user's HP
 Flags: Snatch, Heal
 Description:
-The user rests to cure itself of poisoning, a burn, or paralysis. Z: Restores all HP.
+The user cures itself and ally of poison, burn, or paralysis. Z: Restores all HP. WIP: Add Frostbite/Sleep
 
 ID: 288
 Name: Grudge
@@ -4308,7 +4308,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: IgnoreSubstitute
 Description:
-The user steals the effects of any attempts to use a healing, stat-changing, or other status move. Can even steal moves like Protect. Z: +2 Speed
+The user steals the effects of any attempts to use a healing, stat-changing, or other self-target move. Can even steal moves like Protect. Z: +2 Speed
 
 ID: 290
 Name: Secret Power
@@ -5014,7 +5014,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Snatch, Sound, AnimateAlly
 Description:
-The user howls loudly to raise its allies' spirits, which raises their Attack stats. (Sound)
+The user howls loudly to raise its allies' spirits, which raises their Attack stats. (Sound) Z: +2 Speed
 
 ID: 337
 Name: Dragon Claw
@@ -5060,7 +5060,7 @@ Z-Power: 0
 Z-Effect: +1 Special Defense
 Flags: Snatch
 Description:
-The user tenses its muscles to bulk up its body, raising both its Attack and Defense stats.
+The user tenses its muscles to bulk up its body, raising both its Attack and Defense stats. Z: +1 Sp.Def
 
 ID: 340
 Name: Bounce
@@ -5075,7 +5075,7 @@ Z-Power: 80
 Z-Effect: +1 Attack
 Flags: MakesContact, Charge, Protect, Mirror, Gravity, DistanceTriple, AnimateAlly
 Description:
-The user bounces up high, then drops on the target on the second turn. This may also leave the target with paralysis. (30%)
+The user bounces up high, then drops on the target on the second turn. This may also leave the target with paralysis. (30%) Z: +1 Attack
 
 ID: 341
 Name: Mud Shot
@@ -5166,7 +5166,7 @@ Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: FailSkyBattle
 Description:
-The user soaks the battlefield with water. This weakens Fire-type moves for five turns. (+1 Priority)
+The user soaks the battlefield with water. This weakens Fire-type moves for five turns. (+1 Priority) Z: +2 Sp.Def
 
 ID: 347
 Name: Calm Mind
@@ -5182,7 +5182,7 @@ Z-Power: 0
 Z-Effect: +1 Defense
 Flags: Snatch
 Description:
-The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats.
+The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats. Z: +1 Def
 
 ID: 348
 Name: Leaf Blade
@@ -5213,7 +5213,7 @@ Z-Power: 0
 Z-Effect: +1 Special Defense
 Flags: Snatch, Dance
 Description:
-The user vigorously performs a mystic, powerful dance that raises its Attack and Speed stats.
+The user vigorously performs a mystic, powerful dance that raises its Attack and Speed stats. Z: +1 Sp.Def
 
 ID: 350
 Name: Rock Blast
@@ -5259,7 +5259,7 @@ Z-Power: 60
 Z-Effect: +2 Speed
 Flags: Protect, Mirror, DistanceTriple, AnimateAlly, Pulse
 Description:
-The user attacks the target with a pulsing blast of water. This may also confuse the target. (20%, Pulse)
+The user attacks the target with a pulsing blast of water. This may also confuse the target. (20%, Pulse) Z: +2 Speed
 
 ID: 353
 Name: Premonition
@@ -5298,12 +5298,12 @@ Accuracy: 101
 Type: Flying
 Targeting: Self
 Base PP: 5
-Z-Power: 0
-Z-Effect: resets lowered stats of the user
+Z-Power: 70
+Z-Effect: +3 Evasiveness
 Heal: 50
 Flags: Snatch, Heal
 Description:
-The user lands and rests its body. It restores the user’s HP by up to half of its max HP. The user loses the Flying-type until the end of the turn.
+The user lands and rests its body. It restores the user’s HP by up to half of its max HP. The user loses its Flying-type for the rest of the turn.
 
 ID: 356
 Name: Gravity
@@ -5333,7 +5333,7 @@ Z-Power: 0
 Z-Effect: +2 Special Attack
 Flags: Protect, Reflectable, Mirror, IgnoreSubstitute
 Description:
-Enables a Dark-type target to be hit by Psychic-type attacks. This also enables an evasive target to be hit.
+Enables a Dark-type target to be hit by Psychic-type attacks. This also enables an evasive target to be hit. Z: +2 Sp.Atk
 
 ID: 358
 Name: Wake-Up Slap
@@ -5390,7 +5390,7 @@ Z-Power: 0
 Z-Effect: +1 to all (except Accuracy or Evasiveness)
 Flags: Snatch, Heal
 Description:
-The user faints. In return, the Pokémon taking its place will have its HP restored and status conditions cured.
+The user faints. In return, the Pokémon taking its place will be fully healed. Z: +1 to all stats if no allies are available.
 
 ID: 362
 Name: Brine
@@ -5461,7 +5461,7 @@ Z-Power: 0
 Z-Effect: raises critical-hit ratio two stages
 Flags: Snatch
 Description:
-The user whips up a turbulent whirlwind that ups the Speed stat of the user and its allies for four turns.
+The user whips up a turbulent whirlwind that ups the Speed stat of the user and its allies for four turns. Z: +2 Crit Stages
 
 ID: 367
 Name: Acupressure
@@ -5474,7 +5474,7 @@ Base PP: 30
 Z-Power: 0
 Z-Effect: raises critical-hit ratio two stages
 Description:
-The user applies pressure to stress points, sharply boosting one of its or its allies’ stats.
+The user applies pressure to stress points, sharply boosting one of its or its allies’ stats. Z: +2 Crit Stages
 
 ID: 368
 Name: Metal Burst
@@ -5488,7 +5488,7 @@ Z-Power: 100
 Z-Effect: +1 Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user retaliates with 50% greater force against the opponent that last inflicted damage on it.
+The user retaliates with 50% greater force against the opponent that last inflicted damage on it. Z: +1 Attack
 
 ID: 369
 Name: U-turn
@@ -5534,7 +5534,7 @@ Z-Power: 150
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
-The user stores power, then punches. If the user moves after the target, this attack’s power will be doubled. (Punch)
+The user stores power, then punches. If the user moves after the target, the power will be doubled. 30% chance to Torment the foe for 3 turns. (Punch)
 
 ID: 372
 Name: Assertion
@@ -5548,7 +5548,7 @@ Z-Power: 70
 Z-Effect: +1 Special Attack
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
-If the target has already taken some damage in the same turn, this attack’s power is doubled. (Punch)
+If the target has already taken some damage in the same turn, this attack’s power is doubled. (Punch) Z: +1 Sp.Atk
 
 ID: 373
 Name: Embargo
@@ -5565,7 +5565,7 @@ Z-Power: 0
 Z-Effect: +2 Attack
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-This move prevents the targets from using their held item for five turns. Its Trainer is also prevented from using items on it.
+This move prevents the targets from using their held item for five turns. Its Trainer is also prevented from using items on it. Z: +2 Attack
 
 ID: 374
 Name: Fling
@@ -5579,7 +5579,7 @@ Z-Power: 100
 Z-Effect: +1 Attack
 Flags: Protect, Mirror, AnimateAlly, Pulse
 Description:
-The user flings its held item at the target to attack. This move’s power and effects depend on the item. Thrown berries will be eaten. (Pulse)
+The user flings its held item at the target to attack. This move’s power and effects depend on the item. Thrown berries will be eaten. (Pulse) Z: +1 Attack
 
 ID: 375
 Name: Psycho Shift
@@ -5593,7 +5593,7 @@ Z-Power: 0
 Z-Effect: +2 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
-Using its psychic power of suggestion, the user transfers its status conditions to the target. Works on Brn, Prz, Psn, and Slp.
+Using its psychic power of suggestion, the user transfers its status conditions to the target. Works on Brn, Prz, Psn, and Slp. WIP Z: +2 Sp.Atk
 
 ID: 376
 Name: Trump Card
@@ -5623,7 +5623,7 @@ Z-Power: 0
 Z-Effect: +2 Special Attack
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-For five turns, the user prevents the opposing team from using any moves, Abilities, or held items that recover HP.
+For five turns, the user prevents the opposing team from using any moves, Abilities, or held items that recover HP. Z: +2 Sp.Atk
 
 ID: 378
 Name: Wring Out
@@ -5637,7 +5637,7 @@ Z-Power: 140
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user powerfully wrings the target. The more HP the target has, the greater the move’s power. (120BP - 1BP)
+The user envelops the target with toxin soaked tendrils. The more HP the target has, the greater the move’s power. (120BP - 1BP)
 
 ID: 379
 Name: Power Trick
@@ -5651,7 +5651,7 @@ Z-Power: 0
 Z-Effect: +1 Speed
 Flags: Snatch
 Description:
-The user employs its psychic power to switch its Attack stat with its Defense stat.
+The user employs its psychic power to switch its Attack stat with its Defense stat. Swaps the raw stats, not any stat modifiers. Z: +1 Speed
 
 ID: 380
 Name: Gastro Acid
@@ -5666,7 +5666,7 @@ Z-Power: 0
 Z-Effect: +2 Attack
 Flags: Protect, Reflectable, Snatch, Mirror, AnimateAlly
 Description:
-The user hurls up its stomach acids on the target. The fluid eliminates the effect of the target’s Ability.
+The user hurls up its stomach acids on the target. The fluid eliminates the effect of the target’s Ability. (+1 Priority) Z: +2 Atk
 
 ID: 381
 Name: Lucky Chant
@@ -5681,7 +5681,7 @@ Z-Power: 0
 Z-Effect: raises critical-hit ratio two stages
 Flags: Snatch, AnimateAlly
 Description:
-The user chants an incantation toward the sky, preventing opposing Pokémon from landing critical hits for five turns. (+1 Priority)
+The user chants an incantation toward the sky, preventing opposing Pokémon from landing critical hits for five turns. (+1 Prio) Z: +2 Crit
 
 ID: 382
 Name: Me First
@@ -5695,7 +5695,7 @@ Z-Power: 0
 Z-Effect: raises critical-hit ratio two stages
 Flags: Protect, IgnoreSubstitute, AnimateAlly
 Description:
-The user cuts ahead of the target to copy and use the target’s intended move with 50% greater power. The move fails if not first. Z-Eff: +2 Spe
+The user cuts ahead of the target to copy and use the target’s intended move with 50% greater power. The move fails if not first. Z: +2 Crit
 
 ID: 383
 Name: Copycat
@@ -5709,7 +5709,7 @@ Z-Power: 0
 Z-Effect: +2 Defense
 Flags: AnimateAlly
 Description:
-The user mimics the move used immediately before it. The move fails if no other move has been used yet.
+The user backflips to mimic the move used immediately before it. The move fails if no other move has been used yet. Z: +2 Defense
 
 ID: 384
 Name: Power Swap
@@ -5723,7 +5723,7 @@ Z-Power: 0
 Z-Effect: +1 to all (except Accuracy or Evasiveness)
 Flags: Protect, Mirror, IgnoreSubstitute, AnimateAlly
 Description:
-The user employs its psychic power to switch changes to its Attack and Sp. Atk stats with the target.
+The user employs its psychic power to switch changes to its Attack and Sp. Atk stats with the target. Z: +1 All Stats
 
 ID: 385
 Name: Guard Swap
@@ -5737,7 +5737,7 @@ Z-Power: 0
 Z-Effect: +1 to all (except Accuracy or Evasiveness)
 Flags: Protect, Mirror, IgnoreSubstitute, AnimateAlly
 Description:
-The user employs its psychic power to switch changes to its Defense and Sp. Def stats with the target.
+The user employs its psychic power to switch changes to its Defense and Sp. Def stats with the target. Z: +1 All Stats
 
 ID: 386
 Name: Punishment
@@ -5779,7 +5779,7 @@ Z-Power: 0
 Z-Effect: +2 Special Attack
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-A seed that causes worry is planted on the target. It prevents sleep by making the target’s Ability Insomnia.
+A seed that causes worry is planted on the target. It prevents sleep by making the target’s Ability Insomnia. Z: +2 Sp.Atk
 
 ID: 389
 Name: Sucker Punch
@@ -5808,7 +5808,7 @@ Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: Reflectable, Snatch, FailSkyBattle, AnimateAlly
 Description:
-The user lays a trap of poison spikes at the feet of the opposing team. The spikes will poison opposing Pokémon that switch into battle. 2 Layers badly poisons.
+The user lays a trap of poison spikes at the feet of the enemy team. The spikes will poison those that swap in. 2 Layers badly poisons. Z: +2 Sp.Def
 
 ID: 391
 Name: Heart Swap
@@ -5822,7 +5822,7 @@ Z-Power: 0
 Z-Effect: +2 Defense
 Flags: Protect, Mirror, IgnoreSubstitute, AnimateAlly
 Description:
-The user employs its psychic power to switch stat changes with the target.
+The user employs its psychic power to switch stat changes with the target. Z: +2 Def
 
 ID: 392
 Name: Aqua Ring
@@ -5836,7 +5836,7 @@ Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: Snatch, Heal, AnimateAlly
 Description:
-The user envelops itself in a veil made of water. It regains 1/16 HP every turn.
+The user envelops itself and its teammate in a veil made of water. It regains 1/16 HP every turn. Z: +2 Sp.Def
 
 ID: 393
 Name: Magnet Rise
@@ -5851,7 +5851,7 @@ Z-Power: 0
 Z-Effect: makes the user the center of attention
 Flags: Snatch, Gravity, AnimateAlly
 Description:
-The user levitates using electrically generated magnetism for five turns.
+The user levitates itself or its ally using electrically generated magnetism for five turns. Z: Draws attacks to the user.
 
 ID: 394
 Name: Flare Blitz
@@ -5882,7 +5882,7 @@ Z-Power: 80
 Z-Effect: +1 Special Attack
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly, Pulse
 Description:
-The target is attacked with a shock of aura. This may also leave the target with paralysis. (Punch, Pulse)
+The target is attacked with a shock of aura. This may also leave the target with paralysis. (Punch, Pulse) Z: +1 Sp.Atk
 
 ID: 396
 Name: Aura Sphere
@@ -5912,7 +5912,7 @@ Z-Power: 0
 Z-Effect: +1 Speed
 Flags: Snatch
 Description:
-The user polishes its body to reduce drag. This sharply raises the Speed stat and raises Accuracy.
+The user polishes its body to reduce drag. This sharply raises the Speed stat and raises Accuracy. Z: +1 Speed
 
 ID: 398
 Name: Poison Jab
@@ -5971,7 +5971,7 @@ Z-Power: 80
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user attacks by swinging its tail as if it were a vicious wave in a raging storm.
+The user attacks by swinging its tail as if it were a vicious wave in a raging storm. Z: +1 Attack
 
 ID: 402
 Name: Seed Bomb
@@ -5985,7 +5985,7 @@ Z-Power: 135
 Z-Effect: None
 Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
-The user slams a barrage of hard-shelled seeds down on the target from above. (Bullet)
+The user slams a barrage of hard-shelled seeds down on the target from above. (Bullet, Pulse)
 
 ID: 403
 Name: Air Slash
@@ -6015,7 +6015,7 @@ Z-Power: 130
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user slashes at the target by crossing its scythes or claws as if they were a pair of scissors. Critical hits land more easily.(+1 Crit)
+The user slashes at the target by crossing its scythes or claws as if they were a pair of scissors. Critical hits land more easily. (+1 Crit)
 
 ID: 405
 Name: Bug Buzz
@@ -6060,7 +6060,7 @@ Z-Power: 90
 Z-Effect: +1 Speed
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user tackles the target while exhibiting overwhelming menace. This attack raises the user's Speed.
+The user tackles the target while exhibiting overwhelming menace. This attack raises the user's Speed. Z: +1 Speed
 
 ID: 408
 Name: Power Gem
@@ -6104,7 +6104,7 @@ Z-Power: 90
 Z-Effect: +1 Speed
 Flags: Protect, Mirror, Punch, AnimateAlly, Pulse
 Description:
-The user whirls its fists to send a wave of pure vacuum at the target. This move usually goes first. (+1 Prio, Punch, Pulse)
+The user whirls its fists to send a wave of pure vacuum at the target. This move usually goes first. (+1 Prio, Punch, Pulse) Z: +1 Speed
 
 ID: 411
 Name: Focus Blast
@@ -6193,7 +6193,7 @@ Z-Effect: None
 Recoil: 15
 Flags: MakesContact, Recharge, Protect, Mirror, Heal, AnimateAlly
 Description:
-The user charges at the target using every bit of its power. The user can’t move on the next turn and restores 15% of damage dealt
+The user charges at the target using every bit of its power. The user can’t move on the next turn and restores 15% of damage dealt.
 
 ID: 417
 Name: Nasty Plot
@@ -6208,7 +6208,7 @@ Z-Power: 0
 Z-Effect: +1 Accuracy
 Flags: Snatch
 Description:
-The user stimulates its brain by thinking bad thoughts. This sharply raises the user’s Sp. Atk stat.
+The user stimulates its brain by thinking bad thoughts. This sharply raises the user’s Sp. Atk stat. Z: +1 Accuracy
 
 ID: 418
 Name: Bullet Punch
@@ -6223,7 +6223,7 @@ Z-Power: 90
 Z-Effect: +1 Speed
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly, Ballistic
 Description:
-The user strikes the target with tough punches as fast as bullets. This move usually goes first. (+1 Priority, Punch, Bullet)
+The user strikes the target with tough punches as fast as bullets. This move usually goes first. (+1 Priority, Punch, Bullet) Z: +1 Speed
 
 ID: 419
 Name: Avalanche
@@ -6253,7 +6253,7 @@ Z-Power: 90
 Z-Effect: +1 Speed
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user flash-freezes chunks of ice and hurls them at the target. This move always goes first. (+1 Priority)
+The user flash-freezes chunks of ice and hurls them at the target. This move always goes first. (+1 Priority) Z: +1 Speed
 
 ID: 421
 Name: Shadow Claw
@@ -6268,7 +6268,7 @@ Z-Power: 130
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user slashes with a sharp claw made from shadows. Critical hits land more easily.(+1 Crit)
+The user slashes with a sharp claw made from shadows. Critical hits land more easily. (+1 Crit)
 
 ID: 422
 Name: Thunder Fang
@@ -6284,7 +6284,7 @@ Z-Power: 80
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly, Bite
 Description:
-The user bites with electrified fangs. This may also make the target flinch or leave it with paralysis. (10% Flinch, 10% Paralysis, Jaw)
+The user bites with electrified fangs. This may also make the target flinch or leave it with paralysis. (10% Flinch, 10% Paralysis, Jaw) Z: +1 Attack
 
 ID: 423
 Name: Ice Fang
@@ -6300,7 +6300,7 @@ Z-Power: 80
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly, Bite
 Description:
-The user bites with cold-infused fangs. This may also make the target flinch or leave it frozen. (10% Flinch, 10% Freeze, Jaw)
+The user bites with cold-infused fangs. This may also make the target flinch or leave it frozen. (10% Flinch, 10% Freeze, Jaw) Z: +1 Attack
 
 ID: 424
 Name: Fire Fang
@@ -6316,7 +6316,7 @@ Z-Power: 80
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly, Bite
 Description:
-The user bites with flame-cloaked fangs. This may also make the target flinch or leave it with a burn. (10% Flinch, 10% Burn, Jaw)
+The user bites with flame-cloaked fangs. This may also make the target flinch or leave it with a burn. (10% Flinch, 10% Burn, Jaw) Z: +1 Attack
 
 ID: 425
 Name: Shadow Sneak
@@ -6331,7 +6331,7 @@ Z-Power: 90
 Z-Effect: +1 Speed
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user extends its shadow and attacks the target from behind. This move always goes first. (+1 Priority)
+The user extends its shadow and attacks the target from behind. This move always goes first. (+1 Priority) Z: +1 Speed
 
 ID: 426
 Name: Mud Bomb
@@ -6436,7 +6436,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Protect, Reflectable, Mirror, IgnoreSubstitute, AnimateAlly
 Description:
-A strong wind blows away the target’s barriers such as Reflect or Light Screen. This also lowers the target’s Evasiveness.
+A strong wind blows away the target’s barriers such as Reflect or Light Screen. This also lowers the target’s Evasiveness. Z: +2 Speed
 
 ID: 433
 Name: Trick Room
@@ -6451,7 +6451,7 @@ Z-Power: 0
 Z-Effect: +1 Special Attack
 Flags: Mirror
 Description:
-The user creates a bizarre area in which slower Pokémon get to move first for five turns.
+The user creates a bizarre area in which slower Pokémon get to move first for five turns. Z: +1 Sp.Atk
 
 ID: 434
 Name: Draco Meteor
@@ -6526,7 +6526,7 @@ Z-Power: 160
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user violently whirls its vines, tentacles, or the like to harshly lash the target.
+The user violently whirls its vines, tentacles, or the like to harshly lash the target. The target may also be covered in a sapping leech seed. (15%)
 
 ID: 439
 Name: Rock Wrecker
@@ -6601,7 +6601,7 @@ Z-Power: 50
 Z-Effect: +1 Attack
 Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
-The user launches steel bombs that stick to the target. This attack never misses. (Bullet, Pulse)
+The user launches steel bombs that stick to the target. This attack never misses. (Bullet, Pulse) Z: +1 Attack
 
 ID: 444
 Name: Stone Edge
@@ -6631,7 +6631,7 @@ Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: Protect, Reflectable, Mirror
 Description:
-If the opposing Pokémon is the opposite gender of the user, it is charmed, which harshly lowers its Sp. Atk stat.
+If the opposing Pokémon is the opposite gender of the user, it is charmed, which harshly lowers its Sp. Atk stat. Z: +2 Sp.Def
 
 ID: 446
 Name: Stealth Rock
@@ -6645,7 +6645,7 @@ Z-Power: 0
 Z-Effect: +2 Defense
 Flags: Reflectable, Snatch
 Description:
-The user lays a trap of levitating stones around the opposing team. The trap damages enemy Pokémon that enter the field based on their matchup to Rock-Types.
+The user lays a trap of levitating stones around the opposing team that damage enemy Pokémon that swap in based on their matchup to Rock-Types. Z: +2 Def
 
 ID: 447
 Name: Grass Knot
@@ -6675,7 +6675,7 @@ Z-Power: 100
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, Sound, DistanceTriple, IgnoreSubstitute, AnimateAlly
 Description:
-The user attacks everyone with sound waves of deafening chatter. This may confuse the targets. (20%, Sound)
+The user attacks all foes with sound waves of deafening chatter. This may confuse the targets. (20%, Sound) Z: +1 Sp.Atk
 
 ID: 449
 Name: Judgment
@@ -6689,7 +6689,7 @@ Z-Power: 200
 Z-Effect: None
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user releases countless shots of light at the target. This move’s type varies depending on the kind of Plate the user is holding.
+The user releases countless shots of light at the targets. This move’s type varies depending on the kind of Plate the user is holding.
 
 ID: 450
 Name: Bug Bite
@@ -6748,7 +6748,7 @@ Z-Power: 90
 Z-Effect: +1 Speed
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user lunges at the target at a speed that makes it almost invisible. This move always goes first.
+The user lunges at the target at a speed that makes it almost invisible. This move always goes first. (+1 Priority) Z: +1 Speed
 
 ID: 454
 Name: Attack Order
@@ -6764,7 +6764,7 @@ Z-Power: 75
 Z-Effect: +2 Speed
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user calls out its underlings to pummel the target three times. Critical hits land more easily.(+1 Crit)
+The user calls out its underlings to pummel the target three times. Critical hits land more easily. (+1 Crit) Z: +2 Speed
 
 ID: 455
 Name: Defend Order
@@ -6780,7 +6780,7 @@ Z-Power: 0
 Z-Effect: makes the user the center of attention
 Flags: Snatch, AnimateAlly
 Description:
-The user calls out its underlings to shield its allies, raising their Defense and Sp. Def stats.
+The user calls out its underlings to shield itself and its allies, raising their Defense and Sp. Def stats. Z: Draws in all attacks.
 
 ID: 456
 Name: Heal Order
@@ -6825,7 +6825,7 @@ Z-Power: 60
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
-The user slams the target with a long tail, vines, or a fist. The target is hit twice in a row. (Punch)
+The user slams the target with a long tail, vines, or a fist. The target is hit twice in a row. (Punch) Z: +1 Attack
 
 ID: 459
 Name: Steel Beam
@@ -6855,7 +6855,7 @@ Z-Power: 150
 Z-Effect: None
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user tears the target along with the space around it. Critical hits land more easily.(+1 Crit)
+The user tears the target along with the space around it. Critical hits land more easily. (+1 Crit)
 
 ID: 461
 Name: Lunar Dance
@@ -6869,7 +6869,7 @@ Z-Power: 0
 Z-Effect: +1 to all (except Accuracy or Evasiveness)
 Flags: Snatch, Heal, Dance
 Description:
-The user faints. In return, the Pokémon taking its place will have its status and HP fully restored.
+The user faints. In return, the Pokémon taking its place will have its status and HP fully restored. Z: +1 All Stats if no allies are left to swap in.
 
 ID: 462
 Name: Crush Grip
@@ -6915,7 +6915,7 @@ Z-Power: 0
 Z-Effect: resets lowered stats of the user
 Flags: Protect, Reflectable, Mirror
 Description:
-Opposing Pokémon are dragged into a world of total darkness that makes them sleep.
+Opposing Pokémon are dragged into a world of total darkness that makes them sleep. Z: Resets lowered stats
 
 ID: 465
 Name: Seed Flare
@@ -6930,7 +6930,7 @@ Z-Power: 170
 Z-Effect: None
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user emits a shock wave from its body to attack its target. This may also harshly lower the target’s Sp. Def stat.
+The user emits a shock wave from its body to attack its target. This may also harshly lower the target’s Sp. Def stat. (40%)
 
 ID: 466
 Name: Ominous Wind
@@ -6976,7 +6976,7 @@ Z-Power: 0
 Z-Effect: raises critical-hit ratio two stages
 Flags: Snatch
 Description:
-The user sharpens its claws to boost its Attack stat and Accuracy.
+The user sharpens its claws to boost its Attack stat and Accuracy. Z: +2 Crit Stages
 
 ID: 469
 Name: Wide Guard
@@ -6991,7 +6991,7 @@ Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: Snatch
 Description:
-The user and its allies are protected from wide-ranging attacks for one turn. (+3 Priority)
+The user and its allies are protected from wide-ranging attacks for one turn. (+3 Priority) Z: Sp.Def +2
 
 ID: 470
 Name: Guard Split
@@ -7005,7 +7005,7 @@ Z-Power: 0
 Z-Effect: +3 Special Defense
 Flags: Protect, AnimateAlly
 Description:
-The user employs its psychic power to average its Defense and Sp. Def stats with those of the target.
+The user employs its psychic power to average its Defense and Sp. Def stats with those of the target. Z: Sp.Def +3
 
 ID: 471
 Name: Power Split
@@ -7019,7 +7019,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Protect, AnimateAlly
 Description:
-The user employs its psychic power to average its Attack and Sp. Atk stats with those of the target.
+The user employs its psychic power to average its Attack and Sp. Atk stats with those of the target. Z: Speed +2
 
 ID: 472
 Name: Wonder Room
@@ -7034,7 +7034,7 @@ Z-Power: 0
 Z-Effect: +3 Defense
 Flags: Mirror
 Description:
-The user creates a bizarre area in which Pokémon’s Defense and Sp. Def stats are swapped for five turns. (+1 Priority)
+The user creates a bizarre area in which Pokémon’s Defense and Sp. Def stats are swapped for five turns. (+1 Priority) Z: Defense +3
 
 ID: 473
 Name: Psyshock
@@ -7077,7 +7077,7 @@ Z-Power: 0
 Z-Effect: +3 Speed
 Flags: Snatch
 Description:
-The user sheds part of its body to make itself lighter and sharply raise its Speed stat.
+The user sheds part of its body to make itself lighter and sharply raise its Speed stat. Z: +3 Speed
 
 ID: 476
 Name: Rage Powder
@@ -7091,7 +7091,7 @@ Priority: 2
 Z-Power: 0
 Z-Effect: +1 Special Defense
 Description:
-The user scatters a cloud of irritating powder to draw attention to itself. Opponents aim only at the user. (+2 Priority)
+The user scatters a cloud of irritating powder to draw attention to itself. Opponents aim only at the user. (+2 Priority) Z: +1 Sp.Def
 
 ID: 477
 Name: Telekinesis
@@ -7107,7 +7107,7 @@ Z-Power: 0
 Z-Effect: +2 Special Attack
 Flags: Protect, Reflectable, Mirror, Gravity, AnimateAlly
 Description:
-The user makes the target float with its psychic power. The target is easier to hit for three turns.
+The user makes the targets float with its psychic power. The targets are easier to hit for three turns. Z: +2 Sp.Atk
 
 ID: 478
 Name: Magic Room
@@ -7122,7 +7122,7 @@ Z-Power: 0
 Z-Effect: +2 Special Attack
 Flags: Mirror
 Description:
-The user creates a bizarre area in which Pokémon’s held items lose their effects for five turns. (+1 Priority)
+The user creates a bizarre area in which Pokémon’s held items lose their effects for five turns. (+1 Priority) Z: +2 Sp.Atk
 
 ID: 479
 Name: Smack Down
@@ -7133,9 +7133,9 @@ Type: Rock
 Targeting: Single Adjacent Ally/Foe
 Inflict: Special (100%)
 Base PP: 15
-Z-Power: 100
-Z-Effect: None
-Flags: Protect, Mirror, FailSkyBattle, Ballistic
+Z-Power: 35
+Z-Effect: +2 Attack
+Flags: Protect, Mirror, FailSkyBattle, AnimateAlly, Ballistic, Pulse
 Description:
 The user throws a stone or similar projectile to attack an opponent. A flying Pokémon will fall to the ground when it’s hit. (Bullet)
 
@@ -7148,9 +7148,9 @@ Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Crit Stage(s): 6
-Z-Power: 120
+Z-Power: 130
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user strikes the target with a fierce blow. This attack always results in a critical hit.
 
@@ -7165,7 +7165,7 @@ Base PP: 15
 Hits: Min 2 / Max 5
 Z-Power: 130
 Z-Effect: None
-Flags: Protect, Mirror, Pulse
+Flags: Protect, Mirror, AnimateAlly, Pulse
 Description:
 The user attacks the target with a bursting flame 2-5 times. The bursting flame damages Pokémon next to the target as well by 1/16 HP per hit. (Pulse)
 
@@ -7178,7 +7178,7 @@ Type: Poison
 Targeting: Everyone but User
 Inflict: Poison (10%)
 Base PP: 5
-Z-Power: 190
+Z-Power: 155
 Z-Effect: None
 Flags: Protect, Mirror
 Description:
@@ -7209,7 +7209,7 @@ Accuracy: 100
 Type: Steel
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
+Z-Power: 140
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, FailSkyBattle
 Description:
@@ -7223,9 +7223,9 @@ Accuracy: 100
 Type: Normal
 Targeting: Everyone but User
 Base PP: 5
-Z-Power: 200
+Z-Power: 180
 Z-Effect: None
-Flags: Protect, Mirror, Sound, IgnoreSubstitute
+Flags: Protect, Mirror, Sound, IgnoreSubstitute, AnimateAlly
 Description:
 Using an odd sound wave, the user inflicts damage on any Pokémon of the same type in the area around it. (Sound)
 
@@ -7237,9 +7237,9 @@ Accuracy: 100
 Type: Electric
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
-Z-Effect: None
-Flags: Protect, Mirror, Ballistic, Pulse
+Z-Power: 40
+Z-Effect: +2 Speed
+Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
 The user hurls an electric orb at the target. The faster the user is than the target, the greater the move’s power. (40 - 150 Power, Bullet, Pulse)
 
@@ -7252,7 +7252,7 @@ Type: Water
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
 Z-Power: 0
-Z-Effect: +1 Special Attack
+Z-Effect: +1 Speed
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
 The user shoots a torrent of water at the target and changes the target’s type to Water.
@@ -7266,9 +7266,9 @@ Type: Fire
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Stat Change: Speed -> 1 (100%)
-Z-Power: 100
-Z-Effect: None
-Flags: MakesContact, Protect, Mirror, Defrost
+Z-Power: 90
+Z-Effect: +1 Speed
+Flags: MakesContact, Protect, Mirror, Defrost, AnimateAlly
 Description:
 Cloaking itself in flame, the user attacks. This, move raises the user's Speed.
 
@@ -7298,9 +7298,9 @@ Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Stat Change: Speed -> -1 (100%)
-Z-Power: 120
+Z-Power: 115
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user makes a swift attack on the target’s legs, which lowers the target’s Speed stat.
 
@@ -7313,9 +7313,9 @@ Type: Poison
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Special Defense -> -2 (100%)
-Z-Power: 100
-Z-Effect: None
-Flags: Protect, Mirror, Ballistic, Pulse
+Z-Power: 70
+Z-Effect: +1 Special Attack
+Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
 The user spits fluid that works to melt the target. This harshly lowers the target’s Sp. Def stat. (Bullet, Pulse)
 
@@ -7327,9 +7327,9 @@ Accuracy: 100
 Type: Dark
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 175
+Z-Power: 145
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user turns the target’s power against it. The higher the target’s Attack stat, the greater the move’s power.
 
@@ -7384,9 +7384,9 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 120
-Z-Effect: None
-Flags: Protect, Mirror, Sound, IgnoreSubstitute
+Z-Power: 50
+Z-Effect: +1 Special Attack
+Flags: Protect, Mirror, Sound, IgnoreSubstitute, AnimateAlly
 Description:
 The user attacks the target with a song. Others can use Round too to double the power of the attacks. (Sound)
 
@@ -7400,7 +7400,7 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Z-Power: 115
 Z-Effect: None
-Flags: Protect, Mirror, Sound, IgnoreSubstitute
+Flags: Protect, Mirror, Sound, IgnoreSubstitute, AnimateAlly
 Description:
 The user attacks the target with an echoing voice. If this move is used every turn, by ANY Pokémon, its power is increased. (40 - 80 - 120 - 160 - 200 Power) (Sound)
 
@@ -7412,9 +7412,9 @@ Accuracy: 100
 Type: Rock
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
-Z-Power: 140
-Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Z-Power: 70
+Z-Effect: +1 Attack
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 Looking for an opening, the user strikes consistently. The target’s Def and Evasion changes don’t affect this attack’s damage.
 
@@ -7427,8 +7427,8 @@ Type: Poison
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Z-Power: 100
-Z-Effect: None
-Flags: Protect, Mirror
+Z-Effect: resets lowered stats of the user
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user attacks by spewing a clump of special gases. All stat changes are returned to normal. This move cannot miss.
 
@@ -7440,9 +7440,9 @@ Accuracy: 100
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
-Z-Effect: None
-Flags: Protect, Mirror
+Z-Power: 115
+Z-Effect: resets lowered stats of the user
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user attacks the target with stored energy. The more the user’s stats are raised, the greater the move’s power. (+20 Power per raised stat)
 
@@ -7456,7 +7456,7 @@ Targeting: User's Field
 Base PP: 5
 Priority: 3
 Z-Power: 0
-Z-Effect: makes the user the center of attention
+Z-Effect: raises critical-hit ratio two stages
 Flags: Snatch
 Description:
 The user protects itself and its allies from priority moves. (+3 Priority)
@@ -7471,7 +7471,7 @@ Targeting: Self
 Base PP: 5
 Priority: 2
 Z-Power: 0
-Z-Effect: +2 Defense
+Z-Effect: recovers all of user's HP
 Flags: Snatch
 Description:
 The user teleports using a strange power and switches places with one of its allies. (+2 Priority)
@@ -7485,9 +7485,9 @@ Type: Water
 Targeting: Single Adjacent Ally/Foe
 Inflict: Burn (30%)
 Base PP: 15
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
-Flags: Protect, Mirror, Defrost
+Flags: Protect, Mirror, Defrost, AnimateAlly
 Description:
 The user shoots boiling hot water at its target. This may also leave the target with a burn. (30%)
 
@@ -7528,9 +7528,9 @@ Accuracy: 100
 Type: Ghost
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
-Z-Effect: None
-Flags: Protect, Mirror
+Z-Power: 75
+Z-Effect: +2 Special Defense
+Flags: Protect, Mirror, AnimateAlly
 Description:
 This relentless attack does double damage to a target affected by major status conditions.
 
@@ -7542,9 +7542,9 @@ Accuracy: 100
 Type: Flying
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 150
-Z-Effect: None
-Flags: MakesContact, Charge, Protect, Mirror, Gravity, DistanceTriple
+Z-Power: 100
+Z-Effect: +1 Attack
+Flags: MakesContact, Charge, Protect, Mirror, Gravity, DistanceTriple, AnimateAlly
 Description:
 The user takes the target into the sky, then drops it during the next turn. The target cannot attack while in the sky. Heavy Pokémon can't be lifted.
 
@@ -7573,9 +7573,9 @@ Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Priority: -6
-Z-Power: 120
-Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Z-Power: 75
+Z-Effect: +2 Defense
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The target is thrown, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority)
 
@@ -7587,7 +7587,7 @@ Accuracy: 100
 Type: Fire
 Targeting: All Foes
 Base PP: 15
-Z-Power: 140
+Z-Power: 120
 Z-Effect: None
 Flags: Protect, Mirror, Defrost, Pulse
 Description:
@@ -7603,7 +7603,7 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 5
 Z-Power: 0
 Z-Effect: +2 Speed
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user suppresses the target and makes its move go last.
 
@@ -7615,9 +7615,9 @@ Accuracy: 100
 Type: Flying
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 140
+Z-Power: 135
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, DistanceTriple, Dance
+Flags: MakesContact, Protect, Mirror, DistanceTriple, AnimateAlly, Dance
 Description:
 The user nimbly strikes the target. If the user is not holding an item, this attack inflicts double damage. (Dance)
 
@@ -7626,7 +7626,7 @@ Name: Reflect Type
 Category: Status
 Power: 0
 Accuracy: 101
-Type: Normal
+Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Priority: 1
@@ -7644,9 +7644,9 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 140
+Z-Power: 150
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user gets revenge for a fainted ally. If an ally fainted in the previous turn, this move’s power is doubled.
 
@@ -7660,7 +7660,7 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 5
 Z-Power: 180
 Z-Effect: None
-Flags: Protect
+Flags: Protect, AnimateAlly
 Description:
 The user risks everything to attack its target. The user faints but does damage equal to its HP.
 
@@ -7702,9 +7702,9 @@ Accuracy: 100
 Type: Water
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
-Flags: Protect, Mirror, FailSkyBattle
+Flags: Protect, Mirror, FailSkyBattle, AnimateAlly
 Description:
 A column of water strikes the target. When combined with its fire equivalent, its power increases and a rainbow appears that doubles ally secondary effect chance.
 
@@ -7716,9 +7716,9 @@ Accuracy: 100
 Type: Fire
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
-Flags: Protect, Mirror, Defrost, FailSkyBattle
+Flags: Protect, Mirror, Defrost, FailSkyBattle, AnimateAlly
 Description:
 A column of fire hits the target. When used with its grass equivalent, its power increases and a vast sea of fire appears that damages non-Fire foes for 1/8 per turn.
 
@@ -7730,9 +7730,9 @@ Accuracy: 100
 Type: Grass
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
-Flags: Protect, Mirror, FailSkyBattle
+Flags: Protect, Mirror, FailSkyBattle, AnimateAlly
 Description:
 A column of grass hits the target. When used with its water equivalent, its power increases and a vast swamp appears that quarters grounded enemy Speed stats.
 
@@ -7744,7 +7744,7 @@ Accuracy: 100
 Type: Electric
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 140
+Z-Power: 120
 Z-Effect: None
 Flags: Protect, Mirror
 Description:
@@ -7759,9 +7759,9 @@ Type: Bug
 Targeting: All Foes
 Base PP: 20
 Stat Change: Special Attack -> -1 (100%)
-Z-Power: 110
-Z-Effect: None
-Flags: Protect, Mirror
+Z-Power: 90
+Z-Effect: +1 Special Defense
+Flags: Protect, Mirror, AnimateAlly
 Description:
 While resisting, the user attacks the opposing Pokémon. This lowers the Sp. Atk stat of those hit.
 
@@ -7774,7 +7774,7 @@ Type: Ground
 Targeting: Everyone but User
 Base PP: 20
 Stat Change: Speed -> -1 (100%)
-Z-Power: 120
+Z-Power: 110
 Z-Effect: None
 Flags: Protect, Mirror, FailSkyBattle
 Description:
@@ -7790,7 +7790,7 @@ Targeting: Single Adjacent Ally/Foe
 Inflict: None (100%)
 Base PP: 10
 Crit Stage(s): 6
-Z-Power: 120
+Z-Power: 130
 Z-Effect: None
 Flags: Protect, Mirror
 Description:
@@ -7805,9 +7805,9 @@ Type: Dragon
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Priority: -6
-Z-Power: 120
-Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Z-Power: 75
+Z-Effect: +2 Special Defense
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The target is knocked away, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority)
 
@@ -7836,7 +7836,7 @@ Type: Electric
 Targeting: All Foes
 Base PP: 15
 Stat Change: Speed -> -1 (100%)
-Z-Power: 100
+Z-Power: 110
 Z-Effect: None
 Flags: Protect, Mirror
 Description:
@@ -7851,10 +7851,10 @@ Type: Electric
 Targeting: Single Adjacent Ally/Foe
 Inflict: Paralyze (10%)
 Base PP: 15
-Z-Power: 190
+Z-Power: 160
 Z-Effect: None
 Recoil: -33
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user shrouds itself in electricity and smashes into its target. This also damages the user 33% of damage dealt. This may paralyze the target. (10%)
 
@@ -7867,9 +7867,9 @@ Type: Ground
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Crit Stage(s): 1
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user crashes into its target while rotating its body like a drill. Critical hits land more easily.(+1 Crit)
 
@@ -7884,7 +7884,7 @@ Base PP: 15
 Hits: Min 2 / Max 5
 Z-Power: 140
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, Punch
+Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
 The user attacks its target by hitting it with brutal strikes. The target is hit 2-5 times in a row. (Punch)
 
@@ -7899,9 +7899,9 @@ Inflict: Attract (20%)
 Base PP: 20
 Flinch Chance: 20%
 Effect Turns: Min 2 / Max 4
-Z-Power: 120
+Z-Power: 110
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user unleashes a vicious blow after its cute act makes the target less wary. This may also make the target flinch (20%) or infatuate it for 2-4 turns. (20%)
 
@@ -7913,10 +7913,10 @@ Accuracy: 100
 Type: Grass
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 140
+Z-Power: 125
 Z-Effect: None
 Recoil: 50
-Flags: MakesContact, Protect, Mirror, Heal
+Flags: MakesContact, Protect, Mirror, Heal, AnimateAlly
 Description:
 The user drains the target’s energy with its horns. The user’s HP is restored by half the damage taken by the target.
 
@@ -7928,9 +7928,9 @@ Accuracy: 100
 Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 175
+Z-Power: 140
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user attacks by slicing with a long horn. The target’s stat changes don’t affect this attack’s damage.
 
@@ -7943,9 +7943,9 @@ Type: Water
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Defense -> -1 (50%)
-Z-Power: 140
-Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Z-Power: 80
+Z-Effect: +1 Attack
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user cuts its target with sharp shells. This may also lower the target’s Defense stat. (50%)
 
@@ -7957,9 +7957,9 @@ Accuracy: 100
 Type: Fire
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
-Z-Effect: None
-Flags: MakesContact, Protect, Mirror, Defrost, FailSkyBattle
+Z-Power: 80
+Z-Effect: +2 Defense
+Flags: MakesContact, Protect, Mirror, Defrost, FailSkyBattle, AnimateAlly
 Description:
 The user slams its target with its flame-covered body. The more the user outweighs the target, the greater the move’s power. (40 - 120 Power)
 
@@ -7973,9 +7973,9 @@ Targeting: Single Adjacent Ally/Foe
 Inflict: Capture (100%)
 Base PP: 10
 Effect Turns: Min 5 / Max 6
-Z-Power: 150
-Z-Effect: None
-Flags: Protect, Mirror
+Z-Power: 80
+Z-Effect: raises critical-hit ratio two stages
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user attacks its target by encircling it in sharp leaves. The target is trapped and damaged for 4-5 turns.
 
@@ -7988,9 +7988,9 @@ Type: Bug
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Flinch Chance: 30%
-Z-Power: 145
-Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Z-Power: 105
+Z-Effect: +1 Speed
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user crushes its target by rolling over the target with its rolled-up body. This may also make the target flinch. (30%)
 
@@ -8004,7 +8004,7 @@ Targeting: Self
 Base PP: 10
 Stat Change: Defense -> 3 (0%)
 Z-Power: 0
-Z-Effect: resets lowered stats of the user
+Z-Effect: makes the user the center of attention
 Flags: Snatch
 Description:
 The user protects itself by wrapping its body in soft cotton, which drastically raises the user’s Defense stat.
@@ -8018,23 +8018,24 @@ Type: Dark
 Targeting: Single Adjacent Ally/Foe
 Inflict: Nightmare (100%)
 Base PP: 5
-Z-Power: 190
+Z-Power: 155
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user lets loose a pitch-black shock wave at its target. If the target is Asleep, it will suffer terrible Nightmares, dealing 25% HP per turn.
 
 ID: 540
 Name: Psystrike
 Category: Special
-Power: 100
+Power: 50
 Accuracy: 100
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 180
+Hits: Min 2 / Max 2
+Z-Power: 150
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user materializes an odd psychic wave to attack the target. This attack does physical damage.
 
@@ -8049,7 +8050,7 @@ Base PP: 10
 Hits: Min 2 / Max 5
 Z-Power: 140
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user attacks by striking the target with its hard tail. It hits the target two to five times in a row.
 
@@ -8063,9 +8064,9 @@ Targeting: Single Adjacent Ally/Foe
 Inflict: Confusion (30%)
 Base PP: 10
 Effect Turns: Min 2 / Max 5
-Z-Power: 185
+Z-Power: 155
 Z-Effect: None
-Flags: Protect, Mirror, DistanceTriple
+Flags: Protect, Mirror, DistanceTriple, AnimateAlly
 Description:
 The user attacks by wrapping its opponent in a fierce wind that flies up into the sky. This may also confuse the target. (30%)
 
@@ -8079,9 +8080,9 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 5
 Stat Change: Defense -> -1 (100%)
 Stat Change: Special Defense -> -1 (100%)
-Z-Power: 190
+Z-Power: 160
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, Punch
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user smashes into the target in a full-body tackle. This also lowers the user's defenses. (Punch)
 
@@ -8094,9 +8095,9 @@ Type: Steel
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Hits: Min 2 / Max 2
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user attacks by throwing steel gears at its target twice.
 
@@ -8109,7 +8110,7 @@ Type: Fire
 Targeting: Everyone but User
 Inflict: Burn (30%)
 Base PP: 10
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
 Flags: Protect, Mirror, Defrost, Ballistic
 Description:
@@ -8139,7 +8140,7 @@ Targeting: All Foes
 Inflict: Sleep (15%)
 Base PP: 10
 Effect Turns: Min 2 / Max 4
-Z-Power: 170
+Z-Power: 135
 Z-Effect: None
 Flags: Protect, Mirror, Sound, IgnoreSubstitute, Dance
 Description:
@@ -8153,9 +8154,9 @@ Accuracy: 100
 Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
+Z-Power: 135
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user slices using a hidden technique. This power does physical damage to the target.
 
@@ -8168,9 +8169,9 @@ Type: Ice
 Targeting: Everyone but User
 Base PP: 15
 Stat Change: Speed -> -1 (100%)
-Z-Power: 120
+Z-Power: 110
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user attacks by blowing freezing cold air onto all nearby targets. This lowers their Speed stats.
 
@@ -8183,9 +8184,9 @@ Type: Dragon
 Targeting: Single Adjacent Ally/Foe
 Inflict: Paralyze (20%)
 Base PP: 5
-Z-Power: 195
+Z-Power: 165
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user surrounds itself with a great amount of electricity and charges its target. This may also leave the target with paralysis. (20%)
 
@@ -8198,9 +8199,9 @@ Type: Dragon
 Targeting: Single Adjacent Ally/Foe
 Inflict: Burn (20%)
 Base PP: 5
-Z-Power: 195
+Z-Power: 165
 Z-Effect: None
-Flags: Protect, Mirror, Defrost
+Flags: Protect, Mirror, Defrost, AnimateAlly
 Description:
 The user attacks by engulfing the target in an intense, yet beautiful, blue flame. This may also leave the target with a burn. (20%)
 
@@ -8213,9 +8214,9 @@ Type: Fire
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Special Attack -> 1 (50%)
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
-Flags: Protect, Mirror, Defrost, Dance
+Flags: Protect, Mirror, Defrost, AnimateAlly, Dance
 Description:
 Cloaked in flames, the user dances and flaps its wings. This may also raise the user’s Sp. Atk stat. (50%)
 
@@ -8223,14 +8224,14 @@ ID: 553
 Name: Freeze Shock
 Category: Physical
 Power: 140
-Accuracy: 90
+Accuracy: 100
 Type: Ice
 Targeting: Single Adjacent Ally/Foe
 Inflict: Paralyze (30%)
 Base PP: 5
-Z-Power: 200
-Z-Effect: None
-Flags: Charge, Protect, Mirror
+Z-Power: 100
+Z-Effect: +1 Speed
+Flags: Charge, Protect, Mirror, AnimateAlly
 Description:
 On the second turn, the user hits the target with electrically charged ice. This may also leave the target with paralysis. (30%)
 
@@ -8238,14 +8239,14 @@ ID: 554
 Name: Ice Burn
 Category: Special
 Power: 140
-Accuracy: 90
+Accuracy: 100
 Type: Ice
 Targeting: Single Adjacent Ally/Foe
 Inflict: Burn (30%)
 Base PP: 5
-Z-Power: 200
-Z-Effect: None
-Flags: Charge, Protect, Mirror, Defrost
+Z-Power: 100
+Z-Effect: +1 Speed
+Flags: Charge, Protect, Mirror, Defrost, AnimateAlly
 Description:
 On the second turn, an ultracold, freezing wind surrounds the target. This may leave the target with a burn. (30%)
 
@@ -8258,8 +8259,8 @@ Type: Dark
 Targeting: All Foes
 Base PP: 20
 Stat Change: Special Attack -> -1 (100%)
-Z-Power: 110
-Z-Effect: None
+Z-Power: 90
+Z-Effect: +1 Special Defense
 Flags: Protect, Mirror, Sound, IgnoreSubstitute
 Description:
 The user yells as if it’s ranting about something, which lowers the Sp. Atk stat of opposing Pokémon. (Sound)
@@ -8273,9 +8274,9 @@ Type: Ice
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Flinch Chance: 30%
-Z-Power: 160
+Z-Power: 135
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user attacks by harshly dropping large icicles onto the target. This may also make the target flinch. (30%)
 
@@ -8290,9 +8291,9 @@ Base PP: 5
 Stat Change: Speed -> -1 (100%)
 Stat Change: Defense -> -1 (100%)
 Stat Change: Special Defense -> -1 (100%)
-Z-Power: 220
+Z-Power: 180
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, Defrost
+Flags: MakesContact, Protect, Mirror, Defrost, AnimateAlly
 Description:
 With a hot flame on its forehead, the user hurls itself at its target. This lowers the user’s Defense, Sp. Def, and Speed stats.
 
@@ -8304,9 +8305,9 @@ Accuracy: 100
 Type: Fire
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
-Flags: Protect, Mirror, Defrost
+Flags: Protect, Mirror, Defrost, AnimateAlly
 Description:
 The user brings down a giant flame. This move’s power is doubled when influenced by an enormous lightning bolt.
 
@@ -8318,9 +8319,9 @@ Accuracy: 100
 Type: Electric
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user throws down a giant lightning bolt. This move’s power is doubled when influenced by an enormous flame.
 
@@ -8328,13 +8329,13 @@ ID: 560
 Name: Flying Press
 Category: Physical
 Power: 110
-Accuracy: 95
+Accuracy: 100
 Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 170
+Z-Power: 155
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, Gravity, DistanceTriple, FailSkyBattle
+Flags: MakesContact, Protect, Mirror, Gravity, DistanceTriple, FailSkyBattle, AnimateAlly
 Description:
 The user dives down onto the target from the sky. This move is Fighting and Flying type simultaneously.
 
@@ -8363,7 +8364,7 @@ Targeting: All Foes
 Base PP: 10
 Z-Power: 200
 Z-Effect: None
-Flags: Protect, Sound, IgnoreSubstitute
+Flags: Protect, Sound, IgnoreSubstitute, AnimateAlly
 Description:
 The user lets out a damaging belch at the targets. The user must eat a held Berry to use this move. (Sound)
 
@@ -8406,9 +8407,9 @@ Accuracy: 100
 Type: Bug
 Targeting: Single Adjacent Ally/Foe
 Base PP: 25
-Z-Power: 100
+Z-Power: 105
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 When the user knocks out a target with this move, the user’s Attack stat rises drastically.
 
@@ -8420,9 +8421,9 @@ Accuracy: 100
 Type: Ghost
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 175
+Z-Power: 140
 Z-Effect: None
-Flags: MakesContact, Charge, Mirror
+Flags: MakesContact, Charge, Mirror, AnimateAlly
 Description:
 The user vanishes somewhere, then strikes the target on the next turn. This move hits even if the target protects itself.
 
@@ -8435,7 +8436,7 @@ Type: Ghost
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Z-Power: 0
-Z-Effect: +1 to all (except Accuracy or Evasiveness)
+Z-Effect: +2 Special Defense
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
 The user takes the target trick-or-treating. This adds Ghost type to the target’s type.
@@ -8463,7 +8464,7 @@ Power: 0
 Accuracy: 101
 Type: Electric
 Targeting: Entire Field
-Base PP: 25
+Base PP: 10
 Priority: 1
 Z-Power: 0
 Z-Effect: +2 Special Attack
@@ -8494,7 +8495,7 @@ Type: Grass
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Z-Power: 0
-Z-Effect: +1 to all (except Accuracy or Evasiveness)
+Z-Effect: +2 Defense
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
 The user puts a forest curse on the target. The target is now Grass type as well.
@@ -8507,7 +8508,7 @@ Accuracy: 100
 Type: Grass
 Targeting: Everyone but User
 Base PP: 10
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
 Flags: Protect, Mirror
 Description:
@@ -8522,9 +8523,9 @@ Type: Ice
 Targeting: Single Adjacent Ally/Foe
 Inflict: Freeze (10%)
 Base PP: 15
-Z-Power: 145
+Z-Power: 125
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user rapidly cools the target. This may also leave the target frozen. 10% This move is super effective on Water types.
 
@@ -8536,7 +8537,7 @@ Accuracy: 101
 Type: Fairy
 Targeting: All Foes
 Base PP: 15
-Z-Power: 120
+Z-Power: 110
 Z-Effect: None
 Flags: Protect, Mirror, Sound, IgnoreSubstitute
 Description:
@@ -8554,7 +8555,7 @@ Stat Change: Attack -> -1 (100%)
 Stat Change: Special Attack -> -1 (100%)
 Z-Power: 0
 Z-Effect: recovers all Hp of the Pokémon switching-in (Memento and Parting Shot)
-Flags: Protect, Reflectable, Mirror, Sound, IgnoreSubstitute
+Flags: Protect, Reflectable, Mirror, Sound, IgnoreSubstitute, AnimateAlly
 Description:
 With a parting threat, the user lowers the target’s Attack and Sp. Atk stats. Then it switches with a party Pokémon. (Sound)
 
@@ -8567,7 +8568,7 @@ Type: Dark
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Z-Power: 0
-Z-Effect: resets lowered stats of the user
+Z-Effect: raises critical-hit ratio two stages
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
 All stat changes affecting the target turn topsy-turvy and become the opposite of what they were.
@@ -8580,10 +8581,10 @@ Accuracy: 100
 Type: Fairy
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 140
+Z-Power: 125
 Z-Effect: None
 Recoil: 50
-Flags: MakesContact, Protect, Mirror, Heal
+Flags: MakesContact, Protect, Mirror, Heal, AnimateAlly
 Description:
 The user steals the target’s HP with a kiss. The user’s HP is restored by over half of the damage taken by the target.
 
@@ -8656,7 +8657,7 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 1
 Priority: 1
 Z-Power: 0
-Z-Effect: +1 Speed
+Z-Effect: makes the user the center of attention
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
 If the target is electrified before it uses a move during that turn, the target’s move becomes Electric type. This usually moves first. (+1 Priority)
@@ -8670,9 +8671,9 @@ Type: Fairy
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Attack -> -1 (10%)
-Z-Power: 175
+Z-Power: 140
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user plays rough with the target and attacks it. This may also lower the target’s Attack stat. (10%)
 
@@ -8688,7 +8689,7 @@ Base PP: 25
 Effect Turns: Min 2 / Max 4
 Z-Power: 100
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user stirs up a fairy wind and strikes the target with it. This may infatuate an opponent for 2-4 turns. (30%)
 
@@ -8701,9 +8702,9 @@ Type: Fairy
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Stat Change: Special Attack -> -1 (30%)
-Z-Power: 175
+Z-Power: 140
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 Borrowing the power of the moon, the user attacks the target. This may also lower the target’s Sp. Atk stat. (30%)
 
@@ -8715,7 +8716,7 @@ Accuracy: 100
 Type: Normal
 Targeting: Everyone but User
 Base PP: 5
-Z-Power: 185
+Z-Power: 165
 Z-Effect: None
 Flags: Protect, Mirror, Sound, IgnoreSubstitute
 Description:
@@ -8763,8 +8764,8 @@ Base PP: 10
 Stat Change: Special Attack -> -1 (100%)
 Effect Turns: Min 2 / Max 4
 Z-Power: 0
-Z-Effect: +2 Attack
-Flags: Reflectable, Snatch, Mirror, IgnoreSubstitute
+Z-Effect: +2 Special Defense
+Flags: Reflectable, Snatch, Mirror, IgnoreSubstitute, AnimateAlly
 Description:
 The user and the target become friends, and the target loses its will to fight. This lowers the target’s Sp.Atk stat and infatuates for 2-4 turns.
 
@@ -8780,7 +8781,7 @@ Stat Change: Special Attack -> -1 (100%)
 Stat Change: Special Defense -> -1 (100%)
 Z-Power: 0
 Z-Effect: +1 Special Attack
-Flags: Reflectable, Mirror, Sound, IgnoreSubstitute
+Flags: Reflectable, Mirror, Sound, IgnoreSubstitute, AnimateAlly
 Description:
 The user tells the target a secret, and the target loses its ability to concentrate. This lowers the target’s Sp.Atk and Sp. Def stats. (Sound)
 
@@ -8793,9 +8794,9 @@ Type: Rock
 Targeting: All Foes
 Base PP: 5
 Stat Change: Defense -> 1 (30%)
-Z-Power: 180
+Z-Power: 155
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user whips up a storm of diamonds to damage opposing Pokémon. This may also raise the user’s Defense stat. (30%)
 
@@ -8808,23 +8809,23 @@ Type: Water
 Targeting: Single Adjacent Ally/Foe
 Inflict: Burn (30%)
 Base PP: 5
-Z-Power: 185
+Z-Power: 155
 Z-Effect: None
-Flags: Protect, Mirror, Defrost
+Flags: Protect, Mirror, Defrost, AnimateAlly
 Description:
 The user immerses the target in superheated steam. This may also leave the target with a burn. (30%)
 
 ID: 593
 Name: Hyperspace Hole
 Category: Special
-Power: 80
+Power: 100
 Accuracy: 101
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 160
+Z-Power: 150
 Z-Effect: None
-Flags: Mirror, IgnoreSubstitute
+Flags: Mirror, IgnoreSubstitute, AnimateAlly
 Description:
 Using a hyperspace hole, the user appears right next to the target and strikes. This also hits a target using a move such as Protect or Detect.
 
@@ -8838,9 +8839,9 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Priority: 1
 Hits: Min 2 / Max 5
-Z-Power: 120
-Z-Effect: None
-Flags: Protect, Mirror
+Z-Power: 70
+Z-Effect: +1 Special Attack
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user hits the target with throwing stars two to five times in a row. This move always goes first. (+1 Priority)
 
@@ -8853,9 +8854,9 @@ Type: Fire
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Special Attack -> -1 (100%)
-Z-Power: 140
-Z-Effect: None
-Flags: Protect, Mirror, Defrost
+Z-Power: 70
+Z-Effect: +1 Special Attack
+Flags: Protect, Mirror, Defrost, AnimateAlly
 Description:
 The user attacks by breathing a special, hot fire. This also lowers the target’s Sp. Atk stat.
 
@@ -8869,7 +8870,7 @@ Targeting: Self
 Base PP: 5
 Priority: 4
 Z-Power: 0
-Z-Effect: +1 Defense
+Z-Effect: +2 Defense
 Flags: Snatch
 Description:
 In addition to protecting the user from attacks, this move also damages any attacker who makes direct contact by 1/8 of their Max HP.
@@ -8885,7 +8886,7 @@ Base PP: 10
 Stat Change: Special Defense -> 1 (0%)
 Z-Power: 0
 Z-Effect: +2 Defense
-Flags: IgnoreSubstitute
+Flags: IgnoreSubstitute, AnimateAlly
 Description:
 The user raises the Sp. Def stats of ally Pokémon by using a mysterious aroma.
 
@@ -8900,7 +8901,7 @@ Base PP: 5
 Stat Change: Special Attack -> -2 (0%)
 Z-Power: 0
 Z-Effect: +2 Special Defense
-Flags: Protect, Reflectable, Mirror
+Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
 The user’s body generates an eerie impulse. Exposing the target to it harshly lowers the target’s Sp. Atk stat.
 
@@ -8917,7 +8918,7 @@ Stat Change: Special Attack -> -1 (100%)
 Stat Change: Speed -> -1 (100%)
 Z-Power: 0
 Z-Effect: +2 Defense
-Flags: Protect, Reflectable, Mirror
+Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
 Opposing Pokémon are drenched in an odd poisonous liquid. This lowers the Attack, Sp. Atk, and Speed stats of a poisoned target.
 
@@ -9007,7 +9008,7 @@ Type: Fairy
 Targeting: All Foes
 Base PP: 15
 Stat Change: Evasion -> -1 (25%)
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
 Flags: Protect, Mirror
 Description:
@@ -9067,7 +9068,7 @@ Inflict: Paralyze (100%)
 Base PP: 20
 Z-Power: 100
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user attacks by nuzzling its electrified cheeks against the target. This also leaves the target with paralysis.
 
@@ -9079,9 +9080,9 @@ Accuracy: 100
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 200
+Z-Power: 150
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user holds back when it attacks, and the target is left with at least 1 HP.
 
@@ -9095,9 +9096,9 @@ Targeting: Single Adjacent Ally/Foe
 Inflict: Capture (100%)
 Base PP: 20
 Effect Turns: Min 5 / Max 6
-Z-Power: 110
-Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Z-Power: 75
+Z-Effect: +2 Defense
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The target is infested and attacked for four to five turns. The target can’t flee during this time. The infestation deals 1/8HP per turn.
 
@@ -9124,10 +9125,10 @@ Accuracy: 100
 Type: Flying
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
 Recoil: 75
-Flags: Protect, Mirror, DistanceTriple, Heal
+Flags: Protect, Mirror, DistanceTriple, Heal, AnimateAlly
 Description:
 The user absorbs its target’s HP. The user’s HP is restored by over half of the damage taken by the target.
 
@@ -9140,7 +9141,7 @@ Type: Ground
 Targeting: All Foes
 Inflict: Special (100%)
 Base PP: 10
-Z-Power: 180
+Z-Power: 140
 Z-Effect: None
 Flags: Protect, Mirror, FailSkyBattle
 Description:
@@ -9154,7 +9155,7 @@ Accuracy: 100
 Type: Ground
 Targeting: All Foes
 Base PP: 10
-Z-Power: 175
+Z-Power: 140
 Z-Effect: None
 Flags: Protect, Mirror, FailSkyBattle
 Description:
@@ -9168,9 +9169,9 @@ Accuracy: 75
 Type: Ground
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 190
+Z-Power: 160
 Z-Effect: None
-Flags: Protect, Mirror, FailSkyBattle
+Flags: Protect, Mirror, FailSkyBattle, AnimateAlly
 Description:
 The user gathers the energy of the land and focuses that power on an opposing Pokémon to damage them.
 
@@ -9182,10 +9183,10 @@ Accuracy: 90
 Type: Ghost
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 200
+Z-Power: 170
 Z-Effect: None
 Recoil: -50
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 Drawing power from the Eternal Flower, the user fires a powerful beam of light. This also damages the user quite a lot.
 
@@ -9197,7 +9198,7 @@ Accuracy: 85
 Type: Water
 Targeting: All Foes
 Base PP: 10
-Z-Power: 185
+Z-Power: 155
 Z-Effect: None
 Flags: Protect, Mirror, Pulse
 Description:
@@ -9211,7 +9212,7 @@ Accuracy: 85
 Type: Ground
 Targeting: All Foes
 Base PP: 10
-Z-Power: 190
+Z-Power: 160
 Z-Effect: None
 Flags: Protect, Mirror, FailSkyBattle
 Description:
@@ -9227,9 +9228,9 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 5
 Stat Change: Defense -> -1 (100%)
 Stat Change: Special Defense -> -1 (100%)
-Z-Power: 190
+Z-Power: 160
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, DistanceTriple
+Flags: MakesContact, Protect, Mirror, DistanceTriple, AnimateAlly
 Description:
 After soaring upward, the user attacks its target by dropping out of the sky at high speeds. But it lowers its own Defense and Sp. Def stats in the process.
 
@@ -9242,9 +9243,9 @@ Type: Dark
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
 Stat Change: Defense -> -1 (100%)
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
-Flags: Mirror, IgnoreSubstitute
+Flags: Mirror, IgnoreSubstitute, AnimateAlly
 Description:
 Using its many arms, the user unleashes a barrage of attacks that ignore the effects of moves like Protect and Detect. But the user’s Defense stat falls.
 
@@ -9683,7 +9684,7 @@ Using its special resonance with this particular Z-Crystal, the user is able to 
 ID: 658
 Name: Catastropika
 Category: Physical
-Power: 170
+Power: 190
 Accuracy: 101
 Type: Electric
 Targeting: Single Adjacent Ally/Foe
@@ -9719,9 +9720,9 @@ Type: Bug
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Priority: 2
-Z-Power: 175
+Z-Power: 140
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 Although this move has great power, it only works the first turn the user is in battle.
 
@@ -9748,9 +9749,9 @@ Accuracy: 100
 Type: Ghost
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
+Z-Power: 135
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user attacks while simultaneously stitching the target’s shadow to the ground to prevent the target from escaping.
 
@@ -9762,9 +9763,9 @@ Accuracy: 100
 Type: Dark
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
+Z-Power: 135
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user swings both arms and hits the target. The target’s stat changes don’t affect this attack’s damage.
 
@@ -9776,7 +9777,7 @@ Accuracy: 100
 Type: Water
 Targeting: All Foes
 Base PP: 10
-Z-Power: 175
+Z-Power: 140
 Z-Effect: None
 Flags: Protect, Mirror, Sound, IgnoreSubstitute
 Description:
@@ -9791,9 +9792,9 @@ Type: Ice
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Speed -> -1 (100%)
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, Punch
+Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
 The user swings and hits with its strong, heavy fist. It lowers the user’s Speed, however. (Punch)
 
@@ -9820,9 +9821,9 @@ Accuracy: 100
 Type: Ground
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 175
+Z-Power: 145
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user fiercely attacks the target using its entire body.
 
@@ -9837,7 +9838,7 @@ Base PP: 5
 Stat Change: Attack -> -1 (100%)
 Z-Power: 0
 Z-Effect: +1 Defense
-Flags: Protect, Reflectable, Mirror, Heal
+Flags: Protect, Reflectable, Mirror, Heal, AnimateAlly
 Description:
 The user restores its HP by the same amount as the target’s Attack stat. It also lowers the target’s Attack stat.
 
@@ -9849,9 +9850,9 @@ Accuracy: 100
 Type: Grass
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 190
+Z-Power: 165
 Z-Effect: None
-Flags: MakesContact, Charge, Protect, Mirror
+Flags: MakesContact, Charge, Protect, Mirror, AnimateAlly
 Description:
 In this two-turn attack, the user gathers light and fills a blade with the light’s energy, attacking the target on the next turn.
 
@@ -9864,9 +9865,9 @@ Type: Grass
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Stat Change: Speed -> 1 (100%)
-Z-Power: 100
-Z-Effect: None
-Flags: Protect, Mirror
+Z-Power: 90
+Z-Effect: +1 Speed
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user attacks suddenly as if leaping out from tall grass. The user's nimble footwork boosts its Speed stat.
 
@@ -9876,11 +9877,11 @@ Category: Status
 Power: 0
 Accuracy: 101
 Type: Electric
-Targeting: Single Adjacent Ally/Foe
-Base PP: 15
-Priority: 3
+Targeting: Any Ally
+Base PP: 5
+Priority: 2
 Z-Power: 0
-Z-Effect: +3 Special Attack
+Z-Effect: +1 Special Defense
 Flags: Protect, Reflectable, AnimateAlly
 Description:
 The user shines a spotlight on the target so that only the target will be attacked during the turn. (+3 Prio)
@@ -9897,7 +9898,7 @@ Base PP: 10
 Stat Change: Speed -> -1 (100%)
 Z-Power: 0
 Z-Effect: +2 Attack
-Flags: Protect, Reflectable, Mirror
+Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
 The user shoots poisonous threads to poison the target and lower the target’s Speed stat.
 
@@ -9910,7 +9911,7 @@ Type: Normal
 Targeting: Self
 Base PP: 20
 Z-Power: 0
-Z-Effect: +2 Attack
+Z-Effect: +2 Speed
 Flags: Snatch
 Description:
 The user concentrates intensely. The attack on the next turn always results in a critical hit.
@@ -9927,7 +9928,7 @@ Stat Change: Attack -> 2 (0%)
 Stat Change: Special Attack -> 2 (0%)
 Stat Change: Speed -> -1 (0%)
 Z-Power: 0
-Z-Effect: raises critical-hit ratio two stages
+Z-Effect: +2 Speed
 Flags: Snatch, IgnoreSubstitute
 Description:
 The user engages its gears to raise the Attack and Sp. Atk stats sharply of ally Pokémon with the Plus or Minus Ability, but lowers their Speed.
@@ -9942,23 +9943,23 @@ Targeting: Single Adjacent Ally/Foe
 Inflict: Mute (100%)
 Base PP: 15
 Effect Turns: Min 2 / Max 4
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, Punch
+Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
 The user attacks the target’s throat, and the resultant suffering prevents the target from using moves that emit sound for 2-4 turns. (Punch)
 
 ID: 676
 Name: Pollen Puff
 Category: Special
-Power: 85
+Power: 80
 Accuracy: 100
 Type: Bug
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 175
+Z-Power: 130
 Z-Effect: None
-Flags: Protect, Mirror, Ballistic
+Flags: Protect, Mirror, AnimateAlly, Ballistic
 Description:
 The user attacks the enemy with an irritating puff that explodes. If the target is an ally, it gives the ally a soothing puff that restores 50% HP instead. (Bullet)
 
@@ -9970,9 +9971,9 @@ Accuracy: 100
 Type: Steel
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user entangles the target with its anchor chain while attacking. The target becomes unable to flee.
 
@@ -9999,9 +10000,9 @@ Type: Bug
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Stat Change: Attack -> -1 (100%)
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user makes a lunge at the target, attacking with full force. This also lowers the target’s Attack stat.
 
@@ -10014,9 +10015,9 @@ Type: Fire
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Stat Change: Defense -> -1 (100%)
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user strikes the target with a burning lash. This also lowers the target’s Defense stat.
 
@@ -10028,9 +10029,9 @@ Accuracy: 100
 Type: Dark
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
-Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Z-Power: 115
+Z-Effect: resets lowered stats of the user
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user boasts its strength and attacks the target. The more the user’s stats are raised, the greater the move’s power. (20BP + 20 per raised stat)
 
@@ -10042,9 +10043,9 @@ Accuracy: 100
 Type: Fire
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 195
+Z-Power: 165
 Z-Effect: None
-Flags: Protect, Mirror, Defrost
+Flags: Protect, Mirror, Defrost, AnimateAlly
 Description:
 To inflict massive damage, the user burns itself out. After using this move, the user will no longer be Fire type.
 
@@ -10072,9 +10073,9 @@ Targeting: Single Adjacent Ally/Foe
 Inflict: Capture (30%)
 Base PP: 15
 Effect Turns: Min 3 / Max 3
-Z-Power: 140
+Z-Power: 120
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, Bite
+Flags: MakesContact, Protect, Mirror, AnimateAlly, Bite
 Description:
 The user bites the target with teeth as hard as tempered steel. This has a 30% chance to trap and damage the target for 2 turns. (Jaw)
 
@@ -10088,9 +10089,9 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 5
 Priority: 1
 Z-Power: 0
-Z-Effect: +3 Defense
-Heal: 75
-Flags: Protect, Reflectable, Heal
+Z-Effect: +2 Special Defense
+Heal: 50
+Flags: Protect, Reflectable, Heal, AnimateAlly
 Description:
 The user heals the target’s status condition. If the move succeeds, it also restores the user’s HP by 75%. (+1 Prio)
 
@@ -10102,9 +10103,9 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 175
+Z-Power: 140
 Z-Effect: None
-Flags: Protect, Mirror, Dance
+Flags: Protect, Mirror, AnimateAlly, Dance
 Description:
 The user attacks the target by dancing very hard. The user’s PRIMARY type determines the type of this move. (Dance)
 
@@ -10116,9 +10117,9 @@ Accuracy: 100
 Type: Dragon
 Targeting: All Foes
 Base PP: 10
-Z-Power: 140
+Z-Power: 150
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 If the Pokémon the user has inflicted damage on have already used their moves, this move eliminates the effect of the target’s Ability.
 
@@ -10131,9 +10132,9 @@ Type: Grass
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Stat Change: Attack -> -1 (100%)
-Z-Power: 140
+Z-Power: 120
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user lands an intense kick of tropical origins on the target. This also lowers the target’s Attack stat.
 
@@ -10160,9 +10161,9 @@ Type: Flying
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Priority: -3
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
-Flags: Protect, Ballistic, Pulse
+Flags: Protect, AnimateAlly, Ballistic, Pulse
 Description:
 The user first heats up its beak, and then it attacks the target. Making direct contact with the Pokémon while it’s heating up results in a burn. (Bullet, Pulse)
 
@@ -10175,7 +10176,7 @@ Type: Dragon
 Targeting: All Foes
 Base PP: 5
 Stat Change: Defense -> -1 (100%)
-Z-Power: 185
+Z-Power: 155
 Z-Effect: None
 Flags: Protect, Mirror, Sound, IgnoreSubstitute, Dance
 Description:
@@ -10189,9 +10190,9 @@ Accuracy: 100
 Type: Dragon
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 175
+Z-Power: 140
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user uses its body like a hammer to attack the target and inflict damage.
 
@@ -10204,9 +10205,9 @@ Type: Dark
 Targeting: Single Adjacent Foe
 Base PP: 5
 Stat Change: Attack -> -2 (100%)
-Z-Power: 190
+Z-Power: 165
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user swings its body around violently to inflict damage. The effort lowers the user's Attack stat harshly.
 
@@ -10227,7 +10228,7 @@ This move reduces damage from physical and special moves by 33% for five turns. 
 ID: 695
 Name: Sinister Arrow Raid
 Category: Physical
-Power: 165
+Power: 145
 Accuracy: 101
 Type: Ghost
 Targeting: All Foes
@@ -10240,7 +10241,7 @@ The user, Decidueye, creates countless arrows using its Z-Power and shoots both 
 ID: 696
 Name: Malicious Moonsault
 Category: Physical
-Power: 165
+Power: 145
 Accuracy: 101
 Type: Dark
 Targeting: All Foes
@@ -10253,7 +10254,7 @@ The user, Incineroar, strengthens its body using its Z-Power and crashes into th
 ID: 697
 Name: Oceanic Operetta
 Category: Special
-Power: 165
+Power: 145
 Accuracy: 101
 Type: Water
 Targeting: All Foes
@@ -10272,43 +10273,42 @@ Accuracy: 101
 Type: Fairy
 Targeting: Single Adjacent Ally/Foe
 Base PP: 1
-Recoil: 50
-Flags: Punch, Heal
+Recoil: 25
+Flags: Punch, Heal, AnimateAlly
 Description:
 The user, the Land Spirit Pokémon, obtains Alola’s energy using its Z-Power and attacks the target. This reduces the target’s HP by 75% and heals the user for 25% dealt.
 
 ID: 699
 Name: Soul-Stealing 7-Star Strike
 Category: Physical
-Power: 195
+Power: 160
 Accuracy: 101
 Type: Ghost
 Targeting: Single Adjacent Ally/Foe
 Base PP: 1
 Recoil: 25
-Flags: MakesContact, Punch, Heal
+Flags: MakesContact, Punch, Heal, AnimateAlly
 Description:
 Marshadow punches and kicks the target consecutively, siphoning their energy. This heals Marshadow for 25% of damage dealt. (Punch)
 
 ID: 700
 Name: Stoked Sparksurfer
 Category: Special
-Power: 175
+Power: 150
 Accuracy: 101
 Type: Electric
 Targeting: Single Adjacent Ally/Foe
-Inflict: Paralyze (100%)
 Base PP: 1
 Stat Change: Accuracy -> 1 (100%)
 Stat Change: Speed -> 2 (100%)
-Flags: MakesContact
+Flags: MakesContact, AnimateAlly
 Description:
 After obtaining Z-Power, the user, Raichu, attacks the target with full force. Raises Accuracy +1 and Speed +2 of user.
 
 ID: 701
 Name: Pulverizing Pancake
 Category: Physical
-Power: 190
+Power: 130
 Accuracy: 101
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
@@ -10335,11 +10335,12 @@ After obtaining Z-Power, the user, Eevee, gets energy from its evolved friends a
 ID: 703
 Name: Genesis Supernova
 Category: Special
-Power: 185
+Power: 150
 Accuracy: 101
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 1
+Flags: AnimateAlly
 Description:
 After obtaining Z-Power, the user, Mew, attacks the target with full force. The terrain will be charged with psychic energy.
 
@@ -10352,9 +10353,9 @@ Type: Fire
 Targeting: All Foes
 Base PP: 5
 Priority: -3
-Z-Power: 200
+Z-Power: 180
 Z-Effect: None
-Flags: Protect, Defrost
+Flags: Protect, Defrost, AnimateAlly
 Description:
 The user sets a shell trap. If the user is hit by a physical move, the trap will explode and inflict damage on the opposing Pokémon.
 
@@ -10367,7 +10368,7 @@ Type: Fairy
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
 Stat Change: Special Attack -> -2 (100%)
-Z-Power: 195
+Z-Power: 165
 Z-Effect: None
 Flags: Protect, Mirror
 Description:
@@ -10381,9 +10382,9 @@ Accuracy: 100
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 160
+Z-Power: 135
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, Bite
+Flags: MakesContact, Protect, Mirror, AnimateAlly, Bite
 Description:
 The user bites the target with its psychic capabilities. This can also destroy Light Screen and Reflect. (Jaw)
 
@@ -10395,9 +10396,9 @@ Accuracy: 100
 Type: Ground
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 140
+Z-Power: 125
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 Driven by frustration, the user attacks the target. If the user’s previous move has failed, the power of this move doubles.
 
@@ -10410,9 +10411,9 @@ Type: Ghost
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Defense -> -1 (20%)
-Z-Power: 160
+Z-Power: 135
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user attacks by beating the target with a bone that contains a spirit. This may also lower the target’s Defense stat. (20%)
 
@@ -10425,9 +10426,9 @@ Type: Rock
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Priority: 1
-Z-Power: 100
-Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Z-Power: 90
+Z-Effect: +1 Speed
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user smashes into the target at high speed. This move always goes first. (+1 Priority)
 
@@ -10440,9 +10441,9 @@ Type: Water
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
 Stat Change: Defense -> -1 (20%)
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user slams into the target using a full-force blast of water. This may also lower the target’s Defense stat. (20%)
 
@@ -10454,10 +10455,10 @@ Accuracy: 100
 Type: Rock
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 200
+Z-Power: 180
 Z-Effect: None
 Recoil: 15
-Flags: Recharge, Protect, Mirror, Heal
+Flags: Recharge, Protect, Mirror, Heal, AnimateAlly
 Description:
 The user shoots powerful lasers using the power of a prism. The user can’t move on the next turn and heals for a portion of damage dealt.
 
@@ -10469,9 +10470,9 @@ Accuracy: 100
 Type: Ghost
 Targeting: Single Adjacent Foe
 Base PP: 10
-Z-Power: 175
+Z-Power: 140
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, IgnoreSubstitute
+Flags: MakesContact, Protect, Mirror, IgnoreSubstitute, AnimateAlly
 Description:
 The user hides in the target’s shadow, steals the target’s stat boosts, and then attacks.
 
@@ -10483,9 +10484,9 @@ Accuracy: 100
 Type: Steel
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user slams into the target with the force of a meteor. This move can be used on the target regardless of its Abilities.
 
@@ -10497,9 +10498,9 @@ Accuracy: 100
 Type: Ghost
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user emits a sinister ray to attack the target. This move can be used on the target regardless of its Abilities.
 
@@ -10516,7 +10517,7 @@ Stat Change: Attack -> -1 (100%)
 Stat Change: Special Attack -> -1 (100%)
 Z-Power: 0
 Z-Effect: +1 Defense
-Flags: Reflectable, Mirror
+Flags: Reflectable, Mirror, AnimateAlly
 Description:
 The user gets teary eyed to make the target lose its combative spirit. This lowers the target’s Attack and Sp. Atk stats. (+1 Priority)
 
@@ -10529,9 +10530,9 @@ Type: Electric
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Flinch Chance: 30%
-Z-Power: 160
+Z-Power: 130
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 A strong electric blast crashes down on the target, giving it an electric shock. This may also make the target flinch. (30%)
 
@@ -10543,9 +10544,9 @@ Accuracy: 100
 Type: Fairy
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 100
+Z-Power: 150
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user hits the target with the force of nature. It halves the target’s HP.
 
@@ -10558,9 +10559,9 @@ Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Hits: Min 2 / Max 2
-Z-Power: 185
+Z-Power: 155
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror
+Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 Cloaking itself in high energy, the user slams into the target. The memory held determines the move’s type.
 
@@ -10575,6 +10576,7 @@ Base PP: 1
 Crit Stage(s): 6
 Stat Change: Special Attack -> 2 (100%)
 Stat Change: Speed -> 2 (100%)
+Flags: AnimateAlly
 Description:
 The user, Pikachu wearing a cap, powers up a jolt of electricity using its Z-Power and unleashes it. Critical hits always land. Raises Sp.Atk and Spe.2 stages after use.
 
@@ -10586,9 +10588,9 @@ Accuracy: 100
 Type: Fire
 Targeting: Everyone but User
 Base PP: 5
-Z-Power: 200
+Z-Power: 180
 Z-Effect: None
-Flags: Protect, Mirror, Defrost
+Flags: Protect, Mirror, Defrost, AnimateAlly
 Description:
 The user attacks everything around it by causing its own head to explode. This also damages the user.
 
@@ -10600,9 +10602,9 @@ Accuracy: 100
 Type: Electric
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 180
+Z-Power: 140
 Z-Effect: None
-Flags: MakesContact, Protect, Mirror, Punch
+Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
 The user attacks with electrically charged fists. This move changes Normal-type moves to Electric-type moves. (Punch)
 
@@ -10614,22 +10616,22 @@ Accuracy: 100
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 180
+Z-Power: 150
 Z-Effect: None
-Flags: Protect, Mirror
+Flags: Protect, Mirror, AnimateAlly
 Description:
 The user attacks a target with a pillar of light. This move inflicts Attack or Sp. Atk damage—whichever stat is higher for the user.
 
 ID: 723
 Name: Light That Burns the Sky
 Category: Special
-Power: 250
+Power: 220
 Accuracy: 101
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 1
 Crit Stage(s): 6
-Flags: IgnoreSubstitute
+Flags: IgnoreSubstitute, AnimateAlly
 Description:
 This attack inflicts Attack or Sp. Atk damage— whichever stat is higher for the user, Necrozma. This move ignores both target’s Abilities and always Crits.
 
@@ -10642,7 +10644,7 @@ Type: Steel
 Targeting: Single Adjacent Ally/Foe
 Base PP: 1
 Stat Change: Defense -> 1 (100%)
-Flags: MakesContact
+Flags: MakesContact, AnimateAlly
 Description:
 After obtaining Z-Power, the user, Solgaleo, attacks the target with full force. This move can ignore the effect of the target’s Ability. Raises Def.
 
@@ -10655,47 +10657,48 @@ Type: Ghost
 Targeting: Single Adjacent Ally/Foe
 Base PP: 1
 Stat Change: Special Defense -> 1 (100%)
+Flags: AnimateAlly
 Description:
 After obtaining Z-Power, the user, Lunala, attacks the target with full force. This move can ignore the effect of the target’s Ability. Raises Sp. Def.
 
 ID: 726
 Name: Let’s Snuggle Forever
 Category: Physical
-Power: 190
+Power: 150
 Accuracy: 101
 Type: Fairy
 Targeting: Single Adjacent Ally/Foe
 Inflict: Capture (100%)
 Base PP: 1
 Effect Turns: Min 5 / Max 6
-Flags: MakesContact, Punch
+Flags: MakesContact, Punch, AnimateAlly
 Description:
 After obtaining Z-Power, the user, Mimikyu, squeezes the target with full force and prevents escape. This move traps targets in a clingy hug for 4-5 turns.
 
 ID: 727
 Name: Splintered Stormshards
 Category: Physical
-Power: 190
+Power: 150
 Accuracy: 101
 Type: Rock
 Targeting: Single Adjacent Ally/Foe
 Base PP: 1
 Stat Change: Defense -> 1 (100%)
 Stat Change: Accuracy -> 1 (100%)
-Flags: MakesContact
+Flags: MakesContact, AnimateAlly
 Description:
 With Z-Power, the user, Lycanroc, attacks the target with boulders. This move negates the terrain on the field and raises the Defense and Accuracy of the user.
 
 ID: 728
 Name: Clangorous Soulblaze
 Category: Special
-Power: 185
+Power: 125
 Accuracy: 101
 Type: Dragon
 Targeting: Everyone but User
 Base PP: 1
 Stat Change: All -> 1 (100%)
-Flags: Sound, IgnoreSubstitute, Dance
+Flags: Sound, IgnoreSubstitute, AnimateAlly, Dance
 Description:
 After obtaining Z-Power, the user, Kommo-o, attacks all Pokémon with full force. This move boosts all of the user’s stats. (Sound, Dance)
 
