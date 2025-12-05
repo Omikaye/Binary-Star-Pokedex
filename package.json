@@ -19,6 +19,7 @@
     "import-basegame": "node scripts/import-basegame-stats.js",
     "generate-links": "node scripts/generate-item-pokemon-links.js",
     "parse-locations": "node scripts/parse-locations.js",
+    "render-articles": "node scripts/render-articles.js",
     "deploy": "npm run dist && tsx build/gh-pages.ts"
   },
   "author": "",

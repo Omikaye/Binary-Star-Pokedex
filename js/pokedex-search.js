@@ -29,7 +29,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		if (questionIndex >= 0) fragment = fragment.slice(0, questionIndex);
 		var buf = '<div class="pfx-body"><form class="pokedex">';
 		buf += '<h1><a href="'+Config.baseurl+'"" data-target="replace">Pok&eacute;dex</a></h1>';
-		buf += '<ul class="tabbar centered" style="margin-bottom: 18px"><li><button class="button nav-first' + (fragment === '' ? ' cur' : '') + '" value="'+Config.baseurl+'">Search</button></li>';
+		buf += '<ul class="tabbar centered" style="margin-bottom: 18px"><li><button class="button nav-first' + (fragment === '' ? ' cur' : '') + '" value="'+Config.baseurl+'dex">Search</button></li>';
 		buf += '<li><button class="button' + (fragment === 'pokemon/' ? ' cur' : '') + '" value="'+Config.baseurl+'pokemon/">Pok&eacute;mon</button></li>';
 		buf += '<li><button class="button' + (fragment === 'moves/' ? ' cur' : '') + '" value="'+Config.baseurl+'moves/">Moves</button></li>';
 		buf += '<li><button class="button' + (fragment === 'abilities/' ? ' cur' : '') + '" value="'+Config.baseurl+'abilities/">Abilities</button></li>';

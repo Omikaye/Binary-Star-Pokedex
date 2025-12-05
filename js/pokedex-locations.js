@@ -18,7 +18,7 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
       buf += '<span class="col numcol">' + (i+1) + '</span>';
       buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span>';
       buf += '</a>';
-      if (notes) buf += '<div style="padding:4px 12px 8px 12px;color:#666;font-size:0.9em;border-top:1px solid #eee;clear:both;width:100%;box-sizing:border-box">' + escapeHTML(notes) + '</div>';
+      if (notes) buf += '<div style="padding:4px 12px 8px 12px;color:#666;font-size:0.9em;border-top:1px solid #eee;clear:both;width:100%;box-sizing:border-box;background:#f5f5f5">' + escapeHTML(notes) + '</div>';
       buf += '</li>';
     }
     buf += '</ul>';
