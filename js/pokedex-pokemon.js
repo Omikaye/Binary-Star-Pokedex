@@ -169,10 +169,12 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 	} else {
 		buf += '<em>No Z-Move</em>';
 	}
-	buf += '</dd>';		{
-			buf += '<dt>Evolution:</dt> <dd>';
-			var template = pokemon;
-			while (template.prevo) template = getID(BattlePokedex, template.prevo);
+	buf += '</dd>';
+
+	{
+		buf += '<dt>Evolution:</dt> <dd>';
+		var template = pokemon;
+		while (template.prevo) template = getID(BattlePokedex, template.prevo);
 			if (template.evos) {
 				buf += '<table class="evos"><tr><td>';
 				var evos = [template];
