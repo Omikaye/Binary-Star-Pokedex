@@ -13,12 +13,12 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
       var loc = list[i];
       if (!loc || !loc.id) continue;
       var notes = (loc.notes||'').trim();
-      buf += '<li class="result">';
-      buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push">';
+      buf += '<li class="result" style="display:block;padding:0">';
+      buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" style="display:block;padding:8px">';
       buf += '<span class="col numcol">' + (i+1) + '</span>';
       buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span>';
       buf += '</a>';
-      if (notes) buf += '<div style="padding:4px 8px;color:#666;font-size:0.9em">' + escapeHTML(notes) + '</div>';
+      if (notes) buf += '<div style="padding:4px 12px 8px 12px;color:#666;font-size:0.9em;border-top:1px solid #eee">' + escapeHTML(notes) + '</div>';
       buf += '</li>';
     }
     buf += '</ul>';
@@ -63,7 +63,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     var encounters = loc.encounters || [];
     if (encounters.length) {
       buf += '<div style="background:#e8f5e9;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0">Encounters</h3>';
+      buf += '<h3 style="margin-top:0;color:#2e7d32">Encounters</h3>';
       for (var s=0; s<encounters.length; s++) {
         var spot = encounters[s];
         if (!spot || !spot.pokemon || !spot.pokemon.length) continue;
@@ -120,7 +120,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     // Static Pokemon (pink section)
     if (loc.staticPokemon && loc.staticPokemon.length) {
       buf += '<div style="background:#fce4ec;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0">Static Pokémon</h3>';
+      buf += '<h3 style="margin-top:0;color:#c2185b">Static Pokémon</h3>';
       buf += '<p class="resultsub">Static encounter details coming soon.</p>';
       buf += '</div>';
     }
@@ -150,7 +150,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
 
     if (loc.trainers && loc.trainers.length) {
       buf += '<div style="background:#e3f2fd;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0">Trainers</h3>' + renderTrainerList(loc.trainers, false);
+      buf += '<h3 style="margin-top:0;color:#1565c0">Trainers</h3>' + renderTrainerList(loc.trainers, false);
       buf += '</div>';
     }
     if (loc.bossTrainers && loc.bossTrainers.length) {
@@ -160,8 +160,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     }
     // Shops
     if (loc.shops && loc.shops.length) {
-      buf += '<div style="background:#ffebee;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0">Shops</h3>';
+      buf += '<div style="background:#fffde7;padding:12px;margin:8px 0;border-radius:4px">';
+      buf += '<h3 style="margin-top:0;color:#f57f17">Shops</h3>';
       buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
       buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:110px;text-align:center">Price</th></tr></thead><tbody>';
       for (var si=0; si<loc.shops.length; si++) {
@@ -211,7 +211,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     // Items (quantity own column)
     if (loc.items && loc.items.length) {
       buf += '<div style="background:#fff3e0;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0">Items</h3>';
+      buf += '<h3 style="margin-top:0;color:#e65100">Items</h3>';
       buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
       buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:70px;text-align:center">Qty</th><th>Obtain</th></tr></thead><tbody>';
       for (var ii=0; ii<loc.items.length; ii++) {
