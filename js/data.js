@@ -177,7 +177,18 @@ window.getTrainerClass = (trainerName) => {
 };
 
 window.getTrainerIcon = (trainerClass) => {
-  const classId = toID(trainerClass);
+  let classId = toID(trainerClass);
+  // Force certain classes to use specific sprites (compat/mapping)
+  // 'lass' and its variants should use the risingstar sprite at -1,-6940
+  if (classId && classId.indexOf('lass') === 0) classId = 'risingstar';
   let [left, top] = TrainerSprites[classId] ?? [-1, -1];
   return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px; width:512px; height:256px; background-size:auto;`;
+};
+
+// Returns only the background image/position for use in compact thumbnails
+window.getTrainerBackground = (trainerClass) => {
+  let classId = toID(trainerClass);
+  if (classId && classId.indexOf('lass') === 0) classId = 'risingstar';
+  let [left, top] = TrainerSprites[classId] ?? [-1, -1];
+  return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px`;
 };

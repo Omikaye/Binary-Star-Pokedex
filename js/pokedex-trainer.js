@@ -25,7 +25,9 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     buf += '<style>' +
       '.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
       '.dexentry .namecol { float: none !important; display: inline !important; padding-top: 0 !important; height: auto !important; }' +
-      '.trainer-sprite { float: right; width: 256px; height: 128px; margin-left: 16px; margin-bottom: 16px; transform: scale(0.5); transform-origin: top right; }' +
+      '.trainer-sprite { float: right; width: 256px; height: 128px; margin-left: 16px; margin-bottom: 16px; transform: scale(0.5); transform-origin: top right; position:relative; z-index:1; }' +
+      '.dexentry h1 { margin-top: 0; margin-bottom: 6px; }' +
+      '.dexentry h1 a { display:inline-block; white-space:nowrap; position:relative; z-index:2; }' +
       '</style>';
     buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Trainers</a>';
     
