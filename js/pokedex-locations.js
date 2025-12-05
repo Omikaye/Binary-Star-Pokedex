@@ -13,12 +13,12 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
       var loc = list[i];
       if (!loc || !loc.id) continue;
       var notes = (loc.notes||'').trim();
-      buf += '<li class="result" style="display:block;padding:0">';
-      buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" style="display:block;padding:8px">';
+      buf += '<li class="result" style="display:block;padding:0;height:auto;min-height:initial;overflow:visible;position:relative">';
+      buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" style="display:block;padding:8px;text-decoration:none">';
       buf += '<span class="col numcol">' + (i+1) + '</span>';
       buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span>';
       buf += '</a>';
-      if (notes) buf += '<div style="padding:4px 12px 8px 12px;color:#666;font-size:0.9em;border-top:1px solid #eee">' + escapeHTML(notes) + '</div>';
+      if (notes) buf += '<div style="padding:4px 12px 8px 12px;color:#666;font-size:0.9em;border-top:1px solid #eee;clear:both;width:100%;box-sizing:border-box">' + escapeHTML(notes) + '</div>';
       buf += '</li>';
     }
     buf += '</ul>';
