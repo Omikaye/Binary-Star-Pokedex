@@ -23,7 +23,7 @@
     "buyPrice": 600,
     "sellPrice": 300
   },
-  "pokball": {
+  "pokéball": {
     "name": "Poké Ball",
     "num": 4,
     "desc": "A device for catching wild Pokémon. It’s thrown like a ball at a Pokémon, comfortably encapsulating its target. (1x Catch Rate)",
