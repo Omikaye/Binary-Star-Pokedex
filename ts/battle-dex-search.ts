@@ -63,12 +63,13 @@ function hasAbility(pokemon: any, ability: ID) {
 function generateSearchIndex() {
   let index: string[] = [];
 
-  index = index.concat(Object.keys(BattlePokedex).map((x) => x + " pokemon"));
-  index = index.concat(Object.keys(BattleMovedex).map((x) => x + " move"));
-  index = index.concat(Object.keys(BattleItems).map((x) => x + " item"));
-  index = index.concat(Object.keys(BattleAbilities).map((x) => x + " ability"));
+  // Filter out entries where the data object doesn't have a valid name
+  index = index.concat(Object.keys(BattlePokedex).filter(x => BattlePokedex[x]?.name).map((x) => x + " pokemon"));
+  index = index.concat(Object.keys(BattleMovedex).filter(x => BattleMovedex[x]?.name).map((x) => x + " move"));
+  index = index.concat(Object.keys(BattleItems).filter(x => BattleItems[x]?.name).map((x) => x + " item"));
+  index = index.concat(Object.keys(BattleAbilities).filter(x => BattleAbilities[x]?.name).map((x) => x + " ability"));
   index = index.concat(
-    Object.keys(BattleTypeChart).map((x) => toID(x) + " type")
+    Object.keys(BattleTypeChart).filter(x => BattleTypeChart[x]?.name).map((x) => toID(x) + " type")
   );
   index = index.concat(
     ["physical", "special", "status"].map((x) => toID(x) + " category")
@@ -133,16 +134,16 @@ function generateSearchIndex() {
     let name = "";
     switch (entry[1]) {
       case "pokemon":
-        name = getID(BattlePokedex, id).name ?? "";
+        name = getID(BattlePokedex, id)?.name ?? "";
         break;
       case "move":
-        name = getID(BattleMovedex, id).name ?? "";
+        name = getID(BattleMovedex, id)?.name ?? "";
         break;
       case "item":
-        name = getID(BattleItems, id).name ?? "";
+        name = getID(BattleItems, id)?.name ?? "";
         break;
       case "ability":
-        name = getID(BattleAbilities, id).name ?? "";
+        name = getID(BattleAbilities, id)?.name ?? "";
         break;
     }
     let res = "";
