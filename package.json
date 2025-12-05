@@ -20,6 +20,7 @@
     "generate-links": "node scripts/generate-item-pokemon-links.js",
     "parse-locations": "node scripts/parse-locations.js",
     "render-articles": "node scripts/render-articles.js",
+    "fix-trainer-sprites": "node scripts/fix-trainer-sprites.js",
     "deploy": "npm run dist && tsx build/gh-pages.ts"
   },
   "author": "",

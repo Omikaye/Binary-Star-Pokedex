@@ -853,14 +853,13 @@ window. PokedexTierPanel = PokedexResultPanel.extend({
 		this.$('.utilichart').html(buf);
 	}
 });
-window. PokedexArticlePanel = PokedexResultPanel.extend({
+window.PokedexArticlePanel = PokedexResultPanel.extend({
 	initialize: function(id) {
 		id = toID(id);
 		this.shortTitle = id;
 
 		var buf = '<div class="pfx-body dexentry">';
-		buf += '<a href="'+Config.baseurl+'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="'+Config.baseurl+'articles/'+id+'" data-target="push" class="subtle">'+id+'</a></h1>';
+		buf += '<a href="'+Config.baseurl+'mechanics/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Mechanics</a>';
 		buf += '<div class="article-content"><em>Loading...</em></div>';
 		buf += '</div>';
 
@@ -868,12 +867,69 @@ window. PokedexArticlePanel = PokedexResultPanel.extend({
 
 		var self = this;
 		$.get('/.articles-cached/' + id + '.html').done(function (html) {
-			var html = html.replace(/<h1[^>]*>([^<]+)<\/h1>/, function (match, innerMatch) {
+			// Extract title from h1
+			var title = id;
+			html = html.replace(/<h1[^>]*>([^<]+)<\/h1>/, function (match, innerMatch) {
+				title = innerMatch;
 				self.shortTitle = innerMatch;
-				self.$('h1').first().html('<a href="'+Config.baseurl+'articles/' + id + '" class="subtle" data-target="push">' + innerMatch + '</a>');
 				return '';
 			});
-			self.$('.article-content').html(html);
+			
+			// Build styled article content
+			var articleBuf = '';
+			articleBuf += '<h1>' + escapeHTML(title) + '</h1>';
+			
+			// Add CSS for article styling
+			articleBuf += '<style>';
+			articleBuf += '.article-content h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 4px; margin-top: 20px; }';
+			articleBuf += '.article-content h3 { color: #555; margin-top: 16px; }';
+			articleBuf += '.article-content p { line-height: 1.6; margin: 10px 0; }';
+			articleBuf += '.article-content ul { margin: 10px 0; padding-left: 24px; }';
+			articleBuf += '.article-content li { margin: 6px 0; line-height: 1.5; }';
+			articleBuf += '.article-content a { color: #1976d2; text-decoration: none; }';
+			articleBuf += '.article-content a:hover { text-decoration: underline; }';
+			articleBuf += '</style>';
+			
+			articleBuf += html;
+			
+			// Add special sections for specific articles
+			if (id === 'zmoves') {
+				// All Z-Moves section
+				articleBuf += '<h2>All Z-Moves</h2>';
+				articleBuf += '<ul class="utilichart nokbd">';
+				for (var moveId in BattleMovedex) {
+					var move = BattleMovedex[moveId];
+					if (move.isZ) {
+						articleBuf += '<li class="result"><a href="' + Config.baseurl + 'moves/' + moveId + '" data-target="push">';
+						articleBuf += '<span class="col numcol">' + getTypeIcon(move.type) + '</span>';
+						articleBuf += '<span class="col namecol">' + escapeHTML(move.name) + '</span>';
+						if (move.basePower) {
+							articleBuf += '<span class="col abilitydesccol">Power: ' + move.basePower + '</span>';
+						}
+						articleBuf += '</a></li>';
+					}
+				}
+				articleBuf += '</ul>';
+				
+				// All Z-Crystals section
+				articleBuf += '<h2>All Z-Crystals</h2>';
+				articleBuf += '<ul class="utilichart nokbd">';
+				for (var itemId in BattleItems) {
+					var item = BattleItems[itemId];
+					if (item.isZCrystal || (item.name && item.name.includes('ium Z'))) {
+						articleBuf += '<li class="result"><a href="' + Config.baseurl + 'items/' + itemId + '" data-target="push">';
+						articleBuf += '<span class="col numcol"><span class="itemicon" style="' + getItemIcon(item) + ';width:24px;height:24px;display:inline-block"></span></span>';
+						articleBuf += '<span class="col namecol">' + escapeHTML(item.name) + '</span>';
+						if (item.desc) {
+							articleBuf += '<span class="col abilitydesccol">' + escapeHTML(item.desc.substring(0, 100)) + (item.desc.length > 100 ? '...' : '') + '</span>';
+						}
+						articleBuf += '</a></li>';
+					}
+				}
+				articleBuf += '</ul>';
+			}
+			
+			self.$('.article-content').html(articleBuf);
 		});
 	}
 });

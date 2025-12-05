@@ -178,6 +178,6 @@ window.getTrainerClass = (trainerName) => {
 
 window.getTrainerIcon = (trainerClass) => {
   const classId = toID(trainerClass);
-  let [left, top] = TrainerSprites[classId] ?? [0, 0];
-  return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px`;
+  let [left, top] = TrainerSprites[classId] ?? [-1, -1];
+  return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px; width:512px; height:256px; background-size:auto;`;
 };

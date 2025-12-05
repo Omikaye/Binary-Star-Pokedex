@@ -1,118 +1,466 @@
 {
-  "hau": [0, 0],
-  "faba": [0, -64],
-  "aetheremployee": [0, -128],
-  "aetheremployeef": [0, -192],
-  "guzma": [0, -256],
-  "plumeria": [0, -320],
-  "teamskullgrunt": [0, -384],
-  "teamskullgrunt2": [0, -448],
-  "ilima": [0, -512],
-  "kiawe": [0, -576],
-  "lana": [0, -640],
-  "sophocles": [0, -704],
-  "mina": [0, -768],
-  "hala": [0, -832],
-  "nanu": [0, -896],
-  "ryuki": [0, -960],
-  "blue": [0, -1024],
-  "maxie": [0, -1088],
-  "cyrus": [0, -1152],
-  "lysandre": [0, -1216],
-  "dexio": [0, -1280],
-  "anabel": [0, -1344],
-  "colress": [0, -1408],
-  "maskedroyal": [0, -1472],
-  "nurse": [0, -1536],
-  "youngsteramulet": [0, -1600],
-  "lass": [0, -1664],
-  "risingstar": [0, -1728],
-  "risingstarf": [0, -1792],
-  "swimmerf": [0, -1856],
-  "sightseer": [0, -1920],
-  "backpacker": [0, -1984],
-  "hiker": [0, -2048],
-  "gentleman": [0, -2112],
-  "blackbelt": [0, -2176],
-  "acetrainer": [0, -2240],
-  "zacetrainer": [0, -2304],
-  "acetrainerf": [0, -2368],
-  "veteran": [0, -2432],
-  "veteranf": [0, -2496],
-  "officeworker": [0, -2560],
-  "policeofficer": [0, -2624],
-  "collector": [0, -2688],
-  "breeder": [0, -2752],
-  "dancer": [0, -2816],
-  "preschooler": [0, -2880],
-  "bellhop": [0, -2944],
-  "janitor": [0, -3008],
-  "swimmerf2": [0, -3072],
-  "punkgirl": [0, -3136],
-  "youngathlete": [0, -3200],
-  "golfer": [0, -3264],
-  "trialguide": [0, -3328],
-  "trialguidef": [0, -3392],
-  "dulse": [0, -3456],
-  "ultraforest": [0, -3520],
-  "rainbowrocketgrunt": [0, -3584],
-  "morimoto": [0, -3648],
-  "kukui": [-192, 0],
-  "aetheremployee2": [-192, -64],
-  "aetheremployeef2": [-192, -128],
-  "aetherscientist": [-192, -192],
-  "guzma2": [-192, -256],
-  "plumeria2": [-192, -320],
-  "teamskullgruntf": [-192, -384],
-  "ilima2": [-192, -448],
-  "lana2": [-192, -512],
-  "mallow": [-192, -576],
-  "acerola": [-192, -640],
-  "mina2": [-192, -704],
-  "olivia": [-192, -768],
-  "kahili": [-192, -832],
-  "red": [-192, -896],
-  "giovanni": [-192, -960],
-  "archie": [-192, -1024],
-  "ghetsis": [-192, -1088],
-  "sina": [-192, -1152],
-  "grimsley": [-192, -1216],
-  "wally": [-192, -1280],
-  "cynthia": [-192, -1344],
-  "molayne": [-192, -1408],
-  "youngster": [-192, -1472],
-  "youngster2": [-192, -1536],
-  "lass2": [-192, -1600],
-  "risingstar2": [-192, -1664],
-  "risingstarf2": [-192, -1728],
-  "swimmer": [-192, -1792],
-  "sightseerf": [-192, -1856],
-  "scientist": [-192, -1920],
-  "madame": [-192, -1984],
-  "beauty": [-192, -2048],
-  "zblackbelt": [-192, -2112],
-  "acetrainer2": [-192, -2176],
-  "acetrainerf2": [-192, -2240],
-  "zacetrainerf": [-192, -2304],
-  "zveteran": [-192, -2368],
-  "zveteranf": [-192, -2432],
-  "officeworkerf": [-192, -2496],
-  "teacher": [-192, -2496],
-  "actor": [-192, -2496],
-  "collector2": [-192, -2560],
-  "breederm": [-192, -2624],
-  "breeder2": [-192, -2688],
-  "cook": [-192, -2752],
-  "preschoolerf": [-192, -2816],
-  "firefighter": [-192, -2880],
-  "worker": [-192, -2944],
-  "punkguy": [-192, -3008],
-  "youngsterathlete": [-192, -3072],
-  "fisherman": [-192, -3136],
-  "golferf": [-192, -3200],
-  "ztrialguide": [-192, -3264],
-  "ztrialguidef": [-192, -3328],
-  "soliera": [-192, -3392],
-  "surfer": [-192, -3456],
-  "rainbowrocketgruntf": [-192, -3520]
+  "hau": [
+    -1,
+    -1
+  ],
+  "faba": [
+    -1,
+    -258
+  ],
+  "aetheremployee": [
+    -1,
+    -515
+  ],
+  "aetheremployeef": [
+    -1,
+    -772
+  ],
+  "guzma": [
+    -1,
+    -1029
+  ],
+  "plumeria": [
+    -1,
+    -1286
+  ],
+  "teamskullgrunt": [
+    -1,
+    -1543
+  ],
+  "teamskullgrunt2": [
+    -1,
+    -1800
+  ],
+  "ilima": [
+    -1,
+    -2057
+  ],
+  "kiawe": [
+    -1,
+    -2314
+  ],
+  "lana": [
+    -1,
+    -2571
+  ],
+  "sophocles": [
+    -1,
+    -2828
+  ],
+  "mina": [
+    -1,
+    -3085
+  ],
+  "hala": [
+    -1,
+    -3342
+  ],
+  "nanu": [
+    -1,
+    -3599
+  ],
+  "ryuki": [
+    -1,
+    -3856
+  ],
+  "blue": [
+    -1,
+    -4113
+  ],
+  "maxie": [
+    -1,
+    -4370
+  ],
+  "cyrus": [
+    -1,
+    -4627
+  ],
+  "lysandre": [
+    -1,
+    -4884
+  ],
+  "dexio": [
+    -1,
+    -5141
+  ],
+  "anabel": [
+    -1,
+    -5398
+  ],
+  "colress": [
+    -1,
+    -5655
+  ],
+  "maskedroyal": [
+    -1,
+    -5912
+  ],
+  "nurse": [
+    -1,
+    -6169
+  ],
+  "youngsteramulet": [
+    -1,
+    -6426
+  ],
+  "lass": [
+    -1,
+    -6683
+  ],
+  "risingstar": [
+    -1,
+    -6940
+  ],
+  "risingstarf": [
+    -1,
+    -7197
+  ],
+  "swimmerf": [
+    -1,
+    -7454
+  ],
+  "sightseer": [
+    -1,
+    -7711
+  ],
+  "backpacker": [
+    -1,
+    -7968
+  ],
+  "hiker": [
+    -1,
+    -8225
+  ],
+  "gentleman": [
+    -1,
+    -8482
+  ],
+  "blackbelt": [
+    -1,
+    -8739
+  ],
+  "acetrainer": [
+    -1,
+    -8996
+  ],
+  "zacetrainer": [
+    -1,
+    -9253
+  ],
+  "acetrainerf": [
+    -1,
+    -9510
+  ],
+  "veteran": [
+    -1,
+    -9767
+  ],
+  "veteranf": [
+    -1,
+    -10024
+  ],
+  "officeworker": [
+    -1,
+    -10281
+  ],
+  "policeofficer": [
+    -1,
+    -10538
+  ],
+  "collector": [
+    -1,
+    -10795
+  ],
+  "breeder": [
+    -1,
+    -11052
+  ],
+  "dancer": [
+    -1,
+    -11309
+  ],
+  "preschooler": [
+    -1,
+    -11566
+  ],
+  "bellhop": [
+    -1,
+    -11823
+  ],
+  "janitor": [
+    -1,
+    -12080
+  ],
+  "swimmerf2": [
+    -1,
+    -12337
+  ],
+  "punkgirl": [
+    -1,
+    -12594
+  ],
+  "youngathlete": [
+    -1,
+    -12851
+  ],
+  "golfer": [
+    -1,
+    -13108
+  ],
+  "trialguide": [
+    -1,
+    -13365
+  ],
+  "trialguidef": [
+    -1,
+    -13622
+  ],
+  "dulse": [
+    -1,
+    -13879
+  ],
+  "ultraforest": [
+    -1,
+    -14136
+  ],
+  "rainbowrocketgrunt": [
+    -1,
+    -14393
+  ],
+  "morimoto": [
+    -1,
+    -14650
+  ],
+  "kukui": [
+    -514,
+    -1
+  ],
+  "aetheremployee2": [
+    -514,
+    -258
+  ],
+  "aetheremployeef2": [
+    -514,
+    -515
+  ],
+  "aetherscientist": [
+    -514,
+    -772
+  ],
+  "guzma2": [
+    -514,
+    -1029
+  ],
+  "plumeria2": [
+    -514,
+    -1286
+  ],
+  "teamskullgruntf": [
+    -514,
+    -1543
+  ],
+  "ilima2": [
+    -514,
+    -1800
+  ],
+  "lana2": [
+    -514,
+    -2057
+  ],
+  "mallow": [
+    -514,
+    -2314
+  ],
+  "acerola": [
+    -514,
+    -2571
+  ],
+  "mina2": [
+    -514,
+    -2828
+  ],
+  "olivia": [
+    -514,
+    -3085
+  ],
+  "kahili": [
+    -514,
+    -3342
+  ],
+  "red": [
+    -514,
+    -3599
+  ],
+  "giovanni": [
+    -514,
+    -3856
+  ],
+  "archie": [
+    -514,
+    -4113
+  ],
+  "ghetsis": [
+    -514,
+    -4370
+  ],
+  "sina": [
+    -514,
+    -4627
+  ],
+  "grimsley": [
+    -514,
+    -4884
+  ],
+  "wally": [
+    -514,
+    -5141
+  ],
+  "cynthia": [
+    -514,
+    -5398
+  ],
+  "molayne": [
+    -514,
+    -5655
+  ],
+  "youngster": [
+    -514,
+    -5912
+  ],
+  "youngster2": [
+    -514,
+    -6169
+  ],
+  "lass2": [
+    -514,
+    -6426
+  ],
+  "risingstar2": [
+    -514,
+    -6683
+  ],
+  "risingstarf2": [
+    -514,
+    -6940
+  ],
+  "swimmer": [
+    -514,
+    -7197
+  ],
+  "sightseerf": [
+    -514,
+    -7454
+  ],
+  "scientist": [
+    -514,
+    -7711
+  ],
+  "madame": [
+    -514,
+    -7968
+  ],
+  "beauty": [
+    -514,
+    -8225
+  ],
+  "zblackbelt": [
+    -514,
+    -8482
+  ],
+  "acetrainer2": [
+    -514,
+    -8739
+  ],
+  "acetrainerf2": [
+    -514,
+    -8996
+  ],
+  "zacetrainerf": [
+    -514,
+    -9253
+  ],
+  "zveteran": [
+    -514,
+    -9510
+  ],
+  "zveteranf": [
+    -514,
+    -9767
+  ],
+  "officeworkerf": [
+    -514,
+    -10024
+  ],
+  "teacher": [
+    -514,
+    -10024
+  ],
+  "actor": [
+    -514,
+    -10024
+  ],
+  "collector2": [
+    -514,
+    -10281
+  ],
+  "breederm": [
+    -514,
+    -10538
+  ],
+  "breeder2": [
+    -514,
+    -10795
+  ],
+  "cook": [
+    -514,
+    -11052
+  ],
+  "preschoolerf": [
+    -514,
+    -11309
+  ],
+  "firefighter": [
+    -514,
+    -11566
+  ],
+  "worker": [
+    -514,
+    -11823
+  ],
+  "punkguy": [
+    -514,
+    -12080
+  ],
+  "youngsterathlete": [
+    -514,
+    -12337
+  ],
+  "fisherman": [
+    -514,
+    -12594
+  ],
+  "golferf": [
+    -514,
+    -12851
+  ],
+  "ztrialguide": [
+    -514,
+    -13108
+  ],
+  "ztrialguidef": [
+    -514,
+    -13365
+  ],
+  "soliera": [
+    -514,
+    -13622
+  ],
+  "surfer": [
+    -514,
+    -13879
+  ],
+  "rainbowrocketgruntf": [
+    -514,
+    -14136
+  ]
 }

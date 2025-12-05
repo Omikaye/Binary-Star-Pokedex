@@ -355,7 +355,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 			const trainerSprite = getTrainerIcon(trainerClass);
 			buf += '<li class="result">' +
 				'<a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' +
-					'<div style="position:absolute;left:-10px;top:-10px;width:128px;height:128px;opacity:0.3;pointer-events:none;' + trainerSprite + '"></div>' +
+					'<div style="position:absolute;left:-30px;top:-50px;width:256px;height:128px;opacity:0.2;pointer-events:none;transform:scale(0.5);' + trainerSprite + '"></div>' +
 					'<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">' + display + '</span>' +
 					'<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' +
 				'</a>' +
