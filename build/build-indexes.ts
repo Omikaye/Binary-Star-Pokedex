@@ -261,7 +261,11 @@ async function main() {
   }
   */
 
-  /** Download images */
+  /*
+  ** Icon generation disabled - depends on allSpecies/allItems from @pkmn/dex
+  ** Use scripts/update-item-icons.js instead for icon coordinate updates
+  **/
+  /*
   {
     let icons: {
       pokemon: { [id: string]: [number, number] };
@@ -322,6 +326,7 @@ async function main() {
     }
     fs.writeFileSync("data/icons.json", JSON.stringify(icons, undefined, 2));
   }
+  */
 }
 
 main();
