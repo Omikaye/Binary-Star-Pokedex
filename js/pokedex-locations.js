@@ -111,6 +111,10 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
           buf += '</td>';
           buf += '</tr>';
         }
+        buf += '</tbody></table>';
+      }
+    }
+    
     // Trainers
     function renderTrainerList(ids, isBoss) {
       if (!ids || !ids.length) return '';
@@ -139,12 +143,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     }
     if (loc.bossTrainers && loc.bossTrainers.length) {
       buf += '<h3 style="color:#7b4397">Boss Trainers</h3>' + renderTrainerList(loc.bossTrainers, true);
-    } }
-      out += '</ul>';
-      return out;
     }
-
-    if (loc.trainers && loc.trainers.length) {
     // Shops
     if (loc.shops && loc.shops.length) {
       buf += '<h3>Shops</h3>';
@@ -173,8 +172,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         buf += '</tr>';
       }
       buf += '</tbody></table>';
-    }   buf += '<td>' + '<span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:32px;height:32px"></span>' + '</td>';
-        buf += '<td>' + '<a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push">' + escapeHTML(sh.item) + '</a>' + '</td>';
+    }
+    
     // Items (quantity own column)
     if (loc.items && loc.items.length) {
       buf += '<h3>Items</h3>';
