@@ -7,7 +7,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 
 		var buf = '<div class="pfx-body dexentry">';
 
-		buf += `<a href="${Config.baseurl}" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>`;
+		buf += `<a href="${Config.baseurl}dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>`;
 		buf += '<h1>';
 		if (pokemon.forme) {
 			buf += `<a href="${Config.baseurl}pokemon/${id}" data-target="push" class="subtle">${pokemon.baseSpecies}<small>-${pokemon.forme}</small></a>`;

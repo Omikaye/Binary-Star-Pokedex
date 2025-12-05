@@ -48,6 +48,34 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		this.$searchbox = $searchbox;
 		this.$searchfilters = null;
 		var results = this.$('.results');
+		
+		// Handle mechanics page early - render articles list and return
+		if (fragment === 'mechanics/') {
+			this.$('.buttonbar').remove();
+			this.$('.searchboxwrapper').remove();
+			var articles = [
+				{id: 'battlerules', name: 'Battle Rules'},
+				{id: 'criticalhit', name: 'Critical Hits'},
+				{id: 'gmaxmoves', name: 'G-Max Moves'},
+				{id: 'grounded', name: 'Grounded'},
+				{id: 'hazards', name: 'Entry Hazards'},
+				{id: 'maxmoves', name: 'Max Moves'},
+				{id: 'phazing', name: 'Phazing'},
+				{id: 'submoves', name: 'Substitute Moves'},
+				{id: 'terrain', name: 'Terrain'},
+				{id: 'zmoves', name: 'Z-Moves'}
+			];
+			var articlesBuf = '<ul class="utilichart nokbd">';
+			for (var i = 0; i < articles.length; i++) {
+				var article = articles[i];
+				articlesBuf += '<li class="result"><a href="'+Config.baseurl+'articles/'+article.id+'" data-target="push"><span class="col namecol">'+article.name+'</span></a></li>';
+			}
+			articlesBuf += '</ul>';
+			results.html(articlesBuf);
+			this.search = null;
+			return;
+		}
+		
 		if (results.length) {
 			var search = this.search = new BattleSearch(results, this.$el);
 			this.$el.on('scroll', function () {
@@ -69,29 +97,6 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 				search.setType('item');
 				$searchbox.attr('placeholder', 'Search items');
 				this.$('.buttonbar').remove();
-			} else if (fragment === 'mechanics/') {
-				// Mechanics - show article list
-				this.$('.buttonbar').remove();
-				this.$('.searchboxwrapper').remove();
-				var articles = [
-					{id: 'battlerules', name: 'Battle Rules'},
-					{id: 'criticalhit', name: 'Critical Hits'},
-					{id: 'gmaxmoves', name: 'G-Max Moves'},
-					{id: 'grounded', name: 'Grounded'},
-					{id: 'hazards', name: 'Entry Hazards'},
-					{id: 'maxmoves', name: 'Max Moves'},
-					{id: 'phazing', name: 'Phazing'},
-					{id: 'submoves', name: 'Substitute Moves'},
-					{id: 'terrain', name: 'Terrain'},
-					{id: 'zmoves', name: 'Z-Moves'}
-				];
-				var articlesBuf = '<ul class="utilichart nokbd">';
-				for (var i = 0; i < articles.length; i++) {
-					var article = articles[i];
-					articlesBuf += '<li class="result"><a href="'+Config.baseurl+'articles/'+article.id+'" data-target="push"><span class="col namecol">'+article.name+'</span></a></li>';
-				}
-				articlesBuf += '</ul>';
-				this.$('.results').html(articlesBuf);
 			} else if (fragment === 'locations/') {
 				// Locations type - to be implemented later
 				$searchbox.attr('placeholder', 'Search locations');
@@ -108,9 +113,11 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		} else {
 			this.search = null;
 		}
-		$searchbox.focus();
-		this.find($searchbox.val());
-		this.checkExactMatch();
+		if ($searchbox.length) {
+			$searchbox.focus();
+			this.find($searchbox.val());
+			this.checkExactMatch();
+		}
 	},
 	updateSearch: function(e) {
 		this.find(e.currentTarget.value);

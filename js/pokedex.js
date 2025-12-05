@@ -19,7 +19,7 @@ window.PokedexItemPanel = PokedexResultPanel.extend({
 		this.shortTitle = item.name;
 
 	var buf = '<div class="pfx-body dexentry">';
-	buf += '<a href="'+Config.baseurl+'" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+	buf += '<a href="'+Config.baseurl+'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
 	var iconNum = window.ItemIconIndices && window.ItemIconIndices[id] ? window.ItemIconIndices[id] : '?';
 	buf += '<h1 style="white-space:nowrap"><a href="'+Config.baseurl+'items/'+id+'" data-target="push" class="subtle">'+item.name+'</a> <small style="color:#999;font-size:0.6em">#'+item.num+', Icon: #'+iconNum+'</small></h1>';
 	buf += '<div style="text-align:center;margin:10px 0"><span class="itemicon" style="'+getItemIcon(item)+';width:32px;height:32px"></span></div>';
@@ -74,8 +74,8 @@ window. PokedexAbilityPanel = PokedexResultPanel.extend({
 		this.shortTitle = ability.name;
 
 		var buf = '<div class="pfx-body dexentry">';
-		buf += '<a href="'+Config.baseurl+'" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="'+Config.baseurl+'abilities/'+id+'" data-target="push" class="subtle">'+ability.name+'</a></h1>';
+		buf += '<a href="'+Config.baseurl+'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><a href="'+Config.baseurl+'abilities/'+ability.id+'" data-target="push" class="subtle">'+escapeHTML(ability.name)+'</a></h1>';
 
 		if (ability.isNonstandard && ability.id !== 'noability') buf += '<div class="warning"><strong>Note:</strong> This is a made-up ability by <a href="http://www.smogon.com/cap/" target="_blank">Smogon CAP</a>.</div>';
 
@@ -137,7 +137,7 @@ window. PokedexTypePanel = PokedexResultPanel.extend({
 		this.buildCountIndex();
 
 		var buf = '<div class="pfx-body dexentry">';
-		buf += '<a href="'+Config.baseurl+'" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<a href="'+Config.baseurl+'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
 		buf += '<h1><a href="'+Config.baseurl+'types/'+id+'" data-target="push" class="subtle">'+this.type+'</a></h1>';
 		buf += '<dl>';
 		var atLeastOne = false;
@@ -371,7 +371,7 @@ window. PokedexTagPanel = PokedexResultPanel.extend({
 
 		var buf = '<div class="pfx-body dexentry">';
 
-		buf += '<a href="'+Config.baseurl+'" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<a href="'+Config.baseurl+'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
 		buf += '<h1><a href="'+Config.baseurl+'tags/'+id+'" data-target="push" class="subtle">'+name+'</a></h1>';
 
 		if (tag) buf += '<p>'+tag.desc+'</p>';
@@ -618,7 +618,7 @@ window. PokedexEggGroupPanel = PokedexResultPanel.extend({
 
 		var buf = '<div class="pfx-body dexentry">';
 
-		buf += '<a href="'+Config.baseurl+'" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<a href="'+Config.baseurl+'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
 		buf += '<h1><a href="'+Config.baseurl+'egggroups/'+id+'" data-target="push" class="subtle">'+names+'</a></h1>';
 
 		if (this.id2) {
@@ -772,8 +772,8 @@ window. PokedexCategoryPanel = PokedexResultPanel.extend({
 		this.shortTitle = category.name;
 
 		var buf = '<div class="pfx-body dexentry">';
-		buf += '<a href="'+Config.baseurl+'" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="'+Config.baseurl+'categories/'+id+'" data-target="push" class="subtle">'+category.name+'</a></h1>';
+		buf += '<a href="'+Config.baseurl+'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><a href="'+Config.baseurl+'categories/'+id+'" data-target="push" class="subtle">'+escapeHTML(id)+'</a></h1>';
 		switch (id) {
 		case 'physical':
 			buf += '<p>Physical moves are damaging moves generally calculated with the user\'s Attack stat and the target\'s Defense stat.</p>';
@@ -859,7 +859,7 @@ window. PokedexArticlePanel = PokedexResultPanel.extend({
 		this.shortTitle = id;
 
 		var buf = '<div class="pfx-body dexentry">';
-		buf += '<a href="'+Config.baseurl+'" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<a href="'+Config.baseurl+'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
 		buf += '<h1><a href="'+Config.baseurl+'articles/'+id+'" data-target="push" class="subtle">'+id+'</a></h1>';
 		buf += '<div class="article-content"><em>Loading...</em></div>';
 		buf += '</div>';

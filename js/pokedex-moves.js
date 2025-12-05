@@ -7,7 +7,7 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 
 		var buf = '<div class="pfx-body dexentry">';
 
-		buf += '<a href="'+Config.baseurl+'" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<a href="'+Config.baseurl+'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
 		buf += '<h1><a href="'+Config.baseurl+'moves/'+id+'" data-target="push" class="subtle">'+move.name+'</a></h1>';
 
 		if (move.id === 'magikarpsrevenge') {
