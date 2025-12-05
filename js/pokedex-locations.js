@@ -16,9 +16,10 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
       buf += '<li class="result">';
       buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push">';
       buf += '<span class="col numcol">' + (i+1) + '</span>';
-      buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span> ';
-      if (notes) buf += '<span class="col abilitydesccol">' + escapeHTML(notes) + '</span>';
-      buf += '</a></li>';
+      buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span>';
+      buf += '</a>';
+      if (notes) buf += '<div style="padding:4px 8px;color:#666;font-size:0.9em">' + escapeHTML(notes) + '</div>';
+      buf += '</li>';
     }
     buf += '</ul>';
 
@@ -61,7 +62,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     // Encounters
     var encounters = loc.encounters || [];
     if (encounters.length) {
-      buf += '<h3>Encounters</h3>';
+      buf += '<div style="background:#e8f5e9;padding:12px;margin:8px 0;border-radius:4px">';
+      buf += '<h3 style="margin-top:0">Encounters</h3>';
       for (var s=0; s<encounters.length; s++) {
         var spot = encounters[s];
         if (!spot || !spot.pokemon || !spot.pokemon.length) continue;
@@ -74,13 +76,10 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         for (var p=0; p<spot.pokemon.length; p++) {
           var mon = spot.pokemon[p];
           // Apply dictionary translation to Pokemon name
-          var displayName = mon.name;
-          var monID = toID(mon.name);
-          // Check if Pokemon exists in dex, if not try to get translated name
+          var translatedName = window.translateDisplayName(mon.name);
+          var monID = toID(translatedName);
           var pokeData = BattlePokedex[monID];
-          if (pokeData) {
-            displayName = pokeData.name;
-          }
+          var displayName = pokeData ? pokeData.name : translatedName;
           
           buf += '<tr>';
           // Percent first
@@ -98,11 +97,13 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
             buf += ' <span style="color:#999;font-size:0.9em">(SOS)</span> ';
             for (var k=0; k<sos.length; k++) {
               var child = sos[k];
-              var childID = toID(child);
+              var childTranslated = window.translateDisplayName(child);
+              var childID = toID(childTranslated);
               var childData = BattlePokedex[childID];
-              var childDisplayName = childData ? childData.name : child;
+              var childDisplayName = childData ? childData.name : childTranslated;
               if (k > 0) buf += ', ';
               buf += '<a href="' + Config.baseurl + 'pokemon/' + childID + '" data-target="push" title="' + escapeHTML(childDisplayName) + '" style="font-size:0.9em">' 
+                + '<span class="picon" style="' + getPokemonIcon(childID) + ';display:inline-block;vertical-align:middle;margin-right:4px"></span>'
                 + escapeHTML(childDisplayName)
                 + '</a>';
             }
@@ -113,6 +114,15 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         }
         buf += '</tbody></table>';
       }
+      buf += '</div>'; // Close Encounters section
+    }
+    
+    // Static Pokemon (pink section)
+    if (loc.staticPokemon && loc.staticPokemon.length) {
+      buf += '<div style="background:#fce4ec;padding:12px;margin:8px 0;border-radius:4px">';
+      buf += '<h3 style="margin-top:0">Static Pokémon</h3>';
+      buf += '<p class="resultsub">Static encounter details coming soon.</p>';
+      buf += '</div>';
     }
     
     // Trainers
@@ -139,31 +149,54 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     }
 
     if (loc.trainers && loc.trainers.length) {
-      buf += '<h3>Trainers</h3>' + renderTrainerList(loc.trainers, false);
+      buf += '<div style="background:#e3f2fd;padding:12px;margin:8px 0;border-radius:4px">';
+      buf += '<h3 style="margin-top:0">Trainers</h3>' + renderTrainerList(loc.trainers, false);
+      buf += '</div>';
     }
     if (loc.bossTrainers && loc.bossTrainers.length) {
-      buf += '<h3 style="color:#7b4397">Boss Trainers</h3>' + renderTrainerList(loc.bossTrainers, true);
+      buf += '<div style="background:#e3f2fd;padding:12px;margin:8px 0;border-radius:4px">';
+      buf += '<h3 style="margin-top:0;color:#7b4397">Boss Trainers</h3>' + renderTrainerList(loc.bossTrainers, true);
+      buf += '</div>';
     }
     // Shops
     if (loc.shops && loc.shops.length) {
-      buf += '<h3>Shops</h3>';
+      buf += '<div style="background:#ffebee;padding:12px;margin:8px 0;border-radius:4px">';
+      buf += '<h3 style="margin-top:0">Shops</h3>';
       buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
       buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:110px;text-align:center">Price</th></tr></thead><tbody>';
       for (var si=0; si<loc.shops.length; si++) {
         var sh = loc.shops[si];
+        // Check for TM format: "TM90 (Zen Headbutt)"
+        var tmMatch = sh.item.match(/^TM\d+\s*\((.+)\)$/);
         var itemID = toID(sh.item);
         var shopItemData = BattleItems[itemID];
         var shopIcon = '';
+        var linkTarget = itemID;
+        var linkType = 'items';
         
-        if (shopItemData) {
+        if (tmMatch) {
+          // TM - use TM icon and link to move
+          var moveName = tmMatch[1].trim();
+          linkTarget = toID(moveName);
+          linkType = 'moves';
+          shopIcon = '<span class="itemicon" style="' + getItemIcon('tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+        } else if (sh.item === 'Poké Ball') {
+          // Fix Poké Ball to use pokeball ID
+          itemID = 'pokeball';
+          linkTarget = 'pokeball';
+          shopItemData = BattleItems['pokeball'];
+          if (shopItemData) {
+            shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
+          }
+        } else if (shopItemData) {
           shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
         }
         
         buf += '<tr>';
         buf += '<td>' + shopIcon + '</td>';
         buf += '<td>';
-        if (shopItemData) {
-          buf += '<a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push">' + escapeHTML(sh.item) + '</a>';
+        if (tmMatch || shopItemData) {
+          buf += '<a href="' + Config.baseurl + linkType + '/' + linkTarget + '" data-target="push">' + escapeHTML(sh.item) + '</a>';
         } else {
           buf += escapeHTML(sh.item);
         }
@@ -172,22 +205,42 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         buf += '</tr>';
       }
       buf += '</tbody></table>';
+      buf += '</div>';
     }
     
     // Items (quantity own column)
     if (loc.items && loc.items.length) {
-      buf += '<h3>Items</h3>';
+      buf += '<div style="background:#fff3e0;padding:12px;margin:8px 0;border-radius:4px">';
+      buf += '<h3 style="margin-top:0">Items</h3>';
       buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
       buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:70px;text-align:center">Qty</th><th>Obtain</th></tr></thead><tbody>';
       for (var ii=0; ii<loc.items.length; ii++) {
         var it = loc.items[ii];
+        // Check for TM format: "TM90 (Zen Headbutt)"
+        var tmMatch = it.item.match(/^TM\d+\s*\((.+)\)$/);
         var iid = toID(it.item);
         var itemData = BattleItems[iid];
         var itemIcon = '';
+        var linkTarget = iid;
+        var linkType = 'items';
         
         // Check if item is money (starts with $)
         if (it.item && it.item.trim().startsWith('$')) {
           itemIcon = '<img src="' + ResourcePrefix + 'sprites/pokedollar_icon.png" style="width:32px;height:32px;display:inline-block" alt="Money" />';
+        } else if (tmMatch) {
+          // TM - use TM icon and link to move
+          var moveName = tmMatch[1].trim();
+          linkTarget = toID(moveName);
+          linkType = 'moves';
+          itemIcon = '<span class="itemicon" style="' + getItemIcon('tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+        } else if (it.item === 'Poké Ball') {
+          // Fix Poké Ball to use pokeball ID
+          iid = 'pokeball';
+          linkTarget = 'pokeball';
+          itemData = BattleItems['pokeball'];
+          if (itemData) {
+            itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData) + ';width:32px;height:32px;display:inline-block"></span>';
+          }
         } else if (itemData) {
           // Only show icon if item exists in data
           itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData) + ';width:32px;height:32px;display:inline-block"></span>';
@@ -196,8 +249,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         buf += '<tr>';
         buf += '<td>' + itemIcon + '</td>';
         buf += '<td>';
-        if (itemData) {
-          buf += '<a href="' + Config.baseurl + 'items/' + iid + '" data-target="push">' + escapeHTML(it.item) + '</a>';
+        if (tmMatch || itemData) {
+          buf += '<a href="' + Config.baseurl + linkType + '/' + linkTarget + '" data-target="push">' + escapeHTML(it.item) + '</a>';
         } else {
           buf += escapeHTML(it.item);
         }
@@ -207,12 +260,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         buf += '</tr>';
       }
       buf += '</tbody></table>';
-    }
-
-    // Static encounters placeholder (future)
-    if (loc.staticPokemon && loc.staticPokemon.length) {
-      buf += '<h3>Static Pokémon</h3>';
-      buf += '<p class="resultsub">Static encounter details coming soon.</p>';
+      buf += '</div>';
     }
 
     buf += '</div>';
