@@ -1,3 +1,21 @@
+/*
+ * build-indexes.ts
+ * 
+ * NOTE: Most data generation from @pkmn libraries has been DISABLED
+ * to prevent overwriting local custom data.
+ * 
+ * Disabled sections:
+ * - pokedex.json (use scripts/import-all.js instead)
+ * - learnsets.json (use scripts/import-all.js instead)
+ * - moves.json (use scripts/import-moves.js instead)
+ * - items.json (use scripts/parse-items.js instead)
+ * - abilities.json (disabled - no local import available)
+ * - typechart.json (disabled - no local import available)
+ * - Image downloads (disabled - use existing local files only)
+ * 
+ * This script now only generates icon coordinate metadata.
+ */
+
 import * as fs from "fs";
 import * as path from "path";
 
@@ -55,8 +73,10 @@ async function main() {
   const allItems = Object.fromEntries([...generation.items].map((m) => [m.id, m]));
 
   /*********************************************************
-   * Build pokedex.json
+   * Build pokedex.json - DISABLED (use scripts/import-all.js instead)
+   * This section pulls from @pkmn/dex which overrides local Pokemon data
    *********************************************************/
+  /*
   let dexjs = {};
 
   for (let species in allSpecies) {
@@ -99,7 +119,13 @@ async function main() {
     dexjs[species] = dexEntry;
   }
   fs.writeFileSync("data/pokedex.json", JSON.stringify(dexjs, undefined, 2));
+  */
 
+  /*********************************************************
+   * Build learnsets.json - DISABLED (use scripts/import-all.js instead)
+   * This section pulls from @pkmn/dex which overrides local learnset data
+   *********************************************************/
+  /*
   {
     let learnsets = {};
     for (let species in allSpecies) {
@@ -140,11 +166,14 @@ async function main() {
     }
     fs.writeFileSync("data/learnsets.json", JSON.stringify(learnsets, undefined, 2));
   }
+  */
 
   /*********************************************************
-   * Build moves.js
+   * Build moves.js - DISABLED (use scripts/import-moves.js instead)
+   * This section pulls from @pkmn/dex which overrides local move data
    *********************************************************/
 
+  /*
   {
     let moves = {};
     for (let moveId in allMoves) {
@@ -166,11 +195,14 @@ async function main() {
     }
     fs.writeFileSync("data/moves.json", JSON.stringify(moves, undefined, 2));
   }
+  */
 
   /*********************************************************
-   * Build items.json
+   * Build items.json - DISABLED (use scripts/parse-items.js instead)
+   * This section pulls from @pkmn/dex which overrides local item data
    *********************************************************/
 
+  /*
   {
     let items = {};
     for (let itemId in allItems) {
@@ -184,11 +216,15 @@ async function main() {
     }
     fs.writeFileSync("data/items.json", JSON.stringify(items, undefined, 2));
   }
+  */
 
   /*********************************************************
-   * Build abilities.json
+   * Build abilities.json - DISABLED
+   * This section pulls from @pkmn/dex which overrides local ability data
+   * Note: No local ability import script exists yet
    *********************************************************/
 
+  /*
   {
     let abilities = {};
     for (let abilityId in allAbilities) {
@@ -202,11 +238,15 @@ async function main() {
     }
     fs.writeFileSync("data/abilities.json", JSON.stringify(abilities, undefined, 2));
   }
+  */
 
   /*********************************************************
-   * Build typechart.json
+   * Build typechart.json - DISABLED
+   * This section pulls from @pkmn/dex which overrides local type chart
+   * Note: No local type chart import script exists yet
    *********************************************************/
 
+  /*
   {
     let types = {};
     for (let typeId in allTypes) {
@@ -219,6 +259,7 @@ async function main() {
     }
     fs.writeFileSync("data/typechart.json", JSON.stringify(types, undefined, 2));
   }
+  */
 
   /** Download images */
   {
