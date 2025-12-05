@@ -403,7 +403,7 @@ Strange. Might as well sell this then!
 Item BuyPrice: 2000
 Item SellPrice: 1000
 
-Item name: Iron
+Item name: Iron 
 Item Index Number: 47
 Item Description:
 A nutritious drink for Pokémon. Does nothing.
@@ -2854,8 +2854,9 @@ Item SellPrice: 2500
 Item name: TM01
 Item Index Number: 328
 Item Description:
-Enables the user to block all attacks. Its chance of
-failing rises if it is used in succession.
+Enables the user to evade all attacks. Its chance
+of failing rises if it is used in succession.
+(+4 Prio) Z: Draws in attacks, then blocks them.
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -2903,15 +2904,17 @@ Item name: TM07
 Item Index Number: 334
 Item Description:
 The user burrows, then attacks on the next turn.
+The user can be hit by earthshaking moves while
+underground. Z: +1 Atk
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
 Item name: TM08
 Item Index Number: 335
 Item Description:
-The user fights the target up close without guarding
-itself. This also lowers the user’s [VAR BD00(0003,0000,0000)]Defense[VAR BD01] and
-[VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stats.
+The user fights the target up close without
+guarding itself. This also lowers the user’s
+Defense and Sp. Def stats.
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -2919,7 +2922,8 @@ Item name: TM09
 Item Index Number: 336
 Item Description:
 The user quietly focuses its mind and calms its
-spirit to raise its [VAR BD00(0006,0000,0000)]Sp. Atk[VAR BD01] and [VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stats.
+spirit to raise its Sp.Atk and Sp.Def stats.
+Z: +1 Def
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -2936,7 +2940,8 @@ Item name: TM11
 Item Index Number: 338
 Item Description:
 The user soars and then strikes its target on the
-next turn.
+next turn. The user can still be hit by certain
+moves like Thunder or Hurricane. Z: +1 Attack
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -2944,7 +2949,7 @@ Item name: TM12
 Item Index Number: 339
 Item Description:
 The user turns the target’s power against it. The
-higher the target’s [VAR BD00(0007,0000,0000)]Attack[VAR BD01] stat, the greater the
+higher the target’s Attack stat, the greater the
 move’s power.
 Item BuyPrice: 10000
 Item SellPrice: 5000
@@ -2954,7 +2959,7 @@ Item Index Number: 340
 Item Description:
 A howling blizzard is summoned to strike opposing
 Pokémon. This may also leave the opposing
-Pokémon frozen. (10%)
+Pokémon frozen. Can't miss in Snow (10%)
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -2962,7 +2967,7 @@ Item name: TM14
 Item Index Number: 341
 Item Description:
 The target is struck with an icy-cold beam of energy.
-This may also leave the target frozen. (10%)
+This may also leave the target frozen. (10%, Pulse)
 Item BuyPrice: 30000
 Item SellPrice: 15000
 
@@ -2977,18 +2982,18 @@ Item SellPrice: 25000
 Item name: TM16
 Item Index Number: 343
 Item Description:
-A wondrous wall of light is put up to reduce damage
-from special attacks for five turns on the user’s
-side of the field.
+A wondrous wall of light is put up to reduce
+damage from special attacks for five turns on the
+user's side. 50% in Singles. 33% in Doubles.
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
 Item name: TM17
 Item Index Number: 344
 Item Description:
-A wondrous wall of light is put up to reduce damage
-from physical attacks for five turns on the user’s
-side of the field.
+A wondrous wall of light is put up to reduce
+damage from physical attacks for five turns on the
+user's side. 50% in Singles. 33% in Doubles.
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -2996,7 +3001,7 @@ Item name: TM18
 Item Index Number: 345
 Item Description:
 Diving on the first turn, the user floats up and
-attacks on the next turn.
+attacks on the next turn. Z: +1 Attack
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3004,16 +3009,16 @@ Item name: TM19
 Item Index Number: 346
 Item Description:
 The user lands and rests its body. It restores the
-user’s HP by up to half of its max HP. The user
-loses the Flying-type until the end of the turn.
+user’s HP by 50%. The user loses the Flying-type
+until the end of the turn. Z: +1 Speed
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
 Item name: TM20
 Item Index Number: 347
 Item Description:
-Cloaking itself in flame, the user attacks. This,
-move raises the user's [VAR BD00(0004,0000,0000)]Speed[VAR BD01].
+Cloaking itself in flame, the user attacks. This
+move raises the user's Speed. Z: +1 Speed
 Item BuyPrice: 12000
 Item SellPrice: 6000
 
@@ -3021,7 +3026,8 @@ Item name: TM21
 Item Index Number: 348
 Item Description:
 The user stimulates its brain by thinking bad
-thoughts. This sharply raises the user’s [VAR BD00(0006,0000,0000)]Sp. Atk[VAR BD01] stat.
+thoughts. This sharply raises the user’s Sp.Atk.
+Z: +1 Accuracy
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3037,7 +3043,7 @@ Item name: TM23
 Item Index Number: 350
 Item Description:
 Boulders are hurled at the target. This also lowers
-the target’s [VAR BD00(0004,0000,0000)]Speed[VAR BD01] stat by preventing its movement.
+the target’s Speed stat by preventing its movement.
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3046,16 +3052,16 @@ Item Index Number: 351
 Item Description:
 The target is attacked with a powerful beam.
 The user can’t move on the next turn and
-restores 15% of damage dealt.
+restores 15% of damage dealt. (Pulse)
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
 Item name: TM25
 Item Index Number: 352
 Item Description:
-In this two-turn attack, the user gathers light, then
-fires the beam on the next turn. Fires instantly
-if used in Sun. Deals half damage in Rain, Sand, or Hail.
+The user gathers light, then blasts a bundled
+beam on the next turn. Fires instantly in Harsh
+Sunlight. 50% less damage in other weathers. (Pulse)
 Item BuyPrice: 30000
 Item SellPrice: 15000
 
@@ -3071,7 +3077,8 @@ Item name: TM27
 Item Index Number: 354
 Item Description:
 A frenetic dance to uplift the fighting spirit.
-This sharply raises the user’s [VAR BD00(0007,0000,0000)]Attack[VAR BD01] stat.
+This sharply raises the user’s Attack stat.
+Z: +1 Accuracy
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3079,7 +3086,7 @@ Item name: TM28
 Item Index Number: 355
 Item Description:
 The user attacks by swinging its tail as if it were a
-vicious wave in a raging storm.
+vicious wave in a raging storm. Z: +1 Attack
 Item BuyPrice: 30000
 Item SellPrice: 15000
 
@@ -3095,7 +3102,8 @@ Item name: TM30
 Item Index Number: 357
 Item Description:
 The user hurls a shadowy blob at the target.
-This may also lower the target’s [VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stat. (20%, Bullet)
+This may also lower the target’s Sp. Def stat.
+(20%, Bullet)
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3120,7 +3128,8 @@ Item name: TM33
 Item Index Number: 360
 Item Description:
 The user attacks the target with a pulsing blast of
-water. This may also confuse the target. (20%, Pulse)
+water. This may also confuse the target.
+(20%, Pulse) Z: +2 Speed
 Item BuyPrice: 15000
 Item SellPrice: 7500
 
@@ -3164,7 +3173,7 @@ Item name: TM38
 Item Index Number: 365
 Item Description:
 The user plays rough with the target and attacks it.
-This may also lower the target’s [VAR BD00(0007,0000,0000)]Attack[VAR BD01] stat. (10%)
+This may also lower the target’s Attack stat. (10%)
 Item BuyPrice: 30000
 Item SellPrice: 15000
 
@@ -3181,7 +3190,8 @@ Item name: TM40
 Item Index Number: 367
 Item Description:
 The user tenses its muscles to bulk up its body,
-raising both its [VAR BD00(0007,0000,0000)]Attack[VAR BD01] and [VAR BD00(0003,0000,0000)]Defense[VAR BD01] stats.
+raising both its Attack and Defense stats.
+Z: +1 Sp.Def
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3189,7 +3199,8 @@ Item name: TM41
 Item Index Number: 368
 Item Description:
 Striking opponents over and over makes the user’s
-fists harder. Hitting a target raises the [VAR BD00(0007,0000,0000)]Attack[VAR BD01] stat. (Punch)
+fists harder. Hitting a target raises the Attack stat.
+(Punch)
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3206,7 +3217,7 @@ Item Index Number: 370
 Item Description:
 The user jets itself into the target at
 intense speeds to warm its body up.
-This attack raises the user's [VAR BD00(0004,0000,0000)]Speed[VAR BD01].
+This attack raises the user's Speed. Z: +1 Speed
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3230,7 +3241,7 @@ Item name: TM46
 Item Index Number: 373
 Item Description:
 The user attacks and captures opposing Pokémon
-using an electric net. This lowers their [VAR BD00(0004,0000,0000)]Speed[VAR BD01] stats.
+using an electric net. This lowers their Speed stats.
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3238,7 +3249,7 @@ Item name: TM47
 Item Index Number: 374
 Item Description:
 The user alters its cellular structure to liquefy itself,
-raising its [VAR BD00(0003,0000,0000)]Defense[VAR BD01] and [VAR BD00(0006,0000,0000)]Sp.Atk[VAR BD01] stats.
+raising its Defense and Sp.Atk stats. Z: +1 Sp.Def
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3246,7 +3257,8 @@ Item name: TM48
 Item Index Number: 375
 Item Description:
 The user yells as if it’s ranting about something,
-which lowers the [VAR BD00(0006,0000,0000)]Sp. Atk[VAR BD01] stat of opposing Pokémon. (Sound)
+which lowers the Sp.Atk stat of opposing Pokémon.
+(Sound) Z: +1 Sp.Def
 Item BuyPrice: 18000
 Item SellPrice: 9000
 
@@ -3263,8 +3275,8 @@ Item name: TM50
 Item Index Number: 377
 Item Description:
 In this two-turn attack, blades of wind hit opposing
-Pokémon on the second turn. The user's [VAR BD00(0006,0000,0000)]Sp.Atk[VAR BD01]
-is raised after use.
+Pokémon on the second turn. The user's Sp.Atk
+is raised after use. Z: +1 Speed
 Item BuyPrice: 27450
 Item SellPrice: 13725
 
@@ -3272,7 +3284,7 @@ Item name: TM51
 Item Index Number: 378
 Item Description:
 The target is hit with wings of steel. This may also
-raise the user’s [VAR BD00(0003,0000,0000)]Defense[VAR BD01] stat. (25%)
+raise the user’s Defense stat. (25%) Z: +1 Def
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3288,16 +3300,17 @@ Item name: TM53
 Item Index Number: 380
 Item Description:
 The user draws power from nature and fires it at the
-target. This may also lower the target’s [VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stat. (10%, Bullet)
+target. This may also lower the target’s Sp.Def.
+(10%, Bullet, Pulse)
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
-Item name: TM54
+Item name: TM54  
 Item Index Number: 381
 Item Description:
 The user whips up a vicious tornado to tear at the
 opposing Pokémon. This also lowers the opponent's
-[VAR BD00(0007,0000,0000)]Attack[VAR BD01] stats.
+Attack stats. Z: +1 Defense
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3313,7 +3326,7 @@ Item name: TM56
 Item Index Number: 383
 Item Description:
 The user attacks with a gust of chilled air. This also
-lowers the opposing Pokémon’s [VAR BD00(0004,0000,0000)]Speed[VAR BD01] stats.
+lowers the opposing Pokémon’s Speed stats.
 Item BuyPrice: 23500
 Item SellPrice: 11750
 
@@ -3322,7 +3335,7 @@ Item Index Number: 384
 Item Description:
 The user attacks with an electric charge. The user
 will use any remaining electricity to raise its
-[VAR BD00(0006,0000,0000)]Sp. Atk[VAR BD01] stat.
+Sp.Atk stat. (Pulse)
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3330,7 +3343,8 @@ Item name: TM58
 Item Index Number: 385
 Item Description:
 The user attacks by breathing a special, hot fire.
-This also lowers the target’s [VAR BD00(0006,0000,0000)]Sp. Atk[VAR BD01] stat.
+This also lowers the target’s Sp. Atk stat.
+Z: +1 Sp.Atk
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3338,7 +3352,7 @@ Item name: TM59
 Item Index Number: 386
 Item Description:
 The user launches a weak jolt of electricity that
-paralyzes the target.
+paralyzes the target. Z: +1 Sp.Def
 Item BuyPrice: 30000
 Item SellPrice: 15000
 
@@ -3347,7 +3361,7 @@ Item Index Number: 387
 Item Description:
 The target is attacked with a shock wave generated
 by the user’s gaping mouth. May raise the user’s
-[VAR BD00(0006,0000,0000)]Sp.Atk[VAR BD01] stat. (10%, Pulse)
+Sp.Atk stat. (10%, Pulse)
 Item BuyPrice: 19000
 Item SellPrice: 9500
 
@@ -3355,7 +3369,7 @@ Item name: TM61
 Item Index Number: 388
 Item Description:
 The user shoots a sinister, bluish-white flame at the
-target to inflict a burn.
+target to inflict a burn. Z: +1 Sp.Atk
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3381,7 +3395,7 @@ Item Index Number: 391
 Item Description:
 The user attacks everything around it by causing a
 tremendous explosion. The user faints upon using
-this move.
+this move. (Bullet)
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3429,9 +3443,8 @@ Item SellPrice: 5000
 Item name: TM70
 Item Index Number: 397
 Item Description:
-This move reduces damage from physical and
-special moves by 33% for five turns. This can be
-used only in a hailstorm.
+The user attacks by blowing freezing cold air onto
+all nearby targets. This lowers their Speed stats.
 Item BuyPrice: 24000
 Item SellPrice: 12000
 
@@ -3439,7 +3452,7 @@ Item name: TM71
 Item Index Number: 398
 Item Description:
 The target is hit by a strong telekinetic force.
-This may also lower the target’s [VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stat. (10%)
+This may also lower the target’s Sp. Def stat. (10%)
 Item BuyPrice: 30000
 Item SellPrice: 15000
 
@@ -3481,7 +3494,7 @@ Item Index Number: 403
 Item Description:
 The user strikes thrice with a three-beam
 attack. May also burn, freeze, or paralyze the target.
-8% chance to status per hit.
+8% chance to status per hit. (Pulse) Z: +1 Sp.Atk
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3497,7 +3510,8 @@ Item name: TM78
 Item Index Number: 405
 Item Description:
 The user meditates to awaken the power deep
-within its body and raise its [VAR BD00(0007,0000,0000)]Attack[VAR BD01] and [VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stats.
+within its body and raise its Atk and Sp.Def stats.
+Z: +1 Def
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3530,7 +3544,7 @@ Item Index Number: 409
 Item Description:
 The user attacks by launching waves of mud at
 every Pokémon. This may also lower
-their [VAR BD00(0004,0000,0000)]Speed[VAR BD01] stats. (30%)
+their Speed stats. (30%)
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3572,7 +3586,7 @@ Item Index Number: 414
 Item Description:
 The user heightens its mental focus and unleashes
 its power. This may also lower the target’s 
-[VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stat. (10%. Bullet)
+Sp.Def stat. (10%. Bullet, Pulse)
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3580,7 +3594,7 @@ Item name: TM88
 Item Index Number: 415
 Item Description:
 The user confounds the target with speed, then
-slashes. This attack never misses.
+slashes. This attack never misses. Z: +1 Attack
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3606,7 +3620,7 @@ Item Index Number: 418
 Item Description:
 The user gathers all its light energy and releases it
 all at once. This may also lower the target’s
-[VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stat. (10%)
+Sp. Def stat. (10%, Pulse)
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3615,7 +3629,7 @@ Item Index Number: 419
 Item Description:
 The user makes the ground under the target erupt
 with power. This may also lower the target’s 
-[VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stat. (10%)
+Sp.Def stat. (10%)
 Item BuyPrice: 10000
 Item SellPrice: 5000
 
@@ -3623,7 +3637,7 @@ Item name: HM01
 Item Index Number: 420
 Item Description:
 The user slams a barrage of hard-shelled seeds
-down on the target from above. (Bullet)
+down on the target from above. (Bullet, Pulse)
 Item BuyPrice: 0
 Item SellPrice: 0
 
@@ -4241,7 +4255,7 @@ Item name: Heavy Ball
 Item Index Number: 495
 Item Description:
 A Poké Ball that is better than usual at catching
-very heavy Pokémon. (-20 - +40 catch rate based on weight.)
+very heavy Pokémon. (-20 - +40 catch rate based on weight.) 
 Item BuyPrice: 600
 Item SellPrice: 300
 
@@ -4417,12 +4431,12 @@ to Mega Evolve during battle.
 Item BuyPrice: 0
 Item SellPrice: 0
 
-Item name: Greninjite
+Item name: Greninjite X
 Item Index Number: 516
 Item Description:
 One of a variety of mysterious Mega Stones.
 Have Greninja hold it to Mega Evolve.
-Mega Greninja's Water Shuriken is boosted!
+Mega Greninja X's Dark-Typing is boosted!
 Item BuyPrice: 0
 Item SellPrice: 0
 
@@ -4435,12 +4449,12 @@ to Mega Evolve during battle.
 Item BuyPrice: 0
 Item SellPrice: 0
 
-Item name: Data Card 14
+Item name: Greninjite Y
 Item Index Number: 518
 Item Description:
-It holds Pokéathlon records. It is a card that shows
-how many times your Pokémon tackled in
-the Pokéathlon.
+One of a variety of mysterious Mega Stones.
+Have Greninja hold it to Mega Evolve.
+Mega Greninja Y's Water Shuriken is boosted!
 Item BuyPrice: 0
 Item SellPrice: 0
 
@@ -5094,7 +5108,7 @@ Item SellPrice: 0
 Item name: X Sp. Atk 2
 Item Index Number: 594
 Item Description:
-It sharply raises the [VAR BD00(0006,0000,0000)]Sp. Atk[VAR BD01] stat of a Pokémon in
+It sharply raises the [VAR BD00(0006,0000,0000)]Sp.Atk[VAR BD01] stat of a Pokémon in
 battle. It wears off if the Pokémon is withdrawn.
 Item BuyPrice: 0
 Item SellPrice: 0
@@ -5102,7 +5116,7 @@ Item SellPrice: 0
 Item name: X Sp. Def 2
 Item Index Number: 595
 Item Description:
-It sharply raises the [VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stat of a Pokémon in
+It sharply raises the [VAR BD00(0002,0000,0000)]Sp.Def[VAR BD01] stat of a Pokémon in
 battle. It wears off if the Pokémon is withdrawn.
 Item BuyPrice: 0
 Item SellPrice: 0
@@ -5142,7 +5156,7 @@ Item SellPrice: 0
 Item name: X Sp. Atk 3
 Item Index Number: 600
 Item Description:
-It drastically raises the [VAR BD00(0006,0000,0000)]Sp. Atk[VAR BD01] stat of a Pokémon
+It drastically raises the [VAR BD00(0006,0000,0000)]Sp.Atk[VAR BD01] stat of a Pokémon
 in battle. It wears off if the Pokémon is withdrawn.
 Item BuyPrice: 0
 Item SellPrice: 0
@@ -5150,7 +5164,7 @@ Item SellPrice: 0
 Item name: X Sp. Def 3
 Item Index Number: 601
 Item Description:
-It drastically raises the [VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stat of a Pokémon
+It drastically raises the [VAR BD00(0002,0000,0000)]Sp.Def[VAR BD01] stat of a Pokémon
 in battle. It wears off if the Pokémon is withdrawn.
 Item BuyPrice: 0
 Item SellPrice: 0
@@ -5191,7 +5205,7 @@ Item SellPrice: 0
 Item name: X Sp. Atk 6
 Item Index Number: 606
 Item Description:
-It raises the [VAR BD00(0006,0000,0000)]Sp. Atk[VAR BD01] stat of a Pokémon in battle
+It raises the [VAR BD00(0006,0000,0000)]Sp.Atk[VAR BD01] stat of a Pokémon in battle
 immensely. It wears off if the Pokémon
 is withdrawn.
 Item BuyPrice: 0
@@ -5200,7 +5214,7 @@ Item SellPrice: 0
 Item name: X Sp. Def 6
 Item Index Number: 607
 Item Description:
-It raises the [VAR BD00(0002,0000,0000)]Sp. Def[VAR BD01] stat of a Pokémon in battle
+It raises the [VAR BD00(0002,0000,0000)]Sp.Def[VAR BD01] stat of a Pokémon in battle
 immensely. It wears off if the Pokémon
 is withdrawn.
 Item BuyPrice: 0
@@ -5296,7 +5310,7 @@ Item name: TM93
 Item Index Number: 618
 Item Description:
 The user slams a barrage of hard-shelled seeds
-down on the target from above. (Bullet)
+down on the target from above. (Bullet, Pulse)
 Item BuyPrice: 50000
 Item SellPrice: 25000
 
@@ -5304,7 +5318,7 @@ Item name: TM94
 Item Index Number: 619
 Item Description:
 The target is slugged by a punch thrown with muscle-packed
-power. This may lower the target's defense. (20%, Punch)
+power. This may lower the target's Def. (20%, Punch)
 Item BuyPrice: 11500
 Item SellPrice: 5750
 
@@ -5935,7 +5949,7 @@ Item Index Number: 692
 Item Description:
 The user damages opposing Pokémon by emitting a
 powerful flash. This has a chance to drop the target’s
-[VAR BD00(0009,0000,0000)]Evasion[VAR BD01] stats. (25%)
+Evasion stat. (25%)
 Item BuyPrice: 30000
 Item SellPrice: 15000
 
@@ -5953,7 +5967,7 @@ Item Index Number: 694
 Item Description:
 The user attacks suddenly as if leaping out from tall
 grass. The user's nimble footwork boosts
-its [VAR BD00(0004,0000,0000)]Speed[VAR BD01] stat.
+it's Speed stat. Z: +1 Speed
 Item BuyPrice: 5000
 Item SellPrice: 2500
 
@@ -6965,7 +6979,7 @@ Item Index Number: 811
 Item Description:
 Upgrades Grass moves. Check held desc for R-Moves:
 Vileplume, Parasect, Victreebel, ExeggutorAandK, Tropius,
-Torterra, Carnivine, Tangrowth, Rotom-M, Leavanny, Tsareena
+Torterra, Carnivine, Tangrowth, Rotom-M, Leavanny, Tsareena 
 Item BuyPrice: 0
 Item SellPrice: 0
 
@@ -6983,7 +6997,7 @@ Item Index Number: 813
 Item Description:
 Upgrades Fighting moves. Check held desc for R-Moves:
 Primeape, Machamp, HitmonChanLeeTop, Granbull, Toxicroak,
-Samurott, Scrafty, Mienshao, Chesnaught, Crabominable,
+Samurott, Scrafty, Mienshao, Chesnaught, Crabominable, 
 Item BuyPrice: 0
 Item SellPrice: 0
 

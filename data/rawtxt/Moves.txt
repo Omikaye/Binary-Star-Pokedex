@@ -86,7 +86,7 @@ Z-Power: 105
 Z-Effect: raises critical-hit ratio two stages
 Flags: Protect, Mirror, AnimateAlly
 Description:
-Numerous coins are hurled at the target to inflict damage. This lowers the targets Evasion. Drops money after battle. Z: +2 Crit stages
+Numerous coins are hurled at the targets to inflict damage. This lowers the target's Evasion. Drops money after battle. Z: +2 Crit stages
 
 ID: 7
 Name: Fire Punch
@@ -3577,7 +3577,7 @@ Z-Power: 90
 Z-Effect: +1 Defense
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user whips up a vicious tornado to tear at the opposing Pokémon. This also lowers the opponent's Attack stats.
+The user whips up a vicious tornado to tear at the opposing Pokémon. This also lowers the opponent's Attack stats. Z: +1 Def
 
 ID: 240
 Name: Rain Dance
@@ -5298,12 +5298,12 @@ Accuracy: 101
 Type: Flying
 Targeting: Self
 Base PP: 5
-Z-Power: 70
-Z-Effect: +3 Evasiveness
+Z-Power: 0
+Z-Effect: +1 Speed
 Heal: 50
 Flags: Snatch, Heal
 Description:
-The user lands and rests its body. It restores the user’s HP by up to half of its max HP. The user loses its Flying-type for the rest of the turn.
+The user lands and rests its body. It restores the user’s HP by 50%. The user loses its Flying-type for the rest of the turn. Z: +1 Speed
 
 ID: 356
 Name: Gravity
@@ -6060,7 +6060,7 @@ Z-Power: 90
 Z-Effect: +1 Speed
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user tackles the target while exhibiting overwhelming menace. This attack raises the user's Speed. Z: +1 Speed
+The user jets itself into the target at intense speeds to warm its body up. This attack raises the user's Speed. Z: +1 Speed
 
 ID: 408
 Name: Power Gem
@@ -7137,7 +7137,7 @@ Z-Power: 35
 Z-Effect: +2 Attack
 Flags: Protect, Mirror, FailSkyBattle, AnimateAlly, Ballistic, Pulse
 Description:
-The user throws a stone or similar projectile to attack an opponent. A flying Pokémon will fall to the ground when it’s hit. (Bullet)
+The user throws a stone or similar projectile to attack an opponent. A flying Pokémon will fall to the ground when it’s hit. (Pulse, Bullet) Z: +2 Atk
 
 ID: 480
 Name: Storm Throw
@@ -7199,7 +7199,7 @@ Z-Power: 0
 Z-Effect: resets lowered stats of the user
 Flags: Snatch, Dance
 Description:
-The user lightly performs a beautiful, mystic dance. This boosts the user’s Sp. Atk, Sp. Def, and Speed stats.
+The user lightly performs a beautiful, mystic dance. This boosts the user’s Sp. Atk, Sp. Def, and Speed stats. Z: Resets lowered stats
 
 ID: 484
 Name: Heavy Slam
@@ -7241,7 +7241,7 @@ Z-Power: 40
 Z-Effect: +2 Speed
 Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
-The user hurls an electric orb at the target. The faster the user is than the target, the greater the move’s power. (40 - 150 Power, Bullet, Pulse)
+The user hurls an electric orb at the target. The faster the user is than the target, the greater the power. (40-150 Pow, Bullet/Pulse) Z: +2 Speed
 
 ID: 487
 Name: Soak
@@ -7255,7 +7255,7 @@ Z-Power: 0
 Z-Effect: +1 Speed
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-The user shoots a torrent of water at the target and changes the target’s type to Water.
+The user shoots a torrent of water at the target and changes the target’s type to Water. Z: +1 Speed
 
 ID: 488
 Name: Flame Charge
@@ -7270,7 +7270,7 @@ Z-Power: 90
 Z-Effect: +1 Speed
 Flags: MakesContact, Protect, Mirror, Defrost, AnimateAlly
 Description:
-Cloaking itself in flame, the user attacks. This, move raises the user's Speed.
+Cloaking itself in flame, the user attacks. This move raises the user's Speed. Z: +1 Speed
 
 ID: 489
 Name: Coil
@@ -7287,7 +7287,7 @@ Z-Power: 0
 Z-Effect: +1 Speed
 Flags: Snatch
 Description:
-The user coils up and concentrates. This raises its Attack and Defense stats as well as its Accuracy.
+The user coils up and concentrates. This raises its Attack and Defense stats as well as its Accuracy. Z: +1 Speed
 
 ID: 490
 Name: Low Sweep
@@ -7317,7 +7317,7 @@ Z-Power: 70
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
-The user spits fluid that works to melt the target. This harshly lowers the target’s Sp. Def stat. (Bullet, Pulse)
+The user spits fluid that works to melt the target. This harshly lowers the target’s Sp. Def stat. (Bullet, Pulse) Z: +1 Sp.Atk
 
 ID: 492
 Name: Foul Play
@@ -7345,7 +7345,7 @@ Z-Power: 0
 Z-Effect: makes the user the center of attention
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-The user’s mysterious psychic wave changes the target’s Ability to Simple.
+The user’s mysterious psychic wave changes the target’s Ability to Simple. Z: Center of attention
 
 ID: 494
 Name: Entrainment
@@ -7360,7 +7360,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-The user dances with an odd rhythm that compels the target to mimic it, making the target’s Ability the same as the user’s. (+1 Priority)
+The user dances with an odd rhythm that compels the target to mimic it, making the target’s Ability the same as the user’s. (+1 Priority) Z: +2 Speed
 
 ID: 495
 Name: After You
@@ -7374,7 +7374,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: IgnoreSubstitute, AnimateAlly
 Description:
-The user helps the target and makes it use its move right after the user.
+The user helps the target and makes it use its move right after the user. Z: +2 Speed
 
 ID: 496
 Name: Round
@@ -7388,7 +7388,7 @@ Z-Power: 50
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, Sound, IgnoreSubstitute, AnimateAlly
 Description:
-The user attacks the target with a song. Others can use Round too to double the power of the attacks. (Sound)
+The user attacks the target with a song. Others can use Round too to double the power of the attacks. (Sound) Z: +1 Sp.Atk
 
 ID: 497
 Name: Echoed Voice
@@ -7416,7 +7416,7 @@ Z-Power: 70
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-Looking for an opening, the user strikes consistently. The target’s Def and Evasion changes don’t affect this attack’s damage.
+Looking for an opening, the user strikes consistently. The target’s Def and Evasion changes don’t affect this attack’s damage. Z: +1 Attack
 
 ID: 499
 Name: Clear Smog
@@ -7430,7 +7430,7 @@ Z-Power: 100
 Z-Effect: resets lowered stats of the user
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user attacks by spewing a clump of special gases. All stat changes are returned to normal. This move cannot miss.
+The user attacks by spewing a clump of special gases. All stat changes are returned to normal. This move cannot miss. Z: Resets lowered stats.
 
 ID: 500
 Name: Stored Power
@@ -7444,7 +7444,7 @@ Z-Power: 115
 Z-Effect: resets lowered stats of the user
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user attacks the target with stored energy. The more the user’s stats are raised, the greater the move’s power. (+20 Power per raised stat)
+The user attacks the target with stored energy. The more the user’s stats are raised, the stronger it is.(+20 Power per stat) Z: Resets lowered stats.
 
 ID: 501
 Name: Quick Guard
@@ -7459,7 +7459,7 @@ Z-Power: 0
 Z-Effect: raises critical-hit ratio two stages
 Flags: Snatch
 Description:
-The user protects itself and its allies from priority moves. (+3 Priority)
+The user protects itself and its allies from priority moves. (+3 Priority) Z: +2 Crit Stages
 
 ID: 502
 Name: Ally Switch
@@ -7474,7 +7474,7 @@ Z-Power: 0
 Z-Effect: recovers all of user's HP
 Flags: Snatch
 Description:
-The user teleports using a strange power and switches places with one of its allies. (+2 Priority)
+The user teleports using a strange power and switches places with one of its allies. (+2 Priority) Z: Heals user's HP
 
 ID: 503
 Name: Scald
@@ -7503,7 +7503,7 @@ Z-Power: 0
 Z-Effect: resets lowered stats of the user
 Flags: Snatch
 Description:
-The user breaks its shell, which lowers Defense and Sp. Def stats but sharply raises its Attack, Sp. Atk, and Speed stats.
+The user breaks its shell, which lowers Defense and Sp. Def stats but sharply raises its Attack, Sp. Atk, and Speed stats. Z: Resets lowered stats
 
 ID: 505
 Name: Heal Pulse
@@ -7518,7 +7518,7 @@ Z-Effect: +1 Special Defense
 Heal: 50
 Flags: Protect, Reflectable, DistanceTriple, Heal, AnimateAlly
 Description:
-The user emits a healing pulse that restores the target’s HP by up to half of its max HP. (Pulse)
+The user emits a healing pulse that restores the target’s HP by up to half of its max HP. (Pulse: Heals 75% if Mega Launcher) Z: +1 Sp.Def
 
 ID: 506
 Name: Hex
@@ -7532,7 +7532,7 @@ Z-Power: 75
 Z-Effect: +2 Special Defense
 Flags: Protect, Mirror, AnimateAlly
 Description:
-This relentless attack does double damage to a target affected by major status conditions.
+This relentless attack does double damage to a target affected by major status conditions. Z: +2 Sp.Def
 
 ID: 507
 Name: Sky Drop
@@ -7546,7 +7546,7 @@ Z-Power: 100
 Z-Effect: +1 Attack
 Flags: MakesContact, Charge, Protect, Mirror, Gravity, DistanceTriple, AnimateAlly
 Description:
-The user takes the target into the sky, then drops it during the next turn. The target cannot attack while in the sky. Heavy Pokémon can't be lifted.
+The user takes the target into the sky, then drops it during the next turn. The target cannot attack while in the sky. Heavy foes can't be lifted. Z: +1 Atk
 
 ID: 508
 Name: Shift Gear
@@ -7562,7 +7562,7 @@ Z-Power: 0
 Z-Effect: +1 Speed
 Flags: Snatch
 Description:
-The user rotates its gears, raising its Attack stat and sharply raising its Speed stat.
+The user rotates its gears, raising its Attack stat and sharply raising its Speed stat. Z: +1 Speed
 
 ID: 509
 Name: Circle Throw
@@ -7577,7 +7577,7 @@ Z-Power: 75
 Z-Effect: +2 Defense
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The target is thrown, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority)
+The target is thrown, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority) Z: +2 Def
 
 ID: 510
 Name: Incinerate
@@ -7605,7 +7605,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user suppresses the target and makes its move go last.
+The user suppresses the target and makes its move go last. Z: +2 Speed
 
 ID: 512
 Name: Acrobatics
@@ -7634,7 +7634,7 @@ Z-Power: 0
 Z-Effect: +3 Attack
 Flags: Protect, IgnoreSubstitute, AnimateAlly
 Description:
-The user reflects the target’s type, making it the same type as the target. (+1 Priority)
+The user reflects the target’s type, making it the same type as the target. (+1 Priority) Z: +3 Attack
 
 ID: 514
 Name: Retaliate
@@ -7677,7 +7677,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Mirror, IgnoreSubstitute, AnimateAlly
 Description:
-The user passes its held item to the target when the target isn’t holding an item. (+1 Priority)
+The user passes its held item to the target when the target isn’t holding an item. (+1 Priority) Z: +2 Speed
 
 ID: 517
 Name: Inferno
@@ -7692,7 +7692,7 @@ Z-Power: 150
 Z-Effect: None
 Flags: Protect, Mirror, Defrost, AnimateAlly
 Description:
-The user attacks by engulfing the target in flames This innaccurate but powerful move ignores the opponent's stat changes. Has a 30% Burn chance.
+The user attacks by engulfing the target in flames This innaccurate move always burns its target.
 
 ID: 518
 Name: Water Pledge
@@ -7763,7 +7763,7 @@ Z-Power: 90
 Z-Effect: +1 Special Defense
 Flags: Protect, Mirror, AnimateAlly
 Description:
-While resisting, the user attacks the opposing Pokémon. This lowers the Sp. Atk stat of those hit.
+While resisting, the user attacks the opposing Pokémon. This lowers the Sp. Atk stat of those hit. Z: +1 Sp.Def
 
 ID: 523
 Name: Bulldoze
@@ -7809,7 +7809,7 @@ Z-Power: 75
 Z-Effect: +2 Special Defense
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The target is knocked away, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority)
+The target is knocked away, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority) Z: +2 Sp.Def
 
 ID: 526
 Name: Work Up
@@ -7825,7 +7825,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Snatch
 Description:
-The user is roused, and its Attack and Sp. Atk stats increase.
+The user is roused, and its Attack and Sp. Atk stats increase. Z: +2 Speed
 
 ID: 527
 Name: Electroweb
@@ -7947,7 +7947,7 @@ Z-Power: 80
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user cuts its target with sharp shells. This may also lower the target’s Defense stat. (50%)
+The user cuts its target with sharp shells. This may also lower the target’s Defense stat. (50%) Z: +1 Attack
 
 ID: 535
 Name: Heat Crash
@@ -7961,7 +7961,7 @@ Z-Power: 80
 Z-Effect: +2 Defense
 Flags: MakesContact, Protect, Mirror, Defrost, FailSkyBattle, AnimateAlly
 Description:
-The user slams its target with its flame-covered body. The more the user outweighs the target, the greater the move’s power. (40 - 120 Power)
+The user slams its target with its flame-covered body. The more the user outweighs the target, the greater the move’s power. (40 - 120 Power) Z: +2 Def
 
 ID: 536
 Name: Leaf Tornado
@@ -7977,7 +7977,7 @@ Z-Power: 80
 Z-Effect: raises critical-hit ratio two stages
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user attacks its target by encircling it in sharp leaves. The target is trapped and damaged for 4-5 turns.
+The user attacks its target by encircling it in sharp leaves. The target is trapped and damaged for 4-5 turns. Z: +2 Crit Stages
 
 ID: 537
 Name: Steamroller
@@ -7992,7 +7992,7 @@ Z-Power: 105
 Z-Effect: +1 Speed
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user crushes its target by rolling over the target with its rolled-up body. This may also make the target flinch. (30%)
+The user crushes its target by rolling over the target with its rolled-up body. This may also make the target flinch. (30%) Z: +1 Speed
 
 ID: 538
 Name: Cotton Guard
@@ -8007,7 +8007,7 @@ Z-Power: 0
 Z-Effect: makes the user the center of attention
 Flags: Snatch
 Description:
-The user protects itself by wrapping its body in soft cotton, which drastically raises the user’s Defense stat.
+The user protects itself by wrapping its body in soft cotton, which drastically raises the user’s Defense stat. Z: Center of attention.
 
 ID: 539
 Name: Night Daze
@@ -8037,7 +8037,7 @@ Z-Power: 150
 Z-Effect: None
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user materializes an odd psychic wave to attack the target. This attack does physical damage.
+The user materializes an odd psychic wave to attack the target twice. This attack does physical damage.
 
 ID: 541
 Name: Tail Slap
@@ -8233,7 +8233,7 @@ Z-Power: 100
 Z-Effect: +1 Speed
 Flags: Charge, Protect, Mirror, AnimateAlly
 Description:
-On the second turn, the user hits the target with electrically charged ice. This may also leave the target with paralysis. (30%)
+On the second turn, the user hits the target with electrically charged ice. This may also leave the target with paralysis. (30%) Z: +1 Speed
 
 ID: 554
 Name: Ice Burn
@@ -8248,7 +8248,7 @@ Z-Power: 100
 Z-Effect: +1 Speed
 Flags: Charge, Protect, Mirror, Defrost, AnimateAlly
 Description:
-On the second turn, an ultracold, freezing wind surrounds the target. This may leave the target with a burn. (30%)
+On the second turn, an ultracold, freezing wind surrounds the target. This may leave the target with a burn. (30%) Z: +1 Speed
 
 ID: 555
 Name: Snarl
@@ -8263,7 +8263,7 @@ Z-Power: 90
 Z-Effect: +1 Special Defense
 Flags: Protect, Mirror, Sound, IgnoreSubstitute
 Description:
-The user yells as if it’s ranting about something, which lowers the Sp. Atk stat of opposing Pokémon. (Sound)
+The user yells as if it’s ranting about something, which lowers the Sp. Atk stat of opposing Pokémon. (Sound) Z: +1 Sp.Def
 
 ID: 556
 Name: Icicle Crash
@@ -8383,7 +8383,7 @@ Z-Power: 0
 Z-Effect: makes the user the center of attention
 Flags: Snatch, DistanceTriple, FailSkyBattle
 Description:
-Tilling the soil, the user makes it easier for plants to grow. This raises the Def, Sp. Def, and Acc. stats of grounded Grass-type Pokémon.
+Tilling the soil, the user makes it easier for plants to grow. This raises the Def, Sp. Def, and Acc. stats of grounded Grass-type Pokémon. Z: Follow Me
 
 ID: 564
 Name: Sticky Web
@@ -8397,7 +8397,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Reflectable, Snatch
 Description:
-The user weaves a sticky net around the opposing team, which lowers their Speed stat upon switching into battle.
+The user weaves a sticky net around the opposing team, which lowers their Speed stat upon switching into battle. Z: +2 Speed
 
 ID: 565
 Name: Fell Stinger
@@ -8439,7 +8439,7 @@ Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-The user takes the target trick-or-treating. This adds Ghost type to the target’s type.
+The user takes the target trick-or-treating. This adds Ghost type to the target’s type. Z: +2 Sp.Def
 
 ID: 568
 Name: Noble Roar
@@ -8455,7 +8455,7 @@ Z-Power: 0
 Z-Effect: +1 Accuracy
 Flags: Protect, Reflectable, Mirror, Sound, IgnoreSubstitute
 Description:
-Letting out a noble roar, the user inspires itself and raises its Sp. Atk and Speed stats. (Sound)
+Letting out a noble roar, the user inspires itself and raises its Sp. Atk and Speed stats. (Sound) Z: +1 Accuracy
 
 ID: 569
 Name: Ion Deluge
@@ -8469,7 +8469,7 @@ Priority: 1
 Z-Power: 0
 Z-Effect: +2 Special Attack
 Description:
-The user disperses electrically charged particles, which changes Normal-type moves to Electric-type moves. (+1 Priority)
+The user disperses electrically charged particles, which changes Normal-type moves to Electric-type moves. (+1 Priority) Z: +2 Sp.Atk
 
 ID: 570
 Name: Parabolic Charge
@@ -8498,7 +8498,7 @@ Z-Power: 0
 Z-Effect: +2 Defense
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-The user puts a forest curse on the target. The target is now Grass type as well.
+The user puts a forest curse on the target. The target is now Grass type as well. Z: +2 Def
 
 ID: 572
 Name: Petal Blizzard
@@ -8557,7 +8557,7 @@ Z-Power: 0
 Z-Effect: recovers all Hp of the Pokémon switching-in (Memento and Parting Shot)
 Flags: Protect, Reflectable, Mirror, Sound, IgnoreSubstitute, AnimateAlly
 Description:
-With a parting threat, the user lowers the target’s Attack and Sp. Atk stats. Then it switches with a party Pokémon. (Sound)
+With a parting threat, the user lowers the target’s Attack and Sp. Atk stats. Then it switches with a party Pokémon. (Sound) Z: Recovers replacement's HP
 
 ID: 576
 Name: Topsy-Turvy
@@ -8571,7 +8571,7 @@ Z-Power: 0
 Z-Effect: raises critical-hit ratio two stages
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-All stat changes affecting the target turn topsy-turvy and become the opposite of what they were.
+All stat changes affecting the target turn topsy-turvy and become the opposite of what they were. Z: +2 Crit Stages
 
 ID: 577
 Name: Draining Kiss
@@ -8601,7 +8601,7 @@ Z-Power: 0
 Z-Effect: makes the user the center of attention
 Flags: Snatch
 Description:
-The user protects itself and its allies from status moves with a mysterious power. This does not stop moves that do damage. (+3 Priority)
+The user protects itself and its allies from status moves with a mysterious power. This does not stop moves that do damage. (+3 Prio) Z: Follow Me
 
 ID: 579
 Name: Flower Shield
@@ -8631,7 +8631,7 @@ Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: FailSkyBattle
 Description:
-The user turns the ground to grass for five turns. This restores the HP of Pokémon on the ground a little every turn and boosts Grass type-moves by 50%.
+The user turns the ground to grass for five turns. This restores the HP of Pokémon on the ground every turn and boosts Grass moves by 50%. Z:+2 SpD
 
 ID: 581
 Name: Misty Terrain
@@ -8645,7 +8645,7 @@ Z-Power: 0
 Z-Effect: +2 Defense
 Flags: FailSkyBattle
 Description:
-This protects Pokémon on the ground from status conditions and halves damage from Dragon-type moves for five turns.
+This protects Pokémon on the ground from status conditions and halves damage from Dragon-type moves for five turns. Z: +2 Def
 
 ID: 582
 Name: Electrify
@@ -8660,7 +8660,7 @@ Z-Power: 0
 Z-Effect: makes the user the center of attention
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-If the target is electrified before it uses a move during that turn, the target’s move becomes Electric type. This usually moves first. (+1 Priority)
+If the target is electrified before it uses a move during that turn, the target’s move becomes Electric type. (+1 Prio) Z: Follow Me
 
 ID: 583
 Name: Play Rough
@@ -8735,7 +8735,7 @@ Z-Power: 0
 Z-Effect: +3 Special Defense
 Flags: Mirror, IgnoreSubstitute
 Description:
-By locking down the battlefield, the user keeps all Pokémon from fleeing during the next turn. (+1 Priority)
+By locking down the battlefield, the user keeps all Pokémon from fleeing during the next turn. (+1 Priority) Z: +3 Sp.Def
 
 ID: 588
 Name: King’s Shield
@@ -8750,7 +8750,7 @@ Z-Power: 0
 Z-Effect: +1 Special Defense
 Flags: Snatch
 Description:
-The user takes a defensive stance while it protects itself from damage. It also harshly lowers the Attack stat of any attacker who makes direct contact.
+The user takes a defensive stance while it protects itself from damage. It also harshly lowers the Attack stat of any attacker who makes contact. Z: +1 SpD
 
 ID: 589
 Name: Play Nice
@@ -8767,7 +8767,7 @@ Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: Reflectable, Snatch, Mirror, IgnoreSubstitute, AnimateAlly
 Description:
-The user and the target become friends, and the target loses its will to fight. This lowers the target’s Sp.Atk stat and infatuates for 2-4 turns.
+The user and the target become friends, and the target loses its will to fight. This lowers the target’s Sp.Atk and infatuates for 2-4 turns. Z: +2 SpD
 
 ID: 590
 Name: Confide
@@ -8783,7 +8783,7 @@ Z-Power: 0
 Z-Effect: +1 Special Attack
 Flags: Reflectable, Mirror, Sound, IgnoreSubstitute, AnimateAlly
 Description:
-The user tells the target a secret, and the target loses its ability to concentrate. This lowers the target’s Sp.Atk and Sp. Def stats. (Sound)
+The user tells the target a secret, and the target loses its ability to concentrate. This lowers their Sp.Atk and Sp.Def. (Sound) Z: +1 Sp.Atk
 
 ID: 591
 Name: Diamond Storm
@@ -8843,7 +8843,7 @@ Z-Power: 70
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user hits the target with throwing stars two to five times in a row. This move always goes first. (+1 Priority)
+The user hits the target with throwing stars two to five times in a row. This move usually goes first. (+1 Priority) Z: +1 Sp.Atk
 
 ID: 595
 Name: Mystical Fire
@@ -8858,7 +8858,7 @@ Z-Power: 70
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, Defrost, AnimateAlly
 Description:
-The user attacks by breathing a special, hot fire. This also lowers the target’s Sp. Atk stat.
+The user attacks by breathing a special, hot fire. This also lowers the target’s Sp. Atk stat. Z: +1 Sp.Atk
 
 ID: 596
 Name: Spiky Shield
@@ -8873,7 +8873,7 @@ Z-Power: 0
 Z-Effect: +2 Defense
 Flags: Snatch
 Description:
-In addition to protecting the user from attacks, this move also damages any attacker who makes direct contact by 1/8 of their Max HP.
+In addition to protecting the user from attacks, this move also damages any attacker who makes direct contact by 1/8 of their HP. Z: +2 Def
 
 ID: 597
 Name: Aromatic Mist
@@ -8888,7 +8888,7 @@ Z-Power: 0
 Z-Effect: +2 Defense
 Flags: IgnoreSubstitute, AnimateAlly
 Description:
-The user raises the Sp. Def stats of ally Pokémon by using a mysterious aroma.
+The user raises the Sp. Def stats of ally Pokémon by using a mysterious aroma. Z: +2 Def
 
 ID: 598
 Name: Eerie Impulse
@@ -8903,7 +8903,7 @@ Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-The user’s body generates an eerie impulse. Exposing the target to it harshly lowers the target’s Sp. Atk stat.
+The user’s body generates an eerie impulse. Exposing the target to it harshly lowers the target’s Sp. Atk stat. Z: +2 Sp.Def
 
 ID: 599
 Name: Venom Drench
@@ -8920,7 +8920,7 @@ Z-Power: 0
 Z-Effect: +2 Defense
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-Opposing Pokémon are drenched in an odd poisonous liquid. This lowers the Attack, Sp. Atk, and Speed stats of a poisoned target.
+Opposing Pokémon are drenched in an odd poisonous liquid. This lowers the Attack, Sp. Atk, and Speed stats of a poisoned target. Z: +2 Def
 
 ID: 600
 Name: Powder
@@ -8936,7 +8936,7 @@ Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: Protect, Reflectable, Mirror, IgnoreSubstitute
 Description:
-The user covers all targets in a combustible powder for 3 turns. If the target uses a Fire-type move, the powder explodes and damages the target. (+1 Prio)
+The user covers all targets in a combustible powder. If the target uses a Fire-type move, the powder explodes and hurts the target. (+1 Prio) Z: +2 SpD
 
 ID: 601
 Name: Geomancy
@@ -8953,7 +8953,7 @@ Z-Power: 0
 Z-Effect: +1 Defense
 Flags: Charge, FailSkyBattle
 Description:
-The user absorbs energy and sharply raises its Sp. Atk, Sp. Def, and Speed stats sharply on the next turn.
+The user absorbs energy and sharply raises its Sp. Atk, Sp. Def, and Speed stats sharply on the next turn. Z: +1 Def
 
 ID: 602
 Name: Magnetic Flux
@@ -8969,7 +8969,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Snatch, DistanceTriple, IgnoreSubstitute
 Description:
-The user manipulates magnetic fields, which raises the Defense and Sp. Def stats of ally Pokémon with the Plus or Minus Ability.
+The user manipulates magnetic fields, which raises the Defense and Sp. Def stats of ally Pokémon with the Plus or Minus Ability. Z: +2 Speed
 
 ID: 603
 Name: Happy Hour
@@ -8983,7 +8983,7 @@ Z-Power: 0
 Z-Effect: +2 to all (except Accuracy or Evasiveness)
 Flags: Snatch
 Description:
-Using Happy Hour doubles the amount of prize money received after battle. Use it as a Z-Move to raise all stats!
+Using Happy Hour doubles the amount of prize money received after battle. Use it as a Z-Move to raise all stats by 2!
 
 ID: 604
 Name: Electric Terrain
@@ -8997,7 +8997,7 @@ Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: FailSkyBattle
 Description:
-The user electrifies the ground for five turns, powering up Electric-type moves by 50%. Pokémon on the ground can no longer fall asleep.
+The user electrifies the ground for five turns, powering up Electric-type moves by 50%. Pokémon on the ground can't sleep. Z: +2 Sp.Def
 
 ID: 605
 Name: Dazzling Gleam
@@ -9055,7 +9055,7 @@ Z-Power: 0
 Z-Effect: raises critical-hit ratio two stages
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-The user looks at the target with cute, tearfilled eyes, which lowers their Attack stat. This move usually goes first. (+1 Priority)
+The user looks at the target with cute, tearfilled eyes, which lowers their Attack stat. This move usually goes first. (+1 Priority) Z: +2 Crit
 
 ID: 609
 Name: Nuzzle
@@ -9100,7 +9100,7 @@ Z-Power: 75
 Z-Effect: +2 Defense
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The target is infested and attacked for four to five turns. The target can’t flee during this time. The infestation deals 1/8HP per turn.
+The target is infested and attacked for four to five turns. The target can’t flee during this time. The infestation deals 1/8HP per turn. Z: +2 Def
 
 ID: 612
 Name: Power-Up Punch
@@ -9694,7 +9694,7 @@ Stat Change: Attack -> 2 (100%)
 Stat Change: Speed -> 2 (100%)
 Flags: MakesContact
 Description:
-Pikachu surrounds itself with the maximum amount of electricity and pounces on its target. Always Critical hits. Raises Atk and Spe.2 stages after use.
+Pikachu surrounds itself with the maximum amount of electricity and pounces. Always critically hits. Raises Atk and Speed by 2 stages after use.
 
 ID: 659
 Name: Shore Up
@@ -9739,7 +9739,7 @@ Z-Power: 0
 Z-Effect: +1 Special Defense
 Flags: Snatch
 Description:
-In addition to protecting the user from attacks, this move also poisons any attacker that makes direct contact.
+In addition to protecting the user from attacks, this move also poisons any attacker that makes direct contact. Z: +1 Sp.Def
 
 ID: 662
 Name: Spirit Shackle
@@ -9811,7 +9811,7 @@ Z-Effect: +1 Defense
 Heal: 50
 Flags: Protect, Reflectable, Heal, AnimateAlly
 Description:
-The user restores the target’s HP by up to half of its max HP. It restores 75% HP when the terrain is grass.
+The user restores the target’s HP by up to half of its max HP. It restores 75% HP when the terrain is grass. Z: +1 Def
 
 ID: 667
 Name: High Horsepower
@@ -9840,7 +9840,7 @@ Z-Power: 0
 Z-Effect: +1 Defense
 Flags: Protect, Reflectable, Mirror, Heal, AnimateAlly
 Description:
-The user restores its HP by the same amount as the target’s Attack stat. It also lowers the target’s Attack stat.
+The user restores its HP by the same amount as the target’s Attack stat. It also lowers the target’s Attack stat. Z: +1 Def
 
 ID: 669
 Name: Solar Blade
@@ -9869,7 +9869,7 @@ Z-Power: 90
 Z-Effect: +1 Speed
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user attacks suddenly as if leaping out from tall grass. The user's nimble footwork boosts its Speed stat.
+The user attacks suddenly as if leaping out from tall grass. The user's nimble footwork boosts its Speed stat. Z: +1 Speed
 
 ID: 671
 Name: Spotlight
@@ -9884,7 +9884,7 @@ Z-Power: 0
 Z-Effect: +1 Special Defense
 Flags: Protect, Reflectable, AnimateAlly
 Description:
-The user shines a spotlight on the target so that only the target will be attacked during the turn. (+3 Prio)
+The user shines a spotlight on itself or an ally so that only they will be attacked during the turn. (+2 Prio) Z: +1 Sp.Def
 
 ID: 672
 Name: Toxic Thread
@@ -9900,7 +9900,7 @@ Z-Power: 0
 Z-Effect: +2 Attack
 Flags: Protect, Reflectable, Mirror, AnimateAlly
 Description:
-The user shoots poisonous threads to poison the target and lower the target’s Speed stat.
+The user shoots poisonous threads to poison the target and lower the target’s Speed stat. Z: +2 Attack
 
 ID: 673
 Name: Laser Focus
@@ -9914,7 +9914,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Snatch
 Description:
-The user concentrates intensely. The attack on the next turn always results in a critical hit.
+The user concentrates intensely. The attack on the next turn always results in a critical hit. Z: +2 Speed
 
 ID: 674
 Name: Gear Up
@@ -9931,7 +9931,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Snatch, IgnoreSubstitute
 Description:
-The user engages its gears to raise the Attack and Sp. Atk stats sharply of ally Pokémon with the Plus or Minus Ability, but lowers their Speed.
+The user engages its gears to raise the Attack and Sp. Atk stats sharply of ally Pokémon with the Plus or Minus Ability, but lowers their Speed. Z: +2 Speed
 
 ID: 675
 Name: Throat Chop
@@ -9989,7 +9989,7 @@ Z-Power: 0
 Z-Effect: +2 Defense
 Flags: FailSkyBattle
 Description:
-This protects Pokémon on the ground from priority moves and powers up Psychic-type moves by 50% for five turns.
+This protects Pokémon on the ground from priority moves and powers up Psychic-type moves by 50% for five turns. Z: +2 Defense
 
 ID: 679
 Name: Lunge
@@ -10033,7 +10033,7 @@ Z-Power: 115
 Z-Effect: resets lowered stats of the user
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user boasts its strength and attacks the target. The more the user’s stats are raised, the greater the move’s power. (20BP + 20 per raised stat)
+The user boasts its strength and attacks the target. The more the user’s stats are raised, the greater the power. (20BP + 20 per raised stat) Z: Resets stats
 
 ID: 682
 Name: Burn Up
@@ -10061,7 +10061,7 @@ Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Protect, Mirror, IgnoreSubstitute, AnimateAlly
 Description:
-The user exchanges Speed stats with the target.
+The user exchanges Speed stats with the target. Z: +2 Speed
 
 ID: 684
 Name: Steel Trap
@@ -10093,7 +10093,7 @@ Z-Effect: +2 Special Defense
 Heal: 50
 Flags: Protect, Reflectable, Heal, AnimateAlly
 Description:
-The user heals the target’s status condition. If the move succeeds, it also restores the user’s HP by 75%. (+1 Prio)
+The user heals the target’s status condition. If the move succeeds, it also restores the user’s HP by 50%. (+1 Prio) Z: +2 Sp.Def
 
 ID: 686
 Name: Revelation Dance
@@ -10150,7 +10150,7 @@ Z-Power: 0
 Z-Effect: makes the user the center of attention
 Flags: Protect, IgnoreSubstitute, AnimateAlly
 Description:
-The user instructs the target to use the target’s last move again.
+The user instructs the target to use the target’s last move again. Z: Center of attention
 
 ID: 690
 Name: Beak Blast
@@ -10223,7 +10223,7 @@ Z-Power: 0
 Z-Effect: +1 Speed
 Flags: Snatch
 Description:
-This move reduces damage from physical and special moves by 33% for five turns. This can be used only in a hailstorm.
+This move reduces damage from physical and special moves by 33% for five turns. This can be used only in a hailstorm. Z: +1 Speed
 
 ID: 695
 Name: Sinister Arrow Raid
@@ -10430,7 +10430,7 @@ Z-Power: 90
 Z-Effect: +1 Speed
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user smashes into the target at high speed. This move always goes first. (+1 Priority)
+The user smashes into the target at high speed. This move always goes first. (+1 Priority) Z: +1 Speed
 
 ID: 710
 Name: Liquidation
@@ -10519,7 +10519,7 @@ Z-Power: 0
 Z-Effect: +1 Defense
 Flags: Reflectable, Mirror, AnimateAlly
 Description:
-The user gets teary eyed to make the target lose its combative spirit. This lowers the target’s Attack and Sp. Atk stats. (+1 Priority)
+The user gets teary eyed to make the target lose its combative spirit. This lowers the target’s Attack and Sp. Atk stats. (+1 Priority) Z: +1 Def
 
 ID: 716
 Name: Zing Zap

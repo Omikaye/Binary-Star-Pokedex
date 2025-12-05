@@ -120,7 +120,7 @@
     "pp": 15,
     "zMovePower": 105,
     "zMoveEffect": "raises critical-hit ratio two stages",
-    "desc": "Numerous coins are hurled at the target to inflict damage. This lowers the targets Evasion. Drops money after battle. Z: +2 Crit stages",
+    "desc": "Numerous coins are hurled at the targets to inflict damage. This lowers the target's Evasion. Drops money after battle. Z: +2 Crit stages",
     "priority": 0,
     "shortDesc": ""
   },
@@ -4807,7 +4807,7 @@
     "pp": 15,
     "zMovePower": 90,
     "zMoveEffect": "+1 Defense",
-    "desc": "The user whips up a vicious tornado to tear at the opposing Pokémon. This also lowers the opponent's Attack stats.",
+    "desc": "The user whips up a vicious tornado to tear at the opposing Pokémon. This also lowers the opponent's Attack stats. Z: +1 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -7092,9 +7092,9 @@
     "type": "Flying",
     "target": "self",
     "pp": 5,
-    "zMovePower": 70,
-    "zMoveEffect": "+3 Evasiveness",
-    "desc": "The user lands and rests its body. It restores the user’s HP by up to half of its max HP. The user loses its Flying-type for the rest of the turn.",
+    "zMovePower": 0,
+    "zMoveEffect": "+1 Speed",
+    "desc": "The user lands and rests its body. It restores the user’s HP by 50%. The user loses its Flying-type for the rest of the turn. Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -8147,7 +8147,7 @@
     "pp": 15,
     "zMovePower": 90,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user tackles the target while exhibiting overwhelming menace. This attack raises the user's Speed. Z: +1 Speed",
+    "desc": "The user jets itself into the target at intense speeds to warm its body up. This attack raises the user's Speed. Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9593,7 +9593,7 @@
     "pp": 15,
     "zMovePower": 35,
     "zMoveEffect": "+2 Attack",
-    "desc": "The user throws a stone or similar projectile to attack an opponent. A flying Pokémon will fall to the ground when it’s hit. (Bullet)",
+    "desc": "The user throws a stone or similar projectile to attack an opponent. A flying Pokémon will fall to the ground when it’s hit. (Pulse, Bullet) Z: +2 Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9670,7 +9670,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "resets lowered stats of the user",
-    "desc": "The user lightly performs a beautiful, mystic dance. This boosts the user’s Sp. Atk, Sp. Def, and Speed stats.",
+    "desc": "The user lightly performs a beautiful, mystic dance. This boosts the user’s Sp. Atk, Sp. Def, and Speed stats. Z: Resets lowered stats",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9733,7 +9733,7 @@
     "pp": 10,
     "zMovePower": 40,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user hurls an electric orb at the target. The faster the user is than the target, the greater the move’s power. (40 - 150 Power, Bullet, Pulse)",
+    "desc": "The user hurls an electric orb at the target. The faster the user is than the target, the greater the power. (40-150 Pow, Bullet/Pulse) Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9754,7 +9754,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user shoots a torrent of water at the target and changes the target’s type to Water.",
+    "desc": "The user shoots a torrent of water at the target and changes the target’s type to Water. Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9776,7 +9776,7 @@
     "pp": 15,
     "zMovePower": 90,
     "zMoveEffect": "+1 Speed",
-    "desc": "Cloaking itself in flame, the user attacks. This, move raises the user's Speed.",
+    "desc": "Cloaking itself in flame, the user attacks. This move raises the user's Speed. Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9794,7 +9794,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user coils up and concentrates. This raises its Attack and Defense stats as well as its Accuracy.",
+    "desc": "The user coils up and concentrates. This raises its Attack and Defense stats as well as its Accuracy. Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9836,7 +9836,7 @@
     "pp": 10,
     "zMovePower": 70,
     "zMoveEffect": "+1 Special Attack",
-    "desc": "The user spits fluid that works to melt the target. This harshly lowers the target’s Sp. Def stat. (Bullet, Pulse)",
+    "desc": "The user spits fluid that works to melt the target. This harshly lowers the target’s Sp. Def stat. (Bullet, Pulse) Z: +1 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9877,7 +9877,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "makes the user the center of attention",
-    "desc": "The user’s mysterious psychic wave changes the target’s Ability to Simple.",
+    "desc": "The user’s mysterious psychic wave changes the target’s Ability to Simple. Z: Center of attention",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9899,7 +9899,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user dances with an odd rhythm that compels the target to mimic it, making the target’s Ability the same as the user’s. (+1 Priority)",
+    "desc": "The user dances with an odd rhythm that compels the target to mimic it, making the target’s Ability the same as the user’s. (+1 Priority) Z: +2 Speed",
     "shortDesc": ""
   },
   "afteryou": {
@@ -9917,7 +9917,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user helps the target and makes it use its move right after the user.",
+    "desc": "The user helps the target and makes it use its move right after the user. Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9939,7 +9939,7 @@
     "pp": 15,
     "zMovePower": 50,
     "zMoveEffect": "+1 Special Attack",
-    "desc": "The user attacks the target with a song. Others can use Round too to double the power of the attacks. (Sound)",
+    "desc": "The user attacks the target with a song. Others can use Round too to double the power of the attacks. (Sound) Z: +1 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -9981,7 +9981,7 @@
     "pp": 20,
     "zMovePower": 70,
     "zMoveEffect": "+1 Attack",
-    "desc": "Looking for an opening, the user strikes consistently. The target’s Def and Evasion changes don’t affect this attack’s damage.",
+    "desc": "Looking for an opening, the user strikes consistently. The target’s Def and Evasion changes don’t affect this attack’s damage. Z: +1 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10001,7 +10001,7 @@
     "pp": 15,
     "zMovePower": 100,
     "zMoveEffect": "resets lowered stats of the user",
-    "desc": "The user attacks by spewing a clump of special gases. All stat changes are returned to normal. This move cannot miss.",
+    "desc": "The user attacks by spewing a clump of special gases. All stat changes are returned to normal. This move cannot miss. Z: Resets lowered stats.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10021,7 +10021,7 @@
     "pp": 10,
     "zMovePower": 115,
     "zMoveEffect": "resets lowered stats of the user",
-    "desc": "The user attacks the target with stored energy. The more the user’s stats are raised, the greater the move’s power. (+20 Power per raised stat)",
+    "desc": "The user attacks the target with stored energy. The more the user’s stats are raised, the stronger it is.(+20 Power per stat) Z: Resets lowered stats.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10040,7 +10040,7 @@
     "priority": 3,
     "zMovePower": 0,
     "zMoveEffect": "raises critical-hit ratio two stages",
-    "desc": "The user protects itself and its allies from priority moves. (+3 Priority)",
+    "desc": "The user protects itself and its allies from priority moves. (+3 Priority) Z: +2 Crit Stages",
     "shortDesc": ""
   },
   "allyswitch": {
@@ -10058,7 +10058,7 @@
     "priority": 2,
     "zMovePower": 0,
     "zMoveEffect": "recovers all of user's HP",
-    "desc": "The user teleports using a strange power and switches places with one of its allies. (+2 Priority)",
+    "desc": "The user teleports using a strange power and switches places with one of its allies. (+2 Priority) Z: Heals user's HP",
     "shortDesc": ""
   },
   "scald": {
@@ -10095,7 +10095,7 @@
     "pp": 15,
     "zMovePower": 0,
     "zMoveEffect": "resets lowered stats of the user",
-    "desc": "The user breaks its shell, which lowers Defense and Sp. Def stats but sharply raises its Attack, Sp. Atk, and Speed stats.",
+    "desc": "The user breaks its shell, which lowers Defense and Sp. Def stats but sharply raises its Attack, Sp. Atk, and Speed stats. Z: Resets lowered stats",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10117,7 +10117,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Special Defense",
-    "desc": "The user emits a healing pulse that restores the target’s HP by up to half of its max HP. (Pulse)",
+    "desc": "The user emits a healing pulse that restores the target’s HP by up to half of its max HP. (Pulse: Heals 75% if Mega Launcher) Z: +1 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10137,7 +10137,7 @@
     "pp": 10,
     "zMovePower": 75,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "This relentless attack does double damage to a target affected by major status conditions.",
+    "desc": "This relentless attack does double damage to a target affected by major status conditions. Z: +2 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10161,7 +10161,7 @@
     "pp": 10,
     "zMovePower": 100,
     "zMoveEffect": "+1 Attack",
-    "desc": "The user takes the target into the sky, then drops it during the next turn. The target cannot attack while in the sky. Heavy Pokémon can't be lifted.",
+    "desc": "The user takes the target into the sky, then drops it during the next turn. The target cannot attack while in the sky. Heavy foes can't be lifted. Z: +1 Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10179,7 +10179,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user rotates its gears, raising its Attack stat and sharply raising its Speed stat.",
+    "desc": "The user rotates its gears, raising its Attack stat and sharply raising its Speed stat. Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10201,7 +10201,7 @@
     "priority": -6,
     "zMovePower": 75,
     "zMoveEffect": "+2 Defense",
-    "desc": "The target is thrown, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority)",
+    "desc": "The target is thrown, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority) Z: +2 Def",
     "shortDesc": ""
   },
   "incinerate": {
@@ -10240,7 +10240,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user suppresses the target and makes its move go last.",
+    "desc": "The user suppresses the target and makes its move go last. Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10283,7 +10283,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+3 Attack",
-    "desc": "The user reflects the target’s type, making it the same type as the target. (+1 Priority)",
+    "desc": "The user reflects the target’s type, making it the same type as the target. (+1 Priority) Z: +3 Attack",
     "shortDesc": ""
   },
   "retaliate": {
@@ -10341,7 +10341,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user passes its held item to the target when the target isn’t holding an item. (+1 Priority)",
+    "desc": "The user passes its held item to the target when the target isn’t holding an item. (+1 Priority) Z: +2 Speed",
     "shortDesc": ""
   },
   "inferno": {
@@ -10360,7 +10360,7 @@
     "target": "adjacentAlly",
     "pp": 5,
     "zMovePower": 150,
-    "desc": "The user attacks by engulfing the target in flames This innaccurate but powerful move ignores the opponent's stat changes. Has a 30% Burn chance.",
+    "desc": "The user attacks by engulfing the target in flames This innaccurate move always burns its target.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10459,7 +10459,7 @@
     "pp": 20,
     "zMovePower": 90,
     "zMoveEffect": "+1 Special Defense",
-    "desc": "While resisting, the user attacks the opposing Pokémon. This lowers the Sp. Atk stat of those hit.",
+    "desc": "While resisting, the user attacks the opposing Pokémon. This lowers the Sp. Atk stat of those hit. Z: +1 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10518,7 +10518,7 @@
     "priority": -6,
     "zMovePower": 75,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The target is knocked away, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority)",
+    "desc": "The target is knocked away, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. (-6 Priority) Z: +2 Sp.Def",
     "shortDesc": ""
   },
   "workup": {
@@ -10535,7 +10535,7 @@
     "pp": 15,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user is roused, and its Attack and Sp. Atk stats increase.",
+    "desc": "The user is roused, and its Attack and Sp. Atk stats increase. Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10696,7 +10696,7 @@
     "pp": 10,
     "zMovePower": 80,
     "zMoveEffect": "+1 Attack",
-    "desc": "The user cuts its target with sharp shells. This may also lower the target’s Defense stat. (50%)",
+    "desc": "The user cuts its target with sharp shells. This may also lower the target’s Defense stat. (50%) Z: +1 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10719,7 +10719,7 @@
     "pp": 10,
     "zMovePower": 80,
     "zMoveEffect": "+2 Defense",
-    "desc": "The user slams its target with its flame-covered body. The more the user outweighs the target, the greater the move’s power. (40 - 120 Power)",
+    "desc": "The user slams its target with its flame-covered body. The more the user outweighs the target, the greater the move’s power. (40 - 120 Power) Z: +2 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10739,7 +10739,7 @@
     "pp": 10,
     "zMovePower": 80,
     "zMoveEffect": "raises critical-hit ratio two stages",
-    "desc": "The user attacks its target by encircling it in sharp leaves. The target is trapped and damaged for 4-5 turns.",
+    "desc": "The user attacks its target by encircling it in sharp leaves. The target is trapped and damaged for 4-5 turns. Z: +2 Crit Stages",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10760,7 +10760,7 @@
     "pp": 20,
     "zMovePower": 105,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user crushes its target by rolling over the target with its rolled-up body. This may also make the target flinch. (30%)",
+    "desc": "The user crushes its target by rolling over the target with its rolled-up body. This may also make the target flinch. (30%) Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10778,7 +10778,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "makes the user the center of attention",
-    "desc": "The user protects itself by wrapping its body in soft cotton, which drastically raises the user’s Defense stat.",
+    "desc": "The user protects itself by wrapping its body in soft cotton, which drastically raises the user’s Defense stat. Z: Center of attention.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -10816,7 +10816,7 @@
     "target": "adjacentAlly",
     "pp": 10,
     "zMovePower": 150,
-    "desc": "The user materializes an odd psychic wave to attack the target. This attack does physical damage.",
+    "desc": "The user materializes an odd psychic wave to attack the target twice. This attack does physical damage.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11075,7 +11075,7 @@
     "pp": 5,
     "zMovePower": 100,
     "zMoveEffect": "+1 Speed",
-    "desc": "On the second turn, the user hits the target with electrically charged ice. This may also leave the target with paralysis. (30%)",
+    "desc": "On the second turn, the user hits the target with electrically charged ice. This may also leave the target with paralysis. (30%) Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11097,7 +11097,7 @@
     "pp": 5,
     "zMovePower": 100,
     "zMoveEffect": "+1 Speed",
-    "desc": "On the second turn, an ultracold, freezing wind surrounds the target. This may leave the target with a burn. (30%)",
+    "desc": "On the second turn, an ultracold, freezing wind surrounds the target. This may leave the target with a burn. (30%) Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11118,7 +11118,7 @@
     "pp": 20,
     "zMovePower": 90,
     "zMoveEffect": "+1 Special Defense",
-    "desc": "The user yells as if it’s ranting about something, which lowers the Sp. Atk stat of opposing Pokémon. (Sound)",
+    "desc": "The user yells as if it’s ranting about something, which lowers the Sp. Atk stat of opposing Pokémon. (Sound) Z: +1 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11279,7 +11279,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "makes the user the center of attention",
-    "desc": "Tilling the soil, the user makes it easier for plants to grow. This raises the Def, Sp. Def, and Acc. stats of grounded Grass-type Pokémon.",
+    "desc": "Tilling the soil, the user makes it easier for plants to grow. This raises the Def, Sp. Def, and Acc. stats of grounded Grass-type Pokémon. Z: Follow Me",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11298,7 +11298,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user weaves a sticky net around the opposing team, which lowers their Speed stat upon switching into battle.",
+    "desc": "The user weaves a sticky net around the opposing team, which lowers their Speed stat upon switching into battle. Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11359,7 +11359,7 @@
     "pp": 15,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user takes the target trick-or-treating. This adds Ghost type to the target’s type.",
+    "desc": "The user takes the target trick-or-treating. This adds Ghost type to the target’s type. Z: +2 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11381,7 +11381,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Accuracy",
-    "desc": "Letting out a noble roar, the user inspires itself and raises its Sp. Atk and Speed stats. (Sound)",
+    "desc": "Letting out a noble roar, the user inspires itself and raises its Sp. Atk and Speed stats. (Sound) Z: +1 Accuracy",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11398,7 +11398,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Attack",
-    "desc": "The user disperses electrically charged particles, which changes Normal-type moves to Electric-type moves. (+1 Priority)",
+    "desc": "The user disperses electrically charged particles, which changes Normal-type moves to Electric-type moves. (+1 Priority) Z: +2 Sp.Atk",
     "shortDesc": ""
   },
   "paraboliccharge": {
@@ -11437,7 +11437,7 @@
     "pp": 20,
     "zMovePower": 0,
     "zMoveEffect": "+2 Defense",
-    "desc": "The user puts a forest curse on the target. The target is now Grass type as well.",
+    "desc": "The user puts a forest curse on the target. The target is now Grass type as well. Z: +2 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11517,7 +11517,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "recovers all Hp of the Pokémon switching-in (Memento and Parting Shot)",
-    "desc": "With a parting threat, the user lowers the target’s Attack and Sp. Atk stats. Then it switches with a party Pokémon. (Sound)",
+    "desc": "With a parting threat, the user lowers the target’s Attack and Sp. Atk stats. Then it switches with a party Pokémon. (Sound) Z: Recovers replacement's HP",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11538,7 +11538,7 @@
     "pp": 20,
     "zMovePower": 0,
     "zMoveEffect": "raises critical-hit ratio two stages",
-    "desc": "All stat changes affecting the target turn topsy-turvy and become the opposite of what they were.",
+    "desc": "All stat changes affecting the target turn topsy-turvy and become the opposite of what they were. Z: +2 Crit Stages",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11578,7 +11578,7 @@
     "priority": 3,
     "zMovePower": 0,
     "zMoveEffect": "makes the user the center of attention",
-    "desc": "The user protects itself and its allies from status moves with a mysterious power. This does not stop moves that do damage. (+3 Priority)",
+    "desc": "The user protects itself and its allies from status moves with a mysterious power. This does not stop moves that do damage. (+3 Prio) Z: Follow Me",
     "shortDesc": ""
   },
   "flowershield": {
@@ -11613,7 +11613,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user turns the ground to grass for five turns. This restores the HP of Pokémon on the ground a little every turn and boosts Grass type-moves by 50%.",
+    "desc": "The user turns the ground to grass for five turns. This restores the HP of Pokémon on the ground every turn and boosts Grass moves by 50%. Z:+2 SpD",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11631,7 +11631,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Defense",
-    "desc": "This protects Pokémon on the ground from status conditions and halves damage from Dragon-type moves for five turns.",
+    "desc": "This protects Pokémon on the ground from status conditions and halves damage from Dragon-type moves for five turns. Z: +2 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11654,7 +11654,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "makes the user the center of attention",
-    "desc": "If the target is electrified before it uses a move during that turn, the target’s move becomes Electric type. This usually moves first. (+1 Priority)",
+    "desc": "If the target is electrified before it uses a move during that turn, the target’s move becomes Electric type. (+1 Prio) Z: Follow Me",
     "shortDesc": ""
   },
   "playrough": {
@@ -11751,7 +11751,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+3 Special Defense",
-    "desc": "By locking down the battlefield, the user keeps all Pokémon from fleeing during the next turn. (+1 Priority)",
+    "desc": "By locking down the battlefield, the user keeps all Pokémon from fleeing during the next turn. (+1 Priority) Z: +3 Sp.Def",
     "shortDesc": ""
   },
   "kingsshield": {
@@ -11769,7 +11769,7 @@
     "priority": 4,
     "zMovePower": 0,
     "zMoveEffect": "+1 Special Defense",
-    "desc": "The user takes a defensive stance while it protects itself from damage. It also harshly lowers the Attack stat of any attacker who makes direct contact.",
+    "desc": "The user takes a defensive stance while it protects itself from damage. It also harshly lowers the Attack stat of any attacker who makes contact. Z: +1 SpD",
     "shortDesc": ""
   },
   "playnice": {
@@ -11790,7 +11790,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user and the target become friends, and the target loses its will to fight. This lowers the target’s Sp.Atk stat and infatuates for 2-4 turns.",
+    "desc": "The user and the target become friends, and the target loses its will to fight. This lowers the target’s Sp.Atk and infatuates for 2-4 turns. Z: +2 SpD",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11812,7 +11812,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Special Attack",
-    "desc": "The user tells the target a secret, and the target loses its ability to concentrate. This lowers the target’s Sp.Atk and Sp. Def stats. (Sound)",
+    "desc": "The user tells the target a secret, and the target loses its ability to concentrate. This lowers their Sp.Atk and Sp.Def. (Sound) Z: +1 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11891,7 +11891,7 @@
     "priority": 1,
     "zMovePower": 70,
     "zMoveEffect": "+1 Special Attack",
-    "desc": "The user hits the target with throwing stars two to five times in a row. This move always goes first. (+1 Priority)",
+    "desc": "The user hits the target with throwing stars two to five times in a row. This move usually goes first. (+1 Priority) Z: +1 Sp.Atk",
     "shortDesc": ""
   },
   "mysticalfire": {
@@ -11911,7 +11911,7 @@
     "pp": 10,
     "zMovePower": 70,
     "zMoveEffect": "+1 Special Attack",
-    "desc": "The user attacks by breathing a special, hot fire. This also lowers the target’s Sp. Atk stat.",
+    "desc": "The user attacks by breathing a special, hot fire. This also lowers the target’s Sp. Atk stat. Z: +1 Sp.Atk",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11930,7 +11930,7 @@
     "priority": 4,
     "zMovePower": 0,
     "zMoveEffect": "+2 Defense",
-    "desc": "In addition to protecting the user from attacks, this move also damages any attacker who makes direct contact by 1/8 of their Max HP.",
+    "desc": "In addition to protecting the user from attacks, this move also damages any attacker who makes direct contact by 1/8 of their HP. Z: +2 Def",
     "shortDesc": ""
   },
   "aromaticmist": {
@@ -11948,7 +11948,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Defense",
-    "desc": "The user raises the Sp. Def stats of ally Pokémon by using a mysterious aroma.",
+    "desc": "The user raises the Sp. Def stats of ally Pokémon by using a mysterious aroma. Z: +2 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11969,7 +11969,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user’s body generates an eerie impulse. Exposing the target to it harshly lowers the target’s Sp. Atk stat.",
+    "desc": "The user’s body generates an eerie impulse. Exposing the target to it harshly lowers the target’s Sp. Atk stat. Z: +2 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -11990,7 +11990,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+2 Defense",
-    "desc": "Opposing Pokémon are drenched in an odd poisonous liquid. This lowers the Attack, Sp. Atk, and Speed stats of a poisoned target.",
+    "desc": "Opposing Pokémon are drenched in an odd poisonous liquid. This lowers the Attack, Sp. Atk, and Speed stats of a poisoned target. Z: +2 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -12012,7 +12012,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user covers all targets in a combustible powder for 3 turns. If the target uses a Fire-type move, the powder explodes and damages the target. (+1 Prio)",
+    "desc": "The user covers all targets in a combustible powder. If the target uses a Fire-type move, the powder explodes and hurts the target. (+1 Prio) Z: +2 SpD",
     "shortDesc": ""
   },
   "geomancy": {
@@ -12030,7 +12030,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+1 Defense",
-    "desc": "The user absorbs energy and sharply raises its Sp. Atk, Sp. Def, and Speed stats sharply on the next turn.",
+    "desc": "The user absorbs energy and sharply raises its Sp. Atk, Sp. Def, and Speed stats sharply on the next turn. Z: +1 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -12050,7 +12050,7 @@
     "pp": 15,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user manipulates magnetic fields, which raises the Defense and Sp. Def stats of ally Pokémon with the Plus or Minus Ability.",
+    "desc": "The user manipulates magnetic fields, which raises the Defense and Sp. Def stats of ally Pokémon with the Plus or Minus Ability. Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -12068,7 +12068,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+2 to all (except Accuracy or Evasiveness)",
-    "desc": "Using Happy Hour doubles the amount of prize money received after battle. Use it as a Z-Move to raise all stats!",
+    "desc": "Using Happy Hour doubles the amount of prize money received after battle. Use it as a Z-Move to raise all stats by 2!",
     "priority": 0,
     "shortDesc": ""
   },
@@ -12086,7 +12086,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user electrifies the ground for five turns, powering up Electric-type moves by 50%. Pokémon on the ground can no longer fall asleep.",
+    "desc": "The user electrifies the ground for five turns, powering up Electric-type moves by 50%. Pokémon on the ground can't sleep. Z: +2 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -12161,7 +12161,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "raises critical-hit ratio two stages",
-    "desc": "The user looks at the target with cute, tearfilled eyes, which lowers their Attack stat. This move usually goes first. (+1 Priority)",
+    "desc": "The user looks at the target with cute, tearfilled eyes, which lowers their Attack stat. This move usually goes first. (+1 Priority) Z: +2 Crit",
     "shortDesc": ""
   },
   "nuzzle": {
@@ -12221,7 +12221,7 @@
     "pp": 20,
     "zMovePower": 75,
     "zMoveEffect": "+2 Defense",
-    "desc": "The target is infested and attacked for four to five turns. The target can’t flee during this time. The infestation deals 1/8HP per turn.",
+    "desc": "The target is infested and attacked for four to five turns. The target can’t flee during this time. The infestation deals 1/8HP per turn. Z: +2 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13048,7 +13048,7 @@
     "target": "adjacentAlly",
     "pp": 1,
     "isZ": true,
-    "desc": "Pikachu surrounds itself with the maximum amount of electricity and pounces on its target. Always Critical hits. Raises Atk and Spe.2 stages after use.",
+    "desc": "Pikachu surrounds itself with the maximum amount of electricity and pounces. Always critically hits. Raises Atk and Speed by 2 stages after use.",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13106,7 +13106,7 @@
     "priority": 4,
     "zMovePower": 0,
     "zMoveEffect": "+1 Special Defense",
-    "desc": "In addition to protecting the user from attacks, this move also poisons any attacker that makes direct contact.",
+    "desc": "In addition to protecting the user from attacks, this move also poisons any attacker that makes direct contact. Z: +1 Sp.Def",
     "shortDesc": ""
   },
   "spiritshackle": {
@@ -13206,7 +13206,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Defense",
-    "desc": "The user restores the target’s HP by up to half of its max HP. It restores 75% HP when the terrain is grass.",
+    "desc": "The user restores the target’s HP by up to half of its max HP. It restores 75% HP when the terrain is grass. Z: +1 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13248,7 +13248,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Defense",
-    "desc": "The user restores its HP by the same amount as the target’s Attack stat. It also lowers the target’s Attack stat.",
+    "desc": "The user restores its HP by the same amount as the target’s Attack stat. It also lowers the target’s Attack stat. Z: +1 Def",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13290,7 +13290,7 @@
     "pp": 15,
     "zMovePower": 90,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user attacks suddenly as if leaping out from tall grass. The user's nimble footwork boosts its Speed stat.",
+    "desc": "The user attacks suddenly as if leaping out from tall grass. The user's nimble footwork boosts its Speed stat. Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13311,7 +13311,7 @@
     "priority": 2,
     "zMovePower": 0,
     "zMoveEffect": "+1 Special Defense",
-    "desc": "The user shines a spotlight on the target so that only the target will be attacked during the turn. (+3 Prio)",
+    "desc": "The user shines a spotlight on itself or an ally so that only they will be attacked during the turn. (+2 Prio) Z: +1 Sp.Def",
     "shortDesc": ""
   },
   "toxicthread": {
@@ -13331,7 +13331,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Attack",
-    "desc": "The user shoots poisonous threads to poison the target and lower the target’s Speed stat.",
+    "desc": "The user shoots poisonous threads to poison the target and lower the target’s Speed stat. Z: +2 Attack",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13349,7 +13349,7 @@
     "pp": 20,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user concentrates intensely. The attack on the next turn always results in a critical hit.",
+    "desc": "The user concentrates intensely. The attack on the next turn always results in a critical hit. Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13368,7 +13368,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user engages its gears to raise the Attack and Sp. Atk stats sharply of ally Pokémon with the Plus or Minus Ability, but lowers their Speed.",
+    "desc": "The user engages its gears to raise the Attack and Sp. Atk stats sharply of ally Pokémon with the Plus or Minus Ability, but lowers their Speed. Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13447,7 +13447,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Defense",
-    "desc": "This protects Pokémon on the ground from priority moves and powers up Psychic-type moves by 50% for five turns.",
+    "desc": "This protects Pokémon on the ground from priority moves and powers up Psychic-type moves by 50% for five turns. Z: +2 Defense",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13508,7 +13508,7 @@
     "pp": 10,
     "zMovePower": 115,
     "zMoveEffect": "resets lowered stats of the user",
-    "desc": "The user boasts its strength and attacks the target. The more the user’s stats are raised, the greater the move’s power. (20BP + 20 per raised stat)",
+    "desc": "The user boasts its strength and attacks the target. The more the user’s stats are raised, the greater the power. (20BP + 20 per raised stat) Z: Resets stats",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13549,7 +13549,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+2 Speed",
-    "desc": "The user exchanges Speed stats with the target.",
+    "desc": "The user exchanges Speed stats with the target. Z: +2 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13592,7 +13592,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+2 Special Defense",
-    "desc": "The user heals the target’s status condition. If the move succeeds, it also restores the user’s HP by 75%. (+1 Prio)",
+    "desc": "The user heals the target’s status condition. If the move succeeds, it also restores the user’s HP by 50%. (+1 Prio) Z: +2 Sp.Def",
     "shortDesc": ""
   },
   "revelationdance": {
@@ -13670,7 +13670,7 @@
     "pp": 15,
     "zMovePower": 0,
     "zMoveEffect": "makes the user the center of attention",
-    "desc": "The user instructs the target to use the target’s last move again.",
+    "desc": "The user instructs the target to use the target’s last move again. Z: Center of attention",
     "priority": 0,
     "shortDesc": ""
   },
@@ -13769,7 +13769,7 @@
     "pp": 5,
     "zMovePower": 0,
     "zMoveEffect": "+1 Speed",
-    "desc": "This move reduces damage from physical and special moves by 33% for five turns. This can be used only in a hailstorm.",
+    "desc": "This move reduces damage from physical and special moves by 33% for five turns. This can be used only in a hailstorm. Z: +1 Speed",
     "priority": 0,
     "shortDesc": ""
   },
@@ -14045,7 +14045,7 @@
     "priority": 1,
     "zMovePower": 90,
     "zMoveEffect": "+1 Speed",
-    "desc": "The user smashes into the target at high speed. This move always goes first. (+1 Priority)",
+    "desc": "The user smashes into the target at high speed. This move always goes first. (+1 Priority) Z: +1 Speed",
     "shortDesc": ""
   },
   "liquidation": {
@@ -14166,7 +14166,7 @@
     "priority": 1,
     "zMovePower": 0,
     "zMoveEffect": "+1 Defense",
-    "desc": "The user gets teary eyed to make the target lose its combative spirit. This lowers the target’s Attack and Sp. Atk stats. (+1 Priority)",
+    "desc": "The user gets teary eyed to make the target lose its combative spirit. This lowers the target’s Attack and Sp. Atk stats. (+1 Priority) Z: +1 Def",
     "shortDesc": ""
   },
   "zingzap": {

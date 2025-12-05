@@ -23,7 +23,7 @@
     "buyPrice": 600,
     "sellPrice": 300
   },
-  "pokeball": {
+  "pokball": {
     "name": "Poké Ball",
     "num": 4,
     "desc": "A device for catching wild Pokémon. It’s thrown like a ball at a Pokémon, comfortably encapsulating its target. (1x Catch Rate)",
@@ -2490,7 +2490,7 @@
   "tm01": {
     "name": "TM01",
     "num": 328,
-    "desc": "Enables the user to block all attacks. Its chance of failing rises if it is used in succession.",
+    "desc": "Enables the user to evade all attacks. Its chance of failing rises if it is used in succession. (+4 Prio) Z: Draws in attacks, then blocks them.",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2538,7 +2538,7 @@
   "tm07": {
     "name": "TM07",
     "num": 334,
-    "desc": "The user burrows, then attacks on the next turn.",
+    "desc": "The user burrows, then attacks on the next turn. The user can be hit by earthshaking moves while underground. Z: +1 Atk",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2554,7 +2554,7 @@
   "tm09": {
     "name": "TM09",
     "num": 336,
-    "desc": "The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats.",
+    "desc": "The user quietly focuses its mind and calms its spirit to raise its Sp.Atk and Sp.Def stats. Z: +1 Def",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2570,7 +2570,7 @@
   "tm11": {
     "name": "TM11",
     "num": 338,
-    "desc": "The user soars and then strikes its target on the next turn.",
+    "desc": "The user soars and then strikes its target on the next turn. The user can still be hit by certain moves like Thunder or Hurricane. Z: +1 Attack",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2586,7 +2586,7 @@
   "tm13": {
     "name": "TM13",
     "num": 340,
-    "desc": "A howling blizzard is summoned to strike opposing Pokémon. This may also leave the opposing Pokémon frozen. (10%)",
+    "desc": "A howling blizzard is summoned to strike opposing Pokémon. This may also leave the opposing Pokémon frozen. Can't miss in Snow (10%)",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2594,7 +2594,7 @@
   "tm14": {
     "name": "TM14",
     "num": 341,
-    "desc": "The target is struck with an icy-cold beam of energy. This may also leave the target frozen. (10%)",
+    "desc": "The target is struck with an icy-cold beam of energy. This may also leave the target frozen. (10%, Pulse)",
     "shortDesc": "",
     "buyPrice": 30000,
     "sellPrice": 15000
@@ -2610,7 +2610,7 @@
   "tm16": {
     "name": "TM16",
     "num": 343,
-    "desc": "A wondrous wall of light is put up to reduce damage from special attacks for five turns on the user’s side of the field.",
+    "desc": "A wondrous wall of light is put up to reduce damage from special attacks for five turns on the user's side. 50% in Singles. 33% in Doubles.",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2618,7 +2618,7 @@
   "tm17": {
     "name": "TM17",
     "num": 344,
-    "desc": "A wondrous wall of light is put up to reduce damage from physical attacks for five turns on the user’s side of the field.",
+    "desc": "A wondrous wall of light is put up to reduce damage from physical attacks for five turns on the user's side. 50% in Singles. 33% in Doubles.",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2626,7 +2626,7 @@
   "tm18": {
     "name": "TM18",
     "num": 345,
-    "desc": "Diving on the first turn, the user floats up and attacks on the next turn.",
+    "desc": "Diving on the first turn, the user floats up and attacks on the next turn. Z: +1 Attack",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2634,7 +2634,7 @@
   "tm19": {
     "name": "TM19",
     "num": 346,
-    "desc": "The user lands and rests its body. It restores the user’s HP by up to half of its max HP. The user loses the Flying-type until the end of the turn.",
+    "desc": "The user lands and rests its body. It restores the user’s HP by 50%. The user loses the Flying-type until the end of the turn. Z: +1 Speed",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2642,7 +2642,7 @@
   "tm20": {
     "name": "TM20",
     "num": 347,
-    "desc": "Cloaking itself in flame, the user attacks. This, move raises the user's Speed.",
+    "desc": "Cloaking itself in flame, the user attacks. This move raises the user's Speed. Z: +1 Speed",
     "shortDesc": "",
     "buyPrice": 12000,
     "sellPrice": 6000
@@ -2650,7 +2650,7 @@
   "tm21": {
     "name": "TM21",
     "num": 348,
-    "desc": "The user stimulates its brain by thinking bad thoughts. This sharply raises the user’s Sp. Atk stat.",
+    "desc": "The user stimulates its brain by thinking bad thoughts. This sharply raises the user’s Sp.Atk. Z: +1 Accuracy",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2674,7 +2674,7 @@
   "tm24": {
     "name": "TM24",
     "num": 351,
-    "desc": "The target is attacked with a powerful beam. The user can’t move on the next turn and restores 15% of damage dealt.",
+    "desc": "The target is attacked with a powerful beam. The user can’t move on the next turn and restores 15% of damage dealt. (Pulse)",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2682,7 +2682,7 @@
   "tm25": {
     "name": "TM25",
     "num": 352,
-    "desc": "In this two-turn attack, the user gathers light, then fires the beam on the next turn. Fires instantly if used in Sun. Deals half damage in Rain, Sand, or Hail.",
+    "desc": "The user gathers light, then blasts a bundled beam on the next turn. Fires instantly in Harsh Sunlight. 50% less damage in other weathers. (Pulse)",
     "shortDesc": "",
     "buyPrice": 30000,
     "sellPrice": 15000
@@ -2698,7 +2698,7 @@
   "tm27": {
     "name": "TM27",
     "num": 354,
-    "desc": "A frenetic dance to uplift the fighting spirit. This sharply raises the user’s Attack stat.",
+    "desc": "A frenetic dance to uplift the fighting spirit. This sharply raises the user’s Attack stat. Z: +1 Accuracy",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2706,7 +2706,7 @@
   "tm28": {
     "name": "TM28",
     "num": 355,
-    "desc": "The user attacks by swinging its tail as if it were a vicious wave in a raging storm.",
+    "desc": "The user attacks by swinging its tail as if it were a vicious wave in a raging storm. Z: +1 Attack",
     "shortDesc": "",
     "buyPrice": 30000,
     "sellPrice": 15000
@@ -2746,7 +2746,7 @@
   "tm33": {
     "name": "TM33",
     "num": 360,
-    "desc": "The user attacks the target with a pulsing blast of water. This may also confuse the target. (20%, Pulse)",
+    "desc": "The user attacks the target with a pulsing blast of water. This may also confuse the target. (20%, Pulse) Z: +2 Speed",
     "shortDesc": "",
     "buyPrice": 15000,
     "sellPrice": 7500
@@ -2802,7 +2802,7 @@
   "tm40": {
     "name": "TM40",
     "num": 367,
-    "desc": "The user tenses its muscles to bulk up its body, raising both its Attack and Defense stats.",
+    "desc": "The user tenses its muscles to bulk up its body, raising both its Attack and Defense stats. Z: +1 Sp.Def",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2826,7 +2826,7 @@
   "tm43": {
     "name": "TM43",
     "num": 370,
-    "desc": "The user jets itself into the target at intense speeds to warm its body up. This attack raises the user's Speed.",
+    "desc": "The user jets itself into the target at intense speeds to warm its body up. This attack raises the user's Speed. Z: +1 Speed",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2858,7 +2858,7 @@
   "tm47": {
     "name": "TM47",
     "num": 374,
-    "desc": "The user alters its cellular structure to liquefy itself, raising its Defense and Sp.Atk stats.",
+    "desc": "The user alters its cellular structure to liquefy itself, raising its Defense and Sp.Atk stats. Z: +1 Sp.Def",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2866,7 +2866,7 @@
   "tm48": {
     "name": "TM48",
     "num": 375,
-    "desc": "The user yells as if it’s ranting about something, which lowers the Sp. Atk stat of opposing Pokémon. (Sound)",
+    "desc": "The user yells as if it’s ranting about something, which lowers the Sp.Atk stat of opposing Pokémon. (Sound) Z: +1 Sp.Def",
     "shortDesc": "",
     "buyPrice": 18000,
     "sellPrice": 9000
@@ -2882,7 +2882,7 @@
   "tm50": {
     "name": "TM50",
     "num": 377,
-    "desc": "In this two-turn attack, blades of wind hit opposing Pokémon on the second turn. The user's Sp.Atk is raised after use.",
+    "desc": "In this two-turn attack, blades of wind hit opposing Pokémon on the second turn. The user's Sp.Atk is raised after use. Z: +1 Speed",
     "shortDesc": "",
     "buyPrice": 27450,
     "sellPrice": 13725
@@ -2890,7 +2890,7 @@
   "tm51": {
     "name": "TM51",
     "num": 378,
-    "desc": "The target is hit with wings of steel. This may also raise the user’s Defense stat. (25%)",
+    "desc": "The target is hit with wings of steel. This may also raise the user’s Defense stat. (25%) Z: +1 Def",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2906,7 +2906,7 @@
   "tm53": {
     "name": "TM53",
     "num": 380,
-    "desc": "The user draws power from nature and fires it at the target. This may also lower the target’s Sp. Def stat. (10%, Bullet)",
+    "desc": "The user draws power from nature and fires it at the target. This may also lower the target’s Sp.Def. (10%, Bullet, Pulse)",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2914,7 +2914,7 @@
   "tm54": {
     "name": "TM54",
     "num": 381,
-    "desc": "The user whips up a vicious tornado to tear at the opposing Pokémon. This also lowers the opponent's Attack stats.",
+    "desc": "The user whips up a vicious tornado to tear at the opposing Pokémon. This also lowers the opponent's Attack stats. Z: +1 Defense",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2938,7 +2938,7 @@
   "tm57": {
     "name": "TM57",
     "num": 384,
-    "desc": "The user attacks with an electric charge. The user will use any remaining electricity to raise its Sp. Atk stat.",
+    "desc": "The user attacks with an electric charge. The user will use any remaining electricity to raise its Sp.Atk stat. (Pulse)",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2946,7 +2946,7 @@
   "tm58": {
     "name": "TM58",
     "num": 385,
-    "desc": "The user attacks by breathing a special, hot fire. This also lowers the target’s Sp. Atk stat.",
+    "desc": "The user attacks by breathing a special, hot fire. This also lowers the target’s Sp. Atk stat. Z: +1 Sp.Atk",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2954,7 +2954,7 @@
   "tm59": {
     "name": "TM59",
     "num": 386,
-    "desc": "The user launches a weak jolt of electricity that paralyzes the target.",
+    "desc": "The user launches a weak jolt of electricity that paralyzes the target. Z: +1 Sp.Def",
     "shortDesc": "",
     "buyPrice": 30000,
     "sellPrice": 15000
@@ -2970,7 +2970,7 @@
   "tm61": {
     "name": "TM61",
     "num": 388,
-    "desc": "The user shoots a sinister, bluish-white flame at the target to inflict a burn.",
+    "desc": "The user shoots a sinister, bluish-white flame at the target to inflict a burn. Z: +1 Sp.Atk",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -2994,7 +2994,7 @@
   "tm64": {
     "name": "TM64",
     "num": 391,
-    "desc": "The user attacks everything around it by causing a tremendous explosion. The user faints upon using this move.",
+    "desc": "The user attacks everything around it by causing a tremendous explosion. The user faints upon using this move. (Bullet)",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -3042,7 +3042,7 @@
   "tm70": {
     "name": "TM70",
     "num": 397,
-    "desc": "This move reduces damage from physical and special moves by 33% for five turns. This can be used only in a hailstorm.",
+    "desc": "The user attacks by blowing freezing cold air onto all nearby targets. This lowers their Speed stats.",
     "shortDesc": "",
     "buyPrice": 24000,
     "sellPrice": 12000
@@ -3090,7 +3090,7 @@
   "tm76": {
     "name": "TM76",
     "num": 403,
-    "desc": "The user strikes thrice with a three-beam attack. May also burn, freeze, or paralyze the target. 8% chance to status per hit.",
+    "desc": "The user strikes thrice with a three-beam attack. May also burn, freeze, or paralyze the target. 8% chance to status per hit. (Pulse) Z: +1 Sp.Atk",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -3106,7 +3106,7 @@
   "tm78": {
     "name": "TM78",
     "num": 405,
-    "desc": "The user meditates to awaken the power deep within its body and raise its Attack and Sp. Def stats.",
+    "desc": "The user meditates to awaken the power deep within its body and raise its Atk and Sp.Def stats. Z: +1 Def",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -3178,7 +3178,7 @@
   "tm87": {
     "name": "TM87",
     "num": 414,
-    "desc": "The user heightens its mental focus and unleashes its power. This may also lower the target’s Sp. Def stat. (10%. Bullet)",
+    "desc": "The user heightens its mental focus and unleashes its power. This may also lower the target’s Sp.Def stat. (10%. Bullet, Pulse)",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -3186,7 +3186,7 @@
   "tm88": {
     "name": "TM88",
     "num": 415,
-    "desc": "The user confounds the target with speed, then slashes. This attack never misses.",
+    "desc": "The user confounds the target with speed, then slashes. This attack never misses. Z: +1 Attack",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -3210,7 +3210,7 @@
   "tm91": {
     "name": "TM91",
     "num": 418,
-    "desc": "The user gathers all its light energy and releases it all at once. This may also lower the target’s Sp. Def stat. (10%)",
+    "desc": "The user gathers all its light energy and releases it all at once. This may also lower the target’s Sp. Def stat. (10%, Pulse)",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -3218,7 +3218,7 @@
   "tm92": {
     "name": "TM92",
     "num": 419,
-    "desc": "The user makes the ground under the target erupt with power. This may also lower the target’s Sp. Def stat. (10%)",
+    "desc": "The user makes the ground under the target erupt with power. This may also lower the target’s Sp.Def stat. (10%)",
     "shortDesc": "",
     "buyPrice": 10000,
     "sellPrice": 5000
@@ -3226,7 +3226,7 @@
   "hm01": {
     "name": "HM01",
     "num": 420,
-    "desc": "The user slams a barrage of hard-shelled seeds down on the target from above. (Bullet)",
+    "desc": "The user slams a barrage of hard-shelled seeds down on the target from above. (Bullet, Pulse)",
     "shortDesc": "",
     "buyPrice": 0,
     "sellPrice": 0
@@ -3975,10 +3975,10 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "greninjite": {
-    "name": "Greninjite",
+  "greninjitex": {
+    "name": "Greninjite X",
     "num": 516,
-    "desc": "One of a variety of mysterious Mega Stones. Have Greninja hold it to Mega Evolve. Mega Greninja's Water Shuriken is boosted!",
+    "desc": "One of a variety of mysterious Mega Stones. Have Greninja hold it to Mega Evolve. Mega Greninja X's Dark-Typing is boosted!",
     "shortDesc": "",
     "buyPrice": 0,
     "sellPrice": 0
@@ -3991,10 +3991,10 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "datacard14": {
-    "name": "Data Card 14",
+  "greninjitey": {
+    "name": "Greninjite Y",
     "num": 518,
-    "desc": "It holds Pokéathlon records. It is a card that shows how many times your Pokémon tackled in the Pokéathlon.",
+    "desc": "One of a variety of mysterious Mega Stones. Have Greninja hold it to Mega Evolve. Mega Greninja Y's Water Shuriken is boosted!",
     "shortDesc": "",
     "buyPrice": 0,
     "sellPrice": 0
@@ -4602,7 +4602,7 @@
   "xspatk2": {
     "name": "X Sp. Atk 2",
     "num": 594,
-    "desc": "It sharply raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
+    "desc": "It sharply raises the Sp.Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
     "shortDesc": "",
     "buyPrice": 0,
     "sellPrice": 0
@@ -4610,7 +4610,7 @@
   "xspdef2": {
     "name": "X Sp. Def 2",
     "num": 595,
-    "desc": "It sharply raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
+    "desc": "It sharply raises the Sp.Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
     "shortDesc": "",
     "buyPrice": 0,
     "sellPrice": 0
@@ -4650,7 +4650,7 @@
   "xspatk3": {
     "name": "X Sp. Atk 3",
     "num": 600,
-    "desc": "It drastically raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
+    "desc": "It drastically raises the Sp.Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
     "shortDesc": "",
     "buyPrice": 0,
     "sellPrice": 0
@@ -4658,7 +4658,7 @@
   "xspdef3": {
     "name": "X Sp. Def 3",
     "num": 601,
-    "desc": "It drastically raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
+    "desc": "It drastically raises the Sp.Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
     "shortDesc": "",
     "buyPrice": 0,
     "sellPrice": 0
@@ -4698,7 +4698,7 @@
   "xspatk6": {
     "name": "X Sp. Atk 6",
     "num": 606,
-    "desc": "It raises the Sp. Atk stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.",
+    "desc": "It raises the Sp.Atk stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.",
     "shortDesc": "",
     "buyPrice": 0,
     "sellPrice": 0
@@ -4706,7 +4706,7 @@
   "xspdef6": {
     "name": "X Sp. Def 6",
     "num": 607,
-    "desc": "It raises the Sp. Def stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.",
+    "desc": "It raises the Sp.Def stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.",
     "shortDesc": "",
     "buyPrice": 0,
     "sellPrice": 0
@@ -4794,7 +4794,7 @@
   "tm93": {
     "name": "TM93",
     "num": 618,
-    "desc": "The user slams a barrage of hard-shelled seeds down on the target from above. (Bullet)",
+    "desc": "The user slams a barrage of hard-shelled seeds down on the target from above. (Bullet, Pulse)",
     "shortDesc": "",
     "buyPrice": 50000,
     "sellPrice": 25000
@@ -4802,7 +4802,7 @@
   "tm94": {
     "name": "TM94",
     "num": 619,
-    "desc": "The target is slugged by a punch thrown with muscle-packed power. This may lower the target's defense. (20%, Punch)",
+    "desc": "The target is slugged by a punch thrown with muscle-packed power. This may lower the target's Def. (20%, Punch)",
     "shortDesc": "",
     "buyPrice": 11500,
     "sellPrice": 5750
@@ -5354,7 +5354,7 @@
   "tm98": {
     "name": "TM98",
     "num": 692,
-    "desc": "The user damages opposing Pokémon by emitting a powerful flash. This has a chance to drop the target’s Evasion stats. (25%)",
+    "desc": "The user damages opposing Pokémon by emitting a powerful flash. This has a chance to drop the target’s Evasion stat. (25%)",
     "shortDesc": "",
     "buyPrice": 30000,
     "sellPrice": 15000
@@ -5370,7 +5370,7 @@
   "tm100": {
     "name": "TM100",
     "num": 694,
-    "desc": "The user attacks suddenly as if leaping out from tall grass. The user's nimble footwork boosts its Speed stat.",
+    "desc": "The user attacks suddenly as if leaping out from tall grass. The user's nimble footwork boosts it's Speed stat. Z: +1 Speed",
     "shortDesc": "",
     "buyPrice": 5000,
     "sellPrice": 2500
