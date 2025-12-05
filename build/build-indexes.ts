@@ -230,53 +230,39 @@ async function main() {
       items: {},
     };
 
+    // Image downloads disabled - only use locally cached images
     async function downloadFile(path: fs.PathLike, url: string) {
-      let response = await fetch(url);
-      if (response.status != 200) {
-        throw new Error(`invalid status ${response.status} when downloading ${url}`);
-      }
-      let buffer = Buffer.from(await response.arrayBuffer());
-      await fs.promises.writeFile(path, buffer);
+      // Skipped - no online downloads
     }
 
     async function downloadSpecies(id: string, path: fs.PathLike) {
-        let url = Sprites.getDexPokemon(id, { gen: "gen5" }).url;
-        console.log(`Download ${url} to ${path}`);
-        try {
-          await downloadFile(path, url);
-        } catch(e) {
-          let url = Sprites.getDexPokemon(allSpecies[id].baseSpecies, {gen: "gen5"}).url
-          console.log(`Failed, downloading from ${url} instead`);
-          await downloadFile(path, url)
-        }
-      
+      // Skipped - no online downloads, rely on existing local files
     }
 
+    // Skip downloading sprite sheets - use existing files
     {
-      let spritesheet = Icons.getPokemon("bulbasaur").url;
       let path = "images/sprites/pokemonicons-sheet.png";
-      console.log(`Download ${spritesheet} to ${path}`);
-      await downloadFile(path, spritesheet);
+      if (!fs.existsSync(path)) {
+        console.log(`Warning: ${path} not found locally`);
+      }
     }
 
     {
-      let spritesheet = Icons.getItem("pokeball").url;
       let path = "images/sprites/itemicons-sheet.png";
-      console.log(`Download ${spritesheet} to ${path}`);
-      await downloadFile(path, spritesheet);
+      if (!fs.existsSync(path)) {
+        console.log(`Warning: ${path} not found locally`);
+      }
     }
 
     let responses = [];
     for (let id in allSpecies) {
 
       let path = `images/sprites/gen5/${id}.png`;
-      if (!fs.existsSync(path)) {
-        responses.push(downloadSpecies(id, path))
-        await new Promise(resolve => setTimeout(resolve, 50));
+      // Skip downloading - only use existing local files
+      if (fs.existsSync(path)) {
+        let icon = Icons.getPokemon(id);
+        icons.pokemon[id] = [+icon.left, +icon.top];
       }
-
-      let icon = Icons.getPokemon(id);
-      icons.pokemon[id] = [+icon.left, +icon.top];
 
       for (let forme of allSpecies[id].cosmeticFormes ?? []) {
         let icon = Icons.getPokemon(forme);
@@ -284,7 +270,7 @@ async function main() {
         
       }
     }
-    Promise.all(responses);
+    // Promise.all skipped - no background downloads
 
     icons.pokemon["egg"] = [-40, -2580];
 

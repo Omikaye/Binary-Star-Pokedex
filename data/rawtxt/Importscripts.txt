@@ -1,0 +1,65 @@
+IMPORT SCRIPTS - Run these to update data files
+================================================
+
+Master Import (Run this first for full data rebuild):
+  npm run gendata
+  - Runs: scripts/import-all.js
+  - Imports: Pokemon, evolutions, learnsets, moves, abilities, type chart, and icons
+  - Generates all data/*.json files
+
+Individual Import Scripts (for targeted updates):
+
+1. scripts/import-all.js
+   - Purpose: Master importer that orchestrates all data import
+   - Imports: Pokemon species, evolutions, moves, learnsets, Z-Moves, abilities, type chart
+   - Reads from: PokedexEntries.txt, Evolutions.txt, LevelUpMoves.txt, Moves.txt, etc.
+   - Outputs: pokedex.json, learnsets.json, moves.json, abilities.json, typechart.json, icons.json
+   - Run with: node scripts/import-all.js
+
+2. scripts/import-moves.js
+   - Purpose: Import move data and Z-Move names
+   - Reads from: data/rawtxt/Moves.txt
+   - Outputs: data/moves.json
+   - Special: Strips (P) and (S) suffixes from Z-Move names
+
+3. scripts/convert-levelup.js
+   - Purpose: Convert level-up learnsets with dictionary translation
+   - Reads from: data/rawtxt/LevelUpMoves.txt
+   - Outputs: data/learnsets.json
+   - Special: Applies Dictionary.cs name mappings for alternate forms
+
+4. scripts/parse-items.js
+   - Purpose: Parse item data and descriptions
+   - Reads from: data/rawtxt/Item.txt
+   - Outputs: data/items.json
+
+5. scripts/update-item-icons.js
+   - Purpose: Update item icon sprite coordinates
+   - Reads from: data/items.json, data/icons.json, data/rawtxt/IconOrder.txt
+   - Outputs: data/icons.json
+   - Note: Run AFTER parse-items.js if updating items
+
+6. scripts/import-basegame-stats.js
+   - Purpose: Import base game Pokemon stats and names
+   - Reads from: data/rawtxt/BaseGameStats.txt
+   - Outputs: data/basegame.json
+
+7. scripts/convert-evolutions.js
+   - Purpose: Convert evolution data
+   - Reads from: data/rawtxt/Evolutions.txt
+   - Outputs: Used by import-all.ts
+
+8. scripts/merge-tm-tutor.js
+   - Purpose: Merge TM and tutor move data into learnsets
+   - Reads from: TM and tutor move lists
+   - Outputs: Updated learnsets.json
+
+Typical Workflow:
+  1. Update raw data files in data/rawtxt/
+  2. Run: npm run gendata (or run import-all.ts)
+  3. Everything else runs as part of the master import
+
+Advanced (Individual component updates only):
+  - New moves only? Run: scripts/import-moves.js
+  - New learnsets only? Run: scripts/convert-levelup.js
+  - New items only? Run: scripts/parse-items.js then scripts/update-item-icons.js
