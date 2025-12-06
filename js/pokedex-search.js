@@ -350,9 +350,8 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 				const monID = toID(disp);
 				return '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>';
 			}).join('');
-			// Get trainer class and background for compact thumbnail
-			const trainerClass = getTrainerClass(t.name);
-			const trainerBg = (typeof getTrainerBackground === 'function') ? getTrainerBackground(trainerClass) : getTrainerIcon(trainerClass);
+			// Get trainer background for compact thumbnail (using full name to check personal name first)
+			const trainerBg = (typeof getTrainerBackground === 'function') ? getTrainerBackground(t.name, true) : getTrainerIcon(t.name, true);
 			// Small thumbnail showing the upper third of the large sprite, scaled down ~2x
 			const thumb = '<div style="position:absolute;left:-30px;top:-30px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
 				'<div style="width:512px;height:256px;transform:scale(0.25);transform-origin:top left;'+ trainerBg + ';"></div>' +

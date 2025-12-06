@@ -176,19 +176,50 @@ window.getTrainerClass = (trainerName) => {
   return parts[0];
 };
 
-window.getTrainerIcon = (trainerClass) => {
-  let classId = toID(trainerClass);
+window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
+  let classId = toID(trainerClassOrName);
+  
+  // If checkPersonalName is true, try to extract and check the personal name first
+  if (checkPersonalName && trainerClassOrName) {
+    const parts = trainerClassOrName.trim().split(/\s+/);
+    if (parts.length >= 2) {
+      // Check last word (personal name) - e.g., "Hau", "Olivia", "Joey"
+      const personalNameId = toID(parts[parts.length - 1]);
+      if (TrainerSprites[personalNameId]) {
+        classId = personalNameId;
+      } else {
+        // Fall back to class name
+        classId = toID(getTrainerClass(trainerClassOrName));
+      }
+    }
+  }
+  
   // Force certain classes to use specific sprites (compat/mapping)
   // 'lass' and its variants should use the risingstar sprite at -1,-6940
-  if (classId && classId.indexOf('lass') === 0) classId = 'risingstar';
+  if (classId && classId.indexOf('lass') === 0 && !TrainerSprites[classId]) classId = 'risingstar';
+  
   let [left, top] = TrainerSprites[classId] ?? [-1, -1];
   return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px; width:512px; height:256px; background-size:auto;`;
 };
 
 // Returns only the background image/position for use in compact thumbnails
-window.getTrainerBackground = (trainerClass) => {
-  let classId = toID(trainerClass);
-  if (classId && classId.indexOf('lass') === 0) classId = 'risingstar';
+window.getTrainerBackground = (trainerClassOrName, checkPersonalName) => {
+  let classId = toID(trainerClassOrName);
+  
+  // If checkPersonalName is true, try to extract and check the personal name first
+  if (checkPersonalName && trainerClassOrName) {
+    const parts = trainerClassOrName.trim().split(/\s+/);
+    if (parts.length >= 2) {
+      const personalNameId = toID(parts[parts.length - 1]);
+      if (TrainerSprites[personalNameId]) {
+        classId = personalNameId;
+      } else {
+        classId = toID(getTrainerClass(trainerClassOrName));
+      }
+    }
+  }
+  
+  if (classId && classId.indexOf('lass') === 0 && !TrainerSprites[classId]) classId = 'risingstar';
   let [left, top] = TrainerSprites[classId] ?? [-1, -1];
   return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px`;
 };
