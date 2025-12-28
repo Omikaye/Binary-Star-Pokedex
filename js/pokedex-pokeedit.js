@@ -27,7 +27,11 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 		buf += '<dl class="typeentry">';
 		buf += '<dt>Types:</dt> <dd>';
 		for (var i=0; i<pokemon.types.length; i++) {
-			buf += `<a class="type ${toID(pokemon.types[i])}" href="${Config.baseurl}types/${toID(pokemon.types[i])}" data-target="push">${pokemon.types[i]}</a> `;
+			buf += `<a href="#" class="type ${toID(pokemon.types[i])} edit-type" data-slot="${i}" style="cursor:pointer;">${pokemon.types[i]}</a> `;
+		}
+		// Add button to add a second type if only one type exists
+		if (pokemon.types.length === 1) {
+			buf += `<button class="button add-type" style="font-size:11px;padding:2px 8px;margin-left:8px;">+ Add Type</button>`;
 		}
 		buf += '</dd>';
 		buf += '</dl>';
@@ -81,12 +85,12 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 			if (width > 200) width = 200;
 			var color = Math.floor(baseStat*180/255);
 			if (color > 360) color = 360;
-			buf += `<tr><th>${StatTitles[stat]}:</th><td class="stat">${baseStat}</td>`;
-			buf += `<td class="statbar"><span style="width:${Math.floor(width)}px;background:hsl(${color},85%,45%);border-color:hsl(${color},75%,35%)"></span></td>`;
+			buf += `<tr><th>${StatTitles[stat]}:</th><td class="stat"><input type="number" class="stat-input textbox" data-stat="${stat}" value="${baseStat}" min="1" max="255" style="width:50px;" /></td>`;
+			buf += `<td class="statbar"><span class="statbar-fill" data-stat="${stat}" style="width:${Math.floor(width)}px;background:hsl(${color},85%,45%);border-color:hsl(${color},75%,35%)"></span></td>`;
 			buf += '<td class="ministat"><small>'+(stat==='hp'?'':this.getStat(baseStat, false, 100, 0, 0, 0.9))+'</small></td><td class="ministat"><small>'+this.getStat(baseStat, stat==='hp', 100, 31, 0, 1.0)+'</small></td>';
 			buf += '<td class="ministat"><small>'+this.getStat(baseStat, stat==='hp', 100, 31, 255, 1.0)+'</small></td><td class="ministat"><small>'+(stat==='hp'?'':this.getStat(baseStat, false, 100, 31, 255, 1.1))+'</small></td></tr>';
 		}
-		buf += `<tr><th class="bst">Total:</th><td class="bst">${bst}</td><td></td><td class="ministat" colspan="4">at level <input type="text" class="textbox" name="level" placeholder="100" size="5" /></td>`;
+		buf += `<tr><th class="bst">Total:</th><td class="bst bst-total">${bst}</td><td></td><td class="ministat" colspan="4">at level <input type="text" class="textbox" name="level" placeholder="100" size="5" /></td>`;
 
 		buf += '</table></dd>';
 
@@ -316,6 +320,9 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 		'click .add-move': 'addMove',
 		'click .remove-move': 'removeMove',
 		'change .move-level-input': 'updateMoveLevel',
+		'change .stat-input': 'updateStat',
+		'click .edit-type': 'editType',
+		'click .add-type': 'addType',
 	},
 	updateLevel: function(e) {
 		var val = this.$('input[name=level]').val();
@@ -614,6 +621,23 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 		
 		if (!isNaN(newLevel) && newLevel >= 0) {
 			learnset[index].level = newLevel;
+			
+			// Sort the learnset by level
+			learnset.sort(function(a, b) {
+				// Group by 'how' first to keep level-up moves together
+				if (a.how !== b.how) {
+					var order = {'lvl': 0, 'prevo': 1, 'tm': 2, 'tutor': 3, 'egg': 4};
+					return (order[a.how] || 5) - (order[b.how] || 5);
+				}
+				// Within level-up moves, sort by level
+				if (a.how === 'lvl' && b.how === 'lvl') {
+					return a.level - b.level;
+				}
+				return 0;
+			});
+			
+			// Re-render to show the sorted list
+			this.renderFullLearnset();
 		}
 	},
 	addMove: function(e) {
@@ -650,6 +674,85 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 		if (confirm('Remove this move from the learnset?')) {
 			learnset.splice(index, 1);
 			this.renderFullLearnset();
+		}
+	},
+	updateStat: function(e) {
+		var stat = $(e.currentTarget).data('stat');
+		var newValue = parseInt($(e.currentTarget).val());
+		var pokemon = BattlePokedexEdit[this.id];
+		
+		if (!isNaN(newValue) && newValue >= 1 && newValue <= 255) {
+			pokemon.baseStats[stat] = newValue;
+			
+			// Update the stat bar
+			var width = Math.floor(newValue * 200 / 200);
+			if (width > 200) width = 200;
+			var color = Math.floor(newValue * 180 / 255);
+			if (color > 360) color = 360;
+			this.$('.statbar-fill[data-stat="' + stat + '"]')
+				.css('width', width + 'px')
+				.css('background', 'hsl(' + color + ',85%,45%)')
+				.css('border-color', 'hsl(' + color + ',75%,35%)');
+			
+			// Recalculate BST
+			var bst = 0;
+			for (var s in BattleStatNames) {
+				bst += pokemon.baseStats[s];
+			}
+			this.$('.bst-total').text(bst);
+			
+			// Update calculated stats
+			this.updateLevel({});
+		}
+	},
+	editType: function(e) {
+		e.preventDefault();
+		var slot = parseInt($(e.currentTarget).data('slot'));
+		var pokemon = BattlePokedexEdit[this.id];
+		var currentType = pokemon.types[slot];
+		
+		// List of all possible types
+		var types = ['Normal', 'Fire', 'Water', 'Electric', 'Grass', 'Ice', 'Fighting', 'Poison', 
+					 'Ground', 'Flying', 'Psychic', 'Bug', 'Rock', 'Ghost', 'Dragon', 'Dark', 'Steel', 'Fairy'];
+		
+		var newType = prompt('Enter new type (' + types.join(', ') + '):', currentType);
+		if (newType && newType.trim()) {
+			// Capitalize first letter
+			newType = newType.charAt(0).toUpperCase() + newType.slice(1).toLowerCase();
+			
+			if (types.indexOf(newType) !== -1) {
+				pokemon.types[slot] = newType;
+				// Re-render the entire panel to update types display
+				this.initialize(this.id);
+			} else {
+				alert('Invalid type. Please choose from: ' + types.join(', '));
+			}
+		}
+	},
+	addType: function(e) {
+		e.preventDefault();
+		var pokemon = BattlePokedexEdit[this.id];
+		
+		if (pokemon.types.length >= 2) {
+			alert('Pokémon can only have up to 2 types.');
+			return;
+		}
+		
+		var types = ['Normal', 'Fire', 'Water', 'Electric', 'Grass', 'Ice', 'Fighting', 'Poison', 
+					 'Ground', 'Flying', 'Psychic', 'Bug', 'Rock', 'Ghost', 'Dragon', 'Dark', 'Steel', 'Fairy'];
+		
+		var newType = prompt('Enter second type (' + types.join(', ') + '):');
+		if (newType && newType.trim()) {
+			// Capitalize first letter
+			newType = newType.charAt(0).toUpperCase() + newType.slice(1).toLowerCase();
+			
+			if (types.indexOf(newType) !== -1) {
+				pokemon.types.push(newType);
+				// Re-render the entire panel to update types display
+				this.initialize(this.id);
+			} else {
+				alert('Invalid type. Please choose from: ' + types.join(', '));
+			}
 		}
 	}
 });
