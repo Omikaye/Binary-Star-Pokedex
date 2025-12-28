@@ -10,6 +10,7 @@ import phazingMd from 'bundle-text:../articles/phazing.md';
 import submovesMd from 'bundle-text:../articles/submoves.md';
 import terrainMd from 'bundle-text:../articles/terrain.md';
 import zmovesMd from 'bundle-text:../articles/zmoves.md';
+import zMoveResonationMd from 'bundle-text:../articles/zMoveResonationMd';
 
 export const articles = {
 	criticalhit: criticalhitMd,
@@ -21,6 +22,5 @@ export const articles = {
 	submoves: submovesMd,
 	terrain: terrainMd,
 	zmoves: zmovesMd,
-	// battlerules is mentioned in the UI but doesn't exist yet
-	battlerules: ''
+	zMoveResonation: zMoveResonationMd
 };
