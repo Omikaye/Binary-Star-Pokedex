@@ -17,7 +17,7 @@ function markdownToHTML(markdown) {
 		// Try to determine type - if it contains "berry" or common item words, link to items
 		// Otherwise default to moves for most game mechanics
 		var type = 'moves';
-		if (text.match(/berry|ball|stone|shard|fossil|incense|mail|plate|gem|orb|scarf|band|lens|herb|seed|powder|wing|feather|scale|claw|fang|bone|pearl|nugget|stardust|dust|honey|mushroom|root|shell|shard|evo|mega|z-/i)) {
+		if (text.match(/berry|ball|stone|fossil|incense|mail|plate|gem|orb|scarf|band|lens|herb|seed|powder|wing|feather|scale|claw|fang|bone|pearl|nugget|stardust|dust|honey|mushroom|root|shell|shard|evo|mega|z-/i)) {
 			type = 'items';
 		} else if (text.match(/ability|stance|form|mode/i)) {
 			type = 'abilities';
@@ -35,7 +35,7 @@ function markdownToHTML(markdown) {
 	
 	// Convert lists
 	html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
-	html = html.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>');
+	html = html.replace(/(<li>[\s\S]*?<\/li>\n?)+/g, '<ul>$&</ul>');
 	
 	// Convert tables (basic markdown table support)
 	var lines = html.split('\n');
@@ -108,13 +108,15 @@ function markdownToHTML(markdown) {
 			continue;
 		}
 		
+		var htmlTags = ['<ul>', '</ul>', '<li>', '<h', '</', '<table', '<thead', '<tbody', '<tr', '<th', '<td'];
+		
 		if (trimmed.startsWith('<ul>')) {
 			inList = true;
 			result.push(line);
 		} else if (trimmed.startsWith('</ul>')) {
 			inList = false;
 			result.push(line);
-		} else if (trimmed.startsWith('<li>') || trimmed.startsWith('<h') || trimmed.startsWith('</') || trimmed.startsWith('<table') || trimmed.startsWith('<thead') || trimmed.startsWith('<tbody') || trimmed.startsWith('<tr') || trimmed.startsWith('<th') || trimmed.startsWith('<td')) {
+		} else if (htmlTags.some(function(tag) { return trimmed.startsWith(tag); })) {
 			result.push(line);
 		} else if (!inList) {
 			// Wrap in paragraph if not already in a tag
