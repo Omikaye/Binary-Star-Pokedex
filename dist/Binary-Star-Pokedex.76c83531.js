@@ -724,20 +724,18 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         const trainer = trainers.find((t)=>t.id === norm);
         if (!trainer) {
             this.shortTitle = 'Trainer ' + norm;
-            this.html('<div class="pfx-body dexentry"><a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a><h1>Trainer ' + norm + '</h1><p>Trainer not found.</p></div>');
+            this.html('<div class="pfx-body dexentry"><a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a><h1>Trainer ' + norm + '</h1><p>Trainer not found.</p></div>');
             return;
         }
         this.trainer = trainer;
         this.shortTitle = trainer.name;
-        // Get trainer class and sprite
-        var trainerClass = getTrainerClass(trainer.name);
-        var trainerSprite = getTrainerIcon(trainerClass);
+        // Get trainer sprite - pass full trainer name so it can check personal name first
+        var trainerSprite = getTrainerIcon(trainer.name, true);
         var buf = '<div class="pfx-body dexentry">';
-        buf += "<style>.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }.dexentry .namecol { float: none !important; display: inline !important; padding-top: 0 !important; height: auto !important; }.trainer-sprite { float: right; width: 64px; height: 64px; margin-left: 16px; margin-bottom: 16px; }</style>";
+        buf += "<style>.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }.dexentry .namecol { float: none !important; display: inline !important; padding-top: 0 !important; height: auto !important; }.trainer-sprite-inline { display: inline-block; width: 256px; height: 128px; margin-left: 12px; vertical-align: middle; transform: scale(0.5); transform-origin: center; position: relative; top: -4px; }.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; }.dexentry h1 a { display:inline-block; white-space:nowrap; vertical-align: middle; }</style>";
         buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Trainers</a>';
-        // Trainer sprite on the right
-        buf += '<div class="trainer-sprite" style="' + trainerSprite + '"></div>';
-        buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a></h1>';
+        // Trainer sprite inline with name
+        buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a><span class="trainer-sprite-inline" style="' + trainerSprite + '"></span></h1>';
         // Prize Money
         buf += '<dl>';
         buf += '<dt>Prize Money:</dt> <dd>$' + (trainer.prizeMoney || 0) + '</dd>';

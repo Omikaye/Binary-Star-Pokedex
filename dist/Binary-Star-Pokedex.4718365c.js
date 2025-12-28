@@ -745,7 +745,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
         if (questionIndex >= 0) fragment = fragment.slice(0, questionIndex);
         var buf = '<div class="pfx-body"><form class="pokedex">';
         buf += '<h1><a href="' + Config.baseurl + '"" data-target="replace">Pok&eacute;dex</a></h1>';
-        buf += '<ul class="tabbar centered" style="margin-bottom: 18px"><li><button class="button nav-first' + (fragment === '' ? ' cur' : '') + '" value="' + Config.baseurl + '">Search</button></li>';
+        buf += '<ul class="tabbar centered" style="margin-bottom: 18px"><li><button class="button nav-first' + (fragment === '' ? ' cur' : '') + '" value="' + Config.baseurl + 'dex">Search</button></li>';
         buf += '<li><button class="button' + (fragment === 'pokemon/' ? ' cur' : '') + '" value="' + Config.baseurl + 'pokemon/">Pok&eacute;mon</button></li>';
         buf += '<li><button class="button' + (fragment === 'moves/' ? ' cur' : '') + '" value="' + Config.baseurl + 'moves/">Moves</button></li>';
         buf += '<li><button class="button' + (fragment === 'abilities/' ? ' cur' : '') + '" value="' + Config.baseurl + 'abilities/">Abilities</button></li>';
@@ -762,6 +762,62 @@ window.PokedexSearchPanel = Panels.Panel.extend({
         this.$searchbox = $searchbox;
         this.$searchfilters = null;
         var results = this.$('.results');
+        // Handle mechanics page early - render articles list and return
+        if (fragment === 'mechanics/') {
+            this.$('.buttonbar').remove();
+            this.$('.searchboxwrapper').remove();
+            var articles = [
+                {
+                    id: 'battlerules',
+                    name: 'Battle Rules'
+                },
+                {
+                    id: 'criticalhit',
+                    name: 'Critical Hits'
+                },
+                {
+                    id: 'gmaxmoves',
+                    name: 'G-Max Moves'
+                },
+                {
+                    id: 'grounded',
+                    name: 'Grounded'
+                },
+                {
+                    id: 'hazards',
+                    name: 'Entry Hazards'
+                },
+                {
+                    id: 'maxmoves',
+                    name: 'Max Moves'
+                },
+                {
+                    id: 'phazing',
+                    name: 'Phazing'
+                },
+                {
+                    id: 'submoves',
+                    name: 'Substitute Moves'
+                },
+                {
+                    id: 'terrain',
+                    name: 'Terrain'
+                },
+                {
+                    id: 'zmoves',
+                    name: 'Z-Moves'
+                }
+            ];
+            var articlesBuf = '<ul class="utilichart nokbd">';
+            for(var i = 0; i < articles.length; i++){
+                var article = articles[i];
+                articlesBuf += '<li class="result"><a href="' + Config.baseurl + 'articles/' + article.id + '" data-target="push"><span class="col namecol">' + article.name + '</span></a></li>';
+            }
+            articlesBuf += '</ul>';
+            results.html(articlesBuf);
+            this.search = null;
+            return;
+        }
         if (results.length) {
             var search = this.search = new BattleSearch(results, this.$el);
             this.$el.on('scroll', function() {
@@ -783,59 +839,6 @@ window.PokedexSearchPanel = Panels.Panel.extend({
                 search.setType('item');
                 $searchbox.attr('placeholder', 'Search items');
                 this.$('.buttonbar').remove();
-            } else if (fragment === 'mechanics/') {
-                // Mechanics - show article list
-                this.$('.buttonbar').remove();
-                this.$('.searchboxwrapper').remove();
-                var articles = [
-                    {
-                        id: 'battlerules',
-                        name: 'Battle Rules'
-                    },
-                    {
-                        id: 'criticalhit',
-                        name: 'Critical Hits'
-                    },
-                    {
-                        id: 'gmaxmoves',
-                        name: 'G-Max Moves'
-                    },
-                    {
-                        id: 'grounded',
-                        name: 'Grounded'
-                    },
-                    {
-                        id: 'hazards',
-                        name: 'Entry Hazards'
-                    },
-                    {
-                        id: 'maxmoves',
-                        name: 'Max Moves'
-                    },
-                    {
-                        id: 'phazing',
-                        name: 'Phazing'
-                    },
-                    {
-                        id: 'submoves',
-                        name: 'Substitute Moves'
-                    },
-                    {
-                        id: 'terrain',
-                        name: 'Terrain'
-                    },
-                    {
-                        id: 'zmoves',
-                        name: 'Z-Moves'
-                    }
-                ];
-                var articlesBuf = '<ul class="utilichart nokbd">';
-                for(var i = 0; i < articles.length; i++){
-                    var article = articles[i];
-                    articlesBuf += '<li class="result"><a href="' + Config.baseurl + 'articles/' + article.id + '" data-target="push"><span class="col namecol">' + article.name + '</span></a></li>';
-                }
-                articlesBuf += '</ul>';
-                this.$('.results').html(articlesBuf);
             } else if (fragment === 'locations/') {
                 // Locations type - to be implemented later
                 $searchbox.attr('placeholder', 'Search locations');
@@ -850,9 +853,11 @@ window.PokedexSearchPanel = Panels.Panel.extend({
             }
             this.search.externalFilter = true;
         } else this.search = null;
-        $searchbox.focus();
-        this.find($searchbox.val());
-        this.checkExactMatch();
+        if ($searchbox.length) {
+            $searchbox.focus();
+            this.find($searchbox.val());
+            this.checkExactMatch();
+        }
     },
     updateSearch: function(e) {
         this.find(e.currentTarget.value);
@@ -1076,10 +1081,11 @@ window.PokedexSearchPanel = Panels.Panel.extend({
                 const monID = toID(disp);
                 return '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>';
             }).join('');
-            // Get trainer class and sprite for background
-            const trainerClass = getTrainerClass(t.name);
-            const trainerSprite = getTrainerIcon(trainerClass);
-            buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' + '<div style="position:absolute;left:-10px;top:-10px;width:128px;height:128px;opacity:0.3;pointer-events:none;' + trainerSprite + '"></div>' + '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' + '</a>' + '</li>';
+            // Get trainer background for compact thumbnail (using full name to check personal name first)
+            const trainerBg = typeof getTrainerBackground === 'function' ? getTrainerBackground(t.name, true) : getTrainerIcon(t.name, true);
+            // Small thumbnail showing the upper third of the large sprite, scaled down ~2x
+            const thumb = '<div style="position:absolute;left:-30px;top:-30px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;"><div style="width:512px;height:256px;transform:scale(0.25);transform-origin:top left;' + trainerBg + ';"></div>' + '</div>';
+            buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' + thumb + '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' + '</a>' + '</li>';
         }
         buf += '</ul>';
         this.$('.results').html(buf);

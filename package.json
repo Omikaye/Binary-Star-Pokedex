@@ -26,6 +26,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@parcel/transformer-inline-string": "^2.16.1",
     "@pkmn/data": "^0.7.59",
     "@pkmn/dex": "^0.7.59",
     "@pkmn/img": "^0.2.27",

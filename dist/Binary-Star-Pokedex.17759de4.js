@@ -714,7 +714,111 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"rXnTZ":[function(require,module,exports,__globalThis) {
+var _articlesDataJs = require("./articles-data.js");
 BattleSearch.urlRoot = Config.baseurl;
+// Simple markdown to HTML converter for articles
+function markdownToHTML(markdown) {
+    var html = markdown;
+    // Convert headers
+    html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
+    html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
+    html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+    // Convert [[links]] to anchor tags (for moves, abilities, items, pokemon)
+    html = html.replace(/\[\[([^\]]+)\]\]/g, function(match, text) {
+        var id = text.toLowerCase().replace(/[^a-z0-9]+/g, '');
+        // Try to determine type - if it contains "berry" or common item words, link to items
+        // Otherwise default to moves for most game mechanics
+        var type = 'moves';
+        if (text.match(/berry|ball|stone|shard|fossil|incense|mail|plate|gem|orb|scarf|band|lens|herb|seed|powder|wing|feather|scale|claw|fang|bone|pearl|nugget|stardust|dust|honey|mushroom|root|shell|shard|evo|mega|z-/i)) type = 'items';
+        else if (text.match(/ability|stance|form|mode/i)) type = 'abilities';
+        return '<a href="' + Config.baseurl + type + '/' + id + '" data-target="push">' + escapeHTML(text) + '</a>';
+    });
+    // Convert bold and italic
+    html = html.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
+    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    html = html.replace(/___(.+?)___/g, '<strong><em>$1</em></strong>');
+    html = html.replace(/__(.+?)__/g, '<strong>$1</strong>');
+    html = html.replace(/_(.+?)_/g, '<em>$1</em>');
+    // Convert lists
+    html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+    html = html.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>');
+    // Convert tables (basic markdown table support)
+    var lines = html.split('\n');
+    var inTable = false;
+    var result = [];
+    for(var i = 0; i < lines.length; i++){
+        var line = lines[i];
+        var trimmed = line.trim();
+        // Check if this is a table row
+        if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
+            var cells = trimmed.slice(1, -1).split('|').map(function(cell) {
+                return cell.trim();
+            });
+            // Check if next line is a separator (---|---|---)
+            var isHeader = false;
+            if (i + 1 < lines.length) {
+                var nextLine = lines[i + 1].trim();
+                if (nextLine.match(/^\|[\s:-]+\|/)) {
+                    isHeader = true;
+                    if (!inTable) {
+                        result.push('<table>');
+                        inTable = true;
+                    }
+                    result.push('<thead><tr>');
+                    cells.forEach(function(cell) {
+                        result.push('<th>' + cell + '</th>');
+                    });
+                    result.push('</tr></thead><tbody>');
+                    i++; // Skip the separator line
+                    continue;
+                }
+            }
+            if (!inTable) {
+                result.push('<table><tbody>');
+                inTable = true;
+            }
+            result.push('<tr>');
+            cells.forEach(function(cell) {
+                result.push('<td>' + cell + '</td>');
+            });
+            result.push('</tr>');
+        } else {
+            if (inTable) {
+                result.push('</tbody></table>');
+                inTable = false;
+            }
+            result.push(line);
+        }
+    }
+    if (inTable) result.push('</tbody></table>');
+    html = result.join('\n');
+    // Convert paragraphs (lines not already in tags)
+    lines = html.split('\n');
+    var inList = false;
+    result = [];
+    for(var i = 0; i < lines.length; i++){
+        var line = lines[i];
+        var trimmed = line.trim();
+        if (!trimmed) {
+            if (!inList) result.push('');
+            continue;
+        }
+        if (trimmed.startsWith('<ul>')) {
+            inList = true;
+            result.push(line);
+        } else if (trimmed.startsWith('</ul>')) {
+            inList = false;
+            result.push(line);
+        } else if (trimmed.startsWith('<li>') || trimmed.startsWith('<h') || trimmed.startsWith('</') || trimmed.startsWith('<table') || trimmed.startsWith('<thead') || trimmed.startsWith('<tbody') || trimmed.startsWith('<tr') || trimmed.startsWith('<th') || trimmed.startsWith('<td')) result.push(line);
+        else if (!inList) {
+            // Wrap in paragraph if not already in a tag
+            if (!trimmed.startsWith('<')) result.push('<p>' + line + '</p>');
+            else result.push(line);
+        } else result.push(line);
+    }
+    return result.join('\n');
+}
 window.Topbar = Panels.Topbar.extend({
     height: 51
 });
@@ -731,7 +835,7 @@ window.PokedexItemPanel = PokedexResultPanel.extend({
         var item = getID(BattleItems, id);
         this.shortTitle = item.name;
         var buf = '<div class="pfx-body dexentry">';
-        buf += '<a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+        buf += '<a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
         var iconNum = window.ItemIconIndices && window.ItemIconIndices[id] ? window.ItemIconIndices[id] : '?';
         buf += '<h1 style="white-space:nowrap"><a href="' + Config.baseurl + 'items/' + id + '" data-target="push" class="subtle">' + item.name + '</a> <small style="color:#999;font-size:0.6em">#' + item.num + ', Icon: #' + iconNum + '</small></h1>';
         buf += '<div style="text-align:center;margin:10px 0"><span class="itemicon" style="' + getItemIcon(item) + ';width:32px;height:32px"></span></div>';
@@ -778,8 +882,8 @@ window.PokedexAbilityPanel = PokedexResultPanel.extend({
         this.id = id;
         this.shortTitle = ability.name;
         var buf = '<div class="pfx-body dexentry">';
-        buf += '<a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-        buf += '<h1><a href="' + Config.baseurl + 'abilities/' + id + '" data-target="push" class="subtle">' + ability.name + '</a></h1>';
+        buf += '<a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+        buf += '<h1><a href="' + Config.baseurl + 'abilities/' + ability.id + '" data-target="push" class="subtle">' + escapeHTML(ability.name) + '</a></h1>';
         if (ability.isNonstandard && ability.id !== 'noability') buf += '<div class="warning"><strong>Note:</strong> This is a made-up ability by <a href="http://www.smogon.com/cap/" target="_blank">Smogon CAP</a>.</div>';
         buf += '<p>' + escapeHTML(ability.desc) + '</p>';
         // Add tag links if this ability has associated tags
@@ -824,7 +928,7 @@ window.PokedexTypePanel = PokedexResultPanel.extend({
         this.shortTitle = this.type;
         this.buildCountIndex();
         var buf = '<div class="pfx-body dexentry">';
-        buf += '<a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+        buf += '<a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
         buf += '<h1><a href="' + Config.baseurl + 'types/' + id + '" data-target="push" class="subtle">' + this.type + '</a></h1>';
         buf += '<dl>';
         var atLeastOne = false;
@@ -1034,7 +1138,7 @@ window.PokedexTagPanel = PokedexResultPanel.extend({
         this.id = id;
         this.shortTitle = name;
         var buf = '<div class="pfx-body dexentry">';
-        buf += '<a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+        buf += '<a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
         buf += '<h1><a href="' + Config.baseurl + 'tags/' + id + '" data-target="push" class="subtle">' + name + '</a></h1>';
         if (tag) buf += '<p>' + tag.desc + '</p>';
         // distribution
@@ -1220,7 +1324,7 @@ window.PokedexEggGroupPanel = PokedexResultPanel.extend({
             this.shortTitle = "Egg groups";
         }
         var buf = '<div class="pfx-body dexentry">';
-        buf += '<a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+        buf += '<a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
         buf += '<h1><a href="' + Config.baseurl + 'egggroups/' + id + '" data-target="push" class="subtle">' + names + '</a></h1>';
         if (this.id2) buf += '<p>All Pok&eacute;mon in either the <a href="' + Config.baseurl + 'egggroups/' + this.id + '" data-target="push">' + this.table[ids[0]].name + '</a> or <a href="' + Config.baseurl + 'egggroups/' + this.id2 + '" data-target="push">' + this.table[ids[1]].name + '</a> egg group.</p>';
         else buf += '<p>' + this.table[ids[0]].desc + '</p>';
@@ -1334,8 +1438,8 @@ window.PokedexCategoryPanel = PokedexResultPanel.extend({
         };
         this.shortTitle = category.name;
         var buf = '<div class="pfx-body dexentry">';
-        buf += '<a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-        buf += '<h1><a href="' + Config.baseurl + 'categories/' + id + '" data-target="push" class="subtle">' + category.name + '</a></h1>';
+        buf += '<a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+        buf += '<h1><a href="' + Config.baseurl + 'categories/' + id + '" data-target="push" class="subtle">' + escapeHTML(id) + '</a></h1>';
         switch(id){
             case 'physical':
                 buf += '<p>Physical moves are damaging moves generally calculated with the user\'s Attack stat and the target\'s Defense stat.</p>';
@@ -1407,22 +1511,145 @@ window.PokedexArticlePanel = PokedexResultPanel.extend({
         id = toID(id);
         this.shortTitle = id;
         var buf = '<div class="pfx-body dexentry">';
-        buf += '<a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-        buf += '<h1><a href="' + Config.baseurl + 'articles/' + id + '" data-target="push" class="subtle">' + id + '</a></h1>';
+        buf += '<a href="' + Config.baseurl + 'mechanics/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Mechanics</a>';
         buf += '<div class="article-content"><em>Loading...</em></div>';
         buf += '</div>';
         this.html(buf);
         var self = this;
-        $.get('/.articles-cached/' + id + '.html').done(function(html) {
-            var html = html.replace(/<h1[^>]*>([^<]+)<\/h1>/, function(match, innerMatch) {
-                self.shortTitle = innerMatch;
-                self.$('h1').first().html('<a href="' + Config.baseurl + 'articles/' + id + '" class="subtle" data-target="push">' + innerMatch + '</a>');
-                return '';
-            });
-            self.$('.article-content').html(html);
+        // Get markdown from bundled articles
+        var markdown = (0, _articlesDataJs.articles)[id] || '';
+        if (!markdown) {
+            self.$('.article-content').html('<p style="color: red;">Article not found.</p>');
+            return;
+        }
+        // Convert markdown to HTML
+        var html = markdownToHTML(markdown);
+        // Extract title from h1
+        var title = id;
+        html = html.replace(/<h1[^>]*>([^<]+)<\/h1>/, function(match, innerMatch) {
+            title = innerMatch;
+            self.shortTitle = innerMatch;
+            return '';
         });
+        // Add CSS for article styling if not already added
+        if (!$('#article-styles').length) {
+            var styles = '<style id="article-styles">';
+            styles += '.article-content h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 4px; margin-top: 20px; }';
+            styles += '.article-content h3 { color: #555; margin-top: 16px; }';
+            styles += '.article-content p { line-height: 1.6; margin: 10px 0; }';
+            styles += '.article-content ul { margin: 10px 0; padding-left: 24px; }';
+            styles += '.article-content li { margin: 6px 0; line-height: 1.5; }';
+            styles += '.article-content table { border-collapse: collapse; margin: 10px 0; }';
+            styles += '.article-content th, .article-content td { border: 1px solid #ddd; padding: 8px; text-align: left; }';
+            styles += '.article-content th { background-color: #f2f2f2; font-weight: bold; }';
+            styles += '.article-content a { color: #1976d2; text-decoration: none; }';
+            styles += '.article-content a:hover { text-decoration: underline; }';
+            styles += '</style>';
+            $('head').append(styles);
+        }
+        // Build article content
+        var articleBuf = '';
+        articleBuf += '<h1>' + escapeHTML(title) + '</h1>';
+        articleBuf += html;
+        // Add special sections for specific articles
+        if (id === 'zmoves') {
+            // All Z-Moves section
+            articleBuf += '<h2>All Z-Moves</h2>';
+            articleBuf += '<ul class="utilichart nokbd">';
+            for(var moveId in BattleMovedex){
+                var move = BattleMovedex[moveId];
+                if (move.isZ) {
+                    articleBuf += '<li class="result"><a href="' + Config.baseurl + 'moves/' + moveId + '" data-target="push">';
+                    articleBuf += '<span class="col numcol">' + getTypeIcon(move.type) + '</span>';
+                    articleBuf += '<span class="col namecol">' + escapeHTML(move.name) + '</span>';
+                    if (move.basePower) articleBuf += '<span class="col abilitydesccol">Power: ' + move.basePower + '</span>';
+                    articleBuf += '</a></li>';
+                }
+            }
+            articleBuf += '</ul>';
+            // All Z-Crystals section
+            articleBuf += '<h2>All Z-Crystals</h2>';
+            articleBuf += '<ul class="utilichart nokbd">';
+            for(var itemId in BattleItems){
+                var item = BattleItems[itemId];
+                if (item.isZCrystal || item.name && item.name.includes('ium Z')) {
+                    articleBuf += '<li class="result"><a href="' + Config.baseurl + 'items/' + itemId + '" data-target="push">';
+                    articleBuf += '<span class="col numcol"><span class="itemicon" style="' + getItemIcon(item) + ';width:24px;height:24px;display:inline-block"></span></span>';
+                    articleBuf += '<span class="col namecol">' + escapeHTML(item.name) + '</span>';
+                    if (item.desc) articleBuf += '<span class="col abilitydesccol">' + escapeHTML(item.desc.substring(0, 100)) + (item.desc.length > 100 ? '...' : '') + '</span>';
+                    articleBuf += '</a></li>';
+                }
+            }
+            articleBuf += '</ul>';
+        }
+        self.$('.article-content').html(articleBuf);
     }
 });
+
+},{"./articles-data.js":"chUaL"}],"chUaL":[function(require,module,exports,__globalThis) {
+// Auto-generated file that bundles all markdown articles
+// This is generated from the articles/ directory
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "articles", ()=>articles);
+var _criticalhitMd = require("bundle-text:../articles/criticalhit.md");
+var _criticalhitMdDefault = parcelHelpers.interopDefault(_criticalhitMd);
+var _gmaxmovesMd = require("bundle-text:../articles/gmaxmoves.md");
+var _gmaxmovesMdDefault = parcelHelpers.interopDefault(_gmaxmovesMd);
+var _groundedMd = require("bundle-text:../articles/grounded.md");
+var _groundedMdDefault = parcelHelpers.interopDefault(_groundedMd);
+var _hazardsMd = require("bundle-text:../articles/hazards.md");
+var _hazardsMdDefault = parcelHelpers.interopDefault(_hazardsMd);
+var _maxmovesMd = require("bundle-text:../articles/maxmoves.md");
+var _maxmovesMdDefault = parcelHelpers.interopDefault(_maxmovesMd);
+var _phazingMd = require("bundle-text:../articles/phazing.md");
+var _phazingMdDefault = parcelHelpers.interopDefault(_phazingMd);
+var _submovesMd = require("bundle-text:../articles/submoves.md");
+var _submovesMdDefault = parcelHelpers.interopDefault(_submovesMd);
+var _terrainMd = require("bundle-text:../articles/terrain.md");
+var _terrainMdDefault = parcelHelpers.interopDefault(_terrainMd);
+var _zmovesMd = require("bundle-text:../articles/zmoves.md");
+var _zmovesMdDefault = parcelHelpers.interopDefault(_zmovesMd);
+const articles = {
+    criticalhit: (0, _criticalhitMdDefault.default),
+    gmaxmoves: (0, _gmaxmovesMdDefault.default),
+    grounded: (0, _groundedMdDefault.default),
+    hazards: (0, _hazardsMdDefault.default),
+    maxmoves: (0, _maxmovesMdDefault.default),
+    phazing: (0, _phazingMdDefault.default),
+    submoves: (0, _submovesMdDefault.default),
+    terrain: (0, _terrainMdDefault.default),
+    zmoves: (0, _zmovesMdDefault.default),
+    // battlerules is mentioned in the UI but doesn't exist yet
+    battlerules: ''
+};
+
+},{"bundle-text:../articles/criticalhit.md":"vM7yo","bundle-text:../articles/gmaxmoves.md":"eyZvw","bundle-text:../articles/grounded.md":"7uEP9","bundle-text:../articles/hazards.md":"98BzV","bundle-text:../articles/maxmoves.md":"whAat","bundle-text:../articles/phazing.md":"2sjKK","bundle-text:../articles/submoves.md":"cFgWQ","bundle-text:../articles/terrain.md":"64WwT","bundle-text:../articles/zmoves.md":"jcuPW","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"vM7yo":[function(require,module,exports,__globalThis) {
+module.exports = "# Critical hit\n\nAll damaging moves with damage calculated through base power have a chance to critical hit, which multiplies the damage dealt by 1.5. If the move's user has the [[Sniper]] Ability, damage from a critical hit is again multiplied by 1.5. Additionally, if the user's attacking stat stage is less than 0, it will be treated as 0; the same is true if the target's defensive stat stage is greater than 0. If the target has Reflect, Light Screen, or Aurora Veil active, those effects are ignored.\n\nMost moves start at a critical hit ratio of +0, although high critical hit ratio moves (like [[Stone Edge]]) start at +1, [[10,000,000 Volt Thunderbolt]] starts at +2, and [[Frost Breath]] and [[Storm Throw]] always result in a critical hit.\n\n| Ratio | Rate   | Percentage |\n|------:|:------:|-----------:|\n| +0    | 1/24   |       4.2% |\n| +1    | 1/8    |      12.5% |\n| +2    | 1/2    |      50.0% |\n| +3    | always |     100.0% |\n\nItems that increase critical hit ratio:\n\n- [[Razor Claw]]: +1\n- [[Scope Lens]]: +1\n- [[Stick]]: +2 ([[Farfetch'd]] only)\n- [[Lucky Punch]]: +2 ([[Chansey]] only)\n\nAbilities that increase critical hit ratio:\n\n- [[Super Luck]]: +1\n- [[Merciless]]: +3 (only if the target is poisoned)\n\nTemporary effects that increase critical hit ratio:\n\n- Focus Energy effect: +2 until switch-out, granted by:\n    - [[Focus Energy]]\n    - Z-[[Foresight]]\n    - Z-[[Sleep Talk]]\n    - Z-[[Tailwind]]\n    - Z-[[Acupressure]]\n    - Z-[[Heart Swap]]\n    - [[Lansat Berry]] when eaten\n\n- Laser Focus effect: +3 until the end of the next turn, granted by:\n    - [[Laser Focus]]\n\nNote that the Focus Energy effect doesn't stack with itself - you can only have one Focus Energy effect at a time.\n\nCritical hits are prevented from striking a Pokemon under the effect of [[Lucky Chant]], as well as Pokemon with the [[Battle Armor]] and [[Shell Armor]] Abilities.\n\n### Past gens\n\nGen 6:\n\nAt +0, critical hit rate was 1/16 instead of 1/24.\n\nGen 2-5:\n\nThe critical damage multiplier was 2 instead of 1.5, and the critical hit rates were as follows.\n\n| Ratio | Rate   | Percentage |\n|------:|:------:|-----------:|\n| +0    | 1/16   |       6.3% |\n| +1    | 1/8    |      12.5% |\n| +2    | 1/4    |      25.0% |\n| +3    | 1/3    |      33.3% |\n| +4    | 1/2    |      50.0% |\n\nGen 2 only:\n\nThe attacking stat stage and defensive stat stage were considered as a collective unit, and either both treated as 0 or both left as their full value, depending on whether their sum was less than 0. \n\nHigh-critical-rate moves were given a starting ratio of +2 rather than +1.\n\nGen 1:\n\nThe critical modifier of 2x was applied onto the level, as opposed to the final damage. As such, at level 100 it effectively became a multiplier of 82/42x, or about 1.95x. \n\nCritical hits always caused all stat stages on both sides to be treated as 0, regardless of whether that was slated to result in more or less damage.\n\nCritical rate was calculated by default as the attacker's base speed divided by 512.\n\nFor high-critical-rate moves such as [[Slash]] or [[Razor Leaf]], the rate instead uses base speed divided by 64, with a maximum of 255/256.\n\nFocus Energy did not function properly at all, and after using it, the critical rate on all subsequent moves until switch-out was divided by 4.\n";
+
+},{}],"eyZvw":[function(require,module,exports,__globalThis) {
+module.exports = "# G-Max Moves\n\nG-Max Moves are special moves introduced in Gen 8 that are similar to Max Moves and are exclusive to specific Pokemon, can only be used a maximum of three times per battle, and require a Pokemon to be Gigantamaxed.\n";
+
+},{}],"7uEP9":[function(require,module,exports,__globalThis) {
+module.exports = "# Grounded\n\nA grounded Pokemon is one that is not under any effect that makes it airborne. A Pokemon is airborne if they are part [[Flying type]], have the Ability [[Levitate]], are holding an [[Air Balloon]], or are under the effect of [[Magnet Rise]] or [[Telekinesis]].\n\nBeing airborne grants a Pokemon immunity to several effects. [[Ground]]-type attacking moves (other than [[Thousand Arrows]]), the Ability [[Arena Trap]], [[Terrain]] effects, [[Rototiller]], and the [[hazards]] set by [[Spikes]], [[Sticky Web]], and [[Toxic Spikes]] all have no effect on airborne Pokemon.\n\nSeveral effects also cause a Pokemon to become grounded, which negates any airborne effect the Pokemon may have had. A Pokemon is grounded if they are under the effect of [[Ingrain]], [[Smack Down]], or [[Thousand Arrows]], are holding an [[Iron Ball]], or [[Gravity]] is in effect.";
+
+},{}],"98BzV":[function(require,module,exports,__globalThis) {
+module.exports = "# Hazards\n\nHazards are a set of moves that affect Pokemon as they switch into battle, including [[Spikes]], [[Stealth Rock]], [[Sticky Web]], and [[Toxic Spikes]]. They are set up on the opposing side of the field when used, and can be removed when a Pokemon on that side uses [[Defog]] or [[Rapid Spin]], or is hit by Defog. Toxic Spikes can also be removed when a [[grounded]] [[Poison]]-type Pokemon switches in on the affected side.";
+
+},{}],"whAat":[function(require,module,exports,__globalThis) {
+module.exports = "# Max Moves\n\nMax Moves are special moves introduced in Gen 8 that can only be used a maximum of three times per battle and require a Pokemon to be Dynamaxed.\n";
+
+},{}],"2sjKK":[function(require,module,exports,__globalThis) {
+module.exports = "# Phazing\n\nPhazing moves are moves that make the opponent switch out, including [[Whirlwind]], [[Roar]], [[Dragon Tail]], and [[Circle Throw]]. These moves always come with a high negative priority (currently -6) for balance reasons, due to the disruptive effect they would have if they were routinely capable of going first and denying the opponent access to any of their turns.\n\nThe word \"phaze\" is short for \"pseudo-Haze\", since they're similar to [[Haze]] in that they reset stat boosts.\n\nNote that the Ability [[Suction Cups]] and the effect of [[Ingrain]] prevent phazing, though Pokemon with [[Mold Breaker]], [[Turboblaze]], or [[Teravolt]] can ignore the former.\n";
+
+},{}],"cFgWQ":[function(require,module,exports,__globalThis) {
+module.exports = "# Submoves\n\nThere are several situations in which a Pokémon might use a move other than the one you selected at the beginning of the turn.\n\nThese are split into two separate situations: 1. running an entirely new move action, and 2. using a move directly.\n\n\n## Using a move directly\n\nUsing a move directly is very common. Most commonly, moves that call other moves:\n\n- [[Metronome (move)]] uses a random move\n- [[Sleep Talk]] uses a random move the user knows\n- [[Assist]] uses a random move the user's team knows\n- [[Copycat]] copies the last move used in the battle\n- [[Mirror Move]] copies the last move used by the target\n- [[Me First]] copies the target's chosen damaging move action\n- [[Snatch]] copies and prevents the target's chosen status move\n- [[Nature Power]] uses a move depending on terrain\n\nAll of the above moves have exceptions; most notably, they can't call each other.\n\nAnd other effects that call other moves:\n\n- [[Magic Bounce]] reflects status moves\n- [[Magic Coat]] gives a turn of Magic Bounce\n\nUsing a move directly skips a lot of checks that are normally done during turn order. Most obviously, the move is used immediately, bypassing priority order, which can be quite powerful for moves that would be unbalanced if they didn't go last (such as Dragon Tail, Whirlwind, or Focus Punch).\n\nIn addition, it skips a lot of effects that would prevent a move from executing (you can't get fully paralyzed after using Metronome but before using the move chosen by Metronome). These include:\n\n- Sleep\n- Full paralysis\n- Flinching\n- Immobilizing from [[Attract]]\n- Hitting yourself in confusion\n- Being out of PP\n\nIt also skips other consequences of move actions, such as:\n\n- Dancer (a directly called dance move does not trigger Dancer)\n- PP deduction\n\nIn PS source code, you will see `useMove` when direct move usage happens.\n\n\n## Adding or replacing a move action\n\nRunning an entirely new move action is very rare, and done by:\n\n- [[Instruct]] adds an additional move action\n- [[Dancer]] adds an additional move action\n- [[Encore]] replaces the chosen move action with the previous turn's action (without changing timing)\n- [[Pursuit]] replaces the chosen move action with an earlier action\n\nInstruct and Dancer are unique in that they allow more than one move action per turn.\n\nUnlike a direct move usage, these are full move actions, and include all the checks skipped above, as well as PP deduction. The one exception is Dancer, which includes everything else but excludes PP deduction.\n\nIn PS source code, you will see `runMove` when a full move action happens.\n";
+
+},{}],"64WwT":[function(require,module,exports,__globalThis) {
+module.exports = "# Terrain\n\nTerrain is a set of field effects that benefit [[grounded]] Pokemon for 5 turns. Each of the four types of terrain has a move and Ability that start the effect. The moves are [[Electric Terrain]], [[Grassy Terrain]], [[Misty Terrain]], and [[Psychic Terrain]], and the corresponding Abilities are [[Electric Surge]], [[Grassy Surge]], [[Misty Surge]], and [[Psychic Surge]]. When a different terrain effect comes into play, it replaces the old one. If the Pokemon that started the effect is holding a [[Terrain Extender]], it lasts 8 turns instead.\n\nSome moves have altered behavior when used while any terrain is active, including [[Camouflage]], [[Nature Power]], and [[Secret Power]]. Certain Abilities are also activated while a specific terrain is in play, which include [[Grass Pelt]] during Grassy Terrain, and [[Surge Surfer]] during Electric Terrain. There are four items that activate as soon as the holder is on the field at the same time as the corresponding terrain effect, which are [[Electric Seed]], [[Grassy Seed]], [[Misty Seed]], and [[Psychic Seed]]. The effects of all of these moves, Abilities, and items happen even if the Pokemon is not grounded.\n\nPokemon that are in the invulnerable turn of a two-turn move are not considered grounded by terrain effects.";
+
+},{}],"jcuPW":[function(require,module,exports,__globalThis) {
+module.exports = "# Z-Moves\n\nZ-Moves are special moves exclusive to Gen 7 that can only be used once per battle, and require a held Z-Crystal.\n";
 
 },{}]},["kP0AL","rXnTZ"], "rXnTZ", "parcelRequire6a64", {})
 
