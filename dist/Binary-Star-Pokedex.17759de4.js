@@ -729,7 +729,7 @@ function markdownToHTML(markdown) {
         // Try to determine type - if it contains "berry" or common item words, link to items
         // Otherwise default to moves for most game mechanics
         var type = 'moves';
-        if (text.match(/berry|ball|stone|shard|fossil|incense|mail|plate|gem|orb|scarf|band|lens|herb|seed|powder|wing|feather|scale|claw|fang|bone|pearl|nugget|stardust|dust|honey|mushroom|root|shell|shard|evo|mega|z-/i)) type = 'items';
+        if (text.match(/berry|ball|stone|fossil|incense|mail|plate|gem|orb|scarf|band|lens|herb|seed|powder|wing|feather|scale|claw|fang|bone|pearl|nugget|stardust|dust|honey|mushroom|root|shell|shard|evo|mega|z-/i)) type = 'items';
         else if (text.match(/ability|stance|form|mode/i)) type = 'abilities';
         return '<a href="' + Config.baseurl + type + '/' + id + '" data-target="push">' + escapeHTML(text) + '</a>';
     });
@@ -742,7 +742,7 @@ function markdownToHTML(markdown) {
     html = html.replace(/_(.+?)_/g, '<em>$1</em>');
     // Convert lists
     html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
-    html = html.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>');
+    html = html.replace(/(<li>[\s\S]*?<\/li>\n?)+/g, '<ul>$&</ul>');
     // Convert tables (basic markdown table support)
     var lines = html.split('\n');
     var inTable = false;
@@ -804,13 +804,28 @@ function markdownToHTML(markdown) {
             if (!inList) result.push('');
             continue;
         }
+        var htmlTags = [
+            '<ul>',
+            '</ul>',
+            '<li>',
+            '<h',
+            '</',
+            '<table',
+            '<thead',
+            '<tbody',
+            '<tr',
+            '<th',
+            '<td'
+        ];
         if (trimmed.startsWith('<ul>')) {
             inList = true;
             result.push(line);
         } else if (trimmed.startsWith('</ul>')) {
             inList = false;
             result.push(line);
-        } else if (trimmed.startsWith('<li>') || trimmed.startsWith('<h') || trimmed.startsWith('</') || trimmed.startsWith('<table') || trimmed.startsWith('<thead') || trimmed.startsWith('<tbody') || trimmed.startsWith('<tr') || trimmed.startsWith('<th') || trimmed.startsWith('<td')) result.push(line);
+        } else if (htmlTags.some(function(tag) {
+            return trimmed.startsWith(tag);
+        })) result.push(line);
         else if (!inList) {
             // Wrap in paragraph if not already in a tag
             if (!trimmed.startsWith('<')) result.push('<p>' + line + '</p>');
@@ -1594,8 +1609,6 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "articles", ()=>articles);
 var _criticalhitMd = require("bundle-text:../articles/criticalhit.md");
 var _criticalhitMdDefault = parcelHelpers.interopDefault(_criticalhitMd);
-var _gmaxmovesMd = require("bundle-text:../articles/gmaxmoves.md");
-var _gmaxmovesMdDefault = parcelHelpers.interopDefault(_gmaxmovesMd);
 var _groundedMd = require("bundle-text:../articles/grounded.md");
 var _groundedMdDefault = parcelHelpers.interopDefault(_groundedMd);
 var _hazardsMd = require("bundle-text:../articles/hazards.md");
@@ -1608,27 +1621,27 @@ var _submovesMd = require("bundle-text:../articles/submoves.md");
 var _submovesMdDefault = parcelHelpers.interopDefault(_submovesMd);
 var _terrainMd = require("bundle-text:../articles/terrain.md");
 var _terrainMdDefault = parcelHelpers.interopDefault(_terrainMd);
+var _zMoveResonationMd = require("bundle-text:../articles/zMoveResonation.md");
+var _zMoveResonationMdDefault = parcelHelpers.interopDefault(_zMoveResonationMd);
+var _zPokemonMd = require("bundle-text:../articles/zPokemon.md");
+var _zPokemonMdDefault = parcelHelpers.interopDefault(_zPokemonMd);
 var _zmovesMd = require("bundle-text:../articles/zmoves.md");
 var _zmovesMdDefault = parcelHelpers.interopDefault(_zmovesMd);
 const articles = {
     criticalhit: (0, _criticalhitMdDefault.default),
-    gmaxmoves: (0, _gmaxmovesMdDefault.default),
     grounded: (0, _groundedMdDefault.default),
     hazards: (0, _hazardsMdDefault.default),
     maxmoves: (0, _maxmovesMdDefault.default),
     phazing: (0, _phazingMdDefault.default),
     submoves: (0, _submovesMdDefault.default),
     terrain: (0, _terrainMdDefault.default),
-    zmoves: (0, _zmovesMdDefault.default),
-    // battlerules is mentioned in the UI but doesn't exist yet
-    battlerules: ''
+    zmoveresonation: (0, _zMoveResonationMdDefault.default),
+    zpokemon: (0, _zPokemonMdDefault.default),
+    zmoves: (0, _zmovesMdDefault.default)
 };
 
-},{"bundle-text:../articles/criticalhit.md":"vM7yo","bundle-text:../articles/gmaxmoves.md":"eyZvw","bundle-text:../articles/grounded.md":"7uEP9","bundle-text:../articles/hazards.md":"98BzV","bundle-text:../articles/maxmoves.md":"whAat","bundle-text:../articles/phazing.md":"2sjKK","bundle-text:../articles/submoves.md":"cFgWQ","bundle-text:../articles/terrain.md":"64WwT","bundle-text:../articles/zmoves.md":"jcuPW","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"vM7yo":[function(require,module,exports,__globalThis) {
+},{"bundle-text:../articles/criticalhit.md":"vM7yo","bundle-text:../articles/grounded.md":"7uEP9","bundle-text:../articles/hazards.md":"98BzV","bundle-text:../articles/maxmoves.md":"whAat","bundle-text:../articles/phazing.md":"2sjKK","bundle-text:../articles/submoves.md":"cFgWQ","bundle-text:../articles/terrain.md":"64WwT","bundle-text:../articles/zMoveResonation.md":"cscNI","bundle-text:../articles/zPokemon.md":"lplpd","bundle-text:../articles/zmoves.md":"jcuPW","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"vM7yo":[function(require,module,exports,__globalThis) {
 module.exports = "# Critical hit\n\nAll damaging moves with damage calculated through base power have a chance to critical hit, which multiplies the damage dealt by 1.5. If the move's user has the [[Sniper]] Ability, damage from a critical hit is again multiplied by 1.5. Additionally, if the user's attacking stat stage is less than 0, it will be treated as 0; the same is true if the target's defensive stat stage is greater than 0. If the target has Reflect, Light Screen, or Aurora Veil active, those effects are ignored.\n\nMost moves start at a critical hit ratio of +0, although high critical hit ratio moves (like [[Stone Edge]]) start at +1, [[10,000,000 Volt Thunderbolt]] starts at +2, and [[Frost Breath]] and [[Storm Throw]] always result in a critical hit.\n\n| Ratio | Rate   | Percentage |\n|------:|:------:|-----------:|\n| +0    | 1/24   |       4.2% |\n| +1    | 1/8    |      12.5% |\n| +2    | 1/2    |      50.0% |\n| +3    | always |     100.0% |\n\nItems that increase critical hit ratio:\n\n- [[Razor Claw]]: +1\n- [[Scope Lens]]: +1\n- [[Stick]]: +2 ([[Farfetch'd]] only)\n- [[Lucky Punch]]: +2 ([[Chansey]] only)\n\nAbilities that increase critical hit ratio:\n\n- [[Super Luck]]: +1\n- [[Merciless]]: +3 (only if the target is poisoned)\n\nTemporary effects that increase critical hit ratio:\n\n- Focus Energy effect: +2 until switch-out, granted by:\n    - [[Focus Energy]]\n    - Z-[[Foresight]]\n    - Z-[[Sleep Talk]]\n    - Z-[[Tailwind]]\n    - Z-[[Acupressure]]\n    - Z-[[Heart Swap]]\n    - [[Lansat Berry]] when eaten\n\n- Laser Focus effect: +3 until the end of the next turn, granted by:\n    - [[Laser Focus]]\n\nNote that the Focus Energy effect doesn't stack with itself - you can only have one Focus Energy effect at a time.\n\nCritical hits are prevented from striking a Pokemon under the effect of [[Lucky Chant]], as well as Pokemon with the [[Battle Armor]] and [[Shell Armor]] Abilities.\n\n### Past gens\n\nGen 6:\n\nAt +0, critical hit rate was 1/16 instead of 1/24.\n\nGen 2-5:\n\nThe critical damage multiplier was 2 instead of 1.5, and the critical hit rates were as follows.\n\n| Ratio | Rate   | Percentage |\n|------:|:------:|-----------:|\n| +0    | 1/16   |       6.3% |\n| +1    | 1/8    |      12.5% |\n| +2    | 1/4    |      25.0% |\n| +3    | 1/3    |      33.3% |\n| +4    | 1/2    |      50.0% |\n\nGen 2 only:\n\nThe attacking stat stage and defensive stat stage were considered as a collective unit, and either both treated as 0 or both left as their full value, depending on whether their sum was less than 0. \n\nHigh-critical-rate moves were given a starting ratio of +2 rather than +1.\n\nGen 1:\n\nThe critical modifier of 2x was applied onto the level, as opposed to the final damage. As such, at level 100 it effectively became a multiplier of 82/42x, or about 1.95x. \n\nCritical hits always caused all stat stages on both sides to be treated as 0, regardless of whether that was slated to result in more or less damage.\n\nCritical rate was calculated by default as the attacker's base speed divided by 512.\n\nFor high-critical-rate moves such as [[Slash]] or [[Razor Leaf]], the rate instead uses base speed divided by 64, with a maximum of 255/256.\n\nFocus Energy did not function properly at all, and after using it, the critical rate on all subsequent moves until switch-out was divided by 4.\n";
-
-},{}],"eyZvw":[function(require,module,exports,__globalThis) {
-module.exports = "# G-Max Moves\n\nG-Max Moves are special moves introduced in Gen 8 that are similar to Max Moves and are exclusive to specific Pokemon, can only be used a maximum of three times per battle, and require a Pokemon to be Gigantamaxed.\n";
 
 },{}],"7uEP9":[function(require,module,exports,__globalThis) {
 module.exports = "# Grounded\n\nA grounded Pokemon is one that is not under any effect that makes it airborne. A Pokemon is airborne if they are part [[Flying type]], have the Ability [[Levitate]], are holding an [[Air Balloon]], or are under the effect of [[Magnet Rise]] or [[Telekinesis]].\n\nBeing airborne grants a Pokemon immunity to several effects. [[Ground]]-type attacking moves (other than [[Thousand Arrows]]), the Ability [[Arena Trap]], [[Terrain]] effects, [[Rototiller]], and the [[hazards]] set by [[Spikes]], [[Sticky Web]], and [[Toxic Spikes]] all have no effect on airborne Pokemon.\n\nSeveral effects also cause a Pokemon to become grounded, which negates any airborne effect the Pokemon may have had. A Pokemon is grounded if they are under the effect of [[Ingrain]], [[Smack Down]], or [[Thousand Arrows]], are holding an [[Iron Ball]], or [[Gravity]] is in effect.";
@@ -1647,6 +1660,12 @@ module.exports = "# Submoves\n\nThere are several situations in which a Pokémon
 
 },{}],"64WwT":[function(require,module,exports,__globalThis) {
 module.exports = "# Terrain\n\nTerrain is a set of field effects that benefit [[grounded]] Pokemon for 5 turns. Each of the four types of terrain has a move and Ability that start the effect. The moves are [[Electric Terrain]], [[Grassy Terrain]], [[Misty Terrain]], and [[Psychic Terrain]], and the corresponding Abilities are [[Electric Surge]], [[Grassy Surge]], [[Misty Surge]], and [[Psychic Surge]]. When a different terrain effect comes into play, it replaces the old one. If the Pokemon that started the effect is holding a [[Terrain Extender]], it lasts 8 turns instead.\n\nSome moves have altered behavior when used while any terrain is active, including [[Camouflage]], [[Nature Power]], and [[Secret Power]]. Certain Abilities are also activated while a specific terrain is in play, which include [[Grass Pelt]] during Grassy Terrain, and [[Surge Surfer]] during Electric Terrain. There are four items that activate as soon as the holder is on the field at the same time as the corresponding terrain effect, which are [[Electric Seed]], [[Grassy Seed]], [[Misty Seed]], and [[Psychic Seed]]. The effects of all of these moves, Abilities, and items happen even if the Pokemon is not grounded.\n\nPokemon that are in the invulnerable turn of a two-turn move are not considered grounded by terrain effects.";
+
+},{}],"cscNI":[function(require,module,exports,__globalThis) {
+module.exports = "# Z-Move Resonation\n\n## Certain Pokemon can use Resonating Z-Moves, essentially signature Z-Moves that allow certain pokemon to have another option when holding specific Z-Crystals.\n\n- A Pokemon holding a Z-Crystal that they have resonance with allows them to use a resonating [[Z-Move]]. This Z-Move will usually not be the same type as the crystal.\n- In addition, since the Z-Crystal used is still of a certain type, the Pokemon can also use those Z-Moves as normal, giving them two options in battle.\n- For example: A [[Chatot]] holding a [[Normalium-Z]] can power up any one of its Normal-Type Moves into their Z-Version, such as [[Breakneck Blitz]], or it can power up it's signature move [[Chatter]] into a [[Supersonic Skystrike-R]]. \n- Resonating Z-Moves are the same power as their original Z-Move, so it will be just as strong as if that Chatot was holding a Flyinium-Z instead.\n\n- Resonating Z-Moves are otherwise subject to the same drawbacks and limitations as regular Z-Moves.\n";
+
+},{}],"lplpd":[function(require,module,exports,__globalThis) {
+module.exports = "# Z-Pokemon\n\nZ-Pokemon are Static Encounters that have auras that boost various stats, like mini versions of Totem Pokemon.\n\nMany Z-Pokemon are catchable. They mostly act as a good and easy way to spot \"Static Encounters\", but they are also more difficult to battle than they would usually be. \n\nDuring trials, the wild Pokemon you encounter will be Z-Pokemon.\n\nIsland Scan encounters, quest Pokemon, and Ultra Space encounters are more examples of Z-Pokemon.\n\n\n";
 
 },{}],"jcuPW":[function(require,module,exports,__globalThis) {
 module.exports = "# Z-Moves\n\nZ-Moves are special moves exclusive to Gen 7 that can only be used once per battle, and require a held Z-Crystal.\n";

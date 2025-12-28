@@ -768,16 +768,8 @@ window.PokedexSearchPanel = Panels.Panel.extend({
             this.$('.searchboxwrapper').remove();
             var articles = [
                 {
-                    id: 'battlerules',
-                    name: 'Battle Rules'
-                },
-                {
                     id: 'criticalhit',
                     name: 'Critical Hits'
-                },
-                {
-                    id: 'gmaxmoves',
-                    name: 'G-Max Moves'
                 },
                 {
                     id: 'grounded',
@@ -802,6 +794,14 @@ window.PokedexSearchPanel = Panels.Panel.extend({
                 {
                     id: 'terrain',
                     name: 'Terrain'
+                },
+                {
+                    id: 'zmoveresonation',
+                    name: 'Z-Move Resonation'
+                },
+                {
+                    id: 'zpokemon',
+                    name: 'Z-Pokemon'
                 },
                 {
                     id: 'zmoves',
