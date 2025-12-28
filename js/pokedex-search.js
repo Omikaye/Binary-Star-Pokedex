@@ -26,6 +26,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		if (fragment === 'locations') fragment = 'locations/';
 		if (fragment === 'trainers') fragment = 'trainers/';
 		if (fragment === 'mechanics') fragment = 'mechanics/';
+		if (fragment === 'pokeedit') fragment = 'pokeedit/';
 		if (questionIndex >= 0) fragment = fragment.slice(0, questionIndex);
 		var buf = '<div class="pfx-body"><form class="pokedex">';
 		buf += '<h1><a href="'+Config.baseurl+'"" data-target="replace">Pok&eacute;dex</a></h1>';
@@ -36,7 +37,8 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		buf += '<li><button class="button' + (fragment === 'items/' ? ' cur' : '') + '" value="'+Config.baseurl+'items/">Items</button></li>';
 		buf += '<li><button class="button' + (fragment === 'mechanics/' ? ' cur' : '') + '" value="'+Config.baseurl+'mechanics/">Mechanics</button></li>';
 		buf += '<li><button class="button' + (fragment === 'locations/' ? ' cur' : '') + '" value="'+Config.baseurl+'locations/">Locations</button></li>';
-		buf += '<li><button class="button nav-last' + (fragment === 'trainers/' ? ' cur' : '') + '" value="'+Config.baseurl+'trainers/">Trainers</button></li></ul>';
+		buf += '<li><button class="button' + (fragment === 'trainers/' ? ' cur' : '') + '" value="'+Config.baseurl+'trainers/">Trainers</button></li>';
+		buf += '<li><button class="button nav-last' + (fragment === 'pokeedit/' ? ' cur' : '') + '" value="'+Config.baseurl+'pokeedit/">Pok&eacute;edit</button></li></ul>';
 		buf += '<div class="searchboxwrapper"><input class="textbox searchbox" type="search" name="q" value="' + escapeHTML(this.$('.searchbox').val() || '') + '" autocomplete="off" autofocus placeholder="Search Pok&eacute;mon, moves, abilities, items, types, or more" /></div>';
 		if (fragment === '') {
 			buf += '<p class="buttonbar"><button class="button"><strong>Pok&eacute;dex Search</strong></button> <button name="lucky" class="button">I\'m Feeling Lucky</button></p>';
@@ -84,6 +86,10 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 			if (fragment === 'pokemon/') {
 				search.setType('pokemon');
 				$searchbox.attr('placeholder', 'Search pokemon OR filter by type, move, ability, egg group');
+				this.$('.buttonbar').remove();
+			} else if (fragment === 'pokeedit/') {
+				search.setType('pokeedit');
+				$searchbox.attr('placeholder', 'Search editable pokemon OR filter by type, move, ability, egg group');
 				this.$('.buttonbar').remove();
 			} else if (fragment === 'moves/') {
 				search.setType('move');

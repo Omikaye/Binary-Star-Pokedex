@@ -12,6 +12,9 @@ import Trainers from "../data/trainers.json";
 import TrainerNotes from "../data/trainer-notes.json";
 import LocationsJson from "../data/locations.json";
 import TrainerSprites from "../data/trainer-sprites.json";
+// Import editable data copies for the Pokeedit feature
+import BattlePokedexEdit from "../data/pokedex-edit.json";
+import LearnsetsEdit from "../data/learnsets-edit.json";
 // ...existing code...
 import './compat.js'; // ensure legacy helpers are available early
 // ...existing code...
@@ -30,6 +33,9 @@ window.Trainers = Trainers;
 window.TrainerNotes = TrainerNotes;
 window.Locations = LocationsJson.locations || [];
 window.TrainerSprites = TrainerSprites;
+// Expose editable data copies
+window.BattlePokedexEdit = BattlePokedexEdit;
+window.LearnsetsEdit = LearnsetsEdit;
 
 // Build reverse mapping: coordinate -> icon index for debugging
 window.ItemIconIndices = {};
@@ -65,9 +71,22 @@ for (let data of [BattlePokedex, BattleMovedex, BattleItems, BattleAbilities, Ba
   }
 }
 
+// Also set IDs for editable pokedex
+for (let key in BattlePokedexEdit) {
+  BattlePokedexEdit[key].id = key;
+}
+
 for (let key in BattlePokedex) {
   for (let evo of BattlePokedex[key].evos ?? []) {
     let target = getID(BattlePokedex, evo.target);
+    if (target) target.prevo = toID(key);
+  }
+}
+
+// Set up prevo relationships for editable pokedex
+for (let key in BattlePokedexEdit) {
+  for (let evo of BattlePokedexEdit[key].evos ?? []) {
+    let target = BattlePokedexEdit[toID(evo.target)];
     if (target) target.prevo = toID(key);
   }
 }
@@ -157,6 +176,23 @@ window.getLearnset = (pokemonId) => {
 window.canLearn = (pokemonId, moveId) => {
   const moveIdNorm = toID(moveId);
   return getLearnset(pokemonId).some((n) => toID(n.move) === moveIdNorm);
+};
+
+window.getLearnsetEdit = (pokemonId) => {
+  let learnset = LearnsetsEdit[pokemonId];
+  // If this form doesn't have its own learnset (undefined, not empty array), try the base species
+  if (learnset === undefined) {
+    const pokemon = BattlePokedexEdit[pokemonId];
+    if (pokemon?.baseSpecies) {
+      learnset = LearnsetsEdit[toID(pokemon.baseSpecies)];
+    }
+  }
+  return learnset ?? [];
+};
+
+window.canLearnEdit = (pokemonId, moveId) => {
+  const moveIdNorm = toID(moveId);
+  return getLearnsetEdit(pokemonId).some((n) => toID(n.move) === moveIdNorm);
 };
 
 window.getTrainerClass = (trainerName) => {

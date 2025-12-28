@@ -13,6 +13,7 @@ type TypeName = string;
 
 type SearchType =
   | "pokemon"
+  | "pokeedit"
   | "type"
   | "tier"
   | "move"
@@ -44,8 +45,10 @@ declare const BattleMovedex: any;
 declare const BattleAbilities: any;
 declare const BattleTypeChart: any;
 declare const BattlePokedex: any;
+declare const BattlePokedexEdit: any;
 declare const BattleItems: any;
 declare const Learnsets: any;
+declare const LearnsetsEdit: any;
 
 declare function toID(id: string): ID;
 declare function getID(set: any, text: string): any;
@@ -58,6 +61,12 @@ function hasAbility(pokemon: any, ability: ID) {
     }
   }
   return false;
+}
+
+function canLearnEdit(pokemonId: ID, moveId: ID): boolean {
+  const moveIdNorm = toID(moveId);
+  const learnset = LearnsetsEdit[pokemonId] || [];
+  return learnset.some((n: any) => toID(n.move) === moveIdNorm);
 }
 
 function generateSearchIndex() {
@@ -228,6 +237,8 @@ class DexSearch {
     switch (searchType) {
       case "pokemon":
         return new BattlePokemonSearch("pokemon", format, speciesOrSet);
+      case "pokeedit":
+        return new BattlePokeeditSearch("pokeedit", format, speciesOrSet);
       case "item":
         return new BattleItemSearch("item", format, speciesOrSet);
       case "move":
@@ -275,7 +286,7 @@ class DexSearch {
   addFilter(entry: SearchFilter): boolean {
     if (!this.typedSearch) return false;
     let [type] = entry;
-    if (this.typedSearch.searchType === "pokemon") {
+    if (this.typedSearch.searchType === "pokemon" || this.typedSearch.searchType === "pokeedit") {
       if (type === this.sortCol) this.sortCol = null;
       if (!["type", "move", "ability", "egggroup", "tier"].includes(type))
         return false;
@@ -1006,6 +1017,145 @@ class BattlePokemonSearch extends BattleTypedSearch<"pokemon"> {
       return results.sort(([rowType1, id1], [rowType2, id2]) => {
         const base1 = getID(BattlePokedex, id1).baseStats;
         const base2 = getID(BattlePokedex, id2).baseStats;
+        const bst1 =
+          base1.hp + base1.atk + base1.def + base1.spa + base1.spd + base1.spe;
+        const bst2 =
+          base2.hp + base2.atk + base2.def + base2.spa + base2.spd + base2.spe;
+        return (bst2 - bst1) * sortOrder;
+      });
+    } else if (sortCol === "name") {
+      return results.sort(([rowType1, id1], [rowType2, id2]) => {
+        const name1 = id1;
+        const name2 = id2;
+        return (name1 < name2 ? -1 : name1 > name2 ? 1 : 0) * sortOrder;
+      });
+    }
+    throw new Error("invalid sortcol");
+  }
+}
+
+class BattlePokeeditSearch extends BattleTypedSearch<"pokeedit"> {
+  filter(row: SearchRow, filters: string[][]): boolean {
+    if (!filters) return true;
+    if (row[0] !== "pokeedit") return true;
+    const poke = getID(BattlePokedexEdit, row[1]);
+    for (const [filterType, value] of filters) {
+      switch (filterType) {
+        case "type":
+          if (poke.types.every((t) => t != value)) return false;
+          break;
+        case "move":
+          if (!canLearnEdit(poke.id, value)) return false;
+          break;
+        case "ability":
+          if (!hasAbility(poke, value)) return false;
+          break;
+        case "egggroup":
+          if (poke.eggGroups.every((t) => t != value)) return false;
+          break;
+      }
+    }
+    return true;
+  }
+  sortRow: SearchRow = ["sortpokemon", ""];
+  getTable() {
+    return BattlePokedexEdit;
+  }
+  getDefaultResults(): SearchRow[] {
+    // Group all entries by their base species ID and then output: base followed immediately by each form.
+    interface Group { base: ID; num: number; forms: ID[] }
+    const groups: { [base: string]: Group } = {};
+    for (const id in BattlePokedexEdit) {
+      const p = BattlePokedexEdit[id];
+      if (!p) continue;
+      const baseId = toID(p.baseSpecies || p.name);
+      if (!groups[baseId]) {
+        groups[baseId] = { base: id as ID, num: p.num || 0, forms: [] };
+      }
+      // Identify base (prefer the entry whose name equals baseSpecies or has no forme)
+      const isBase = !p.forme || p.name === p.baseSpecies;
+      if (isBase) {
+        groups[baseId].base = id as ID;
+        groups[baseId].num = p.num || groups[baseId].num;
+      } else {
+        groups[baseId].forms.push(id as ID);
+      }
+    }
+    // Sort forms within each group deterministically (by name/forme)
+    for (const baseId in groups) {
+      groups[baseId].forms.sort((a, b) => {
+        const pa = BattlePokedexEdit[a];
+        const pb = BattlePokedexEdit[b];
+        const fa = (pa.forme || pa.name).toLowerCase();
+        const fb = (pb.forme || pb.name).toLowerCase();
+        return fa < fb ? -1 : fa > fb ? 1 : 0;
+      });
+    }
+    // Order groups by dex number then base id
+    const ordered = Object.values(groups).sort((a, b) => a.num - b.num || (a.base < b.base ? -1 : a.base > b.base ? 1 : 0));
+
+    const results: SearchRow[] = [];
+    for (const g of ordered) {
+      const baseId = g.base;
+      switch (baseId) {
+        case "bulbasaur":
+          results.push(["header", "Generation 1"]);
+          break;
+        case "chikorita":
+          results.push(["header", "Generation 2"]);
+          break;
+        case "treecko":
+          results.push(["header", "Generation 3"]);
+          break;
+        case "turtwig":
+          results.push(["header", "Generation 4"]);
+          break;
+        case "victini":
+          results.push(["header", "Generation 5"]);
+          break;
+        case "chespin":
+          results.push(["header", "Generation 6"]);
+          break;
+        case "rowlet":
+          results.push(["header", "Generation 7"]);
+          break;
+        case "grookey":
+          results.push(["header", "Generation 8"]);
+          break;
+        case "sprigatito":
+          results.push(["header", "Generation 9"]);
+          break;
+        case "missingno":
+          results.push(["header", "Glitch"]);
+          break;
+        case "syclar":
+          results.push(["header", "CAP"]);
+          break;
+        case "pikachucosplay":
+          continue; // skip cosplay aggregate
+      }
+      results.push(["pokeedit", baseId]);
+      for (const fid of g.forms) {
+        results.push(["pokeedit", fid]);
+      }
+    }
+    return results;
+  }
+  getBaseResults(): SearchRow[] {
+    return this.getDefaultResults();
+  }
+  sort(results: SearchRow[], sortCol: string, reverseSort?: boolean) {
+    const sortOrder = reverseSort ? -1 : 1;
+    if (["hp", "atk", "def", "spa", "spd", "spe"].includes(sortCol)) {
+      return results.sort(([rowType1, id1], [rowType2, id2]) => {
+        const stat1 = getID(BattlePokedexEdit, id1).baseStats[sortCol];
+        const stat2 = getID(BattlePokedexEdit, id2).baseStats[sortCol];
+        return (stat2 - stat1) * sortOrder;
+      });
+    } else if (sortCol === "bst") {
+      return results.sort(([rowType1, id1], [rowType2, id2]) => {
+        const base1 = getID(BattlePokedexEdit, id1).baseStats;
+        const base2 = getID(BattlePokedexEdit, id2).baseStats;
         const bst1 =
           base1.hp + base1.atk + base1.def + base1.spa + base1.spd + base1.spe;
         const bst2 =
