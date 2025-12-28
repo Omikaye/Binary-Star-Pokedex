@@ -721,7 +721,8 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
         this.id = id;
         this.shortTitle = pokemon.baseSpecies;
         var buf = '<div class="pfx-body dexentry">';
-        buf += `<a href="${Config.baseurl}dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> PokPok&eacute;dexeacute;edit</a>`;
+        buf += `<a href="${Config.baseurl}dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;edit</a>`;
+        buf += '<div style="float:right; margin-top: 10px;"><button class="button save-pokemon" style="font-size:14px; padding:8px 16px;"><strong>Save Changes</strong></button></div>';
         buf += '<h1>';
         if (pokemon.forme) buf += `<a href="${Config.baseurl}pokeedit/${id}" data-target="push" class="subtle">${pokemon.baseSpecies}<small>-${pokemon.forme}</small></a>`;
         else buf += `<a href="${Config.baseurl}pokeedit/${id}" data-target="push" class="subtle">${pokemon.name}</a>`;
@@ -753,8 +754,8 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
             var ability = pokemon.abilities[i];
             if (!ability) continue;
             if (i !== '0') buf += ' | ';
-            if (i === 'H') ability = `<em>${pokemon.abilities[i]}</em>`;
-            buf += `<a href="${Config.baseurl}abilities/${toID(pokemon.abilities[i])}" data-target="push">${ability}</a>`;
+            var abilityText = i === 'H' ? `<em>${pokemon.abilities[i]}</em>` : pokemon.abilities[i];
+            buf += `<a href="#" class="edit-ability" data-slot="${i}" style="cursor:pointer;text-decoration:underline;">${abilityText}</a>`;
             if (i === 'H') buf += '<small> (H)</small>';
             if (i === 'S') buf += '<small> (special)</small>';
         }
@@ -949,7 +950,13 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
         'click .tabbar button': 'selectTab',
         'input input[name=level]': 'updateLevel',
         'keyup input[name=level]': 'updateLevel',
-        'change input[name=level]': 'updateLevel'
+        'change input[name=level]': 'updateLevel',
+        'click .save-pokemon': 'savePokemon',
+        'click .edit-ability': 'editAbility',
+        'click .edit-move': 'editMove',
+        'click .add-move': 'addMove',
+        'click .remove-move': 'removeMove',
+        'change .move-level-input': 'updateMoveLevel'
     },
     updateLevel: function(e) {
         var val = this.$('input[name=level]').val();
@@ -1000,25 +1007,28 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
         }
     },
     renderFullLearnset: function() {
-        var pokemon = getID(BattlePokedex, this.id);
+        var pokemon = getID(BattlePokedexEdit, this.id);
         var learnset = getLearnsetEdit(this.id);
         var last;
         var buf = "", desc = "";
+        var moveIndex = 0;
         for (let learn of learnset){
             // Normalize move name or id to canonical BattleMovedex entry
             let move = getID(BattleMovedex, learn.move);
             if (!move) {
                 // If still not found, fall back to showing a placeholder without the noisy error prefix
                 buf += `<li class="result"><span class="col tagcol"></span> <span class="col shortmovenamecol">${escapeHTML(learn.move)}</span> <span class="col typecol">&mdash;</span> <span class="col labelcol"></span> <span class="col widelabelcol"></span> <span class="col pplabelcol"></span> <span class="col movedesccol"><em>Unknown move</em></span></li>`;
+                moveIndex++;
                 continue;
             }
             var newCategory = last == undefined || last.how != learn.how;
             switch(learn.how){
                 case 'lvl':
-                    if (newCategory) buf += '<li class="resultheader"><h3>Level-up</h3></li>';
+                    if (newCategory) buf += '<li class="resultheader"><h3>Level-up <button class="button add-move" style="font-size:11px;padding:2px 8px;margin-left:10px;">+ Add Move</button></h3></li>';
                     let level = learn.level;
-                    if (level === 0) desc = 'Evo';
-                    else desc = level <= 1 ? '&ndash;' : '<small>L</small>' + level;
+                    if (level === 0) desc = '<input type="text" class="move-level-input textbox" data-index="' + moveIndex + '" value="0" size="3" style="width:40px;text-align:center;" />';
+                    else desc = '<input type="text" class="move-level-input textbox" data-index="' + moveIndex + '" value="' + level + '" size="3" style="width:40px;text-align:center;" />';
+                    desc += ' <button class="button remove-move" data-index="' + moveIndex + '" style="font-size:11px;padding:2px 6px;margin-left:4px;">\xd7</button>';
                     break;
                 case 'prevo':
                     if (newCategory) buf += '<li class="resultheader"><h3>From preevo</h3></li>';
@@ -1038,7 +1048,14 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
                     break;
             }
             last = learn;
-            buf += BattleSearch.renderTaggedMoveRow(move, desc);
+            // For level-up moves, make them clickable
+            if (learn.how === 'lvl') {
+                var moveRow = BattleSearch.renderTaggedMoveRow(move, desc);
+                // Add edit-move class and data-index to the link
+                moveRow = moveRow.replace('<a href=', '<a class="edit-move" data-index="' + moveIndex + '" href="#" data-original-href=');
+                buf += moveRow;
+            } else buf += BattleSearch.renderTaggedMoveRow(move, desc);
+            moveIndex++;
         }
         this.$('.utilichart').html(buf);
         // Render pre-evo only moves
@@ -1111,6 +1128,120 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
         var val = Math.floor(Math.floor(2 * baseStat + (iv || 0) + Math.floor((ev || 0) / 4)) * level / 100 + 5);
         if (natureMult && !isHP) val *= natureMult;
         return Math.floor(val);
+    },
+    savePokemon: function(e) {
+        e.preventDefault();
+        var pokemon = BattlePokedexEdit[this.id];
+        var learnset = LearnsetsEdit[this.id];
+        // Show saving indicator
+        var $btn = this.$('.save-pokemon');
+        var originalText = $btn.html();
+        $btn.html('Saving...').prop('disabled', true);
+        // Prepare data to save
+        var saveData = {
+            pokedex: {},
+            learnsets: {}
+        };
+        saveData.pokedex[this.id] = pokemon;
+        saveData.learnsets[this.id] = learnset;
+        // Send to server to save (this is client-side only, so we'll save to localStorage for now)
+        // In a real implementation, you would send this to a server endpoint
+        try {
+            // Save to localStorage as a temporary solution
+            var currentPokedex = JSON.parse(localStorage.getItem('pokedex-edit') || '{}');
+            var currentLearnsets = JSON.parse(localStorage.getItem('learnsets-edit') || '{}');
+            currentPokedex[this.id] = pokemon;
+            currentLearnsets[this.id] = learnset;
+            localStorage.setItem('pokedex-edit', JSON.stringify(currentPokedex));
+            localStorage.setItem('learnsets-edit', JSON.stringify(currentLearnsets));
+            // Show success
+            $btn.html('<span style="color:green;">\u2713 Saved!</span>');
+            setTimeout(function() {
+                $btn.html(originalText).prop('disabled', false);
+            }, 2000);
+            // Update the global objects
+            BattlePokedexEdit[this.id] = pokemon;
+            LearnsetsEdit[this.id] = learnset;
+        } catch (err) {
+            $btn.html('<span style="color:red;">Error saving</span>');
+            setTimeout(function() {
+                $btn.html(originalText).prop('disabled', false);
+            }, 2000);
+            console.error('Save error:', err);
+        }
+    },
+    editAbility: function(e) {
+        e.preventDefault();
+        var slot = $(e.currentTarget).data('slot');
+        var pokemon = BattlePokedexEdit[this.id];
+        var currentAbility = pokemon.abilities[slot];
+        // Show a prompt for now - in future could be a fancy search dialog
+        var newAbility = prompt('Enter new ability name:', currentAbility);
+        if (newAbility && newAbility.trim()) {
+            // Verify ability exists
+            var abilityObj = getID(BattleAbilities, newAbility);
+            if (abilityObj) {
+                pokemon.abilities[slot] = abilityObj.name;
+                // Update display
+                var displayText = slot === 'H' ? `<em>${abilityObj.name}</em>` : abilityObj.name;
+                $(e.currentTarget).html(displayText);
+            } else alert('Ability "' + newAbility + '" not found. Please check the spelling.');
+        }
+    },
+    editMove: function(e) {
+        e.preventDefault();
+        var index = parseInt($(e.currentTarget).data('index'));
+        var learnset = LearnsetsEdit[this.id];
+        var currentMove = learnset[index];
+        // Show a prompt for now - in future could be a fancy search dialog
+        var newMove = prompt('Enter new move name:', currentMove.move);
+        if (newMove && newMove.trim()) {
+            // Verify move exists
+            var moveObj = getID(BattleMovedex, newMove);
+            if (moveObj) {
+                currentMove.move = moveObj.name;
+                // Re-render the learnset
+                this.renderFullLearnset();
+            } else alert('Move "' + newMove + '" not found. Please check the spelling.');
+        }
+    },
+    updateMoveLevel: function(e) {
+        var index = parseInt($(e.currentTarget).data('index'));
+        var newLevel = parseInt($(e.currentTarget).val());
+        var learnset = LearnsetsEdit[this.id];
+        if (!isNaN(newLevel) && newLevel >= 0) learnset[index].level = newLevel;
+    },
+    addMove: function(e) {
+        e.preventDefault();
+        var learnset = LearnsetsEdit[this.id];
+        // Prompt for move name
+        var moveName = prompt('Enter move name to add:');
+        if (moveName && moveName.trim()) {
+            var moveObj = getID(BattleMovedex, moveName);
+            if (moveObj) {
+                var level = prompt('Enter learn level (0 for evolution):', '1');
+                var levelNum = parseInt(level);
+                if (!isNaN(levelNum)) {
+                    // Add new move to learnset
+                    learnset.push({
+                        move: moveObj.name,
+                        how: 'lvl',
+                        level: levelNum
+                    });
+                    // Re-render
+                    this.renderFullLearnset();
+                }
+            } else alert('Move "' + moveName + '" not found. Please check the spelling.');
+        }
+    },
+    removeMove: function(e) {
+        e.preventDefault();
+        var index = parseInt($(e.currentTarget).data('index'));
+        var learnset = LearnsetsEdit[this.id];
+        if (confirm('Remove this move from the learnset?')) {
+            learnset.splice(index, 1);
+            this.renderFullLearnset();
+        }
     }
 });
 
