@@ -10,7 +10,7 @@ import phazingMd from 'bundle-text:../articles/phazing.md';
 import submovesMd from 'bundle-text:../articles/submoves.md';
 import terrainMd from 'bundle-text:../articles/terrain.md';
 import zmovesMd from 'bundle-text:../articles/zmoves.md';
-import zMoveResonationMd from 'bundle-text:../articles/zMoveResonationMd';
+import zMoveResonationMd from 'bundle-text:../articles/zMoveResonation.md';
 
 export const articles = {
 	criticalhit: criticalhitMd,
