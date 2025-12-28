@@ -207,7 +207,7 @@
       });
     }
   }
-})({"28pf4":[function(require,module,exports,__globalThis) {
+})({"e1eWT":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -215,7 +215,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "5969172c4718365c";
+module.bundle.HMR_BUNDLE_ID = "f23ed2e5cd388443";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -713,399 +713,407 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"4AOtb":[function(require,module,exports,__globalThis) {
-window.PokedexSearchPanel = Panels.Panel.extend({
-    minWidth: 639,
-    maxWidth: 639,
-    sidebarWidth: 280,
-    search: null,
-    events: {
-        'keyup input.searchbox': 'updateSearch',
-        'change input.searchbox': 'updateSearch',
-        'search input.searchbox': 'updateSearch',
-        'submit': 'submit',
-        'keydown': 'keydown',
-        'keyup': 'keyup',
-        'click': 'click',
-        'click .result a': 'clickResult',
-        'click .filter': 'removeFilter',
-        'mouseover .result a': 'hoverlink'
-    },
-    activeLink: null,
-    initialize: function() {
-        var fragment = this.fragment.slice(Config.baseurl.length - 1);
-        var questionIndex = fragment.indexOf('?');
-        if (fragment === 'moves') fragment = 'moves/';
-        if (fragment === 'pokemon') fragment = 'pokemon/';
-        if (fragment === 'abilities') fragment = 'abilities/';
-        if (fragment === 'items') fragment = 'items/';
-        if (fragment === 'locations') fragment = 'locations/';
-        if (fragment === 'trainers') fragment = 'trainers/';
-        if (fragment === 'mechanics') fragment = 'mechanics/';
-        if (fragment === 'pokeedit') fragment = 'pokeedit/';
-        if (questionIndex >= 0) fragment = fragment.slice(0, questionIndex);
-        var buf = '<div class="pfx-body"><form class="pokedex">';
-        buf += '<h1><a href="' + Config.baseurl + '"" data-target="replace">Pok&eacute;dex</a></h1>';
-        buf += '<ul class="tabbar centered" style="margin-bottom: 18px"><li><button class="button nav-first' + (fragment === '' ? ' cur' : '') + '" value="' + Config.baseurl + 'dex">Search</button></li>';
-        buf += '<li><button class="button' + (fragment === 'pokemon/' ? ' cur' : '') + '" value="' + Config.baseurl + 'pokemon/">Pok&eacute;mon</button></li>';
-        buf += '<li><button class="button' + (fragment === 'moves/' ? ' cur' : '') + '" value="' + Config.baseurl + 'moves/">Moves</button></li>';
-        buf += '<li><button class="button' + (fragment === 'abilities/' ? ' cur' : '') + '" value="' + Config.baseurl + 'abilities/">Abilities</button></li>';
-        buf += '<li><button class="button' + (fragment === 'items/' ? ' cur' : '') + '" value="' + Config.baseurl + 'items/">Items</button></li>';
-        buf += '<li><button class="button' + (fragment === 'mechanics/' ? ' cur' : '') + '" value="' + Config.baseurl + 'mechanics/">Mechanics</button></li>';
-        buf += '<li><button class="button' + (fragment === 'locations/' ? ' cur' : '') + '" value="' + Config.baseurl + 'locations/">Locations</button></li>';
-        buf += '<li><button class="button' + (fragment === 'trainers/' ? ' cur' : '') + '" value="' + Config.baseurl + 'trainers/">Trainers</button></li>';
-        buf += '<li><button class="button nav-last' + (fragment === 'pokeedit/' ? ' cur' : '') + '" value="' + Config.baseurl + 'pokeedit/">Pok&eacute;edit</button></li></ul>';
-        buf += '<div class="searchboxwrapper"><input class="textbox searchbox" type="search" name="q" value="' + escapeHTML(this.$('.searchbox').val() || '') + '" autocomplete="off" autofocus placeholder="Search Pok&eacute;mon, moves, abilities, items, types, or more" /></div>';
-        if (fragment === '') buf += '<p class="buttonbar"><button class="button"><strong>Pok&eacute;dex Search</strong></button> <button name="lucky" class="button">I\'m Feeling Lucky</button></p>';
-        buf += '</form>';
-        buf += '<div class="results"></div></div>';
-        this.$el.html(buf);
-        var $searchbox = this.$('.searchbox');
-        this.$searchbox = $searchbox;
-        this.$searchfilters = null;
-        var results = this.$('.results');
-        // Handle mechanics page early - render articles list and return
-        if (fragment === 'mechanics/') {
-            this.$('.buttonbar').remove();
-            this.$('.searchboxwrapper').remove();
-            var articles = [
-                {
-                    id: 'criticalhit',
-                    name: 'Critical Hits'
-                },
-                {
-                    id: 'grounded',
-                    name: 'Grounded'
-                },
-                {
-                    id: 'hazards',
-                    name: 'Entry Hazards'
-                },
-                {
-                    id: 'maxmoves',
-                    name: 'Max Moves'
-                },
-                {
-                    id: 'phazing',
-                    name: 'Phazing'
-                },
-                {
-                    id: 'submoves',
-                    name: 'Substitute Moves'
-                },
-                {
-                    id: 'terrain',
-                    name: 'Terrain'
-                },
-                {
-                    id: 'zmoveresonation',
-                    name: 'Z-Move Resonation'
-                },
-                {
-                    id: 'zpokemon',
-                    name: 'Z-Pokemon'
-                },
-                {
-                    id: 'zmoves',
-                    name: 'Z-Moves'
+},{}],"8cRtJ":[function(require,module,exports,__globalThis) {
+window.PokedexPokeeditPanel = PokedexResultPanel.extend({
+    initialize: function(id) {
+        id = toID(id);
+        var pokemon = BattlePokedexEdit[id];
+        this.id = id;
+        this.shortTitle = pokemon.baseSpecies;
+        var buf = '<div class="pfx-body dexentry">';
+        buf += `<a href="${Config.baseurl}dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> PokPok&eacute;dexeacute;edit</a>`;
+        buf += '<h1>';
+        if (pokemon.forme) buf += `<a href="${Config.baseurl}pokeedit/${id}" data-target="push" class="subtle">${pokemon.baseSpecies}<small>-${pokemon.forme}</small></a>`;
+        else buf += `<a href="${Config.baseurl}pokeedit/${id}" data-target="push" class="subtle">${pokemon.name}</a>`;
+        if (pokemon.num > 0) buf += ` <code>#${pokemon.num}</code>`;
+        buf += '</h1>';
+        if (pokemon.isNonstandard) buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon is unreleased.</div>';
+        buf += `<img src="${ResourcePrefix}sprites/gen5/${id}.png" alt="" width="96" height="96" class="sprite" />`;
+        buf += '<dl class="typeentry">';
+        buf += '<dt>Types:</dt> <dd>';
+        for(var i = 0; i < pokemon.types.length; i++)buf += `<a class="type ${toID(pokemon.types[i])}" href="${Config.baseurl}types/${toID(pokemon.types[i])}" data-target="push">${pokemon.types[i]}</a> `;
+        buf += '</dd>';
+        buf += '</dl>';
+        buf += '<dl class="sizeentry">';
+        buf += '<dt>Size:</dt> <dd>';
+        var gkPower = function(weightkg) {
+            if (weightkg >= 200) return 120;
+            if (weightkg >= 100) return 100;
+            if (weightkg >= 50) return 80;
+            if (weightkg >= 25) return 60;
+            if (weightkg >= 10) return 40;
+            return 20;
+        }(pokemon.weightkg);
+        buf += `${pokemon.heightm} m, ${pokemon.weightkg} kg<br /><small><a class="subtle" href="${Config.baseurl}moves/grassknot" data-target="push">Grass Knot</a>: ${gkPower}</small>`;
+        buf += '</dd>';
+        buf += '</dl>';
+        buf += '<dl class="abilityentry">';
+        buf += '<dt>Abilities:</dt> <dd class="imgentry">';
+        for(var i in pokemon.abilities){
+            var ability = pokemon.abilities[i];
+            if (!ability) continue;
+            if (i !== '0') buf += ' | ';
+            if (i === 'H') ability = `<em>${pokemon.abilities[i]}</em>`;
+            buf += `<a href="${Config.baseurl}abilities/${toID(pokemon.abilities[i])}" data-target="push">${ability}</a>`;
+            if (i === 'H') buf += '<small> (H)</small>';
+            if (i === 'S') buf += '<small> (special)</small>';
+        }
+        buf += '</dd>';
+        buf += '</dl>';
+        buf += '<dl>';
+        buf += '<dt style="clear:left">Base stats:</dt><dd><table class="stats">';
+        var StatTitles = {
+            hp: "HP",
+            atk: "Attack",
+            def: "Defense",
+            spa: "Sp. Atk",
+            spd: "Sp. Def",
+            spe: "Speed"
+        };
+        buf += '<tr><td></td><td></td><td style="width:200px"></td><th class="ministat"><abbr title="0 IVs, 0 EVs, negative nature">min&minus;</a></th><th class="ministat"><abbr title="31 IVs, 0 EVs, neutral nature">min</abbr></th><th class="ministat"><abbr title="31 IVs, 252 EVs, neutral nature">max</abbr></th><th class="ministat"><abbr title="31 IVs, 252 EVs, positive nature">max+</abbr></th>';
+        var bst = 0;
+        for(var stat in BattleStatNames){
+            var baseStat = pokemon.baseStats[stat];
+            bst += baseStat;
+            var width = Math.floor(baseStat * 200 / 200);
+            if (width > 200) width = 200;
+            var color = Math.floor(baseStat * 180 / 255);
+            if (color > 360) color = 360;
+            buf += `<tr><th>${StatTitles[stat]}:</th><td class="stat">${baseStat}</td>`;
+            buf += `<td class="statbar"><span style="width:${Math.floor(width)}px;background:hsl(${color},85%,45%);border-color:hsl(${color},75%,35%)"></span></td>`;
+            buf += '<td class="ministat"><small>' + (stat === 'hp' ? '' : this.getStat(baseStat, false, 100, 0, 0, 0.9)) + '</small></td><td class="ministat"><small>' + this.getStat(baseStat, stat === 'hp', 100, 31, 0, 1.0) + '</small></td>';
+            buf += '<td class="ministat"><small>' + this.getStat(baseStat, stat === 'hp', 100, 31, 255, 1.0) + '</small></td><td class="ministat"><small>' + (stat === 'hp' ? '' : this.getStat(baseStat, false, 100, 31, 255, 1.1)) + '</small></td></tr>';
+        }
+        buf += `<tr><th class="bst">Total:</th><td class="bst">${bst}</td><td></td><td class="ministat" colspan="4">at level <input type="text" class="textbox" name="level" placeholder="100" size="5" /></td>`;
+        buf += '</table></dd>';
+        // Show changes from base game if available
+        var baseGame = BaseGameStats[this.id];
+        if (baseGame) {
+            buf += '<dt>Changes from Base Game:</dt><dd>';
+            var hasChanges = false;
+            var statChanges = [];
+            // Check stat changes
+            for(var stat in BattleStatNames){
+                var currentStat = pokemon.baseStats[stat];
+                var baseStat = baseGame.baseStats[stat];
+                if (currentStat !== baseStat) {
+                    hasChanges = true;
+                    var color = currentStat > baseStat ? '#22AA22' : '#CC2222';
+                    statChanges.push(`<strong>${BattleStatNames[stat]}:</strong> <span style="color:${color}">${baseStat} &rarr; ${currentStat}</span>`);
                 }
+            }
+            // Check BST change
+            var baseGameBst = 0;
+            for(var stat in baseGame.baseStats)baseGameBst += baseGame.baseStats[stat];
+            if (bst !== baseGameBst) {
+                hasChanges = true;
+                var bstColor = bst > baseGameBst ? '#22AA22' : '#CC2222';
+                statChanges.push(`<strong>BST:</strong> <span style="color:${bstColor}">${baseGameBst} &rarr; ${bst}</span>`);
+            }
+            // Check weight change
+            if (pokemon.weightkg !== baseGame.weightkg) {
+                hasChanges = true;
+                var weightColor = pokemon.weightkg > baseGame.weightkg ? '#22AA22' : '#CC2222';
+                statChanges.push(`<strong>Weight:</strong> <span style="color:${weightColor}">${baseGame.weightkg} kg &rarr; ${pokemon.weightkg} kg</span>`);
+            }
+            if (hasChanges) buf += statChanges.join('<br />');
+            else buf += '<em>No stat changes from base game</em>';
+            buf += '</dd>';
+        }
+        // Show Z-Move information if available
+        buf += '<dt>Z-Move:</dt><dd style="line-height:1.8">';
+        if (pokemon.zmove && pokemon.zmove.zMove) {
+            // Z-Crystal with item icon
+            var zCrystalId = toID(pokemon.zmove.zCrystal);
+            var zCrystalItem = BattleItems[zCrystalId];
+            buf += `<div style="margin-bottom:4px"><strong>Z-Crystal:</strong> ${pokemon.zmove.zCrystal} `;
+            if (zCrystalItem) buf += `<span class="itemicon" style="${getItemIcon(zCrystalItem)};width:32px;height:32px;margin-left:4px;display:inline-block;vertical-align:middle"></span>`;
+            buf += `</div>`;
+            // Base Move as a short text link (no button)
+            var baseMoveId = toID(pokemon.zmove.baseMove);
+            var baseMoveData = BattleMovedex[baseMoveId];
+            buf += `<div style="margin-bottom:4px"><strong>Base Move:</strong> `;
+            if (baseMoveData) buf += `<a href="${Config.baseurl}moves/${baseMoveId}" data-target="push">${baseMoveData.name}</a>`;
+            else buf += `${pokemon.zmove.baseMove}`;
+            buf += `</div>`;
+            // Z-Move as a short text link (no button)
+            var zMoveId = toID(pokemon.zmove.zMove);
+            var zMoveData = BattleMovedex[zMoveId];
+            buf += `<div style="margin-bottom:4px"><strong>Z-Move:</strong> `;
+            if (zMoveData) buf += `<a href="${Config.baseurl}moves/${zMoveId}" data-target="push">${zMoveData.name}</a>`;
+            else buf += `${pokemon.zmove.zMove}`;
+            buf += `</div>`;
+        } else buf += '<em>No Z-Move</em>';
+        buf += '</dd>';
+        buf += '<dt>Evolution:</dt> <dd>';
+        var template = pokemon;
+        while(template.prevo)template = getID(BattlePokedex, template.prevo);
+        if (template.evos) {
+            buf += '<table class="evos"><tr><td>';
+            var evos = [
+                template
             ];
-            var articlesBuf = '<ul class="utilichart nokbd">';
-            for(var i = 0; i < articles.length; i++){
-                var article = articles[i];
-                articlesBuf += '<li class="result"><a href="' + Config.baseurl + 'articles/' + article.id + '" data-target="push"><span class="col namecol">' + article.name + '</span></a></li>';
+            while(evos.length > 0){
+                var nextEvos = [];
+                for(var i = 0; i < evos.length; i++){
+                    template = evos[i];
+                    var name = template.forme ? template.baseSpecies + `<small>-${template.forme}</small>` : template.name;
+                    name = `<span class="picon" style="${getPokemonIcon(template)}"></span>` + name;
+                    if (template === pokemon) buf += `<div><strong>${name}</strong></div>`;
+                    else buf += `<div><a href="${Config.baseurl}pokeedit/${template.id}" data-target="replace">${name}</a></div>`;
+                    for (let evo of template.evos ?? [])if (!nextEvos.find((e)=>e.target == evo.target)) nextEvos.push(evo);
+                }
+                evos = nextEvos.map((evo)=>getID(BattlePokedex, evo.target));
+                if (evos.length > 0) buf += '</td><td class="arrow"><span>&rarr;</span></td><td>';
             }
-            articlesBuf += '</ul>';
-            results.html(articlesBuf);
-            this.search = null;
-            return;
-        }
-        if (results.length) {
-            var search = this.search = new BattleSearch(results, this.$el);
-            this.$el.on('scroll', function() {
-                search.updateScroll();
-            });
-            if (fragment === 'pokemon/') {
-                search.setType('pokemon');
-                $searchbox.attr('placeholder', 'Search pokemon OR filter by type, move, ability, egg group');
-                this.$('.buttonbar').remove();
-            } else if (fragment === 'pokeedit/') {
-                search.setType('pokeedit');
-                $searchbox.attr('placeholder', 'Search editable pokemon OR filter by type, move, ability, egg group');
-                this.$('.buttonbar').remove();
-            } else if (fragment === 'moves/') {
-                search.setType('move');
-                $searchbox.attr('placeholder', 'Search moves OR filter by type, category, pokemon');
-                this.$('.buttonbar').remove();
-            } else if (fragment === 'abilities/') {
-                search.setType('ability');
-                $searchbox.attr('placeholder', 'Search abilities OR filter by pokemon');
-                this.$('.buttonbar').remove();
-            } else if (fragment === 'items/') {
-                search.setType('item');
-                $searchbox.attr('placeholder', 'Search items');
-                this.$('.buttonbar').remove();
-            } else if (fragment === 'locations/') {
-                // Locations type - to be implemented later
-                $searchbox.attr('placeholder', 'Search locations');
-                this.$('.buttonbar').remove();
-                this.$('.results').html('<p style="padding:20px;text-align:center;color:#999">Locations feature coming soon!</p>');
-            } else if (fragment === 'trainers/') {
-                // Trainers list
-                $searchbox.attr('placeholder', 'Search trainers by name or id');
-                this.$('.buttonbar').remove();
-                this.trainersMode = true;
-                this.renderTrainers('');
+            buf += '</td></tr></table>';
+            if (pokemon.prevo) {
+                let prevo = getID(BattlePokedex, pokemon.prevo);
+                let evos_from_prevo = prevo.evos.filter((evo)=>toID(evo.target) == pokemon.id);
+                for (let evo of evos_from_prevo)buf += `<div><small>Evolves from ${getID(BattlePokedex, pokemon.prevo).name} (${this.getEvoMethod(evo)})</small></div>`;
             }
-            this.search.externalFilter = true;
-        } else this.search = null;
-        if ($searchbox.length) {
-            $searchbox.focus();
-            this.find($searchbox.val());
-            this.checkExactMatch();
-        }
-    },
-    updateSearch: function(e) {
-        this.find(e.currentTarget.value);
-    },
-    removeFilter: function(e) {
-        this.search.removeFilter(e);
-        this.updateFilters();
-        this.$searchbox.focus();
-    },
-    updateFilters: function() {
-        // this.search.externalFilter = true;
-        var buf = '';
-        if (this.search.qType === 'pokemon') buf = '<button class="filter noclear" value=":">Pok\xe9mon</button> ';
-        else if (this.search.qType === 'move') buf = '<button class="filter noclear" value=":">Moves</button> ';
-        else if (this.search.qType === 'ability') buf = '<button class="filter noclear" value=":">Abilities</button> ';
-        else if (this.search.qType === 'item') buf = '<button class="filter noclear" value=":">Items</button> ';
-        else {
-            this.$('.searchbox-filters').remove();
-            this.$searchbox.css('padding', '2px');
-            return;
-        }
-        if (this.search.filters) for(var i = 0; i < this.search.filters.length; i++){
-            var filter = this.search.filters[i];
-            var text = filter[1];
-            if (filter[0] === 'move') text = getID(BattleMovedex, text).name;
-            if (filter[0] === 'pokemon') text = getID(BattlePokedex, text).name;
-            buf += '<button class="filter" value="' + escapeHTML(filter.join(':')) + '">' + text + ' <i class="fa fa-times-circle"></i></button> ';
-        }
-        if (!this.$searchfilters) this.$searchfilters = $('<div class="searchbox-filters"></div>').insertAfter(this.$searchbox);
-        this.$searchfilters.html(buf);
-        var filterWidth = this.$searchfilters.width();
-        if (filterWidth > this.$searchbox.outerWidth() / 2) this.$searchbox.css('padding', '' + (this.$searchfilters.height() + 4) + 'px 2px 2px 2px');
-        else this.$searchbox.css('padding', '2px 2px 2px ' + (filterWidth + 6) + 'px');
-    },
-    submit: function(e) {
-        e.preventDefault();
-        this.$('.searchbox').attr('placeholder', 'Type in: Pokemon, move, item, ability...').focus();
-    },
-    keyup: function(e) {
-        var val = this.$searchbox.val();
-        var id = toID(val);
-        if (!id) return;
-        var lastchar = val.charAt(val.length - 1);
-        if (lastchar === ',' || lastchar === ' ') {
-            if (id === 'ds' || id === 'dexsearch' || id === 'pokemon') {
-                this.app.go('pokemon/', this, true);
-                return;
+            let a = [];
+            if (pokemon.evos) for (let evo of pokemon.evos)buf += `<div><small>Evolves into ${getID(BattlePokedex, evo.target).name} (${this.getEvoMethod(evo)})</small></div>`;
+        } else buf += '<em>Does not evolve</em>';
+        if (pokemon.formes) {
+            buf += '</dd><dt>Formes:</dt> <dd>';
+            var otherFormes = pokemon.formes;
+            for(var i = 0; i < otherFormes.length; i++){
+                template = getID(BattlePokedex, otherFormes[i]);
+                if (!template) continue;
+                var name = template.forme || 'Base';
+                name = `<span class="picon" style="${getPokemonIcon(template)}"></span>` + name;
+                if (i > 0) buf += ', ';
+                if (template === pokemon) buf += `<strong>${name}</strong>`;
+                else buf += `<a href="${Config.baseurl}pokeedit/${template.id}" data-target="replace">${name}</a>`;
             }
-            if (id === 'ms' || id === 'movesearch' || id === 'move' || id === 'moves') {
-                this.app.go('moves/', this, true);
-                return;
-            }
-            if (id === 'as' || id === 'abilitysearch' || id === 'ability' || id === 'abilities') {
-                this.app.go('abilities/', this, true);
-                return;
+            if (pokemon.requiredItem) buf += `<div><small>Must hold <a href="${Config.baseurl}items/${toID(template.requiredItem)}" data-target="push">${template.requiredItem}</a></small></div>`;
+        }
+        if (pokemon.cosmeticFormes) {
+            buf += '</dd><dt>Cosmetic formes:</dt> <dd>';
+            name = `<span class="picon" style="${getPokemonIcon(pokemon)}"></span>` + pokemon.name;
+            buf += '' + name;
+            for(var i = 0; i < pokemon.cosmeticFormes.length; i++){
+                name = `<span class="picon" style="${getPokemonIcon(pokemon.name + '-' + pokemon.cosmeticFormes[i])}"></span>` + pokemon.cosmeticFormes[i];
+                buf += "," + name;
             }
         }
-        if (lastchar === ',') {
-            if (this.search.addFilter(this.activeLink)) {
-                this.$searchbox.val('');
-                this.find('');
-                return;
+        buf += '</dd></dl>';
+        if (pokemon.eggGroups) {
+            buf += '<dl class="colentry"><dt>Egg groups:</dt><dd><span class="picon" style="margin-top:-12px;' + getPokemonIcon('egg') + `"></span><a href="${Config.baseurl}egggroups/` + pokemon.eggGroups.map(toID).join('+') + '" data-target="push">' + pokemon.eggGroups.join(', ') + '</a></dd></dl>';
+            buf += '<dl class="colentry"><dt>Gender ratio:</dt><dd>';
+            if (pokemon.gender) switch(pokemon.gender){
+                case 'M':
+                    buf += '100% male';
+                    break;
+                case 'F':
+                    buf += '100% female';
+                    break;
+                case 'N':
+                    buf += '100% genderless';
+                    break;
             }
+            else if (pokemon.genderRatio) buf += `${pokemon.genderRatio.M * 100}% male, ${pokemon.genderRatio.F * 100}% female`;
+            else buf += '50% male, 50% female';
+            buf += '</dd></dl>';
+            buf += '<div style="clear:left"></div>';
         }
-    },
-    keydown: function(e) {
-        switch(e.keyCode){
-            case 13:
-                e.preventDefault();
-                e.stopPropagation();
-                if (this.search.addFilter(this.activeLink)) {
-                    this.$searchbox.val('');
-                    this.find('');
-                    return;
-                }
-                if (this.activeLink) {
-                    var path = this.activeLink.pathname.substr(1);
-                    if (path === 'moves/' || path === 'pokemon/') {
-                        this.app.go(path, this, true);
-                        return;
-                    }
-                    this.app.go(path, this, false, $(this.activeLink));
-                } else if (!this.$searchbox.val()) this.app.slicePanel(this);
-                break;
-            case 188:
-                if (this.search.addFilter(this.activeLink)) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    this.$searchbox.val('');
-                    this.find('');
-                    return;
-                }
-                break;
-            case 32:
-                var id = toID(this.$searchbox.val());
-                if (id === 'ds' || id === 'pokemon') {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    this.app.go('pokemon/', this, true);
-                    return;
-                }
-                if (id === 'ms' || id === 'move' || id === 'moves') {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    this.app.go('moves/', this, true);
-                    return;
-                }
-                if (id === 'as' || id === 'ability' || id === 'abilities') {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    this.app.go('abilities/', this, true);
-                    return;
-                }
-                break;
-            case 38:
-                e.preventDefault();
-                e.stopPropagation();
-                var $link = $(this.activeLink).parent().prev();
-                while($link[0] && $link[0].firstChild.tagName !== 'A')$link = $link.prev();
-                if ($link[0] && $link.children()[0]) {
-                    $(this.activeLink).removeClass('active');
-                    this.activeLink = $link.children()[0];
-                    $(this.activeLink).addClass('active');
-                }
-                break;
-            case 40:
-                e.preventDefault();
-                e.stopPropagation();
-                var $link = $(this.activeLink).parent().next();
-                while($link[0] && $link[0].firstChild.tagName !== 'A')$link = $link.next();
-                if ($link[0] && $link.children()[0]) {
-                    $(this.activeLink).removeClass('active');
-                    this.activeLink = $link.children()[0];
-                    $(this.activeLink).addClass('active');
-                }
-                break;
-            case 27:
-            case 8:
-                if (this.$searchbox.val()) break;
-                if (this.search.removeFilter()) {
-                    this.find('');
-                    return;
-                }
-                if (this.search.qType) {
-                    this.app.go('', this, true);
-                    return;
-                }
-                if (this.app.panels.length > 1) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    this.app.slicePanel(this);
-                }
-                break;
+        // Related items - items that mention this Pokémon's name
+        var relatedItemIds = ItemPokemonLinks.pokemonToItems[this.id] || [];
+        if (relatedItemIds.length > 0) {
+            var relatedItems = relatedItemIds.map(function(itemId) {
+                return BattleItems[itemId];
+            }).filter(Boolean);
+            buf += '<dl class="colentry"><dt>Related item(s):</dt><dd>';
+            for(var i = 0; i < relatedItems.length; i++){
+                if (i > 0) buf += ', ';
+                var relItem = relatedItems[i];
+                buf += `<span class="itemicon" style="${getItemIcon(relItem)};width:32px;height:32px"></span><a href="${Config.baseurl}items/${relItem.id}" data-target="push">${relItem.name}</a>`;
+            }
+            buf += '</dd></dl>';
+            buf += '<div style="clear:left"></div>';
         }
-    },
-    click: function(e) {
-        if (e.target.tagName === 'BUTTON' && $(e.target).closest('.tabbar').length) {
-            e.preventDefault();
-            e.stopPropagation();
-            this.app.go(e.target.value, this, true);
-            return;
-        }
-        if (e.target.tagName === 'BUTTON' && e.target.name === 'lucky') {
-            e.preventDefault();
-            e.stopPropagation();
-            alert([
-                'That\'s pretty cool.',
-                'Your mom\'s feeling lucky.',
-                'I see.',
-                'If you feel lucky for more than four hours, perhaps you should see a doctor.'
-            ][Math.floor(Math.random() * 4)]);
-            return;
-        }
-        var scrollLoc = this.$el.scrollTop();
-        this.$searchbox.focus();
-        this.$el.scrollTop(scrollLoc);
-    },
-    clickResult: function(e) {
-        if (this.search.addFilter(e.currentTarget)) {
-            e.preventDefault();
-            e.stopImmediatePropagation();
-            this.$searchbox.val('');
-            this.find('');
-            return;
-        }
-    },
-    hoverlink: function(e) {
-        $(this.activeLink).removeClass('active');
-        this.activeLink = e.currentTarget;
-        $(this.activeLink).addClass('active');
-    },
-    find: function(val) {
-        if (this.trainersMode) {
-            this.renderTrainers(val || '');
-            return;
-        }
-        if (!this.search) return;
-        if (!val) val = '';
-        this.updateFilters();
-        if (!this.search.find(val)) return;
-        if (this.search.q || this.search.filters) {
-            this.$('.pokedex').addClass('aboveresults');
-            this.activeLink = this.search.el.getElementsByTagName('a')[0];
-            $(this.activeLink).addClass('active');
-        } else {
-            this.$('.pokedex').removeClass('aboveresults');
-            this.activeLink = null;
-        }
-    },
-    renderTrainers: function(q) {
-        q = (q || '').toLowerCase();
-        const list = window.Trainers || [];
-        let buf = '<ul class="utilichart nokbd">';
-        for(let i = 0; i < list.length; i++){
-            const t = list[i];
-            const display = '[' + t.id + '] ' + escapeHTML(t.name);
-            if (q && display.toLowerCase().indexOf(q) === -1) continue;
-            // Right-justified party sprites; hide prize money per request
-            const teamSprites = (t.team || []).map((m)=>{
-                const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : m.name || '';
-                const monID = toID(disp);
-                return '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>';
-            }).join('');
-            // Get trainer background for compact thumbnail (using full name to check personal name first)
-            const trainerBg = typeof getTrainerBackground === 'function' ? getTrainerBackground(t.name, true) : getTrainerIcon(t.name, true);
-            // Small thumbnail showing the upper third of the large sprite, scaled down ~2x
-            const thumb = '<div style="position:absolute;left:-30px;top:-30px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;"><div style="width:512px;height:256px;transform:scale(0.25);transform-origin:top left;' + trainerBg + ';"></div>' + '</div>';
-            buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' + thumb + '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' + '</a>' + '</li>';
-        }
+        // learnset
+        buf += '<ul class="utilichart nokbd">';
+        buf += '<li class="resultheader"><h3>Level-up</h3></li>';
         buf += '</ul>';
-        this.$('.results').html(buf);
-        this.$('.pokedex').addClass('aboveresults');
-        this.activeLink = this.$('.results a')[0] || null;
-        if (this.activeLink) $(this.activeLink).addClass('active');
+        // Pre-evo only moves section placeholder
+        buf += '<ul class="utilichart nokbd prevo-moves" style="display:none">';
+        buf += '<li class="resultheader"><h3>Pre-evo only moves</h3></li>';
+        buf += '</ul>';
+        buf += '</div>';
+        this.html(buf);
+        setTimeout(this.renderFullLearnset.bind(this));
     },
-    checkExactMatch: function() {
-        if (this.search && this.search.exactMatch && this.search.q !== 'metronome' && this.search.q !== 'psychic') setTimeout((function() {
-            this.app.go($(this.activeLink).attr('href'), this, false, $(this.activeLink), true);
-        }).bind(this));
+    events: {
+        'click .tabbar button': 'selectTab',
+        'input input[name=level]': 'updateLevel',
+        'keyup input[name=level]': 'updateLevel',
+        'change input[name=level]': 'updateLevel'
+    },
+    updateLevel: function(e) {
+        var val = this.$('input[name=level]').val();
+        var level = val === '' ? 100 : parseInt(val, 10);
+        var lowIV = 31, highIV = 31;
+        var lowEV = 0, highEV = 255;
+        if (val.slice(-1) === ':') {
+            lowIV = 0;
+            highEV = 0;
+        }
+        var i = 0;
+        var $entries = this.$('table.stats td.ministat small');
+        var pokemon = getID(BattlePokedex, this.id);
+        for(var stat in BattleStatNames){
+            var baseStat = pokemon.baseStats[stat];
+            $entries.eq(4 * i + 0).text(stat === 'hp' ? '' : this.getStat(baseStat, false, level, 0, 0, 0.9));
+            $entries.eq(4 * i + 1).text(this.getStat(baseStat, stat === 'hp', level, lowIV, lowEV, 1.0));
+            $entries.eq(4 * i + 2).text(this.getStat(baseStat, stat === 'hp', level, highIV, highEV, 1.0));
+            $entries.eq(4 * i + 3).text(stat === 'hp' ? '' : this.getStat(baseStat, false, level, highIV, highEV, 1.1));
+            i++;
+        }
+    },
+    getEvoMethod: function(evo) {
+        switch(evo.condition){
+            case undefined:
+                if (evo.level) return 'level ' + evo.level;
+                if (evo.item) return 'use ' + evo.item;
+                return 'unknown';
+            case 'trade':
+                return 'When traded';
+            case 'friendship':
+                return 'High Friendship';
+            default:
+                return evo.condition;
+        }
+    },
+    selectTab: function(e) {
+        this.$('.tabbar button').removeClass('cur');
+        $(e.currentTarget).addClass('cur');
+        switch(e.currentTarget.value){
+            case 'move':
+                this.renderFullLearnset();
+                break;
+            case 'details':
+                break;
+            case 'events':
+                break;
+        }
+    },
+    renderFullLearnset: function() {
+        var pokemon = getID(BattlePokedex, this.id);
+        var learnset = getLearnsetEdit(this.id);
+        var last;
+        var buf = "", desc = "";
+        for (let learn of learnset){
+            // Normalize move name or id to canonical BattleMovedex entry
+            let move = getID(BattleMovedex, learn.move);
+            if (!move) {
+                // If still not found, fall back to showing a placeholder without the noisy error prefix
+                buf += `<li class="result"><span class="col tagcol"></span> <span class="col shortmovenamecol">${escapeHTML(learn.move)}</span> <span class="col typecol">&mdash;</span> <span class="col labelcol"></span> <span class="col widelabelcol"></span> <span class="col pplabelcol"></span> <span class="col movedesccol"><em>Unknown move</em></span></li>`;
+                continue;
+            }
+            var newCategory = last == undefined || last.how != learn.how;
+            switch(learn.how){
+                case 'lvl':
+                    if (newCategory) buf += '<li class="resultheader"><h3>Level-up</h3></li>';
+                    let level = learn.level;
+                    if (level === 0) desc = 'Evo';
+                    else desc = level <= 1 ? '&ndash;' : '<small>L</small>' + level;
+                    break;
+                case 'prevo':
+                    if (newCategory) buf += '<li class="resultheader"><h3>From preevo</h3></li>';
+                    desc = "";
+                    break;
+                case 'tm':
+                    if (newCategory) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
+                    desc = `<span class="itemicon" style="margin-top:-3px;background:transparent url(${ResourcePrefix}sprites/itemicons-sheet.png) no-repeat scroll -133px -364px;width:32px;height:32px;display:inline-block"></span>`;
+                    break;
+                case 'tutor':
+                    if (newCategory) buf += '<li class="resultheader"><h3>Tutor</h3></li>';
+                    desc = `<img src="${ResourcePrefix}sprites/tutor.png" style="margin-top:-4px;opacity:.7" width="27" height="26" alt="T" />`;
+                    break;
+                case 'egg':
+                    if (newCategory) buf += '<li class="resultheader"><h3>Egg</h3></li>';
+                    desc = '<span class="picon" style="margin-top:-12px;' + getPokemonIcon('egg') + '"></span>';
+                    break;
+            }
+            last = learn;
+            buf += BattleSearch.renderTaggedMoveRow(move, desc);
+        }
+        this.$('.utilichart').html(buf);
+        // Render pre-evo only moves
+        this.renderPreEvoMoves();
+    },
+    renderPreEvoMoves: function() {
+        var pokemon = getID(BattlePokedex, this.id);
+        if (!pokemon) return;
+        // Use the prevo field set up in data.js
+        var prevoId = pokemon.prevo;
+        if (!prevoId) {
+            // No pre-evo, hide the section
+            this.$('.prevo-moves').hide();
+            return;
+        }
+        // Get both learnsets
+        var prevoLearnset = getLearnsetEdit(prevoId);
+        var currentLearnset = getLearnsetEdit(this.id);
+        // Build set of moves the current Pokémon can learn
+        var currentMoves = new Set();
+        for (var learn of currentLearnset){
+            var moveId = toID(learn.move);
+            currentMoves.add(moveId);
+        }
+        // Find moves only in pre-evo (level-up, tm, tutor)
+        var prevoOnlyMoves = [];
+        for (var learn of prevoLearnset){
+            if (learn.how === 'egg') continue; // Skip egg moves
+            var moveId = toID(learn.move);
+            if (!currentMoves.has(moveId)) prevoOnlyMoves.push(learn);
+        }
+        if (prevoOnlyMoves.length === 0) {
+            this.$('.prevo-moves').hide();
+            return;
+        }
+        // Render the pre-evo only moves
+        var buf = '<li class="resultheader"><h3>Pre-evo only moves</h3></li>';
+        var last = null;
+        for (var learn of prevoOnlyMoves){
+            var move = getID(BattleMovedex, learn.move);
+            if (!move) continue;
+            var desc = "";
+            var newCategory = last == null || last.how != learn.how;
+            switch(learn.how){
+                case 'lvl':
+                    if (newCategory) buf += '<li class="resultheader"><h3>Level-up</h3></li>';
+                    var level = learn.level;
+                    if (level === 0) desc = 'Evo';
+                    else desc = level <= 1 ? '&ndash;' : '<small>L</small>' + level;
+                    break;
+                case 'tm':
+                    if (newCategory) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
+                    desc = `<span class="itemicon" style="margin-top:-3px;background:transparent url(${ResourcePrefix}sprites/itemicons-sheet.png) no-repeat scroll -133px -364px;width:32px;height:32px;display:inline-block"></span>`;
+                    break;
+                case 'tutor':
+                    if (newCategory) buf += '<li class="resultheader"><h3>Tutor</h3></li>';
+                    desc = `<img src="${ResourcePrefix}sprites/tutor.png" style="margin-top:-4px;opacity:.7" width="27" height="26" alt="T" />`;
+                    break;
+            }
+            last = learn;
+            buf += BattleSearch.renderTaggedMoveRow(move, desc);
+        }
+        this.$('.prevo-moves').html(buf).show();
+    },
+    getStat: function(baseStat, isHP, level, iv, ev, natureMult) {
+        if (isHP) {
+            if (baseStat === 1) return 1;
+            return Math.floor(Math.floor(2 * baseStat + (iv || 0) + Math.floor((ev || 0) / 4) + 100) * level / 100 + 10);
+        }
+        var val = Math.floor(Math.floor(2 * baseStat + (iv || 0) + Math.floor((ev || 0) / 4)) * level / 100 + 5);
+        if (natureMult && !isHP) val *= natureMult;
+        return Math.floor(val);
     }
 });
 
-},{}]},["28pf4","4AOtb"], "4AOtb", "parcelRequire6a64", {})
+},{}]},["e1eWT","8cRtJ"], "8cRtJ", "parcelRequire6a64", {})
 
-//# sourceMappingURL=Binary-Star-Pokedex.4718365c.js.map
+//# sourceMappingURL=Binary-Star-Pokedex.cd388443.js.map
