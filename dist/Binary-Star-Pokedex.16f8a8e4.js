@@ -719,6 +719,7 @@ var Pokedex = Panels.App.extend({
     backButtonPrefix: '<i class="fa fa-chevron-left"></i> ',
     states2: {
         'pokemon/:pokemon': PokedexPokemonPanel,
+        'pokeedit/:pokemon': PokedexPokeeditPanel,
         'moves/:move': PokedexMovePanel,
         'items/:item': PokedexItemPanel,
         'abilities/:ability': PokedexAbilityPanel,
@@ -733,6 +734,7 @@ var Pokedex = Panels.App.extend({
         '': PokedexHomePanel,
         'dex': PokedexSearchPanel,
         'pokemon/': PokedexSearchPanel,
+        'pokeedit/': PokedexSearchPanel,
         'moves/': PokedexSearchPanel,
         'abilities/': PokedexSearchPanel,
         'items/': PokedexSearchPanel,

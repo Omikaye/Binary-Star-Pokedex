@@ -1033,6 +1033,9 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
             case 'pokemon':
                 var pokemon = getID(BattlePokedex, id);
                 return this.renderPokemonRow(pokemon, matchStart, matchLength, errorMessage, attrs);
+            case 'pokeedit':
+                var pokemon = getID(BattlePokedexEdit, id);
+                return this.renderPokeeditRow(pokemon, matchStart, matchLength, errorMessage, attrs);
             case 'move':
                 var move = getID(BattleMovedex, id);
                 return this.renderMoveRow(move, matchStart, matchLength, errorMessage, attrs);
@@ -1143,6 +1146,77 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
         var id = toID(pokemon.name);
         if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'pokemon/' + id + '" data-target="push"';
         var buf = '<li class="result"><a' + attrs + ' data-entry="pokemon|' + escapeHTML(pokemon.name) + '">';
+        // Dex number with suffix for forms (A, B, C...), shown as 6-A, 10-B, etc. Base shows plain number.
+        var numDisplay = pokemon.num;
+        if (pokemon.forme && pokemon.name !== pokemon.baseSpecies && window.BattleFormOrder) {
+            var baseId = toID(pokemon.baseSpecies || pokemon.name);
+            var order = window.BattleFormOrder[baseId];
+            if (order) {
+                var idx = order.indexOf(pokemon.id);
+                if (idx >= 0) {
+                    var letter = String.fromCharCode(65 + idx);
+                    numDisplay = pokemon.num + '-' + letter;
+                }
+            }
+        }
+        buf += '<span class="col numcol">' + numDisplay + "</span> ";
+        // icon
+        buf += '<span class="col iconcol">';
+        buf += '<span style="' + getPokemonIcon(pokemon.name) + '"></span>';
+        buf += '</span> ';
+        // name
+        var name = pokemon.name;
+        var tagStart = pokemon.forme ? name.length - pokemon.forme.length - 1 : 0;
+        if (tagStart) name = name.substr(0, tagStart);
+        if (matchLength) name = name.substr(0, matchStart) + '<b>' + name.substr(matchStart, matchLength) + '</b>' + name.substr(matchStart + matchLength);
+        if (tagStart) {
+            if (matchLength && matchStart + matchLength > tagStart) {
+                if (matchStart < tagStart) {
+                    matchLength -= tagStart - matchStart;
+                    matchStart = tagStart;
+                }
+                name += '<small>' + pokemon.name.substr(tagStart, matchStart - tagStart) + '<b>' + pokemon.name.substr(matchStart, matchLength) + '</b>' + pokemon.name.substr(matchStart + matchLength) + '</small>';
+            } else name += '<small>' + pokemon.name.substr(tagStart) + '</small>';
+        }
+        buf += '<span class="col pokemonnamecol">' + name + '</span> ';
+        // error
+        if (errorMessage) {
+            buf += errorMessage + '</a></li>';
+            return buf;
+        }
+        // type
+        buf += '<span class="col typecol">';
+        var types = pokemon.types;
+        for(var i = 0; i < types.length; i++)buf += getTypeIcon(types[i]);
+        buf += '</span> ';
+        var abilities = pokemon.abilities;
+        if (abilities['1']) buf += '<span class="col twoabilitycol">' + abilities['0'] + '<br />' + abilities['1'] + '</span>';
+        else buf += '<span class="col abilitycol">' + abilities['0'] + '</span>';
+        if (abilities['S']) {
+            if (abilities['H']) buf += '<span class="col twoabilitycol">' + (abilities['H'] || '') + '<br />(' + abilities['S'] + ')</span>';
+            else buf += '<span class="col abilitycol">(' + abilities['S'] + ')</span>';
+        } else if (abilities['H']) buf += '<span class="col abilitycol">' + abilities['H'] + '</span>';
+        else buf += '<span class="col abilitycol"></span>';
+        // base stats
+        var stats = pokemon.baseStats;
+        buf += '<span class="col statcol"><em>HP</em><br />' + stats.hp + '</span> ';
+        buf += '<span class="col statcol"><em>Atk</em><br />' + stats.atk + '</span> ';
+        buf += '<span class="col statcol"><em>Def</em><br />' + stats.def + '</span> ';
+        buf += '<span class="col statcol"><em>SpA</em><br />' + stats.spa + '</span> ';
+        buf += '<span class="col statcol"><em>SpD</em><br />' + stats.spd + '</span> ';
+        buf += '<span class="col statcol"><em>Spe</em><br />' + stats.spe + '</span> ';
+        var bst = 0;
+        for(i in stats)bst += stats[i];
+        buf += '<span class="col bstcol"><em>BST<br />' + bst + '</em></span> ';
+        buf += '</a></li>';
+        return buf;
+    };
+    Search.prototype.renderPokeeditRow = function(pokemon, matchStart, matchLength, errorMessage, attrs) {
+        if (!attrs) attrs = '';
+        if (!pokemon) return '<li class="result">Unrecognized pokemon</li>';
+        var id = toID(pokemon.name);
+        if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'pokeedit/' + id + '" data-target="push"';
+        var buf = '<li class="result"><a' + attrs + ' data-entry="pokeedit|' + escapeHTML(pokemon.name) + '">';
         // Dex number with suffix for forms (A, B, C...), shown as 6-A, 10-B, etc. Base shows plain number.
         var numDisplay = pokemon.num;
         if (pokemon.forme && pokemon.name !== pokemon.baseSpecies && window.BattleFormOrder) {
