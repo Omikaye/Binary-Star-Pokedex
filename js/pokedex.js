@@ -1,4 +1,137 @@
+import { articles } from './articles-data.js';
+
 BattleSearch.urlRoot = Config.baseurl;
+
+// Simple markdown to HTML converter for articles
+function markdownToHTML(markdown) {
+	var html = markdown;
+	
+	// Convert headers
+	html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
+	html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
+	html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+	
+	// Convert [[links]] to anchor tags (for moves, abilities, items, pokemon)
+	html = html.replace(/\[\[([^\]]+)\]\]/g, function(match, text) {
+		var id = text.toLowerCase().replace(/[^a-z0-9]+/g, '');
+		// Try to determine type - if it contains "berry" or common item words, link to items
+		// Otherwise default to moves for most game mechanics
+		var type = 'moves';
+		if (text.match(/berry|ball|stone|fossil|incense|mail|plate|gem|orb|scarf|band|lens|herb|seed|powder|wing|feather|scale|claw|fang|bone|pearl|nugget|stardust|dust|honey|mushroom|root|shell|shard|evo|mega|z-/i)) {
+			type = 'items';
+		} else if (text.match(/ability|stance|form|mode/i)) {
+			type = 'abilities';
+		}
+		return '<a href="' + Config.baseurl + type + '/' + id + '" data-target="push">' + escapeHTML(text) + '</a>';
+	});
+	
+	// Convert bold and italic
+	html = html.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
+	html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+	html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+	html = html.replace(/___(.+?)___/g, '<strong><em>$1</em></strong>');
+	html = html.replace(/__(.+?)__/g, '<strong>$1</strong>');
+	html = html.replace(/_(.+?)_/g, '<em>$1</em>');
+	
+	// Convert lists
+	html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+	html = html.replace(/(<li>[\s\S]*?<\/li>\n?)+/g, '<ul>$&</ul>');
+	
+	// Convert tables (basic markdown table support)
+	var lines = html.split('\n');
+	var inTable = false;
+	var result = [];
+	
+	for (var i = 0; i < lines.length; i++) {
+		var line = lines[i];
+		var trimmed = line.trim();
+		
+		// Check if this is a table row
+		if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
+			var cells = trimmed.slice(1, -1).split('|').map(function(cell) { return cell.trim(); });
+			
+			// Check if next line is a separator (---|---|---)
+			var isHeader = false;
+			if (i + 1 < lines.length) {
+				var nextLine = lines[i + 1].trim();
+				if (nextLine.match(/^\|[\s:-]+\|/)) {
+					isHeader = true;
+					if (!inTable) {
+						result.push('<table>');
+						inTable = true;
+					}
+					result.push('<thead><tr>');
+					cells.forEach(function(cell) {
+						result.push('<th>' + cell + '</th>');
+					});
+					result.push('</tr></thead><tbody>');
+					i++; // Skip the separator line
+					continue;
+				}
+			}
+			
+			if (!inTable) {
+				result.push('<table><tbody>');
+				inTable = true;
+			}
+			
+			result.push('<tr>');
+			cells.forEach(function(cell) {
+				result.push('<td>' + cell + '</td>');
+			});
+			result.push('</tr>');
+		} else {
+			if (inTable) {
+				result.push('</tbody></table>');
+				inTable = false;
+			}
+			result.push(line);
+		}
+	}
+	
+	if (inTable) {
+		result.push('</tbody></table>');
+	}
+	
+	html = result.join('\n');
+	
+	// Convert paragraphs (lines not already in tags)
+	lines = html.split('\n');
+	var inList = false;
+	result = [];
+	
+	for (var i = 0; i < lines.length; i++) {
+		var line = lines[i];
+		var trimmed = line.trim();
+		if (!trimmed) {
+			if (!inList) result.push('');
+			continue;
+		}
+		
+		var htmlTags = ['<ul>', '</ul>', '<li>', '<h', '</', '<table', '<thead', '<tbody', '<tr', '<th', '<td'];
+		
+		if (trimmed.startsWith('<ul>')) {
+			inList = true;
+			result.push(line);
+		} else if (trimmed.startsWith('</ul>')) {
+			inList = false;
+			result.push(line);
+		} else if (htmlTags.some(function(tag) { return trimmed.startsWith(tag); })) {
+			result.push(line);
+		} else if (!inList) {
+			// Wrap in paragraph if not already in a tag
+			if (!trimmed.startsWith('<')) {
+				result.push('<p>' + line + '</p>');
+			} else {
+				result.push(line);
+			}
+		} else {
+			result.push(line);
+		}
+	}
+	
+	return result.join('\n');
+}
 
 window.Topbar = Panels.Topbar.extend({
 	height: 51
@@ -866,30 +999,45 @@ window.PokedexArticlePanel = PokedexResultPanel.extend({
 		this.html(buf);
 
 		var self = this;
-		$.get('/.articles-cached/' + id + '.html').done(function (html) {
-			// Extract title from h1
-			var title = id;
-			html = html.replace(/<h1[^>]*>([^<]+)<\/h1>/, function (match, innerMatch) {
-				title = innerMatch;
-				self.shortTitle = innerMatch;
-				return '';
-			});
+		
+		// Get markdown from bundled articles
+		var markdown = articles[id] || '';
+		if (!markdown) {
+			self.$('.article-content').html('<p style="color: red;">Article not found.</p>');
+			return;
+		}
+		
+		// Convert markdown to HTML
+		var html = markdownToHTML(markdown);
+		
+		// Extract title from h1
+		var title = id;
+		html = html.replace(/<h1[^>]*>([^<]+)<\/h1>/, function (match, innerMatch) {
+			title = innerMatch;
+			self.shortTitle = innerMatch;
+			return '';
+		});
+		
+		// Add CSS for article styling if not already added
+		if (!$('#article-styles').length) {
+			var styles = '<style id="article-styles">';
+			styles += '.article-content h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 4px; margin-top: 20px; }';
+				styles += '.article-content h3 { color: #555; margin-top: 16px; }';
+				styles += '.article-content p { line-height: 1.6; margin: 10px 0; }';
+				styles += '.article-content ul { margin: 10px 0; padding-left: 24px; }';
+				styles += '.article-content li { margin: 6px 0; line-height: 1.5; }';
+				styles += '.article-content table { border-collapse: collapse; margin: 10px 0; }';
+				styles += '.article-content th, .article-content td { border: 1px solid #ddd; padding: 8px; text-align: left; }';
+				styles += '.article-content th { background-color: #f2f2f2; font-weight: bold; }';
+				styles += '.article-content a { color: #1976d2; text-decoration: none; }';
+				styles += '.article-content a:hover { text-decoration: underline; }';
+				styles += '</style>';
+				$('head').append(styles);
+			}
 			
-			// Build styled article content
+			// Build article content
 			var articleBuf = '';
 			articleBuf += '<h1>' + escapeHTML(title) + '</h1>';
-			
-			// Add CSS for article styling
-			articleBuf += '<style>';
-			articleBuf += '.article-content h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 4px; margin-top: 20px; }';
-			articleBuf += '.article-content h3 { color: #555; margin-top: 16px; }';
-			articleBuf += '.article-content p { line-height: 1.6; margin: 10px 0; }';
-			articleBuf += '.article-content ul { margin: 10px 0; padding-left: 24px; }';
-			articleBuf += '.article-content li { margin: 6px 0; line-height: 1.5; }';
-			articleBuf += '.article-content a { color: #1976d2; text-decoration: none; }';
-			articleBuf += '.article-content a:hover { text-decoration: underline; }';
-			articleBuf += '</style>';
-			
 			articleBuf += html;
 			
 			// Add special sections for specific articles
@@ -930,6 +1078,5 @@ window.PokedexArticlePanel = PokedexResultPanel.extend({
 			}
 			
 			self.$('.article-content').html(articleBuf);
-		});
 	}
 });

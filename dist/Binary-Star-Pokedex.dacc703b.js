@@ -719,22 +719,22 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
     initialize: function() {
         this.shortTitle = 'Locations';
         var buf = '<div class="pfx-body dexentry">';
-        buf += '<a href="' + Config.baseurl + '" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok\xe9dex</a>';
+        buf += '<a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok\xe9dex</a>';
         buf += '<h1><a href="' + Config.baseurl + 'locations/" data-target="push" class="subtle">Locations</a></h1>';
         buf += '<ul class="utilichart nokbd">';
         var list = (window.Locations || []).slice();
-        list.sort(function(a, b) {
-            return (a.name || '').localeCompare(b.name || '');
-        });
+        // Don't sort - keep original order from JSON (which is the index order)
         for(var i = 0; i < list.length; i++){
             var loc = list[i];
             if (!loc || !loc.id) continue;
             var notes = (loc.notes || '').trim();
-            buf += '<li class="result">';
-            buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push">';
-            buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span> ';
-            if (notes) buf += '<span class="col abilitydesccol">' + escapeHTML(notes) + '</span>';
-            buf += '</a></li>';
+            buf += '<li class="result" style="display:block;padding:0;height:auto;min-height:initial;overflow:visible;position:relative">';
+            buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" style="display:block;padding:8px;text-decoration:none">';
+            buf += '<span class="col numcol">' + (i + 1) + '</span>';
+            buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span>';
+            buf += '</a>';
+            if (notes) buf += '<div style="padding:4px 12px 8px 12px;color:#666;font-size:0.9em;border-top:1px solid #eee;clear:both;width:100%;box-sizing:border-box;background:#f5f5f5">' + escapeHTML(notes) + '</div>';
+            buf += '</li>';
         }
         buf += '</ul>';
         buf += '</div>';
@@ -762,7 +762,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         // Encounters
         var encounters = loc.encounters || [];
         if (encounters.length) {
-            buf += '<h3>Encounters</h3>';
+            buf += '<div style="background:#e8f5e9;padding:12px;margin:8px 0;border-radius:4px">';
+            buf += '<h3 style="margin-top:0;color:#2e7d32">Encounters</h3>';
             for(var s = 0; s < encounters.length; s++){
                 var spot = encounters[s];
                 if (!spot || !spot.pokemon || !spot.pokemon.length) continue;
@@ -774,36 +775,48 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
                 buf += '<thead><tr><th style="width:80px;text-align:center">Chance</th><th style="text-align:left">Pok\xe9mon</th></tr></thead><tbody>';
                 for(var p = 0; p < spot.pokemon.length; p++){
                     var mon = spot.pokemon[p];
-                    var monID = toID(mon.name);
+                    // Apply dictionary translation to Pokemon name
+                    var translatedName = window.translateDisplayName(mon.name);
+                    var monID = toID(translatedName);
+                    var pokeData = BattlePokedex[monID];
+                    var displayName = pokeData ? pokeData.name : translatedName;
                     buf += '<tr>';
                     // Percent first
                     buf += '<td style="text-align:center"><span class="chancepill">' + (mon.chance != null ? mon.chance + '%' : '&mdash;') + '</span></td>';
-                    // Pokemon icon + name link
-                    buf += '<td><a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(mon.name) + '">' + '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>' + escapeHTML(mon.name) + '</a>' + '</td>';
-                    buf += '</tr>';
-                    // SOS rows
+                    // Pokemon icon + name link with SOS on same line
+                    buf += '<td><a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(displayName) + '">' + '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>' + escapeHTML(displayName) + '</a>';
+                    // Add SOS Pokemon on same line
                     var sos = mon.sos || [];
-                    for(var k = 0; k < sos.length; k++){
-                        var child = sos[k];
-                        var childID = toID(child);
-                        buf += '<tr class="sos-row">';
-                        buf += '<td style="text-align:center"><span class="chancepill">SOS</span></td>';
-                        buf += '<td style="padding-left:28px"><a href="' + Config.baseurl + 'pokemon/' + childID + '" data-target="push" title="' + escapeHTML(child) + '">' + '<span class="picon" style="' + getPokemonIcon(childID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>' + escapeHTML(child) + '</a>' + '</td>';
-                        buf += '</tr>';
+                    if (sos.length > 0) {
+                        buf += ' <span style="color:#999;font-size:0.9em">(SOS)</span> ';
+                        for(var k = 0; k < sos.length; k++){
+                            var child = sos[k];
+                            var childTranslated = window.translateDisplayName(child);
+                            var childID = toID(childTranslated);
+                            var childData = BattlePokedex[childID];
+                            var childDisplayName = childData ? childData.name : childTranslated;
+                            if (k > 0) buf += ', ';
+                            buf += '<a href="' + Config.baseurl + 'pokemon/' + childID + '" data-target="push" title="' + escapeHTML(childDisplayName) + '" style="font-size:0.9em">' + '<span class="picon" style="' + getPokemonIcon(childID) + ';display:inline-block;vertical-align:middle;margin-right:4px"></span>' + escapeHTML(childDisplayName) + '</a>';
+                        }
                     }
+                    buf += '</td>';
+                    buf += '</tr>';
                 }
                 buf += '</tbody></table>';
             }
+            buf += '</div>'; // Close Encounters section
         }
-        // Gifts/Trades
-        if ((loc.giftsTrades || '').trim() && loc.giftsTrades.toLowerCase() !== 'none') {
-            buf += '<h3>Gifts / Trades</h3>';
-            buf += '<p>' + escapeHTML(loc.giftsTrades) + '</p>';
+        // Static Pokemon (pink section)
+        if (loc.staticPokemon && loc.staticPokemon.length) {
+            buf += '<div style="background:#fce4ec;padding:12px;margin:8px 0;border-radius:4px">';
+            buf += '<h3 style="margin-top:0;color:#c2185b">Static Pok\xe9mon</h3>';
+            buf += '<p class="resultsub">Static encounter details coming soon.</p>';
+            buf += '</div>';
         }
         // Trainers
-        function renderTrainerList(ids) {
+        function renderTrainerList(ids, isBoss) {
             if (!ids || !ids.length) return '';
-            var out = '<ul class="utilichart nokbd">';
+            var out = '<ul class="utilichart nokbd" style="' + (isBoss ? 'background:#f5f0ff' : '') + '">';
             for(var i = 0; i < ids.length; i++){
                 var tid = (ids[i] || '').trim();
                 if (!tid) continue;
@@ -811,52 +824,110 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
                     return tx.id === tid;
                 });
                 var tname = t ? t.name : 'Trainer ' + tid;
+                // Get extra notes from trainer-notes.json
+                var tnotes = window.TrainerNotes && window.TrainerNotes[tid] ? window.TrainerNotes[tid].extraNotes : '';
                 out += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + tid + '" data-target="push">';
-                out += '<span class="col namecol">' + escapeHTML(tname) + '</span>';
+                out += '<span class="col namecol">' + escapeHTML(tname);
+                if (tnotes) out += ' <span style="color:#777;font-size:0.85em">(' + escapeHTML(tnotes) + ')</span>';
+                out += '</span>';
                 out += '</a></li>';
             }
             out += '</ul>';
             return out;
         }
-        if (loc.trainers && loc.trainers.length) buf += '<h3>Trainers</h3>' + renderTrainerList(loc.trainers);
-        if (loc.bossTrainers && loc.bossTrainers.length) buf += '<h3>Boss Trainers</h3>' + renderTrainerList(loc.bossTrainers);
+        if (loc.trainers && loc.trainers.length) {
+            buf += '<div style="background:#e3f2fd;padding:12px;margin:8px 0;border-radius:4px">';
+            buf += '<h3 style="margin-top:0;color:#1565c0">Trainers</h3>' + renderTrainerList(loc.trainers, false);
+            buf += '</div>';
+        }
+        if (loc.bossTrainers && loc.bossTrainers.length) {
+            buf += '<div style="background:#e3f2fd;padding:12px;margin:8px 0;border-radius:4px">';
+            buf += '<h3 style="margin-top:0;color:#7b4397">Boss Trainers</h3>' + renderTrainerList(loc.bossTrainers, true);
+            buf += '</div>';
+        }
         // Shops
         if (loc.shops && loc.shops.length) {
-            buf += '<h3>Shops</h3>';
+            buf += '<div style="background:#fffde7;padding:12px;margin:8px 0;border-radius:4px">';
+            buf += '<h3 style="margin-top:0;color:#f57f17">Shops</h3>';
             buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
             buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:110px;text-align:center">Price</th></tr></thead><tbody>';
             for(var si = 0; si < loc.shops.length; si++){
                 var sh = loc.shops[si];
+                // Check for TM format: "TM90 (Zen Headbutt)"
+                var tmMatch = sh.item.match(/^TM\d+\s*\((.+)\)$/);
                 var itemID = toID(sh.item);
+                var shopItemData = BattleItems[itemID];
+                var shopIcon = '';
+                var linkTarget = itemID;
+                var linkType = 'items';
+                if (tmMatch) {
+                    // TM - use TM icon and link to move
+                    var moveName = tmMatch[1].trim();
+                    linkTarget = toID(moveName);
+                    linkType = 'moves';
+                    shopIcon = '<span class="itemicon" style="' + getItemIcon('tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+                } else if (sh.item === "Pok\xe9 Ball") {
+                    // Fix Poké Ball to use pokeball ID
+                    itemID = 'pokeball';
+                    linkTarget = 'pokeball';
+                    shopItemData = BattleItems['pokeball'];
+                    if (shopItemData) shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
+                } else if (shopItemData) shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
                 buf += '<tr>';
-                buf += '<td><span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:32px;height:32px"></span>' + '</td>';
-                buf += '<td><a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push">' + escapeHTML(sh.item) + '</a>' + '</td>';
+                buf += '<td>' + shopIcon + '</td>';
+                buf += '<td>';
+                if (tmMatch || shopItemData) buf += '<a href="' + Config.baseurl + linkType + '/' + linkTarget + '" data-target="push">' + escapeHTML(sh.item) + '</a>';
+                else buf += escapeHTML(sh.item);
+                buf += '</td>';
                 buf += '<td style="text-align:center">' + escapeHTML(sh.price || '') + '</td>';
                 buf += '</tr>';
             }
             buf += '</tbody></table>';
+            buf += '</div>';
         }
         // Items (quantity own column)
         if (loc.items && loc.items.length) {
-            buf += '<h3>Items</h3>';
+            buf += '<div style="background:#fff3e0;padding:12px;margin:8px 0;border-radius:4px">';
+            buf += '<h3 style="margin-top:0;color:#e65100">Items</h3>';
             buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
             buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:70px;text-align:center">Qty</th><th>Obtain</th></tr></thead><tbody>';
             for(var ii = 0; ii < loc.items.length; ii++){
                 var it = loc.items[ii];
+                // Check for TM format: "TM90 (Zen Headbutt)"
+                var tmMatch = it.item.match(/^TM\d+\s*\((.+)\)$/);
                 var iid = toID(it.item);
+                var itemData = BattleItems[iid];
+                var itemIcon = '';
+                var linkTarget = iid;
+                var linkType = 'items';
+                // Check if item is money (starts with $)
+                if (it.item && it.item.trim().startsWith('$')) itemIcon = '<img src="' + ResourcePrefix + 'sprites/pokedollar_icon.png" style="width:32px;height:32px;display:inline-block" alt="Money" />';
+                else if (tmMatch) {
+                    // TM - use TM icon and link to move
+                    var moveName = tmMatch[1].trim();
+                    linkTarget = toID(moveName);
+                    linkType = 'moves';
+                    itemIcon = '<span class="itemicon" style="' + getItemIcon('tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+                } else if (it.item === "Pok\xe9 Ball") {
+                    // Fix Poké Ball to use pokeball ID
+                    iid = 'pokeball';
+                    linkTarget = 'pokeball';
+                    itemData = BattleItems['pokeball'];
+                    if (itemData) itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData) + ';width:32px;height:32px;display:inline-block"></span>';
+                } else if (itemData) // Only show icon if item exists in data
+                itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData) + ';width:32px;height:32px;display:inline-block"></span>';
                 buf += '<tr>';
-                buf += '<td><span class="picon" style="' + getItemIcon(iid) + ';display:inline-block;width:32px;height:32px"></span>' + '</td>';
-                buf += '<td><a href="' + Config.baseurl + 'items/' + iid + '" data-target="push">' + escapeHTML(it.item) + '</a>' + '</td>';
+                buf += '<td>' + itemIcon + '</td>';
+                buf += '<td>';
+                if (tmMatch || itemData) buf += '<a href="' + Config.baseurl + linkType + '/' + linkTarget + '" data-target="push">' + escapeHTML(it.item) + '</a>';
+                else buf += escapeHTML(it.item);
+                buf += '</td>';
                 buf += '<td style="text-align:center">' + (it.quantity != null ? it.quantity : 1) + '</td>';
                 buf += '<td>' + escapeHTML(it.obtain || '') + '</td>';
                 buf += '</tr>';
             }
             buf += '</tbody></table>';
-        }
-        // Static encounters placeholder (future)
-        if (loc.staticPokemon && loc.staticPokemon.length) {
-            buf += "<h3>Static Pok\xe9mon</h3>";
-            buf += '<p class="resultsub">Static encounter details coming soon.</p>';
+            buf += '</div>';
         }
         buf += '</div>';
         this.html(buf);
