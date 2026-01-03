@@ -320,6 +320,7 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 		'click .add-move': 'addMove',
 		'click .remove-move': 'removeMove',
 		'change .move-level-input': 'updateMoveLevel',
+		'click .move-level-input': 'preventMoveLevelClick',
 		'change .stat-input': 'updateStat',
 		'click .edit-type': 'editType',
 		'click .add-type': 'addType',
@@ -401,12 +402,12 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 						buf += '<li class="resultheader"><h3>Level-up <button class="button add-move" style="font-size:11px;padding:2px 8px;margin-left:10px;">+ Add Move</button></h3></li>';
 					}
 					let level = learn.level;
+					// Just the level input in the tag column, no × button here
 					if (level === 0) {
 						desc = '<input type="text" class="move-level-input textbox" data-index="' + moveIndex + '" value="0" size="3" style="width:40px;text-align:center;" />';
 					} else {
 						desc = '<input type="text" class="move-level-input textbox" data-index="' + moveIndex + '" value="' + level + '" size="3" style="width:40px;text-align:center;" />';
 					}
-					desc += ' <button class="button remove-move" data-index="' + moveIndex + '" style="font-size:11px;padding:2px 6px;margin-left:4px;">×</button>';
 					break;
 			case 'prevo': // prevo
 				if (newCategory) buf += '<li class="resultheader"><h3>From preevo</h3></li>';
@@ -426,11 +427,13 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 					break;
 			}
 			last = learn;
-			// For level-up moves, make them clickable
+			// For level-up moves, make them clickable but with custom structure
 			if (learn.how === 'lvl') {
 				var moveRow = BattleSearch.renderTaggedMoveRow(move, desc);
 				// Add edit-move class and data-index to the link
 				moveRow = moveRow.replace('<a href=', '<a class="edit-move" data-index="' + moveIndex + '" href="#" data-original-href=');
+				// Remove the closing </a></li> and add × button on the right, then close
+				moveRow = moveRow.replace('</a></li>', '</a> <button class="button remove-move" data-index="' + moveIndex + '" style="font-size:11px;padding:2px 6px;margin-left:8px;float:right;">×</button></li>');
 				buf += moveRow;
 			} else {
 				buf += BattleSearch.renderTaggedMoveRow(move, desc);
@@ -534,36 +537,42 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 		var originalText = $btn.html();
 		$btn.html('Saving...').prop('disabled', true);
 		
-		// Prepare data to save
-		var saveData = {
-			pokedex: {},
-			learnsets: {}
-		};
-		saveData.pokedex[this.id] = pokemon;
-		saveData.learnsets[this.id] = learnset;
-		
-		// Send to server to save (this is client-side only, so we'll save to localStorage for now)
-		// In a real implementation, you would send this to a server endpoint
 		try {
-			// Save to localStorage as a temporary solution
-			var currentPokedex = JSON.parse(localStorage.getItem('pokedex-edit') || '{}');
-			var currentLearnsets = JSON.parse(localStorage.getItem('learnsets-edit') || '{}');
+			// Update the global objects with current edits
+			BattlePokedexEdit[this.id] = pokemon;
+			LearnsetsEdit[this.id] = learnset;
 			
-			currentPokedex[this.id] = pokemon;
-			currentLearnsets[this.id] = learnset;
+			// Create download links for both JSON files
+			var pokedexJson = JSON.stringify(BattlePokedexEdit, null, 2);
+			var learnsetsJson = JSON.stringify(LearnsetsEdit, null, 2);
 			
-			localStorage.setItem('pokedex-edit', JSON.stringify(currentPokedex));
-			localStorage.setItem('learnsets-edit', JSON.stringify(currentLearnsets));
+			// Download pokedex-edit.json
+			var pokedexBlob = new Blob([pokedexJson], { type: 'application/json' });
+			var pokedexUrl = URL.createObjectURL(pokedexBlob);
+			var pokedexLink = document.createElement('a');
+			pokedexLink.href = pokedexUrl;
+			pokedexLink.download = 'pokedex-edit.json';
+			document.body.appendChild(pokedexLink);
+			pokedexLink.click();
+			document.body.removeChild(pokedexLink);
+			URL.revokeObjectURL(pokedexUrl);
+			
+			// Download learnsets-edit.json
+			var learnsetsBlob = new Blob([learnsetsJson], { type: 'application/json' });
+			var learnsetsUrl = URL.createObjectURL(learnsetsBlob);
+			var learnsetsLink = document.createElement('a');
+			learnsetsLink.href = learnsetsUrl;
+			learnsetsLink.download = 'learnsets-edit.json';
+			document.body.appendChild(learnsetsLink);
+			learnsetsLink.click();
+			document.body.removeChild(learnsetsLink);
+			URL.revokeObjectURL(learnsetsUrl);
 			
 			// Show success
-			$btn.html('<span style="color:green;">✓ Saved!</span>');
+			$btn.html('<span style="color:green;">✓ Files Downloaded!</span>');
 			setTimeout(function() {
 				$btn.html(originalText).prop('disabled', false);
 			}, 2000);
-			
-			// Update the global objects
-			BattlePokedexEdit[this.id] = pokemon;
-			LearnsetsEdit[this.id] = learnset;
 			
 		} catch(err) {
 			$btn.html('<span style="color:red;">Error saving</span>');
@@ -639,6 +648,10 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 			// Re-render to show the sorted list
 			this.renderFullLearnset();
 		}
+	},
+	preventMoveLevelClick: function(e) {
+		// Prevent the edit-move dialog from opening when clicking on level input
+		e.stopPropagation();
 	},
 	addMove: function(e) {
 		e.preventDefault();
