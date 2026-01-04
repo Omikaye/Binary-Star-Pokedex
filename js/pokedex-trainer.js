@@ -62,6 +62,45 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       Quiet: ['SpA', 'Spe'], Brave: ['Atk', 'Spe'], Relaxed: ['Def', 'Spe'], Sassy: ['SpD', 'Spe'],
       Bashful: null, Docile: null, Serious: null, Hardy: null, Quirky: null
     };
+    
+    // Helper function to check if a Pokemon has illegal ability or moves
+    var isIllegal = function(pokemon, speciesData) {
+      if (!speciesData) return false;
+      
+      // Check ability legality
+      if (pokemon.ability) {
+        var abilityLegal = false;
+        for (var slot in speciesData.abilities) {
+          if (speciesData.abilities[slot] === pokemon.ability) {
+            abilityLegal = true;
+            break;
+          }
+        }
+        if (!abilityLegal) return true;
+      }
+      
+      // Check move legality
+      if (pokemon.moves && pokemon.moves.length > 0) {
+        var speciesLearnset = window.Learnsets[speciesData.id] || [];
+        for (var j = 0; j < pokemon.moves.length; j++) {
+          var moveID = toID(pokemon.moves[j]);
+          var moveData = BattleMovedex[moveID];
+          if (!moveData) continue; // Skip unknown moves
+          
+          var moveLegal = false;
+          for (var k = 0; k < speciesLearnset.length; k++) {
+            if (toID(speciesLearnset[k].move) === moveID) {
+              moveLegal = true;
+              break;
+            }
+          }
+          if (!moveLegal) return true;
+        }
+      }
+      
+      return false;
+    };
+    
     for (var i = 0; i < (trainer.team || []).length; i++) {
       var m = trainer.team[i] || {};
       var dispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(m.name || '') : (m.name || '');
@@ -89,7 +128,9 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         spritesBlock += itemHref ? ('<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:-12px;position:relative;top:4px">' + itemIcon + '</a>') : ('<span style="margin-left:16px;position:relative;top:2px">' + itemIcon + '</span>');
       }
       buf += '<span style="display:inline-flex;align-items:center;gap:2px;margin-left:-8px">' + spritesBlock + '</span>';
-      var nameHtml = '<span style="font-size:14px">' + escapeHTML(monData ? monData.name : (m.name || '???')) + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
+      var illegal = isIllegal(m, monData);
+      var nameColor = illegal ? 'color:red;' : '';
+      var nameHtml = '<span style="font-size:14px;' + nameColor + '">' + escapeHTML(monData ? monData.name : (m.name || '???')) + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
       buf += '<span class="col namecol" style="min-width:200px">' + nameHtml + '</span>';
       buf += '</div>';
       // Types directly below the sprite block
