@@ -731,11 +731,12 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         this.shortTitle = trainer.name;
         // Get trainer sprite - pass full trainer name so it can check personal name first
         var trainerSprite = getTrainerIcon(trainer.name, true);
-        var buf = '<div class="pfx-body dexentry">';
-        buf += "<style>.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }.dexentry .movedesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }.dexentry .namecol { float: none !important; display: inline !important; padding-top: 0 !important; height: auto !important; }.trainer-sprite-inline { display: inline-block; width: 256px; height: 128px; margin-left: 12px; vertical-align: middle; transform: scale(0.5); transform-origin: center; position: relative; top: -4px; }.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; }.dexentry h1 a { display:inline-block; white-space:nowrap; vertical-align: middle; }</style>";
+        var buf = '<div class="pfx-body dexentry" style="position:relative;">';
+        buf += "<style>.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }.dexentry .movedesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }.dexentry .namecol { float: none !important; display: inline !important; padding-top: 0 !important; height: auto !important; }.trainer-sprite-bg { position: absolute; right: 0; top: 0; width: 256px; height: 128px; transform: scale(0.5); transform-origin: top right; opacity: 0.3; pointer-events: none; z-index: 0; }.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; position: relative; z-index: 1; }.dexentry h1 a { display:inline-block; white-space:nowrap; vertical-align: middle; }.dexentry > * { position: relative; z-index: 1; }</style>";
+        buf += '<div class="trainer-sprite-bg" style="' + trainerSprite + '"></div>';
         buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Trainers</a>';
-        // Trainer sprite inline with name
-        buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a><span class="trainer-sprite-inline" style="' + trainerSprite + '"></span></h1>';
+        // Trainer name without inline sprite
+        buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a></h1>';
         // Prize Money
         buf += '<dl>';
         buf += '<dt>Prize Money:</dt> <dd>$' + (trainer.prizeMoney || 0) + '</dd>';
