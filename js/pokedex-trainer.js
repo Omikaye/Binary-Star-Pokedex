@@ -23,6 +23,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     var buf = '<div class="pfx-body dexentry">';
     buf += '<style>' +
       '.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
+      '.dexentry .movedesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
       '.dexentry .namecol { float: none !important; display: inline !important; padding-top: 0 !important; height: auto !important; }' +
       '.trainer-sprite-inline { display: inline-block; width: 256px; height: 128px; margin-left: 12px; vertical-align: middle; transform: scale(0.5); transform-origin: center; position: relative; top: -4px; }' +
       '.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; }' +
