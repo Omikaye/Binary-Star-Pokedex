@@ -214,6 +214,12 @@ window.getTrainerClass = (trainerName) => {
   return parts[0];
 };
 
+// Helper function to build trainer sprite background CSS from URL
+const buildTrainerSpriteBackgroundFromUrl = (url, includeSize = true) => {
+  const base = `background:transparent url(${url}) no-repeat scroll right 32px top 0`;
+  return includeSize ? `${base}; width:512px; height:256px; background-size:128px 64px;` : base;
+};
+
 window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
   let classId = toID(trainerClassOrName);
   
@@ -225,7 +231,7 @@ window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
       const personalNameId = toID(parts[parts.length - 1]);
       // First check if we have a sprite link for this personal name
       if (TrainerSpriteLinks[personalNameId]) {
-        return `background:transparent url(${TrainerSpriteLinks[personalNameId]}) no-repeat scroll right 32px top 0; width:512px; height:256px; background-size:128px 64px;`;
+        return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId]);
       }
       // Then check old sprite sheet
       if (TrainerSprites[personalNameId]) {
@@ -239,7 +245,7 @@ window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
   
   // Check if we have a sprite link for the class
   if (TrainerSpriteLinks[classId]) {
-    return `background:transparent url(${TrainerSpriteLinks[classId]}) no-repeat scroll right 32px top 0; width:512px; height:256px; background-size:128px 64px;`;
+    return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId]);
   }
   
   // Force certain classes to use specific sprites (compat/mapping)
@@ -262,7 +268,7 @@ window.getTrainerBackground = (trainerClassOrName, checkPersonalName) => {
       const personalNameId = toID(parts[parts.length - 1]);
       // First check if we have a sprite link for this personal name
       if (TrainerSpriteLinks[personalNameId]) {
-        return `background:transparent url(${TrainerSpriteLinks[personalNameId]}) no-repeat scroll right 32px top 0`;
+        return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId], false);
       }
       // Then check old sprite sheet
       if (TrainerSprites[personalNameId]) {
@@ -275,7 +281,7 @@ window.getTrainerBackground = (trainerClassOrName, checkPersonalName) => {
   
   // Check if we have a sprite link for the class
   if (TrainerSpriteLinks[classId]) {
-    return `background:transparent url(${TrainerSpriteLinks[classId]}) no-repeat scroll right 32px top 0`;
+    return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId], false);
   }
   
   if (classId && classId.indexOf('lass') === 0 && !TrainerSprites[classId]) classId = 'risingstar';
