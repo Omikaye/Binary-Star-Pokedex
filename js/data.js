@@ -12,6 +12,7 @@ import Trainers from "../data/trainers.json";
 import TrainerNotes from "../data/trainer-notes.json";
 import LocationsJson from "../data/locations.json";
 import TrainerSprites from "../data/trainer-sprites.json";
+import TrainerSpriteLinks from "../data/trainer-sprite-links.json";
 // Import editable data copies for the Pokeedit feature
 import BattlePokedexEdit from "../data/pokedex-edit.json";
 import LearnsetsEdit from "../data/learnsets-edit.json";
@@ -33,6 +34,7 @@ window.Trainers = Trainers;
 window.TrainerNotes = TrainerNotes;
 window.Locations = LocationsJson.locations || [];
 window.TrainerSprites = TrainerSprites;
+window.TrainerSpriteLinks = TrainerSpriteLinks;
 // Expose editable data copies
 window.BattlePokedexEdit = BattlePokedexEdit;
 window.LearnsetsEdit = LearnsetsEdit;
@@ -212,6 +214,12 @@ window.getTrainerClass = (trainerName) => {
   return parts[0];
 };
 
+// Helper function to build trainer sprite background CSS from URL
+const buildTrainerSpriteBackgroundFromUrl = (url, includeSize = true) => {
+  const base = `background:transparent url(${url}) no-repeat scroll right 32px top 0`;
+  return includeSize ? `${base}; width:512px; height:256px; background-size:128px 64px;` : base;
+};
+
 window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
   let classId = toID(trainerClassOrName);
   
@@ -219,8 +227,13 @@ window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
   if (checkPersonalName && trainerClassOrName) {
     const parts = trainerClassOrName.trim().split(/\s+/);
     if (parts.length >= 2) {
-      // Check last word (personal name) - e.g., "Hau", "Olivia", "Joey"
+      // Check last word (personal name) - e.g., "Hau", "Gladion", "Olivia"
       const personalNameId = toID(parts[parts.length - 1]);
+      // First check if we have a sprite link for this personal name
+      if (TrainerSpriteLinks[personalNameId]) {
+        return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId]);
+      }
+      // Then check old sprite sheet
       if (TrainerSprites[personalNameId]) {
         classId = personalNameId;
       } else {
@@ -230,10 +243,16 @@ window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
     }
   }
   
+  // Check if we have a sprite link for the class
+  if (TrainerSpriteLinks[classId]) {
+    return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId]);
+  }
+  
   // Force certain classes to use specific sprites (compat/mapping)
   // 'lass' and its variants should use the risingstar sprite at -1,-6940
   if (classId && classId.indexOf('lass') === 0 && !TrainerSprites[classId]) classId = 'risingstar';
   
+  // Fall back to sprite sheet
   let [left, top] = TrainerSprites[classId] ?? [-1, -1];
   return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px; width:512px; height:256px; background-size:auto;`;
 };
@@ -247,12 +266,22 @@ window.getTrainerBackground = (trainerClassOrName, checkPersonalName) => {
     const parts = trainerClassOrName.trim().split(/\s+/);
     if (parts.length >= 2) {
       const personalNameId = toID(parts[parts.length - 1]);
+      // First check if we have a sprite link for this personal name
+      if (TrainerSpriteLinks[personalNameId]) {
+        return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId], false);
+      }
+      // Then check old sprite sheet
       if (TrainerSprites[personalNameId]) {
         classId = personalNameId;
       } else {
         classId = toID(getTrainerClass(trainerClassOrName));
       }
     }
+  }
+  
+  // Check if we have a sprite link for the class
+  if (TrainerSpriteLinks[classId]) {
+    return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId], false);
   }
   
   if (classId && classId.indexOf('lass') === 0 && !TrainerSprites[classId]) classId = 'risingstar';
