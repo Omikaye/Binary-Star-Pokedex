@@ -358,9 +358,9 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 			}).join('');
 			// Get trainer background for compact thumbnail (using full name to check personal name first)
 			const trainerBg = (typeof getTrainerBackground === 'function') ? getTrainerBackground(t.name, true) : getTrainerIcon(t.name, true);
-			// Small thumbnail showing the upper third of the large sprite, scaled down ~2x, moved down 30% to show heads
+			// Small thumbnail showing the upper third of the large sprite, scaled down ~30% more
 			const thumb = '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
-				'<div style="width:512px;height:256px;transform:scale(0.25);transform-origin:top left;'+ trainerBg + ';"></div>' +
+				'<div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;'+ trainerBg + ';"></div>' +
 			  '</div>';
 			buf += '<li class="result">' +
 				'<a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' +

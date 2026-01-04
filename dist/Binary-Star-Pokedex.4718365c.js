@@ -1089,8 +1089,8 @@ window.PokedexSearchPanel = Panels.Panel.extend({
             }).join('');
             // Get trainer background for compact thumbnail (using full name to check personal name first)
             const trainerBg = typeof getTrainerBackground === 'function' ? getTrainerBackground(t.name, true) : getTrainerIcon(t.name, true);
-            // Small thumbnail showing the upper third of the large sprite, scaled down ~2x, moved down 30% to show heads
-            const thumb = '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;"><div style="width:512px;height:256px;transform:scale(0.25);transform-origin:top left;' + trainerBg + ';"></div>' + '</div>';
+            // Small thumbnail showing the upper third of the large sprite, scaled down ~30% more
+            const thumb = '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;"><div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;' + trainerBg + ';"></div>' + '</div>';
             buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' + thumb + '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' + '</a>' + '</li>';
         }
         buf += '</ul>';
