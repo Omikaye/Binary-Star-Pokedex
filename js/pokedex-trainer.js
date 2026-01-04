@@ -20,25 +20,45 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     // Get trainer sprite - pass full trainer name so it can check personal name first
     var trainerSprite = getTrainerIcon(trainer.name, true);
 
-    var buf = '<div class="pfx-body dexentry">';
+    var buf = '<div class="pfx-body dexentry" style="position:relative;' + trainerSprite + 'background-position:right 32px top 0;background-size:128px 64px;">';
     buf += '<style>' +
       '.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
+      '.dexentry .movedesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
       '.dexentry .namecol { float: none !important; display: inline !important; padding-top: 0 !important; height: auto !important; }' +
-      '.trainer-sprite-inline { display: inline-block; width: 256px; height: 128px; margin-left: 12px; vertical-align: middle; transform: scale(0.5); transform-origin: center; position: relative; top: -4px; }' +
-      '.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; }' +
+      '.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; position: relative; z-index: 1; }' +
       '.dexentry h1 a { display:inline-block; white-space:nowrap; vertical-align: middle; }' +
+      '.dexentry > * { position: relative; z-index: 1; }' +
       '</style>';
     buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Trainers</a>';
     
-    // Trainer sprite inline with name
-    buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a><span class="trainer-sprite-inline" style="' + trainerSprite + '"></span></h1>';
+    // Trainer name without inline sprite
+    buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a></h1>';
 
     // Prize Money
     buf += '<dl>';
     buf += '<dt>Prize Money:</dt> <dd>$' + (trainer.prizeMoney || 0) + '</dd>';
 
-    // Location placeholder (link to locations root for now)
-    buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/" data-target="push">Coming soon</a></dd>';
+    // Location - find trainer's location from Locations data
+    var trainerLocation = null;
+    if (window.Locations) {
+      for (var i = 0; i < window.Locations.length; i++) {
+        var loc = window.Locations[i];
+        if (loc.trainers && loc.trainers.indexOf(norm) !== -1) {
+          trainerLocation = loc;
+          break;
+        }
+        if (loc.bossTrainers && loc.bossTrainers.indexOf(norm) !== -1) {
+          trainerLocation = loc;
+          break;
+        }
+      }
+    }
+    
+    if (trainerLocation) {
+      buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/' + trainerLocation.id + '" data-target="push">' + escapeHTML(trainerLocation.name) + '</a></dd>';
+    } else {
+      buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/" data-target="push">Coming soon</a></dd>';
+    }
     // Extra Notes (if present) — directly under Location within the same DL
     var notes = (window.TrainerNotes && window.TrainerNotes[norm] && window.TrainerNotes[norm].extraNotes) || '';
     if (typeof notes === 'string' && notes.trim().length) {
@@ -62,6 +82,45 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       Quiet: ['SpA', 'Spe'], Brave: ['Atk', 'Spe'], Relaxed: ['Def', 'Spe'], Sassy: ['SpD', 'Spe'],
       Bashful: null, Docile: null, Serious: null, Hardy: null, Quirky: null
     };
+    
+    // Helper function to check if a Pokemon has illegal ability or moves
+    var isIllegal = function(pokemon, speciesData) {
+      if (!speciesData) return false;
+      
+      // Check ability legality
+      if (pokemon.ability) {
+        var abilityLegal = false;
+        for (var slot in speciesData.abilities) {
+          if (speciesData.abilities[slot] === pokemon.ability) {
+            abilityLegal = true;
+            break;
+          }
+        }
+        if (!abilityLegal) return true;
+      }
+      
+      // Check move legality
+      if (pokemon.moves && pokemon.moves.length > 0) {
+        var speciesLearnset = window.Learnsets[speciesData.id] || [];
+        for (var j = 0; j < pokemon.moves.length; j++) {
+          var moveID = toID(pokemon.moves[j]);
+          var moveData = BattleMovedex[moveID];
+          if (!moveData) continue; // Skip unknown moves
+          
+          var moveLegal = false;
+          for (var k = 0; k < speciesLearnset.length; k++) {
+            if (toID(speciesLearnset[k].move) === moveID) {
+              moveLegal = true;
+              break;
+            }
+          }
+          if (!moveLegal) return true;
+        }
+      }
+      
+      return false;
+    };
+    
     for (var i = 0; i < (trainer.team || []).length; i++) {
       var m = trainer.team[i] || {};
       var dispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(m.name || '') : (m.name || '');
@@ -89,7 +148,9 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         spritesBlock += itemHref ? ('<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:-12px;position:relative;top:4px">' + itemIcon + '</a>') : ('<span style="margin-left:16px;position:relative;top:2px">' + itemIcon + '</span>');
       }
       buf += '<span style="display:inline-flex;align-items:center;gap:2px;margin-left:-8px">' + spritesBlock + '</span>';
-      var nameHtml = '<span style="font-size:14px">' + escapeHTML(monData ? monData.name : (m.name || '???')) + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
+      var illegal = isIllegal(m, monData);
+      var nameColor = illegal ? 'color:red;' : '';
+      var nameHtml = '<span style="font-size:14px;' + nameColor + '">' + escapeHTML(monData ? monData.name : (m.name || '???')) + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
       buf += '<span class="col namecol" style="min-width:200px">' + nameHtml + '</span>';
       buf += '</div>';
       // Types directly below the sprite block

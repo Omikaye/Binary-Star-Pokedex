@@ -753,8 +753,8 @@ window.PokedexSearchPanel = Panels.Panel.extend({
         buf += '<li><button class="button' + (fragment === 'items/' ? ' cur' : '') + '" value="' + Config.baseurl + 'items/">Items</button></li>';
         buf += '<li><button class="button' + (fragment === 'mechanics/' ? ' cur' : '') + '" value="' + Config.baseurl + 'mechanics/">Mechanics</button></li>';
         buf += '<li><button class="button' + (fragment === 'locations/' ? ' cur' : '') + '" value="' + Config.baseurl + 'locations/">Locations</button></li>';
-        buf += '<li><button class="button' + (fragment === 'trainers/' ? ' cur' : '') + '" value="' + Config.baseurl + 'trainers/">Trainers</button></li>';
-        buf += '<li><button class="button nav-last' + (fragment === 'pokeedit/' ? ' cur' : '') + '" value="' + Config.baseurl + 'pokeedit/">Pok&eacute;edit</button></li></ul>';
+        buf += '<li><button class="button nav-last' + (fragment === 'trainers/' ? ' cur' : '') + '" value="' + Config.baseurl + 'trainers/">Trainers</button></li>';
+        buf += '<li style="display:none"><button class="button' + (fragment === 'pokeedit/' ? ' cur' : '') + '" value="' + Config.baseurl + 'pokeedit/">Pok&eacute;edit</button></li></ul>';
         buf += '<div class="searchboxwrapper"><input class="textbox searchbox" type="search" name="q" value="' + escapeHTML(this.$('.searchbox').val() || '') + '" autocomplete="off" autofocus placeholder="Search Pok&eacute;mon, moves, abilities, items, types, or more" /></div>';
         if (fragment === '') buf += '<p class="buttonbar"><button class="button"><strong>Pok&eacute;dex Search</strong></button> <button name="lucky" class="button">I\'m Feeling Lucky</button></p>';
         buf += '</form>';
@@ -1089,8 +1089,8 @@ window.PokedexSearchPanel = Panels.Panel.extend({
             }).join('');
             // Get trainer background for compact thumbnail (using full name to check personal name first)
             const trainerBg = typeof getTrainerBackground === 'function' ? getTrainerBackground(t.name, true) : getTrainerIcon(t.name, true);
-            // Small thumbnail showing the upper third of the large sprite, scaled down ~2x
-            const thumb = '<div style="position:absolute;left:-30px;top:-30px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;"><div style="width:512px;height:256px;transform:scale(0.25);transform-origin:top left;' + trainerBg + ';"></div>' + '</div>';
+            // Small thumbnail showing the upper third of the large sprite, scaled down ~30% more
+            const thumb = '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;"><div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;' + trainerBg + ';"></div>' + '</div>';
             buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' + thumb + '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' + '</a>' + '</li>';
         }
         buf += '</ul>';
