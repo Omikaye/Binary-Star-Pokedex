@@ -20,7 +20,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     // Get trainer sprite - pass full trainer name so it can check personal name first
     var trainerSprite = getTrainerIcon(trainer.name, true);
 
-    var buf = '<div class="pfx-body dexentry" style="position:relative;' + trainerSprite + 'background-position:right 32px top 0;background-size:128px 64px;">';
+    var buf = '<div class="pfx-body dexentry" style="position:relative;' + trainerSprite + '">';
     buf += '<style>' +
       '.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
       '.dexentry .movedesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +

@@ -217,7 +217,7 @@ window.getTrainerClass = (trainerName) => {
 // Helper function to build trainer sprite background CSS from URL
 const buildTrainerSpriteBackgroundFromUrl = (url, includeSize = true) => {
   const base = `background:transparent url(${url}) no-repeat scroll right 32px top 0`;
-  return includeSize ? `${base}; width:512px; height:256px; background-size:128px 64px;` : base;
+  return includeSize ? `${base}; background-size:auto;` : base;
 };
 
 window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
