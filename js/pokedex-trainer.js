@@ -38,8 +38,27 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     buf += '<dl>';
     buf += '<dt>Prize Money:</dt> <dd>$' + (trainer.prizeMoney || 0) + '</dd>';
 
-    // Location placeholder (link to locations root for now)
-    buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/" data-target="push">Coming soon</a></dd>';
+    // Location - find trainer's location from Locations data
+    var trainerLocation = null;
+    if (window.Locations) {
+      for (var i = 0; i < window.Locations.length; i++) {
+        var loc = window.Locations[i];
+        if (loc.trainers && loc.trainers.indexOf(norm) !== -1) {
+          trainerLocation = loc;
+          break;
+        }
+        if (loc.bossTrainers && loc.bossTrainers.indexOf(norm) !== -1) {
+          trainerLocation = loc;
+          break;
+        }
+      }
+    }
+    
+    if (trainerLocation) {
+      buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/' + trainerLocation.id + '" data-target="push">' + escapeHTML(trainerLocation.name) + '</a></dd>';
+    } else {
+      buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/" data-target="push">Coming soon</a></dd>';
+    }
     // Extra Notes (if present) — directly under Location within the same DL
     var notes = (window.TrainerNotes && window.TrainerNotes[norm] && window.TrainerNotes[norm].extraNotes) || '';
     if (typeof notes === 'string' && notes.trim().length) {
