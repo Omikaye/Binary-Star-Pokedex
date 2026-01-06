@@ -141,6 +141,13 @@ function loadJSON(path) {
       Config,
       BaseGameStats,
       ItemPokemonLinks,
+      Trainers,
+      TrainerNotes,
+      LocationsJson,
+      TrainerSprites,
+      TrainerSpriteLinks,
+      BattlePokedexEdit,
+      LearnsetsEdit,
     ] = await Promise.all([
       loadJSON('data/pokedex.json'),
       loadJSON('data/moves.json'),
@@ -152,6 +159,13 @@ function loadJSON(path) {
       loadJSON('data/config.json').catch(() => ({ baseurl: '/Binary-Star-Pokedex/' })),
       loadJSON('data/basegame.json').catch(() => ({})),
       loadJSON('data/item-pokemon-links.json').catch(() => ({})),
+      loadJSON('data/trainers.json').catch(() => ({})),
+      loadJSON('data/trainer-notes.json').catch(() => ({})),
+      loadJSON('data/locations.json').catch(() => ({ locations: [] })),
+      loadJSON('data/trainer-sprites.json').catch(() => ({})),
+      loadJSON('data/trainer-sprite-links.json').catch(() => ({})),
+      loadJSON('data/pokedex-edit.json').catch(() => ({})),
+      loadJSON('data/learnsets-edit.json').catch(() => ({})),
     ]);
 
     // Attach to window exactly as the app expects.
@@ -167,6 +181,13 @@ function loadJSON(path) {
     window.BaseGameStats = BaseGameStats || {};
     window.ItemPokemonLinks = ItemPokemonLinks || {};
     window.Icons = Icons || {};
+    window.Trainers = Trainers || {};
+    window.TrainerNotes = TrainerNotes || {};
+    window.Locations = LocationsJson?.locations || [];
+    window.TrainerSprites = TrainerSprites || {};
+    window.TrainerSpriteLinks = TrainerSpriteLinks || {};
+    window.BattlePokedexEdit = BattlePokedexEdit || {};
+    window.LearnsetsEdit = LearnsetsEdit || {};
 
     // Now import the data initializer (which expects window.*) and the app modules
     // Use dynamicImportWithFallback for robustness across different deployment scenarios
