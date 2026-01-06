@@ -1,0 +1,391 @@
+.utilichart, .utilichart li {
+  clear: both;
+  word-wrap: normal;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: block;
+}
+
+.utilichart li > a, .utilitychart li > div {
+  border: 1px solid #0000;
+  height: 30px;
+  margin: 0 5px 1px;
+  padding: 0 0 0 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.utilichart li > a.cur {
+  background: #f2f2f2;
+  border-color: #ccc;
+}
+
+.utilichart .filter, .searchboxwrapper .filter {
+  color: #000;
+  cursor: pointer;
+  background: #eee;
+  border: 1px solid #777;
+  border-radius: 3px;
+  padding: 1px 3px;
+  font-family: Verdana, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+.utilichart .filter:hover, .searchboxwrapper .filter:hover {
+  color: #777;
+  text-decoration: line-through;
+}
+
+.searchboxwrapper .filter.noclear:hover {
+  color: #000;
+  cursor: default;
+  text-decoration: none;
+}
+
+.utilichart .filter i, .searchboxwrapper .filter i {
+  color: #999;
+}
+
+.utilichart .filter:hover i, .searchboxwrapper .filter:hover i {
+  color: #b22;
+}
+
+.resultheader, .utilichart li.resultheader, .utilichart .result {
+  height: 32px;
+  padding: 1px 0 0;
+}
+
+.result p, .resultheader p, .utilichart .result p {
+  margin: 0;
+  padding: 7px 0 0 8px;
+}
+
+.utilichart h3, .dexentry h3, .resultheader h3 {
+  color: #000;
+  text-shadow: 1px 1px #fff9;
+  background: #dae5f0;
+  border: 1px solid #aaa;
+  margin: 5px 0 0 -1px;
+  padding: 3px 8px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  box-shadow: inset 1px 1px #fff9;
+}
+
+.utilichart li > em {
+  padding: 0 8px;
+  font-size: 10pt;
+  display: block;
+}
+
+.utilichart .col {
+  float: left;
+  color: #444;
+  height: 22px;
+  padding-top: 7px;
+  font-size: 9pt;
+}
+
+.utilichart .iconcol {
+  width: 40px;
+  height: 30px;
+  padding-top: 0;
+}
+
+.utilichart .iconcol span {
+  background: 0 -8px no-repeat;
+  width: 40px;
+  height: 30px;
+  display: block;
+}
+
+.utilichart .itemiconcol {
+  width: 24px;
+  height: 27px;
+  padding-top: 3px;
+}
+
+.utilichart .itemiconcol span {
+  background: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.utilichart .numcol {
+  text-align: right;
+  color: #999;
+  white-space: nowrap;
+  width: 24px;
+  padding-top: 8px;
+  padding-right: 5px;
+  font-size: 8pt;
+}
+
+.utilichart .statcol, .utilichart .bstcol, .utilichart .labelcol, .utilichart .widelabelcol, .utilichart .pplabelcol {
+  text-align: right;
+  width: 24px;
+  height: 28px;
+  padding-top: 1px;
+  font-size: 8pt;
+}
+
+.utilichart .labelcol {
+  text-align: center;
+  width: 30px;
+  margin-left: -2px;
+}
+
+.utilichart .widelabelcol {
+  text-align: center;
+  width: 50px;
+}
+
+.utilichart .pplabelcol {
+  text-align: center;
+  width: 18px;
+  padding-right: 5px;
+}
+
+.utilichart .bstcol {
+  padding-left: 2px;
+}
+
+.utilichart .labelcol em, .utilichart .widelabelcol em, .utilichart .pplabelcol em, .utilichart .statcol em, .utilichart .bstcol em {
+  color: #999;
+  font-size: 7pt;
+  font-style: normal;
+}
+
+.utilichart .stattitlecol {
+  text-align: right;
+  color: #999;
+  width: 20px;
+  padding-top: 2px;
+  font-size: 7pt;
+}
+
+.utilichart .namecol {
+  color: #000;
+  width: 120px;
+  height: 23px;
+  padding-top: 6px;
+  font-size: 10pt;
+}
+
+.utilichart .pokemonnamecol {
+  color: #000;
+  white-space: nowrap;
+  width: 127px;
+  height: 23px;
+  padding-top: 6px;
+  font-size: 10pt;
+}
+
+.utilichart .shortpokemonnamecol {
+  color: #000;
+  white-space: nowrap;
+  width: 118px;
+  height: 23px;
+  padding-top: 6px;
+  font-size: 10pt;
+}
+
+.utilichart .movenamecol {
+  color: #000;
+  width: 152px;
+  height: 23px;
+  padding-top: 6px;
+  font-size: 10pt;
+}
+
+.utilichart .shortmovenamecol {
+  color: #000;
+  width: 112px;
+  height: 23px;
+  padding-top: 6px;
+  font-size: 10pt;
+}
+
+.utilichart .tagcol {
+  text-align: center;
+  color: #000;
+  border-right: 1px solid #ccc;
+  width: 34px;
+  height: 24px;
+  margin-right: 5px;
+  padding-top: 6px;
+  font-size: 10pt;
+}
+
+.utilichart .tagcol.shorttagcol {
+  margin-right: 1px;
+}
+
+.utilichart .typecol {
+  width: 70px;
+}
+
+.utilichart .abilitycol {
+  text-align: center;
+  white-space: nowrap;
+  width: 86px;
+  height: 21px;
+  padding-top: 8px;
+  font-size: 8pt;
+}
+
+.utilichart .twoabilitycol {
+  text-align: center;
+  white-space: nowrap;
+  width: 86px;
+  height: 28px;
+  padding-top: 1px;
+  font-size: 8pt;
+}
+
+.utilichart .hacol {
+  font-style: italic;
+}
+
+.utilichart .unreleasedhacol {
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+.utilichart b {
+  color: #48c;
+  text-decoration: underline;
+}
+
+.utilichart small {
+  font-size: 8pt;
+}
+
+.utilichart small b {
+  font-weight: normal;
+}
+
+.utilichart .illegalcol em {
+  color: #a22;
+  border: 1px solid #a22;
+  border-radius: 4px;
+  height: auto;
+  padding: 2px 4px;
+}
+
+.utilichart .filtercol em {
+  color: #2a2;
+  border: 1px solid #2a2;
+  border-radius: 4px;
+  height: auto;
+  padding: 2px 4px;
+}
+
+.utilichart .typecol img {
+  opacity: .6;
+  margin-right: 1px;
+}
+
+.utilichart .typecol img.b {
+  opacity: 1;
+  outline-offset: 0;
+  background: #48c;
+  outline: 1px solid #48c;
+}
+
+.utilichart .itemdesccol, .utilichart .abilitydesccol, .utilichart .movedesccol {
+  white-space: nowrap;
+  color: #777;
+  width: 488px;
+  height: 21px;
+  padding-top: 8px;
+  font-size: 8pt;
+  overflow: hidden;
+}
+
+.utilichart .movedesccol {
+  width: 284px;
+}
+
+.utilichart .itemdesccol {
+  width: 464px;
+}
+
+.utilichart .sortrow {
+  color: #000;
+  background: #d0d0d0;
+  border-bottom: 1px solid #888;
+  height: 20px;
+}
+
+.utilichart .sortcol {
+  color: #000;
+  float: left;
+  text-align: center;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  height: 20px;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  font-size: 8pt;
+}
+
+.utilichart .sortcol.cur {
+  background: #e0e0e0;
+  font-weight: bold;
+}
+
+.utilichart .sortcol:hover {
+  background: #f0f0f0;
+}
+
+.utilichart .sortcol.numsortcol.cur, .utilichart .sortcol.numsortcol.cur:hover {
+  cursor: default;
+  background: #d0d0d0;
+}
+
+.utilichart .numsortcol {
+  width: 80px;
+}
+
+.utilichart .pnamesortcol {
+  width: 127px;
+}
+
+.utilichart .typesortcol {
+  width: 70px;
+}
+
+.utilichart .abilitysortcol {
+  width: 172px;
+}
+
+.utilichart .statsortcol {
+  text-align: right;
+  width: 24px;
+}
+
+.utilichart .movenamesortcol {
+  width: 159px;
+}
+
+.utilichart .movetypesortcol {
+  width: 35px;
+}
+
+.utilichart .powersortcol {
+  width: 30px;
+}
+
+.utilichart .accuracysortcol {
+  width: 49px;
+}
+
+.utilichart .ppsortcol {
+  width: 23px;
+}
+/*# sourceMappingURL=Binary-Star-Pokedex.7d116615.css.map */
