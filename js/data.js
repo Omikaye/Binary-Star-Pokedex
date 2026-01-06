@@ -12,7 +12,6 @@ const BaseGameStats = window.BaseGameStats;
 const ItemPokemonLinks = window.ItemPokemonLinks;
 const Trainers = window.Trainers;
 const TrainerNotes = window.TrainerNotes;
-const LocationsJson = { locations: window.Locations };
 const TrainerSprites = window.TrainerSprites;
 const TrainerSpriteLinks = window.TrainerSpriteLinks;
 const BattlePokedexEdit = window.BattlePokedexEdit;

@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "Pokémon Showdown Dex ========================================================================",
   "alias": {
-    "jquery": "jquery",
-    "underscore": "underscore",
     "backbone": "./js/vendor/backbone-compat.js"
   },
   "scripts": {
