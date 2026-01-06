@@ -3,3 +3,23 @@
 node_modules
 .DS_Store
 .parcel-cache
+dist
+
+# Prevent parcel build artifacts from being committed to root
+/*.js
+/*.js.map
+/*.css
+/*.css.map
+/*.png
+/*.ttf
+/*.eot
+/*.woff
+/*.woff2
+/*.svg
+!favicon.ico
+!pokemonshowdownbeta.png
+
+# But allow the source directories
+!/js/**
+!/theme/**
+!/images/**
