@@ -50,6 +50,10 @@
 	max-width: 640px;
 }
 
+.pfx-body.dexentry {
+	max-width: 100%;
+}
+
 .dexentry h1 {
 	text-align: left;
 	padding: 18px 12px 6px;

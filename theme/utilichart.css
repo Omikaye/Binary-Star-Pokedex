@@ -9,7 +9,8 @@
 
 .utilichart li > a, .utilitychart li > div {
 	display: block;
-	height: 30px;
+	height: auto;
+	min-height: 30px;
 	padding: 0 0 0 4px;
 	border: 1px solid transparent;
 	margin: 0 5px 1px 5px;
@@ -52,7 +53,8 @@
 .resultheader,
 .utilichart li.resultheader,
 .utilichart .result {
-	height: 32px;
+	height: auto;
+	min-height: 32px;
 	padding: 1px 0 0 0;
 }
 .result p,
@@ -277,19 +279,26 @@
 .utilichart .itemdesccol,
 .utilichart .abilitydesccol,
 .utilichart .movedesccol {
-	white-space: nowrap;
+	white-space: normal;
 	padding-top: 8px;
 	font-size: 8pt;
-	width: 488px;
-	height: 21px;
-	overflow: hidden;
+	min-width: 284px;
+	max-width: 488px;
+	height: auto;
+	overflow: visible;
 	color: #777777;
 }
 .utilichart .movedesccol {
-	width: 284px;
+	min-width: 284px;
+	max-width: 284px;
 }
 .utilichart .itemdesccol {
-	width: 464px;
+	min-width: 464px;
+	max-width: 464px;
+}
+.utilichart .abilitydesccol {
+	min-width: 488px;
+	max-width: 488px;
 }
 
 .utilichart .sortrow {

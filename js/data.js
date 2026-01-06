@@ -221,70 +221,72 @@ const buildTrainerSpriteBackgroundFromUrl = (url, includeSize = true) => {
 };
 
 window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
+  // First, try to get the trainer class (everything except last word)
   let classId = toID(trainerClassOrName);
   
-  // If checkPersonalName is true, try to extract and check the personal name first
   if (checkPersonalName && trainerClassOrName) {
     const parts = trainerClassOrName.trim().split(/\s+/);
     if (parts.length >= 2) {
-      // Check last word (personal name) - e.g., "Hau", "Gladion", "Olivia"
+      // First check trainer class (e.g., "Youngster" from "Youngster Kevin")
+      classId = toID(getTrainerClass(trainerClassOrName));
+      
+      // Check if we have a sprite link for this class
+      if (TrainerSpriteLinks[classId]) {
+        return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId]);
+      }
+      
+      // If no class match, check personal name (last word) - e.g., "Hau", "Gladion", "Olivia"
       const personalNameId = toID(parts[parts.length - 1]);
-      // First check if we have a sprite link for this personal name
       if (TrainerSpriteLinks[personalNameId]) {
         return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId]);
       }
-      // Then check old sprite sheet
-      if (TrainerSprites[personalNameId]) {
-        classId = personalNameId;
-      } else {
-        // Fall back to class name
-        classId = toID(getTrainerClass(trainerClassOrName));
-      }
+      
+      // No match found, return empty
+      return '';
     }
   }
   
-  // Check if we have a sprite link for the class
+  // Check if we have a sprite link for the class/name
   if (TrainerSpriteLinks[classId]) {
     return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId]);
   }
   
-  // Force certain classes to use specific sprites (compat/mapping)
-  // 'lass' and its variants should use the risingstar sprite at -1,-6940
-  if (classId && classId.indexOf('lass') === 0 && !TrainerSprites[classId]) classId = 'risingstar';
-  
-  // Fall back to sprite sheet
-  let [left, top] = TrainerSprites[classId] ?? [-1, -1];
-  return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px; width:512px; height:256px; background-size:auto;`;
+  // No image found, return empty
+  return '';
 };
 
 // Returns only the background image/position for use in compact thumbnails
 window.getTrainerBackground = (trainerClassOrName, checkPersonalName) => {
+  // First, try to get the trainer class (everything except last word)
   let classId = toID(trainerClassOrName);
   
-  // If checkPersonalName is true, try to extract and check the personal name first
   if (checkPersonalName && trainerClassOrName) {
     const parts = trainerClassOrName.trim().split(/\s+/);
     if (parts.length >= 2) {
+      // First check trainer class (e.g., "Youngster" from "Youngster Kevin")
+      classId = toID(getTrainerClass(trainerClassOrName));
+      
+      // Check if we have a sprite link for this class
+      if (TrainerSpriteLinks[classId]) {
+        return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId], false);
+      }
+      
+      // If no class match, check personal name (last word) - e.g., "Hau", "Gladion", "Olivia"
       const personalNameId = toID(parts[parts.length - 1]);
-      // First check if we have a sprite link for this personal name
       if (TrainerSpriteLinks[personalNameId]) {
         return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId], false);
       }
-      // Then check old sprite sheet
-      if (TrainerSprites[personalNameId]) {
-        classId = personalNameId;
-      } else {
-        classId = toID(getTrainerClass(trainerClassOrName));
-      }
+      
+      // No match found, return empty
+      return '';
     }
   }
   
-  // Check if we have a sprite link for the class
+  // Check if we have a sprite link for the class/name
   if (TrainerSpriteLinks[classId]) {
     return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId], false);
   }
   
-  if (classId && classId.indexOf('lass') === 0 && !TrainerSprites[classId]) classId = 'risingstar';
-  let [left, top] = TrainerSprites[classId] ?? [-1, -1];
-  return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px`;
+  // No image found, return empty
+  return '';
 };
