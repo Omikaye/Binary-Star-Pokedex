@@ -8,8 +8,10 @@ let dest = argv[2];
 // Let Parcel handle creating and clearing the dist folder
 execSync(`npx parcel build --dist-dir ${dest} --public-url ${config.baseurl} ./index.html`)
 
-// Copy images after Parcel is done
+// Copy static assets after Parcel is done
 cpSync("images", `./${dest}/images`, {recursive: true})
+cpSync("data", `./${dest}/data`, {recursive: true})
+cpSync("js", `./${dest}/js`, {recursive: true})
 
 // Create 404.html for GitHub Pages SPA routing
 if (existsSync(`./${dest}/index.html`)) {
