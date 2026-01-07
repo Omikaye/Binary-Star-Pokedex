@@ -91,7 +91,7 @@ Encounters: {
 Grass: (Levels 7-10): Grimer 1 (10%, Grimer), Meowth 1 (10%, Meowth), Caterpie (10%, Scatterbug), Bellsprout (10%), Drifloon (10%, Swirlix), Scraggy (10%), Bonsly (10%), Magnemite (10%), Chikorita (10%, Pansage), Zorua (10%)
 }
 Gifts/Trades: None
-Static Pokemon: None
+Static Pokemon: Quest Gastly, Quest Drifloon
 Trainers: (021, 022, 024, 436, 567)
 Boss Trainers: (485, 486, 487, 396, 361, 380, 386, 502)
 Shops: {
@@ -115,10 +115,10 @@ Great Ball ×5	2F, from Teacher Emily after defeating her
 King's Rock	3F, from Principal Asuka for defeating her, after becoming Champion
 }
 
-Name: ""
-Extra Notes: ""
+Name: "Hau'oli Beach"
+Extra Notes: "This area was formerly part of Hau'oli City, but was renamed and is now seperate."
 Encounters: {
-None
+Surf: (Levels 22-27): Tentacool (10%), Wingull (10%), Mantyke (10%, Remoraid), Wartortle (10%, Squirtle), Slowpoke (10%), Luvdisc (10%), Krabby (10%), Shellder (10%), Pyukumuku (10%), Remoraid (10%)
 }
 Gifts/Trades: None
 Static Pokemon: None
@@ -128,26 +128,67 @@ Shops: {
 None
 }
 Items: {
-None
+Potion	From a woman northeast of the yellow truck
+Protective Pads x 10	Next to the southeastern ramp to the beach
+Lure Ball x 100	On the beach, by the palm tree behind the woman in the lounge chair (hidden) (regenerates occasionally)
+Dive Ball x 100	On the beach, by the northwestern-most palm tree (hidden) (regenerates occasionally)
+Luminous Moss	Received from a Beauty by helping her Corsola on the beach next to the southeastern ramp, after clearing Lana's trial
+Icicle Plate	On the coastline in front of the southeast stairwell, after defeating Nanu (hidden)
 }
 
-Name: ""
-Extra Notes: ""
+Name: "Hau'oli City"
+Extra Notes: "Scatterbug here evolve into Modern Pattern Vivillon | The Move Deleter is located here, in the Pokemon Center."
 Encounters: {
-None
+Grass: Pidove (15%, Scatterbug),	Tyrogue (10%),	Purrloin (10%, Poochyena),	Munchlax (10%),	Glameow (10%, Snubbull),	Chingling (10%, Burmy),	Klink (10%, Trubbish),	Voltorb (10%, Joltik),	Abra (10%, Bronzor),	Furfrou (5%)
 }
 Gifts/Trades: None
-Static Pokemon: None
-Trainers: ()
-Boss Trainers: ()
+Static Pokemon: Quest Hypnos, Quest Bewear
+Trainers: (47, 563, 172, 175, 187, 189, 192, 194, 196, 198, 205, 207, 209, 213, 431, 433)
+Boss Trainers: (52, 215, 216)
 Shops: {
-None
+Smoke Ball	$1,120
+Cleanse Tag	$770
+Sticky Barb	$1,800
+Lagging Tail	$2,220
+Quick Claw	$2,000
+Binding Band	$3,300
+Zoom Lens	$2,040
+Audinite	$41,000
 }
 Items: {
-None
+Nidogram	Alola Tourist Bureau, from the attendant in the Alola Tourist Bureau when visited for the first time
+Ultra Ball ×10	Alola Tourist Bureau, from a Scientist in the if the player has ten different Pokémon registered as owned in their Pokédex
+Lens Case	Outside the apparel shop, from Lillie
+Makeup Bag	Outside the apparel shop, from Lillie (if the player is female)
+Silk Scarf	From a woman outside the apparel shop
+Ring Target x 10	In the southeast corner of the fenced area behind the Malasada Shop
+Heal Ball	From the Sightseer in front of the Pokémon Center
+$10,000	Pokémon Center, from a Beauty if the player has Abra registered in their Pokédex as Caught
+Float Stone x 10	In the gated area opposite the Pokémon Center
+Micle Berry x 900	At the north end of the front yard of Ilima's house
+Lumiose Galette	Ilima's house, from his mom in the kitchen
+Revive	Hau'oli City Hall, from a woman with a Pyukumuku
+Love Ball x 100	East of the lamppost next to the two bushes east of the entrance to Hau'oli City Hall (hidden)
+TM49 (Round)	In the gated area opposite the Police Station
+Revive ×3	Near the Pokémon Center, from Lillie after defeating Ilima
+Gracidea	Shopping Mall, from the woman standing to the cashier's right in the Gracidea Apparel Shop
+Great Ball ×5	Shopping Mall, from an Ace Trainer for watching the Alola Ride Show completely (Day)
+TM48 (Snarl)	Shopping Mall, from the Janitor after cleaning up all the trash (Night)
+Nugget	Hau'oli City Hall, from Gentleman Reginald after defeating him, after completing Hala's grand trial
+Shell Bell	Hau'oli City Hall, from a Delibird after speaking to the woman at the front desk, after completing Hala's grand trial
+Photo Album	Alola Photo Club, from the attendant after visiting for the first time
+Max Potion	Shopping Mall, from an Ace Trainer after dealing with the Bewear disturbance in the Bewear costume show, after completing Olivia's grand trial and seeing the Alola Ride Show (Day)
+Big Nugget	Hau'oli Police Station, from Ilima as a reward for helping him solve the Hypno mystery, after completing Olivia's grand trial
+Insect Plate	In the front left of the salon, after completing Nanu's grand trial (hidden)
+Toxic Plate	In front of the palm tree that is at the northwest corner of the Pokémon Center, after completing Nanu's grand trial (hidden)
+Meadow Plate	To the right of the three trees southwest of Hau'oli City Hall, after completing Nanu's grand trial (hidden)
+Draco Plate	In front of the police car, after completing Nanu's grand trial (hidden)
+Bottle Cap	Shopping Mall, held by gift Magearna, after becoming Champion
+Everstone	Ilima's house, from Ilima after defeating him at the Trainers' School, after becoming Champion
+Ilima's Normalium Z	Ilima's house, from Ilima after defeating him at the Trainers' School, after becoming Champion
 }
 
-Name: ""
+Name: "Hau'oli Marina"
 Extra Notes: ""
 Encounters: {
 None
@@ -160,7 +201,10 @@ Shops: {
 None
 }
 Items: {
-None
+X Attack	From a man at the corner of the Ferry Terminal
+X Defense	From a woman at the corner of the Ferry Terminal
+Grip Claw x 10	At the end of the dock
+Fresh Water	From the lady in the Ferry Terminal after Rotom fixes the vending machine, after completing Hala's grand trial
 }
 
 Name: ""
