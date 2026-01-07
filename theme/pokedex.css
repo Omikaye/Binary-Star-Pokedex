@@ -47,7 +47,7 @@
 }
 
 .pfx-body {
-	max-width: 640px;
+	max-width: none;
 }
 
 .dexentry h1 {

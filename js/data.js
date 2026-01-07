@@ -201,16 +201,31 @@ window.getTrainerClass = (trainerName) => {
   // Extract trainer class from full name (e.g., "Lass Madison" -> "Lass")
   if (!trainerName) return "";
   const parts = trainerName.trim().split(/\s+/);
-  // Return everything except the last word (which is usually the trainer's personal name)
-  // Handle special cases like "Team Skull Grunt"
+  
+  // Single word - return as is
   if (parts.length === 1) return parts[0];
-  if (parts.length === 2) return parts[0];
-  // For 3+ words, check if it's a known multi-word class
-  const multiWordClasses = ["Team Skull Grunt", "Aether Employee", "Rainbow Rocket Grunt", "Rising Star", "Ace Trainer", "Z-Ace Trainer", "Black Belt", "Z-Black Belt", "Office Worker", "Police Officer", "Young Athlete", "Trial Guide", "Z-Trial Guide", "Ultra Forest", "Masked Royal", "Youngster Amulet"];
+  
+  // Multi-word trainer names - check if any prefix matches a known class
+  // Handle special cases like "Team Skull Grunt", "Aether Employee", "Rainbow Rocket Grunt"
+  const multiWordClasses = [
+    "Team Skull Grunt", "Aether Employee", "Rainbow Rocket Grunt", "Rising Star", 
+    "Ace Trainer", "Z-Ace Trainer", "Black Belt", "Z-Black Belt", "Office Worker", 
+    "Police Officer", "Young Athlete", "Trial Guide", "Z-Trial Guide", "Ultra Forest", 
+    "Masked Royal", "Youngster Amulet", "Youth Athlete", "Swim Gal", "Punk Guy", 
+    "Punk Girl", "Skull Gang Grunt", "Athlete In-Training", "Up and Coming", 
+    "Aether Foundation", "Aether Scientist", "Pokemon Rancher", "Pokemon Breeder"
+  ];
+  
+  // Check if any multi-word class matches the beginning of trainerName
   for (let cls of multiWordClasses) {
-    if (trainerName.startsWith(cls)) return cls;
+    if (trainerName.toLowerCase().startsWith(cls.toLowerCase())) return cls;
   }
-  // Default: return first word
+  
+  // Default: return all but last word for 2+ word names (last word is personal name)
+  if (parts.length >= 2) {
+    return parts.slice(0, -1).join(" ");
+  }
+  
   return parts[0];
 };
 
@@ -221,10 +236,12 @@ const buildTrainerSpriteBackgroundFromUrl = (url, includeSize = true) => {
 };
 
 window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
+  if (!trainerClassOrName) return 'background:transparent';
+  
   let classId = toID(trainerClassOrName);
   
   // If checkPersonalName is true, try to extract and check the personal name first
-  if (checkPersonalName && trainerClassOrName) {
+  if (checkPersonalName) {
     const parts = trainerClassOrName.trim().split(/\s+/);
     if (parts.length >= 2) {
       // Check last word (personal name) - e.g., "Hau", "Gladion", "Olivia"
@@ -233,13 +250,9 @@ window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
       if (TrainerSpriteLinks[personalNameId]) {
         return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId]);
       }
-      // Then check old sprite sheet
-      if (TrainerSprites[personalNameId]) {
-        classId = personalNameId;
-      } else {
-        // Fall back to class name
-        classId = toID(getTrainerClass(trainerClassOrName));
-      }
+      // If personal name not found, fall back to class name
+      const className = window.getTrainerClass(trainerClassOrName);
+      classId = toID(className);
     }
   }
   
@@ -248,21 +261,18 @@ window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
     return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId]);
   }
   
-  // Force certain classes to use specific sprites (compat/mapping)
-  // 'lass' and its variants should use the risingstar sprite at -1,-6940
-  if (classId && classId.indexOf('lass') === 0 && !TrainerSprites[classId]) classId = 'risingstar';
-  
-  // Fall back to sprite sheet
-  let [left, top] = TrainerSprites[classId] ?? [-1, -1];
-  return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px; width:512px; height:256px; background-size:auto;`;
+  // No fallback to sprite sheet - return transparent
+  return 'background:transparent';
 };
 
 // Returns only the background image/position for use in compact thumbnails
 window.getTrainerBackground = (trainerClassOrName, checkPersonalName) => {
+  if (!trainerClassOrName) return 'background:transparent';
+  
   let classId = toID(trainerClassOrName);
   
   // If checkPersonalName is true, try to extract and check the personal name first
-  if (checkPersonalName && trainerClassOrName) {
+  if (checkPersonalName) {
     const parts = trainerClassOrName.trim().split(/\s+/);
     if (parts.length >= 2) {
       const personalNameId = toID(parts[parts.length - 1]);
@@ -270,12 +280,9 @@ window.getTrainerBackground = (trainerClassOrName, checkPersonalName) => {
       if (TrainerSpriteLinks[personalNameId]) {
         return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId], false);
       }
-      // Then check old sprite sheet
-      if (TrainerSprites[personalNameId]) {
-        classId = personalNameId;
-      } else {
-        classId = toID(getTrainerClass(trainerClassOrName));
-      }
+      // If personal name not found, fall back to class name
+      const className = window.getTrainerClass(trainerClassOrName);
+      classId = toID(className);
     }
   }
   
@@ -284,7 +291,6 @@ window.getTrainerBackground = (trainerClassOrName, checkPersonalName) => {
     return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId], false);
   }
   
-  if (classId && classId.indexOf('lass') === 0 && !TrainerSprites[classId]) classId = 'risingstar';
-  let [left, top] = TrainerSprites[classId] ?? [-1, -1];
-  return `background:transparent url(${ResourcePrefix}sprites/trainericons-sheet.png) no-repeat scroll ${left}px ${top}px`;
+  // No fallback to sprite sheet - return transparent
+  return 'background:transparent';
 };

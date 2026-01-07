@@ -346,10 +346,55 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		q = (q || '').toLowerCase();
 		const list = (window.Trainers || []);
 		let buf = '<ul class="utilichart nokbd">';
+		// Helper function to check if a Pokemon has illegal ability or moves
+		const isIllegal = function(pokemon, speciesData) {
+			if (!speciesData) return false;
+			// Check ability legality
+			if (pokemon.ability) {
+				let abilityLegal = false;
+				for (let slot in speciesData.abilities) {
+					if (speciesData.abilities[slot] === pokemon.ability) {
+						abilityLegal = true;
+						break;
+					}
+				}
+				if (!abilityLegal) return true;
+			}
+			// Check move legality
+			if (pokemon.moves && pokemon.moves.length > 0) {
+				const speciesLearnset = window.Learnsets[speciesData.id] || [];
+				for (let j = 0; j < pokemon.moves.length; j++) {
+					const moveID = toID(pokemon.moves[j]);
+					const moveData = BattleMovedex[moveID];
+					if (!moveData) continue; // Skip unknown moves
+					let moveLegal = false;
+					for (let k = 0; k < speciesLearnset.length; k++) {
+						if (toID(speciesLearnset[k].move) === moveID) {
+							moveLegal = true;
+							break;
+						}
+					}
+					if (!moveLegal) return true;
+				}
+			}
+			return false;
+		};
 		for (let i = 0; i < list.length; i++) {
 			const t = list[i];
 			const display = '[' + t.id + '] ' + escapeHTML(t.name);
 			if (q && display.toLowerCase().indexOf(q) === -1) continue;
+			// Check if any team member has illegal moveset or ability
+			let hasIllegal = false;
+			for (let j = 0; j < (t.team || []).length; j++) {
+				const m = t.team[j];
+				const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
+				const monID = toID(disp);
+				const monData = BattlePokedex[monID];
+				if (isIllegal(m, monData)) {
+					hasIllegal = true;
+					break;
+				}
+			}
 			// Right-justified party sprites; hide prize money per request
 			const teamSprites = (t.team || []).map(m => {
 				const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
@@ -362,10 +407,11 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 			const thumb = '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
 				'<div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;'+ trainerBg + ';"></div>' +
 			  '</div>';
+			const nameStyle = hasIllegal ? 'color:red;' : '';
 			buf += '<li class="result">' +
 				'<a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' +
 					thumb +
-					'<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">' + display + '</span>' +
+					'<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1;' + nameStyle + '">' + display + '</span>' +
 					'<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' +
 				'</a>' +
 			'</li>';
