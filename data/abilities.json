@@ -110,8 +110,8 @@
   "battlearmor": {
     "name": "Battle Armor",
     "num": 4,
-    "desc": "This Pokemon cannot be struck by a critical hit.",
-    "shortDesc": "This Pokemon cannot be struck by a critical hit."
+    "desc": "This Pokemon cannot be struck by a critical hit. | 10% increased Def stat",
+    "shortDesc": "This Pokemon cannot be struck by a critical hit. (E)"
   },
   "battlebond": {
     "name": "Battle Bond",
@@ -188,8 +188,8 @@
   "colorchange": {
     "name": "Color Change",
     "num": 16,
-    "desc": "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
-    "shortDesc": "This Pokemon's type changes to the type of a move it's hit by, unless it has the type."
+    "desc": "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. | User takes 20% less damage from attacks.",
+    "shortDesc": "This Pokemon's type changes to the type of a move it's hit by, unless it has the type. (E)"
   },
   "comatose": {
     "name": "Comatose",
@@ -260,14 +260,14 @@
   "cutecharm": {
     "name": "Cute Charm",
     "num": 56,
-    "desc": "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender.",
-    "shortDesc": "30% chance of infatuating Pokemon of the opposite gender if they make contact."
+    "desc": "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender. | Rework infatuation to make it deal less dmg. but be temporary and not stop movement. Make Cute charm chance 100% and work on all genders.",
+    "shortDesc": "30% chance of infatuating Pokemon of the opposite gender if they make contact. (E)"
   },
   "damp": {
     "name": "Damp",
     "num": 6,
-    "desc": "While this Pokemon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect.",
-    "shortDesc": "Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active."
+    "desc": "While this Pokemon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect. | The user is also immune (or resistant) to Fire-Type Moves, takes 25% more from electric moves",
+    "shortDesc": "Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath. (E)"
   },
   "dancer": {
     "name": "Dancer",
@@ -356,8 +356,8 @@
   "earlybird": {
     "name": "Early Bird",
     "num": 48,
-    "desc": "This Pokemon's sleep counter drops by 2 instead of 1.",
-    "shortDesc": "This Pokemon's sleep counter drops by 2 instead of 1."
+    "desc": "This Pokemon's sleep counter drops by 2 instead of 1. | Waking up gives +1 Speed, AND/OR 20% boost to flying moves.",
+    "shortDesc": "This Pokemon's sleep counter drops by 2 instead of 1. (E)"
   },
   "eartheater": {
     "name": "Earth Eater",
@@ -428,8 +428,8 @@
   "flamebody": {
     "name": "Flame Body",
     "num": 49,
-    "desc": "30% chance a Pokemon making contact with this Pokemon will be burned.",
-    "shortDesc": "30% chance a Pokemon making contact with this Pokemon will be burned."
+    "desc": "30% chance a Pokemon making contact with this Pokemon will be burned. | Works on user contact as well.",
+    "shortDesc": "30% chance a Pokemon making contact with this Pokemon will be burned. (E)"
   },
   "flareboost": {
     "name": "Flare Boost",
@@ -626,8 +626,8 @@
   "hustle": {
     "name": "Hustle",
     "num": 55,
-    "desc": "This Pokemon's Attack is multiplied by 1.5 and the accuracy of its physical attacks is multiplied by 0.8.",
-    "shortDesc": "This Pokemon's Attack is 1.5x and accuracy of its physical attacks is 0.8x."
+    "desc": "This Pokemon's Attack is multiplied by 1.5 and the accuracy of its physical attacks is multiplied by 0.8. | 40%, 90%",
+    "shortDesc": "This Pokemon's Attack is 1.5x and accuracy of its physical attacks is 0.8x. (E)"
   },
   "hydration": {
     "name": "Hydration",
@@ -638,8 +638,8 @@
   "hypercutter": {
     "name": "Hyper Cutter",
     "num": 52,
-    "desc": "Prevents other Pokemon from lowering this Pokemon's Attack stat stage.",
-    "shortDesc": "Prevents other Pokemon from lowering this Pokemon's Attack stat stage."
+    "desc": "Prevents other Pokemon from lowering this Pokemon's Attack stat stage. | Replace with Sharpness. 30% boost though.",
+    "shortDesc": "Prevents other Pokemon from lowering this Pokemon's Attack stat stage. (E)"
   },
   "icebody": {
     "name": "Ice Body",
@@ -662,8 +662,8 @@
   "illuminate": {
     "name": "Illuminate",
     "num": 35,
-    "desc": "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
-    "shortDesc": "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat."
+    "desc": "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage. | Make it boost light moves OR lower dark type damage taken.",
+    "shortDesc": "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat. (E)"
   },
   "illusion": {
     "name": "Illusion",
@@ -674,8 +674,8 @@
   "immunity": {
     "name": "Immunity",
     "num": 17,
-    "desc": "This Pokemon cannot be poisoned. Gaining this Ability while poisoned cures it.",
-    "shortDesc": "This Pokemon cannot be poisoned. Gaining this Ability while poisoned cures it."
+    "desc": "This Pokemon cannot be poisoned. Gaining this Ability while poisoned cures it. | User immune to Poison, gets Def boost if hit by poison move.",
+    "shortDesc": "This Pokemon cannot be poisoned. Gaining this Ability while poisoned cures it. (E)"
   },
   "imposter": {
     "name": "Imposter",
@@ -698,14 +698,14 @@
   "innerfocus": {
     "name": "Inner Focus",
     "num": 39,
-    "desc": "This Pokemon cannot be made to flinch. This Pokemon is immune to the effect of the Intimidate Ability.",
-    "shortDesc": "This Pokemon cannot be made to flinch. Immune to Intimidate."
+    "desc": "This Pokemon cannot be made to flinch. | This Pokemon is immune to the effect of the Intimidate Ability. Moves get 10% acc boost",
+    "shortDesc": "This Pokemon cannot be made to flinch. (E) Immune to Intimidate."
   },
   "insomnia": {
     "name": "Insomnia",
     "num": 15,
-    "desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.",
-    "shortDesc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it."
+    "desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it. | Candidate for replacement, Vital spirit is enough.",
+    "shortDesc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it. (E)"
   },
   "intimidate": {
     "name": "Intimidate",
@@ -740,8 +740,8 @@
   "keeneye": {
     "name": "Keen Eye",
     "num": 51,
-    "desc": "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
-    "shortDesc": "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat."
+    "desc": "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage. | Applies Identified on switch in, and gives Laser Focus effect on switch in.",
+    "shortDesc": "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat. (E)"
   },
   "klutz": {
     "name": "Klutz",
@@ -782,8 +782,8 @@
   "limber": {
     "name": "Limber",
     "num": 7,
-    "desc": "This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it.",
-    "shortDesc": "This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it."
+    "desc": "This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it. | User takes 50% dmg from electric moves",
+    "shortDesc": "This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it. (E)"
   },
   "lingeringaroma": {
     "name": "Lingering Aroma",
@@ -830,14 +830,14 @@
   "magmaarmor": {
     "name": "Magma Armor",
     "num": 40,
-    "desc": "This Pokemon cannot be frozen. Gaining this Ability while frozen cures it.",
-    "shortDesc": "This Pokemon cannot be frozen. Gaining this Ability while frozen cures it."
+    "desc": "This Pokemon cannot be frostbitten. Gaining this Ability while frostbitten cures it. | User immune to Rock moves, rock moves raise user's Defense",
+    "shortDesc": "This Pokemon cannot be frostbitten. Gaining this Ability while frostbitten cures it. (E)"
   },
   "magnetpull": {
     "name": "Magnet Pull",
     "num": 42,
-    "desc": "Prevents opposing Steel-type Pokemon from choosing to switch out, unless they are holding a Shed Shell or are a Ghost type.",
-    "shortDesc": "Prevents opposing Steel-type Pokemon from choosing to switch out."
+    "desc": "Prevents opposing Steel-type Pokemon from choosing to switch out, unless they are holding a Shed Shell or are a Ghost type. | Replace trapping, Steel Type Lightning Rod Instead.",
+    "shortDesc": "Prevents opposing Steel-type Pokemon from choosing to switch out. (E)"
   },
   "marvelscale": {
     "name": "Marvel Scale",
@@ -938,8 +938,8 @@
   "naturalcure": {
     "name": "Natural Cure",
     "num": 30,
-    "desc": "This Pokemon has its non-volatile status condition cured when it switches out.",
-    "shortDesc": "This Pokemon has its non-volatile status condition cured when it switches out."
+    "desc": "This Pokemon has its non-volatile status condition cured when it switches out. | The user heals 25% hp IF a status was cured.",
+    "shortDesc": "This Pokemon has its non-volatile status condition cured when it switches out. (E)"
   },
   "neuroforce": {
     "name": "Neuroforce",
@@ -968,8 +968,8 @@
   "oblivious": {
     "name": "Oblivious",
     "num": 12,
-    "desc": "This Pokemon cannot be infatuated or taunted. Gaining this Ability while infatuated or taunted cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
-    "shortDesc": "This Pokemon cannot be infatuated or taunted. Immune to Intimidate."
+    "desc": "This Pokemon cannot be infatuated or taunted. Gaining this Ability while infatuated or taunted cures it. | This Pokemon is immune to the effect of the Intimidate Ability. Ignores Redirection",
+    "shortDesc": "This Pokemon cannot be infatuated or taunted. (E) Immune to Intimidate."
   },
   "opportunist": {
     "name": "Opportunist",
@@ -998,8 +998,8 @@
   "owntempo": {
     "name": "Own Tempo",
     "num": 20,
-    "desc": "This Pokemon cannot be confused. Gaining this Ability while confused cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
-    "shortDesc": "This Pokemon cannot be confused. Immune to Intimidate."
+    "desc": "This Pokemon cannot be confused. Gaining this Ability while confused cures it. | This Pokemon is immune to the effect of the Intimidate Ability. The user takes 25% less damage from Sound moves.",
+    "shortDesc": "This Pokemon cannot be confused. (E) Immune to Intimidate."
   },
   "multistriker": {
     "name": "Multistriker",
@@ -1028,8 +1028,8 @@
   "pickup": {
     "name": "Pickup",
     "num": 53,
-    "desc": "If this Pokemon has no item, it finds one used by an adjacent Pokemon this turn.",
-    "shortDesc": "If this Pokemon has no item, it finds one used by an adjacent Pokemon this turn."
+    "desc": "If this Pokemon has no item, it finds one used by an adjacent Pokemon this turn. | Removes Hazards, MAYBE can harvest items in battle sometimes if nothing held",
+    "shortDesc": "If this Pokemon has no item, it finds one used by an adjacent Pokemon this turn. (E)"
   },
   "pixilate": {
     "name": "Pixilate",
@@ -1046,20 +1046,20 @@
   "poisonheal": {
     "name": "Poison Heal",
     "num": 90,
-    "desc": "If this Pokemon is poisoned, it restores 1/8 of its maximum HP, rounded down, at the end of each turn instead of losing HP.",
-    "shortDesc": "This Pokemon is healed by 1/8 of its max HP each turn when poisoned; no HP loss."
+    "desc": "If this Pokemon is poisoned, it restores 1/8 of its maximum HP, rounded down, at the end of each turn instead of losing HP. | Heal lowered to 1/16, user also takes 25% dmg from poison moves.",
+    "shortDesc": "This Pokemon is healed by 1/8 of its max HP each turn when poisoned; no HP loss. (E)"
   },
   "poisonpoint": {
     "name": "Poison Point",
     "num": 38,
-    "desc": "30% chance a Pokemon making contact with this Pokemon will be poisoned.",
-    "shortDesc": "30% chance a Pokemon making contact with this Pokemon will be poisoned."
+    "desc": "30% chance a Pokemon making contact with this Pokemon will be poisoned. | Inflicts Toxic instead, Boosts poison type moves by 20%",
+    "shortDesc": "30% chance a Pokemon making contact with this Pokemon will be poisoned. (E)"
   },
   "poisontouch": {
     "name": "Poison Touch",
     "num": 143,
-    "desc": "This Pokemon's contact moves have a 30% chance of poisoning. This effect comes after a move's inherent secondary effect chance.",
-    "shortDesc": "This Pokemon's contact moves have a 30% chance of poisoning."
+    "desc": "This Pokemon's contact moves have a 30% chance of poisoning. This effect comes after a move's inherent secondary effect chance. | Boosts contact moves by 10%",
+    "shortDesc": "This Pokemon's contact moves have a 30% chance of poisoning. (E)"
   },
   "powerconstruct": {
     "name": "Power Construct",
@@ -1088,8 +1088,8 @@
   "pressure": {
     "name": "Pressure",
     "num": 46,
-    "desc": "If this Pokemon is the target of an opposing Pokemon's move, that move loses one additional PP. Imprison, Snatch, and Tera Blast also lose one additional PP when used by an opposing Pokemon, but Sticky Web does not.",
-    "shortDesc": "If this Pokemon is the target of a foe's move, that move loses one additional PP."
+    "desc": "If this Pokemon is the target of an opposing Pokemon's move, that move loses one additional PP. | Lower's dmg of opponent's side, make an Aura ability that can be countered by Aura Break",
+    "shortDesc": "If this Pokemon is the target of a foe's move, that move loses one additional PP. (E)"
   },
   "primordialsea": {
     "name": "Primordial Sea",
@@ -1172,8 +1172,8 @@
   "raindish": {
     "name": "Rain Dish",
     "num": 44,
-    "desc": "If Rain Dance is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
-    "shortDesc": "If Rain Dance is active, this Pokemon heals 1/16 of its max HP each turn."
+    "desc": "If Rain Dance is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. | Add hydration's effect",
+    "shortDesc": "If Rain Dance is active, this Pokemon heals 1/16 of its max HP each turn. (E)"
   },
   "rattled": {
     "name": "Rattled",
@@ -1244,8 +1244,8 @@
   "runaway": {
     "name": "Run Away",
     "num": 50,
-    "desc": "No competitive use.",
-    "shortDesc": "No competitive use."
+    "desc": "No competitive use. | Immune to trapping, also Defiant for Speed",
+    "shortDesc": "No competitive use. (E)"
   },
   "sandforce": {
     "name": "Sand Force",
@@ -1274,8 +1274,8 @@
   "sandveil": {
     "name": "Sand Veil",
     "num": 8,
-    "desc": "If Sandstorm is active, the accuracy of moves used against this Pokemon is multiplied by 0.8. This Pokemon takes no damage from Sandstorm.",
-    "shortDesc": "If Sandstorm is active, this Pokemon's evasiveness is 1.25x; immunity to Sandstorm."
+    "desc": "If Sandstorm is active, the accuracy of moves used against this Pokemon is multiplied by 0.8. This Pokemon takes no damage from Sandstorm. | Change to buff Def instead.",
+    "shortDesc": "If Sandstorm is active, this Pokemon's evasiveness is 1.25x; immunity to Sandstorm. (E)"
   },
   "sapsipper": {
     "name": "Sap Sipper",
@@ -1322,8 +1322,8 @@
   "shadowtag": {
     "name": "Shadow Tag",
     "num": 23,
-    "desc": "Prevents opposing Pokemon from choosing to switch out, unless they are holding a Shed Shell, are a Ghost type, or also have this Ability.",
-    "shortDesc": "Prevents foes from choosing to switch unless they also have this Ability."
+    "desc": "Prevents opposing Pokemon from choosing to switch out, unless they are holding a Shed Shell, are a Ghost type, or also have this Ability. | Replace trapping, Ghost Type Lightning Rod OR something like Heals after defeating an enemy - Soul Siphon",
+    "shortDesc": "Prevents foes from choosing to switch unless they also have this Ability. (E)"
   },
   "sharpness": {
     "name": "Sharpness",
@@ -1346,14 +1346,14 @@
   "shellarmor": {
     "name": "Shell Armor",
     "num": 75,
-    "desc": "This Pokemon cannot be struck by a critical hit.",
-    "shortDesc": "This Pokemon cannot be struck by a critical hit."
+    "desc": "This Pokemon cannot be struck by a critical hit. | 10% increased Sp.Def",
+    "shortDesc": "This Pokemon cannot be struck by a critical hit. (E)"
   },
   "shielddust": {
     "name": "Shield Dust",
     "num": 19,
-    "desc": "This Pokemon is not affected by the secondary effect of another Pokemon's attack.",
-    "shortDesc": "This Pokemon is not affected by the secondary effect of another Pokemon's attack."
+    "desc": "This Pokemon is not affected by the secondary effect of another Pokemon's attack, like Flinch, or status like Paralysis. | Hazard immune, copy heavy duty boots effect from ABZB?",
+    "shortDesc": "This Pokemon is not affected by the secondary effect of another Pokemon's attack. (E)"
   },
   "shieldsdown": {
     "name": "Shields Down",
@@ -1394,8 +1394,8 @@
   "snowcloak": {
     "name": "Snow Cloak",
     "num": 81,
-    "desc": "If Snow is active, the accuracy of moves used against this Pokemon is multiplied by 0.8.",
-    "shortDesc": "If Snow is active, this Pokemon's evasiveness is 1.25x."
+    "desc": "If Snow is active, the accuracy of moves used against this Pokemon is multiplied by 0.8. | Change to raise Sp.Def instead.",
+    "shortDesc": "If Snow is active, this Pokemon's evasiveness is 1.25x. (E)"
   },
   "snowwarning": {
     "name": "Snow Warning",
@@ -1424,8 +1424,8 @@
   "soundproof": {
     "name": "Soundproof",
     "num": 43,
-    "desc": "This Pokemon is immune to sound-based moves, unless it used the move.",
-    "shortDesc": "This Pokemon is immune to sound-based moves, unless it used the move."
+    "desc": "This Pokemon is immune to sound-based moves, unless it used the move. | Change to Punk Rock",
+    "shortDesc": "This Pokemon is immune to sound-based moves, unless it used the move. (E)"
   },
   "speedboost": {
     "name": "Speed Boost",
@@ -1496,8 +1496,8 @@
   "stench": {
     "name": "Stench",
     "num": 1,
-    "desc": "This Pokemon's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch.",
-    "shortDesc": "This Pokemon's attacks without a chance to flinch gain a 10% chance to flinch."
+    "desc": "This Pokemon's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. | Candidate for replacement.",
+    "shortDesc": "This Pokemon's attacks without a chance to flinch gain a 10% chance to flinch. (E)"
   },
   "stickyhold": {
     "name": "Sticky Hold",
@@ -1520,14 +1520,14 @@
   "sturdy": {
     "name": "Sturdy",
     "num": 5,
-    "desc": "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon.",
-    "shortDesc": "If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to OHKO."
+    "desc": "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon. | Reduces Z-Move dmg by 25%",
+    "shortDesc": "If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to OHKO. (E)"
   },
   "suctioncups": {
     "name": "Suction Cups",
     "num": 21,
-    "desc": "This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
-    "shortDesc": "This Pokemon cannot be forced to switch out by another Pokemon's attack or item."
+    "desc": "This Pokemon cannot be forced to switch out by another Pokemon's attack or item. | Immune to moves that force the user off the ground like sky drop or seismic toss, or Making contact lowers enemy speed (reverse Gooey)",
+    "shortDesc": "This Pokemon cannot be forced to switch out by another Pokemon's attack or item. (E)"
   },
   "superluck": {
     "name": "Super Luck",
@@ -1580,8 +1580,8 @@
   "synchronize": {
     "name": "Synchronize",
     "num": 28,
-    "desc": "If another Pokemon burns, paralyzes, poisons, or badly poisons this Pokemon, that Pokemon receives the same non-volatile status condition.",
-    "shortDesc": "If another Pokemon burns/poisons/paralyzes this Pokemon, it also gets that status."
+    "desc": "If another Pokemon burns, paralyzes, poisons, or badly poisons this Pokemon, that Pokemon receives the same non-volatile status condition. | Make it apply to all volatile statuses as well. Maybe even make it like Mirror Armor and share stat drops",
+    "shortDesc": "If another Pokemon burns/poisons/paralyzes this Pokemon, it also gets that status. (E)"
   },
   "swordofruin": {
     "name": "Sword of Ruin",
@@ -1634,8 +1634,8 @@
   "thickfat": {
     "name": "Thick Fat",
     "num": 47,
-    "desc": "If a Pokemon uses a Fire- or Ice-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon.",
-    "shortDesc": "Fire-/Ice-type moves against this Pokemon deal damage with a halved offensive stat."
+    "desc": "If a Pokemon uses a Fire- or Ice-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. | Immune to burn/frost",
+    "shortDesc": "Fire-/Ice-type moves against this Pokemon deal damage with a halved offensive stat. (E)"
   },
   "tintedlens": {
     "name": "Tinted Lens",
@@ -1694,8 +1694,8 @@
   "truant": {
     "name": "Truant",
     "num": 54,
-    "desc": "This Pokemon skips every other turn instead of using a move.",
-    "shortDesc": "This Pokemon skips every other turn instead of using a move."
+    "desc": "This Pokemon skips every other turn instead of using a move. | Can only ATTACK every other turn. Loafing turns status moves are allowed. OR if not possible, heals 1/8 on loafing turns. (or 1/16 every turn if thats too hard)",
+    "shortDesc": "This Pokemon skips every other turn instead of using a move. (E)"
   },
   "turboblaze": {
     "name": "Turboblaze",
@@ -1742,14 +1742,14 @@
   "vitalspirit": {
     "name": "Vital Spirit",
     "num": 72,
-    "desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.",
-    "shortDesc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it."
+    "desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it. | Speed boost if hit by sleep move? Maybe buffs normal type moves.",
+    "shortDesc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it. (E)"
   },
   "voltabsorb": {
     "name": "Volt Absorb",
     "num": 10,
-    "desc": "This Pokemon is immune to Electric-type moves and restores 1/4 of its maximum HP, rounded down, when hit by an Electric-type move.",
-    "shortDesc": "This Pokemon heals 1/4 of its max HP when hit by Electric moves; Electric immunity."
+    "desc": "This Pokemon is immune to Electric-type moves and restores 1/4 of its maximum HP, rounded down, when hit by an Electric-type move. | The user heals 1/8 each turn in E.Terrain",
+    "shortDesc": "This Pokemon heals 1/4 of its max HP when hit by Electric moves; Electric immunity. (E)"
   },
   "wanderingspirit": {
     "name": "Wandering Spirit",
@@ -1760,8 +1760,8 @@
   "waterabsorb": {
     "name": "Water Absorb",
     "num": 11,
-    "desc": "This Pokemon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move.",
-    "shortDesc": "This Pokemon heals 1/4 of its max HP when hit by Water moves; Water immunity."
+    "desc": "This Pokemon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move. | Raises Sp.Def 33% in rain",
+    "shortDesc": "This Pokemon heals 1/4 of its max HP when hit by Water moves; Water immunity. (E)"
   },
   "waterbubble": {
     "name": "Water Bubble",
@@ -1778,8 +1778,8 @@
   "waterveil": {
     "name": "Water Veil",
     "num": 41,
-    "desc": "This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
-    "shortDesc": "This Pokemon cannot be burned. Gaining this Ability while burned cures it."
+    "desc": "This Pokemon cannot be burned. Gaining this Ability while burned cures it. | Add Overcoat effect, or use Aqua Ring on entry, or Replace.",
+    "shortDesc": "This Pokemon cannot be burned. Gaining this Ability while burned cures it. (E)"
   },
   "weakarmor": {
     "name": "Weak Armor",
