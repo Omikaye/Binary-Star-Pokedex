@@ -1,43 +1,21 @@
-import BattlePokedex from "../data/pokedex.json";
-import BattleMovedex from "../data/moves.json";
-import BattleItems from "../data/items.json";
-import BattleAbilities from "../data/abilities.json";
-import BattleTypeChart from "../data/typechart.json";
-import Learnsets from "../data/learnsets.json";
-import Icons from "../data/icons.json";
-import Config from "../data/config.json";
-import BaseGameStats from "../data/basegame.json";
-import ItemPokemonLinks from "../data/item-pokemon-links.json";
-import Trainers from "../data/trainers.json";
-import TrainerNotes from "../data/trainer-notes.json";
-import LocationsJson from "../data/locations.json";
-import TrainerSprites from "../data/trainer-sprites.json";
-import TrainerSpriteLinks from "../data/trainer-sprite-links.json";
-// Import editable data copies for the Pokeedit feature
-import BattlePokedexEdit from "../data/pokedex-edit.json";
-import LearnsetsEdit from "../data/learnsets-edit.json";
-// ...existing code...
-import './compat.js'; // ensure legacy helpers are available early
-// ...existing code...
-window.Config = Config;
-window.ResourcePrefix = window.Config.baseurl + "images/";
-
-window.BattlePokedex = BattlePokedex;
-window.BattleMovedex = BattleMovedex;
-window.BattleItems = BattleItems;
-window.BattleAbilities = BattleAbilities;
-window.BattleTypeChart = BattleTypeChart;
-window.Learnsets = Learnsets;
-window.BaseGameStats = BaseGameStats;
-window.ItemPokemonLinks = ItemPokemonLinks;
-window.Trainers = Trainers;
-window.TrainerNotes = TrainerNotes;
-window.Locations = LocationsJson.locations || [];
-window.TrainerSprites = TrainerSprites;
-window.TrainerSpriteLinks = TrainerSpriteLinks;
-// Expose editable data copies
-window.BattlePokedexEdit = BattlePokedexEdit;
-window.LearnsetsEdit = LearnsetsEdit;
+// Data is already loaded by bootstrap.js and attached to window
+// Get references to the data objects from window
+const BattlePokedex = window.BattlePokedex;
+const BattleMovedex = window.BattleMovedex;
+const BattleItems = window.BattleItems;
+const BattleAbilities = window.BattleAbilities;
+const BattleTypeChart = window.BattleTypeChart;
+const Learnsets = window.Learnsets;
+const Icons = window.Icons;
+const Config = window.Config;
+const BaseGameStats = window.BaseGameStats;
+const ItemPokemonLinks = window.ItemPokemonLinks;
+const Trainers = window.Trainers;
+const TrainerNotes = window.TrainerNotes;
+const TrainerSprites = window.TrainerSprites;
+const TrainerSpriteLinks = window.TrainerSpriteLinks;
+const BattlePokedexEdit = window.BattlePokedexEdit;
+const LearnsetsEdit = window.LearnsetsEdit;
 
 // Build reverse mapping: coordinate -> icon index for debugging
 window.ItemIconIndices = {};

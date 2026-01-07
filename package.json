@@ -2,6 +2,9 @@
   "name": "static-showdown-dex",
   "version": "1.0.0",
   "description": "Pokémon Showdown Dex ========================================================================",
+  "alias": {
+    "backbone": "./js/vendor/backbone-compat.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gendata": "tsx build/build-indexes.ts",
