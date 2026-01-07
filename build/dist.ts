@@ -11,7 +11,7 @@ execSync(`npx parcel build --dist-dir ${dest} --public-url ${config.baseurl} ./i
 // Copy static assets after Parcel is done
 cpSync("images", `./${dest}/images`, {recursive: true})
 cpSync("data", `./${dest}/data`, {recursive: true})
-cpSync("js", `./${dest}/js`, {recursive: true})
+// Note: js directory is not copied because all JavaScript is bundled by Parcel
 
 // Create 404.html for GitHub Pages SPA routing
 if (existsSync(`./${dest}/index.html`)) {

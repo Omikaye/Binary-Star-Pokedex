@@ -9,13 +9,10 @@
     (function() {
       // Detect if we're on GitHub Pages or local/other deployment
       var isGitHubPages = window.location.hostname.includes('github.io');
-      var isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
       
-      // Set base URL based on environment
+      // Set base URL based on current path
       var baseHref = '/';
-      if (isGitHubPages) {
-        baseHref = '/Binary-Star-Pokedex/';
-      } else if (!isLocalDev && window.location.pathname.startsWith('/Binary-Star-Pokedex/')) {
+      if (isGitHubPages || window.location.pathname.startsWith('/Binary-Star-Pokedex/')) {
         baseHref = '/Binary-Star-Pokedex/';
       }
       

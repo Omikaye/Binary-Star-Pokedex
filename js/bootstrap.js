@@ -1,12 +1,12 @@
 // js/bootstrap.js
-// Imports jQuery and Underscore, sets globals, then loads backbone UMD, then loads data and app modules.
+// Imports jQuery, Underscore, and Backbone, sets globals, then loads data and initializes app modules.
 
-// js/bootstrap.js (top)
+// Import dependencies from node_modules
 import $ from 'jquery';
 import _ from 'underscore';
 import Backbone from 'backbone';
 
-// expose legacy globals
+// expose legacy globals FIRST
 window.$ = window.jQuery = $;
 window._ = _;
 window.Backbone = Backbone;
@@ -154,8 +154,9 @@ function loadJSON(path) {
       loadJSON('data/icons.json'),
       loadJSON('data/config.json').catch(() => {
         // Detect environment for fallback config
-        const isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-        return { baseurl: isLocalDev ? '/' : '/Binary-Star-Pokedex/' };
+        const pathHasPrefix = window.location.pathname.startsWith('/Binary-Star-Pokedex/');
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        return { baseurl: (isGitHubPages || pathHasPrefix) ? '/Binary-Star-Pokedex/' : '/' };
       }),
       loadJSON('data/basegame.json').catch(() => ({})),
       loadJSON('data/item-pokemon-links.json').catch(() => ({})),
@@ -171,20 +172,11 @@ function loadJSON(path) {
     // Attach to window exactly as the app expects.
     // Detect environment and set appropriate baseurl
     const isGitHubPages = window.location.hostname.includes('github.io');
-    const isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const pathHasPrefix = window.location.pathname.startsWith('/Binary-Star-Pokedex/');
     
-    let defaultBaseurl = '/Binary-Star-Pokedex/';
-    if (isLocalDev) {
-      defaultBaseurl = '/';
-    } else if (!isGitHubPages && !window.location.pathname.startsWith('/Binary-Star-Pokedex/')) {
-      defaultBaseurl = '/';
-    }
+    const defaultBaseurl = (isGitHubPages || pathHasPrefix) ? '/Binary-Star-Pokedex/' : '/';
     
     window.Config = Config || { baseurl: defaultBaseurl };
-    // Override baseurl if we're in local dev and config.json has the GitHub Pages path
-    if (isLocalDev && window.Config.baseurl === '/Binary-Star-Pokedex/') {
-      window.Config.baseurl = '/';
-    }
     window.ResourcePrefix = window.Config.baseurl + 'images/';
 
     window.BattlePokedex = BattlePokedex || {};
@@ -204,16 +196,21 @@ function loadJSON(path) {
     window.BattlePokedexEdit = BattlePokedexEdit || {};
     window.LearnsetsEdit = LearnsetsEdit || {};
 
-    // Now import the data initializer (which expects window.*) and the app modules
-    // Use dynamicImportWithFallback for robustness across different deployment scenarios
-    await dynamicImportWithFallback('./js/data.js');
-    await dynamicImportWithFallback('./js/panels.js');
-    await dynamicImportWithFallback('./js/search.js');
-    await dynamicImportWithFallback('./js/pokedex.js');
-    await dynamicImportWithFallback('./js/pokedex-pokemon.js');
-    await dynamicImportWithFallback('./js/pokedex-moves.js');
-    await dynamicImportWithFallback('./js/pokedex-search.js');
-    await dynamicImportWithFallback('./js/router.js');
+    // Now dynamically import app modules after data is loaded
+    // Load sequentially to respect dependencies between modules
+    // pokedex.js must come before modules that extend its classes
+    await import('./data.js');
+    await import('./panels.js');
+    await import('./search.js');
+    await import('./pokedex.js');
+    await import('./pokedex-pokemon.js');
+    await import('./pokedex-pokeedit.js');
+    await import('./pokedex-moves.js');
+    await import('./pokedex-search.js');
+    await import('./pokedex-trainer.js');
+    await import('./pokedex-locations.js');
+    await import('./pokedex-home.js');
+    await import('./router.js');
 
     console.info('[bootstrap] data loaded and app modules initialized.');
   } catch (err) {
