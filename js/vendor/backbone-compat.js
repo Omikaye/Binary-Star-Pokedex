@@ -1,6 +1,6 @@
 // js/vendor/backbone-compat.js
 // Provides an ESM-compatible export for Backbone by loading the UMD script
-// and exporting window.Backbone. Uses top-level await so consumers can import it.
+// and exporting window.Backbone.
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
@@ -20,13 +20,21 @@ function loadScript(src) {
 
 const backboneUmdUrl = 'https://unpkg.com/backbone@1.6.0/backbone-min.js';
 
-// If Backbone is already present, just export it.
-if (!window.Backbone) {
+// Export a function that returns the Backbone promise
+async function ensureBackbone() {
+  // If Backbone is already present, just return it.
+  if (window.Backbone) {
+    return window.Backbone;
+  }
+  
   await loadScript(backboneUmdUrl);
   if (!window.Backbone) {
     throw new Error('Backbone failed to initialize after loading UMD script');
   }
+  return window.Backbone;
 }
 
-export default window.Backbone;
-export const Backbone = window.Backbone;
+// For synchronous access after initialization
+export default window.Backbone || null;
+export const Backbone = window.Backbone || null;
+export { ensureBackbone };

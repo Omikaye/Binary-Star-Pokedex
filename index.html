@@ -4,20 +4,27 @@
   <meta charset="utf-8" />
   <title>Pokédex - Pokémon Showdown</title>
 
-  <!-- Import map to resolve bare ESM imports in the browser -->
-  <script type="importmap">
-{
-  "imports": {
-    "jquery": "https://cdn.skypack.dev/jquery@3.7.1",
-    "underscore": "https://cdn.skypack.dev/underscore@1.13.6",
-    "backbone": "/js/vendor/backbone-compat.js"
-  }
-}
-</script>
-
-
-  <!-- IMPORTANT: project path for GitHub Pages -->
-  <base href="/Binary-Star-Pokedex/"/>
+  <!-- Dynamically set base href for local dev vs GitHub Pages -->
+  <script>
+    (function() {
+      // Detect if we're on GitHub Pages or local/other deployment
+      var isGitHubPages = window.location.hostname.includes('github.io');
+      var isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      
+      // Set base URL based on environment
+      var baseHref = '/';
+      if (isGitHubPages) {
+        baseHref = '/Binary-Star-Pokedex/';
+      } else if (!isLocalDev && window.location.pathname.startsWith('/Binary-Star-Pokedex/')) {
+        baseHref = '/Binary-Star-Pokedex/';
+      }
+      
+      // Create and insert base tag
+      var base = document.createElement('base');
+      base.href = baseHref;
+      document.head.appendChild(base);
+    })();
+  </script>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8" />
   <link rel="stylesheet" href="theme/font-awesome.css" />
   <link rel="stylesheet" href="theme/panels.css" />

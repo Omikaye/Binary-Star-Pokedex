@@ -1,10 +1,10 @@
 // js/bootstrap.js
-// Imports jQuery and Underscore (via importmap), sets globals, then loads backbone UMD, then loads data and app modules.
+// Imports jQuery and Underscore, sets globals, then loads backbone UMD, then loads data and app modules.
 
 // js/bootstrap.js (top)
 import $ from 'jquery';
 import _ from 'underscore';
-import Backbone from 'backbone'; // resolves to /js/vendor/backbone-compat.js
+import Backbone from 'backbone';
 
 // expose legacy globals
 window.$ = window.jQuery = $;
@@ -107,14 +107,10 @@ async function dynamicImportWithFallback(specifier) {
 }
 
 async function ensureBackbone() {
-  // If Backbone is already present (e.g., dist/bundled), do nothing.
-  if (window.Backbone) return;
-  // Load UMD build of Backbone which expects window._ and window.jQuery
-  // You can change the CDN URL if you prefer jsDelivr/unpkg/other
-  const backboneUrl = 'https://unpkg.com/backbone@1.6.0/backbone-min.js';
-  await loadScript(backboneUrl);
+  // Backbone is now imported directly from node_modules and already available
+  // This function is kept for compatibility but is a no-op
   if (!window.Backbone) {
-    throw new Error('Backbone failed to initialize after loading UMD script');
+    throw new Error('Backbone should have been imported but is not available');
   }
 }
 
@@ -156,7 +152,11 @@ function loadJSON(path) {
       loadJSON('data/typechart.json'),
       loadJSON('data/learnsets.json'),
       loadJSON('data/icons.json'),
-      loadJSON('data/config.json').catch(() => ({ baseurl: '/Binary-Star-Pokedex/' })),
+      loadJSON('data/config.json').catch(() => {
+        // Detect environment for fallback config
+        const isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        return { baseurl: isLocalDev ? '/' : '/Binary-Star-Pokedex/' };
+      }),
       loadJSON('data/basegame.json').catch(() => ({})),
       loadJSON('data/item-pokemon-links.json').catch(() => ({})),
       loadJSON('data/trainers.json').catch(() => ({})),
@@ -169,7 +169,22 @@ function loadJSON(path) {
     ]);
 
     // Attach to window exactly as the app expects.
-    window.Config = Config || { baseurl: '/Binary-Star-Pokedex/' };
+    // Detect environment and set appropriate baseurl
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    
+    let defaultBaseurl = '/Binary-Star-Pokedex/';
+    if (isLocalDev) {
+      defaultBaseurl = '/';
+    } else if (!isGitHubPages && !window.location.pathname.startsWith('/Binary-Star-Pokedex/')) {
+      defaultBaseurl = '/';
+    }
+    
+    window.Config = Config || { baseurl: defaultBaseurl };
+    // Override baseurl if we're in local dev and config.json has the GitHub Pages path
+    if (isLocalDev && window.Config.baseurl === '/Binary-Star-Pokedex/') {
+      window.Config.baseurl = '/';
+    }
     window.ResourcePrefix = window.Config.baseurl + 'images/';
 
     window.BattlePokedex = BattlePokedex || {};

@@ -2,14 +2,12 @@
   "name": "static-showdown-dex",
   "version": "1.0.0",
   "description": "Pokémon Showdown Dex ========================================================================",
-  "alias": {
-    "backbone": "./js/vendor/backbone-compat.js"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gendata": "tsx build/build-indexes.ts",
     "dist": "tsx build/dist.ts dist",
-    "serve": "parcel serve index.html images/**/*.png --public-url /Binary-Star-Pokedex/",
+    "dev": "parcel serve index.html --public-url /",
+    "serve": "parcel serve index.html --public-url /Binary-Star-Pokedex/",
     "convert-levelup": "node scripts/convert-levelup.js",
     "merge-tm-tutor": "node scripts/merge-tm-tutor.js",
     "convert-pokedex": "node scripts/convert-pokedex-array.js",
