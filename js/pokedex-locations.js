@@ -2,43 +2,134 @@
 window.PokedexLocationsPanel = PokedexResultPanel.extend({
   initialize: function () {
     this.shortTitle = 'Locations';
+    this.allLocations = (window.Locations || []).slice();
+    this.filteredLocations = this.allLocations;
+    
     var buf = '<div class="pfx-body"><form class="pokedex">';
     buf += '<h1><a href="'+Config.baseurl+'" data-target="replace">Pok&eacute;dex</a></h1>';
     buf += '<ul class="tabbar centered" style="margin-bottom: 18px">';
-    buf += '<li><button class="button nav-first" value="' + Config.baseurl + 'dex">Search</button></li>';
-    buf += '<li><button class="button" value="' + Config.baseurl + 'pokemon/">Pok&eacute;mon</button></li>';
-    buf += '<li><button class="button" value="' + Config.baseurl + 'moves/">Moves</button></li>';
-    buf += '<li><button class="button" value="' + Config.baseurl + 'abilities/">Abilities</button></li>';
-    buf += '<li><button class="button" value="' + Config.baseurl + 'items/">Items</button></li>';
-    buf += '<li><button class="button" value="' + Config.baseurl + 'mechanics/">Mechanics</button></li>';
-    buf += '<li><button class="button cur" value="' + Config.baseurl + 'locations/">Locations</button></li>';
-    buf += '<li><button class="button" value="' + Config.baseurl + 'trainers/">Trainers</button></li>';
-    buf += '<li><button class="button nav-last" value="' + Config.baseurl + 'usage/">Usage</button></li>';
+    buf += '<li><a class="button nav-first" href="' + Config.baseurl + 'dex" data-target="push">Search</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'pokemon/" data-target="push">Pok&eacute;mon</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'moves/" data-target="push">Moves</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'abilities/" data-target="push">Abilities</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'items/" data-target="push">Items</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'mechanics/" data-target="push">Mechanics</a></li>';
+    buf += '<li><a class="button cur" href="' + Config.baseurl + 'locations/" data-target="push">Locations</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'trainers/" data-target="push">Trainers</a></li>';
+    buf += '<li><a class="button nav-last" href="' + Config.baseurl + 'usage/" data-target="push">Usage</a></li>';
     buf += '</ul>';
+    buf += '<div class="searchboxwrapper"><input class="textbox searchbox" type="search" name="q" value="" autocomplete="off" placeholder="Search locations by name, Pokémon, item, or trainer..." /></div>';
     buf += '</form>';
     buf += '<div class="dexentry">';
     buf += '<a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pokédex</a>';
     buf += '<h1><a href="' + Config.baseurl + 'locations/" data-target="push" class="subtle">Locations</a></h1>';
 
-    buf += '<ul class="utilichart nokbd">';
-    var list = (window.Locations || []).slice();
-    // Don't sort - keep original order from JSON (which is the index order)
-    for (var i=0; i<list.length; i++) {
+    buf += '<ul class="utilichart nokbd location-results">';
+    buf += '</ul>';
+
+    buf += '</div></div>';
+    this.html(buf);
+    
+    this.renderLocationList(this.filteredLocations);
+  },
+  events: {
+    'input .searchbox': 'handleSearch',
+    'keydown .searchbox': 'handleSearchKeydown'
+  },
+  handleSearchKeydown: function(e) {
+    if (e.keyCode === 13) { // Enter key
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  },
+  handleSearch: function(e) {
+    var query = this.$('.searchbox').val().toLowerCase().trim();
+    
+    if (!query) {
+      this.filteredLocations = this.allLocations;
+    } else {
+      this.filteredLocations = this.allLocations.filter(function(loc) {
+        if (!loc) return false;
+        
+        // Search by location name
+        if ((loc.name || '').toLowerCase().indexOf(query) >= 0) return true;
+        if ((loc.id || '').toLowerCase().indexOf(query) >= 0) return true;
+        
+        // Search by Pokemon in encounters
+        if (loc.encounters) {
+          for (var i = 0; i < loc.encounters.length; i++) {
+            var encounter = loc.encounters[i];
+            if (encounter.pokemon) {
+              for (var j = 0; j < encounter.pokemon.length; j++) {
+                var mon = encounter.pokemon[j];
+                if (mon.name) {
+                  var translatedName = window.translateDisplayName ? window.translateDisplayName(mon.name) : mon.name;
+                  if (translatedName.toLowerCase().indexOf(query) >= 0) return true;
+                }
+                // Check SOS encounters
+                if (mon.sos && Array.isArray(mon.sos)) {
+                  for (var k = 0; k < mon.sos.length; k++) {
+                    var sosName = mon.sos[k];
+                    var sosTranslated = window.translateDisplayName ? window.translateDisplayName(sosName) : sosName;
+                    if (sosTranslated.toLowerCase().indexOf(query) >= 0) return true;
+                  }
+                }
+              }
+            }
+          }
+        }
+        
+        // Search by items
+        if (loc.items) {
+          for (var i = 0; i < loc.items.length; i++) {
+            if ((loc.items[i].item || '').toLowerCase().indexOf(query) >= 0) return true;
+          }
+        }
+        
+        // Search by shop items
+        if (loc.shops) {
+          for (var i = 0; i < loc.shops.length; i++) {
+            if ((loc.shops[i].item || '').toLowerCase().indexOf(query) >= 0) return true;
+          }
+        }
+        
+        // Search by trainers
+        if (loc.trainers) {
+          for (var i = 0; i < loc.trainers.length; i++) {
+            var tid = loc.trainers[i];
+            var trainer = (window.Trainers || []).find(function(t) { return t.id === tid; });
+            if (trainer && (trainer.name || '').toLowerCase().indexOf(query) >= 0) return true;
+          }
+        }
+        if (loc.bossTrainers) {
+          for (var i = 0; i < loc.bossTrainers.length; i++) {
+            var tid = loc.bossTrainers[i];
+            var trainer = (window.Trainers || []).find(function(t) { return t.id === tid; });
+            if (trainer && (trainer.name || '').toLowerCase().indexOf(query) >= 0) return true;
+          }
+        }
+        
+        return false;
+      });
+    }
+    
+    this.renderLocationList(this.filteredLocations);
+  },
+  renderLocationList: function(list) {
+    var buf = '';
+    for (var i = 0; i < list.length; i++) {
       var loc = list[i];
       if (!loc || !loc.id) continue;
-      var notes = (loc.notes||'').trim();
+      var notes = (loc.notes || '').trim();
       buf += '<li class="result" style="display:block;padding:0;height:auto;min-height:initial;overflow:visible;position:relative">';
       buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" style="display:block;padding:8px;text-decoration:none">';
-      buf += '<span class="col numcol">' + (i+1) + '</span>';
+      buf += '<span class="col numcol">' + (this.allLocations.indexOf(loc) + 1) + '</span>';
       buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span>';
       buf += '</a>';
       if (notes) buf += '<div style="padding:4px 12px 8px 12px;color:#666;font-size:0.9em;border-top:1px solid #eee;clear:both;width:100%;box-sizing:border-box;background:#f5f5f5">' + escapeHTML(notes) + '</div>';
       buf += '</li>';
     }
-    buf += '</ul>';
-
-    buf += '</div></div>';
-    this.html(buf);
+    this.$('.location-results').html(buf);
   }
 });
 
