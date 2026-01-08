@@ -880,6 +880,8 @@ function generateSearchIndex() {
                 return new BattlePokemonSearch("pokemon", format, speciesOrSet);
             case "pokeedit":
                 return new BattlePokeeditSearch("pokeedit", format, speciesOrSet);
+            case "usage":
+                return new BattleUsageSearch("usage", format, speciesOrSet);
             case "item":
                 return new BattleItemSearch("item", format, speciesOrSet);
             case "move":
@@ -1731,6 +1733,102 @@ class BattlePokeeditSearch extends BattleTypedSearch {
     constructor(...args){
         super(...args), this.sortRow = [
             "sortpokemon",
+            ""
+        ];
+    }
+}
+class BattleUsageSearch extends BattleTypedSearch {
+    filter(row, filters) {
+        if (!filters) return true;
+        if (row[0] !== "usage") return true;
+        const poke = getID(BattlePokedex, row[1]);
+        for (const [filterType, value] of filters)switch(filterType){
+            case "type":
+                if (poke.types.every((t)=>t != value)) return false;
+                break;
+            case "move":
+                if (!canLearn(poke.id, value)) return false;
+                break;
+            case "ability":
+                if (!hasAbility(poke, value)) return false;
+                break;
+            case "egggroup":
+                if (poke.eggGroups.every((t)=>t != value)) return false;
+                break;
+        }
+        return true;
+    }
+    getTable() {
+        return BattlePokedex;
+    }
+    getDefaultResults() {
+        const groups = {};
+        for(const id in BattlePokedex){
+            const p = BattlePokedex[id];
+            if (!p) continue;
+            const baseId = toID(p.baseSpecies || p.name);
+            if (!groups[baseId]) groups[baseId] = {
+                base: id,
+                num: p.num || 0,
+                forms: []
+            };
+            const isBase = !p.forme || p.name === p.baseSpecies;
+            if (isBase) {
+                groups[baseId].base = id;
+                groups[baseId].num = p.num || groups[baseId].num;
+            } else groups[baseId].forms.push(id);
+        }
+        for(const baseId in groups)groups[baseId].forms.sort((a, b)=>{
+            const pa = BattlePokedex[a];
+            const pb = BattlePokedex[b];
+            const fa = (pa.forme || pa.name).toLowerCase();
+            const fb = (pb.forme || pb.name).toLowerCase();
+            return fa < fb ? -1 : fa > fb ? 1 : 0;
+        });
+        const ordered = Object.values(groups).sort((a, b)=>a.num - b.num || (a.base < b.base ? -1 : a.base > b.base ? 1 : 0));
+        const results = [];
+        for (const g of ordered){
+            results.push([
+                "usage",
+                g.base
+            ]);
+            for (const fid of g.forms)results.push([
+                "usage",
+                fid
+            ]);
+        }
+        return results;
+    }
+    getBaseResults() {
+        return this.getDefaultResults();
+    }
+    sort(results, sortCol, reverseSort) {
+        const sortOrder = reverseSort ? -1 : 1;
+        if (sortCol === "wild") return results.sort(([, id1], [, id2])=>{
+            const usage1 = window.__pokemonUsageCache?.[id1]?.wild || 0;
+            const usage2 = window.__pokemonUsageCache?.[id2]?.wild || 0;
+            return (usage2 - usage1) * sortOrder;
+        });
+        else if (sortCol === "trainer") return results.sort(([, id1], [, id2])=>{
+            const usage1 = window.__pokemonUsageCache?.[id1]?.trainer || 0;
+            const usage2 = window.__pokemonUsageCache?.[id2]?.trainer || 0;
+            return (usage2 - usage1) * sortOrder;
+        });
+        else if (sortCol === "name") return results.sort(([, id1], [, id2])=>{
+            return (id1 < id2 ? -1 : id1 > id2 ? 1 : 0) * sortOrder;
+        });
+        else if (sortCol === "type") return results.sort(([, id1], [, id2])=>{
+            const poke1 = getID(BattlePokedex, id1);
+            const poke2 = getID(BattlePokedex, id2);
+            const type1 = poke1.types[0] || "";
+            const type2 = poke2.types[0] || "";
+            return (type1 < type2 ? -1 : type1 > type2 ? 1 : 0) * sortOrder;
+        });
+        throw new Error("invalid sortcol");
+    }
+    constructor(...args){
+        super(...args), this.sortRow = [
+            "sortusage",
             ""
         ];
     }

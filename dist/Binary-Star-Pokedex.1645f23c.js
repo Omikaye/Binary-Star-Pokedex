@@ -718,18 +718,21 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 window.PokedexHomePanel = PokedexResultPanel.extend({
     initialize: function() {
         this.shortTitle = 'Home';
-        var buf = '<div class="pfx-topbar">';
-        buf += '<div class="header">';
-        buf += '<ul class="nav">';
-        buf += '<li><a class="button nav-first" href="' + Config.baseurl + '"><img src="' + Config.baseurl + 'images/pokemonshowdownbeta.png" alt="Pok\xe9mon Showdown! (beta)" /> Home</a></li>';
-        buf += '<li><a class="button" href="' + Config.baseurl + 'dex">Pok\xe9dex</a></li>';
-        buf += '<li><a class="button" href="' + Config.baseurl + 'locations/">Locations</a></li>';
-        buf += '<li><a class="button nav-last" href="https://github.com/Strackeror/Static-Showdown-Dex">GitHub</a></li>';
+        var buf = '<div class="pfx-body"><form class="pokedex">';
+        buf += '<h1><a href="' + Config.baseurl + '" data-target="replace">Pok&eacute;dex</a></h1>';
+        buf += '<ul class="tabbar centered" style="margin-bottom: 18px">';
+        buf += '<li><a class="button nav-first" href="' + Config.baseurl + 'dex" data-target="push">Search</a></li>';
+        buf += '<li><a class="button" href="' + Config.baseurl + 'pokemon/" data-target="push">Pok&eacute;mon</a></li>';
+        buf += '<li><a class="button" href="' + Config.baseurl + 'moves/" data-target="push">Moves</a></li>';
+        buf += '<li><a class="button" href="' + Config.baseurl + 'abilities/" data-target="push">Abilities</a></li>';
+        buf += '<li><a class="button" href="' + Config.baseurl + 'items/" data-target="push">Items</a></li>';
+        buf += '<li><a class="button" href="' + Config.baseurl + 'mechanics/" data-target="push">Mechanics</a></li>';
+        buf += '<li><a class="button" href="' + Config.baseurl + 'locations/" data-target="push">Locations</a></li>';
+        buf += '<li><a class="button" href="' + Config.baseurl + 'trainers/" data-target="push">Trainers</a></li>';
+        buf += '<li><a class="button nav-last" href="' + Config.baseurl + 'usage/" data-target="push">Usage</a></li>';
         buf += '</ul>';
-        buf += '<div style="clear:both"></div>';
-        buf += '</div>';
-        buf += '</div>';
-        buf += '<div class="pfx-body dexentry">';
+        buf += '</form>';
+        buf += '<div class="dexentry">';
         buf += "<h1>Pok\xe9mon Binary Star</h1>";
         buf += '<p class="resultsub">A comprehensive Pok\xe9dex for the Pok\xe9mon Binary Star ROM hack by Omikaye</p>';
         buf += '<div style="max-width:800px;margin:20px auto;line-height:1.6">';
@@ -753,7 +756,7 @@ window.PokedexHomePanel = PokedexResultPanel.extend({
         buf += '</div>';
         buf += '<p style="margin-top:24px;color:#777;font-size:0.95em">Data generated from <code>@pkmn/*</code> packages. Site source available on <a href="https://github.com/Strackeror/Static-Showdown-Dex">GitHub</a>.</p>';
         buf += '</div>';
-        buf += '</div>';
+        buf += '</div></div>';
         this.html(buf);
     }
 });

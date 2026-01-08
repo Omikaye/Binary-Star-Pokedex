@@ -726,6 +726,10 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
         this.shortTitle = pokemon.name + ' - Usage';
         var buf = '<div class="pfx-body dexentry">';
         buf += '<a href="' + Config.baseurl + 'usage/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Usage</a>';
+        // Add "View in Pokedex" button in top right
+        buf += '<div style="position:absolute;top:10px;right:10px">';
+        buf += '<a href="' + Config.baseurl + 'pokemon/' + id + '" class="button" data-target="push" style="padding:8px 16px;background:#3572b0;color:white;text-decoration:none;border-radius:4px">View in Pok\xe9dex</a>';
+        buf += '</div>';
         buf += '<h1>';
         if (pokemon.forme) buf += '<a href="' + Config.baseurl + 'usage/' + id + '" data-target="push" class="subtle">' + pokemon.baseSpecies + '<small>-' + pokemon.forme + '</small></a>';
         else buf += '<a href="' + Config.baseurl + 'usage/' + id + '" data-target="push" class="subtle">' + pokemon.name + '</a>';
@@ -742,18 +746,16 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
             var loc = window.Locations[i];
             if (loc.encounters && Array.isArray(loc.encounters)) for(var e = 0; e < loc.encounters.length; e++){
                 var encounter = loc.encounters[e];
-                if (encounter.pokemon && Array.isArray(encounter.pokemon)) {
-                    for(var j = 0; j < encounter.pokemon.length; j++){
-                        var mon = encounter.pokemon[j];
-                        if (mon.name) {
-                            var dispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(mon.name) : mon.name;
-                            if (toID(dispName) === id) usage.wild.push({
-                                location: loc,
-                                encounter: encounter,
-                                pokemon: mon,
-                                type: 'normal'
-                            });
-                        }
+                if (encounter.pokemon && Array.isArray(encounter.pokemon)) for(var j = 0; j < encounter.pokemon.length; j++){
+                    var mon = encounter.pokemon[j];
+                    if (mon.name) {
+                        var dispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(mon.name) : mon.name;
+                        if (toID(dispName) === id) usage.wild.push({
+                            location: loc,
+                            encounter: encounter,
+                            pokemon: mon,
+                            type: 'normal'
+                        });
                     }
                     // Check SOS encounters
                     if (mon.sos && Array.isArray(mon.sos)) for(var s = 0; s < mon.sos.length; s++){
@@ -765,7 +767,8 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
                             pokemon: {
                                 name: sosName
                             },
-                            type: 'sos'
+                            type: 'sos',
+                            parentMon: mon
                         });
                     }
                 }
@@ -793,18 +796,27 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
                 var wildData = usage.wild[i];
                 var loc = wildData.location;
                 var encounter = wildData.encounter;
-                buf += '<li class="result">';
-                buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push">';
-                buf += '<span class="col namecol" style="width:250px">' + escapeHTML(loc.name);
-                if (wildData.type === 'sos') buf += ' <small>(SOS)</small>';
-                buf += '</span> ';
+                var displayText = escapeHTML(loc.name);
+                // Build level text
                 var levelText = '';
                 if (encounter.levelRange) {
-                    if (encounter.levelRange.min === encounter.levelRange.max) levelText = 'Lv. ' + encounter.levelRange.min;
-                    else levelText = 'Lv. ' + encounter.levelRange.min + '-' + encounter.levelRange.max;
+                    if (encounter.levelRange.min === encounter.levelRange.max) levelText = 'Lvl ' + encounter.levelRange.min;
+                    else levelText = 'Lvl ' + encounter.levelRange.min + '-' + encounter.levelRange.max;
                 }
-                buf += '<span class="col" style="width:100px">' + levelText + '</span> ';
-                if (encounter.spot) buf += '<span class="col" style="width:150px;color:#777">' + escapeHTML(encounter.spot) + '</span> ';
+                // Build spot text
+                var spotText = encounter.spot ? escapeHTML(encounter.spot) : '';
+                // For SOS encounters, format as "Pokemon Lvl X-Y Spot (SOS)"
+                if (wildData.type === 'sos') {
+                    displayText += ' ' + levelText;
+                    if (spotText) displayText += ' ' + spotText;
+                    displayText += ' (SOS)';
+                } else {
+                    displayText += ' ' + levelText;
+                    if (spotText) displayText += ' ' + spotText;
+                }
+                buf += '<li class="result">';
+                buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push">';
+                buf += '<span class="col namecol" style="width:100%">' + displayText + '</span>';
                 buf += '</a>';
                 buf += '</li>';
             }
@@ -820,17 +832,11 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
                 var mon = trainerData.pokemon;
                 buf += '<li class="result">';
                 buf += '<a href="' + Config.baseurl + 'trainers/' + trainer.id + '" data-target="push">';
-                // Trainer thumbnail
-                var trainerBg = typeof getTrainerBackground === 'function' ? getTrainerBackground(trainer.name, true) : '';
-                if (trainerBg) {
-                    var thumb = '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;"><div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;' + trainerBg + ';"></div>' + '</div>';
-                    buf += thumb;
-                }
-                buf += '<span class="col namecol" style="width:250px;position:relative;z-index:1">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</span> ';
+                buf += '<span class="col namecol" style="width:250px">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</span> ';
                 var levelText = mon.level ? 'Lv. ' + mon.level : '';
-                buf += '<span class="col" style="width:80px;position:relative;z-index:1">' + levelText + '</span> ';
-                if (mon.ability) buf += '<span class="col" style="width:150px;color:#777;position:relative;z-index:1">' + escapeHTML(mon.ability) + '</span> ';
-                if (mon.item) buf += '<span class="col" style="width:150px;color:#777;position:relative;z-index:1">@ ' + escapeHTML(mon.item) + '</span> ';
+                buf += '<span class="col" style="width:80px">' + levelText + '</span> ';
+                if (mon.ability) buf += '<span class="col" style="width:150px;color:#777">' + escapeHTML(mon.ability) + '</span> ';
+                if (mon.item) buf += '<span class="col" style="width:150px;color:#777">@ ' + escapeHTML(mon.item) + '</span> ';
                 buf += '</a>';
                 buf += '</li>';
             }

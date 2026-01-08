@@ -731,6 +731,7 @@ var Pokedex = Panels.App.extend({
         'articles/:article': PokedexArticlePanel,
         'trainers/:id': PokedexTrainerPanel,
         'locations/:locid': PokedexLocationPanel,
+        'usage/:pokemon': PokedexUsagePanel,
         '': PokedexHomePanel,
         'dex': PokedexSearchPanel,
         'pokemon/': PokedexSearchPanel,
@@ -741,6 +742,7 @@ var Pokedex = Panels.App.extend({
         'mechanics/': PokedexSearchPanel,
         'locations/': PokedexLocationsPanel,
         'trainers/': PokedexSearchPanel,
+        'usage/': PokedexSearchPanel,
         ':q': PokedexSearchPanel
     },
     initialize: function() {

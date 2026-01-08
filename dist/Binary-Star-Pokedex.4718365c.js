@@ -741,6 +741,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
         if (fragment === 'items') fragment = 'items/';
         if (fragment === 'locations') fragment = 'locations/';
         if (fragment === 'trainers') fragment = 'trainers/';
+        if (fragment === 'usage') fragment = 'usage/';
         if (fragment === 'mechanics') fragment = 'mechanics/';
         if (fragment === 'pokeedit') fragment = 'pokeedit/';
         if (questionIndex >= 0) fragment = fragment.slice(0, questionIndex);
@@ -753,7 +754,8 @@ window.PokedexSearchPanel = Panels.Panel.extend({
         buf += '<li><button class="button' + (fragment === 'items/' ? ' cur' : '') + '" value="' + Config.baseurl + 'items/">Items</button></li>';
         buf += '<li><button class="button' + (fragment === 'mechanics/' ? ' cur' : '') + '" value="' + Config.baseurl + 'mechanics/">Mechanics</button></li>';
         buf += '<li><button class="button' + (fragment === 'locations/' ? ' cur' : '') + '" value="' + Config.baseurl + 'locations/">Locations</button></li>';
-        buf += '<li><button class="button nav-last' + (fragment === 'trainers/' ? ' cur' : '') + '" value="' + Config.baseurl + 'trainers/">Trainers</button></li>';
+        buf += '<li><button class="button' + (fragment === 'trainers/' ? ' cur' : '') + '" value="' + Config.baseurl + 'trainers/">Trainers</button></li>';
+        buf += '<li><button class="button nav-last' + (fragment === 'usage/' ? ' cur' : '') + '" value="' + Config.baseurl + 'usage/">Usage</button></li>';
         buf += '<li style="display:none"><button class="button' + (fragment === 'pokeedit/' ? ' cur' : '') + '" value="' + Config.baseurl + 'pokeedit/">Pok&eacute;edit</button></li></ul>';
         buf += '<div class="searchboxwrapper"><input class="textbox searchbox" type="search" name="q" value="' + escapeHTML(this.$('.searchbox').val() || '') + '" autocomplete="off" autofocus placeholder="Search Pok&eacute;mon, moves, abilities, items, types, or more" /></div>';
         if (fragment === '') buf += '<p class="buttonbar"><button class="button"><strong>Pok&eacute;dex Search</strong></button> <button name="lucky" class="button">I\'m Feeling Lucky</button></p>';
@@ -856,6 +858,11 @@ window.PokedexSearchPanel = Panels.Panel.extend({
                 this.$('.buttonbar').remove();
                 this.trainersMode = true;
                 this.renderTrainers('');
+            } else if (fragment === 'usage/') {
+                // Usage tracking
+                search.setType('usage');
+                $searchbox.attr('placeholder', 'Search pokemon to see wild/trainer usage');
+                this.$('.buttonbar').remove();
             }
             this.search.externalFilter = true;
         } else this.search = null;
@@ -1077,10 +1084,51 @@ window.PokedexSearchPanel = Panels.Panel.extend({
         q = (q || '').toLowerCase();
         const list = window.Trainers || [];
         let buf = '<ul class="utilichart nokbd">';
+        // Helper function to check if a Pokemon has illegal ability or moves
+        const isIllegal = function(pokemon, speciesData) {
+            if (!speciesData) return false;
+            // Check ability legality
+            if (pokemon.ability) {
+                let abilityLegal = false;
+                for(let slot in speciesData.abilities)if (speciesData.abilities[slot] === pokemon.ability) {
+                    abilityLegal = true;
+                    break;
+                }
+                if (!abilityLegal) return true;
+            }
+            // Check move legality
+            if (pokemon.moves && pokemon.moves.length > 0) {
+                const speciesLearnset = window.Learnsets[speciesData.id] || [];
+                for(let j = 0; j < pokemon.moves.length; j++){
+                    const moveID = toID(pokemon.moves[j]);
+                    const moveData = BattleMovedex[moveID];
+                    if (!moveData) continue; // Skip unknown moves
+                    let moveLegal = false;
+                    for(let k = 0; k < speciesLearnset.length; k++)if (toID(speciesLearnset[k].move) === moveID) {
+                        moveLegal = true;
+                        break;
+                    }
+                    if (!moveLegal) return true;
+                }
+            }
+            return false;
+        };
         for(let i = 0; i < list.length; i++){
             const t = list[i];
             const display = '[' + t.id + '] ' + escapeHTML(t.name);
             if (q && display.toLowerCase().indexOf(q) === -1) continue;
+            // Check if any team member has illegal moveset or ability
+            let hasIllegal = false;
+            for(let j = 0; j < (t.team || []).length; j++){
+                const m = t.team[j];
+                const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : m.name || '';
+                const monID = toID(disp);
+                const monData = BattlePokedex[monID];
+                if (isIllegal(m, monData)) {
+                    hasIllegal = true;
+                    break;
+                }
+            }
             // Right-justified party sprites; hide prize money per request
             const teamSprites = (t.team || []).map((m)=>{
                 const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : m.name || '';
@@ -1091,7 +1139,8 @@ window.PokedexSearchPanel = Panels.Panel.extend({
             const trainerBg = typeof getTrainerBackground === 'function' ? getTrainerBackground(t.name, true) : getTrainerIcon(t.name, true);
             // Small thumbnail showing the upper third of the large sprite, scaled down ~30% more
             const thumb = '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;"><div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;' + trainerBg + ';"></div>' + '</div>';
-            buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' + thumb + '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' + '</a>' + '</li>';
+            const nameStyle = hasIllegal ? 'color:red;' : '';
+            buf += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' + thumb + '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1;' + nameStyle + '">' + display + '</span>' + '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' + '</a>' + '</li>';
         }
         buf += '</ul>';
         this.$('.results').html(buf);
