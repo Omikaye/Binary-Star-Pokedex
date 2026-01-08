@@ -20,14 +20,14 @@
   "aftermath": {
     "name": "Aftermath",
     "num": 106,
-    "desc": "If this Pokemon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. If any active Pokemon has the Damp Ability, this effect is prevented.",
-    "shortDesc": "If this Pokemon is KOed with a contact move, that move's user loses 1/4 its max HP."
+    "desc": "If this Pokemon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. If any active Pokemon has the Damp Ability, this effect is prevented. | Boost explosion moves? Takes less dmg from non contact moves, but more from contact?",
+    "shortDesc": "If this Pokemon is KOed with a contact move, that move's user loses 1/4 its max HP. (E)"
   },
   "airlock": {
     "name": "Air Lock",
     "num": 76,
-    "desc": "While this Pokemon is active, the effects of weather conditions are disabled.",
-    "shortDesc": "While this Pokemon is active, the effects of weather conditions are disabled."
+    "desc": "While this Pokemon is active, the effects of weather conditions are disabled. | 20% atk, spatk boost if weather active",
+    "shortDesc": "While this Pokemon is active, the effects of weather conditions are disabled. (E)"
   },
   "analytic": {
     "name": "Analytic",
@@ -38,8 +38,8 @@
   "angerpoint": {
     "name": "Anger Point",
     "num": 83,
-    "desc": "If this Pokemon, but not its substitute, is struck by a critical hit, its Attack is raised by 12 stages.",
-    "shortDesc": "If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages."
+    "desc": "If this Pokemon, but not its substitute, is struck by a critical hit, its Attack is raised by 12 stages. | 25% less dmg from crits.",
+    "shortDesc": "If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages. (E)"
   },
   "angershell": {
     "name": "Anger Shell",
@@ -50,14 +50,14 @@
   "anticipation": {
     "name": "Anticipation",
     "num": 107,
-    "desc": "On switch-in, this Pokemon is alerted if any opposing Pokemon has an attack that is super effective against this Pokemon, or an OHKO move. This effect considers any move that deals direct damage as an attacking move of its respective type, Hidden Power counts as its determined type, and Judgment, Multi-Attack, Natural Gift, Revelation Dance, Techno Blast, and Weather Ball are considered Normal-type moves.",
-    "shortDesc": "On switch-in, this Pokemon shudders if any foe has a supereffective or OHKO move."
+    "desc": "On switch-in, this Pokemon is alerted if any opposing Pokemon has an attack that is super effective against this Pokemon, or an OHKO move. This effect considers any move that deals direct damage as an attacking move of its respective type, Hidden Power counts as its determined type, and Judgment, Multi-Attack, Natural Gift, Revelation Dance, Techno Blast, and Weather Ball are considered Normal-type moves. | A user gets a speed boost if they shudder.",
+    "shortDesc": "On switch-in, this Pokemon shudders if any foe has a supereffective or OHKO move. (E)"
   },
   "arenatrap": {
     "name": "Arena Trap",
     "num": 71,
-    "desc": "Prevents opposing Pokemon from choosing to switch out unless they are airborne, are holding a Shed Shell, or are a Ghost type.",
-    "shortDesc": "Prevents opposing Pokemon from choosing to switch out unless they are airborne."
+    "desc": "Prevents opposing Pokemon from choosing to switch out unless they are airborne, are holding a Shed Shell, or are a Ghost type. | Absorbs bug moves? Dmg increased to bugs?",
+    "shortDesc": "Prevents opposing Pokemon from choosing to switch out unless they are airborne. (E)"
   },
   "armortail": {
     "name": "Armor Tail",
@@ -92,8 +92,8 @@
   "baddreams": {
     "name": "Bad Dreams",
     "num": 123,
-    "desc": "Causes opposing Pokemon to lose 1/8 of their maximum HP, rounded down, at the end of each turn if they are asleep.",
-    "shortDesc": "Causes sleeping foes to lose 1/8 of their max HP at the end of each turn."
+    "desc": "Causes opposing Pokemon to lose 1/8 of their maximum HP, rounded down, at the end of each turn if they are asleep. | Heals from sleeping targets?",
+    "shortDesc": "Causes sleeping foes to lose 1/8 of their max HP at the end of each turn. (E)"
   },
   "ballfetch": {
     "name": "Ball Fetch",
@@ -146,8 +146,8 @@
   "blaze": {
     "name": "Blaze",
     "num": 66,
-    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Fire-type attack.",
-    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Fire attacks."
+    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Fire-type attack. | 20% normally, then 50 when low like normal. Shows when activated.",
+    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Fire attacks. (E)"
   },
   "bulletproof": {
     "name": "Bulletproof",
@@ -182,8 +182,8 @@
   "cloudnine": {
     "name": "Cloud Nine",
     "num": 13,
-    "desc": "While this Pokemon is active, the effects of weather conditions are disabled.",
-    "shortDesc": "While this Pokemon is active, the effects of weather conditions are disabled."
+    "desc": "While this Pokemon is active, the effects of weather conditions are disabled. | Boosts Defenses 20% if weather active.",
+    "shortDesc": "While this Pokemon is active, the effects of weather conditions are disabled. (E)"
   },
   "colorchange": {
     "name": "Color Change",
@@ -423,7 +423,7 @@
     "name": "Filter",
     "num": 111,
     "desc": "This Pokemon receives 3/4 damage from supereffective attacks.",
-    "shortDesc": "This Pokemon receives 3/4 damage from supereffective attacks."
+    "shortDesc": "This Pokemon receives 3/4 damage from supereffective attacks. | 10% increased spdef."
   },
   "flamebody": {
     "name": "Flame Body",
@@ -446,8 +446,8 @@
   "flowergift": {
     "name": "Flower Gift",
     "num": 122,
-    "desc": "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
-    "shortDesc": "If user is Cherrim and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x."
+    "desc": "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. | Make it work for non-cherrims.",
+    "shortDesc": "If user is Cherrim and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x. (E)"
   },
   "flowerveil": {
     "name": "Flower Veil",
@@ -464,14 +464,14 @@
   "forecast": {
     "name": "Forecast",
     "num": 59,
-    "desc": "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm. This effect is prevented if this Pokemon is holding a Utility Umbrella and the weather is Rain Dance or Sunny Day.",
-    "shortDesc": "Castform's type changes to the current weather condition's type, except Sandstorm."
+    "desc": "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm. | Add Sandstorm and Windy Version",
+    "shortDesc": "Castform's type changes to the current weather condition's type, except Sandstorm. (E)"
   },
   "forewarn": {
     "name": "Forewarn",
     "num": 108,
-    "desc": "On switch-in, this Pokemon is alerted to the move with the highest power, at random, known by an opposing Pokemon. This effect considers OHKO moves to have 150 power, Counter, Mirror Coat, and Metal Burst to have 120 power, every other attacking move with an unspecified power to have 80 power, and non-damaging moves to have 1 power.",
-    "shortDesc": "On switch-in, this Pokemon is alerted to the foes' move with the highest power."
+    "desc": "On switch-in, this Pokemon is alerted to the move with the highest power, at random, known by an opposing Pokemon. This effect considers OHKO moves to have 150 power, Counter, Mirror Coat, and Metal Burst to have 120 power, every other attacking move with an unspecified power to have 80 power, and non-damaging moves to have 1 power. | Defensive version of Download.",
+    "shortDesc": "On switch-in, this Pokemon is alerted to the foes' move with the highest power. (E)"
   },
   "friendguard": {
     "name": "Friend Guard",
@@ -482,8 +482,8 @@
   "frisk": {
     "name": "Frisk",
     "num": 119,
-    "desc": "On switch-in, this Pokemon identifies the held items of all opposing Pokemon.",
-    "shortDesc": "On switch-in, this Pokemon identifies the held items of all opposing Pokemon."
+    "desc": "On switch-in, this Pokemon identifies the held items of all opposing Pokemon. | Embargo on switch in? maybe reactivates Frisk on any contact?",
+    "shortDesc": "On switch-in, this Pokemon identifies the held items of all opposing Pokemon. (E)"
   },
   "fullmetalbody": {
     "name": "Full Metal Body",
@@ -512,8 +512,8 @@
   "gluttony": {
     "name": "Gluttony",
     "num": 82,
-    "desc": "When this Pokemon is holding a Berry that usually activates with 1/4 or less of its maximum HP, it is eaten at 1/2 or less of its maximum HP instead.",
-    "shortDesc": "This Pokemon eats Berries at 1/2 max HP or less instead of their usual 1/4 max HP."
+    "desc": "When this Pokemon is holding a Berry that usually activates with 1/4 or less of its maximum HP, it is eaten at 1/2 or less of its maximum HP instead. | Ripen's effect? Gives contact moves Bug Bite's effect.",
+    "shortDesc": "This Pokemon eats Berries at 1/2 max HP or less instead of their usual 1/4 max HP. (E)"
   },
   "goodasgold": {
     "name": "Good as Gold",
@@ -566,8 +566,8 @@
   "guts": {
     "name": "Guts",
     "num": 62,
-    "desc": "If this Pokemon has a non-volatile status condition, its Attack is multiplied by 1.5. This Pokemon's physical attacks ignore the burn effect of halving damage.",
-    "shortDesc": "If this Pokemon is statused, its Attack is 1.5x; ignores burn halving physical damage."
+    "desc": "If this Pokemon has a non-volatile status condition, its Attack is multiplied by 1.5. This Pokemon's physical attacks ignore the burn effect of halving damage. | Lesser boost (20%) when affected by 'weak' status like confusion.",
+    "shortDesc": "If this Pokemon is statused, its Attack is 1.5x; ignores burn halving physical damage. (E)"
   },
   "hadronengine": {
     "name": "Hadron Engine",
@@ -590,8 +590,8 @@
   "heatproof": {
     "name": "Heatproof",
     "num": 85,
-    "desc": "If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon takes half of the usual burn damage, rounded down.",
-    "shortDesc": "Fire damage against this Pokemon is dealt with 1/2 offensive stat; 1/2 burn damage."
+    "desc": "If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon takes half of the usual burn damage, rounded down. | Immune to burn, also rename to Tempered Body and works like Well Baked Body",
+    "shortDesc": "Fire damage against this Pokemon is dealt with 1/2 offensive stat; 1/2 burn damage. (E)"
   },
   "heavymetal": {
     "name": "Heavy Metal",
@@ -602,8 +602,8 @@
   "honeygather": {
     "name": "Honey Gather",
     "num": 118,
-    "desc": "No competitive use.",
-    "shortDesc": "No competitive use."
+    "desc": "No competitive use. | Replace me lmfao, maybe with an ability that helps bugs.",
+    "shortDesc": "No competitive use. (E)"
   },
   "hospitality": {
     "name": "Hospitality",
@@ -632,8 +632,8 @@
   "hydration": {
     "name": "Hydration",
     "num": 93,
-    "desc": "This Pokemon has its non-volatile status condition cured at the end of each turn if Rain Dance is active. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
-    "shortDesc": "This Pokemon has its status cured at the end of each turn if Rain Dance is active."
+    "desc": "This Pokemon has its non-volatile status condition cured at the end of each turn if Rain Dance is active. This effect is prevented if this Pokemon is holding a Utility Umbrella. | Make into a sand version of Rain Dish. Sandy Body? Think of new name.",
+    "shortDesc": "This Pokemon has its status cured at the end of each turn if Rain Dance is active. (E)"
   },
   "hypercutter": {
     "name": "Hyper Cutter",
@@ -644,8 +644,8 @@
   "icebody": {
     "name": "Ice Body",
     "num": 115,
-    "desc": "If Snow is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn.",
-    "shortDesc": "If Snow is active, this Pokemon heals 1/16 of its max HP each turn."
+    "desc": "If Snow is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. | Works like Rain dish",
+    "shortDesc": "If Snow is active, this Pokemon heals 1/16 of its max HP each turn. (E)"
   },
   "iceface": {
     "name": "Ice Face",
@@ -728,8 +728,8 @@
   "ironfist": {
     "name": "Iron Fist",
     "num": 89,
-    "desc": "This Pokemon's punch-based attacks have their power multiplied by 1.2.",
-    "shortDesc": "This Pokemon's punch-based attacks have 1.2x power. Sucker Punch is not boosted."
+    "desc": "This Pokemon's punch-based attacks have their power multiplied by 1.2. | 1.3x",
+    "shortDesc": "This Pokemon's punch-based attacks have 1.2x power. (E)"
   },
   "justified": {
     "name": "Justified",
@@ -746,14 +746,14 @@
   "klutz": {
     "name": "Klutz",
     "num": 103,
-    "desc": "This Pokemon's held item has no effect. This Pokemon cannot use Fling successfully. Macho Brace, Power Anklet, Power Band, Power Belt, Power Bracer, Power Lens, and Power Weight still have their effects.",
-    "shortDesc": "This Pokemon's held item has no effect, except Macho Brace. Fling cannot be used."
+    "desc": "This Pokemon's held item has no effect. This Pokemon cannot use Fling successfully. Macho Brace, Power Anklet, Power Band, Power Belt, Power Bracer, Power Lens, and Power Weight still have their effects. | Hitting enemies applies Embargo, or just remove. OR Free knock off on all contact moves, in exchange for no held item.",
+    "shortDesc": "This Pokemon's held item has no effect, except Macho Brace. Fling cannot be used. (E)"
   },
   "leafguard": {
     "name": "Leaf Guard",
     "num": 102,
-    "desc": "If Sunny Day is active, this Pokemon cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
-    "shortDesc": "If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it."
+    "desc": "If Sunny Day is active, this Pokemon cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. | Rain Dish for sun.",
+    "shortDesc": "If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it. (E)"
   },
   "levitate": {
     "name": "Levitate",
@@ -794,8 +794,8 @@
   "liquidooze": {
     "name": "Liquid Ooze",
     "num": 64,
-    "desc": "This Pokemon damages those draining HP from it for as much as they would heal.",
-    "shortDesc": "This Pokemon damages those draining HP from it for as much as they would heal."
+    "desc": "This Pokemon damages those draining HP from it for as much as they would heal. | Drainers get poisoned as well, less dmg from water moves?",
+    "shortDesc": "This Pokemon damages those draining HP from it for as much as they would heal. (E)"
   },
   "liquidvoice": {
     "name": "Liquid Voice",
@@ -842,8 +842,8 @@
   "marvelscale": {
     "name": "Marvel Scale",
     "num": 63,
-    "desc": "If this Pokemon has a non-volatile status condition, its Defense is multiplied by 1.5.",
-    "shortDesc": "If this Pokemon has a non-volatile status condition, its Defense is multiplied by 1.5."
+    "desc": "If this Pokemon has a non-volatile status condition, its Defense is multiplied by 1.5. | Same changes as guts, immune to dmg from poison, burn, and frost, but not the other negative effects. OR just immune to full para.",
+    "shortDesc": "If this Pokemon has a non-volatile status condition, its Defense is multiplied by 1.5. (E)"
   },
   "megalauncher": {
     "name": "Mega Launcher",
@@ -872,8 +872,8 @@
   "minus": {
     "name": "Minus",
     "num": 58,
-    "desc": "If an active ally has this Ability or the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
-    "shortDesc": "If an active ally has this Ability or the Plus Ability, this Pokemon's Sp. Atk is 1.5x."
+    "desc": "If an active ally has this Ability or the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5. | Raises Atk instead, gives 25% when alone, doubled with another Plus/Minus",
+    "shortDesc": "If an active ally has this Ability or the Plus Ability, this Pokemon's Sp. Atk is 1.5x. (E)"
   },
   "mirrorarmor": {
     "name": "Mirror Armor",
@@ -902,8 +902,8 @@
   "motordrive": {
     "name": "Motor Drive",
     "num": 78,
-    "desc": "This Pokemon is immune to Electric-type moves and raises its Speed by 1 stage when hit by an Electric-type move.",
-    "shortDesc": "This Pokemon's Speed is raised 1 stage if hit by an Electric move; Electric immunity."
+    "desc": "This Pokemon is immune to Electric-type moves and raises its Speed by 1 stage when hit by an Electric-type move. | Speed boost on E.Terrain, old surge surfer effect.",
+    "shortDesc": "This Pokemon's Speed is raised 1 stage if hit by an Electric move; Electric immunity. (E)"
   },
   "moxie": {
     "name": "Moxie",
@@ -992,8 +992,8 @@
   "overgrow": {
     "name": "Overgrow",
     "num": 65,
-    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Grass-type attack.",
-    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Grass attacks."
+    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Grass-type attack. | 20% normally, then 50 when low like normal. Shows when activated.",
+    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Grass attacks. (E)"
   },
   "owntempo": {
     "name": "Own Tempo",
@@ -1040,8 +1040,8 @@
   "plus": {
     "name": "Plus",
     "num": 57,
-    "desc": "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
-    "shortDesc": "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 1.5x."
+    "desc": "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5. | 25% alone, then 50% with Plus/Minus ally.",
+    "shortDesc": "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 1.5x. (E)"
   },
   "poisonheal": {
     "name": "Poison Heal",
@@ -1136,8 +1136,8 @@
   "purepower": {
     "name": "Pure Power",
     "num": 74,
-    "desc": "This Pokemon's Attack is doubled.",
-    "shortDesc": "This Pokemon's Attack is doubled."
+    "desc": "This Pokemon's Attack is doubled. | Sage Power? True Power? Either way make Sp.Atk",
+    "shortDesc": "This Pokemon's Attack is doubled. (E)"
   },
   "purifyingsalt": {
     "name": "Purifying Salt",
@@ -1166,8 +1166,8 @@
   "quickfeet": {
     "name": "Quick Feet",
     "num": 95,
-    "desc": "If this Pokemon has a non-volatile status condition, its Speed is multiplied by 1.5. This Pokemon ignores the paralysis effect of halving Speed.",
-    "shortDesc": "If this Pokemon is statused, its Speed is 1.5x; ignores Speed drop from paralysis."
+    "desc": "If this Pokemon has a non-volatile status condition, its Speed is multiplied by 1.5. This Pokemon ignores the paralysis effect of halving Speed. | Same as guts.",
+    "shortDesc": "If this Pokemon is statused, its Speed is 1.5x; ignores Speed drop from paralysis. (E)"
   },
   "raindish": {
     "name": "Rain Dish",
@@ -1190,8 +1190,8 @@
   "reckless": {
     "name": "Reckless",
     "num": 120,
-    "desc": "This Pokemon's attacks with recoil or crash damage have their power multiplied by 1.2. Does not affect Struggle.",
-    "shortDesc": "This Pokemon's attacks with recoil or crash damage have 1.2x power; not Struggle."
+    "desc": "This Pokemon's attacks with recoil or crash damage have their power multiplied by 1.2. Does not affect Struggle. | Reduces recoil taken.",
+    "shortDesc": "This Pokemon's attacks with recoil or crash damage have 1.2x power; not Struggle. (E)"
   },
   "refrigerate": {
     "name": "Refrigerate",
@@ -1214,8 +1214,8 @@
   "rivalry": {
     "name": "Rivalry",
     "num": 79,
-    "desc": "This Pokemon's attacks have their power multiplied by 1.25 against targets of the same gender or multiplied by 0.75 against targets of the opposite gender. There is no modifier if either this Pokemon or the target is genderless.",
-    "shortDesc": "This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender."
+    "desc": "This Pokemon's attacks have their power multiplied by 1.25 against targets of the same gender or multiplied by 0.75 against targets of the opposite gender. There is no modifier if either this Pokemon or the target is genderless. | take less from opposite gender instead. Half effects but both to genderless targets.",
+    "shortDesc": "This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender. (E)"
   },
   "rkssystem": {
     "name": "RKS System",
@@ -1292,8 +1292,8 @@
   "scrappy": {
     "name": "Scrappy",
     "num": 113,
-    "desc": "This Pokemon can hit Ghost types with Normal- and Fighting-type moves. This Pokemon is immune to the effect of the Intimidate Ability.",
-    "shortDesc": "Fighting, Normal moves hit Ghost. Immune to Intimidate."
+    "desc": "This Pokemon can hit Ghost types with Normal- and Fighting-type moves. | This Pokemon is immune to the effect of the Intimidate Ability.",
+    "shortDesc": "Fighting, Normal moves hit Ghost.  (E) Immune to Intimidate."
   },
   "screencleaner": {
     "name": "Screen Cleaner",
@@ -1334,8 +1334,8 @@
   "shedskin": {
     "name": "Shed Skin",
     "num": 61,
-    "desc": "This Pokemon has a 33% chance to have its non-volatile status condition cured at the end of each turn.",
-    "shortDesc": "This Pokemon has a 33% chance to have its status cured at the end of each turn."
+    "desc": "This Pokemon has a 33% chance to have its non-volatile status condition cured at the end of each turn. | 50% chance, or heals user when done.",
+    "shortDesc": "This Pokemon has a 33% chance to have its status cured at the end of each turn. (E)"
   },
   "sheerforce": {
     "name": "Sheer Force",
@@ -1376,8 +1376,8 @@
   "slowstart": {
     "name": "Slow Start",
     "num": 112,
-    "desc": "On switch-in, this Pokemon's Attack and Speed are halved for 5 turns.",
-    "shortDesc": "On switch-in, this Pokemon's Attack and Speed are halved for 5 turns."
+    "desc": "On switch-in, this Pokemon's Attack and Speed are halved for 5 turns. | Turns persist through switch, OR 3 turns but all stats lowered.",
+    "shortDesc": "On switch-in, this Pokemon's Attack and Speed are halved for 5 turns. (E)"
   },
   "slushrush": {
     "name": "Slush Rush",
@@ -1388,8 +1388,8 @@
   "sniper": {
     "name": "Sniper",
     "num": 97,
-    "desc": "If this Pokemon strikes with a critical hit, the damage is multiplied by 1.5.",
-    "shortDesc": "If this Pokemon strikes with a critical hit, the damage is multiplied by 1.5."
+    "desc": "If this Pokemon strikes with a critical hit, the damage is multiplied by 1.5. | Increased crit chance when low? Accuracy rises when you crit? Can hit pokemon in invulnerable states? Like Fly, Dig, or (dont do this) Protect?",
+    "shortDesc": "If this Pokemon strikes with a critical hit, the damage is multiplied by 1.5. (E)"
   },
   "snowcloak": {
     "name": "Snow Cloak",
@@ -1406,14 +1406,14 @@
   "solarpower": {
     "name": "Solar Power",
     "num": 94,
-    "desc": "If Sunny Day is active, this Pokemon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
-    "shortDesc": "If Sunny Day is active, this Pokemon's Sp. Atk is 1.5x; loses 1/8 max HP per turn."
+    "desc": "If Sunny Day is active, this Pokemon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. | No dmg, increases atk too.",
+    "shortDesc": "If Sunny Day is active, this Pokemon's Sp. Atk is 1.5x; loses 1/8 max HP per turn. (E)"
   },
   "solidrock": {
     "name": "Solid Rock",
     "num": 116,
-    "desc": "This Pokemon receives 3/4 damage from supereffective attacks.",
-    "shortDesc": "This Pokemon receives 3/4 damage from supereffective attacks."
+    "desc": "This Pokemon receives 3/4 damage from supereffective attacks. | 10% increased Def",
+    "shortDesc": "This Pokemon receives 3/4 damage from supereffective attacks. (E)"
   },
   "soulheart": {
     "name": "Soul-Heart",
@@ -1442,8 +1442,8 @@
   "stall": {
     "name": "Stall",
     "num": 100,
-    "desc": "This Pokemon moves last among Pokemon using the same or greater priority moves.",
-    "shortDesc": "This Pokemon moves last among Pokemon using the same or greater priority moves."
+    "desc": "This Pokemon moves last among Pokemon using the same or greater priority moves. | Take less dmg.",
+    "shortDesc": "This Pokemon moves last among Pokemon using the same or greater priority moves. (E)"
   },
   "stalwart": {
     "name": "Stalwart",
@@ -1472,8 +1472,8 @@
   "steadfast": {
     "name": "Steadfast",
     "num": 80,
-    "desc": "If this Pokemon flinches, its Speed is raised by 1 stage.",
-    "shortDesc": "If this Pokemon flinches, its Speed is raised by 1 stage."
+    "desc": "If this Pokemon flinches, its Speed is raised by 1 stage. | Raises Defenses if flinch also.",
+    "shortDesc": "If this Pokemon flinches, its Speed is raised by 1 stage. (E)"
   },
   "steamengine": {
     "name": "Steam Engine",
@@ -1502,8 +1502,8 @@
   "stickyhold": {
     "name": "Sticky Hold",
     "num": 60,
-    "desc": "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack, unless the attack knocks out this Pokemon. A Sticky Barb will be transferred to other Pokemon regardless of this Ability.",
-    "shortDesc": "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack."
+    "desc": "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack, unless the attack knocks out this Pokemon. A Sticky Barb will be transferred to other Pokemon regardless of this Ability. | Contact slows targets, like suction cups, reverse Gooey.",
+    "shortDesc": "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack. (E)"
   },
   "stormdrain": {
     "name": "Storm Drain",
@@ -1550,14 +1550,14 @@
   "surgesurfer": {
     "name": "Surge Surfer",
     "num": 207,
-    "desc": "If Electric Terrain is active, this Pokemon's Speed is doubled.",
-    "shortDesc": "If Electric Terrain is active, this Pokemon's Speed is doubled."
+    "desc": "If Electric Terrain is active, this Pokemon's Speed is doubled. | ALL terrains.",
+    "shortDesc": "If Electric Terrain is active, this Pokemon's Speed is doubled. (E)"
   },
   "swarm": {
     "name": "Swarm",
     "num": 68,
-    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Bug-type attack.",
-    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Bug attacks."
+    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Bug-type attack. | 20% normally, then 50 when low like normal. Shows when activated.",
+    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Bug attacks. (E)"
   },
   "sweetveil": {
     "name": "Sweet Veil",
@@ -1598,8 +1598,8 @@
   "tangledfeet": {
     "name": "Tangled Feet",
     "num": 77,
-    "desc": "This Pokemon's evasiveness is doubled as long as it is confused.",
-    "shortDesc": "This Pokemon's evasiveness is doubled as long as it is confused."
+    "desc": "This Pokemon's evasiveness is doubled as long as it is confused. | Boost Speed and Atk when confused instead, make immune to hitting self? Remove atk buff if this part is possible. Maybe also boost dance moves?",
+    "shortDesc": "This Pokemon's evasiveness is doubled as long as it is confused. (E)"
   },
   "tanglinghair": {
     "name": "Tangling Hair",
@@ -1646,8 +1646,8 @@
   "torrent": {
     "name": "Torrent",
     "num": 67,
-    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Water-type attack.",
-    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Water attacks."
+    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Water-type attack. | 20% normally, then 50 when low like normal. Shows when activated.",
+    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Water attacks. (E)"
   },
   "toughclaws": {
     "name": "Tough Claws",
@@ -1712,8 +1712,8 @@
   "unburden": {
     "name": "Unburden",
     "num": 84,
-    "desc": "If this Pokemon loses its held item for any reason, its Speed is doubled as long as it remains active, has this Ability, and is not holding an item.",
-    "shortDesc": "Speed is doubled on held item loss; boost is lost if it switches, gets new item/Ability."
+    "desc": "If this Pokemon loses its held item for any reason, its Speed is doubled as long as it remains active, has this Ability, and is not holding an item. | Holding no item is a 10% boost, so it still works a little when you switch back in.",
+    "shortDesc": "Speed is doubled on held item loss; boost is lost if it switches, gets new item/Ability. (E)"
   },
   "unnerve": {
     "name": "Unnerve",
@@ -1736,8 +1736,8 @@
   "victorystar": {
     "name": "Victory Star",
     "num": 162,
-    "desc": "This Pokemon and its allies' moves have their accuracy multiplied by 1.1.",
-    "shortDesc": "This Pokemon and its allies' moves have their accuracy multiplied by 1.1."
+    "desc": "This Pokemon and its allies' moves have their accuracy multiplied by 1.1. | Also increases Crit rate? Or buffs ally dmg 10%",
+    "shortDesc": "This Pokemon and its allies' moves have their accuracy multiplied by 1.1. (E)"
   },
   "vitalspirit": {
     "name": "Vital Spirit",
@@ -1796,8 +1796,8 @@
   "whitesmoke": {
     "name": "White Smoke",
     "num": 73,
-    "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
-    "shortDesc": "Prevents other Pokemon from lowering this Pokemon's stat stages."
+    "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages. | Maybe cases Haze on entry?",
+    "shortDesc": "Prevents other Pokemon from lowering this Pokemon's stat stages. (E)"
   },
   "wimpout": {
     "name": "Wimp Out",
