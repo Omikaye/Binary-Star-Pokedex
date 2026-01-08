@@ -100,19 +100,19 @@
 										__pokemonUsageCache[pokemonId].wild++;
 										__pokemonUsageDetail[pokemonId].wild.push({ location: loc, encounter: encounter, pokemon: mon, type: 'normal' });
 									}
-								}
-								// Also check SOS encounters
-								if (mon.sos && Array.isArray(mon.sos)) {
-									for (let sosName of mon.sos) {
-										const dispName = typeof window.translateDisplayName === 'function' ? 
-											window.translateDisplayName(sosName) : sosName;
-										const pokemonId = toID(dispName);
-										if (!__pokemonUsageCache[pokemonId]) {
-											__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
-											__pokemonUsageDetail[pokemonId] = { wild: [], trainer: [] };
+									// Also check SOS encounters
+									if (mon.sos && Array.isArray(mon.sos)) {
+										for (let sosName of mon.sos) {
+											const dispName = typeof window.translateDisplayName === 'function' ? 
+												window.translateDisplayName(sosName) : sosName;
+											const pokemonId = toID(dispName);
+											if (!__pokemonUsageCache[pokemonId]) {
+												__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
+												__pokemonUsageDetail[pokemonId] = { wild: [], trainer: [] };
+											}
+											__pokemonUsageCache[pokemonId].wild++;
+											__pokemonUsageDetail[pokemonId].wild.push({ location: loc, encounter: encounter, pokemon: { name: sosName }, type: 'sos' });
 										}
-										__pokemonUsageCache[pokemonId].wild++;
-										__pokemonUsageDetail[pokemonId].wild.push({ location: loc, encounter: encounter, pokemon: { name: sosName }, type: 'sos' });
 									}
 								}
 							}
@@ -131,6 +131,7 @@
 								const pokemonId = toID(dispName);
 								if (!__pokemonUsageCache[pokemonId]) {
 									__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
+									__pokemonUsageDetail[pokemonId] = { wild: [], trainer: [] };
 								}
 								__pokemonUsageCache[pokemonId].trainer++;
 							}

@@ -2,7 +2,21 @@
 window.PokedexLocationsPanel = PokedexResultPanel.extend({
   initialize: function () {
     this.shortTitle = 'Locations';
-    var buf = '<div class="pfx-body dexentry">';
+    var buf = '<div class="pfx-body"><form class="pokedex">';
+    buf += '<h1><a href="'+Config.baseurl+'" data-target="replace">Pok&eacute;dex</a></h1>';
+    buf += '<ul class="tabbar centered" style="margin-bottom: 18px">';
+    buf += '<li><button class="button nav-first" value="' + Config.baseurl + 'dex">Search</button></li>';
+    buf += '<li><button class="button" value="' + Config.baseurl + 'pokemon/">Pok&eacute;mon</button></li>';
+    buf += '<li><button class="button" value="' + Config.baseurl + 'moves/">Moves</button></li>';
+    buf += '<li><button class="button" value="' + Config.baseurl + 'abilities/">Abilities</button></li>';
+    buf += '<li><button class="button" value="' + Config.baseurl + 'items/">Items</button></li>';
+    buf += '<li><button class="button" value="' + Config.baseurl + 'mechanics/">Mechanics</button></li>';
+    buf += '<li><button class="button cur" value="' + Config.baseurl + 'locations/">Locations</button></li>';
+    buf += '<li><button class="button" value="' + Config.baseurl + 'trainers/">Trainers</button></li>';
+    buf += '<li><button class="button nav-last" value="' + Config.baseurl + 'usage/">Usage</button></li>';
+    buf += '</ul>';
+    buf += '</form>';
+    buf += '<div class="dexentry">';
     buf += '<a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pokédex</a>';
     buf += '<h1><a href="' + Config.baseurl + 'locations/" data-target="push" class="subtle">Locations</a></h1>';
 
@@ -23,7 +37,7 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
     }
     buf += '</ul>';
 
-    buf += '</div>';
+    buf += '</div></div>';
     this.html(buf);
   }
 });
