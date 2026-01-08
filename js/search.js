@@ -131,6 +131,7 @@
 								const pokemonId = toID(dispName);
 								if (!__pokemonUsageCache[pokemonId]) {
 									__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
+									__pokemonUsageDetail[pokemonId] = { wild: [], trainer: [] };
 								}
 								__pokemonUsageCache[pokemonId].trainer++;
 							}
