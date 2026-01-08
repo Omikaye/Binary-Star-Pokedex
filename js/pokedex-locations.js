@@ -2,7 +2,18 @@
 window.PokedexLocationsPanel = PokedexResultPanel.extend({
   initialize: function () {
     this.shortTitle = 'Locations';
-    var buf = '<div class="pfx-body dexentry">';
+    var buf = '<div class="pfx-topbar">';
+    buf += '<div class="header">';
+    buf += '<ul class="nav">';
+    buf += '<li><a class="button nav-first" href="' + Config.baseurl + '"><img src="' + Config.baseurl + 'images/pokemonshowdownbeta.png" alt="Pokémon Showdown! (beta)" /> Home</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'dex">Pokédex</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'locations/">Locations</a></li>';
+    buf += '<li><a class="button nav-last" href="https://github.com/Strackeror/Static-Showdown-Dex">GitHub</a></li>';
+    buf += '</ul>';
+    buf += '<div style="clear:both"></div>';
+    buf += '</div>';
+    buf += '</div>';
+    buf += '<div class="pfx-body dexentry">';
     buf += '<a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pokédex</a>';
     buf += '<h1><a href="' + Config.baseurl + 'locations/" data-target="push" class="subtle">Locations</a></h1>';
 

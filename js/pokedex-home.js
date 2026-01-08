@@ -2,7 +2,18 @@
 window.PokedexHomePanel = PokedexResultPanel.extend({
   initialize: function () {
     this.shortTitle = 'Home';
-    var buf = '<div class="pfx-body dexentry">';
+    var buf = '<div class="pfx-topbar">';
+    buf += '<div class="header">';
+    buf += '<ul class="nav">';
+    buf += '<li><a class="button nav-first" href="' + Config.baseurl + '"><img src="' + Config.baseurl + 'images/pokemonshowdownbeta.png" alt="Pokémon Showdown! (beta)" /> Home</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'dex">Pokédex</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'locations/">Locations</a></li>';
+    buf += '<li><a class="button nav-last" href="https://github.com/Strackeror/Static-Showdown-Dex">GitHub</a></li>';
+    buf += '</ul>';
+    buf += '<div style="clear:both"></div>';
+    buf += '</div>';
+    buf += '</div>';
+    buf += '<div class="pfx-body dexentry">';
     buf += '<h1>Pokémon Binary Star</h1>';
     buf += '<p class="resultsub">A comprehensive Pokédex for the Pokémon Binary Star ROM hack by Omikaye</p>';
 
