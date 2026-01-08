@@ -75,22 +75,46 @@
 		return __moveUseCountCache[toID(id)] || 0;
 	}
 
-	// Cache Pokemon wild/trainer usage counts
+	// Cache Pokemon wild/trainer usage counts (detailed list with encounter info)
 	let __pokemonUsageCache = null;
+	let __pokemonUsageDetail = null;
 	function getPokemonUsage(id) {
 		if (!__pokemonUsageCache) {
 			__pokemonUsageCache = {};
+			__pokemonUsageDetail = {};
 			// Count wild encounters from Locations
 			if (window.Locations) {
 				for (let loc of window.Locations) {
-					if (loc.pokemon && Array.isArray(loc.pokemon)) {
-						for (let encounter of loc.pokemon) {
-							if (encounter.name) {
-								const pokemonId = toID(encounter.name);
-								if (!__pokemonUsageCache[pokemonId]) {
-									__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
+					if (loc.encounters && Array.isArray(loc.encounters)) {
+						for (let encounter of loc.encounters) {
+							if (encounter.pokemon && Array.isArray(encounter.pokemon)) {
+								for (let mon of encounter.pokemon) {
+									if (mon.name) {
+										const dispName = typeof window.translateDisplayName === 'function' ? 
+											window.translateDisplayName(mon.name) : mon.name;
+										const pokemonId = toID(dispName);
+										if (!__pokemonUsageCache[pokemonId]) {
+											__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
+											__pokemonUsageDetail[pokemonId] = { wild: [], trainer: [] };
+										}
+										__pokemonUsageCache[pokemonId].wild++;
+										__pokemonUsageDetail[pokemonId].wild.push({ location: loc, encounter: encounter, pokemon: mon, type: 'normal' });
+									}
 								}
-								__pokemonUsageCache[pokemonId].wild++;
+								// Also check SOS encounters
+								if (mon.sos && Array.isArray(mon.sos)) {
+									for (let sosName of mon.sos) {
+										const dispName = typeof window.translateDisplayName === 'function' ? 
+											window.translateDisplayName(sosName) : sosName;
+										const pokemonId = toID(dispName);
+										if (!__pokemonUsageCache[pokemonId]) {
+											__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
+											__pokemonUsageDetail[pokemonId] = { wild: [], trainer: [] };
+										}
+										__pokemonUsageCache[pokemonId].wild++;
+										__pokemonUsageDetail[pokemonId].wild.push({ location: loc, encounter: encounter, pokemon: { name: sosName }, type: 'sos' });
+									}
+								}
 							}
 						}
 					}
@@ -372,6 +396,8 @@
 			return this.renderMoveSortRow();
 		case 'sortability':
 			return this.renderAbilitySortRow();
+		case 'sortusage':
+			return this.renderUsageSortRow();
 		case 'pokemon':
 			var pokemon = getID(BattlePokedex, id);
 			return this.renderPokemonRow(pokemon, matchStart, matchLength, errorMessage, attrs);
@@ -472,6 +498,15 @@
 		// Order: Users then Name
 		buf += '<button class="sortcol userssortcol' + (this.sortCol === 'users' ? ' cur' : '') + '" data-sort="users">Users</button>';
 		buf += '<button class="sortcol abilitynamesortcol' + (this.sortCol === 'name' ? ' cur' : '') + '" data-sort="name">Name</button>';
+		buf += '</div></li>';
+		return buf;
+	};
+	Search.prototype.renderUsageSortRow = function () {
+		var buf = '<li class="result"><div class="sortrow">';
+		buf += '<button class="sortcol pnamesortcol' + (this.sortCol === 'name' ? ' cur' : '') + '" data-sort="name">Name</button>';
+		buf += '<button class="sortcol typesortcol' + (this.sortCol === 'type' ? ' cur' : '') + '" data-sort="type">Types</button>';
+		buf += '<button class="sortcol userssortcol' + (this.sortCol === 'wild' ? ' cur' : '') + '" data-sort="wild">Wild</button>';
+		buf += '<button class="sortcol userssortcol' + (this.sortCol === 'trainer' ? ' cur' : '') + '" data-sort="trainer">Trainer</button>';
 		buf += '</div></li>';
 		return buf;
 	};

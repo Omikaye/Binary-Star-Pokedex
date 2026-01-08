@@ -32,14 +32,41 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
     if (window.Locations) {
       for (var i = 0; i < window.Locations.length; i++) {
         var loc = window.Locations[i];
-        if (loc.pokemon && Array.isArray(loc.pokemon)) {
-          for (var j = 0; j < loc.pokemon.length; j++) {
-            var encounter = loc.pokemon[j];
-            if (encounter.name && toID(encounter.name) === id) {
-              usage.wild.push({
-                location: loc,
-                encounter: encounter
-              });
+        if (loc.encounters && Array.isArray(loc.encounters)) {
+          for (var e = 0; e < loc.encounters.length; e++) {
+            var encounter = loc.encounters[e];
+            if (encounter.pokemon && Array.isArray(encounter.pokemon)) {
+              for (var j = 0; j < encounter.pokemon.length; j++) {
+                var mon = encounter.pokemon[j];
+                if (mon.name) {
+                  var dispName = typeof window.translateDisplayName === 'function' ? 
+                    window.translateDisplayName(mon.name) : mon.name;
+                  if (toID(dispName) === id) {
+                    usage.wild.push({
+                      location: loc,
+                      encounter: encounter,
+                      pokemon: mon,
+                      type: 'normal'
+                    });
+                  }
+                }
+              }
+              // Check SOS encounters
+              if (mon.sos && Array.isArray(mon.sos)) {
+                for (var s = 0; s < mon.sos.length; s++) {
+                  var sosName = mon.sos[s];
+                  var sosDispName = typeof window.translateDisplayName === 'function' ? 
+                    window.translateDisplayName(sosName) : sosName;
+                  if (toID(sosDispName) === id) {
+                    usage.wild.push({
+                      location: loc,
+                      encounter: encounter,
+                      pokemon: { name: sosName },
+                      type: 'sos'
+                    });
+                  }
+                }
+              }
             }
           }
         }
@@ -79,23 +106,24 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
         
         buf += '<li class="result">';
         buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push">';
-        buf += '<span class="col namecol" style="width:250px">' + escapeHTML(loc.name) + '</span> ';
+        buf += '<span class="col namecol" style="width:250px">' + escapeHTML(loc.name);
+        if (wildData.type === 'sos') {
+          buf += ' <small>(SOS)</small>';
+        }
+        buf += '</span> ';
         
         var levelText = '';
-        if (encounter.minLevel && encounter.maxLevel) {
-          if (encounter.minLevel === encounter.maxLevel) {
-            levelText = 'Lv. ' + encounter.minLevel;
+        if (encounter.levelRange) {
+          if (encounter.levelRange.min === encounter.levelRange.max) {
+            levelText = 'Lv. ' + encounter.levelRange.min;
           } else {
-            levelText = 'Lv. ' + encounter.minLevel + '-' + encounter.maxLevel;
+            levelText = 'Lv. ' + encounter.levelRange.min + '-' + encounter.levelRange.max;
           }
         }
         buf += '<span class="col" style="width:100px">' + levelText + '</span> ';
         
-        if (encounter.method) {
-          buf += '<span class="col" style="width:150px;color:#777">' + escapeHTML(encounter.method) + '</span> ';
-        }
-        if (encounter.rarity) {
-          buf += '<span class="col" style="width:80px;color:#777">' + escapeHTML(encounter.rarity) + '</span> ';
+        if (encounter.spot) {
+          buf += '<span class="col" style="width:150px;color:#777">' + escapeHTML(encounter.spot) + '</span> ';
         }
         
         buf += '</a>';

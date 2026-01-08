@@ -1199,7 +1199,7 @@ class BattleUsageSearch extends BattleTypedSearch<"usage"> {
     }
     return true;
   }
-  sortRow: SearchRow = ["sortpokemon", ""];
+  sortRow: SearchRow = ["sortusage", ""];
   getTable() {
     return BattlePokedex;
   }
@@ -1245,8 +1245,33 @@ class BattleUsageSearch extends BattleTypedSearch<"usage"> {
     return this.getDefaultResults();
   }
   sort(results: SearchRow[], sortCol: string, reverseSort?: boolean) {
-    // Usage doesn't need sorting by stats, just keep default order
-    return results;
+    const sortOrder = reverseSort ? -1 : 1;
+    if (sortCol === "wild") {
+      return results.sort(([, id1], [, id2]) => {
+        const usage1 = (window as any).__pokemonUsageCache?.[id1 as ID]?.wild || 0;
+        const usage2 = (window as any).__pokemonUsageCache?.[id2 as ID]?.wild || 0;
+        return (usage2 - usage1) * sortOrder;
+      });
+    } else if (sortCol === "trainer") {
+      return results.sort(([, id1], [, id2]) => {
+        const usage1 = (window as any).__pokemonUsageCache?.[id1 as ID]?.trainer || 0;
+        const usage2 = (window as any).__pokemonUsageCache?.[id2 as ID]?.trainer || 0;
+        return (usage2 - usage1) * sortOrder;
+      });
+    } else if (sortCol === "name") {
+      return results.sort(([, id1], [, id2]) => {
+        return (id1 < id2 ? -1 : id1 > id2 ? 1 : 0) * sortOrder;
+      });
+    } else if (sortCol === "type") {
+      return results.sort(([, id1], [, id2]) => {
+        const poke1 = getID(BattlePokedex, id1);
+        const poke2 = getID(BattlePokedex, id2);
+        const type1 = poke1.types[0] || "";
+        const type2 = poke2.types[0] || "";
+        return (type1 < type2 ? -1 : type1 > type2 ? 1 : 0) * sortOrder;
+      });
+    }
+    throw new Error("invalid sortcol");
   }
 }
 
