@@ -75,6 +75,50 @@
 		return __moveUseCountCache[toID(id)] || 0;
 	}
 
+	// Cache Pokemon wild/trainer usage counts
+	let __pokemonUsageCache = null;
+	function getPokemonUsage(id) {
+		if (!__pokemonUsageCache) {
+			__pokemonUsageCache = {};
+			// Count wild encounters from Locations
+			if (window.Locations) {
+				for (let loc of window.Locations) {
+					if (loc.pokemon && Array.isArray(loc.pokemon)) {
+						for (let encounter of loc.pokemon) {
+							if (encounter.name) {
+								const pokemonId = toID(encounter.name);
+								if (!__pokemonUsageCache[pokemonId]) {
+									__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
+								}
+								__pokemonUsageCache[pokemonId].wild++;
+							}
+						}
+					}
+				}
+			}
+			// Count trainer usage from Trainers
+			if (window.Trainers) {
+				for (let trainer of window.Trainers) {
+					if (trainer.team && Array.isArray(trainer.team)) {
+						for (let pokemon of trainer.team) {
+							if (pokemon.name) {
+								const dispName = typeof window.translateDisplayName === 'function' ? 
+									window.translateDisplayName(pokemon.name) : pokemon.name;
+								const pokemonId = toID(dispName);
+								if (!__pokemonUsageCache[pokemonId]) {
+									__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
+								}
+								__pokemonUsageCache[pokemonId].trainer++;
+							}
+						}
+					}
+				}
+			}
+		}
+		const usage = __pokemonUsageCache[toID(id)] || { wild: 0, trainer: 0 };
+		return usage;
+	}
+
 	function Search(elem, viewport) {
 		this.$el = $(elem);
 		this.el = this.$el[0];
@@ -331,6 +375,9 @@
 		case 'pokemon':
 			var pokemon = getID(BattlePokedex, id);
 			return this.renderPokemonRow(pokemon, matchStart, matchLength, errorMessage, attrs);
+		case 'usage':
+			var pokemon = getID(BattlePokedex, id);
+			return this.renderUsageRow(pokemon, matchStart, matchLength, errorMessage, attrs);
 		case 'pokeedit':
 			var pokemon = getID(BattlePokedexEdit, id);
 			return this.renderPokeeditRow(pokemon, matchStart, matchLength, errorMessage, attrs);
@@ -519,6 +566,75 @@
 		var bst = 0;
 		for (i in stats) bst += stats[i];
 		buf += '<span class="col bstcol"><em>BST<br />' + bst + '</em></span> ';
+
+		buf += '</a></li>';
+
+		return buf;
+	};
+	Search.prototype.renderUsageRow = function (pokemon, matchStart, matchLength, errorMessage, attrs) {
+		if (!attrs) attrs = '';
+		if (!pokemon) return '<li class="result">Unrecognized pokemon</li>';
+		var id = toID(pokemon.name);
+		if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'usage/' + id + '" data-target="push"';
+		var buf = '<li class="result"><a' + attrs + ' data-entry="usage|' + escapeHTML(pokemon.name) + '">';
+
+		// Dex number with suffix for forms (A, B, C...), shown as 6-A, 10-B, etc. Base shows plain number.
+		var numDisplay = pokemon.num;
+		if (pokemon.forme && pokemon.name !== pokemon.baseSpecies && window.BattleFormOrder) {
+			var baseId = toID(pokemon.baseSpecies || pokemon.name);
+			var order = window.BattleFormOrder[baseId];
+			if (order) {
+				var idx = order.indexOf(pokemon.id);
+				if (idx >= 0) {
+					var letter = String.fromCharCode(65 + idx);
+					numDisplay = pokemon.num + '-' + letter;
+				}
+			}
+		}
+		buf += '<span class="col numcol">' + numDisplay + "</span> ";
+		// icon
+		buf += '<span class="col iconcol">';
+		buf += '<span style="' + getPokemonIcon(pokemon.name) + '"></span>';
+		buf += '</span> ';
+
+		// name
+		var name = pokemon.name;
+		var tagStart = (pokemon.forme ? name.length - pokemon.forme.length - 1 : 0);
+		if (tagStart) name = name.substr(0, tagStart);
+		if (matchLength) {
+			name = name.substr(0, matchStart) + '<b>' + name.substr(matchStart, matchLength) + '</b>' + name.substr(matchStart + matchLength);
+		}
+		if (tagStart) {
+			if (matchLength && matchStart + matchLength > tagStart) {
+				if (matchStart < tagStart) {
+					matchLength -= tagStart - matchStart;
+					matchStart = tagStart;
+				}
+				name += '<small>' + pokemon.name.substr(tagStart, matchStart - tagStart) + '<b>' + pokemon.name.substr(matchStart, matchLength) + '</b>' + pokemon.name.substr(matchStart + matchLength) + '</small>';
+			} else {
+				name += '<small>' + pokemon.name.substr(tagStart) + '</small>';
+			}
+		}
+		buf += '<span class="col pokemonnamecol">' + name + '</span> ';
+
+		// error
+		if (errorMessage) {
+			buf += errorMessage + '</a></li>';
+			return buf;
+		}
+
+		// type
+		buf += '<span class="col typecol">';
+		var types = pokemon.types;
+		for (var i = 0; i < types.length; i++) {
+			buf += getTypeIcon(types[i]);
+		}
+		buf += '</span> ';
+
+		// Get usage counts
+		var usage = getPokemonUsage(id);
+		buf += '<span class="col statcol" style="width:80px"><em>Wild</em><br />' + usage.wild + '</span> ';
+		buf += '<span class="col statcol" style="width:80px"><em>Trainer</em><br />' + usage.trainer + '</span> ';
 
 		buf += '</a></li>';
 

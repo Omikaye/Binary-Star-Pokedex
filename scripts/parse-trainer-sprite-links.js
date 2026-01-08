@@ -6,7 +6,8 @@ const inputFile = path.join(__dirname, '../images/sprites/trainersprites/trainer
 const outputFile = path.join(__dirname, '../data/trainer-sprite-links.json');
 
 const content = fs.readFileSync(inputFile, 'utf8');
-const lines = content.split('\n').filter(line => line.trim());
+// Normalize line endings and trim
+const lines = content.replace(/\r/g, '').split('\n').map(l => l.trim()).filter(line => line && !line.startsWith('#'));
 
 const spriteLinks = {};
 
@@ -17,13 +18,14 @@ function toID(text) {
 }
 
 for (const line of lines) {
-  const match = line.match(/^(.+?):\s*(.+)$/);
-  if (match) {
-    const name = match[1].trim();
-    const url = match[2].trim();
-    const id = toID(name);
-    spriteLinks[id] = url;
-  }
+  // Split on the first ':' to allow URLs with additional ':'
+  const idx = line.indexOf(':');
+  if (idx <= 0) continue;
+  const name = line.slice(0, idx).trim();
+  const url = line.slice(idx + 1).trim();
+  if (!name || !url) continue;
+  const id = toID(name);
+  spriteLinks[id] = url;
 }
 
 // Write to JSON file

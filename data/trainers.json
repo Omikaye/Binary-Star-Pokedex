@@ -51,7 +51,7 @@
     "prizeMoney": 528,
     "team": [
       {
-        "name": "Flabébé 3",
+        "name": "Flabébé",
         "level": 13,
         "item": "Absorb Bulb",
         "nature": "Modest",
@@ -106,7 +106,7 @@
   },
   {
     "id": "009",
-    "name": "Pokémon Trainer Hau",
+    "name": "Kahuna's Grandson Hau",
     "prizeMoney": 420,
     "team": [
       {
@@ -149,7 +149,7 @@
   },
   {
     "id": "010",
-    "name": "Pokémon Trainer Hau",
+    "name": "Kahuna's Grandson Hau",
     "prizeMoney": 420,
     "team": [
       {
@@ -192,7 +192,7 @@
   },
   {
     "id": "011",
-    "name": "Pokémon Trainer Hau",
+    "name": "Kahuna's Grandson Hau",
     "prizeMoney": 420,
     "team": [
       {
@@ -235,7 +235,7 @@
   },
   {
     "id": "012",
-    "name": "Pokémon Trainer Hau",
+    "name": "Tapu's Chosen Hau",
     "prizeMoney": 2040,
     "team": [
       {
@@ -307,7 +307,7 @@
   },
   {
     "id": "013",
-    "name": "Pokémon Trainer Hau",
+    "name": "Tapu's Chosen Hau",
     "prizeMoney": 2040,
     "team": [
       {
@@ -379,7 +379,7 @@
   },
   {
     "id": "014",
-    "name": "Pokémon Trainer Hau",
+    "name": "Tapu's Chosen Hau",
     "prizeMoney": 2040,
     "team": [
       {
@@ -560,7 +560,7 @@
         "ability": "Hustle",
         "moves": [
           "Thief",
-          "Deft Dash",
+          "Slink Strike",
           "Pursuit",
           "Quick Attack"
         ]
@@ -569,7 +569,7 @@
   },
   {
     "id": "021",
-    "name": "Youth Athlete Hiromi",
+    "name": "Athlete In-Training Hiromi",
     "prizeMoney": 448,
     "team": [
       {
@@ -660,7 +660,7 @@
   },
   {
     "id": "023",
-    "name": "Island Kahuna Hala",
+    "name": "Melemele Kahuna Hala",
     "prizeMoney": 8400,
     "team": [
       {
@@ -865,7 +865,7 @@
   },
   {
     "id": "028",
-    "name": "Preschooler Oliver",
+    "name": "Kindergartener Oliver",
     "prizeMoney": 128,
     "team": [
       {
@@ -908,7 +908,7 @@
   },
   {
     "id": "030",
-    "name": "Pokémon Breeder Jay",
+    "name": "Pokémon Rancher Jay",
     "prizeMoney": 960,
     "team": [
       {
@@ -1090,7 +1090,7 @@
         "moves": [
           "Pursuit",
           "Pluck",
-          "Deft Dash",
+          "Slink Strike",
           "Embargo"
         ]
       }
@@ -1098,7 +1098,7 @@
   },
   {
     "id": "033",
-    "name": "Rising Star Tatiana",
+    "name": "Up and Coming Tatiana",
     "prizeMoney": 1568,
     "team": [
       {
@@ -1157,7 +1157,7 @@
   },
   {
     "id": "034",
-    "name": "Swimmer Yasu",
+    "name": "Swimmer Beau Yasu",
     "prizeMoney": 1836,
     "team": [
       {
@@ -1202,7 +1202,7 @@
       {
         "name": "Krabby",
         "level": 27,
-        "item": "Shed Shell",
+        "item": "Steelium Z",
         "nature": "Brave",
         "ability": "Shell Armor",
         "moves": [
@@ -1216,7 +1216,7 @@
   },
   {
     "id": "035",
-    "name": "Swimmer Kalani",
+    "name": "Swimmer Beau Kalani",
     "prizeMoney": 2128,
     "team": [
       {
@@ -1275,7 +1275,7 @@
   },
   {
     "id": "036",
-    "name": "Swimmer Kelsie",
+    "name": "Swimsuit Kelsie",
     "prizeMoney": 2184,
     "team": [
       {
@@ -1347,7 +1347,7 @@
   },
   {
     "id": "037",
-    "name": "Swimmer Portia",
+    "name": "Swimsuit Portia",
     "prizeMoney": 2576,
     "team": [
       {
@@ -1406,7 +1406,7 @@
   },
   {
     "id": "038",
-    "name": "Swimmer Shelby",
+    "name": "Swim Gal Shelby",
     "prizeMoney": 2784,
     "team": [
       {
@@ -1452,7 +1452,7 @@
   },
   {
     "id": "039",
-    "name": "Swimmer Jade",
+    "name": "Swim Gal Jade",
     "prizeMoney": 2376,
     "team": [
       {
@@ -1725,7 +1725,7 @@
         "ability": "Hustle",
         "moves": [
           "Thief",
-          "Deft Dash",
+          "Slink Strike",
           "Pursuit",
           "Quick Attack"
         ]
@@ -1766,7 +1766,7 @@
       {
         "name": "Stunky",
         "level": 12,
-        "item": "Prot. Pads",
+        "item": "Protective Pads",
         "nature": "Timid",
         "ability": "Stench",
         "moves": [
@@ -1780,7 +1780,7 @@
   },
   {
     "id": "052",
-    "name": "Captain Ilima",
+    "name": "Plain Captain Ilima",
     "prizeMoney": 3120,
     "team": [
       {
@@ -1930,7 +1930,7 @@
       {
         "name": "Palpitoad",
         "level": 24,
-        "item": null,
+        "item": "Maranga Berry",
         "nature": "Bold",
         "ability": "Swift Swim",
         "moves": [
@@ -1943,7 +1943,7 @@
       {
         "name": "Frogadier",
         "level": 25,
-        "item": null,
+        "item": "Expert Belt",
         "nature": "Naive",
         "ability": "Protean",
         "moves": [
@@ -2028,7 +2028,7 @@
       {
         "name": "Feebas",
         "level": 27,
-        "item": "Enigma Berry",
+        "item": "Starf Berry",
         "nature": "Naive",
         "ability": "Adaptability",
         "moves": [
@@ -2083,6 +2083,19 @@
           "Grass Whistle",
           "Needle Arm"
         ]
+      },
+      {
+        "name": "Sandygast",
+        "level": 25,
+        "item": "Float Stone",
+        "nature": "Bold",
+        "ability": "Water Compaction",
+        "moves": [
+          "Mega Drain",
+          "Ancient Power",
+          "Protect",
+          "Ominous Wind"
+        ]
       }
     ]
   },
@@ -2094,7 +2107,7 @@
       {
         "name": "Barboach",
         "level": 24,
-        "item": null,
+        "item": "Rocky Helmet",
         "nature": "Rash",
         "ability": "Gooey",
         "moves": [
@@ -2133,8 +2146,8 @@
       {
         "name": "Goldeen",
         "level": 23,
-        "item": null,
-        "nature": "Brave",
+        "item": "Liechi Berry",
+        "nature": "Jolly",
         "ability": "Lightning Rod",
         "moves": [
           "Water Pulse",
@@ -2206,7 +2219,7 @@
   },
   {
     "id": "064",
-    "name": "Sightseer Scotty",
+    "name": "Tourist Scotty",
     "prizeMoney": 2400,
     "team": [
       {
@@ -2324,7 +2337,7 @@
   },
   {
     "id": "068",
-    "name": "Pokémon Breeder William",
+    "name": "Pokémon Rancher William",
     "prizeMoney": 2700,
     "team": [
       {
@@ -2396,7 +2409,7 @@
   },
   {
     "id": "070",
-    "name": "Swimmer Dakota",
+    "name": "Swimmer Beau Dakota",
     "prizeMoney": 2320,
     "team": [
       {
@@ -2404,7 +2417,7 @@
         "level": 29,
         "item": "Pecha Berry",
         "nature": "Impish",
-        "ability": "Sheer Force",
+        "ability": "Tough Claws",
         "moves": [
           "Metal Claw",
           "Razor Shell",
@@ -2442,7 +2455,7 @@
   },
   {
     "id": "071",
-    "name": "Swimmer Casey",
+    "name": "Swimmer Beau Casey",
     "prizeMoney": 2784,
     "team": [
       {
@@ -2461,7 +2474,7 @@
       {
         "name": "Stunfisk",
         "level": 29,
-        "item": "Terrain Ext.",
+        "item": "Terrain Extender",
         "nature": "Modest",
         "ability": "Electric Surge",
         "moves": [
@@ -2488,7 +2501,7 @@
   },
   {
     "id": "072",
-    "name": "Swimmer Vanessa",
+    "name": "Swimsuit Vanessa",
     "prizeMoney": 2480,
     "team": [
       {
@@ -2560,7 +2573,7 @@
   },
   {
     "id": "073",
-    "name": "Swimmer Tiare",
+    "name": "Swim Gal Tiare",
     "prizeMoney": 2880,
     "team": [
       {
@@ -2619,7 +2632,7 @@
   },
   {
     "id": "074",
-    "name": "Pokémon Trainer Dexio",
+    "name": "Kalosian Man Dexio",
     "prizeMoney": 6400,
     "team": [
       {
@@ -2704,7 +2717,7 @@
   },
   {
     "id": "075",
-    "name": "Pokémon Trainer Sina",
+    "name": "Kalosian Woman Sina",
     "prizeMoney": 2100,
     "team": [
       {
@@ -2733,7 +2746,7 @@
   },
   {
     "id": "076",
-    "name": "Pokémon Trainer Hau",
+    "name": "Tapu's Chosen Hau",
     "prizeMoney": 3080,
     "team": [
       {
@@ -2818,7 +2831,7 @@
   },
   {
     "id": "077",
-    "name": "Pokémon Trainer Hau",
+    "name": "Tapu's Chosen Hau",
     "prizeMoney": 3080,
     "team": [
       {
@@ -2903,7 +2916,7 @@
   },
   {
     "id": "078",
-    "name": "Pokémon Trainer Hau",
+    "name": "Tapu's Chosen Hau",
     "prizeMoney": 3080,
     "team": [
       {
@@ -2913,7 +2926,7 @@
         "nature": "Adamant",
         "ability": "Intimidate",
         "moves": [
-          "Deft Dash",
+          "Slink Strike",
           "Flame Charge",
           "Power Trip",
           "Scary Face"
@@ -2988,7 +3001,7 @@
   },
   {
     "id": "079",
-    "name": "Team Skull Gladion",
+    "name": "Skull Enforcer Gladion",
     "prizeMoney": 3680,
     "team": [
       {
@@ -3276,7 +3289,7 @@
   },
   {
     "id": "090",
-    "name": "Island Kahuna Olivia",
+    "name": "Akala Kahuna Olivia",
     "prizeMoney": 18040,
     "team": [
       {
@@ -3394,7 +3407,7 @@
   },
   {
     "id": "093",
-    "name": "Rising Star Lauren",
+    "name": "Up and Coming Lauren",
     "prizeMoney": 2576,
     "team": [
       {
@@ -3427,7 +3440,7 @@
   },
   {
     "id": "094",
-    "name": "Pokémon Breeder Cory",
+    "name": "Pokémon Rancher Cory",
     "prizeMoney": 2400,
     "team": [
       {
@@ -3492,12 +3505,12 @@
       {
         "name": "Servine",
         "level": 23,
-        "item": "Metronome",
+        "item": "Roseli Berry",
         "nature": "Timid",
         "ability": "Contrary",
         "moves": [
+          "Leech Seed",
           "Leaf Tornado",
-          "Entangle",
           "Twister",
           "Glare"
         ]
@@ -3690,7 +3703,7 @@
   },
   {
     "id": "100",
-    "name": "Rising Star Nicki",
+    "name": "Up and Coming Nicki",
     "prizeMoney": 5120,
     "team": [
       {
@@ -3783,7 +3796,7 @@
         "level": 33,
         "item": "Sitrus Berry",
         "nature": "Modest",
-        "ability": "Refrigerate",
+        "ability": "Snow Warning",
         "moves": [
           "Mud Shot",
           "Trump Card",
@@ -3841,7 +3854,7 @@
   },
   {
     "id": "104",
-    "name": "Ace Trainer Alexis",
+    "name": "Star Trainer Alexis",
     "prizeMoney": 5440,
     "team": [
       {
@@ -3972,7 +3985,7 @@
   },
   {
     "id": "108",
-    "name": "Swimmer Lawrence",
+    "name": "Swimmer Beau Lawrence",
     "prizeMoney": 2240,
     "team": [
       {
@@ -4018,7 +4031,7 @@
   },
   {
     "id": "109",
-    "name": "Swimmer Roddy",
+    "name": "Swimmer Beau Roddy",
     "prizeMoney": 3200,
     "team": [
       {
@@ -4064,7 +4077,7 @@
   },
   {
     "id": "110",
-    "name": "Swimmer Alicia",
+    "name": "Swimsuit Alicia",
     "prizeMoney": 2624,
     "team": [
       {
@@ -4110,7 +4123,7 @@
   },
   {
     "id": "111",
-    "name": "Swimmer Laura",
+    "name": "Swimsuit Laura",
     "prizeMoney": 960,
     "team": [
       {
@@ -4169,7 +4182,7 @@
   },
   {
     "id": "112",
-    "name": "Swimmer Chelsea",
+    "name": "Swim Gal Chelsea",
     "prizeMoney": 2788,
     "team": [
       {
@@ -4190,7 +4203,7 @@
         "level": 40,
         "item": "Light Clay",
         "nature": "Timid",
-        "ability": "Natural Cure",
+        "ability": "Analytic",
         "moves": [
           "Recover",
           "Light Screen",
@@ -4280,7 +4293,7 @@
       {
         "name": "Comfey",
         "level": 37,
-        "item": "Terrain Ext.",
+        "item": "Terrain Extender",
         "nature": "Bold",
         "ability": "Flower Veil",
         "moves": [
@@ -4333,13 +4346,13 @@
   },
   {
     "id": "115",
-    "name": "Preschooler Liam",
+    "name": "Kindergartener Liam",
     "prizeMoney": 2664,
     "team": [
       {
         "name": "Ledian",
         "level": 38,
-        "item": "Prot. Pads",
+        "item": "Protective Pads",
         "nature": "Jolly",
         "ability": "Iron Fist",
         "moves": [
@@ -4681,7 +4694,7 @@
   },
   {
     "id": "122",
-    "name": "Pokémon Breeder Glenn",
+    "name": "Pokémon Rancher Glenn",
     "prizeMoney": 2200,
     "team": [
       {
@@ -4715,7 +4728,7 @@
         "level": 22,
         "item": "Binding Band",
         "nature": "Hasty",
-        "ability": "Flame Body",
+        "ability": "Quick Feet",
         "moves": [
           "Flame Charge",
           "Trample",
@@ -5037,7 +5050,7 @@
         "nature": "Careful",
         "ability": "Intimidate",
         "moves": [
-          "Deft Dash",
+          "Slink Strike",
           "Horn Attack",
           "Quick Attack",
           "X-Scissor"
@@ -5047,7 +5060,7 @@
   },
   {
     "id": "144",
-    "name": "Captain Lana",
+    "name": "Hydro Captain Lana",
     "prizeMoney": 7200,
     "team": [
       {
@@ -5093,7 +5106,7 @@
   },
   {
     "id": "146",
-    "name": "Captain Mallow",
+    "name": "Nature Captain Mallow",
     "prizeMoney": 7200,
     "team": [
       {
@@ -5149,7 +5162,7 @@
         "ability": "Cursed Body",
         "moves": [
           "Shadow Claw",
-          "Deft Dash",
+          "Slink Strike",
           "Infestation",
           "Screech"
         ]
@@ -5279,7 +5292,7 @@
   },
   {
     "id": "154",
-    "name": "Island Kahuna Nanu",
+    "name": "Ula'ula Kahuna Nanu",
     "prizeMoney": 7040,
     "team": [
       {
@@ -5565,7 +5578,7 @@
   },
   {
     "id": "170",
-    "name": "Golfer Alan",
+    "name": "Putter Alan",
     "prizeMoney": 4356,
     "team": [
       {
@@ -5657,7 +5670,7 @@
   },
   {
     "id": "172",
-    "name": "Office Worker Kristen",
+    "name": "Businesswoman Kristen",
     "prizeMoney": 2000,
     "team": [
       {
@@ -5690,7 +5703,7 @@
   },
   {
     "id": "173",
-    "name": "Police Officer Mitchell",
+    "name": "Cop Mitchell",
     "prizeMoney": 1760,
     "team": [
       {
@@ -5891,7 +5904,7 @@
   },
   {
     "id": "181",
-    "name": "Veteran Sheri",
+    "name": "Virtuoso Sheri",
     "prizeMoney": 5544,
     "team": [
       {
@@ -6012,7 +6025,7 @@
   },
   {
     "id": "187",
-    "name": "Ace Trainer Tori",
+    "name": "Star Trainer Tori",
     "prizeMoney": 2800,
     "team": [
       {
@@ -6317,7 +6330,7 @@
         "level": 20,
         "item": null,
         "nature": "Hardy",
-        "ability": "Technician",
+        "ability": "Frisk",
         "moves": [
           "Night Slash",
           "Beat Up",
@@ -6330,7 +6343,7 @@
         "level": 20,
         "item": null,
         "nature": "Hardy",
-        "ability": "Technician",
+        "ability": "Frisk",
         "moves": [
           "Fake Out",
           "Hone Claws",
@@ -6375,7 +6388,7 @@
   },
   {
     "id": "215",
-    "name": "Captain Ilima",
+    "name": "Plain Captain Ilima",
     "prizeMoney": 3120,
     "team": [
       {
@@ -6447,7 +6460,7 @@
   },
   {
     "id": "216",
-    "name": "Captain Ilima",
+    "name": "Plain Captain Ilima",
     "prizeMoney": 3120,
     "team": [
       {
@@ -6519,7 +6532,7 @@
   },
   {
     "id": "217",
-    "name": "Pokémon Trainer Hau",
+    "name": "Tapu's Chosen Hau",
     "prizeMoney": 2520,
     "team": [
       {
@@ -6604,7 +6617,7 @@
   },
   {
     "id": "218",
-    "name": "Pokémon Trainer Hau",
+    "name": "Tapu's Chosen Hau",
     "prizeMoney": 2520,
     "team": [
       {
@@ -6689,7 +6702,7 @@
   },
   {
     "id": "219",
-    "name": "Pokémon Trainer Hau",
+    "name": "Tapu's Chosen Hau",
     "prizeMoney": 2520,
     "team": [
       {
@@ -7197,7 +7210,7 @@
   },
   {
     "id": "237",
-    "name": "Preschooler Hunter",
+    "name": "Kindergartener Hunter",
     "prizeMoney": 636,
     "team": [
       {
@@ -7270,7 +7283,7 @@
         "level": 53,
         "item": "Eviolite",
         "nature": "Brave",
-        "ability": "Sheer Force",
+        "ability": "Tough Claws",
         "moves": [
           "Hammer Arm",
           "Swords Dance",
@@ -7367,7 +7380,7 @@
   },
   {
     "id": "239",
-    "name": "Team Skull Gladion",
+    "name": "Skull Enforcer Gladion",
     "prizeMoney": 3440,
     "team": [
       {
@@ -7686,7 +7699,7 @@
   },
   {
     "id": "251",
-    "name": "Ace Trainer Karla",
+    "name": "Star Trainer Karla",
     "prizeMoney": 3672,
     "team": [
       {
@@ -7869,7 +7882,7 @@
       {
         "name": "Feraligatr",
         "level": 51,
-        "item": "Prot. Pads",
+        "item": "Protective Pads",
         "nature": "Adamant",
         "ability": "Strong Jaw",
         "moves": [
@@ -7896,7 +7909,7 @@
   },
   {
     "id": "258",
-    "name": "Aether Foundation Employee",
+    "name": "Aether Foundatio Employee",
     "prizeMoney": 1920,
     "team": [
       {
@@ -7917,7 +7930,7 @@
   },
   {
     "id": "259",
-    "name": "Aether Foundation Employee",
+    "name": "Aether Foundati Employee",
     "prizeMoney": 1920,
     "team": [
       {
@@ -7939,7 +7952,7 @@
   },
   {
     "id": "260",
-    "name": "Ace Trainer Angela",
+    "name": "Star Trainer Angela",
     "prizeMoney": 4012,
     "team": [
       {
@@ -7960,7 +7973,7 @@
   },
   {
     "id": "261",
-    "name": "Ace Trainer Junko",
+    "name": "Star Trainer Junko",
     "prizeMoney": 3264,
     "team": [
       {
@@ -8064,7 +8077,7 @@
         "level": 43,
         "item": "Wacan Berry",
         "nature": "Timid",
-        "ability": "Tinted Lens",
+        "ability": "Shield Dust",
         "moves": [
           "Air Slash",
           "Twister",
@@ -8076,7 +8089,7 @@
   },
   {
     "id": "269",
-    "name": "Swimmer Keoni",
+    "name": "Swimmer Beau Keoni",
     "prizeMoney": 1224,
     "team": [
       {
@@ -8168,7 +8181,7 @@
   },
   {
     "id": "271",
-    "name": "Swimmer Jared",
+    "name": "Swimmer Beau Jared",
     "prizeMoney": 1296,
     "team": [
       {
@@ -8310,7 +8323,7 @@
   },
   {
     "id": "279",
-    "name": "Sightseer Mitch",
+    "name": "Tourist Mitch",
     "prizeMoney": 2580,
     "team": [
       {
@@ -8331,7 +8344,7 @@
         "level": 43,
         "item": "Lum Berry",
         "nature": "Adamant",
-        "ability": "Sheer Force",
+        "ability": "Huge Power",
         "moves": [
           "Sweet Tooth",
           "Wake-Up Slap",
@@ -8392,7 +8405,7 @@
         "level": 61,
         "item": null,
         "nature": "Serious",
-        "ability": "Limber",
+        "ability": "Color Change",
         "moves": []
       },
       {
@@ -8614,7 +8627,7 @@
       {
         "name": "Dusknoir",
         "level": 54,
-        "item": "Prot. Pads",
+        "item": "Protective Pads",
         "nature": "Impish",
         "ability": "Shadow Shield",
         "moves": [
@@ -8628,7 +8641,7 @@
   },
   {
     "id": "300",
-    "name": "Swimmer Alexandria",
+    "name": "Swim Gal Alexandria",
     "prizeMoney": 1296,
     "team": [
       {
@@ -8855,7 +8868,7 @@
   },
   {
     "id": "308",
-    "name": "Veteran Heather",
+    "name": "Virtuoso Heather",
     "prizeMoney": 4224,
     "team": [
       {
@@ -8900,7 +8913,7 @@
   },
   {
     "id": "309",
-    "name": "Veteran Lynn",
+    "name": "Virtuoso Lynn",
     "prizeMoney": 4224,
     "team": [
       {
@@ -8943,7 +8956,7 @@
   },
   {
     "id": "311",
-    "name": "Team Skull Grunt",
+    "name": "Skull Gang Grunt",
     "prizeMoney": 1152,
     "team": [
       {
@@ -8964,7 +8977,7 @@
   },
   {
     "id": "312",
-    "name": "Team Skull Grunt",
+    "name": "Skull Gang Grunt",
     "prizeMoney": 1216,
     "team": [
       {
@@ -8985,7 +8998,7 @@
   },
   {
     "id": "313",
-    "name": "Team Skull Grunt",
+    "name": "Skull Gang Grunt",
     "prizeMoney": 1216,
     "team": [
       {
@@ -9006,7 +9019,7 @@
   },
   {
     "id": "314",
-    "name": "Team Skull Grunt",
+    "name": "Skull Gang Grunt",
     "prizeMoney": 1216,
     "team": [
       {
@@ -9034,7 +9047,7 @@
   },
   {
     "id": "318",
-    "name": "Team Skull Grunt",
+    "name": "Skull Gang Grunt",
     "prizeMoney": 1184,
     "team": [
       {
@@ -9118,7 +9131,7 @@
   },
   {
     "id": "326",
-    "name": "Rising Star Leilani",
+    "name": "Up and Coming Leilani",
     "prizeMoney": 2400,
     "team": [
       {
@@ -9388,7 +9401,7 @@
         "ability": "Intimidate",
         "moves": [
           "Double Kick",
-          "Deft Dash",
+          "Slink Strike",
           "Scary Face",
           "Spark"
         ]
@@ -9410,7 +9423,7 @@
   },
   {
     "id": "335",
-    "name": "Police Officer Haruki",
+    "name": "Cop Haruki",
     "prizeMoney": 3700,
     "team": [
       {
@@ -9469,7 +9482,7 @@
   },
   {
     "id": "340",
-    "name": "Swimmer Sara",
+    "name": "Swimsuit Sara",
     "prizeMoney": 1176,
     "team": [
       {
@@ -9582,7 +9595,7 @@
   },
   {
     "id": "344",
-    "name": "Office Worker Jessica",
+    "name": "Businesswoman Jessica",
     "prizeMoney": 1840,
     "team": [
       {
@@ -9615,7 +9628,7 @@
   },
   {
     "id": "346",
-    "name": "Aether Foundation Employee",
+    "name": "Aether Foundatio Employee",
     "prizeMoney": 1920,
     "team": [
       {
@@ -9643,7 +9656,7 @@
   },
   {
     "id": "348",
-    "name": "Aether Foundation Employee",
+    "name": "Aether Foundati Employee",
     "prizeMoney": 1920,
     "team": [
       {
@@ -10431,7 +10444,7 @@
   },
   {
     "id": "390",
-    "name": "Pokémon Breeder Wesley",
+    "name": "Pokémon Rancher Wesley",
     "prizeMoney": 2116,
     "team": [
       {
@@ -10536,7 +10549,7 @@
   },
   {
     "id": "395",
-    "name": "Trial Guide Bronson",
+    "name": "Challenge Guide Bronson",
     "prizeMoney": 14700,
     "team": [
       {
@@ -10608,7 +10621,7 @@
   },
   {
     "id": "396",
-    "name": "Captain Ilima",
+    "name": "Plain Captain Ilima",
     "prizeMoney": 7200,
     "team": [
       {
@@ -10653,7 +10666,7 @@
   },
   {
     "id": "398",
-    "name": "Captain Kiawe",
+    "name": "Heat Captain Kiawe",
     "prizeMoney": 7200,
     "team": [
       {
@@ -10768,7 +10781,7 @@
   },
   {
     "id": "405",
-    "name": "Captain Sophocles",
+    "name": "Shock Captain Sophocles",
     "prizeMoney": 8040,
     "team": [
       {
@@ -10840,7 +10853,7 @@
   },
   {
     "id": "409",
-    "name": "Pokémon Trainer Ryuki",
+    "name": "Dragon Master Ryuki",
     "prizeMoney": 8040,
     "team": [
       {
@@ -10984,7 +10997,7 @@
   },
   {
     "id": "412",
-    "name": "Pokémon Trainer Dexio",
+    "name": "Kalosian Man Dexio",
     "prizeMoney": 8400,
     "team": [
       {
@@ -10992,7 +11005,7 @@
         "level": 60,
         "item": null,
         "nature": "Serious",
-        "ability": "Telepathy",
+        "ability": "Neuroforce",
         "moves": [
           "Psychic",
           "Shadow Ball",
@@ -11710,7 +11723,7 @@
   },
   {
     "id": "428",
-    "name": "Office Worker Michelle",
+    "name": "Businesswoman Michelle",
     "prizeMoney": 1440,
     "team": [
       {
@@ -11772,7 +11785,7 @@
   },
   {
     "id": "433",
-    "name": "Sightseer George",
+    "name": "Tourist George",
     "prizeMoney": 2480,
     "team": [
       {
@@ -11864,7 +11877,7 @@
   },
   {
     "id": "437",
-    "name": "Preschooler Hayden",
+    "name": "Kindergartener Hayden",
     "prizeMoney": 576,
     "team": [
       {
@@ -12048,7 +12061,7 @@
   },
   {
     "id": "441",
-    "name": "Team Skull Gladion",
+    "name": "Skull Enforcer Gladion",
     "prizeMoney": 3440,
     "team": [
       {
@@ -12093,7 +12106,7 @@
   },
   {
     "id": "442",
-    "name": "Aether Foundation Employee",
+    "name": "Aether Foundatio Employee",
     "prizeMoney": 2016,
     "team": [
       {
@@ -12123,7 +12136,7 @@
   },
   {
     "id": "443",
-    "name": "Team Skull Grunt DD",
+    "name": "Skull Gang Grunt DD",
     "prizeMoney": 2520,
     "team": [
       {
@@ -12177,7 +12190,7 @@
         "level": 36,
         "item": "Expert Belt",
         "nature": "Jolly",
-        "ability": "Serene Grace",
+        "ability": "Run Away",
         "moves": [
           "Flame Wheel",
           "Sweet Tooth",
@@ -12669,7 +12682,7 @@
   },
   {
     "id": "455",
-    "name": "Aether Foundation Employee",
+    "name": "Aether Foundatio Employee",
     "prizeMoney": 2016,
     "team": [
       {
@@ -12691,7 +12704,7 @@
   },
   {
     "id": "456",
-    "name": "Aether Foundation Employee",
+    "name": "Aether Foundatio Employee",
     "prizeMoney": 2016,
     "team": [
       {
@@ -12826,7 +12839,7 @@
         "ability": "Poison Touch",
         "moves": [
           "Night Slash",
-          "Deft Dash",
+          "Slink Strike",
           "Poison Jab",
           "Haze"
         ]
@@ -13114,7 +13127,7 @@
   },
   {
     "id": "469",
-    "name": "Preschooler Dylan",
+    "name": "Kindergartener Dylan",
     "prizeMoney": 352,
     "team": [
       {
@@ -13122,7 +13135,7 @@
         "level": 11,
         "item": "Poison Gem",
         "nature": "Adamant",
-        "ability": "Shield Dust",
+        "ability": "Sticky Hold",
         "moves": [
           "Toxic Thread",
           "Poison Sting",
@@ -13558,7 +13571,7 @@
         "level": 68,
         "item": null,
         "nature": "Serious",
-        "ability": "Multistriker",
+        "ability": "Analytic",
         "moves": [
           "Thunderbolt",
           "Flash Cannon",
@@ -13643,7 +13656,7 @@
         "level": 68,
         "item": null,
         "nature": "Serious",
-        "ability": "Multistriker",
+        "ability": "Analytic",
         "moves": [
           "Thunderbolt",
           "Flash Cannon",
@@ -13728,7 +13741,7 @@
         "level": 68,
         "item": null,
         "nature": "Serious",
-        "ability": "Multistriker",
+        "ability": "Analytic",
         "moves": [
           "Thunderbolt",
           "Flash Cannon",
@@ -14015,7 +14028,7 @@
   },
   {
     "id": "488",
-    "name": "Swimmer Kyra",
+    "name": "Swimsuit Kyra",
     "prizeMoney": 1296,
     "team": [
       {
@@ -14082,7 +14095,7 @@
         "level": 56,
         "item": null,
         "nature": "Serious",
-        "ability": "Multistriker",
+        "ability": "Analytic",
         "moves": [
           "Flash Cannon",
           "Thunderbolt",
@@ -14154,7 +14167,7 @@
         "level": 66,
         "item": null,
         "nature": "Serious",
-        "ability": "Multistriker",
+        "ability": "Analytic",
         "moves": [
           "Flash Cannon",
           "Thunderbolt",
@@ -14192,7 +14205,7 @@
   },
   {
     "id": "491",
-    "name": "Pokémon Trainer Hau",
+    "name": "Kahuna's Grandson Hau",
     "prizeMoney": 200,
     "team": [
       {
@@ -14223,7 +14236,7 @@
   },
   {
     "id": "492",
-    "name": "Pokémon Trainer Hau",
+    "name": "Kahuna's Grandson Hau",
     "prizeMoney": 200,
     "team": [
       {
@@ -14254,7 +14267,7 @@
   },
   {
     "id": "493",
-    "name": "Pokémon Trainer Hau",
+    "name": "Kahuna's Grandson Hau",
     "prizeMoney": 200,
     "team": [
       {
@@ -14285,7 +14298,7 @@
   },
   {
     "id": "494",
-    "name": "Pokémon Trainer Hau",
+    "name": "Champion Hau",
     "prizeMoney": 14400,
     "team": [
       {
@@ -14369,7 +14382,7 @@
   },
   {
     "id": "495",
-    "name": "Pokémon Trainer Hau",
+    "name": "Champion Hau",
     "prizeMoney": 14400,
     "team": [
       {
@@ -14453,7 +14466,7 @@
   },
   {
     "id": "496",
-    "name": "Pokémon Trainer Hau",
+    "name": "Champion Hau",
     "prizeMoney": 14400,
     "team": [
       {
@@ -14537,7 +14550,7 @@
   },
   {
     "id": "497",
-    "name": "Island Kahuna Hapu",
+    "name": "Poni Kahuna Hapu",
     "prizeMoney": 8640,
     "team": [
       {
@@ -14593,7 +14606,7 @@
   },
   {
     "id": "502",
-    "name": "Captain Ilima",
+    "name": "Plain Captain Ilima",
     "prizeMoney": 6120,
     "team": [
       {
@@ -14637,7 +14650,7 @@
   },
   {
     "id": "503",
-    "name": "Captain Lana",
+    "name": "Hydro Captain Lana",
     "prizeMoney": 6120,
     "team": [
       {
@@ -14680,7 +14693,7 @@
   },
   {
     "id": "504",
-    "name": "Captain Kiawe",
+    "name": "Heat Captain Kiawe",
     "prizeMoney": 6120,
     "team": [
       {
@@ -14723,7 +14736,7 @@
   },
   {
     "id": "505",
-    "name": "Captain Mallow",
+    "name": "Nature Captain Mallow",
     "prizeMoney": 6120,
     "team": [
       {
@@ -14766,7 +14779,7 @@
   },
   {
     "id": "506",
-    "name": "Captain Sophocles",
+    "name": "Shock Captain Sophocles",
     "prizeMoney": 6120,
     "team": [
       {
@@ -14809,7 +14822,7 @@
   },
   {
     "id": "507",
-    "name": "Captain Mina",
+    "name": "Fae Captain Mina",
     "prizeMoney": 6120,
     "team": [
       {
@@ -14960,7 +14973,7 @@
       {
         "name": "Primeape",
         "level": 41,
-        "item": "Prot. Pads",
+        "item": "Protective Pads",
         "nature": "Naughty",
         "ability": "Anger Point",
         "moves": [
@@ -14973,7 +14986,7 @@
       {
         "name": "Mienshao",
         "level": 41,
-        "item": "Prot. Pads",
+        "item": "Protective Pads",
         "nature": "Timid",
         "ability": "Regenerator",
         "moves": [
@@ -14986,9 +14999,9 @@
       {
         "name": "Poliwrath",
         "level": 41,
-        "item": "Prot. Pads",
+        "item": "Protective Pads",
         "nature": "Brave",
-        "ability": "Iron Fist",
+        "ability": "Damp",
         "moves": [
           "Feint",
           "Drain Punch",
@@ -15000,7 +15013,7 @@
   },
   {
     "id": "512",
-    "name": "Swimmer Natasha",
+    "name": "Swim Gal Natasha",
     "prizeMoney": 336,
     "team": [
       {
@@ -15075,9 +15088,9 @@
       {
         "name": "Meowth",
         "level": 20,
-        "item": "Prot. Pads",
+        "item": "Protective Pads",
         "nature": "Jolly",
-        "ability": "Technician",
+        "ability": "Frisk",
         "moves": [
           "Fake Out",
           "Hone Claws",
@@ -15246,7 +15259,7 @@
           "Petal Blizzard",
           "Trop Kick",
           "Darkest Lariat",
-          "Deft Dash"
+          "Slink Strike"
         ]
       },
       {
@@ -15266,7 +15279,7 @@
   },
   {
     "id": "519",
-    "name": "Veteran Leticia",
+    "name": "Virtuoso Leticia",
     "prizeMoney": 5368,
     "team": [
       {
@@ -15328,7 +15341,7 @@
   },
   {
     "id": "522",
-    "name": "Golfer Sky",
+    "name": "Putter Sky",
     "prizeMoney": 2700,
     "team": [
       {
@@ -15474,7 +15487,7 @@
   },
   {
     "id": "533",
-    "name": "Surfer Jennis",
+    "name": "Surf Dude Jennis",
     "prizeMoney": 1272,
     "team": [
       {
@@ -15952,7 +15965,7 @@
   },
   {
     "id": "544",
-    "name": "Aether Foundation Employee",
+    "name": "Aether Foundatio Employee",
     "prizeMoney": 2928,
     "team": [
       {
@@ -16015,7 +16028,7 @@
   },
   {
     "id": "547",
-    "name": "Kantonian Gym Brock?",
+    "name": "Gym Trainer Brock?",
     "prizeMoney": 1344,
     "team": [
       {
@@ -16061,7 +16074,7 @@
   },
   {
     "id": "548",
-    "name": "Kantonian Gym Misty?",
+    "name": "Gym Trainer Misty?",
     "prizeMoney": 1344,
     "team": [
       {
@@ -16082,7 +16095,7 @@
         "level": 42,
         "item": "Mystic Water",
         "nature": "Modest",
-        "ability": "Natural Cure",
+        "ability": "Analytic",
         "moves": [
           "Extrasensory",
           "Confuse Ray",
@@ -16107,7 +16120,7 @@
   },
   {
     "id": "549",
-    "name": "Kantonian Gym Surge?",
+    "name": "Gym Trainer Surge?",
     "prizeMoney": 1344,
     "team": [
       {
@@ -16153,7 +16166,7 @@
   },
   {
     "id": "550",
-    "name": "Kantonian Gym Erika?",
+    "name": "Gym Trainer Erika?",
     "prizeMoney": 1344,
     "team": [
       {
@@ -16199,7 +16212,7 @@
   },
   {
     "id": "555",
-    "name": "Kantonian Gym Agatha",
+    "name": "Gym Leader Agatha",
     "prizeMoney": 1376,
     "team": [
       {
@@ -16697,7 +16710,7 @@
   },
   {
     "id": "564",
-    "name": "Team Skull Grunt Fiona",
+    "name": "Skull Gang Grunt Fiona",
     "prizeMoney": 1344,
     "team": [
       {
@@ -16743,13 +16756,13 @@
   },
   {
     "id": "567",
-    "name": "Youth Athlete Deedra",
+    "name": "Athlete In-Training Deedra",
     "prizeMoney": 3200,
     "team": [
       {
         "name": "Ledyba",
         "level": 20,
-        "item": null,
+        "item": "Light Clay",
         "nature": "Lonely",
         "ability": "Iron Fist",
         "moves": [
@@ -16762,7 +16775,7 @@
       {
         "name": "Silcoon",
         "level": 20,
-        "item": null,
+        "item": "Enigma Berry",
         "nature": "Sassy",
         "ability": "Shed Skin",
         "moves": [
@@ -16775,7 +16788,7 @@
       {
         "name": "Cascoon",
         "level": 20,
-        "item": null,
+        "item": "Poisonium Z",
         "nature": "Relaxed",
         "ability": "Shed Skin",
         "moves": [
@@ -16788,7 +16801,7 @@
       {
         "name": "Burmy 1",
         "level": 20,
-        "item": null,
+        "item": "White Herb",
         "nature": "Relaxed",
         "ability": "Overcoat",
         "moves": [
@@ -16801,14 +16814,14 @@
       {
         "name": "Surskit",
         "level": 20,
-        "item": null,
+        "item": "Liechi Berry",
         "nature": "Jolly",
-        "ability": "Swift Swim",
+        "ability": "Quick Feet",
         "moves": [
           "Bug Bite",
           "Fell Stinger",
           "Quick Attack",
-          "Bubble Beam"
+          "Aqua Jet"
         ]
       }
     ]
@@ -16828,7 +16841,7 @@
           "Taunt",
           "Crabhammer",
           "Aqua Jet",
-          "Deft Dash"
+          "Slink Strike"
         ]
       },
       {
@@ -17072,7 +17085,7 @@
   },
   {
     "id": "574",
-    "name": "Veteran Kiara",
+    "name": "Virtuoso Kiara",
     "prizeMoney": 9360,
     "team": [
       {
@@ -17398,7 +17411,7 @@
         "level": 57,
         "item": null,
         "nature": "Modest",
-        "ability": "Mold Breaker",
+        "ability": "Rain Dish",
         "moves": [
           "Hurricane",
           "Draco Meteor",
@@ -17562,7 +17575,7 @@
   },
   {
     "id": "583",
-    "name": "Pokémon Trainer Ryuki",
+    "name": "Dragon Tamer Ryuki",
     "prizeMoney": 6960,
     "team": [
       {
@@ -17700,7 +17713,7 @@
         "level": 62,
         "item": null,
         "nature": "Serious",
-        "ability": "Inner Focus",
+        "ability": "Telepathy",
         "moves": [
           "Dazzling Gleam",
           "Psychic",
@@ -17790,7 +17803,7 @@
   },
   {
     "id": "614",
-    "name": "Ace Trainer Kailee",
+    "name": "Star Trainer Kailee",
     "prizeMoney": 3536,
     "team": [
       {
@@ -17813,7 +17826,7 @@
   },
   {
     "id": "615",
-    "name": "Ace Trainer Jada",
+    "name": "Star Trainer Jada",
     "prizeMoney": 3604,
     "team": [
       {
@@ -17867,7 +17880,7 @@
       {
         "name": "Pangoro",
         "level": 48,
-        "item": "Prot. Pads",
+        "item": "Protective Pads",
         "nature": "Brave",
         "ability": "Iron Fist",
         "moves": [
@@ -17936,7 +17949,7 @@
   },
   {
     "id": "623",
-    "name": "Pokémon Trainer Dexio",
+    "name": "Kalosian Man Dexio",
     "prizeMoney": 8820,
     "team": [
       {
@@ -17944,7 +17957,7 @@
         "level": 63,
         "item": null,
         "nature": "Serious",
-        "ability": "Telepathy",
+        "ability": "Neuroforce",
         "moves": [
           "Psychic",
           "Shadow Ball",
@@ -18066,7 +18079,7 @@
   },
   {
     "id": "627",
-    "name": "Veteran Alonsa",
+    "name": "Virtuoso Alonsa",
     "prizeMoney": 4576,
     "team": [
       {
@@ -18097,7 +18110,7 @@
   },
   {
     "id": "628",
-    "name": "Veteran Ella",
+    "name": "Virtuoso Ella",
     "prizeMoney": 4664,
     "team": [
       {
@@ -18137,7 +18150,7 @@
   },
   {
     "id": "629",
-    "name": "Preschooler Kaleb",
+    "name": "Kindergartener Kaleb",
     "prizeMoney": 2376,
     "team": [
       {
@@ -18170,7 +18183,7 @@
   },
   {
     "id": "630",
-    "name": "Pokémon Trainer Ryuki",
+    "name": "Dragon Tamer Ryuki",
     "prizeMoney": 5280,
     "team": [
       {
@@ -18242,7 +18255,7 @@
   },
   {
     "id": "631",
-    "name": "Surfer Robert",
+    "name": "Surf Dude Robert",
     "prizeMoney": 1176,
     "team": [
       {
@@ -18275,7 +18288,7 @@
   },
   {
     "id": "633",
-    "name": "Surfer Carlton",
+    "name": "Surf Dude Carlton",
     "prizeMoney": 576,
     "team": [
       {
@@ -18510,7 +18523,7 @@
   },
   {
     "id": "647",
-    "name": "Pokémon Trainer Guzma",
+    "name": "Tapu Koko Chosen Guzma",
     "prizeMoney": 8160,
     "team": [
       {
@@ -18653,7 +18666,7 @@
   },
   {
     "id": "650",
-    "name": "Island Kahuna Hala",
+    "name": "Melemele Kahuna Hala",
     "prizeMoney": 12600,
     "team": [
       {

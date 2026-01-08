@@ -14,6 +14,7 @@ type TypeName = string;
 type SearchType =
   | "pokemon"
   | "pokeedit"
+  | "usage"
   | "type"
   | "tier"
   | "move"
@@ -239,6 +240,8 @@ class DexSearch {
         return new BattlePokemonSearch("pokemon", format, speciesOrSet);
       case "pokeedit":
         return new BattlePokeeditSearch("pokeedit", format, speciesOrSet);
+      case "usage":
+        return new BattleUsageSearch("usage", format, speciesOrSet);
       case "item":
         return new BattleItemSearch("item", format, speciesOrSet);
       case "move":
@@ -1170,6 +1173,80 @@ class BattlePokeeditSearch extends BattleTypedSearch<"pokeedit"> {
       });
     }
     throw new Error("invalid sortcol");
+  }
+}
+
+class BattleUsageSearch extends BattleTypedSearch<"usage"> {
+  filter(row: SearchRow, filters: string[][]): boolean {
+    if (!filters) return true;
+    if (row[0] !== "usage") return true;
+    const poke = getID(BattlePokedex, row[1]);
+    for (const [filterType, value] of filters) {
+      switch (filterType) {
+        case "type":
+          if (poke.types.every((t) => t != value)) return false;
+          break;
+        case "move":
+          if (!canLearn(poke.id, value)) return false;
+          break;
+        case "ability":
+          if (!hasAbility(poke, value)) return false;
+          break;
+        case "egggroup":
+          if (poke.eggGroups.every((t) => t != value)) return false;
+          break;
+      }
+    }
+    return true;
+  }
+  sortRow: SearchRow = ["sortpokemon", ""];
+  getTable() {
+    return BattlePokedex;
+  }
+  getDefaultResults(): SearchRow[] {
+    // Same as BattlePokemonSearch - Group all entries by their base species ID
+    interface Group { base: ID; num: number; forms: ID[] }
+    const groups: { [base: string]: Group } = {};
+    for (const id in BattlePokedex) {
+      const p = BattlePokedex[id];
+      if (!p) continue;
+      const baseId = toID(p.baseSpecies || p.name);
+      if (!groups[baseId]) {
+        groups[baseId] = { base: id as ID, num: p.num || 0, forms: [] };
+      }
+      const isBase = !p.forme || p.name === p.baseSpecies;
+      if (isBase) {
+        groups[baseId].base = id as ID;
+        groups[baseId].num = p.num || groups[baseId].num;
+      } else {
+        groups[baseId].forms.push(id as ID);
+      }
+    }
+    for (const baseId in groups) {
+      groups[baseId].forms.sort((a, b) => {
+        const pa = BattlePokedex[a];
+        const pb = BattlePokedex[b];
+        const fa = (pa.forme || pa.name).toLowerCase();
+        const fb = (pb.forme || pb.name).toLowerCase();
+        return fa < fb ? -1 : fa > fb ? 1 : 0;
+      });
+    }
+    const ordered = Object.values(groups).sort((a, b) => a.num - b.num || (a.base < b.base ? -1 : a.base > b.base ? 1 : 0));
+    const results: SearchRow[] = [];
+    for (const g of ordered) {
+      results.push(["usage", g.base]);
+      for (const fid of g.forms) {
+        results.push(["usage", fid]);
+      }
+    }
+    return results;
+  }
+  getBaseResults(): SearchRow[] {
+    return this.getDefaultResults();
+  }
+  sort(results: SearchRow[], sortCol: string, reverseSort?: boolean) {
+    // Usage doesn't need sorting by stats, just keep default order
+    return results;
   }
 }
 

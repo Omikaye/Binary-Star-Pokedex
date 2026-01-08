@@ -9,7 +9,7 @@ Cleffa (Lv. 7) @Chilan Berry [Serious] {Friend Guard} <Sing/Metronome/Charm/Arom
 
 Prize Money: $528
 002 - Lass Isabella
-Flabébé 3 (Lv. 13) @Absorb Bulb [Modest] {Flower Veil} <Stun Spore/Disarming Voice/Razor Leaf/Lucky Chant>
+Flabébé (Lv. 13) @Absorb Bulb [Modest] {Flower Veil} <Stun Spore/Disarming Voice/Razor Leaf/Lucky Chant>
 Bounsweet (Lv. 11) @Absorb Bulb [Gentle] {Sweet Veil} <Covet/Rapid Spin/Absorb/Play Nice>
 Sewaddle (Lv. 11) @Absorb Bulb [Lax] {Overcoat} <Absorb/Struggle Bug/Defense Curl/String Shot>
 Chikorita (Lv. 11) @Absorb Bulb [Sassy] {Healer} <Fairy Wind/Aromatic Mist/Vine Whip/Grass Whistle>
@@ -23,35 +23,35 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 005 - Lass [~ 5]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-006 - Pokémon Trainer [~ 6]
+006 - Kahuna's Grandson [~ 6]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-007 - Pokémon Trainer [~ 7]
+007 - Kahuna's Grandson [~ 7]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-008 - Pokémon Trainer [~ 8]
+008 - Kahuna's Grandson [~ 8]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $420
-009 - Pokémon Trainer Hau
+009 - Kahuna's Grandson Hau
 Torchic (Lv. 4) @No Item [Naive] {Rattled} <Scratch/Growl/(None)/(None)>
 Pichu (Lv. 4) @No Item [Timid] {Battery} <Pummel/Play Nice/Charge/(None)>
 Popplio (Lv. 7) @Enigma Berry [Quiet] {Serene Grace} <Pummel/Tackle/Baby-Doll Eyes/Bubble>
 
 Prize Money: $420
-010 - Pokémon Trainer Hau
+010 - Kahuna's Grandson Hau
 Mudkip (Lv. 4) @No Item [Brave] {Wonder Skin} <Tackle/Growl/(None)/(None)>
 Pichu (Lv. 4) @No Item [Timid] {Battery} <Pummel/Play Nice/Charge/(None)>
 Rowlet (Lv. 7) @Enigma Berry [Hasty] {Long Reach} <Peck/Scratch/Growl/Absorb>
 
 Prize Money: $420
-011 - Pokémon Trainer Hau
+011 - Kahuna's Grandson Hau
 Treecko (Lv. 4) @No Item [Jolly] {Limber} <Quick Attack/Leer/(None)/(None)>
 Pichu (Lv. 4) @No Item [Timid] {Battery} <Pummel/Play Nice/Charge/(None)>
 Litten (Lv. 7) @Enigma Berry [Naughty] {Intimidate} <Lick/Scratch/Growl/Ember>
 
 Prize Money: $2040
-012 - Pokémon Trainer Hau
+012 - Tapu's Chosen Hau
 Diglett 1 (Lv. 16) @Passho Berry [Impish] {Tangling Hair} <Sand Tomb/Beat Up/Metal Claw/Magnitude>
 Rufflet (Lv. 16) @Normalium Z [Naive] {Fluffy} <Aerial Ace/Tailwind/Feather Dance/Tackle>
 Pikachu (Lv. 16) @Eject Button [Timid] {Lightning Rod} <Nuzzle/Disarming Voice/Quick Attack/Electro Ball>
@@ -59,7 +59,7 @@ Torchic (Lv. 17) @Charcoal [Hasty] {Big Pecks} <Peck/Fire Spin/Feather Dance/Fla
 Popplio (Lv. 17) @Iapapa Berry [Quiet] {Liquid Voice} <Helping Hand/Sweet Tooth/Disarming Voice/Round>
 
 Prize Money: $2040
-013 - Pokémon Trainer Hau
+013 - Tapu's Chosen Hau
 Diglett 1 (Lv. 16) @Passho Berry [Impish] {Tangling Hair} <Sand Tomb/Beat Up/Metal Claw/Magnitude>
 Rufflet (Lv. 16) @Normalium Z [Naive] {Fluffy} <Aerial Ace/Tailwind/Feather Dance/Tackle>
 Pikachu (Lv. 16) @Eject Button [Timid] {Lightning Rod} <Nuzzle/Disarming Voice/Quick Attack/Electro Ball>
@@ -67,7 +67,7 @@ Mudkip (Lv. 17) @Mystic Water [Brave] {Wonder Skin} <Bide/Smack Down/Mud Shot/Wa
 Rowlet (Lv. 17) @Mago Berry [Jolly] {Long Reach} <Trailblaze/Ominous Wind/Pluck/Razor Leaf>
 
 Prize Money: $2040
-014 - Pokémon Trainer Hau
+014 - Tapu's Chosen Hau
 Diglett 1 (Lv. 16) @Passho Berry [Impish] {Tangling Hair} <Sand Tomb/Beat Up/Metal Claw/Magnitude>
 Rufflet (Lv. 16) @Normalium Z [Naive] {Fluffy} <Aerial Ace/Tailwind/Feather Dance/Tackle>
 Pikachu (Lv. 16) @Eject Button [Timid] {Lightning Rod} <Nuzzle/Disarming Voice/Quick Attack/Electro Ball>
@@ -95,13 +95,13 @@ Prize Money: $896
 019 - Team Skull Grunt Ay
 Poochyena (Lv. 13) @Oran Berry [Jolly] {Quick Feet} <Howl/Bite/Torment/Tackle>
 Shinx (Lv. 13) @Ganlon Berry [Jolly] {Intimidate} <Charge/Snarl/Spark/Power Trip>
-Rattata 1 (Lv. 14) @Micle Berry [Adamant] {Hustle} <Thief/Deft Dash/Pursuit/Quick Attack>
+Rattata 1 (Lv. 14) @Micle Berry [Adamant] {Hustle} <Thief/Slink Strike/Pursuit/Quick Attack>
 
 020 - Team Skull [~ 20]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $448
-021 - Youth Athlete Hiromi
+021 - Athlete In-Training Hiromi
 Meowth 1 (Lv. 9) @No Item [Lonely] {Pickup} <Fake Out/Beat Up/Assist/Snatch>
 Bonsly (Lv. 9) @Maranga Berry [Impish] {Rattled} <Low Kick/Fake Tears/Copycat/Flail>
 Tympole (Lv. 8) @Kee Berry [Serious] {Water Absorb} <Echoed Voice/Mud-Slap/Supersonic/(None)>
@@ -113,7 +113,7 @@ Bellsprout (Lv. 8) @Luminous Moss [Quiet] {Sticky Hold} <Vine Whip/Sweet Scent/G
 Rattata (Lv. 10) @Oran Berry [Jolly] {Guts} <Quick Attack/Tail Whip/Bite/Focus Energy>
 
 Prize Money: $8400
-023 - Island Kahuna Hala
+023 - Melemele Kahuna Hala
 Mankey (Lv. 18) @Adrenaline Orb [Adamant] {Defiant} <Rototiller/Karate Chop/Fury Swipes/Bulldoze>
 Timburr (Lv. 18) @Coba Berry [Careful] {Iron Fist} <Rock Smash/Bide/Comet Punch/Trailblaze>
 Scraggy (Lv. 18) @Black Glasses [Sassy] {Intimidate} <Pursuit/Fake Out/Taunt/Feint>
@@ -142,7 +142,7 @@ Tyrogue (Lv. 7) @Focus Band [Serious] {Steadfast} <Endure/Foresight/Rock Smash/H
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $128
-028 - Preschooler Oliver
+028 - Kindergartener Oliver
 Rattata 1 (Lv. 4) @Oran Berry [Relaxed] {Pickup} <Quick Attack/Snatch/(None)/(None)>
 Zigzagoon (Lv. 4) @No Item [Impish] {Pickup} <Tail Whip/Odor Sleuth/Growl/Tackle>
 Lillipup (Lv. 4) @Oran Berry [Careful] {Pickup} <Lick/Growl/Tackle/(None)>
@@ -151,7 +151,7 @@ Lillipup (Lv. 4) @Oran Berry [Careful] {Pickup} <Lick/Growl/Tackle/(None)>
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $960
-030 - Pokémon Breeder Jay
+030 - Pokémon Rancher Jay
 Wynaut (Lv. 10) @Pecha Berry [Quirky] {Stamina} <Destiny Bond/Counter/Mirror Coat/Safeguard>
 Igglybuff (Lv. 10) @Aspear Berry [Docile] {Friend Guard} <Echoed Voice/Defense Curl/Rollout/Sing>
 Smoochum (Lv. 10) @Chesto Berry [Hardy] {Dry Skin} <Lick/Fake Tears/Powder Snow/Heart Stamp>
@@ -170,31 +170,31 @@ Prize Money: $1664
 Growlithe (Lv. 15) @Adrenaline Orb [Brave] {Intimidate} <Bite/Helping Hand/Fire Spin/Leer>
 Vanillite (Lv. 16) @Adrenaline Orb [Bold] {Weak Armor} <Icy Wind/Startle/Round/Ice Shard>
 Ekans (Lv. 16) @Adrenaline Orb [Naughty] {Intimidate} <Twister/Poison Tail/Rage/Bite>
-Vullaby (Lv. 16) @Adrenaline Orb [Sassy] {Shell Armor} <Pursuit/Pluck/Deft Dash/Embargo>
+Vullaby (Lv. 16) @Adrenaline Orb [Sassy] {Shell Armor} <Pursuit/Pluck/Slink Strike/Embargo>
 
 Prize Money: $1568
-033 - Rising Star Tatiana
+033 - Up and Coming Tatiana
 Cottonee (Lv. 15) @Big Root [Timid] {Fluffy} <Leech Seed/Cotton Spore/Mega Drain/Disarming Voice>
 Ralts (Lv. 14) @Normalium Z [Bold] {Trace} <Disarming Voice/Heart Stamp/Double Team/Detect>
 Abra (Lv. 16) @Toxic Orb [Timid] {Comatose} <Substitute/Trick/Ally Switch/Hidden Power>
 Aron (Lv. 14) @Jaboca Berry [Brave] {Sturdy} <Protect/Metal Claw/Rock Tomb/Mud Shot>
 
 Prize Money: $1836
-034 - Swimmer Yasu
+034 - Swimmer Beau Yasu
 Binacle (Lv. 27) @Salac Berry [Impish] {Multistriker} <Rock Polish/Skull Bash/Razor Shell/Facade>
 Shellos 1 (Lv. 28) @Water Gem [Bold] {Gooey} <Mud Bomb/Water Pulse/Hidden Power/Sludge>
 Pyukumuku (Lv. 28) @Enigma Berry [Relaxed] {Innards Out} <Mirror Coat/Toxic/Purify/Aqua Ring>
-Krabby (Lv. 27) @Shed Shell [Brave] {Shell Armor} <Protect/Trample/Metal Claw/Razor Shell>
+Krabby (Lv. 27) @Steelium Z [Brave] {Shell Armor} <Protect/Trample/Metal Claw/Razor Shell>
 
 Prize Money: $2128
-035 - Swimmer Kalani
+035 - Swimmer Beau Kalani
 Mudkip (Lv. 28) @Eviolite [Relaxed] {Torrent} <Mud Bomb/Aqua Jet/Yawn/Water Pulse>
 Oshawott (Lv. 28) @Eviolite [Relaxed] {Torrent} <Fury Cutter/Sharpen/Water Pulse/Revenge>
 Piplup (Lv. 28) @Eviolite [Quiet] {Torrent} <Bide/Dive/Aurora Beam/Brine>
 Froakie (Lv. 28) @Eviolite [Naive] {Protean} <Shadow Sneak/Spikes/Smog/Snarl>
 
 Prize Money: $2184
-036 - Swimmer Kelsie
+036 - Swimsuit Kelsie
 Frillish (Lv. 27) @Colbur Berry [Bold] {Water Absorb} <Brine/Confuse Ray/Pain Split/Ominous Wind>
 Frillish (Lv. 27) @Kasib Berry [Calm] {Cursed Body} <Bubble Beam/Aqua Ring/Magic Coat/Night Shade>
 Tentacool (Lv. 28) @Luminous Moss [Mild] {Liquid Ooze} <Barrier/Acid Spray/Confuse Ray/Water Pulse>
@@ -202,20 +202,20 @@ Lileep (Lv. 27) @Leftovers [Lax] {Suction Cups} <Ancient Power/Brine/Leech Seed/
 Corsola (Lv. 26) @Destiny Knot [Quiet] {Sturdy} <Spike Cannon/Barrier/Aqua Ring/Ancient Power>
 
 Prize Money: $2576
-037 - Swimmer Portia
+037 - Swimsuit Portia
 Ducklett (Lv. 28) @Leftovers [Bold] {Cloud Nine} <Air Slash/Feather Dance/Aqua Ring/Water Pulse>
 Remoraid (Lv. 28) @Scope Lens [Jolly] {Super Luck} <Aqua Tail/Bubble Beam/Rock Blast/Focus Energy>
 Clauncher (Lv. 28) @Custap Berry [Impish] {Shell Armor} <Aqua Jet/Razor Shell/Swords Dance/Smack Down>
 Wailmer (Lv. 28) @Air Balloon [Naive] {Thick Fat} <Whirlpool/Bounce/Brine/Clear Smog>
 
 Prize Money: $2784
-038 - Swimmer Shelby
+038 - Swim Gal Shelby
 Seadra (Lv. 27) @Dragon Fang [Timid] {Sniper} <Twister/Aqua Tail/Aurora Beam/Focus Energy>
 Croconaw (Lv. 27) @Dragon Fang [Naughty] {Hustle} <Roar/Scary Face/Draco Jet/Aqua Tail>
 Skrelp (Lv. 29) @Dragon Fang [Modest] {Adaptability} <Venom Drench/Whirlpool/Sludge/Twister>
 
 Prize Money: $2376
-039 - Swimmer Jade
+039 - Swim Gal Jade
 Sealeo (Lv. 27) @Icy Rock [Quirky] {Ice Body} <Hail/Cold Snap/Dive/Body Slam>
 Wimpod (Lv. 29) @Eviolite [Timid] {Wimp Out} <Aqua Ring/U-turn/Bug Buzz/Skill Swap>
 Brionne (Lv. 28) @Normalium Z [Rash] {Liquid Voice} <Follow Me/Fake Out/Encore/Disarming Voice>
@@ -246,7 +246,7 @@ Prize Money: $1080
 Shinx (Lv. 14) @Apicot Berry [Jolly] {Intimidate} <Charge/Snarl/Spark/Power Trip>
 Gothita (Lv. 14) @Sticky Barb [Calm] {Klutz} <Trick/Snarl/Fake Tears/Confusion>
 Poochyena (Lv. 14) @Oran Berry [Jolly] {Quick Feet} <Howl/Bite/Torment/Tackle>
-Rattata 1 (Lv. 15) @Normal Gem [Adamant] {Hustle} <Thief/Deft Dash/Pursuit/Quick Attack>
+Rattata 1 (Lv. 15) @Normal Gem [Adamant] {Hustle} <Thief/Slink Strike/Pursuit/Quick Attack>
 
 044 - Team Skull ●●●
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
@@ -261,7 +261,7 @@ Prize Money: $768
 047 - Team Skull Grunt Bee
 Zubat (Lv. 10) @Poison Gem [Careful] {Inner Focus} <Mean Look/Gust/Supersonic/Poison Sting>
 Koffing (Lv. 10) @Liechi Berry [Careful] {Levitate} <Poison Gas/Harden/Tackle/Smog>
-Stunky (Lv. 12) @Prot. Pads [Timid] {Stench} <Fury Swipes/Gastro Acid/Smoke Out/Acid>
+Stunky (Lv. 12) @Protective Pads [Timid] {Stench} <Fury Swipes/Gastro Acid/Smoke Out/Acid>
 
 048 - Punk Guy [~ 48]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
@@ -276,7 +276,7 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $3120
-052 - Captain Ilima
+052 - Plain Captain Ilima
 Pidove (Lv. 10) @Silk Scarf [Hasty] {Super Luck} <Gust/Leer/Tackle/Lucky Chant>
 Shuppet (Lv. 11) @Ghost Gem [Naughty] {Insomnia} <Lick/Torment/Tackle/Grudge>
 Pansear (Lv. 11) @Oran Berry [Naive] {Flame Body} <Ember/Lick/Quick Attack/Recycle>
@@ -296,8 +296,8 @@ Prinplup (Lv. 24) @Cell Battery [Impish] {Ice Body} <Aqua Jet/Steel Wing/Pluck/C
 Prize Money: $2400
 055 - Fisherman Herbert
 Poliwhirl (Lv. 25) @Damp Rock [Bashful] {Swift Swim} <Dive/Double Slap/Rain Dance/Bubble Beam>
-Palpitoad (Lv. 24) @No Item [Bold] {Swift Swim} <Uproar/Bubble Beam/Bulldoze/Aqua Ring>
-Frogadier (Lv. 25) @No Item [Naive] {Protean} <Thief/Shadow Sneak/Bubble Beam/Smog>
+Palpitoad (Lv. 24) @Maranga Berry [Bold] {Swift Swim} <Uproar/Bubble Beam/Bulldoze/Aqua Ring>
+Frogadier (Lv. 25) @Expert Belt [Naive] {Protean} <Thief/Shadow Sneak/Bubble Beam/Smog>
 
 Prize Money: $2592
 056 - Fisherman Carl
@@ -306,7 +306,7 @@ Feebas (Lv. 25) @Focus Band [Naive] {Adaptability} <Haze/Hypnosis/Bubble Beam/Ta
 Magikarp (Lv. 26) @Life Orb [Hasty] {Rattled} <Bounce/Soak/Bubble/Flail>
 Feebas (Lv. 26) @Red Card [Naive] {Adaptability} <Haze/Hypnosis/Bubble Beam/Tackle>
 Magikarp (Lv. 27) @Flyinium Z [Hasty] {Rattled} <Bounce/Soak/Bubble/Flail>
-Feebas (Lv. 27) @Enigma Berry [Naive] {Adaptability} <Haze/Hypnosis/Bubble Beam/Tackle>
+Feebas (Lv. 27) @Starf Berry [Naive] {Adaptability} <Haze/Hypnosis/Bubble Beam/Tackle>
 
 057 - Black Belt [~ 57]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
@@ -316,16 +316,17 @@ Prize Money: $2000
 Drifloon (Lv. 24) @Flame Orb [Timid] {Flare Boost} <Minimize/Focus Energy/Air Cutter/Ominous Wind>
 Loudred (Lv. 24) @Dragonium Z [Bold] {Soundproof} <Uproar/Snore/Sonic Boom/Roar>
 Snover (Lv. 25) @Focus Sash [Bold] {Fluffy} <Aurora Beam/Icy Wind/Grass Whistle/Needle Arm>
+Sandygast (Lv. 25) @Float Stone [Bold] {Water Compaction} <Mega Drain/Ancient Power/Protect/Ominous Wind>
 
 059 - Trial Guide [~ 59]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1840
 060 - Fisherman Ernest
-Barboach (Lv. 24) @No Item [Rash] {Gooey} <Mud Bomb/Amnesia/Mud Sport/Whirlpool>
+Barboach (Lv. 24) @Rocky Helmet [Rash] {Gooey} <Mud Bomb/Amnesia/Mud Sport/Whirlpool>
 Staryu (Lv. 25) @Salac Berry [Mild] {Victory Star} <Confuse Ray/Camouflage/Bubble Beam/Recover>
 Clamperl (Lv. 23) @Deep Sea Scale [Relaxed] {Bulletproof} <Aqua Ring/Whirlpool/Wide Guard/Iron Defense>
-Goldeen (Lv. 23) @No Item [Brave] {Lightning Rod} <Water Pulse/Horn Attack/Aqua Ring/Flail>
+Goldeen (Lv. 23) @Liechi Berry [Jolly] {Lightning Rod} <Water Pulse/Horn Attack/Aqua Ring/Flail>
 
 Prize Money: $1900
 061 - Collector Bryan
@@ -341,7 +342,7 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $2400
-064 - Sightseer Scotty
+064 - Tourist Scotty
 Grimer (Lv. 20) @Eject Button [Relaxed] {Regenerator} <Disable/Sludge/Acid Armor/Poison Fang>
 Vulpix (Lv. 20) @Fire Gem [Timid] {Flash Fire} <Will-O-Wisp/Confuse Ray/Fire Spin/Sweet Tooth>
 Geodude (Lv. 20) @Weakness Policy [Impish] {Sturdy} <Mega Punch/Stealth Rock/Rollout/Bulldoze>
@@ -357,11 +358,11 @@ Duskull (Lv. 28) @Firium Z [Careful] {Levitate} <Ominous Wind/Will-O-Wisp/Haze/M
 066 - Youngster [~ 66]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-067 - Rising Star [~ 67]
+067 - Up and Coming [~ 67]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $2700
-068 - Pokémon Breeder William
+068 - Pokémon Rancher William
 Steenee (Lv. 27) @Oran Berry [Adamant] {Chlorophyll} <Synthesis/Double Kick/Razor Leaf/Grass Whistle>
 Diglett 1 (Lv. 28) @Oran Berry [Jolly] {Tangling Hair} <Dig/Rototiller/Sucker Punch/Cutting Edge>
 Munna (Lv. 28) @Oran Berry [Sassy] {Sweet Veil} <Aromatic Mist/Lucky Chant/Ally Switch/Extrasensory>
@@ -372,19 +373,19 @@ Diggersby (Lv. 27) @Oran Berry [Relaxed] {Cheek Pouch} <Double Kick/Dig/Recycle/
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $2320
-070 - Swimmer Dakota
-Kingler (Lv. 29) @Pecha Berry [Impish] {Sheer Force} <Metal Claw/Razor Shell/Wide Guard/Trample>
+070 - Swimmer Beau Dakota
+Kingler (Lv. 29) @Pecha Berry [Impish] {Tough Claws} <Metal Claw/Razor Shell/Wide Guard/Trample>
 Quagsire (Lv. 30) @Ice Gem [Bold] {Water Absorb} <Mud Bomb/Amnesia/Ice Punch/Tail Slap>
 Golduck (Lv. 29) @Colbur Berry [Hasty] {Unaware} <Amnesia/Brave Bird/Water Pulse/Zen Headbutt>
 
 Prize Money: $2784
-071 - Swimmer Casey
+071 - Swimmer Beau Casey
 Chinchou (Lv. 29) @Ghostium Z [Modest] {Volt Absorb} <Parabolic Charge/Signal Beam/Bubble Beam/Confuse Ray>
-Stunfisk (Lv. 29) @Terrain Ext. [Modest] {Electric Surge} <Thunder Wave/Electrify/Discharge/Bounce>
+Stunfisk (Lv. 29) @Terrain Extender [Modest] {Electric Surge} <Thunder Wave/Electrify/Discharge/Bounce>
 Eelektrik (Lv. 29) @Magnet [Adamant] {Surge Surfer} <Aqua Tail/Magnet Rise/Thunder Fang/Super Fang>
 
 Prize Money: $2480
-072 - Swimmer Vanessa
+072 - Swimsuit Vanessa
 Surskit (Lv. 31) @Eviolite [Bold] {Swift Swim} <U-turn/Sticky Web/Silver Wind/Water Pulse>
 Wingull (Lv. 31) @Focus Sash [Timid] {Rain Dish} <Rain Dance/Brine/Haze/U-turn>
 Shellder (Lv. 31) @Mystic Water [Brave] {Skill Link} <Icicle Spear/Ice Shard/Water Shuriken/Protect>
@@ -392,14 +393,14 @@ Wooper (Lv. 31) @Eviolite [Impish] {Water Absorb} <Rest/Sleep Talk/Trample/Aqua 
 Shellos (Lv. 31) @Petaya Berry [Quiet] {Gooey} <Mud Bomb/Recover/Hidden Power/Sludge>
 
 Prize Money: $2880
-073 - Swimmer Tiare
+073 - Swim Gal Tiare
 Luvdisc (Lv. 30) @Wise Glasses [Timid] {Soul-Heart} <Hidden Power/Brine/Double Team/Lovely Kiss>
 Bibarel (Lv. 28) @Kee Berry [Lonely] {Simple} <Mud Sport/Dive/Aqua Jet/Hyper Fang>
 Corphish (Lv. 29) @Eviolite [Adamant] {Adaptability} <Wide Guard/Razor Shell/Night Slash/Dive>
 Dewott (Lv. 30) @Shell Bell [Naive] {Shell Armor} <Razor Shell/Revenge/Fury Cutter/Sharpen>
 
 Prize Money: $6400
-074 - Pokémon Trainer Dexio
+074 - Kalosian Man Dexio
 Espurr (Lv. 20) @Light Clay [Timid] {Own Tempo} <Charm/Psybeam/Fake Out/Reflect>
 Natu (Lv. 19) @Colbur Berry [Sassy] {Anticipation} <Stored Power/Air Cutter/Agility/Meditate>
 Inkay (Lv. 19) @Quick Claw [Brave] {Contrary} <Nightmare/Psycrush/Topsy-Turvy/Hypnosis>
@@ -408,12 +409,12 @@ Chingling (Lv. 19) @Normalium Z [Calm] {Levitate} <Round/Disarming Voice/Confusi
 Kirlia (Lv. 20) @Muscle Band [Jolly] {Trace} <Heal Pulse/Sweet Tooth/Disable/Heart Stamp>
 
 Prize Money: $2100
-075 - Pokémon Trainer Sina
+075 - Kalosian Woman Sina
 Smoochum (Lv. 15) @No Item [Serious] {Dry Skin} <Powder Snow/Pummel/(None)/(None)>
 Glaceon (Lv. 15) @No Item [Serious] {Slush Rush} <Icy Wind/Quick Attack/(None)/(None)>
 
 Prize Money: $3080
-076 - Pokémon Trainer Hau
+076 - Tapu's Chosen Hau
 Brionne (Lv. 22) @Water Gem [Modest] {Liquid Voice} <Double Slap/Icy Wind/Fake Out/Disarming Voice>
 Gulpin (Lv. 20) @Black Sludge [Sassy] {Innards Out} <Poison Gas/Acid Spray/Yawn/Encore>
 Noibat (Lv. 21) @Flyinium Z [Timid] {Soundproof} <Twister/Air Cutter/Dragon Breath/Sonic Boom>
@@ -422,7 +423,7 @@ Deerling 2 (Lv. 20) @Silk Scarf [Lonely] {Serene Grace} <Mega Drain/Leech Seed/H
 Combusken (Lv. 22) @Fist Plate [Brave] {Speed Boost} <Double Kick/Protect/Feather Dance/Flame Charge>
 
 Prize Money: $3080
-077 - Pokémon Trainer Hau
+077 - Tapu's Chosen Hau
 Dartrix (Lv. 22) @Grass Gem [Jolly] {Sniper} <Focus Energy/Pluck/Razor Leaf/Trailblaze>
 Gulpin (Lv. 20) @Black Sludge [Sassy] {Innards Out} <Poison Gas/Acid Spray/Yawn/Encore>
 Noibat (Lv. 21) @Flyinium Z [Timid] {Soundproof} <Twister/Air Cutter/Dragon Breath/Sonic Boom>
@@ -431,8 +432,8 @@ Litleo (Lv. 20) @Silk Scarf [Modest] {Scrappy} <Roar/Fire Fang/Swift/Snarl>
 Marshtomp (Lv. 22) @Earth Plate [Brave] {Dry Skin} <Bulldoze/Protect/Water Pulse/Mud Bomb>
 
 Prize Money: $3080
-078 - Pokémon Trainer Hau
-Torracat (Lv. 22) @Fire Gem [Adamant] {Intimidate} <Deft Dash/Flame Charge/Power Trip/Scary Face>
+078 - Tapu's Chosen Hau
+Torracat (Lv. 22) @Fire Gem [Adamant] {Intimidate} <Slink Strike/Flame Charge/Power Trip/Scary Face>
 Gulpin (Lv. 20) @Black Sludge [Sassy] {Innards Out} <Poison Gas/Acid Spray/Yawn/Encore>
 Noibat (Lv. 21) @Flyinium Z [Timid] {Soundproof} <Twister/Air Cutter/Dragon Breath/Sonic Boom>
 Pikachu (Lv. 20) @Focus Sash [Timid] {Lightning Rod} <Electro Ball/Nuzzle/Wish/Feint>
@@ -440,7 +441,7 @@ Buizel (Lv. 20) @Silk Scarf [Jolly] {Frisk} <Aqua Jet/Rapid Spin/Pursuit/Quick A
 Grovyle (Lv. 22) @Draco Plate [Hasty] {Technician} <Grass Whistle/Double Team/Twister/Razor Leaf>
 
 Prize Money: $3680
-079 - Team Skull Gladion
+079 - Skull Enforcer Gladion
 Zorua (Lv. 24) @Black Glasses [Timid] {Illusion} <Scary Face/Taunt/Psybeam/Snarl>
 Porygon (Lv. 22) @Wise Glasses [Modest] {Trace} <Agility/Charge Beam/Psybeam/Swift>
 Sneasel (Lv. 23) @Focus Sash [Lonely] {Inner Focus} <Thief/Pursuit/Fake Out/Ice Shard>
@@ -456,7 +457,7 @@ Noctowl (Lv. 27) @King’s Rock [Modest] {Compound Eyes} <Dream Eater/Air Cutter
 Hypno (Lv. 29) @Mago Berry [Rash] {Bad Dreams} <Yawn/Sludge/Meditate/Psybarrage>
 
 081 - Pro Wrestler The Royal
-Beedrill (Lv. 28) @Beedrillite [Hasty] {Merciless} <Swords Dance/(None)/(None)/(None)>
+Beedrill (Lv. 28) @Beedrillite [Hasty] {Swarm} <Swords Dance/(None)/(None)/(None)>
 
 082 - Pokémon Trainer Hau
 Pikachu (Lv. 30) @Light Ball [Timid] {Lightning Rod} <Electro Ball/Light Screen/Disarming Voice/Tail Whip>
@@ -470,7 +471,7 @@ Pikachu (Lv. 30) @Light Ball [Timid] {Lightning Rod} <Electro Ball/Light Screen/
 085 - Pokémon Trainer [~ 85]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-086 - Captain ●●●
+086 - Heat Captain ●●●
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 087 - Pokémon Trainer [~ 87]
@@ -493,7 +494,7 @@ Dustox (Lv. 40) @Bug Gem [Timid] {Merciless} <Venoshock/Extrasensory/Signal Beam
 Salazzle (Lv. 40) @Poisonium Z [Timid] {Poison Touch} <Flamethrower/Fake Out/Venoshock/Dragon Pulse>
 
 Prize Money: $18040
-090 - Island Kahuna Olivia
+090 - Akala Kahuna Olivia
 Probopass (Lv. 39) @Smooth Rock [Quiet] {Sand Stream} <Thunderbolt/Magnet Rise/Power Gem/Protect>
 Cradily (Lv. 40) @Leftovers [Impish] {Storm Drain} <Rock Slide/Stockpile/Entangle/Stealth Rock>
 Minior 5 (Lv. 40) @Flying Gem [Jolly] {Shields Down} <Acrobatics/Rock Slide/Rapid Spin/Self-Destruct>
@@ -501,7 +502,7 @@ Carbink (Lv. 40) @Eviolite [Relaxed] {Solid Rock} <Power Gem/Dazzling Gleam/Refl
 Relicanth (Lv. 40) @Air Balloon [Adamant] {Water Absorb} <Rock Slide/Phantom Force/Shadow Sneak/Aqua Tail>
 Lycanroc 1 (Lv. 41) @Rockium Z [Adamant] {Intimidate} <Protect/Accelerock/Rock Slide/Crunch>
 
-091 - Captain [~ 91]
+091 - Heat Captain [~ 91]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $2208
@@ -510,12 +511,12 @@ Kabuto (Lv. 24) @Jaboca Berry [Impish] {Battle Armor} <Water Pulse/Headbutt/Endu
 Shieldon (Lv. 23) @Steelium Z [Relaxed] {Solid Rock} <Ancient Power/Rock Tomb/Magnet Bomb/Iron Defense>
 
 Prize Money: $2576
-093 - Rising Star Lauren
+093 - Up and Coming Lauren
 Omanyte (Lv. 24) @Rowap Berry [Hasty] {Weak Armor} <Mist/Bubble Beam/Ancient Power/Aqua Jet>
 Cranidos (Lv. 23) @Ghostium Z [Brave] {Rock Head} <Smack Down/Scary Face/Pursuit/Headbutt>
 
 Prize Money: $2400
-094 - Pokémon Breeder Cory
+094 - Pokémon Rancher Cory
 Burmy 2 (Lv. 24) @Sitrus Berry [Gentle] {Shed Skin} <Electroweb/Nature Power/Secret Power/Hidden Power>
 Kricketune (Lv. 23) @Salac Berry [Calm] {Technician} <Helping Hand/Disarming Voice/Bug Bite/Round>
 Venonat (Lv. 24) @Apicot Berry [Modest] {Tinted Lens} <Struggle Bug/Psybeam/Powder/Disable>
@@ -523,7 +524,7 @@ Venonat (Lv. 24) @Apicot Berry [Modest] {Tinted Lens} <Struggle Bug/Psybeam/Powd
 Prize Money: $3168
 095 - Pokémon Breeder Yuka
 Shroomish (Lv. 24) @Sitrus Berry [Impish] {Effect Spore} <Bullet Seed/Spore/Leech Seed/Counter>
-Servine (Lv. 23) @Metronome [Timid] {Contrary} <Leaf Tornado/Entangle/Twister/Glare>
+Servine (Lv. 23) @Roseli Berry [Timid] {Contrary} <Leech Seed/Leaf Tornado/Twister/Glare>
 Skiploom (Lv. 24) @Ganlon Berry [Naive] {Harvest} <Air Cutter/Powder/Tailwind/Razor Leaf>
 
 Prize Money: $4624
@@ -550,7 +551,7 @@ Scolipede (Lv. 33) @Black Sludge [Adamant] {Poison Touch} <Double Team/Extreme S
 Houndoom (Lv. 32) @Darkinium Z [Mild] {Intimidate} <Flame Burst/Snarl/Assertion/Roar>
 
 Prize Money: $5120
-100 - Rising Star Nicki
+100 - Up and Coming Nicki
 Gourgeist 3 (Lv. 32) @Flame Orb [Quiet] {Flare Boost} <Mystical Fire/Shadow Ball/Trick-or-Treat/Giga Drain>
 Pidgeotto (Lv. 33) @Normalium Z [Timid] {Tangled Feet} <Mirror Move/Secret Power/Whirlwind/Air Cutter>
 Leavanny (Lv. 33) @Bug Gem [Jolly] {Sniper} <Powder/Trailblaze/Fell Stinger/Grass Whistle>
@@ -560,7 +561,7 @@ Prize Money: $3432
 101 - Backpacker Kiana
 Flareon (Lv. 33) @Sitrus Berry [Adamant] {Fur Coat} <Double Kick/Flame Wheel/Flame Charge/Baton Pass>
 Espeon (Lv. 33) @Sitrus Berry [Calm] {Magic Bounce} <Psybeam/Barrier/Light Screen/Kinesis>
-Glaceon (Lv. 33) @Sitrus Berry [Modest] {Refrigerate} <Mud Shot/Trump Card/Stored Power/Detect>
+Glaceon (Lv. 33) @Sitrus Berry [Modest] {Snow Warning} <Mud Shot/Trump Card/Stored Power/Detect>
 
 Prize Money: $3360
 102 - Hiker Gabriel
@@ -572,7 +573,7 @@ Hariyama (Lv. 35) @Sitrus Berry [Brave] {Thick Fat} <Arm Thrust/Belly Drum/Smack
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $5440
-104 - Ace Trainer Alexis
+104 - Star Trainer Alexis
 Sliggoo (Lv. 35) @Leftovers [Quiet] {Gooey} <Acid Armor/Dragon Breath/Bubble Beam/Acid Spray>
 Metang (Lv. 34) @Steelium Z [Adamant] {Levitate} <Dizzy Punch/Spike Cannon/Bullet Punch/Sharpen>
 Pachirisu (Lv. 35) @Iapapa Berry [Timid] {Cheek Pouch} <Me First/Follow Me/Super Fang/Nuzzle>
@@ -589,38 +590,38 @@ Geodude 1 (Lv. 32) @Eviolite [Lonely] {Galvanize} <Charge/Rock Slide/Mega Punch/
 106 - Lass [~ 106]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-107 - Swimmer [~ 107]
+107 - Swimmer Beau [~ 107]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $2240
-108 - Swimmer Lawrence
+108 - Swimmer Beau Lawrence
 Araquanid (Lv. 40) @Luminous Moss [Adamant] {Water Bubble} <Waterfall/Sticky Web/Leech Life/Stockpile>
 Politoed (Lv. 41) @Quick Claw [Quiet] {Drizzle} <Swagger/Dive/Uproar/Metronome>
 Jellicent (Lv. 40) @Focus Band [Sassy] {Cursed Body} <Icy Wind/Haze/Hex/Water Pulse>
 
 Prize Money: $3200
-109 - Swimmer Roddy
+109 - Swimmer Beau Roddy
 Gyarados (Lv. 41) @Shell Bell [Lonely] {Intimidate} <Aqua Tail/Draco Jet/Aerial Ace/Ice Fang>
 Simipour (Lv. 40) @Poison Barb [Mild] {Drizzle} <Acrobatics/Scald/Mega Punch/Fling>
 Armaldo (Lv. 40) @Leftovers [Lax] {Swift Swim} <Fell Stinger/Crush Claw/Slash/Razor Shell>
 
 Prize Money: $2624
-110 - Swimmer Alicia
+110 - Swimsuit Alicia
 Pelipper (Lv. 41) @Leftovers [Rash] {Drizzle} <Swallow/Stockpile/Aqua Ring/Spit Up>
 Alomomola (Lv. 41) @Leftovers [Bold] {Soul-Heart} <Wish/Sparkling Aria/Lovely Kiss/Draining Kiss>
 Lumineon (Lv. 41) @Leftovers [Rash] {Swift Swim} <Water Pulse/Aurora Beam/Safeguard/Dazzling Gleam>
 
 Prize Money: $960
-111 - Swimmer Laura
+111 - Swimsuit Laura
 Seaking (Lv. 41) @Silk Scarf [Adamant] {Lightning Rod} <Horn Attack/Aqua Tail/Drill Run/Aqua Jet>
 Azumarill (Lv. 41) @Kebia Berry [Modest] {Sap Sipper} <Dazzling Gleam/Bubble Beam/Draining Kiss/Aqua Ring>
 Basculin (Lv. 41) @Ghostium Z [Jolly] {Adaptability} <Dive/Scary Face/Take Down/Flail>
 Carracosta (Lv. 40) @Rock Gem [Brave] {Solid Rock} <Razor Shell/Wide Guard/Accelerock/Rock Slide>
 
 Prize Money: $2788
-112 - Swimmer Chelsea
+112 - Swim Gal Chelsea
 Phione (Lv. 40) @Sitrus Berry [Relaxed] {Hydration} <Rain Dance/Draining Kiss/Acid Armor/Whirlpool>
-Starmie (Lv. 40) @Light Clay [Timid] {Natural Cure} <Recover/Light Screen/Brine/Minimize>
+Starmie (Lv. 40) @Light Clay [Timid] {Analytic} <Recover/Light Screen/Brine/Minimize>
 Milotic (Lv. 41) @Fairy Gem [Modest] {Regal Presence} <Aqua Ring/Bubble Beam/Icy Wind/Dazzling Gleam>
 
 Prize Money: $13680
@@ -632,14 +633,14 @@ Vanillish (Lv. 38) @Eject Button [Timid] {Refrigerate} <Mirror Shot/Acid Armor/M
 
 Prize Money: $13680
 114 - Madame Sayuri
-Comfey (Lv. 37) @Terrain Ext. [Bold] {Flower Veil} <Dazzling Gleam/Follow Me/Giga Drain/Grassy Terrain>
+Comfey (Lv. 37) @Terrain Extender [Bold] {Flower Veil} <Dazzling Gleam/Follow Me/Giga Drain/Grassy Terrain>
 Leafeon (Lv. 38) @Leftovers [Careful] {Grass Pelt} <Wish/Trop Kick/Spiky Shield/Trailblaze>
 Furfrou 5 (Lv. 37) @Black Sludge [Bashful] {Fur Coat} <Snarl/Secret Power/Swagger/Poison Fang>
 Umbreon (Lv. 38) @Sitrus Berry [Calm] {Magic Guard} <Toxic/Poison Fang/Moonlight/Snarl>
 
 Prize Money: $2664
-115 - Preschooler Liam
-Ledian (Lv. 38) @Prot. Pads [Jolly] {Iron Fist} <Comet Punch/Dizzy Punch/U-turn/Fire Punch>
+115 - Kindergartener Liam
+Ledian (Lv. 38) @Protective Pads [Jolly] {Iron Fist} <Comet Punch/Dizzy Punch/U-turn/Fire Punch>
 Dodrio (Lv. 38) @Expert Belt [Jolly] {Skill Link} <Fury Swipes/Acupressure/Flurry Peck/Triple Axel>
 Kecleon (Lv. 37) @Shell Bell [Quiet] {Color Change} <Shadow Claw/Conversion 2/Slash/Fake Out>
 
@@ -682,10 +683,10 @@ Vaporeon (Lv. 38) @Mystic Water [Modest] {Dry Skin} <Aurora Beam/Rain Dance/Acid
 Dragonair (Lv. 39) @Eviolite [Bashful] {Shed Skin} <Dragon Breath/Agility/Dragon Tail/Surf>
 
 Prize Money: $2200
-122 - Pokémon Breeder Glenn
+122 - Pokémon Rancher Glenn
 Mudbray (Lv. 22) @Apicot Berry [Impish] {Stamina} <Double Kick/Trample/Counter/Bulldoze>
 Blitzle (Lv. 22) @Absorb Bulb [Naughty] {Static} <Spark/Electric Terrain/Flame Charge/Double Kick>
-Ponyta (Lv. 22) @Binding Band [Hasty] {Flame Body} <Flame Charge/Trample/Fire Spin/Double Kick>
+Ponyta (Lv. 22) @Binding Band [Hasty] {Quick Feet} <Flame Charge/Trample/Fire Spin/Double Kick>
 Horsea (Lv. 22) @Scope Lens [Naive] {Sniper} <Aqua Tail/Bubble Beam/Smoke Out/Twister>
 
 123 - Pokémon Breeder [~ 123]
@@ -736,16 +737,16 @@ Hypno (Lv. 43) @No Item [Timid] {Psychic Surge} <Psychic/Hypnosis/Disable/Nightm
 133 - Aether Foundation [~ 133]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-134 - Aether Foundation Employee
+134 - Aether Foundatio Employee
 Huntail (Lv. 41) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-135 - Aether Foundation [~ 135]
+135 - Aether Foundation1 [~ 135]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-136 - Aether Foundation Employee
+136 - Aether Foundati Employee
 Gorebyss (Lv. 41) @No Item [Serious] {Swift Swim} <(None)/(None)/(None)/(None)>
 
-137 - Aether Foundation Employee
+137 - Aether Foundation2 Employee
 Muk 1 (Lv. 41) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $5640
@@ -755,7 +756,7 @@ Galvantula (Lv. 46) @Focus Sash [Timid] {Compound Eyes} <Bug Buzz/Volt Switch/St
 Wormadam 2 (Lv. 46) @Buginium Z [Calm] {Full Metal Body} <Protect/Struggle Bug/Flash Cannon/Ally Switch>
 Scyther (Lv. 47) @Eviolite [Jolly] {Technician} <Aerial Ace/Bug Bite/Detect/Roost>
 Venomoth (Lv. 46) @Toxic Orb [Bold] {Compound Eyes} <Baneful Bunker/Moonlight/Psyshock/Sleep Powder>
-Pinsir (Lv. 47) @Pinsirite [Careful] {Intimidate} <Deft Dash/Horn Attack/Quick Attack/X-Scissor>
+Pinsir (Lv. 47) @Pinsirite [Careful] {Intimidate} <Slink Strike/Horn Attack/Quick Attack/X-Scissor>
 
 139 - Pokémon Trainer [~ 139]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
@@ -763,7 +764,7 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 140 - Pokémon Trainer [~ 140]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-141 - Team Skull Grunt
+141 - Skull Gang Grunt
 Scraggy (Lv. 36) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 142 - Pokémon Trainer [~ 142]
@@ -773,7 +774,7 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $7200
-144 - Captain Lana
+144 - Hydro Captain Lana
 Lanturn (Lv. 60) @No Item [Modest] {Volt Absorb} <Discharge/Hydro Pump/Thunder Wave/Icy Wind>
 Cloyster (Lv. 60) @No Item [Careful] {Skill Link} <Spike Cannon/Icicle Crash/Steel Trap/Spikes>
 Araquanid (Lv. 60) @Waterium Z [Adamant] {Water Bubble} <Liquidation/Leech Life/Crunch/Frost Breath>
@@ -782,12 +783,12 @@ Araquanid (Lv. 60) @Waterium Z [Adamant] {Water Bubble} <Liquidation/Leech Life/
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $7200
-146 - Captain Mallow
+146 - Nature Captain Mallow
 Trevenant (Lv. 60) @No Item [Careful] {Natural Cure} <Horn Leech/Shadow Claw/Leech Seed/(None)>
 Shiinotic (Lv. 60) @No Item [Careful] {Regenerator} <Moonblast/Giga Drain/Spore/Ingrain>
 Tsareena (Lv. 60) @Grassium Z [Adamant] {Chlorophyll} <Power Whip/High Jump Kick/Zen Headbutt/U-turn>
 
-147 - Captain ●●●
+147 - Shock Captain ●●●
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 148 - Pokémon Trainer [~ 148]
@@ -795,7 +796,7 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $11400
 149 - Elite Four Acerola
-Banette (Lv. 56) @No Item [Serious] {Cursed Body} <Shadow Claw/Deft Dash/Infestation/Screech>
+Banette (Lv. 56) @No Item [Serious] {Cursed Body} <Shadow Claw/Slink Strike/Infestation/Screech>
 Drifblim (Lv. 56) @No Item [Serious] {Flare Boost} <Ominous Wind/Focus Energy/Amnesia/Baton Pass>
 Dhelmise (Lv. 56) @No Item [Serious] {Steelworker} <Sweet Tooth/Shadow Ball/Energy Ball/Whirlpool>
 Froslass (Lv. 56) @No Item [Serious] {Cursed Body} <Blizzard/Shadow Ball/Confuse Ray/Ice Shard>
@@ -819,12 +820,12 @@ Probopass (Lv. 56) @No Item [Serious] {Sand Stream} <Earth Power/Power Gem/Thund
 Lycanroc 1 (Lv. 57) @Rockium Z [Serious] {No Guard} <Crunch/Stone Edge/Counter/Rock Climb>
 
 Prize Money: $7040
-154 - Island Kahuna Nanu
+154 - Ula'ula Kahuna Nanu
 Sableye (Lv. 43) @No Item [Impish] {Prankster} <Power Gem/Shadow Ball/Fake Out/(None)>
 Krokorok (Lv. 43) @No Item [Jolly] {Intimidate} <Crunch/Assertion/Swagger/Earthquake>
 Persian 1 (Lv. 44) @Darkinium Z [Timid] {Fur Coat} <Power Gem/Fake Out/Dark Pulse/(None)>
 
-155 - Island Kahuna [~ 155]
+155 - Poni Kahuna [~ 155]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $11400
@@ -835,10 +836,10 @@ Oricorio (Lv. 56) @No Item [Serious] {Dancer} <Revelation Dance/Teeter Dance/Air
 Mandibuzz (Lv. 56) @No Item [Serious] {Shell Armor} <Bone Rush/Brave Bird/Punishment/Flatter>
 Toucannon (Lv. 57) @Flyinium Z [Serious] {Skill Link} <Bullet Seed/Rock Blast/Beak Blast/Screech>
 
-157 - Pokémon Trainer [~ 157]
+157 - Dragon Tamer [~ 157]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-158 - Aether President [~ 158]
+158 - Mother [~ 158]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $19600
@@ -883,11 +884,11 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 168 - Pokémon Trainer [~ 168]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-169 - Pokémon Center Lady [~ 169]
+169 - Nurse [~ 169]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $4356
-170 - Golfer Alan
+170 - Putter Alan
 Tranquill (Lv. 33) @Scope Lens [Hasty] {Super Luck} <Slash/Air Cutter/Tailwind/Detect>
 Honchkrow (Lv. 32) @White Herb [Quirky] {Defiant} <Sucker Punch/Flurry Peck/Feather Dance/Mirror Move>
 Beautifly (Lv. 33) @Silver Powder [Hardy] {Competitive} <Air Cutter/Silver Wind/Draining Kiss/Powder>
@@ -899,12 +900,12 @@ Sigilyph (Lv. 32) @Wacan Berry [Hardy] {Tinted Lens} <Mirror Move/Psyshock/Refle
 Xatu (Lv. 33) @Enigma Berry [Hasty] {Magic Bounce} <Extrasensory/Me First/Air Cutter/Calm Mind>
 
 Prize Money: $2000
-172 - Office Worker Kristen
+172 - Businesswoman Kristen
 Roggenrola (Lv. 20) @No Item [Hardy] {Weak Armor} <Iron Defense/Rock Blast/Stealth Rock/Magnitude>
 Mudbray (Lv. 20) @No Item [Hardy] {Stamina} <Double Kick/Trample/Bite/Bulldoze>
 
 Prize Money: $1760
-173 - Police Officer Mitchell
+173 - Cop Mitchell
 Lycanroc (Lv. 44) @Silk Scarf [Jolly] {Scrappy} <Stealth Rock/Thunder Fang/Take Down/Accelerock>
 Lycanroc 1 (Lv. 44) @Black Glasses [Brave] {Intimidate} <Accelerock/Ice Fang/Assertion/Roar>
 Lycanroc 2 (Lv. 44) @Black Belt [Adamant] {Defiant} <Brick Break/Fire Fang/Howl/Rock Slide>
@@ -941,7 +942,7 @@ Araquanid (Lv. 59) @No Item [Adamant] {Water Bubble} <Liquidation/Lunge/Crunch/(
 Electivire (Lv. 59) @No Item [Adamant] {Teravolt} <Fire Punch/Thunder Punch/Brick Break/(None)>
 
 Prize Money: $5544
-181 - Veteran Sheri
+181 - Virtuoso Sheri
 Jellicent (Lv. 63) @No Item [Calm] {Cursed Body} <Water Spout/Shadow Ball/Surf/(None)>
 Pyroar (Lv. 63) @No Item [Modest] {Scrappy} <Hyper Voice/Fire Blast/(None)/(None)>
 Froslass (Lv. 63) @No Item [Timid] {Cursed Body} <Shadow Ball/Blizzard/Ice Shard/(None)>
@@ -955,10 +956,10 @@ Skitty (Lv. 20) @Pecha Berry [Lax] {Normalize} <Natural Gift/Fake Out/Covet/Char
 183 - Rising Star ●●●
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-184 - Rising Star ●●●
+184 - Up and Coming ●●●
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-185 - Team Skull Gladion
+185 - Skull Enforcer Gladion
 Type: Null (Lv. 32) @Normal Gem [Adamant] {Battle Armor} <Explosion/(None)/(None)/(None)>
 
 Prize Money: $3600
@@ -967,11 +968,11 @@ Magmar (Lv. 30) @Flame Orb [Modest] {White Smoke} <Mud Shot/Flame Burst/Confuse 
 Voltorb (Lv. 30) @Flame Orb [Naughty] {Galvanize} <Incinerate/Rapid Spin/Electro Ball/Eerie Impulse>
 
 Prize Money: $2800
-187 - Ace Trainer Tori
+187 - Star Trainer Tori
 Growlithe (Lv. 20) @Normalium Z [Hardy] {Intimidate} <Flame Charge/Helping Hand/Fire Spin/Double Kick>
 Rhyhorn (Lv. 20) @No Item [Hardy] {Lightning Rod} <Rock Tomb/Trample/Scary Face/Horn Attack>
 
-188 - Ace Trainer Tori
+188 - Star Trainer Tori
 Arcanine (Lv. 55) @No Item [Hardy] {Intimidate} <(None)/(None)/(None)/(None)>
 
 Prize Money: $7200
@@ -1017,7 +1018,7 @@ Nosepass (Lv. 20) @No Item [Hardy] {Solid Rock} <Rock Tomb/Stealth Rock/Magnet B
 199 - Office Worker Cody
 Magnezone (Lv. 55) @No Item [Hardy] {Magnet Pull} <(None)/(None)/(None)/(None)>
 
-200 - Office Worker Kristen
+200 - Businesswoman Kristen
 Gigalith (Lv. 55) @No Item [Hardy] {Solid Rock} <(None)/(None)/(None)/(None)>
 
 201 - Punk Guy [~ 201]
@@ -1058,8 +1059,8 @@ Noivern (Lv. 55) @No Item [Hardy] {Soundproof} <(None)/(None)/(None)/(None)>
 
 Prize Money: $1360
 211 - Beauty Carolyn
-Meowth 1 (Lv. 20) @No Item [Hardy] {Technician} <Night Slash/Beat Up/Hone Claws/Swift>
-Meowth (Lv. 20) @No Item [Hardy] {Technician} <Fake Out/Hone Claws/Quick Attack/Uproar>
+Meowth 1 (Lv. 20) @No Item [Hardy] {Frisk} <Night Slash/Beat Up/Hone Claws/Swift>
+Meowth (Lv. 20) @No Item [Hardy] {Frisk} <Fake Out/Hone Claws/Quick Attack/Uproar>
 
 212 - Beauty Carolyn
 Florges 1 (Lv. 55) @No Item [Hardy] {Flower Veil} <(None)/(None)/(None)/(None)>
@@ -1073,7 +1074,7 @@ Sunkern (Lv. 20) @No Item [Hardy] {Flower Gift} <Leech Seed/Sunny Day/Magical Le
 Lilligant (Lv. 55) @No Item [Hardy] {Own Tempo} <(None)/(None)/(None)/(None)>
 
 Prize Money: $3120
-215 - Captain Ilima
+215 - Plain Captain Ilima
 Pidove (Lv. 10) @Silk Scarf [Hasty] {Super Luck} <Gust/Leer/Tackle/Lucky Chant>
 Shuppet (Lv. 11) @Ghost Gem [Naughty] {Insomnia} <Lick/Torment/Tackle/Grudge>
 Panpour (Lv. 11) @Oran Berry [Naive] {Storm Drain} <Water Gun/Lick/Quick Attack/Recycle>
@@ -1081,7 +1082,7 @@ Yungoos (Lv. 12) @Shell Bell [Relaxed] {Stakeout} <Pursuit/Super Fang/Leer/Tackl
 Smeargle (Lv. 12) @Normalium Z [Quirky] {Trace} <Sketch/Thunder Shock/Poison Sting/Mud-Slap>
 
 Prize Money: $3120
-216 - Captain Ilima
+216 - Plain Captain Ilima
 Pidove (Lv. 10) @Silk Scarf [Hasty] {Super Luck} <Gust/Leer/Tackle/Lucky Chant>
 Shuppet (Lv. 11) @Ghost Gem [Naughty] {Insomnia} <Lick/Torment/Tackle/Grudge>
 Pansage (Lv. 11) @Oran Berry [Naive] {Sap Sipper} <Vine Whip/Lick/Quick Attack/Recycle>
@@ -1089,7 +1090,7 @@ Yungoos (Lv. 12) @Shell Bell [Relaxed] {Stakeout} <Pursuit/Super Fang/Leer/Tackl
 Smeargle (Lv. 12) @Normalium Z [Quirky] {Trace} <Sketch/Thunder Shock/Poison Sting/Mud-Slap>
 
 Prize Money: $2520
-217 - Pokémon Trainer Hau
+217 - Tapu's Chosen Hau
 Raichu 1 (Lv. 42) @Electrium Z [Timid] {Lightning Rod} <Light Screen/Fake Out/Thunderbolt/Psychic>
 Braviary (Lv. 41) @Adrenaline Orb [Adamant] {Defiant} <Power Trip/Sky Drop/Slash/Tailwind>
 Brionne (Lv. 41) @Eviolite [Modest] {Liquid Voice} <Uproar/Follow Me/Draining Kiss/Encore>
@@ -1098,7 +1099,7 @@ Sawsbuck 2 (Lv. 41) @Sitrus Berry [Impish] {Harvest} <Leech Seed/Trop Kick/Prote
 Blaziken (Lv. 42) @Lum Berry [Adamant] {Speed Boost} <Blaze Kick/Protect/Brick Break/Bulk Up>
 
 Prize Money: $2520
-218 - Pokémon Trainer Hau
+218 - Tapu's Chosen Hau
 Raichu 1 (Lv. 42) @Electrium Z [Timid] {Lightning Rod} <Light Screen/Fake Out/Thunderbolt/Psychic>
 Braviary (Lv. 41) @Adrenaline Orb [Adamant] {Defiant} <Power Trip/Sky Drop/Slash/Tailwind>
 Dartrix (Lv. 41) @Eviolite [Adamant] {Sniper} <Wing Attack/Roost/Leaf Blade/Protect>
@@ -1107,7 +1108,7 @@ Pyroar (Lv. 41) @Salac Berry [Modest] {Intimidate} <Noble Roar/Swift/Protect/Fla
 Swampert (Lv. 42) @Leftovers [Impish] {Dry Skin} <Earthquake/Aqua Tail/Protect/Rock Slide>
 
 Prize Money: $2520
-219 - Pokémon Trainer Hau
+219 - Tapu's Chosen Hau
 Raichu 1 (Lv. 42) @Electrium Z [Timid] {Lightning Rod} <Light Screen/Fake Out/Thunderbolt/Psychic>
 Braviary (Lv. 41) @Adrenaline Orb [Adamant] {Defiant} <Power Trip/Sky Drop/Slash/Tailwind>
 Torracat (Lv. 41) @Eviolite [Adamant] {Intimidate} <Fake Out/Fire Fang/Protect/Crunch>
@@ -1180,10 +1181,10 @@ Spinarak (Lv. 36) @No Item [Serious] <(None)/(None)/(None)/(None)>
 232 - Team Skull Grunt
 Trubbish (Lv. 36) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-233 - Team Skull Grunt
+233 - Skull Gang Grunt
 Ekans (Lv. 45) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-234 - Team Skull [~ 234]
+234 - Skull Gang [~ 234]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $4920
@@ -1200,13 +1201,13 @@ Pinsir (Lv. 45) @No Item [Modest] {Intimidate} <Throat Chop/Storm Throw/X-Scisso
 Vikavolt (Lv. 45) @No Item [Adamant] {Levitate} <Flash Cannon/Thunderbolt/Bug Buzz/Energy Ball>
 
 Prize Money: $636
-237 - Preschooler Hunter
+237 - Kindergartener Hunter
 Gothita (Lv. 53) @Eviolite [Modest] {Forewarn} <Heal Block/Psychic/Telekinesis/Snarl>
 Eevee (Lv. 53) @Eviolite [Quirky] {Protean} <Shadow Ball/Trailblaze/Trump Card/Play Rough>
 Shinx (Lv. 53) @Eviolite [Naughty] {Intimidate} <Scary Face/Superpower/Fire Fang/Zing Zap>
 Fennekin (Lv. 53) @Eviolite [Timid] {Magic Guard} <Flamethrower/Hex/Calm Mind/Psyshock>
 Starly (Lv. 53) @Eviolite [Jolly] {Big Pecks} <Slash/Double Team/Wing Attack/Steel Wing>
-Krabby (Lv. 53) @Eviolite [Brave] {Sheer Force} <Hammer Arm/Swords Dance/Crabhammer/X-Scissor>
+Krabby (Lv. 53) @Eviolite [Brave] {Tough Claws} <Hammer Arm/Swords Dance/Crabhammer/X-Scissor>
 
 Prize Money: $6600
 238 - Team Skull Admin Plumeria
@@ -1218,7 +1219,7 @@ Aromatisse (Lv. 54) @Black Sludge [Modest] {Power of Alchemy} <Protect/Acid Armo
 Salazzle (Lv. 55) @Salazzlite [Timid] {Poison Touch} <Flamethrower/Protect/Sludge Bomb/Mud Bomb>
 
 Prize Money: $3440
-239 - Team Skull Gladion
+239 - Skull Enforcer Gladion
 Golbat (Lv. 42) @No Item [Serious] {Inner Focus} <Acrobatics/Poison Fang/Venoshock/(None)>
 Zoroark (Lv. 42) @No Item [Serious] {Illusion} <Snarl/Hyper Voice/(None)/(None)>
 Type: Null (Lv. 43) @No Item [Serious] {Battle Armor} <Pursuit/Crush Claw/X-Scissor/(None)>
@@ -1236,10 +1237,10 @@ Claydol (Lv. 44) @No Item [Relaxed] {Levitate} <Earth Power/Extrasensory/Ancient
 Bruxish (Lv. 44) @No Item [Adamant] {Strong Jaw} <Aqua Jet/Crunch/Psychic Fangs/Waterfall>
 Hypno (Lv. 45) @No Item [Timid] {Psychic Surge} <Psychic/Hypnosis/Focus Blast/Nightmare>
 
-242 - Aether Foundation Employee
+242 - Aether Foundation2 Employee
 Magneton (Lv. 41) @No Item [Serious] {Multistriker} <(None)/(None)/(None)/(None)>
 
-243 - Aether Foundation Employee
+243 - Aether Foundation2 Employee
 Porygon2 (Lv. 41) @No Item [Serious] {Download} <(None)/(None)/(None)/(None)>
 
 244 - Worker [~ 244]
@@ -1276,7 +1277,7 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $3672
-251 - Ace Trainer Karla
+251 - Star Trainer Karla
 Sandslash 1 (Lv. 54) @Muscle Band [Adamant] {Slush Rush} <Spiky Shield/Ice Punch/Spike Cannon/Drill Run>
 Dewgong (Lv. 54) @Icium Z [Serious] {Snow Warning} <Waterfall/Blizzard/Fake Out/Perish Song>
 Avalugg (Lv. 54) @Leftovers [Sassy] {Ice Body} <Iron Head/Icicle Spear/Recover/Protect>
@@ -1301,32 +1302,32 @@ Sandslash 1 (Lv. 49) @Rocky Helmet [Relaxed] {Iron Barbs} <Ice Punch/Spike Canno
 255 - Lass [~ 255]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-256 - Preschooler [~ 256]
+256 - Kindergartener [~ 256]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1632
 257 - Fisherman Hisato
 Surskit (Lv. 54) @Eviolite [Modest] {Quick Feet} <Sticky Web/Hydro Pump/Signal Beam/Rain Dance>
-Feraligatr (Lv. 51) @Prot. Pads [Adamant] {Strong Jaw} <Waterfall/Crunch/Ice Fang/Screech>
+Feraligatr (Lv. 51) @Protective Pads [Adamant] {Strong Jaw} <Waterfall/Crunch/Ice Fang/Screech>
 Gastrodon 1 (Lv. 51) @Ground Gem [Quiet] {Gooey} <Recover/Brine/Earth Power/Ancient Power>
 
 Prize Money: $1920
-258 - Aether Foundation Employee
+258 - Aether Foundatio Employee
 Dugtrio 1 (Lv. 40) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Toucannon (Lv. 40) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1920
-259 - Aether Foundation Employee
+259 - Aether Foundati Employee
 Arbok (Lv. 40) @No Item [Serious] {Shed Skin} <(None)/(None)/(None)/(None)>
 Lurantis (Lv. 40) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $4012
-260 - Ace Trainer Angela
+260 - Star Trainer Angela
 Gorebyss (Lv. 58) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Lurantis (Lv. 59) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $3264
-261 - Ace Trainer Junko
+261 - Star Trainer Junko
 Mawile (Lv. 47) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Weavile (Lv. 48) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
@@ -1351,7 +1352,7 @@ Prize Money: $516
 266 - Preschooler Nancy
 Swadloon (Lv. 44) @Eviolite [Sassy] {Fur Coat} <Protect/Grass Whistle/Helping Hand/X-Scissor>
 Illumise (Lv. 43) @Leftovers [Timid] {Prankster} <Signal Beam/Cosmic Power/Tailwind/Draining Kiss>
-Butterfree (Lv. 43) @Wacan Berry [Timid] {Tinted Lens} <Air Slash/Twister/Wide Guard/Bug Buzz>
+Butterfree (Lv. 43) @Wacan Berry [Timid] {Shield Dust} <Air Slash/Twister/Wide Guard/Bug Buzz>
 
 267 - Beauty [~ 267]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
@@ -1360,7 +1361,7 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1224
-269 - Swimmer Keoni
+269 - Swimmer Beau Keoni
 Wailord (Lv. 51) @Damp Rock [Modest] {Drizzle} <Hyper Voice/Amnesia/Brine/Clear Smog>
 Qwilfish (Lv. 51) @Assault Vest [Impish] {Intimidate} <Cross Poison/Waterfall/Pin Missile/Take Down>
 Mantine (Lv. 51) @Power Herb [Modest] {Swift Swim} <Aqua Ring/Razor Wind/Protect/Air Slash>
@@ -1372,7 +1373,7 @@ Jellicent 1 (Lv. 55) @Leftovers [Bold] {Dry Skin} <Rain Dance/Hex/Recover/Surf>
 Drifblim (Lv. 54) @Sitrus Berry [Mild] {Unburden} <Strength Sap/Air Slash/Weather Ball/Ally Switch>
 
 Prize Money: $1296
-271 - Swimmer Jared
+271 - Swimmer Beau Jared
 Kingdra (Lv. 53) @Lansat Berry [Hasty] {Sniper} <Scald/Dragon Pulse/Frost Breath/Draco Jet>
 Chatot (Lv. 54) @Wacan Berry [Timid] {Gale Wings} <Heat Wave/Roost/Chatter/Protect>
 
@@ -1407,9 +1408,9 @@ Ninetales (Lv. 59) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Sandslash (Lv. 59) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $2580
-279 - Sightseer Mitch
+279 - Tourist Mitch
 Sandslash (Lv. 43) @Rocky Helmet [Jolly] {Rough Skin} <Rock Climb/Swords Dance/Slash/Pin Missile>
-Wigglytuff (Lv. 43) @Lum Berry [Adamant] {Sheer Force} <Sweet Tooth/Wake-Up Slap/Rest/Body Slam>
+Wigglytuff (Lv. 43) @Lum Berry [Adamant] {Huge Power} <Sweet Tooth/Wake-Up Slap/Rest/Body Slam>
 Lickitung (Lv. 43) @Eviolite [Careful] {Gooey} <Protect/Me First/Body Slam/Chip Away>
 
 Prize Money: $3540
@@ -1423,11 +1424,11 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $2928
 282 - Scientist Kyle
-Ditto (Lv. 61) @No Item [Serious] {Limber} <(None)/(None)/(None)/(None)>
+Ditto (Lv. 61) @No Item [Serious] {Color Change} <(None)/(None)/(None)/(None)>
 Porygon-Z (Lv. 61) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 283 - Scientist Ikaika
-Magnezone (Lv. 46) @No Item [Serious] {Multistriker} <(None)/(None)/(None)/(None)>
+Magnezone (Lv. 46) @No Item [Serious] {Analytic} <(None)/(None)/(None)/(None)>
 
 Prize Money: $1440
 284 - Collector Todd
@@ -1492,10 +1493,10 @@ Manectric (Lv. 59) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Prize Money: $1296
 299 - Swimmer Yumi
 Jellicent (Lv. 55) @Leftovers [Quiet] {Dry Skin} <Rain Dance/Shadow Ball/Acid Armor/Surf>
-Dusknoir (Lv. 54) @Prot. Pads [Impish] {Shadow Shield} <Will-O-Wisp/Pain Split/Shadow Punch/Snatch>
+Dusknoir (Lv. 54) @Protective Pads [Impish] {Shadow Shield} <Will-O-Wisp/Pain Split/Shadow Punch/Snatch>
 
 Prize Money: $1296
-300 - Swimmer Alexandria
+300 - Swim Gal Alexandria
 Bruxish (Lv. 54) @Custap Berry [Adamant] {Dazzling} <Hypnosis/Psychic Fangs/Synchronoise/Waterfall>
 Musharna (Lv. 54) @Babiri Berry [Quiet] {Comatose} <Amnesia/Draining Kiss/Moonblast/Psychic>
 
@@ -1535,52 +1536,52 @@ Whimsicott (Lv. 63) @No Item [Calm] {Infiltrator} <Helping Hand/Sunny Day/Solar 
 Lilligant (Lv. 63) @No Item [Calm] {Own Tempo} <Sunny Day/Helping Hand/After You/Solar Beam>
 
 Prize Money: $4224
-308 - Veteran Heather
+308 - Virtuoso Heather
 Talonflame (Lv. 48) @No Item [Adamant] {Flame Body} <Quick Attack/Will-O-Wisp/Flame Charge/Aerial Ace>
 Wailord (Lv. 48) @No Item [Lax] {Unaware} <Heavy Slam/Bounce/Liquidation/(None)>
 Glaceon (Lv. 48) @No Item [Calm] {Slush Rush} <Frost Breath/Mirror Coat/Quick Attack/Ice Shard>
 
 Prize Money: $4224
-309 - Veteran Lynn
+309 - Virtuoso Lynn
 Xatu (Lv. 48) @No Item [Timid] {Download} <Psychic/Air Slash/(None)/(None)>
 Dewgong (Lv. 48) @No Item [Calm] {Snow Warning} <Aqua Ring/Protect/Aqua Jet/Ice Shard>
 Kangaskhan (Lv. 48) @No Item [Adamant] {Scrappy} <Dizzy Punch/Crunch/Fake Out/(None)>
 
-310 - Team Skull Grunt
+310 - Skull Gang Grunt
 Ekans (Lv. 36) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1152
-311 - Team Skull Grunt
+311 - Skull Gang Grunt
 Mareanie (Lv. 36) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Grimer 1 (Lv. 36) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1216
-312 - Team Skull Grunt
+312 - Skull Gang Grunt
 Salandit (Lv. 38) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Fomantis (Lv. 38) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1216
-313 - Team Skull Grunt
+313 - Skull Gang Grunt
 Trubbish (Lv. 38) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Houndour (Lv. 38) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1216
-314 - Team Skull Grunt
+314 - Skull Gang Grunt
 Spinarak (Lv. 38) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Pawniard (Lv. 38) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Golbat (Lv. 38) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-315 - Team Skull Grunt
+315 - Skull Gang Grunt
 Golbat (Lv. 37) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-316 - Team Skull Grunt
+316 - Skull Gang Grunt
 Raticate 1 (Lv. 37) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-317 - Team Skull [~ 317]
+317 - Skull Gang [~ 317]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1184
-318 - Team Skull Grunt
+318 - Skull Gang Grunt
 Fomantis (Lv. 37) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Mareanie (Lv. 37) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
@@ -1612,7 +1613,7 @@ Salandit (Lv. 37) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $2400
-326 - Rising Star Leilani
+326 - Up and Coming Leilani
 Golurk (Lv. 49) @Leftovers [Careful] {Sand Stream} <Curse/Drain Punch/Stomping Tantrum/Shadow Punch>
 Duosion (Lv. 49) @Eviolite [Bold] {Magic Guard} <Endeavor/Psychic/Acid Armor/Recover>
 Hippowdon (Lv. 49) @Soft Sand [Brave] {Strong Jaw} <Stockpile/Rock Slide/Whirlwind/Earthquake>
@@ -1655,11 +1656,11 @@ Prize Money: $2592
 334 - Dancer Maika
 Spinda (Lv. 27) @No Item [Docile] {Dancer} <Dizzy Punch/Rapid Spin/Topsy-Turvy/Teeter Dance>
 Glameow (Lv. 28) @No Item [Quirky] {Own Tempo} <Covet/Charm/Hypnosis/Fury Swipes>
-Luxio (Lv. 27) @No Item [Docile] {Intimidate} <Double Kick/Deft Dash/Scary Face/Spark>
+Luxio (Lv. 27) @No Item [Docile] {Intimidate} <Double Kick/Slink Strike/Scary Face/Spark>
 Sandshrew 1 (Lv. 27) @Darkinium Z [Hardy] {Slush Rush} <Metal Claw/Cold Snap/Hone Claws/Hail>
 
 Prize Money: $3700
-335 - Police Officer Haruki
+335 - Cop Haruki
 Arcanine (Lv. 37) @Maranga Berry [Adamant] {Intimidate} <Howl/Roar/Flame Wheel/Extreme Speed>
 Lycanroc (Lv. 37) @Darkinium Z [Adamant] {Scrappy} <Chip Away/Howl/Crush Claw/Accelerock>
 Stoutland (Lv. 37) @Chople Berry [Adamant] {Intimidate} <Howl/Crunch/Take Down/Play Rough>
@@ -1668,17 +1669,17 @@ Granbull (Lv. 37) @Assault Vest [Adamant] {Intimidate} <Play Rough/Howl/Revenge/
 336 - Office Worker [~ 336]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-337 - Office Worker [~ 337]
+337 - Businesswoman [~ 337]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 338 - Black Belt [~ 338]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-339 - Swimmer [~ 339]
+339 - Swimmer Beau [~ 339]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1176
-340 - Swimmer Sara
+340 - Swimsuit Sara
 Samurott (Lv. 49) @Quick Claw [Jolly] {Shell Armor} <Swords Dance/Sacred Sword/Dive/Encore>
 Sharpedo (Lv. 49) @Liechi Berry [Adamant] {Speed Boost} <Agility/Destiny Bond/Waterfall/Crunch>
 
@@ -1698,7 +1699,7 @@ Muk 1 (Lv. 35) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Floette (Lv. 36) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1840
-344 - Office Worker Jessica
+344 - Businesswoman Jessica
 Plusle (Lv. 46) @Focus Sash [Timid] {Plus} <Helping Hand/Electro Ball/Incinerate/Mystical Fire>
 Minun (Lv. 46) @Focus Sash [Timid] {Minus} <Helping Hand/Nuzzle/Icy Wind/Electro Ball>
 
@@ -1706,16 +1707,16 @@ Minun (Lv. 46) @Focus Sash [Timid] {Minus} <Helping Hand/Nuzzle/Icy Wind/Electro
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1920
-346 - Aether Foundation Employee
+346 - Aether Foundatio Employee
 Parasect (Lv. 40) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Drifblim (Lv. 40) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Sudowoodo (Lv. 40) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-347 - Aether Foundation Employee
+347 - Aether Foundatio Employee
 Primeape (Lv. 40) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1920
-348 - Aether Foundation Employee
+348 - Aether Foundati Employee
 Kecleon (Lv. 40) @No Item [Serious] {Color Change} <(None)/(None)/(None)/(None)>
 Stoutland (Lv. 40) @No Item [Serious] {Sand Rush} <(None)/(None)/(None)/(None)>
 
@@ -1850,7 +1851,7 @@ Oricorio 2 (Lv. 39) @Twisted Spoon [Modest] {Dancer} <Air Slash/Revelation Dance
 377 - Golfer [~ 377]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-378 - Golfer [~ 378]
+378 - Putter [~ 378]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 379 - Eevee User Kagetora
@@ -1889,14 +1890,14 @@ Heracross (Lv. 56) @No Item [Adamant] <(None)/(None)/(None)/(None)>
 387 - Black Belt [~ 387]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-388 - Sightseer Marcus
+388 - Tourist Marcus
 Exeggcute (Lv. 55) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 389 - Rising Star [~ 389]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $2116
-390 - Pokémon Breeder Wesley
+390 - Pokémon Rancher Wesley
 Tauros (Lv. 23) @White Herb [Adamant] {Intimidate} <Horn Attack/Scary Face/Snore/Rest>
 Miltank (Lv. 23) @White Herb [Lonely] {Sap Sipper} <Heal Bell/Milk Drink/Trample/Rollout>
 
@@ -1918,7 +1919,7 @@ Camerupt (Lv. 50) @Cameruptite [Modest] {Magma Armor} <Yawn/Protect/Mudslide/Lav
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $14700
-395 - Trial Guide Bronson
+395 - Challenge Guide Bronson
 Carnivine (Lv. 35) @Grassy Seed [Sassy] {Grassy Surge} <Nature Power/Stockpile/Trailblaze/Swallow>
 Gogoat (Lv. 36) @Grassium Z [Brave] {Grass Pelt} <Nature Power/Spiky Shield/Rototiller/Trample>
 Zebstrika (Lv. 35) @Electric Seed [Naive] {Electric Surge} <Protect/Nature Power/Trailblaze/Charge Beam>
@@ -1926,16 +1927,16 @@ Girafarig (Lv. 35) @Psychic Seed [Mild] {Psychic Surge} <Nature Power/Double Hit
 Shiinotic (Lv. 35) @Misty Seed [Relaxed] {Misty Surge} <Moonlight/Giga Drain/Nature Power/Leech Seed>
 
 Prize Money: $7200
-396 - Captain Ilima
+396 - Plain Captain Ilima
 Gumshoos (Lv. 60) @No Item [Adamant] {Stakeout} <Crunch/Hyper Fang/Super Fang/(None)>
 Smeargle (Lv. 60) @No Item [Hasty] {Technician} <Extreme Speed/Fire Blast/Hydro Pump/Power Whip>
 Komala (Lv. 60) @Normalium Z [Careful] {Comatose} <Sucker Punch/Wood Hammer/Sweet Tooth/Zen Headbutt>
 
-397 - Captain [~ 397]
+397 - Plain Captain [~ 397]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $7200
-398 - Captain Kiawe
+398 - Heat Captain Kiawe
 Arcanine (Lv. 60) @No Item [Adamant] {Intimidate} <Crunch/Flare Blitz/Extreme Speed/(None)>
 Talonflame (Lv. 60) @No Item [Adamant] {Flame Body} <Quick Attack/Flare Blitz/Brave Bird/(None)>
 Marowak 1 (Lv. 60) @Firium Z [Adamant] {Rock Head} <Flare Blitz/Shadow Bone/Bone Rush/(None)>
@@ -1960,11 +1961,11 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 403 - Island Kahuna [~ 403]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-404 - Captain [~ 404]
+404 - Hydro Captain [~ 404]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $8040
-405 - Captain Sophocles
+405 - Shock Captain Sophocles
 Togedemaru (Lv. 67) @No Item [Serious] {Iron Barbs} <Electric Terrain/Zing Zap/Spiky Shield/Fell Stinger>
 Magnezone (Lv. 67) @No Item [Serious] {Sturdy} <Flash Cannon/Discharge/Tri Attack/Reflect>
 Electivire (Lv. 67) @No Item [Serious] {Teravolt} <Thunder Punch/Giga Impact/Fire Punch/Quick Attack>
@@ -1977,11 +1978,11 @@ Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 407 - Pokémon Trainer [~ 407]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-408 - Captain [~ 408]
+408 - Fae Captain [~ 408]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $8040
-409 - Pokémon Trainer Ryuki
+409 - Dragon Master Ryuki
 Garchomp (Lv. 67) @No Item [Serious] {Sand Force} <Dragon Claw/Crunch/Earthquake/Poison Jab>
 Drampa (Lv. 67) @No Item [Serious] {Berserk} <Dragon Pulse/Hyper Voice/Blizzard/Thunder>
 Turtonator (Lv. 67) @No Item [Serious] {Bulletproof} <Overheat/Dragon Pulse/Fire Blast/Focus Blast>
@@ -1996,12 +1997,12 @@ Raichu 1 (Lv. 63) @No Item [Modest] {Surge Surfer} <Psychic/Thunderbolt/Quick At
 Alakazam (Lv. 63) @No Item [Modest] {Synchronize} <Psychic/Psyshock/Disable/Dazzling Gleam>
 Hypno (Lv. 63) @No Item [Timid] {Psychic Surge} <Psychic/Hypnosis/Focus Blast/Dream Eater>
 
-411 - Pokémon Trainer [~ 411]
+411 - Kalosian Woman [~ 411]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $8400
-412 - Pokémon Trainer Dexio
-Espeon (Lv. 60) @No Item [Serious] {Telepathy} <Psychic/Shadow Ball/Dazzling Gleam/Power Swap>
+412 - Kalosian Man Dexio
+Espeon (Lv. 60) @No Item [Serious] {Neuroforce} <Psychic/Shadow Ball/Dazzling Gleam/Power Swap>
 Raichu 1 (Lv. 60) @No Item [Serious] {Surge Surfer} <Psychic/Thunderbolt/Light Screen/Reflect>
 Slowking (Lv. 60) @No Item [Serious] {Regenerator} <Psychic/Power Gem/Ice Beam/Flamethrower>
 Metagross (Lv. 60) @No Item [Serious] {Full Metal Body} <Meteor Mash/Zen Headbutt/Bullet Punch/Brick Break>
@@ -2098,7 +2099,7 @@ Dwebble (Lv. 50) @Eviolite [Adamant] {Shell Armor} <X-Scissor/Trample/Iron Defen
 Baltoy (Lv. 50) @Eviolite [Calm] {Levitate} <Earth Power/Signal Beam/Sandstorm/Psychic>
 
 Prize Money: $1440
-428 - Office Worker Michelle
+428 - Businesswoman Michelle
 Torkoal (Lv. 36) @No Item [Serious] {Drought} <Flame Wheel/Rapid Spin/(None)/(None)>
 Whimsicott (Lv. 36) @No Item [Serious] {Prankster} <Energy Ball/Dazzling Gleam/(None)/(None)>
 
@@ -2117,11 +2118,11 @@ Sandshrew (Lv. 20) @No Item [Hardy] {Sand Rush} <Fury Cutter/Fury Swipes/Rapid S
 Dugtrio (Lv. 55) @No Item [Hardy] {Multistriker} <(None)/(None)/(None)/(None)>
 
 Prize Money: $2480
-433 - Sightseer George
+433 - Tourist George
 Grimer (Lv. 20) @No Item [Hardy] {Poison Touch} <Disable/Sludge/Acid Armor/Poison Fang>
 Exeggcute (Lv. 20) @No Item [Hardy] {Skill Link} <Bullet Seed/Soft-Boiled/Leech Seed/Psybeam>
 
-434 - Sightseer George
+434 - Tourist George
 Muk (Lv. 55) @No Item [Hardy] {Poison Touch} <(None)/(None)/(None)/(None)>
 
 435 - Captain [~ 435]
@@ -2135,7 +2136,7 @@ Goomy (Lv. 11) @Petaya Berry [Modest] {Dry Skin} <Rage/Bubble/Acid/Protect>
 Jangmo-o (Lv. 10) @Apicot Berry [Sassy] {Soundproof} <Protect/Rage/Leer/Bide>
 
 Prize Money: $576
-437 - Preschooler Hayden
+437 - Kindergartener Hayden
 Lunatone (Lv. 48) @Choice Scarf [Modest] {Levitate} <Power Gem/Psyshock/Shadow Ball/Moonblast>
 Claydol (Lv. 48) @Shell Bell [Modest] {Levitate} <Sandstorm/Hyper Beam/Earth Power/Extrasensory>
 Bronzong (Lv. 48) @Sitrus Berry [Calm] {Levitate} <Curse/Zen Headbutt/Iron Head/Gyro Ball>
@@ -2159,25 +2160,25 @@ Grovyle (Lv. 37) @Grassium Z [Naive] {Technician} <Dragon Pulse/Detect/Leaf Torn
 Raichu 1 (Lv. 37) @Life Orb [Timid] {Lightning Rod} <Extrasensory/Aurora Beam/Fake Out/Thunderbolt>
 
 Prize Money: $3440
-441 - Team Skull Gladion
+441 - Skull Enforcer Gladion
 Type: Null (Lv. 44) @No Item [Serious] {Battle Armor} <Pursuit/Crush Claw/X-Scissor/Iron Head>
 Golbat (Lv. 43) @No Item [Serious] {Inner Focus} <Acrobatics/Poison Fang/Venoshock/Steel Wing>
 Zoroark (Lv. 43) @No Item [Serious] {Illusion} <Snarl/Hyper Voice/Grass Knot/(None)>
 
 Prize Money: $2016
-442 - Aether Foundation Employee
+442 - Aether Foundatio Employee
 Ledian (Lv. 42) @No Item [Timid] {Iron Fist} <Light Screen/Reflect/Bug Buzz/Air Slash>
 Pupitar (Lv. 42) @No Item [Bold] {Shed Skin} <Snarl/(None)/(None)/(None)>
 
 Prize Money: $2520
-443 - Team Skull Grunt DD
+443 - Skull Gang Grunt DD
 Arbok (Lv. 36) @Kee Berry [Adamant] {Intimidate} <Glare/Dragon Tail/U-turn/Poison Fang>
 Vibrava (Lv. 37) @Eviolite [Timid] {Levitate} <Earth Power/Electroweb/Twister/Draco Jet>
 Altaria (Lv. 35) @Leftovers [Calm] {Cloud Nine} <Cotton Guard/Air Cutter/Roost/Mirror Move>
 
 Prize Money: $2800
 444 - Team Skull Grunt Ed
-Rapidash (Lv. 36) @Expert Belt [Jolly] {Serene Grace} <Flame Wheel/Sweet Tooth/Overheat/Sunny Day>
+Rapidash (Lv. 36) @Expert Belt [Jolly] {Run Away} <Flame Wheel/Sweet Tooth/Overheat/Sunny Day>
 Heatmor (Lv. 37) @Petaya Berry [Quiet] {White Smoke} <Flame Burst/Bullet Punch/Morning Sun/Mirror Shot>
 Quilava (Lv. 35) @Eviolite [Modest] {Berserk} <Mud Shot/Hyper Voice/Incinerate/Extrasensory>
 
@@ -2240,26 +2241,26 @@ Noivern (Lv. 42) @No Item [Serious] {Berserk} <Dragon Pulse/Air Cutter/(None)/(N
 Tauros (Lv. 42) @No Item [Serious] {Intimidate} <Pursuit/Horn Attack/(None)/(None)>
 Incineroar (Lv. 44) @Firium Z [Serious] {Intimidate} <Fire Fang/Darkest Lariat/(None)/(None)>
 
-453 - Aether Foundation Employee
+453 - Aether Foundatio Employee
 Lileep (Lv. 41) @No Item [Serious] {Storm Drain} <(None)/(None)/(None)/(None)>
 
-454 - Aether Foundation Employee
+454 - Aether Foundatio Employee
 Anorith (Lv. 41) @No Item [Serious] {Battle Armor} <(None)/(None)/(None)/(None)>
 
 Prize Money: $2016
-455 - Aether Foundation Employee
+455 - Aether Foundatio Employee
 Magmar (Lv. 42) @No Item [Serious] {Flame Body} <(None)/(None)/(None)/(None)>
 Houndoom (Lv. 42) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $2016
-456 - Aether Foundation Employee
+456 - Aether Foundatio Employee
 Electabuzz (Lv. 42) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Manectric (Lv. 42) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-457 - Team Skull Grunt
+457 - Skull Gang Grunt
 Rattata 1 (Lv. 38) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-458 - Team Skull Grunt
+458 - Skull Gang Grunt
 Raticate 1 (Lv. 38) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $192
@@ -2277,7 +2278,7 @@ Prize Money: $1128
 461 - Lass Rika
 Lairon (Lv. 48) @Eviolite [Relaxed] {Rock Head} <Iron Defense/Iron Head/Double-Edge/Stone Edge>
 Clefable (Lv. 47) @Leftovers [Sassy] {Magic Guard} <Lucky Chant/Tri Attack/Draining Kiss/Cosmic Power>
-Seviper (Lv. 47) @Black Sludge [Adamant] {Poison Touch} <Night Slash/Deft Dash/Poison Jab/Haze>
+Seviper (Lv. 47) @Black Sludge [Adamant] {Poison Touch} <Night Slash/Slink Strike/Poison Jab/Haze>
 
 Prize Money: $1128
 462 - Lass Emmy
@@ -2311,7 +2312,7 @@ Oricorio 1 (Lv. 46) @Focus Sash [Serious] <Air Slash/Revelation Dance/Teeter Dan
 Oricorio 2 (Lv. 46) @Focus Sash [Serious] <Air Slash/Revelation Dance/Teeter Dance/(None)>
 Oricorio 3 (Lv. 46) @Focus Sash [Serious] <Air Slash/Revelation Dance/Teeter Dance/(None)>
 
-467 - Captain [~ 467]
+467 - Fae Captain [~ 467]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $448
@@ -2320,8 +2321,8 @@ Munchlax (Lv. 14) @Oran Berry [Brave] {Gluttony} <Lick/Defense Curl/Tackle/Yawn>
 Hoppip (Lv. 14) @Oran Berry [Bold] {Harvest} <Mega Drain/Synthesis/Fairy Wind/Gust>
 
 Prize Money: $352
-469 - Preschooler Dylan
-Weedle (Lv. 11) @Poison Gem [Adamant] {Shield Dust} <Toxic Thread/Poison Sting/Constrict/Peck>
+469 - Kindergartener Dylan
+Weedle (Lv. 11) @Poison Gem [Adamant] {Sticky Hold} <Toxic Thread/Poison Sting/Constrict/Peck>
 Burmy (Lv. 11) @Normalium Z [Sassy] {Overcoat} <Electroweb/Nature Power/Protect/Struggle Bug>
 Venonat (Lv. 11) @Toxic Orb [Bold] {Poison Heal} <Infestation/Confusion/Supersonic/Disable>
 Ledyba (Lv. 11) @Cheri Berry [Sassy] {Iron Fist} <Swift/Comet Punch/Struggle Bug/Supersonic>
@@ -2375,7 +2376,7 @@ Prize Money: $16320
 Lycanroc (Lv. 69) @No Item [Serious] {Scrappy} <Stone Edge/Accelerock/Crunch/Stealth Rock>
 Ninetales 1 (Lv. 68) @No Item [Serious] {Snow Warning} <Dazzling Gleam/Blizzard/Ice Shard/Safeguard>
 Braviary (Lv. 68) @No Item [Serious] {Defiant} <Crush Claw/Brave Bird/Whirlwind/Tailwind>
-Magnezone (Lv. 68) @No Item [Serious] {Multistriker} <Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat>
+Magnezone (Lv. 68) @No Item [Serious] {Analytic} <Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat>
 Snorlax (Lv. 68) @No Item [Serious] {Thick Fat} <Body Slam/Crunch/Heavy Slam/High Horsepower>
 Incineroar (Lv. 68) @Firium Z [Serious] {Intimidate} <Flare Blitz/Darkest Lariat/Outrage/Cross Chop>
 
@@ -2384,7 +2385,7 @@ Prize Money: $16320
 Lycanroc (Lv. 69) @No Item [Serious] {Scrappy} <Stone Edge/Accelerock/Crunch/Stealth Rock>
 Ninetales 1 (Lv. 68) @No Item [Serious] {Snow Warning} <Dazzling Gleam/Blizzard/Ice Shard/Safeguard>
 Braviary (Lv. 68) @No Item [Serious] {Defiant} <Crush Claw/Brave Bird/Whirlwind/Tailwind>
-Magnezone (Lv. 68) @No Item [Serious] {Multistriker} <Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat>
+Magnezone (Lv. 68) @No Item [Serious] {Analytic} <Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat>
 Snorlax (Lv. 68) @No Item [Serious] {Thick Fat} <Body Slam/Crunch/Heavy Slam/High Horsepower>
 Primarina (Lv. 68) @Waterium Z [Serious] {Liquid Voice} <Sparkling Aria/Moonblast/Aqua Jet/Hyper Voice>
 
@@ -2393,7 +2394,7 @@ Prize Money: $16320
 Lycanroc (Lv. 69) @No Item [Serious] {Scrappy} <Stone Edge/Accelerock/Crunch/Stealth Rock>
 Ninetales 1 (Lv. 68) @No Item [Serious] {Snow Warning} <Dazzling Gleam/Blizzard/Ice Shard/Safeguard>
 Braviary (Lv. 68) @No Item [Serious] {Defiant} <Crush Claw/Brave Bird/Whirlwind/Tailwind>
-Magnezone (Lv. 68) @No Item [Serious] {Multistriker} <Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat>
+Magnezone (Lv. 68) @No Item [Serious] {Analytic} <Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat>
 Snorlax (Lv. 68) @No Item [Serious] {Thick Fat} <Body Slam/Crunch/Heavy Slam/High Horsepower>
 Decidueye (Lv. 68) @Grassium Z [Serious] {Long Reach} <Leaf Blade/Spirit Shackle/Brave Bird/Sucker Punch>
 
@@ -2439,7 +2440,7 @@ Snubbull (Lv. 10) @Rawst Berry [Naughty] {Intimidate} <Spite/Bite/Howl/Scary Fac
 Snivy (Lv. 11) @Miracle Seed [Gentle] {Overgrow} <Entangle/Tackle/Vine Whip/Growth>
 
 Prize Money: $1296
-488 - Swimmer Kyra
+488 - Swimsuit Kyra
 Clawitzer (Lv. 54) @Wise Glasses [Modest] {Mega Launcher} <Flash Cannon/Dragon Pulse/Heal Pulse/Water Pulse>
 Floatzel (Lv. 54) @Muscle Band [Adamant] {Technician} <Aqua Jet/Crunch/Mega Punch/Me First>
 
@@ -2447,7 +2448,7 @@ Prize Money: $11400
 489 - Elite Four Molayne
 Klefki (Lv. 56) @No Item [Serious] {Prankster} <Spikes/Thunder Wave/Flash Cannon/Reflect>
 Bisharp (Lv. 56) @No Item [Serious] {Defiant} <Night Slash/Iron Head/X-Scissor/Metal Sound>
-Magnezone (Lv. 56) @No Item [Serious] {Multistriker} <Flash Cannon/Thunderbolt/Tri Attack/Screech>
+Magnezone (Lv. 56) @No Item [Serious] {Analytic} <Flash Cannon/Thunderbolt/Tri Attack/Screech>
 Metagross (Lv. 56) @No Item [Serious] {Full Metal Body} <Hammer Arm/Meteor Mash/Bullet Punch/Zen Headbutt>
 Dugtrio 1 (Lv. 57) @Steelium Z [Serious] {Multistriker} <Earthquake/Iron Head/Sucker Punch/Fissure>
 
@@ -2455,27 +2456,27 @@ Prize Money: $13200
 490 - Elite Four Molayne
 Klefki (Lv. 66) @No Item [Serious] {Prankster} <Spikes/Thunder Wave/Flash Cannon/Reflect>
 Bisharp (Lv. 66) @No Item [Serious] {Defiant} <Night Slash/Iron Head/X-Scissor/Poison Jab>
-Magnezone (Lv. 66) @No Item [Serious] {Multistriker} <Flash Cannon/Thunderbolt/Tri Attack/Signal Beam>
+Magnezone (Lv. 66) @No Item [Serious] {Analytic} <Flash Cannon/Thunderbolt/Tri Attack/Signal Beam>
 Metagross (Lv. 66) @No Item [Serious] {Full Metal Body} <Hammer Arm/Meteor Mash/Bullet Punch/Zen Headbutt>
 Dugtrio 1 (Lv. 66) @Steelium Z [Serious] {Multistriker} <Earthquake/Iron Head/Sucker Punch/Stone Edge>
 
 Prize Money: $200
-491 - Pokémon Trainer Hau
+491 - Kahuna's Grandson Hau
 Torchic (Lv. 3) @No Item [Serious] {Rattled} <Scratch/Growl/(None)/(None)>
 Popplio (Lv. 5) @No Item [Serious] {Liquid Voice} <Pummel/Tackle/Baby-Doll Eyes/Bubble>
 
 Prize Money: $200
-492 - Pokémon Trainer Hau
+492 - Kahuna's Grandson Hau
 Mudkip (Lv. 3) @No Item [Serious] {Damp} <Tackle/Growl/(None)/(None)>
 Rowlet (Lv. 5) @No Item [Serious] {Long Reach} <Peck/Scratch/Growl/Absorb>
 
 Prize Money: $200
-493 - Pokémon Trainer Hau
+493 - Kahuna's Grandson Hau
 Treecko (Lv. 3) @No Item [Serious] {Unburden} <Quick Attack/Leer/(None)/(None)>
 Litten (Lv. 5) @No Item [Serious] {Intimidate} <Lick/Scratch/Growl/Ember>
 
 Prize Money: $14400
-494 - Pokémon Trainer Hau
+494 - Champion Hau
 Raichu 1 (Lv. 59) @No Item [Serious] {Surge Surfer} <Thunderbolt/Quick Attack/Psychic/Focus Blast>
 Flareon (Lv. 58) @No Item [Serious] {Guts} <Flare Blitz/Quick Attack/Charm/Baby-Doll Eyes>
 Tauros (Lv. 58) @No Item [Serious] {Intimidate} <Zen Headbutt/Iron Head/Earthquake/Double-Edge>
@@ -2484,7 +2485,7 @@ Crabominable (Lv. 59) @No Item [Serious] {Iron Fist} <Power-Up Punch/Ice Hammer/
 Primarina (Lv. 60) @Waterium Z [Serious] {Liquid Voice} <Sparkling Aria/Moonblast/Hyper Voice/(None)>
 
 Prize Money: $14400
-495 - Pokémon Trainer Hau
+495 - Champion Hau
 Raichu 1 (Lv. 59) @No Item [Serious] {Surge Surfer} <Thunderbolt/Quick Attack/Psychic/Focus Blast>
 Vaporeon (Lv. 58) @No Item [Serious] {Swift Swim} <Hydro Pump/Quick Attack/Charm/Baby-Doll Eyes>
 Tauros (Lv. 58) @No Item [Serious] {Intimidate} <Zen Headbutt/Iron Head/Earthquake/Double-Edge>
@@ -2493,7 +2494,7 @@ Crabominable (Lv. 59) @No Item [Serious] {Iron Fist} <Power-Up Punch/Ice Hammer/
 Decidueye (Lv. 60) @Grassium Z [Serious] {Long Reach} <Spirit Shackle/Leaf Blade/Smack Down/(None)>
 
 Prize Money: $14400
-496 - Pokémon Trainer Hau
+496 - Champion Hau
 Raichu 1 (Lv. 59) @No Item [Serious] {Surge Surfer} <Thunderbolt/Quick Attack/Psychic/Focus Blast>
 Leafeon (Lv. 58) @No Item [Serious] {Sap Sipper} <Leaf Blade/Quick Attack/Charm/Baby-Doll Eyes>
 Tauros (Lv. 58) @No Item [Serious] {Intimidate} <Zen Headbutt/Iron Head/Earthquake/Double-Edge>
@@ -2502,7 +2503,7 @@ Crabominable (Lv. 59) @No Item [Serious] {Iron Fist} <Power-Up Punch/Ice Hammer/
 Incineroar (Lv. 60) @Firium Z [Serious] {Intimidate} <Darkest Lariat/Flare Blitz/Earthquake/(None)>
 
 Prize Money: $8640
-497 - Island Kahuna Hapu
+497 - Poni Kahuna Hapu
 Golurk (Lv. 53) @No Item [Serious] {Sand Stream} <Hammer Arm/Earthquake/Shadow Punch/Stealth Rock>
 Gastrodon 1 (Lv. 53) @No Item [Serious] {Gooey} <Mudslide/Mud Bomb/Recover/(None)>
 Flygon (Lv. 53) @No Item [Serious] {Levitate} <Earth Power/Dragon Breath/(None)/(None)>
@@ -2521,37 +2522,37 @@ Poipole (Lv. 47) @No Item [Lax] <(None)/(None)/(None)/(None)>
 Poipole (Lv. 49) @No Item [Lax] <(None)/(None)/(None)/(None)>
 
 Prize Money: $6120
-502 - Captain Ilima
+502 - Plain Captain Ilima
 Gumshoos (Lv. 51) @No Item [Adamant] {Stakeout} <Crunch/Hyper Fang/Super Fang/(None)>
 Smeargle (Lv. 51) @No Item [Hasty] {Technician} <Extreme Speed/Flamethrower/Surf/Energy Ball>
 Komala (Lv. 51) @Normalium Z [Careful] {Comatose} <Sucker Punch/Wood Hammer/Sweet Tooth/(None)>
 
 Prize Money: $6120
-503 - Captain Lana
+503 - Hydro Captain Lana
 Lanturn (Lv. 51) @No Item [Serious] {Volt Absorb} <Discharge/Hydro Pump/Thunder Wave/(None)>
 Cloyster (Lv. 51) @No Item [Serious] {Skill Link} <Spike Cannon/Icicle Crash/Spikes/(None)>
 Araquanid (Lv. 51) @Waterium Z [Serious] {Water Bubble} <Liquidation/Leech Life/Crunch/(None)>
 
 Prize Money: $6120
-504 - Captain Kiawe
+504 - Heat Captain Kiawe
 Arcanine (Lv. 51) @No Item [Serious] {Intimidate} <Crunch/Flare Blitz/Extreme Speed/(None)>
 Talonflame (Lv. 51) @No Item [Serious] {Flame Body} <Quick Attack/Flame Charge/Brave Bird/(None)>
 Marowak 1 (Lv. 51) @Firium Z [Serious] {Rock Head} <Flame Wheel/Shadow Bone/Bonemerang/(None)>
 
 Prize Money: $6120
-505 - Captain Mallow
+505 - Nature Captain Mallow
 Trevenant (Lv. 51) @No Item [Serious] {Natural Cure} <Horn Leech/Shadow Claw/Leech Seed/(None)>
 Shiinotic (Lv. 51) @No Item [Serious] {Regenerator} <Moonblast/Giga Drain/Spore/(None)>
 Tsareena (Lv. 51) @Grassium Z [Serious] {Chlorophyll} <Trop Kick/Low Sweep/U-turn/(None)>
 
 Prize Money: $6120
-506 - Captain Sophocles
+506 - Shock Captain Sophocles
 Togedemaru (Lv. 51) @No Item [Serious] {Iron Barbs} <Fell Stinger/Zing Zap/Spiky Shield/(None)>
 Magnezone (Lv. 51) @No Item [Serious] {Sturdy} <Flash Cannon/Discharge/Tri Attack/(None)>
 Golem 1 (Lv. 51) @Electrium Z [Serious] {Sturdy} <Stone Edge/Steamroller/Thunder Punch/(None)>
 
 Prize Money: $6120
-507 - Captain Mina
+507 - Fae Captain Mina
 Mawile (Lv. 51) @No Item [Serious] {Strong Jaw} <Iron Head/Play Rough/Sucker Punch/(None)>
 Granbull (Lv. 51) @No Item [Serious] {Intimidate} <Stone Edge/Play Rough/Earthquake/(None)>
 Ribombee (Lv. 51) @Fairium Z [Serious] {Shield Dust} <Pollen Puff/Dazzling Gleam/Psychic/(None)>
@@ -2571,15 +2572,15 @@ Machop (Lv. 27) @Eviolite [Bashful] {Iron Fist} <Revenge/Feint/Mega Punch/Seismi
 
 Prize Money: $4264
 510 - Black Belt Ross
-Primeape (Lv. 41) @Prot. Pads [Naughty] {Anger Point} <Wake-Up Slap/Stomping Tantrum/Bulk Up/Mega Punch>
-Mienshao (Lv. 41) @Prot. Pads [Timid] {Regenerator} <Extrasensory/Aura Sphere/Vacuum Wave/U-turn>
-Poliwrath (Lv. 41) @Prot. Pads [Brave] {Iron Fist} <Feint/Drain Punch/Protect/Dive>
+Primeape (Lv. 41) @Protective Pads [Naughty] {Anger Point} <Wake-Up Slap/Stomping Tantrum/Bulk Up/Mega Punch>
+Mienshao (Lv. 41) @Protective Pads [Timid] {Regenerator} <Extrasensory/Aura Sphere/Vacuum Wave/U-turn>
+Poliwrath (Lv. 41) @Protective Pads [Brave] {Damp} <Feint/Drain Punch/Protect/Dive>
 
 511 - Black Belt Douglas
 Mienfoo (Lv. 45) @No Item [Adamant] <Swords Dance/High Jump Kick/U-turn/Helping Hand>
 
 Prize Money: $336
-512 - Swimmer Natasha
+512 - Swim Gal Natasha
 Magikarp (Lv. 7) @Starf Berry [Serious] {Rattled} <Splash/Tackle/(None)/(None)>
 Feebas (Lv. 7) @Starf Berry [Serious] {Swift Swim} <Splash/Soak/Tackle/(None)>
 Wishiwashi (Lv. 7) @Starf Berry [Serious] {Schooling} <Water Gun/Splash/Tearful Look/Helping Hand>
@@ -2588,7 +2589,7 @@ Prize Money: $2400
 513 - Sightseer Perdita
 Diglett (Lv. 20) @Ground Gem [Naive] {Sand Stream} <Bulldoze/Beat Up/Fury Swipes/Magnitude>
 Sandshrew (Lv. 20) @Air Balloon [Impish] {Sand Rush} <Fury Cutter/Fury Swipes/Rapid Spin/Bulldoze>
-Meowth (Lv. 20) @Prot. Pads [Jolly] {Technician} <Fake Out/Hone Claws/Quick Attack/Uproar>
+Meowth (Lv. 20) @Protective Pads [Jolly] {Frisk} <Fake Out/Hone Claws/Quick Attack/Uproar>
 Charmander (Lv. 20) @Berry Juice [Naive] {Flame Body} <Metal Claw/Fire Spin/Dragon Rage/Rage>
 
 Prize Money: $2580
@@ -2606,7 +2607,7 @@ Pignite (Lv. 22) @Firium Z [Naughty] {Sheer Force} <Flame Charge/Magnitude/Rollo
 Magnemite (Lv. 23) @Magnet [Quiet] {Sturdy} <Sonic Boom/Shock Wave/Mirror Shot/Eerie Impulse>
 Doduo (Lv. 23) @Silk Scarf [Jolly] {Multistriker} <Agility/Quick Attack/Pluck/Pursuit>
 
-517 - Aether Foundation Employee
+517 - Aether Foundation2 Employee
 Arcanine (Lv. 41) @No Item [Serious] {Intimidate} <(None)/(None)/(None)/(None)>
 
 Prize Money: $4576
@@ -2614,11 +2615,11 @@ Prize Money: $4576
 Simisage (Lv. 51) @Grassy Seed [Jolly] {Grassy Surge} <Mega Punch/Brick Break/Trop Kick/Trailblaze>
 Florges (Lv. 52) @Assault Vest [Calm] {Symbiosis} <Protect/Moonblast/Giga Drain/Wish>
 Serperior (Lv. 51) @Roseli Berry [Timid] {Shed Skin} <Dragon Pulse/Giga Drain/Glare/Protect>
-Shiftry (Lv. 52) @Grassium Z [Adamant] {Chlorophyll} <Petal Blizzard/Trop Kick/Darkest Lariat/Deft Dash>
+Shiftry (Lv. 52) @Grassium Z [Adamant] {Chlorophyll} <Petal Blizzard/Trop Kick/Darkest Lariat/Slink Strike>
 Tangrowth (Lv. 52) @Leftovers [Relaxed] {Tangling Hair} <Wake-Up Slap/Giga Drain/Earthquake/Protect>
 
 Prize Money: $5368
-519 - Veteran Leticia
+519 - Virtuoso Leticia
 Ribombee (Lv. 61) @No Item [Modest] {Shield Dust} <Dazzling Gleam/Bug Buzz/(None)/(None)>
 Bewear (Lv. 61) @No Item [Adamant] {Fluffy} <Hammer Arm/Double-Edge/(None)/(None)>
 
@@ -2631,12 +2632,12 @@ Exeggutor 1 (Lv. 43) @Sitrus Berry [Brave] {Harvest} <Dragon Tail/Sunny Day/Synt
 Oranguru (Lv. 43) @Aguav Berry [Modest] {Symbiosis} <Ally Switch/Instruct/Foul Play/Tri Attack>
 
 Prize Money: $2700
-522 - Golfer Sky
+522 - Putter Sky
 Pidgeot (Lv. 45) @Power Herb [Timid] {Keen Eye} <Razor Wind/Heat Wave/Roost/Air Slash>
 Swellow (Lv. 45) @Flame Orb [Jolly] {Guts} <Steel Wing/Flying Press/Wing Attack/Facade>
 Staraptor (Lv. 45) @Assault Vest [Jolly] {Intimidate} <Pursuit/Flying Press/Crush Claw/Quick Attack>
 
-523 - Team Skull [~ 523]
+523 - Skull Gang [~ 523]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 524 - Team Skull Grunt
@@ -2645,13 +2646,13 @@ Drowzee (Lv. 37) @No Item [Serious] <(None)/(None)/(None)/(None)>
 525 - Team Skull Grunt
 Pawniard (Lv. 46) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-526 - Swimmer Derek
+526 - Swimmer Beau Derek
 Dragalge (Lv. 44) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-527 - Swimmer [~ 527]
+527 - Swimmer Beau [~ 527]
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-528 - Police Officer Sheriff
+528 - Cop Sheriff
 Stoutland (Lv. 58) @No Item [Serious] {Intimidate} <(None)/(None)/(None)/(None)>
 
 Prize Money: $4480
@@ -2674,7 +2675,7 @@ Octillery (Lv. 60) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Clawitzer (Lv. 60) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1272
-533 - Surfer Jennis
+533 - Surf Dude Jennis
 Charizard (Lv. 53) @Charti Berry [Adamant] {Solar Power} <Wing Attack/Crunch/Slash/Fire Lash>
 Staraptor (Lv. 54) @Normal Gem [Adamant] {Intimidate} <Steel Wing/Slash/Agility/Wing Attack>
 Mantine (Lv. 54) @Sharp Beak [Calm] {Water Absorb} <Aqua Ring/Razor Wind/Scald/Air Slash>
@@ -2740,7 +2741,7 @@ Weavile (Lv. 65) @No Item [Serious] {Inner Focus} <Night Slash/Quick Attack/Ice 
 Palkia (Lv. 67) @No Item [Serious] {Pressure} <Spacial Rend/Surf/Earth Power/Thunderbolt>
 
 Prize Money: $2928
-544 - Aether Foundation Employee
+544 - Aether Foundatio Employee
 Granbull (Lv. 61) @No Item [Calm] {Intimidate} <Snarl/(None)/(None)/(None)>
 Scrafty (Lv. 61) @No Item [Calm] {Shed Skin} <Snarl/(None)/(None)/(None)>
 Shiinotic (Lv. 61) @No Item [Calm] {Regenerator} <Spore/Dazzling Gleam/(None)/(None)>
@@ -2754,49 +2755,49 @@ Lilligant (Lv. 46) @No Item [Serious] <Solar Beam/(None)/(None)/(None)>
 Yungoos (Lv. 5) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1344
-547 - Kantonian Gym Brock?
+547 - Gym Trainer Brock?
 Golem (Lv. 42) @Rocky Helmet [Impish] {Solid Rock} <Rock Blast/Curse/Earthquake/Stealth Rock>
 Onix (Lv. 42) @Eviolite [Adamant] {Solid Rock} <Screech/Rock Slide/High Horsepower/Protect>
 Aerodactyl (Lv. 42) @Hard Stone [Jolly] {Intimidate} <Wing Attack/Chip Away/Crunch/Agility>
 
 Prize Money: $1344
-548 - Kantonian Gym Misty?
+548 - Gym Trainer Misty?
 Golduck (Lv. 42) @Life Orb [Impish] {Cloud Nine} <Psyshock/Disable/Soak/Surf>
-Starmie (Lv. 42) @Mystic Water [Modest] {Natural Cure} <Extrasensory/Confuse Ray/Reflect Type/Bubble Beam>
+Starmie (Lv. 42) @Mystic Water [Modest] {Analytic} <Extrasensory/Confuse Ray/Reflect Type/Bubble Beam>
 Lapras (Lv. 42) @Leftovers [Quiet] {Hydration} <Brine/Freeze-Dry/Refresh/Ancient Power>
 
 Prize Money: $1344
-549 - Kantonian Gym Surge?
+549 - Gym Trainer Surge?
 Electabuzz (Lv. 42) @Eviolite [Naughty] {Static} <Thunder Punch/Protect/Arm Thrust/Meditate>
 Electrode (Lv. 42) @Focus Sash [Timid] {Galvanize} <Self-Destruct/Swift/Incinerate/Magnet Rise>
 Raichu (Lv. 42) @Aguav Berry [Jolly] {Motor Drive} <Fake Out/Brick Break/Nuzzle/Zing Zap>
 
 Prize Money: $1344
-550 - Kantonian Gym Erika?
+550 - Gym Trainer Erika?
 Tangela (Lv. 42) @Eviolite [Calm] {Tangling Hair} <Ingrain/Stun Spore/Entangle/Giga Drain>
 Exeggutor (Lv. 42) @Sitrus Berry [Modest] {Harvest} <Psyshock/Soft-Boiled/Egg Bomb/Giga Drain>
 Vileplume (Lv. 42) @Leftovers [Modest] {Effect Spore} <Toxic/Ingrain/Giga Drain/Moonlight>
 
-551 - Kantonian Gym Koga?
+551 - Gym Trainer Koga?
 Jynx (Lv. 55) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-552 - Kantonian Gym Sabrina?
+552 - Gym Trainer Sabrina?
 Ribombee (Lv. 55) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-553 - Kantonian Gym Blaine?
+553 - Gym Trainer Blaine?
 Cinccino (Lv. 55) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
-554 - Kantonian Gym Giovanni?
+554 - Gym Trainer Giovanni?
 Lurantis (Lv. 55) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1376
-555 - Kantonian Gym Agatha
+555 - Gym Leader Agatha
 Misdreavus (Lv. 42) @Eviolite [Timid] {Levitate} <Magical Leaf/Icy Wind/Psybeam/Shadow Ball>
 Haunter (Lv. 42) @Focus Sash [Timid] {Bad Dreams} <Sludge Bomb/Shadow Ball/Giga Drain/Dark Pulse>
 Marowak (Lv. 42) @Thick Club [Jolly] {Battle Armor} <Iron Head/Protect/Shadow Bone/Bonemerang>
 Gengar (Lv. 43) @Life Orb [Timid] {Bad Dreams} <Sludge/Shadow Ball/Hypnosis/Dream Eater>
 
-556 - Kantonian Gym Lorelei?
+556 - Gym Leader Lorelei?
 Machamp (Lv. 56) @No Item [Adamant] <(None)/(None)/(None)/(None)>
 
 Prize Money: $1792
@@ -2851,7 +2852,7 @@ Pansage (Lv. 20) @No Item [Lonely] {Sap Sipper} <Growth/Fury Swipes/Razor Leaf/L
 Dunsparce (Lv. 21) @Shell Bell [Brave] {Serene Grace} <Mud Bomb/Yawn/Sweet Tooth/Dig>
 
 Prize Money: $1344
-564 - Team Skull Grunt Fiona
+564 - Skull Gang Grunt Fiona
 Cryogonal (Lv. 42) @Occa Berry [Timid] {Snow Warning} <Aurora Veil/Flash Cannon/Freeze-Dry/Hex>
 Jynx (Lv. 42) @Twisted Spoon [Modest] {Unaware} <Psyshock/Mist Ball/Fake Out/Lovely Kiss>
 Piloswine (Lv. 42) @Leftovers [Careful] {Ice Body} <Trample/Ice Fang/Cold Snap/Protect>
@@ -2863,16 +2864,16 @@ Trubbish (Lv. 35) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Scraggy (Lv. 40) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $3200
-567 - Youth Athlete Deedra
-Ledyba (Lv. 20) @No Item [Lonely] {Iron Fist} <Comet Punch/Bug Bite/Mach Punch/Reflect>
-Silcoon (Lv. 20) @No Item [Sassy] {Shed Skin} <Infestation/Wide Guard/Harden/Stun Spore>
-Cascoon (Lv. 20) @No Item [Relaxed] {Shed Skin} <Infestation/Baneful Bunker/Harden/Toxic Thread>
-Burmy 1 (Lv. 20) @No Item [Relaxed] {Overcoat} <Electroweb/Nature Power/Secret Power/Hidden Power>
-Surskit (Lv. 20) @No Item [Jolly] {Swift Swim} <Bug Bite/Fell Stinger/Quick Attack/Bubble Beam>
+567 - Athlete In-Training Deedra
+Ledyba (Lv. 20) @Light Clay [Lonely] {Iron Fist} <Comet Punch/Bug Bite/Mach Punch/Reflect>
+Silcoon (Lv. 20) @Enigma Berry [Sassy] {Shed Skin} <Infestation/Wide Guard/Harden/Stun Spore>
+Cascoon (Lv. 20) @Poisonium Z [Relaxed] {Shed Skin} <Infestation/Baneful Bunker/Harden/Toxic Thread>
+Burmy 1 (Lv. 20) @White Herb [Relaxed] {Overcoat} <Electroweb/Nature Power/Secret Power/Hidden Power>
+Surskit (Lv. 20) @Liechi Berry [Jolly] {Quick Feet} <Bug Bite/Fell Stinger/Quick Attack/Aqua Jet>
 
 Prize Money: $4000
 568 - Dancer Ronda
-Crawdaunt (Lv. 40) @Destiny Knot [Adamant] {Adaptability} <Taunt/Crabhammer/Aqua Jet/Deft Dash>
+Crawdaunt (Lv. 40) @Destiny Knot [Adamant] {Adaptability} <Taunt/Crabhammer/Aqua Jet/Slink Strike>
 Barbaracle (Lv. 40) @Destiny Knot [Adamant] {Multistriker} <Rock Polish/Skull Bash/Accelerock/Rock Slide>
 Gabite (Lv. 40) @Destiny Knot [Adamant] {Rough Skin} <Protect/Draco Jet/Dig/Dragon Claw>
 Onix (Lv. 40) @Destiny Knot [Adamant] {Solid Rock} <Dragon Tail/Rock Slide/Dig/Chip Away>
@@ -2907,7 +2908,7 @@ Gyarados (Lv. 65) @Gyaradosite [Serious] {Intimidate} <Crunch/Waterfall/Earthqua
 Yveltal (Lv. 67) @No Item [Serious] {Dark Aura} <Oblivion Wing/Air Slash/Psychic/Shadow Ball>
 
 Prize Money: $9360
-574 - Veteran Kiara
+574 - Virtuoso Kiara
 Gothorita (Lv. 40) @Eviolite [Bold] {Shadow Tag} <Protect/Psyshock/Flatter/Dark Pulse>
 Lapras (Lv. 40) @Leftovers [Modest] {Shell Armor} <Brine/Freeze-Dry/Perish Song/Protect>
 Ditto (Lv. 40) @Choice Scarf [Hasty] {Imposter} <Assist/Mimic/Transform/Copycat>
@@ -2943,7 +2944,7 @@ Prize Money: $5016
 578 - GAME FREAK Morimoto
 Gengar (Lv. 57) @No Item [Modest] {Levitate} <Shadow Ball/Dark Pulse/Sludge Bomb/Psychic>
 Machamp (Lv. 57) @No Item [Adamant] {Multistriker} <Dynamic Punch/Stone Edge/Poison Jab/Dual Chop>
-Dragonite (Lv. 57) @No Item [Modest] {Mold Breaker} <Hurricane/Draco Meteor/Thunder/Blizzard>
+Dragonite (Lv. 57) @No Item [Modest] {Rain Dish} <Hurricane/Draco Meteor/Thunder/Blizzard>
 
 Prize Money: $1344
 579 - Rising Star Nainoa
@@ -2965,11 +2966,11 @@ Dewpider (Lv. 48) @Eviolite [Adamant] {Water Bubble} <Lunge/Leech Life/Stockpile
 Quilladin (Lv. 48) @Eviolite [Impish] {Rough Skin} <Submission/Seed Bomb/Protect/Drain Punch>
 Litleo (Lv. 48) @Eviolite [Modest] {Scrappy} <Yawn/Flamethrower/Crunch/Hyper Voice>
 
-582 - Pokémon Trainer Lillie
+582 - Good Friend Lillie
 Clefairy (Lv. 60) @No Item [Calm] {Cute Charm} <Moonblast/Sing/Reflect/Light Screen>
 
 Prize Money: $6960
-583 - Pokémon Trainer Ryuki
+583 - Dragon Tamer Ryuki
 Garchomp (Lv. 58) @No Item [Serious] {Sand Force} <Dragon Claw/Crunch/Earthquake/Poison Jab>
 Drampa (Lv. 58) @No Item [Serious] {Berserk} <Dragon Pulse/Hyper Voice/Blizzard/Thunder>
 Turtonator (Lv. 58) @No Item [Serious] {Bulletproof} <Overheat/Dragon Pulse/Fire Blast/Focus Blast>
@@ -2994,7 +2995,7 @@ Tentacruel (Lv. 62) @No Item [Serious] <Toxic Spikes/Barrier/(None)/(None)>
 Persian (Lv. 62) @No Item [Serious] {Technician} <Play Rough/Protect/Slash/Fake Out>
 
 589 - Team Rainbow Rocket Grunt
-Hypno (Lv. 62) @No Item [Serious] {Inner Focus} <Attract/Thunder Wave/Swagger/Foul Play>
+Hypno (Lv. 62) @No Item [Serious] {Telepathy} <Attract/Thunder Wave/Swagger/Foul Play>
 
 590 - Team Rainbow Rocket Grunt
 Arbok (Lv. 62) @No Item [Serious] {Intimidate} <Glare/Stockpile/Mud Bomb/(None)>
@@ -3033,7 +3034,7 @@ Raticate (Lv. 62) @No Item [Serious] {Guts} <Super Fang/(None)/(None)/(None)>
 
 Prize Money: $1984
 601 - Team Rainbow Rocket Grunt
-Hypno (Lv. 62) @No Item [Serious] {Inner Focus} <Dazzling Gleam/Psychic/Shadow Ball/Signal Beam>
+Hypno (Lv. 62) @No Item [Serious] {Telepathy} <Dazzling Gleam/Psychic/Shadow Ball/Signal Beam>
 Primeape (Lv. 62) @No Item [Serious] {Vital Spirit} <Close Combat/(None)/(None)/(None)>
 
 602 - Team Rainbow Rocket Grunt
@@ -3079,12 +3080,12 @@ Vikavolt (Lv. 52) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Forretress (Lv. 53) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $3536
-614 - Ace Trainer Kailee
+614 - Star Trainer Kailee
 Shiinotic (Lv. 51) @No Item [Serious] {Regenerator} <(None)/(None)/(None)/(None)>
 Clefable (Lv. 52) @No Item [Serious] {Unaware} <(None)/(None)/(None)/(None)>
 
 Prize Money: $3604
-615 - Ace Trainer Jada
+615 - Star Trainer Jada
 Vanilluxe (Lv. 52) @No Item [Serious] {Refrigerate} <(None)/(None)/(None)/(None)>
 Mismagius (Lv. 53) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
@@ -3092,7 +3093,7 @@ Prize Money: $1536
 616 - Black Belt Alvaro
 Ursaring (Lv. 48) @Assault Vest [Adamant] {Intimidate} <Crunch/Sky Uppercut/Trample/Take Down>
 Bewear (Lv. 48) @Life Orb [Brave] {Sheer Force} <Play Rough/Pain Split/Mega Punch/Sky Uppercut>
-Pangoro (Lv. 48) @Prot. Pads [Brave] {Iron Fist} <Mach Punch/Comet Punch/Bullet Punch/Knock Off>
+Pangoro (Lv. 48) @Protective Pads [Brave] {Iron Fist} <Mach Punch/Comet Punch/Bullet Punch/Knock Off>
 Beartic (Lv. 48) @Adrenaline Orb [Jolly] {Guts} <Rest/Ice Punch/Brick Break/Sleep Talk>
 
 Prize Money: $1632
@@ -3118,8 +3119,8 @@ Florges 4 (Lv. 51) @No Item [Serious] <(None)/(None)/(None)/(None)>
 Relicanth (Lv. 50) @No Item [Serious] {Rock Head} <(None)/(None)/(None)/(None)>
 
 Prize Money: $8820
-623 - Pokémon Trainer Dexio
-Espeon (Lv. 63) @No Item [Serious] {Telepathy} <Psychic/Shadow Ball/Dazzling Gleam/Power Swap>
+623 - Kalosian Man Dexio
+Espeon (Lv. 63) @No Item [Serious] {Neuroforce} <Psychic/Shadow Ball/Dazzling Gleam/Power Swap>
 Raichu 1 (Lv. 63) @No Item [Serious] {Surge Surfer} <Psychic/Thunderbolt/Light Screen/Reflect>
 Slowking (Lv. 63) @No Item [Serious] {Regenerator} <Psychic/Power Gem/Ice Beam/Flamethrower>
 Metagross (Lv. 63) @No Item [Serious] {Full Metal Body} <Meteor Mash/Zen Headbutt/Bullet Punch/Brick Break>
@@ -3139,23 +3140,23 @@ Bisharp (Lv. 53) @No Item [Adamant] {Defiant} <Iron Head/Night Slash/X-Scissor/A
 Tyranitar (Lv. 53) @No Item [Adamant] {Sand Stream} <Earthquake/Crunch/Stone Edge/(None)>
 
 Prize Money: $4576
-627 - Veteran Alonsa
+627 - Virtuoso Alonsa
 Lickitung (Lv. 52) @No Item [Timid] {Gooey} <Power Whip/Rollout/Chip Away/(None)>
 Goodra (Lv. 52) @No Item [Adamant] {Sap Sipper} <Aqua Tail/Power Whip/Outrage/(None)>
 
 Prize Money: $4664
-628 - Veteran Ella
+628 - Virtuoso Ella
 Pyroar (Lv. 53) @No Item [Timid] {Scrappy} <Hyper Voice/Flamethrower/(None)/(None)>
 Claydol (Lv. 53) @No Item [Modest] {Levitate} <Extrasensory/Earth Power/(None)/(None)>
 Milotic (Lv. 53) @No Item [Modest] {Regal Presence} <Hydro Pump/Blizzard/(None)/(None)>
 
 Prize Money: $2376
-629 - Preschooler Kaleb
+629 - Kindergartener Kaleb
 Kangaskhan (Lv. 33) @Assault Vest [Naughty] {Scrappy} <Crush Claw/Rage/Chip Away/Comet Punch>
 Marowak (Lv. 33) @Thick Club [Lonely] {Lightning Rod} <Curse/Shadow Bone/Bone Rush/Iron Head>
 
 Prize Money: $5280
-630 - Pokémon Trainer Ryuki
+630 - Dragon Tamer Ryuki
 Ampharos (Lv. 42) @Choice Specs [Modest] {Berserk} <Thunderbolt/Power Gem/Dragon Pulse/Volt Switch>
 Altaria (Lv. 43) @Power Herb [Adamant] {Cloud Nine} <Roost/Play Rough/Sky Attack/Dragon Claw>
 Gabite (Lv. 43) @Eviolite [Impish] {Rough Skin} <Protect/Trample/Dual Chop/Twister>
@@ -3163,15 +3164,15 @@ Dragalge (Lv. 42) @Black Sludge [Modest] {Adaptability} <Sludge/Water Pulse/Drag
 Charizard (Lv. 44) @Charizardite X [Jolly] {Flame Body} <Dragon Claw/Crunch/Fire Fang/Dragon Claw>
 
 Prize Money: $1176
-631 - Surfer Robert
+631 - Surf Dude Robert
 Bruxish (Lv. 49) @Adrenaline Orb [Jolly] {Strong Jaw} <Crunch/Psychic Fangs/Synchronoise/Waterfall>
 Phione (Lv. 49) @Leftovers [Modest] {Water Absorb} <Acid Armor/Whirlpool/Water Pulse/Aqua Ring>
 
-632 - Surfer Joshah
+632 - Surf Dude Joshah
 Golduck (Lv. 47) @No Item [Serious] <(None)/(None)/(None)/(None)>
 
 Prize Money: $576
-633 - Surfer Carlton
+633 - Surf Dude Carlton
 Mantyke (Lv. 13) @Kee Berry [Mild] {Water Absorb} <Confuse Ray/Bounce/Bubble/Aqua Ring>
 Delibird (Lv. 12) @Oran Berry [Naughty] {Symbiosis} <Present/Recycle/Embargo/Covet>
 
@@ -3229,7 +3230,7 @@ Pidove (Lv. 21) @Oran Berry [Mild] {Super Luck} <Roost/Quick Attack/Air Cutter/R
 Bidoof (Lv. 20) @Oran Berry [Naive] {Unaware} <Yawn/Bite/Rollout/Headbutt>
 
 Prize Money: $8160
-647 - Pokémon Trainer Guzma
+647 - Tapu Koko Chosen Guzma
 Golisopod (Lv. 68) @No Item [Adamant] {Emergency Exit} <Sucker Punch/Waterfall/First Impression/Brick Break>
 Vikavolt (Lv. 68) @No Item [Modest] {Levitate} <Flash Cannon/Thunderbolt/Bug Buzz/Energy Ball>
 Pinsir (Lv. 68) @No Item [Adamant] {Intimidate} <Throat Chop/Storm Throw/X-Scissor/Stone Edge>
@@ -3248,7 +3249,7 @@ Clefairy (Lv. 16) @Sitrus Berry [Calm] {Magic Guard} <Lucky Chant/Magical Leaf/A
 Poipole (Lv. 16) @Poison Barb [Timid] {Corrosion} <Acid/Twister/Toxic/Charm>
 
 Prize Money: $12600
-650 - Island Kahuna Hala
+650 - Melemele Kahuna Hala
 Hariyama (Lv. 63) @No Item [Adamant] {Thick Fat} <Fake Out/Close Combat/Knock Off/Heavy Slam>
 Machamp (Lv. 63) @No Item [Adamant] {Guts} <Cross Chop/Thunder Punch/Ice Punch/Fire Punch>
 Bewear (Lv. 63) @No Item [Adamant] {Fluffy} <Hammer Arm/Brutal Smash/Dragon Claw/Shadow Claw>

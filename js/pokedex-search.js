@@ -25,6 +25,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		if (fragment === 'items') fragment = 'items/';
 		if (fragment === 'locations') fragment = 'locations/';
 		if (fragment === 'trainers') fragment = 'trainers/';
+		if (fragment === 'usage') fragment = 'usage/';
 		if (fragment === 'mechanics') fragment = 'mechanics/';
 		if (fragment === 'pokeedit') fragment = 'pokeedit/';
 		if (questionIndex >= 0) fragment = fragment.slice(0, questionIndex);
@@ -37,7 +38,8 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		buf += '<li><button class="button' + (fragment === 'items/' ? ' cur' : '') + '" value="'+Config.baseurl+'items/">Items</button></li>';
 		buf += '<li><button class="button' + (fragment === 'mechanics/' ? ' cur' : '') + '" value="'+Config.baseurl+'mechanics/">Mechanics</button></li>';
 		buf += '<li><button class="button' + (fragment === 'locations/' ? ' cur' : '') + '" value="'+Config.baseurl+'locations/">Locations</button></li>';
-		buf += '<li><button class="button nav-last' + (fragment === 'trainers/' ? ' cur' : '') + '" value="'+Config.baseurl+'trainers/">Trainers</button></li>';
+		buf += '<li><button class="button' + (fragment === 'trainers/' ? ' cur' : '') + '" value="'+Config.baseurl+'trainers/">Trainers</button></li>';
+		buf += '<li><button class="button nav-last' + (fragment === 'usage/' ? ' cur' : '') + '" value="'+Config.baseurl+'usage/">Usage</button></li>';
 		buf += '<li style="display:none"><button class="button' + (fragment === 'pokeedit/' ? ' cur' : '') + '" value="'+Config.baseurl+'pokeedit/">Pok&eacute;edit</button></li></ul>';
 		buf += '<div class="searchboxwrapper"><input class="textbox searchbox" type="search" name="q" value="' + escapeHTML(this.$('.searchbox').val() || '') + '" autocomplete="off" autofocus placeholder="Search Pok&eacute;mon, moves, abilities, items, types, or more" /></div>';
 		if (fragment === '') {
@@ -114,6 +116,11 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 				this.$('.buttonbar').remove();
 				this.trainersMode = true;
 				this.renderTrainers('');
+			} else if (fragment === 'usage/') {
+				// Usage tracking
+				search.setType('usage');
+				$searchbox.attr('placeholder', 'Search pokemon to see wild/trainer usage');
+				this.$('.buttonbar').remove();
 			}
 			this.search.externalFilter = true;
 		} else {
