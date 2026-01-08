@@ -3,7 +3,7 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
   initialize: function () {
     this.shortTitle = 'Locations';
     var buf = '<div class="pfx-body"><form class="pokedex">';
-    buf += '<h1><a href="' + Config.baseurl + '" data-target="replace">Pok&eacute;dex</a></h1>';
+    buf += '<h1><a href="'+Config.baseurl+'"" data-target="replace">Pok&eacute;dex</a></h1>';
     buf += '<ul class="tabbar centered" style="margin-bottom: 18px">';
     buf += '<li><button class="button nav-first" value="' + Config.baseurl + 'dex">Search</button></li>';
     buf += '<li><button class="button" value="' + Config.baseurl + 'pokemon/">Pok&eacute;mon</button></li>';
