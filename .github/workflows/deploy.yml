@@ -6,6 +6,7 @@ on:
       - main
       - master
       - Reset
+  workflow_dispatch:
 
 permissions:
   contents: write
