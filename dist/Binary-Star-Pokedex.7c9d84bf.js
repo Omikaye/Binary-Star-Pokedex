@@ -207,7 +207,7 @@
       });
     }
   }
-})({"lh5GP":[function(require,module,exports,__globalThis) {
+})({"3BXfp":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -215,7 +215,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "e0bd08cf1645f23c";
+module.bundle.HMR_BUNDLE_ID = "38e60e6f7c9d84bf";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -713,51 +713,134 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"dAUn0":[function(require,module,exports,__globalThis) {
-// Homepage panel
-window.PokedexHomePanel = PokedexResultPanel.extend({
-    initialize: function() {
-        this.shortTitle = 'Home';
-        var buf = '<div class="pfx-topbar">';
-        buf += '<div class="header">';
-        buf += '<ul class="nav">';
-        buf += '<li><a class="button nav-first" href="' + Config.baseurl + '"><img src="' + Config.baseurl + 'images/pokemonshowdownbeta.png" alt="Pok\xe9mon Showdown! (beta)" /> Home</a></li>';
-        buf += '<li><a class="button" href="' + Config.baseurl + 'dex">Pok\xe9dex</a></li>';
-        buf += '<li><a class="button" href="' + Config.baseurl + 'locations/">Locations</a></li>';
-        buf += '<li><a class="button nav-last" href="https://github.com/Strackeror/Static-Showdown-Dex">GitHub</a></li>';
-        buf += '</ul>';
-        buf += '<div style="clear:both"></div>';
-        buf += '</div>';
-        buf += '</div>';
-        buf += '<div class="pfx-body dexentry">';
-        buf += "<h1>Pok\xe9mon Binary Star</h1>";
-        buf += '<p class="resultsub">A comprehensive Pok\xe9dex for the Pok\xe9mon Binary Star ROM hack by Omikaye</p>';
-        buf += '<div style="max-width:800px;margin:20px auto;line-height:1.6">';
-        buf += '<h2>About the ROM Hack</h2>';
-        buf += "<p>Pok\xe9mon Binary Star is a custom ROM hack featuring new adventures, expanded Pok\xe9dex entries, custom encounters, and a reimagined region. Explore new locations, battle unique trainers, and discover custom mechanics!</p>";
-        buf += '<h2>About This Site</h2>';
-        buf += "<p>This Pok\xe9dex is a static, client-side reference tool built to help players navigate Binary Star. Features include:</p>";
-        buf += '<ul style="padding-left:40px">';
-        buf += "<li>Complete Pok\xe9mon data with stats, abilities, moves, and learnsets</li>";
-        buf += '<li>Move and ability details with distribution lists</li>';
-        buf += '<li>Trainer rosters with full team details</li>';
-        buf += '<li>Location guides with encounter tables, items, shops, and trainers</li>';
-        buf += "<li>Item database with descriptions and Pok\xe9mon associations</li>";
-        buf += '</ul>';
-        buf += '<h2>Quick Links</h2>';
-        buf += '<div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0">';
-        buf += '<a href="' + Config.baseurl + 'dex" class="button" style="padding:12px 20px;background:#3572b0;color:white;text-decoration:none;border-radius:4px">Browse Pok\xe9dex</a>';
-        buf += '<a href="' + Config.baseurl + 'locations/" class="button" style="padding:12px 20px;background:#68a968;color:white;text-decoration:none;border-radius:4px">Explore Locations</a>';
-        buf += '<a href="' + Config.baseurl + 'trainers/" class="button" style="padding:12px 20px;background:#c9515c;color:white;text-decoration:none;border-radius:4px">View Trainers</a>';
-        buf += '<a href="' + Config.baseurl + 'moves/" class="button" style="padding:12px 20px;background:#aa9038;color:white;text-decoration:none;border-radius:4px">Search Moves</a>';
-        buf += '</div>';
-        buf += '<p style="margin-top:24px;color:#777;font-size:0.95em">Data generated from <code>@pkmn/*</code> packages. Site source available on <a href="https://github.com/Strackeror/Static-Showdown-Dex">GitHub</a>.</p>';
-        buf += '</div>';
+},{}],"3AGRi":[function(require,module,exports,__globalThis) {
+window.PokedexUsagePanel = PokedexResultPanel.extend({
+    initialize: function(id) {
+        id = toID(id);
+        var pokemon = BattlePokedex[id];
+        if (!pokemon) {
+            this.html('<div class="pfx-body dexentry"><a href="' + Config.baseurl + 'usage/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Usage</a><h1>Pokemon Not Found</h1></div>');
+            return;
+        }
+        this.id = id;
+        this.shortTitle = pokemon.name + ' - Usage';
+        var buf = '<div class="pfx-body dexentry">';
+        buf += '<a href="' + Config.baseurl + 'usage/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Usage</a>';
+        buf += '<h1>';
+        if (pokemon.forme) buf += '<a href="' + Config.baseurl + 'usage/' + id + '" data-target="push" class="subtle">' + pokemon.baseSpecies + '<small>-' + pokemon.forme + '</small></a>';
+        else buf += '<a href="' + Config.baseurl + 'usage/' + id + '" data-target="push" class="subtle">' + pokemon.name + '</a>';
+        if (pokemon.num > 0) buf += ' <code>#' + pokemon.num + '</code>';
+        buf += '</h1>';
+        buf += '<img src="' + ResourcePrefix + 'sprites/gen5/' + id + '.png" alt="" width="96" height="96" class="sprite" />';
+        // Get usage data
+        var usage = {
+            wild: [],
+            trainer: []
+        };
+        // Collect wild encounters
+        if (window.Locations) for(var i = 0; i < window.Locations.length; i++){
+            var loc = window.Locations[i];
+            if (loc.encounters && Array.isArray(loc.encounters)) for(var e = 0; e < loc.encounters.length; e++){
+                var encounter = loc.encounters[e];
+                if (encounter.pokemon && Array.isArray(encounter.pokemon)) {
+                    for(var j = 0; j < encounter.pokemon.length; j++){
+                        var mon = encounter.pokemon[j];
+                        if (mon.name) {
+                            var dispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(mon.name) : mon.name;
+                            if (toID(dispName) === id) usage.wild.push({
+                                location: loc,
+                                encounter: encounter,
+                                pokemon: mon,
+                                type: 'normal'
+                            });
+                        }
+                    }
+                    // Check SOS encounters
+                    if (mon.sos && Array.isArray(mon.sos)) for(var s = 0; s < mon.sos.length; s++){
+                        var sosName = mon.sos[s];
+                        var sosDispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(sosName) : sosName;
+                        if (toID(sosDispName) === id) usage.wild.push({
+                            location: loc,
+                            encounter: encounter,
+                            pokemon: {
+                                name: sosName
+                            },
+                            type: 'sos'
+                        });
+                    }
+                }
+            }
+        }
+        // Collect trainer usage
+        if (window.Trainers) for(var i = 0; i < window.Trainers.length; i++){
+            var trainer = window.Trainers[i];
+            if (trainer.team && Array.isArray(trainer.team)) for(var j = 0; j < trainer.team.length; j++){
+                var teamMon = trainer.team[j];
+                if (teamMon.name) {
+                    var dispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(teamMon.name) : teamMon.name;
+                    if (toID(dispName) === id) usage.trainer.push({
+                        trainer: trainer,
+                        pokemon: teamMon
+                    });
+                }
+            }
+        }
+        // Display wild encounters
+        buf += '<h3>Wild Encounters (' + usage.wild.length + ')</h3>';
+        if (usage.wild.length > 0) {
+            buf += '<ul class="utilichart nokbd">';
+            for(var i = 0; i < usage.wild.length; i++){
+                var wildData = usage.wild[i];
+                var loc = wildData.location;
+                var encounter = wildData.encounter;
+                buf += '<li class="result">';
+                buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push">';
+                buf += '<span class="col namecol" style="width:250px">' + escapeHTML(loc.name);
+                if (wildData.type === 'sos') buf += ' <small>(SOS)</small>';
+                buf += '</span> ';
+                var levelText = '';
+                if (encounter.levelRange) {
+                    if (encounter.levelRange.min === encounter.levelRange.max) levelText = 'Lv. ' + encounter.levelRange.min;
+                    else levelText = 'Lv. ' + encounter.levelRange.min + '-' + encounter.levelRange.max;
+                }
+                buf += '<span class="col" style="width:100px">' + levelText + '</span> ';
+                if (encounter.spot) buf += '<span class="col" style="width:150px;color:#777">' + escapeHTML(encounter.spot) + '</span> ';
+                buf += '</a>';
+                buf += '</li>';
+            }
+            buf += '</ul>';
+        } else buf += '<p style="color:#999;padding:10px">No wild encounters found.</p>';
+        // Display trainer usage
+        buf += '<h3>Trainer Teams (' + usage.trainer.length + ')</h3>';
+        if (usage.trainer.length > 0) {
+            buf += '<ul class="utilichart nokbd">';
+            for(var i = 0; i < usage.trainer.length; i++){
+                var trainerData = usage.trainer[i];
+                var trainer = trainerData.trainer;
+                var mon = trainerData.pokemon;
+                buf += '<li class="result">';
+                buf += '<a href="' + Config.baseurl + 'trainers/' + trainer.id + '" data-target="push">';
+                // Trainer thumbnail
+                var trainerBg = typeof getTrainerBackground === 'function' ? getTrainerBackground(trainer.name, true) : '';
+                if (trainerBg) {
+                    var thumb = '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;"><div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;' + trainerBg + ';"></div>' + '</div>';
+                    buf += thumb;
+                }
+                buf += '<span class="col namecol" style="width:250px;position:relative;z-index:1">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</span> ';
+                var levelText = mon.level ? 'Lv. ' + mon.level : '';
+                buf += '<span class="col" style="width:80px;position:relative;z-index:1">' + levelText + '</span> ';
+                if (mon.ability) buf += '<span class="col" style="width:150px;color:#777;position:relative;z-index:1">' + escapeHTML(mon.ability) + '</span> ';
+                if (mon.item) buf += '<span class="col" style="width:150px;color:#777;position:relative;z-index:1">@ ' + escapeHTML(mon.item) + '</span> ';
+                buf += '</a>';
+                buf += '</li>';
+            }
+            buf += '</ul>';
+        } else buf += '<p style="color:#999;padding:10px">Not used by any trainers.</p>';
         buf += '</div>';
         this.html(buf);
     }
 });
 
-},{}]},["lh5GP","dAUn0"], "dAUn0", "parcelRequire6a64", {})
+},{}]},["3BXfp","3AGRi"], "3AGRi", "parcelRequire6a64", {})
 
-//# sourceMappingURL=Binary-Star-Pokedex.1645f23c.js.map
+//# sourceMappingURL=Binary-Star-Pokedex.7c9d84bf.js.map
