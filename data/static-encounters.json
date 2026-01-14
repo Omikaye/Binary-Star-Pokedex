@@ -1,0 +1,5097 @@
+{
+  "S001": {
+    "id": "S001",
+    "name": "Rattata",
+    "level": 4,
+    "item": "Oran Berry",
+    "nature": "Random",
+    "ability": "Hustle",
+    "abilitySlot": 2,
+    "moves": [
+      "Quick Attack",
+      "Snatch",
+      "Fling"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S002": {
+    "id": "S002",
+    "name": "Nihilego",
+    "level": 43,
+    "item": "Poisonium Z",
+    "nature": "Calm",
+    "ability": "Clear Body",
+    "abilitySlot": 2,
+    "moves": [
+      "Baneful Bunker",
+      "Giga Drain",
+      "Venoshock",
+      "Power Gem"
+    ],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S003": {
+    "id": "S003",
+    "name": "Solgaleo",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Full Metal Body",
+    "abilitySlot": 2,
+    "moves": [
+      "Sunsteel Strike",
+      "Cosmic Power",
+      "Crunch",
+      "Zen Headbutt"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S004": {
+    "id": "S004",
+    "name": "Lunala",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Shadow Shield",
+    "abilitySlot": 2,
+    "moves": [
+      "Moongeist Beam",
+      "Cosmic Power",
+      "Night Daze",
+      "Moonblast"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S005": {
+    "id": "S005",
+    "name": "Gumshoos",
+    "level": 16,
+    "item": "Lum Berry",
+    "nature": "Modest",
+    "ability": "Regal Presence (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Tackle",
+      "Odor Sleuth",
+      "Bite",
+      "Bide"
+    ],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": "S009",
+      "secondary": null
+    }
+  },
+  "S006": {
+    "id": "S006",
+    "name": "Yungoos",
+    "level": 13,
+    "item": null,
+    "nature": "Hardy",
+    "ability": "Strong Jaw",
+    "abilitySlot": 2,
+    "moves": [
+      "Pursuit",
+      "Bide",
+      "Bite",
+      "Tackle"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S007": {
+    "id": "S007",
+    "name": "Raticate",
+    "level": 14,
+    "item": "Kee Berry",
+    "nature": "Impish",
+    "ability": "Thick Fat",
+    "abilitySlot": 2,
+    "moves": [
+      "Me First",
+      "Tackle",
+      "Slink Strike",
+      "Reversal"
+    ],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S008": {
+    "id": "S008",
+    "name": "Teddiursa",
+    "level": 13,
+    "item": null,
+    "nature": "Naughty",
+    "ability": "Honey Gather (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Lick",
+      "Mud Shot",
+      "Fury Swipes",
+      "Yawn"
+    ],
+    "aura": {
+      "effect": "Speed",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S009": {
+    "id": "S009",
+    "name": "Rattata",
+    "level": 12,
+    "item": null,
+    "nature": "Lonely",
+    "ability": "Pickpocket (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Slink Strike",
+      "Snatch",
+      "Quick Attack",
+      "Quash"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S010": {
+    "id": "S010",
+    "name": "Raticate",
+    "level": 12,
+    "item": "Pecha Berry",
+    "nature": "Modest",
+    "ability": "Stamina",
+    "abilitySlot": 2,
+    "moves": [
+      "Super Fang",
+      "Bite",
+      "Fury Swipes",
+      "Scary Face"
+    ],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": "S014",
+      "secondary": null
+    }
+  },
+  "S011": {
+    "id": "S011",
+    "name": "Rattata",
+    "level": 11,
+    "item": null,
+    "nature": "Hardy",
+    "ability": "Hustle",
+    "abilitySlot": 2,
+    "moves": [
+      "Tackle",
+      "Tail Whip",
+      "Quick Attack",
+      "Hyper Fang"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S012": {
+    "id": "S012",
+    "name": "Raticate",
+    "level": 11,
+    "item": null,
+    "nature": "Mild",
+    "ability": "Thick Fat",
+    "abilitySlot": 2,
+    "moves": [
+      "Focus Energy",
+      "Tail Whip",
+      "Tackle",
+      "Super Fang"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S013": {
+    "id": "S013",
+    "name": "Rattata",
+    "level": 11,
+    "item": null,
+    "nature": "Hardy",
+    "ability": "Hustle",
+    "abilitySlot": 2,
+    "moves": [
+      "Tackle",
+      "Tail Whip",
+      "Quick Attack",
+      "Super Fang"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S014": {
+    "id": "S014",
+    "name": "Rattata",
+    "level": 10,
+    "item": null,
+    "nature": "Timid",
+    "ability": "Pickpocket (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Tackle",
+      "Tail Whip",
+      "Quick Attack",
+      "Pursuit"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S015": {
+    "id": "S015",
+    "name": "Wishiwashi",
+    "level": 20,
+    "item": "Sitrus Berry",
+    "nature": "Adamant",
+    "ability": "Schooling",
+    "abilitySlot": 2,
+    "moves": [
+      "Water Gun",
+      "Growl",
+      "Rain Dance",
+      "Soak"
+    ],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": "S018",
+      "secondary": "S019"
+    }
+  },
+  "S016": {
+    "id": "S016",
+    "name": "Goldeen",
+    "level": 25,
+    "item": null,
+    "nature": "Jolly",
+    "ability": "Water Veil (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Water Pulse",
+      "Horn Attack",
+      "Aqua Ring",
+      "Aqua Jet"
+    ],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S017": {
+    "id": "S017",
+    "name": "Wishiwashi",
+    "level": 26,
+    "item": null,
+    "nature": "Brave",
+    "ability": "Schooling",
+    "abilitySlot": 2,
+    "moves": [
+      "Aqua Ring",
+      "Whirlpool",
+      "Aqua Tail",
+      "U-turn"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S018": {
+    "id": "S018",
+    "name": "Alomomola",
+    "level": 18,
+    "item": null,
+    "nature": "Naughty",
+    "ability": "Soul-Heart",
+    "abilitySlot": 2,
+    "moves": [
+      "Helping Hand",
+      "Double Slap",
+      "Heal Pulse",
+      "Water Gun"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S019": {
+    "id": "S019",
+    "name": "Wishiwashi",
+    "level": 18,
+    "item": null,
+    "nature": "Random",
+    "ability": "Schooling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S020": {
+    "id": "S020",
+    "name": "Salazzle",
+    "level": 22,
+    "item": "Petaya Berry",
+    "nature": "Calm",
+    "ability": "Merciless",
+    "abilitySlot": 2,
+    "moves": [
+      "Torment",
+      "Venom Drench",
+      "Toxic",
+      "Flame Burst"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": "S024",
+      "secondary": null
+    }
+  },
+  "S021": {
+    "id": "S021",
+    "name": "Marowak",
+    "level": 31,
+    "item": null,
+    "nature": "Serious",
+    "ability": "Cursed Body (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Will-O-Wisp",
+      "Bonemerang",
+      "Shadow Bone",
+      "Flame Wheel"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S022": {
+    "id": "S022",
+    "name": "Marowak",
+    "level": 31,
+    "item": null,
+    "nature": "Serious",
+    "ability": "Cursed Body (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Will-O-Wisp",
+      "Bonemerang",
+      "Shadow Bone",
+      "Flame Wheel"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S023": {
+    "id": "S023",
+    "name": "Pikachu",
+    "level": 20,
+    "item": null,
+    "nature": "Lax",
+    "ability": "Lightning Rod",
+    "abilitySlot": 2,
+    "moves": [
+      "Electro Ball",
+      "Thunder Wave",
+      "Quick Attack",
+      "Play Nice"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S024": {
+    "id": "S024",
+    "name": "Salandit",
+    "level": 20,
+    "item": null,
+    "nature": "Quiet",
+    "ability": "Corrosion",
+    "abilitySlot": 2,
+    "moves": [
+      "Poison Gas",
+      "Venoshock",
+      "Taunt",
+      "Scratch"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S025": {
+    "id": "S025",
+    "name": "Lurantis",
+    "level": 37,
+    "item": "Coba Berry",
+    "nature": "Calm",
+    "ability": "Unknown",
+    "abilitySlot": 8,
+    "moves": [
+      "Low Sweep",
+      "Acrobatics",
+      "Leech Seed",
+      "Solar Blade"
+    ],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": "S032",
+      "secondary": "S033"
+    }
+  },
+  "S026": {
+    "id": "S026",
+    "name": "Parasect",
+    "level": 22,
+    "item": null,
+    "nature": "Lonely",
+    "ability": "Dry Skin (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Cross Poison",
+      "Leech Life",
+      "Fury Cutter",
+      "Spore"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S027": {
+    "id": "S027",
+    "name": "Shiinotic",
+    "level": 22,
+    "item": null,
+    "nature": "Calm",
+    "ability": "Misty Surge",
+    "abilitySlot": 1,
+    "moves": [
+      "Startle",
+      "Ingrain",
+      "Mega Drain",
+      "Sleep Powder"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S028": {
+    "id": "S028",
+    "name": "Fomantis",
+    "level": 23,
+    "item": null,
+    "nature": "Impish",
+    "ability": "Contrary",
+    "abilitySlot": 2,
+    "moves": [
+      "Razor Leaf",
+      "Trailblaze",
+      "Fury Cutter",
+      "Growth"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S029": {
+    "id": "S029",
+    "name": "Fomantis",
+    "level": 23,
+    "item": null,
+    "nature": "Adamant",
+    "ability": "Contrary",
+    "abilitySlot": 2,
+    "moves": [
+      "Razor Leaf",
+      "Trailblaze",
+      "Fury Cutter",
+      "Growth"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S030": {
+    "id": "S030",
+    "name": "Fomantis",
+    "level": 23,
+    "item": null,
+    "nature": "Gentle",
+    "ability": "Contrary",
+    "abilitySlot": 2,
+    "moves": [
+      "Trailblaze",
+      "Fury Cutter",
+      "Ingrain",
+      "Razor Leaf"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S031": {
+    "id": "S031",
+    "name": "Fomantis",
+    "level": 23,
+    "item": null,
+    "nature": "Sassy",
+    "ability": "Contrary",
+    "abilitySlot": 2,
+    "moves": [
+      "Trailblaze",
+      "Fury Cutter",
+      "Ingrain",
+      "Razor Leaf"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S032": {
+    "id": "S032",
+    "name": "Whimsicott",
+    "level": 33,
+    "item": null,
+    "nature": "Timid",
+    "ability": "Fluffy",
+    "abilitySlot": 2,
+    "moves": [
+      "Tailwind",
+      "Mega Drain",
+      "Aromatic Mist",
+      "Grassy Terrain"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S033": {
+    "id": "S033",
+    "name": "Sunflora",
+    "level": 33,
+    "item": null,
+    "nature": "Quiet",
+    "ability": "Solar Power",
+    "abilitySlot": 2,
+    "moves": [
+      "Flower Shield",
+      "Grassy Terrain",
+      "Incinerate",
+      "Will-O-Wisp"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S034": {
+    "id": "S034",
+    "name": "Vikavolt",
+    "level": 29,
+    "item": "Occa Berry",
+    "nature": "Sassy",
+    "ability": "Electric Surge",
+    "abilitySlot": 2,
+    "moves": [
+      "Psycrush",
+      "Charge",
+      "Bug Bite",
+      "Spark"
+    ],
+    "aura": {
+      "effect": "All Stats",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": "S039",
+      "secondary": "S038"
+    }
+  },
+  "S035": {
+    "id": "S035",
+    "name": "Grubbin",
+    "level": 27,
+    "item": null,
+    "nature": "Lonely",
+    "ability": "Minus",
+    "abilitySlot": 2,
+    "moves": [
+      "Psycrush",
+      "String Shot",
+      "Bite",
+      "Bug Bite"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S036": {
+    "id": "S036",
+    "name": "Charjabug",
+    "level": 27,
+    "item": null,
+    "nature": "Adamant",
+    "ability": "Plus",
+    "abilitySlot": 2,
+    "moves": [
+      "Charge",
+      "Psycrush",
+      "Bug Bite",
+      "Spark"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S037": {
+    "id": "S037",
+    "name": "Charjabug",
+    "level": 27,
+    "item": null,
+    "nature": "Naughty",
+    "ability": "Plus",
+    "abilitySlot": 2,
+    "moves": [
+      "Charge",
+      "Mud-Slap",
+      "Acrobatics",
+      "Spark"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S038": {
+    "id": "S038",
+    "name": "Charjabug",
+    "level": 27,
+    "item": null,
+    "nature": "Jolly",
+    "ability": "Plus",
+    "abilitySlot": 2,
+    "moves": [
+      "String Shot",
+      "Psycrush",
+      "Mud-Slap",
+      "Thunder Wave"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S039": {
+    "id": "S039",
+    "name": "Charjabug",
+    "level": 28,
+    "item": null,
+    "nature": "Brave",
+    "ability": "Plus",
+    "abilitySlot": 2,
+    "moves": [
+      "Bite",
+      "Thunder Wave",
+      "Mud-Slap",
+      "Spark"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S040": {
+    "id": "S040",
+    "name": "Mimikyu",
+    "level": 55,
+    "item": "Lum Berry",
+    "nature": "Impish",
+    "ability": "Disguise",
+    "abilitySlot": 2,
+    "moves": [
+      "Phantom Force",
+      "Hypnosis",
+      "Nightmare",
+      "Play Rough"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": "S045",
+      "secondary": "S044"
+    }
+  },
+  "S041": {
+    "id": "S041",
+    "name": "Banette",
+    "level": 50,
+    "item": null,
+    "nature": "Timid",
+    "ability": "Prankster",
+    "abilitySlot": 2,
+    "moves": [
+      "Shadow Punch",
+      "Sucker Punch",
+      "Meditate",
+      "Snatch"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S042": {
+    "id": "S042",
+    "name": "Mismagius",
+    "level": 51,
+    "item": null,
+    "nature": "Rash",
+    "ability": "Magic Guard",
+    "abilitySlot": 2,
+    "moves": [
+      "Trick-or-Treat",
+      "Shadow Ball",
+      "Mystical Fire",
+      "Psychic"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S043": {
+    "id": "S043",
+    "name": "Gengar",
+    "level": 52,
+    "item": null,
+    "nature": "Quiet",
+    "ability": "Cursed Body",
+    "abilitySlot": 2,
+    "moves": [
+      "Sludge Bomb",
+      "Trick-or-Treat",
+      "Hypnosis",
+      "Dream Eater"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S044": {
+    "id": "S044",
+    "name": "Palossand",
+    "level": 50,
+    "item": null,
+    "nature": "Quiet",
+    "ability": "Sand Stream",
+    "abilitySlot": 2,
+    "moves": [
+      "Shore Up",
+      "Mud Bomb",
+      "Destiny Bond",
+      "Skill Swap"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S045": {
+    "id": "S045",
+    "name": "Chandelure",
+    "level": 50,
+    "item": null,
+    "nature": "Modest",
+    "ability": "Shadow Tag (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Curse",
+      "Hex",
+      "Memento",
+      "Mystical Fire"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S046": {
+    "id": "S046",
+    "name": "Kommo-o",
+    "level": 49,
+    "item": "Roseli Berry",
+    "nature": "Calm",
+    "ability": "Multiscale (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Drain Punch",
+      "Dragon Claw",
+      "Thunder Punch",
+      "Poison Jab"
+    ],
+    "aura": {
+      "effect": "All Stats",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": "S050",
+      "secondary": "S049"
+    }
+  },
+  "S047": {
+    "id": "S047",
+    "name": "Jangmo-o",
+    "level": 42,
+    "item": null,
+    "nature": "Naughty",
+    "ability": "Soundproof",
+    "abilitySlot": 2,
+    "moves": [
+      "Bide",
+      "Tackle",
+      "Leer",
+      "Headbutt"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S048": {
+    "id": "S048",
+    "name": "Hakamo-o",
+    "level": 44,
+    "item": null,
+    "nature": "Brave",
+    "ability": "Soundproof",
+    "abilitySlot": 2,
+    "moves": [
+      "Headbutt",
+      "Autotomize",
+      "Work Up",
+      "Sky Uppercut"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S049": {
+    "id": "S049",
+    "name": "Noivern",
+    "level": 48,
+    "item": null,
+    "nature": "Timid",
+    "ability": "Frisk (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Boomburst",
+      "Screech",
+      "Dragon Pulse",
+      "Air Slash"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S050": {
+    "id": "S050",
+    "name": "Scizor",
+    "level": 46,
+    "item": null,
+    "nature": "Brave",
+    "ability": "Light Metal (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Light Screen",
+      "Pursuit",
+      "Bullet Punch",
+      "X-Scissor"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S051": {
+    "id": "S051",
+    "name": "Nihilego",
+    "level": 55,
+    "item": null,
+    "nature": "Random",
+    "ability": "Clear Body",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S052": {
+    "id": "S052",
+    "name": "Nihilego",
+    "level": 55,
+    "item": null,
+    "nature": "Random",
+    "ability": "Clear Body",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S053": {
+    "id": "S053",
+    "name": "Buzzwole",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Guts",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S054": {
+    "id": "S054",
+    "name": "Buzzwole",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Guts",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S055": {
+    "id": "S055",
+    "name": "Pheromosa",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Regal Presence",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Speed",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S056": {
+    "id": "S056",
+    "name": "Pheromosa",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Regal Presence",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Speed",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S057": {
+    "id": "S057",
+    "name": "Pheromosa",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Regal Presence",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Speed",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S058": {
+    "id": "S058",
+    "name": "Pheromosa",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Regal Presence",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Speed",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S059": {
+    "id": "S059",
+    "name": "Xurkitree",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dazzling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S060": {
+    "id": "S060",
+    "name": "Xurkitree",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dazzling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S061": {
+    "id": "S061",
+    "name": "Xurkitree",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dazzling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S062": {
+    "id": "S062",
+    "name": "Xurkitree",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dazzling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S063": {
+    "id": "S063",
+    "name": "Xurkitree",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dazzling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S064": {
+    "id": "S064",
+    "name": "Xurkitree",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dazzling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S065": {
+    "id": "S065",
+    "name": "Xurkitree",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dazzling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S066": {
+    "id": "S066",
+    "name": "Xurkitree",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dazzling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S067": {
+    "id": "S067",
+    "name": "Xurkitree",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dazzling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S068": {
+    "id": "S068",
+    "name": "Xurkitree",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dazzling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S069": {
+    "id": "S069",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S070": {
+    "id": "S070",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S071": {
+    "id": "S071",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S072": {
+    "id": "S072",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S073": {
+    "id": "S073",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S074": {
+    "id": "S074",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S075": {
+    "id": "S075",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S076": {
+    "id": "S076",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S077": {
+    "id": "S077",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S078": {
+    "id": "S078",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S079": {
+    "id": "S079",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S080": {
+    "id": "S080",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S081": {
+    "id": "S081",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S082": {
+    "id": "S082",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S083": {
+    "id": "S083",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S084": {
+    "id": "S084",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S085": {
+    "id": "S085",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S086": {
+    "id": "S086",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S087": {
+    "id": "S087",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S088": {
+    "id": "S088",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S089": {
+    "id": "S089",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S090": {
+    "id": "S090",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S091": {
+    "id": "S091",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S092": {
+    "id": "S092",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S093": {
+    "id": "S093",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S094": {
+    "id": "S094",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S095": {
+    "id": "S095",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S096": {
+    "id": "S096",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S097": {
+    "id": "S097",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S098": {
+    "id": "S098",
+    "name": "Celesteela",
+    "level": 65,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S099": {
+    "id": "S099",
+    "name": "Guzzlord",
+    "level": 70,
+    "item": null,
+    "nature": "Random",
+    "ability": "Gluttony",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S100": {
+    "id": "S100",
+    "name": "Necrozma",
+    "level": 75,
+    "item": null,
+    "nature": "Random",
+    "ability": "Prism Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S101": {
+    "id": "S101",
+    "name": "Charmander",
+    "level": 12,
+    "item": null,
+    "nature": "Random",
+    "ability": "Flame Body",
+    "abilitySlot": 1,
+    "moves": [
+      "Counter",
+      "Smoke Out",
+      "Ember",
+      "Scratch"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S102": {
+    "id": "S102",
+    "name": "Squirtle",
+    "level": 12,
+    "item": null,
+    "nature": "Random",
+    "ability": "Rain Dish",
+    "abilitySlot": 1,
+    "moves": [
+      "Aqua Jet",
+      "Withdraw",
+      "Water Gun",
+      "Tackle"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S103": {
+    "id": "S103",
+    "name": "Onix",
+    "level": 14,
+    "item": null,
+    "nature": "Random",
+    "ability": "Solid Rock",
+    "abilitySlot": 1,
+    "moves": [
+      "Rototiller",
+      "Rage",
+      "Rock Tomb",
+      "Spall"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S104": {
+    "id": "S104",
+    "name": "Horsea",
+    "level": 18,
+    "item": null,
+    "nature": "Random",
+    "ability": "Swift Swim",
+    "abilitySlot": 1,
+    "moves": [
+      "Water Pulse",
+      "Twister",
+      "Water Gun",
+      "Leer"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S105": {
+    "id": "S105",
+    "name": "Scatterbug",
+    "level": 9,
+    "item": null,
+    "nature": "Random",
+    "ability": "Friend Guard",
+    "abilitySlot": 1,
+    "moves": [
+      "Rage Powder",
+      "String Shot",
+      "Stun Spore",
+      "Tackle"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S106": {
+    "id": "S106",
+    "name": "Bulbasaur",
+    "level": 10,
+    "item": null,
+    "nature": "Random",
+    "ability": "Leaf Guard",
+    "abilitySlot": 1,
+    "moves": [
+      "Grassy Terrain",
+      "Vine Whip",
+      "Growl",
+      "Tackle"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S107": {
+    "id": "S107",
+    "name": "Litwick",
+    "level": 9,
+    "item": null,
+    "nature": "Random",
+    "ability": "Flash Fire",
+    "abilitySlot": 1,
+    "moves": [
+      "Endure",
+      "Ember",
+      "Fire Spin",
+      "Smog"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S108": {
+    "id": "S108",
+    "name": "Ralts",
+    "level": 17,
+    "item": null,
+    "nature": "Random",
+    "ability": "Synchronize",
+    "abilitySlot": 1,
+    "moves": [
+      "Misty Terrain",
+      "Magical Leaf",
+      "Lucky Chant",
+      "Disarming Voice"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S109": {
+    "id": "S109",
+    "name": "Spheal",
+    "level": 19,
+    "item": null,
+    "nature": "Random",
+    "ability": "Snow Cloak",
+    "abilitySlot": 1,
+    "moves": [
+      "Belly Drum",
+      "Brine",
+      "Ice Ball",
+      "Encore"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S110": {
+    "id": "S110",
+    "name": "Combusken",
+    "level": 20,
+    "item": null,
+    "nature": "Random",
+    "ability": "Tough Claws",
+    "abilitySlot": 1,
+    "moves": [
+      "Low Kick",
+      "Flame Charge",
+      "Peck",
+      "Sand Down"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S111": {
+    "id": "S111",
+    "name": "Honedge",
+    "level": 24,
+    "item": null,
+    "nature": "Random",
+    "ability": "No Guard",
+    "abilitySlot": 1,
+    "moves": [
+      "Wide Guard",
+      "Aerial Ace",
+      "Shadow Sneak",
+      "Autotomize"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S112": {
+    "id": "S112",
+    "name": "Beedrill",
+    "level": 14,
+    "item": null,
+    "nature": "Random",
+    "ability": "Poison Touch",
+    "abilitySlot": 1,
+    "moves": [
+      "Rage",
+      "Flurry Peck",
+      "Twineedle"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S113": {
+    "id": "S113",
+    "name": "Grovyle",
+    "level": 16,
+    "item": null,
+    "nature": "Random",
+    "ability": "Lightning Rod",
+    "abilitySlot": 1,
+    "moves": [
+      "Grassy Terrain",
+      "Mega Drain",
+      "Quick Attack",
+      "Absorb"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S114": {
+    "id": "S114",
+    "name": "Marshtomp",
+    "level": 17,
+    "item": null,
+    "nature": "Random",
+    "ability": "Wonder Skin",
+    "abilitySlot": 1,
+    "moves": [
+      "Counter",
+      "Foresight",
+      "Mud-Slap",
+      "Water Gun"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S115": {
+    "id": "S115",
+    "name": "Rhyhorn",
+    "level": 32,
+    "item": null,
+    "nature": "Random",
+    "ability": "Lightning Rod",
+    "abilitySlot": 1,
+    "moves": [
+      "Guard Split",
+      "Rock Blast",
+      "Chip Away",
+      "Bulldoze"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S116": {
+    "id": "S116",
+    "name": "Swinub",
+    "level": 33,
+    "item": null,
+    "nature": "Random",
+    "ability": "Oblivious",
+    "abilitySlot": 1,
+    "moves": [
+      "Icicle Spear",
+      "Take Down",
+      "Ice Shard",
+      "Icy Wind"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S117": {
+    "id": "S117",
+    "name": "Prinplup",
+    "level": 35,
+    "item": null,
+    "nature": "Random",
+    "ability": "Competitive",
+    "abilitySlot": 1,
+    "moves": [
+      "Power Trip",
+      "Brine",
+      "Flurry Peck",
+      "Bide"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S118": {
+    "id": "S118",
+    "name": "Grotle",
+    "level": 36,
+    "item": null,
+    "nature": "Random",
+    "ability": "Sap Sipper",
+    "abilitySlot": 1,
+    "moves": [
+      "Heavy Slam",
+      "Leech Seed",
+      "Mega Drain",
+      "Bite"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S119": {
+    "id": "S119",
+    "name": "Grotle",
+    "level": 36,
+    "item": null,
+    "nature": "Random",
+    "ability": "Sap Sipper",
+    "abilitySlot": 1,
+    "moves": [
+      "Heavy Slam",
+      "Leech Seed",
+      "Mega Drain",
+      "Bite"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S120": {
+    "id": "S120",
+    "name": "Pidgeot",
+    "level": 29,
+    "item": null,
+    "nature": "Random",
+    "ability": "Keen Eye",
+    "abilitySlot": 1,
+    "moves": [
+      "Steel Wing",
+      "Feather Dance",
+      "Twister",
+      "Quick Attack"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S121": {
+    "id": "S121",
+    "name": "Monferno",
+    "level": 29,
+    "item": null,
+    "nature": "Random",
+    "ability": "Unburden",
+    "abilitySlot": 1,
+    "moves": [
+      "Power-Up Punch",
+      "Flame Wheel",
+      "Fury Swipes",
+      "Torment"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S122": {
+    "id": "S122",
+    "name": "Axew",
+    "level": 30,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 1,
+    "moves": [
+      "Counter",
+      "Dragon Claw",
+      "False Swipe",
+      "Slash"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S123": {
+    "id": "S123",
+    "name": "Eelektross",
+    "level": 55,
+    "item": null,
+    "nature": "Random",
+    "ability": "Levitate",
+    "abilitySlot": 1,
+    "moves": [
+      "Crunch",
+      "Discharge",
+      "Headbutt",
+      "Crush Claw"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S124": {
+    "id": "S124",
+    "name": "Aggron",
+    "level": 57,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 1,
+    "moves": [
+      "Reversal",
+      "Heavy Slam",
+      "Double-Edge",
+      "Iron Defense"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S125": {
+    "id": "S125",
+    "name": "Rotom",
+    "level": 61,
+    "item": null,
+    "nature": "Random",
+    "ability": "Levitate",
+    "abilitySlot": 1,
+    "moves": [
+      "Charge",
+      "Hex",
+      "Electro Ball",
+      "Substitute"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S126": {
+    "id": "S126",
+    "name": "Leavanny",
+    "level": 57,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 1,
+    "moves": [
+      "Grassy Terrain",
+      "Leaf Storm",
+      "Swords Dance",
+      "Entrainment"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S127": {
+    "id": "S127",
+    "name": "Chesnaught",
+    "level": 45,
+    "item": null,
+    "nature": "Random",
+    "ability": "Bulletproof",
+    "abilitySlot": 1,
+    "moves": [
+      "Spikes",
+      "Mud Shot",
+      "Seed Bomb",
+      "Spiky Shield"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S128": {
+    "id": "S128",
+    "name": "Greninja",
+    "level": 44,
+    "item": null,
+    "nature": "Random",
+    "ability": "Protean",
+    "abilitySlot": 1,
+    "moves": [
+      "Bestow",
+      "Substitute",
+      "Slink Strike",
+      "Water Shuriken"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S129": {
+    "id": "S129",
+    "name": "Delphox",
+    "level": 44,
+    "item": null,
+    "nature": "Random",
+    "ability": "Magician",
+    "abilitySlot": 1,
+    "moves": [
+      "Wish",
+      "Psyshock",
+      "Light Screen",
+      "Mystical Fire"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S130": {
+    "id": "S130",
+    "name": "Tapu Koko",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Electric Surge",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S131": {
+    "id": "S131",
+    "name": "Tapu Lele",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Psychic Surge",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S132": {
+    "id": "S132",
+    "name": "Tapu Bulu",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Grassy Surge",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S133": {
+    "id": "S133",
+    "name": "Tapu Fini",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Misty Surge",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S134": {
+    "id": "S134",
+    "name": "Ekans",
+    "level": 10,
+    "item": null,
+    "nature": "Random",
+    "ability": "Shed Skin",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S135": {
+    "id": "S135",
+    "name": "Exeggutor",
+    "level": 40,
+    "item": null,
+    "nature": "Random",
+    "ability": "Harvest",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S136": {
+    "id": "S136",
+    "name": "Tapu Koko",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Electric Surge",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S137": {
+    "id": "S137",
+    "name": "Leavanny",
+    "level": 57,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 1,
+    "moves": [
+      "Grassy Terrain",
+      "Leaf Storm",
+      "Swords Dance",
+      "Entrainment"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S138": {
+    "id": "S138",
+    "name": "Araquanid",
+    "level": 27,
+    "item": "Wacan Berry",
+    "nature": "Impish",
+    "ability": "Water Bubble",
+    "abilitySlot": 2,
+    "moves": [
+      "Icy Wind",
+      "Twineedle",
+      "Aqua Ring",
+      "Bubble"
+    ],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": "S141",
+      "secondary": "S142"
+    }
+  },
+  "S139": {
+    "id": "S139",
+    "name": "Dewpider",
+    "level": 25,
+    "item": null,
+    "nature": "Brave",
+    "ability": "Water Bubble",
+    "abilitySlot": 1,
+    "moves": [
+      "Bite",
+      "Bug Bite",
+      "Aqua Ring",
+      "Bubble Beam"
+    ],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S140": {
+    "id": "S140",
+    "name": "Ducklett",
+    "level": 26,
+    "item": null,
+    "nature": "Lax",
+    "ability": "Cloud Nine",
+    "abilitySlot": 1,
+    "moves": [
+      "Aerial Ace",
+      "Feather Dance",
+      "Aqua Ring",
+      "Water Pulse"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S141": {
+    "id": "S141",
+    "name": "Luvdisc",
+    "level": 23,
+    "item": null,
+    "nature": "Timid",
+    "ability": "Soul-Heart",
+    "abilitySlot": 2,
+    "moves": [
+      "Safeguard",
+      "Heart Stamp",
+      "Lucky Chant",
+      "Knock Off"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S142": {
+    "id": "S142",
+    "name": "Tentacool",
+    "level": 24,
+    "item": null,
+    "nature": "Bold",
+    "ability": "Unknown",
+    "abilitySlot": 8,
+    "moves": [
+      "Acid Spray",
+      "Rain Dance",
+      "Clear Smog",
+      "Toxic"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S143": {
+    "id": "S143",
+    "name": "Fomantis",
+    "level": 35,
+    "item": "Mago Berry",
+    "nature": "Impish",
+    "ability": "Contrary",
+    "abilitySlot": 2,
+    "moves": [
+      "Leaf Blade",
+      "Needle Arm",
+      "Slash",
+      "Synthesis"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S144": {
+    "id": "S144",
+    "name": "Beedrill",
+    "level": 34,
+    "item": "Honey",
+    "nature": "Lonely",
+    "ability": "Swarm",
+    "abilitySlot": 2,
+    "moves": [
+      "Flurry Peck",
+      "Poison Tail",
+      "Twineedle",
+      "Focus Energy"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S145": {
+    "id": "S145",
+    "name": "Vespiquen",
+    "level": 34,
+    "item": "Honey",
+    "nature": "Sassy",
+    "ability": "Multistriker",
+    "abilitySlot": 2,
+    "moves": [
+      "Bug Buzz",
+      "Defend Order",
+      "Power Gem",
+      "Confuse Ray"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S146": {
+    "id": "S146",
+    "name": "Sudowoodo",
+    "level": 34,
+    "item": "Big Root",
+    "nature": "Brave",
+    "ability": "Rock Head",
+    "abilitySlot": 2,
+    "moves": [
+      "Block",
+      "Needle Arm",
+      "Rock Tomb",
+      "Forest’s Curse"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S147": {
+    "id": "S147",
+    "name": "Togedemaru",
+    "level": 48,
+    "item": "Leftovers",
+    "nature": "Impish",
+    "ability": "Iron Barbs (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Zing Zap",
+      "Spiky Shield",
+      "Iron Head",
+      "Bounce"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": "S149",
+      "secondary": "S148"
+    }
+  },
+  "S148": {
+    "id": "S148",
+    "name": "Skarmory",
+    "level": 45,
+    "item": null,
+    "nature": "Impish",
+    "ability": "Sturdy (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Stealth Rock",
+      "Steel Wing",
+      "Tailwind",
+      "Torment"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S149": {
+    "id": "S149",
+    "name": "Pachirisu",
+    "level": 45,
+    "item": null,
+    "nature": "Jolly",
+    "ability": "Cheek Pouch",
+    "abilitySlot": 2,
+    "moves": [
+      "Follow Me",
+      "Nuzzle",
+      "Ion Deluge",
+      "Me First"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S150": {
+    "id": "S150",
+    "name": "Electabuzz",
+    "level": 45,
+    "item": null,
+    "nature": "Jolly",
+    "ability": "Lightning Rod",
+    "abilitySlot": 2,
+    "moves": [
+      "Discharge",
+      "Thunder Punch",
+      "Arm Thrust",
+      "Meditate"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S151": {
+    "id": "S151",
+    "name": "Electrode",
+    "level": 45,
+    "item": null,
+    "nature": "Timid",
+    "ability": "Galvanize",
+    "abilitySlot": 2,
+    "moves": [
+      "Self-Destruct",
+      "Discharge",
+      "Magnet Rise",
+      "Flamethrower"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S152": {
+    "id": "S152",
+    "name": "Yungoos",
+    "level": 3,
+    "item": null,
+    "nature": "Mild",
+    "ability": "Strong Jaw",
+    "abilitySlot": 2,
+    "moves": [
+      "Odor Sleuth",
+      "Tackle",
+      "Leer"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S153": {
+    "id": "S153",
+    "name": "Rattata",
+    "level": 3,
+    "item": null,
+    "nature": "Mild",
+    "ability": "Hustle",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S154": {
+    "id": "S154",
+    "name": "Rattata",
+    "level": 4,
+    "item": "Oran Berry",
+    "nature": "Random",
+    "ability": "Hustle",
+    "abilitySlot": 2,
+    "moves": [
+      "Quick Attack",
+      "Snatch",
+      "Fling"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S155": {
+    "id": "S155",
+    "name": "Spearow",
+    "level": 4,
+    "item": null,
+    "nature": "Random",
+    "ability": "Sniper",
+    "abilitySlot": 2,
+    "moves": [
+      "Peck",
+      "Double Team",
+      "Leer"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S156": {
+    "id": "S156",
+    "name": "Pinsir",
+    "level": 42,
+    "item": null,
+    "nature": "Random",
+    "ability": "Moxie",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S157": {
+    "id": "S157",
+    "name": "Pinsir",
+    "level": 43,
+    "item": null,
+    "nature": "Random",
+    "ability": "Moxie",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S158": {
+    "id": "S158",
+    "name": "Pinsir",
+    "level": 42,
+    "item": null,
+    "nature": "Random",
+    "ability": "Moxie",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S159": {
+    "id": "S159",
+    "name": "Necrozma",
+    "level": 50,
+    "item": null,
+    "nature": "Impish",
+    "ability": "Prism Armor",
+    "abilitySlot": 2,
+    "moves": [
+      "Sunsteel Strike",
+      "Morning Sun",
+      "Psycho Cut",
+      "Night Slash"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S160": {
+    "id": "S160",
+    "name": "Necrozma",
+    "level": 50,
+    "item": null,
+    "nature": "Bold",
+    "ability": "Prism Armor",
+    "abilitySlot": 2,
+    "moves": [
+      "Moongeist Beam",
+      "Moonlight",
+      "Psychic",
+      "Power Gem"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S161": {
+    "id": "S161",
+    "name": "Necrozma",
+    "level": 60,
+    "item": null,
+    "nature": "Bold",
+    "ability": "Neuroforce",
+    "abilitySlot": 2,
+    "moves": [
+      "Photon Geyser",
+      "Steel Trap",
+      "Power Gem",
+      "Dragon Pulse"
+    ],
+    "aura": {
+      "effect": "All Stats",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S162": {
+    "id": "S162",
+    "name": "Necrozma",
+    "level": 65,
+    "item": "Ultranecrozium Z",
+    "nature": "Random",
+    "ability": "Prism Armor",
+    "abilitySlot": 2,
+    "moves": [
+      "Photon Geyser",
+      "Iron Defense",
+      "Power Gem",
+      "Night Slash"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S163": {
+    "id": "S163",
+    "name": "Ribombee",
+    "level": 55,
+    "item": "Occa Berry",
+    "nature": "Impish",
+    "ability": "Serene Grace (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Bug Buzz",
+      "Draining Kiss",
+      "Quiver Dance",
+      "Dazzling Gleam"
+    ],
+    "aura": {
+      "effect": "All Stats",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": "S165",
+      "secondary": "S164"
+    }
+  },
+  "S164": {
+    "id": "S164",
+    "name": "Pelipper",
+    "level": 52,
+    "item": null,
+    "nature": "Timid",
+    "ability": "Rain Dish (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Stockpile",
+      "Scald",
+      "Spit Up",
+      "Seed Bomb"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S165": {
+    "id": "S165",
+    "name": "Blissey",
+    "level": 53,
+    "item": null,
+    "nature": "Naughty",
+    "ability": "Healer (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Heal Pulse",
+      "Light Screen",
+      "Helping Hand",
+      "Dazzling Gleam"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S166": {
+    "id": "S166",
+    "name": "Articuno",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Slush Rush",
+    "abilitySlot": 2,
+    "moves": [
+      "Ancient Power",
+      "Freeze-Dry",
+      "Reflect",
+      "Hail"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S167": {
+    "id": "S167",
+    "name": "Zapdos",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Teravolt",
+    "abilitySlot": 2,
+    "moves": [
+      "Ancient Power",
+      "Discharge",
+      "Pluck",
+      "Rain Dance"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S168": {
+    "id": "S168",
+    "name": "Moltres",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Turboblaze",
+    "abilitySlot": 2,
+    "moves": [
+      "Ancient Power",
+      "Flamethrower",
+      "Air Slash",
+      "Sunny Day"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S169": {
+    "id": "S169",
+    "name": "Ho-Oh",
+    "level": 60,
+    "item": "Sacred Ash",
+    "nature": "Random",
+    "ability": "Regenerator",
+    "abilitySlot": 2,
+    "moves": [
+      "Burn Up",
+      "Sacred Fire",
+      "Extrasensory",
+      "Ancient Power"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S170": {
+    "id": "S170",
+    "name": "Rayquaza",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Air Lock",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S171": {
+    "id": "S171",
+    "name": "Cresselia",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Sweet Veil",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S172": {
+    "id": "S172",
+    "name": "Tornadus",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Defiant",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S173": {
+    "id": "S173",
+    "name": "Thundurus",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Defiant",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S174": {
+    "id": "S174",
+    "name": "Landorus",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Sheer Force",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S175": {
+    "id": "S175",
+    "name": "Yveltal",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dark Aura",
+    "abilitySlot": 2,
+    "moves": [
+      "Oblivion Wing",
+      "Dark Pulse",
+      "Phantom Force",
+      "Psychic"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S176": {
+    "id": "S176",
+    "name": "Mewtwo",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Unnerve",
+    "abilitySlot": 2,
+    "moves": [
+      "Psychic",
+      "Recover",
+      "Swift",
+      "Psycho Cut"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S177": {
+    "id": "S177",
+    "name": "Raikou",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Volt Absorb",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S178": {
+    "id": "S178",
+    "name": "Entei",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Flash Fire",
+    "abilitySlot": 2,
+    "moves": [
+      "Trample",
+      "Bite",
+      "Swagger",
+      "Lava Plume"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S179": {
+    "id": "S179",
+    "name": "Dialga",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Telepathy",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S180": {
+    "id": "S180",
+    "name": "Cobalion",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Technician",
+    "abilitySlot": 2,
+    "moves": [
+      "Sacred Sword",
+      "Swords Dance",
+      "Quick Attack",
+      "Iron Head"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S181": {
+    "id": "S181",
+    "name": "Terrakion",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Reckless",
+    "abilitySlot": 2,
+    "moves": [
+      "Sacred Sword",
+      "Swords Dance",
+      "Rock Slide",
+      "Stone Edge"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S182": {
+    "id": "S182",
+    "name": "Virizion",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Leaf Guard",
+    "abilitySlot": 2,
+    "moves": [
+      "Sacred Sword",
+      "Swords Dance",
+      "Giga Drain",
+      "Leaf Blade"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S183": {
+    "id": "S183",
+    "name": "Reshiram",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Pressure",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S184": {
+    "id": "S184",
+    "name": "Zekrom",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Pressure",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S185": {
+    "id": "S185",
+    "name": "Xerneas",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Fairy Aura",
+    "abilitySlot": 2,
+    "moves": [
+      "Geomancy",
+      "Horn Leech",
+      "Night Slash",
+      "Moonblast"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S186": {
+    "id": "S186",
+    "name": "Regirock",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Sand Rush",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S187": {
+    "id": "S187",
+    "name": "Regice",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Slush Rush",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S188": {
+    "id": "S188",
+    "name": "Registeel",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Steelworker",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S189": {
+    "id": "S189",
+    "name": "Groudon",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Drought",
+    "abilitySlot": 2,
+    "moves": [
+      "Earthquake",
+      "Precipice Blades",
+      "Bulk Up",
+      "Solar Beam"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S190": {
+    "id": "S190",
+    "name": "Heatran",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Flame Body",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S191": {
+    "id": "S191",
+    "name": "Regigigas",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Truant",
+    "abilitySlot": 2,
+    "moves": [
+      "Zen Headbutt",
+      "Revenge",
+      "Dizzy Punch",
+      "Confuse Ray"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S192": {
+    "id": "S192",
+    "name": "Palkia",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Telepathy",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S193": {
+    "id": "S193",
+    "name": "Giratina",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Shadow Shield",
+    "abilitySlot": 2,
+    "moves": [
+      "Shadow Force",
+      "Aura Sphere",
+      "Earth Power",
+      "Dragon Claw"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S194": {
+    "id": "S194",
+    "name": "Suicune",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Water Absorb",
+    "abilitySlot": 2,
+    "moves": [
+      "Bubble Beam",
+      "Aurora Beam",
+      "Mist",
+      "Rain Dance"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S195": {
+    "id": "S195",
+    "name": "Lugia",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Multiscale",
+    "abilitySlot": 2,
+    "moves": [
+      "Skill Swap",
+      "Aeroblast",
+      "Extrasensory",
+      "Ancient Power"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S196": {
+    "id": "S196",
+    "name": "Latias",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Levitate",
+    "abilitySlot": 2,
+    "moves": [
+      "Mist Ball",
+      "Dragon Pulse",
+      "Psycho Shift",
+      "Wish"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S197": {
+    "id": "S197",
+    "name": "Latios",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Levitate",
+    "abilitySlot": 2,
+    "moves": [
+      "Luster Purge",
+      "Dragon Pulse",
+      "Psycho Shift",
+      "Dragon Breath"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S198": {
+    "id": "S198",
+    "name": "Kyogre",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Drizzle",
+    "abilitySlot": 2,
+    "moves": [
+      "Ice Beam",
+      "Origin Pulse",
+      "Calm Mind",
+      "Mudslide"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S199": {
+    "id": "S199",
+    "name": "Uxie",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Forewarn",
+    "abilitySlot": 2,
+    "moves": [
+      "Extrasensory",
+      "Yawn",
+      "Amnesia",
+      "Swift"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S200": {
+    "id": "S200",
+    "name": "Mesprit",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Aroma Veil",
+    "abilitySlot": 2,
+    "moves": [
+      "Extrasensory",
+      "Charm",
+      "Future Sight",
+      "Swift"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S201": {
+    "id": "S201",
+    "name": "Azelf",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Own Tempo",
+    "abilitySlot": 2,
+    "moves": [
+      "Extrasensory",
+      "Nasty Plot",
+      "Uproar",
+      "Swift"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S202": {
+    "id": "S202",
+    "name": "Kyurem",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Slush Rush",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S203": {
+    "id": "S203",
+    "name": "Altaria",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Natural Cure",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S204": {
+    "id": "S204",
+    "name": "Yanmega",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Speed Boost",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S205": {
+    "id": "S205",
+    "name": "Sigilyph",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Tinted Lens",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S206": {
+    "id": "S206",
+    "name": "Swanna",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Cloud Nine",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S207": {
+    "id": "S207",
+    "name": "Swellow",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Guts",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S208": {
+    "id": "S208",
+    "name": "Drapion",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Tough Claws",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S209": {
+    "id": "S209",
+    "name": "Audino",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Triage",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S210": {
+    "id": "S210",
+    "name": "Heliolisk",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dry Skin",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S211": {
+    "id": "S211",
+    "name": "Nuzleaf",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Chlorophyll",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S212": {
+    "id": "S212",
+    "name": "Grumpig",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Thick Fat",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S213": {
+    "id": "S213",
+    "name": "Abomasnow",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Snow Warning",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S214": {
+    "id": "S214",
+    "name": "Medicham",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Pure Power",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S215": {
+    "id": "S215",
+    "name": "Hippowdon",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Sand Stream",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S216": {
+    "id": "S216",
+    "name": "Crustle",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Stamina",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S217": {
+    "id": "S217",
+    "name": "Magcargo",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Solid Rock",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S218": {
+    "id": "S218",
+    "name": "Barbaracle",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Multistriker",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S219": {
+    "id": "S219",
+    "name": "Lombre",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hydration",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S220": {
+    "id": "S220",
+    "name": "Stunfisk",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Electric Surge",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S221": {
+    "id": "S221",
+    "name": "Floatzel",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Swift Swim",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S222": {
+    "id": "S222",
+    "name": "Quagsire",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Unaware",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S223": {
+    "id": "S223",
+    "name": "Nihilego",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Clear Body",
+    "abilitySlot": 2,
+    "moves": [
+      "Power Gem",
+      "Acid Spray",
+      "Stealth Rock",
+      "Mirror Coat"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S224": {
+    "id": "S224",
+    "name": "Buzzwole",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Guts",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S225": {
+    "id": "S225",
+    "name": "Pheromosa",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Regal Presence",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Speed",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S226": {
+    "id": "S226",
+    "name": "Xurkitree",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Dazzling",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S227": {
+    "id": "S227",
+    "name": "Celesteela",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Battle Armor",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S228": {
+    "id": "S228",
+    "name": "Kartana",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Hyper Cutter",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S229": {
+    "id": "S229",
+    "name": "Guzzlord",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Gluttony",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S230": {
+    "id": "S230",
+    "name": "Gumshoos",
+    "level": 60,
+    "item": "Chople Berry",
+    "nature": "Impish",
+    "ability": "Regal Presence (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Hyper Fang",
+      "Ice Fang",
+      "Protect",
+      "Crunch"
+    ],
+    "aura": {
+      "effect": "All Stats",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": "S231",
+      "secondary": null
+    }
+  },
+  "S231": {
+    "id": "S231",
+    "name": "Yungoos",
+    "level": 58,
+    "item": null,
+    "nature": "Jolly",
+    "ability": "Strong Jaw",
+    "abilitySlot": 2,
+    "moves": [
+      "Yawn",
+      "Mud-Slap",
+      "Torment",
+      "Super Fang"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S232": {
+    "id": "S232",
+    "name": "Raticate",
+    "level": 60,
+    "item": "Chople Berry",
+    "nature": "Impish",
+    "ability": "Unknown",
+    "abilitySlot": 4,
+    "moves": [
+      "Hyper Fang",
+      "Throat Chop",
+      "Protect",
+      "Double Team"
+    ],
+    "aura": {
+      "effect": "All Stats",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": "S233",
+      "secondary": null
+    }
+  },
+  "S233": {
+    "id": "S233",
+    "name": "Rattata",
+    "level": 58,
+    "item": null,
+    "nature": "Jolly",
+    "ability": "Unknown",
+    "abilitySlot": 4,
+    "moves": [
+      "Super Fang",
+      "Tail Whip",
+      "Torment",
+      "Crunch"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S234": {
+    "id": "S234",
+    "name": "Bewear",
+    "level": 42,
+    "item": "Normalium Z",
+    "nature": "Random",
+    "ability": "Sheer Force",
+    "abilitySlot": 2,
+    "moves": [
+      "Pain Split",
+      "Take Down",
+      "Charm",
+      "Submission"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S235": {
+    "id": "S235",
+    "name": "Hypno",
+    "level": 42,
+    "item": null,
+    "nature": "Random",
+    "ability": "Telepathy (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Hypnosis",
+      "Nightmare",
+      "Dream Eater",
+      "Yawn"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S236": {
+    "id": "S236",
+    "name": "Hypno",
+    "level": 42,
+    "item": null,
+    "nature": "Random",
+    "ability": "Bad Dreams",
+    "abilitySlot": 2,
+    "moves": [
+      "Nasty Plot",
+      "Psybeam",
+      "Disable",
+      "Poison Gas"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S237": {
+    "id": "S237",
+    "name": "Hypno",
+    "level": 42,
+    "item": null,
+    "nature": "Random",
+    "ability": "Bad Dreams",
+    "abilitySlot": 2,
+    "moves": [
+      "Poison Jab",
+      "Disable",
+      "Meditate",
+      "Zen Headbutt"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S238": {
+    "id": "S238",
+    "name": "Gastly",
+    "level": 23,
+    "item": "Sitrus Berry",
+    "nature": "Random",
+    "ability": "Cursed Body",
+    "abilitySlot": 2,
+    "moves": [
+      "Hex",
+      "Startle",
+      "Curse",
+      "Smog"
+    ],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S239": {
+    "id": "S239",
+    "name": "Drifloon",
+    "level": 23,
+    "item": "Sitrus Berry",
+    "nature": "Random",
+    "ability": "Aftermath (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Startle",
+      "Payback",
+      "Air Cutter",
+      "Ominous Wind"
+    ],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S240": {
+    "id": "S240",
+    "name": "Sandygast",
+    "level": 30,
+    "item": null,
+    "nature": "Random",
+    "ability": "Water Compaction",
+    "abilitySlot": 1,
+    "moves": [
+      "Startle",
+      "Bulldoze",
+      "Mega Drain",
+      "Sand Tomb"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S241": {
+    "id": "S241",
+    "name": "Frillish",
+    "level": 34,
+    "item": null,
+    "nature": "Random",
+    "ability": "Water Absorb",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S242": {
+    "id": "S242",
+    "name": "Ditto",
+    "level": 41,
+    "item": "Enigma Berry",
+    "nature": "Jolly",
+    "ability": "Color Change (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Transform",
+      "Mimic",
+      "Me First",
+      "Copycat"
+    ],
+    "aura": {
+      "effect": "Speed",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S243": {
+    "id": "S243",
+    "name": "Ditto",
+    "level": 41,
+    "item": "Metal Powder",
+    "nature": "Bold",
+    "ability": "Imposter",
+    "abilitySlot": 2,
+    "moves": [
+      "Rest",
+      "Mimic",
+      "Sleep Talk",
+      "Copycat"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S244": {
+    "id": "S244",
+    "name": "Ditto",
+    "level": 41,
+    "item": "Assault Vest",
+    "nature": "Adamant",
+    "ability": "Color Change (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Transform",
+      "Mimic",
+      "Me First",
+      "Copycat"
+    ],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S245": {
+    "id": "S245",
+    "name": "Ditto",
+    "level": 41,
+    "item": "Quick Powder",
+    "nature": "Modest",
+    "ability": "Unknown",
+    "abilitySlot": 4,
+    "moves": [
+      "Camouflage",
+      "Mimic",
+      "Me First",
+      "Copycat"
+    ],
+    "aura": {
+      "effect": "All Stats",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S246": {
+    "id": "S246",
+    "name": "Ditto",
+    "level": 41,
+    "item": "Leftovers",
+    "nature": "Timid",
+    "ability": "Color Change (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Transform",
+      "Mimic",
+      "Me First",
+      "Copycat"
+    ],
+    "aura": {
+      "effect": "All Stats",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S247": {
+    "id": "S247",
+    "name": "Zygarde",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Aura Break",
+    "abilitySlot": 2,
+    "moves": [
+      "Land’s Wrath",
+      "Glare",
+      "Safeguard",
+      "Dragon Breath"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S248": {
+    "id": "S248",
+    "name": "Stakataka",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Solid Rock",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S249": {
+    "id": "S249",
+    "name": "Blacephalon",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Aftermath",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Attack",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S250": {
+    "id": "S250",
+    "name": "Marowak",
+    "level": 33,
+    "item": "Chesto Berry",
+    "nature": "Impish",
+    "ability": "Multistriker",
+    "abilitySlot": 2,
+    "moves": [
+      "Rock Smash",
+      "Will-O-Wisp",
+      "Hex",
+      "Flame Wheel"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": "S251",
+      "secondary": null
+    }
+  },
+  "S251": {
+    "id": "S251",
+    "name": "Salandit",
+    "level": 31,
+    "item": null,
+    "nature": "Calm",
+    "ability": "Oblivious (H)",
+    "abilitySlot": 1,
+    "moves": [
+      "Torment",
+      "Venom Drench",
+      "Fire Lash",
+      "Toxic"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S252": {
+    "id": "S252",
+    "name": "Electrode",
+    "level": 60,
+    "item": null,
+    "nature": "Random",
+    "ability": "Galvanize",
+    "abilitySlot": 2,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  }
+}

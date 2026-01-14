@@ -352,6 +352,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		renderTrainers: function(q) {
 		q = (q || '').toLowerCase();
 		const list = (window.Trainers || []);
+		const staticEncounters = Object.values(window.StaticEncounters || {});
 		let buf = '<ul class="utilichart nokbd">';
 		// Helper function to check if a Pokemon has illegal ability or moves
 		const isIllegal = function(pokemon, speciesData) {
@@ -386,6 +387,8 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 			}
 			return false;
 		};
+		
+		// Render trainers
 		for (let i = 0; i < list.length; i++) {
 			const t = list[i];
 			const display = '[' + t.id + '] ' + escapeHTML(t.name);
@@ -420,6 +423,24 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 					thumb +
 					'<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1;' + nameStyle + '">' + display + '</span>' +
 					'<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' +
+				'</a>' +
+			'</li>';
+		}
+		
+		// Render static encounters
+		for (let i = 0; i < staticEncounters.length; i++) {
+			const s = staticEncounters[i];
+			const display = '[' + s.id + '] ' + escapeHTML(s.name);
+			if (q && display.toLowerCase().indexOf(q) === -1) continue;
+			
+			// Get pokemon icon for static encounter
+			const monID = toID(s.name);
+			const monIcon = getPokemonIcon(monID);
+			
+			buf += '<li class="result">' +
+				'<a href="' + Config.baseurl + 'encounters/' + s.id + '" data-target="push">' +
+					'<span class="picon" style="' + monIcon + ';display:inline-block;vertical-align:middle;margin-right:4px"></span>' +
+					'<span class="col namecol">' + display + ' (Lv. ' + s.level + ')</span>' +
 				'</a>' +
 			'</li>';
 		}

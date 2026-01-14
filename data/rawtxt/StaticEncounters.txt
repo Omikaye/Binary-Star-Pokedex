@@ -1,0 +1,1007 @@
+001 - Rattata
+Rattata (Lv. 4) @Oran Berry [Random] {Hustle (2)} <Quick Attack/Snatch/Fling/(None)>
+Aura: None (SOS: None, None)
+
+002 - Nihilego
+Nihilego (Lv. 43) @Poisonium Z [Calm] {Clear Body (2)} <Baneful Bunker/Giga Drain/Venoshock/Power Gem>
+Aura: Defense (+2) (SOS: None, None)
+
+003 - Solgaleo
+Solgaleo (Lv. 60) @(None) [Random] {Full Metal Body (2)} <Sunsteel Strike/Cosmic Power/Crunch/Zen Headbutt>
+Aura: None (SOS: None, None)
+
+004 - Lunala
+Lunala (Lv. 60) @(None) [Random] {Shadow Shield (2)} <Moongeist Beam/Cosmic Power/Night Daze/Moonblast>
+Aura: None (SOS: None, None)
+
+005 - Gumshoos
+Gumshoos (Lv. 16) @Lum Berry [Modest] {Regal Presence (H)} <Tackle/Odor Sleuth/Bite/Bide>
+Aura: Defense (+1) (SOS: 009, None)
+
+006 - Yungoos
+Yungoos (Lv. 13) @(None) [Hardy] {Strong Jaw (2)} <Pursuit/Bide/Bite/Tackle>
+Aura: Sp. Defense (+2) (SOS: None, None)
+
+007 - Raticate
+Raticate (Lv. 14) @Kee Berry [Impish] {Thick Fat (2)} <Me First/Tackle/Slink Strike/Reversal>
+Aura: Defense (+1) (SOS: None, None)
+
+008 - Teddiursa
+Teddiursa (Lv. 13) @(None) [Naughty] {Honey Gather (H)} <Lick/Mud Shot/Fury Swipes/Yawn>
+Aura: Speed (+1) (SOS: None, None)
+
+009 - Rattata
+Rattata (Lv. 12) @(None) [Lonely] {Pickpocket (H)} <Slink Strike/Snatch/Quick Attack/Quash>
+Aura: None (SOS: None, None)
+
+010 - Raticate
+Raticate (Lv. 12) @Pecha Berry [Modest] {Stamina (2)} <Super Fang/Bite/Fury Swipes/Scary Face>
+Aura: Defense (+1) (SOS: 014, None)
+
+011 - Rattata
+Rattata (Lv. 11) @(None) [Hardy] {Hustle (2)} <Tackle/Tail Whip/Quick Attack/Hyper Fang>
+Aura: None (SOS: None, None)
+
+012 - Raticate
+Raticate (Lv. 11) @(None) [Mild] {Thick Fat (2)} <Focus Energy/Tail Whip/Tackle/Super Fang>
+Aura: None (SOS: None, None)
+
+013 - Rattata
+Rattata (Lv. 11) @(None) [Hardy] {Hustle (2)} <Tackle/Tail Whip/Quick Attack/Super Fang>
+Aura: None (SOS: None, None)
+
+014 - Rattata
+Rattata (Lv. 10) @(None) [Timid] {Pickpocket (H)} <Tackle/Tail Whip/Quick Attack/Pursuit>
+Aura: None (SOS: None, None)
+
+015 - Wishiwashi
+Wishiwashi (Lv. 20) @Sitrus Berry [Adamant] {Schooling (2)} <Water Gun/Growl/Rain Dance/Soak>
+Aura: Defense (+1) (SOS: 018, 019)
+
+016 - Goldeen
+Goldeen (Lv. 25) @(None) [Jolly] {Water Veil (H)} <Water Pulse/Horn Attack/Aqua Ring/Aqua Jet>
+Aura: Attack (+1) (SOS: None, None)
+
+017 - Wishiwashi
+Wishiwashi (Lv. 26) @(None) [Brave] {Schooling (2)} <Aqua Ring/Whirlpool/Aqua Tail/U-turn>
+Aura: Sp. Defense (+1) (SOS: None, None)
+
+018 - Alomomola
+Alomomola (Lv. 18) @(None) [Naughty] {Soul-Heart (2)} <Helping Hand/Double Slap/Heal Pulse/Water Gun>
+Aura: None (SOS: None, None)
+
+019 - Wishiwashi
+Wishiwashi (Lv. 18) @(None) [Random] {Schooling (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+020 - Salazzle
+Salazzle (Lv. 22) @Petaya Berry [Calm] {Merciless (2)} <Torment/Venom Drench/Toxic/Flame Burst>
+Aura: Sp. Defense (+1) (SOS: 024, None)
+
+021 - Marowak
+Marowak (Lv. 31) @(None) [Serious] {Cursed Body (H)} <Will-O-Wisp/Bonemerang/Shadow Bone/Flame Wheel>
+Aura: None (SOS: None, None)
+
+022 - Marowak
+Marowak (Lv. 31) @(None) [Serious] {Cursed Body (H)} <Will-O-Wisp/Bonemerang/Shadow Bone/Flame Wheel>
+Aura: None (SOS: None, None)
+
+023 - Pikachu
+Pikachu (Lv. 20) @(None) [Lax] {Lightning Rod (2)} <Electro Ball/Thunder Wave/Quick Attack/Play Nice>
+Aura: None (SOS: None, None)
+
+024 - Salandit
+Salandit (Lv. 20) @(None) [Quiet] {Corrosion (2)} <Poison Gas/Venoshock/Taunt/Scratch>
+Aura: None (SOS: None, None)
+
+025 - Lurantis
+Lurantis (Lv. 37) @Coba Berry [Calm] {8} <Low Sweep/Acrobatics/Leech Seed/Solar Blade>
+Aura: Defense (+1) (SOS: 032, 033)
+
+026 - Parasect
+Parasect (Lv. 22) @(None) [Lonely] {Dry Skin (H)} <Cross Poison/Leech Life/Fury Cutter/Spore>
+Aura: None (SOS: None, None)
+
+027 - Shiinotic
+Shiinotic (Lv. 22) @(None) [Calm] {Misty Surge (1)} <Startle/Ingrain/Mega Drain/Sleep Powder>
+Aura: None (SOS: None, None)
+
+028 - Fomantis
+Fomantis (Lv. 23) @(None) [Impish] {Contrary (2)} <Razor Leaf/Trailblaze/Fury Cutter/Growth>
+Aura: None (SOS: None, None)
+
+029 - Fomantis
+Fomantis (Lv. 23) @(None) [Adamant] {Contrary (2)} <Razor Leaf/Trailblaze/Fury Cutter/Growth>
+Aura: None (SOS: None, None)
+
+030 - Fomantis
+Fomantis (Lv. 23) @(None) [Gentle] {Contrary (2)} <Trailblaze/Fury Cutter/Ingrain/Razor Leaf>
+Aura: None (SOS: None, None)
+
+031 - Fomantis
+Fomantis (Lv. 23) @(None) [Sassy] {Contrary (2)} <Trailblaze/Fury Cutter/Ingrain/Razor Leaf>
+Aura: None (SOS: None, None)
+
+032 - Whimsicott
+Whimsicott (Lv. 33) @(None) [Timid] {Fluffy (2)} <Tailwind/Mega Drain/Aromatic Mist/Grassy Terrain>
+Aura: None (SOS: None, None)
+
+033 - Sunflora
+Sunflora (Lv. 33) @(None) [Quiet] {Solar Power (2)} <Flower Shield/Grassy Terrain/Incinerate/Will-O-Wisp>
+Aura: None (SOS: None, None)
+
+034 - Vikavolt
+Vikavolt (Lv. 29) @Occa Berry [Sassy] {Electric Surge (2)} <Psycrush/Charge/Bug Bite/Spark>
+Aura: All Stats (+1) (SOS: 039, 038)
+
+035 - Grubbin
+Grubbin (Lv. 27) @(None) [Lonely] {Minus (2)} <Psycrush/String Shot/Bite/Bug Bite>
+Aura: None (SOS: None, None)
+
+036 - Charjabug
+Charjabug (Lv. 27) @(None) [Adamant] {Plus (2)} <Charge/Psycrush/Bug Bite/Spark>
+Aura: None (SOS: None, None)
+
+037 - Charjabug
+Charjabug (Lv. 27) @(None) [Naughty] {Plus (2)} <Charge/Mud-Slap/Acrobatics/Spark>
+Aura: None (SOS: None, None)
+
+038 - Charjabug
+Charjabug (Lv. 27) @(None) [Jolly] {Plus (2)} <String Shot/Psycrush/Mud-Slap/Thunder Wave>
+Aura: None (SOS: None, None)
+
+039 - Charjabug
+Charjabug (Lv. 28) @(None) [Brave] {Plus (2)} <Bite/Thunder Wave/Mud-Slap/Spark>
+Aura: None (SOS: None, None)
+
+040 - Mimikyu
+Mimikyu (Lv. 55) @Lum Berry [Impish] {Disguise (2)} <Phantom Force/Hypnosis/Nightmare/Play Rough>
+Aura: Sp. Defense (+2) (SOS: 045, 044)
+
+041 - Banette
+Banette (Lv. 50) @(None) [Timid] {Prankster (2)} <Shadow Punch/Sucker Punch/Meditate/Snatch>
+Aura: None (SOS: None, None)
+
+042 - Mismagius
+Mismagius (Lv. 51) @(None) [Rash] {Magic Guard (2)} <Trick-or-Treat/Shadow Ball/Mystical Fire/Psychic>
+Aura: None (SOS: None, None)
+
+043 - Gengar
+Gengar (Lv. 52) @(None) [Quiet] {Cursed Body (2)} <Sludge Bomb/Trick-or-Treat/Hypnosis/Dream Eater>
+Aura: None (SOS: None, None)
+
+044 - Palossand
+Palossand (Lv. 50) @(None) [Quiet] {Sand Stream (2)} <Shore Up/Mud Bomb/Destiny Bond/Skill Swap>
+Aura: None (SOS: None, None)
+
+045 - Chandelure
+Chandelure (Lv. 50) @(None) [Modest] {Shadow Tag (H)} <Curse/Hex/Memento/Mystical Fire>
+Aura: None (SOS: None, None)
+
+046 - Kommo-o
+Kommo-o (Lv. 49) @Roseli Berry [Calm] {Multiscale (H)} <Drain Punch/Dragon Claw/Thunder Punch/Poison Jab>
+Aura: All Stats (+1) (SOS: 050, 049)
+
+047 - Jangmo-o
+Jangmo-o (Lv. 42) @(None) [Naughty] {Soundproof (2)} <Bide/Tackle/Leer/Headbutt>
+Aura: None (SOS: None, None)
+
+048 - Hakamo-o
+Hakamo-o (Lv. 44) @(None) [Brave] {Soundproof (2)} <Headbutt/Autotomize/Work Up/Sky Uppercut>
+Aura: None (SOS: None, None)
+
+049 - Noivern
+Noivern (Lv. 48) @(None) [Timid] {Frisk (H)} <Boomburst/Screech/Dragon Pulse/Air Slash>
+Aura: None (SOS: None, None)
+
+050 - Scizor
+Scizor (Lv. 46) @(None) [Brave] {Light Metal (H)} <Light Screen/Pursuit/Bullet Punch/X-Scissor>
+Aura: None (SOS: None, None)
+
+051 - Nihilego
+Nihilego (Lv. 55) @(None) [Random] {Clear Body (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Defense (+2) (SOS: None, None)
+
+052 - Nihilego
+Nihilego (Lv. 55) @(None) [Random] {Clear Body (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Defense (+2) (SOS: None, None)
+
+053 - Buzzwole
+Buzzwole (Lv. 65) @(None) [Random] {Guts (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+054 - Buzzwole
+Buzzwole (Lv. 65) @(None) [Random] {Guts (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+055 - Pheromosa
+Pheromosa (Lv. 60) @(None) [Random] {Regal Presence (2)} <(None)/(None)/(None)/(None)>
+Aura: Speed (+2) (SOS: None, None)
+
+056 - Pheromosa
+Pheromosa (Lv. 60) @(None) [Random] {Regal Presence (2)} <(None)/(None)/(None)/(None)>
+Aura: Speed (+2) (SOS: None, None)
+
+057 - Pheromosa
+Pheromosa (Lv. 60) @(None) [Random] {Regal Presence (2)} <(None)/(None)/(None)/(None)>
+Aura: Speed (+2) (SOS: None, None)
+
+058 - Pheromosa
+Pheromosa (Lv. 60) @(None) [Random] {Regal Presence (2)} <(None)/(None)/(None)/(None)>
+Aura: Speed (+2) (SOS: None, None)
+
+059 - Xurkitree
+Xurkitree (Lv. 65) @(None) [Random] {Dazzling (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+060 - Xurkitree
+Xurkitree (Lv. 65) @(None) [Random] {Dazzling (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+061 - Xurkitree
+Xurkitree (Lv. 65) @(None) [Random] {Dazzling (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+062 - Xurkitree
+Xurkitree (Lv. 65) @(None) [Random] {Dazzling (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+063 - Xurkitree
+Xurkitree (Lv. 65) @(None) [Random] {Dazzling (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+064 - Xurkitree
+Xurkitree (Lv. 65) @(None) [Random] {Dazzling (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+065 - Xurkitree
+Xurkitree (Lv. 65) @(None) [Random] {Dazzling (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+066 - Xurkitree
+Xurkitree (Lv. 65) @(None) [Random] {Dazzling (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+067 - Xurkitree
+Xurkitree (Lv. 65) @(None) [Random] {Dazzling (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+068 - Xurkitree
+Xurkitree (Lv. 65) @(None) [Random] {Dazzling (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+069 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+070 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+071 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+072 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+073 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+074 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+075 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+076 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+077 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+078 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+079 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+080 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+081 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+082 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+083 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+084 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+085 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+086 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+087 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+088 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+089 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+090 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+091 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+092 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+093 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+094 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+095 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+096 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+097 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+098 - Celesteela
+Celesteela (Lv. 65) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+099 - Guzzlord
+Guzzlord (Lv. 70) @(None) [Random] {Gluttony (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+100 - Necrozma
+Necrozma (Lv. 75) @(None) [Random] {Prism Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+101 - Charmander
+Charmander (Lv. 12) @(None) [Random] {Flame Body (1)} <Counter/Smoke Out/Ember/Scratch>
+Aura: None (SOS: None, None)
+
+102 - Squirtle
+Squirtle (Lv. 12) @(None) [Random] {Rain Dish (1)} <Aqua Jet/Withdraw/Water Gun/Tackle>
+Aura: None (SOS: None, None)
+
+103 - Onix
+Onix (Lv. 14) @(None) [Random] {Solid Rock (1)} <Rototiller/Rage/Rock Tomb/Spall>
+Aura: None (SOS: None, None)
+
+104 - Horsea
+Horsea (Lv. 18) @(None) [Random] {Swift Swim (1)} <Water Pulse/Twister/Water Gun/Leer>
+Aura: None (SOS: None, None)
+
+105 - Scatterbug
+Scatterbug (Lv. 9) @(None) [Random] {Friend Guard (1)} <Rage Powder/String Shot/Stun Spore/Tackle>
+Aura: None (SOS: None, None)
+
+106 - Bulbasaur
+Bulbasaur (Lv. 10) @(None) [Random] {Leaf Guard (1)} <Grassy Terrain/Vine Whip/Growl/Tackle>
+Aura: None (SOS: None, None)
+
+107 - Litwick
+Litwick (Lv. 9) @(None) [Random] {Flash Fire (1)} <Endure/Ember/Fire Spin/Smog>
+Aura: None (SOS: None, None)
+
+108 - Ralts
+Ralts (Lv. 17) @(None) [Random] {Synchronize (1)} <Misty Terrain/Magical Leaf/Lucky Chant/Disarming Voice>
+Aura: None (SOS: None, None)
+
+109 - Spheal
+Spheal (Lv. 19) @(None) [Random] {Snow Cloak (1)} <Belly Drum/Brine/Ice Ball/Encore>
+Aura: None (SOS: None, None)
+
+110 - Combusken
+Combusken (Lv. 20) @(None) [Random] {Tough Claws (1)} <Low Kick/Flame Charge/Peck/Sand Down>
+Aura: None (SOS: None, None)
+
+111 - Honedge
+Honedge (Lv. 24) @(None) [Random] {No Guard (1)} <Wide Guard/Aerial Ace/Shadow Sneak/Autotomize>
+Aura: None (SOS: None, None)
+
+112 - Beedrill
+Beedrill (Lv. 14) @(None) [Random] {Poison Touch (1)} <Rage/Flurry Peck/Twineedle/(None)>
+Aura: None (SOS: None, None)
+
+113 - Grovyle
+Grovyle (Lv. 16) @(None) [Random] {Lightning Rod (1)} <Grassy Terrain/Mega Drain/Quick Attack/Absorb>
+Aura: None (SOS: None, None)
+
+114 - Marshtomp
+Marshtomp (Lv. 17) @(None) [Random] {Wonder Skin (1)} <Counter/Foresight/Mud-Slap/Water Gun>
+Aura: None (SOS: None, None)
+
+115 - Rhyhorn
+Rhyhorn (Lv. 32) @(None) [Random] {Lightning Rod (1)} <Guard Split/Rock Blast/Chip Away/Bulldoze>
+Aura: None (SOS: None, None)
+
+116 - Swinub
+Swinub (Lv. 33) @(None) [Random] {Oblivious (1)} <Icicle Spear/Take Down/Ice Shard/Icy Wind>
+Aura: None (SOS: None, None)
+
+117 - Prinplup
+Prinplup (Lv. 35) @(None) [Random] {Competitive (1)} <Power Trip/Brine/Flurry Peck/Bide>
+Aura: None (SOS: None, None)
+
+118 - Grotle
+Grotle (Lv. 36) @(None) [Random] {Sap Sipper (1)} <Heavy Slam/Leech Seed/Mega Drain/Bite>
+Aura: None (SOS: None, None)
+
+119 - Grotle
+Grotle (Lv. 36) @(None) [Random] {Sap Sipper (1)} <Heavy Slam/Leech Seed/Mega Drain/Bite>
+Aura: None (SOS: None, None)
+
+120 - Pidgeot
+Pidgeot (Lv. 29) @(None) [Random] {Keen Eye (1)} <Steel Wing/Feather Dance/Twister/Quick Attack>
+Aura: None (SOS: None, None)
+
+121 - Monferno
+Monferno (Lv. 29) @(None) [Random] {Unburden (1)} <Power-Up Punch/Flame Wheel/Fury Swipes/Torment>
+Aura: None (SOS: None, None)
+
+122 - Axew
+Axew (Lv. 30) @(None) [Random] {Hyper Cutter (1)} <Counter/Dragon Claw/False Swipe/Slash>
+Aura: None (SOS: None, None)
+
+123 - Eelektross
+Eelektross (Lv. 55) @(None) [Random] {Levitate (1)} <Crunch/Discharge/Headbutt/Crush Claw>
+Aura: None (SOS: None, None)
+
+124 - Aggron
+Aggron (Lv. 57) @(None) [Random] {Battle Armor (1)} <Reversal/Heavy Slam/Double-Edge/Iron Defense>
+Aura: None (SOS: None, None)
+
+125 - Rotom
+Rotom (Lv. 61) @(None) [Random] {Levitate (1)} <Charge/Hex/Electro Ball/Substitute>
+Aura: None (SOS: None, None)
+
+126 - Leavanny
+Leavanny (Lv. 57) @(None) [Random] {Hyper Cutter (1)} <Grassy Terrain/Leaf Storm/Swords Dance/Entrainment>
+Aura: None (SOS: None, None)
+
+127 - Chesnaught
+Chesnaught (Lv. 45) @(None) [Random] {Bulletproof (1)} <Spikes/Mud Shot/Seed Bomb/Spiky Shield>
+Aura: None (SOS: None, None)
+
+128 - Greninja
+Greninja (Lv. 44) @(None) [Random] {Protean (1)} <Bestow/Substitute/Slink Strike/Water Shuriken>
+Aura: None (SOS: None, None)
+
+129 - Delphox
+Delphox (Lv. 44) @(None) [Random] {Magician (1)} <Wish/Psyshock/Light Screen/Mystical Fire>
+Aura: None (SOS: None, None)
+
+130 - Tapu Koko
+Tapu Koko (Lv. 60) @(None) [Random] {Electric Surge (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+131 - Tapu Lele
+Tapu Lele (Lv. 60) @(None) [Random] {Psychic Surge (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+132 - Tapu Bulu
+Tapu Bulu (Lv. 60) @(None) [Random] {Grassy Surge (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+133 - Tapu Fini
+Tapu Fini (Lv. 60) @(None) [Random] {Misty Surge (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+134 - Ekans
+Ekans (Lv. 10) @(None) [Random] {Shed Skin (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+135 - Exeggutor
+Exeggutor (Lv. 40) @(None) [Random] {Harvest (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+136 - Tapu Koko
+Tapu Koko (Lv. 60) @(None) [Random] {Electric Surge (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+137 - Leavanny
+Leavanny (Lv. 57) @(None) [Random] {Hyper Cutter (1)} <Grassy Terrain/Leaf Storm/Swords Dance/Entrainment>
+Aura: None (SOS: None, None)
+
+138 - Araquanid
+Araquanid (Lv. 27) @Wacan Berry [Impish] {Water Bubble (2)} <Icy Wind/Twineedle/Aqua Ring/Bubble>
+Aura: Defense (+1) (SOS: 141, 142)
+
+139 - Dewpider
+Dewpider (Lv. 25) @(None) [Brave] {Water Bubble (1)} <Bite/Bug Bite/Aqua Ring/Bubble Beam>
+Aura: Attack (+2) (SOS: None, None)
+
+140 - Ducklett
+Ducklett (Lv. 26) @(None) [Lax] {Cloud Nine (1)} <Aerial Ace/Feather Dance/Aqua Ring/Water Pulse>
+Aura: Sp. Defense (+2) (SOS: None, None)
+
+141 - Luvdisc
+Luvdisc (Lv. 23) @(None) [Timid] {Soul-Heart (2)} <Safeguard/Heart Stamp/Lucky Chant/Knock Off>
+Aura: None (SOS: None, None)
+
+142 - Tentacool
+Tentacool (Lv. 24) @(None) [Bold] {8} <Acid Spray/Rain Dance/Clear Smog/Toxic>
+Aura: None (SOS: None, None)
+
+143 - Fomantis
+Fomantis (Lv. 35) @Mago Berry [Impish] {Contrary (2)} <Leaf Blade/Needle Arm/Slash/Synthesis>
+Aura: None (SOS: None, None)
+
+144 - Beedrill
+Beedrill (Lv. 34) @Honey [Lonely] {Swarm (2)} <Flurry Peck/Poison Tail/Twineedle/Focus Energy>
+Aura: None (SOS: None, None)
+
+145 - Vespiquen
+Vespiquen (Lv. 34) @Honey [Sassy] {Multistriker (2)} <Bug Buzz/Defend Order/Power Gem/Confuse Ray>
+Aura: None (SOS: None, None)
+
+146 - Sudowoodo
+Sudowoodo (Lv. 34) @Big Root [Brave] {Rock Head (2)} <Block/Needle Arm/Rock Tomb/Forest’s Curse>
+Aura: None (SOS: None, None)
+
+147 - Togedemaru
+Togedemaru (Lv. 48) @Leftovers [Impish] {Iron Barbs (H)} <Zing Zap/Spiky Shield/Iron Head/Bounce>
+Aura: Sp. Defense (+2) (SOS: 149, 148)
+
+148 - Skarmory
+Skarmory (Lv. 45) @(None) [Impish] {Sturdy (H)} <Stealth Rock/Steel Wing/Tailwind/Torment>
+Aura: None (SOS: None, None)
+
+149 - Pachirisu
+Pachirisu (Lv. 45) @(None) [Jolly] {Cheek Pouch (2)} <Follow Me/Nuzzle/Ion Deluge/Me First>
+Aura: None (SOS: None, None)
+
+150 - Electabuzz
+Electabuzz (Lv. 45) @(None) [Jolly] {Lightning Rod (2)} <Discharge/Thunder Punch/Arm Thrust/Meditate>
+Aura: None (SOS: None, None)
+
+151 - Electrode
+Electrode (Lv. 45) @(None) [Timid] {Galvanize (2)} <Self-Destruct/Discharge/Magnet Rise/Flamethrower>
+Aura: None (SOS: None, None)
+
+152 - Yungoos
+Yungoos (Lv. 3) @(None) [Mild] {Strong Jaw (2)} <Odor Sleuth/Tackle/Leer/(None)>
+Aura: None (SOS: None, None)
+
+153 - Rattata
+Rattata (Lv. 3) @(None) [Mild] {Hustle (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+154 - Rattata
+Rattata (Lv. 4) @Oran Berry [Random] {Hustle (2)} <Quick Attack/Snatch/Fling/(None)>
+Aura: Sp. Defense (+1) (SOS: None, None)
+
+155 - Spearow
+Spearow (Lv. 4) @(None) [Random] {Sniper (2)} <Peck/Double Team/Leer/(None)>
+Aura: Sp. Defense (+1) (SOS: None, None)
+
+156 - Pinsir
+Pinsir (Lv. 42) @(None) [Random] {Moxie (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+157 - Pinsir
+Pinsir (Lv. 43) @(None) [Random] {Moxie (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+158 - Pinsir
+Pinsir (Lv. 42) @(None) [Random] {Moxie (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+159 - Necrozma
+Necrozma (Lv. 50) @(None) [Impish] {Prism Armor (2)} <Sunsteel Strike/Morning Sun/Psycho Cut/Night Slash>
+Aura: None (SOS: None, None)
+
+160 - Necrozma
+Necrozma (Lv. 50) @(None) [Bold] {Prism Armor (2)} <Moongeist Beam/Moonlight/Psychic/Power Gem>
+Aura: None (SOS: None, None)
+
+161 - Necrozma
+Necrozma (Lv. 60) @(None) [Bold] {Neuroforce (2)} <Photon Geyser/Steel Trap/Power Gem/Dragon Pulse>
+Aura: All Stats (+1) (SOS: None, None)
+
+162 - Necrozma
+Necrozma (Lv. 65) @Ultranecrozium Z [Random] {Prism Armor (2)} <Photon Geyser/Iron Defense/Power Gem/Night Slash>
+Aura: None (SOS: None, None)
+
+163 - Ribombee
+Ribombee (Lv. 55) @Occa Berry [Impish] {Serene Grace (H)} <Bug Buzz/Draining Kiss/Quiver Dance/Dazzling Gleam>
+Aura: All Stats (+2) (SOS: 165, 164)
+
+164 - Pelipper
+Pelipper (Lv. 52) @(None) [Timid] {Rain Dish (H)} <Stockpile/Scald/Spit Up/Seed Bomb>
+Aura: None (SOS: None, None)
+
+165 - Blissey
+Blissey (Lv. 53) @(None) [Naughty] {Healer (H)} <Heal Pulse/Light Screen/Helping Hand/Dazzling Gleam>
+Aura: None (SOS: None, None)
+
+166 - Articuno
+Articuno (Lv. 60) @(None) [Random] {Slush Rush (2)} <Ancient Power/Freeze-Dry/Reflect/Hail>
+Aura: None (SOS: None, None)
+
+167 - Zapdos
+Zapdos (Lv. 60) @(None) [Random] {Teravolt (2)} <Ancient Power/Discharge/Pluck/Rain Dance>
+Aura: None (SOS: None, None)
+
+168 - Moltres
+Moltres (Lv. 60) @(None) [Random] {Turboblaze (2)} <Ancient Power/Flamethrower/Air Slash/Sunny Day>
+Aura: None (SOS: None, None)
+
+169 - Ho-Oh
+Ho-Oh (Lv. 60) @Sacred Ash [Random] {Regenerator (2)} <Burn Up/Sacred Fire/Extrasensory/Ancient Power>
+Aura: None (SOS: None, None)
+
+170 - Rayquaza
+Rayquaza (Lv. 60) @(None) [Random] {Air Lock (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+171 - Cresselia
+Cresselia (Lv. 60) @(None) [Random] {Sweet Veil (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+172 - Tornadus
+Tornadus (Lv. 60) @(None) [Random] {Defiant (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+173 - Thundurus
+Thundurus (Lv. 60) @(None) [Random] {Defiant (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+174 - Landorus
+Landorus (Lv. 60) @(None) [Random] {Sheer Force (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+175 - Yveltal
+Yveltal (Lv. 60) @(None) [Random] {Dark Aura (2)} <Oblivion Wing/Dark Pulse/Phantom Force/Psychic>
+Aura: None (SOS: None, None)
+
+176 - Mewtwo
+Mewtwo (Lv. 60) @(None) [Random] {Unnerve (2)} <Psychic/Recover/Swift/Psycho Cut>
+Aura: None (SOS: None, None)
+
+177 - Raikou
+Raikou (Lv. 60) @(None) [Random] {Volt Absorb (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+178 - Entei
+Entei (Lv. 60) @(None) [Random] {Flash Fire (2)} <Trample/Bite/Swagger/Lava Plume>
+Aura: None (SOS: None, None)
+
+179 - Dialga
+Dialga (Lv. 60) @(None) [Random] {Telepathy (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+180 - Cobalion
+Cobalion (Lv. 60) @(None) [Random] {Technician (2)} <Sacred Sword/Swords Dance/Quick Attack/Iron Head>
+Aura: None (SOS: None, None)
+
+181 - Terrakion
+Terrakion (Lv. 60) @(None) [Random] {Reckless (2)} <Sacred Sword/Swords Dance/Rock Slide/Stone Edge>
+Aura: None (SOS: None, None)
+
+182 - Virizion
+Virizion (Lv. 60) @(None) [Random] {Leaf Guard (2)} <Sacred Sword/Swords Dance/Giga Drain/Leaf Blade>
+Aura: None (SOS: None, None)
+
+183 - Reshiram
+Reshiram (Lv. 60) @(None) [Random] {Pressure (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+184 - Zekrom
+Zekrom (Lv. 60) @(None) [Random] {Pressure (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+185 - Xerneas
+Xerneas (Lv. 60) @(None) [Random] {Fairy Aura (2)} <Geomancy/Horn Leech/Night Slash/Moonblast>
+Aura: None (SOS: None, None)
+
+186 - Regirock
+Regirock (Lv. 60) @(None) [Random] {Sand Rush (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+187 - Regice
+Regice (Lv. 60) @(None) [Random] {Slush Rush (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+188 - Registeel
+Registeel (Lv. 60) @(None) [Random] {Steelworker (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+189 - Groudon
+Groudon (Lv. 60) @(None) [Random] {Drought (2)} <Earthquake/Precipice Blades/Bulk Up/Solar Beam>
+Aura: None (SOS: None, None)
+
+190 - Heatran
+Heatran (Lv. 60) @(None) [Random] {Flame Body (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+191 - Regigigas
+Regigigas (Lv. 60) @(None) [Random] {Truant (2)} <Zen Headbutt/Revenge/Dizzy Punch/Confuse Ray>
+Aura: None (SOS: None, None)
+
+192 - Palkia
+Palkia (Lv. 60) @(None) [Random] {Telepathy (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+193 - Giratina
+Giratina (Lv. 60) @(None) [Random] {Shadow Shield (2)} <Shadow Force/Aura Sphere/Earth Power/Dragon Claw>
+Aura: None (SOS: None, None)
+
+194 - Suicune
+Suicune (Lv. 60) @(None) [Random] {Water Absorb (2)} <Bubble Beam/Aurora Beam/Mist/Rain Dance>
+Aura: None (SOS: None, None)
+
+195 - Lugia
+Lugia (Lv. 60) @(None) [Random] {Multiscale (2)} <Skill Swap/Aeroblast/Extrasensory/Ancient Power>
+Aura: None (SOS: None, None)
+
+196 - Latias
+Latias (Lv. 60) @(None) [Random] {Levitate (2)} <Mist Ball/Dragon Pulse/Psycho Shift/Wish>
+Aura: None (SOS: None, None)
+
+197 - Latios
+Latios (Lv. 60) @(None) [Random] {Levitate (2)} <Luster Purge/Dragon Pulse/Psycho Shift/Dragon Breath>
+Aura: None (SOS: None, None)
+
+198 - Kyogre
+Kyogre (Lv. 60) @(None) [Random] {Drizzle (2)} <Ice Beam/Origin Pulse/Calm Mind/Mudslide>
+Aura: None (SOS: None, None)
+
+199 - Uxie
+Uxie (Lv. 60) @(None) [Random] {Forewarn (2)} <Extrasensory/Yawn/Amnesia/Swift>
+Aura: None (SOS: None, None)
+
+200 - Mesprit
+Mesprit (Lv. 60) @(None) [Random] {Aroma Veil (2)} <Extrasensory/Charm/Future Sight/Swift>
+Aura: None (SOS: None, None)
+
+201 - Azelf
+Azelf (Lv. 60) @(None) [Random] {Own Tempo (2)} <Extrasensory/Nasty Plot/Uproar/Swift>
+Aura: None (SOS: None, None)
+
+202 - Kyurem
+Kyurem (Lv. 60) @(None) [Random] {Slush Rush (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+203 - Altaria
+Altaria (Lv. 60) @(None) [Random] {Natural Cure (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+204 - Yanmega
+Yanmega (Lv. 60) @(None) [Random] {Speed Boost (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+205 - Sigilyph
+Sigilyph (Lv. 60) @(None) [Random] {Tinted Lens (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+206 - Swanna
+Swanna (Lv. 60) @(None) [Random] {Cloud Nine (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+207 - Swellow
+Swellow (Lv. 60) @(None) [Random] {Guts (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+208 - Drapion
+Drapion (Lv. 60) @(None) [Random] {Tough Claws (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+209 - Audino
+Audino (Lv. 60) @(None) [Random] {Triage (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+210 - Heliolisk
+Heliolisk (Lv. 60) @(None) [Random] {Dry Skin (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+211 - Nuzleaf
+Nuzleaf (Lv. 60) @(None) [Random] {Chlorophyll (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+212 - Grumpig
+Grumpig (Lv. 60) @(None) [Random] {Thick Fat (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+213 - Abomasnow
+Abomasnow (Lv. 60) @(None) [Random] {Snow Warning (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+214 - Medicham
+Medicham (Lv. 60) @(None) [Random] {Pure Power (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+215 - Hippowdon
+Hippowdon (Lv. 60) @(None) [Random] {Sand Stream (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+216 - Crustle
+Crustle (Lv. 60) @(None) [Random] {Stamina (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+217 - Magcargo
+Magcargo (Lv. 60) @(None) [Random] {Solid Rock (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+218 - Barbaracle
+Barbaracle (Lv. 60) @(None) [Random] {Multistriker (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+219 - Lombre
+Lombre (Lv. 60) @(None) [Random] {Hydration (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+220 - Stunfisk
+Stunfisk (Lv. 60) @(None) [Random] {Electric Surge (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+221 - Floatzel
+Floatzel (Lv. 60) @(None) [Random] {Swift Swim (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+222 - Quagsire
+Quagsire (Lv. 60) @(None) [Random] {Unaware (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+223 - Nihilego
+Nihilego (Lv. 60) @(None) [Random] {Clear Body (2)} <Power Gem/Acid Spray/Stealth Rock/Mirror Coat>
+Aura: Sp. Defense (+2) (SOS: None, None)
+
+224 - Buzzwole
+Buzzwole (Lv. 60) @(None) [Random] {Guts (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+225 - Pheromosa
+Pheromosa (Lv. 60) @(None) [Random] {Regal Presence (2)} <(None)/(None)/(None)/(None)>
+Aura: Speed (+2) (SOS: None, None)
+
+226 - Xurkitree
+Xurkitree (Lv. 60) @(None) [Random] {Dazzling (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+227 - Celesteela
+Celesteela (Lv. 60) @(None) [Random] {Battle Armor (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+228 - Kartana
+Kartana (Lv. 60) @(None) [Random] {Hyper Cutter (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+229 - Guzzlord
+Guzzlord (Lv. 60) @(None) [Random] {Gluttony (2)} <(None)/(None)/(None)/(None)>
+Aura: Attack (+2) (SOS: None, None)
+
+230 - Gumshoos
+Gumshoos (Lv. 60) @Chople Berry [Impish] {Regal Presence (H)} <Hyper Fang/Ice Fang/Protect/Crunch>
+Aura: All Stats (+2) (SOS: 231, None)
+
+231 - Yungoos
+Yungoos (Lv. 58) @(None) [Jolly] {Strong Jaw (2)} <Yawn/Mud-Slap/Torment/Super Fang>
+Aura: None (SOS: None, None)
+
+232 - Raticate
+Raticate (Lv. 60) @Chople Berry [Impish] {4} <Hyper Fang/Throat Chop/Protect/Double Team>
+Aura: All Stats (+2) (SOS: 233, None)
+
+233 - Rattata
+Rattata (Lv. 58) @(None) [Jolly] {4} <Super Fang/Tail Whip/Torment/Crunch>
+Aura: None (SOS: None, None)
+
+234 - Bewear
+Bewear (Lv. 42) @Normalium Z [Random] {Sheer Force (2)} <Pain Split/Take Down/Charm/Submission>
+Aura: Sp. Defense (+2) (SOS: None, None)
+
+235 - Hypno
+Hypno (Lv. 42) @(None) [Random] {Telepathy (H)} <Hypnosis/Nightmare/Dream Eater/Yawn>
+Aura: None (SOS: None, None)
+
+236 - Hypno
+Hypno (Lv. 42) @(None) [Random] {Bad Dreams (2)} <Nasty Plot/Psybeam/Disable/Poison Gas>
+Aura: None (SOS: None, None)
+
+237 - Hypno
+Hypno (Lv. 42) @(None) [Random] {Bad Dreams (2)} <Poison Jab/Disable/Meditate/Zen Headbutt>
+Aura: None (SOS: None, None)
+
+238 - Gastly
+Gastly (Lv. 23) @Sitrus Berry [Random] {Cursed Body (2)} <Hex/Startle/Curse/Smog>
+Aura: Sp. Attack (+1) (SOS: None, None)
+
+239 - Drifloon
+Drifloon (Lv. 23) @Sitrus Berry [Random] {Aftermath (H)} <Startle/Payback/Air Cutter/Ominous Wind>
+Aura: Sp. Attack (+1) (SOS: None, None)
+
+240 - Sandygast
+Sandygast (Lv. 30) @(None) [Random] {Water Compaction (1)} <Startle/Bulldoze/Mega Drain/Sand Tomb>
+Aura: None (SOS: None, None)
+
+241 - Frillish
+Frillish (Lv. 34) @(None) [Random] {Water Absorb (1)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
+
+242 - Ditto
+Ditto (Lv. 41) @Enigma Berry [Jolly] {Color Change (H)} <Transform/Mimic/Me First/Copycat>
+Aura: Speed (+1) (SOS: None, None)
+
+243 - Ditto
+Ditto (Lv. 41) @Metal Powder [Bold] {Imposter (2)} <Rest/Mimic/Sleep Talk/Copycat>
+Aura: Sp. Defense (+2) (SOS: None, None)
+
+244 - Ditto
+Ditto (Lv. 41) @Assault Vest [Adamant] {Color Change (H)} <Transform/Mimic/Me First/Copycat>
+Aura: Defense (+2) (SOS: None, None)
+
+245 - Ditto
+Ditto (Lv. 41) @Quick Powder [Modest] {4} <Camouflage/Mimic/Me First/Copycat>
+Aura: All Stats (+2) (SOS: None, None)
+
+246 - Ditto
+Ditto (Lv. 41) @Leftovers [Timid] {Color Change (H)} <Transform/Mimic/Me First/Copycat>
+Aura: All Stats (+1) (SOS: None, None)
+
+247 - Zygarde
+Zygarde (Lv. 60) @(None) [Random] {Aura Break (2)} <Land’s Wrath/Glare/Safeguard/Dragon Breath>
+Aura: None (SOS: None, None)
+
+248 - Stakataka
+Stakataka (Lv. 60) @(None) [Random] {Solid Rock (2)} <(None)/(None)/(None)/(None)>
+Aura: Defense (+2) (SOS: None, None)
+
+249 - Blacephalon
+Blacephalon (Lv. 60) @(None) [Random] {Aftermath (2)} <(None)/(None)/(None)/(None)>
+Aura: Sp. Attack (+2) (SOS: None, None)
+
+250 - Marowak
+Marowak (Lv. 33) @Chesto Berry [Impish] {Multistriker (2)} <Rock Smash/Will-O-Wisp/Hex/Flame Wheel>
+Aura: Sp. Defense (+1) (SOS: 251, None)
+
+251 - Salandit
+Salandit (Lv. 31) @(None) [Calm] {Oblivious (H)} <Torment/Venom Drench/Fire Lash/Toxic>
+Aura: None (SOS: None, None)
+
+252 - Electrode
+Electrode (Lv. 60) @(None) [Random] {Galvanize (2)} <(None)/(None)/(None)/(None)>
+Aura: None (SOS: None, None)
