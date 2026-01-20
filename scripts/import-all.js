@@ -221,7 +221,15 @@ const formesMap = {}; // baseSpecies -> Set(form names including base)
 for (const key of Object.keys(pokedex)) {
   const data = pokedex[key];
   const name = data.name;
-  const base = name.includes('-') ? name.split('-')[0] : name;
+  
+  // Special case for Nidoran - treat each as its own base species
+  let base;
+  if (name === 'Nidoran-F' || name === 'Nidoran-M') {
+    base = name; // Treat as own base species
+  } else {
+    base = name.includes('-') ? name.split('-')[0] : name;
+  }
+  
   if (!formesMap[base]) formesMap[base] = new Set();
   formesMap[base].add(base); // ensure base present
   if (name !== base) formesMap[base].add(name);
@@ -253,7 +261,15 @@ for (const base of Object.keys(megaBaseToForms)) {
 for (const key of Object.keys(pokedex)) {
   const entry = pokedex[key];
   const name = entry.name;
-  const base = name.includes('-') ? name.split('-')[0] : name;
+  
+  // Special case for Nidoran - treat each as its own base species
+  let base;
+  if (name === 'Nidoran-F' || name === 'Nidoran-M') {
+    base = name; // Treat as own base species
+  } else {
+    base = name.includes('-') ? name.split('-')[0] : name;
+  }
+  
   const allFormes = Array.from(formesMap[base]);
   if (allFormes.length > 1) {
     entry.formes = allFormes;
