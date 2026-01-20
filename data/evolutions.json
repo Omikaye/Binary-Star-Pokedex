@@ -367,7 +367,8 @@
       "item": "Kanto Badge"
     },
     {
-      "target": "slowking"
+      "target": "slowking",
+      "condition": "knowing Calm Mind"
     }
   ],
   "magnemite": [
@@ -486,13 +487,16 @@
       "item": "Kanto Badge"
     },
     {
-      "target": "kangaskhan"
+      "target": "kangaskhan",
+      "condition": "with Marowak in party"
     },
     {
-      "target": "kangaskhan"
+      "target": "kangaskhan",
+      "condition": "with Marowak 1 in party"
     },
     {
-      "target": "kangaskhan"
+      "target": "kangaskhan",
+      "condition": "with Marowak 2 in party"
     }
   ],
   "lickitung": [
@@ -1496,7 +1500,8 @@
   ],
   "budew": [
     {
-      "target": "roselia"
+      "target": "roselia",
+      "condition": "friendship"
     },
     {
       "target": "roselia",
@@ -1602,7 +1607,8 @@
   ],
   "bonsly": [
     {
-      "target": "sudowoodo"
+      "target": "sudowoodo",
+      "condition": "knowing Mimic"
     },
     {
       "target": "sudowoodo",
@@ -2211,35 +2217,40 @@
   ],
   "floette": [
     {
-      "target": "floetteeternal"
+      "target": "floetteeternal",
+      "condition": "knowing Light of Ruin"
     },
     {
       "target": "florges",
       "level": 43
     },
     {
-      "target": "floetteeternal"
+      "target": "floetteeternal",
+      "condition": "knowing Light of Ruin"
     },
     {
       "target": "florges1",
       "level": 43
     },
     {
-      "target": "floetteeternal"
+      "target": "floetteeternal",
+      "condition": "knowing Light of Ruin"
     },
     {
       "target": "florges2",
       "level": 43
     },
     {
-      "target": "floetteeternal"
+      "target": "floetteeternal",
+      "condition": "knowing Light of Ruin"
     },
     {
       "target": "florges3",
       "level": 43
     },
     {
-      "target": "floetteeternal"
+      "target": "floetteeternal",
+      "condition": "knowing Light of Ruin"
     },
     {
       "target": "florges4",

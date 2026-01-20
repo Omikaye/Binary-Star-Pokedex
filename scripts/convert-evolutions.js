@@ -40,56 +40,30 @@ function parseEvolutionLine(line, nameMap) {
 
   for (const part of parts) {
     const evo = { target: '' };
+    
+    // Remove (@) markers that appear in some evolution data
+    const cleanPart = part.replace(/\(\@\)/g, '').trim();
 
-    // Level Up
-    if (part.includes('Level Up') && part.includes('into')) {
-      const levelMatch = part.match(/at level (\d+)/i);
-      const targetMatch = part.match(/into (.+)/i);
+    // Check specific evolution types FIRST before general "Level Up"
+    
+    // Level Up with Friendship
+    if (cleanPart.includes('Level Up with Friendship') && cleanPart.includes('into')) {
+      const targetMatch = cleanPart.match(/into (.+)/i);
       if (targetMatch) {
         let targetName = targetMatch[1].trim();
-        // Normalize dash-number to space-number for dictionary lookup
         const normalizedName = targetName.replace(/-(\d+)$/, ' $1');
-        // Apply dictionary mapping to target
         if (nameMap[normalizedName]) {
           targetName = nameMap[normalizedName];
         }
         evo.target = toID(targetName);
-        if (levelMatch) evo.level = parseInt(levelMatch[1], 10);
-
-        // Check for conditions
-        if (part.includes('at Morning')) evo.condition = 'Morning';
-        if (part.includes('at Night')) evo.condition = 'Night';
-        if (part.includes('Female')) evo.condition = 'Female';
-        if (part.includes('Male')) evo.condition = 'Male';
-        if (part.match(/Attack\s*(<|>|=)\s*Defense/i)) {
-          const condMatch = part.match(/(Attack\s*[<>=]\s*Defense)/i);
-          if (condMatch) evo.condition = condMatch[1];
-        }
-
-        evolutionsList.push(evo);
-      }
-    }
-    // Used Item
-    else if (part.includes('Used Item') && part.includes('into')) {
-      const itemMatch = part.match(/\[([^\]]+)\]/);
-      const targetMatch = part.match(/into (.+)/i);
-      if (targetMatch) {
-        let targetName = targetMatch[1].trim();
-        // Normalize dash-number to space-number for dictionary lookup
-        const normalizedName = targetName.replace(/-(\d+)$/, ' $1');
-        // Apply dictionary mapping to target
-        if (nameMap[normalizedName]) {
-          targetName = nameMap[normalizedName];
-        }
-        evo.target = toID(targetName);
-        if (itemMatch) evo.item = itemMatch[1];
+        evo.condition = 'friendship';
         evolutionsList.push(evo);
       }
     }
     // Level Up with Move
-    else if (part.includes('Level Up with Move') && part.includes('into')) {
-      const moveMatch = part.match(/\[([^\]]+)\]/);
-      const targetMatch = part.match(/into (.+)/i);
+    else if (cleanPart.includes('Level Up with Move') && cleanPart.includes('into')) {
+      const moveMatch = cleanPart.match(/\[([^\]]+)\]/);
+      const targetMatch = cleanPart.match(/into (.+)/i);
       if (targetMatch) {
         let targetName = targetMatch[1].trim();
         const normalizedName = targetName.replace(/-(\d+)$/, ' $1');
@@ -102,9 +76,9 @@ function parseEvolutionLine(line, nameMap) {
       }
     }
     // Level Up with Party
-    else if (part.includes('Level Up with Party') && part.includes('into')) {
-      const partyMatch = part.match(/\[([^\]]+)\]/);
-      const targetMatch = part.match(/into (.+)/i);
+    else if (cleanPart.includes('Level Up with Party') && cleanPart.includes('into')) {
+      const partyMatch = cleanPart.match(/\[([^\]]+)\]/);
+      const targetMatch = cleanPart.match(/into (.+)/i);
       if (targetMatch) {
         let targetName = targetMatch[1].trim();
         const normalizedName = targetName.replace(/-(\d+)$/, ' $1');
@@ -113,6 +87,51 @@ function parseEvolutionLine(line, nameMap) {
         }
         evo.target = toID(targetName);
         if (partyMatch) evo.condition = `with ${partyMatch[1]} in party`;
+        evolutionsList.push(evo);
+      }
+    }
+    // General Level Up (with level number)
+    else if (cleanPart.includes('Level Up') && cleanPart.includes('into')) {
+      const levelMatch = cleanPart.match(/at level (\d+)/i);
+      const targetMatch = cleanPart.match(/into (.+)/i);
+      if (targetMatch) {
+        let targetName = targetMatch[1].trim();
+        // Normalize dash-number to space-number for dictionary lookup
+        const normalizedName = targetName.replace(/-(\d+)$/, ' $1');
+        // Apply dictionary mapping to target
+        if (nameMap[normalizedName]) {
+          targetName = nameMap[normalizedName];
+        }
+        evo.target = toID(targetName);
+        if (levelMatch) evo.level = parseInt(levelMatch[1], 10);
+
+        // Check for conditions
+        if (cleanPart.includes('at Morning')) evo.condition = 'Morning';
+        if (cleanPart.includes('at Night')) evo.condition = 'Night';
+        if (cleanPart.includes('Female')) evo.condition = 'Female';
+        if (cleanPart.includes('Male')) evo.condition = 'Male';
+        if (cleanPart.match(/Attack\s*(<|>|=)\s*Defense/i)) {
+          const condMatch = cleanPart.match(/(Attack\s*[<>=]\s*Defense)/i);
+          if (condMatch) evo.condition = condMatch[1];
+        }
+
+        evolutionsList.push(evo);
+      }
+    }
+    // Used Item
+    else if (cleanPart.includes('Used Item') && cleanPart.includes('into')) {
+      const itemMatch = cleanPart.match(/\[([^\]]+)\]/);
+      const targetMatch = cleanPart.match(/into (.+)/i);
+      if (targetMatch) {
+        let targetName = targetMatch[1].trim();
+        // Normalize dash-number to space-number for dictionary lookup
+        const normalizedName = targetName.replace(/-(\d+)$/, ' $1');
+        // Apply dictionary mapping to target
+        if (nameMap[normalizedName]) {
+          targetName = nameMap[normalizedName];
+        }
+        evo.target = toID(targetName);
+        if (itemMatch) evo.item = itemMatch[1];
         evolutionsList.push(evo);
       }
     }
