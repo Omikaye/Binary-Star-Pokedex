@@ -212,6 +212,22 @@ for (const entry of entries) {
 
 console.log(`✓ Converted ${convertedCount} Pokémon entries\n`);
 
+// Helper function to determine base species, with special handling for Nidoran
+function getBaseSpecies(pokemonName) {
+  // Special case for Nidoran - treat each as its own base species
+  // The raw data file contains Unicode gender symbols, so we check if the name
+  // starts with "Nidoran" and is exactly 8 characters (Nidoran + gender symbol)
+  if (pokemonName.startsWith('Nidoran') && pokemonName.length === 8) {
+    return pokemonName; // Treat as own base species (Nidoran-F or Nidoran-M after renaming)
+  }
+  // For Nidoran-F and Nidoran-M (after they've been renamed)
+  if (pokemonName === 'Nidoran-F' || pokemonName === 'Nidoran-M') {
+    return pokemonName;
+  }
+  // For all other Pokemon, extract base species from before first hyphen
+  return pokemonName.includes('-') ? pokemonName.split('-')[0] : pokemonName;
+}
+
 // ============================================
 // STEP 1B: Attach formes structures & requiredItems for mega forms
 // ============================================
@@ -221,14 +237,7 @@ const formesMap = {}; // baseSpecies -> Set(form names including base)
 for (const key of Object.keys(pokedex)) {
   const data = pokedex[key];
   const name = data.name;
-  
-  // Special case for Nidoran - treat each as its own base species
-  let base;
-  if (name === 'Nidoran-F' || name === 'Nidoran-M') {
-    base = name; // Treat as own base species
-  } else {
-    base = name.includes('-') ? name.split('-')[0] : name;
-  }
+  const base = getBaseSpecies(name);
   
   if (!formesMap[base]) formesMap[base] = new Set();
   formesMap[base].add(base); // ensure base present
@@ -261,14 +270,7 @@ for (const base of Object.keys(megaBaseToForms)) {
 for (const key of Object.keys(pokedex)) {
   const entry = pokedex[key];
   const name = entry.name;
-  
-  // Special case for Nidoran - treat each as its own base species
-  let base;
-  if (name === 'Nidoran-F' || name === 'Nidoran-M') {
-    base = name; // Treat as own base species
-  } else {
-    base = name.includes('-') ? name.split('-')[0] : name;
-  }
+  const base = getBaseSpecies(name);
   
   const allFormes = Array.from(formesMap[base]);
   if (allFormes.length > 1) {
