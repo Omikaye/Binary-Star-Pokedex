@@ -189,10 +189,11 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		};
 		
 		// Find all roots of the evolution tree by following pre-evos recursively
+		const MAX_EVOLUTION_DEPTH = 100; // Maximum depth to prevent infinite loops
 		const findAllRoots = (pokemonId, visited) => {
 			// Use a visited set to guard against potential cycles or excessively deep chains
 			if (!visited) visited = new Set();
-			if (visited.has(pokemonId) || visited.size > 100) {
+			if (visited.has(pokemonId) || visited.size > MAX_EVOLUTION_DEPTH) {
 				// Cycle detected or depth limit reached; return empty to avoid infinite loops
 				return [];
 			}
@@ -205,7 +206,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 			// Recursively find all roots from all pre-evolutions
 			const allRoots = [];
 			for (const preEvo of preEvos) {
-				const roots = findAllRoots(preEvo.sourceId, new Set(visited));
+				const roots = findAllRoots(preEvo.sourceId, visited);
 				allRoots.push(...roots);
 			}
 			return allRoots;
@@ -219,11 +220,13 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 			while (currentStage.length > 0) {
 				path.push(currentStage);
 				const nextStage = [];
+				const seenIds = new Set(); // Use Set for O(1) duplicate detection
 				for (const pokemon of currentStage) {
 					const evos = BattleEvolutions[pokemon.id] || [];
 					for (const evo of evos) {
 						const target = getID(BattlePokedex, evo.target);
-						if (target && !nextStage.find(p => p.id === target.id)) {
+						if (target && !seenIds.has(target.id)) {
+							seenIds.add(target.id);
 							nextStage.push(target);
 						}
 					}
