@@ -281,7 +281,7 @@ console.log('✓ Formes metadata attached\n');
 // NOTE: Evolution data is no longer embedded in pokedex.json
 // To generate evolution data, run:
 //   npm run convert-evolutions    -> creates data/evolutions.json
-//   node scripts/convert-mega-evolutions.js -> creates data/mega-evolutions.json
+//   npm run convert-mega-evolutions -> creates data/mega-evolutions.json
 //
 // These files are loaded separately in js/data.js as BattleEvolutions and MegaEvolutions
 console.log('STEP 2: Skipping evolution import (now handled by separate scripts)\n');

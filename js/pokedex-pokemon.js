@@ -3,7 +3,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		id = toID(id);
 		var pokemon = BattlePokedex[id]
 		this.id = id;
-		this.shortTitle = pokemon.baseSpecies;
+		this.shortTitle = pokemon.baseSpecies || pokemon.name;
 
 		var buf = '<div class="pfx-body dexentry">';
 
@@ -188,51 +188,91 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 			return preEvos;
 		};
 		
-		// Find the root of the evolution tree by following pre-evos recursively
-		const findRoot = (pokemonId) => {
+		// Find all roots of the evolution tree by following pre-evos recursively
+		const MAX_EVOLUTION_DEPTH = 100; // Maximum depth to prevent infinite loops
+		const findAllRoots = (pokemonId, visited) => {
+			// Use a visited set to guard against potential cycles or excessively deep chains
+			if (!visited) visited = new Set();
+			if (visited.has(pokemonId) || visited.size > MAX_EVOLUTION_DEPTH) {
+				// Cycle detected or depth limit reached; return empty to avoid infinite loops
+				return [];
+			}
+			visited.add(pokemonId);
+
 			const preEvos = findPreEvos(pokemonId);
 			if (preEvos.length === 0) {
-				return pokemonId; // This is the root
+				return [pokemonId]; // This is a root
 			}
-			// Pick the first pre-evo and recursively find its root
-			return findRoot(preEvos[0].sourceId);
+			// Recursively find all roots from all pre-evolutions
+			const allRoots = [];
+			for (const preEvo of preEvos) {
+				const roots = findAllRoots(preEvo.sourceId, visited);
+				allRoots.push(...roots);
+			}
+			return allRoots;
 		};
 		
-		// Start from the root of the evolution tree
-		const rootId = findRoot(this.id);
-		const rootPokemon = getID(BattlePokedex, rootId);
+		// Helper to build a single evolution path starting from a root
+		const buildEvolutionPath = (startId) => {
+			const path = [];
+			let currentStage = [getID(BattlePokedex, startId)].filter(Boolean);
+			
+			while (currentStage.length > 0) {
+				path.push(currentStage);
+				const nextStage = [];
+				const seenIds = new Set(); // Use Set for O(1) duplicate detection
+				for (const pokemon of currentStage) {
+					const evos = BattleEvolutions[pokemon.id] || [];
+					for (const evo of evos) {
+						const target = getID(BattlePokedex, evo.target);
+						if (target && !seenIds.has(target.id)) {
+							seenIds.add(target.id);
+							nextStage.push(target);
+						}
+					}
+				}
+				currentStage = nextStage;
+			}
+			return path;
+		};
+		
+		// Start from all roots of the evolution tree
+		const rootIds = findAllRoots(this.id);
+		const uniqueRootIds = [...new Set(rootIds)];
 		
 		// Check if this Pokemon has any evolutions or pre-evolutions
 		const hasEvolutions = BattleEvolutions[this.id] && BattleEvolutions[this.id].length > 0;
 		const hasPreEvolutions = findPreEvos(this.id).length > 0;
 		
 		if (hasEvolutions || hasPreEvolutions) {
-			buf += '<table class="evos"><tr><td>';
-			var evos = [rootPokemon];
-			while (evos.length > 0) {
-				var nextEvos = [];
-				for (var i=0; i<evos.length; i++) {
-					var template = evos[i];
-					var name = (template.forme ? template.baseSpecies+`<small>-${template.forme}</small>` : template.name);
-					name = `<span class="picon" style="${getPokemonIcon(template)}"></span>`+name;
-					if (template.id === this.id) {
-						buf += `<div><strong>${name}</strong></div>`;
-					} else {
-						buf += `<div><a href="${Config.baseurl}pokemon/${template.id}" data-target="replace">${name}</a></div>`;
-					}
-					// Get evolutions for this template from BattleEvolutions
-					const templateEvos = BattleEvolutions[template.id] || [];
-					for (let evo of templateEvos) {
-						if (!nextEvos.find((e) => toID(e.target) === toID(evo.target))) {
-							nextEvos.push(evo);
+			// Build evolution tree for each root
+			for (let rootIdx = 0; rootIdx < uniqueRootIds.length; rootIdx++) {
+				const rootId = uniqueRootIds[rootIdx];
+				const evolutionPath = buildEvolutionPath(rootId);
+				
+				if (rootIdx > 0) {
+					buf += '<div style="margin-top: 5px;"></div>'; // Add spacing between trees
+				}
+				
+				buf += '<table class="evos"><tr><td>';
+				for (let stageIdx = 0; stageIdx < evolutionPath.length; stageIdx++) {
+					const stage = evolutionPath[stageIdx];
+					for (let i = 0; i < stage.length; i++) {
+						const template = stage[i];
+						const name = (template.forme ? template.baseSpecies+`<small>-${template.forme}</small>` : template.name);
+						const fullName = `<span class="picon" style="${getPokemonIcon(template)}"></span>`+name;
+						if (template.id === this.id) {
+							buf += `<div><strong>${fullName}</strong></div>`;
+						} else {
+							buf += `<div><a href="${Config.baseurl}pokemon/${template.id}" data-target="replace">${fullName}</a></div>`;
 						}
 					}
+					if (stageIdx < evolutionPath.length - 1) {
+						buf += '</td><td class="arrow"><span>&rarr;</span></td><td>';
+					}
 				}
-				evos = nextEvos.map((evo) => getID(BattlePokedex, evo.target)).filter(Boolean);
-				if (evos.length > 0)
-					buf += '</td><td class="arrow"><span>&rarr;</span></td><td>';
+				buf += '</td></tr></table>';
 			}
-			buf += '</td></tr></table>';
 
 			// Show evolution methods from pre-evos
 			const preEvosList = findPreEvos(this.id);
