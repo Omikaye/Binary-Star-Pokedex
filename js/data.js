@@ -14,6 +14,8 @@ import StaticEncounters from "../data/static-encounters.json";
 import LocationsJson from "../data/locations.json";
 import TrainerSprites from "../data/trainer-sprites.json";
 import TrainerSpriteLinks from "../data/trainer-sprite-links.json";
+import BattleEvolutions from "../data/evolutions.json";
+import MegaEvolutions from "../data/mega-evolutions.json";
 // Import editable data copies for the Pokeedit feature
 import BattlePokedexEdit from "../data/pokedex-edit.json";
 import LearnsetsEdit from "../data/learnsets-edit.json";
@@ -37,6 +39,8 @@ window.StaticEncounters = StaticEncounters;
 window.Locations = LocationsJson.locations || [];
 window.TrainerSprites = TrainerSprites;
 window.TrainerSpriteLinks = TrainerSpriteLinks;
+window.BattleEvolutions = BattleEvolutions;
+window.MegaEvolutions = MegaEvolutions;
 // Expose editable data copies
 window.BattlePokedexEdit = BattlePokedexEdit;
 window.LearnsetsEdit = LearnsetsEdit;
@@ -78,13 +82,6 @@ for (let data of [BattlePokedex, BattleMovedex, BattleItems, BattleAbilities, Ba
 // Also set IDs for editable pokedex
 for (let key in BattlePokedexEdit) {
   BattlePokedexEdit[key].id = key;
-}
-
-for (let key in BattlePokedex) {
-  for (let evo of BattlePokedex[key].evos ?? []) {
-    let target = getID(BattlePokedex, evo.target);
-    if (target) target.prevo = toID(key);
-  }
 }
 
 // Set up prevo relationships for editable pokedex

@@ -12,6 +12,7 @@
     "convert-pokedex": "node scripts/convert-pokedex-array.js",
     "convert-gender": "node scripts/convert-gender-ratio.js",
     "convert-evolutions": "node scripts/convert-evolutions.js",
+    "convert-mega-evolutions": "node scripts/convert-mega-evolutions.js",
     "validate": "node scripts/validate-pokedex.js",
     "import-all": "node scripts/import-all.js",
     "import-moves": "node scripts/import-moves.js",
