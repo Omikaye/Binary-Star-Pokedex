@@ -318,6 +318,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		if (pokemon.formes) {
 			buf += '</dd><dt>Formes:</dt> <dd>';
 			var otherFormes = pokemon.formes;
+			var template; // Declare template variable to avoid reference error
 			for (var i = 0; i < otherFormes.length; i++) {
 				template = getID(BattlePokedex, otherFormes[i]);
 				if (!template) continue;
@@ -330,7 +331,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 					buf += `<a href="${Config.baseurl}pokemon/${template.id}" data-target="replace">${name}</a>`;
 				}
 			}
-			if (pokemon.requiredItem) {
+			if (pokemon.requiredItem && template) { // Check if template exists before accessing its properties
 				buf += `<div><small>Must hold <a href="${Config.baseurl}items/${toID(template.requiredItem)}" data-target="push">${template.requiredItem}</a></small></div>`;
 			}
 		}
