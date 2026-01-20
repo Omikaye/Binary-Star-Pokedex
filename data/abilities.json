@@ -68,8 +68,8 @@
   "aromaveil": {
     "name": "Aroma Veil",
     "num": 165,
-    "desc": "This Pokemon and its allies cannot become affected by Attract, Disable, Encore, Heal Block, Taunt, or Torment.",
-    "shortDesc": "Protects user/allies from Attract, Disable, Encore, Heal Block, Taunt, and Torment."
+    "desc": "This Pokemon and its allies cannot become affected by Attract, Disable, Encore, Heal Block, Taunt, or Torment. | Sweet scent on entry/lowers evasion of both on entry",
+    "shortDesc": "Protects user/allies from Attract, Disable, Encore, Heal Block, Taunt, and Torment. (E)"
   },
   "asoneglastrier": {
     "name": "As One (Glastrier)",
@@ -86,8 +86,8 @@
   "aurabreak": {
     "name": "Aura Break",
     "num": 188,
-    "desc": "While this Pokemon is active, the effects of the Dark Aura and Fairy Aura Abilities are reversed, multiplying the power of Dark- and Fairy-type moves, respectively, by 3/4 instead of 1.33.",
-    "shortDesc": "While this Pokemon is active, the Dark Aura and Fairy Aura power modifier is 0.75x."
+    "desc": "While this Pokemon is active, the effects of the Dark Aura and Fairy Aura Abilities are reversed, multiplying the power of Dark- and Fairy-type moves, respectively, by 3/4 instead of 1.33. | Works on other auras like Pressure/Unnerve/Friend Guard, destroys terrains",
+    "shortDesc": "While this Pokemon is active, the Dark Aura and Fairy Aura power modifier is 0.75x. (E)"
   },
   "baddreams": {
     "name": "Bad Dreams",
@@ -158,8 +158,8 @@
   "cheekpouch": {
     "name": "Cheek Pouch",
     "num": 167,
-    "desc": "If this Pokemon eats a held Berry, it restores 1/3 of its maximum HP, rounded down, in addition to the Berry's effect. This effect can also activate after the effects of Bug Bite, Fling, Pluck, Stuff Cheeks, and Teatime if the eaten Berry had an effect on this Pokemon.",
-    "shortDesc": "If this Pokemon eats a Berry, it restores 1/3 of its max HP after the Berry's effect."
+    "desc": "If this Pokemon eats a held Berry, it restores 1/3 of its maximum HP, rounded down, in addition to the Berry's effect. This effect can also activate after the effects of Bug Bite, Fling, Pluck, Stuff Cheeks, and Teatime if the eaten Berry had an effect on this Pokemon. | Works on other 'eaten' items. Maybe refreshes eaten berry, but only once, as if they were holding 2 berries.",
+    "shortDesc": "If this Pokemon eats a Berry, it restores 1/3 of its max HP after the Berry's effect. (E)"
   },
   "chillingneigh": {
     "name": "Chilling Neigh",
@@ -224,8 +224,8 @@
   "corrosion": {
     "name": "Corrosion",
     "num": 212,
-    "desc": "This Pokemon can poison or badly poison a Pokemon regardless of its typing.",
-    "shortDesc": "This Pokemon can poison or badly poison a Pokemon regardless of its typing."
+    "desc": "This Pokemon can poison or badly poison a Pokemon regardless of its typing. | Poison moves hit steels neutrally.",
+    "shortDesc": "This Pokemon can poison or badly poison a Pokemon regardless of its typing. (E)"
   },
   "costar": {
     "name": "Costar",
@@ -410,8 +410,8 @@
   "emergencyexit": {
     "name": "Emergency Exit",
     "num": 194,
-    "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage.",
-    "shortDesc": "This Pokemon switches out when it reaches 1/2 or less of its maximum HP."
+    "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage. | Def boost on switch in if <50%",
+    "shortDesc": "This Pokemon switches out when it reaches 1/2 or less of its maximum HP. (E)"
   },
   "fairyaura": {
     "name": "Fairy Aura",
@@ -488,8 +488,8 @@
   "fullmetalbody": {
     "name": "Full Metal Body",
     "num": 230,
-    "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
-    "shortDesc": "Prevents other Pokemon from lowering this Pokemon's stat stages."
+    "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages. | As clear body, but 20% bonus Steel dmg when full HP.",
+    "shortDesc": "Prevents other Pokemon from lowering this Pokemon's stat stages. (E)"
   },
   "furcoat": {
     "name": "Fur Coat",
@@ -500,8 +500,8 @@
   "galewings": {
     "name": "Gale Wings",
     "num": 177,
-    "desc": "If this Pokemon is at full HP, its Flying-type moves have their priority increased by 1.",
-    "shortDesc": "If this Pokemon is at full HP, its Flying-type moves have their priority increased by 1."
+    "desc": "If this Pokemon is at full HP, its Flying-type moves have their priority increased by 1. | Maybe works above 75% HP? Maybe boosts flying when low HP, so fast when high hp, strong when low?",
+    "shortDesc": "If this Pokemon is at full HP, its Flying-type moves have their priority increased by 1. (E)"
   },
   "galvanize": {
     "name": "Galvanize",
@@ -524,8 +524,8 @@
   "gooey": {
     "name": "Gooey",
     "num": 183,
-    "desc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
-    "shortDesc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage."
+    "desc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage. | Works on self contact.",
+    "shortDesc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage. (E)"
   },
   "gorillatactics": {
     "name": "Gorilla Tactics",
@@ -536,8 +536,8 @@
   "grasspelt": {
     "name": "Grass Pelt",
     "num": 179,
-    "desc": "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5.",
-    "shortDesc": "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5."
+    "desc": "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5. | 25% def boost, 50% in terrain? Or maybe make it 25% in grass, but also works like Seed Sower. Or turn it into Fertilize",
+    "shortDesc": "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5. (E)"
   },
   "grassysurge": {
     "name": "Grassy Surge",
@@ -692,8 +692,8 @@
   "innardsout": {
     "name": "Innards Out",
     "num": 215,
-    "desc": "If this Pokemon is knocked out with a move, that move's user loses HP equal to the amount of damage inflicted on this Pokemon.",
-    "shortDesc": "If this Pokemon is KOed with a move, that move's user loses an equal amount of HP."
+    "desc": "If this Pokemon is knocked out with a move, that move's user loses HP equal to the amount of damage inflicted on this Pokemon. | Some kind of retaliation when hit, maybe stat drops, maybe like an auto Tackle when hit.",
+    "shortDesc": "If this Pokemon is KOed with a move, that move's user loses an equal amount of HP. (E)"
   },
   "innerfocus": {
     "name": "Inner Focus",
@@ -806,8 +806,8 @@
   "longreach": {
     "name": "Long Reach",
     "num": 203,
-    "desc": "This Pokemon's attacks do not make contact with the target.",
-    "shortDesc": "This Pokemon's attacks do not make contact with the target."
+    "desc": "This Pokemon's attacks do not make contact with the target. | Contact moves +20%, Non contact moves have serene grace effect or hit twice reduced dmg.",
+    "shortDesc": "This Pokemon's attacks do not make contact with the target. (E)"
   },
   "magicbounce": {
     "name": "Magic Bounce",
@@ -824,8 +824,8 @@
   "magician": {
     "name": "Magician",
     "num": 170,
-    "desc": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack. Does not affect Doom Desire and Future Sight.",
-    "shortDesc": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack."
+    "desc": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack. Does not affect Doom Desire and Future Sight. | As pickpocket? Maybe boosts psychic moves? Maybe boost 'trickery' moves or allow status moves to bypass subs. Maybe works like 'Trick' when hit by contact?",
+    "shortDesc": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack. (E)"
   },
   "magmaarmor": {
     "name": "Magma Armor",
@@ -854,8 +854,8 @@
   "merciless": {
     "name": "Merciless",
     "num": 196,
-    "desc": "This Pokemon's attacks are critical hits if the target is poisoned.",
-    "shortDesc": "This Pokemon's attacks are critical hits if the target is poisoned."
+    "desc": "This Pokemon's attacks are critical hits if the target is poisoned. | Works on sleep or paralysis as well.",
+    "shortDesc": "This Pokemon's attacks are critical hits if the target is poisoned. (E)"
   },
   "mimicry": {
     "name": "Mimicry",
@@ -944,8 +944,8 @@
   "neuroforce": {
     "name": "Neuroforce",
     "num": 233,
-    "desc": "This Pokemon's attacks that are super effective against the target have their damage multiplied by 1.25.",
-    "shortDesc": "This Pokemon's attacks that are super effective against the target do 1.25x damage."
+    "desc": "This Pokemon's attacks that are super effective against the target have their damage multiplied by 1.25. | Psychic moves deal 10% bonus dmg.",
+    "shortDesc": "This Pokemon's attacks that are super effective against the target do 1.25x damage. (E)"
   },
   "neutralizinggas": {
     "name": "Neutralizing Gas",
@@ -1070,8 +1070,8 @@
   "powerofalchemy": {
     "name": "Power of Alchemy",
     "num": 223,
-    "desc": "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Flower Gift, Forecast, Gulp Missile, Hadron Engine, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Orichalcum Pulse, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, Zen Mode, and Zero to Hero.",
-    "shortDesc": "This Pokemon copies the Ability of an ally that faints."
+    "desc": "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Flower Gift, Forecast, Gulp Missile, Hadron Engine, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Orichalcum Pulse, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, Zen Mode, and Zero to Hero. | Buffs poison moves? Transmutes enemy items when hit? Poison lightning rod?",
+    "shortDesc": "This Pokemon copies the Ability of an ally that faints. (E)"
   },
   "powerspot": {
     "name": "Power Spot",
@@ -1100,8 +1100,8 @@
   "prismarmor": {
     "name": "Prism Armor",
     "num": 232,
-    "desc": "This Pokemon receives 3/4 damage from supereffective attacks.",
-    "shortDesc": "This Pokemon receives 3/4 damage from supereffective attacks."
+    "desc": "This Pokemon receives 3/4 damage from supereffective attacks. | Boosts PSychic moves 20% at full hp",
+    "shortDesc": "This Pokemon receives 3/4 damage from supereffective attacks. (E)"
   },
   "propellertail": {
     "name": "Propeller Tail",
@@ -1184,8 +1184,8 @@
   "receiver": {
     "name": "Receiver",
     "num": 222,
-    "desc": "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Flower Gift, Forecast, Gulp Missile, Hadron Engine, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Orichalcum Pulse, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, Zen Mode, and Zero to Hero.",
-    "shortDesc": "This Pokemon copies the Ability of an ally that faints."
+    "desc": "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Flower Gift, Forecast, Gulp Missile, Hadron Engine, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Orichalcum Pulse, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, Zen Mode, and Zero to Hero. | Takes ally item after using its own? Steals ally stat changes when they faint? (Bad idea, remember Eevee)",
+    "shortDesc": "This Pokemon copies the Ability of an ally that faints. (E)"
   },
   "reckless": {
     "name": "Reckless",
@@ -1220,8 +1220,8 @@
   "rkssystem": {
     "name": "RKS System",
     "num": 225,
-    "desc": "If this Pokemon is a Silvally, its type changes to match its held Memory.",
-    "shortDesc": "If this Pokemon is a Silvally, its type changes to match its held Memory."
+    "desc": "If this Pokemon is a Silvally, its type changes to match its held Memory. | Buff memories to be 10% dmg each type. Or just give rks system a weaker adaptability.",
+    "shortDesc": "If this Pokemon is a Silvally, its type changes to match its held Memory. (E)"
   },
   "rockhead": {
     "name": "Rock Head",
@@ -1316,8 +1316,8 @@
   "shadowshield": {
     "name": "Shadow Shield",
     "num": 231,
-    "desc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
-    "shortDesc": "If this Pokemon is at full HP, damage taken from attacks is halved."
+    "desc": "If this Pokemon is at full HP, damage taken from attacks is halved. | Ghost moves 20% when full hp.",
+    "shortDesc": "If this Pokemon is at full HP, damage taken from attacks is halved. (E)"
   },
   "shadowtag": {
     "name": "Shadow Tag",
@@ -1436,8 +1436,8 @@
   "stakeout": {
     "name": "Stakeout",
     "num": 198,
-    "desc": "This Pokemon's offensive stat is doubled against a target that switched in this turn.",
-    "shortDesc": "This Pokemon's offensive stat is doubled against a target that switched in this turn."
+    "desc": "This Pokemon's offensive stat is doubled against a target that switched in this turn. | Idk lmao. Ignores redirection?",
+    "shortDesc": "This Pokemon's offensive stat is doubled against a target that switched in this turn. (E)"
   },
   "stall": {
     "name": "Stall",
@@ -1484,8 +1484,8 @@
   "steelworker": {
     "name": "Steelworker",
     "num": 200,
-    "desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Steel-type attack.",
-    "shortDesc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Steel-type attack."
+    "desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Steel-type attack. | Steely Spirit",
+    "shortDesc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Steel-type attack. (E)"
   },
   "steelyspirit": {
     "name": "Steely Spirit",
@@ -1514,8 +1514,8 @@
   "strongjaw": {
     "name": "Strong Jaw",
     "num": 173,
-    "desc": "This Pokemon's bite-based attacks have their power multiplied by 1.5.",
-    "shortDesc": "This Pokemon's bite-based attacks have 1.5x power. Bug Bite is not boosted."
+    "desc": "This Pokemon's bite-based attacks have their power multiplied by 1.5. | 30% boost, Just strengthen the bite moves.",
+    "shortDesc": "This Pokemon's bite-based attacks have 1.5x power. (E)"
   },
   "sturdy": {
     "name": "Sturdy",
@@ -1562,8 +1562,8 @@
   "sweetveil": {
     "name": "Sweet Veil",
     "num": 175,
-    "desc": "This Pokemon and its allies cannot fall asleep, but those already asleep do not wake up immediately. This Pokemon and its allies cannot use Rest successfully or become affected by Yawn, and those previously affected will not fall asleep.",
-    "shortDesc": "This Pokemon and its allies cannot fall asleep; those already asleep do not wake up."
+    "desc": "This Pokemon and its allies cannot fall asleep, but those already asleep do not wake up immediately. This Pokemon and its allies cannot use Rest successfully or become affected by Yawn, and those previously affected will not fall asleep. | Maybe buff allies somehow? Maybe teamwide buff to fairy moves or fairy version of flower veil.",
+    "shortDesc": "This Pokemon and its allies cannot fall asleep; those already asleep do not wake up. (E)"
   },
   "swiftswim": {
     "name": "Swift Swim",
@@ -1574,8 +1574,8 @@
   "symbiosis": {
     "name": "Symbiosis",
     "num": 180,
-    "desc": "If an ally uses its item, this Pokemon gives its item to that ally immediately. Does not activate if the ally's item was stolen or knocked off, or if the ally used an Eject Button or Eject Pack.",
-    "shortDesc": "If an ally uses its item, this Pokemon gives its item to that ally immediately."
+    "desc": "If an ally uses its item, this Pokemon gives its item to that ally immediately. Does not activate if the ally's item was stolen or knocked off, or if the ally used an Eject Button or Eject Pack. | Weaker friend guard? Shares dmg ally takes? Heals ally like Hospitality?",
+    "shortDesc": "If an ally uses its item, this Pokemon gives its item to that ally immediately. (E)"
   },
   "synchronize": {
     "name": "Synchronize",
@@ -1604,8 +1604,8 @@
   "tanglinghair": {
     "name": "Tangling Hair",
     "num": 221,
-    "desc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
-    "shortDesc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage."
+    "desc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage. | Contact puts them in a wrap effect.",
+    "shortDesc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage. (E)"
   },
   "technician": {
     "name": "Technician",
@@ -1622,8 +1622,8 @@
   "teravolt": {
     "name": "Teravolt",
     "num": 164,
-    "desc": "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Grass Pelt, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, White Smoke, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
-    "shortDesc": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon."
+    "desc": "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Grass Pelt, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, White Smoke, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon. | 10% electric boost",
+    "shortDesc": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon. (E)"
   },
   "thermalexchange": {
     "name": "Thermal Exchange",
@@ -1700,8 +1700,8 @@
   "turboblaze": {
     "name": "Turboblaze",
     "num": 163,
-    "desc": "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Grass Pelt, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, White Smoke, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
-    "shortDesc": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon."
+    "desc": "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Grass Pelt, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, White Smoke, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon. | 10% fire boost",
+    "shortDesc": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon. (E)"
   },
   "unaware": {
     "name": "Unaware",
@@ -1766,8 +1766,8 @@
   "waterbubble": {
     "name": "Water Bubble",
     "num": 199,
-    "desc": "This Pokemon's offensive stat is doubled while using a Water-type attack. If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
-    "shortDesc": "This Pokemon's Water power is 2x; it can't be burned; Fire power against it is halved."
+    "desc": "This Pokemon's offensive stat is doubled while using a Water-type attack. If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be burned. Gaining this Ability while burned cures it. | See ABZB's changes",
+    "shortDesc": "This Pokemon's Water power is 2x; it can't be burned; Fire power against it is halved. (E)"
   },
   "watercompaction": {
     "name": "Water Compaction",
@@ -1802,8 +1802,8 @@
   "wimpout": {
     "name": "Wimp Out",
     "num": 193,
-    "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage.",
-    "shortDesc": "This Pokemon switches out when it reaches 1/2 or less of its maximum HP."
+    "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage. | Speed boost on switch in if <50%",
+    "shortDesc": "This Pokemon switches out when it reaches 1/2 or less of its maximum HP. (E)"
   },
   "windpower": {
     "name": "Wind Power",
