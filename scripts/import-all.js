@@ -212,6 +212,22 @@ for (const entry of entries) {
 
 console.log(`✓ Converted ${convertedCount} Pokémon entries\n`);
 
+// Helper function to determine base species, with special handling for Nidoran
+function getBaseSpecies(pokemonName) {
+  // Special case for Nidoran - treat each as its own base species
+  // The raw data file contains Unicode gender symbols, so we check if the name
+  // starts with "Nidoran" and is exactly 8 characters (Nidoran + gender symbol)
+  if (pokemonName.startsWith('Nidoran') && pokemonName.length === 8) {
+    return pokemonName; // Treat as own base species (Nidoran-F or Nidoran-M after renaming)
+  }
+  // For Nidoran-F and Nidoran-M (after they've been renamed)
+  if (pokemonName === 'Nidoran-F' || pokemonName === 'Nidoran-M') {
+    return pokemonName;
+  }
+  // For all other Pokemon, extract base species from before first hyphen
+  return pokemonName.includes('-') ? pokemonName.split('-')[0] : pokemonName;
+}
+
 // ============================================
 // STEP 1B: Attach formes structures & requiredItems for mega forms
 // ============================================
@@ -221,7 +237,8 @@ const formesMap = {}; // baseSpecies -> Set(form names including base)
 for (const key of Object.keys(pokedex)) {
   const data = pokedex[key];
   const name = data.name;
-  const base = name.includes('-') ? name.split('-')[0] : name;
+  const base = getBaseSpecies(name);
+  
   if (!formesMap[base]) formesMap[base] = new Set();
   formesMap[base].add(base); // ensure base present
   if (name !== base) formesMap[base].add(name);
@@ -253,7 +270,8 @@ for (const base of Object.keys(megaBaseToForms)) {
 for (const key of Object.keys(pokedex)) {
   const entry = pokedex[key];
   const name = entry.name;
-  const base = name.includes('-') ? name.split('-')[0] : name;
+  const base = getBaseSpecies(name);
+  
   const allFormes = Array.from(formesMap[base]);
   if (allFormes.length > 1) {
     entry.formes = allFormes;
@@ -310,6 +328,7 @@ const learnsets = {};
 const moveLines = levelUpRaw.split(/\r?\n/);
 let currentMon = null;
 let moveCount = 0;
+let nidoranCount = 0; // Track which Nidoran we're processing
 
 for (const line of moveLines) {
   const trimmed = line.trim();
@@ -327,6 +346,18 @@ for (const line of moveLines) {
     if (nameMap[pokemonName]) {
       pokemonName = nameMap[pokemonName];
     }
+    
+    // Special handling for Nidoran - the first one is Nidoran-F (ID 29), second is Nidoran-M (ID 32)
+    // Note: The raw data file contains Unicode gender symbols after "Nidoran", so we use startsWith
+    if (pokemonName.startsWith('Nidoran')) {
+      nidoranCount++;
+      if (nidoranCount === 1) {
+        pokemonName = 'Nidoran-F';
+      } else if (nidoranCount === 2) {
+        pokemonName = 'Nidoran-M';
+      }
+    }
+    
     const id = toID(pokemonName);
     if (pokedex[id]) {
       currentMon = id;
