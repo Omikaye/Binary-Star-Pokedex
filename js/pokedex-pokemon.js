@@ -173,53 +173,105 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 
 	{
 		buf += '<dt>Evolution:</dt> <dd>';
-		var template = pokemon;
-		while (template.prevo) template = getID(BattlePokedex, template.prevo);
-			if (template.evos) {
-				buf += '<table class="evos"><tr><td>';
-				var evos = [template];
-				while (evos.length > 0) {
-					var nextEvos = [];
-					for (var i=0; i<evos.length; i++) {
-						template = evos[i];
-						var name = (template.forme ? template.baseSpecies+`<small>-${template.forme}</small>` : template.name);
-						name = `<span class="picon" style="${getPokemonIcon(template)}"></span>`+name;
-						if (template === pokemon) {
-							buf += `<div><strong>${name}</strong></div>`;
-						} else {
-							buf += `<div><a href="${Config.baseurl}pokemon/${template.id}" data-target="replace">${name}</a></div>`;
+		
+		// Helper function to find all pre-evolutions (reverse lookup in BattleEvolutions)
+		const findPreEvos = (pokemonId) => {
+			const preEvos = [];
+			for (const sourceId in BattleEvolutions) {
+				const evos = BattleEvolutions[sourceId];
+				for (const evo of evos) {
+					if (toID(evo.target) === pokemonId) {
+						preEvos.push({ sourceId, evo });
+					}
+				}
+			}
+			return preEvos;
+		};
+		
+		// Find the root of the evolution tree by following pre-evos recursively
+		const findRoot = (pokemonId) => {
+			const preEvos = findPreEvos(pokemonId);
+			if (preEvos.length === 0) {
+				return pokemonId; // This is the root
+			}
+			// Pick the first pre-evo and recursively find its root
+			return findRoot(preEvos[0].sourceId);
+		};
+		
+		// Start from the root of the evolution tree
+		const rootId = findRoot(this.id);
+		const rootPokemon = getID(BattlePokedex, rootId);
+		
+		// Check if this Pokemon has any evolutions or pre-evolutions
+		const hasEvolutions = BattleEvolutions[this.id] && BattleEvolutions[this.id].length > 0;
+		const hasPreEvolutions = findPreEvos(this.id).length > 0;
+		
+		if (hasEvolutions || hasPreEvolutions) {
+			buf += '<table class="evos"><tr><td>';
+			var evos = [rootPokemon];
+			while (evos.length > 0) {
+				var nextEvos = [];
+				for (var i=0; i<evos.length; i++) {
+					var template = evos[i];
+					var name = (template.forme ? template.baseSpecies+`<small>-${template.forme}</small>` : template.name);
+					name = `<span class="picon" style="${getPokemonIcon(template)}"></span>`+name;
+					if (template.id === this.id) {
+						buf += `<div><strong>${name}</strong></div>`;
+					} else {
+						buf += `<div><a href="${Config.baseurl}pokemon/${template.id}" data-target="replace">${name}</a></div>`;
+					}
+					// Get evolutions for this template from BattleEvolutions
+					const templateEvos = BattleEvolutions[template.id] || [];
+					for (let evo of templateEvos) {
+						if (!nextEvos.find((e) => toID(e.target) === toID(evo.target))) {
+							nextEvos.push(evo);
 						}
-						for (let evo of template.evos ?? []) {
-							if (!nextEvos.find((e) => e.target == evo.target)) {
-								nextEvos.push(evo);
-							}
-						}
-					}
-					evos = nextEvos.map((evo) => getID(BattlePokedex, evo.target));
-					if (evos.length > 0)
-						buf += '</td><td class="arrow"><span>&rarr;</span></td><td>';
-				}
-				buf += '</td></tr></table>';
-
-				if (pokemon.prevo) {
-					let prevo = getID(BattlePokedex, pokemon.prevo)
-					let evos_from_prevo = prevo.evos.filter(evo => toID(evo.target) == pokemon.id);
-					for (let evo of evos_from_prevo) {
-						buf += `<div><small>Evolves from ${  getID(BattlePokedex, pokemon.prevo).name  } (${  this.getEvoMethod(evo)  })</small></div>`;
 					}
 				}
+				evos = nextEvos.map((evo) => getID(BattlePokedex, evo.target)).filter(Boolean);
+				if (evos.length > 0)
+					buf += '</td><td class="arrow"><span>&rarr;</span></td><td>';
+			}
+			buf += '</td></tr></table>';
 
-				let a = []
-				if (pokemon.evos) {
-					for (let evo of pokemon.evos) {
-						buf += `<div><small>Evolves into ${  getID(BattlePokedex, evo.target).name  } (${  this.getEvoMethod(evo)  })</small></div>`;
-					}
+			// Show evolution methods from pre-evos
+			const preEvosList = findPreEvos(this.id);
+			for (let preEvoInfo of preEvosList) {
+				const prevoMon = getID(BattlePokedex, preEvoInfo.sourceId);
+				if (prevoMon) {
+					buf += `<div><small>Evolves from ${prevoMon.name} (${this.getEvoMethod(preEvoInfo.evo)})</small></div>`;
 				}
+			}
 
-			} else {
-				buf += '<em>Does not evolve</em>';
+			// Show evolution methods to evos
+			const currentEvos = BattleEvolutions[this.id] || [];
+			for (let evo of currentEvos) {
+				const evoMon = getID(BattlePokedex, evo.target);
+				if (evoMon) {
+					buf += `<div><small>Evolves into ${evoMon.name} (${this.getEvoMethod(evo)})</small></div>`;
+				}
+			}
+
+		} else {
+			buf += '<em>Does not evolve</em>';
+		}
+		
+		// Add mega evolution section
+		const megaEvos = MegaEvolutions[this.id] || [];
+		if (megaEvos.length > 0) {
+			buf += '</dd><dt>Mega Evolution:</dt> <dd>';
+			for (let megaEvo of megaEvos) {
+				const megaFormeId = toID(megaEvo.forme);
+				const megaFormePokemon = getID(BattlePokedex, megaFormeId);
+				if (megaFormePokemon) {
+					const formeName = megaFormePokemon.forme || megaEvo.forme;
+					buf += `<div><span class="picon" style="${getPokemonIcon(megaFormePokemon)}"></span>`;
+					buf += `<a href="${Config.baseurl}pokemon/${megaFormeId}" data-target="replace">${formeName}</a>`;
+					buf += ` <small>(requires ${megaEvo.item})</small></div>`;
+				}
 			}
 		}
+	}
 
 		if (pokemon.formes) {
 			buf += '</dd><dt>Formes:</dt> <dd>';

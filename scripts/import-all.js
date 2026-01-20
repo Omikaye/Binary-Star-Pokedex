@@ -276,176 +276,15 @@ for (const key of Object.keys(pokedex)) {
 console.log('✓ Formes metadata attached\n');
 
 // ============================================
-// STEP 2: Import Evolutions.txt
+// STEP 2: Evolution data has been moved to separate files
 // ============================================
-console.log('STEP 2: Importing Evolutions.txt to pokedex.json...');
-
-const evolutionsPath = path.join(__dirname, '..', 'data', 'rawtxt', 'Evolutions.txt');
-let evolutionsRaw;
-try {
-  evolutionsRaw = fs.readFileSync(evolutionsPath, 'utf8');
-} catch (err) {
-  console.error('Failed to read Evolutions.txt:', err.message);
-  process.exit(1);
-}
-
-const lines = evolutionsRaw.split(/\r?\n/);
-let currentPokemon = null;
-let evoCount = 0;
-
-function parseEvolutionLine(line, nameMap) {
-  const evolutions = [];
-  const parts = line.split(',').map(p => p.trim()).filter(p => p);
-
-  for (const part of parts) {
-    const evo = { target: '' };
-
-    // Level Up
-    if (part.includes('Level Up') && part.includes('into')) {
-      const levelMatch = part.match(/at level (\d+)/i);
-      const targetMatch = part.match(/into (.+)/i);
-      if (targetMatch) {
-        let targetName = targetMatch[1].trim();
-        // Normalize dash to space for dictionary lookup (Evolutions use "Raticate-1" but Dictionary has "Raticate 1")
-        const normalizedName = targetName.replace(/-(\d+)$/, ' $1');
-        // Apply dictionary mapping to target
-        if (nameMap[normalizedName]) {
-          console.log(`  Evolution target mapped: "${targetName}" (normalized: "${normalizedName}") -> "${nameMap[normalizedName]}"`);
-          targetName = nameMap[normalizedName];
-        }
-        evo.target = toID(targetName);
-        if (levelMatch) evo.level = parseInt(levelMatch[1], 10);
-
-        // Check for conditions
-        if (part.includes('at Morning')) evo.condition = 'Morning';
-        if (part.includes('at Night')) evo.condition = 'Night';
-        if (part.includes('Female')) evo.condition = 'Female';
-        if (part.includes('Male')) evo.condition = 'Male';
-        if (part.match(/Attack\s*(<|>|=)\s*Defense/i)) {
-          const condMatch = part.match(/(Attack\s*[<>=]\s*Defense)/i);
-          if (condMatch) evo.condition = condMatch[1];
-        }
-
-        evolutions.push(evo);
-      }
-    }
-    // Used Item
-    else if (part.includes('Used Item') && part.includes('into')) {
-      const itemMatch = part.match(/\[([^\]]+)\]/);
-      const targetMatch = part.match(/into (.+)/i);
-      if (targetMatch) {
-        let targetName = targetMatch[1].trim();
-        // Normalize dash to space for dictionary lookup (Evolutions use "Raticate-1" but Dictionary has "Raticate 1")
-        const normalizedName = targetName.replace(/-(\d+)$/, ' $1');
-        // Apply dictionary mapping to target
-        if (nameMap[normalizedName]) {
-          console.log(`  Evolution target mapped: "${targetName}" (normalized: "${normalizedName}") -> "${nameMap[normalizedName]}"`);
-          targetName = nameMap[normalizedName];
-        }
-        evo.target = toID(targetName);
-        if (itemMatch) evo.item = itemMatch[1];
-        evolutions.push(evo);
-      }
-    }
-    // Level Up with Move
-    else if (part.includes('Level Up with Move') && part.includes('into')) {
-      const moveMatch = part.match(/\[([^\]]+)\]/);
-      const targetMatch = part.match(/into (.+)/i);
-      if (targetMatch) {
-        let targetName = targetMatch[1].trim();
-        // Normalize dash to space for dictionary lookup
-        const normalizedName = targetName.replace(/-(\d+)$/, ' $1');
-        // Apply dictionary mapping to target
-        if (nameMap[normalizedName]) {
-          targetName = nameMap[normalizedName];
-        }
-        evo.target = toID(targetName);
-        if (moveMatch) evo.condition = `knowing ${moveMatch[1]}`;
-        evolutions.push(evo);
-      }
-    }
-    // Level Up with Party
-    else if (part.includes('Level Up with Party') && part.includes('into')) {
-      const partyMatch = part.match(/\[([^\]]+)\]/);
-      const targetMatch = part.match(/into (.+)/i);
-      if (targetMatch) {
-        let targetName = targetMatch[1].trim();
-        // Normalize dash to space for dictionary lookup
-        const normalizedName = targetName.replace(/-(\d+)$/, ' $1');
-        // Apply dictionary mapping to target
-        if (nameMap[normalizedName]) {
-          targetName = nameMap[normalizedName];
-        }
-        evo.target = toID(targetName);
-        if (partyMatch) evo.condition = `with ${partyMatch[1]} in party`;
-        evolutions.push(evo);
-      }
-    }
-  }
-
-  return evolutions;
-}
-
-for (let i = 0; i < lines.length; i++) {
-  const line = lines[i].trim();
-
-  // Check for separator
-  if (line.startsWith('|======')) {
-    // Process previous Pokemon if exists
-    if (currentPokemon) {
-      currentPokemon = null;
-    }
-    continue;
-  }
-
-  // Empty line
-  if (!line) {
-    if (currentPokemon) {
-      // Pokemon with no evolutions - reset
-      currentPokemon = null;
-    }
-    continue;
-  }
-
-  // If we don't have a current Pokemon, this line is the Pokemon name
-  if (!currentPokemon) {
-    // The raw line might be "Rattata" or "Rattata 1" etc.
-    // Apply dictionary rename to match the renamed entry in pokedex
-    let pokemonName = line;
-    if (nameMap[line]) {
-      pokemonName = nameMap[line];
-    }
-    const id = toID(pokemonName);
-    if (pokedex[id]) {
-      currentPokemon = id;
-    } else {
-      // If not found, log for debugging but don't error
-      // console.warn(`Evolution entry for "${line}" (mapped to "${pokemonName}") not found in pokedex`);
-    }
-    continue;
-  }
-
-  // This line contains evolution data for currentPokemon
-  const parsedEvos = parseEvolutionLine(line, nameMap);
-  
-  // Filter out invalid targets
-  const validEvos = parsedEvos.filter(evo => {
-    if (!pokedex[evo.target]) {
-      return false;
-    }
-    return true;
-  });
-  
-  if (validEvos.length > 0) {
-    if (!pokedex[currentPokemon].evos) {
-      pokedex[currentPokemon].evos = [];
-    }
-    pokedex[currentPokemon].evos.push(...validEvos);
-    evoCount += validEvos.length;
-  }
-}
-
-console.log(`✓ Added ${evoCount} evolution entries\n`);
+// NOTE: Evolution data is no longer embedded in pokedex.json
+// To generate evolution data, run:
+//   npm run convert-evolutions    -> creates data/evolutions.json
+//   node scripts/convert-mega-evolutions.js -> creates data/mega-evolutions.json
+//
+// These files are loaded separately in js/data.js as BattleEvolutions and MegaEvolutions
+console.log('STEP 2: Skipping evolution import (now handled by separate scripts)\n');
 
 // Write pokedex
 fs.writeFileSync(pokedexPath, JSON.stringify(pokedex, null, 2));
@@ -574,9 +413,12 @@ console.log('========================================');
 console.log('IMPORT COMPLETE!');
 console.log('========================================');
 console.log(`Pokémon imported: ${Object.keys(pokedex).length}`);
-console.log(`Evolutions added: ${evoCount}`);
 console.log(`Level-up moves: ${moveCount}`);
 console.log(`TM moves: ${tmCount}`);
 console.log(`Tutor moves: ${tutorCount}`);
 console.log(`Total learnset entries: ${Object.keys(learnsets).length}`);
+console.log('========================================');
+console.log('Note: Evolution data is handled by separate scripts:');
+console.log('  npm run convert-evolutions');
+console.log('  node scripts/convert-mega-evolutions.js');
 console.log('========================================\n');
