@@ -1,5 +1,7 @@
 window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 	initialize: function(id) {
+		// Translate display names (e.g., "Charizard 1" -> "Charizard-Mega-X") before converting to ID
+		id = translateDisplayName(id);
 		id = toID(id);
 		var pokemon = BattlePokedexEdit[id]
 		this.id = id;
