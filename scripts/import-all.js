@@ -310,6 +310,7 @@ const learnsets = {};
 const moveLines = levelUpRaw.split(/\r?\n/);
 let currentMon = null;
 let moveCount = 0;
+let nidoranCount = 0; // Track which Nidoran we're processing
 
 for (const line of moveLines) {
   const trimmed = line.trim();
@@ -327,6 +328,18 @@ for (const line of moveLines) {
     if (nameMap[pokemonName]) {
       pokemonName = nameMap[pokemonName];
     }
+    
+    // Special handling for Nidoran - the first one is Nidoran-F (ID 29), second is Nidoran-M (ID 32)
+    // Note: The raw data file contains Unicode gender symbols after "Nidoran", so we use startsWith
+    if (pokemonName.startsWith('Nidoran')) {
+      nidoranCount++;
+      if (nidoranCount === 1) {
+        pokemonName = 'Nidoran-F';
+      } else if (nidoranCount === 2) {
+        pokemonName = 'Nidoran-M';
+      }
+    }
+    
     const id = toID(pokemonName);
     if (pokedex[id]) {
       currentMon = id;

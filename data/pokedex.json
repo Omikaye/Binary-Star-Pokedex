@@ -936,7 +936,14 @@
       "Monster",
       "Field"
     ],
-    "gender": "F"
+    "gender": "F",
+    "formes": [
+      "Nidoran",
+      "Nidoran-F",
+      "Nidoran-M"
+    ],
+    "baseSpecies": "Nidoran",
+    "forme": "F"
   },
   "nidorina": {
     "num": 30,
@@ -1018,7 +1025,14 @@
       "Monster",
       "Field"
     ],
-    "gender": "M"
+    "gender": "M",
+    "formes": [
+      "Nidoran",
+      "Nidoran-F",
+      "Nidoran-M"
+    ],
+    "baseSpecies": "Nidoran",
+    "forme": "M"
   },
   "nidorino": {
     "num": 33,
