@@ -189,13 +189,21 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		};
 		
 		// Find the root of the evolution tree by following pre-evos recursively
-		const findRoot = (pokemonId) => {
+		const findRoot = (pokemonId, visited) => {
+			// Use a visited set to guard against potential cycles or excessively deep chains
+			if (!visited) visited = new Set();
+			if (visited.has(pokemonId) || visited.size > 100) {
+				// Cycle detected or depth limit reached; fall back to the current ID
+				return pokemonId;
+			}
+			visited.add(pokemonId);
+
 			const preEvos = findPreEvos(pokemonId);
 			if (preEvos.length === 0) {
 				return pokemonId; // This is the root
 			}
 			// Pick the first pre-evo and recursively find its root
-			return findRoot(preEvos[0].sourceId);
+			return findRoot(preEvos[0].sourceId, visited);
 		};
 		
 		// Start from the root of the evolution tree

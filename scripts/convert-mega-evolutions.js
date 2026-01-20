@@ -49,9 +49,9 @@ try {
         // Apply dictionary mapping to the form name
         const finalFormName = nameMap[formKey] || formKey;
         
-        // Extract base species from the final form name (part before first hyphen)
-        const baseSpecies = finalFormName.includes('-') ? finalFormName.split('-')[0] : finalFormName;
-        const baseSpeciesId = toID(baseSpecies);
+        // Use the parsed base species from the file header instead of inferring it from the forme name.
+        // This avoids incorrect associations when the forme name doesn't start with the base species.
+        const baseSpeciesId = toID(currentBase);
         
         if (!megaEvolutions[baseSpeciesId]) {
           megaEvolutions[baseSpeciesId] = [];
