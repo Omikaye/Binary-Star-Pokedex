@@ -3,7 +3,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		id = toID(id);
 		var pokemon = BattlePokedex[id]
 		this.id = id;
-		this.shortTitle = pokemon.baseSpecies;
+		this.shortTitle = pokemon.baseSpecies || pokemon.name;
 
 		var buf = '<div class="pfx-body dexentry">';
 
