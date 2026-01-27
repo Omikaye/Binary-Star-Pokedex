@@ -92,7 +92,8 @@ function parseEvolutionLine(line, nameMap) {
     }
     // General Level Up (with level number)
     else if (cleanPart.includes('Level Up') && cleanPart.includes('into')) {
-      const levelMatch = cleanPart.match(/at level (\d+)/i);
+      // Accept patterns like "Level Up @ level 25" or "Level Up level 25"
+      const levelMatch = cleanPart.match(/level\s+(\d+)/i);
       const targetMatch = cleanPart.match(/into (.+)/i);
       if (targetMatch) {
         let targetName = targetMatch[1].trim();
@@ -143,27 +144,30 @@ function parseEvolutionLine(line, nameMap) {
 for (let i = 0; i < lines.length; i++) {
   const line = lines[i].trim();
 
-  // Check for separator
-  if (line.startsWith('|======')) {
-    if (currentPokemon) {
-      currentPokemon = null;
-    }
+  // Separator blocks: any "======" line resets the current pokemon context
+  if (line.startsWith('======')) {
     continue;
   }
 
-  // Empty line
+  // Empty line also resets
   if (!line) {
-    if (currentPokemon) {
-      currentPokemon = null;
-    }
+    currentPokemon = null;
+    continue;
+  }
+
+  // Skip lines that are just numeric indices
+  if (/^\d+\s*$/.test(line)) {
+    currentPokemon = null;
     continue;
   }
 
   // If we don't have a current Pokemon, this line is the Pokemon name
   if (!currentPokemon) {
-    let pokemonName = line;
-    if (nameMap[line]) {
-      pokemonName = nameMap[line];
+    // Lines may be prefixed with a numeric index, e.g. "914 Rattata 1"
+    const namePortion = line.replace(/^\d+\s+/, '').trim();
+    let pokemonName = namePortion;
+    if (nameMap[pokemonName]) {
+      pokemonName = nameMap[pokemonName];
     }
     const id = toID(pokemonName);
     currentPokemon = id;

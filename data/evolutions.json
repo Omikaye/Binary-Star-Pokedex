@@ -123,6 +123,24 @@
       "item": "Alolan Sack"
     }
   ],
+  "nidoran": [
+    {
+      "target": "nidorina",
+      "level": 21
+    },
+    {
+      "target": "nidorino",
+      "item": "Blue Box"
+    },
+    {
+      "target": "nidorino",
+      "level": 21
+    },
+    {
+      "target": "nidorina",
+      "item": "Pink Box"
+    }
+  ],
   "nidorina": [
     {
       "target": "nidoqueen",
@@ -2752,26 +2770,6 @@
     {
       "target": "lycanrocdusk",
       "item": "Dawn Stone"
-    }
-  ],
-  "nidoranf": [
-    {
-      "target": "nidorina",
-      "level": 21
-    },
-    {
-      "target": "nidorina",
-      "item": "Pink Box"
-    }
-  ],
-  "nidoranm": [
-    {
-      "target": "nidorino",
-      "item": "Blue Box"
-    },
-    {
-      "target": "nidorino",
-      "level": 21
     }
   ]
 }

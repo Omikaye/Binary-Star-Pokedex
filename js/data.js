@@ -212,7 +212,7 @@ window.getTrainerClass = (trainerName) => {
     "Police Officer", "Young Athlete", "Trial Guide", "Z-Trial Guide", "Ultra Forest", 
     "Masked Royal", "Youngster Amulet", "Youth Athlete", "Swim Gal", "Punk Guy", 
     "Punk Girl", "Skull Gang Grunt", "Athlete In-Training", "Up and Coming", 
-    "Aether Foundation", "Aether Scientist", "Pokemon Rancher", "Pokemon Breeder"
+    "Aether Foundation", "Aether Scientist", "Pokémon Rancher", "Pokémon Breeder"
   ];
   
   // Check if any multi-word class matches the beginning of trainerName

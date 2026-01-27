@@ -23,7 +23,7 @@
     "buyPrice": 600,
     "sellPrice": 300
   },
-  "pokeball": {
+  "pokball": {
     "name": "Poké Ball",
     "num": 4,
     "desc": "A device for catching wild Pokémon. It’s thrown like a ball at a Pokémon, comfortably encapsulating its target. (1x Catch Rate)",
@@ -3559,8 +3559,8 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "miraclemeds": {
-    "name": "Miracle Meds",
+  "miraclemedicine": {
+    "name": "Miracle Medicine",
     "num": 464,
     "desc": "A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pokémon's HP and PP, and restores all Status.",
     "shortDesc": "",
@@ -6583,16 +6583,16 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "terrainext": {
-    "name": "Terrain Ext.",
+  "terrainextender": {
+    "name": "Terrain Extender",
     "num": 879,
     "desc": "An item to be held by a Pokémon. It extends the duration of the terrain caused by the holder’s move or Ability to 8 turns from 5.",
     "shortDesc": "",
     "buyPrice": 4300,
     "sellPrice": 2150
   },
-  "protpads": {
-    "name": "Prot. Pads",
+  "protectivepads": {
+    "name": "Protective Pads",
     "num": 880,
     "desc": "An item to be held by a Pokémon. These pads protect the holder from effects caused by making direct contact, like Static, Rocky Helmet, or Baneful Bunker.",
     "shortDesc": "",

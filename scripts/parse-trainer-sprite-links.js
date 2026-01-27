@@ -21,9 +21,15 @@ for (const line of lines) {
   // Split on the first ':' to allow URLs with additional ':'
   const idx = line.indexOf(':');
   if (idx <= 0) continue;
-  const name = line.slice(0, idx).trim();
+  let name = line.slice(0, idx).trim();
   const url = line.slice(idx + 1).trim();
   if (!name || !url) continue;
+  
+  // Strip "(Name)" prefix if present
+  if (name.startsWith('(Name)')) {
+    name = name.replace(/^\(Name\)\s*/, '').trim();
+  }
+  
   const id = toID(name);
   spriteLinks[id] = url;
 }

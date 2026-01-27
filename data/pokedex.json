@@ -293,8 +293,8 @@
     ],
     "abilities": {
       "0": "Sticky Hold",
-      "1": "Run Away",
-      "H": "Shield Dust"
+      "1": "Shield Dust",
+      "H": "Run Away"
     },
     "baseStats": {
       "hp": 55,
@@ -352,8 +352,8 @@
     ],
     "abilities": {
       "0": "Compound Eyes",
-      "1": "Tinted Lens",
-      "H": "Shield Dust"
+      "1": "Shield Dust",
+      "H": "Gale Wings"
     },
     "baseStats": {
       "hp": 64,
@@ -387,7 +387,7 @@
     ],
     "abilities": {
       "0": "Poison Point",
-      "1": "Shield Dust",
+      "1": "Sticky Hold",
       "H": "Swarm"
     },
     "baseStats": {
@@ -447,8 +447,8 @@
     ],
     "abilities": {
       "0": "Poison Touch",
-      "1": "Merciless",
-      "H": "Swarm"
+      "1": "Swarm",
+      "H": "Merciless"
     },
     "baseStats": {
       "hp": 65,
@@ -691,6 +691,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Tectonic Rage-R",
+      "baseMove": "Drill Run",
+      "zCrystal": "Flyinium Z"
     }
   },
   "ekans": {
@@ -737,10 +742,10 @@
     },
     "baseStats": {
       "hp": 80,
-      "atk": 95,
+      "atk": 98,
       "def": 75,
-      "spa": 91,
-      "spd": 91,
+      "spa": 85,
+      "spd": 105,
       "spe": 87
     },
     "heightm": 3.5,
@@ -852,10 +857,10 @@
     },
     "baseStats": {
       "hp": 55,
-      "atk": 75,
+      "atk": 80,
       "def": 85,
-      "spa": 25,
-      "spd": 40,
+      "spa": 15,
+      "spd": 45,
       "spe": 65
     },
     "heightm": 0.6,
@@ -885,11 +890,11 @@
       "H": "Sand Veil"
     },
     "baseStats": {
-      "hp": 75,
+      "hp": 80,
       "atk": 113,
-      "def": 110,
-      "spa": 30,
-      "spd": 60,
+      "def": 115,
+      "spa": 15,
+      "spd": 65,
       "spe": 93
     },
     "heightm": 1,
@@ -1088,7 +1093,7 @@
     },
     "baseStats": {
       "hp": 70,
-      "atk": 45,
+      "atk": 44,
       "def": 56,
       "spa": 60,
       "spd": 65,
@@ -1243,16 +1248,16 @@
       "Fairy"
     ],
     "abilities": {
-      "0": "Sheer Force",
+      "0": "Huge Power",
       "1": "Competitive",
       "H": "Cute Charm"
     },
     "baseStats": {
       "hp": 150,
-      "atk": 90,
-      "def": 65,
-      "spa": 75,
-      "spd": 75,
+      "atk": 55,
+      "def": 70,
+      "spa": 95,
+      "spd": 85,
       "spe": 45
     },
     "heightm": 1,
@@ -1399,7 +1404,7 @@
     "abilities": {
       "0": "Chlorophyll",
       "1": "Effect Spore",
-      "H": "Leaf Guard"
+      "H": "Flower Veil"
     },
     "baseStats": {
       "hp": 80,
@@ -1630,7 +1635,7 @@
     ],
     "abilities": {
       "0": "Pickup",
-      "1": "Technician",
+      "1": "Frisk",
       "H": "Limber"
     },
     "baseStats": {
@@ -1738,7 +1743,7 @@
     },
     "baseStats": {
       "hp": 80,
-      "atk": 82,
+      "atk": 92,
       "def": 78,
       "spa": 103,
       "spd": 80,
@@ -1950,7 +1955,7 @@
     ],
     "abilities": {
       "0": "Dry Skin",
-      "1": "Iron Fist",
+      "1": "Damp",
       "H": "Swift Swim"
     },
     "baseStats": {
@@ -1980,7 +1985,7 @@
     "abilities": {
       "0": "Comatose",
       "1": "Oblivious",
-      "H": "Insomnia"
+      "H": "Inner Focus"
     },
     "baseStats": {
       "hp": 25,
@@ -2419,8 +2424,8 @@
     ],
     "abilities": {
       "0": "Run Away",
-      "1": "Flash Fire",
-      "H": "Flame Body"
+      "1": "Flame Body",
+      "H": "Quick Feet"
     },
     "baseStats": {
       "hp": 50,
@@ -2448,17 +2453,17 @@
       "Fairy"
     ],
     "abilities": {
-      "0": "Serene Grace",
-      "1": "Flash Fire",
-      "H": "Flame Body"
+      "0": "Run Away",
+      "1": "Flame Body",
+      "H": "Quick Feet"
     },
     "baseStats": {
-      "hp": 70,
+      "hp": 68,
       "atk": 105,
       "def": 70,
       "spa": 80,
       "spd": 80,
-      "spe": 115
+      "spe": 122
     },
     "heightm": 1.7,
     "weightkg": 95,
@@ -2516,7 +2521,7 @@
     "abilities": {
       "0": "Oblivious",
       "1": "Regenerator",
-      "H": "Own Tempo"
+      "H": "Unaware"
     },
     "baseStats": {
       "hp": 100,
@@ -2599,13 +2604,13 @@
     "num": 83,
     "name": "Farfetch’d",
     "types": [
-      "Fighting",
+      "Normal",
       "Flying"
     ],
     "abilities": {
       "0": "Sniper",
       "1": "Super Luck",
-      "H": "Defiant"
+      "H": "Hyper Cutter"
     },
     "baseStats": {
       "hp": 60,
@@ -2729,12 +2734,12 @@
       "H": "Thick Fat"
     },
     "baseStats": {
-      "hp": 90,
-      "atk": 80,
+      "hp": 106,
+      "atk": 72,
       "def": 85,
-      "spa": 80,
+      "spa": 72,
       "spd": 95,
-      "spe": 60
+      "spe": 65
     },
     "heightm": 1.7,
     "weightkg": 120,
@@ -3006,7 +3011,7 @@
     "abilities": {
       "0": "Insomnia",
       "1": "Bad Dreams",
-      "H": "Inner Focus"
+      "H": "Anticipation"
     },
     "baseStats": {
       "hp": 60,
@@ -3036,7 +3041,7 @@
     "abilities": {
       "0": "Psychic Surge",
       "1": "Bad Dreams",
-      "H": "Inner Focus"
+      "H": "Telepathy"
     },
     "baseStats": {
       "hp": 85,
@@ -3064,7 +3069,7 @@
     ],
     "abilities": {
       "0": "Shell Armor",
-      "1": "Sheer Force",
+      "1": "Tough Claws",
       "H": "Hyper Cutter"
     },
     "baseStats": {
@@ -3093,7 +3098,7 @@
     ],
     "abilities": {
       "0": "Shell Armor",
-      "1": "Sheer Force",
+      "1": "Tough Claws",
       "H": "Hyper Cutter"
     },
     "baseStats": {
@@ -3588,9 +3593,9 @@
       "Normal"
     ],
     "abilities": {
-      "0": "Early Bird",
+      "0": "Receiver",
       "1": "Scrappy",
-      "H": "Inner Focus"
+      "H": "Friend Guard"
     },
     "baseStats": {
       "hp": 105,
@@ -3746,7 +3751,7 @@
     "abilities": {
       "0": "Regenerator",
       "1": "Victory Star",
-      "H": "Natural Cure"
+      "H": "Analytic"
     },
     "baseStats": {
       "hp": 30,
@@ -3773,7 +3778,7 @@
     "abilities": {
       "0": "Regenerator",
       "1": "Victory Star",
-      "H": "Natural Cure"
+      "H": "Analytic"
     },
     "baseStats": {
       "hp": 70,
@@ -3835,7 +3840,7 @@
     "abilities": {
       "0": "Swarm",
       "1": "Technician",
-      "H": "Steadfast"
+      "H": "Hyper Cutter"
     },
     "baseStats": {
       "hp": 70,
@@ -4014,7 +4019,7 @@
     "abilities": {
       "0": "Swift Swim",
       "1": "Rattled",
-      "H": "Rattled"
+      "H": "Marvel Scale"
     },
     "baseStats": {
       "hp": 20,
@@ -4044,8 +4049,8 @@
     ],
     "abilities": {
       "0": "Intimidate",
-      "1": "Moxie",
-      "H": "Moxie"
+      "1": "Beast Boost",
+      "H": "Water Veil"
     },
     "baseStats": {
       "hp": 95,
@@ -4083,12 +4088,12 @@
       "H": "Hydration"
     },
     "baseStats": {
-      "hp": 130,
+      "hp": 135,
       "atk": 85,
       "def": 80,
       "spa": 85,
       "spd": 95,
-      "spe": 60
+      "spe": 70
     },
     "heightm": 2.5,
     "weightkg": 220,
@@ -4115,7 +4120,7 @@
     "abilities": {
       "0": "Illusion",
       "1": "Imposter",
-      "H": "Limber"
+      "H": "Color Change"
     },
     "baseStats": {
       "hp": 60,
@@ -4262,7 +4267,7 @@
     "abilities": {
       "0": "Trace",
       "1": "Download",
-      "H": "Analytic"
+      "H": "Color Change"
     },
     "baseStats": {
       "hp": 65,
@@ -4562,7 +4567,7 @@
     "abilities": {
       "0": "Shed Skin",
       "1": "Marvel Scale",
-      "H": "Mold Breaker"
+      "H": "Water Veil"
     },
     "baseStats": {
       "hp": 41,
@@ -4593,7 +4598,7 @@
     "abilities": {
       "0": "Shed Skin",
       "1": "Marvel Scale",
-      "H": "Mold Breaker"
+      "H": "Water Veil"
     },
     "baseStats": {
       "hp": 71,
@@ -4624,7 +4629,7 @@
     "abilities": {
       "0": "Multiscale",
       "1": "Marvel Scale",
-      "H": "Mold Breaker"
+      "H": "Rain Dish"
     },
     "baseStats": {
       "hp": 91,
@@ -4658,8 +4663,8 @@
     ],
     "abilities": {
       "0": "Pressure",
-      "1": "Pressure",
-      "H": "Unnerve"
+      "1": "Unnerve",
+      "H": "Telepathy"
     },
     "baseStats": {
       "hp": 106,
@@ -4729,10 +4734,10 @@
       "H": "Overgrow"
     },
     "baseStats": {
-      "hp": 60,
+      "hp": 55,
       "atk": 55,
       "def": 65,
-      "spa": 60,
+      "spa": 55,
       "spd": 65,
       "spe": 45
     },
@@ -4761,7 +4766,7 @@
     },
     "baseStats": {
       "hp": 75,
-      "atk": 62,
+      "atk": 72,
       "def": 80,
       "spa": 75,
       "spd": 78,
@@ -4826,8 +4831,8 @@
       "atk": 60,
       "def": 50,
       "spa": 60,
-      "spd": 55,
-      "spe": 80
+      "spd": 50,
+      "spe": 75
     },
     "heightm": 0.5,
     "weightkg": 7.9,
@@ -4852,12 +4857,12 @@
       "H": "Blaze"
     },
     "baseStats": {
-      "hp": 68,
-      "atk": 69,
+      "hp": 58,
+      "atk": 74,
       "def": 58,
       "spa": 80,
-      "spd": 65,
-      "spe": 90
+      "spd": 75,
+      "spe": 95
     },
     "heightm": 0.9,
     "weightkg": 19,
@@ -4916,10 +4921,10 @@
       "H": "Torrent"
     },
     "baseStats": {
-      "hp": 55,
+      "hp": 50,
       "atk": 65,
       "def": 64,
-      "spa": 54,
+      "spa": 49,
       "spd": 57,
       "spe": 55
     },
@@ -4939,7 +4944,7 @@
     "name": "Croconaw",
     "types": [
       "Water",
-      "Dark"
+      "Dragon"
     ],
     "abilities": {
       "0": "Hustle",
@@ -4950,8 +4955,8 @@
       "hp": 75,
       "atk": 85,
       "def": 85,
-      "spa": 59,
-      "spd": 63,
+      "spa": 64,
+      "spd": 68,
       "spe": 63
     },
     "heightm": 1.1,
@@ -4970,7 +4975,7 @@
     "name": "Feraligatr",
     "types": [
       "Water",
-      "Dark"
+      "Dragon"
     ],
     "abilities": {
       "0": "Sheer Force",
@@ -5013,7 +5018,7 @@
       "def": 40,
       "spa": 35,
       "spd": 45,
-      "spe": 20
+      "spe": 23
     },
     "heightm": 0.8,
     "weightkg": 6,
@@ -5029,8 +5034,7 @@
     "num": 162,
     "name": "Furret",
     "types": [
-      "Normal",
-      "Ground"
+      "Normal"
     ],
     "abilities": {
       "0": "Stakeout",
@@ -5043,7 +5047,7 @@
       "def": 71,
       "spa": 45,
       "spd": 62,
-      "spe": 116
+      "spe": 123
     },
     "heightm": 1.8,
     "weightkg": 32.5,
@@ -5064,7 +5068,7 @@
     ],
     "abilities": {
       "0": "Tinted Lens",
-      "1": "Compound Eyes",
+      "1": "Early Bird",
       "H": "Analytic"
     },
     "baseStats": {
@@ -5094,7 +5098,7 @@
     ],
     "abilities": {
       "0": "Tinted Lens",
-      "1": "Compound Eyes",
+      "1": "Early Bird",
       "H": "Analytic"
     },
     "baseStats": {
@@ -5263,6 +5267,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Savage Spin-Out-R",
+      "baseMove": "Leech Life",
+      "zCrystal": "Poisonium Z"
     }
   },
   "chinchou": {
@@ -6075,9 +6084,9 @@
       "Psychic"
     ],
     "abilities": {
-      "0": "Telepathy",
+      "0": "Neuroforce",
       "1": "Magic Bounce",
-      "H": "Synchronize"
+      "H": "Telepathy"
     },
     "baseStats": {
       "hp": 65,
@@ -6104,9 +6113,9 @@
       "Dark"
     ],
     "abilities": {
-      "0": "Telepathy",
+      "0": "Shadow Shield",
       "1": "Magic Guard",
-      "H": "Synchronize"
+      "H": "Telepathy"
     },
     "baseStats": {
       "hp": 95,
@@ -6166,7 +6175,7 @@
     "abilities": {
       "0": "Oblivious",
       "1": "Regenerator",
-      "H": "Own Tempo"
+      "H": "Unaware"
     },
     "baseStats": {
       "hp": 100,
@@ -6202,7 +6211,7 @@
     "abilities": {
       "0": "Levitate",
       "1": "Magic Guard",
-      "H": "Levitate"
+      "H": "Bad Dreams"
     },
     "baseStats": {
       "hp": 60,
@@ -6668,7 +6677,7 @@
     ],
     "abilities": {
       "0": "Inner Focus",
-      "1": "Technician",
+      "1": "Hyper Cutter",
       "H": "Pickpocket"
     },
     "baseStats": {
@@ -6723,13 +6732,13 @@
     "num": 217,
     "name": "Ursaring",
     "types": [
-      "Ground",
-      "Fighting"
+      "Normal",
+      "Ground"
     ],
     "abilities": {
-      "0": "Sheer Force",
+      "0": "Guts",
       "1": "Intimidate",
-      "H": "Guts"
+      "H": "Sheer Force"
     },
     "baseStats": {
       "hp": 90,
@@ -7228,7 +7237,7 @@
     "abilities": {
       "0": "Trace",
       "1": "Download",
-      "H": "Analytic"
+      "H": "Color Change"
     },
     "baseStats": {
       "hp": 85,
@@ -7490,9 +7499,9 @@
     },
     "baseStats": {
       "hp": 255,
-      "atk": 10,
+      "atk": 15,
       "def": 15,
-      "spa": 80,
+      "spa": 75,
       "spd": 135,
       "spe": 55
     },
@@ -7605,7 +7614,7 @@
     ],
     "abilities": {
       "0": "Guts",
-      "1": "Guts",
+      "1": "Sand Force",
       "H": "Sand Veil"
     },
     "baseStats": {
@@ -7635,7 +7644,7 @@
     ],
     "abilities": {
       "0": "Shed Skin",
-      "1": "Shed Skin",
+      "1": "Battle Armor",
       "H": "Solid Rock"
     },
     "baseStats": {
@@ -7665,7 +7674,7 @@
     ],
     "abilities": {
       "0": "Sand Stream",
-      "1": "Sand Stream",
+      "1": "Intimidate",
       "H": "Unnerve"
     },
     "baseStats": {
@@ -7699,8 +7708,8 @@
     ],
     "abilities": {
       "0": "Multiscale",
-      "1": "Multiscale",
-      "H": "Pressure"
+      "1": "Pressure",
+      "H": "Rain Dish"
     },
     "baseStats": {
       "hp": 106,
@@ -7726,8 +7735,8 @@
     ],
     "abilities": {
       "0": "Regenerator",
-      "1": "Regenerator",
-      "H": "Pressure"
+      "1": "Pressure",
+      "H": "Serene Grace"
     },
     "baseStats": {
       "hp": 106,
@@ -13240,7 +13249,7 @@
     "abilities": {
       "0": "Levitate",
       "1": "Magic Guard",
-      "H": "Levitate"
+      "H": "Bad Dreams"
     },
     "baseStats": {
       "hp": 60,
@@ -13413,7 +13422,7 @@
     "name": "Skuntank",
     "types": [
       "Poison",
-      "Fairy"
+      "Dark"
     ],
     "abilities": {
       "0": "Stench",
@@ -13438,7 +13447,7 @@
       "F": 0.5
     },
     "zmove": {
-      "zMove": "Inferno Overdrive",
+      "zMove": "Inferno Overdrive-R",
       "baseMove": "Flamethrower",
       "zCrystal": "Darkinium Z"
     }
@@ -14262,7 +14271,7 @@
     ],
     "abilities": {
       "0": "Magnet Pull",
-      "1": "Multistriker",
+      "1": "Analytic",
       "H": "Sturdy"
     },
     "baseStats": {
@@ -14289,7 +14298,8 @@
     "num": 463,
     "name": "Lickilicky",
     "types": [
-      "Normal"
+      "Normal",
+      "Poison"
     ],
     "abilities": {
       "0": "Gooey",
@@ -14556,7 +14566,7 @@
     ],
     "abilities": {
       "0": "Slush Rush",
-      "1": "Refrigerate",
+      "1": "Snow Warning",
       "H": "Ice Body"
     },
     "baseStats": {
@@ -16940,11 +16950,7 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
-    },
-    "formes": [
-      "Basculin",
-      "Basculin-Blue-Striped"
-    ]
+    }
   },
   "sandile": {
     "num": 551,
@@ -22166,8 +22172,8 @@
       "F": 0
     },
     "zmove": {
-      "zMove": "",
-      "baseMove": "Grassy Terrain",
+      "zMove": "Supersonic Skystrike",
+      "baseMove": "Roost",
       "zCrystal": "Normalium Z"
     }
   },
@@ -22199,11 +22205,6 @@
     "genderRatio": {
       "M": 1,
       "F": 0
-    },
-    "zmove": {
-      "zMove": "Grassy Terrain",
-      "baseMove": "Grassy Terrain",
-      "zCrystal": "Normalium Z"
     }
   },
   "decidueye": {
@@ -24624,7 +24625,7 @@
     "gender": "N",
     "formes": [
       "Magearna",
-      "Magearna-Original"
+      "Magearna-Mega"
     ]
   },
   "marshadow": {
@@ -25489,9 +25490,9 @@
     "baseSpecies": "Gastrodon",
     "forme": "East"
   },
-  "basculinbluestriped": {
-    "num": 550,
-    "name": "Basculin-Blue-Striped",
+  "basculin1": {
+    "num": 826,
+    "name": "Basculin 1",
     "types": [
       "Water",
       "Normal"
@@ -25517,13 +25518,7 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
-    },
-    "formes": [
-      "Basculin",
-      "Basculin-Blue-Striped"
-    ],
-    "baseSpecies": "Basculin",
-    "forme": "Blue-Striped"
+    }
   },
   "darmanitanmega": {
     "num": 555,
@@ -29031,7 +29026,7 @@
     ],
     "abilities": {
       "0": "Pickup",
-      "1": "Technician",
+      "1": "Frisk",
       "H": "Rattled"
     },
     "baseStats": {
@@ -29211,7 +29206,7 @@
     "abilities": {
       "0": "Power of Alchemy",
       "1": "Poison Touch",
-      "H": "Gluttony"
+      "H": "Gooey"
     },
     "baseStats": {
       "hp": 80,
@@ -29247,7 +29242,7 @@
     "abilities": {
       "0": "Power of Alchemy",
       "1": "Poison Touch",
-      "H": "Gluttony"
+      "H": "Gooey"
     },
     "baseStats": {
       "hp": 110,
@@ -29370,9 +29365,9 @@
     },
     "baseStats": {
       "hp": 70,
-      "atk": 120,
+      "atk": 140,
       "def": 120,
-      "spa": 70,
+      "spa": 50,
       "spd": 95,
       "spe": 86
     },
@@ -29810,25 +29805,25 @@
     "baseSpecies": "Mimikyu",
     "forme": "Busted-Megamax"
   },
-  "magearnaoriginal": {
+  "magearnamega": {
     "num": 801,
-    "name": "Magearna-Original",
+    "name": "Magearna-Mega",
     "types": [
       "Steel",
       "Fairy"
     ],
     "abilities": {
-      "0": "Zen Mode",
-      "1": "Zen Mode",
-      "H": "Zen Mode"
+      "0": "Full Metal Body",
+      "1": "Full Metal Body",
+      "H": "Full Metal Body"
     },
     "baseStats": {
       "hp": 80,
-      "atk": 95,
+      "atk": 125,
       "def": 115,
-      "spa": 130,
+      "spa": 170,
       "spd": 115,
-      "spe": 65
+      "spe": 95
     },
     "heightm": 1,
     "weightkg": 80.5,
@@ -29838,10 +29833,10 @@
     "gender": "N",
     "formes": [
       "Magearna",
-      "Magearna-Original"
+      "Magearna-Mega"
     ],
     "baseSpecies": "Magearna",
-    "forme": "Original"
+    "forme": "Mega"
   },
   "pikachuoriginal": {
     "num": 25,
@@ -29860,7 +29855,7 @@
       "def": 51,
       "spa": 70,
       "spd": 62,
-      "spe": 104
+      "spe": 109
     },
     "heightm": 0.4,
     "weightkg": 6,
@@ -29903,7 +29898,7 @@
       "def": 51,
       "spa": 70,
       "spd": 62,
-      "spe": 104
+      "spe": 109
     },
     "heightm": 0.4,
     "weightkg": 6,
@@ -29946,7 +29941,7 @@
       "def": 51,
       "spa": 70,
       "spd": 62,
-      "spe": 104
+      "spe": 109
     },
     "heightm": 0.4,
     "weightkg": 6,
@@ -29989,7 +29984,7 @@
       "def": 51,
       "spa": 70,
       "spd": 62,
-      "spe": 104
+      "spe": 109
     },
     "heightm": 0.4,
     "weightkg": 6,
@@ -30032,7 +30027,7 @@
       "def": 51,
       "spa": 70,
       "spd": 62,
-      "spe": 104
+      "spe": 109
     },
     "heightm": 0.4,
     "weightkg": 6,
@@ -30075,7 +30070,7 @@
       "def": 51,
       "spa": 70,
       "spd": 62,
-      "spe": 104
+      "spe": 109
     },
     "heightm": 0.4,
     "weightkg": 6,
@@ -30118,7 +30113,7 @@
       "def": 51,
       "spa": 70,
       "spd": 62,
-      "spe": 104
+      "spe": 109
     },
     "heightm": 0.4,
     "weightkg": 6,

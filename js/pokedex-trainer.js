@@ -17,17 +17,34 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     this.trainer = trainer;
     this.shortTitle = trainer.name;
 
-    // Get trainer sprite - pass full trainer name so it can check personal name first
-    var trainerSprite = getTrainerIcon(trainer.name, true);
+    // Get trainer sprite - try multiple strategies:
+    // 1. Check personalName (if exists) - for named trainers like "Hau", "Gladion"
+    // 2. Check trainerClass - for generic classes like "Youngster", "Lass", "Pokémon Rancher"
+    // 3. Check full name with personal name extraction as fallback
+    var trainerSprite = 'background:transparent';
+    
+    // First, try personal name if it exists (named trainers like Hau, Gladion)
+    if (trainer.personalName && TrainerSpriteLinks && TrainerSpriteLinks[toID(trainer.personalName)]) {
+      trainerSprite = getTrainerIcon(trainer.personalName, false);
+    } 
+    // Second, try trainer class (Youngster, Lass, Pokémon Rancher, etc.)
+    else if (trainer.trainerClass && TrainerSpriteLinks && TrainerSpriteLinks[toID(trainer.trainerClass)]) {
+      trainerSprite = getTrainerIcon(trainer.trainerClass, false);
+    }
+    // Third, try extracting from full name as fallback
+    else if (trainer.name) {
+      trainerSprite = getTrainerIcon(trainer.name, true);
+    }
 
     var buf = '<div class="pfx-body dexentry" style="position:relative;' + trainerSprite + '">';
     buf += '<style>' +
       '.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
       '.dexentry .movedesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
       '.dexentry .namecol { float: none !important; display: inline !important; padding-top: 0 !important; height: auto !important; }' +
-      '.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; position: relative; z-index: 1; }' +
+      '.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; position: relative; z-index: 10; }' +
       '.dexentry h1 a { display:inline-block; white-space:nowrap; vertical-align: middle; }' +
       '.dexentry > * { position: relative; z-index: 1; }' +
+      '.trainer-sprite { position: absolute; top: 0; left: 0; z-index: 20; pointer-events: none; }' +
       '</style>';
     buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Trainers</a>';
     
@@ -53,27 +70,18 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         }
       }
     }
-    
     if (trainerLocation) {
       buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/' + trainerLocation.id + '" data-target="push">' + escapeHTML(trainerLocation.name) + '</a></dd>';
-    } else {
-      buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/" data-target="push">Coming soon</a></dd>';
     }
-    // Extra Notes (if present) — directly under Location within the same DL
+    
+    // Extra Notes below location if present
     var notes = (window.TrainerNotes && window.TrainerNotes[norm] && window.TrainerNotes[norm].extraNotes) || '';
     if (typeof notes === 'string' && notes.trim().length) {
       buf += '<dt>Extra Notes:</dt> <dd>' + escapeHTML(notes) + '</dd>';
     }
     buf += '</dl>';
 
-    // Team
-    buf += '<h3>Team</h3>';
-    buf += '<ul class="utilichart nokbd">';
-    var TYPE_COLORS = {
-      Normal: '#A8A77A', Fire: '#EE8130', Water: '#6390F0', Electric: '#F7D02C', Grass: '#7AC74C', Ice: '#96D9D6',
-      Fighting: '#C22E28', Poison: '#A33EA1', Ground: '#E2BF65', Flying: '#A98FF3', Psychic: '#F95587', Bug: '#A6B91A',
-      Rock: '#B6A136', Ghost: '#735797', Dragon: '#6F35FC', Dark: '#705746', Steel: '#B7B7CE', Fairy: '#D685AD'
-    };
+    // === Team layout ===
     var NATURE_EFFECTS = {
       Adamant: ['Atk', 'SpA'], Modest: ['SpA', 'Atk'], Jolly: ['Spe', 'SpA'], Timid: ['Spe', 'Atk'],
       Impish: ['Def', 'SpA'], Bold: ['Def', 'Atk'], Careful: ['SpD', 'SpA'], Calm: ['SpD', 'Atk'],
@@ -82,158 +90,117 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       Quiet: ['SpA', 'Spe'], Brave: ['Atk', 'Spe'], Relaxed: ['Def', 'Spe'], Sassy: ['SpD', 'Spe'],
       Bashful: null, Docile: null, Serious: null, Hardy: null, Quirky: null
     };
-    
-    // Helper function to check if a Pokemon has illegal ability or moves
-    var isIllegal = function(pokemon, speciesData) {
-      if (!speciesData) return false;
-      
-      // Check ability legality
-      if (pokemon.ability) {
-        var abilityLegal = false;
-        for (var slot in speciesData.abilities) {
-          if (speciesData.abilities[slot] === pokemon.ability) {
-            abilityLegal = true;
-            break;
-          }
-        }
-        if (!abilityLegal) return true;
-      }
-      
-      // Check move legality
-      if (pokemon.moves && pokemon.moves.length > 0) {
-        var speciesLearnset = window.Learnsets[speciesData.id] || [];
-        for (var j = 0; j < pokemon.moves.length; j++) {
-          var moveID = toID(pokemon.moves[j]);
-          var moveData = BattleMovedex[moveID];
-          if (!moveData) continue; // Skip unknown moves
-          
-          var moveLegal = false;
-          for (var k = 0; k < speciesLearnset.length; k++) {
-            if (toID(speciesLearnset[k].move) === moveID) {
-              moveLegal = true;
-              break;
-            }
-          }
-          if (!moveLegal) return true;
-        }
-      }
-      
-      return false;
+
+    var colors = ['#f15b5b', '#f28f44', '#f2c547', '#70c27a', '#5ba4f1', '#9a6df2'];
+
+    // Type color mapping (similar to type sprite colors)
+    var typeColors = {
+      normal: '#A8A878', fighting: '#C03028', flying: '#A890F0', poison: '#A040A0', ground: '#E0C068',
+      rock: '#B8A038', bug: '#A8B820', ghost: '#705898', steel: '#B8B8D0', fire: '#F08030',
+      water: '#6890F0', grass: '#78C850', electric: '#F8D030', psychic: '#F85888', ice: '#98D8D8',
+      dragon: '#7038F8', dark: '#705848', fairy: '#EE99AC'
     };
-    
-    for (var i = 0; i < (trainer.team || []).length; i++) {
-      var m = trainer.team[i] || {};
+
+    var getTypeColor = function(type) {
+      return typeColors[toID(type)] || '#ccc';
+    };
+
+    var renderItemBox = function(itemName) {
+      if (!itemName) return '';
+      var itemID = toID(itemName);
+      var data = BattleItems[itemID];
+      var title = data ? data.name : itemName;
+      var desc = data ? (data.shortDesc || data.desc || '') : '';
+      var icon = '<span class="itemicon" style="' + getItemIcon(itemID) + ';width:32px;height:32px;display:inline-block;vertical-align:top;flex-shrink:0"></span>';
+      return '<a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:#fff;border:1px solid #ddd;border-radius:6px;padding:8px;display:flex;gap:8px;align-items:flex-start">' + icon + '<div style="flex:1"><strong>' + escapeHTML(title) + '</strong><br /><small>' + escapeHTML(desc) + '</small></div></div></a>';
+    };
+
+    var renderAbilityBox = function(abilityName) {
+      if (!abilityName) return '';
+      var abilityID = toID(abilityName);
+      var data = BattleAbilities[abilityID];
+      var content = '<div class="infobox" style="background:#fff;border:1px solid #ddd;border-radius:6px;padding:8px"><strong>' + escapeHTML((data ? data.name : abilityName)) + '</strong><br /><small>' + escapeHTML((data ? (data.shortDesc || data.desc || '') : '')) + '</small></div>';
+      return '<a href="' + Config.baseurl + 'abilities/' + abilityID + '" data-target="push" class="subtle" style="text-decoration:none">' + content + '</a>';
+    };
+
+    var renderMoveBox = function(moveName) {
+      if (!moveName) return '';
+      var moveID = toID(moveName);
+      var data = BattleMovedex[moveID];
+      var moveType = data ? toID(data.type) : 'normal';
+      var bgColor = getTypeColor(moveType);
+      var typeIcon = '<span style="margin-left:6px;display:inline-block">' + getTypeIcon(moveType) + '</span>';
+      if (!data) return '<div class="infobox" style="background:' + bgColor + '33;border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:#333">' + escapeHTML(moveName) + typeIcon + '</div>';
+      return '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:' + bgColor + '33;border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:#333;display:flex;justify-content:space-between;align-items:center"><div><strong>' + escapeHTML(data.name) + '</strong><br /><small>' + escapeHTML(data.shortDesc || data.desc || '') + '</small></div>' + typeIcon + '</div></a>';
+    };
+
+    // Team cards
+    buf += '<div style="margin-top:12px">';
+    for (var pi = 0; pi < (trainer.team || []).length && pi < 6; pi++) {
+      var m = trainer.team[pi] || {};
       var dispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(m.name || '') : (m.name || '');
       var monID = toID(dispName);
       var monData = BattlePokedex[monID];
-
-      buf += '<li class="result" style="background:#f7f7f7;padding:12px 12px 14px;border-radius:6px;margin-bottom:220px">';
-
-      // Row 1: Pokemon Sprite | Item Sprite | Name (Level)
-      buf += '<div class="resultrow" style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">';
-      // Sprites block: keep on same plane and close together
-      var spritesBlock = '';
-      if (monData) {
-        spritesBlock += '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(monData.name) + '">' +
-          '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>' +
-        '</a>';
-      } else {
-        spritesBlock += '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>';
+      var iconId = monID;
+      if (!monData && monID) {
+        var baseGuess = monID.split('-')[0];
+        iconId = baseGuess;
+        monData = BattlePokedex[iconId];
       }
-      if (m.item) {
-        var itemID = toID(m.item);
-        var itemName = BattleItems[itemID]?.name || m.item;
-        var itemHref = BattleItems[itemID] ? (Config.baseurl + 'items/' + itemID) : null;
-        var itemIcon = '<span class="picon" style="' + getItemIcon(itemID) + ';display:inline-block;width:32px;height:32px;vertical-align:middle"></span>';
-        spritesBlock += itemHref ? ('<a href="' + itemHref + '" data-target="push" title="' + escapeHTML(itemName) + '" style="margin-left:-12px;position:relative;top:4px">' + itemIcon + '</a>') : ('<span style="margin-left:16px;position:relative;top:2px">' + itemIcon + '</span>');
+      if (monData && monData.baseSpecies && BattlePokedex[toID(monData.baseSpecies)]) {
+        iconId = toID(monData.baseSpecies);
       }
-      buf += '<span style="display:inline-flex;align-items:center;gap:2px;margin-left:-8px">' + spritesBlock + '</span>';
-      var illegal = isIllegal(m, monData);
-      var nameColor = illegal ? 'color:red;' : '';
-      var nameHtml = '<span style="font-size:14px;' + nameColor + '">' + escapeHTML(monData ? monData.name : (m.name || '???')) + '</span> <small>(Lv. ' + (m.level || '?') + ')</small>';
-      buf += '<span class="col namecol" style="min-width:200px">' + nameHtml + '</span>';
+      var bg = colors[pi % colors.length];
+
+      buf += '<div style="border-radius:10px;overflow:hidden;margin-bottom:12px;border:1px solid rgba(0,0,0,0.08);box-shadow:0 2px 6px rgba(0,0,0,0.08)">';
+      buf += '<div style="background:' + bg + ';color:#fff;padding:8px 12px;font-weight:bold">Pokémon ' + (pi+1) + '</div>';
+      buf += '<div style="background:linear-gradient(180deg, ' + bg + '22, #fff);padding:12px">';
+
+      buf += '<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
+      buf += '<span class="picon" style="' + getPokemonIcon(iconId) + ';display:inline-block;vertical-align:middle"></span>';
+      var monName = monData ? monData.name : (m.name || '???');
+      var monLinkId = monData ? toID(monData.name) : monID;
+      buf += '<a href="' + Config.baseurl + 'pokemon/' + monLinkId + '" data-target="push" class="subtle" style="text-decoration:none"><div style="font-size:16px;font-weight:600">' + escapeHTML(monName) + ' <small>(Lv. ' + (m.level || '?') + ')</small></div></a>';
       buf += '</div>';
-      // Types directly below the sprite block
+
       var types = (monData?.types || []);
       if (types.length) {
-        buf += '<div class="resultsub" style="margin-top:2px;margin-left:0">' + types.map(function(t){return getTypeIcon(t);}).join(' ') + '</div>';
+        buf += '<div style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap">' + types.map(function(t){return getTypeIcon(t);}).join(' ') + '</div>';
       }
 
-      // Row 2a: Ability rendered as a button-style utilichart entry (with description like search page)
-      if (m.ability) {
-        var abilID = toID(m.ability);
-        var abilityObj = BattleAbilities[abilID];
-        if (abilityObj) {
-          var abilRow = (window.BattleSearch && typeof BattleSearch.renderAbilityRow === 'function')
-            ? BattleSearch.renderAbilityRow(abilityObj)
-            : ('<li class="result" style="background:transparent">' +
-                '<a href="' + Config.baseurl + 'abilities/' + abilID + '" data-target="push">' +
-                  '<span class="col namecol">' + escapeHTML(abilityObj.name) + '</span> ' +
-                  '<span class="col abilitydesccol">' + escapeHTML(abilityObj.shortDesc || abilityObj.desc || '') + '</span> ' +
-                '</a>' +
-              '</li>');
-          buf += '<ul class="utilichart nokbd" style="margin-top:4px;margin-bottom:2px">' + abilRow + '</ul>';
-        } else {
-          // Fallback plain text if ability not found
-          buf += '<div class="resultsub" style="margin-top:4px"><strong>Ability:</strong> ' + escapeHTML(m.ability) + '</div>';
-        }
+      if (m.item) {
+        buf += '<div style="margin-top:10px">' + renderItemBox(m.item) + '</div>';
       }
-      // Row 2b: Nature with effects
-      var natureHtml = '';
+
+      if (m.ability) {
+        buf += '<div style="margin-top:10px">' + renderAbilityBox(m.ability) + '</div>';
+      }
+
       if (m.nature) {
         var eff = NATURE_EFFECTS[m.nature] || null;
+        var natText = '<strong>Nature:</strong> ' + escapeHTML(m.nature);
         if (eff) {
-          natureHtml = '<small>Nature:</small> ' + escapeHTML(m.nature) +
-            ' (<span style="color:#1f9d3a">' + eff[0] + '↑</span> / <span style="color:#c22e28">' + eff[1] + '↓</span>)';
+          natText += ' (<span style="color:#1f9d3a">' + eff[0] + '&#8593;</span> / <span style="color:#c22e28">' + eff[1] + '&#8595;</span>)';
         } else {
-          natureHtml = '<small>Nature:</small> ' + escapeHTML(m.nature) + ' (Neutral)';
+          natText += ' (Neutral)';
         }
+        buf += '<div style="margin-top:8px">' + natText + '</div>';
       }
-      if (natureHtml) buf += '<div class="resultsub" style="margin-top:2px">' + natureHtml + '</div>';
 
-      // Row 3: Moves as buttons, show description like search page; PP shows base PP
       var moves = m.moves || [];
       if (moves.length) {
-        var mvbuf = '';
-        for (var j = 0; j < moves.length; j++) {
-          var moveID = toID(moves[j]);
-          var move = BattleMovedex[moveID];
-          if (!move) {
-            mvbuf += '<li class="result">' + escapeHTML(moves[j]) + '</li>';
-            continue;
-          }
-          // Use search renderer (full row) which includes the <li> wrapper
-          var rowHTML = (window.BattleSearch && typeof BattleSearch.renderMoveRow === 'function')
-            ? BattleSearch.renderMoveRow(move)
-            : ('<li class="result"><a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push"><span class="col movenamecol">' + escapeHTML(move.name) + '</span> <span class="col movedesccol">' + escapeHTML(move.shortDesc || move.desc || '') + '</span></a></li>');
-          
-          // Replace boosted PP with base PP
-          if (rowHTML) {
-            var markerStart = '<span class="col pplabelcol"><em>PP</em><br />';
-            var markerEnd = '</span>';
-            var sidx = rowHTML.indexOf(markerStart);
-            if (sidx >= 0) {
-              var after = sidx + markerStart.length;
-              var eidx = rowHTML.indexOf(markerEnd, after);
-              if (eidx >= 0) {
-                rowHTML = rowHTML.slice(0, after) + move.pp + rowHTML.slice(eidx);
-              }
-            }
-          }
-          mvbuf += rowHTML;
+        buf += '<div style="margin-top:10px;display:flex;flex-direction:column;gap:6px">';
+        for (var mj = 0; mj < moves.length; mj++) {
+          buf += renderMoveBox(moves[mj]);
         }
-        buf += '<ul class="utilichart nokbd" style="margin-top:6px">' + mvbuf + '</ul>';
+        buf += '</div>';
       }
 
-      // Clear floats to ensure zebra container encloses all inner content
-      buf += '<div style="clear:both"></div>';
-
-      buf += '</li>';
+      buf += '</div></div>';
     }
-    buf += '</ul>';
-
     buf += '</div>';
 
+    buf += '</div>';
     this.html(buf);
   }
 });

@@ -4007,7 +4007,7 @@ located at the edge of Veilstone City.
 Item BuyPrice: 0
 Item SellPrice: 0
 
-Item name: Miracle Meds
+Item name: Miracle Medicine
 Item Index Number: 464
 Item Description:
 A fantastic medicine dispensed by the pharmacy in
@@ -7574,7 +7574,7 @@ Item Description:
 Item BuyPrice: 0
 Item SellPrice: 0
 
-Item name: Terrain Ext.
+Item name: Terrain Extender
 Item Index Number: 879
 Item Description:
 An item to be held by a Pokémon. It extends the
@@ -7583,7 +7583,7 @@ or Ability to 8 turns from 5.
 Item BuyPrice: 4300
 Item SellPrice: 2150
 
-Item name: Prot. Pads
+Item name: Protective Pads
 Item Index Number: 880
 Item Description:
 An item to be held by a Pokémon. These pads

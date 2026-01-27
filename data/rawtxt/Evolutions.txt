@@ -1,2928 +1,4397 @@
-|======
-
-
-|======
-Bulbasaur
-Level Up at level 22 into Ivysaur, 
-|======
-Ivysaur
-Level Up at level 43 into Venusaur, 
-|======
-Venusaur
-
-|======
-Charmander
-Level Up at level 22 into Charmeleon, 
-|======
-Charmeleon
-Level Up at level 43 into Charizard, 
-|======
-Charizard
-
-|======
-Squirtle
-Level Up at level 22 into Wartortle, 
-|======
-Wartortle
-Level Up at level 43 into Blastoise, 
-|======
-Blastoise
-
-|======
-Caterpie
-Level Up at level 14 into Metapod, 
-|======
-Metapod
-Level Up at level 22 into Butterfree, 
-|======
-Butterfree
-
-|======
-Weedle
-Level Up at level 14 into Kakuna, 
-|======
-Kakuna
-Level Up at level 22 into Beedrill, 
-|======
-Beedrill
-
-|======
-Pidgey
-Level Up at level 22 into Pidgeotto, 
-|======
-Pidgeotto
-Level Up at level 39 into Pidgeot, 
-|======
-Pidgeot
-
-|======
-Rattata
-Level Up at level 25 into Raticate, Used Item [Alolan Sack] into Raticate-1, 
-|======
-Raticate
-
-|======
-Spearow
-Level Up at level 26 into Fearow, 
-|======
-Fearow
-
-|======
-Ekans
-Level Up at level 28 into Arbok, 
-|======
-Arbok
-
-|======
-Pikachu
-Used Item [Kanto Badge] into Raichu, Used Item [Alolan Sack] into Raichu-1, Level Up (@) at Morning at level 38 into Raichu-1, Level Up (@) at Night at level 38 into Raichu, 
-|======
-Raichu
-
-|======
-Sandshrew
-Level Up at level 28 into Sandslash, Used Item [Alolan Sack] into Sandslash-1, 
-|======
-Sandslash
-
-|======
-Nidoran
-Level Up at level 21 into Nidorina, Used Item [Blue Box] into Nidorino, 
-|======
-Nidorina
-Level Up at level 42 into Nidoqueen, 
-|======
-Nidoqueen
-
-|======
-Nidoran
-Level Up at level 21 into Nidorino, Used Item [Pink Box] into Nidorina, 
-|======
-Nidorino
-Level Up at level 42 into Nidoking, 
-|======
-Nidoking
-
-|======
-Clefairy
-Level Up at level 34 into Clefable, 
-|======
-Clefable
-
-|======
-Vulpix
-Level Up at level 33 into Ninetales, Used Item [Alolan Sack] into Ninetales-1, 
-|======
-Ninetales
-
-|======
-Jigglypuff
-Level Up at level 32 into Wigglytuff, 
-|======
-Wigglytuff
-
-|======
-Zubat
-Level Up at level 24 into Golbat, 
-|======
-Golbat
-Level Up at level 46 into Crobat, 
-|======
-Oddish
-Level Up at level 21 into Gloom, 
-|======
-Gloom
-Used Item [Kanto Badge] into Vileplume, Used Item [Alolan Sack] into Bellossom, Level Up (@) at Morning at level 38 into Bellossom, Level Up (@) at Night at level 38 into Vileplume, 
-|======
-Vileplume
-
-|======
-Paras
-Level Up at level 27 into Parasect, 
-|======
-Parasect
-
-|======
-Venonat
-Level Up at level 29 into Venomoth, 
-|======
-Venomoth
-
-|======
-Diglett
-Level Up at level 26 into Dugtrio, Used Item [Alolan Sack] into Dugtrio-1, 
-|======
-Dugtrio
-
-|======
-Meowth
-Level Up at level 26 into Persian, Used Item [Alolan Sack] into Persian-1, 
-|======
-Persian
-
-|======
-Psyduck
-Level Up at level 28 into Golduck, 
-|======
-Golduck
-
-|======
-Mankey
-Level Up at level 28 into Primeape, 
-|======
-Primeape
-
-|======
-Growlithe
-Level Up at level 35 into Arcanine, 
-|======
-Arcanine
-
-|======
-Poliwag
-Level Up at level 25 into Poliwhirl, 
-|======
-Poliwhirl
-Used Item [Kanto Badge] into Poliwrath, Used Item [Alolan Sack] into Politoed, Level Up (@) at Morning at level 39 into Politoed, Level Up (@) at Night at level 39 into Poliwrath, 
-|======
-Poliwrath
-
-|======
-Abra
-Level Up at level 18 into Kadabra, 
-|======
-Kadabra
-Level Up at level 45 into Alakazam, 
-|======
-Alakazam
-
-|======
-Machop
-Level Up at level 28 into Machoke, 
-|======
-Machoke
-Level Up at level 45 into Machamp, 
-|======
-Machamp
-
-|======
-Bellsprout
-Level Up at level 21 into Weepinbell, 
-|======
-Weepinbell
-Level Up at level 38 into Victreebel, 
-|======
-Victreebel
-
-|======
-Tentacool
-Level Up at level 30 into Tentacruel, 
-|======
-Tentacruel
-
-|======
-Geodude
-Level Up at level 25 into Graveler, 
-|======
-Graveler
-Level Up at level 45 into Golem, Used Item [Alolan Sack] into Golem-1, 
-|======
-Golem
-
-|======
-Ponyta
-Level Up at level 32 into Rapidash, 
-|======
-Rapidash
-
-|======
-Slowpoke
-Level Up at level 32 into Slowbro, Used Item [Alolan Sack] into Slowking, Used Item [Kanto Badge] into Slowbro, Level Up with Move [Calm Mind] into Slowking, 
-|======
-Slowbro
-
-|======
-Magnemite
-Level Up at level 30 into Magneton, 
-|======
-Magneton
-Level Up at level 46 into Magnezone, 
-|======
-Farfetch’d
-
-|======
-Doduo
-Level Up at level 31 into Dodrio, 
-|======
-Dodrio
-
-|======
-Seel
-Level Up at level 29 into Dewgong, 
-|======
-Dewgong
-
-|======
-Grimer
-Level Up at level 38 into Muk, Used Item [Alolan Sack] into Muk-1, 
-|======
-Muk
-
-|======
-Shellder
-Level Up at level 30 into Cloyster, 
-|======
-Cloyster
-
-|======
-Gastly
-Level Up at level 25 into Haunter, 
-|======
-Haunter
-Level Up at level 45 into Gengar, 
-|======
-Gengar
-
-|======
-Onix
-Level Up at level 40 into Steelix, 
-|======
-Drowzee
-Level Up at level 28 into Hypno, 
-|======
-Hypno
-
-|======
-Krabby
-Level Up at level 28 into Kingler, 
-|======
-Kingler
-
-|======
-Voltorb
-Level Up at level 30 into Electrode, 
-|======
-Electrode
-
-|======
-Exeggcute
-Used Item [Kanto Badge] into Exeggutor, Used Item [Alolan Sack] into Exeggutor-1, Level Up (@) at Morning at level 37 into Exeggutor-1, Level Up (@) at Night at level 37 into Exeggutor, 
-|======
-Exeggutor
-
-|======
-Cubone
-Level Up (@) at Morning at level 28 into Marowak, Level Up (@) at Night at level 28 into Marowak-1, Used Item [Alolan Sack] into Marowak-1, Used Item [Kanto Badge] into Marowak, Level Up with Party [Marowak] into Kangaskhan, Level Up with Party [Marowak 1] into Kangaskhan, Level Up with Party [Marowak 2] into Kangaskhan, 
-|======
-Marowak
-
-|======
-Hitmonlee
-
-|======
-Hitmonchan
-
-|======
-Lickitung
-Level Up at level 41 into Lickilicky, 
-|======
-Koffing
-Level Up at level 35 into Weezing, 
-|======
-Weezing
-
-|======
-Rhyhorn
-Level Up at level 35 into Rhydon, 
-|======
-Rhydon
-Level Up at level 52 into Rhyperior, 
-|======
-Chansey
-Level Up at level 46 into Blissey, 
-|======
-Tangela
-Level Up at level 43 into Tangrowth, 
-|======
-Kangaskhan
-
-|======
-Horsea
-Level Up at level 27 into Seadra, 
-|======
-Seadra
-Level Up at level 48 into Kingdra, 
-|======
-Goldeen
-Level Up at level 33 into Seaking, 
-|======
-Seaking
-
-|======
-Staryu
-Level Up at level 31 into Starmie, 
-|======
-Starmie
-
-|======
-Mr. Mime
-
-|======
-Scyther
-Level Up at level 48 into Scizor, 
-|======
-Jynx
-
-|======
-Electabuzz
-Level Up at level 50 into Electivire, 
-|======
-Magmar
-Level Up at level 50 into Magmortar, 
-|======
-Pinsir
-
-|======
-Tauros
-
-|======
-Magikarp
-Level Up at level 30 into Gyarados, 
-|======
-Gyarados
-
-|======
-Lapras
-
-|======
-Ditto
-
-|======
-Eevee
-Used Item [Leaf Stone] into Leafeon, Used Item [Ice Stone] into Glaceon, Used Item [Thunder Stone] into Jolteon, Used Item [Water Stone] into Vaporeon, Used Item [Fire Stone] into Flareon, Used Item [Shiny Stone] into Sylveon, Used Item [Sun Stone] into Espeon, Used Item [Moon Stone] into Umbreon, 
-|======
-Vaporeon
-
-|======
-Jolteon
-
-|======
-Flareon
-
-|======
-Porygon
-Level Up at level 30 into Porygon2, 
-|======
-Omanyte
-Level Up at level 35 into Omastar, 
-|======
-Omastar
-
-|======
-Kabuto
-Level Up at level 35 into Kabutops, 
-|======
-Kabutops
-
-|======
-Aerodactyl
-
-|======
-Snorlax
-
-|======
-Articuno
-
-|======
-Zapdos
-
-|======
-Moltres
-
-|======
-Dratini
-Level Up at level 25 into Dragonair, 
-|======
-Dragonair
-Level Up at level 55 into Dragonite, 
-|======
-Dragonite
-
-|======
-Mewtwo
-
-|======
-Mew
-
-|======
-Chikorita
-Level Up at level 22 into Bayleef, 
-|======
-Bayleef
-Level Up at level 42 into Meganium, 
-|======
-Meganium
-
-|======
-Cyndaquil
-Level Up at level 22 into Quilava, 
-|======
-Quilava
-Level Up at level 42 into Typhlosion, 
-|======
-Typhlosion
-
-|======
-Totodile
-Level Up at level 22 into Croconaw, 
-|======
-Croconaw
-Level Up at level 42 into Feraligatr, 
-|======
-Feraligatr
-
-|======
-Sentret
-Level Up at level 22 into Furret, 
-|======
-Furret
-
-|======
-Hoothoot
-Level Up at level 24 into Noctowl, 
-|======
-Noctowl
-
-|======
-Ledyba
-Level Up at level 23 into Ledian, 
-|======
-Ledian
-
-|======
-Spinarak
-Level Up at level 25 into Ariados, 
-|======
-Ariados
-
-|======
-Crobat
-
-|======
-Chinchou
-Level Up at level 29 into Lanturn, 
-|======
-Lanturn
-
-|======
-Pichu
-Level Up at level 16 into Pikachu, Used Item [Kanto Badge] into Pikachu-1, Used Item [Moldy Cookie] into Pikachu-2, Used Item [Old Gateau] into Pikachu-3, Used Item [Casteliacone] into Pikachu-4, Used Item [Shalour Sable] into Pikachu-5, Used Item [Alolan Sack] into Pikachu-6, Used Item [Big Malasada] into Pikachu-7, 
-|======
-Cleffa
-Level Up at level 16 into Clefairy, 
-|======
-Igglybuff
-Level Up at level 15 into Jigglypuff, 
-|======
-Togepi
-Level Up at level 17 into Togetic, 
-|======
-Togetic
-Level Up at level 48 into Togekiss, 
-|======
-Natu
-Level Up at level 25 into Xatu, 
-|======
-Xatu
-
-|======
-Mareep
-Level Up at level 20 into Flaaffy, 
-|======
-Flaaffy
-Level Up at level 40 into Ampharos, 
-|======
-Ampharos
-
-|======
-Bellossom
-
-|======
-Marill
-Level Up at level 30 into Azumarill, 
-|======
-Azumarill
-
-|======
-Sudowoodo
-
-|======
-Politoed
-
-|======
-Hoppip
-Level Up at level 22 into Skiploom, 
-|======
-Skiploom
-Level Up at level 37 into Jumpluff, 
-|======
-Jumpluff
-
-|======
-Aipom
-Level Up at level 38 into Ambipom, 
-|======
-Sunkern
-Level Up at level 27 into Sunflora, 
-|======
-Sunflora
-
-|======
-Yanma
-Level Up at level 41 into Yanmega, 
-|======
-Wooper
-Level Up at level 26 into Quagsire, 
-|======
-Quagsire
-
-|======
-Espeon
-
-|======
-Umbreon
-
-|======
-Murkrow
-Level Up at level 38 into Honchkrow, 
-|======
-Slowking
-
-|======
-Misdreavus
-Level Up at level 38 into Mismagius, 
-|======
-Unown
-
-|======
-Wobbuffet
-
-|======
-Girafarig
-
-|======
-Pineco
-Level Up at level 28 into Forretress, 
-|======
-Forretress
-
-|======
-Dunsparce
-
-|======
-Gligar
-Level Up at level 39 into Gliscor, 
-|======
-Steelix
-
-|======
-Snubbull
-Level Up at level 27 into Granbull, 
-|======
-Granbull
-
-|======
-Qwilfish
-
-|======
-Scizor
-
-|======
-Shuckle
-
-|======
-Heracross
-
-|======
-Sneasel
-Level Up at level 39 into Weavile, 
-|======
-Teddiursa
-Level Up at level 34 into Ursaring, 
-|======
-Ursaring
-
-|======
-Slugma
-Level Up at level 35 into Magcargo, 
-|======
-Magcargo
-
-|======
-Swinub
-Level Up at level 29 into Piloswine, 
-|======
-Piloswine
-Level Up at level 52 into Mamoswine, 
-|======
-Corsola
-
-|======
-Remoraid
-Level Up at level 29 into Octillery, 
-|======
-Octillery
-
-|======
-Delibird
-
-|======
-Mantine
-
-|======
-Skarmory
-
-|======
-Houndour
-Level Up at level 28 into Houndoom, 
-|======
-Houndoom
-
-|======
-Kingdra
-
-|======
-Phanpy
-Level Up at level 29 into Donphan, 
-|======
-Donphan
-
-|======
-Porygon2
-Level Up at level 50 into Porygon-Z, 
-|======
-Stantler
-
-|======
-Smeargle
-
-|======
-Tyrogue
-Level Up (Attack < Defense) at level 25 into Hitmonchan, Level Up (Attack > Defense) at level 25 into Hitmonlee, Level Up (Attack = Defense) at level 25 into Hitmontop, Used Item [Dawn Stone] into Hitmonchan, Used Item [Dusk Stone] into Hitmonlee, Used Item [Shiny Stone] into Hitmontop, 
-|======
-Hitmontop
-
-|======
-Smoochum
-Level Up at level 26 into Jynx, 
-|======
-Elekid
-Level Up at level 25 into Electabuzz, 
-|======
-Magby
-Level Up at level 25 into Magmar, 
-|======
-Miltank
-
-|======
-Blissey
-
-|======
-Raikou
-
-|======
-Entei
-
-|======
-Suicune
-
-|======
-Larvitar
-Level Up at level 25 into Pupitar, 
-|======
-Pupitar
-Level Up at level 55 into Tyranitar, 
-|======
-Tyranitar
-
-|======
-Lugia
-
-|======
-Ho-Oh
-
-|======
-Celebi
-
-|======
-Treecko
-Level Up at level 22 into Grovyle, 
-|======
-Grovyle
-Level Up at level 42 into Sceptile, 
-|======
-Sceptile
-
-|======
-Torchic
-Level Up at level 22 into Combusken, 
-|======
-Combusken
-Level Up at level 42 into Blaziken, 
-|======
-Blaziken
-
-|======
-Mudkip
-Level Up at level 22 into Marshtomp, 
-|======
-Marshtomp
-Level Up at level 42 into Swampert, 
-|======
-Swampert
-
-|======
-Poochyena
-Level Up at level 23 into Mightyena, 
-|======
-Mightyena
-
-|======
-Zigzagoon
-Level Up at level 25 into Linoone, 
-|======
-Linoone
-
-|======
-Wurmple
-Level Up Female at level 14 into Silcoon, Level Up Male at level 14 into Cascoon, Used Item [Pink Box] into Silcoon, Used Item [Blue Box] into Cascoon, 
-|======
-Silcoon
-Level Up at level 22 into Beautifly, 
-|======
-Beautifly
-
-|======
-Cascoon
-Level Up at level 22 into Dustox, 
-|======
-Dustox
-
-|======
-Lotad
-Level Up at level 18 into Lombre, 
-|======
-Lombre
-Level Up at level 38 into Ludicolo, 
-|======
-Ludicolo
-
-|======
-Seedot
-Level Up at level 18 into Nuzleaf, 
-|======
-Nuzleaf
-Level Up at level 38 into Shiftry, 
-|======
-Shiftry
-
-|======
-Taillow
-Level Up at level 27 into Swellow, 
-|======
-Swellow
-
-|======
-Wingull
-Level Up at level 25 into Pelipper, 
-|======
-Pelipper
-
-|======
-Ralts
-Level Up at level 20 into Kirlia, 
-|======
-Kirlia
-Level Up Female at level 36 into Gardevoir, Level Up Male at level 36 into Gallade, Used Item [Pink Box] into Gardevoir, Used Item [Blue Box] into Gallade, 
-|======
-Gardevoir
-
-|======
-Surskit
-Level Up at level 26 into Masquerain, 
-|======
-Masquerain
-
-|======
-Shroomish
-Level Up at level 27 into Breloom, 
-|======
-Breloom
-
-|======
-Slakoth
-Level Up at level 24 into Vigoroth, 
-|======
-Vigoroth
-Level Up at level 50 into Slaking, 
-|======
-Slaking
-
-|======
-Nincada
-Level Up (Ninjask) at level 20 into Ninjask, Level Up (Shedinja) at level 20 into Shedinja, 
-|======
-Ninjask
-
-|======
-Shedinja
-
-|======
-Whismur
-Level Up at level 20 into Loudred, 
-|======
-Loudred
-Level Up at level 40 into Exploud, 
-|======
-Exploud
-
-|======
-Makuhita
-Level Up at level 28 into Hariyama, 
-|======
-Hariyama
-
-|======
-Azurill
-Level Up at level 16 into Marill, 
-|======
-Nosepass
-Level Up at level 35 into Probopass, 
-|======
-Skitty
-Level Up at level 40 into Delcatty, 
-|======
-Delcatty
-
-|======
-Sableye
-
-|======
-Mawile
-
-|======
-Aron
-Level Up at level 25 into Lairon, 
-|======
-Lairon
-Level Up at level 42 into Aggron, 
-|======
-Aggron
-
-|======
-Meditite
-Level Up at level 32 into Medicham, 
-|======
-Medicham
-
-|======
-Electrike
-Level Up at level 26 into Manectric, 
-|======
-Manectric
-
-|======
-Plusle
-
-|======
-Minun
-
-|======
-Volbeat
-
-|======
-Illumise
-
-|======
-Roselia
-Level Up at level 43 into Roserade, 
-|======
-Gulpin
-Level Up at level 26 into Swalot, 
-|======
-Swalot
-
-|======
-Carvanha
-Level Up at level 30 into Sharpedo, 
-|======
-Sharpedo
-
-|======
-Wailmer
-Level Up at level 40 into Wailord, 
-|======
-Wailord
-
-|======
-Numel
-Level Up at level 33 into Camerupt, 
-|======
-Camerupt
-
-|======
-Torkoal
-
-|======
-Spoink
-Level Up at level 32 into Grumpig, 
-|======
-Grumpig
-
-|======
-Spinda
-
-|======
-Trapinch
-Level Up at level 32 into Vibrava, 
-|======
-Vibrava
-Level Up at level 45 into Flygon, 
-|======
-Flygon
-
-|======
-Cacnea
-Level Up Male at level 32 into Cacturne, Level Up Female at level 32 into Maractus, Used Item [Pink Box] into Maractus, Used Item [Blue Box] into Cacturne, 
-|======
-Cacturne
-
-|======
-Swablu
-Level Up at level 35 into Altaria, 
-|======
-Altaria
-
-|======
-Zangoose
-
-|======
-Seviper
-
-|======
-Lunatone
-
-|======
-Solrock
-
-|======
-Barboach
-Level Up at level 30 into Whiscash, 
-|======
-Whiscash
-
-|======
-Corphish
-Level Up at level 30 into Crawdaunt, 
-|======
-Crawdaunt
-
-|======
-Baltoy
-Level Up at level 36 into Claydol, 
-|======
-Claydol
-
-|======
-Lileep
-Level Up at level 35 into Cradily, 
-|======
-Cradily
-
-|======
-Anorith
-Level Up at level 35 into Armaldo, 
-|======
-Armaldo
-
-|======
-Feebas
-Level Up at level 30 into Milotic, 
-|======
-Milotic
-
-|======
-Castform
-
-|======
-Kecleon
-
-|======
-Shuppet
-Level Up at level 33 into Banette, 
-|======
-Banette
-
-|======
-Duskull
-Level Up at level 30 into Dusclops, 
-|======
-Dusclops
-Level Up at level 54 into Dusknoir, 
-|======
-Tropius
-
-|======
-Chimecho
-
-|======
-Absol
-
-|======
-Wynaut
-Level Up at level 25 into Wobbuffet, 
-|======
-Snorunt
-Level Up Male at level 42 into Glalie, Level Up Female at level 42 into Froslass, Used Item [Blue Box] into Glalie, Used Item [Pink Box] into Froslass, 
-|======
-Glalie
-
-|======
-Spheal
-Level Up at level 27 into Sealeo, 
-|======
-Sealeo
-Level Up at level 44 into Walrein, 
-|======
-Walrein
-
-|======
-Clamperl
-Level Up Male at level 30 into Huntail, Level Up Female at level 30 into Gorebyss, Used Item [Blue Box] into Huntail, Used Item [Pink Box] into Gorebyss, 
-|======
-Huntail
-
-|======
-Gorebyss
-
-|======
-Relicanth
-
-|======
-Luvdisc
-Level Up at level 34 into Alomomola, 
-|======
-Bagon
-Level Up at level 25 into Shelgon, 
-|======
-Shelgon
-Level Up at level 55 into Salamence, 
-|======
-Salamence
-
-|======
-Beldum
-Level Up at level 20 into Metang, 
-|======
-Metang
-Level Up at level 55 into Metagross, 
-|======
-Metagross
-
-|======
-Regirock
-
-|======
-Regice
-
-|======
-Registeel
-
-|======
-Latias
-
-|======
-Latios
-
-|======
-Kyogre
-
-|======
-Groudon
-
-|======
-Rayquaza
-
-|======
-Jirachi
-
-|======
-Deoxys
-
-|======
-Turtwig
-Level Up at level 22 into Grotle, 
-|======
-Grotle
-Level Up at level 42 into Torterra, 
-|======
-Torterra
-
-|======
-Chimchar
-Level Up at level 22 into Monferno, 
-|======
-Monferno
-Level Up at level 42 into Infernape, 
-|======
-Infernape
-
-|======
-Piplup
-Level Up at level 22 into Prinplup, 
-|======
-Prinplup
-Level Up at level 42 into Empoleon, 
-|======
-Empoleon
-
-|======
-Starly
-Level Up at level 19 into Staravia, 
-|======
-Staravia
-Level Up at level 39 into Staraptor, 
-|======
-Staraptor
-
-|======
-Bidoof
-Level Up at level 22 into Bibarel, 
-|======
-Bibarel
-
-|======
-Kricketot
-Level Up at level 21 into Kricketune, 
-|======
-Kricketune
-
-|======
-Shinx
-Level Up at level 22 into Luxio, 
-|======
-Luxio
-Level Up at level 38 into Luxray, 
-|======
-Luxray
-
-|======
-Budew
-Level Up with Friendship into Roselia, Level Up at level 17 into Roselia, 
-|======
-Roserade
-
-|======
-Cranidos
-Level Up at level 30 into Rampardos, 
-|======
-Rampardos
-
-|======
-Shieldon
-Level Up at level 30 into Bastiodon, 
-|======
-Bastiodon
-
-|======
-Burmy
-Level Up Female at level 25 into Wormadam, Level Up Male at level 25 into Mothim, Used Item [Pink Box] into Wormadam, Used Item [Blue Box] into Mothim, 
-|======
-Wormadam
-
-|======
-Mothim
-
-|======
-Combee
-Level Up Female at level 25 into Vespiquen, Used Item [Pink Box]at level 35 into Vespiquen, 
-|======
-Vespiquen
-
-|======
-Pachirisu
-
-|======
-Buizel
-Level Up at level 31 into Floatzel, 
-|======
-Floatzel
-
-|======
-Cherubi
-Level Up at level 25 into Cherrim, 
-|======
-Cherrim
-
-|======
-Shellos
-Level Up at level 30 into Gastrodon, 
-|======
-Gastrodon
-
-|======
-Ambipom
-
-|======
-Drifloon
-Level Up at level 32 into Drifblim, 
-|======
-Drifblim
-
-|======
-Buneary
-Level Up at level 28 into Lopunny, 
-|======
-Lopunny
-
-|======
-Mismagius
-
-|======
-Honchkrow
-
-|======
-Glameow
-Level Up at level 31 into Purugly, 
-|======
-Purugly
-
-|======
-Chingling
-Level Up at level 25 into Chimecho, 
-|======
-Stunky
-Level Up at level 30 into Skuntank, 
-|======
-Skuntank
-
-|======
-Bronzor
-Level Up at level 33 into Bronzong, 
-|======
-Bronzong
-
-|======
-Bonsly
-Level Up with Move [Mimic] into Sudowoodo, Level Up at level 25 into Sudowoodo, 
-|======
-Mime Jr.
-Level Up at level 23 into Mr. Mime, 
-|======
-Happiny
-Level Up at level 20 into Chansey, 
-|======
-Chatot
-
-|======
-Spiritomb
-
-|======
-Gible
-Level Up at level 24 into Gabite, 
-|======
-Gabite
-Level Up at level 53 into Garchomp, 
-|======
-Garchomp
-
-|======
-Munchlax
-Level Up at level 30 into Snorlax, 
-|======
-Riolu
-Level Up at level 30 into Lucario, 
-|======
-Lucario
-
-|======
-Hippopotas
-Level Up at level 34 into Hippowdon, 
-|======
-Hippowdon
-
-|======
-Skorupi
-Level Up at level 40 into Drapion, 
-|======
-Drapion
-
-|======
-Croagunk
-Level Up at level 37 into Toxicroak, 
-|======
-Toxicroak
-
-|======
-Carnivine
-
-|======
-Finneon
-Level Up at level 31 into Lumineon, 
-|======
-Lumineon
-
-|======
-Mantyke
-Level Up at level 30 into Mantine, 
-|======
-Snover
-Level Up at level 40 into Abomasnow, 
-|======
-Abomasnow
-
-|======
-Weavile
-
-|======
-Magnezone
-
-|======
-Lickilicky
-
-|======
-Rhyperior
-
-|======
-Tangrowth
-
-|======
-Electivire
-
-|======
-Magmortar
-
-|======
-Togekiss
-
-|======
-Yanmega
-
-|======
-Leafeon
-
-|======
-Glaceon
-
-|======
-Gliscor
-
-|======
-Mamoswine
-
-|======
-Porygon-Z
-
-|======
-Gallade
-
-|======
-Probopass
-
-|======
-Dusknoir
-
-|======
-Froslass
-
-|======
-Rotom
-
-|======
-Uxie
-
-|======
-Mesprit
-
-|======
-Azelf
-
-|======
-Dialga
-
-|======
-Palkia
-
-|======
-Heatran
-
-|======
-Regigigas
-
-|======
-Giratina
-
-|======
-Cresselia
-
-|======
-Phione
-Level Up at level 62 into Manaphy, 
-|======
-Manaphy
-
-|======
-Darkrai
-
-|======
-Shaymin
-
-|======
-Arceus
-
-|======
-Victini
-
-|======
-Snivy
-Level Up at level 22 into Servine, 
-|======
-Servine
-Level Up at level 42 into Serperior, 
-|======
-Serperior
-
-|======
-Tepig
-Level Up at level 22 into Pignite, 
-|======
-Pignite
-Level Up at level 42 into Emboar, 
-|======
-Emboar
-
-|======
-Oshawott
-Level Up at level 22 into Dewott, 
-|======
-Dewott
-Level Up at level 42 into Samurott, 
-|======
-Samurott
-
-|======
-Patrat
-Level Up at level 24 into Watchog, 
-|======
-Watchog
-
-|======
-Lillipup
-Level Up at level 21 into Herdier, 
-|======
-Herdier
-Level Up at level 36 into Stoutland, 
-|======
-Stoutland
-
-|======
-Purrloin
-Level Up at level 24 into Liepard, 
-|======
-Liepard
-
-|======
-Pansage
-Level Up at level 28 into Simisage, 
-|======
-Simisage
-
-|======
-Pansear
-Level Up at level 28 into Simisear, 
-|======
-Simisear
-
-|======
-Panpour
-Level Up at level 28 into Simipour, 
-|======
-Simipour
-
-|======
-Munna
-Level Up at level 30 into Musharna, 
-|======
-Musharna
-
-|======
-Pidove
-Level Up at level 23 into Tranquill, 
-|======
-Tranquill
-Level Up at level 38 into Unfezant, 
-|======
-Unfezant
-
-|======
-Blitzle
-Level Up at level 30 into Zebstrika, 
-|======
-Zebstrika
-
-|======
-Roggenrola
-Level Up at level 25 into Boldore, 
-|======
-Boldore
-Level Up at level 45 into Gigalith, 
-|======
-Gigalith
-
-|======
-Woobat
-Level Up at level 29 into Swoobat, 
-|======
-Swoobat
-
-|======
-Drilbur
-Level Up at level 31 into Excadrill, 
-|======
-Excadrill
-
-|======
-Audino
-
-|======
-Timburr
-Level Up at level 25 into Gurdurr, 
-|======
-Gurdurr
-Level Up at level 47 into Conkeldurr, 
-|======
-Conkeldurr
-
-|======
-Tympole
-Level Up at level 25 into Palpitoad, 
-|======
-Palpitoad
-Level Up at level 40 into Seismitoad, 
-|======
-Seismitoad
-
-|======
-Throh
-
-|======
-Sawk
-
-|======
-Sewaddle
-Level Up at level 20 into Swadloon, 
-|======
-Swadloon
-Level Up at level 34 into Leavanny, 
-|======
-Leavanny
-
-|======
-Venipede
-Level Up at level 22 into Whirlipede, 
-|======
-Whirlipede
-Level Up at level 33 into Scolipede, 
-|======
-Scolipede
-
-|======
-Cottonee
-Level Up at level 28 into Whimsicott, 
-|======
-Whimsicott
-
-|======
-Petilil
-Level Up at level 28 into Lilligant, 
-|======
-Lilligant
-
-|======
-Basculin
-
-|======
-Sandile
-Level Up at level 29 into Krokorok, 
-|======
-Krokorok
-Level Up at level 40 into Krookodile, 
-|======
-Krookodile
-
-|======
-Darumaka
-Level Up at level 35 into Darmanitan, 
-|======
-Darmanitan
-
-|======
-Maractus
-
-|======
-Dwebble
-Level Up at level 34 into Crustle, 
-|======
-Crustle
-
-|======
-Scraggy
-Level Up at level 33 into Scrafty, 
-|======
-Scrafty
-
-|======
-Sigilyph
-
-|======
-Yamask
-Level Up at level 34 into Cofagrigus, 
-|======
-Cofagrigus
-
-|======
-Tirtouga
-Level Up at level 35 into Carracosta, 
-|======
-Carracosta
-
-|======
-Archen
-Level Up at level 35 into Archeops, 
-|======
-Archeops
-
-|======
-Trubbish
-Level Up at level 36 into Garbodor, 
-|======
-Garbodor
-
-|======
-Zorua
-Level Up at level 30 into Zoroark, 
-|======
-Zoroark
-
-|======
-Minccino
-Level Up at level 32 into Cinccino, 
-|======
-Cinccino
-
-|======
-Gothita
-Level Up at level 23 into Gothorita, 
-|======
-Gothorita
-Level Up at level 41 into Gothitelle, 
-|======
-Gothitelle
-
-|======
-Solosis
-Level Up at level 23 into Duosion, 
-|======
-Duosion
-Level Up at level 41 into Reuniclus, 
-|======
-Reuniclus
-
-|======
-Ducklett
-Level Up at level 29 into Swanna, 
-|======
-Swanna
-
-|======
-Vanillite
-Level Up at level 30 into Vanillish, 
-|======
-Vanillish
-Level Up at level 47 into Vanilluxe, 
-|======
-Vanilluxe
-
-|======
-Deerling
-Level Up at level 31 into Sawsbuck, 
-|======
-Sawsbuck
-
-|======
-Emolga
-
-|======
-Karrablast
-Level Up at level 33 into Escavalier, 
-|======
-Escavalier
-
-|======
-Foongus
-Level Up at level 35 into Amoonguss, 
-|======
-Amoonguss
-
-|======
-Frillish
-Level Up at level 40 into Jellicent, 
-|======
-Jellicent
-
-|======
-Alomomola
-
-|======
-Joltik
-Level Up at level 32 into Galvantula, 
-|======
-Galvantula
-
-|======
-Ferroseed
-Level Up at level 35 into Ferrothorn, 
-|======
-Ferrothorn
-
-|======
-Klink
-Level Up at level 30 into Klang, 
-|======
-Klang
-Level Up at level 49 into Klinklang, 
-|======
-Klinklang
-
-|======
-Tynamo
-Level Up at level 27 into Eelektrik, 
-|======
-Eelektrik
-Level Up at level 48 into Eelektross, 
-|======
-Eelektross
-
-|======
-Elgyem
-Level Up at level 35 into Beheeyem, 
-|======
-Beheeyem
-
-|======
-Litwick
-Level Up at level 24 into Lampent, 
-|======
-Lampent
-Level Up at level 50 into Chandelure, 
-|======
-Chandelure
-
-|======
-Axew
-Level Up at level 25 into Fraxure, 
-|======
-Fraxure
-Level Up at level 53 into Haxorus, 
-|======
-Haxorus
-
-|======
-Cubchoo
-Level Up at level 37 into Beartic, 
-|======
-Beartic
-
-|======
-Cryogonal
-
-|======
-Shelmet
-Level Up at level 33 into Accelgor, 
-|======
-Accelgor
-
-|======
-Stunfisk
-
-|======
-Mienfoo
-Level Up at level 38 into Mienshao, 
-|======
-Mienshao
-
-|======
-Druddigon
-
-|======
-Golett
-Level Up at level 43 into Golurk, 
-|======
-Golurk
-
-|======
-Pawniard
-Level Up at level 38 into Bisharp, 
-|======
-Bisharp
-
-|======
-Bouffalant
-
-|======
-Rufflet
-Level Up at level 35 into Braviary, 
-|======
-Braviary
-
-|======
-Vullaby
-Level Up at level 35 into Mandibuzz, 
-|======
-Mandibuzz
-
-|======
-Heatmor
-
-|======
-Durant
-
-|======
-Deino
-Level Up at level 30 into Zweilous, 
-|======
-Zweilous
-Level Up at level 58 into Hydreigon, 
-|======
-Hydreigon
-
-|======
-Larvesta
-Level Up at level 46 into Volcarona, 
-|======
-Volcarona
-
-|======
-Cobalion
-
-|======
-Terrakion
-
-|======
-Virizion
-
-|======
-Tornadus
-
-|======
-Thundurus
-
-|======
-Reshiram
-
-|======
-Zekrom
-
-|======
-Landorus
-
-|======
-Kyurem
-
-|======
-Keldeo
-
-|======
-Meloetta
-
-|======
-Genesect
-
-|======
-Chespin
-Level Up at level 22 into Quilladin, 
-|======
-Quilladin
-Level Up at level 42 into Chesnaught, 
-|======
-Chesnaught
-
-|======
-Fennekin
-Level Up at level 22 into Braixen, 
-|======
-Braixen
-Level Up at level 42 into Delphox, 
-|======
-Delphox
-
-|======
-Froakie
-Level Up at level 22 into Frogadier, 
-|======
-Frogadier
-Level Up at level 42 into Greninja, 
-|======
-Greninja
-
-|======
-Bunnelby
-Level Up at level 25 into Diggersby, 
-|======
-Diggersby
-
-|======
-Fletchling
-Level Up at level 22 into Fletchinder, 
-|======
-Fletchinder
-Level Up at level 38 into Talonflame, 
-|======
-Talonflame
-
-|======
-Scatterbug
-Level Up at level 15 into Spewpa, 
-|======
-Spewpa
-Level Up at level 21 into Vivillon, 
-|======
-Vivillon
-
-|======
-Litleo
-Level Up at level 31 into Pyroar, 
-|======
-Pyroar
-
-|======
-Flabébé
-Level Up at level 23 into Floette, 
-|======
-Floette
-Level Up with Move [Light of Ruin] into Floette-5, Level Up at level 43 into Florges, 
-|======
-Florges
-
-|======
-Skiddo
-Level Up at level 32 into Gogoat, 
-|======
-Gogoat
-
-|======
-Pancham
-Level Up at level 33 into Pangoro, 
-|======
-Pangoro
-
-|======
-Furfrou
-
-|======
-Espurr
-Level Up Male at level 25 into Meowstic, Level Up Female (SetForm 1) at level 25 into Meowstic, Used Item [Blue Box] into Meowstic, Used Item [Pink Box] into Meowstic-1, 
-|======
-Meowstic
-
-|======
-Honedge
-Level Up at level 35 into Doublade, 
-|======
-Doublade
-Level Up at level 55 into Aegislash, 
-|======
-Aegislash
-
-|======
-Spritzee
-Level Up at level 28 into Aromatisse, 
-|======
-Aromatisse
-
-|======
-Swirlix
-Level Up at level 28 into Slurpuff, 
-|======
-Slurpuff
-
-|======
-Inkay
-Level Up at level 30 into Malamar, 
-|======
-Malamar
-
-|======
-Binacle
-Level Up at level 34 into Barbaracle, 
-|======
-Barbaracle
-
-|======
-Skrelp
-Level Up at level 41 into Dragalge, 
-|======
-Dragalge
-
-|======
-Clauncher
-Level Up at level 37 into Clawitzer, 
-|======
-Clawitzer
-
-|======
-Helioptile
-Used Item [Sun Stone] into Heliolisk, Level Up at level 36 into Heliolisk, 
-|======
-Heliolisk
-
-|======
-Tyrunt
-Level Up at level 35 into Tyrantrum, 
-|======
-Tyrantrum
-
-|======
-Amaura
-Level Up at level 35 into Aurorus, 
-|======
-Aurorus
-
-|======
-Sylveon
-
-|======
-Hawlucha
-
-|======
-Dedenne
-
-|======
-Carbink
-Level Up at level 65 into Diancie, 
-|======
-Goomy
-Level Up at level 25 into Sliggoo, 
-|======
-Sliggoo
-Level Up at level 51 into Goodra, 
-|======
-Goodra
-
-|======
-Klefki
-
-|======
-Phantump
-Level Up at level 32 into Trevenant, 
-|======
-Trevenant
-
-|======
-Pumpkaboo
-Level Up at level 32 into Gourgeist, 
-|======
-Gourgeist
-
-|======
-Bergmite
-Level Up at level 37 into Avalugg, 
-|======
-Avalugg
-
-|======
-Noibat
-Level Up at level 40 into Noivern, 
-|======
-Noivern
-
-|======
-Xerneas
-
-|======
-Yveltal
-
-|======
-Zygarde
-
-|======
-Diancie
-
-|======
-Hoopa
-
-|======
-Volcanion
-
-|======
-Rowlet
-Level Up at level 22 into Dartrix, 
-|======
-Dartrix
-Level Up at level 42 into Decidueye, 
-|======
-Decidueye
-
-|======
-Litten
-Level Up at level 22 into Torracat, 
-|======
-Torracat
-Level Up at level 42 into Incineroar, 
-|======
-Incineroar
-
-|======
-Popplio
-Level Up at level 22 into Brionne, 
-|======
-Brionne
-Level Up at level 42 into Primarina, 
-|======
-Primarina
-
-|======
-Pikipek
-Level Up at level 19 into Trumbeak, 
-|======
-Trumbeak
-Level Up at level 36 into Toucannon, 
-|======
-Toucannon
-
-|======
-Yungoos
-Level Up at level 25 into Gumshoos, 
-|======
-Gumshoos
-
-|======
-Grubbin
-Level Up at level 20 into Charjabug, 
-|======
-Charjabug
-Level Up at level 40 into Vikavolt, 
-|======
-Vikavolt
-
-|======
-Crabrawler
-Level Up at level 37 into Crabominable, 
-|======
-Crabominable
-
-|======
-Oricorio
-
-|======
-Cutiefly
-Level Up at level 25 into Ribombee, 
-|======
-Ribombee
-
-|======
-Rockruff
-Level Up (@) at Morning at level 28 into Lycanroc, Level Up (@) at Night at level 28 into Lycanroc-1, Level Up (@) Dusk at level 28 into Lycanroc-2, Used Item [Sun Stone] into Lycanroc, Used Item [Moon Stone] into Lycanroc-1, Used Item [Dusk Stone] into Lycanroc-2, Used Item [Dawn Stone] into Lycanroc-2, 
-|======
-Lycanroc
-
-|======
-Wishiwashi
-
-|======
-Mareanie
-Level Up at level 38 into Toxapex, 
-|======
-Toxapex
-
-|======
-Mudbray
-Level Up at level 30 into Mudsdale, 
-|======
-Mudsdale
-
-|======
-Dewpider
-Level Up at level 28 into Araquanid, 
-|======
-Araquanid
-
-|======
-Fomantis
-Level Up at level 31 into Lurantis, 
-|======
-Lurantis
-
-|======
-Morelull
-Level Up at level 30 into Shiinotic, 
-|======
-Shiinotic
-
-|======
-Salandit
-Level Up Female at level 33 into Salazzle, Used Item [Pink Box]at level 44 into Salazzle, 
-|======
-Salazzle
-
-|======
-Stufful
-Level Up at level 32 into Bewear, 
-|======
-Bewear
-
-|======
-Bounsweet
-Level Up at level 24 into Steenee, 
-|======
-Steenee
-Level Up at level 43 into Tsareena, 
-|======
-Tsareena
-
-|======
-Comfey
-
-|======
-Oranguru
-
-|======
-Passimian
-
-|======
-Wimpod
-Level Up at level 30 into Golisopod, 
-|======
-Golisopod
-
-|======
-Sandygast
-Level Up at level 42 into Palossand, 
-|======
-Palossand
-
-|======
-Pyukumuku
-
-|======
-Type: Null
-Level Up at level 60 into Silvally, 
-|======
-Silvally
-
-|======
-Minior
-
-|======
-Komala
-
-|======
-Turtonator
-
-|======
-Togedemaru
-
-|======
-Mimikyu
-
-|======
-Bruxish
-
-|======
-Drampa
-
-|======
-Dhelmise
-
-|======
-Jangmo-o
-Level Up at level 25 into Hakamo-o, 
-|======
-Hakamo-o
-Level Up at level 52 into Kommo-o, 
-|======
-Kommo-o
-
-|======
-Tapu Koko
-
-|======
-Tapu Lele
-
-|======
-Tapu Bulu
-
-|======
-Tapu Fini
-
-|======
-Cosmog
-Level Up at level 35 into Cosmoem, 
-|======
-Cosmoem
-Level Up (@) at Morning at level 60 into Solgaleo, Level Up (@) at Night at level 60 into Lunala, Used Item [Sun Stone] into Solgaleo, Used Item [Moon Stone] into Lunala, Used Item [Dawn Stone] into Solgaleo, Used Item [Dusk Stone] into Lunala, 
-|======
-Solgaleo
-
-|======
-Lunala
-
-|======
-Nihilego
-
-|======
-Buzzwole
-
-|======
-Pheromosa
-
-|======
-Xurkitree
-
-|======
-Celesteela
-
-|======
-Kartana
-
-|======
-Guzzlord
-
-|======
-Necrozma
-
-|======
-Magearna
-
-|======
-Marshadow
-
-|======
-Poipole
-Level Up at level 45 into Naganadel, 
-|======
-Naganadel
-
-|======
-Stakataka
-
-|======
-Blacephalon
-
-|======
-Zeraora
-
-|======
-Deoxys 1
-
-|======
-Deoxys 2
-
-|======
-Deoxys 3
-
-|======
-Wormadam 1
-
-|======
-Wormadam 2
-
-|======
-Shaymin 1
-
-|======
-Giratina 1
-
-|======
-Rotom 1
-
-|======
-Rotom 2
-
-|======
-Rotom 3
-
-|======
-Rotom 4
-
-|======
-Rotom 5
-
-|======
-Castform 1
-
-|======
-Castform 2
-
-|======
-Castform 3
-
-|======
-Cherrim 1
-
-|======
-Shellos 1
-Level Up at level 30 into Gastrodon-1, 
-|======
-Gastrodon 1
-
-|======
-Basculin 1
-
-|======
-Darmanitan 1
-
-|======
-Meloetta 1
-
-|======
-Kyurem 1
-
-|======
-Kyurem 2
-
-|======
-Keldeo 1
-
-|======
-Tornadus 1
-
-|======
-Thundurus 1
-
-|======
-Landorus 1
-
-|======
-Gengar 1
-
-|======
-Meowstic 1
-
-|======
-Furfrou 1
-
-|======
-Furfrou 2
-
-|======
-Furfrou 3
-
-|======
-Furfrou 4
-
-|======
-Furfrou 5
-
-|======
-Furfrou 6
-
-|======
-Furfrou 7
-
-|======
-Furfrou 8
-
-|======
-Furfrou 9
-
-|======
-Gardevoir 1
-
-|======
-Ampharos 1
-
-|======
-Venusaur 1
-
-|======
-Charizard 1
-
-|======
-Charizard 2
-
-|======
-Mewtwo 1
-
-|======
-Mewtwo 2
-
-|======
-Blaziken 1
-
-|======
-Medicham 1
-
-|======
-Houndoom 1
-
-|======
-Aggron 1
-
-|======
-Banette 1
-
-|======
-Tyranitar 1
-
-|======
-Scizor 1
-
-|======
-Pinsir 1
-
-|======
-Aerodactyl 1
-
-|======
-Lucario 1
-
-|======
-Abomasnow 1
-
-|======
-Aegislash 1
-
-|======
-Blastoise 1
-
-|======
-Kangaskhan 1
-
-|======
-Gyarados 1
-
-|======
-Absol 1
-
-|======
-Alakazam 1
-
-|======
-Heracross 1
-
-|======
-Mawile 1
-
-|======
-Manectric 1
-
-|======
-Garchomp 1
-
-|======
-Latios 1
-
-|======
-Latias 1
-
-|======
-Pumpkaboo 1
-Level Up at level 32 into Gourgeist-1, 
-|======
-Pumpkaboo 2
-Level Up at level 32 into Gourgeist-2, 
-|======
-Pumpkaboo 3
-Level Up at level 32 into Gourgeist-3, 
-|======
-Gourgeist 1
-
-|======
-Gourgeist 2
-
-|======
-Gourgeist 3
-
-|======
-Floette 1
-Level Up with Move [Light of Ruin] into Floette-5, Level Up at level 43 into Florges-1, 
-|======
-Floette 2
-Level Up with Move [Light of Ruin] into Floette-5, Level Up at level 43 into Florges-2, 
-|======
-Floette 3
-Level Up with Move [Light of Ruin] into Floette-5, Level Up at level 43 into Florges-3, 
-|======
-Floette 4
-Level Up with Move [Light of Ruin] into Floette-5, Level Up at level 43 into Florges-4, 
-|======
-Floette 5
-
-|======
-Swampert 1
-
-|======
-Sceptile 1
-
-|======
-Sableye 1
-
-|======
-Altaria 1
-
-|======
-Gallade 1
-
-|======
-Audino 1
-
-|======
-Sharpedo 1
-
-|======
-Slowbro 1
-
-|======
-Steelix 1
-
-|======
-Pidgeot 1
-
-|======
-Glalie 1
-
-|======
-Diancie 1
-
-|======
-Metagross 1
-
-|======
-Kyogre 1
-
-|======
-Groudon 1
-
-|======
-Rayquaza 1
-
-|======
-Hoopa 1
-
-|======
-Camerupt 1
-
-|======
-Lopunny 1
-
-|======
-Salamence 1
-
-|======
-Beedrill 1
-
-|======
-Wishiwashi 1
-
-|======
-Oricorio 1
-
-|======
-Oricorio 2
-
-|======
-Oricorio 3
-
-|======
-Lycanroc 1
-
-|======
-Lycanroc 2
-
-|======
-Rattata 1
-Level Up at level 25 into Raticate-1, Used Item [Kanto Badge] into Raticate, 
-|======
-Raticate 1
-
-|======
-Raticate 2
-
-|======
-Raichu 1
-
-|======
-Sandshrew 1
-Level Up at level 28 into Sandslash-1, Used Item [Kanto Badge] into Sandslash, 
-|======
-Sandslash 1
-
-|======
-Vulpix 1
-Level Up at level 33 into Ninetales-1, Used Item [Kanto Badge] into Ninetales, 
-|======
-Ninetales 1
-
-|======
-Meowth 1
-Level Up at level 26 into Persian-1, Used Item [Kanto Badge] into Persian-1, 
-|======
-Persian 1
-
-|======
-Geodude 1
-Level Up at level 25 into Graveler-1, 
-|======
-Graveler 1
-Level Up at level 45 into Golem-1, Used Item [Kanto Badge] into Golem, 
-|======
-Golem 1
-
-|======
-Grimer 1
-Level Up at level 38 into Muk-1, Used Item [Kanto Badge] into Muk, 
-|======
-Muk 1
-
-|======
-Exeggutor 1
-
-|======
-Marowak 1
-
-|======
-Marowak 2
-
-|======
-Greninja 1
-
-|======
-Greninja 2
-
-|======
-Zygarde 1
-
-|======
-Zygarde 2
-
-|======
-Zygarde 3
-
-|======
-Zygarde 4
-
-|======
-Minior 1
-
-|======
-Minior 2
-
-|======
-Minior 3
-
-|======
-Minior 4
-
-|======
-Minior 5
-
-|======
-Minior 6
-
-|======
-Minior 7
-
-|======
-Minior 8
-
-|======
-Minior 9
-
-|======
-Minior 10
-
-|======
-Minior 11
-
-|======
-Minior 12
-
-|======
-Minior 13
-
-|======
-Diglett 1
-Level Up at level 26 into Dugtrio-1, Used Item [Kanto Badge] into Dugtrio, 
-|======
-Dugtrio 1
-
-|======
-Mimikyu 1
-
-|======
-Mimikyu 2
-
-|======
-Mimikyu 3
-
-|======
-Magearna 1
-
-|======
-Pikachu 1
-
-|======
-Pikachu 2
-
-|======
-Pikachu 3
-
-|======
-Pikachu 4
-
-|======
-Pikachu 5
-
-|======
-Pikachu 6
-
-|======
-Pikachu 7
-
-|======
-Gumshoos 1
-
-|======
-Vikavolt 1
-
-|======
-Lurantis 1
-
-|======
-Salazzle 1
-
-|======
-Kommo-o 1
-
-|======
-Necrozma 1
-
-|======
-Necrozma 2
-
-|======
-Necrozma 3
-
-|======
-Araquanid 1
-
-|======
-Togedemaru 1
-
-|======
-Ribombee 1
-
-|======
-Rockruff 1
-Level Up (@) at Morning at level 28 into Lycanroc, Level Up (@) at Night at level 28 into Lycanroc-1, Level Up (@) Dusk at level 28 into Lycanroc-2, Used Item [Sun Stone] into Lycanroc, Used Item [Moon Stone] into Lycanroc-1, Used Item [Dusk Stone] into Lycanroc-2, Used Item [Dawn Stone] into Lycanroc-2, 
+======
+0 
+======
+
+======
+1 Bulbasaur
+======
+Level Up @ level 22 into Ivysaur
+
+======
+2 Ivysaur
+======
+Level Up @ level 43 into Venusaur
+
+======
+3 Venusaur
+======
+
+======
+4 Charmander
+======
+Level Up @ level 22 into Charmeleon
+
+======
+5 Charmeleon
+======
+Level Up @ level 43 into Charizard
+
+======
+6 Charizard
+======
+
+======
+7 Squirtle
+======
+Level Up @ level 22 into Wartortle
+
+======
+8 Wartortle
+======
+Level Up @ level 43 into Blastoise
+
+======
+9 Blastoise
+======
+
+======
+10 Caterpie
+======
+Level Up @ level 14 into Metapod
+
+======
+11 Metapod
+======
+Level Up @ level 22 into Butterfree
+
+======
+12 Butterfree
+======
+
+======
+13 Weedle
+======
+Level Up @ level 14 into Kakuna
+
+======
+14 Kakuna
+======
+Level Up @ level 22 into Beedrill
+
+======
+15 Beedrill
+======
+
+======
+16 Pidgey
+======
+Level Up @ level 22 into Pidgeotto
+
+======
+17 Pidgeotto
+======
+Level Up @ level 39 into Pidgeot
+
+======
+18 Pidgeot
+======
+
+======
+19 Rattata
+======
+Level Up @ level 25 into Raticate
+Used Item [Alolan Sack] into Raticate-1
+
+======
+20 Raticate
+======
+
+======
+21 Spearow
+======
+Level Up @ level 26 into Fearow
+
+======
+22 Fearow
+======
+
+======
+23 Ekans
+======
+Level Up @ level 28 into Arbok
+
+======
+24 Arbok
+======
+
+======
+25 Pikachu
+======
+Used Item [Kanto Badge] into Raichu
+Used Item [Alolan Sack] into Raichu-1
+Level Up (@) at Morning @ level 38 into Raichu-1
+Level Up (@) at Night @ level 38 into Raichu
+
+======
+26 Raichu
+======
+
+======
+27 Sandshrew
+======
+Level Up @ level 28 into Sandslash
+Used Item [Alolan Sack] into Sandslash-1
+
+======
+28 Sandslash
+======
+
+======
+29 Nidoran
+======
+Level Up @ level 21 into Nidorina
+Used Item [Blue Box] into Nidorino
+
+======
+30 Nidorina
+======
+Level Up @ level 42 into Nidoqueen
+
+======
+31 Nidoqueen
+======
+
+======
+32 Nidoran
+======
+Level Up @ level 21 into Nidorino
+Used Item [Pink Box] into Nidorina
+
+======
+33 Nidorino
+======
+Level Up @ level 42 into Nidoking
+
+======
+34 Nidoking
+======
+
+======
+35 Clefairy
+======
+Level Up @ level 34 into Clefable
+
+======
+36 Clefable
+======
+
+======
+37 Vulpix
+======
+Level Up @ level 33 into Ninetales
+Used Item [Alolan Sack] into Ninetales-1
+
+======
+38 Ninetales
+======
+
+======
+39 Jigglypuff
+======
+Level Up @ level 32 into Wigglytuff
+
+======
+40 Wigglytuff
+======
+
+======
+41 Zubat
+======
+Level Up @ level 24 into Golbat
+
+======
+42 Golbat
+======
+Level Up @ level 46 into Crobat
+
+======
+43 Oddish
+======
+Level Up @ level 21 into Gloom
+
+======
+44 Gloom
+======
+Used Item [Kanto Badge] into Vileplume
+Used Item [Alolan Sack] into Bellossom
+Level Up (@) at Morning @ level 38 into Bellossom
+Level Up (@) at Night @ level 38 into Vileplume
+
+======
+45 Vileplume
+======
+
+======
+46 Paras
+======
+Level Up @ level 27 into Parasect
+
+======
+47 Parasect
+======
+
+======
+48 Venonat
+======
+Level Up @ level 29 into Venomoth
+
+======
+49 Venomoth
+======
+
+======
+50 Diglett
+======
+Level Up @ level 26 into Dugtrio
+Used Item [Alolan Sack] into Dugtrio-1
+
+======
+51 Dugtrio
+======
+
+======
+52 Meowth
+======
+Level Up @ level 26 into Persian
+Used Item [Alolan Sack] into Persian-1
+
+======
+53 Persian
+======
+
+======
+54 Psyduck
+======
+Level Up @ level 28 into Golduck
+
+======
+55 Golduck
+======
+
+======
+56 Mankey
+======
+Level Up @ level 28 into Primeape
+
+======
+57 Primeape
+======
+
+======
+58 Growlithe
+======
+Level Up @ level 35 into Arcanine
+
+======
+59 Arcanine
+======
+
+======
+60 Poliwag
+======
+Level Up @ level 25 into Poliwhirl
+
+======
+61 Poliwhirl
+======
+Used Item [Kanto Badge] into Poliwrath
+Used Item [Alolan Sack] into Politoed
+Level Up (@) at Morning @ level 39 into Politoed
+Level Up (@) at Night @ level 39 into Poliwrath
+
+======
+62 Poliwrath
+======
+
+======
+63 Abra
+======
+Level Up @ level 18 into Kadabra
+
+======
+64 Kadabra
+======
+Level Up @ level 45 into Alakazam
+
+======
+65 Alakazam
+======
+
+======
+66 Machop
+======
+Level Up @ level 28 into Machoke
+
+======
+67 Machoke
+======
+Level Up @ level 45 into Machamp
+
+======
+68 Machamp
+======
+
+======
+69 Bellsprout
+======
+Level Up @ level 21 into Weepinbell
+
+======
+70 Weepinbell
+======
+Level Up @ level 38 into Victreebel
+
+======
+71 Victreebel
+======
+
+======
+72 Tentacool
+======
+Level Up @ level 30 into Tentacruel
+
+======
+73 Tentacruel
+======
+
+======
+74 Geodude
+======
+Level Up @ level 25 into Graveler
+
+======
+75 Graveler
+======
+Level Up @ level 45 into Golem
+Used Item [Alolan Sack] into Golem-1
+
+======
+76 Golem
+======
+
+======
+77 Ponyta
+======
+Level Up @ level 32 into Rapidash
+
+======
+78 Rapidash
+======
+
+======
+79 Slowpoke
+======
+Level Up @ level 32 into Slowbro
+Used Item [Alolan Sack] into Slowking
+Used Item [Kanto Badge] into Slowbro
+Level Up with Move [Calm Mind] into Slowking
+
+======
+80 Slowbro
+======
+
+======
+81 Magnemite
+======
+Level Up @ level 30 into Magneton
+
+======
+82 Magneton
+======
+Level Up @ level 46 into Magnezone
+
+======
+83 Farfetch’d
+======
+
+======
+84 Doduo
+======
+Level Up @ level 31 into Dodrio
+
+======
+85 Dodrio
+======
+
+======
+86 Seel
+======
+Level Up @ level 29 into Dewgong
+
+======
+87 Dewgong
+======
+
+======
+88 Grimer
+======
+Level Up @ level 38 into Muk
+Used Item [Alolan Sack] into Muk-1
+
+======
+89 Muk
+======
+
+======
+90 Shellder
+======
+Level Up @ level 30 into Cloyster
+
+======
+91 Cloyster
+======
+
+======
+92 Gastly
+======
+Level Up @ level 25 into Haunter
+
+======
+93 Haunter
+======
+Level Up @ level 45 into Gengar
+
+======
+94 Gengar
+======
+
+======
+95 Onix
+======
+Level Up @ level 40 into Steelix
+
+======
+96 Drowzee
+======
+Level Up @ level 28 into Hypno
+
+======
+97 Hypno
+======
+
+======
+98 Krabby
+======
+Level Up @ level 28 into Kingler
+
+======
+99 Kingler
+======
+
+======
+100 Voltorb
+======
+Level Up @ level 30 into Electrode
+
+======
+101 Electrode
+======
+
+======
+102 Exeggcute
+======
+Used Item [Kanto Badge] into Exeggutor
+Used Item [Alolan Sack] into Exeggutor-1
+Level Up (@) at Morning @ level 37 into Exeggutor-1
+Level Up (@) at Night @ level 37 into Exeggutor
+
+======
+103 Exeggutor
+======
+
+======
+104 Cubone
+======
+Level Up (@) at Morning @ level 28 into Marowak
+Level Up (@) at Night @ level 28 into Marowak-1
+Used Item [Alolan Sack] into Marowak-1
+Used Item [Kanto Badge] into Marowak
+Level Up with Party [Marowak] into Kangaskhan
+Level Up with Party [Marowak 1] into Kangaskhan
+Level Up with Party [Marowak 2] into Kangaskhan
+
+======
+105 Marowak
+======
+
+======
+106 Hitmonlee
+======
+
+======
+107 Hitmonchan
+======
+
+======
+108 Lickitung
+======
+Level Up @ level 41 into Lickilicky
+
+======
+109 Koffing
+======
+Level Up @ level 35 into Weezing
+
+======
+110 Weezing
+======
+
+======
+111 Rhyhorn
+======
+Level Up @ level 35 into Rhydon
+
+======
+112 Rhydon
+======
+Level Up @ level 52 into Rhyperior
+
+======
+113 Chansey
+======
+Level Up @ level 46 into Blissey
+
+======
+114 Tangela
+======
+Level Up @ level 43 into Tangrowth
+
+======
+115 Kangaskhan
+======
+
+======
+116 Horsea
+======
+Level Up @ level 27 into Seadra
+
+======
+117 Seadra
+======
+Level Up @ level 48 into Kingdra
+
+======
+118 Goldeen
+======
+Level Up @ level 33 into Seaking
+
+======
+119 Seaking
+======
+
+======
+120 Staryu
+======
+Level Up @ level 31 into Starmie
+
+======
+121 Starmie
+======
+
+======
+122 Mr. Mime
+======
+
+======
+123 Scyther
+======
+Level Up @ level 48 into Scizor
+
+======
+124 Jynx
+======
+
+======
+125 Electabuzz
+======
+Level Up @ level 50 into Electivire
+
+======
+126 Magmar
+======
+Level Up @ level 50 into Magmortar
+
+======
+127 Pinsir
+======
+
+======
+128 Tauros
+======
+
+======
+129 Magikarp
+======
+Level Up @ level 30 into Gyarados
+
+======
+130 Gyarados
+======
+
+======
+131 Lapras
+======
+
+======
+132 Ditto
+======
+
+======
+133 Eevee
+======
+Used Item [Leaf Stone] into Leafeon
+Used Item [Ice Stone] into Glaceon
+Used Item [Thunder Stone] into Jolteon
+Used Item [Water Stone] into Vaporeon
+Used Item [Fire Stone] into Flareon
+Used Item [Shiny Stone] into Sylveon
+Used Item [Sun Stone] into Espeon
+Used Item [Moon Stone] into Umbreon
+
+======
+134 Vaporeon
+======
+
+======
+135 Jolteon
+======
+
+======
+136 Flareon
+======
+
+======
+137 Porygon
+======
+Level Up @ level 30 into Porygon2
+
+======
+138 Omanyte
+======
+Level Up @ level 35 into Omastar
+
+======
+139 Omastar
+======
+
+======
+140 Kabuto
+======
+Level Up @ level 35 into Kabutops
+
+======
+141 Kabutops
+======
+
+======
+142 Aerodactyl
+======
+
+======
+143 Snorlax
+======
+
+======
+144 Articuno
+======
+
+======
+145 Zapdos
+======
+
+======
+146 Moltres
+======
+
+======
+147 Dratini
+======
+Level Up @ level 25 into Dragonair
+
+======
+148 Dragonair
+======
+Level Up @ level 55 into Dragonite
+
+======
+149 Dragonite
+======
+
+======
+150 Mewtwo
+======
+
+======
+151 Mew
+======
+
+======
+152 Chikorita
+======
+Level Up @ level 22 into Bayleef
+
+======
+153 Bayleef
+======
+Level Up @ level 42 into Meganium
+
+======
+154 Meganium
+======
+
+======
+155 Cyndaquil
+======
+Level Up @ level 22 into Quilava
+
+======
+156 Quilava
+======
+Level Up @ level 42 into Typhlosion
+
+======
+157 Typhlosion
+======
+
+======
+158 Totodile
+======
+Level Up @ level 22 into Croconaw
+
+======
+159 Croconaw
+======
+Level Up @ level 42 into Feraligatr
+
+======
+160 Feraligatr
+======
+
+======
+161 Sentret
+======
+Level Up @ level 22 into Furret
+
+======
+162 Furret
+======
+
+======
+163 Hoothoot
+======
+Level Up @ level 24 into Noctowl
+
+======
+164 Noctowl
+======
+
+======
+165 Ledyba
+======
+Level Up @ level 23 into Ledian
+
+======
+166 Ledian
+======
+
+======
+167 Spinarak
+======
+Level Up @ level 25 into Ariados
+
+======
+168 Ariados
+======
+
+======
+169 Crobat
+======
+
+======
+170 Chinchou
+======
+Level Up @ level 29 into Lanturn
+
+======
+171 Lanturn
+======
+
+======
+172 Pichu
+======
+Level Up @ level 16 into Pikachu
+Used Item [Kanto Badge] into Pikachu-1
+Used Item [Moldy Cookie] into Pikachu-2
+Used Item [Old Gateau] into Pikachu-3
+Used Item [Casteliacone] into Pikachu-4
+Used Item [Shalour Sable] into Pikachu-5
+Used Item [Alolan Sack] into Pikachu-6
+Used Item [Big Malasada] into Pikachu-7
+
+======
+173 Cleffa
+======
+Level Up @ level 16 into Clefairy
+
+======
+174 Igglybuff
+======
+Level Up @ level 15 into Jigglypuff
+
+======
+175 Togepi
+======
+Level Up @ level 17 into Togetic
+
+======
+176 Togetic
+======
+Level Up @ level 48 into Togekiss
+
+======
+177 Natu
+======
+Level Up @ level 25 into Xatu
+
+======
+178 Xatu
+======
+
+======
+179 Mareep
+======
+Level Up @ level 20 into Flaaffy
+
+======
+180 Flaaffy
+======
+Level Up @ level 40 into Ampharos
+
+======
+181 Ampharos
+======
+
+======
+182 Bellossom
+======
+
+======
+183 Marill
+======
+Level Up @ level 30 into Azumarill
+
+======
+184 Azumarill
+======
+
+======
+185 Sudowoodo
+======
+
+======
+186 Politoed
+======
+
+======
+187 Hoppip
+======
+Level Up @ level 22 into Skiploom
+
+======
+188 Skiploom
+======
+Level Up @ level 37 into Jumpluff
+
+======
+189 Jumpluff
+======
+
+======
+190 Aipom
+======
+Level Up @ level 38 into Ambipom
+
+======
+191 Sunkern
+======
+Level Up @ level 27 into Sunflora
+
+======
+192 Sunflora
+======
+
+======
+193 Yanma
+======
+Level Up @ level 41 into Yanmega
+
+======
+194 Wooper
+======
+Level Up @ level 26 into Quagsire
+
+======
+195 Quagsire
+======
+
+======
+196 Espeon
+======
+
+======
+197 Umbreon
+======
+
+======
+198 Murkrow
+======
+Level Up @ level 38 into Honchkrow
+
+======
+199 Slowking
+======
+
+======
+200 Misdreavus
+======
+Level Up @ level 38 into Mismagius
+
+======
+201 Unown
+======
+
+======
+202 Wobbuffet
+======
+
+======
+203 Girafarig
+======
+
+======
+204 Pineco
+======
+Level Up @ level 28 into Forretress
+
+======
+205 Forretress
+======
+
+======
+206 Dunsparce
+======
+
+======
+207 Gligar
+======
+Level Up @ level 39 into Gliscor
+
+======
+208 Steelix
+======
+
+======
+209 Snubbull
+======
+Level Up @ level 27 into Granbull
+
+======
+210 Granbull
+======
+
+======
+211 Qwilfish
+======
+
+======
+212 Scizor
+======
+
+======
+213 Shuckle
+======
+
+======
+214 Heracross
+======
+
+======
+215 Sneasel
+======
+Level Up @ level 39 into Weavile
+
+======
+216 Teddiursa
+======
+Level Up @ level 34 into Ursaring
+
+======
+217 Ursaring
+======
+
+======
+218 Slugma
+======
+Level Up @ level 35 into Magcargo
+
+======
+219 Magcargo
+======
+
+======
+220 Swinub
+======
+Level Up @ level 29 into Piloswine
+
+======
+221 Piloswine
+======
+Level Up @ level 52 into Mamoswine
+
+======
+222 Corsola
+======
+
+======
+223 Remoraid
+======
+Level Up @ level 29 into Octillery
+
+======
+224 Octillery
+======
+
+======
+225 Delibird
+======
+
+======
+226 Mantine
+======
+
+======
+227 Skarmory
+======
+
+======
+228 Houndour
+======
+Level Up @ level 28 into Houndoom
+
+======
+229 Houndoom
+======
+
+======
+230 Kingdra
+======
+
+======
+231 Phanpy
+======
+Level Up @ level 29 into Donphan
+
+======
+232 Donphan
+======
+
+======
+233 Porygon2
+======
+Level Up @ level 50 into Porygon-Z
+
+======
+234 Stantler
+======
+
+======
+235 Smeargle
+======
+
+======
+236 Tyrogue
+======
+Level Up (Attack < Defense) @ level 25 into Hitmonchan
+Level Up (Attack > Defense) @ level 25 into Hitmonlee
+Level Up (Attack = Defense) @ level 25 into Hitmontop
+Used Item [Dawn Stone] into Hitmonchan
+Used Item [Dusk Stone] into Hitmonlee
+Used Item [Shiny Stone] into Hitmontop
+
+======
+237 Hitmontop
+======
+
+======
+238 Smoochum
+======
+Level Up @ level 26 into Jynx
+
+======
+239 Elekid
+======
+Level Up @ level 25 into Electabuzz
+
+======
+240 Magby
+======
+Level Up @ level 25 into Magmar
+
+======
+241 Miltank
+======
+
+======
+242 Blissey
+======
+
+======
+243 Raikou
+======
+
+======
+244 Entei
+======
+
+======
+245 Suicune
+======
+
+======
+246 Larvitar
+======
+Level Up @ level 25 into Pupitar
+
+======
+247 Pupitar
+======
+Level Up @ level 55 into Tyranitar
+
+======
+248 Tyranitar
+======
+
+======
+249 Lugia
+======
+
+======
+250 Ho-Oh
+======
+
+======
+251 Celebi
+======
+
+======
+252 Treecko
+======
+Level Up @ level 22 into Grovyle
+
+======
+253 Grovyle
+======
+Level Up @ level 42 into Sceptile
+
+======
+254 Sceptile
+======
+
+======
+255 Torchic
+======
+Level Up @ level 22 into Combusken
+
+======
+256 Combusken
+======
+Level Up @ level 42 into Blaziken
+
+======
+257 Blaziken
+======
+
+======
+258 Mudkip
+======
+Level Up @ level 22 into Marshtomp
+
+======
+259 Marshtomp
+======
+Level Up @ level 42 into Swampert
+
+======
+260 Swampert
+======
+
+======
+261 Poochyena
+======
+Level Up @ level 23 into Mightyena
+
+======
+262 Mightyena
+======
+
+======
+263 Zigzagoon
+======
+Level Up @ level 25 into Linoone
+
+======
+264 Linoone
+======
+
+======
+265 Wurmple
+======
+Level Up Female @ level 14 into Silcoon
+Level Up Male @ level 14 into Cascoon
+Used Item [Pink Box] into Silcoon
+Used Item [Blue Box] into Cascoon
+
+======
+266 Silcoon
+======
+Level Up @ level 22 into Beautifly
+
+======
+267 Beautifly
+======
+
+======
+268 Cascoon
+======
+Level Up @ level 22 into Dustox
+
+======
+269 Dustox
+======
+
+======
+270 Lotad
+======
+Level Up @ level 18 into Lombre
+
+======
+271 Lombre
+======
+Level Up @ level 38 into Ludicolo
+
+======
+272 Ludicolo
+======
+
+======
+273 Seedot
+======
+Level Up @ level 18 into Nuzleaf
+
+======
+274 Nuzleaf
+======
+Level Up @ level 38 into Shiftry
+
+======
+275 Shiftry
+======
+
+======
+276 Taillow
+======
+Level Up @ level 27 into Swellow
+
+======
+277 Swellow
+======
+
+======
+278 Wingull
+======
+Level Up @ level 25 into Pelipper
+
+======
+279 Pelipper
+======
+
+======
+280 Ralts
+======
+Level Up @ level 20 into Kirlia
+
+======
+281 Kirlia
+======
+Level Up Female @ level 36 into Gardevoir
+Level Up Male @ level 36 into Gallade
+Used Item [Pink Box] into Gardevoir
+Used Item [Blue Box] into Gallade
+
+======
+282 Gardevoir
+======
+
+======
+283 Surskit
+======
+Level Up @ level 26 into Masquerain
+
+======
+284 Masquerain
+======
+
+======
+285 Shroomish
+======
+Level Up @ level 27 into Breloom
+
+======
+286 Breloom
+======
+
+======
+287 Slakoth
+======
+Level Up @ level 24 into Vigoroth
+
+======
+288 Vigoroth
+======
+Level Up @ level 50 into Slaking
+
+======
+289 Slaking
+======
+
+======
+290 Nincada
+======
+Level Up (Ninjask) @ level 20 into Ninjask
+Level Up (Shedinja) @ level 20 into Shedinja
+
+======
+291 Ninjask
+======
+
+======
+292 Shedinja
+======
+
+======
+293 Whismur
+======
+Level Up @ level 20 into Loudred
+
+======
+294 Loudred
+======
+Level Up @ level 40 into Exploud
+
+======
+295 Exploud
+======
+
+======
+296 Makuhita
+======
+Level Up @ level 28 into Hariyama
+
+======
+297 Hariyama
+======
+
+======
+298 Azurill
+======
+Level Up @ level 16 into Marill
+
+======
+299 Nosepass
+======
+Level Up @ level 35 into Probopass
+
+======
+300 Skitty
+======
+Level Up @ level 40 into Delcatty
+
+======
+301 Delcatty
+======
+
+======
+302 Sableye
+======
+
+======
+303 Mawile
+======
+
+======
+304 Aron
+======
+Level Up @ level 25 into Lairon
+
+======
+305 Lairon
+======
+Level Up @ level 42 into Aggron
+
+======
+306 Aggron
+======
+
+======
+307 Meditite
+======
+Level Up @ level 32 into Medicham
+
+======
+308 Medicham
+======
+
+======
+309 Electrike
+======
+Level Up @ level 26 into Manectric
+
+======
+310 Manectric
+======
+
+======
+311 Plusle
+======
+
+======
+312 Minun
+======
+
+======
+313 Volbeat
+======
+
+======
+314 Illumise
+======
+
+======
+315 Roselia
+======
+Level Up @ level 43 into Roserade
+
+======
+316 Gulpin
+======
+Level Up @ level 26 into Swalot
+
+======
+317 Swalot
+======
+
+======
+318 Carvanha
+======
+Level Up @ level 30 into Sharpedo
+
+======
+319 Sharpedo
+======
+
+======
+320 Wailmer
+======
+Level Up @ level 40 into Wailord
+
+======
+321 Wailord
+======
+
+======
+322 Numel
+======
+Level Up @ level 33 into Camerupt
+
+======
+323 Camerupt
+======
+
+======
+324 Torkoal
+======
+
+======
+325 Spoink
+======
+Level Up @ level 32 into Grumpig
+
+======
+326 Grumpig
+======
+
+======
+327 Spinda
+======
+
+======
+328 Trapinch
+======
+Level Up @ level 32 into Vibrava
+
+======
+329 Vibrava
+======
+Level Up @ level 45 into Flygon
+
+======
+330 Flygon
+======
+
+======
+331 Cacnea
+======
+Level Up Male @ level 32 into Cacturne
+Level Up Female @ level 32 into Maractus
+Used Item [Pink Box] into Maractus
+Used Item [Blue Box] into Cacturne
+
+======
+332 Cacturne
+======
+
+======
+333 Swablu
+======
+Level Up @ level 35 into Altaria
+
+======
+334 Altaria
+======
+
+======
+335 Zangoose
+======
+
+======
+336 Seviper
+======
+
+======
+337 Lunatone
+======
+
+======
+338 Solrock
+======
+
+======
+339 Barboach
+======
+Level Up @ level 30 into Whiscash
+
+======
+340 Whiscash
+======
+
+======
+341 Corphish
+======
+Level Up @ level 30 into Crawdaunt
+
+======
+342 Crawdaunt
+======
+
+======
+343 Baltoy
+======
+Level Up @ level 36 into Claydol
+
+======
+344 Claydol
+======
+
+======
+345 Lileep
+======
+Level Up @ level 35 into Cradily
+
+======
+346 Cradily
+======
+
+======
+347 Anorith
+======
+Level Up @ level 35 into Armaldo
+
+======
+348 Armaldo
+======
+
+======
+349 Feebas
+======
+Level Up @ level 30 into Milotic
+
+======
+350 Milotic
+======
+
+======
+351 Castform
+======
+
+======
+352 Kecleon
+======
+
+======
+353 Shuppet
+======
+Level Up @ level 33 into Banette
+
+======
+354 Banette
+======
+
+======
+355 Duskull
+======
+Level Up @ level 30 into Dusclops
+
+======
+356 Dusclops
+======
+Level Up @ level 54 into Dusknoir
+
+======
+357 Tropius
+======
+
+======
+358 Chimecho
+======
+
+======
+359 Absol
+======
+
+======
+360 Wynaut
+======
+Level Up @ level 25 into Wobbuffet
+
+======
+361 Snorunt
+======
+Level Up Male @ level 42 into Glalie
+Level Up Female @ level 42 into Froslass
+Used Item [Blue Box] into Glalie
+Used Item [Pink Box] into Froslass
+
+======
+362 Glalie
+======
+
+======
+363 Spheal
+======
+Level Up @ level 27 into Sealeo
+
+======
+364 Sealeo
+======
+Level Up @ level 44 into Walrein
+
+======
+365 Walrein
+======
+
+======
+366 Clamperl
+======
+Level Up Male @ level 30 into Huntail
+Level Up Female @ level 30 into Gorebyss
+Used Item [Blue Box] into Huntail
+Used Item [Pink Box] into Gorebyss
+
+======
+367 Huntail
+======
+
+======
+368 Gorebyss
+======
+
+======
+369 Relicanth
+======
+
+======
+370 Luvdisc
+======
+Level Up @ level 34 into Alomomola
+
+======
+371 Bagon
+======
+Level Up @ level 25 into Shelgon
+
+======
+372 Shelgon
+======
+Level Up @ level 55 into Salamence
+
+======
+373 Salamence
+======
+
+======
+374 Beldum
+======
+Level Up @ level 20 into Metang
+
+======
+375 Metang
+======
+Level Up @ level 55 into Metagross
+
+======
+376 Metagross
+======
+
+======
+377 Regirock
+======
+
+======
+378 Regice
+======
+
+======
+379 Registeel
+======
+
+======
+380 Latias
+======
+
+======
+381 Latios
+======
+
+======
+382 Kyogre
+======
+
+======
+383 Groudon
+======
+
+======
+384 Rayquaza
+======
+
+======
+385 Jirachi
+======
+
+======
+386 Deoxys
+======
+
+======
+387 Turtwig
+======
+Level Up @ level 22 into Grotle
+
+======
+388 Grotle
+======
+Level Up @ level 42 into Torterra
+
+======
+389 Torterra
+======
+
+======
+390 Chimchar
+======
+Level Up @ level 22 into Monferno
+
+======
+391 Monferno
+======
+Level Up @ level 42 into Infernape
+
+======
+392 Infernape
+======
+
+======
+393 Piplup
+======
+Level Up @ level 22 into Prinplup
+
+======
+394 Prinplup
+======
+Level Up @ level 42 into Empoleon
+
+======
+395 Empoleon
+======
+
+======
+396 Starly
+======
+Level Up @ level 19 into Staravia
+
+======
+397 Staravia
+======
+Level Up @ level 39 into Staraptor
+
+======
+398 Staraptor
+======
+
+======
+399 Bidoof
+======
+Level Up @ level 22 into Bibarel
+
+======
+400 Bibarel
+======
+
+======
+401 Kricketot
+======
+Level Up @ level 21 into Kricketune
+
+======
+402 Kricketune
+======
+
+======
+403 Shinx
+======
+Level Up @ level 22 into Luxio
+
+======
+404 Luxio
+======
+Level Up @ level 38 into Luxray
+
+======
+405 Luxray
+======
+
+======
+406 Budew
+======
+Level Up with Friendship into Roselia
+Level Up @ level 17 into Roselia
+
+======
+407 Roserade
+======
+
+======
+408 Cranidos
+======
+Level Up @ level 30 into Rampardos
+
+======
+409 Rampardos
+======
+
+======
+410 Shieldon
+======
+Level Up @ level 30 into Bastiodon
+
+======
+411 Bastiodon
+======
+
+======
+412 Burmy
+======
+Level Up Female @ level 25 into Wormadam
+Level Up Male @ level 25 into Mothim
+Used Item [Pink Box] into Wormadam
+Used Item [Blue Box] into Mothim
+
+======
+413 Wormadam
+======
+
+======
+414 Mothim
+======
+
+======
+415 Combee
+======
+Level Up Female @ level 25 into Vespiquen
+Used Item [Pink Box]@ level 35 into Vespiquen
+
+======
+416 Vespiquen
+======
+
+======
+417 Pachirisu
+======
+
+======
+418 Buizel
+======
+Level Up @ level 31 into Floatzel
+
+======
+419 Floatzel
+======
+
+======
+420 Cherubi
+======
+Level Up @ level 25 into Cherrim
+
+======
+421 Cherrim
+======
+
+======
+422 Shellos
+======
+Level Up @ level 30 into Gastrodon
+
+======
+423 Gastrodon
+======
+
+======
+424 Ambipom
+======
+
+======
+425 Drifloon
+======
+Level Up @ level 32 into Drifblim
+
+======
+426 Drifblim
+======
+
+======
+427 Buneary
+======
+Level Up @ level 28 into Lopunny
+
+======
+428 Lopunny
+======
+
+======
+429 Mismagius
+======
+
+======
+430 Honchkrow
+======
+
+======
+431 Glameow
+======
+Level Up @ level 31 into Purugly
+
+======
+432 Purugly
+======
+
+======
+433 Chingling
+======
+Level Up @ level 25 into Chimecho
+
+======
+434 Stunky
+======
+Level Up @ level 30 into Skuntank
+
+======
+435 Skuntank
+======
+
+======
+436 Bronzor
+======
+Level Up @ level 33 into Bronzong
+
+======
+437 Bronzong
+======
+
+======
+438 Bonsly
+======
+Level Up with Move [Mimic] into Sudowoodo
+Level Up @ level 25 into Sudowoodo
+
+======
+439 Mime Jr.
+======
+Level Up @ level 23 into Mr. Mime
+
+======
+440 Happiny
+======
+Level Up @ level 20 into Chansey
+
+======
+441 Chatot
+======
+
+======
+442 Spiritomb
+======
+
+======
+443 Gible
+======
+Level Up @ level 24 into Gabite
+
+======
+444 Gabite
+======
+Level Up @ level 53 into Garchomp
+
+======
+445 Garchomp
+======
+
+======
+446 Munchlax
+======
+Level Up @ level 30 into Snorlax
+
+======
+447 Riolu
+======
+Level Up @ level 30 into Lucario
+
+======
+448 Lucario
+======
+
+======
+449 Hippopotas
+======
+Level Up @ level 34 into Hippowdon
+
+======
+450 Hippowdon
+======
+
+======
+451 Skorupi
+======
+Level Up @ level 40 into Drapion
+
+======
+452 Drapion
+======
+
+======
+453 Croagunk
+======
+Level Up @ level 37 into Toxicroak
+
+======
+454 Toxicroak
+======
+
+======
+455 Carnivine
+======
+
+======
+456 Finneon
+======
+Level Up @ level 31 into Lumineon
+
+======
+457 Lumineon
+======
+
+======
+458 Mantyke
+======
+Level Up @ level 30 into Mantine
+
+======
+459 Snover
+======
+Level Up @ level 40 into Abomasnow
+
+======
+460 Abomasnow
+======
+
+======
+461 Weavile
+======
+
+======
+462 Magnezone
+======
+
+======
+463 Lickilicky
+======
+
+======
+464 Rhyperior
+======
+
+======
+465 Tangrowth
+======
+
+======
+466 Electivire
+======
+
+======
+467 Magmortar
+======
+
+======
+468 Togekiss
+======
+
+======
+469 Yanmega
+======
+
+======
+470 Leafeon
+======
+
+======
+471 Glaceon
+======
+
+======
+472 Gliscor
+======
+
+======
+473 Mamoswine
+======
+
+======
+474 Porygon-Z
+======
+
+======
+475 Gallade
+======
+
+======
+476 Probopass
+======
+
+======
+477 Dusknoir
+======
+
+======
+478 Froslass
+======
+
+======
+479 Rotom
+======
+
+======
+480 Uxie
+======
+
+======
+481 Mesprit
+======
+
+======
+482 Azelf
+======
+
+======
+483 Dialga
+======
+
+======
+484 Palkia
+======
+
+======
+485 Heatran
+======
+
+======
+486 Regigigas
+======
+
+======
+487 Giratina
+======
+
+======
+488 Cresselia
+======
+
+======
+489 Phione
+======
+Level Up @ level 62 into Manaphy
+
+======
+490 Manaphy
+======
+
+======
+491 Darkrai
+======
+
+======
+492 Shaymin
+======
+
+======
+493 Arceus
+======
+
+======
+494 Victini
+======
+
+======
+495 Snivy
+======
+Level Up @ level 22 into Servine
+
+======
+496 Servine
+======
+Level Up @ level 42 into Serperior
+
+======
+497 Serperior
+======
+
+======
+498 Tepig
+======
+Level Up @ level 22 into Pignite
+
+======
+499 Pignite
+======
+Level Up @ level 42 into Emboar
+
+======
+500 Emboar
+======
+
+======
+501 Oshawott
+======
+Level Up @ level 22 into Dewott
+
+======
+502 Dewott
+======
+Level Up @ level 42 into Samurott
+
+======
+503 Samurott
+======
+
+======
+504 Patrat
+======
+Level Up @ level 24 into Watchog
+
+======
+505 Watchog
+======
+
+======
+506 Lillipup
+======
+Level Up @ level 21 into Herdier
+
+======
+507 Herdier
+======
+Level Up @ level 36 into Stoutland
+
+======
+508 Stoutland
+======
+
+======
+509 Purrloin
+======
+Level Up @ level 24 into Liepard
+
+======
+510 Liepard
+======
+
+======
+511 Pansage
+======
+Level Up @ level 28 into Simisage
+
+======
+512 Simisage
+======
+
+======
+513 Pansear
+======
+Level Up @ level 28 into Simisear
+
+======
+514 Simisear
+======
+
+======
+515 Panpour
+======
+Level Up @ level 28 into Simipour
+
+======
+516 Simipour
+======
+
+======
+517 Munna
+======
+Level Up @ level 30 into Musharna
+
+======
+518 Musharna
+======
+
+======
+519 Pidove
+======
+Level Up @ level 23 into Tranquill
+
+======
+520 Tranquill
+======
+Level Up @ level 38 into Unfezant
+
+======
+521 Unfezant
+======
+
+======
+522 Blitzle
+======
+Level Up @ level 30 into Zebstrika
+
+======
+523 Zebstrika
+======
+
+======
+524 Roggenrola
+======
+Level Up @ level 25 into Boldore
+
+======
+525 Boldore
+======
+Level Up @ level 45 into Gigalith
+
+======
+526 Gigalith
+======
+
+======
+527 Woobat
+======
+Level Up @ level 29 into Swoobat
+
+======
+528 Swoobat
+======
+
+======
+529 Drilbur
+======
+Level Up @ level 31 into Excadrill
+
+======
+530 Excadrill
+======
+
+======
+531 Audino
+======
+
+======
+532 Timburr
+======
+Level Up @ level 25 into Gurdurr
+
+======
+533 Gurdurr
+======
+Level Up @ level 47 into Conkeldurr
+
+======
+534 Conkeldurr
+======
+
+======
+535 Tympole
+======
+Level Up @ level 25 into Palpitoad
+
+======
+536 Palpitoad
+======
+Level Up @ level 40 into Seismitoad
+
+======
+537 Seismitoad
+======
+
+======
+538 Throh
+======
+
+======
+539 Sawk
+======
+
+======
+540 Sewaddle
+======
+Level Up @ level 20 into Swadloon
+
+======
+541 Swadloon
+======
+Level Up @ level 34 into Leavanny
+
+======
+542 Leavanny
+======
+
+======
+543 Venipede
+======
+Level Up @ level 22 into Whirlipede
+
+======
+544 Whirlipede
+======
+Level Up @ level 33 into Scolipede
+
+======
+545 Scolipede
+======
+
+======
+546 Cottonee
+======
+Level Up @ level 28 into Whimsicott
+
+======
+547 Whimsicott
+======
+
+======
+548 Petilil
+======
+Level Up @ level 28 into Lilligant
+
+======
+549 Lilligant
+======
+
+======
+550 Basculin
+======
+
+======
+551 Sandile
+======
+Level Up @ level 29 into Krokorok
+
+======
+552 Krokorok
+======
+Level Up @ level 40 into Krookodile
+
+======
+553 Krookodile
+======
+
+======
+554 Darumaka
+======
+Level Up @ level 35 into Darmanitan
+
+======
+555 Darmanitan
+======
+
+======
+556 Maractus
+======
+
+======
+557 Dwebble
+======
+Level Up @ level 34 into Crustle
+
+======
+558 Crustle
+======
+
+======
+559 Scraggy
+======
+Level Up @ level 33 into Scrafty
+
+======
+560 Scrafty
+======
+
+======
+561 Sigilyph
+======
+
+======
+562 Yamask
+======
+Level Up @ level 34 into Cofagrigus
+
+======
+563 Cofagrigus
+======
+
+======
+564 Tirtouga
+======
+Level Up @ level 35 into Carracosta
+
+======
+565 Carracosta
+======
+
+======
+566 Archen
+======
+Level Up @ level 35 into Archeops
+
+======
+567 Archeops
+======
+
+======
+568 Trubbish
+======
+Level Up @ level 36 into Garbodor
+
+======
+569 Garbodor
+======
+
+======
+570 Zorua
+======
+Level Up @ level 30 into Zoroark
+
+======
+571 Zoroark
+======
+
+======
+572 Minccino
+======
+Level Up @ level 32 into Cinccino
+
+======
+573 Cinccino
+======
+
+======
+574 Gothita
+======
+Level Up @ level 23 into Gothorita
+
+======
+575 Gothorita
+======
+Level Up @ level 41 into Gothitelle
+
+======
+576 Gothitelle
+======
+
+======
+577 Solosis
+======
+Level Up @ level 23 into Duosion
+
+======
+578 Duosion
+======
+Level Up @ level 41 into Reuniclus
+
+======
+579 Reuniclus
+======
+
+======
+580 Ducklett
+======
+Level Up @ level 29 into Swanna
+
+======
+581 Swanna
+======
+
+======
+582 Vanillite
+======
+Level Up @ level 30 into Vanillish
+
+======
+583 Vanillish
+======
+Level Up @ level 47 into Vanilluxe
+
+======
+584 Vanilluxe
+======
+
+======
+585 Deerling
+======
+Level Up @ level 31 into Sawsbuck
+
+======
+586 Sawsbuck
+======
+
+======
+587 Emolga
+======
+
+======
+588 Karrablast
+======
+Level Up @ level 33 into Escavalier
+
+======
+589 Escavalier
+======
+
+======
+590 Foongus
+======
+Level Up @ level 35 into Amoonguss
+
+======
+591 Amoonguss
+======
+
+======
+592 Frillish
+======
+Level Up @ level 40 into Jellicent
+
+======
+593 Jellicent
+======
+
+======
+594 Alomomola
+======
+
+======
+595 Joltik
+======
+Level Up @ level 32 into Galvantula
+
+======
+596 Galvantula
+======
+
+======
+597 Ferroseed
+======
+Level Up @ level 35 into Ferrothorn
+
+======
+598 Ferrothorn
+======
+
+======
+599 Klink
+======
+Level Up @ level 30 into Klang
+
+======
+600 Klang
+======
+Level Up @ level 49 into Klinklang
+
+======
+601 Klinklang
+======
+
+======
+602 Tynamo
+======
+Level Up @ level 27 into Eelektrik
+
+======
+603 Eelektrik
+======
+Level Up @ level 48 into Eelektross
+
+======
+604 Eelektross
+======
+
+======
+605 Elgyem
+======
+Level Up @ level 35 into Beheeyem
+
+======
+606 Beheeyem
+======
+
+======
+607 Litwick
+======
+Level Up @ level 24 into Lampent
+
+======
+608 Lampent
+======
+Level Up @ level 50 into Chandelure
+
+======
+609 Chandelure
+======
+
+======
+610 Axew
+======
+Level Up @ level 25 into Fraxure
+
+======
+611 Fraxure
+======
+Level Up @ level 53 into Haxorus
+
+======
+612 Haxorus
+======
+
+======
+613 Cubchoo
+======
+Level Up @ level 37 into Beartic
+
+======
+614 Beartic
+======
+
+======
+615 Cryogonal
+======
+
+======
+616 Shelmet
+======
+Level Up @ level 33 into Accelgor
+
+======
+617 Accelgor
+======
+
+======
+618 Stunfisk
+======
+
+======
+619 Mienfoo
+======
+Level Up @ level 38 into Mienshao
+
+======
+620 Mienshao
+======
+
+======
+621 Druddigon
+======
+
+======
+622 Golett
+======
+Level Up @ level 43 into Golurk
+
+======
+623 Golurk
+======
+
+======
+624 Pawniard
+======
+Level Up @ level 38 into Bisharp
+
+======
+625 Bisharp
+======
+
+======
+626 Bouffalant
+======
+
+======
+627 Rufflet
+======
+Level Up @ level 35 into Braviary
+
+======
+628 Braviary
+======
+
+======
+629 Vullaby
+======
+Level Up @ level 35 into Mandibuzz
+
+======
+630 Mandibuzz
+======
+
+======
+631 Heatmor
+======
+
+======
+632 Durant
+======
+
+======
+633 Deino
+======
+Level Up @ level 30 into Zweilous
+
+======
+634 Zweilous
+======
+Level Up @ level 58 into Hydreigon
+
+======
+635 Hydreigon
+======
+
+======
+636 Larvesta
+======
+Level Up @ level 46 into Volcarona
+
+======
+637 Volcarona
+======
+
+======
+638 Cobalion
+======
+
+======
+639 Terrakion
+======
+
+======
+640 Virizion
+======
+
+======
+641 Tornadus
+======
+
+======
+642 Thundurus
+======
+
+======
+643 Reshiram
+======
+
+======
+644 Zekrom
+======
+
+======
+645 Landorus
+======
+
+======
+646 Kyurem
+======
+
+======
+647 Keldeo
+======
+
+======
+648 Meloetta
+======
+
+======
+649 Genesect
+======
+
+======
+650 Chespin
+======
+Level Up @ level 22 into Quilladin
+
+======
+651 Quilladin
+======
+Level Up @ level 42 into Chesnaught
+
+======
+652 Chesnaught
+======
+
+======
+653 Fennekin
+======
+Level Up @ level 22 into Braixen
+
+======
+654 Braixen
+======
+Level Up @ level 42 into Delphox
+
+======
+655 Delphox
+======
+
+======
+656 Froakie
+======
+Level Up @ level 22 into Frogadier
+
+======
+657 Frogadier
+======
+Level Up @ level 42 into Greninja
+
+======
+658 Greninja
+======
+
+======
+659 Bunnelby
+======
+Level Up @ level 25 into Diggersby
+
+======
+660 Diggersby
+======
+
+======
+661 Fletchling
+======
+Level Up @ level 22 into Fletchinder
+
+======
+662 Fletchinder
+======
+Level Up @ level 38 into Talonflame
+
+======
+663 Talonflame
+======
+
+======
+664 Scatterbug
+======
+Level Up @ level 15 into Spewpa
+
+======
+665 Spewpa
+======
+Level Up @ level 21 into Vivillon
+
+======
+666 Vivillon
+======
+
+======
+667 Litleo
+======
+Level Up @ level 31 into Pyroar
+
+======
+668 Pyroar
+======
+
+======
+669 Flabébé
+======
+Level Up @ level 23 into Floette
+
+======
+670 Floette
+======
+Level Up with Move [Light of Ruin] into Floette-5
+Level Up @ level 43 into Florges
+
+======
+671 Florges
+======
+
+======
+672 Skiddo
+======
+Level Up @ level 32 into Gogoat
+
+======
+673 Gogoat
+======
+
+======
+674 Pancham
+======
+Level Up @ level 33 into Pangoro
+
+======
+675 Pangoro
+======
+
+======
+676 Furfrou
+======
+
+======
+677 Espurr
+======
+Level Up Male @ level 25 into Meowstic
+Level Up Female (SetForm 1) @ level 25 into Meowstic
+Used Item [Blue Box] into Meowstic
+Used Item [Pink Box] into Meowstic-1
+
+======
+678 Meowstic
+======
+
+======
+679 Honedge
+======
+Level Up @ level 35 into Doublade
+
+======
+680 Doublade
+======
+Level Up @ level 55 into Aegislash
+
+======
+681 Aegislash
+======
+
+======
+682 Spritzee
+======
+Level Up @ level 28 into Aromatisse
+
+======
+683 Aromatisse
+======
+
+======
+684 Swirlix
+======
+Level Up @ level 28 into Slurpuff
+
+======
+685 Slurpuff
+======
+
+======
+686 Inkay
+======
+Level Up @ level 30 into Malamar
+
+======
+687 Malamar
+======
+
+======
+688 Binacle
+======
+Level Up @ level 34 into Barbaracle
+
+======
+689 Barbaracle
+======
+
+======
+690 Skrelp
+======
+Level Up @ level 41 into Dragalge
+
+======
+691 Dragalge
+======
+
+======
+692 Clauncher
+======
+Level Up @ level 37 into Clawitzer
+
+======
+693 Clawitzer
+======
+
+======
+694 Helioptile
+======
+Used Item [Sun Stone] into Heliolisk
+Level Up @ level 36 into Heliolisk
+
+======
+695 Heliolisk
+======
+
+======
+696 Tyrunt
+======
+Level Up @ level 35 into Tyrantrum
+
+======
+697 Tyrantrum
+======
+
+======
+698 Amaura
+======
+Level Up @ level 35 into Aurorus
+
+======
+699 Aurorus
+======
+
+======
+700 Sylveon
+======
+
+======
+701 Hawlucha
+======
+
+======
+702 Dedenne
+======
+
+======
+703 Carbink
+======
+Level Up @ level 65 into Diancie
+
+======
+704 Goomy
+======
+Level Up @ level 25 into Sliggoo
+
+======
+705 Sliggoo
+======
+Level Up @ level 51 into Goodra
+
+======
+706 Goodra
+======
+
+======
+707 Klefki
+======
+
+======
+708 Phantump
+======
+Level Up @ level 32 into Trevenant
+
+======
+709 Trevenant
+======
+
+======
+710 Pumpkaboo
+======
+Level Up @ level 32 into Gourgeist
+
+======
+711 Gourgeist
+======
+
+======
+712 Bergmite
+======
+Level Up @ level 37 into Avalugg
+
+======
+713 Avalugg
+======
+
+======
+714 Noibat
+======
+Level Up @ level 40 into Noivern
+
+======
+715 Noivern
+======
+
+======
+716 Xerneas
+======
+
+======
+717 Yveltal
+======
+
+======
+718 Zygarde
+======
+
+======
+719 Diancie
+======
+
+======
+720 Hoopa
+======
+
+======
+721 Volcanion
+======
+
+======
+722 Rowlet
+======
+Level Up @ level 22 into Dartrix
+
+======
+723 Dartrix
+======
+Level Up @ level 42 into Decidueye
+
+======
+724 Decidueye
+======
+
+======
+725 Litten
+======
+Level Up @ level 22 into Torracat
+
+======
+726 Torracat
+======
+Level Up @ level 42 into Incineroar
+
+======
+727 Incineroar
+======
+
+======
+728 Popplio
+======
+Level Up @ level 22 into Brionne
+
+======
+729 Brionne
+======
+Level Up @ level 42 into Primarina
+
+======
+730 Primarina
+======
+
+======
+731 Pikipek
+======
+Level Up @ level 19 into Trumbeak
+
+======
+732 Trumbeak
+======
+Level Up @ level 36 into Toucannon
+
+======
+733 Toucannon
+======
+
+======
+734 Yungoos
+======
+Level Up @ level 25 into Gumshoos
+
+======
+735 Gumshoos
+======
+
+======
+736 Grubbin
+======
+Level Up @ level 20 into Charjabug
+
+======
+737 Charjabug
+======
+Level Up @ level 40 into Vikavolt
+
+======
+738 Vikavolt
+======
+
+======
+739 Crabrawler
+======
+Level Up @ level 37 into Crabominable
+
+======
+740 Crabominable
+======
+
+======
+741 Oricorio
+======
+
+======
+742 Cutiefly
+======
+Level Up @ level 25 into Ribombee
+
+======
+743 Ribombee
+======
+
+======
+744 Rockruff
+======
+Level Up (@) at Morning @ level 28 into Lycanroc
+Level Up (@) at Night @ level 28 into Lycanroc-1
+Level Up (@) Dusk @ level 28 into Lycanroc-2
+Used Item [Sun Stone] into Lycanroc
+Used Item [Moon Stone] into Lycanroc-1
+Used Item [Dusk Stone] into Lycanroc-2
+Used Item [Dawn Stone] into Lycanroc-2
+
+======
+745 Lycanroc
+======
+
+======
+746 Wishiwashi
+======
+
+======
+747 Mareanie
+======
+Level Up @ level 38 into Toxapex
+
+======
+748 Toxapex
+======
+
+======
+749 Mudbray
+======
+Level Up @ level 30 into Mudsdale
+
+======
+750 Mudsdale
+======
+
+======
+751 Dewpider
+======
+Level Up @ level 28 into Araquanid
+
+======
+752 Araquanid
+======
+
+======
+753 Fomantis
+======
+Level Up @ level 31 into Lurantis
+
+======
+754 Lurantis
+======
+
+======
+755 Morelull
+======
+Level Up @ level 30 into Shiinotic
+
+======
+756 Shiinotic
+======
+
+======
+757 Salandit
+======
+Level Up Female @ level 33 into Salazzle
+Used Item [Pink Box]@ level 44 into Salazzle
+
+======
+758 Salazzle
+======
+
+======
+759 Stufful
+======
+Level Up @ level 32 into Bewear
+
+======
+760 Bewear
+======
+
+======
+761 Bounsweet
+======
+Level Up @ level 24 into Steenee
+
+======
+762 Steenee
+======
+Level Up @ level 43 into Tsareena
+
+======
+763 Tsareena
+======
+
+======
+764 Comfey
+======
+
+======
+765 Oranguru
+======
+
+======
+766 Passimian
+======
+
+======
+767 Wimpod
+======
+Level Up @ level 30 into Golisopod
+
+======
+768 Golisopod
+======
+
+======
+769 Sandygast
+======
+Level Up @ level 42 into Palossand
+
+======
+770 Palossand
+======
+
+======
+771 Pyukumuku
+======
+
+======
+772 Type: Null
+======
+Level Up @ level 60 into Silvally
+
+======
+773 Silvally
+======
+
+======
+774 Minior
+======
+
+======
+775 Komala
+======
+
+======
+776 Turtonator
+======
+
+======
+777 Togedemaru
+======
+
+======
+778 Mimikyu
+======
+
+======
+779 Bruxish
+======
+
+======
+780 Drampa
+======
+
+======
+781 Dhelmise
+======
+
+======
+782 Jangmo-o
+======
+Level Up @ level 25 into Hakamo-o
+
+======
+783 Hakamo-o
+======
+Level Up @ level 52 into Kommo-o
+
+======
+784 Kommo-o
+======
+
+======
+785 Tapu Koko
+======
+
+======
+786 Tapu Lele
+======
+
+======
+787 Tapu Bulu
+======
+
+======
+788 Tapu Fini
+======
+
+======
+789 Cosmog
+======
+Level Up @ level 35 into Cosmoem
+
+======
+790 Cosmoem
+======
+Level Up (@) at Morning @ level 60 into Solgaleo
+Level Up (@) at Night @ level 60 into Lunala
+Used Item [Sun Stone] into Solgaleo
+Used Item [Moon Stone] into Lunala
+Used Item [Dawn Stone] into Solgaleo
+Used Item [Dusk Stone] into Lunala
+
+======
+791 Solgaleo
+======
+
+======
+792 Lunala
+======
+
+======
+793 Nihilego
+======
+
+======
+794 Buzzwole
+======
+
+======
+795 Pheromosa
+======
+
+======
+796 Xurkitree
+======
+
+======
+797 Celesteela
+======
+
+======
+798 Kartana
+======
+
+======
+799 Guzzlord
+======
+
+======
+800 Necrozma
+======
+
+======
+801 Magearna
+======
+
+======
+802 Marshadow
+======
+
+======
+803 Poipole
+======
+Level Up @ level 45 into Naganadel
+
+======
+804 Naganadel
+======
+
+======
+805 Stakataka
+======
+
+======
+806 Blacephalon
+======
+
+======
+807 Zeraora
+======
+
+======
+808 Deoxys 1
+======
+
+======
+809 Deoxys 2
+======
+
+======
+810 Deoxys 3
+======
+
+======
+811 Wormadam 1
+======
+
+======
+812 Wormadam 2
+======
+
+======
+813 Shaymin 1
+======
+
+======
+814 Giratina 1
+======
+
+======
+815 Rotom 1
+======
+
+======
+816 Rotom 2
+======
+
+======
+817 Rotom 3
+======
+
+======
+818 Rotom 4
+======
+
+======
+819 Rotom 5
+======
+
+======
+820 Castform 1
+======
+
+======
+821 Castform 2
+======
+
+======
+822 Castform 3
+======
+
+======
+823 Cherrim 1
+======
+
+======
+824 Shellos 1
+======
+Level Up @ level 30 into Gastrodon-1
+
+======
+825 Gastrodon 1
+======
+
+======
+826 Basculin 1
+======
+
+======
+827 Darmanitan 1
+======
+
+======
+828 Meloetta 1
+======
+
+======
+829 Kyurem 1
+======
+
+======
+830 Kyurem 2
+======
+
+======
+831 Keldeo 1
+======
+
+======
+832 Tornadus 1
+======
+
+======
+833 Thundurus 1
+======
+
+======
+834 Landorus 1
+======
+
+======
+835 Gengar 1
+======
+
+======
+836 Meowstic 1
+======
+
+======
+837 Furfrou 1
+======
+
+======
+838 Furfrou 2
+======
+
+======
+839 Furfrou 3
+======
+
+======
+840 Furfrou 4
+======
+
+======
+841 Furfrou 5
+======
+
+======
+842 Furfrou 6
+======
+
+======
+843 Furfrou 7
+======
+
+======
+844 Furfrou 8
+======
+
+======
+845 Furfrou 9
+======
+
+======
+846 Gardevoir 1
+======
+
+======
+847 Ampharos 1
+======
+
+======
+848 Venusaur 1
+======
+
+======
+849 Charizard 1
+======
+
+======
+850 Charizard 2
+======
+
+======
+851 Mewtwo 1
+======
+
+======
+852 Mewtwo 2
+======
+
+======
+853 Blaziken 1
+======
+
+======
+854 Medicham 1
+======
+
+======
+855 Houndoom 1
+======
+
+======
+856 Aggron 1
+======
+
+======
+857 Banette 1
+======
+
+======
+858 Tyranitar 1
+======
+
+======
+859 Scizor 1
+======
+
+======
+860 Pinsir 1
+======
+
+======
+861 Aerodactyl 1
+======
+
+======
+862 Lucario 1
+======
+
+======
+863 Abomasnow 1
+======
+
+======
+864 Aegislash 1
+======
+
+======
+865 Blastoise 1
+======
+
+======
+866 Kangaskhan 1
+======
+
+======
+867 Gyarados 1
+======
+
+======
+868 Absol 1
+======
+
+======
+869 Alakazam 1
+======
+
+======
+870 Heracross 1
+======
+
+======
+871 Mawile 1
+======
+
+======
+872 Manectric 1
+======
+
+======
+873 Garchomp 1
+======
+
+======
+874 Latios 1
+======
+
+======
+875 Latias 1
+======
+
+======
+876 Pumpkaboo 1
+======
+Level Up @ level 32 into Gourgeist-1
+
+======
+877 Pumpkaboo 2
+======
+Level Up @ level 32 into Gourgeist-2
+
+======
+878 Pumpkaboo 3
+======
+Level Up @ level 32 into Gourgeist-3
+
+======
+879 Gourgeist 1
+======
+
+======
+880 Gourgeist 2
+======
+
+======
+881 Gourgeist 3
+======
+
+======
+882 Floette 1
+======
+Level Up with Move [Light of Ruin] into Floette-5
+Level Up @ level 43 into Florges-1
+
+======
+883 Floette 2
+======
+Level Up with Move [Light of Ruin] into Floette-5
+Level Up @ level 43 into Florges-2
+
+======
+884 Floette 3
+======
+Level Up with Move [Light of Ruin] into Floette-5
+Level Up @ level 43 into Florges-3
+
+======
+885 Floette 4
+======
+Level Up with Move [Light of Ruin] into Floette-5
+Level Up @ level 43 into Florges-4
+
+======
+886 Floette 5
+======
+
+======
+887 Swampert 1
+======
+
+======
+888 Sceptile 1
+======
+
+======
+889 Sableye 1
+======
+
+======
+890 Altaria 1
+======
+
+======
+891 Gallade 1
+======
+
+======
+892 Audino 1
+======
+
+======
+893 Sharpedo 1
+======
+
+======
+894 Slowbro 1
+======
+
+======
+895 Steelix 1
+======
+
+======
+896 Pidgeot 1
+======
+
+======
+897 Glalie 1
+======
+
+======
+898 Diancie 1
+======
+
+======
+899 Metagross 1
+======
+
+======
+900 Kyogre 1
+======
+
+======
+901 Groudon 1
+======
+
+======
+902 Rayquaza 1
+======
+
+======
+903 Hoopa 1
+======
+
+======
+904 Camerupt 1
+======
+
+======
+905 Lopunny 1
+======
+
+======
+906 Salamence 1
+======
+
+======
+907 Beedrill 1
+======
+
+======
+908 Wishiwashi 1
+======
+
+======
+909 Oricorio 1
+======
+
+======
+910 Oricorio 2
+======
+
+======
+911 Oricorio 3
+======
+
+======
+912 Lycanroc 1
+======
+
+======
+913 Lycanroc 2
+======
+
+======
+914 Rattata 1
+======
+Level Up @ level 25 into Raticate-1
+Used Item [Kanto Badge] into Raticate
+
+======
+915 Raticate 1
+======
+
+======
+916 Raticate 2
+======
+
+======
+917 Raichu 1
+======
+
+======
+918 Sandshrew 1
+======
+Level Up @ level 28 into Sandslash-1
+Used Item [Kanto Badge] into Sandslash
+
+======
+919 Sandslash 1
+======
+
+======
+920 Vulpix 1
+======
+Level Up @ level 33 into Ninetales-1
+Used Item [Kanto Badge] into Ninetales
+
+======
+921 Ninetales 1
+======
+
+======
+922 Meowth 1
+======
+Level Up @ level 26 into Persian-1
+Used Item [Kanto Badge] into Persian-1
+
+======
+923 Persian 1
+======
+
+======
+924 Geodude 1
+======
+Level Up @ level 25 into Graveler-1
+
+======
+925 Graveler 1
+======
+Level Up @ level 45 into Golem-1
+Used Item [Kanto Badge] into Golem
+
+======
+926 Golem 1
+======
+
+======
+927 Grimer 1
+======
+Level Up @ level 38 into Muk-1
+Used Item [Kanto Badge] into Muk
+
+======
+928 Muk 1
+======
+
+======
+929 Exeggutor 1
+======
+
+======
+930 Marowak 1
+======
+
+======
+931 Marowak 2
+======
+
+======
+932 Greninja 1
+======
+
+======
+933 Greninja 2
+======
+
+======
+934 Zygarde 1
+======
+
+======
+935 Zygarde 2
+======
+
+======
+936 Zygarde 3
+======
+
+======
+937 Zygarde 4
+======
+
+======
+938 Minior 1
+======
+
+======
+939 Minior 2
+======
+
+======
+940 Minior 3
+======
+
+======
+941 Minior 4
+======
+
+======
+942 Minior 5
+======
+
+======
+943 Minior 6
+======
+
+======
+944 Minior 7
+======
+
+======
+945 Minior 8
+======
+
+======
+946 Minior 9
+======
+
+======
+947 Minior 10
+======
+
+======
+948 Minior 11
+======
+
+======
+949 Minior 12
+======
+
+======
+950 Minior 13
+======
+
+======
+951 Diglett 1
+======
+Level Up @ level 26 into Dugtrio-1
+Used Item [Kanto Badge] into Dugtrio
+
+======
+952 Dugtrio 1
+======
+
+======
+953 Mimikyu 1
+======
+
+======
+954 Mimikyu 2
+======
+
+======
+955 Mimikyu 3
+======
+
+======
+956 Magearna 1
+======
+
+======
+957 Pikachu 1
+======
+
+======
+958 Pikachu 2
+======
+
+======
+959 Pikachu 3
+======
+
+======
+960 Pikachu 4
+======
+
+======
+961 Pikachu 5
+======
+
+======
+962 Pikachu 6
+======
+
+======
+963 Pikachu 7
+======
+
+======
+964 Gumshoos 1
+======
+
+======
+965 Vikavolt 1
+======
+
+======
+966 Lurantis 1
+======
+
+======
+967 Salazzle 1
+======
+
+======
+968 Kommo-o 1
+======
+
+======
+969 Necrozma 1
+======
+
+======
+970 Necrozma 2
+======
+
+======
+971 Necrozma 3
+======
+
+======
+972 Araquanid 1
+======
+
+======
+973 Togedemaru 1
+======
+
+======
+974 Ribombee 1
+======
+
+======
+975 Rockruff 1
+======
+Level Up (@) at Morning @ level 28 into Lycanroc
+Level Up (@) at Night @ level 28 into Lycanroc-1
+Level Up (@) Dusk @ level 28 into Lycanroc-2
+Used Item [Sun Stone] into Lycanroc
+Used Item [Moon Stone] into Lycanroc-1
+Used Item [Dusk Stone] into Lycanroc-2
+Used Item [Dawn Stone] into Lycanroc-2
+

@@ -1,10 +1,10 @@
 
-Hau: https://archives.bulbagarden.net/media/upload/3/31/VSHau_2.png
+(Name) Hau: https://archives.bulbagarden.net/media/upload/3/31/VSHau_2.png
 Youngster: https://archives.bulbagarden.net/media/upload/3/38/VSYoungster_2_USUM.png
 Lass: https://archives.bulbagarden.net/media/upload/8/86/VSLass_SM.png
-Lysandre: https://archives.bulbagarden.net/media/upload/c/c9/VSLysandre_USUM.png
-Kukui: https://archives.bulbagarden.net/media/upload/7/78/VSKukui_3.png
-Kiawe: https://archives.bulbagarden.net/media/upload/3/34/VSKiawe.png
+(Name) Lysandre: https://archives.bulbagarden.net/media/upload/c/c9/VSLysandre_USUM.png
+(Name) Kukui: https://archives.bulbagarden.net/media/upload/7/78/VSKukui_3.png
+(Name) Kiawe: https://archives.bulbagarden.net/media/upload/3/34/VSKiawe.png
 Kindergartener: https://archives.bulbagarden.net/media/upload/6/6d/VSPreschooler_M_SM.png
 Preschooler: https://archives.bulbagarden.net/media/upload/7/70/VSPreschooler_F_SM.png
 Cop: https://archives.bulbagarden.net/media/upload/4/4d/VSPolice_Officer.png
@@ -15,31 +15,31 @@ Up and Coming: https://archives.bulbagarden.net/media/upload/8/88/VSRising_Star_
 Punk Guy: https://archives.bulbagarden.net/media/upload/4/4f/VSPunk_Guy_SM.png
 Punk Girl: https://archives.bulbagarden.net/media/upload/6/69/VSPunk_Girl_SM.png
 Nurse: https://archives.bulbagarden.net/media/upload/b/b4/VSPok%C3%A9mon_Center_Lady.png
-Team Skull Grunt: https://archives.bulbagarden.net/media/upload/a/ad/VSTeam_Skull_Grunt_M.png
-Skull Gang Grunt: https://archives.bulbagarden.net/media/upload/0/0c/VSTeam_Skull_Grunt_F.png
-Ilima: https://archives.bulbagarden.net/media/upload/b/bf/VSIlima_USUM.png
+Team Skull: https://archives.bulbagarden.net/media/upload/a/ad/VSTeam_Skull_Grunt_M.png
+Skull Gang: https://archives.bulbagarden.net/media/upload/0/0c/VSTeam_Skull_Grunt_F.png
+(Name) Ilima: https://archives.bulbagarden.net/media/upload/b/bf/VSIlima_USUM.png
 Surf Dude: https://archives.bulbagarden.net/media/upload/5/51/VSSurfer.png
 Beauty: https://archives.bulbagarden.net/media/upload/d/d4/VSBeauty_SM.png
 Gentleman: https://archives.bulbagarden.net/media/upload/e/e8/VSGentleman_SM.png
 Madame: https://archives.bulbagarden.net/media/upload/9/9e/VSMadame_SM.png
-Mallow: https://archives.bulbagarden.net/media/upload/9/92/VSMallow.png
-Mina: https://archives.bulbagarden.net/media/upload/4/48/VSMina_2_USUM.png
-Maxie: https://archives.bulbagarden.net/media/upload/e/e9/VSMaxie_USUM.png
-Nanu: https://archives.bulbagarden.net/media/upload/5/57/VSNanu_2.png
-Molayne: https://archives.bulbagarden.net/media/upload/8/86/VSMolayne_USUM.png
+(Name) Mallow: https://archives.bulbagarden.net/media/upload/9/92/VSMallow.png
+(Name) Mina: https://archives.bulbagarden.net/media/upload/4/48/VSMina_2_USUM.png
+(Name) Maxie: https://archives.bulbagarden.net/media/upload/e/e9/VSMaxie_USUM.png
+(Name) Nanu: https://archives.bulbagarden.net/media/upload/5/57/VSNanu_2.png
+(Name) Molayne: https://archives.bulbagarden.net/media/upload/8/86/VSMolayne_USUM.png
 Teacher: https://archives.bulbagarden.net/media/upload/a/ad/VSOffice_Worker_F_SM.png
 Actor: https://archives.bulbagarden.net/media/upload/a/ad/VSOffice_Worker_F_SM.png
 Businesswoman: https://archives.bulbagarden.net/media/upload/a/ad/VSOffice_Worker_F_SM.png
-Pokemon Rancher: https://archives.bulbagarden.net/media/upload/5/50/VSPok%C3%A9mon_Breeder_F_SM.png
-Pokemon Breeder: https://archives.bulbagarden.net/media/upload/6/66/VSPok%C3%A9mon_Breeder_M_SM.png
+Pokémon Rancher: https://archives.bulbagarden.net/media/upload/5/50/VSPok%C3%A9mon_Breeder_F_SM.png
+Pokémon Breeder: https://archives.bulbagarden.net/media/upload/6/66/VSPok%C3%A9mon_Breeder_M_SM.png
 Office Worker: https://archives.bulbagarden.net/media/upload/f/fc/VSOffice_Worker_M_SM.png
 Ace Trainer: https://archives.bulbagarden.net/media/upload/7/7e/VSAce_Trainer_M_2_USUM.png
 Star Trainer: https://archives.bulbagarden.net/media/upload/4/42/VSAce_Trainer_F_2_USUM.png
-Dulse: https://archives.bulbagarden.net/media/upload/4/41/VSDulse.png
-Hala: https://archives.bulbagarden.net/media/upload/4/4b/VSHala_USUM.png
-Dexio: https://archives.bulbagarden.net/media/upload/4/4e/VSDexio.png
-Sina: https://archives.bulbagarden.net/media/upload/5/54/VSSina.png
-Ryuki: https://archives.bulbagarden.net/media/upload/8/87/VSRyuki.png
+(Name) Dulse: https://archives.bulbagarden.net/media/upload/4/41/VSDulse.png
+(Name) Hala: https://archives.bulbagarden.net/media/upload/4/4b/VSHala_USUM.png
+(Name) Dexio: https://archives.bulbagarden.net/media/upload/4/4e/VSDexio.png
+(Name) Sina: https://archives.bulbagarden.net/media/upload/5/54/VSSina.png
+(Name) Ryuki: https://archives.bulbagarden.net/media/upload/8/87/VSRyuki.png
 Cook: https://archives.bulbagarden.net/media/upload/9/99/VSCook_SM.png
 Dancer: https://archives.bulbagarden.net/media/upload/a/a8/VSDancer_SM.png
 Black Belt: https://archives.bulbagarden.net/media/upload/a/a8/VSBlack_Belt_2_USUM.png
@@ -47,29 +47,29 @@ Sightseer: https://archives.bulbagarden.net/media/upload/0/0f/VSSightseer_F_SM.p
 Tourist: https://archives.bulbagarden.net/media/upload/0/0e/VSSightseer_M_SM.png
 Bellhop: https://archives.bulbagarden.net/media/upload/3/3c/VSBellhop.png
 Collector: https://archives.bulbagarden.net/media/upload/8/88/VSCollector_2_USUM.png
-Kahili: https://archives.bulbagarden.net/media/upload/3/37/VSKahili.png
-Lana: https://archives.bulbagarden.net/media/upload/7/7e/VSLana.png
+(Name) Kahili: https://archives.bulbagarden.net/media/upload/3/37/VSKahili.png
+(Name) Lana: https://archives.bulbagarden.net/media/upload/7/7e/VSLana.png
 Mother: https://archives.bulbagarden.net/media/upload/d/d6/VSLusamine_2.png
-Olivia: https://archives.bulbagarden.net/media/upload/f/ff/VSOlivia_2.png
+(Name) Olivia: https://archives.bulbagarden.net/media/upload/f/ff/VSOlivia_2.png
 Big Sis: https://archives.bulbagarden.net/media/upload/3/3d/VSPlumeria_2.png
 Trial Guide: https://archives.bulbagarden.net/media/upload/b/b6/VSTrial_Guide_F_2.png
 Challenge Guide: https://archives.bulbagarden.net/media/upload/b/b6/VSTrial_Guide_M_2.png
 Veteran: https://archives.bulbagarden.net/media/upload/b/ba/VSVeteran_M_2_SM.png
 Virtuoso: https://archives.bulbagarden.net/media/upload/f/f5/VSVeteran_F_2_SM.png
 Youth Athlete: https://archives.bulbagarden.net/media/upload/7/7b/VSYouth_Athlete_F_SM.png
-Acerola: https://archives.bulbagarden.net/media/upload/6/6c/VSAcerola.png
+(Name) Acerola: https://archives.bulbagarden.net/media/upload/6/6c/VSAcerola.png
 Aether Foundation: https://archives.bulbagarden.net/media/upload/9/94/VSAether_Foundation_Employee_F.png
 Aether Foundation: https://archives.bulbagarden.net/media/upload/a/a2/VSAether_Foundation_Employee_M.png
 Aether Scientist: https://archives.bulbagarden.net/media/upload/1/17/VSAether_Foundation_Employee_scientist.png
 Backpacker: https://archives.bulbagarden.net/media/upload/e/e4/VSBackpacker_F_SM.png
-Blue: https://archives.bulbagarden.net/media/upload/e/ea/VSBlue_SM.png
-Colress: https://archives.bulbagarden.net/media/upload/e/e1/VSColress_SM.png
-Cynthia: https://archives.bulbagarden.net/media/upload/e/e4/VSCynthia_SM.png
-Cyrus: https://archives.bulbagarden.net/media/upload/2/22/VSCyrus.png
-Faba: https://archives.bulbagarden.net/media/upload/0/06/VSFaba.png
+(Name) Blue: https://archives.bulbagarden.net/media/upload/e/ea/VSBlue_SM.png
+(Name) Colress: https://archives.bulbagarden.net/media/upload/e/e1/VSColress_SM.png
+(Name) Cynthia: https://archives.bulbagarden.net/media/upload/e/e4/VSCynthia_SM.png
+(Name) Cyrus: https://archives.bulbagarden.net/media/upload/2/22/VSCyrus.png
+(Name) Faba: https://archives.bulbagarden.net/media/upload/0/06/VSFaba.png
 Firefighter: https://archives.bulbagarden.net/media/upload/e/e7/VSFirefighter.png
 Fisherman: https://archives.bulbagarden.net/media/upload/b/b5/VSFisherman_SM.png
-Ghetsis: https://archives.bulbagarden.net/media/upload/0/09/VSGhetsis_USUM.png
-Gladion: https://archives.bulbagarden.net/media/upload/0/00/VSGladion_2_USUM.png
-Giovanni: https://archives.bulbagarden.net/media/upload/2/22/VSGiovanni_2_USUM.png
-Guzma: https://archives.bulbagarden.net/media/upload/e/eb/VSGuzma_2.png
+(Name) Ghetsis: https://archives.bulbagarden.net/media/upload/0/09/VSGhetsis_USUM.png
+(Name) Gladion: https://archives.bulbagarden.net/media/upload/0/00/VSGladion_2_USUM.png
+(Name) Giovanni: https://archives.bulbagarden.net/media/upload/2/22/VSGiovanni_2_USUM.png
+(Name) Guzma: https://archives.bulbagarden.net/media/upload/e/eb/VSGuzma_2.png

@@ -1,11 +1,17 @@
 // Parse data/rawtxt/Trainers.txt into data/trainers.json
-// Output is an array sorted by numeric id: [{ id:"002", name:"Lass Isabella", prizeMoney:528, team:[{name, level, item, nature, ability, moves:[]}, ...] }]
+// Output is an array sorted by numeric id: [{ id:"002", name:"Lass Isabella", trainerClass:"Lass", personalName:"Isabella", prizeMoney:528, team:[{name, level, item, nature, ability, moves:[]}, ...] }]
 
 const fs = require('fs');
 const path = require('path');
 
 const SRC = path.join(__dirname, '..', 'data', 'rawtxt', 'Trainers.txt');
 const OUT = path.join(__dirname, '..', 'data', 'trainers.json');
+
+const toID = (text) => {
+  if (text && text.id) text = text.id;
+  if (typeof text !== 'string' && typeof text !== 'number') return '';
+  return ('' + text).toLowerCase().replace(/[^a-z0-9]+/g, '');
+};
 
 function parse() {
   const text = fs.readFileSync(SRC, 'utf8');
@@ -38,7 +44,29 @@ function parse() {
       continue;
     }
     const idStr = idNameMatch[1].padStart(3, '0');
-    const name = idNameMatch[2].trim();
+    const rawLabel = idNameMatch[2].trim();
+
+    let trainerClass = '';
+    let personalName = '';
+
+    const parenMatch = rawLabel.match(/^\(([^)]+)\)\s*(.*)$/);
+    if (parenMatch) {
+      trainerClass = parenMatch[1].trim();
+      personalName = parenMatch[2].trim();
+    } else {
+      const tokens = rawLabel.split(/\s+/).filter(Boolean);
+      if (tokens.length === 1) {
+        trainerClass = tokens[0];
+      } else if (tokens.length === 2 && /trainer$/i.test(rawLabel)) {
+        // Two-word label ending with "Trainer" -> treat whole thing as class (no personal name)
+        trainerClass = rawLabel;
+      } else {
+        personalName = tokens.pop() || '';
+        trainerClass = tokens.join(' ');
+      }
+    }
+
+    const name = trainerClass && personalName ? `${trainerClass} ${personalName}` : (trainerClass || personalName);
     i++;
 
     // Collect team lines until a blank line or EOF
@@ -95,7 +123,14 @@ function parse() {
     // Consume the blank line separator if present
     if (i < lines.length && !lines[i].trim()) i++;
 
-    trainers.push({ id: idStr, name, prizeMoney, team });
+    const isPlaceholder = team.length === 1 && team[0] &&
+      toID(team[0].name) === 'yungoos' &&
+      (team[0].level || 0) === 5 &&
+      (team[0].moves?.length || 0) === 0;
+
+    if (isPlaceholder) continue;
+
+    trainers.push({ id: idStr, name, trainerClass, personalName, prizeMoney, team });
   }
 
   // Sort by numeric id

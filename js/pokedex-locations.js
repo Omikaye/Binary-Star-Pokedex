@@ -286,10 +286,10 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
           linkType = 'moves';
           shopIcon = '<span class="itemicon" style="' + getItemIcon('tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
         } else if (sh.item === 'Poké Ball') {
-          // Fix Poké Ball to use pokeball ID
-          itemID = 'pokeball';
-          linkTarget = 'pokeball';
-          shopItemData = BattleItems['pokeball'];
+          // Fix Poké Ball to use pokball ID (toID removes the accented e)
+          itemID = 'pokball';
+          linkTarget = 'pokball';
+          shopItemData = BattleItems['pokball'];
           if (shopItemData) {
             shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
           }
@@ -339,10 +339,10 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
           linkType = 'moves';
           itemIcon = '<span class="itemicon" style="' + getItemIcon('tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
         } else if (it.item === 'Poké Ball') {
-          // Fix Poké Ball to use pokeball ID
-          iid = 'pokeball';
-          linkTarget = 'pokeball';
-          itemData = BattleItems['pokeball'];
+          // Fix Poké Ball to use pokball ID (toID removes the accented e)
+          iid = 'pokball';
+          linkTarget = 'pokball';
+          itemData = BattleItems['pokball'];
           if (itemData) {
             itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData) + ';width:32px;height:32px;display:inline-block"></span>';
           }

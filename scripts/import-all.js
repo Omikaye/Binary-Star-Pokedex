@@ -101,33 +101,26 @@ for (const entry of entries) {
     entry.name = nameMap[originalName];
   }
 
-  // Special handling for Nidoran with gender symbols
-  if (entry.num === 29) {
-    entry.name = 'Nidoran-F';
-  } else if (entry.num === 32) {
-    entry.name = 'Nidoran-M';
-  }
-
   const id = toID(entry.name);
   if (!id) continue;
 
   // Determine base species (portion before first hyphen) for forms
-  // Special case: Nidoran-F and Nidoran-M are separate species, not forms
   // Special case: Minior forms all share the same base species
   // Special case: Floette forms all share the same base species
+  const isNidoran = entry.name.toLowerCase().startsWith('nidoran-');
   let baseSpecies;
-  if (entry.name === 'Nidoran-F' || entry.name === 'Nidoran-M') {
-    baseSpecies = entry.name; // Treat as their own base species
+  if (isNidoran) {
+    baseSpecies = entry.name; // Treat Nidoran variants as separate species without extra heuristics
   } else if (entry.name.startsWith('Minior')) {
-    baseSpecies = 'Minior'; // All Minior forms share base species
+    baseSpecies = 'Minior';
   } else if (entry.name.startsWith('Floette')) {
-    baseSpecies = 'Floette'; // All Floette forms share base species
+    baseSpecies = 'Floette';
   } else {
     baseSpecies = entry.name.includes('-') ? entry.name.split('-')[0] : entry.name;
   }
   
   // Record base species num if this entry looks like the base (exact match and not previously recorded)
-  if (!entry.name.includes('-') || entry.name === 'Nidoran-F' || entry.name === 'Nidoran-M') {
+  if (baseSpecies === entry.name) {
     if (entry.num) baseNums[baseSpecies] = entry.num;
   }
   
@@ -214,14 +207,8 @@ console.log(`✓ Converted ${convertedCount} Pokémon entries\n`);
 
 // Helper function to determine base species, with special handling for Nidoran
 function getBaseSpecies(pokemonName) {
-  // Special case for Nidoran - treat each as its own base species
-  // The raw data file contains Unicode gender symbols, so we check if the name
-  // starts with "Nidoran" and is exactly 8 characters (Nidoran + gender symbol)
-  if (pokemonName.startsWith('Nidoran') && pokemonName.length === 8) {
-    return pokemonName; // Treat as own base species (Nidoran-F or Nidoran-M after renaming)
-  }
-  // For Nidoran-F and Nidoran-M (after they've been renamed)
-  if (pokemonName === 'Nidoran-F' || pokemonName === 'Nidoran-M') {
+  // Treat Nidoran variants as distinct species (names already normalized)
+  if (pokemonName.toLowerCase().startsWith('nidoran-')) {
     return pokemonName;
   }
   // For all other Pokemon, extract base species from before first hyphen
@@ -328,8 +315,6 @@ const learnsets = {};
 const moveLines = levelUpRaw.split(/\r?\n/);
 let currentMon = null;
 let moveCount = 0;
-let nidoranCount = 0; // Track which Nidoran we're processing
-
 for (const line of moveLines) {
   const trimmed = line.trim();
 
@@ -346,18 +331,7 @@ for (const line of moveLines) {
     if (nameMap[pokemonName]) {
       pokemonName = nameMap[pokemonName];
     }
-    
-    // Special handling for Nidoran - the first one is Nidoran-F (ID 29), second is Nidoran-M (ID 32)
-    // Note: The raw data file contains Unicode gender symbols after "Nidoran", so we use startsWith
-    if (pokemonName.startsWith('Nidoran')) {
-      nidoranCount++;
-      if (nidoranCount === 1) {
-        pokemonName = 'Nidoran-F';
-      } else if (nidoranCount === 2) {
-        pokemonName = 'Nidoran-M';
-      }
-    }
-    
+
     const id = toID(pokemonName);
     if (pokedex[id]) {
       currentMon = id;
