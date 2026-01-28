@@ -5,7 +5,7 @@ Grass: (Levels 3-5): Yungoos (10%), Rattata 1 (10%, Rattata), Pikipek (10%), Gru
 Grass (Behind Rocks): (Levels 17-20): Yungoos (10%), Rattata 1 (10%, Rattata), Pikipek (10%), Grubbin (10%), Pikachu (10%), Bounsweet (10%), Swablu (10%), Jigglypuff (10%), Sentret (10%), Spewpa (10%)
 }
 Gifts/Trades: Kukui gives the player their starter Pokemon. Rowlet, Litten, or Popplio, each holding an Oran Berry. Natures are random. IVs are random.
-Static Pokemon: (001, 002)
+Static Pokemon: (S152, S154)
 Trainers: (459, 025, 028)
 Boss Trainers: (491, 492, 493)
 Shops: {
@@ -36,7 +36,7 @@ Encounters: {
 None
 }
 Gifts/Trades: None
-Static Pokemon: None
+Static Pokemon: (S155)
 Trainers: ()
 Boss Trainers: (009, 010, 011, 023, 363, 650)
 Shops: {
