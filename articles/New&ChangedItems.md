@@ -1,4 +1,4 @@
-**New and Changed Items**
+# New and Changed Items
 
 (New) [Ability Pills] - Infinite use Ability Capsule. Cycles between all 3 Abilities. **(If I can add that, lmfao)**
 (New) [B.F.F. Heart] - Raises a Pokemon's Friendship by 127 points
