@@ -130,8 +130,8 @@
       ],
       "giftsTrades": "Kukui gives the player their starter Pokemon. Rowlet, Litten, or Popplio, each holding an Oran Berry. Natures are random. IVs are random.",
       "staticPokemon": [
-        "001",
-        "002"
+        "S001",
+        "S002"
       ],
       "trainers": [
         "459",
@@ -169,7 +169,7 @@
           "price": "$400"
         },
         {
-          "item": "Poké Doll",
+          "item": "Pok\u00e9 Doll",
           "price": "$140"
         },
         {
@@ -183,7 +183,7 @@
       ],
       "items": [
         {
-          "item": "Poké Ball",
+          "item": "Pok\u00e9 Ball",
           "quantity": 10,
           "obtain": "From Kukui after the capture tutorial"
         },
@@ -198,7 +198,7 @@
           "obtain": "North of the grass patch next to the Trainer Tips sign."
         },
         {
-          "item": "Poké Ball",
+          "item": "Pok\u00e9 Ball",
           "quantity": 900,
           "obtain": "North of the second grassy patch on the east side"
         },
@@ -243,7 +243,7 @@
       "shops": [],
       "items": [
         {
-          "item": "Pokédex",
+          "item": "Pok\u00e9dex",
           "quantity": 1,
           "obtain": "From Kukui after saving Nebby at Plank Bridge"
         },
@@ -402,7 +402,7 @@
           "obtain": "On the north side of the grass north of the beach, next to Swimmer Natasha"
         },
         {
-          "item": "Poké Ball",
+          "item": "Pok\u00e9 Ball",
           "quantity": 1,
           "obtain": "Random gift from the player's mom when first healing with her each day, after the capture tutorial (~90% chance) (daily)"
         },
@@ -419,17 +419,17 @@
         {
           "item": "$30,000",
           "quantity": 1,
-          "obtain": "From the player's mom when Lillie comes to guide the player to the Pokémon Research Lab"
+          "obtain": "From the player's mom when Lillie comes to guide the player to the Pok\u00e9mon Research Lab"
         },
         {
           "item": "Premier Ball",
           "quantity": 100,
-          "obtain": "At the south end of the beach, in front of the Pokémon Research Lab (hidden) (regenerates occasionally)"
+          "obtain": "At the south end of the beach, in front of the Pok\u00e9mon Research Lab (hidden) (regenerates occasionally)"
         },
         {
-          "item": "Rotom Pokédex",
+          "item": "Rotom Pok\u00e9dex",
           "quantity": 1,
-          "obtain": "Upgraded from the Pokédex by Kukui at the Pokémon Research Lab on the player's first visit"
+          "obtain": "Upgraded from the Pok\u00e9dex by Kukui at the Pok\u00e9mon Research Lab on the player's first visit"
         },
         {
           "item": "Mind Plate",
@@ -444,12 +444,12 @@
         {
           "item": "Lucky Egg",
           "quantity": 1,
-          "obtain": "From Kukui at the Pokémon Research Lab, after becoming Champion and registering 50 Pokémon"
+          "obtain": "From Kukui at the Pok\u00e9mon Research Lab, after becoming Champion and registering 50 Pok\u00e9mon"
         },
         {
           "item": "TM90 (Zen Headbutt)",
           "quantity": 1,
-          "obtain": "From Kukui at the Pokémon Research Lab, after becoming Champion (if the Lucky Egg is received first, the player must leave and re-enter)"
+          "obtain": "From Kukui at the Pok\u00e9mon Research Lab, after becoming Champion (if the Lucky Egg is received first, the player must leave and re-enter)"
         },
         {
           "item": "PP Up",
@@ -811,7 +811,7 @@
         {
           "item": "Ultra Ball",
           "quantity": 10,
-          "obtain": "Alola Tourist Bureau, from a Scientist in the if the player has ten different Pokémon registered as owned in their Pokédex"
+          "obtain": "Alola Tourist Bureau, from a Scientist in the if the player has ten different Pok\u00e9mon registered as owned in their Pok\u00e9dex"
         },
         {
           "item": "Lens Case",
@@ -836,17 +836,17 @@
         {
           "item": "Heal Ball",
           "quantity": 1,
-          "obtain": "From the Sightseer in front of the Pokémon Center"
+          "obtain": "From the Sightseer in front of the Pok\u00e9mon Center"
         },
         {
           "item": "$10,000",
           "quantity": 1,
-          "obtain": "Pokémon Center, from a Beauty if the player has Abra registered in their Pokédex as Caught"
+          "obtain": "Pok\u00e9mon Center, from a Beauty if the player has Abra registered in their Pok\u00e9dex as Caught"
         },
         {
           "item": "Float Stone",
           "quantity": 10,
-          "obtain": "In the gated area opposite the Pokémon Center"
+          "obtain": "In the gated area opposite the Pok\u00e9mon Center"
         },
         {
           "item": "Micle Berry",
@@ -876,7 +876,7 @@
         {
           "item": "Revive",
           "quantity": 3,
-          "obtain": "Near the Pokémon Center, from Lillie after defeating Ilima"
+          "obtain": "Near the Pok\u00e9mon Center, from Lillie after defeating Ilima"
         },
         {
           "item": "Gracidea",
@@ -926,7 +926,7 @@
         {
           "item": "Toxic Plate",
           "quantity": 1,
-          "obtain": "In front of the palm tree that is at the northwest corner of the Pokémon Center, after completing Nanu's grand trial (hidden)"
+          "obtain": "In front of the palm tree that is at the northwest corner of the Pok\u00e9mon Center, after completing Nanu's grand trial (hidden)"
         },
         {
           "item": "Meadow Plate",
