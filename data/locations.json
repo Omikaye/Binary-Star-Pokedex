@@ -130,8 +130,8 @@
       ],
       "giftsTrades": "Kukui gives the player their starter Pokemon. Rowlet, Litten, or Popplio, each holding an Oran Berry. Natures are random. IVs are random.",
       "staticPokemon": [
-        "001",
-        "002"
+        "S152",
+        "S154"
       ],
       "trainers": [
         "459",
@@ -230,7 +230,9 @@
       "notes": "",
       "encounters": [],
       "giftsTrades": "None",
-      "staticPokemon": [],
+      "staticPokemon": [
+        "S155"
+      ],
       "trainers": [],
       "bossTrainers": [
         "009",
