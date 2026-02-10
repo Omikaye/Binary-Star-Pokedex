@@ -31,7 +31,7 @@ function parseCSV(csvText) {
   
   for (const line of lines) {
     if (!line.trim()) {
-      rows.push([]); // Empty row
+      rows.push([]); // Empty row - signals end of current table for boundary detection
       continue;
     }
     

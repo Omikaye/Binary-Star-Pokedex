@@ -45,7 +45,11 @@ function parseCSV(csvText) {
   const lines = csvText.split(/\r?\n/);
   
   for (const line of lines) {
-    if (!line.trim()) continue;
+    // Keep empty lines as they signal table boundaries in table-based parsing
+    if (!line.trim()) {
+      rows.push([]); // Empty row preserved for table separation
+      continue;
+    }
     
     const fields = [];
     let currentField = '';
