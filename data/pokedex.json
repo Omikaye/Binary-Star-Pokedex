@@ -7792,12 +7792,12 @@
       "H": "Overgrow"
     },
     "baseStats": {
-      "hp": 45,
+      "hp": 40,
       "atk": 65,
       "def": 45,
       "spa": 65,
       "spd": 55,
-      "spe": 75
+      "spe": 70
     },
     "heightm": 0.5,
     "weightkg": 5,
@@ -7827,8 +7827,8 @@
       "atk": 85,
       "def": 45,
       "spa": 85,
-      "spd": 65,
-      "spe": 100
+      "spd": 70,
+      "spe": 105
     },
     "heightm": 0.9,
     "weightkg": 21.6,
@@ -7890,7 +7890,7 @@
     "baseStats": {
       "hp": 45,
       "atk": 70,
-      "def": 50,
+      "def": 40,
       "spa": 70,
       "spd": 50,
       "spe": 65
@@ -7920,9 +7920,9 @@
     "baseStats": {
       "hp": 60,
       "atk": 85,
-      "def": 60,
+      "def": 65,
       "spa": 85,
-      "spd": 60,
+      "spd": 65,
       "spe": 80
     },
     "heightm": 0.9,
@@ -7981,9 +7981,9 @@
       "H": "Torrent"
     },
     "baseStats": {
-      "hp": 65,
+      "hp": 60,
       "atk": 70,
-      "def": 65,
+      "def": 60,
       "spa": 60,
       "spd": 50,
       "spe": 40
@@ -8015,7 +8015,7 @@
       "hp": 80,
       "atk": 85,
       "def": 75,
-      "spa": 60,
+      "spa": 70,
       "spd": 75,
       "spe": 55
     },
@@ -8160,7 +8160,7 @@
     ],
     "abilities": {
       "0": "Speed Boost",
-      "1": "Guts",
+      "1": "Quick Feet",
       "H": "Gluttony"
     },
     "baseStats": {
@@ -8218,7 +8218,7 @@
     ],
     "abilities": {
       "0": "Shed Skin",
-      "1": "Shed Skin",
+      "1": "Wonder Skin",
       "H": "Filter"
     },
     "baseStats": {
@@ -8241,7 +8241,7 @@
     "name": "Beautifly",
     "types": [
       "Bug",
-      "Flying"
+      "Fairy"
     ],
     "abilities": {
       "0": "Shield Dust",
@@ -8271,7 +8271,7 @@
     ],
     "abilities": {
       "0": "Shed Skin",
-      "1": "Shed Skin",
+      "1": "Poison Point",
       "H": "Filter"
     },
     "baseStats": {
@@ -8842,7 +8842,7 @@
       "def": 80,
       "spa": 90,
       "spd": 60,
-      "spe": 83
+      "spe": 73
     },
     "heightm": 1.2,
     "weightkg": 39.2,
@@ -9012,7 +9012,7 @@
     "abilities": {
       "0": "Wonder Guard",
       "1": "Wonder Guard",
-      "H": "Wonder Guard"
+      "H": "Huge Power"
     },
     "baseStats": {
       "hp": 1,
@@ -9800,8 +9800,8 @@
     ],
     "abilities": {
       "0": "Speed Boost",
-      "1": "Strong Jaw",
-      "H": "Rough Skin"
+      "1": "Rough Skin",
+      "H": "Anger Point"
     },
     "baseStats": {
       "hp": 45,
@@ -9830,8 +9830,8 @@
     ],
     "abilities": {
       "0": "Speed Boost",
-      "1": "Strong Jaw",
-      "H": "Rough Skin"
+      "1": "Rough Skin",
+      "H": "Anger Point"
     },
     "baseStats": {
       "hp": 70,
@@ -10143,8 +10143,8 @@
     ],
     "abilities": {
       "0": "Levitate",
-      "1": "Sand Rush",
-      "H": "Sand Force"
+      "1": "Sand Force",
+      "H": "Sand Veil"
     },
     "baseStats": {
       "hp": 60,
@@ -10174,8 +10174,8 @@
     ],
     "abilities": {
       "0": "Levitate",
-      "1": "Sand Rush",
-      "H": "Sand Force"
+      "1": "Sand Stream",
+      "H": "Sand Veil"
     },
     "baseStats": {
       "hp": 80,
@@ -10327,9 +10327,9 @@
       "Normal"
     ],
     "abilities": {
-      "0": "Tough Claws",
-      "1": "Poison Heal",
-      "H": "Toxic Boost"
+      "0": "Toxic Boost",
+      "1": "Immunity",
+      "H": "Poison Heal"
     },
     "baseStats": {
       "hp": 73,
@@ -10462,12 +10462,12 @@
       "Ground"
     ],
     "abilities": {
-      "0": "Hydration",
+      "0": "Damp",
       "1": "Gooey",
       "H": "Oblivious"
     },
     "baseStats": {
-      "hp": 72,
+      "hp": 87,
       "atk": 48,
       "def": 53,
       "spa": 46,
@@ -10492,15 +10492,15 @@
       "Ground"
     ],
     "abilities": {
-      "0": "Water Bubble",
+      "0": "Damp",
       "1": "Gooey",
       "H": "Unaware"
     },
     "baseStats": {
-      "hp": 122,
-      "atk": 70,
-      "def": 83,
-      "spa": 70,
+      "hp": 152,
+      "atk": 73,
+      "def": 81,
+      "spa": 73,
       "spd": 81,
       "spe": 60
     },
@@ -10585,7 +10585,7 @@
     "abilities": {
       "0": "Levitate",
       "1": "Magic Guard",
-      "H": "Levitate"
+      "H": "Neuroforce"
     },
     "baseStats": {
       "hp": 40,
@@ -10612,7 +10612,7 @@
     "abilities": {
       "0": "Levitate",
       "1": "Magic Guard",
-      "H": "Levitate"
+      "H": "Neuroforce"
     },
     "baseStats": {
       "hp": 75,
@@ -10789,8 +10789,8 @@
     ],
     "abilities": {
       "0": "Regal Presence",
-      "1": "Competitive",
-      "H": "Marvel Scale"
+      "1": "Marvel Scale",
+      "H": "Competitive"
     },
     "baseStats": {
       "hp": 95,
@@ -10867,7 +10867,7 @@
     "abilities": {
       "0": "Color Change",
       "1": "Protean",
-      "H": "Protean"
+      "H": "Wonder Skin"
     },
     "baseStats": {
       "hp": 70,
@@ -10960,7 +10960,7 @@
     "abilities": {
       "0": "Levitate",
       "1": "Frisk",
-      "H": "Frisk"
+      "H": "Anticipation"
     },
     "baseStats": {
       "hp": 40,
@@ -10989,7 +10989,7 @@
     "abilities": {
       "0": "Cursed Body",
       "1": "Frisk",
-      "H": "Frisk"
+      "H": "Anticipation"
     },
     "baseStats": {
       "hp": 48,
@@ -11050,12 +11050,12 @@
     "name": "Chimecho",
     "types": [
       "Psychic",
-      "Normal"
+      "Steel"
     ],
     "abilities": {
       "0": "Levitate",
-      "1": "Levitate",
-      "H": "Levitate"
+      "1": "Soundproof",
+      "H": "Light Metal"
     },
     "baseStats": {
       "hp": 80,
@@ -11084,8 +11084,7 @@
     "num": 359,
     "name": "Absol",
     "types": [
-      "Dark",
-      "Fairy"
+      "Dark"
     ],
     "abilities": {
       "0": "Justified",
@@ -11557,7 +11556,7 @@
     "abilities": {
       "0": "Clear Body",
       "1": "Levitate",
-      "H": "Levitate"
+      "H": "Heavy Metal"
     },
     "baseStats": {
       "hp": 40,
@@ -11584,7 +11583,7 @@
     "abilities": {
       "0": "Clear Body",
       "1": "Levitate",
-      "H": "Levitate"
+      "H": "Heavy Metal"
     },
     "baseStats": {
       "hp": 60,
@@ -11610,8 +11609,8 @@
     ],
     "abilities": {
       "0": "Full Metal Body",
-      "1": "Bulletproof",
-      "H": "Bulletproof"
+      "1": "Light Metal",
+      "H": "Heavy Metal"
     },
     "baseStats": {
       "hp": 80,
@@ -11720,7 +11719,7 @@
     "abilities": {
       "0": "Levitate",
       "1": "Levitate",
-      "H": "Levitate"
+      "H": "Prism Armor"
     },
     "baseStats": {
       "hp": 80,
@@ -11751,7 +11750,7 @@
     "abilities": {
       "0": "Levitate",
       "1": "Levitate",
-      "H": "Levitate"
+      "H": "Neuroforce"
     },
     "baseStats": {
       "hp": 80,
@@ -11938,8 +11937,8 @@
       "atk": 68,
       "def": 64,
       "spa": 45,
-      "spd": 60,
-      "spe": 48
+      "spd": 55,
+      "spe": 43
     },
     "heightm": 0.4,
     "weightkg": 10.2,
@@ -11967,7 +11966,7 @@
       "hp": 85,
       "atk": 89,
       "def": 85,
-      "spa": 55,
+      "spa": 65,
       "spd": 70,
       "spe": 46
     },
@@ -12031,9 +12030,9 @@
     },
     "baseStats": {
       "hp": 44,
-      "atk": 65,
+      "atk": 60,
       "def": 49,
-      "spa": 68,
+      "spa": 63,
       "spd": 44,
       "spe": 80
     },
@@ -12063,10 +12062,10 @@
     "baseStats": {
       "hp": 64,
       "atk": 83,
-      "def": 52,
-      "spa": 78,
-      "spd": 52,
-      "spe": 101
+      "def": 56,
+      "spa": 80,
+      "spd": 54,
+      "spe": 103
     },
     "heightm": 0.9,
     "weightkg": 22,
@@ -12129,9 +12128,9 @@
     },
     "baseStats": {
       "hp": 61,
-      "atk": 65,
+      "atk": 60,
       "def": 53,
-      "spa": 70,
+      "spa": 65,
       "spd": 56,
       "spe": 45
     },
@@ -12160,11 +12159,11 @@
     },
     "baseStats": {
       "hp": 69,
-      "atk": 66,
-      "def": 78,
+      "atk": 71,
+      "def": 83,
       "spa": 81,
       "spd": 76,
-      "spe": 50
+      "spe": 60
     },
     "heightm": 0.8,
     "weightkg": 23,
@@ -13362,12 +13361,12 @@
     "name": "Chingling",
     "types": [
       "Psychic",
-      "Normal"
+      "Steel"
     ],
     "abilities": {
       "0": "Levitate",
-      "1": "Levitate",
-      "H": "Levitate"
+      "1": "Soundproof",
+      "H": "Light Metal"
     },
     "baseStats": {
       "hp": 45,
@@ -14749,7 +14748,7 @@
     "abilities": {
       "0": "Levitate",
       "1": "Shadow Shield",
-      "H": "Shadow Shield"
+      "H": "Anticipation"
     },
     "baseStats": {
       "hp": 60,
@@ -15271,9 +15270,9 @@
     },
     "baseStats": {
       "hp": 45,
-      "atk": 60,
+      "atk": 55,
       "def": 55,
-      "spa": 60,
+      "spa": 55,
       "spd": 55,
       "spe": 75
     },
@@ -15305,7 +15304,7 @@
       "atk": 73,
       "def": 75,
       "spa": 72,
-      "spd": 65,
+      "spd": 75,
       "spe": 85
     },
     "heightm": 0.8,
@@ -15364,10 +15363,10 @@
     "baseStats": {
       "hp": 70,
       "atk": 63,
-      "def": 62,
+      "def": 57,
       "spa": 45,
       "spd": 55,
-      "spe": 55
+      "spe": 50
     },
     "heightm": 0.5,
     "weightkg": 9.9,
@@ -15395,7 +15394,7 @@
       "hp": 90,
       "atk": 93,
       "def": 70,
-      "spa": 60,
+      "spa": 70,
       "spd": 62,
       "spe": 55
     },
@@ -15446,17 +15445,17 @@
       "Water"
     ],
     "abilities": {
-      "0": "Rattled",
+      "0": "Hyper Cutter",
       "1": "Shell Armor",
       "H": "Torrent"
     },
     "baseStats": {
       "hp": 55,
-      "atk": 65,
+      "atk": 60,
       "def": 55,
       "spa": 63,
       "spd": 55,
-      "spe": 57
+      "spe": 52
     },
     "heightm": 0.5,
     "weightkg": 5.9,
@@ -15476,7 +15475,7 @@
       "Fighting"
     ],
     "abilities": {
-      "0": "Rattled",
+      "0": "Hyper Cutter",
       "1": "Shell Armor",
       "H": "Torrent"
     },
@@ -15485,8 +15484,8 @@
       "atk": 89,
       "def": 71,
       "spa": 84,
-      "spd": 51,
-      "spe": 60
+      "spd": 56,
+      "spe": 65
     },
     "heightm": 0.8,
     "weightkg": 24.5,
@@ -15506,7 +15505,7 @@
       "Fighting"
     ],
     "abilities": {
-      "0": "Weak Armor",
+      "0": "Hyper Cutter",
       "1": "Shell Armor",
       "H": "Torrent"
     },
@@ -15717,7 +15716,8 @@
     "num": 510,
     "name": "Liepard",
     "types": [
-      "Dark"
+      "Dark",
+      "Fairy"
     ],
     "abilities": {
       "0": "Prankster",
@@ -17114,7 +17114,7 @@
     ],
     "abilities": {
       "0": "Rough Skin",
-      "1": "Storm Drain",
+      "1": "Rain Dish",
       "H": "Sand Rush"
     },
     "baseStats": {
@@ -19886,9 +19886,9 @@
       "Normal"
     ],
     "abilities": {
-      "0": "Misty Surge",
+      "0": "Dancer",
       "1": "Download",
-      "H": "Competitive"
+      "H": "Misty Surge"
     },
     "baseStats": {
       "hp": 100,
@@ -19949,8 +19949,8 @@
     },
     "baseStats": {
       "hp": 60,
-      "atk": 70,
-      "def": 80,
+      "atk": 65,
+      "def": 75,
       "spa": 48,
       "spd": 54,
       "spe": 38
@@ -19979,10 +19979,10 @@
     "baseStats": {
       "hp": 74,
       "atk": 87,
-      "def": 95,
+      "def": 100,
       "spa": 56,
       "spd": 61,
-      "spe": 57
+      "spe": 62
     },
     "heightm": 0.7,
     "weightkg": 29,
@@ -20041,7 +20041,7 @@
       "H": "Blaze"
     },
     "baseStats": {
-      "hp": 50,
+      "hp": 40,
       "atk": 60,
       "def": 40,
       "spa": 70,
@@ -20072,7 +20072,7 @@
     },
     "baseStats": {
       "hp": 65,
-      "atk": 59,
+      "atk": 69,
       "def": 58,
       "spa": 90,
       "spd": 75,
@@ -20131,9 +20131,9 @@
     },
     "baseStats": {
       "hp": 41,
-      "atk": 67,
+      "atk": 62,
       "def": 50,
-      "spa": 67,
+      "spa": 62,
       "spd": 44,
       "spe": 81
     },
@@ -20163,8 +20163,8 @@
       "atk": 83,
       "def": 52,
       "spa": 83,
-      "spd": 56,
-      "spe": 102
+      "spd": 61,
+      "spe": 107
     },
     "heightm": 0.6,
     "weightkg": 10.9,
@@ -22156,9 +22156,9 @@
     },
     "baseStats": {
       "hp": 68,
-      "atk": 65,
+      "atk": 60,
       "def": 55,
-      "spa": 50,
+      "spa": 45,
       "spd": 50,
       "spe": 62
     },
@@ -22193,9 +22193,9 @@
       "hp": 78,
       "atk": 75,
       "def": 75,
-      "spa": 55,
+      "spa": 60,
       "spd": 65,
-      "spe": 82
+      "spe": 87
     },
     "heightm": 0.7,
     "weightkg": 16,
@@ -22259,7 +22259,7 @@
       "def": 40,
       "spa": 60,
       "spd": 50,
-      "spe": 80
+      "spe": 70
     },
     "heightm": 0.4,
     "weightkg": 4.3,
@@ -22289,7 +22289,7 @@
       "def": 50,
       "spa": 80,
       "spd": 50,
-      "spe": 90
+      "spe": 100
     },
     "heightm": 0.7,
     "weightkg": 25,
@@ -22353,7 +22353,7 @@
       "def": 54,
       "spa": 66,
       "spd": 66,
-      "spe": 50
+      "spe": 40
     },
     "heightm": 0.4,
     "weightkg": 7.5,
@@ -22380,10 +22380,10 @@
     },
     "baseStats": {
       "hp": 70,
-      "atk": 69,
+      "atk": 74,
       "def": 69,
       "spa": 91,
-      "spd": 81,
+      "spd": 86,
       "spe": 50
     },
     "heightm": 0.6,
@@ -23179,8 +23179,7 @@
     "num": 754,
     "name": "Lurantis",
     "types": [
-      "Grass",
-      "Fighting"
+      "Grass"
     ],
     "abilities": {
       "0": "Overgrow",
@@ -24606,7 +24605,7 @@
     ],
     "abilities": {
       "0": "Soul-Heart",
-      "1": "Zen Mode",
+      "1": "Soul-Heart",
       "H": "Soul-Heart"
     },
     "baseStats": {
@@ -25568,8 +25567,8 @@
     ],
     "abilities": {
       "0": "Dancer",
-      "1": "Speed Boost",
-      "H": "Defiant"
+      "1": "Download",
+      "H": "Misty Surge"
     },
     "baseStats": {
       "hp": 100,
@@ -29436,9 +29435,9 @@
       "Dark"
     ],
     "abilities": {
-      "0": "Protean",
-      "1": "Protean",
-      "H": "Protean"
+      "0": "Beast Boost",
+      "1": "Beast Boost",
+      "H": "Beast Boost"
     },
     "baseStats": {
       "hp": 74,
@@ -30143,7 +30142,8 @@
     "num": 735,
     "name": "Gumshoos-Megamax",
     "types": [
-      "Normal"
+      "Normal",
+      "Steel"
     ],
     "abilities": {
       "0": "Regal Presence",
@@ -30221,18 +30221,18 @@
     "name": "Lurantis-Megamax",
     "types": [
       "Grass",
-      "Fighting"
+      "Bug"
     ],
     "abilities": {
-      "0": "Regenerator",
-      "1": "Regenerator",
-      "H": "Regenerator"
+      "0": "Chlorophyll",
+      "1": "Chlorophyll",
+      "H": "Chlorophyll"
     },
     "baseStats": {
       "hp": 75,
-      "atk": 120,
+      "atk": 140,
       "def": 110,
-      "spa": 120,
+      "spa": 100,
       "spd": 100,
       "spe": 70
     },
@@ -30461,7 +30461,7 @@
     "name": "Araquanid-Megamax",
     "types": [
       "Water",
-      "Bug"
+      "Poison"
     ],
     "abilities": {
       "0": "Water Bubble",
@@ -30544,9 +30544,9 @@
       "Fairy"
     ],
     "abilities": {
-      "0": "Serene Grace",
-      "1": "Serene Grace",
-      "H": "Serene Grace"
+      "0": "Cute Charm",
+      "1": "Cute Charm",
+      "H": "Cute Charm"
     },
     "baseStats": {
       "hp": 60,

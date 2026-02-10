@@ -45,7 +45,7 @@ The target is slapped repeatedly, back and forth, two to five times in a row. (P
 ID: 4
 Name: Comet Punch
 Category: Physical
-Power: 16
+Power: 17
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
@@ -61,13 +61,13 @@ The target is hit with a flurry of punches that strike two to five times in a ro
 ID: 5
 Name: Mega Punch
 Category: Physical
-Power: 80
+Power: 90
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Stat Change: Defense -> -1 (20%)
-Z-Power: 130
+Z-Power: 140
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
@@ -136,7 +136,7 @@ The target is punched with an electrified fist. This may also leave the target w
 ID: 10
 Name: Scratch
 Category: Physical
-Power: 40
+Power: 45
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
@@ -420,7 +420,7 @@ Sand is hurled at the targets, reducing both opponent's Sp. Def. Z: +2 Sp.Atk
 ID: 29
 Name: Headbutt
 Category: Physical
-Power: 70
+Power: 75
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
@@ -435,7 +435,7 @@ The user sticks out its head and attacks by charging straight into the target. T
 ID: 30
 Name: Horn Attack
 Category: Physical
-Power: 65
+Power: 75
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
@@ -465,7 +465,7 @@ The target is jabbed repeatedly with a horn or beak two to five times in a row.
 ID: 32
 Name: Horn Drill
 Category: Physical
-Power: 100
+Power: 105
 Accuracy: 65
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
@@ -481,7 +481,7 @@ The user stabs the target with a horn that rotates like a drill. This slow and i
 ID: 33
 Name: Tackle
 Category: Physical
-Power: 40
+Power: 45
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
@@ -495,13 +495,13 @@ A physical attack in which the user charges and slams into the target with its w
 ID: 34
 Name: Body Slam
 Category: Physical
-Power: 85
+Power: 90
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Inflict: Paralyze (30%)
 Base PP: 15
-Z-Power: 135
+Z-Power: 140
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, FailSkyBattle, AnimateAlly
 Description:
@@ -1405,13 +1405,13 @@ The target is hit by a weak telekinetic force. This may also confuse the target.
 ID: 94
 Name: Psychic
 Category: Special
-Power: 90
+Power: 95
 Accuracy: 100
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Special Defense -> -1 (10%)
-Z-Power: 140
+Z-Power: 145
 Z-Effect: None
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -1467,13 +1467,13 @@ The user relaxes and lightens its body to move faster. This drastically raises t
 ID: 98
 Name: Quick Attack
 Category: Physical
-Power: 40
+Power: 50
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Priority: 1
-Z-Power: 90
+Z-Power: 95
 Z-Effect: +1 Speed
 Flags: MakesContact, Protect, Mirror
 Description:
@@ -1482,7 +1482,7 @@ The user lunges at the target at a speed that makes it almost invisible. This mo
 ID: 99
 Name: Rage
 Category: Physical
-Power: 30
+Power: 40
 Accuracy: 100
 Type: Dragon
 Targeting: Single Adjacent Ally/Foe
@@ -1791,7 +1791,7 @@ The user counters the target by mimicking the target’s last move. Z: +2 Atk
 ID: 120
 Name: Self-Destruct
 Category: Physical
-Power: 180
+Power: 200
 Accuracy: 100
 Type: Normal
 Targeting: Everyone but User
@@ -2292,7 +2292,7 @@ The target is hammered with a large pincer. Critical hits land more easily. (+1 
 ID: 153
 Name: Explosion
 Category: Physical
-Power: 250
+Power: 255
 Accuracy: 100
 Type: Normal
 Targeting: Everyone but User
@@ -2366,13 +2366,13 @@ Large boulders are hurled at the opposing Pokémon to inflict damage. This may a
 ID: 158
 Name: Hyper Fang
 Category: Physical
-Power: 80
+Power: 90
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Flinch Chance: 15%
-Z-Power: 130
+Z-Power: 140
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, AnimateAlly, Bite
 Description:
@@ -2411,7 +2411,7 @@ The user changes its type to become the same type as the move at the top of the 
 ID: 161
 Name: Tri Attack
 Category: Special
-Power: 27
+Power: 30
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
@@ -2441,13 +2441,13 @@ The user chomps hard on the target with its sharp front fangs. This cuts the tar
 ID: 163
 Name: Slash
 Category: Physical
-Power: 70
+Power: 75
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Crit Stage(s): 1
-Z-Power: 140
+Z-Power: 135
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
@@ -2589,13 +2589,13 @@ The user cloaks itself in fire and rolls at the target. This may also leave the 
 ID: 173
 Name: Snore
 Category: Special
-Power: 80
+Power: 85
 Accuracy: 100
 Type: Normal
 Targeting: All Foes
 Base PP: 15
 Flinch Chance: 30%
-Z-Power: 130
+Z-Power: 135
 Z-Effect: None
 Flags: Protect, Mirror, Sound, IgnoreSubstitute, AnimateAlly
 Description:
@@ -3846,7 +3846,7 @@ Description:
 The user attacks by blowing hot wind on both opposing Pokémon. This may also leave those Pokémon with a burn. (10%)
 
 ID: 258
-Name: Hail
+Name: Snowscape
 Category: Status
 Power: 0
 Accuracy: 101
@@ -4525,12 +4525,12 @@ The user slacks off, restoring its own HP by up to half of its max HP. Z: Heals 
 ID: 304
 Name: Hyper Voice
 Category: Special
-Power: 90
+Power: 95
 Accuracy: 100
 Type: Normal
 Targeting: All Foes
 Base PP: 10
-Z-Power: 140
+Z-Power: 145
 Z-Effect: None
 Flags: Protect, Mirror, Sound, IgnoreSubstitute
 Description:
@@ -4555,17 +4555,17 @@ The user bites the target with toxic fangs. This may also leave the target badly
 ID: 306
 Name: Crush Claw
 Category: Physical
-Power: 75
+Power: 80
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Stat Change: Defense -> -1 (50%)
+Stat Change: Defense -> -1 (100%)
 Z-Power: 50
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user slashes the target with hard and sharp claws. This may also lower the target’s Defense stat. (50%) Z: +1 Atk
+The user slashes the target with hard and sharp claws. This will also lower the target’s Defense stat. Z: +1 Atk
 
 ID: 307
 Name: Blast Burn
@@ -5019,7 +5019,7 @@ The user howls loudly to raise its allies' spirits, which raises their Attack st
 ID: 337
 Name: Dragon Claw
 Category: Physical
-Power: 85
+Power: 90
 Accuracy: 100
 Type: Dragon
 Targeting: Single Adjacent Ally/Foe
@@ -6035,7 +6035,7 @@ The user generates a damaging sound wave by vibration. This may also lower the t
 ID: 406
 Name: Dragon Pulse
 Category: Special
-Power: 85
+Power: 90
 Accuracy: 100
 Type: Dragon
 Targeting: Single Adjacent Ally/Foe
@@ -6351,7 +6351,7 @@ The user launches a hard-packed mud ball to attack. This may also lower the targ
 ID: 427
 Name: Psycho Cut
 Category: Physical
-Power: 80
+Power: 85
 Accuracy: 100
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
@@ -6366,7 +6366,7 @@ The user tears at the target with blades formed by psychic power. Critical hits 
 ID: 428
 Name: Zen Headbutt
 Category: Physical
-Power: 85
+Power: 90
 Accuracy: 100
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
@@ -6879,11 +6879,12 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
+Stat Change: Defense -> 1 (100%)
 Z-Power: 190
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The target is crushed with great force. The more HP the target has left, the greater this move’s power. (1-120 Power)
+The target is crushed with great force. The more HP the target has left, the greater this move’s power. This raises the user's Defense. (1-120 Power)
 
 ID: 463
 Name: Magma Storm
@@ -8042,13 +8043,13 @@ The user materializes an odd psychic wave to attack the target twice. This attac
 ID: 541
 Name: Tail Slap
 Category: Physical
-Power: 25
+Power: 26
 Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Hits: Min 2 / Max 5
-Z-Power: 140
+Z-Power: 145
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
@@ -10185,16 +10186,17 @@ The user rubs the scales on its entire body and makes a huge noise to attack the
 ID: 692
 Name: Dragon Hammer
 Category: Physical
-Power: 90
+Power: 100
 Accuracy: 100
 Type: Dragon
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 140
+Stat Change: Speed -> -1 (100%)
+Z-Power: 150
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-The user uses its body like a hammer to attack the target and inflict damage.
+The user uses its body like a hammer to attack the target. The effort lowers the user's Speed.
 
 ID: 693
 Name: Brutal Smash
@@ -10223,7 +10225,7 @@ Z-Power: 0
 Z-Effect: +1 Speed
 Flags: Snatch
 Description:
-This move reduces damage from physical and special moves by 33% for five turns. This can be used only in a hailstorm. Z: +1 Speed
+This move reduces damage from physical and special moves by 33% for five turns. This can be used only in a snowstorm. Z: +1 Speed
 
 ID: 695
 Name: Sinister Arrow Raid

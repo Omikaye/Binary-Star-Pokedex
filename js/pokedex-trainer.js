@@ -115,23 +115,65 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       return '<a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:#fff;border:1px solid #ddd;border-radius:6px;padding:8px;display:flex;gap:8px;align-items:flex-start">' + icon + '<div style="flex:1"><strong>' + escapeHTML(title) + '</strong><br /><small>' + escapeHTML(desc) + '</small></div></div></a>';
     };
 
-    var renderAbilityBox = function(abilityName) {
+    var isAbilityLegal = function(abilityName, monData) {
+      if (!monData || !abilityName) return true;
+      // Check if this Pokémon can learn Sketch (which learns all moves)
+      var learnset = window.Learnsets[monData.id] || [];
+      for (var i = 0; i < learnset.length; i++) {
+        if (toID(learnset[i].move || learnset[i]) === 'sketch') return true;
+      }
+      // Check ability legality
+      for (var slot in (monData.abilities || {})) {
+        if (monData.abilities[slot] === abilityName) return true;
+      }
+      return false;
+    };
+
+    var isMoveLegal = function(moveName, monData) {
+      if (!monData || !moveName) return true;
+      var learnset = window.Learnsets[monData.id] || [];
+      var moveID = toID(moveName);
+      // Check if this Pokémon can learn Sketch (which learns all moves)
+      for (var i = 0; i < learnset.length; i++) {
+        if (toID(learnset[i].move || learnset[i]) === 'sketch') return true;
+      }
+      for (var i = 0; i < learnset.length; i++) {
+        if (toID(learnset[i].move || learnset[i]) === moveID) return true;
+      }
+      return false;
+    };
+
+    var renderAbilityBox = function(abilityName, monData) {
       if (!abilityName) return '';
       var abilityID = toID(abilityName);
       var data = BattleAbilities[abilityID];
-      var content = '<div class="infobox" style="background:#fff;border:1px solid #ddd;border-radius:6px;padding:8px"><strong>' + escapeHTML((data ? data.name : abilityName)) + '</strong><br /><small>' + escapeHTML((data ? (data.shortDesc || data.desc || '') : '')) + '</small></div>';
+      var isLegal = isAbilityLegal(abilityName, monData);
+      var nameColor = isLegal ? '' : 'color:red;';
+      var content = '<div class="infobox" style="background:#fff;border:1px solid #ddd;border-radius:6px;padding:8px"><strong style="' + nameColor + '">' + escapeHTML((data ? data.name : abilityName)) + '</strong><br /><small>' + escapeHTML((data ? (data.shortDesc || data.desc || '') : '')) + '</small></div>';
       return '<a href="' + Config.baseurl + 'abilities/' + abilityID + '" data-target="push" class="subtle" style="text-decoration:none">' + content + '</a>';
     };
 
-    var renderMoveBox = function(moveName) {
+    var renderMoveBox = function(moveName, monData) {
       if (!moveName) return '';
       var moveID = toID(moveName);
       var data = BattleMovedex[moveID];
       var moveType = data ? toID(data.type) : 'normal';
       var bgColor = getTypeColor(moveType);
       var typeIcon = '<span style="margin-left:6px;display:inline-block">' + getTypeIcon(moveType) + '</span>';
+      var isLegal = isMoveLegal(moveName, monData);
+      var nameColor = isLegal ? '' : 'color:red;';
       if (!data) return '<div class="infobox" style="background:' + bgColor + '33;border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:#333">' + escapeHTML(moveName) + typeIcon + '</div>';
-      return '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:' + bgColor + '33;border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:#333;display:flex;justify-content:space-between;align-items:center"><div><strong>' + escapeHTML(data.name) + '</strong><br /><small>' + escapeHTML(data.shortDesc || data.desc || '') + '</small></div>' + typeIcon + '</div></a>';
+      
+      // Build stats string: "Pow: 40 Acc: 100 PP: 10"
+      var statsText = '';
+      if (data.category !== 'Status') {
+        statsText += '<b>Pow:</b> ' + (data.basePower || '&mdash;') + ' ';
+      }
+      statsText += '<b>Acc:</b> ' + (data.accuracy && data.accuracy !== true ? data.accuracy + '%' : '&mdash;') + ' ';
+      var pp = data.noPPBoosts ? data.pp : Math.floor(data.pp * 8 / 5);
+      statsText += '<b>PP:</b> ' + pp;
+      
+      return '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:' + bgColor + '33;border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:#333;display:flex;justify-content:space-between;align-items:center"><div><strong style="' + nameColor + '">' + escapeHTML(data.name) + '</strong><br /><small>' + statsText + '</small><br /><small>' + escapeHTML(data.shortDesc || data.desc || '') + '</small></div>' + typeIcon + '</div></a>';
     };
 
     // Team cards
@@ -144,11 +186,8 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var iconId = monID;
       if (!monData && monID) {
         var baseGuess = monID.split('-')[0];
-        iconId = baseGuess;
-        monData = BattlePokedex[iconId];
-      }
-      if (monData && monData.baseSpecies && BattlePokedex[toID(monData.baseSpecies)]) {
-        iconId = toID(monData.baseSpecies);
+        monData = BattlePokedex[baseGuess];
+        // Don't change iconId - keep the form information for correct sprite
       }
       var bg = colors[pi % colors.length];
 
@@ -173,7 +212,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       }
 
       if (m.ability) {
-        buf += '<div style="margin-top:10px">' + renderAbilityBox(m.ability) + '</div>';
+        buf += '<div style="margin-top:10px">' + renderAbilityBox(m.ability, monData) + '</div>';
       }
 
       if (m.nature) {
@@ -191,7 +230,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       if (moves.length) {
         buf += '<div style="margin-top:10px;display:flex;flex-direction:column;gap:6px">';
         for (var mj = 0; mj < moves.length; mj++) {
-          buf += renderMoveBox(moves[mj]);
+          buf += renderMoveBox(moves[mj], monData);
         }
         buf += '</div>';
       }

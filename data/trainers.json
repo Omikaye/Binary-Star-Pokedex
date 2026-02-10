@@ -1511,7 +1511,7 @@
         "nature": "Quirky",
         "ability": "Ice Body",
         "moves": [
-          "Hail",
+          "Snowscape",
           "Cold Snap",
           "Dive",
           "Body Slam"
@@ -1935,7 +1935,7 @@
         "nature": "Sassy",
         "ability": "Ice Body",
         "moves": [
-          "Hail",
+          "Snowscape",
           "Cold Snap",
           "Dive",
           "Brine"
@@ -2375,7 +2375,7 @@
         "nature": "Jolly",
         "ability": "Slush Rush",
         "moves": [
-          "Hail",
+          "Snowscape",
           "Brine",
           "Fury Swipes",
           "Ice Shard"
@@ -2778,7 +2778,7 @@
         "level": 19,
         "item": "Normalium Z",
         "nature": "Calm",
-        "ability": "Levitate",
+        "ability": "Soundproof",
         "moves": [
           "Round",
           "Disarming Voice",
@@ -4286,7 +4286,7 @@
         "moves": [
           "Fell Stinger",
           "Crush Claw",
-          "Slash",
+          "Curse",
           "Razor Shell"
         ]
       }
@@ -4601,7 +4601,7 @@
           "Fury Swipes",
           "Acupressure",
           "Flurry Peck",
-          "Triple Axel"
+          "Kick-Step"
         ]
       },
       {
@@ -4633,7 +4633,7 @@
         "nature": "Lonely",
         "ability": "Receiver",
         "moves": [
-          "Arm Thrust",
+          "Storm Throw",
           "Bulk Up",
           "Double-Edge",
           "Fling"
@@ -5357,7 +5357,7 @@
           "Baneful Bunker",
           "Moonlight",
           "Psyshock",
-          "Sleep Powder"
+          "Hypnosis"
         ]
       },
       {
@@ -5418,7 +5418,7 @@
         "moves": [
           "Spike Cannon",
           "Icicle Crash",
-          "Steel Trap",
+          "Water Shuriken",
           "Spikes"
         ]
       },
@@ -6036,7 +6036,7 @@
         "ability": "Scrappy",
         "moves": [
           "Stealth Rock",
-          "Thunder Fang",
+          "Fire Fang",
           "Take Down",
           "Accelerock"
         ]
@@ -6062,7 +6062,7 @@
         "ability": "Defiant",
         "moves": [
           "Brick Break",
-          "Fire Fang",
+          "Thunder Fang",
           "Howl",
           "Rock Slide"
         ]
@@ -6663,7 +6663,7 @@
         "ability": "Magnet Pull",
         "moves": [
           "Sonic Boom",
-          "Charge Beam",
+          "Thunder Shock",
           "Mirror Shot",
           "Metal Sound"
         ]
@@ -9360,7 +9360,7 @@
         "moves": [
           "Sandstorm",
           "Magnet Bomb",
-          "Rock Blast",
+          "Power Gem",
           "Discharge"
         ]
       },
@@ -9387,7 +9387,7 @@
           "Rock Climb",
           "Drill Run",
           "Submission",
-          "Steel Trap"
+          "Heavy Slam"
         ]
       }
     ]
@@ -9550,7 +9550,7 @@
         "level": 54,
         "item": "Protective Pads",
         "nature": "Impish",
-        "ability": "Shadow Shield",
+        "ability": "Anticipation",
         "moves": [
           "Will-O-Wisp",
           "Pain Split",
@@ -10249,9 +10249,9 @@
         "ability": "Slush Rush",
         "moves": [
           "Take Down",
-          "Supercell Slam",
-          "Extrasensory",
-          "Meditate"
+          "Aurora Veil",
+          "Zen Headbutt",
+          "Blizzard"
         ]
       },
       {
@@ -13083,9 +13083,9 @@
         "ability": "Shell Armor",
         "moves": [
           "X-Scissor",
-          "Trample",
+          "Chip Away",
           "Iron Defense",
-          "Night Slash"
+          "Razor Shell"
         ]
       },
       {
@@ -13646,8 +13646,8 @@
         "ability": "Run Away",
         "moves": [
           "Flame Wheel",
-          "Sweet Tooth",
-          "Overheat",
+          "Fleur Cannon",
+          "Bounce",
           "Sunny Day"
         ]
       },
@@ -14835,7 +14835,7 @@
         "level": 52,
         "item": "Toxic Orb",
         "nature": "Adamant",
-        "ability": "Poison Heal",
+        "ability": "Immunity",
         "moves": [
           "Dig",
           "Facade",
@@ -18131,9 +18131,9 @@
   },
   {
     "id": "555",
-    "name": "Gym Leader Agatha?",
+    "name": "Gym Leader Agatha",
     "trainerClass": "Gym Leader",
-    "personalName": "Agatha?",
+    "personalName": "Agatha",
     "prizeMoney": 1376,
     "team": [
       {
@@ -18217,7 +18217,7 @@
         "name": "Kecleon",
         "level": 56,
         "nature": "Jolly",
-        "ability": "Protean",
+        "ability": "Wonder Skin",
         "moves": [
           "Sucker Punch",
           "Shadow Claw",
@@ -19186,7 +19186,7 @@
         "level": 50,
         "item": "Choice Specs",
         "nature": "Timid",
-        "ability": "Levitate",
+        "ability": "Soundproof",
         "moves": [
           "Shadow Ball",
           "Hyper Voice",
@@ -20308,7 +20308,7 @@
         "ability": "Intimidate",
         "moves": [
           "Crunch",
-          "Sky Uppercut",
+          "Hammer Arm",
           "Trample",
           "Take Down"
         ]
@@ -20767,7 +20767,7 @@
         "ability": "Rough Skin",
         "moves": [
           "Protect",
-          "Trample",
+          "Dig",
           "Dual Chop",
           "Twister"
         ]

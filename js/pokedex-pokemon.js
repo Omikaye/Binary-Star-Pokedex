@@ -502,7 +502,22 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 					break;
 			}
 			last = learn;
-			buf += BattleSearch.renderTaggedMoveRow(move, desc);
+			var moveRow = BattleSearch.renderTaggedMoveRow(move, desc);
+			
+			// Make move name bold if it's not a Status move and matches Pokémon's types
+			if (move.category !== 'Status' && pokemon && pokemon.types && pokemon.types.length > 0) {
+				var moveTypeId = toID(move.type);
+				var hasMatchingType = pokemon.types.some(function(t) { return toID(t) === moveTypeId; });
+				if (hasMatchingType) {
+					// Wrap the move name in <b> tags with black color and no underline to override link styles
+					moveRow = moveRow.replace(
+						/<span class="col shortmovenamecol">([^<]*)<\/span>/,
+						'<span class="col shortmovenamecol"><b style="color:#000;text-decoration:none">$1</b></span>'
+					);
+				}
+			}
+			
+			buf += moveRow;
 		}
 		this.$('.utilichart').html(buf);
 		

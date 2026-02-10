@@ -10,7 +10,7 @@ Level Up @ level 22 into Ivysaur
 ======
 2 Ivysaur
 ======
-Level Up @ level 43 into Venusaur
+Level Up @ level 42 into Venusaur
 
 ======
 3 Venusaur
@@ -24,7 +24,7 @@ Level Up @ level 22 into Charmeleon
 ======
 5 Charmeleon
 ======
-Level Up @ level 43 into Charizard
+Level Up @ level 42 into Charizard
 
 ======
 6 Charizard
@@ -38,7 +38,7 @@ Level Up @ level 22 into Wartortle
 ======
 8 Wartortle
 ======
-Level Up @ level 43 into Blastoise
+Level Up @ level 42 into Blastoise
 
 ======
 9 Blastoise
@@ -137,7 +137,7 @@ Used Item [Alolan Sack] into Sandslash-1
 ======
 
 ======
-29 Nidoran
+29 Nidoran-F
 ======
 Level Up @ level 21 into Nidorina
 Used Item [Blue Box] into Nidorino
@@ -152,7 +152,7 @@ Level Up @ level 42 into Nidoqueen
 ======
 
 ======
-32 Nidoran
+32 Nidoran-M
 ======
 Level Up @ level 21 into Nidorino
 Used Item [Pink Box] into Nidorina

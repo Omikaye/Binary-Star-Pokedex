@@ -1,12 +1,12 @@
 {
   "S001": {
     "id": "S001",
-    "name": "Rattata",
+    "name": "Rattata 1",
     "level": 4,
     "item": "Oran Berry",
     "nature": "Random",
     "ability": "Hustle",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Quick Attack",
       "Snatch",
@@ -27,7 +27,7 @@
     "item": "Poisonium Z",
     "nature": "Calm",
     "ability": "Clear Body",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Baneful Bunker",
       "Giga Drain",
@@ -50,7 +50,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Full Metal Body",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Sunsteel Strike",
       "Cosmic Power",
@@ -72,7 +72,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Shadow Shield",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Moongeist Beam",
       "Cosmic Power",
@@ -89,11 +89,11 @@
   },
   "S005": {
     "id": "S005",
-    "name": "Gumshoos",
+    "name": "Gumshoos 1",
     "level": 16,
     "item": "Lum Berry",
     "nature": "Modest",
-    "ability": "Regal Presence (H)",
+    "ability": "Regal Presence",
     "abilitySlot": 1,
     "moves": [
       "Tackle",
@@ -117,7 +117,7 @@
     "item": null,
     "nature": "Hardy",
     "ability": "Strong Jaw",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Pursuit",
       "Bide",
@@ -135,12 +135,12 @@
   },
   "S007": {
     "id": "S007",
-    "name": "Raticate",
+    "name": "Raticate 1",
     "level": 14,
     "item": "Kee Berry",
     "nature": "Impish",
     "ability": "Thick Fat",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Me First",
       "Tackle",
@@ -162,7 +162,7 @@
     "level": 13,
     "item": null,
     "nature": "Naughty",
-    "ability": "Honey Gather (H)",
+    "ability": "Honey Gather",
     "abilitySlot": 1,
     "moves": [
       "Lick",
@@ -181,11 +181,11 @@
   },
   "S009": {
     "id": "S009",
-    "name": "Rattata",
+    "name": "Rattata 1",
     "level": 12,
     "item": null,
     "nature": "Lonely",
-    "ability": "Pickpocket (H)",
+    "ability": "Pickpocket",
     "abilitySlot": 1,
     "moves": [
       "Slink Strike",
@@ -203,12 +203,12 @@
   },
   "S010": {
     "id": "S010",
-    "name": "Raticate",
+    "name": "Raticate 2",
     "level": 12,
     "item": "Pecha Berry",
     "nature": "Modest",
     "ability": "Stamina",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Super Fang",
       "Bite",
@@ -226,12 +226,12 @@
   },
   "S011": {
     "id": "S011",
-    "name": "Rattata",
+    "name": "Rattata 1",
     "level": 11,
     "item": null,
     "nature": "Hardy",
     "ability": "Hustle",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Tackle",
       "Tail Whip",
@@ -248,12 +248,12 @@
   },
   "S012": {
     "id": "S012",
-    "name": "Raticate",
+    "name": "Raticate 1",
     "level": 11,
     "item": null,
     "nature": "Mild",
     "ability": "Thick Fat",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Focus Energy",
       "Tail Whip",
@@ -270,12 +270,12 @@
   },
   "S013": {
     "id": "S013",
-    "name": "Rattata",
+    "name": "Rattata 1",
     "level": 11,
     "item": null,
     "nature": "Hardy",
     "ability": "Hustle",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Tackle",
       "Tail Whip",
@@ -292,11 +292,11 @@
   },
   "S014": {
     "id": "S014",
-    "name": "Rattata",
+    "name": "Rattata 1",
     "level": 10,
     "item": null,
     "nature": "Timid",
-    "ability": "Pickpocket (H)",
+    "ability": "Pickpocket",
     "abilitySlot": 1,
     "moves": [
       "Tackle",
@@ -314,12 +314,12 @@
   },
   "S015": {
     "id": "S015",
-    "name": "Wishiwashi",
+    "name": "Wishiwashi 1",
     "level": 20,
     "item": "Sitrus Berry",
     "nature": "Adamant",
     "ability": "Schooling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Water Gun",
       "Growl",
@@ -341,7 +341,7 @@
     "level": 25,
     "item": null,
     "nature": "Jolly",
-    "ability": "Water Veil (H)",
+    "ability": "Water Veil",
     "abilitySlot": 1,
     "moves": [
       "Water Pulse",
@@ -365,7 +365,7 @@
     "item": null,
     "nature": "Brave",
     "ability": "Schooling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Aqua Ring",
       "Whirlpool",
@@ -388,7 +388,7 @@
     "item": null,
     "nature": "Naughty",
     "ability": "Soul-Heart",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Helping Hand",
       "Double Slap",
@@ -410,7 +410,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Schooling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -422,12 +422,12 @@
   },
   "S020": {
     "id": "S020",
-    "name": "Salazzle",
+    "name": "Salazzle 1",
     "level": 22,
     "item": "Petaya Berry",
     "nature": "Calm",
     "ability": "Merciless",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Torment",
       "Venom Drench",
@@ -445,11 +445,11 @@
   },
   "S021": {
     "id": "S021",
-    "name": "Marowak",
+    "name": "Marowak 1",
     "level": 31,
     "item": null,
     "nature": "Serious",
-    "ability": "Cursed Body (H)",
+    "ability": "Cursed Body",
     "abilitySlot": 1,
     "moves": [
       "Will-O-Wisp",
@@ -467,11 +467,11 @@
   },
   "S022": {
     "id": "S022",
-    "name": "Marowak",
+    "name": "Marowak 1",
     "level": 31,
     "item": null,
     "nature": "Serious",
-    "ability": "Cursed Body (H)",
+    "ability": "Cursed Body",
     "abilitySlot": 1,
     "moves": [
       "Will-O-Wisp",
@@ -494,7 +494,7 @@
     "item": null,
     "nature": "Lax",
     "ability": "Lightning Rod",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Electro Ball",
       "Thunder Wave",
@@ -516,7 +516,7 @@
     "item": null,
     "nature": "Quiet",
     "ability": "Corrosion",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Poison Gas",
       "Venoshock",
@@ -531,36 +531,13 @@
       "secondary": null
     }
   },
-  "S025": {
-    "id": "S025",
-    "name": "Lurantis",
-    "level": 37,
-    "item": "Coba Berry",
-    "nature": "Calm",
-    "ability": "Unknown",
-    "abilitySlot": 8,
-    "moves": [
-      "Low Sweep",
-      "Acrobatics",
-      "Leech Seed",
-      "Solar Blade"
-    ],
-    "aura": {
-      "effect": "Defense",
-      "boost": "+1"
-    },
-    "sos": {
-      "primary": "S032",
-      "secondary": "S033"
-    }
-  },
   "S026": {
     "id": "S026",
     "name": "Parasect",
     "level": 22,
     "item": null,
     "nature": "Lonely",
-    "ability": "Dry Skin (H)",
+    "ability": "Dry Skin",
     "abilitySlot": 1,
     "moves": [
       "Cross Poison",
@@ -605,7 +582,7 @@
     "item": null,
     "nature": "Impish",
     "ability": "Contrary",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Razor Leaf",
       "Trailblaze",
@@ -627,7 +604,7 @@
     "item": null,
     "nature": "Adamant",
     "ability": "Contrary",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Razor Leaf",
       "Trailblaze",
@@ -649,7 +626,7 @@
     "item": null,
     "nature": "Gentle",
     "ability": "Contrary",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Trailblaze",
       "Fury Cutter",
@@ -671,7 +648,7 @@
     "item": null,
     "nature": "Sassy",
     "ability": "Contrary",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Trailblaze",
       "Fury Cutter",
@@ -693,7 +670,7 @@
     "item": null,
     "nature": "Timid",
     "ability": "Fluffy",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Tailwind",
       "Mega Drain",
@@ -715,7 +692,7 @@
     "item": null,
     "nature": "Quiet",
     "ability": "Solar Power",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Flower Shield",
       "Grassy Terrain",
@@ -732,12 +709,12 @@
   },
   "S034": {
     "id": "S034",
-    "name": "Vikavolt",
+    "name": "Vikavolt 1",
     "level": 29,
     "item": "Occa Berry",
     "nature": "Sassy",
     "ability": "Electric Surge",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Psycrush",
       "Charge",
@@ -760,7 +737,7 @@
     "item": null,
     "nature": "Lonely",
     "ability": "Minus",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Psycrush",
       "String Shot",
@@ -782,7 +759,7 @@
     "item": null,
     "nature": "Adamant",
     "ability": "Plus",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Charge",
       "Psycrush",
@@ -804,7 +781,7 @@
     "item": null,
     "nature": "Naughty",
     "ability": "Plus",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Charge",
       "Mud-Slap",
@@ -826,7 +803,7 @@
     "item": null,
     "nature": "Jolly",
     "ability": "Plus",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "String Shot",
       "Psycrush",
@@ -848,7 +825,7 @@
     "item": null,
     "nature": "Brave",
     "ability": "Plus",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Bite",
       "Thunder Wave",
@@ -865,12 +842,12 @@
   },
   "S040": {
     "id": "S040",
-    "name": "Mimikyu",
+    "name": "Mimikyu 2",
     "level": 55,
     "item": "Lum Berry",
     "nature": "Impish",
     "ability": "Disguise",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Phantom Force",
       "Hypnosis",
@@ -893,7 +870,7 @@
     "item": null,
     "nature": "Timid",
     "ability": "Prankster",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Shadow Punch",
       "Sucker Punch",
@@ -915,7 +892,7 @@
     "item": null,
     "nature": "Rash",
     "ability": "Magic Guard",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Trick-or-Treat",
       "Shadow Ball",
@@ -937,7 +914,7 @@
     "item": null,
     "nature": "Quiet",
     "ability": "Cursed Body",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Sludge Bomb",
       "Trick-or-Treat",
@@ -959,7 +936,7 @@
     "item": null,
     "nature": "Quiet",
     "ability": "Sand Stream",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Shore Up",
       "Mud Bomb",
@@ -980,7 +957,7 @@
     "level": 50,
     "item": null,
     "nature": "Modest",
-    "ability": "Shadow Tag (H)",
+    "ability": "Shadow Tag",
     "abilitySlot": 1,
     "moves": [
       "Curse",
@@ -998,11 +975,11 @@
   },
   "S046": {
     "id": "S046",
-    "name": "Kommo-o",
+    "name": "Kommo-o 1",
     "level": 49,
     "item": "Roseli Berry",
     "nature": "Calm",
-    "ability": "Multiscale (H)",
+    "ability": "Multiscale",
     "abilitySlot": 1,
     "moves": [
       "Drain Punch",
@@ -1026,7 +1003,7 @@
     "item": null,
     "nature": "Naughty",
     "ability": "Soundproof",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Bide",
       "Tackle",
@@ -1048,7 +1025,7 @@
     "item": null,
     "nature": "Brave",
     "ability": "Soundproof",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Headbutt",
       "Autotomize",
@@ -1069,7 +1046,7 @@
     "level": 48,
     "item": null,
     "nature": "Timid",
-    "ability": "Frisk (H)",
+    "ability": "Frisk",
     "abilitySlot": 1,
     "moves": [
       "Boomburst",
@@ -1091,7 +1068,7 @@
     "level": 46,
     "item": null,
     "nature": "Brave",
-    "ability": "Light Metal (H)",
+    "ability": "Light Metal",
     "abilitySlot": 1,
     "moves": [
       "Light Screen",
@@ -1114,7 +1091,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Clear Body",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Defense",
@@ -1132,7 +1109,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Clear Body",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Defense",
@@ -1150,7 +1127,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Guts",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1168,7 +1145,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Guts",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1186,7 +1163,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Regal Presence",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Speed",
@@ -1204,7 +1181,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Regal Presence",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Speed",
@@ -1222,7 +1199,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Regal Presence",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Speed",
@@ -1240,7 +1217,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Regal Presence",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Speed",
@@ -1258,7 +1235,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dazzling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -1276,7 +1253,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dazzling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -1294,7 +1271,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dazzling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -1312,7 +1289,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dazzling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -1330,7 +1307,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dazzling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -1348,7 +1325,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dazzling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -1366,7 +1343,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dazzling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -1384,7 +1361,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dazzling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -1402,7 +1379,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dazzling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -1420,7 +1397,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dazzling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -1438,7 +1415,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1456,7 +1433,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1474,7 +1451,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1492,7 +1469,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1510,7 +1487,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1528,7 +1505,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1546,7 +1523,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1564,7 +1541,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1582,7 +1559,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1600,7 +1577,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1618,7 +1595,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1636,7 +1613,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1654,7 +1631,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1672,7 +1649,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1690,7 +1667,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1708,7 +1685,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1726,7 +1703,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1744,7 +1721,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1762,7 +1739,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1780,7 +1757,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1798,7 +1775,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1816,7 +1793,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1834,7 +1811,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1852,7 +1829,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1870,7 +1847,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1888,7 +1865,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1906,7 +1883,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1924,7 +1901,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1942,7 +1919,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1960,7 +1937,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -1978,7 +1955,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Gluttony",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -1996,7 +1973,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Prism Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -2096,7 +2073,7 @@
   },
   "S105": {
     "id": "S105",
-    "name": "Scatterbug",
+    "name": "Scatterbug 30",
     "level": 9,
     "item": null,
     "nature": "Random",
@@ -2650,7 +2627,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Electric Surge",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -2667,7 +2644,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Psychic Surge",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -2684,7 +2661,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Grassy Surge",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -2701,7 +2678,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Misty Surge",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -2718,7 +2695,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Shed Skin",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -2730,12 +2707,12 @@
   },
   "S135": {
     "id": "S135",
-    "name": "Exeggutor",
+    "name": "Exeggutor 1",
     "level": 40,
     "item": null,
     "nature": "Random",
     "ability": "Harvest",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -2752,7 +2729,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Electric Surge",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -2786,12 +2763,12 @@
   },
   "S138": {
     "id": "S138",
-    "name": "Araquanid",
+    "name": "Araquanid 1",
     "level": 27,
     "item": "Wacan Berry",
     "nature": "Impish",
     "ability": "Water Bubble",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Icy Wind",
       "Twineedle",
@@ -2860,34 +2837,12 @@
     "item": null,
     "nature": "Timid",
     "ability": "Soul-Heart",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Safeguard",
       "Heart Stamp",
       "Lucky Chant",
       "Knock Off"
-    ],
-    "aura": {
-      "effect": "None"
-    },
-    "sos": {
-      "primary": null,
-      "secondary": null
-    }
-  },
-  "S142": {
-    "id": "S142",
-    "name": "Tentacool",
-    "level": 24,
-    "item": null,
-    "nature": "Bold",
-    "ability": "Unknown",
-    "abilitySlot": 8,
-    "moves": [
-      "Acid Spray",
-      "Rain Dance",
-      "Clear Smog",
-      "Toxic"
     ],
     "aura": {
       "effect": "None"
@@ -2904,7 +2859,7 @@
     "item": "Mago Berry",
     "nature": "Impish",
     "ability": "Contrary",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Leaf Blade",
       "Needle Arm",
@@ -2926,7 +2881,7 @@
     "item": "Honey",
     "nature": "Lonely",
     "ability": "Swarm",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Flurry Peck",
       "Poison Tail",
@@ -2948,7 +2903,7 @@
     "item": "Honey",
     "nature": "Sassy",
     "ability": "Multistriker",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Bug Buzz",
       "Defend Order",
@@ -2970,7 +2925,7 @@
     "item": "Big Root",
     "nature": "Brave",
     "ability": "Rock Head",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Block",
       "Needle Arm",
@@ -2987,11 +2942,11 @@
   },
   "S147": {
     "id": "S147",
-    "name": "Togedemaru",
+    "name": "Togedemaru 1",
     "level": 48,
     "item": "Leftovers",
     "nature": "Impish",
-    "ability": "Iron Barbs (H)",
+    "ability": "Iron Barbs",
     "abilitySlot": 1,
     "moves": [
       "Zing Zap",
@@ -3014,7 +2969,7 @@
     "level": 45,
     "item": null,
     "nature": "Impish",
-    "ability": "Sturdy (H)",
+    "ability": "Sturdy",
     "abilitySlot": 1,
     "moves": [
       "Stealth Rock",
@@ -3037,7 +2992,7 @@
     "item": null,
     "nature": "Jolly",
     "ability": "Cheek Pouch",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Follow Me",
       "Nuzzle",
@@ -3059,7 +3014,7 @@
     "item": null,
     "nature": "Jolly",
     "ability": "Lightning Rod",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Discharge",
       "Thunder Punch",
@@ -3081,7 +3036,7 @@
     "item": null,
     "nature": "Timid",
     "ability": "Galvanize",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Self-Destruct",
       "Discharge",
@@ -3103,7 +3058,7 @@
     "item": null,
     "nature": "Mild",
     "ability": "Strong Jaw",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Odor Sleuth",
       "Tackle",
@@ -3119,12 +3074,12 @@
   },
   "S153": {
     "id": "S153",
-    "name": "Rattata",
+    "name": "Rattata 1",
     "level": 3,
     "item": null,
     "nature": "Mild",
     "ability": "Hustle",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3136,12 +3091,12 @@
   },
   "S154": {
     "id": "S154",
-    "name": "Rattata",
+    "name": "Rattata 1",
     "level": 4,
     "item": "Oran Berry",
     "nature": "Random",
     "ability": "Hustle",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Quick Attack",
       "Snatch",
@@ -3163,7 +3118,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Sniper",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Peck",
       "Double Team",
@@ -3231,12 +3186,12 @@
   },
   "S159": {
     "id": "S159",
-    "name": "Necrozma",
+    "name": "Necrozma 1",
     "level": 50,
     "item": null,
     "nature": "Impish",
     "ability": "Prism Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Sunsteel Strike",
       "Morning Sun",
@@ -3253,12 +3208,12 @@
   },
   "S160": {
     "id": "S160",
-    "name": "Necrozma",
+    "name": "Necrozma 2",
     "level": 50,
     "item": null,
     "nature": "Bold",
     "ability": "Prism Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Moongeist Beam",
       "Moonlight",
@@ -3275,12 +3230,12 @@
   },
   "S161": {
     "id": "S161",
-    "name": "Necrozma",
+    "name": "Necrozma 3",
     "level": 60,
     "item": null,
     "nature": "Bold",
     "ability": "Neuroforce",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Photon Geyser",
       "Steel Trap",
@@ -3303,7 +3258,7 @@
     "item": "Ultranecrozium Z",
     "nature": "Random",
     "ability": "Prism Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Photon Geyser",
       "Iron Defense",
@@ -3320,11 +3275,11 @@
   },
   "S163": {
     "id": "S163",
-    "name": "Ribombee",
+    "name": "Ribombee 1",
     "level": 55,
     "item": "Occa Berry",
     "nature": "Impish",
-    "ability": "Serene Grace (H)",
+    "ability": "Cute Charm",
     "abilitySlot": 1,
     "moves": [
       "Bug Buzz",
@@ -3347,7 +3302,7 @@
     "level": 52,
     "item": null,
     "nature": "Timid",
-    "ability": "Rain Dish (H)",
+    "ability": "Rain Dish",
     "abilitySlot": 1,
     "moves": [
       "Stockpile",
@@ -3369,7 +3324,7 @@
     "level": 53,
     "item": null,
     "nature": "Naughty",
-    "ability": "Healer (H)",
+    "ability": "Healer",
     "abilitySlot": 1,
     "moves": [
       "Heal Pulse",
@@ -3392,12 +3347,12 @@
     "item": null,
     "nature": "Random",
     "ability": "Slush Rush",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Ancient Power",
       "Freeze-Dry",
       "Reflect",
-      "Hail"
+      "Snowscape"
     ],
     "aura": {
       "effect": "None"
@@ -3414,7 +3369,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Teravolt",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Ancient Power",
       "Discharge",
@@ -3436,7 +3391,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Turboblaze",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Ancient Power",
       "Flamethrower",
@@ -3457,8 +3412,8 @@
     "level": 60,
     "item": "Sacred Ash",
     "nature": "Random",
-    "ability": "Regenerator",
-    "abilitySlot": 2,
+    "ability": "Pressure",
+    "abilitySlot": 1,
     "moves": [
       "Burn Up",
       "Sacred Fire",
@@ -3480,7 +3435,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Air Lock",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3497,7 +3452,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Sweet Veil",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3514,7 +3469,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Defiant",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3531,7 +3486,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Defiant",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3548,7 +3503,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Sheer Force",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3565,7 +3520,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dark Aura",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Oblivion Wing",
       "Dark Pulse",
@@ -3587,7 +3542,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Unnerve",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Psychic",
       "Recover",
@@ -3609,7 +3564,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Volt Absorb",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3626,7 +3581,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Flash Fire",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Trample",
       "Bite",
@@ -3648,7 +3603,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Telepathy",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3665,7 +3620,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Technician",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Sacred Sword",
       "Swords Dance",
@@ -3687,7 +3642,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Reckless",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Sacred Sword",
       "Swords Dance",
@@ -3709,7 +3664,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Leaf Guard",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Sacred Sword",
       "Swords Dance",
@@ -3731,7 +3686,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Pressure",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3748,7 +3703,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Pressure",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3765,7 +3720,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Fairy Aura",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Geomancy",
       "Horn Leech",
@@ -3787,7 +3742,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Sand Rush",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3804,7 +3759,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Slush Rush",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3821,7 +3776,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Steelworker",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3838,7 +3793,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Drought",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Earthquake",
       "Precipice Blades",
@@ -3860,7 +3815,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Flame Body",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3877,7 +3832,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Truant",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Zen Headbutt",
       "Revenge",
@@ -3899,7 +3854,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Telepathy",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -3916,7 +3871,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Shadow Shield",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Shadow Force",
       "Aura Sphere",
@@ -3938,7 +3893,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Water Absorb",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Bubble Beam",
       "Aurora Beam",
@@ -3959,8 +3914,8 @@
     "level": 60,
     "item": null,
     "nature": "Random",
-    "ability": "Multiscale",
-    "abilitySlot": 2,
+    "ability": "Pressure",
+    "abilitySlot": 1,
     "moves": [
       "Skill Swap",
       "Aeroblast",
@@ -3982,7 +3937,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Levitate",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Mist Ball",
       "Dragon Pulse",
@@ -4004,7 +3959,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Levitate",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Luster Purge",
       "Dragon Pulse",
@@ -4026,7 +3981,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Drizzle",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Ice Beam",
       "Origin Pulse",
@@ -4048,7 +4003,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Forewarn",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Extrasensory",
       "Yawn",
@@ -4070,7 +4025,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Aroma Veil",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Extrasensory",
       "Charm",
@@ -4092,7 +4047,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Own Tempo",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Extrasensory",
       "Nasty Plot",
@@ -4114,7 +4069,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Slush Rush",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"
@@ -4471,7 +4426,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Clear Body",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Power Gem",
       "Acid Spray",
@@ -4494,7 +4449,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Guts",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -4512,7 +4467,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Regal Presence",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Speed",
@@ -4530,7 +4485,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Dazzling",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -4548,7 +4503,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Battle Armor",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -4566,7 +4521,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Hyper Cutter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -4584,7 +4539,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Gluttony",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Attack",
@@ -4597,11 +4552,11 @@
   },
   "S230": {
     "id": "S230",
-    "name": "Gumshoos",
+    "name": "Gumshoos 1",
     "level": 60,
     "item": "Chople Berry",
     "nature": "Impish",
-    "ability": "Regal Presence (H)",
+    "ability": "Regal Presence",
     "abilitySlot": 1,
     "moves": [
       "Hyper Fang",
@@ -4625,57 +4580,12 @@
     "item": null,
     "nature": "Jolly",
     "ability": "Strong Jaw",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Yawn",
       "Mud-Slap",
       "Torment",
       "Super Fang"
-    ],
-    "aura": {
-      "effect": "None"
-    },
-    "sos": {
-      "primary": null,
-      "secondary": null
-    }
-  },
-  "S232": {
-    "id": "S232",
-    "name": "Raticate",
-    "level": 60,
-    "item": "Chople Berry",
-    "nature": "Impish",
-    "ability": "Unknown",
-    "abilitySlot": 4,
-    "moves": [
-      "Hyper Fang",
-      "Throat Chop",
-      "Protect",
-      "Double Team"
-    ],
-    "aura": {
-      "effect": "All Stats",
-      "boost": "+2"
-    },
-    "sos": {
-      "primary": "S233",
-      "secondary": null
-    }
-  },
-  "S233": {
-    "id": "S233",
-    "name": "Rattata",
-    "level": 58,
-    "item": null,
-    "nature": "Jolly",
-    "ability": "Unknown",
-    "abilitySlot": 4,
-    "moves": [
-      "Super Fang",
-      "Tail Whip",
-      "Torment",
-      "Crunch"
     ],
     "aura": {
       "effect": "None"
@@ -4692,7 +4602,7 @@
     "item": "Normalium Z",
     "nature": "Random",
     "ability": "Sheer Force",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Pain Split",
       "Take Down",
@@ -4714,7 +4624,7 @@
     "level": 42,
     "item": null,
     "nature": "Random",
-    "ability": "Telepathy (H)",
+    "ability": "Telepathy",
     "abilitySlot": 1,
     "moves": [
       "Hypnosis",
@@ -4737,7 +4647,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Bad Dreams",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Nasty Plot",
       "Psybeam",
@@ -4759,7 +4669,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Bad Dreams",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Poison Jab",
       "Disable",
@@ -4781,7 +4691,7 @@
     "item": "Sitrus Berry",
     "nature": "Random",
     "ability": "Cursed Body",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Hex",
       "Startle",
@@ -4803,7 +4713,7 @@
     "level": 23,
     "item": "Sitrus Berry",
     "nature": "Random",
-    "ability": "Aftermath (H)",
+    "ability": "Aftermath",
     "abilitySlot": 1,
     "moves": [
       "Startle",
@@ -4865,7 +4775,7 @@
     "level": 41,
     "item": "Enigma Berry",
     "nature": "Jolly",
-    "ability": "Color Change (H)",
+    "ability": "Color Change",
     "abilitySlot": 1,
     "moves": [
       "Transform",
@@ -4889,7 +4799,7 @@
     "item": "Metal Powder",
     "nature": "Bold",
     "ability": "Imposter",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Rest",
       "Mimic",
@@ -4911,7 +4821,7 @@
     "level": 41,
     "item": "Assault Vest",
     "nature": "Adamant",
-    "ability": "Color Change (H)",
+    "ability": "Color Change",
     "abilitySlot": 1,
     "moves": [
       "Transform",
@@ -4928,36 +4838,13 @@
       "secondary": null
     }
   },
-  "S245": {
-    "id": "S245",
-    "name": "Ditto",
-    "level": 41,
-    "item": "Quick Powder",
-    "nature": "Modest",
-    "ability": "Unknown",
-    "abilitySlot": 4,
-    "moves": [
-      "Camouflage",
-      "Mimic",
-      "Me First",
-      "Copycat"
-    ],
-    "aura": {
-      "effect": "All Stats",
-      "boost": "+2"
-    },
-    "sos": {
-      "primary": null,
-      "secondary": null
-    }
-  },
   "S246": {
     "id": "S246",
     "name": "Ditto",
     "level": 41,
     "item": "Leftovers",
     "nature": "Timid",
-    "ability": "Color Change (H)",
+    "ability": "Color Change",
     "abilitySlot": 1,
     "moves": [
       "Transform",
@@ -4981,7 +4868,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Aura Break",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Land’s Wrath",
       "Glare",
@@ -5003,7 +4890,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Solid Rock",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Defense",
@@ -5021,7 +4908,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Aftermath",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "Sp. Attack",
@@ -5034,12 +4921,12 @@
   },
   "S250": {
     "id": "S250",
-    "name": "Marowak",
+    "name": "Marowak 2",
     "level": 33,
     "item": "Chesto Berry",
     "nature": "Impish",
     "ability": "Multistriker",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [
       "Rock Smash",
       "Will-O-Wisp",
@@ -5061,7 +4948,7 @@
     "level": 31,
     "item": null,
     "nature": "Calm",
-    "ability": "Oblivious (H)",
+    "ability": "Oblivious",
     "abilitySlot": 1,
     "moves": [
       "Torment",
@@ -5084,7 +4971,7 @@
     "item": null,
     "nature": "Random",
     "ability": "Galvanize",
-    "abilitySlot": 2,
+    "abilitySlot": 1,
     "moves": [],
     "aura": {
       "effect": "None"

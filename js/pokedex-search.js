@@ -439,8 +439,10 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 			
 			buf += '<li class="result">' +
 				'<a href="' + Config.baseurl + 'encounters/' + s.id + '" data-target="push">' +
-					'<span class="picon" style="' + monIcon + ';display:inline-block;vertical-align:middle;margin-right:4px"></span>' +
 					'<span class="col namecol">' + display + ' (Lv. ' + s.level + ')</span>' +
+					'<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px">' +
+						'<span class="picon" style="' + monIcon + ';display:inline-block;vertical-align:middle"></span>' +
+					'</span>' +
 				'</a>' +
 			'</li>';
 		}

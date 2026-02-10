@@ -2227,7 +2227,7 @@
     "callrate": 15,
     "catchrate": 255,
     "gender": 127,
-    "tms": ["Protect","Thunderbolt","Hidden Power","Foul Play","Nasty Plot","Facade","Hyper Beam","Shadow Ball","Phantom Force","Venoshock","Acid Armor","Round","Energy Ball","Icy Wind","Mystical Fire","Will-O-Wisp","Explosion","Cold Snap","Psychic","Sludge Bomb","Tri Attack","Frost Breath","Thunder Punch","Knock Off","Dazzling Gleam"],
+    "tms": ["Protect","Thunderbolt","Hidden Power","Foul Play","Nasty Plot","Facade","Hyper Beam","Shadow Ball","Phantom Force","Venoshock","Acid Armor","Round","Energy Ball","Icy Wind","Mystical Fire","Will-O-Wisp","Explosion","Cold Snap","Psychic","Sludge Bomb","Tri Attack","Frost Breath","Giga Drain","Thunder Punch","Knock Off","Dazzling Gleam"],
     "tutors": ["Grassy Terrain","Rest","Trick","Gunk Shot","Substitute","Skill Swap","Trick Room","Rain Dance","Psych Up","Heal Block","Hyper Voice","Attract","Snore","Infestation","Confide","Echoed Voice","Pain Split","Sunny Day","Thief","Toxic","Misty Terrain","Double Team","Telekinesis","Ally Switch","Sleep Talk"],
     "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
   },
@@ -2251,7 +2251,7 @@
     "callrate": 15,
     "catchrate": 255,
     "gender": 127,
-    "tms": ["Protect","Thunderbolt","Calm Mind","Hidden Power","Foul Play","Nasty Plot","Facade","Hyper Beam","Psycho Cut","Shadow Ball","Phantom Force","Venoshock","Acid Armor","Round","Energy Ball","Icy Wind","Mystical Fire","Will-O-Wisp","Explosion","Drain Punch","Ice Punch","Cold Snap","Psychic","Sludge Bomb","Tri Attack","Fire Punch","Frost Breath","Shadow Claw","Thunder Punch","Mega Punch","Knock Off","Poison Jab","Dazzling Gleam","Thunder"],
+    "tms": ["Protect","Thunderbolt","Calm Mind","Hidden Power","Foul Play","Nasty Plot","Facade","Hyper Beam","Psycho Cut","Shadow Ball","Phantom Force","Venoshock","Acid Armor","Round","Energy Ball","Icy Wind","Mystical Fire","Will-O-Wisp","Explosion","Drain Punch","Ice Punch","Cold Snap","Psychic","Sludge Bomb","Tri Attack","Fire Punch","Frost Breath","Shadow Claw","Giga Drain","Thunder Punch","Mega Punch","Knock Off","Poison Jab","Dazzling Gleam","Thunder"],
     "tutors": ["Grassy Terrain","Embargo","Rest","Trick","Tickle","Gunk Shot","Substitute","Skill Swap","Trick Room","Rain Dance","Psych Up","Heal Block","Hyper Voice","Attract","Snore","Infestation","Confide","Echoed Voice","Pain Split","Sunny Day","Thief","Toxic","Misty Terrain","Double Team","Telekinesis","Ally Switch","Sleep Talk"],
     "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
   },
@@ -4891,7 +4891,7 @@
     "callrate": 15,
     "catchrate": 255,
     "gender": 127,
-    "tms": ["Protect","Earthquake","Psyshock","Thunderbolt","Calm Mind","Hidden Power","Foul Play","Light Screen","Reflect","Nasty Plot","Facade","Hyper Beam","Aqua Tail","Psycho Cut","Shadow Ball","Bulldoze","Round","Razor Wind","Iron Head","Energy Ball","Mystical Fire","Thunder Wave","Psychic Fangs","Psychic","Signal Beam","Tri Attack","Meditate","Shock Wave","Mega Kick","Blaze Kick","Zen Headbutt","Seed Bomb","Dazzling Gleam","Thunder","Trailblaze"],
+    "tms": ["Protect","Earthquake","Psyshock","Thunderbolt","Calm Mind","Hidden Power","Foul Play","Light Screen","Reflect","Nasty Plot","Facade","Hyper Beam","Aqua Tail","Psycho Cut","Shadow Ball","Bulldoze","Round","Razor Wind","Iron Head","Energy Ball","Mystical Fire","Thunder Wave","Psychic Fangs","Psychic","Signal Beam","Tri Attack","Meditate","Shock Wave","Mega Kick","Blaze Kick","Zen Headbutt","Seed Bomb","Nature Power","Dazzling Gleam","Thunder","Trailblaze"],
     "tutors": ["Grassy Terrain","Super Fang","Rest","Trick","Quash","Substitute","Skill Swap","Trick Room","Rain Dance","Psych Up","Iron Tail","Gravity","Grass Knot","Heal Block","Hyper Voice","Attract","Snore","Confide","Echoed Voice","Bug Bite","Pain Split","Agility","Sunny Day","Thief","Helping Hand","Toxic","Endeavor","Psychic Terrain","Misty Terrain","Double Team","Magic Coat","Telekinesis","Ally Switch","Heal Bell","Stomping Tantrum","Sleep Talk"],
     "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
   },
@@ -6053,12 +6053,12 @@
     "types": ["Grass"],
     "abilities": { "0": "Limber", "1": "Unburden", "H": "Overgrow" },
     "baseStats": {
-      "hp": 45,
+      "hp": 40,
       "atk": 65,
       "def": 45,
       "spa": 65,
       "spd": 55,
-      "spe": 75
+      "spe": 70
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Monster","Dragon"],
@@ -6081,8 +6081,8 @@
       "atk": 85,
       "def": 45,
       "spa": 85,
-      "spd": 65,
-      "spe": 100
+      "spd": 70,
+      "spe": 105
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Monster","Dragon"],
@@ -6127,7 +6127,7 @@
     "baseStats": {
       "hp": 45,
       "atk": 70,
-      "def": 50,
+      "def": 40,
       "spa": 70,
       "spd": 50,
       "spe": 65
@@ -6151,9 +6151,9 @@
     "baseStats": {
       "hp": 60,
       "atk": 85,
-      "def": 60,
+      "def": 65,
       "spa": 85,
-      "spd": 60,
+      "spd": 65,
       "spe": 80
 },
     "expgroup": "Medium-Slow",
@@ -6197,9 +6197,9 @@
     "types": ["Water"],
     "abilities": { "0": "Wonder Skin", "1": "Damp", "H": "Torrent" },
     "baseStats": {
-      "hp": 65,
+      "hp": 60,
       "atk": 70,
-      "def": 65,
+      "def": 60,
       "spa": 60,
       "spd": 50,
       "spe": 40
@@ -6224,7 +6224,7 @@
       "hp": 80,
       "atk": 85,
       "def": 75,
-      "spa": 60,
+      "spa": 70,
       "spd": 75,
       "spe": 55
 },
@@ -6339,7 +6339,7 @@
     "num": 264,
     "name": "Linoone",
     "types": ["Normal"],
-    "abilities": { "0": "Speed Boost", "1": "Guts", "H": "Gluttony" },
+    "abilities": { "0": "Speed Boost", "1": "Quick Feet", "H": "Gluttony" },
     "baseStats": {
       "hp": 78,
       "atk": 85,
@@ -6387,7 +6387,7 @@
     "num": 266,
     "name": "Silcoon",
     "types": ["Bug"],
-    "abilities": { "0": "Shed Skin", "1": "Shed Skin", "H": "Filter" },
+    "abilities": { "0": "Shed Skin", "1": "Wonder Skin", "H": "Filter" },
     "baseStats": {
       "hp": 50,
       "atk": 35,
@@ -6410,7 +6410,7 @@
   {
     "num": 267,
     "name": "Beautifly",
-    "types": ["Bug","Flying"],
+    "types": ["Bug","Fairy"],
     "abilities": { "0": "Shield Dust", "1": "Competitive", "H": "Swarm" },
     "baseStats": {
       "hp": 65,
@@ -6435,7 +6435,7 @@
     "num": 268,
     "name": "Cascoon",
     "types": ["Bug"],
-    "abilities": { "0": "Shed Skin", "1": "Shed Skin", "H": "Filter" },
+    "abilities": { "0": "Shed Skin", "1": "Poison Point", "H": "Filter" },
     "baseStats": {
       "hp": 55,
       "atk": 35,
@@ -6596,7 +6596,7 @@
     "catchrate": 255,
     "gender": 127,
     "tms": ["Protect","Brick Break","Close Combat","Calm Mind","Hidden Power","Foul Play","Nasty Plot","Facade","Rock Tomb","Solar Beam","Swords Dance","Shadow Ball","Low Sweep","Phantom Force","Power-Up Punch","Dizzy Punch","Snarl","Round","Razor Wind","Energy Ball","Explosion","Psychic","Rock Slide","Meditate","Giga Drain","Seed Bomb","Knock Off","Nature Power","Trailblaze"],
-    "tutors": ["Grass Pledge","Grassy Terrain","Embargo","Rest","Tickle","Quash","Substitute","Skill Swap","Rain Dance","Psych Up","Grass Knot","False Swipe","Attract","Snore","Confide","Echoed Voice","Pain Split","Sunny Day","Thief","Toxic","Endeavor","Double Team","Magic Coat","Ally Switch","Sleep Talk"],
+    "tutors": ["Grass Pledge","Grassy Terrain","Embargo","Rest","Tickle","Quash","Substitute","Skill Swap","Rain Dance","Psych Up","Fling","Grass Knot","False Swipe","Attract","Snore","Confide","Echoed Voice","Pain Split","Sunny Day","Thief","Toxic","Endeavor","Double Team","Magic Coat","Ally Switch","Sleep Talk"],
     "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
   },
   {
@@ -6874,7 +6874,7 @@
       "def": 80,
       "spa": 90,
       "spd": 60,
-      "spe": 83
+      "spe": 73
 },
     "expgroup": "Fluctuating",
     "egggroup": ["Fairy","Grass"],
@@ -7011,7 +7011,7 @@
     "num": 292,
     "name": "Shedinja",
     "types": ["Bug","Ghost"],
-    "abilities": { "0": "Wonder Guard", "1": "Wonder Guard", "H": "Wonder Guard" },
+    "abilities": { "0": "Wonder Guard", "1": "Wonder Guard", "H": "Huge Power" },
     "baseStats": {
       "hp": 1,
       "atk": 105,
@@ -7635,7 +7635,7 @@
     "num": 318,
     "name": "Carvanha",
     "types": ["Water","Dark"],
-    "abilities": { "0": "Speed Boost", "1": "Strong Jaw", "H": "Rough Skin" },
+    "abilities": { "0": "Speed Boost", "1": "Rough Skin", "H": "Anger Point" },
     "baseStats": {
       "hp": 45,
       "atk": 90,
@@ -7659,7 +7659,7 @@
     "num": 319,
     "name": "Sharpedo",
     "types": ["Water","Dark"],
-    "abilities": { "0": "Speed Boost", "1": "Strong Jaw", "H": "Rough Skin" },
+    "abilities": { "0": "Speed Boost", "1": "Rough Skin", "H": "Anger Point" },
     "baseStats": {
       "hp": 70,
       "atk": 120,
@@ -7899,7 +7899,7 @@
     "num": 329,
     "name": "Vibrava",
     "types": ["Bug","Dragon"],
-    "abilities": { "0": "Levitate", "1": "Sand Rush", "H": "Sand Force" },
+    "abilities": { "0": "Levitate", "1": "Sand Force", "H": "Sand Veil" },
     "baseStats": {
       "hp": 60,
       "atk": 70,
@@ -7923,7 +7923,7 @@
     "num": 330,
     "name": "Flygon",
     "types": ["Bug","Dragon"],
-    "abilities": { "0": "Levitate", "1": "Sand Rush", "H": "Sand Force" },
+    "abilities": { "0": "Levitate", "1": "Sand Stream", "H": "Sand Veil" },
     "baseStats": {
       "hp": 80,
       "atk": 105,
@@ -8043,7 +8043,7 @@
     "num": 335,
     "name": "Zangoose",
     "types": ["Normal"],
-    "abilities": { "0": "Tough Claws", "1": "Poison Heal", "H": "Toxic Boost" },
+    "abilities": { "0": "Toxic Boost", "1": "Immunity", "H": "Poison Heal" },
     "baseStats": {
       "hp": 73,
       "atk": 115,
@@ -8139,9 +8139,9 @@
     "num": 339,
     "name": "Barboach",
     "types": ["Water","Ground"],
-    "abilities": { "0": "Hydration", "1": "Gooey", "H": "Oblivious" },
+    "abilities": { "0": "Damp", "1": "Gooey", "H": "Oblivious" },
     "baseStats": {
-      "hp": 72,
+      "hp": 87,
       "atk": 48,
       "def": 53,
       "spa": 46,
@@ -8163,12 +8163,12 @@
     "num": 340,
     "name": "Whiscash",
     "types": ["Water","Ground"],
-    "abilities": { "0": "Water Bubble", "1": "Gooey", "H": "Unaware" },
+    "abilities": { "0": "Damp", "1": "Gooey", "H": "Unaware" },
     "baseStats": {
-      "hp": 122,
-      "atk": 70,
-      "def": 83,
-      "spa": 70,
+      "hp": 152,
+      "atk": 73,
+      "def": 81,
+      "spa": 73,
       "spd": 81,
       "spe": 60
 },
@@ -8235,7 +8235,7 @@
     "num": 343,
     "name": "Baltoy",
     "types": ["Ground","Psychic"],
-    "abilities": { "0": "Levitate", "1": "Magic Guard", "H": "Levitate" },
+    "abilities": { "0": "Levitate", "1": "Magic Guard", "H": "Neuroforce" },
     "baseStats": {
       "hp": 40,
       "atk": 40,
@@ -8259,7 +8259,7 @@
     "num": 344,
     "name": "Claydol",
     "types": ["Ground","Psychic"],
-    "abilities": { "0": "Levitate", "1": "Magic Guard", "H": "Levitate" },
+    "abilities": { "0": "Levitate", "1": "Magic Guard", "H": "Neuroforce" },
     "baseStats": {
       "hp": 75,
       "atk": 70,
@@ -8403,7 +8403,7 @@
     "num": 350,
     "name": "Milotic",
     "types": ["Water","Fairy"],
-    "abilities": { "0": "Regal Presence", "1": "Competitive", "H": "Marvel Scale" },
+    "abilities": { "0": "Regal Presence", "1": "Marvel Scale", "H": "Competitive" },
     "baseStats": {
       "hp": 95,
       "atk": 60,
@@ -8451,7 +8451,7 @@
     "num": 352,
     "name": "Kecleon",
     "types": ["Normal","Ghost"],
-    "abilities": { "0": "Color Change", "1": "Protean", "H": "Protean" },
+    "abilities": { "0": "Color Change", "1": "Protean", "H": "Wonder Skin" },
     "baseStats": {
       "hp": 70,
       "atk": 100,
@@ -8523,7 +8523,7 @@
     "num": 355,
     "name": "Duskull",
     "types": ["Ghost"],
-    "abilities": { "0": "Levitate", "1": "Frisk", "H": "Frisk" },
+    "abilities": { "0": "Levitate", "1": "Frisk", "H": "Anticipation" },
     "baseStats": {
       "hp": 40,
       "atk": 40,
@@ -8547,7 +8547,7 @@
     "num": 356,
     "name": "Dusclops",
     "types": ["Ghost"],
-    "abilities": { "0": "Cursed Body", "1": "Frisk", "H": "Frisk" },
+    "abilities": { "0": "Cursed Body", "1": "Frisk", "H": "Anticipation" },
     "baseStats": {
       "hp": 48,
       "atk": 70,
@@ -8594,8 +8594,8 @@
   {
     "num": 358,
     "name": "Chimecho",
-    "types": ["Psychic","Normal"],
-    "abilities": { "0": "Levitate", "1": "Levitate", "H": "Levitate" },
+    "types": ["Psychic","Steel"],
+    "abilities": { "0": "Levitate", "1": "Soundproof", "H": "Light Metal" },
     "baseStats": {
       "hp": 80,
       "atk": 50,
@@ -8618,7 +8618,7 @@
   {
     "num": 359,
     "name": "Absol",
-    "types": ["Dark","Fairy"],
+    "types": ["Dark"],
     "abilities": { "0": "Justified", "1": "Super Luck", "H": "Forewarn" },
     "baseStats": {
       "hp": 65,
@@ -8979,7 +8979,7 @@
     "num": 374,
     "name": "Beldum",
     "types": ["Steel","Psychic"],
-    "abilities": { "0": "Clear Body", "1": "Levitate", "H": "Levitate" },
+    "abilities": { "0": "Clear Body", "1": "Levitate", "H": "Heavy Metal" },
     "baseStats": {
       "hp": 40,
       "atk": 55,
@@ -9003,7 +9003,7 @@
     "num": 375,
     "name": "Metang",
     "types": ["Steel","Psychic"],
-    "abilities": { "0": "Clear Body", "1": "Levitate", "H": "Levitate" },
+    "abilities": { "0": "Clear Body", "1": "Levitate", "H": "Heavy Metal" },
     "baseStats": {
       "hp": 60,
       "atk": 85,
@@ -9027,7 +9027,7 @@
     "num": 376,
     "name": "Metagross",
     "types": ["Steel","Psychic"],
-    "abilities": { "0": "Full Metal Body", "1": "Bulletproof", "H": "Bulletproof" },
+    "abilities": { "0": "Full Metal Body", "1": "Light Metal", "H": "Heavy Metal" },
     "baseStats": {
       "hp": 80,
       "atk": 135,
@@ -9123,7 +9123,7 @@
     "num": 380,
     "name": "Latias",
     "types": ["Dragon","Psychic"],
-    "abilities": { "0": "Levitate", "1": "Levitate", "H": "Levitate" },
+    "abilities": { "0": "Levitate", "1": "Levitate", "H": "Prism Armor" },
     "baseStats": {
       "hp": 80,
       "atk": 80,
@@ -9147,7 +9147,7 @@
     "num": 381,
     "name": "Latios",
     "types": ["Dragon","Psychic"],
-    "abilities": { "0": "Levitate", "1": "Levitate", "H": "Levitate" },
+    "abilities": { "0": "Levitate", "1": "Levitate", "H": "Neuroforce" },
     "baseStats": {
       "hp": 80,
       "atk": 90,
@@ -9297,8 +9297,8 @@
       "atk": 68,
       "def": 64,
       "spa": 45,
-      "spd": 60,
-      "spe": 48
+      "spd": 55,
+      "spe": 43
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Monster","Grass"],
@@ -9320,7 +9320,7 @@
       "hp": 85,
       "atk": 89,
       "def": 85,
-      "spa": 55,
+      "spa": 65,
       "spd": 70,
       "spe": 46
 },
@@ -9366,9 +9366,9 @@
     "abilities": { "0": "Unburden", "1": "Iron Fist", "H": "Blaze" },
     "baseStats": {
       "hp": 44,
-      "atk": 65,
+      "atk": 60,
       "def": 49,
-      "spa": 68,
+      "spa": 63,
       "spd": 44,
       "spe": 80
 },
@@ -9391,10 +9391,10 @@
     "baseStats": {
       "hp": 64,
       "atk": 83,
-      "def": 52,
-      "spa": 78,
-      "spd": 52,
-      "spe": 101
+      "def": 56,
+      "spa": 80,
+      "spd": 54,
+      "spe": 103
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Field","Human-Like"],
@@ -9438,9 +9438,9 @@
     "abilities": { "0": "Competitive", "1": "Ice Body", "H": "Torrent" },
     "baseStats": {
       "hp": 61,
-      "atk": 65,
+      "atk": 60,
       "def": 53,
-      "spa": 70,
+      "spa": 65,
       "spd": 56,
       "spe": 45
 },
@@ -9462,11 +9462,11 @@
     "abilities": { "0": "Competitive", "1": "Ice Body", "H": "Torrent" },
     "baseStats": {
       "hp": 69,
-      "atk": 66,
-      "def": 78,
+      "atk": 71,
+      "def": 83,
       "spa": 81,
       "spd": 76,
-      "spe": 50
+      "spe": 60
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Water 1","Field"],
@@ -10394,8 +10394,8 @@
   {
     "num": 433,
     "name": "Chingling",
-    "types": ["Psychic","Normal"],
-    "abilities": { "0": "Levitate", "1": "Levitate", "H": "Levitate" },
+    "types": ["Psychic","Steel"],
+    "abilities": { "0": "Levitate", "1": "Soundproof", "H": "Light Metal" },
     "baseStats": {
       "hp": 45,
       "atk": 30,
@@ -11451,7 +11451,7 @@
     "num": 477,
     "name": "Dusknoir",
     "types": ["Ghost"],
-    "abilities": { "0": "Levitate", "1": "Shadow Shield", "H": "Shadow Shield" },
+    "abilities": { "0": "Levitate", "1": "Shadow Shield", "H": "Anticipation" },
     "baseStats": {
       "hp": 60,
       "atk": 100,
@@ -11492,7 +11492,7 @@
     "catchrate": 255,
     "gender": 254,
     "tms": ["Protect","Thunderbolt","Brick Break","Calm Mind","Hidden Power","Foul Play","Blizzard","Ice Beam","Light Screen","Reflect","Nasty Plot","Facade","Rock Tomb","Hyper Beam","Solar Beam","Shadow Ball","Water Pulse","Phantom Force","Round","Razor Wind","Iron Head","Icy Wind","Charge Beam","Thunder Wave","Will-O-Wisp","Explosion","Ice Punch","Cold Snap","Signal Beam","Tri Attack","Meditate","Frost Breath","Shadow Claw","Shock Wave","Zen Headbutt","Flash Cannon","Knock Off","Dazzling Gleam","Thunder","Trailblaze"],
-    "tutors": ["Grassy Terrain","Rest","Tickle","Substitute","Rain Dance","Grass Knot","Hyper Voice","False Swipe","Attract","Snore","Echoed Voice","Sunny Day","Hail","Helping Hand","Toxic","Outrage","Double Team","Sleep Talk"],
+    "tutors": ["Grassy Terrain","Rest","Trick","Tickle","Substitute","Rain Dance","Grass Knot","Hyper Voice","False Swipe","Attract","Snore","Echoed Voice","Sunny Day","Hail","Helping Hand","Toxic","Outrage","Double Team","Sleep Talk"],
     "zmove": { "Z-Move": "Never-Ending Nightmare-R", "Base Move": "Shadow Ball", "Z-Crystal": "Icium Z" }
   },
   {
@@ -11886,9 +11886,9 @@
     "abilities": { "0": "Contrary", "1": "Shed Skin", "H": "Overgrow" },
     "baseStats": {
       "hp": 45,
-      "atk": 60,
+      "atk": 55,
       "def": 55,
-      "spa": 60,
+      "spa": 55,
       "spd": 55,
       "spe": 75
 },
@@ -11913,7 +11913,7 @@
       "atk": 73,
       "def": 75,
       "spa": 72,
-      "spd": 65,
+      "spd": 75,
       "spe": 85
 },
     "expgroup": "Medium-Slow",
@@ -11959,10 +11959,10 @@
     "baseStats": {
       "hp": 70,
       "atk": 63,
-      "def": 62,
+      "def": 57,
       "spa": 45,
       "spd": 55,
-      "spe": 55
+      "spe": 50
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Field"],
@@ -11984,7 +11984,7 @@
       "hp": 90,
       "atk": 93,
       "def": 70,
-      "spa": 60,
+      "spa": 70,
       "spd": 62,
       "spe": 55
 },
@@ -12027,14 +12027,14 @@
     "num": 501,
     "name": "Oshawott",
     "types": ["Water"],
-    "abilities": { "0": "Rattled", "1": "Shell Armor", "H": "Torrent" },
+    "abilities": { "0": "Hyper Cutter", "1": "Shell Armor", "H": "Torrent" },
     "baseStats": {
       "hp": 55,
-      "atk": 65,
+      "atk": 60,
       "def": 55,
       "spa": 63,
       "spd": 55,
-      "spe": 57
+      "spe": 52
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Field"],
@@ -12051,14 +12051,14 @@
     "num": 502,
     "name": "Dewott",
     "types": ["Water","Fighting"],
-    "abilities": { "0": "Rattled", "1": "Shell Armor", "H": "Torrent" },
+    "abilities": { "0": "Hyper Cutter", "1": "Shell Armor", "H": "Torrent" },
     "baseStats": {
       "hp": 75,
       "atk": 89,
       "def": 71,
       "spa": 84,
-      "spd": 51,
-      "spe": 60
+      "spd": 56,
+      "spe": 65
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Field"],
@@ -12075,7 +12075,7 @@
     "num": 503,
     "name": "Samurott",
     "types": ["Water","Fighting"],
-    "abilities": { "0": "Weak Armor", "1": "Shell Armor", "H": "Torrent" },
+    "abilities": { "0": "Hyper Cutter", "1": "Shell Armor", "H": "Torrent" },
     "baseStats": {
       "hp": 95,
       "atk": 112,
@@ -12235,14 +12235,14 @@
     "callrate": 15,
     "catchrate": 255,
     "gender": 127,
-    "tms": ["Protect","Dig","Hidden Power","Foul Play","Nasty Plot","Facade","Hyper Beam","Swords Dance","Psycho Cut","Shadow Ball","Phantom Force","Play Rough","U-turn","Snarl","Round","Thunder Wave","Acrobatics","Cutting Edge","Psychic Fangs","Psychic","Tri Attack","Shadow Claw","Shock Wave","Aerial Ace","Seed Bomb","Knock Off","Thunder","Trailblaze"],
-    "tutors": ["Embargo","Rest","Trick","Tickle","Quash","Gunk Shot","Substitute","Skill Swap","Rain Dance","Psych Up","Iron Tail","Grass Knot","Heal Block","Hyper Voice","False Swipe","Attract","Snore","Confide","Echoed Voice","Pain Split","Moonblast","Agility","Sunny Day","Thief","Covet","Taunt","Toxic","Double Team","Magic Coat","Ally Switch","Sleep Talk"],
+    "tms": ["Protect","Dig","Hidden Power","Foul Play","Nasty Plot","Facade","Hyper Beam","Swords Dance","Psycho Cut","Shadow Ball","Phantom Force","Play Rough","U-turn","Snarl","Round","Thunder Wave","Acrobatics","Cutting Edge","Psychic Fangs","Psychic","Tri Attack","Shadow Claw","Shock Wave","Aerial Ace","Seed Bomb","Knock Off","Dazzling Gleam","Thunder","Trailblaze"],
+    "tutors": ["Embargo","Rest","Trick","Tickle","Quash","Gunk Shot","Substitute","Skill Swap","Rain Dance","Psych Up","Iron Tail","Grass Knot","Heal Block","Hyper Voice","False Swipe","Attract","Snore","Confide","Echoed Voice","Pain Split","Moonblast","Agility","Sunny Day","Thief","Covet","Helping Hand","Taunt","Toxic","Misty Terrain","Double Team","Magic Coat","Ally Switch","Sleep Talk"],
     "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
   },
   {
     "num": 510,
     "name": "Liepard",
-    "types": ["Dark"],
+    "types": ["Dark","Fairy"],
     "abilities": { "0": "Prankster", "1": "Magician", "H": "Limber" },
     "baseStats": {
       "hp": 80,
@@ -12259,8 +12259,8 @@
     "callrate": 15,
     "catchrate": 255,
     "gender": 127,
-    "tms": ["Protect","Psyshock","Dig","Calm Mind","Hidden Power","Foul Play","Nasty Plot","Facade","Hyper Beam","Dragon Claw","Swords Dance","Psycho Cut","Shadow Ball","X-Scissor","Phantom Force","Play Rough","U-turn","Air Slash","Snarl","Round","Thunder Wave","Acrobatics","Cutting Edge","Psychic Fangs","Psychic","Tri Attack","Shadow Claw","Shock Wave","Aerial Ace","Seed Bomb","Knock Off","Thunder","Trailblaze"],
-    "tutors": ["Embargo","Rest","Trick","Tickle","Quash","Gunk Shot","Substitute","Skill Swap","Rain Dance","Psych Up","Iron Tail","Fling","Grass Knot","Heal Block","Hyper Voice","False Swipe","Attract","Snore","Confide","Echoed Voice","Pain Split","Moonblast","Agility","Sunny Day","Thief","Covet","Roar","Taunt","Toxic","Endeavor","Double Team","Magic Coat","Ally Switch","Throat Chop","Sleep Talk"],
+    "tms": ["Protect","Psyshock","Dig","Calm Mind","Hidden Power","Foul Play","Nasty Plot","Facade","Hyper Beam","Dragon Claw","Swords Dance","Psycho Cut","Shadow Ball","X-Scissor","Phantom Force","Play Rough","U-turn","Air Slash","Snarl","Round","Thunder Wave","Acrobatics","Cutting Edge","Psychic Fangs","Psychic","Tri Attack","Shadow Claw","Shock Wave","Aerial Ace","Seed Bomb","Knock Off","Dazzling Gleam","Thunder","Trailblaze"],
+    "tutors": ["Embargo","Rest","Trick","Tickle","Quash","Gunk Shot","Substitute","Skill Swap","Rain Dance","Psych Up","Iron Tail","Fling","Grass Knot","Heal Block","Hyper Voice","False Swipe","Attract","Snore","Confide","Echoed Voice","Pain Split","Moonblast","Agility","Sunny Day","Thief","Covet","Helping Hand","Roar","Taunt","Toxic","Endeavor","Misty Terrain","Double Team","Magic Coat","Ally Switch","Throat Chop","Sleep Talk"],
     "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
   },
   {
@@ -13347,7 +13347,7 @@
     "num": 556,
     "name": "Maractus",
     "types": ["Grass","Water"],
-    "abilities": { "0": "Rough Skin", "1": "Storm Drain", "H": "Sand Rush" },
+    "abilities": { "0": "Rough Skin", "1": "Rain Dish", "H": "Sand Rush" },
     "baseStats": {
       "hp": 85,
       "atk": 86,
@@ -15555,7 +15555,7 @@
     "num": 648,
     "name": "Meloetta",
     "types": ["Fairy","Normal"],
-    "abilities": { "0": "Misty Surge", "1": "Download", "H": "Competitive" },
+    "abilities": { "0": "Dancer", "1": "Download", "H": "Misty Surge" },
     "baseStats": {
       "hp": 100,
       "atk": 77,
@@ -15606,8 +15606,8 @@
     "abilities": { "0": "Bulletproof", "1": "Rough Skin", "H": "Overgrow" },
     "baseStats": {
       "hp": 60,
-      "atk": 70,
-      "def": 80,
+      "atk": 65,
+      "def": 75,
       "spa": 48,
       "spd": 54,
       "spe": 38
@@ -15631,10 +15631,10 @@
     "baseStats": {
       "hp": 74,
       "atk": 87,
-      "def": 95,
+      "def": 100,
       "spa": 56,
       "spd": 61,
-      "spe": 57
+      "spe": 62
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Field"],
@@ -15677,7 +15677,7 @@
     "types": ["Fire"],
     "abilities": { "0": "Magician", "1": "Magic Guard", "H": "Blaze" },
     "baseStats": {
-      "hp": 50,
+      "hp": 40,
       "atk": 60,
       "def": 40,
       "spa": 70,
@@ -15702,7 +15702,7 @@
     "abilities": { "0": "Magician", "1": "Magic Guard", "H": "Blaze" },
     "baseStats": {
       "hp": 65,
-      "atk": 59,
+      "atk": 69,
       "def": 58,
       "spa": 90,
       "spd": 75,
@@ -15750,9 +15750,9 @@
     "abilities": { "0": "Protean", "1": "Regenerator", "H": "Torrent" },
     "baseStats": {
       "hp": 41,
-      "atk": 67,
+      "atk": 62,
       "def": 50,
-      "spa": 67,
+      "spa": 62,
       "spd": 44,
       "spe": 81
 },
@@ -15777,8 +15777,8 @@
       "atk": 83,
       "def": 52,
       "spa": 83,
-      "spd": 56,
-      "spe": 102
+      "spd": 61,
+      "spe": 107
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Water 1"],
@@ -17334,9 +17334,9 @@
     "abilities": { "0": "Long Reach", "1": "Sniper", "H": "Overgrow" },
     "baseStats": {
       "hp": 68,
-      "atk": 65,
+      "atk": 60,
       "def": 55,
-      "spa": 50,
+      "spa": 45,
       "spd": 50,
       "spe": 62
 },
@@ -17360,9 +17360,9 @@
       "hp": 78,
       "atk": 75,
       "def": 75,
-      "spa": 55,
+      "spa": 60,
       "spd": 65,
-      "spe": 82
+      "spe": 87
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Flying"],
@@ -17410,7 +17410,7 @@
       "def": 40,
       "spa": 60,
       "spd": 50,
-      "spe": 80
+      "spe": 70
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Field"],
@@ -17434,7 +17434,7 @@
       "def": 50,
       "spa": 80,
       "spd": 50,
-      "spe": 90
+      "spe": 100
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Field"],
@@ -17482,7 +17482,7 @@
       "def": 54,
       "spa": 66,
       "spd": 66,
-      "spe": 50
+      "spe": 40
 },
     "expgroup": "Medium-Slow",
     "egggroup": ["Water 1","Field"],
@@ -17502,10 +17502,10 @@
     "abilities": { "0": "Liquid Voice", "1": "Serene Grace", "H": "Torrent" },
     "baseStats": {
       "hp": 70,
-      "atk": 69,
+      "atk": 74,
       "def": 69,
       "spa": 91,
-      "spd": 81,
+      "spd": 86,
       "spe": 50
 },
     "expgroup": "Medium-Slow",
@@ -17635,7 +17635,7 @@
     "callrate": 15,
     "catchrate": 255,
     "gender": 127,
-    "tms": ["Protect","Thunderbolt","Dig","Hidden Power","Foul Play","Flame Charge","Facade","Rock Tomb","Hyper Beam","Aqua Tail","Bulldoze","U-turn","Round","Iron Head","Psychic Fangs","Tri Attack","Seed Bomb","Trailblaze"],
+    "tms": ["Protect","Thunderbolt","Dig","Hidden Power","Foul Play","Flame Charge","Facade","Rock Tomb","Hyper Beam","Aqua Tail","Bulldoze","U-turn","Snarl","Round","Iron Head","Psychic Fangs","Tri Attack","Seed Bomb","Trailblaze"],
     "tutors": ["Super Fang","Embargo","Rest","Quash","Substitute","Skill Swap","Rain Dance","Iron Tail","Sandstorm","Hyper Voice","Attract","Snore","Confide","Echoed Voice","Sunny Day","Thief","Helping Hand","Toxic","Endeavor","Double Team","Stomping Tantrum","Sleep Talk"],
     "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
   },
@@ -17659,8 +17659,8 @@
     "callrate": 15,
     "catchrate": 255,
     "gender": 127,
-    "tms": ["Protect","Earthquake","Thunderbolt","Dig","Hidden Power","Foul Play","Flame Charge","Nasty Plot","Facade","Rock Tomb","Hyper Beam","Aqua Tail","Low Sweep","Bulldoze","Power-Up Punch","U-turn","Round","Iron Head","Psychic Fangs","Ice Punch","Tri Attack","Fire Punch","Thunder Punch","Zen Headbutt","Seed Bomb","Mega Punch","Knock Off","Trailblaze"],
-    "tutors": ["Super Fang","Dual Chop","Embargo","Rest","Quash","Substitute","Skill Swap","Rain Dance","Iron Tail","Sandstorm","Hyper Voice","Attract","Snore","Confide","Echoed Voice","Sunny Day","Thief","Helping Hand","Roar","Toxic","Endeavor","Outrage","Double Team","Stomping Tantrum","Sleep Talk"],
+    "tms": ["Protect","Earthquake","Thunderbolt","Brick Break","Dig","Hidden Power","Foul Play","Flame Charge","Nasty Plot","Facade","Rock Tomb","Hyper Beam","Aqua Tail","Low Sweep","Bulldoze","Power-Up Punch","U-turn","Snarl","Round","Iron Head","Psychic Fangs","Ice Punch","Tri Attack","Fire Punch","Thunder Punch","Zen Headbutt","Flash Cannon","Seed Bomb","Mega Punch","Knock Off","Trailblaze"],
+    "tutors": ["Super Fang","Dual Chop","Embargo","Gyro Ball","Rest","Quash","Substitute","Skill Swap","Rain Dance","Iron Tail","Sandstorm","Superpower","Fling","Steel Beam","Hyper Voice","False Swipe","Attract","Snore","Confide","Echoed Voice","Sunny Day","Thief","Helping Hand","Roar","Taunt","Toxic","Endeavor","Outrage","Double Team","Stomping Tantrum","Sleep Talk"],
     "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
   },
   {
@@ -18067,8 +18067,8 @@
     "callrate": 15,
     "catchrate": 255,
     "gender": 127,
-    "tms": ["Protect","Earthquake","Surf","Hidden Power","Foul Play","Blizzard","Ice Beam","Reflect","Dive","Facade","Water Pulse","X-Scissor","U-turn","Electroweb","Acid Armor","Round","Iron Head","Scald","Icy Wind","Psychic Fangs","Cold Snap","Signal Beam","Sludge Bomb","Frost Breath","Mudslide","Giga Drain","Poison Jab","Trailblaze"],
-    "tutors": ["Hydro Cannon","Super Fang","Rest","Substitute","Rain Dance","Attract","Snore","Infestation","Bug Bite","Sticky Web","Gastro Acid","Toxic","Endeavor","Double Team","Magic Coat","Liquidation","Sleep Talk"],
+    "tms": ["Protect","Earthquake","Surf","Hidden Power","Foul Play","Blizzard","Ice Beam","Reflect","Dive","Facade","Water Pulse","X-Scissor","Venoshock","U-turn","Electroweb","Acid Armor","Round","Iron Head","Scald","Icy Wind","Psychic Fangs","Cold Snap","Signal Beam","Sludge Bomb","Frost Breath","Mudslide","Giga Drain","Poison Jab","Trailblaze"],
+    "tutors": ["Hydro Cannon","Super Fang","Rest","Gunk Shot","Substitute","Rain Dance","Attract","Snore","Infestation","Bug Bite","Sticky Web","Gastro Acid","Toxic","Endeavor","Double Team","Magic Coat","Liquidation","Sleep Talk"],
     "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
   },
   {
@@ -18098,7 +18098,7 @@
   {
     "num": 754,
     "name": "Lurantis",
-    "types": ["Grass","Fighting"],
+    "types": ["Grass"],
     "abilities": { "0": "Overgrow", "1": "Contrary", "H": "Leaf Guard" },
     "baseStats": {
       "hp": 75,
@@ -19227,7 +19227,7 @@
     "num": 801,
     "name": "Magearna",
     "types": ["Steel","Fairy"],
-    "abilities": { "0": "Soul-Heart", "1": "Zen Mode", "H": "Soul-Heart" },
+    "abilities": { "0": "Soul-Heart", "1": "Soul-Heart", "H": "Soul-Heart" },
     "baseStats": {
       "hp": 80,
       "atk": 95,
@@ -19875,7 +19875,7 @@
     "num": 828,
     "name": "Meloetta 1",
     "types": ["Fairy","Fighting"],
-    "abilities": { "0": "Dancer", "1": "Speed Boost", "H": "Defiant" },
+    "abilities": { "0": "Dancer", "1": "Download", "H": "Misty Surge" },
     "baseStats": {
       "hp": 100,
       "atk": 128,
@@ -22395,7 +22395,7 @@
     "num": 933,
     "name": "Greninja 2",
     "types": ["Water","Dark"],
-    "abilities": { "0": "Protean", "1": "Protean", "H": "Protean" },
+    "abilities": { "0": "Beast Boost", "1": "Beast Boost", "H": "Beast Boost" },
     "baseStats": {
       "hp": 74,
       "atk": 145,
@@ -23138,7 +23138,7 @@
   {
     "num": 964,
     "name": "Gumshoos 1",
-    "types": ["Normal"],
+    "types": ["Normal","Steel"],
     "abilities": { "0": "Regal Presence", "1": "Regal Presence", "H": "Regal Presence" },
     "baseStats": {
       "hp": 90,
@@ -23155,7 +23155,7 @@
     "callrate": 15,
     "catchrate": 255,
     "gender": 127,
-    "tms": ["Protect","Earthquake","Thunderbolt","Dig","Hidden Power","Foul Play","Flame Charge","Nasty Plot","Facade","Rock Tomb","Hyper Beam","Aqua Tail","Low Sweep","Bulldoze","Power-Up Punch","U-turn","Round","Iron Head","Psychic Fangs","Ice Punch","Tri Attack","Fire Punch","Mega Kick","Focus Blast","Thunder Punch","Zen Headbutt","Seed Bomb","Mega Punch","Knock Off","Poison Jab","Trailblaze"],
+    "tms": ["Protect","Earthquake","Thunderbolt","Dig","Hidden Power","Foul Play","Flame Charge","Nasty Plot","Facade","Rock Tomb","Hyper Beam","Aqua Tail","Low Sweep","Bulldoze","Power-Up Punch","U-turn","Snarl","Round","Iron Head","Psychic Fangs","Ice Punch","Tri Attack","Fire Punch","Mega Kick","Focus Blast","Thunder Punch","Zen Headbutt","Seed Bomb","Mega Punch","Knock Off","Poison Jab","Trailblaze"],
     "tutors": ["Super Fang","Embargo","Rest","Quash","Gunk Shot","Substitute","Skill Swap","Rain Dance","Iron Tail","Sandstorm","Hyper Voice","Attract","Snore","Confide","Echoed Voice","Sunny Day","Thief","Helping Hand","Toxic","Endeavor","Double Team","Stomping Tantrum","Sleep Talk"],
     "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
   },
@@ -23186,13 +23186,13 @@
   {
     "num": 966,
     "name": "Lurantis 1",
-    "types": ["Grass","Fighting"],
-    "abilities": { "0": "Regenerator", "1": "Regenerator", "H": "Regenerator" },
+    "types": ["Grass","Bug"],
+    "abilities": { "0": "Chlorophyll", "1": "Chlorophyll", "H": "Chlorophyll" },
     "baseStats": {
       "hp": 75,
-      "atk": 120,
+      "atk": 140,
       "def": 110,
-      "spa": 120,
+      "spa": 100,
       "spd": 100,
       "spe": 70
 },
@@ -23330,7 +23330,7 @@
   {
     "num": 972,
     "name": "Araquanid 1",
-    "types": ["Water","Bug"],
+    "types": ["Water","Poison"],
     "abilities": { "0": "Water Bubble", "1": "Water Bubble", "H": "Water Bubble" },
     "baseStats": {
       "hp": 74,
@@ -23379,7 +23379,7 @@
     "num": 974,
     "name": "Ribombee 1",
     "types": ["Bug","Fairy"],
-    "abilities": { "0": "Serene Grace", "1": "Serene Grace", "H": "Serene Grace" },
+    "abilities": { "0": "Cute Charm", "1": "Cute Charm", "H": "Cute Charm" },
     "baseStats": {
       "hp": 60,
       "atk": 66,
