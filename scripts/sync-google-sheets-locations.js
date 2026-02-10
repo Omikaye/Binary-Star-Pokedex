@@ -173,8 +173,12 @@ function parseItems(str) {
   if (!str || str.trim().toLowerCase() === 'none') return [];
   
   const items = [];
-  // Match pattern: ItemName [quantity] - Description
-  // Use a more robust regex to find all item entries
+  // Match pattern: ItemName [quantity] - Description, ItemName2 - Description2
+  // Examples: "Potion x5 - From Mom", "Rare Candy - Hidden", "TM01 - From NPC in Pokemon Center"
+  // Pattern breaks down: ([^,]+? non-greedy any chars except comma, 
+  //   (?:[x×]\s*\d+)? optional quantity like "x5" or "×10",
+  //   \s*-\s* dash separator with optional whitespace,
+  //   [^,]+? description until comma or end)
   const itemPattern = /([^,]+?\s*(?:[x×]\s*\d+)?\s*-\s*[^,]+?)(?=,|$)/g;
   const matches = str.match(itemPattern);
   
