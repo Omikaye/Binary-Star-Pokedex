@@ -4,7 +4,11 @@
 
 Your Binary Star Pokédex now has Google Sheets integration! You can manage location data in a Google Spreadsheet and sync it to your site with a single click.
 
-## What You Need To Do
+**Two Integration Types:**
+1. **BattleLocations** - Column-based format for complete location data
+2. **ItemLocations** - Table-based format specifically for items at each location
+
+## BattleLocations Sheet (Column-Based Format)
 
 ### Step 1: Make Your Google Sheet Public
 
@@ -122,12 +126,52 @@ You should see CSV data download. If you get an error, the sheet isn't public.
 
 **Solution:** Go to Settings → Actions → General → Workflow permissions → Enable "Read and write permissions"
 
+## ItemLocations Sheet (Table-Based Format)
+
+The ItemLocations sheet uses a different format optimized for managing items:
+
+### Format
+
+```
+Route 1
+Item          | Num | Method
+Poké Ball     | 10  | From Kukui after capture tutorial
+Potion        | 5   | From Kukui after capture tutorial
+
+Iki Town
+Item          | Num | Method
+Town Map      | 1   | From Hau
+```
+
+Each location is its own table with:
+- **Table name**: Location name
+- **Headers**: Item, Num, Method (or Quantity, How to Obtain)
+- **Rows**: Items at that location
+
+### How to Sync
+
+1. Find the **GID** of your ItemLocations sheet tab
+   - Click the ItemLocations tab
+   - Look at URL: `...edit#gid=XXXXXXX`
+   - The number after `gid=` is what you need
+
+2. Run the workflow:
+   - Actions → **Sync Item Locations from Google Sheets**
+   - Run workflow
+   - Enter the GID
+   - Run
+
+3. The workflow will merge items into your existing locations
+
+**See full guide:** `docs/ITEM_LOCATIONS_INTEGRATION.md`
+
 ## Documentation
 
 Full documentation is available:
 - **Quick Start**: `docs/SETUP_GOOGLE_SHEETS.md`
-- **Template & Examples**: `docs/GOOGLE_SHEETS_TEMPLATE.md`
-- **Complete Guide**: `docs/GOOGLE_SHEETS_INTEGRATION.md`
+- **BattleLocations Template**: `docs/GOOGLE_SHEETS_TEMPLATE.md`
+- **BattleLocations Guide**: `docs/GOOGLE_SHEETS_INTEGRATION.md`
+- **ItemLocations Guide**: `docs/ITEM_LOCATIONS_INTEGRATION.md`
 
 ## Need a Different Sheet?
 
