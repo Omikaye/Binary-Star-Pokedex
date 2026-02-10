@@ -22,7 +22,7 @@ const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?forma
 function fetchCSV(url) {
   return new Promise((resolve, reject) => {
     https.get(url, (res) => {
-      if (res.statusCode === 302 || res.statusCode === 301) {
+      if ([301, 302, 307, 308].includes(res.statusCode)) {
         // Follow redirect
         return fetchCSV(res.headers.location).then(resolve).catch(reject);
       }
