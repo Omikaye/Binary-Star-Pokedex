@@ -118,15 +118,16 @@ Before the sync script can access your sheet:
 
 ## Configuring the Script
 
-Update these values in `scripts/sync-google-sheets-locations.js`:
+The script is already configured to use your sheet:
 
 ```javascript
-const SHEET_ID = 'YOUR_SHEET_ID_HERE';  // From your sheet URL
-const SHEET_GID = '0';  // Sheet tab ID (usually 0 for first sheet)
+const SHEET_ID = '1x21QTXNVGAvrQsiDCGzF-m09ASGW8ofgxjoqcLmQYkE';  // Your current sheet
+const SHEET_GID = '0';  // BattleLocations sheet tab
 ```
 
-The SHEET_ID is the long string in your Google Sheets URL:
-`https://docs.google.com/spreadsheets/d/SHEET_ID/edit#gid=GID`
+To change to a different sheet:
+1. Get your Google Sheets URL: `https://docs.google.com/spreadsheets/d/SHEET_ID/edit#gid=GID`
+2. Update `SHEET_ID` and `SHEET_GID` in `scripts/sync-google-sheets-locations.js`
 
 ## Testing
 

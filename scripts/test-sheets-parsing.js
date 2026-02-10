@@ -124,9 +124,14 @@ function parseItems(str) {
   if (!str || str.trim().toLowerCase() === 'none') return [];
   
   const items = [];
-  const entries = str.split(/\s*,\s*(?=[A-Z])/);
+  // Match pattern: ItemName [quantity] - Description
+  // Use a more robust regex to find all item entries
+  const itemPattern = /([^,]+?\s*(?:[x×]\s*\d+)?\s*-\s*[^,]+?)(?=,|$)/g;
+  const matches = str.match(itemPattern);
   
-  for (const entry of entries) {
+  if (!matches) return [];
+  
+  for (const entry of matches) {
     const match = entry.match(/^(.+?)\s*-\s*(.+)$/);
     if (!match) continue;
     
