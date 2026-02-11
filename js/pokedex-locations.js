@@ -263,7 +263,131 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       buf += '<h3 style="margin-top:0;color:#7b4397">Boss Trainers</h3>' + renderTrainerList(loc.bossTrainers, true);
       buf += '</div>';
     }
-    // Shops
+    
+    // Battles
+    if (loc.battles && loc.battles.length) {
+      buf += '<div style="background:#f5f5f5;padding:12px;margin:8px 0;border-radius:4px">';
+      buf += '<h3 style="margin-top:0;color:#424242">Battles</h3>';
+      buf += '<ul class="utilichart nokbd">';
+      for (var bi = 0; bi < loc.battles.length; bi++) {
+        var battle = loc.battles[bi];
+        var battleID = battle.id;
+        var battleTag = battle.tag;
+        var battleNotes = battle.notes || '';
+        
+        // Get tag styling
+        var tagConfig = (window.BattleTags && window.BattleTags[battleTag]) || {
+          color: '#666',
+          backgroundColor: '#f0f0f0',
+          description: battleTag
+        };
+        
+        // Determine if this is a trainer or static encounter
+        var isStatic = battleID.match(/^[A-Za-z]/);
+        var linkTarget = isStatic ? 'static-encounters' : 'trainers';
+        
+        // Get trainer/encounter name
+        var battleName = '';
+        if (isStatic) {
+          var staticEnc = (window.StaticEncounters || []).find(function(se) { return se.id === battleID; });
+          battleName = staticEnc ? staticEnc.name : ('Static Encounter ' + battleID);
+        } else {
+          var trainer = (window.Trainers || []).find(function(t) { return t.id === battleID; });
+          battleName = trainer ? trainer.name : ('Trainer ' + battleID);
+        }
+        
+        buf += '<li class="result"><a href="' + Config.baseurl + linkTarget + '/' + battleID + '" data-target="push">';
+        buf += '<span class="col namecol">';
+        
+        // Add battle tag badge
+        buf += '<span class="battle-tag" style="display:inline-block;padding:2px 8px;margin-right:8px;border-radius:12px;font-size:0.75em;font-weight:600;color:' + tagConfig.color + ';background-color:' + tagConfig.backgroundColor + ';cursor:help" title="' + escapeHTML(tagConfig.description) + '">';
+        buf += escapeHTML(battleTag);
+        buf += '</span>';
+        
+        // Battle name
+        buf += escapeHTML(battleName);
+        
+        // Battle notes in lighter text
+        if (battleNotes) {
+          buf += ' <span style="color:#999;font-size:0.85em;font-weight:normal">' + escapeHTML(battleNotes) + '</span>';
+        }
+        
+        buf += '</span>';
+        buf += '</a></li>';
+      }
+      buf += '</ul>';
+      buf += '</div>';
+    }
+    
+    // Shop Tables (new format)
+    if (loc.shopTables && loc.shopTables.length) {
+      for (var sti = 0; sti < loc.shopTables.length; sti++) {
+        var shopTableName = loc.shopTables[sti];
+        var shopTable = (window.ShopTables && window.ShopTables[shopTableName]) || null;
+        
+        buf += '<div style="background:#fffde7;padding:12px;margin:8px 0;border-radius:4px">';
+        buf += '<h3 style="margin-top:0;color:#f57f17">' + escapeHTML(shopTableName) + '</h3>';
+        
+        if (shopTable && shopTable.items && shopTable.items.length) {
+          buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
+          buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:110px;text-align:center">Price</th></tr></thead><tbody>';
+          
+          for (var stii = 0; stii < shopTable.items.length; stii++) {
+            var shopItem = shopTable.items[stii];
+            var tmMatch = shopItem.item.match(/^TM\d+\s*\((.+)\)$/);
+            var shopIcon = '';
+            var linkTarget = '';
+            var linkType = 'items';
+            var itemID = '';
+            var shopItemData = null;
+            
+            if (tmMatch) {
+              // TM - use TM icon and link to move
+              var moveName = tmMatch[1].trim();
+              linkTarget = toID(moveName);
+              linkType = 'moves';
+              shopIcon = '<span class="itemicon" style="' + getItemIcon('tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+            } else if (shopItem.item === 'Poké Ball') {
+              // Fix Poké Ball to use pokball ID (toID removes the accented e)
+              itemID = 'pokball';
+              linkTarget = 'pokball';
+              shopItemData = BattleItems['pokball'];
+              if (shopItemData) {
+                shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
+              }
+            } else {
+              // Regular item
+              itemID = toID(shopItem.item);
+              linkTarget = itemID;
+              shopItemData = BattleItems[itemID];
+              if (shopItemData) {
+                shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
+              }
+            }
+            
+            buf += '<tr>';
+            buf += '<td>' + shopIcon + '</td>';
+            buf += '<td>';
+            if (tmMatch || shopItemData) {
+              buf += '<a href="' + Config.baseurl + linkType + '/' + linkTarget + '" data-target="push">' + escapeHTML(shopItem.item) + '</a>';
+            } else {
+              buf += escapeHTML(shopItem.item);
+            }
+            buf += '</td>';
+            buf += '<td style="text-align:center">' + escapeHTML(shopItem.price || '') + '</td>';
+            buf += '</tr>';
+          }
+          
+          buf += '</tbody></table>';
+        } else {
+          buf += '<p class="resultsub" style="color:#999">Shop data not available. Please update shop-tables.json.</p>';
+        }
+        
+        buf += '</div>';
+      }
+    }
+    
+    // Shops (legacy format)
     if (loc.shops && loc.shops.length) {
       buf += '<div style="background:#fffde7;padding:12px;margin:8px 0;border-radius:4px">';
       buf += '<h3 style="margin-top:0;color:#f57f17">Shops</h3>';

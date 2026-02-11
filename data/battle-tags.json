@@ -1,0 +1,42 @@
+{
+  "Story": {
+    "color": "#4CAF50",
+    "backgroundColor": "#E8F5E9",
+    "description": "Required story battle that must be completed to progress through the main storyline"
+  },
+  "Optional": {
+    "color": "#2196F3",
+    "backgroundColor": "#E3F2FD",
+    "description": "Optional trainer battle that can be skipped"
+  },
+  "Boss": {
+    "color": "#9C27B0",
+    "backgroundColor": "#F3E5F5",
+    "description": "Important boss battle against a significant trainer or Kahuna"
+  },
+  "Rematch": {
+    "color": "#FF9800",
+    "backgroundColor": "#FFF3E0",
+    "description": "Post-game rematch with a previously encountered trainer"
+  },
+  "Static": {
+    "color": "#F44336",
+    "backgroundColor": "#FFEBEE",
+    "description": "Static encounter with a wild Pokémon"
+  },
+  "Legendary": {
+    "color": "#FFD700",
+    "backgroundColor": "#FFFDE7",
+    "description": "Legendary or Mythical Pokémon encounter"
+  },
+  "Trial": {
+    "color": "#00BCD4",
+    "backgroundColor": "#E0F7FA",
+    "description": "Island Trial challenge"
+  },
+  "Totem": {
+    "color": "#E91E63",
+    "backgroundColor": "#FCE4EC",
+    "description": "Totem Pokémon battle during a trial"
+  }
+}

@@ -7,12 +7,18 @@
       "encounters": [],
       "giftsTrades": "",
       "staticPokemon": [],
-      "trainers": [
-        "S154"
-      ],
+      "trainers": [],
       "bossTrainers": [],
       "shops": [],
-      "items": []
+      "shopTables": [],
+      "items": [],
+      "battles": [
+        {
+          "id": "S154",
+          "tag": "Static",
+          "notes": "Alolan Rattata Tutorial"
+        }
+      ]
     },
     {
       "id": "ikitown",
@@ -21,12 +27,18 @@
       "encounters": [],
       "giftsTrades": "",
       "staticPokemon": [],
-      "trainers": [
-        "650"
-      ],
+      "trainers": [],
       "bossTrainers": [],
       "shops": [],
-      "items": []
+      "shopTables": [],
+      "items": [],
+      "battles": [
+        {
+          "id": "650",
+          "tag": "Boss",
+          "notes": "Kahuna Hala postgame rematch"
+        }
+      ]
     },
     {
       "id": "tencaratbeach",
@@ -35,12 +47,18 @@
       "encounters": [],
       "giftsTrades": "",
       "staticPokemon": [],
-      "trainers": [
-        "512"
-      ],
+      "trainers": [],
       "bossTrainers": [],
       "shops": [],
-      "items": []
+      "shopTables": ["Pokemart Basic"],
+      "items": [],
+      "battles": [
+        {
+          "id": "512",
+          "tag": "Optional",
+          "notes": "Youngster on the beach"
+        }
+      ]
     }
   ]
 }
