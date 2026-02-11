@@ -45,6 +45,26 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
     // Encounter title - show translated name
     buf += '<h1><a href="' + Config.baseurl + 'encounters/' + staticID + '" data-target="push" class="subtle">[' + encounter.id + '] ' + escapeHTML(translatedName) + ' (Lv. ' + encounter.level + ')</a></h1>';
 
+    // Find location and battle notes
+    var encounterLocation = null;
+    var battleNotes = '';
+    if (window.Locations) {
+      for (var i = 0; i < window.Locations.length; i++) {
+        var loc = window.Locations[i];
+        if (loc.battles) {
+          for (var bi = 0; bi < loc.battles.length; bi++) {
+            var battle = loc.battles[bi];
+            if (battle.id === staticID) {
+              encounterLocation = loc;
+              battleNotes = battle.notes || '';
+              break;
+            }
+          }
+        }
+        if (encounterLocation) break;
+      }
+    }
+
     // Main info card
     var bgColor = '#70c27a';
     buf += '<div style="border-radius:10px;overflow:hidden;margin-bottom:12px;border:1px solid rgba(0,0,0,0.08);box-shadow:0 2px 6px rgba(0,0,0,0.08)">';
@@ -61,6 +81,16 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
       buf += escapeHTML(encounter.name);
     }
     buf += '</dd>';
+    
+    // Location
+    if (encounterLocation) {
+      buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/' + encounterLocation.id + '" data-target="push">' + escapeHTML(encounterLocation.name) + '</a></dd>';
+    }
+    
+    // Description from battle notes (skip if "None")
+    if (battleNotes && battleNotes.trim() && battleNotes.trim().toLowerCase() !== 'none') {
+      buf += '<dt>Description:</dt> <dd>' + escapeHTML(battleNotes) + '</dd>';
+    }
     
     // Item
     if (encounter.item) {

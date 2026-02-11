@@ -320,8 +320,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         // Battle name
         buf += escapeHTML(battleName);
         
-        // Battle notes in lighter text
-        if (battleNotes) {
+        // Battle notes in lighter text (skip if "None")
+        if (battleNotes && battleNotes.trim().toLowerCase() !== 'none') {
           buf += ' <span style="color:#999;font-size:0.85em;font-weight:normal">' + escapeHTML(battleNotes) + '</span>';
         }
         

@@ -57,27 +57,41 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
 
     // Location - find trainer's location from Locations data
     var trainerLocation = null;
+    var battleNotes = '';
     if (window.Locations) {
       for (var i = 0; i < window.Locations.length; i++) {
         var loc = window.Locations[i];
-        if (loc.trainers && loc.trainers.indexOf(norm) !== -1) {
-          trainerLocation = loc;
-          break;
+        
+        // Check battles array for trainer ID and get notes
+        if (loc.battles) {
+          for (var bi = 0; bi < loc.battles.length; bi++) {
+            var battle = loc.battles[bi];
+            var battleID = String(battle.id).padStart(3, '0');
+            if (battleID === norm) {
+              trainerLocation = loc;
+              battleNotes = battle.notes || '';
+              break;
+            }
+          }
         }
-        if (loc.bossTrainers && loc.bossTrainers.indexOf(norm) !== -1) {
+        
+        if (!trainerLocation && loc.trainers && loc.trainers.indexOf(norm) !== -1) {
           trainerLocation = loc;
-          break;
         }
+        if (!trainerLocation && loc.bossTrainers && loc.bossTrainers.indexOf(norm) !== -1) {
+          trainerLocation = loc;
+        }
+        
+        if (trainerLocation) break;
       }
     }
     if (trainerLocation) {
       buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/' + trainerLocation.id + '" data-target="push">' + escapeHTML(trainerLocation.name) + '</a></dd>';
     }
     
-    // Extra Notes below location if present
-    var notes = (window.TrainerNotes && window.TrainerNotes[norm] && window.TrainerNotes[norm].extraNotes) || '';
-    if (typeof notes === 'string' && notes.trim().length) {
-      buf += '<dt>Extra Notes:</dt> <dd>' + escapeHTML(notes) + '</dd>';
+    // Description from battle notes (skip if "None")
+    if (battleNotes && battleNotes.trim() && battleNotes.trim().toLowerCase() !== 'none') {
+      buf += '<dt>Description:</dt> <dd>' + escapeHTML(battleNotes) + '</dd>';
     }
     buf += '</dl>';
 
