@@ -66,6 +66,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         if (loc.battles) {
           for (var bi = 0; bi < loc.battles.length; bi++) {
             var battle = loc.battles[bi];
+            // Convert both to strings and pad battle ID to match trainer ID format
             var battleID = String(battle.id).padStart(3, '0');
             if (battleID === norm) {
               trainerLocation = loc;

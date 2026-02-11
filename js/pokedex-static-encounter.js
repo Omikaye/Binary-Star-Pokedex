@@ -54,7 +54,8 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
         if (loc.battles) {
           for (var bi = 0; bi < loc.battles.length; bi++) {
             var battle = loc.battles[bi];
-            if (battle.id === staticID) {
+            // Convert both to strings for comparison
+            if (String(battle.id) === String(staticID)) {
               encounterLocation = loc;
               battleNotes = battle.notes || '';
               break;
