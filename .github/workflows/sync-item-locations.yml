@@ -1,4 +1,12 @@
-name: Sync Item Locations from Google Sheets
+name: Sync Item Locations from Google Sheets (Optional - Use Unified Workflow Instead)
+
+# NOTE: This workflow is kept for backward compatibility and special cases.
+# For normal use, run the "Sync Google Sheets Locations" workflow instead,
+# which syncs locations, shops, AND items all at once with hardcoded GIDs.
+#
+# Use this workflow ONLY if you need to:
+# - Sync items from a different sheet (custom GID)
+# - Sync ONLY items without touching other data
 
 on:
   workflow_dispatch:
@@ -6,7 +14,7 @@ on:
       item_locations_gid:
         description: 'GID of the ItemLocations sheet tab'
         required: true
-        default: ''
+        default: '1958269454'
         type: string
 
 permissions:

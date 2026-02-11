@@ -7,7 +7,7 @@ I've updated the Google Sheets synchronization system to address your requiremen
 ### 1. ✅ Fixed "Sync Item Locations" Workflow Error
 **Problem**: The workflow required manual GID input each time and was failing.
 
-**Solution**: The GID (1958269454) is now hardcoded in the unified workflow, eliminating the need for manual input.
+**Solution**: The GID (1958269454) is now hardcoded in the unified workflow, eliminating the need for manual input. The old "Sync Item Locations from Google Sheets" workflow is kept for special cases but is no longer needed for normal use.
 
 ### 2. ✅ Combined Workflows into One
 **Problem**: You had to run two separate workflows to sync locations and items.
@@ -113,7 +113,13 @@ X Attack	1	Hidden item
    - Hardcoded ItemLocations GID (1958269454)
    - Commits both `locations.json` and `shop-tables.json`
 
-2. **`scripts/sync-google-sheets-shop-tables.js`**
+2. **`.github/workflows/sync-item-locations.yml`** (OPTIONAL)
+   - Updated with note that it's optional
+   - Kept for special cases (custom GID or items-only sync)
+   - Default GID set to 1958269454
+   - **For normal use, use the unified workflow instead**
+
+3. **`scripts/sync-google-sheets-shop-tables.js`**
    - Added `parseTableBasedShopTables()` function
    - Auto-detects format (table-based vs column-based)
    - Supports your requested table format
