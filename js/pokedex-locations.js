@@ -263,6 +263,62 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       buf += '<h3 style="margin-top:0;color:#7b4397">Boss Trainers</h3>' + renderTrainerList(loc.bossTrainers, true);
       buf += '</div>';
     }
+    
+    // Battles
+    if (loc.battles && loc.battles.length) {
+      buf += '<div style="background:#f5f5f5;padding:12px;margin:8px 0;border-radius:4px">';
+      buf += '<h3 style="margin-top:0;color:#424242">Battles</h3>';
+      buf += '<ul class="utilichart nokbd">';
+      for (var bi = 0; bi < loc.battles.length; bi++) {
+        var battle = loc.battles[bi];
+        var battleID = battle.id;
+        var battleTag = battle.tag;
+        var battleNotes = battle.notes || '';
+        
+        // Get tag styling
+        var tagConfig = (window.BattleTags && window.BattleTags[battleTag]) || {
+          color: '#666',
+          backgroundColor: '#f0f0f0',
+          description: battleTag
+        };
+        
+        // Determine if this is a trainer or static encounter
+        var isStatic = battleID.match(/^[A-Za-z]/);
+        var linkTarget = isStatic ? 'static-encounters' : 'trainers';
+        
+        // Get trainer/encounter name
+        var battleName = '';
+        if (isStatic) {
+          var staticEnc = (window.StaticEncounters || []).find(function(se) { return se.id === battleID; });
+          battleName = staticEnc ? staticEnc.name : ('Static Encounter ' + battleID);
+        } else {
+          var trainer = (window.Trainers || []).find(function(t) { return t.id === battleID; });
+          battleName = trainer ? trainer.name : ('Trainer ' + battleID);
+        }
+        
+        buf += '<li class="result"><a href="' + Config.baseurl + linkTarget + '/' + battleID + '" data-target="push">';
+        buf += '<span class="col namecol">';
+        
+        // Add battle tag badge
+        buf += '<span class="battle-tag" style="display:inline-block;padding:2px 8px;margin-right:8px;border-radius:12px;font-size:0.75em;font-weight:600;color:' + tagConfig.color + ';background-color:' + tagConfig.backgroundColor + ';cursor:help" title="' + escapeHTML(tagConfig.description) + '">';
+        buf += escapeHTML(battleTag);
+        buf += '</span>';
+        
+        // Battle name
+        buf += escapeHTML(battleName);
+        
+        // Battle notes in lighter text
+        if (battleNotes) {
+          buf += ' <span style="color:#999;font-size:0.85em;font-weight:normal">' + escapeHTML(battleNotes) + '</span>';
+        }
+        
+        buf += '</span>';
+        buf += '</a></li>';
+      }
+      buf += '</ul>';
+      buf += '</div>';
+    }
+    
     // Shops
     if (loc.shops && loc.shops.length) {
       buf += '<div style="background:#fffde7;padding:12px;margin:8px 0;border-radius:4px">';

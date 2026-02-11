@@ -1,41 +1,24 @@
-// Sync locations from Google Sheets to data/locations.json
-// Sheet structure: Column A has field descriptions, subsequent columns are individual locations
-// Sheet URL: https://docs.google.com/spreadsheets/d/1x21QTXNVGAvrQsiDCGzF-m09ASGW8ofgxjoqcLmQYkE/edit?gid=0#gid=0
-// Sheet name: BattleLocations
+// Test script for enhanced Google Sheets location parsing with battles
+// This tests the new battle format parsing logic
 
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
 
 function toID(text) {
   return String(text || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
 }
 
-// Configuration
-const SHEET_ID = '1x21QTXNVGAvrQsiDCGzF-m09ASGW8ofgxjoqcLmQYkE';
-const SHEET_GID = '0'; // BattleLocations sheet
-const OUT = path.join(__dirname, '..', 'data', 'locations.json');
-
-// Export URL for CSV format
-const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${SHEET_GID}`;
-
-function fetchCSV(url) {
-  return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
-      if ([301, 302, 307, 308].includes(res.statusCode)) {
-        // Follow redirect
-        return fetchCSV(res.headers.location).then(resolve).catch(reject);
-      }
-      if (res.statusCode !== 200) {
-        reject(new Error(`Failed to fetch: ${res.statusCode}`));
-        return;
-      }
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => resolve(data));
-    }).on('error', reject);
-  });
-}
+// Sample CSV data with new battle format
+const SAMPLE_CSV = `"Field Description","Route 1","Hau'oli City","Melemele Meadow"
+"Name","Route 1","Hau'oli City","Melemele Meadow"
+"Location Notes","Starting route where you begin your journey. This Rattata is guaranteed to be your first catchable encounter here.","The main city on Melemele Island with shops and facilities","Beautiful meadow area with wild flowers"
+"Shops","Pokemart Basic","Pokemart Basic, Boutique Hau'oli",""
+"Battle 1","S154 - Static - Alolan Rattata Tutorial","491 - Story - Hau battle 1 | Rowlet Chosen","S023 - Static - Caterpie encounter"
+"Battle 2","","492 - Story - Hau battle 2 | Litten Chosen","501 - Optional - Youngster on path"
+"Battle 3","","","502 - Optional - Lass near flowers"
+"Grass Encounters","(Levels 3-5): Yungoos (10%), Rattata (20%)","","(Levels 4-6): Caterpie (40%), Metapod (30%)"
+"Trainers","","","010"
+"Items","Potion x5 - From Kukui","Town Map - From Mom","Antidote - Hidden in grass"`;
 
 function parseCSV(csvText) {
   const rows = [];
@@ -44,7 +27,6 @@ function parseCSV(csvText) {
   for (const line of lines) {
     if (!line.trim()) continue;
     
-    // Simple CSV parser - handles quoted fields
     const fields = [];
     let currentField = '';
     let inQuotes = false;
@@ -55,22 +37,18 @@ function parseCSV(csvText) {
       
       if (char === '"') {
         if (inQuotes && nextChar === '"') {
-          // Escaped quote
           currentField += '"';
-          i++; // Skip next quote
+          i++;
         } else {
-          // Toggle quotes
           inQuotes = !inQuotes;
         }
       } else if (char === ',' && !inQuotes) {
-        // Field separator
         fields.push(currentField);
         currentField = '';
       } else {
         currentField += char;
       }
     }
-    // Add last field
     fields.push(currentField);
     rows.push(fields);
   }
@@ -79,7 +57,6 @@ function parseCSV(csvText) {
 }
 
 function parseRange(str) {
-  // Parse level ranges like "13-15" or "13"
   if (!str) return null;
   const cleaned = str.toString().trim();
   const m = cleaned.match(/(\d+)(?:-(\d+))?/);
@@ -88,11 +65,9 @@ function parseRange(str) {
 }
 
 function parsePokemonList(str) {
-  // Parse pokemon entries like: "Yungoos (10%), Rattata (20%, SOS: Raticate)"
   if (!str || str.trim().toLowerCase() === 'none') return [];
   
   const pokemon = [];
-  // Match patterns like: Name (chance%, optional SOS info)
   const re = /([^,(]+)\s*\(([^)]+)\)/g;
   let match;
   
@@ -100,7 +75,6 @@ function parsePokemonList(str) {
     const name = match[1].trim();
     const inside = match[2];
     
-    // Parse inside: "10%" or "10%, SOS: Pokemon1, Pokemon2"
     const parts = inside.split(/,\s*/);
     let chance = null;
     const sos = [];
@@ -110,11 +84,9 @@ function parsePokemonList(str) {
       if (chanceMatch) {
         chance = parseInt(chanceMatch[1], 10);
       } else if (part.toLowerCase().startsWith('sos:')) {
-        // SOS Pokemon list after "SOS:"
         const sosList = part.replace(/^sos:\s*/i, '').trim();
         if (sosList) sos.push(...sosList.split(/\s*,\s*/));
       } else if (!chanceMatch && part.trim() && !part.includes('%')) {
-        // Additional SOS pokemon without SOS: prefix
         sos.push(part.trim());
       }
     }
@@ -125,34 +97,12 @@ function parsePokemonList(str) {
   return pokemon;
 }
 
-function parseEncounters(encounterData) {
-  // encounterData is an object with keys like "Grass", "Cave", etc.
-  // Each value is an object with levelRange and pokemon list
-  const encounters = [];
-  
-  for (const [spot, data] of Object.entries(encounterData)) {
-    if (!data || typeof data !== 'object') continue;
-    
-    const encounter = {
-      spot,
-      levelRange: data.levelRange || { min: 1, max: 1 },
-      pokemon: data.pokemon || []
-    };
-    
-    encounters.push(encounter);
-  }
-  
-  return encounters;
-}
-
 function parseList(str) {
-  // Parse comma-separated lists
   if (!str || str.trim().toLowerCase() === 'none') return [];
   return str.split(/\s*,\s*/).map(s => s.trim()).filter(s => s);
 }
 
 function parseShops(str) {
-  // Parse shop items: "Potion - $200, Super Potion - $700"
   if (!str || str.trim().toLowerCase() === 'none') return [];
   
   const shops = [];
@@ -169,16 +119,9 @@ function parseShops(str) {
 }
 
 function parseItems(str) {
-  // Parse items: "Poké Ball x10 - From Kukui, Revive - Hidden"
   if (!str || str.trim().toLowerCase() === 'none') return [];
   
   const items = [];
-  // Match pattern: ItemName [quantity] - Description, ItemName2 - Description2
-  // Examples: "Potion x5 - From Mom", "Rare Candy - Hidden", "TM01 - From NPC in Pokemon Center"
-  // Pattern breaks down: ([^,]+? non-greedy any chars except comma, 
-  //   (?:[x×]\s*\d+)? optional quantity like "x5" or "×10",
-  //   \s*-\s* dash separator with optional whitespace,
-  //   [^,]+? description until comma or end)
   const itemPattern = /([^,]+?\s*(?:[x×]\s*\d+)?\s*-\s*[^,]+?)(?=,|$)/g;
   const matches = str.match(itemPattern);
   
@@ -192,7 +135,6 @@ function parseItems(str) {
     const obtain = match[2].trim();
     let quantity = 1;
     
-    // Check for quantity like "x10" or "×5"
     const qtyMatch = itemPart.match(/(.+?)\s*[x×]\s*(\d+)/i);
     if (qtyMatch) {
       itemPart = qtyMatch[1].trim();
@@ -206,15 +148,11 @@ function parseItems(str) {
 }
 
 function parseShopTables(str) {
-  // Parse shop table names: "Pokemart 1, Pokemart 2, Special Shop"
   if (!str || str.trim().toLowerCase() === 'none') return [];
   return str.split(/\s*,\s*/).map(s => s.trim()).filter(s => s);
 }
 
 function parseBattle(str) {
-  // Parse battle format: "491 - Story - Hau battle 1 | Rowlet Chosen"
-  // Format: ID - Tag - Notes
-  // ID can be numeric (491) or alphanumeric (S023)
   if (!str || str.trim().toLowerCase() === 'none') return null;
   
   const parts = str.split(/\s*-\s*/);
@@ -233,10 +171,7 @@ function convertSheetToLocations(rows) {
     return [];
   }
   
-  // First column is field descriptions
   const fieldDescriptions = rows.map(row => row[0] ? row[0].trim() : '');
-  
-  // Subsequent columns are locations
   const locations = [];
   const numColumns = Math.max(...rows.map(row => row.length));
   
@@ -256,22 +191,18 @@ function convertSheetToLocations(rows) {
       battles: []
     };
     
-    let encounterData = {};
-    
     for (let row = 0; row < rows.length; row++) {
       const field = fieldDescriptions[row].toLowerCase();
       const value = rows[row][col] ? rows[row][col].trim() : '';
       
       if (!value) continue;
       
-      // Map fields based on description
       if (field.includes('name') && !field.includes('pokemon')) {
         location.name = value;
         location.id = toID(value);
       } else if (field.includes('location notes')) {
         location.notes = value;
       } else if (field === 'shops') {
-        // Shops field contains comma-separated shop table names
         location.shopTables = parseShopTables(value);
       } else if (field.includes('gifts') || field.includes('trades')) {
         location.giftsTrades = value;
@@ -282,12 +213,10 @@ function convertSheetToLocations(rows) {
       } else if (field.includes('trainer') && !field.includes('boss')) {
         location.trainers = parseList(value);
       } else if (field.includes('shop') && !field.startsWith('shops')) {
-        // Legacy shop item format: "Item - Price"
         location.shops = parseShops(value);
       } else if (field.includes('item') && !field.includes('pokemon')) {
         location.items = parseItems(value);
       } else if (field.match(/^battle\s+\d+$/i)) {
-        // Battle fields like "Battle 1", "Battle 2", etc.
         const battle = parseBattle(value);
         if (battle) {
           location.battles.push(battle);
@@ -295,7 +224,6 @@ function convertSheetToLocations(rows) {
       } else if (field.includes('grass') || field.includes('cave') || 
                  field.includes('water') || field.includes('fishing') ||
                  field.includes('encounter')) {
-        // Encounter type - look for format like "Grass (Levels 3-5): Pokemon list"
         const encounterMatch = value.match(/^([^:()]+)?(?:\(Levels?\s+([^)]+)\))?\s*:?\s*(.*)$/i);
         if (encounterMatch) {
           const spotName = encounterMatch[1] ? encounterMatch[1].trim() : field;
@@ -313,7 +241,6 @@ function convertSheetToLocations(rows) {
             });
           }
         } else {
-          // Try to parse as just pokemon list
           const pokemon = parsePokemonList(value);
           if (pokemon.length > 0) {
             location.encounters.push({
@@ -326,7 +253,6 @@ function convertSheetToLocations(rows) {
       }
     }
     
-    // Only add location if it has a name
     if (location.name) {
       locations.push(location);
     }
@@ -335,56 +261,130 @@ function convertSheetToLocations(rows) {
   return locations;
 }
 
-async function main() {
-  try {
-    console.log('Fetching data from Google Sheets...');
-    console.log('URL:', CSV_URL);
-    
-    const csvData = await fetchCSV(CSV_URL);
-    
-    if (!csvData || csvData.trim().length === 0) {
-      console.error('ERROR: Sheet appears to be empty or inaccessible.');
-      console.error('Please ensure:');
-      console.error('1. The sheet is publicly accessible (Anyone with the link can view)');
-      console.error('2. The sheet ID and GID are correct');
-      console.error('3. The BattleLocations sheet exists');
-      process.exit(1);
+// Run tests
+console.log('Testing enhanced Google Sheets location parsing with battles...\n');
+
+const rows = parseCSV(SAMPLE_CSV);
+console.log(`✓ Parsed ${rows.length} rows from CSV`);
+
+const locations = convertSheetToLocations(rows);
+console.log(`✓ Converted ${locations.length} locations\n`);
+
+// Verify results
+let allTestsPassed = true;
+
+// Test 1: Correct number of locations
+if (locations.length !== 3) {
+  console.error(`✗ Expected 3 locations, got ${locations.length}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ Correct number of locations (3)');
+}
+
+// Test 2: Location names
+const expectedNames = ['Route 1', "Hau'oli City", 'Melemele Meadow'];
+const actualNames = locations.map(l => l.name);
+if (JSON.stringify(actualNames) !== JSON.stringify(expectedNames)) {
+  console.error(`✗ Location names mismatch. Expected: ${expectedNames}, Got: ${actualNames}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ Location names correct');
+}
+
+// Test 3: Route 1 location notes
+const route1 = locations.find(l => l.id === 'route1');
+if (!route1) {
+  console.error('✗ Route 1 not found');
+  allTestsPassed = false;
+} else {
+  if (!route1.notes.includes('Starting route')) {
+    console.error(`✗ Route 1: Location notes incorrect: ${route1.notes}`);
+    allTestsPassed = false;
+  } else {
+    console.log('✓ Route 1 location notes correct');
+  }
+  
+  // Test battle parsing
+  if (route1.battles.length !== 1) {
+    console.error(`✗ Route 1: Expected 1 battle, got ${route1.battles.length}`);
+    allTestsPassed = false;
+  } else {
+    const battle = route1.battles[0];
+    if (battle.id !== 'S154' || battle.tag !== 'Static' || !battle.notes.includes('Rattata')) {
+      console.error(`✗ Route 1: Battle incorrectly parsed:`, battle);
+      allTestsPassed = false;
+    } else {
+      console.log('✓ Route 1 battle with alphanumeric ID parsed correctly');
     }
-    
-    console.log('Parsing CSV data...');
-    const rows = parseCSV(csvData);
-    console.log(`Parsed ${rows.length} rows`);
-    
-    if (rows.length === 0) {
-      console.error('ERROR: No data rows found in sheet');
-      process.exit(1);
-    }
-    
-    console.log('Converting to locations format...');
-    const locations = convertSheetToLocations(rows);
-    console.log(`Converted ${locations.length} locations`);
-    
-    if (locations.length === 0) {
-      console.error('WARNING: No locations were converted from the sheet');
-      console.error('First few rows of data:');
-      rows.slice(0, 5).forEach((row, i) => {
-        console.error(`Row ${i}:`, row.slice(0, 3));
-      });
-    }
-    
-    const output = { locations };
-    fs.writeFileSync(OUT, JSON.stringify(output, null, 2), 'utf8');
-    console.log('✓ Wrote', OUT, 'with', locations.length, 'locations');
-    
-    if (locations.length > 0) {
-      console.log('\nFirst location:');
-      console.log(JSON.stringify(locations[0], null, 2));
-    }
-  } catch (error) {
-    console.error('ERROR:', error.message);
-    console.error(error.stack);
-    process.exit(1);
   }
 }
 
-main();
+// Test 4: Hau'oli City shop tables and battles
+const hauoliCity = locations.find(l => l.id === 'hauolicity');
+if (!hauoliCity) {
+  console.error("✗ Hau'oli City not found");
+  allTestsPassed = false;
+} else {
+  if (hauoliCity.shopTables.length !== 2) {
+    console.error(`✗ Hau'oli City: Expected 2 shop tables, got ${hauoliCity.shopTables.length}`);
+    allTestsPassed = false;
+  } else if (hauoliCity.shopTables[0] !== 'Pokemart Basic' || hauoliCity.shopTables[1] !== 'Boutique Hau\'oli') {
+    console.error(`✗ Hau'oli City: Shop tables incorrect:`, hauoliCity.shopTables);
+    allTestsPassed = false;
+  } else {
+    console.log("✓ Hau'oli City shop tables parsed correctly");
+  }
+  
+  if (hauoliCity.battles.length !== 2) {
+    console.error(`✗ Hau'oli City: Expected 2 battles, got ${hauoliCity.battles.length}`);
+    allTestsPassed = false;
+  } else {
+    const battle1 = hauoliCity.battles[0];
+    const battle2 = hauoliCity.battles[1];
+    if (battle1.id !== '491' || battle1.tag !== 'Story' || !battle1.notes.includes('Rowlet')) {
+      console.error(`✗ Hau'oli City: Battle 1 incorrectly parsed:`, battle1);
+      allTestsPassed = false;
+    } else if (battle2.id !== '492' || battle2.tag !== 'Story' || !battle2.notes.includes('Litten')) {
+      console.error(`✗ Hau'oli City: Battle 2 incorrectly parsed:`, battle2);
+      allTestsPassed = false;
+    } else {
+      console.log("✓ Hau'oli City battles with notes parsed correctly");
+    }
+  }
+}
+
+// Test 5: Melemele Meadow multiple battles
+const meadow = locations.find(l => l.id === 'melemelemeadow');
+if (!meadow) {
+  console.error('✗ Melemele Meadow not found');
+  allTestsPassed = false;
+} else {
+  if (meadow.battles.length !== 3) {
+    console.error(`✗ Melemele Meadow: Expected 3 battles, got ${meadow.battles.length}`);
+    allTestsPassed = false;
+  } else {
+    const staticBattle = meadow.battles[0];
+    const optionalBattle1 = meadow.battles[1];
+    const optionalBattle2 = meadow.battles[2];
+    
+    if (staticBattle.tag !== 'Static' || optionalBattle1.tag !== 'Optional' || optionalBattle2.tag !== 'Optional') {
+      console.error('✗ Melemele Meadow: Battle tags incorrect');
+      allTestsPassed = false;
+    } else {
+      console.log('✓ Melemele Meadow multiple battles with different tags parsed correctly');
+    }
+  }
+}
+
+// Print full output for inspection
+console.log('\n--- Generated Output (First Location) ---');
+console.log(JSON.stringify(locations[0], null, 2));
+
+console.log('\n--- Test Summary ---');
+if (allTestsPassed) {
+  console.log('✓ All tests passed!');
+  process.exit(0);
+} else {
+  console.error('✗ Some tests failed');
+  process.exit(1);
+}

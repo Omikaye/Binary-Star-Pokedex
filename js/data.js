@@ -16,6 +16,7 @@ import TrainerSprites from "../data/trainer-sprites.json";
 import TrainerSpriteLinks from "../data/trainer-sprite-links.json";
 import BattleEvolutions from "../data/evolutions.json";
 import MegaEvolutions from "../data/mega-evolutions.json";
+import BattleTags from "../data/battle-tags.json";
 // Import editable data copies for the Pokeedit feature
 import BattlePokedexEdit from "../data/pokedex-edit.json";
 import LearnsetsEdit from "../data/learnsets-edit.json";
@@ -41,6 +42,7 @@ window.TrainerSprites = TrainerSprites;
 window.TrainerSpriteLinks = TrainerSpriteLinks;
 window.BattleEvolutions = BattleEvolutions;
 window.MegaEvolutions = MegaEvolutions;
+window.BattleTags = BattleTags;
 // Expose editable data copies
 window.BattlePokedexEdit = BattlePokedexEdit;
 window.LearnsetsEdit = LearnsetsEdit;
