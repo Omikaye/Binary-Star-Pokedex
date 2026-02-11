@@ -3,27 +3,64 @@
     {
       "id": "route1",
       "name": "Route 1",
-      "notes": "This Rattata is guaranteed to be your first catchable encounter here. If you are Nuzlocking, I highly recommend either skipping this Rattata, or counting it as a bonus/gift encounter, as otherwise you will always have this as your first Pokemon.",
+      "notes": "Route 1 is now only the road from your house to Iki Town. The beach and school are now officially labelled as different areas, so check your Pokemon's caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon. OOOOSNDSDSODN",
       "encounters": [],
       "giftsTrades": "",
       "staticPokemon": [],
       "trainers": [],
       "bossTrainers": [],
       "shops": [],
-      "shopTables": [],
+      "shopTables": [
+        "Pokemart"
+      ],
       "items": [],
       "battles": [
         {
+          "id": "491",
+          "tag": "Story",
+          "notes": "Hau battle 1 | Rowlet Chosen"
+        },
+        {
+          "id": "492",
+          "tag": "Story",
+          "notes": "Hau battle 1 | Litten Chosen"
+        },
+        {
+          "id": "493",
+          "tag": "Story",
+          "notes": "Hau battle 1 | Popplio Chosen"
+        },
+        {
+          "id": "25",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "28",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "459",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "S152",
+          "tag": "Story",
+          "notes": "This Yungoos appears the first time you enter grass. It is not capturable, as you shouldn't have Pokeballs yet."
+        },
+        {
           "id": "S154",
-          "tag": "Static",
-          "notes": "Alolan Rattata Tutorial"
+          "tag": "Story (C)",
+          "notes": "This Rattata is guaranteed to be your first capturable encounter here. If you are Nuzlocking, I highly recommend either skipping this Rattata, or counting it as a bonus/gift encounter, as otherwise you will always have this as your first Pokemon."
         }
       ]
     },
     {
       "id": "ikitown",
       "name": "Iki Town",
-      "notes": "[Boss] Postgame: Kahuna Hala rematch",
+      "notes": "Iki Town technically has no natural encounters here, but the Starter Pokemon can be considered to be from here.",
       "encounters": [],
       "giftsTrades": "",
       "staticPokemon": [],
@@ -34,29 +71,69 @@
       "items": [],
       "battles": [
         {
-          "id": "650",
+          "id": "S155",
+          "tag": "Story",
+          "notes": "This Spearow technically is Mahalo Bridge and not Iki Town, but it is a story battle."
+        },
+        {
+          "id": "9",
+          "tag": "Story",
+          "notes": "Hau battle 2 | Rowlet Chosen"
+        },
+        {
+          "id": "10",
+          "tag": "Story",
+          "notes": "Hau battle 2 | Litten Chosen"
+        },
+        {
+          "id": "11",
+          "tag": "Story",
+          "notes": "Hau battle 2 | Popplio Chosen"
+        },
+        {
+          "id": "23",
           "tag": "Boss",
-          "notes": "Kahuna Hala postgame rematch"
+          "notes": "Kahuna Hala | First Grand Trial | Reward: Fightinium Z, TM Twister"
+        },
+        {
+          "id": "363",
+          "tag": "Postgame Boss",
+          "notes": "Eevee User Quest"
+        },
+        {
+          "id": "650",
+          "tag": "Postgame Boss",
+          "notes": "Kahuna Hala Rematch"
         }
       ]
     },
     {
       "id": "tencaratbeach",
       "name": "Ten Carat Beach",
-      "notes": "None",
+      "notes": "Formerly known as 'Route 1', now this is its own location. | Scatterbug found here will evolve into Marine Pattern Vivillon",
       "encounters": [],
       "giftsTrades": "",
       "staticPokemon": [],
       "trainers": [],
       "bossTrainers": [],
       "shops": [],
-      "shopTables": ["Pokemart Basic"],
+      "shopTables": [],
       "items": [],
       "battles": [
         {
+          "id": "1",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "26",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
           "id": "512",
           "tag": "Optional",
-          "notes": "Youngster on the beach"
+          "notes": "None"
         }
       ]
     }
