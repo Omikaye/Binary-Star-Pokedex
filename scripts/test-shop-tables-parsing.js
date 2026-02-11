@@ -307,8 +307,8 @@ if (!route1Shop) {
     console.log('✓ Route 1 has correct number of items');
   }
   
-  const moveDeleter = route1Shop.items.find(i => i.item === 'Move Deleter');
-  if (!moveDeleter || moveDeleter.price !== 'Free') {
+  const moveDeleterItem = route1Shop.items.find(i => i.item === 'Move Deleter');
+  if (!moveDeleterItem || moveDeleterItem.price !== 'Free') {
     console.error('✗ Route 1: Move Deleter item incorrect');
     allTestsPassed = false;
   } else {

@@ -154,6 +154,11 @@ function parseTableBasedShopTables(rows) {
     const otherCellsEmpty = row.slice(1).every(c => !c || c.trim() === '');
     const firstCellHasDash = firstCell.includes(' - ');
     
+    // Only identify as shop name if:
+    // 1. First cell has content
+    // 2. Other cells are empty (table name row)
+    // 3. First cell doesn't have " - " (would indicate item data in column format)
+    // 4. No header found yet (prevents data rows from being misidentified as shop names)
     if (firstCell && otherCellsEmpty && !firstCellHasDash && !headerFound) {
       // This looks like a shop/location name
       currentShop = firstCell;
