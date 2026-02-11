@@ -293,7 +293,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         var battleName = '';
         var linkID = battleID;
         if (isStatic) {
-          var staticEnc = (window.StaticEncounters || []).find(function(se) { return se.id === battleID; });
+          var staticEncounters = window.StaticEncounters || {};
+          var staticEnc = staticEncounters[battleID];
           battleName = staticEnc ? staticEnc.name : ('Static Encounter ' + battleID);
         } else {
           // Pad trainer ID to 3 digits for lookup
