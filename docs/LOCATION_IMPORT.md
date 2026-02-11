@@ -20,9 +20,9 @@ Each column represents a location. The rows should be structured as follows:
 |-------------------|------------|------------|------------|
 | Name | Route 1 | Hau'oli City | Melemele Meadow |
 | Location Notes | Starting route description... | Main city description... | Meadow description... |
-| Shops | Pokemart Basic | Pokemart Basic, Boutique Hau'oli | |
-| Battle 1 | S154 - Static - Alolan Rattata Tutorial | 491 - Story - Hau battle 1 \| Rowlet Chosen | S023 - Static - Caterpie encounter |
-| Battle 2 | | 492 - Story - Hau battle 2 \| Litten Chosen | 501 - Optional - Youngster on path |
+| Shops | Pokémart Basic | Pokémart Basic, Boutique Hau'oli | |
+| Battle 1 | S154 - Static - Alolan Rattata Tutorial | 491 - Story - Hau battle 1 Rowlet Chosen | S023 - Static - Caterpie encounter |
+| Battle 2 | | 492 - Story - Hau battle 2 Litten Chosen | 501 - Optional - Youngster on path |
 | Battle 3 | | | 502 - Optional - Lass near flowers |
 
 #### Battle Format
@@ -33,7 +33,8 @@ Battles are defined in the format: `ID - Tag - Notes`
   - Numeric IDs (e.g., `491`) reference trainers from the trainers data
   - Alphanumeric IDs starting with letters (e.g., `S023`) reference static encounters
 - **Tag**: A category tag for the battle (e.g., `Story`, `Optional`, `Boss`, `Static`)
-- **Notes**: Additional descriptive text about the battle (e.g., `Hau battle 1 | Rowlet Chosen`)
+- **Notes**: Additional descriptive text about the battle (e.g., `Hau battle 1 - Rowlet Chosen`)
+  - The notes field can contain any text and special characters as needed
 
 #### Location Notes
 

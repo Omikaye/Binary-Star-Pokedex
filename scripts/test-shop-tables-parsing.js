@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Sample CSV data matching the expected ShopLocations format
-const SAMPLE_CSV = `"Pokemart Basic","Boutique Hau'oli","Battle Items Shop"
+const SAMPLE_CSV = `"Pokémart Basic","Boutique Hau'oli","Battle Items Shop"
 "Poké Ball - $200","Silk Scarf - $1000","X Attack - $500"
 "Potion - $200","Muscle Band - $1000","X Defense - $550"
 "Antidote - $200","Wise Glasses - $1000","X Speed - $350"
@@ -116,7 +116,7 @@ if (tableNames.length !== 3) {
 }
 
 // Test 2: Shop table names
-const expectedNames = ['Pokemart Basic', "Boutique Hau'oli", 'Battle Items Shop'];
+const expectedNames = ['Pokémart Basic', "Boutique Hau'oli", 'Battle Items Shop'];
 if (JSON.stringify(tableNames) !== JSON.stringify(expectedNames)) {
   console.error(`✗ Shop table names mismatch. Expected: ${expectedNames}, Got: ${tableNames}`);
   allTestsPassed = false;
@@ -124,25 +124,25 @@ if (JSON.stringify(tableNames) !== JSON.stringify(expectedNames)) {
   console.log('✓ Shop table names correct');
 }
 
-// Test 3: Pokemart Basic items
-const pokemartBasic = shopTables['Pokemart Basic'];
+// Test 3: Pokémart Basic items
+const pokemartBasic = shopTables['Pokémart Basic'];
 if (!pokemartBasic) {
-  console.error('✗ Pokemart Basic not found');
+  console.error('✗ Pokémart Basic not found');
   allTestsPassed = false;
 } else {
   if (pokemartBasic.items.length !== 5) {
-    console.error(`✗ Pokemart Basic: Expected 5 items, got ${pokemartBasic.items.length}`);
+    console.error(`✗ Pokémart Basic: Expected 5 items, got ${pokemartBasic.items.length}`);
     allTestsPassed = false;
   } else {
-    console.log('✓ Pokemart Basic has correct number of items');
+    console.log('✓ Pokémart Basic has correct number of items');
   }
   
   const pokeball = pokemartBasic.items.find(i => i.item === 'Poké Ball');
   if (!pokeball || pokeball.price !== '$200') {
-    console.error('✗ Pokemart Basic: Poké Ball item incorrect');
+    console.error('✗ Pokémart Basic: Poké Ball item incorrect');
     allTestsPassed = false;
   } else {
-    console.log('✓ Pokemart Basic items parsed correctly');
+    console.log('✓ Pokémart Basic items parsed correctly');
   }
 }
 
@@ -175,7 +175,7 @@ if (!battleShop) {
 }
 
 // Print full output for inspection
-console.log('\n--- Generated Output (Pokemart Basic) ---');
+console.log('\n--- Generated Output (Pokémart Basic) ---');
 console.log(JSON.stringify(pokemartBasic, null, 2));
 
 console.log('\n--- Test Summary ---');

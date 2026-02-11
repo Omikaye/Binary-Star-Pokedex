@@ -17,10 +17,6 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-function toID(text) {
-  return String(text || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
-}
-
 // Configuration
 const SHEET_ID = '1x21QTXNVGAvrQsiDCGzF-m09ASGW8ofgxjoqcLmQYkE';
 const SHEET_GID = '1527137776'; // ShopLocations sheet
