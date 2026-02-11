@@ -1,0 +1,14 @@
+{
+  "shopTables": {
+    "Pokemart Basic": {
+      "name": "Pokemart Basic",
+      "items": [
+        { "item": "Poké Ball", "price": "$200" },
+        { "item": "Potion", "price": "$200" },
+        { "item": "Antidote", "price": "$200" },
+        { "item": "Paralyze Heal", "price": "$200" },
+        { "item": "Awakening", "price": "$100" }
+      ]
+    }
+  }
+}

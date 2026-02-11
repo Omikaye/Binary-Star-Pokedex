@@ -319,7 +319,67 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       buf += '</div>';
     }
     
-    // Shops
+    // Shop Tables (new format)
+    if (loc.shopTables && loc.shopTables.length) {
+      for (var sti = 0; sti < loc.shopTables.length; sti++) {
+        var shopTableName = loc.shopTables[sti];
+        var shopTable = (window.ShopTables && window.ShopTables[shopTableName]) || null;
+        
+        buf += '<div style="background:#fffde7;padding:12px;margin:8px 0;border-radius:4px">';
+        buf += '<h3 style="margin-top:0;color:#f57f17">' + escapeHTML(shopTableName) + '</h3>';
+        
+        if (shopTable && shopTable.items && shopTable.items.length) {
+          buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
+          buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:110px;text-align:center">Price</th></tr></thead><tbody>';
+          
+          for (var stii = 0; stii < shopTable.items.length; stii++) {
+            var shopItem = shopTable.items[stii];
+            var tmMatch = shopItem.item.match(/^TM\d+\s*\((.+)\)$/);
+            var itemID = toID(shopItem.item);
+            var shopItemData = BattleItems[itemID];
+            var shopIcon = '';
+            var linkTarget = itemID;
+            var linkType = 'items';
+            
+            if (tmMatch) {
+              var moveName = tmMatch[1].trim();
+              linkTarget = toID(moveName);
+              linkType = 'moves';
+              shopIcon = '<span class="itemicon" style="' + getItemIcon('tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+            } else if (shopItem.item === 'Poké Ball') {
+              itemID = 'pokball';
+              linkTarget = 'pokball';
+              shopItemData = BattleItems['pokball'];
+              if (shopItemData) {
+                shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
+              }
+            } else if (shopItemData) {
+              shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
+            }
+            
+            buf += '<tr>';
+            buf += '<td>' + shopIcon + '</td>';
+            buf += '<td>';
+            if (tmMatch || shopItemData) {
+              buf += '<a href="' + Config.baseurl + linkType + '/' + linkTarget + '" data-target="push">' + escapeHTML(shopItem.item) + '</a>';
+            } else {
+              buf += escapeHTML(shopItem.item);
+            }
+            buf += '</td>';
+            buf += '<td style="text-align:center">' + escapeHTML(shopItem.price || '') + '</td>';
+            buf += '</tr>';
+          }
+          
+          buf += '</tbody></table>';
+        } else {
+          buf += '<p class="resultsub" style="color:#999">Shop data not available. Please update shop-tables.json.</p>';
+        }
+        
+        buf += '</div>';
+      }
+    }
+    
+    // Shops (legacy format)
     if (loc.shops && loc.shops.length) {
       buf += '<div style="background:#fffde7;padding:12px;margin:8px 0;border-radius:4px">';
       buf += '<h3 style="margin-top:0;color:#f57f17">Shops</h3>';
