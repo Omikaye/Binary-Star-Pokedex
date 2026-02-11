@@ -97,7 +97,7 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
         if (loc.trainers) {
           for (var i = 0; i < loc.trainers.length; i++) {
             var tid = loc.trainers[i];
-            var paddedTid = tid.padStart(3, '0');
+            var paddedTid = String(tid).padStart(3, '0');
             var trainer = (window.Trainers || []).find(function(t) { return t.id === paddedTid; });
             if (trainer && (trainer.name || '').toLowerCase().indexOf(query) >= 0) return true;
           }
@@ -105,7 +105,7 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
         if (loc.bossTrainers) {
           for (var i = 0; i < loc.bossTrainers.length; i++) {
             var tid = loc.bossTrainers[i];
-            var paddedTid = tid.padStart(3, '0');
+            var paddedTid = String(tid).padStart(3, '0');
             var trainer = (window.Trainers || []).find(function(t) { return t.id === paddedTid; });
             if (trainer && (trainer.name || '').toLowerCase().indexOf(query) >= 0) return true;
           }
@@ -239,7 +239,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       for (var i=0;i<ids.length;i++) {
         var tid = (ids[i]||'').trim();
         if (!tid) continue;
-        var paddedTid = tid.padStart(3, '0');
+        var paddedTid = String(tid).padStart(3, '0');
         var t = (window.Trainers||[]).find(function(tx){ return tx.id === paddedTid; });
         var tname = t ? t.name : ('Trainer ' + tid);
         // Get extra notes from trainer-notes.json
@@ -298,7 +298,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
           battleName = staticEnc ? staticEnc.name : ('Static Encounter ' + battleID);
         } else {
           // Pad trainer ID to 3 digits for lookup
-          var paddedTrainerID = battleID.padStart(3, '0');
+          var paddedTrainerID = String(battleID).padStart(3, '0');
           var trainer = (window.Trainers || []).find(function(t) { return t.id === paddedTrainerID; });
           battleName = trainer ? trainer.name : ('Trainer ' + battleID);
           linkID = paddedTrainerID; // Use padded ID for the link
