@@ -47,7 +47,11 @@ function parseCSV(csvText) {
   const lines = csvText.split(/\r?\n/);
   
   for (const line of lines) {
-    if (!line.trim()) continue;
+    // Keep empty lines for table-based format separation
+    if (!line.trim()) {
+      rows.push([]);
+      continue;
+    }
     
     const fields = [];
     let currentField = '';
@@ -91,12 +95,103 @@ function parseShopItem(str) {
   };
 }
 
+function parseTableBasedShopTables(rows) {
+  // Parse table-based format where each table starts with a shop/location name,
+  // followed by header row (Item, Cost/Price),
+  // followed by data rows with items
+  
+  const shopTables = {};
+  let currentShop = null;
+  let headerFound = false;
+  let itemColumnIndex = -1;
+  let priceColumnIndex = -1;
+  
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    
+    // Skip completely empty rows
+    if (row.every(cell => !cell || cell.trim() === '')) {
+      if (currentShop) {
+        headerFound = false;
+      }
+      continue;
+    }
+    
+    // Check if this is a header row (contains "Item" and "Cost"/"Price")
+    const rowText = row.map(c => (c || '').toLowerCase().trim());
+    const hasItem = rowText.some(c => c === 'item');
+    const hasPrice = rowText.some(c => c === 'cost' || c === 'price');
+    
+    if (hasItem && hasPrice) {
+      // This is a header row
+      headerFound = true;
+      
+      // Find column indices
+      itemColumnIndex = rowText.findIndex(c => c === 'item');
+      priceColumnIndex = rowText.findIndex(c => c === 'cost' || c === 'price');
+      
+      continue;
+    }
+    
+    // If we have a header and current shop, this is a data row
+    if (headerFound && currentShop && itemColumnIndex >= 0) {
+      const itemName = row[itemColumnIndex] ? row[itemColumnIndex].trim() : '';
+      const priceStr = row[priceColumnIndex] ? row[priceColumnIndex].trim() : '';
+      
+      if (itemName && priceStr) {
+        shopTables[currentShop].items.push({
+          item: itemName,
+          price: priceStr
+        });
+      }
+      continue;
+    }
+    
+    // Otherwise, check if this row is a table name (shop/location name)
+    // In table-based format, the table name is alone in the first cell
+    // and other cells in that row should be empty or not contain " - $" pattern
+    const firstCell = row[0] ? row[0].trim() : '';
+    const otherCellsEmpty = row.slice(1).every(c => !c || c.trim() === '');
+    const firstCellHasDash = firstCell.includes(' - ');
+    
+    // Only identify as shop name if:
+    // 1. First cell has content
+    // 2. Other cells are empty (table name row)
+    // 3. First cell doesn't have " - " (would indicate item data in column format)
+    // 4. No header found yet (prevents data rows from being misidentified as shop names)
+    if (firstCell && otherCellsEmpty && !firstCellHasDash && !headerFound) {
+      // This looks like a shop/location name
+      currentShop = firstCell;
+      
+      if (!shopTables[currentShop]) {
+        shopTables[currentShop] = {
+          name: currentShop,
+          items: []
+        };
+      }
+      
+      headerFound = false; // Will look for header next
+    }
+  }
+  
+  return shopTables;
+}
+
 function convertSheetToShopTables(rows) {
   if (rows.length < 2) {
     console.log('Sheet is empty or has insufficient data');
     return {};
   }
   
+  // Try table-based format first
+  const tableBasedShops = parseTableBasedShopTables(rows);
+  if (Object.keys(tableBasedShops).length > 0) {
+    console.log('Detected table-based format');
+    return tableBasedShops;
+  }
+  
+  // Fallback to column-based format
+  console.log('Using column-based format');
   const shopTables = {};
   const numColumns = Math.max(...rows.map(row => row.length));
   

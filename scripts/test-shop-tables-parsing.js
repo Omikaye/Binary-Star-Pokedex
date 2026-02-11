@@ -4,20 +4,38 @@
 const fs = require('fs');
 const path = require('path');
 
-// Sample CSV data matching the expected ShopLocations format
-const SAMPLE_CSV = `"Pokémart Basic","Boutique Hau'oli","Battle Items Shop"
+// Sample CSV data for column-based format (legacy)
+const SAMPLE_CSV_COLUMN = `"Pokémart Basic","Boutique Hau'oli","Battle Items Shop"
 "Poké Ball - $200","Silk Scarf - $1000","X Attack - $500"
 "Potion - $200","Muscle Band - $1000","X Defense - $550"
 "Antidote - $200","Wise Glasses - $1000","X Speed - $350"
 "Paralyze Heal - $200","Choice Band - $4000","X Sp. Atk - $350"
 "Awakening - $100","","X Sp. Def - $350"`;
 
+// Sample CSV data for table-based format (new format matching problem statement)
+const SAMPLE_CSV_TABLE = `Route 1
+Item,Cost
+Move Deleter,Free
+Smoke Ball,$1120
+Cleanse Tag,$770
+Sticky Barb,$1800
+
+Route 2
+Item,Price
+Potion,$200
+Super Potion,$700
+Revive,$2000`;
+
 function parseCSV(csvText) {
   const rows = [];
   const lines = csvText.split(/\r?\n/);
   
   for (const line of lines) {
-    if (!line.trim()) continue;
+    // Keep empty lines for table-based format
+    if (!line.trim()) {
+      rows.push([]);
+      continue;
+    }
     
     const fields = [];
     let currentField = '';
@@ -60,12 +78,98 @@ function parseShopItem(str) {
   };
 }
 
+function parseTableBasedShopTables(rows) {
+  // Parse table-based format where each table starts with a shop/location name,
+  // followed by header row (Item, Cost/Price),
+  // followed by data rows with items
+  
+  const shopTables = {};
+  let currentShop = null;
+  let headerFound = false;
+  let itemColumnIndex = -1;
+  let priceColumnIndex = -1;
+  
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    
+    // Skip completely empty rows
+    if (row.every(cell => !cell || cell.trim() === '')) {
+      if (currentShop) {
+        headerFound = false;
+      }
+      continue;
+    }
+    
+    // Check if this is a header row (contains "Item" and "Cost"/"Price")
+    const rowText = row.map(c => (c || '').toLowerCase().trim());
+    const hasItem = rowText.some(c => c === 'item');
+    const hasPrice = rowText.some(c => c === 'cost' || c === 'price');
+    
+    if (hasItem && hasPrice) {
+      // This is a header row
+      headerFound = true;
+      
+      // Find column indices
+      itemColumnIndex = rowText.findIndex(c => c === 'item');
+      priceColumnIndex = rowText.findIndex(c => c === 'cost' || c === 'price');
+      
+      continue;
+    }
+    
+    // If we have a header and current shop, this is a data row
+    if (headerFound && currentShop && itemColumnIndex >= 0) {
+      const itemName = row[itemColumnIndex] ? row[itemColumnIndex].trim() : '';
+      const priceStr = row[priceColumnIndex] ? row[priceColumnIndex].trim() : '';
+      
+      if (itemName && priceStr) {
+        shopTables[currentShop].items.push({
+          item: itemName,
+          price: priceStr
+        });
+      }
+      continue;
+    }
+    
+    // Otherwise, check if this row is a table name (shop/location name)
+    // In table-based format, the table name is alone in the first cell
+    // and other cells in that row should be empty or not contain " - $" pattern
+    const firstCell = row[0] ? row[0].trim() : '';
+    const otherCellsEmpty = row.slice(1).every(c => !c || c.trim() === '');
+    const firstCellHasDash = firstCell.includes(' - ');
+    
+    if (firstCell && otherCellsEmpty && !firstCellHasDash && !headerFound) {
+      // This looks like a shop/location name
+      currentShop = firstCell;
+      
+      if (!shopTables[currentShop]) {
+        shopTables[currentShop] = {
+          name: currentShop,
+          items: []
+        };
+      }
+      
+      headerFound = false; // Will look for header next
+    }
+  }
+  
+  return shopTables;
+}
+
 function convertSheetToShopTables(rows) {
   if (rows.length < 2) {
     console.log('Sheet is empty or has insufficient data');
     return {};
   }
   
+  // Try table-based format first
+  const tableBasedShops = parseTableBasedShopTables(rows);
+  if (Object.keys(tableBasedShops).length > 0) {
+    console.log('Detected table-based format');
+    return tableBasedShops;
+  }
+  
+  // Fallback to column-based format
+  console.log('Using column-based format');
   const shopTables = {};
   const numColumns = Math.max(...rows.map(row => row.length));
   
@@ -95,37 +199,37 @@ function convertSheetToShopTables(rows) {
 }
 
 // Run tests
-console.log('Testing shop tables parsing...\n');
+console.log('=== Testing Column-Based Format (Legacy) ===\n');
 
-const rows = parseCSV(SAMPLE_CSV);
-console.log(`✓ Parsed ${rows.length} rows from CSV`);
+const rowsColumn = parseCSV(SAMPLE_CSV_COLUMN);
+console.log(`✓ Parsed ${rowsColumn.length} rows from CSV`);
 
-const shopTables = convertSheetToShopTables(rows);
-const tableNames = Object.keys(shopTables);
-console.log(`✓ Converted ${tableNames.length} shop tables\n`);
+const shopTablesColumn = convertSheetToShopTables(rowsColumn);
+const tableNamesColumn = Object.keys(shopTablesColumn);
+console.log(`✓ Converted ${tableNamesColumn.length} shop tables\n`);
 
-// Verify results
+// Verify column-based results
 let allTestsPassed = true;
 
 // Test 1: Correct number of shop tables
-if (tableNames.length !== 3) {
-  console.error(`✗ Expected 3 shop tables, got ${tableNames.length}`);
+if (tableNamesColumn.length !== 3) {
+  console.error(`✗ Expected 3 shop tables, got ${tableNamesColumn.length}`);
   allTestsPassed = false;
 } else {
   console.log('✓ Correct number of shop tables (3)');
 }
 
 // Test 2: Shop table names
-const expectedNames = ['Pokémart Basic', "Boutique Hau'oli", 'Battle Items Shop'];
-if (JSON.stringify(tableNames) !== JSON.stringify(expectedNames)) {
-  console.error(`✗ Shop table names mismatch. Expected: ${expectedNames}, Got: ${tableNames}`);
+const expectedNamesColumn = ['Pokémart Basic', "Boutique Hau'oli", 'Battle Items Shop'];
+if (JSON.stringify(tableNamesColumn) !== JSON.stringify(expectedNamesColumn)) {
+  console.error(`✗ Shop table names mismatch. Expected: ${expectedNamesColumn}, Got: ${tableNamesColumn}`);
   allTestsPassed = false;
 } else {
   console.log('✓ Shop table names correct');
 }
 
 // Test 3: Pokémart Basic items
-const pokemartBasic = shopTables['Pokémart Basic'];
+const pokemartBasic = shopTablesColumn['Pokémart Basic'];
 if (!pokemartBasic) {
   console.error('✗ Pokémart Basic not found');
   allTestsPassed = false;
@@ -147,7 +251,7 @@ if (!pokemartBasic) {
 }
 
 // Test 4: Boutique with apostrophe in name
-const boutique = shopTables["Boutique Hau'oli"];
+const boutique = shopTablesColumn["Boutique Hau'oli"];
 if (!boutique) {
   console.error("✗ Boutique Hau'oli not found");
   allTestsPassed = false;
@@ -161,7 +265,7 @@ if (!boutique) {
 }
 
 // Test 5: Battle Items Shop
-const battleShop = shopTables['Battle Items Shop'];
+const battleShop = shopTablesColumn['Battle Items Shop'];
 if (!battleShop) {
   console.error('✗ Battle Items Shop not found');
   allTestsPassed = false;
@@ -174,9 +278,63 @@ if (!battleShop) {
   }
 }
 
+console.log('\n=== Testing Table-Based Format (New) ===\n');
+
+const rowsTable = parseCSV(SAMPLE_CSV_TABLE);
+console.log(`✓ Parsed ${rowsTable.length} rows from CSV`);
+
+const shopTablesTable = convertSheetToShopTables(rowsTable);
+const tableNamesTable = Object.keys(shopTablesTable);
+console.log(`✓ Converted ${tableNamesTable.length} shop tables\n`);
+
+// Test table-based format
+if (tableNamesTable.length !== 2) {
+  console.error(`✗ Expected 2 shop tables, got ${tableNamesTable.length}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ Correct number of shop tables (2)');
+}
+
+const route1Shop = shopTablesTable['Route 1'];
+if (!route1Shop) {
+  console.error('✗ Route 1 shop not found');
+  allTestsPassed = false;
+} else {
+  if (route1Shop.items.length !== 4) {
+    console.error(`✗ Route 1: Expected 4 items, got ${route1Shop.items.length}`);
+    allTestsPassed = false;
+  } else {
+    console.log('✓ Route 1 has correct number of items');
+  }
+  
+  const moveDeleterItem = route1Shop.items.find(i => i.item === 'Move Deleter');
+  if (!moveDeleterItem || moveDeleterItem.price !== 'Free') {
+    console.error('✗ Route 1: Move Deleter item incorrect');
+    allTestsPassed = false;
+  } else {
+    console.log('✓ Route 1 items parsed correctly (including "Free" price)');
+  }
+}
+
+const route2Shop = shopTablesTable['Route 2'];
+if (!route2Shop) {
+  console.error('✗ Route 2 shop not found');
+  allTestsPassed = false;
+} else {
+  if (route2Shop.items.length !== 3) {
+    console.error(`✗ Route 2: Expected 3 items, got ${route2Shop.items.length}`);
+    allTestsPassed = false;
+  } else {
+    console.log('✓ Route 2 has correct number of items');
+  }
+}
+
 // Print full output for inspection
-console.log('\n--- Generated Output (Pokémart Basic) ---');
+console.log('\n--- Column-Based Output (Pokémart Basic) ---');
 console.log(JSON.stringify(pokemartBasic, null, 2));
+
+console.log('\n--- Table-Based Output (Route 1) ---');
+console.log(JSON.stringify(route1Shop, null, 2));
 
 console.log('\n--- Test Summary ---');
 if (allTestsPassed) {
