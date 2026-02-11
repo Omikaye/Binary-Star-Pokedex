@@ -97,14 +97,16 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
         if (loc.trainers) {
           for (var i = 0; i < loc.trainers.length; i++) {
             var tid = loc.trainers[i];
-            var trainer = (window.Trainers || []).find(function(t) { return t.id === tid; });
+            var paddedTid = String(tid).padStart(3, '0');
+            var trainer = (window.Trainers || []).find(function(t) { return t.id === paddedTid; });
             if (trainer && (trainer.name || '').toLowerCase().indexOf(query) >= 0) return true;
           }
         }
         if (loc.bossTrainers) {
           for (var i = 0; i < loc.bossTrainers.length; i++) {
             var tid = loc.bossTrainers[i];
-            var trainer = (window.Trainers || []).find(function(t) { return t.id === tid; });
+            var paddedTid = String(tid).padStart(3, '0');
+            var trainer = (window.Trainers || []).find(function(t) { return t.id === paddedTid; });
             if (trainer && (trainer.name || '').toLowerCase().indexOf(query) >= 0) return true;
           }
         }
@@ -237,11 +239,12 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       for (var i=0;i<ids.length;i++) {
         var tid = (ids[i]||'').trim();
         if (!tid) continue;
-        var t = (window.Trainers||[]).find(function(tx){ return tx.id === tid; });
+        var paddedTid = String(tid).padStart(3, '0');
+        var t = (window.Trainers||[]).find(function(tx){ return tx.id === paddedTid; });
         var tname = t ? t.name : ('Trainer ' + tid);
         // Get extra notes from trainer-notes.json
-        var tnotes = (window.TrainerNotes && window.TrainerNotes[tid]) ? window.TrainerNotes[tid].extraNotes : '';
-        out += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + tid + '" data-target="push">';
+        var tnotes = (window.TrainerNotes && window.TrainerNotes[paddedTid]) ? window.TrainerNotes[paddedTid].extraNotes : '';
+        out += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + paddedTid + '" data-target="push">';
         out += '<span class="col namecol">' + escapeHTML(tname);
         if (tnotes) {
           out += ' <span style="color:#777;font-size:0.85em">(' + escapeHTML(tnotes) + ')</span>';
@@ -284,19 +287,29 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         
         // Determine if this is a trainer or static encounter
         var isStatic = battleID.match(/^[A-Za-z]/);
-        var linkTarget = isStatic ? 'static-encounters' : 'trainers';
+        var linkTarget = isStatic ? 'encounters' : 'trainers';
         
         // Get trainer/encounter name
         var battleName = '';
+        var linkID = battleID;
         if (isStatic) {
-          var staticEnc = (window.StaticEncounters || []).find(function(se) { return se.id === battleID; });
-          battleName = staticEnc ? staticEnc.name : ('Static Encounter ' + battleID);
+          var staticEncounters = window.StaticEncounters || {};
+          var staticEnc = staticEncounters[battleID];
+          if (staticEnc) {
+            // Translate display name (e.g., "Rattata 1" -> "Rattata-Alola")
+            battleName = window.translateDisplayName ? window.translateDisplayName(staticEnc.name) : staticEnc.name;
+          } else {
+            battleName = 'Static Encounter ' + battleID;
+          }
         } else {
-          var trainer = (window.Trainers || []).find(function(t) { return t.id === battleID; });
+          // Pad trainer ID to 3 digits for lookup
+          var paddedTrainerID = String(battleID).padStart(3, '0');
+          var trainer = (window.Trainers || []).find(function(t) { return t.id === paddedTrainerID; });
           battleName = trainer ? trainer.name : ('Trainer ' + battleID);
+          linkID = paddedTrainerID; // Use padded ID for the link
         }
         
-        buf += '<li class="result"><a href="' + Config.baseurl + linkTarget + '/' + battleID + '" data-target="push">';
+        buf += '<li class="result"><a href="' + Config.baseurl + linkTarget + '/' + linkID + '" data-target="push">';
         buf += '<span class="col namecol">';
         
         // Add battle tag badge
@@ -307,8 +320,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         // Battle name
         buf += escapeHTML(battleName);
         
-        // Battle notes in lighter text
-        if (battleNotes) {
+        // Battle notes in lighter text (skip if "None")
+        if (battleNotes && battleNotes.trim().toLowerCase() !== 'none') {
           buf += ' <span style="color:#999;font-size:0.85em;font-weight:normal">' + escapeHTML(battleNotes) + '</span>';
         }
         
