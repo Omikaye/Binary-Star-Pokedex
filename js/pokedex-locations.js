@@ -287,7 +287,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         
         // Determine if this is a trainer or static encounter
         var isStatic = battleID.match(/^[A-Za-z]/);
-        var linkTarget = isStatic ? 'static-encounters' : 'trainers';
+        var linkTarget = isStatic ? 'encounters' : 'trainers';
         
         // Get trainer/encounter name
         var battleName = '';
@@ -295,7 +295,12 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         if (isStatic) {
           var staticEncounters = window.StaticEncounters || {};
           var staticEnc = staticEncounters[battleID];
-          battleName = staticEnc ? staticEnc.name : ('Static Encounter ' + battleID);
+          if (staticEnc) {
+            // Translate display name (e.g., "Rattata 1" -> "Rattata-Alola")
+            battleName = window.translateDisplayName ? window.translateDisplayName(staticEnc.name) : staticEnc.name;
+          } else {
+            battleName = 'Static Encounter ' + battleID;
+          }
         } else {
           // Pad trainer ID to 3 digits for lookup
           var paddedTrainerID = String(battleID).padStart(3, '0');

@@ -15,7 +15,10 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
     }
 
     this.encounter = encounter;
-    this.shortTitle = encounter.name + ' (Lv. ' + encounter.level + ')';
+    
+    // Translate display name (e.g., "Rattata 1" -> "Rattata-Alola")
+    const translatedName = window.translateDisplayName ? window.translateDisplayName(encounter.name) : encounter.name;
+    this.shortTitle = translatedName + ' (Lv. ' + encounter.level + ')';
 
     var buf = '<div class="pfx-body dexentry" style="position:relative">';
     buf += '<style>' +
@@ -30,8 +33,8 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
 
     buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Encounters</a>';
     
-    // Get pokemon data for the full art sprite
-    const monID = toID(encounter.name);
+    // Get pokemon data for the full art sprite using translated name
+    const monID = toID(translatedName);
     const monData = BattlePokedex[monID];
     
     // Add full art Pokédex sprite to top right
@@ -39,8 +42,8 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
       buf += '<img src="' + ResourcePrefix + 'sprites/gen5/' + monID + '.png" alt="" width="96" height="96" class="encounter-sprite" />';
     }
     
-    // Encounter title
-    buf += '<h1><a href="' + Config.baseurl + 'encounters/' + staticID + '" data-target="push" class="subtle">[' + encounter.id + '] ' + escapeHTML(encounter.name) + ' (Lv. ' + encounter.level + ')</a></h1>';
+    // Encounter title - show translated name
+    buf += '<h1><a href="' + Config.baseurl + 'encounters/' + staticID + '" data-target="push" class="subtle">[' + encounter.id + '] ' + escapeHTML(translatedName) + ' (Lv. ' + encounter.level + ')</a></h1>';
 
     // Main info card
     var bgColor = '#70c27a';
@@ -183,7 +186,9 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
         var sosData = staticEncounters[sosEnc.id];
         if (!sosData) continue;
         
-        var sosPokemonID = toID(sosData.name);
+        // Translate display name for SOS encounters
+        var sosTranslatedName = window.translateDisplayName ? window.translateDisplayName(sosData.name) : sosData.name;
+        var sosPokemonID = toID(sosTranslatedName);
         var sosPokemonData = BattlePokedex[sosPokemonID];
         var bg = colors[si % colors.length];
         
@@ -196,7 +201,7 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
         if (sosPokemonData) {
           buf += '<a href="' + Config.baseurl + 'pokemon/' + sosPokemonID + '" data-target="push" class="subtle" style="text-decoration:none"><div style="font-size:16px;font-weight:600">' + escapeHTML(sosPokemonData.name) + ' <small>(Lv. ' + sosData.level + ')</small></div></a>';
         } else {
-          buf += '<div style="font-size:16px;font-weight:600">' + escapeHTML(sosData.name) + ' <small>(Lv. ' + sosData.level + ')</small></div>';
+          buf += '<div style="font-size:16px;font-weight:600">' + escapeHTML(sosTranslatedName) + ' <small>(Lv. ' + sosData.level + ')</small></div>';
         }
         buf += '</div>';
         
