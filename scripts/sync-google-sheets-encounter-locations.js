@@ -34,7 +34,7 @@ function fetchCSV(url) {
         const location = res.headers.location;
         const redirectUrl = /^https?:\/\//.test(location) ? location : new URL(location, url).href;
         const redirectHost = new URL(redirectUrl).hostname;
-        if (!redirectHost.endsWith('.google.com') && !redirectHost.endsWith('.googleapis.com')) {
+        if (!redirectHost.endsWith('.google.com') && !redirectHost.endsWith('.googleapis.com') && !redirectHost.endsWith('.googleusercontent.com')) {
           reject(new Error(`Unexpected redirect to ${redirectHost}`));
           return;
         }
