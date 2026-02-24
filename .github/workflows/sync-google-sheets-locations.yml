@@ -36,6 +36,18 @@ jobs:
           npm run sync-encounter-locations
           echo "EncounterLocations sync complete."
 
+      - name: Sync ShopLocations from Google Sheets
+        run: |
+          echo "Syncing ShopLocations (GID 1527137776)..."
+          npm run sync-sheets-shop-tables
+          echo "ShopLocations sync complete."
+
+      - name: Sync ItemLocations from Google Sheets
+        run: |
+          echo "Syncing ItemLocations (GID 1958269454)..."
+          npm run sync-item-locations
+          echo "ItemLocations sync complete."
+
       - name: Validate locations data
         run: node scripts/validate-locations.js
 
@@ -43,11 +55,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/locations.json
+          git add data/locations.json data/shop-tables.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update locations from Google Sheets (BattleLocations + EncounterLocations)"
+            git commit -m "Update locations from Google Sheets (BattleLocations + EncounterLocations + ShopLocations + ItemLocations)"
             git push
             echo "Changes committed and pushed."
           fi

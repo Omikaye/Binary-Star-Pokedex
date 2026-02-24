@@ -9,10 +9,45 @@
     "backgroundColor": "#E3F2FD",
     "description": "Optional trainer battle that can be skipped"
   },
+  "Mandatory": {
+    "color": "#c62828",
+    "backgroundColor": "#ffcdd2",
+    "description": "Mandatory battle that must be completed but is not a main story fight"
+  },
+  "Capturable": {
+    "color": "#e91e63",
+    "backgroundColor": "#fce4ec",
+    "description": "A wild Pokémon that can be captured"
+  },
   "Boss": {
     "color": "#9C27B0",
     "backgroundColor": "#F3E5F5",
     "description": "Important boss battle against a significant trainer or Kahuna"
+  },
+  "Miniboss": {
+    "color": "#0D47A1",
+    "backgroundColor": "#BBDEFB",
+    "description": "Mid-tier boss battle against a notable trainer"
+  },
+  "Postgame": {
+    "color": "#2196F3",
+    "backgroundColor": "#E3F2FD",
+    "description": "Optional post-game trainer battle"
+  },
+  "Postgame Boss": {
+    "color": "#9C27B0",
+    "backgroundColor": "#F3E5F5",
+    "description": "Post-game boss battle against a significant trainer"
+  },
+  "Postgame Miniboss": {
+    "color": "#0D47A1",
+    "backgroundColor": "#BBDEFB",
+    "description": "Post-game mid-tier boss battle"
+  },
+  "Buffet": {
+    "color": "#e65100",
+    "backgroundColor": "#fff3e0",
+    "description": "Buffet-style battle encounter"
   },
   "Rematch": {
     "color": "#FF9800",
