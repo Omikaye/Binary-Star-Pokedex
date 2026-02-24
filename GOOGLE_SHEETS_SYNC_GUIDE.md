@@ -32,6 +32,8 @@ The workflow will:
 
 ### ShopLocations Sheet (GID: 1527137776)
 
+**Edit link**: https://docs.google.com/spreadsheets/d/1x21QTXNVGAvrQsiDCGzF-m09ASGW8ofgxjoqcLmQYkE/edit?gid=1527137776#gid=1527137776
+
 **Format**: Table-based (NEW! Updated to support this format)
 
 Each shop/location is represented as a table:
@@ -65,6 +67,8 @@ Potion - $200       | Muscle Band - $1000
 ```
 
 ### ItemLocations Sheet (GID: 1958269454)
+
+**Edit link**: https://docs.google.com/spreadsheets/d/1x21QTXNVGAvrQsiDCGzF-m09ASGW8ofgxjoqcLmQYkE/edit?gid=1958269454#gid=1958269454
 
 **Format**: Table-based
 
