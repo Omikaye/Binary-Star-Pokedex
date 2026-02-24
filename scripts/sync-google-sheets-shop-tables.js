@@ -27,9 +27,24 @@ const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?forma
 
 function fetchCSV(url) {
   return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
-      if ([301, 302, 307, 308].includes(res.statusCode)) {
-        return fetchCSV(res.headers.location).then(resolve).catch(reject);
+    const parsedUrl = new URL(url);
+    const options = {
+      hostname: parsedUrl.hostname,
+      path: parsedUrl.pathname + parsedUrl.search,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; node.js)'
+      }
+    };
+    https.get(options, (res) => {
+      if ([301, 302, 303, 307, 308].includes(res.statusCode)) {
+        const location = res.headers.location;
+        const redirectUrl = /^https?:\/\//.test(location) ? location : new URL(location, url).href;
+        const redirectHost = new URL(redirectUrl).hostname;
+        if (!redirectHost.endsWith('.google.com') && !redirectHost.endsWith('.googleapis.com')) {
+          reject(new Error(`Unexpected redirect to ${redirectHost}`));
+          return;
+        }
+        return fetchCSV(redirectUrl).then(resolve).catch(reject);
       }
       if (res.statusCode !== 200) {
         reject(new Error(`Failed to fetch: ${res.statusCode}`));
