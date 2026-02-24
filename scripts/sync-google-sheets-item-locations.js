@@ -1,8 +1,8 @@
 // Sync item locations from Google Sheets (ItemLocations tab) and merge with existing locations.json
-// Sheet structure: Multiple tables in one sheet, each table represents one location
-// Table format: Table name (location name), then rows with columns: Item, Num, Method
-// Sheet URL: https://docs.google.com/spreadsheets/d/1x21QTXNVGAvrQsiDCGzF-m09ASGW8ofgxjoqcLmQYkE
+// Sheet (base): https://docs.google.com/spreadsheets/d/1x21QTXNVGAvrQsiDCGzF-m09ASGW8ofgxjoqcLmQYkE
+// ItemLocations tab (edit link): https://docs.google.com/spreadsheets/d/1x21QTXNVGAvrQsiDCGzF-m09ASGW8ofgxjoqcLmQYkE/edit?gid=1958269454#gid=1958269454
 // Sheet name: ItemLocations
+// CSV export pattern used by this script: https://docs.google.com/spreadsheets/d/1x21QTXNVGAvrQsiDCGzF-m09ASGW8ofgxjoqcLmQYkE/export?format=csv&gid=1958269454
 
 const fs = require('fs');
 const path = require('path');
