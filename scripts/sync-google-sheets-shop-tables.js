@@ -95,6 +95,65 @@ function parseShopItem(str) {
   };
 }
 
+function parseHorizontalShopTables(rows) {
+  // Parse horizontal format: tables side by side, each exactly 2 columns wide.
+  // Row 0: shop names at even column indices (0, 2, 4, ...); the adjacent odd column is empty.
+  // Row 1: repeated header: Item, Cost/Price per block
+  // Rows 2+: data rows; empty Item cell = no entry for that row in that block
+  
+  if (rows.length < 3) return {};
+  
+  // Detection: row 1 must have "item" at col 0 AND "item" at col 2 (≥2 blocks)
+  const headerRow = rows[1] || [];
+  const h = headerRow.map(c => (c || '').toLowerCase().trim());
+  
+  if (h.length < 4) return {};
+  const col0Item = h[0] === 'item' || h[0].includes('item');
+  const col1Price = h[1] === 'cost' || h[1] === 'price' || h[1].includes('cost') || h[1].includes('price');
+  const col2Item = h[2] === 'item' || h[2].includes('item');
+  
+  if (!col0Item || !col1Price || !col2Item) return {};
+  
+  console.log('Detected horizontal shop tables format');
+  
+  const nameRow = rows[0] || [];
+  const numCols = Math.max(nameRow.length, headerRow.length);
+  const numBlocks = Math.floor(numCols / 2);
+  
+  const shopTables = {};
+  
+  for (let block = 0; block < numBlocks; block++) {
+    const colOffset = block * 2;
+    const shopName = nameRow[colOffset] ? nameRow[colOffset].trim() : '';
+    
+    if (!shopName) continue;
+    
+    shopTables[shopName] = {
+      name: shopName,
+      items: []
+    };
+    
+    const itemCol = colOffset;
+    const priceCol = colOffset + 1;
+    
+    for (let r = 2; r < rows.length; r++) {
+      const row = rows[r];
+      const itemName = row[itemCol] ? row[itemCol].trim() : '';
+      
+      if (!itemName) continue; // empty Item cell = no entry for this row in this block
+      
+      const priceStr = row[priceCol] ? row[priceCol].trim() : '';
+      
+      shopTables[shopName].items.push({
+        item: itemName,
+        price: priceStr
+      });
+    }
+  }
+  
+  return shopTables;
+}
+
 function parseTableBasedShopTables(rows) {
   // Parse table-based format where each table starts with a shop/location name,
   // followed by header row (Item, Cost/Price),
@@ -183,14 +242,20 @@ function convertSheetToShopTables(rows) {
     return {};
   }
   
-  // Try table-based format first
+  // Try horizontal format first (tables side by side, 2 cols each, no blank separator columns)
+  const horizontalShops = parseHorizontalShopTables(rows);
+  if (Object.keys(horizontalShops).length > 0) {
+    return horizontalShops;
+  }
+  
+  // Try table-based format next (vertical tables separated by blank rows)
   const tableBasedShops = parseTableBasedShopTables(rows);
   if (Object.keys(tableBasedShops).length > 0) {
     console.log('Detected table-based format');
     return tableBasedShops;
   }
   
-  // Fallback to column-based format
+  // Fallback to column-based format (legacy: row 0 = names, rows 1+ = "Item - $Price")
   console.log('Using column-based format');
   const shopTables = {};
   const numColumns = Math.max(...rows.map(row => row.length));
@@ -218,6 +283,55 @@ function convertSheetToShopTables(rows) {
   }
   
   return shopTables;
+}
+
+function validateShopTableNames(shopTables, locationsJsonPath) {
+  // Compare shop table names between shop-tables.json and locations.json shopTables references.
+  // Emits warnings but does not throw.
+  if (!fs.existsSync(locationsJsonPath)) {
+    console.log('(Skipping shop name validation: locations.json not found)');
+    return;
+  }
+  
+  let locationsData;
+  try {
+    locationsData = JSON.parse(fs.readFileSync(locationsJsonPath, 'utf8'));
+  } catch (e) {
+    console.log('(Skipping shop name validation: could not parse locations.json)');
+    return;
+  }
+  
+  // Collect all shop names referenced in locations.json
+  const referencedShops = new Set();
+  for (const location of (locationsData.locations || [])) {
+    for (const shopName of (location.shopTables || [])) {
+      referencedShops.add(shopName);
+    }
+  }
+  
+  const knownShops = new Set(Object.keys(shopTables));
+  
+  // Check for references missing from shop-tables.json
+  const missingFromShopTables = [...referencedShops].filter(name => !knownShops.has(name));
+  if (missingFromShopTables.length > 0) {
+    console.warn('\nWARNING: The following shop names are referenced by locations.json but missing from shop-tables.json:');
+    for (const name of missingFromShopTables) {
+      console.warn(`  - "${name}"`);
+    }
+  }
+  
+  // Check for shop tables not referenced by any location
+  const unreferencedShops = [...knownShops].filter(name => !referencedShops.has(name));
+  if (unreferencedShops.length > 0) {
+    console.warn('\nWARNING: The following shop tables exist in shop-tables.json but are not referenced by any location:');
+    for (const name of unreferencedShops) {
+      console.warn(`  - "${name}"`);
+    }
+  }
+  
+  if (missingFromShopTables.length === 0 && unreferencedShops.length === 0) {
+    console.log('✓ Shop table names validated: all names match between shop-tables.json and locations.json');
+  }
 }
 
 async function main() {
@@ -261,6 +375,11 @@ async function main() {
     const output = { shopTables };
     fs.writeFileSync(OUT, JSON.stringify(output, null, 2), 'utf8');
     console.log('✓ Wrote', OUT, 'with', tableNames.length, 'shop tables');
+    
+    // Validate shop table names against locations.json
+    console.log('\nValidating shop table names against locations.json...');
+    const LOCATIONS_JSON = path.join(__dirname, '..', 'data', 'locations.json');
+    validateShopTableNames(shopTables, LOCATIONS_JSON);
     
     if (tableNames.length > 0) {
       console.log('\nShop tables:');
