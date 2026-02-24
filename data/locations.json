@@ -869,7 +869,7 @@
     {
       "id": "hauolicity",
       "name": "Hau'oli City",
-      "notes": "Hau'oli Marina is now its own location as well. However, there's naturally no encounters there. | Scatterbug found here will evolve into Modern Pattern Vivillon | The Move Deleter is in the Pokemon Center",
+      "notes": "Hau'oli Marina is now its own location as well. However, there's naturally no encounters there. | Scatterbug found here will evolve into Modern Pattern Vivillon | The Move Deleter is in the Pokemon Center | The mall opens after defeating Hala. The plate shop within the mall only opens after defeating Nanu. The move tutors here require your Pokemon to be max friendship. To do this, you can purchase B.F.F. Hearts in any Pokemon Center after beating Araquanid.",
       "encounters": [
         {
           "spot": "Table 3 (Day)",

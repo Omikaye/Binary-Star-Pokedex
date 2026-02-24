@@ -73,7 +73,7 @@
         },
         {
           "item": "Move Relearner",
-          "price": "1 Heart Scale per move."
+          "price": "1 Heart Scale"
         }
       ]
     },
@@ -249,7 +249,7 @@
           "price": "$10,000"
         },
         {
-          "item": "Sky Plate (Plates only after Nanu)",
+          "item": "Sky Plate",
           "price": "$10,000"
         },
         {
@@ -287,7 +287,7 @@
       "items": [
         {
           "item": "Grass Pledge",
-          "price": "Free (All moves here require the Pokemon to have Maximum Friendship. Purchase B.F.F. Hearts at Pokemon Centers after defeating Totem Araquanid)"
+          "price": "Free"
         },
         {
           "item": "Fire Pledge",
