@@ -406,6 +406,64 @@ if (!meadowItems) {
 console.log('\n--- Horizontal Format Output ---');
 console.log(JSON.stringify(itemMapH, null, 2));
 
+// ============================================================
+console.log('\n=== Testing New Horizontal Format: Populated Adjacent Name Cells ===\n');
+
+// New format: adjacent cells in the name row are now populated with derived labels
+const SAMPLE_CSV_HORIZONTAL_NEW = `Route 3,Route 3 Qty,Route 3 Method,Melemele Meadow,Melemele Meadow Qty,Melemele Meadow Method
+Item,Num,Method,Item,Num,Method
+Repel,3,On ground,Honey,2,Behind rock
+Super Repel,1,From NPC,Max Repel,1,Gift from trainer
+Antidote,5,From shop,,`;
+
+const rowsHNew = parseCSV(SAMPLE_CSV_HORIZONTAL_NEW);
+console.log(`✓ Parsed ${rowsHNew.length} rows from new horizontal CSV (populated name cells)`);
+
+const itemMapHNew = convertSheetToItemLocations(rowsHNew);
+const locationCountHNew = Object.keys(itemMapHNew).length;
+console.log(`✓ Found items for ${locationCountHNew} locations\n`);
+
+if (locationCountHNew !== 2) {
+  console.error(`✗ New horizontal format: Expected 2 locations, got ${locationCountHNew}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ New horizontal format: Correct number of locations (2)');
+}
+
+const route3NewItems = itemMapHNew['route3'];
+if (!route3NewItems || route3NewItems.length !== 3) {
+  console.error(`✗ New horizontal format: Route 3 expected 3 items, got ${route3NewItems ? route3NewItems.length : 'not found'}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ New horizontal format: Route 3 has correct number of items (3)');
+}
+
+const meadowNewItems = itemMapHNew['melemelemeadow'];
+if (!meadowNewItems || meadowNewItems.length !== 2) {
+  console.error(`✗ New horizontal format: Melemele Meadow expected 2 items, got ${meadowNewItems ? meadowNewItems.length : 'not found'}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ New horizontal format: Melemele Meadow has correct number of items (2)');
+}
+
+// Also test vertical single-table with populated adjacent name cells
+const SAMPLE_CSV_VERTICAL_NEW = `Route 1,Route 1 Qty,Route 1 Method
+Item,Num,Method
+Poké Ball,10,From Kukui
+Potion,5,From Kukui
+Miracle Medicine,1,North of the grass patch`;
+
+const rowsVNew = parseCSV(SAMPLE_CSV_VERTICAL_NEW);
+const itemMapVNew = convertSheetToItemLocations(rowsVNew);
+const locCountVNew = Object.keys(itemMapVNew).length;
+
+if (locCountVNew !== 1 || !itemMapVNew['route1'] || itemMapVNew['route1'].length !== 3) {
+  console.error(`✗ New vertical single-table: Expected 1 location with 3 items, got ${locCountVNew} location(s), ${itemMapVNew['route1'] ? itemMapVNew['route1'].length : 0} items`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ New vertical single-table: Route 1 with populated name cells parsed correctly (3 items)');
+}
+
 console.log('\n--- Test Summary ---');
 if (allTestsPassed) {
   console.log('✓ All tests passed!');

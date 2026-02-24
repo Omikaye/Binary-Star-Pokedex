@@ -222,18 +222,25 @@ function parseTableBasedShopTables(rows) {
     }
     
     // Otherwise, check if this row is a table name (shop/location name)
-    // In table-based format, the table name is alone in the first cell
-    // and other cells in that row should be empty or not contain " - $" pattern
+    // In table-based format, the table name is in the first cell;
+    // adjacent cells may be empty or carry labels derived from the shop name
+    // (e.g. "Pokemart Cost"), but must not be unrelated shop names (column format).
     const firstCell = row[0] ? row[0].trim() : '';
-    const otherCellsEmpty = row.slice(1).every(c => !c || c.trim() === '');
     const firstCellHasDash = firstCell.includes(' - ');
+    // Accept adjacent cells that are empty OR that start with the shop name
+    // (handles "Pokemart" / "Pokemart Cost" new-style header rows while
+    // correctly rejecting column-based rows like "ShopA" / "ShopB" / "ShopC").
+    const otherCellsEmptyOrLabel = row.slice(1).every(c => {
+      const val = (c || '').trim();
+      return val === '' || val.toLowerCase().startsWith(firstCell.toLowerCase());
+    });
     
     // Only identify as shop name if:
     // 1. First cell has content
-    // 2. Other cells are empty (table name row)
+    // 2. Other cells are empty or carry shop-name-derived labels
     // 3. First cell doesn't have " - " (would indicate item data in column format)
     // 4. No header found yet (prevents data rows from being misidentified as shop names)
-    if (firstCell && otherCellsEmpty && !firstCellHasDash && !headerFound) {
+    if (firstCell && otherCellsEmptyOrLabel && !firstCellHasDash && !headerFound) {
       // This looks like a shop/location name
       currentShop = firstCell;
       
