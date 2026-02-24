@@ -31,10 +31,13 @@ jobs:
       - name: Sync item locations from Google Sheets
         run: npm run sync-item-locations -- 1958269454
 
+      - name: Sync encounter locations from Google Sheets
+        run: npm run sync-encounter-locations
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/locations.json data/shop-tables.json
-          git diff --staged --quiet || git commit -m "Update locations, shop tables, and item locations from Google Sheets"
+          git diff --staged --quiet || git commit -m "Update locations, shop tables, item locations, and encounter locations from Google Sheets"
           git push
