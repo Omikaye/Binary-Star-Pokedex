@@ -3,7 +3,7 @@
     {
       "id": "route1",
       "name": "Route 1",
-      "notes": "Route 1 is now only the road from your house to Iki Town. The beach and school are now officially labelled as different areas, check your Pokemon's caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon.",
+      "notes": "Route 1 is now only the road from your house to Iki Town. The beach and school are now officially labelled as different areas, so check your Pokemon's caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon.",
       "encounters": [
         {
           "spot": "Grass",
@@ -18,7 +18,7 @@
               "sos": []
             },
             {
-              "name": "Rattata 1",
+              "name": "Rattata (Forme 1)",
               "chance": 10,
               "sos": [
                 "Rattata"
@@ -45,6 +45,11 @@
               "sos": []
             },
             {
+              "name": "Scatterbug (Forme 16)",
+              "chance": 10,
+              "sos": []
+            },
+            {
               "name": "Swablu",
               "chance": 10,
               "sos": []
@@ -52,22 +57,19 @@
             {
               "name": "Igglybuff",
               "chance": 10,
-              "sos": []
+              "sos": [
+                "Buneary"
+              ]
             },
             {
               "name": "Sentret",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Scatterbug",
               "chance": 10,
               "sos": []
             }
           ]
         },
         {
-          "spot": "Grass (Behind Rocks)",
+          "spot": "Grass (Tauros Rocks)",
           "levelRange": {
             "min": 17,
             "max": 20
@@ -79,7 +81,7 @@
               "sos": []
             },
             {
-              "name": "Rattata 1",
+              "name": "Rattata (Forme 1)",
               "chance": 10,
               "sos": [
                 "Rattata"
@@ -106,6 +108,11 @@
               "sos": []
             },
             {
+              "name": "Spewpa (Forme 16)",
+              "chance": 10,
+              "sos": []
+            },
+            {
               "name": "Swablu",
               "chance": 10,
               "sos": []
@@ -119,200 +126,132 @@
               "name": "Sentret",
               "chance": 10,
               "sos": []
-            },
-            {
-              "name": "Spewpa",
-              "chance": 10,
-              "sos": []
             }
           ]
         }
       ],
-      "giftsTrades": "Kukui gives the player their starter Pokemon. Rowlet, Litten, or Popplio, each holding an Oran Berry. Natures are random. IVs are random.",
-      "staticPokemon": [
-        "S152",
-        "S154"
-      ],
-      "trainers": [
-        "459",
-        "025",
-        "028"
-      ],
-      "bossTrainers": [
-        "491",
-        "492",
-        "493"
-      ],
-      "shops": [
+      "giftsTrades": [
         {
-          "item": "Cherish Ball",
-          "price": "$300"
+          "name": "Rowlet",
+          "description": "Starter, Held: Oran Berry"
         },
         {
-          "item": "Quick Ball",
-          "price": "$1,000"
+          "name": "Litten",
+          "description": "Starter, Held: Oran Berry"
         },
         {
-          "item": "Heart Scale",
-          "price": "$100"
-        },
-        {
-          "item": "Rare Candy",
-          "price": "$10"
-        },
-        {
-          "item": "Max Repel",
-          "price": "$10"
-        },
-        {
-          "item": "Max Elixir",
-          "price": "$400"
-        },
-        {
-          "item": "Poké Doll",
-          "price": "$140"
-        },
-        {
-          "item": "Escape Rope",
-          "price": "$180"
-        },
-        {
-          "item": "Shiny Charm",
-          "price": "$250,000"
+          "name": "Popplio",
+          "description": "Starter, Held: Oran Berry"
         }
       ],
-      "items": [
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [
+        "Pokemart"
+      ],
+      "items": [],
+      "battles": [
         {
-          "item": "Poké Ball",
-          "quantity": 10,
-          "obtain": "From Kukui after the capture tutorial"
+          "id": "491",
+          "tag": "Story",
+          "notes": "Hau battle 1 | Rowlet Chosen"
         },
         {
-          "item": "Potion",
-          "quantity": 5,
-          "obtain": "From Kukui after the capture tutorial"
+          "id": "492",
+          "tag": "Story",
+          "notes": "Hau battle 1 | Litten Chosen"
         },
         {
-          "item": "Miracle Medicine",
-          "quantity": 1,
-          "obtain": "North of the grass patch next to the Trainer Tips sign."
+          "id": "493",
+          "tag": "Story",
+          "notes": "Hau battle 1 | Popplio Chosen"
         },
         {
-          "item": "Poké Ball",
-          "quantity": 900,
-          "obtain": "North of the second grassy patch on the east side"
+          "id": "25",
+          "tag": "Mandatory",
+          "notes": "None"
         },
         {
-          "item": "Rare Candy",
-          "quantity": 999,
-          "obtain": "On the cliffs overlooking the bay, west of Youngster Jimmy"
+          "id": "28",
+          "tag": "Mandatory",
+          "notes": "None"
         },
         {
-          "item": "Max Repel",
-          "quantity": 900,
-          "obtain": "West of the entrance to Iki Town"
+          "id": "459",
+          "tag": "Mandatory",
+          "notes": "None"
         },
         {
-          "item": "Gumshoosite",
-          "quantity": 1,
-          "obtain": "At the end of the west path behind the rocks south of Iki Town (requires Tauros Charge)"
+          "id": "S152",
+          "tag": "Story",
+          "notes": "This Yungoos appears the first time you enter grass. It is not capturable, as you shouldn't have Pokeballs yet."
         },
         {
-          "item": "Haban Berry",
-          "quantity": 900,
-          "obtain": "At the end of the northern east path behind the rocks south of Iki Town (requires Tauros Charge)"
+          "id": "S154",
+          "tag": "Capturable",
+          "notes": "This Rattata is guaranteed to be your first capturable encounter here. If you are Nuzlocking, I highly recommend either skipping this Rattata, or counting it as a bonus/gift encounter, as otherwise you will always have this as your first Pokemon."
         }
       ]
     },
     {
       "id": "ikitown",
       "name": "Iki Town",
-      "notes": "",
+      "notes": "Iki Town technically has no natural encounters here, but the Starter Pokemon can be considered to be from here.",
       "encounters": [],
-      "giftsTrades": "None",
-      "staticPokemon": [
-        "S155"
-      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
       "trainers": [],
-      "bossTrainers": [
-        "009",
-        "010",
-        "011",
-        "023",
-        "363",
-        "650"
-      ],
+      "bossTrainers": [],
       "shops": [],
-      "items": [
+      "shopTables": [],
+      "items": [],
+      "battles": [
         {
-          "item": "Pokédex",
-          "quantity": 1,
-          "obtain": "From Kukui after saving Nebby at Plank Bridge"
+          "id": "S155",
+          "tag": "Story",
+          "notes": "This Spearow is technically Mahalo Bridge and not Iki Town."
         },
         {
-          "item": "Trainer Passport",
-          "quantity": 1,
-          "obtain": "From Kukui after saving Nebby at Plank Bridge"
+          "id": "9",
+          "tag": "Story",
+          "notes": "Hau battle 2 | Rowlet Chosen"
         },
         {
-          "item": "Z-Power Ring",
-          "quantity": 1,
-          "obtain": "From Hala after battling Hau during the festival"
+          "id": "10",
+          "tag": "Story",
+          "notes": "Hau battle 2 | Litten Chosen"
         },
         {
-          "item": "Island challenge Amulet",
-          "quantity": 1,
-          "obtain": "From Hala after battling Hau during the festival"
+          "id": "11",
+          "tag": "Story",
+          "notes": "Hau battle 2 | Popplio Chosen"
         },
         {
-          "item": "Stardust",
-          "quantity": 1,
-          "obtain": "From a woman in the western house for telling her about the message in a bottle at Kala'e Bay"
+          "id": "23",
+          "tag": "Boss",
+          "notes": "Kahuna Hala | First Grand Trial | Reward: Fightinium Z, TM Twister"
         },
         {
-          "item": "Fightinium Z",
-          "quantity": 1,
-          "obtain": "From Hala for defeating him in the grand trial"
+          "id": "363",
+          "tag": "Postgame Boss",
+          "notes": "Eevee User Quest"
         },
         {
-          "item": "Ride Pager",
-          "quantity": 1,
-          "obtain": "From Hala after defeating him in the grand trial"
-        },
-        {
-          "item": "Tauros Charge",
-          "quantity": 1,
-          "obtain": "From Hala after defeating him in the grand trial"
-        },
-        {
-          "item": "TM54 (Twister)",
-          "quantity": 1,
-          "obtain": "From Kukui after defeating Hala in the grand trial"
-        },
-        {
-          "item": "Decidium Z",
-          "quantity": 1,
-          "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Rowlet"
-        },
-        {
-          "item": "Incinium Z",
-          "quantity": 1,
-          "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Litten"
-        },
-        {
-          "item": "Primarium Z",
-          "quantity": 1,
-          "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Popplio"
+          "id": "650",
+          "tag": "Postgame Boss",
+          "notes": "Kahuna Hala Rematch"
         }
       ]
     },
     {
       "id": "tencaratbeach",
       "name": "Ten Carat Beach",
-      "notes": "Formerly known as 'Route 1', now this is its own location. | Scatterbug found here will evolve into Marine Pattern Vivillon",
+      "notes": "Formerly was part of Route 1, now this is its own location. | Scatterbug found here will evolve into Marine Pattern Vivillon",
       "encounters": [
         {
-          "spot": "Grass",
+          "spot": "Beach Grass",
           "levelRange": {
             "min": 6,
             "max": 8
@@ -358,8 +297,13 @@
               "name": "Hoppip",
               "chance": 10,
               "sos": [
-                "Scatterbug"
+                "Scatterbug (Forme 8)"
               ]
+            },
+            {
+              "name": "Inkay",
+              "chance": 10,
+              "sos": []
             },
             {
               "name": "Zigzagoon",
@@ -374,113 +318,56 @@
               "sos": [
                 "Panpour"
               ]
-            },
-            {
-              "name": "Inkay",
-              "chance": 10,
-              "sos": []
             }
           ]
         }
       ],
-      "giftsTrades": "Technically not a gift, but Rotom's form can be changed in Kukui's Lab basement.",
+      "giftsTrades": [],
       "staticPokemon": [],
-      "trainers": [
-        "001",
-        "026",
-        "512"
-      ],
+      "trainers": [],
       "bossTrainers": [],
       "shops": [],
-      "items": [
+      "shopTables": [],
+      "items": [],
+      "battles": [
         {
-          "item": "Awakening",
-          "quantity": 1,
-          "obtain": "From Meowth the first time the player sleeps in their bed after getting their hat and Bag"
+          "id": "1",
+          "tag": "Mandatory",
+          "notes": "None"
         },
         {
-          "item": "Rowap Berry",
-          "quantity": 900,
-          "obtain": "On the north side of the grass north of the beach, next to Swimmer Natasha"
+          "id": "26",
+          "tag": "Mandatory",
+          "notes": "None"
         },
         {
-          "item": "Poké Ball",
-          "quantity": 1,
-          "obtain": "Random gift from the player's mom when first healing with her each day, after the capture tutorial (~90% chance) (daily)"
-        },
-        {
-          "item": "Great Ball",
-          "quantity": 1,
-          "obtain": "Random gift from the player's mom when first healing with her each day, after the capture tutorial (~5% chance) (daily)"
-        },
-        {
-          "item": "Heal Ball",
-          "quantity": 1,
-          "obtain": "Random gift from the player's mom when first healing with her each day, after the capture tutorial (~5% chance) (daily)"
-        },
-        {
-          "item": "$30,000",
-          "quantity": 1,
-          "obtain": "From the player's mom when Lillie comes to guide the player to the Pokémon Research Lab"
-        },
-        {
-          "item": "Premier Ball",
-          "quantity": 100,
-          "obtain": "At the south end of the beach, in front of the Pokémon Research Lab (hidden) (regenerates occasionally)"
-        },
-        {
-          "item": "Rotom Pokédex",
-          "quantity": 1,
-          "obtain": "Upgraded from the Pokédex by Kukui at the Pokémon Research Lab on the player's first visit"
-        },
-        {
-          "item": "Mind Plate",
-          "quantity": 1,
-          "obtain": "In front of the garage by the player's house, after defeating Nanu (hidden)"
-        },
-        {
-          "item": "Earth Plate",
-          "quantity": 1,
-          "obtain": "By the palm tree on the east end of the beach, after defeating Nanu (hidden)"
-        },
-        {
-          "item": "Lucky Egg",
-          "quantity": 1,
-          "obtain": "From Kukui at the Pokémon Research Lab, after becoming Champion and registering 50 Pokémon"
-        },
-        {
-          "item": "TM90 (Zen Headbutt)",
-          "quantity": 1,
-          "obtain": "From Kukui at the Pokémon Research Lab, after becoming Champion (if the Lucky Egg is received first, the player must leave and re-enter)"
-        },
-        {
-          "item": "PP Up",
-          "quantity": 1,
-          "obtain": "From Meowth after defeating Madame Meowth, after completing Episode RR"
+          "id": "512",
+          "tag": "Optional",
+          "notes": "None"
         }
       ]
     },
     {
-      "id": "theschoolyard",
-      "name": "The Schoolyard",
-      "notes": "Formerly known as 'Route 1', now this is its own location. | Scatterbug found here evolve into Pokeball pattern Vivillon",
+      "id": "schoolyard",
+      "name": "Schoolyard",
+      "notes": "Formerly was part of Route 1, now this is its own location. | Scatterbug found here will evolve into Pokeball Pattern Vivillon",
       "encounters": [
         {
-          "spot": "Grass",
+          "spot": "Table 1 (Day)",
           "levelRange": {
             "min": 7,
             "max": 10
           },
           "pokemon": [
             {
-              "name": "Grimer 1",
+              "name": "Grimer (Forme 1)",
               "chance": 10,
               "sos": [
                 "Grimer"
               ]
             },
             {
-              "name": "Meowth 1",
+              "name": "Meowth (Forme 1)",
               "chance": 10,
               "sos": [
                 "Meowth"
@@ -490,7 +377,7 @@
               "name": "Caterpie",
               "chance": 10,
               "sos": [
-                "Scatterbug"
+                "Scatterbug (Forme 19)"
               ]
             },
             {
@@ -513,7 +400,9 @@
             {
               "name": "Bonsly",
               "chance": 10,
-              "sos": []
+              "sos": [
+                "Mime Jr."
+              ]
             },
             {
               "name": "Magnemite",
@@ -535,111 +424,98 @@
           ]
         }
       ],
-      "giftsTrades": "None",
+      "giftsTrades": [],
       "staticPokemon": [],
-      "trainers": [
-        "021",
-        "022",
-        "024",
-        "436",
-        "567"
-      ],
-      "bossTrainers": [
-        "485",
-        "486",
-        "487",
-        "396",
-        "361",
-        "380",
-        "386",
-        "502"
-      ],
+      "trainers": [],
+      "bossTrainers": [],
       "shops": [],
-      "items": [
+      "shopTables": [],
+      "items": [],
+      "battles": [
         {
-          "item": "Exp. Share",
-          "quantity": 1,
-          "obtain": "From Professor Kukui outside the Trainers' School on the player's first visit"
+          "id": "21",
+          "tag": "Mandatory",
+          "notes": "None"
         },
         {
-          "item": "Repeat Ball",
-          "quantity": 100,
-          "obtain": "North of the rail to the east of the entrance to the Trainers' School grounds (hidden)"
+          "id": "22",
+          "tag": "Mandatory",
+          "notes": "None"
         },
         {
-          "item": "Ability Pillbox",
-          "quantity": 1,
-          "obtain": "Under a palm tree on the east side of the main entrance to the Trainers' School building"
+          "id": "24",
+          "tag": "Mandatory",
+          "notes": "None"
         },
         {
-          "item": "Destiny Knot",
-          "quantity": 10,
-          "obtain": "Under the second palm tree on the west side of the main entrance to the Trainers' School building"
+          "id": "436",
+          "tag": "Mandatory",
+          "notes": "None"
         },
         {
-          "item": "Heal Ball",
-          "quantity": 100,
-          "obtain": "In the center of the western battlefield in front of the Trainers' School building (hidden)"
+          "id": "485",
+          "tag": "Story",
+          "notes": "Rowlet Chosen"
         },
         {
-          "item": "Jaboca Berry",
-          "quantity": 900,
-          "obtain": "At the southwest corner of first grassy area of the fenced off grassy area on the west side of the Trainers' School"
+          "id": "486",
+          "tag": "Story",
+          "notes": "Litten Chosen"
         },
         {
-          "item": "Mental Herb",
-          "quantity": 900,
-          "obtain": "West of the southernmost palm tree in the fenced off grassy area on the west side of the Trainers' School"
+          "id": "487",
+          "tag": "Story",
+          "notes": "Litten Chosen"
         },
         {
-          "item": "TM01 (Protect)",
-          "quantity": 1,
-          "obtain": "From Rising Star Joseph after defeating him"
+          "id": "567",
+          "tag": "Optional",
+          "notes": "Part of the \"Seven Mysteries\" sidequest started by speaking to a Youngster at Big Wave Beach after beating Hala, and visiting the Schoolyard at night."
         },
         {
-          "item": "Wise Glasses",
-          "quantity": 1,
-          "obtain": "From a Preschooler after solving the seven mysteries, after clearing Hala's grand trial (Night)"
+          "id": "S238",
+          "tag": "Capturable",
+          "notes": "Part of the \"Seven Mysteries\" sidequest."
         },
         {
-          "item": "Flame Plate",
-          "quantity": 1,
-          "obtain": "Next to the furnace on the northeast side of the Trainer's School, after clearing Nanu's grand trial (hidden)"
+          "id": "S239",
+          "tag": "Capturable",
+          "notes": "Part of the \"Seven Mysteries\" sidequest."
         },
         {
-          "item": "Quick Claw",
-          "quantity": 1,
-          "obtain": "1F, from a Beauty in the area left of the stairs"
+          "id": "396",
+          "tag": "Boss",
+          "notes": "Ilima battles you here during the Mina trial quest."
         },
         {
-          "item": "Oran Berry",
-          "quantity": 3,
-          "obtain": "1F, from Preschooler Mia after defeating her"
+          "id": "361",
+          "tag": "Postgame Boss",
+          "notes": "This is the Vaporeon User for the \"Eevee User\" quest."
         },
         {
-          "item": "Potion",
-          "quantity": 1,
-          "obtain": "2F, from a boy sitting in the front right seat in the classroom at the far end of the hall"
+          "id": "380",
+          "tag": "Postgame Miniboss",
+          "notes": "Principal Asuka"
         },
         {
-          "item": "Great Ball",
-          "quantity": 5,
-          "obtain": "2F, from Teacher Emily after defeating her"
+          "id": "386",
+          "tag": "Postgame",
+          "notes": "Battled Before Principal Asuka"
         },
         {
-          "item": "King's Rock",
-          "quantity": 1,
-          "obtain": "3F, from Principal Asuka for defeating her, after becoming Champion"
+          "id": "502",
+          "tag": "Postgame Boss",
+          "notes": "Ilima Rematch"
         }
       ]
     },
     {
       "id": "hauolibeach",
       "name": "Hau'oli Beach",
-      "notes": "This area was formerly part of Hau'oli City, but was renamed and is now seperate.",
+      "notes": "Hau'oli Beach is now a seperate location from the main city.",
       "encounters": [
         {
-          "spot": "Surf",
+          "spot": "Table 7 (Day)",
           "levelRange": {
             "min": 22,
             "max": 27
@@ -648,18 +524,22 @@
             {
               "name": "Tentacool",
               "chance": 10,
-              "sos": []
+              "sos": [
+                "Remoraid"
+              ]
             },
             {
               "name": "Wingull",
               "chance": 10,
-              "sos": []
+              "sos": [
+                "Tentacool"
+              ]
             },
             {
               "name": "Mantyke",
               "chance": 10,
               "sos": [
-                "Remoraid"
+                "Wingull"
               ]
             },
             {
@@ -702,291 +582,314 @@
           ]
         }
       ],
-      "giftsTrades": "None",
+      "giftsTrades": [],
       "staticPokemon": [],
       "trainers": [],
       "bossTrainers": [],
       "shops": [],
-      "items": [
-        {
-          "item": "Potion",
-          "quantity": 1,
-          "obtain": "From a woman northeast of the yellow truck"
-        },
-        {
-          "item": "Protective Pads",
-          "quantity": 10,
-          "obtain": "Next to the southeastern ramp to the beach"
-        },
-        {
-          "item": "Lure Ball",
-          "quantity": 100,
-          "obtain": "On the beach, by the palm tree behind the woman in the lounge chair (hidden) (regenerates occasionally)"
-        },
-        {
-          "item": "Dive Ball",
-          "quantity": 100,
-          "obtain": "On the beach, by the northwestern-most palm tree (hidden) (regenerates occasionally)"
-        },
-        {
-          "item": "Luminous Moss",
-          "quantity": 1,
-          "obtain": "Received from a Beauty by helping her Corsola on the beach next to the southeastern ramp, after clearing Lana's trial"
-        },
-        {
-          "item": "Icicle Plate",
-          "quantity": 1,
-          "obtain": "On the coastline in front of the southeast stairwell, after defeating Nanu (hidden)"
-        }
-      ]
+      "shopTables": [],
+      "items": [],
+      "battles": []
     },
     {
       "id": "hauolicity",
       "name": "Hau'oli City",
-      "notes": "Scatterbug here evolve into Modern Pattern Vivillon | The Move Deleter is located here, in the Pokemon Center.",
-      "encounters": [],
-      "giftsTrades": "None",
-      "staticPokemon": [],
-      "trainers": [
-        "47",
-        "563",
-        "172",
-        "175",
-        "187",
-        "189",
-        "192",
-        "194",
-        "196",
-        "198",
-        "205",
-        "207",
-        "209",
-        "213",
-        "431",
-        "433"
-      ],
-      "bossTrainers": [
-        "52",
-        "215",
-        "216"
-      ],
-      "shops": [
+      "notes": "Hau'oli Marina is now its own location as well. However, there's naturally no encounters there. | Scatterbug found here will evolve into Modern Pattern Vivillon | The Move Deleter is in the Pokemon Center",
+      "encounters": [
         {
-          "item": "Smoke Ball",
-          "price": "$1,120"
-        },
-        {
-          "item": "Cleanse Tag",
-          "price": "$770"
-        },
-        {
-          "item": "Sticky Barb",
-          "price": "$1,800"
-        },
-        {
-          "item": "Lagging Tail",
-          "price": "$2,220"
-        },
-        {
-          "item": "Quick Claw",
-          "price": "$2,000"
-        },
-        {
-          "item": "Binding Band",
-          "price": "$3,300"
-        },
-        {
-          "item": "Zoom Lens",
-          "price": "$2,040"
-        },
-        {
-          "item": "Audinite",
-          "price": "$41,000"
+          "spot": "Table 3 (Day)",
+          "levelRange": {
+            "min": 10,
+            "max": 12
+          },
+          "pokemon": [
+            {
+              "name": "Pidove",
+              "chance": 15,
+              "sos": [
+                "Scatterbug (Forme 7)"
+              ]
+            },
+            {
+              "name": "Tyrogue",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Purrloin",
+              "chance": 10,
+              "sos": [
+                "Poochyena"
+              ]
+            },
+            {
+              "name": "Munchlax",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Glameow",
+              "chance": 10,
+              "sos": [
+                "Snubbull"
+              ]
+            },
+            {
+              "name": "Chingling",
+              "chance": 10,
+              "sos": [
+                "Burmy (Forme 2)"
+              ]
+            },
+            {
+              "name": "Klink",
+              "chance": 10,
+              "sos": [
+                "Trubbish"
+              ]
+            },
+            {
+              "name": "Voltorb",
+              "chance": 10,
+              "sos": [
+                "Joltik"
+              ]
+            },
+            {
+              "name": "Abra",
+              "chance": 10,
+              "sos": [
+                "Bronzor"
+              ]
+            },
+            {
+              "name": "Furfrou",
+              "chance": 5,
+              "sos": [
+                "Furfrou (Forme 1)",
+                "Furfrou (Forme 2)",
+                "Furfrou (Forme 3)",
+                "Furfrou (Forme 4)",
+                "Furfrou (Forme 9)",
+                "Furfrou (Forme 6)",
+                "Furfrou (Forme 8)"
+              ]
+            }
+          ]
         }
       ],
-      "items": [
+      "giftsTrades": [
         {
-          "item": "Nidogram",
-          "quantity": 1,
-          "obtain": "Alola Tourist Bureau, from the attendant in the Alola Tourist Bureau when visited for the first time"
-        },
-        {
-          "item": "Ultra Ball",
-          "quantity": 10,
-          "obtain": "Alola Tourist Bureau, from a Scientist in the if the player has ten different Pokémon registered as owned in their Pokédex"
-        },
-        {
-          "item": "Lens Case",
-          "quantity": 1,
-          "obtain": "Outside the apparel shop, from Lillie"
-        },
-        {
-          "item": "Makeup Bag",
-          "quantity": 1,
-          "obtain": "Outside the apparel shop, from Lillie (if the player is female)"
-        },
-        {
-          "item": "Silk Scarf",
-          "quantity": 1,
-          "obtain": "From a woman outside the apparel shop"
-        },
-        {
-          "item": "Ring Target",
-          "quantity": 10,
-          "obtain": "In the southeast corner of the fenced area behind the Malasada Shop"
-        },
-        {
-          "item": "Heal Ball",
-          "quantity": 1,
-          "obtain": "From the Sightseer in front of the Pokémon Center"
-        },
-        {
-          "item": "$10,000",
-          "quantity": 1,
-          "obtain": "Pokémon Center, from a Beauty if the player has Abra registered in their Pokédex as Caught"
-        },
-        {
-          "item": "Float Stone",
-          "quantity": 10,
-          "obtain": "In the gated area opposite the Pokémon Center"
-        },
-        {
-          "item": "Micle Berry",
-          "quantity": 900,
-          "obtain": "At the north end of the front yard of Ilima's house"
-        },
-        {
-          "item": "Lumiose Galette",
-          "quantity": 1,
-          "obtain": "Ilima's house, from his mom in the kitchen"
-        },
-        {
-          "item": "Revive",
-          "quantity": 1,
-          "obtain": "Hau'oli City Hall, from a woman with a Pyukumuku"
-        },
-        {
-          "item": "Love Ball",
-          "quantity": 100,
-          "obtain": "East of the lamppost next to the two bushes east of the entrance to Hau'oli City Hall (hidden)"
-        },
-        {
-          "item": "TM49 (Round)",
-          "quantity": 1,
-          "obtain": "In the gated area opposite the Police Station"
-        },
-        {
-          "item": "Revive",
-          "quantity": 3,
-          "obtain": "Near the Pokémon Center, from Lillie after defeating Ilima"
-        },
-        {
-          "item": "Gracidea",
-          "quantity": 1,
-          "obtain": "Shopping Mall, from the woman standing to the cashier's right in the Gracidea Apparel Shop"
-        },
-        {
-          "item": "Great Ball",
-          "quantity": 5,
-          "obtain": "Shopping Mall, from an Ace Trainer for watching the Alola Ride Show completely (Day)"
-        },
-        {
-          "item": "TM48 (Snarl)",
-          "quantity": 1,
-          "obtain": "Shopping Mall, from the Janitor after cleaning up all the trash (Night)"
-        },
-        {
-          "item": "Nugget",
-          "quantity": 1,
-          "obtain": "Hau'oli City Hall, from Gentleman Reginald after defeating him, after completing Hala's grand trial"
-        },
-        {
-          "item": "Shell Bell",
-          "quantity": 1,
-          "obtain": "Hau'oli City Hall, from a Delibird after speaking to the woman at the front desk, after completing Hala's grand trial"
-        },
-        {
-          "item": "Photo Album",
-          "quantity": 1,
-          "obtain": "Alola Photo Club, from the attendant after visiting for the first time"
-        },
-        {
-          "item": "Max Potion",
-          "quantity": 1,
-          "obtain": "Shopping Mall, from an Ace Trainer after dealing with the Bewear disturbance in the Bewear costume show, after completing Olivia's grand trial and seeing the Alola Ride Show (Day)"
-        },
-        {
-          "item": "Big Nugget",
-          "quantity": 1,
-          "obtain": "Hau'oli Police Station, from Ilima as a reward for helping him solve the Hypno mystery, after completing Olivia's grand trial"
-        },
-        {
-          "item": "Insect Plate",
-          "quantity": 1,
-          "obtain": "In the front left of the salon, after completing Nanu's grand trial (hidden)"
-        },
-        {
-          "item": "Toxic Plate",
-          "quantity": 1,
-          "obtain": "In front of the palm tree that is at the northwest corner of the Pokémon Center, after completing Nanu's grand trial (hidden)"
-        },
-        {
-          "item": "Meadow Plate",
-          "quantity": 1,
-          "obtain": "To the right of the three trees southwest of Hau'oli City Hall, after completing Nanu's grand trial (hidden)"
-        },
-        {
-          "item": "Draco Plate",
-          "quantity": 1,
-          "obtain": "In front of the police car, after completing Nanu's grand trial (hidden)"
-        },
-        {
-          "item": "Bottle Cap",
-          "quantity": 1,
-          "obtain": "Shopping Mall, held by gift Magearna, after becoming Champion"
-        },
-        {
-          "item": "Everstone",
-          "quantity": 1,
-          "obtain": "Ilima's house, from Ilima after defeating him at the Trainers' School, after becoming Champion"
-        },
-        {
-          "item": "Ilima's Normalium Z",
-          "quantity": 1,
-          "obtain": "Ilima's house, from Ilima after defeating him at the Trainers' School, after becoming Champion"
+          "name": "Magearna",
+          "description": "After becoming champion and scanning a QR code"
         }
-      ]
-    },
-    {
-      "id": "hauolimarina",
-      "name": "Hau'oli Marina",
-      "notes": "",
-      "encounters": [],
-      "giftsTrades": "None",
+      ],
       "staticPokemon": [],
       "trainers": [],
       "bossTrainers": [],
       "shops": [],
-      "items": [
+      "shopTables": [
+        "Pokemart",
+        "Hauoli Pokecenter",
+        "Hauoli Mall",
+        "Hauoli Mall Tutors"
+      ],
+      "items": [],
+      "battles": [
         {
-          "item": "X Attack",
-          "quantity": 1,
-          "obtain": "From a man at the corner of the Ferry Terminal"
+          "id": "47",
+          "tag": "Story",
+          "notes": "None"
         },
         {
-          "item": "X Defense",
-          "quantity": 1,
-          "obtain": "From a woman at the corner of the Ferry Terminal"
+          "id": "52",
+          "tag": "Boss",
+          "notes": "Ilima | Rowlet Chosen"
         },
         {
-          "item": "Grip Claw",
-          "quantity": 10,
-          "obtain": "At the end of the dock"
+          "id": "215",
+          "tag": "Boss",
+          "notes": "Ilima | Litten Chosen"
         },
         {
-          "item": "Fresh Water",
-          "quantity": 1,
-          "obtain": "From the lady in the Ferry Terminal after Rotom fixes the vending machine, after completing Hala's grand trial"
+          "id": "216",
+          "tag": "Boss",
+          "notes": "Ilima | Popplio Chosen"
+        },
+        {
+          "id": "563",
+          "tag": "Optional",
+          "notes": "Reginald will battle you after you beat Hala's Trial and you attempt to enter Hau'oli City Hall | Reward: Shell Bell (Talk to the clerk afterwards)"
+        },
+        {
+          "id": "172",
+          "tag": "Buffet",
+          "notes": "These trainers can appear in the mall's Battle Buffet before becoming champion."
+        },
+        {
+          "id": "175",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "187",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "189",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "192",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "194",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "196",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "198",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "205",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "207",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "209",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "211",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "213",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "431",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "433",
+          "tag": "Buffet",
+          "notes": "None"
+        },
+        {
+          "id": "235",
+          "tag": "Capturable",
+          "notes": "Part of a sidequest. After defeating Olivia, go to Hau'oli Police station and speak to Ilima to begin this quest."
+        },
+        {
+          "id": "236",
+          "tag": "Capturable",
+          "notes": "Part of a sidequest. After defeating Olivia, go to Hau'oli Police station and speak to Ilima to begin this quest."
+        },
+        {
+          "id": "237",
+          "tag": "Capturable",
+          "notes": "Part of a sidequest. After defeating Olivia, go to Hau'oli Police station and speak to Ilima to begin this quest."
+        },
+        {
+          "id": "S234",
+          "tag": "Capturable",
+          "notes": "Part of a sidequest. After defeating Olivia, watch the costume show in the top left of Hau'oli city mall to begin this quest."
+        },
+        {
+          "id": "188",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "190",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "191",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "193",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "195",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "197",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "199",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "200",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "206",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "208",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "210",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "212",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "214",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "432",
+          "tag": "Buffet",
+          "notes": "Postgame"
+        },
+        {
+          "id": "434",
+          "tag": "Buffet",
+          "notes": "Postgame"
         }
       ]
     }
