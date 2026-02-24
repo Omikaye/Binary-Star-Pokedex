@@ -78,6 +78,74 @@ function parseShopItem(str) {
   };
 }
 
+// Sample CSV data for horizontal 2-column layout (new format)
+// Two shop tables side by side: Pokemart (cols 0-1) and Boutique (cols 2-3)
+const SAMPLE_CSV_HORIZONTAL = `Pokemart Hau'oli,,Boutique Hau'oli,
+Item,Cost,Item,Cost
+Poké Ball,$200,Silk Scarf,$1000
+Potion,$200,Muscle Band,$1000
+Antidote,$200,Wise Glasses,$1000
+,,Choice Band,$4000`;
+
+function parseHorizontalShopTables(rows) {
+  // Parse horizontal format: tables side by side, each exactly 2 columns wide.
+  // Row 0: shop names at col 0, col 2, col 4, ...
+  // Row 1: repeated header: Item, Cost/Price per block
+  // Rows 2+: data rows; empty Item cell = no entry for that row in that block
+  
+  if (rows.length < 3) return {};
+  
+  // Detection: row 1 must have "item" at col 0 AND "item" at col 2 (≥2 blocks)
+  const headerRow = rows[1] || [];
+  const h = headerRow.map(c => (c || '').toLowerCase().trim());
+  
+  if (h.length < 4) return {};
+  const col0Item = h[0] === 'item' || h[0].includes('item');
+  const col1Price = h[1] === 'cost' || h[1] === 'price' || h[1].includes('cost') || h[1].includes('price');
+  const col2Item = h[2] === 'item' || h[2].includes('item');
+  
+  if (!col0Item || !col1Price || !col2Item) return {};
+  
+  console.log('Detected horizontal shop tables format');
+  
+  const nameRow = rows[0] || [];
+  const numCols = Math.max(nameRow.length, headerRow.length);
+  const numBlocks = Math.floor(numCols / 2);
+  
+  const shopTables = {};
+  
+  for (let block = 0; block < numBlocks; block++) {
+    const colOffset = block * 2;
+    const shopName = nameRow[colOffset] ? nameRow[colOffset].trim() : '';
+    
+    if (!shopName) continue;
+    
+    shopTables[shopName] = {
+      name: shopName,
+      items: []
+    };
+    
+    const itemCol = colOffset;
+    const priceCol = colOffset + 1;
+    
+    for (let r = 2; r < rows.length; r++) {
+      const row = rows[r];
+      const itemName = row[itemCol] ? row[itemCol].trim() : '';
+      
+      if (!itemName) continue;
+      
+      const priceStr = row[priceCol] ? row[priceCol].trim() : '';
+      
+      shopTables[shopName].items.push({
+        item: itemName,
+        price: priceStr
+      });
+    }
+  }
+  
+  return shopTables;
+}
+
 function parseTableBasedShopTables(rows) {
   // Parse table-based format where each table starts with a shop/location name,
   // followed by header row (Item, Cost/Price),
@@ -161,14 +229,20 @@ function convertSheetToShopTables(rows) {
     return {};
   }
   
-  // Try table-based format first
+  // Try horizontal format first (tables side by side, 2 cols each, no blank separator columns)
+  const horizontalShops = parseHorizontalShopTables(rows);
+  if (Object.keys(horizontalShops).length > 0) {
+    return horizontalShops;
+  }
+  
+  // Try table-based format next (vertical tables separated by blank rows)
   const tableBasedShops = parseTableBasedShopTables(rows);
   if (Object.keys(tableBasedShops).length > 0) {
     console.log('Detected table-based format');
     return tableBasedShops;
   }
   
-  // Fallback to column-based format
+  // Fallback to column-based format (legacy: row 0 = names, rows 1+ = "Item - $Price")
   console.log('Using column-based format');
   const shopTables = {};
   const numColumns = Math.max(...rows.map(row => row.length));
@@ -335,6 +409,128 @@ console.log(JSON.stringify(pokemartBasic, null, 2));
 
 console.log('\n--- Table-Based Output (Route 1) ---');
 console.log(JSON.stringify(route1Shop, null, 2));
+
+// ============================================================
+console.log('\n=== Testing Horizontal 2-Column Shop Tables Parsing ===\n');
+
+const rowsH = parseCSV(SAMPLE_CSV_HORIZONTAL);
+console.log(`✓ Parsed ${rowsH.length} rows from horizontal CSV`);
+
+const shopTablesH = convertSheetToShopTables(rowsH);
+const tableNamesH = Object.keys(shopTablesH);
+console.log(`✓ Converted ${tableNamesH.length} shop tables\n`);
+
+// Test H1: Correct number of shop tables (2)
+if (tableNamesH.length !== 2) {
+  console.error(`✗ Expected 2 shop tables, got ${tableNamesH.length}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ Correct number of shop tables (2)');
+}
+
+// Test H2: Shop names
+const pokemartHauoli = shopTablesH["Pokemart Hau'oli"];
+if (!pokemartHauoli) {
+  console.error("✗ Pokemart Hau'oli not found");
+  allTestsPassed = false;
+} else {
+  if (pokemartHauoli.items.length !== 3) {
+    console.error(`✗ Pokemart Hau'oli: Expected 3 items, got ${pokemartHauoli.items.length}`);
+    allTestsPassed = false;
+  } else {
+    console.log("✓ Pokemart Hau'oli has correct number of items (3)");
+  }
+  
+  const pokeball = pokemartHauoli.items.find(i => i.item === 'Poké Ball');
+  if (!pokeball || pokeball.price !== '$200') {
+    console.error("✗ Pokemart Hau'oli: Poké Ball price incorrect");
+    allTestsPassed = false;
+  } else {
+    console.log("✓ Pokemart Hau'oli Poké Ball price correct ($200)");
+  }
+}
+
+// Test H3: Boutique (4 items — last row only has Boutique data)
+const boutiqueH = shopTablesH["Boutique Hau'oli"];
+if (!boutiqueH) {
+  console.error("✗ Boutique Hau'oli not found in horizontal result");
+  allTestsPassed = false;
+} else {
+  if (boutiqueH.items.length !== 4) {
+    console.error(`✗ Boutique Hau'oli: Expected 4 items, got ${boutiqueH.items.length}`);
+    allTestsPassed = false;
+  } else {
+    console.log("✓ Boutique Hau'oli has correct number of items (4)");
+  }
+  
+  const choiceBand = boutiqueH.items.find(i => i.item === 'Choice Band');
+  if (!choiceBand || choiceBand.price !== '$4000') {
+    console.error("✗ Boutique Hau'oli: Choice Band price incorrect");
+    allTestsPassed = false;
+  } else {
+    console.log("✓ Boutique Hau'oli Choice Band price correct ($4000)");
+  }
+}
+
+console.log('\n--- Horizontal Output ---');
+console.log(JSON.stringify(shopTablesH, null, 2));
+
+// ============================================================
+console.log('\n=== Testing Shop Table Name Mismatch Validation ===\n');
+
+function validateShopTableNames(shopTables, locationsData) {
+  const referencedShops = new Set();
+  for (const location of (locationsData.locations || [])) {
+    for (const shopName of (location.shopTables || [])) {
+      referencedShops.add(shopName);
+    }
+  }
+  const knownShops = new Set(Object.keys(shopTables));
+  const missing = [...referencedShops].filter(name => !knownShops.has(name));
+  const unreferenced = [...knownShops].filter(name => !referencedShops.has(name));
+  return { missing, unreferenced };
+}
+
+// Simulate locations.json with known shop references
+const fakeLocations = {
+  locations: [
+    { id: 'route1', name: 'Route 1', shopTables: ['Pokemart Basic', 'Unknown Shop'] },
+    { id: 'route2', name: 'Route 2', shopTables: [] }
+  ]
+};
+// shop-tables.json has 'Pokemart Basic' and 'Orphan Shop'
+const fakeShopTables = {
+  'Pokemart Basic': { name: 'Pokemart Basic', items: [] },
+  'Orphan Shop': { name: 'Orphan Shop', items: [] }
+};
+
+const { missing, unreferenced } = validateShopTableNames(fakeShopTables, fakeLocations);
+
+if (missing.length !== 1 || missing[0] !== 'Unknown Shop') {
+  console.error(`✗ Missing detection: expected ['Unknown Shop'], got ${JSON.stringify(missing)}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ Missing shop detection works ("Unknown Shop" detected as missing)');
+}
+
+if (unreferenced.length !== 1 || unreferenced[0] !== 'Orphan Shop') {
+  console.error(`✗ Unreferenced detection: expected ['Orphan Shop'], got ${JSON.stringify(unreferenced)}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ Unreferenced shop detection works ("Orphan Shop" detected as unreferenced)');
+}
+
+// Verify no false positives when names match exactly
+const { missing: m2, unreferenced: u2 } = validateShopTableNames(
+  { 'Pokemart Basic': { name: 'Pokemart Basic', items: [] } },
+  { locations: [{ id: 'r1', shopTables: ['Pokemart Basic'] }] }
+);
+if (m2.length !== 0 || u2.length !== 0) {
+  console.error(`✗ No-mismatch case failed: missing=${JSON.stringify(m2)}, unreferenced=${JSON.stringify(u2)}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ No false positives when names match exactly');
+}
 
 console.log('\n--- Test Summary ---');
 if (allTestsPassed) {

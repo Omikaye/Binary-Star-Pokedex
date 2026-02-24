@@ -7,7 +7,7 @@ function toID(text) {
   return String(text || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
 }
 
-// Sample CSV data matching the table-based format
+// Sample CSV data matching the vertical table-based format
 const SAMPLE_CSV = `Route 1
 Item,Num,Method
 Poké Ball,10,From Kukui after the capture tutorial
@@ -24,6 +24,14 @@ Item,Quantity,How to Obtain
 Revive,1,On ground
 Rare Candy,2,Behind rock
 Super Potion,5,From NPC in Pokemon Center`;
+
+// Sample CSV data matching the horizontal 3-column layout (new format)
+// Two location tables side by side: Route 3 (cols 0-2) and Melemele Meadow (cols 3-5)
+const SAMPLE_CSV_HORIZONTAL = `Route 3,,,Melemele Meadow,,
+Item,Num,Method,Item,Num,Method
+Repel,3,On ground,Honey,2,Behind rock
+Super Repel,1,From NPC,Max Repel,1,Gift from trainer
+Antidote,5,From shop,,`;
 
 function parseCSV(csvText) {
   const rows = [];
@@ -139,8 +147,83 @@ function parseTableBasedItemLocations(rows) {
   return locationItems;
 }
 
+function parseHorizontalItemLocations(rows) {
+  // Parse horizontal format: tables side by side, each exactly 3 columns wide.
+  // Row 0: location names at col 0, col 3, col 6, ...
+  // Row 1: repeated header: Item, Num/Qty, Method/Obtain per block
+  // Rows 2+: data rows; empty Item cell = no entry for that row in that block
+  
+  if (rows.length < 3) return {};
+  
+  // Detection: row 1 must have "item" at col 0 AND "item" at col 3 (≥2 blocks)
+  const headerRow = rows[1] || [];
+  const h = headerRow.map(c => (c || '').toLowerCase().trim());
+  
+  if (h.length < 4) return {};
+  const col0Item = h[0].includes('item');
+  const col1Num = h[1].includes('num') || h[1].includes('qty') || h[1].includes('quantity');
+  const col2Method = h[2].includes('method') || h[2].includes('obtain') || h[2].includes('how');
+  const col3Item = h[3].includes('item');
+  
+  if (!col0Item || !col1Num || !col2Method || !col3Item) return {};
+  
+  const nameRow = rows[0] || [];
+  const numCols = Math.max(nameRow.length, headerRow.length);
+  const numBlocks = Math.floor(numCols / 3);
+  
+  const locationItems = {};
+  
+  for (let block = 0; block < numBlocks; block++) {
+    const colOffset = block * 3;
+    const locationName = nameRow[colOffset] ? nameRow[colOffset].trim() : '';
+    
+    if (!locationName) continue;
+    
+    const locationId = toID(locationName);
+    locationItems[locationId] = [];
+    
+    const itemCol = colOffset;
+    const numCol = colOffset + 1;
+    const methodCol = colOffset + 2;
+    
+    for (let r = 2; r < rows.length; r++) {
+      const row = rows[r];
+      const itemName = row[itemCol] ? row[itemCol].trim() : '';
+      
+      if (!itemName) continue;
+      
+      const numStr = row[numCol] ? row[numCol].trim() : '1';
+      const method = row[methodCol] ? row[methodCol].trim() : '';
+      
+      let quantity = 1;
+      const numMatch = numStr.match(/(\d+)/);
+      if (numMatch) {
+        quantity = parseInt(numMatch[1], 10);
+      }
+      
+      locationItems[locationId].push({
+        item: itemName,
+        quantity: quantity,
+        obtain: method
+      });
+    }
+  }
+  
+  return locationItems;
+}
+
+function convertSheetToItemLocations(rows) {
+  const horizontal = parseHorizontalItemLocations(rows);
+  if (Object.keys(horizontal).length > 0) {
+    console.log('Detected horizontal format');
+    return horizontal;
+  }
+  console.log('Using vertical table-based format');
+  return parseTableBasedItemLocations(rows);
+}
+
 // Run tests
-console.log('Testing table-based ItemLocations parsing...\n');
+console.log('=== Testing Vertical Table-Based ItemLocations Parsing ===\n');
 
 const rows = parseCSV(SAMPLE_CSV);
 console.log(`✓ Parsed ${rows.length} rows from CSV`);
@@ -245,8 +328,83 @@ if (!route2Items) {
 }
 
 // Print full output for inspection
-console.log('\n--- Generated Output ---');
+console.log('\n--- Vertical Format Output ---');
 console.log(JSON.stringify(itemLocationMap, null, 2));
+
+// ============================================================
+console.log('\n=== Testing Horizontal 3-Column ItemLocations Parsing ===\n');
+
+const rowsH = parseCSV(SAMPLE_CSV_HORIZONTAL);
+console.log(`✓ Parsed ${rowsH.length} rows from horizontal CSV`);
+
+const itemMapH = convertSheetToItemLocations(rowsH);
+const locationCountH = Object.keys(itemMapH).length;
+console.log(`✓ Found items for ${locationCountH} locations\n`);
+
+// Test H1: Correct number of locations (2)
+if (locationCountH !== 2) {
+  console.error(`✗ Expected 2 locations, got ${locationCountH}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ Correct number of locations (2)');
+}
+
+// Test H2: Location IDs
+const expectedHIds = ['melemelemeadow', 'route3'].sort();
+const actualHIds = Object.keys(itemMapH).sort();
+if (JSON.stringify(actualHIds) !== JSON.stringify(expectedHIds)) {
+  console.error(`✗ Location IDs mismatch. Expected: ${expectedHIds}, Got: ${actualHIds}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ Location IDs correct (route3, melemelemeadow)');
+}
+
+// Test H3: Route 3 items (3 items)
+const route3Items = itemMapH['route3'];
+if (!route3Items) {
+  console.error('✗ Route 3 not found');
+  allTestsPassed = false;
+} else {
+  if (route3Items.length !== 3) {
+    console.error(`✗ Route 3: Expected 3 items, got ${route3Items.length}`);
+    allTestsPassed = false;
+  } else {
+    console.log('✓ Route 3 has correct number of items (3)');
+  }
+  
+  const repel = route3Items.find(i => i.item === 'Repel');
+  if (!repel || repel.quantity !== 3) {
+    console.error(`✗ Route 3: Repel quantity incorrect (expected 3, got ${repel ? repel.quantity : 'not found'})`);
+    allTestsPassed = false;
+  } else {
+    console.log('✓ Route 3 Repel quantity correct (3)');
+  }
+}
+
+// Test H4: Melemele Meadow items (2 items — last row empty for that block)
+const meadowItems = itemMapH['melemelemeadow'];
+if (!meadowItems) {
+  console.error('✗ Melemele Meadow not found');
+  allTestsPassed = false;
+} else {
+  if (meadowItems.length !== 2) {
+    console.error(`✗ Melemele Meadow: Expected 2 items, got ${meadowItems.length}`);
+    allTestsPassed = false;
+  } else {
+    console.log('✓ Melemele Meadow has correct number of items (2)');
+  }
+  
+  const honey = meadowItems.find(i => i.item === 'Honey');
+  if (!honey || honey.obtain !== 'Behind rock') {
+    console.error('✗ Melemele Meadow: Honey obtain text incorrect');
+    allTestsPassed = false;
+  } else {
+    console.log('✓ Melemele Meadow Honey obtain text correct');
+  }
+}
+
+console.log('\n--- Horizontal Format Output ---');
+console.log(JSON.stringify(itemMapH, null, 2));
 
 console.log('\n--- Test Summary ---');
 if (allTestsPassed) {

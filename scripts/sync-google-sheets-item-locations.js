@@ -14,7 +14,7 @@ function toID(text) {
 
 // Configuration
 const SHEET_ID = '1x21QTXNVGAvrQsiDCGzF-m09ASGW8ofgxjoqcLmQYkE';
-const ITEM_LOCATIONS_GID = ''; // Will need to be set to the ItemLocations sheet GID
+const ITEM_LOCATIONS_GID = '1958269454'; // ItemLocations sheet GID
 const LOCATIONS_JSON = path.join(__dirname, '..', 'data', 'locations.json');
 
 // Export URL for CSV format
@@ -78,6 +78,85 @@ function parseCSV(csvText) {
   }
   
   return rows;
+}
+
+function parseHorizontalItemLocations(rows) {
+  // Parse horizontal format: tables side by side, each exactly 3 columns wide.
+  // Row 0: location names at col 0, col 3, col 6, ... (other cells in row 0 are empty)
+  // Row 1: repeated header: Item, Num/Qty, Method/Obtain per block
+  // Rows 2+: data rows; empty Item cell = no entry for that row in that block
+  
+  if (rows.length < 3) return {};
+  
+  // Detection: row 1 must have "item" at col 0 AND "item" at col 3 (≥2 blocks)
+  const headerRow = rows[1] || [];
+  const h = headerRow.map(c => (c || '').toLowerCase().trim());
+  
+  if (h.length < 4) return {};
+  const col0Item = h[0].includes('item');
+  const col1Num = h[1].includes('num') || h[1].includes('qty') || h[1].includes('quantity');
+  const col2Method = h[2].includes('method') || h[2].includes('obtain') || h[2].includes('how');
+  const col3Item = h[3].includes('item');
+  
+  if (!col0Item || !col1Num || !col2Method || !col3Item) return {};
+  
+  console.log('Detected horizontal item locations format');
+  
+  const nameRow = rows[0] || [];
+  const numCols = Math.max(nameRow.length, headerRow.length);
+  const numBlocks = Math.floor(numCols / 3);
+  
+  const locationItems = {};
+  
+  for (let block = 0; block < numBlocks; block++) {
+    const colOffset = block * 3;
+    const locationName = nameRow[colOffset] ? nameRow[colOffset].trim() : '';
+    
+    if (!locationName) continue;
+    
+    const locationId = toID(locationName);
+    locationItems[locationId] = [];
+    
+    const itemCol = colOffset;
+    const numCol = colOffset + 1;
+    const methodCol = colOffset + 2;
+    
+    for (let r = 2; r < rows.length; r++) {
+      const row = rows[r];
+      const itemName = row[itemCol] ? row[itemCol].trim() : '';
+      
+      if (!itemName) continue; // empty Item cell = no entry for this row in this block
+      
+      const numStr = row[numCol] ? row[numCol].trim() : '1';
+      const method = row[methodCol] ? row[methodCol].trim() : '';
+      
+      let quantity = 1;
+      const numMatch = numStr.match(/(\d+)/);
+      if (numMatch) {
+        quantity = parseInt(numMatch[1], 10);
+      }
+      
+      locationItems[locationId].push({
+        item: itemName,
+        quantity: quantity,
+        obtain: method
+      });
+    }
+  }
+  
+  return locationItems;
+}
+
+function convertSheetToItemLocations(rows) {
+  // Try horizontal format first (tables side by side, 3 cols each, no blank separator columns)
+  const horizontal = parseHorizontalItemLocations(rows);
+  if (Object.keys(horizontal).length > 0) {
+    return horizontal;
+  }
+  
+  // Fall back to vertical table-based format (tables separated by blank rows)
+  console.log('Using vertical table-based format');
+  return parseTableBasedItemLocations(rows);
 }
 
 function parseTableBasedItemLocations(rows) {
@@ -226,19 +305,23 @@ async function main() {
     console.log(`Parsed ${rows.length} rows`);
     
     console.log('Extracting item locations from tables...');
-    const itemLocationMap = parseTableBasedItemLocations(rows);
+    const itemLocationMap = convertSheetToItemLocations(rows);
     const locationCount = Object.keys(itemLocationMap).length;
     console.log(`Found items for ${locationCount} locations`);
     
     if (locationCount === 0) {
       console.error('WARNING: No location tables were found in the sheet');
-      console.error('Expected format:');
-      console.error('  Location Name');
-      console.error('  Item | Num | Method');
-      console.error('  Poké Ball | 10 | From Kukui');
-      console.error('  (blank line)');
-      console.error('  Next Location Name');
-      console.error('  ...');
+      console.error('Supported formats:');
+      console.error('  Horizontal (3-col blocks, no blank separators):');
+      console.error('    Loc1 |     |        | Loc2 |     |');
+      console.error('    Item | Num | Method | Item | Num | Method');
+      console.error('    Ball | 1   | Found  | Map  | 1   | NPC');
+      console.error('  Vertical (tables separated by blank rows):');
+      console.error('    Location Name');
+      console.error('    Item | Num | Method');
+      console.error('    Poké Ball | 10 | From Kukui');
+      console.error('    (blank line)');
+      console.error('    Next Location Name');
     }
     
     // Read existing locations.json
