@@ -247,7 +247,68 @@
       "bossTrainers": [],
       "shops": [],
       "shopTables": [],
-      "items": [],
+      "items": [
+        {
+          "item": "Pokédex",
+          "quantity": 1,
+          "obtain": "From Kukui after saving Nebby at Plank Bridge"
+        },
+        {
+          "item": "Trainer Passport",
+          "quantity": 1,
+          "obtain": "From Kukui after saving Nebby at Plank Bridge"
+        },
+        {
+          "item": "Z-Power Ring",
+          "quantity": 1,
+          "obtain": "From Hala after battling Hau during the festival"
+        },
+        {
+          "item": "Island challenge Amulet",
+          "quantity": 1,
+          "obtain": "From Hala after battling Hau during the festival"
+        },
+        {
+          "item": "Stardust",
+          "quantity": 1,
+          "obtain": "From a woman in the western house for telling her about the message in a bottle at Kala'e Bay"
+        },
+        {
+          "item": "Fightinium Z",
+          "quantity": 1,
+          "obtain": "From Hala for defeating him in the grand trial"
+        },
+        {
+          "item": "Ride Pager",
+          "quantity": 1,
+          "obtain": "From Hala after defeating him in the grand trial"
+        },
+        {
+          "item": "Tauros Charge",
+          "quantity": 1,
+          "obtain": "From Hala after defeating him in the grand trial"
+        },
+        {
+          "item": "TM54 (Twister)",
+          "quantity": 1,
+          "obtain": "From Kukui after defeating Hala in the grand trial"
+        },
+        {
+          "item": "Decidium Z",
+          "quantity": 1,
+          "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Rowlet"
+        },
+        {
+          "item": "Incinium Z",
+          "quantity": 1,
+          "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Litten"
+        },
+        {
+          "item": "Primarium Z",
+          "quantity": 1,
+          "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Popplio"
+        }
+      ],
       "battles": [
         {
           "id": "S155",
@@ -369,7 +430,73 @@
       "bossTrainers": [],
       "shops": [],
       "shopTables": [],
-      "items": [],
+      "items": [
+        {
+          "item": "Awakening",
+          "quantity": 1,
+          "obtain": "From Meowth the first time the player sleeps in their bed after getting their hat and Bag"
+        },
+        {
+          "item": "Rowap Berry",
+          "quantity": 900,
+          "obtain": "On the north side of the grass north of the beach, next to Swimmer Natasha"
+        },
+        {
+          "item": "Poké Ball",
+          "quantity": 1,
+          "obtain": "Random gift from the player's mom when first healing with her each day, after the capture tutorial (~90% chance) (daily)"
+        },
+        {
+          "item": "Great Ball",
+          "quantity": 1,
+          "obtain": "Random gift from the player's mom when first healing with her each day, after the capture tutorial (~5% chance) (daily)"
+        },
+        {
+          "item": "Heal Ball",
+          "quantity": 1,
+          "obtain": "Random gift from the player's mom when first healing with her each day, after the capture tutorial (~5% chance) (daily)"
+        },
+        {
+          "item": "Money",
+          "quantity": 30,
+          "obtain": "From the player's mom when Lillie comes to guide the player to the Pokémon Research Lab"
+        },
+        {
+          "item": "Premier Ball",
+          "quantity": 100,
+          "obtain": "At the south end of the beach, in front of the Pokémon Research Lab (hidden) (regenerates occasionally)"
+        },
+        {
+          "item": "Rotom Pokédex",
+          "quantity": 1,
+          "obtain": "Upgraded from the Pokédex by Kukui at the Pokémon Research Lab on the player's first visit"
+        },
+        {
+          "item": "Mind Plate",
+          "quantity": 1,
+          "obtain": "In front of the garage by the player's house, after defeating Nanu (hidden)"
+        },
+        {
+          "item": "Earth Plate",
+          "quantity": 1,
+          "obtain": "By the palm tree on the east end of the beach, after defeating Nanu (hidden)"
+        },
+        {
+          "item": "Lucky Egg",
+          "quantity": 1,
+          "obtain": "From Kukui at the Pokémon Research Lab, after becoming Champion and registering 50 Pokémon"
+        },
+        {
+          "item": "TM90 (Zen Headbutt)",
+          "quantity": 1,
+          "obtain": "From Kukui at the Pokémon Research Lab, after becoming Champion (if the Lucky Egg is received first, the player must leave and re-enter)"
+        },
+        {
+          "item": "PP Up",
+          "quantity": 1,
+          "obtain": "From Meowth after defeating Madame Meowth, after completing Episode RR"
+        }
+      ],
       "battles": [
         {
           "id": "1",
@@ -471,7 +598,83 @@
       "bossTrainers": [],
       "shops": [],
       "shopTables": [],
-      "items": [],
+      "items": [
+        {
+          "item": "Exp. Share",
+          "quantity": 1,
+          "obtain": "From Professor Kukui outside the Trainers' School on the player's first visit"
+        },
+        {
+          "item": "Repeat Ball",
+          "quantity": 100,
+          "obtain": "North of the rail to the east of the entrance to the Trainers' School grounds (hidden)"
+        },
+        {
+          "item": "Ability Pillbox",
+          "quantity": 1,
+          "obtain": "Under a palm tree on the east side of the main entrance to the Trainers' School building"
+        },
+        {
+          "item": "Destiny Knot",
+          "quantity": 10,
+          "obtain": "Under the second palm tree on the west side of the main entrance to the Trainers' School building"
+        },
+        {
+          "item": "Heal Ball",
+          "quantity": 100,
+          "obtain": "In the center of the western battlefield in front of the Trainers' School building (hidden)"
+        },
+        {
+          "item": "Jaboca Berry",
+          "quantity": 900,
+          "obtain": "At the southwest corner of first grassy area of the fenced off grassy area on the west side of the Trainers' School"
+        },
+        {
+          "item": "Mental Herb",
+          "quantity": 900,
+          "obtain": "West of the southernmost palm tree in the fenced off grassy area on the west side of the Trainers' School"
+        },
+        {
+          "item": "TM01 (Protect)",
+          "quantity": 1,
+          "obtain": "From Rising Star Joseph after defeating him"
+        },
+        {
+          "item": "Wise Glasses",
+          "quantity": 1,
+          "obtain": "From a Preschooler after solving the seven mysteries, after clearing Hala's grand trial (Night)"
+        },
+        {
+          "item": "Flame Plate",
+          "quantity": 1,
+          "obtain": "Next to the furnace on the northeast side of the Trainer's School, after clearing Nanu's grand trial (hidden)"
+        },
+        {
+          "item": "Quick Claw",
+          "quantity": 1,
+          "obtain": "1F, from a Beauty in the area left of the stairs"
+        },
+        {
+          "item": "Oran Berry",
+          "quantity": 3,
+          "obtain": "1F, from Preschooler Mia after defeating her"
+        },
+        {
+          "item": "Potion",
+          "quantity": 1,
+          "obtain": "2F, from a boy sitting in the front right seat in the classroom at the far end of the hall"
+        },
+        {
+          "item": "Great Ball",
+          "quantity": 5,
+          "obtain": "2F, from Teacher Emily after defeating her"
+        },
+        {
+          "item": "King's Rock",
+          "quantity": 1,
+          "obtain": "3F, from Principal Asuka for defeating her, after becoming Champion"
+        }
+      ],
       "battles": [
         {
           "id": "21",
@@ -629,7 +832,38 @@
       "bossTrainers": [],
       "shops": [],
       "shopTables": [],
-      "items": [],
+      "items": [
+        {
+          "item": "Potion",
+          "quantity": 1,
+          "obtain": "From a woman northeast of the yellow truck"
+        },
+        {
+          "item": "Protective Pads",
+          "quantity": 10,
+          "obtain": "Next to the southeastern ramp to the beach"
+        },
+        {
+          "item": "Lure Ball",
+          "quantity": 100,
+          "obtain": "On the beach, by the palm tree behind the woman in the lounge chair (hidden) (regenerates occasionally)"
+        },
+        {
+          "item": "Dive Ball",
+          "quantity": 100,
+          "obtain": "On the beach, by the northwestern-most palm tree (hidden) (regenerates occasionally)"
+        },
+        {
+          "item": "Luminous Moss",
+          "quantity": 1,
+          "obtain": "Received from a Beauty by helping her Corsola on the beach next to the southeastern ramp, after clearing Lana's trial"
+        },
+        {
+          "item": "Icicle Plate",
+          "quantity": 1,
+          "obtain": "On the coastline in front of the southeast stairwell, after defeating Nanu (hidden)"
+        }
+      ],
       "battles": []
     },
     {
@@ -735,7 +969,178 @@
         "Hau'oli Mall",
         "Hau'oli Mall Tutor"
       ],
-      "items": [],
+      "items": [
+        {
+          "item": "Nidogram",
+          "quantity": 1,
+          "obtain": "Alola Tourist Bureau, from the attendant in the Alola Tourist Bureau when visited for the first time"
+        },
+        {
+          "item": "Ultra Ball",
+          "quantity": 10,
+          "obtain": "Alola Tourist Bureau, from a Scientist in the if the player has ten different Pokémon registered as owned in their Pokédex"
+        },
+        {
+          "item": "Lens Case",
+          "quantity": 1,
+          "obtain": "Outside the apparel shop, from Lillie"
+        },
+        {
+          "item": "Makeup Bag",
+          "quantity": 1,
+          "obtain": "Outside the apparel shop, from Lillie (if the player is female)"
+        },
+        {
+          "item": "Silk Scarf",
+          "quantity": 1,
+          "obtain": "From a woman outside the apparel shop"
+        },
+        {
+          "item": "Ring Target",
+          "quantity": 10,
+          "obtain": "In the southeast corner of the fenced area behind the Malasada Shop"
+        },
+        {
+          "item": "Heal Ball",
+          "quantity": 1,
+          "obtain": "From the Sightseer in front of the Pokémon Center"
+        },
+        {
+          "item": "Money",
+          "quantity": 10,
+          "obtain": "Pokémon Center, from a Beauty if the player has Abra registered in their Pokédex as Caught"
+        },
+        {
+          "item": "Float Stone",
+          "quantity": 10,
+          "obtain": "In the gated area opposite the Pokémon Center"
+        },
+        {
+          "item": "Micle Berry",
+          "quantity": 900,
+          "obtain": "At the north end of the front yard of Ilima's house"
+        },
+        {
+          "item": "Lumiose Galette",
+          "quantity": 1,
+          "obtain": "Ilima's house, from his mom in the kitchen"
+        },
+        {
+          "item": "Revive",
+          "quantity": 1,
+          "obtain": "Hau'oli City Hall, from a woman with a Pyukumuku"
+        },
+        {
+          "item": "Love Ball",
+          "quantity": 100,
+          "obtain": "East of the lamppost next to the two bushes east of the entrance to Hau'oli City Hall (hidden)"
+        },
+        {
+          "item": "TM49 (Round)",
+          "quantity": 1,
+          "obtain": "In the gated area opposite the Police Station"
+        },
+        {
+          "item": "Revive",
+          "quantity": 3,
+          "obtain": "Near the Pokémon Center, from Lillie after defeating Ilima"
+        },
+        {
+          "item": "Gracidea",
+          "quantity": 1,
+          "obtain": "Shopping Mall, from the woman standing to the cashier's right in the Gracidea Apparel Shop"
+        },
+        {
+          "item": "Great Ball",
+          "quantity": 5,
+          "obtain": "Shopping Mall, from an Ace Trainer for watching the Alola Ride Show completely (Day)"
+        },
+        {
+          "item": "TM48 (Snarl)",
+          "quantity": 1,
+          "obtain": "Shopping Mall, from the Janitor after cleaning up all the trash (Night)"
+        },
+        {
+          "item": "Nugget",
+          "quantity": 1,
+          "obtain": "Hau'oli City Hall, from Gentleman Reginald after defeating him, after completing Hala's grand trial"
+        },
+        {
+          "item": "Shell Bell",
+          "quantity": 1,
+          "obtain": "Hau'oli City Hall, from a Delibird after speaking to the woman at the front desk, after completing Hala's grand trial"
+        },
+        {
+          "item": "Photo Album",
+          "quantity": 1,
+          "obtain": "Alola Photo Club, from the attendant after visiting for the first time"
+        },
+        {
+          "item": "Max Potion",
+          "quantity": 1,
+          "obtain": "Shopping Mall, from an Ace Trainer after dealing with the Bewear disturbance in the Bewear costume show, after completing Olivia's grand trial and seeing the Alola Ride Show (Day)"
+        },
+        {
+          "item": "Big Nugget",
+          "quantity": 1,
+          "obtain": "Hau'oli Police Station, from Ilima as a reward for helping him solve the Hypno mystery, after completing Olivia's grand trial"
+        },
+        {
+          "item": "Insect Plate",
+          "quantity": 1,
+          "obtain": "In the front left of the salon, after completing Nanu's grand trial (hidden)"
+        },
+        {
+          "item": "Toxic Plate",
+          "quantity": 1,
+          "obtain": "In front of the palm tree that is at the northwest corner of the Pokémon Center, after completing Nanu's grand trial (hidden)"
+        },
+        {
+          "item": "Meadow Plate",
+          "quantity": 1,
+          "obtain": "To the right of the three trees southwest of Hau'oli City Hall, after completing Nanu's grand trial (hidden)"
+        },
+        {
+          "item": "Draco Plate",
+          "quantity": 1,
+          "obtain": "In front of the police car, after completing Nanu's grand trial (hidden)"
+        },
+        {
+          "item": "Bottle Cap",
+          "quantity": 1,
+          "obtain": "Shopping Mall, held by gift Magearna, after becoming Champion"
+        },
+        {
+          "item": "Everstone",
+          "quantity": 1,
+          "obtain": "Ilima's house, from Ilima after defeating him at the Trainers' School, after becoming Champion"
+        },
+        {
+          "item": "Ilima's Normalium Z",
+          "quantity": 1,
+          "obtain": "Ilima's house, from Ilima after defeating him at the Trainers' School, after becoming Champion"
+        },
+        {
+          "item": "X Attack",
+          "quantity": 1,
+          "obtain": "From a man at the corner of the Ferry Terminal"
+        },
+        {
+          "item": "X Defense",
+          "quantity": 1,
+          "obtain": "From a woman at the corner of the Ferry Terminal"
+        },
+        {
+          "item": "Grip Claw",
+          "quantity": 10,
+          "obtain": "At the end of the dock"
+        },
+        {
+          "item": "Fresh Water",
+          "quantity": 1,
+          "obtain": "From the lady in the Ferry Terminal after Rotom fixes the vending machine, after completing Hala's grand trial"
+        }
+      ],
       "battles": [
         {
           "id": "47",
