@@ -1,13 +1,314 @@
 {
   "shopTables": {
-    "Pokemart Basic": {
-      "name": "Pokemart Basic",
+    "Pokemart": {
+      "name": "Pokemart",
       "items": [
-        { "item": "Poké Ball", "price": "$200" },
-        { "item": "Potion", "price": "$200" },
-        { "item": "Antidote", "price": "$200" },
-        { "item": "Paralyze Heal", "price": "$200" },
-        { "item": "Awakening", "price": "$100" }
+        {
+          "item": "Cherish Ball",
+          "price": "$300"
+        },
+        {
+          "item": "Quick Ball",
+          "price": "$1,000"
+        },
+        {
+          "item": "Heart Scale",
+          "price": "$100"
+        },
+        {
+          "item": "Rare Candy",
+          "price": "$10"
+        },
+        {
+          "item": "Max Repel",
+          "price": "$10"
+        },
+        {
+          "item": "Max Elixir",
+          "price": "$400"
+        },
+        {
+          "item": "Great Ball (1)",
+          "price": "$600"
+        },
+        {
+          "item": "B.F.F. Heart (2)",
+          "price": "$3,150"
+        },
+        {
+          "item": "Moldy Cookie (2)",
+          "price": "$2,650"
+        },
+        {
+          "item": "Net Ball (3)",
+          "price": "$870"
+        },
+        {
+          "item": "Dusk Ball (3)",
+          "price": "$1,300"
+        },
+        {
+          "item": "Blue Box (4)",
+          "price": "$25,000"
+        },
+        {
+          "item": "Pink Box (4)",
+          "price": "$25,000"
+        },
+        {
+          "item": "Timer Ball (5)",
+          "price": "$1,400"
+        },
+        {
+          "item": "Ultra Ball (5)",
+          "price": "$1,200"
+        },
+        {
+          "item": "PP Max (6)",
+          "price": "$250"
+        },
+        {
+          "item": "Master Ball (7)",
+          "price": "$100,000"
+        },
+        {
+          "item": "Move Relearner",
+          "price": "1 Heart Scale per move."
+        }
+      ]
+    },
+    "Hau'oli Pokecenter": {
+      "name": "Hau'oli Pokecenter",
+      "items": [
+        {
+          "item": "Move Deleter",
+          "price": "Free"
+        },
+        {
+          "item": "Smoke Ball",
+          "price": "$1,120"
+        },
+        {
+          "item": "Cleanse Tag",
+          "price": "$770"
+        },
+        {
+          "item": "Sticky Barb",
+          "price": "$1,800"
+        },
+        {
+          "item": "Lagging Tail",
+          "price": "$2,220"
+        },
+        {
+          "item": "Quick Claw",
+          "price": "$2,000"
+        }
+      ]
+    },
+    "Big Wave Beach Tutor": {
+      "name": "Big Wave Beach Tutor",
+      "items": [
+        {
+          "item": "Tutor: Snore",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Echoed Voice",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Fling",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Heal Bell",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Quash",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Substitute",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Hail",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Electric Terrain",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Grassy Terrain",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Misty Terrain",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Psychic Terrain",
+          "price": "Free"
+        }
+      ]
+    },
+    "Big Wave Beach BP Shop": {
+      "name": "Big Wave Beach BP Shop",
+      "items": [
+        {
+          "item": "Miracle Medicine",
+          "price": "0 BP"
+        },
+        {
+          "item": "Ability Pillbox",
+          "price": "0 BP"
+        },
+        {
+          "item": "Fire Stone",
+          "price": "1 BP"
+        },
+        {
+          "item": "Water Stone",
+          "price": "1 BP"
+        },
+        {
+          "item": "Thunder Stone",
+          "price": "1 BP"
+        },
+        {
+          "item": "Leaf Stone",
+          "price": "1 BP"
+        },
+        {
+          "item": "Ice Stone",
+          "price": "1 BP"
+        },
+        {
+          "item": "Revival Flute",
+          "price": "0 BP"
+        }
+      ]
+    },
+    "Route 2 Pokecenter": {
+      "name": "Route 2 Pokecenter",
+      "items": [
+        {
+          "item": "Heat Rock",
+          "price": "$3,950"
+        },
+        {
+          "item": "Damp Rock",
+          "price": "$3,950"
+        },
+        {
+          "item": "Icy Rock",
+          "price": "$3,950"
+        },
+        {
+          "item": "Smooth Rock",
+          "price": "$3,950"
+        },
+        {
+          "item": "Terrain Extender",
+          "price": "$4,300"
+        },
+        {
+          "item": "Everstone",
+          "price": "$3,000"
+        },
+        {
+          "item": "Light Clay",
+          "price": "$8,700"
+        }
+      ]
+    },
+    "Hau'oli Mall": {
+      "name": "Hau'oli Mall",
+      "items": [
+        {
+          "item": "Adamant Orb",
+          "price": "$10,000"
+        },
+        {
+          "item": "Lustrous Orb",
+          "price": "$10,000"
+        },
+        {
+          "item": "Griseous Orb",
+          "price": "$10,000"
+        },
+        {
+          "item": "Red Orb",
+          "price": "$10,000"
+        },
+        {
+          "item": "Blue Orb",
+          "price": "$10,000"
+        },
+        {
+          "item": "Sky Plate (Plates only after Nanu)",
+          "price": "$10,000"
+        },
+        {
+          "item": "Zap Plate",
+          "price": "$10,000"
+        },
+        {
+          "item": "Stone Plate",
+          "price": "$10,000"
+        },
+        {
+          "item": "Iron Plate",
+          "price": "$10,000"
+        },
+        {
+          "item": "Fist Plate",
+          "price": "$10,000"
+        },
+        {
+          "item": "Dread Plate",
+          "price": "$10,000"
+        },
+        {
+          "item": "Splash Plate",
+          "price": "$10,000"
+        },
+        {
+          "item": "Pixie Plate",
+          "price": "$10,000"
+        }
+      ]
+    },
+    "Hau'oli Mall Tutor": {
+      "name": "Hau'oli Mall Tutor",
+      "items": [
+        {
+          "item": "Grass Pledge",
+          "price": "Free (All moves here require the Pokemon to have Maximum Friendship. Purchase B.F.F. Hearts at Pokemon Centers after defeating Totem Araquanid)"
+        },
+        {
+          "item": "Fire Pledge",
+          "price": "Free"
+        },
+        {
+          "item": "Water Pledge",
+          "price": "Free"
+        },
+        {
+          "item": "Frenzy Plant",
+          "price": "Free"
+        },
+        {
+          "item": "Blast Burn",
+          "price": "Free"
+        },
+        {
+          "item": "Hydro Cannon",
+          "price": "Free"
+        }
       ]
     }
   }

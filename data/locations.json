@@ -151,7 +151,48 @@
       "shopTables": [
         "Pokemart"
       ],
-      "items": [],
+      "items": [
+        {
+          "item": "Poké Ball",
+          "quantity": 10,
+          "obtain": "From Kukui after the capture tutorial"
+        },
+        {
+          "item": "Potion",
+          "quantity": 5,
+          "obtain": "From Kukui after the capture tutorial"
+        },
+        {
+          "item": "Miracle Medicine",
+          "quantity": 1,
+          "obtain": "North of the grass patch next to the Trainer Tips sign."
+        },
+        {
+          "item": "Poké Ball",
+          "quantity": 900,
+          "obtain": "North of the second grassy patch on the east side"
+        },
+        {
+          "item": "Rare Candy",
+          "quantity": 999,
+          "obtain": "On the cliffs overlooking the bay, west of Youngster Jimmy"
+        },
+        {
+          "item": "Max Repel",
+          "quantity": 900,
+          "obtain": "West of the entrance to Iki Town"
+        },
+        {
+          "item": "Gumshoosite",
+          "quantity": 1,
+          "obtain": "At the end of the west path behind the rocks south of Iki Town (requires Tauros Charge)"
+        },
+        {
+          "item": "Haban Berry",
+          "quantity": 900,
+          "obtain": "At the end of the northern east path behind the rocks south of Iki Town (requires Tauros Charge)"
+        }
+      ],
       "battles": [
         {
           "id": "491",
