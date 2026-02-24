@@ -1,6 +1,8 @@
 name: Sync Google Sheets Locations
 
 on:
+  schedule:
+    - cron: '0 6 * * 1'  # Every Monday at 06:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -22,22 +24,30 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Sync locations from Google Sheets
-        run: npm run sync-sheets-locations
+      - name: Sync BattleLocations from Google Sheets
+        run: |
+          echo "Syncing BattleLocations (GID 0)..."
+          npm run sync-sheets-locations
+          echo "BattleLocations sync complete."
 
-      - name: Sync shop tables from Google Sheets
-        run: npm run sync-sheets-shop-tables
+      - name: Sync EncounterLocations from Google Sheets
+        run: |
+          echo "Syncing EncounterLocations (GID 170288071)..."
+          npm run sync-encounter-locations
+          echo "EncounterLocations sync complete."
 
-      - name: Sync item locations from Google Sheets
-        run: npm run sync-item-locations -- 1958269454
-
-      - name: Sync encounter locations from Google Sheets
-        run: npm run sync-encounter-locations
+      - name: Validate locations data
+        run: node scripts/validate-locations.js
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/locations.json data/shop-tables.json
-          git diff --staged --quiet || git commit -m "Update locations, shop tables, item locations, and encounter locations from Google Sheets"
-          git push
+          git add data/locations.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update locations from Google Sheets (BattleLocations + EncounterLocations)"
+            git push
+            echo "Changes committed and pushed."
+          fi

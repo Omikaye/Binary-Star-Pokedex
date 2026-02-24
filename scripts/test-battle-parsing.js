@@ -152,6 +152,18 @@ function parseShopTables(str) {
   return str.split(/\s*,\s*/).map(s => s.trim()).filter(s => s);
 }
 
+function parseGiftsTrades(str) {
+  if (!str || !str.trim() || str.trim().toLowerCase() === 'none') return [];
+  const entries = str.split('|').map(s => s.trim()).filter(s => s);
+  return entries.map(entry => {
+    const parenMatch = entry.match(/^(.+?)\s*\((.+)\)\s*$/);
+    if (parenMatch) {
+      return { name: parenMatch[1].trim(), description: parenMatch[2].trim() };
+    }
+    return { name: entry.trim(), description: '' };
+  });
+}
+
 function parseBattle(str) {
   if (!str || str.trim().toLowerCase() === 'none') return null;
   
@@ -181,7 +193,7 @@ function convertSheetToLocations(rows) {
       name: '',
       notes: '',
       encounters: [],
-      giftsTrades: '',
+      giftsTrades: [],
       staticPokemon: [],
       trainers: [],
       bossTrainers: [],
@@ -205,7 +217,7 @@ function convertSheetToLocations(rows) {
       } else if (field === 'shops') {
         location.shopTables = parseShopTables(value);
       } else if (field.includes('gifts') || field.includes('trades')) {
-        location.giftsTrades = value;
+        location.giftsTrades = parseGiftsTrades(value);
       } else if (field.includes('static pokemon')) {
         location.staticPokemon = parseList(value);
       } else if (field.includes('boss trainer')) {
