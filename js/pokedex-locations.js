@@ -79,6 +79,15 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
           }
         }
         
+        // Search by gifts/trades
+        if (loc.giftsTrades && Array.isArray(loc.giftsTrades)) {
+          for (var i = 0; i < loc.giftsTrades.length; i++) {
+            var gt = loc.giftsTrades[i];
+            var gtName = window.translateDisplayName ? window.translateDisplayName(gt.name || '') : (gt.name || '');
+            if (gtName.toLowerCase().indexOf(query) >= 0) return true;
+          }
+        }
+        
         // Search by items
         if (loc.items) {
           for (var i = 0; i < loc.items.length; i++) {
@@ -166,11 +175,37 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       buf += '<p class="resultsub">' + escapeHTML(loc.notes) + '</p>';
     }
 
+    // Gifts / Trades
+    var giftsTrades = loc.giftsTrades;
+    if (Array.isArray(giftsTrades) && giftsTrades.length) {
+      buf += '<div style="background:#f3e5f5;padding:12px;margin:8px 0;border-radius:4px">';
+      buf += '<h3 style="margin-top:0;color:#6a1b9a">Gifts &amp; Trades</h3>';
+      buf += '<ul class="utilichart nokbd">';
+      for (var gi = 0; gi < giftsTrades.length; gi++) {
+        var gt = giftsTrades[gi];
+        var gtTranslated = window.translateDisplayName ? window.translateDisplayName(gt.name) : gt.name;
+        var gtID = toID(gtTranslated);
+        var gtData = BattlePokedex[gtID];
+        var gtDisplayName = gtData ? gtData.name : gtTranslated;
+        buf += '<li class="result" style="display:block;padding:6px 8px">';
+        buf += '<a href="' + Config.baseurl + 'pokemon/' + gtID + '" data-target="push" style="text-decoration:none">';
+        buf += '<span class="picon" style="' + getPokemonIcon(gtID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>';
+        buf += '<span style="vertical-align:middle;font-weight:600">' + escapeHTML(gtDisplayName) + '</span>';
+        buf += '</a>';
+        if (gt.description) {
+          buf += '<div style="color:#777;font-size:0.85em;margin-top:2px;padding-left:46px">' + escapeHTML(gt.description) + '</div>';
+        }
+        buf += '</li>';
+      }
+      buf += '</ul>';
+      buf += '</div>';
+    }
+
     // Encounters
     var encounters = loc.encounters || [];
     if (encounters.length) {
       buf += '<div style="background:#e8f5e9;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0;color:#2e7d32">Encounters</h3>';
+      buf += '<h3 style="margin-top:0;color:#2e7d32">Wild Encounters</h3>';
       for (var s=0; s<encounters.length; s++) {
         var spot = encounters[s];
         if (!spot || !spot.pokemon || !spot.pokemon.length) continue;
@@ -187,41 +222,41 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
           var monID = toID(translatedName);
           var pokeData = BattlePokedex[monID];
           var displayName = pokeData ? pokeData.name : translatedName;
-          
+
+          // Main Pokemon row
           buf += '<tr>';
-          // Percent first
           buf += '<td style="text-align:center"><span class="chancepill">' + (mon.chance!=null? (mon.chance + '%') : '&mdash;') + '</span></td>';
-          // Pokemon icon + name link with SOS on same line
           buf += '<td>'
-            + '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(displayName) + '">' 
+            + '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(displayName) + '">'
             + '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>'
             + escapeHTML(displayName)
-            + '</a>';
-          
-          // Add SOS Pokemon on same line
-          var sos = mon.sos || [];
-          if (sos.length > 0) {
-            buf += ' <span style="color:#999;font-size:0.9em">(SOS)</span> ';
-            for (var k=0; k<sos.length; k++) {
-              var child = sos[k];
-              var childTranslated = window.translateDisplayName(child);
-              var childID = toID(childTranslated);
-              var childData = BattlePokedex[childID];
-              var childDisplayName = childData ? childData.name : childTranslated;
-              if (k > 0) buf += ', ';
-              buf += '<a href="' + Config.baseurl + 'pokemon/' + childID + '" data-target="push" title="' + escapeHTML(childDisplayName) + '" style="font-size:0.9em">' 
-                + '<span class="picon" style="' + getPokemonIcon(childID) + ';display:inline-block;vertical-align:middle;margin-right:4px"></span>'
-                + escapeHTML(childDisplayName)
-                + '</a>';
-            }
-          }
-          
-          buf += '</td>';
+            + '</a>'
+            + '</td>';
           buf += '</tr>';
+
+          // SOS Pokemon sub-rows (one per unique SOS pokemon)
+          var sos = mon.sos || [];
+          for (var k=0; k<sos.length; k++) {
+            var child = sos[k];
+            var childTranslated = window.translateDisplayName(child);
+            var childID = toID(childTranslated);
+            var childData = BattlePokedex[childID];
+            var childDisplayName = childData ? childData.name : childTranslated;
+            buf += '<tr class="sos-row">';
+            buf += '<td></td>';
+            buf += '<td style="padding-left:24px;font-size:0.9em">'
+              + '<span style="color:#c62828;font-weight:600;margin-right:6px">S.O.S.</span>'
+              + '<a href="' + Config.baseurl + 'pokemon/' + childID + '" data-target="push" title="' + escapeHTML(childDisplayName) + '">'
+              + '<span class="picon" style="' + getPokemonIcon(childID) + ';display:inline-block;vertical-align:middle;margin-right:4px"></span>'
+              + escapeHTML(childDisplayName)
+              + '</a>'
+              + '</td>';
+            buf += '</tr>';
+          }
         }
         buf += '</tbody></table>';
       }
-      buf += '</div>'; // Close Encounters section
+      buf += '</div>'; // Close Wild Encounters section
     }
     
     // Static Pokemon (pink section)
