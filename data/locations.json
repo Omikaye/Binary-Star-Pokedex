@@ -690,9 +690,9 @@
       "shops": [],
       "shopTables": [
         "Pokemart",
-        "Hauoli Pokecenter",
-        "Hauoli Mall",
-        "Hauoli Mall Tutors"
+        "Hau'oli Pokecenter",
+        "Hau'oli Mall",
+        "Hau'oli Mall Tutor"
       ],
       "items": [],
       "battles": [
@@ -797,17 +797,17 @@
           "notes": "None"
         },
         {
-          "id": "235",
+          "id": "S235",
           "tag": "Capturable",
           "notes": "Part of a sidequest. After defeating Olivia, go to Hau'oli Police station and speak to Ilima to begin this quest."
         },
         {
-          "id": "236",
+          "id": "S236",
           "tag": "Capturable",
           "notes": "Part of a sidequest. After defeating Olivia, go to Hau'oli Police station and speak to Ilima to begin this quest."
         },
         {
-          "id": "237",
+          "id": "S237",
           "tag": "Capturable",
           "notes": "Part of a sidequest. After defeating Olivia, go to Hau'oli Police station and speak to Ilima to begin this quest."
         },
