@@ -382,7 +382,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
           
           for (var stii = 0; stii < shopTable.items.length; stii++) {
             var shopItem = shopTable.items[stii];
-            var tmMatch = shopItem.item.match(/^TM\d+\s*\((.+)\)$/);
+            var tmMatch = shopItem.item.match(/^(TM\d+)\s*\((.+)\)$/);
+            var baseShopItem = shopItem.item.replace(/\s*\(\d+\)$/, '');
             var shopIcon = '';
             var linkTarget = '';
             var linkType = 'items';
@@ -390,12 +391,14 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
             var shopItemData = null;
             
             if (tmMatch) {
-              // TM - use TM icon and link to move
-              var moveName = tmMatch[1].trim();
+              // TM - use TM-specific sprite and link to move
+              var moveName = tmMatch[2].trim();
+              var tmItemId = toID(tmMatch[1]);
               linkTarget = toID(moveName);
               linkType = 'moves';
-              shopIcon = '<span class="itemicon" style="' + getItemIcon('tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
-            } else if (shopItem.item === 'Poké Ball') {
+              shopItemData = BattleItems[tmItemId];
+              shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData ? tmItemId : 'tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+            } else if (baseShopItem === 'Poké Ball') {
               // Fix Poké Ball to use pokball ID (toID removes the accented e)
               itemID = 'pokball';
               linkTarget = 'pokball';
@@ -404,8 +407,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
                 shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
               }
             } else {
-              // Regular item
-              itemID = toID(shopItem.item);
+              // Regular item - strip "(N)" suffix for sprite/link lookup
+              itemID = toID(baseShopItem);
               linkTarget = itemID;
               shopItemData = BattleItems[itemID];
               if (shopItemData) {
@@ -444,20 +447,23 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       for (var si=0; si<loc.shops.length; si++) {
         var sh = loc.shops[si];
         // Check for TM format: "TM90 (Zen Headbutt)"
-        var tmMatch = sh.item.match(/^TM\d+\s*\((.+)\)$/);
-        var itemID = toID(sh.item);
+        var tmMatch = sh.item.match(/^(TM\d+)\s*\((.+)\)$/);
+        var baseShopItem = sh.item.replace(/\s*\(\d+\)$/, '');
+        var itemID = toID(baseShopItem);
         var shopItemData = BattleItems[itemID];
         var shopIcon = '';
         var linkTarget = itemID;
         var linkType = 'items';
         
         if (tmMatch) {
-          // TM - use TM icon and link to move
-          var moveName = tmMatch[1].trim();
+          // TM - use TM-specific sprite and link to move
+          var moveName = tmMatch[2].trim();
+          var tmItemId = toID(tmMatch[1]);
           linkTarget = toID(moveName);
           linkType = 'moves';
-          shopIcon = '<span class="itemicon" style="' + getItemIcon('tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
-        } else if (sh.item === 'Poké Ball') {
+          shopItemData = BattleItems[tmItemId];
+          shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData ? tmItemId : 'tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+        } else if (baseShopItem === 'Poké Ball') {
           // Fix Poké Ball to use pokball ID (toID removes the accented e)
           itemID = 'pokball';
           linkTarget = 'pokball';
@@ -494,8 +500,9 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       for (var ii=0; ii<loc.items.length; ii++) {
         var it = loc.items[ii];
         // Check for TM format: "TM90 (Zen Headbutt)"
-        var tmMatch = it.item.match(/^TM\d+\s*\((.+)\)$/);
-        var iid = toID(it.item);
+        var tmMatch = it.item.match(/^(TM\d+)\s*\((.+)\)$/);
+        var baseItem = it.item.replace(/\s*\(\d+\)$/, '');
+        var iid = toID(baseItem);
         var itemData = BattleItems[iid];
         var itemIcon = '';
         var linkTarget = iid;
@@ -505,12 +512,14 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         if (it.item && it.item.trim().startsWith('$')) {
           itemIcon = '<img src="' + ResourcePrefix + 'sprites/pokedollar_icon.png" style="width:32px;height:32px;display:inline-block" alt="Money" />';
         } else if (tmMatch) {
-          // TM - use TM icon and link to move
-          var moveName = tmMatch[1].trim();
+          // TM - use TM-specific sprite and link to move
+          var moveName = tmMatch[2].trim();
+          var tmItemId = toID(tmMatch[1]);
           linkTarget = toID(moveName);
           linkType = 'moves';
-          itemIcon = '<span class="itemicon" style="' + getItemIcon('tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
-        } else if (it.item === 'Poké Ball') {
+          itemData = BattleItems[tmItemId];
+          itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData ? tmItemId : 'tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+        } else if (baseItem === 'Poké Ball') {
           // Fix Poké Ball to use pokball ID (toID removes the accented e)
           iid = 'pokball';
           linkTarget = 'pokball';

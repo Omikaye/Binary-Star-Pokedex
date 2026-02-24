@@ -199,13 +199,18 @@ function parseTableBasedShopTables(rows) {
     }
     
     // Otherwise, check if this row is a table name (shop/location name)
-    // In table-based format, the table name is alone in the first cell
-    // and other cells in that row should be empty or not contain " - $" pattern
+    // In table-based format, the table name is in the first cell;
+    // adjacent cells may be empty or carry labels derived from the shop name
+    // (e.g. "Pokemart Cost"), but must not be unrelated shop names (column format).
     const firstCell = row[0] ? row[0].trim() : '';
-    const otherCellsEmpty = row.slice(1).every(c => !c || c.trim() === '');
     const firstCellHasDash = firstCell.includes(' - ');
+    // Accept adjacent cells that are empty OR that start with the shop name
+    const otherCellsEmptyOrLabel = row.slice(1).every(c => {
+      const val = (c || '').trim();
+      return val === '' || val.toLowerCase().startsWith(firstCell.toLowerCase());
+    });
     
-    if (firstCell && otherCellsEmpty && !firstCellHasDash && !headerFound) {
+    if (firstCell && otherCellsEmptyOrLabel && !firstCellHasDash && !headerFound) {
       // This looks like a shop/location name
       currentShop = firstCell;
       
@@ -474,6 +479,82 @@ if (!boutiqueH) {
 
 console.log('\n--- Horizontal Output ---');
 console.log(JSON.stringify(shopTablesH, null, 2));
+
+// ============================================================
+console.log('\n=== Testing New Format: Populated Adjacent Name Cells ===\n');
+
+// New format: adjacent cells in the name row are populated (e.g., "Pokemart Cost")
+// Single table case
+const SAMPLE_CSV_NEW_SINGLE = `Pokemart,Pokemart Cost
+Item,Cost
+Cherish Ball,$300
+Quick Ball,"$1,000"
+Heart Scale,$100`;
+
+const rowsNewSingle = parseCSV(SAMPLE_CSV_NEW_SINGLE);
+console.log(`✓ Parsed ${rowsNewSingle.length} rows from new-format (single table) CSV`);
+
+const shopTablesNewSingle = convertSheetToShopTables(rowsNewSingle);
+const tableNamesNewSingle = Object.keys(shopTablesNewSingle);
+console.log(`✓ Converted ${tableNamesNewSingle.length} shop tables\n`);
+
+if (tableNamesNewSingle.length !== 1) {
+  console.error(`✗ New single-table format: Expected 1 shop table, got ${tableNamesNewSingle.length}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ New single-table format: Correct number of shop tables (1)');
+}
+
+const pokemartNew = shopTablesNewSingle['Pokemart'];
+if (!pokemartNew) {
+  console.error('✗ New single-table format: Pokemart not found');
+  allTestsPassed = false;
+} else {
+  if (pokemartNew.items.length !== 3) {
+    console.error(`✗ New single-table format: Pokemart expected 3 items, got ${pokemartNew.items.length}`);
+    allTestsPassed = false;
+  } else {
+    console.log('✓ New single-table format: Pokemart has correct number of items (3)');
+  }
+  const cherishBall = pokemartNew.items.find(i => i.item === 'Cherish Ball');
+  if (!cherishBall || cherishBall.price !== '$300') {
+    console.error('✗ New single-table format: Cherish Ball price incorrect');
+    allTestsPassed = false;
+  } else {
+    console.log('✓ New single-table format: Cherish Ball price correct ($300)');
+  }
+}
+
+// Multiple tables separated by blank rows (new format)
+const SAMPLE_CSV_NEW_MULTI = `Pokemart,Pokemart Cost
+Item,Cost
+Cherish Ball,$300
+Quick Ball,"$1,000"
+
+Boutique,Boutique Cost
+Item,Cost
+Silk Scarf,$1000
+Muscle Band,$1000`;
+
+const rowsNewMulti = parseCSV(SAMPLE_CSV_NEW_MULTI);
+const shopTablesNewMulti = convertSheetToShopTables(rowsNewMulti);
+const tableNamesNewMulti = Object.keys(shopTablesNewMulti);
+console.log(`\n✓ Parsed new-format multi-table CSV (${tableNamesNewMulti.length} tables)`);
+
+if (tableNamesNewMulti.length !== 2) {
+  console.error(`✗ New multi-table format: Expected 2 shop tables, got ${tableNamesNewMulti.length}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ New multi-table format: Correct number of shop tables (2)');
+}
+
+const boutiqueNew = shopTablesNewMulti['Boutique'];
+if (!boutiqueNew || boutiqueNew.items.length !== 2) {
+  console.error(`✗ New multi-table format: Boutique expected 2 items, got ${boutiqueNew ? boutiqueNew.items.length : 'not found'}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ New multi-table format: Boutique has correct number of items (2)');
+}
 
 // ============================================================
 console.log('\n=== Testing Shop Table Name Mismatch Validation ===\n');
