@@ -97,7 +97,7 @@ function parsePokemonList(str) {
   let match;
   
   while ((match = re.exec(str)) !== null) {
-    const name = match[1].trim();
+    const name = match[1].trim().replace(/\s*\(Forme\s+(\d+)\)/i, ' $1');
     const inside = match[2];
     
     // Parse inside: "10%" or "10%, SOS: Pokemon1, Pokemon2"

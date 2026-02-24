@@ -18,7 +18,7 @@
               "sos": []
             },
             {
-              "name": "Rattata (Forme 1)",
+              "name": "Rattata 1",
               "chance": 10,
               "sos": [
                 "Rattata"
@@ -45,7 +45,7 @@
               "sos": []
             },
             {
-              "name": "Scatterbug (Forme 16)",
+              "name": "Scatterbug 16",
               "chance": 10,
               "sos": []
             },
@@ -81,7 +81,7 @@
               "sos": []
             },
             {
-              "name": "Rattata (Forme 1)",
+              "name": "Rattata 1",
               "chance": 10,
               "sos": [
                 "Rattata"
@@ -108,7 +108,7 @@
               "sos": []
             },
             {
-              "name": "Spewpa (Forme 16)",
+              "name": "Spewpa 16",
               "chance": 10,
               "sos": []
             },
@@ -297,7 +297,7 @@
               "name": "Hoppip",
               "chance": 10,
               "sos": [
-                "Scatterbug (Forme 8)"
+                "Scatterbug 8"
               ]
             },
             {
@@ -360,14 +360,14 @@
           },
           "pokemon": [
             {
-              "name": "Grimer (Forme 1)",
+              "name": "Grimer 1",
               "chance": 10,
               "sos": [
                 "Grimer"
               ]
             },
             {
-              "name": "Meowth (Forme 1)",
+              "name": "Meowth 1",
               "chance": 10,
               "sos": [
                 "Meowth"
@@ -377,7 +377,7 @@
               "name": "Caterpie",
               "chance": 10,
               "sos": [
-                "Scatterbug (Forme 19)"
+                "Scatterbug 19"
               ]
             },
             {
@@ -607,7 +607,7 @@
               "name": "Pidove",
               "chance": 15,
               "sos": [
-                "Scatterbug (Forme 7)"
+                "Scatterbug 7"
               ]
             },
             {
@@ -638,7 +638,7 @@
               "name": "Chingling",
               "chance": 10,
               "sos": [
-                "Burmy (Forme 2)"
+                "Burmy 2"
               ]
             },
             {
@@ -666,13 +666,13 @@
               "name": "Furfrou",
               "chance": 5,
               "sos": [
-                "Furfrou (Forme 1)",
-                "Furfrou (Forme 2)",
-                "Furfrou (Forme 3)",
-                "Furfrou (Forme 4)",
-                "Furfrou (Forme 9)",
-                "Furfrou (Forme 6)",
-                "Furfrou (Forme 8)"
+                "Furfrou 1",
+                "Furfrou 2",
+                "Furfrou 3",
+                "Furfrou 4",
+                "Furfrou 9",
+                "Furfrou 6",
+                "Furfrou 8"
               ]
             }
           ]

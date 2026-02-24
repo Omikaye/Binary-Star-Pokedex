@@ -111,6 +111,14 @@ function parseLevelRange(str) {
 }
 
 /**
+ * Translate "(Forme X)" suffix in a Pokémon name to just the number.
+ * e.g. "Rattata (Forme 1)" -> "Rattata 1"
+ */
+function translateFormeName(name) {
+  return name.replace(/\s*\(Forme\s+(\d+)\)/i, ' $1').trim();
+}
+
+/**
  * Parse a single encounter entry like "Yungoos (10%)" or "Rattata (Forme 1) (10%)"
  * Returns {name, chance} or null.
  */
@@ -120,10 +128,10 @@ function parseEncounterEntry(entry) {
   // Match the last "(N%)" pattern as the chance, everything before it is the name
   const chanceMatch = entry.match(/^(.*)\s*\((\d+)%\)\s*$/);
   if (chanceMatch) {
-    return { name: chanceMatch[1].trim(), chance: parseInt(chanceMatch[2], 10) };
+    return { name: translateFormeName(chanceMatch[1].trim()), chance: parseInt(chanceMatch[2], 10) };
   }
-  // No chance percentage found - return name only
-  return { name: entry, chance: null };
+  // No chance percentage found - return name only, still apply Forme translation
+  return { name: translateFormeName(entry), chance: null };
 }
 
 /**
