@@ -24,7 +24,7 @@ Aura: Sp. Defense (+2) (SOS: None, None)
 
 007 - Raticate 1
 Raticate 1 (Lv. 14) @Kee Berry [Impish] {Thick Fat} <Me First/Tackle/Slink Strike/Reversal>
-Aura: Defense (+1) (SOS: None, None)
+Aura: Defense (+1) (SOS: 014, None)
 
 008 - Teddiursa
 Teddiursa (Lv. 13) @(None) [Naughty] {Honey Gather} <Lick/Mud Shot/Fury Swipes/Yawn>
@@ -38,8 +38,8 @@ Aura: None (SOS: None, None)
 Raticate 2 (Lv. 12) @Pecha Berry [Modest] {Stamina} <Super Fang/Bite/Fury Swipes/Scary Face>
 Aura: Defense (+1) (SOS: 014, None)
 
-011 - Rattata 1
-Rattata 1 (Lv. 11) @(None) [Hardy] {Hustle} <Tackle/Tail Whip/Quick Attack/Hyper Fang>
+011 - Spearow
+Spearow (Lv. 2) @(None) [Modest] {Keen Eye} <Peck/Double Team/(None)/(None)>
 Aura: None (SOS: None, None)
 
 012 - Raticate 1
@@ -51,7 +51,7 @@ Rattata 1 (Lv. 11) @(None) [Hardy] {Hustle} <Tackle/Tail Whip/Quick Attack/Super
 Aura: None (SOS: None, None)
 
 014 - Rattata 1
-Rattata 1 (Lv. 10) @(None) [Timid] {Pickpocket} <Tackle/Tail Whip/Quick Attack/Pursuit>
+Rattata 1 (Lv. 10) @(None) [Timid] {Pickup} <Thief/Snatch/Pursuit/Quash>
 Aura: None (SOS: None, None)
 
 015 - Wishiwashi 1
@@ -530,9 +530,9 @@ Aura: None (SOS: None, None)
 Tapu Fini (Lv. 60) @(None) [Random] {Misty Surge} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
 
-134 - Ekans
-Ekans (Lv. 10) @(None) [Random] {Shed Skin} <(None)/(None)/(None)/(None)>
-Aura: None (SOS: None, None)
+134 - Happiny
+Happiny (Lv. 13) @Oval Stone [Random] {Friend Guard} <Charm/Round/Fairy Wind/Sweet Kiss>
+Aura: Defense (+2) (SOS: 134, None)
 
 135 - Exeggutor 1
 Exeggutor 1 (Lv. 40) @(None) [Random] {Harvest} <(None)/(None)/(None)/(None)>
@@ -611,12 +611,12 @@ Rattata 1 (Lv. 3) @(None) [Mild] {Hustle} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
 
 154 - Rattata 1
-Rattata 1 (Lv. 4) @Oran Berry [Random] {Hustle} <Quick Attack/Snatch/Fling/(None)>
-Aura: Sp. Defense (+1) (SOS: None, None)
+Rattata 1 (Lv. 4) @Oran Berry [Random] {Pickup} <Quick Attack/Snatch/Fling/(None)>
+Aura: Sp. Defense (+1) (SOS: 152, None)
 
 155 - Spearow
-Spearow (Lv. 4) @(None) [Random] {Sniper} <Peck/Double Team/Leer/(None)>
-Aura: Sp. Defense (+1) (SOS: None, None)
+Spearow (Lv. 4) @(None) [Random] {Keen Eye} <Peck/Double Team/Leer/(None)>
+Aura: Sp. Defense (+1) (SOS: 011, None)
 
 156 - Pinsir
 Pinsir (Lv. 42) @(None) [Random] {Moxie} <(None)/(None)/(None)/(None)>

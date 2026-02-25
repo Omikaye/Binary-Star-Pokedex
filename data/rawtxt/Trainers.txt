@@ -433,7 +433,7 @@ Natu (Lv. 19) @Colbur Berry [Sassy] {Anticipation} <Stored Power/Air Cutter/Agil
 Inkay (Lv. 19) @Quick Claw [Brave] {Contrary} <Nightmare/Psycrush/Topsy-Turvy/Hypnosis>
 Exeggcute (Lv. 20) @Sitrus Berry [Quiet] {Harvest} <Bullet Seed/Soft-Boiled/Leech Seed/Psybeam>
 Chingling (Lv. 19) @Normalium Z [Calm] {Soundproof} <Round/Disarming Voice/Confusion/Yawn>
-Kirlia (Lv. 20) @Muscle Band [Jolly] {Trace} <Heal Pulse/Sweet Tooth/Disable/Heart Stamp>
+Kirlia (Lv. 20) @Muscle Band [Jolly] {Trace} <Heal Pulse/Kick-Step/Disarming Voice/Heart Stamp>
 
 Prize Money: $2100
 075 - (Kalosian Woman) Sina

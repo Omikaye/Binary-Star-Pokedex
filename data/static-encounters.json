@@ -152,7 +152,7 @@
       "boost": "+1"
     },
     "sos": {
-      "primary": null,
+      "primary": "S014",
       "secondary": null
     }
   },
@@ -226,17 +226,15 @@
   },
   "S011": {
     "id": "S011",
-    "name": "Rattata 1",
-    "level": 11,
+    "name": "Spearow",
+    "level": 2,
     "item": null,
-    "nature": "Hardy",
-    "ability": "Hustle",
+    "nature": "Modest",
+    "ability": "Keen Eye",
     "abilitySlot": 1,
     "moves": [
-      "Tackle",
-      "Tail Whip",
-      "Quick Attack",
-      "Hyper Fang"
+      "Peck",
+      "Double Team"
     ],
     "aura": {
       "effect": "None"
@@ -296,13 +294,13 @@
     "level": 10,
     "item": null,
     "nature": "Timid",
-    "ability": "Pickpocket",
+    "ability": "Pickup",
     "abilitySlot": 1,
     "moves": [
-      "Tackle",
-      "Tail Whip",
-      "Quick Attack",
-      "Pursuit"
+      "Thief",
+      "Snatch",
+      "Pursuit",
+      "Quash"
     ],
     "aura": {
       "effect": "None"
@@ -2690,18 +2688,24 @@
   },
   "S134": {
     "id": "S134",
-    "name": "Ekans",
-    "level": 10,
-    "item": null,
+    "name": "Happiny",
+    "level": 13,
+    "item": "Oval Stone",
     "nature": "Random",
-    "ability": "Shed Skin",
+    "ability": "Friend Guard",
     "abilitySlot": 1,
-    "moves": [],
+    "moves": [
+      "Charm",
+      "Round",
+      "Fairy Wind",
+      "Sweet Kiss"
+    ],
     "aura": {
-      "effect": "None"
+      "effect": "Defense",
+      "boost": "+2"
     },
     "sos": {
-      "primary": null,
+      "primary": "S134",
       "secondary": null
     }
   },
@@ -3095,7 +3099,7 @@
     "level": 4,
     "item": "Oran Berry",
     "nature": "Random",
-    "ability": "Hustle",
+    "ability": "Pickup",
     "abilitySlot": 1,
     "moves": [
       "Quick Attack",
@@ -3107,7 +3111,7 @@
       "boost": "+1"
     },
     "sos": {
-      "primary": null,
+      "primary": "S152",
       "secondary": null
     }
   },
@@ -3117,7 +3121,7 @@
     "level": 4,
     "item": null,
     "nature": "Random",
-    "ability": "Sniper",
+    "ability": "Keen Eye",
     "abilitySlot": 1,
     "moves": [
       "Peck",
@@ -3129,7 +3133,7 @@
       "boost": "+1"
     },
     "sos": {
-      "primary": null,
+      "primary": "S011",
       "secondary": null
     }
   },
