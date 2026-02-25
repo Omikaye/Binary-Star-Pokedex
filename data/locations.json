@@ -148,9 +148,7 @@
       "trainers": [],
       "bossTrainers": [],
       "shops": [],
-      "shopTables": [
-        "Pokemart"
-      ],
+      "shopTables": [],
       "items": [
         {
           "item": "Poké Ball",
@@ -350,7 +348,7 @@
     {
       "id": "tencaratbeach",
       "name": "Ten Carat Beach",
-      "notes": "Formerly was part of Route 1, now this is its own location. | Scatterbug found here will evolve into Marine Pattern Vivillon",
+      "notes": "Formerly was part of Route 1, now this is its own location. | Scatterbug found here will evolve into Marine Pattern Vivillon | Every Pokemart has items with a number in parentheses. That is the number of trials needed to unlock that item. So an item with \"(2)\" will unlock after completing two Totem battles.",
       "encounters": [
         {
           "spot": "Beach Grass",
@@ -429,7 +427,9 @@
       "trainers": [],
       "bossTrainers": [],
       "shops": [],
-      "shopTables": [],
+      "shopTables": [
+        "Pokemart"
+      ],
       "items": [
         {
           "item": "Awakening",
@@ -521,7 +521,7 @@
       "notes": "Formerly was part of Route 1, now this is its own location. | Scatterbug found here will evolve into Pokeball Pattern Vivillon",
       "encounters": [
         {
-          "spot": "Table 1 (Day)",
+          "spot": "Grass",
           "levelRange": {
             "min": 7,
             "max": 10
@@ -759,7 +759,7 @@
       "notes": "Hau'oli Beach is now a seperate location from the main city.",
       "encounters": [
         {
-          "spot": "Table 7 (Day)",
+          "spot": "Surf (East)",
           "levelRange": {
             "min": 22,
             "max": 27
@@ -869,10 +869,10 @@
     {
       "id": "hauolicity",
       "name": "Hau'oli City",
-      "notes": "Hau'oli Marina is now its own location as well. However, there's naturally no encounters there. | Scatterbug found here will evolve into Modern Pattern Vivillon | The Move Deleter is in the Pokemon Center | The mall opens after defeating Hala. The plate shop within the mall only opens after defeating Nanu. The move tutors here require your Pokemon to be max friendship. To do this, you can purchase B.F.F. Hearts in any Pokemon Center after beating Araquanid.",
+      "notes": "Scatterbug found here will evolve into Modern Pattern Vivillon | The Move Deleter is in the Pokemon Center | The mall opens after defeating Kahuna Hala. The plate shop within the mall only opens after defeating Kahuna Nanu. The move tutors here require your Pokemon to be max friendship. To do this, you can purchase B.F.F. Hearts in any Pokemon Center after defeating Totem Araquanid.",
       "encounters": [
         {
-          "spot": "Table 3 (Day)",
+          "spot": "Grass",
           "levelRange": {
             "min": 10,
             "max": 12
@@ -1119,26 +1119,6 @@
           "item": "Ilima's Normalium Z",
           "quantity": 1,
           "obtain": "Ilima's house, from Ilima after defeating him at the Trainers' School, after becoming Champion"
-        },
-        {
-          "item": "X Attack",
-          "quantity": 1,
-          "obtain": "From a man at the corner of the Ferry Terminal"
-        },
-        {
-          "item": "X Defense",
-          "quantity": 1,
-          "obtain": "From a woman at the corner of the Ferry Terminal"
-        },
-        {
-          "item": "Grip Claw",
-          "quantity": 10,
-          "obtain": "At the end of the dock"
-        },
-        {
-          "item": "Fresh Water",
-          "quantity": 1,
-          "obtain": "From the lady in the Ferry Terminal after Rotom fixes the vending machine, after completing Hala's grand trial"
         }
       ],
       "battles": [
@@ -1336,6 +1316,1633 @@
           "id": "434",
           "tag": "Buffet",
           "notes": "Postgame"
+        }
+      ]
+    },
+    {
+      "id": "hauolimarina",
+      "name": "Hau'oli Marina",
+      "notes": "Hau'oli Marina is now its own location as well. However, there's naturally no encounters here.",
+      "encounters": [],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "X Attack",
+          "quantity": 1,
+          "obtain": "From a man at the corner of the Ferry Terminal"
+        },
+        {
+          "item": "X Defense",
+          "quantity": 1,
+          "obtain": "From a woman at the corner of the Ferry Terminal"
+        },
+        {
+          "item": "Grip Claw",
+          "quantity": 10,
+          "obtain": "At the end of the dock"
+        },
+        {
+          "item": "Fresh Water",
+          "quantity": 1,
+          "obtain": "From the lady in the Ferry Terminal after Rotom fixes the vending machine, after completing Hala's grand trial"
+        }
+      ],
+      "battles": []
+    },
+    {
+      "id": "route2",
+      "name": "Route 2",
+      "notes": "Note: Due to limitations, berry trees can only have 1 main encounter. Still looking for a fix, but using S.O.S. is the only way to get around it for now.",
+      "encounters": [
+        {
+          "spot": "Grass",
+          "levelRange": {
+            "min": 10,
+            "max": 12
+          },
+          "pokemon": [
+            {
+              "name": "Ekans",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Snivy",
+              "chance": 10,
+              "sos": [
+                "Pansage"
+              ]
+            },
+            {
+              "name": "Drowzee",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Smeargle",
+              "chance": 10,
+              "sos": [
+                "Skitty"
+              ]
+            },
+            {
+              "name": "Munna",
+              "chance": 10,
+              "sos": [
+                "Burmy"
+              ]
+            },
+            {
+              "name": "Cutiefly",
+              "chance": 10,
+              "sos": [
+                "Cherubi"
+              ]
+            },
+            {
+              "name": "Spearow",
+              "chance": 10,
+              "sos": [
+                "Pineco"
+              ]
+            },
+            {
+              "name": "Mankey",
+              "chance": 10,
+              "sos": [
+                "Aipom"
+              ]
+            },
+            {
+              "name": "Nidoran-M",
+              "chance": 10,
+              "sos": [
+                "Ledyba"
+              ]
+            },
+            {
+              "name": "Nidoran-F",
+              "chance": 10,
+              "sos": [
+                "Spinarak"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "Shaking Grass",
+          "levelRange": {
+            "min": 11,
+            "max": 14
+          },
+          "pokemon": [
+            {
+              "name": "Happiny",
+              "chance": 55,
+              "sos": []
+            },
+            {
+              "name": "Audino",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Drowzee",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Snivy",
+              "chance": 10,
+              "sos": [
+                "Pansage"
+              ]
+            },
+            {
+              "name": "Ekans",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Berry Tree",
+          "levelRange": {
+            "min": 11,
+            "max": 14
+          },
+          "pokemon": [
+            {
+              "name": "Pineco",
+              "chance": 100,
+              "sos": [
+                "Aipom",
+                "Burmy",
+                "Cherubi",
+                "Burmy 1"
+              ]
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [
+        {
+          "name": "Rockruff-Midnight",
+          "description": "Trader requests a Happiny. Nature: Naughty, Held: Nugget"
+        }
+      ],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [
+        "Pokemart",
+        "Route 2 Pokecenter"
+      ],
+      "items": [
+        {
+          "item": "Enigma Berry",
+          "quantity": 900,
+          "obtain": "Near the ledge near the Hau'oli Cemetery entrance"
+        },
+        {
+          "item": "Absorb Bulb",
+          "quantity": 900,
+          "obtain": "In the northwest corner of the motel area"
+        },
+        {
+          "item": "Fast Ball",
+          "quantity": 100,
+          "obtain": "South of truck against the west fence of the motel area (hidden)"
+        },
+        {
+          "item": "Nest Ball",
+          "quantity": 2,
+          "obtain": "From a Collector in the motel room"
+        },
+        {
+          "item": "X Speed",
+          "quantity": 1,
+          "obtain": "From the man by Guzma's house after finding his Alolan Meowth"
+        },
+        {
+          "item": "X Attack",
+          "quantity": 1,
+          "obtain": "From the man by Guzma's house after finding his Alolan Meowth"
+        },
+        {
+          "item": "Pearl String",
+          "quantity": 1,
+          "obtain": "Held by Chomper, a Deino the player can receive in a trade if they give a Happiny"
+        },
+        {
+          "item": "X Sp. Atk",
+          "quantity": 1,
+          "obtain": "From the man by Guzma's house after finding his Alolan Meowth"
+        },
+        {
+          "item": "Level Ball",
+          "quantity": 100,
+          "obtain": "Next to the trees in the clearing between two grass fields, behind the Berry fields (hidden)"
+        },
+        {
+          "item": "Kee Berry",
+          "quantity": 900,
+          "obtain": "Atop the ledge west of the Pokémon Center"
+        },
+        {
+          "item": "Maranga Berry",
+          "quantity": 900,
+          "obtain": "Northeast of the tall grass field south of the Pokémon Center"
+        },
+        {
+          "item": "Revive",
+          "quantity": 3,
+          "obtain": "From Hau in the Pokémon Center"
+        },
+        {
+          "item": "Roto Boost",
+          "quantity": 2,
+          "obtain": "Recieved by accepting Rotom's gambling sponsorship deal"
+        },
+        {
+          "item": "Money",
+          "quantity": 3,
+          "obtain": "From a female Sightseer in the Pokémon Center if the player has Crabrawler registered in their Pokédex"
+        },
+        {
+          "item": "Bright Powder",
+          "quantity": 10,
+          "obtain": "Behind the rocks near the Hau'oli City entrance (requires Tauros Charge)"
+        },
+        {
+          "item": "Soda Pop",
+          "quantity": 1,
+          "obtain": "From a Trial Guide for succeeding at volunteering to open gate for other island challengers, after completing Hala's grand trial (daily)"
+        },
+        {
+          "item": "Fresh Water",
+          "quantity": 1,
+          "obtain": "From a Trial Guide for failing at volunteering to open gate for other island challengers, after completing Hala's grand trial (daily)"
+        },
+        {
+          "item": "Rawst Berry",
+          "quantity": 1,
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Aspear Berry",
+          "quantity": 1,
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Shed Shell",
+          "quantity": 1,
+          "obtain": "Found in large berry pile"
+        },
+        {
+          "item": "TM87 (Focus Blast)",
+          "quantity": 1,
+          "obtain": "From Guzma's mother after reaching the Pokémon League"
+        }
+      ],
+      "battles": [
+        {
+          "id": "S134",
+          "tag": "Capturable",
+          "notes": "This Happiny will always be the first Pokemon you encounter in shaking grass if you walk into it on the first time entering Route 2."
+        },
+        {
+          "id": "472",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "469",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "633",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "2",
+          "tag": "Optional",
+          "notes": "Reward: Maranga Berry x 900"
+        },
+        {
+          "id": "30",
+          "tag": "Optional",
+          "notes": "Reward: Kee Berry x 900"
+        },
+        {
+          "id": "42",
+          "tag": "Optional",
+          "notes": "Required Battle if you wish to enter Berry Fields"
+        }
+      ]
+    },
+    {
+      "id": "berryfields",
+      "name": "Berry Fields",
+      "notes": "To gain access to the berry fields, you must defeat Gentleman Stanley | Previously there were no wild Pokemon in Berry Fields. Now the berry tree always spawns a Crabrawler. | Note: Due to limitations, berry trees can only have 1 main encounter. Still looking for a fix, but using S.O.S. is the only way to get around it for now.",
+      "encounters": [
+        {
+          "spot": "Berry Tree",
+          "levelRange": {
+            "min": 11,
+            "max": 14
+          },
+          "pokemon": [
+            {
+              "name": "Crabrawler",
+              "chance": 100,
+              "sos": [
+                "Burmy",
+                "Exeggcute",
+                "Aipom"
+              ]
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Oran Berry",
+          "quantity": 1,
+          "obtain": "From the old man"
+        },
+        {
+          "item": "Sitrus Berry",
+          "quantity": 1,
+          "obtain": "From the old man if the player wants to become a Berry Master and has a Persim Berry"
+        },
+        {
+          "item": "Focus Band",
+          "quantity": 10,
+          "obtain": "In the northeast corner, behind the house"
+        },
+        {
+          "item": "Revive",
+          "quantity": 1,
+          "obtain": "From the Delibird by the couch inside the house"
+        },
+        {
+          "item": "Friend Ball",
+          "quantity": 100,
+          "obtain": "In the pot on the west side of the soft soil fields (hidden)"
+        },
+        {
+          "item": "White Herb",
+          "quantity": 900,
+          "obtain": "In the southwest corner of the soft soil fields"
+        },
+        {
+          "item": "Cheri Berry",
+          "quantity": 1,
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Pecha Berry",
+          "quantity": 1,
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Stick",
+          "quantity": 1,
+          "obtain": "Found in large berry pile"
+        },
+        {
+          "item": "Heavy Ball",
+          "quantity": 100,
+          "obtain": "In the basket next to the fertilizer box on the east side of the soft soil field (hidden)"
+        }
+      ],
+      "battles": []
+    },
+    {
+      "id": "hauolicemetery",
+      "name": "Hau'oli Cemetery",
+      "notes": "To gain access to the cemetery, you must defeat Office Worker Jeremy",
+      "encounters": [
+        {
+          "spot": "Grass",
+          "levelRange": {
+            "min": 11,
+            "max": 13
+          },
+          "pokemon": [
+            {
+              "name": "Duskull",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Gastly",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Espurr",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Litwick",
+              "chance": 10,
+              "sos": [
+                "Golett"
+              ]
+            },
+            {
+              "name": "Vullaby",
+              "chance": 10,
+              "sos": [
+                "Cubone"
+              ]
+            },
+            {
+              "name": "Gothita",
+              "chance": 10,
+              "sos": [
+                "Spoink"
+              ]
+            },
+            {
+              "name": "Solosis",
+              "chance": 10,
+              "sos": [
+                "Baltoy"
+              ]
+            },
+            {
+              "name": "Shuppet",
+              "chance": 10,
+              "sos": [
+                "Yamask"
+              ]
+            },
+            {
+              "name": "Phantump",
+              "chance": 10,
+              "sos": [
+                "Pumpkaboo",
+                "Pumpkaboo 1",
+                "Pumpkaboo 2",
+                "Pumpkaboo 3"
+              ]
+            },
+            {
+              "name": "Fennekin",
+              "chance": 10,
+              "sos": [
+                "Pansear"
+              ]
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Moon Ball",
+          "quantity": 100,
+          "obtain": "In front of the lamppost at the Route 2 entrance (hidden)"
+        },
+        {
+          "item": "TM100 (Trailblaze)",
+          "quantity": 1,
+          "obtain": "Located past Breeder Ikue"
+        },
+        {
+          "item": "Friend Ball",
+          "quantity": 100,
+          "obtain": "At the southernmost path intersection (hidden)"
+        },
+        {
+          "item": "Ganlon Berry",
+          "quantity": 900,
+          "obtain": "Located past Preschooler Malia"
+        },
+        {
+          "item": "Apicot Berry",
+          "quantity": 900,
+          "obtain": "Located past Preschooler Malia"
+        },
+        {
+          "item": "Luminous Moss",
+          "quantity": 900,
+          "obtain": "Located past Preschooler Malia"
+        },
+        {
+          "item": "TM56 (Icy Wind)",
+          "quantity": 1,
+          "obtain": "From a woman riding Machamp in the cemetery, after obtaining the Ride Pager (Night)"
+        },
+        {
+          "item": "Spooky Plate",
+          "quantity": 1,
+          "obtain": "In front of the dark grave at the end of the middle path, after completing Nanu's grand trial (hidden)"
+        },
+        {
+          "item": "Max Elixir",
+          "quantity": 1,
+          "obtain": "From Hau upon entering the cemetery after defeating Mina"
+        },
+        {
+          "item": "Orange Petal",
+          "quantity": 1,
+          "obtain": "From Ilima after defeating him (Mina's Trial)"
+        }
+      ],
+      "battles": [
+        {
+          "id": "40",
+          "tag": "Optional",
+          "notes": "Reward: Access to the cemetery"
+        },
+        {
+          "id": "41",
+          "tag": "Optional",
+          "notes": "Reward: TM 100 Trailblaze"
+        },
+        {
+          "id": "468",
+          "tag": "Optional",
+          "notes": "Reward: Luminous Moss, Ganlon/Apicot Berries"
+        },
+        {
+          "id": "367",
+          "tag": "Postgame Boss",
+          "notes": "Umbreon User for the Eevee Quest"
+        }
+      ]
+    },
+    {
+      "id": "bigwavebeach",
+      "name": "Big Wave Beach",
+      "notes": "The \"School Mysteries\" sidequest begins here. Speak to the youngster here after defeating Kahuna Hala, then go to the Schoolyard at night to begin.",
+      "encounters": [],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [
+        "Big Wave Beach Tutor",
+        "Beach BP Shop"
+      ],
+      "items": [
+        {
+          "item": "Leppa Berry",
+          "quantity": 900,
+          "obtain": "On the west side of the beach, on the shoreline southwest of the Mantine (hidden)"
+        },
+        {
+          "item": "Douse Drive",
+          "quantity": 1,
+          "obtain": "On the west side of the beach, on the south side of the rock south of the palm tree near the Sandy Cave entrance (hidden)"
+        },
+        {
+          "item": "Big Pearl",
+          "quantity": 1,
+          "obtain": "On top of the plateau (hidden)"
+        },
+        {
+          "item": "Luxury Ball",
+          "quantity": 100,
+          "obtain": "On the west side of the beach, a few steps north of the Surfer and Sightseer (hidden)"
+        },
+        {
+          "item": "Fresh Water",
+          "quantity": 1,
+          "obtain": "On the west side of the beach, from the Mantine Surf attendant for getting rid of the Team Skull Grunts"
+        },
+        {
+          "item": "Everstone",
+          "quantity": 10,
+          "obtain": "On the east side of the beach, at the second palm tree from the shore (hidden)"
+        },
+        {
+          "item": "Cell Battery",
+          "quantity": 900,
+          "obtain": "On the east side of the beach, behind the Move Tutor tent"
+        },
+        {
+          "item": "Hyper Potion",
+          "quantity": 1,
+          "obtain": "From the Youngster near the shore after solving the mysteries at the Trainers' School"
+        }
+      ],
+      "battles": [
+        {
+          "id": "19",
+          "tag": "Story",
+          "notes": "None"
+        }
+      ]
+    },
+    {
+      "id": "sandycave",
+      "name": "Sandy Cave",
+      "notes": "Icium Z can be found here early after obtaining Lapras.",
+      "encounters": [
+        {
+          "spot": "Cave/Surf",
+          "levelRange": {
+            "min": 11,
+            "max": 14
+          },
+          "pokemon": [
+            {
+              "name": "Tynamo",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Spheal",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Shellos",
+              "chance": 15,
+              "sos": [
+                "Buizel"
+              ]
+            },
+            {
+              "name": "Sandygast",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Binacle",
+              "chance": 15,
+              "sos": [
+                "Clamperl"
+              ]
+            },
+            {
+              "name": "Squirtle",
+              "chance": 15,
+              "sos": [
+                "Panpour"
+              ]
+            },
+            {
+              "name": "Feebas",
+              "chance": 10,
+              "sos": [
+                "Dratini"
+              ]
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Icium Z",
+          "quantity": 1,
+          "obtain": "In the center of an island in the middle of the cave (requires Lapras Surf or Sharpedo Jet)"
+        },
+        {
+          "item": "Sharpedonite",
+          "quantity": 1,
+          "obtain": "Above the ledge on the southeastern shore (requires Sharpedo Jet)"
+        },
+        {
+          "item": "TM24 (Hyper Beam)",
+          "quantity": 1,
+          "obtain": "Behind the boulder in the northern corner of the cave (requires Machamp Shove)"
+        }
+      ],
+      "battles": []
+    },
+    {
+      "id": "verdantcavern",
+      "name": "Verdant Cavern",
+      "notes": "Location of the first trial.",
+      "encounters": [
+        {
+          "spot": "Cave",
+          "levelRange": {
+            "min": 12,
+            "max": 14
+          },
+          "pokemon": [
+            {
+              "name": "Diglett 1",
+              "chance": 10,
+              "sos": [
+                "Diglett"
+              ]
+            },
+            {
+              "name": "Noibat",
+              "chance": 10,
+              "sos": [
+                "Whismur"
+              ]
+            },
+            {
+              "name": "Venonat",
+              "chance": 10,
+              "sos": [
+                "Skorupi"
+              ]
+            },
+            {
+              "name": "Oddish",
+              "chance": 10,
+              "sos": [
+                "Gulpin"
+              ]
+            },
+            {
+              "name": "Bunnelby",
+              "chance": 10,
+              "sos": [
+                "Helioptile"
+              ]
+            },
+            {
+              "name": "Drilbur",
+              "chance": 10,
+              "sos": [
+                "Trapinch"
+              ]
+            },
+            {
+              "name": "Teddiursa",
+              "chance": 10,
+              "sos": [
+                "Swinub"
+              ]
+            },
+            {
+              "name": "Paras",
+              "chance": 10,
+              "sos": [
+                "Shroomish"
+              ]
+            },
+            {
+              "name": "Geodude 1",
+              "chance": 10,
+              "sos": [
+                "Geodude"
+              ]
+            },
+            {
+              "name": "Morelull",
+              "chance": 10,
+              "sos": [
+                "Foongus"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "Shaking Spot",
+          "levelRange": {
+            "min": 14,
+            "max": 16
+          },
+          "pokemon": [
+            {
+              "name": "Yungoos",
+              "chance": 25,
+              "sos": [
+                "Dunsparce"
+              ]
+            },
+            {
+              "name": "Rattata 1",
+              "chance": 25,
+              "sos": [
+                "Rattata"
+              ]
+            },
+            {
+              "name": "Teddiursa",
+              "chance": 10,
+              "sos": [
+                "Swinub"
+              ]
+            },
+            {
+              "name": "Diglett 1",
+              "chance": 10,
+              "sos": [
+                "Diglett"
+              ]
+            },
+            {
+              "name": "Bunnelby",
+              "chance": 10,
+              "sos": [
+                "Helioptile"
+              ]
+            },
+            {
+              "name": "Drilbur",
+              "chance": 10,
+              "sos": [
+                "Trapinch"
+              ]
+            },
+            {
+              "name": "Geodude 1",
+              "chance": 10,
+              "sos": [
+                "Geodude"
+              ]
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Normal Gem",
+          "quantity": 900,
+          "obtain": "Southeast corner, near the entrance"
+        },
+        {
+          "item": "Shock Drive",
+          "quantity": 1,
+          "obtain": "South of the mossy rock in front of the second den (hidden)"
+        },
+        {
+          "item": "TM31 (Low Sweep)",
+          "quantity": 1,
+          "obtain": "At the top of the ledge northwest of the entrance"
+        },
+        {
+          "item": "Chilan Berry",
+          "quantity": 900,
+          "obtain": "Northeast corner, through the tunnel"
+        },
+        {
+          "item": "Lansat Berry",
+          "quantity": 900,
+          "obtain": "West side of the cavern, south of the western den"
+        }
+      ],
+      "battles": [
+        {
+          "id": "S006",
+          "tag": "Story",
+          "notes": "None"
+        },
+        {
+          "id": "S008",
+          "tag": "Story",
+          "notes": "None"
+        },
+        {
+          "id": "43",
+          "tag": "Story",
+          "notes": "None"
+        },
+        {
+          "id": "S007",
+          "tag": "Story",
+          "notes": "None"
+        }
+      ]
+    },
+    {
+      "id": "verdantden",
+      "name": "Verdant Den",
+      "notes": "Verdant Den is now its own location. It is the small grotto that Totem Gumshoos resides in.",
+      "encounters": [],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Normalium Z",
+          "quantity": 1,
+          "obtain": "Reward for completing the trial"
+        },
+        {
+          "item": "Great Ball",
+          "quantity": 10,
+          "obtain": "From Ilima after completing the trial"
+        },
+        {
+          "item": "Full Incense",
+          "quantity": 1,
+          "obtain": "On the land jutting out over the edge (requires Tauros Charge) (hidden)"
+        },
+        {
+          "item": "TM46 (Electroweb)",
+          "quantity": 1,
+          "obtain": "At the top of the ledge (requires Tauros Charge)"
+        }
+      ],
+      "battles": [
+        {
+          "id": "S005",
+          "tag": "Boss",
+          "notes": "Totem Gumshoos"
+        },
+        {
+          "id": "S230",
+          "tag": "Postgame Boss",
+          "notes": "Totem Gumshoos Rematch"
+        }
+      ]
+    },
+    {
+      "id": "route3",
+      "name": "Route 3",
+      "notes": "",
+      "encounters": [
+        {
+          "spot": "Grass",
+          "levelRange": {
+            "min": 13,
+            "max": 15
+          },
+          "pokemon": [
+            {
+              "name": "Rufflet",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Skiddo",
+              "chance": 10,
+              "sos": [
+                "Litleo"
+              ]
+            },
+            {
+              "name": "Phanpy",
+              "chance": 10,
+              "sos": [
+                "Hippopotas"
+              ]
+            },
+            {
+              "name": "Bagon",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Pawniard",
+              "chance": 10,
+              "sos": [
+                "Cacnea"
+              ]
+            },
+            {
+              "name": "Mienfoo",
+              "chance": 10,
+              "sos": [
+                "Pancham"
+              ]
+            },
+            {
+              "name": "Rhyhorn",
+              "chance": 10,
+              "sos": [
+                "Snover"
+              ]
+            },
+            {
+              "name": "Growlithe",
+              "chance": 10,
+              "sos": [
+                "Vulpix"
+              ]
+            },
+            {
+              "name": "Jangmo-o",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Cyndaquil",
+              "chance": 10,
+              "sos": [
+                "Pansear"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "Sky",
+          "levelRange": {
+            "min": 14,
+            "max": 17
+          },
+          "pokemon": [
+            {
+              "name": "Rufflet",
+              "chance": 30,
+              "sos": []
+            },
+            {
+              "name": "Spearow",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Vullaby",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Bagon",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Burmy 1",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Berry Tree",
+          "levelRange": {
+            "min": 14,
+            "max": 18
+          },
+          "pokemon": [
+            {
+              "name": "Exeggcute",
+              "chance": 100,
+              "sos": [
+                "Crabrawler",
+                "Cherubi",
+                "Aipom"
+              ]
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Oran Berry",
+          "quantity": 900,
+          "obtain": "In the middle of the lower path through the rocky area"
+        },
+        {
+          "item": "Red Card",
+          "quantity": 900,
+          "obtain": "East of the northern grassy area"
+        },
+        {
+          "item": "Nugget",
+          "quantity": 1,
+          "obtain": "In the recess on the north side of the rocky outcrop that the flying-Pokémon shadows circle (hidden)"
+        },
+        {
+          "item": "Soothe Bell",
+          "quantity": 1,
+          "obtain": "From the Pokémon Breeder next to the eastern grass patch on the north side of the bridge"
+        },
+        {
+          "item": "TM83 (Shock Wave)",
+          "quantity": 1,
+          "obtain": "On the grassy outcrop just south of the entrance to Melemele Meadow"
+        },
+        {
+          "item": "TM19 (Roost)",
+          "quantity": 1,
+          "obtain": "From Ace Trainer Makana for defeating him"
+        },
+        {
+          "item": "Chople Berry",
+          "quantity": 900,
+          "obtain": "South of the bridge, next to the rock"
+        },
+        {
+          "item": "Fighting Gem",
+          "quantity": 900,
+          "obtain": "Next to the eastern grass patch on the south side of the bridge"
+        },
+        {
+          "item": "Chesto Berry",
+          "quantity": 1,
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Persim Berry",
+          "quantity": 1,
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Big Root",
+          "quantity": 1,
+          "obtain": "Found in large berry pile"
+        },
+        {
+          "item": "Money",
+          "quantity": 3,
+          "obtain": "From a Sightseer near the Route 1 connection if the player has Sableye registered in their Pokédex"
+        }
+      ],
+      "battles": [
+        {
+          "id": "31",
+          "tag": "Optional",
+          "notes": "TM for Shock Wave and access to the Soothe Bell"
+        },
+        {
+          "id": "32",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "33",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "16",
+          "tag": "Miniboss",
+          "notes": "Ace Trainer Makana is the first Z - Trainer. Reward: TM Roost"
+        },
+        {
+          "id": "12",
+          "tag": "Boss",
+          "notes": "Hau Battle 3 | Rowlet Chosen"
+        },
+        {
+          "id": "13",
+          "tag": "Boss",
+          "notes": "Hau Battle 3 | Litten Chosen"
+        },
+        {
+          "id": "14",
+          "tag": "Boss",
+          "notes": "Hau Battle 3 | Popplio Chosen"
+        }
+      ]
+    },
+    {
+      "id": "melemelemeadow",
+      "name": "Melemele Meadow",
+      "notes": "",
+      "encounters": [
+        {
+          "spot": "Grass",
+          "levelRange": {
+            "min": 13,
+            "max": 17
+          },
+          "pokemon": [
+            {
+              "name": "Flabébé 1",
+              "chance": 15,
+              "sos": [
+                "Flabébé 2",
+                "Flabébé 3",
+                "Flabébé 4",
+                "Flabébé"
+              ]
+            },
+            {
+              "name": "Combee",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Weedle",
+              "chance": 10,
+              "sos": [
+                "Kakuna"
+              ]
+            },
+            {
+              "name": "Wurmple",
+              "chance": 10,
+              "sos": [
+                "Silcoon",
+                "Cascoon"
+              ]
+            },
+            {
+              "name": "Sunkern",
+              "chance": 10,
+              "sos": [
+                "Deerling",
+                "Deerling 1",
+                "Deerling 2",
+                "Deerling 3"
+              ]
+            },
+            {
+              "name": "Budew",
+              "chance": 10,
+              "sos": [
+                "Roselia"
+              ]
+            },
+            {
+              "name": "Cottonee",
+              "chance": 10,
+              "sos": [
+                "Swirlix"
+              ]
+            },
+            {
+              "name": "Petilil",
+              "chance": 10,
+              "sos": [
+                "Spritzee"
+              ]
+            },
+            {
+              "name": "Bulbasaur",
+              "chance": 10,
+              "sos": [
+                "Pansage"
+              ]
+            },
+            {
+              "name": "Oricorio 1",
+              "chance": 5,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Yellow Nectar",
+          "quantity": 3,
+          "obtain": "In the sparkling flowers (Night, respawns daily)"
+        },
+        {
+          "item": "Tanga Berry",
+          "quantity": 900,
+          "obtain": "South of the first field of flowers, near the entrance"
+        },
+        {
+          "item": "Custap Berry",
+          "quantity": 900,
+          "obtain": "West of the large flower patch, on the plateau near the Seaward Cave entrance"
+        },
+        {
+          "item": "Eject Button",
+          "quantity": 900,
+          "obtain": "On the west side of the meadow, on top of the cliff to the west of a flower field"
+        }
+      ],
+      "battles": [
+        {
+          "id": "536",
+          "tag": "Optional",
+          "notes": "First Actor Meredith battle"
+        }
+      ]
+    },
+    {
+      "id": "seawardcave",
+      "name": "Seaward Cave",
+      "notes": "",
+      "encounters": [
+        {
+          "spot": "Cave",
+          "levelRange": {
+            "min": 15,
+            "max": 17
+          },
+          "pokemon": [
+            {
+              "name": "Zubat",
+              "chance": 15,
+              "sos": [
+                "Woobat"
+              ]
+            },
+            {
+              "name": "Smoochum",
+              "chance": 10,
+              "sos": [
+                "Elekid",
+                "Magby"
+              ]
+            },
+            {
+              "name": "Sandshrew 1",
+              "chance": 10,
+              "sos": [
+                "Sandshrew"
+              ]
+            },
+            {
+              "name": "Wooper",
+              "chance": 10,
+              "sos": [
+                "Sneasel"
+              ]
+            },
+            {
+              "name": "Bergmite",
+              "chance": 10,
+              "sos": [
+                "Snorunt"
+              ]
+            },
+            {
+              "name": "Vanillite",
+              "chance": 10,
+              "sos": [
+                "Vulpix 1"
+              ]
+            },
+            {
+              "name": "Machop",
+              "chance": 10,
+              "sos": [
+                "Cubchoo"
+              ]
+            },
+            {
+              "name": "Dwebble",
+              "chance": 10,
+              "sos": [
+                "Ferroseed"
+              ]
+            },
+            {
+              "name": "Totodile",
+              "chance": 10,
+              "sos": [
+                "Panpour"
+              ]
+            },
+            {
+              "name": "Shuckle",
+              "chance": 5,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Surf",
+          "levelRange": {
+            "min": 22,
+            "max": 27
+          },
+          "pokemon": [
+            {
+              "name": "Magikarp",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Zubat",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Feebas",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Totodile",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Spheal",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Wooper",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Shellos",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Delibird",
+              "chance": 5,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Fish",
+          "levelRange": {
+            "min": 22,
+            "max": 27
+          },
+          "pokemon": [
+            {
+              "name": "Magikarp",
+              "chance": 60,
+              "sos": []
+            },
+            {
+              "name": "Barboach",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Feebas",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Dhelmise",
+              "chance": 5,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Bubbles",
+          "levelRange": {
+            "min": 26,
+            "max": 28
+          },
+          "pokemon": [
+            {
+              "name": "Barboach",
+              "chance": 30,
+              "sos": []
+            },
+            {
+              "name": "Feebas",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Dhelmise",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Magikarp",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Yache Berry",
+          "quantity": 900,
+          "obtain": "Next to Melemele Meadow tunnel"
+        },
+        {
+          "item": "TM79 (Frost Breath)",
+          "quantity": 1,
+          "obtain": "West side of the cave, opposite the body of water, south of the fishing spot (requires Lapras Paddle or Sharpedo Jet)"
+        },
+        {
+          "item": "Snowball",
+          "quantity": 900,
+          "obtain": "West side of the cave, southwest of the Melemele Meadow tunnel"
+        },
+        {
+          "item": "Kebia Berry",
+          "quantity": 900,
+          "obtain": "North end of the cave. In a small crevice."
+        },
+        {
+          "item": "Chill Drive",
+          "quantity": 1,
+          "obtain": "In between the three big rocks west of the pool near the Kala'e Bay entrance (hidden)"
+        },
+        {
+          "item": "Steel Gem",
+          "quantity": 900,
+          "obtain": "West of the pool near the Kala'e Bay entrance"
+        },
+        {
+          "item": "Pure Incense",
+          "quantity": 1,
+          "obtain": "South of the pool near the Kala'e Bay entrance, behind a rock (hidden)"
+        },
+        {
+          "item": "Ice Gem",
+          "quantity": 900,
+          "obtain": "North of the pool near the Kala'e Bay entrance"
+        }
+      ],
+      "battles": [
+        {
+          "id": "649",
+          "tag": "Boss",
+          "notes": "Ultra Recon Squad Dulse Battle 1"
         }
       ]
     }
