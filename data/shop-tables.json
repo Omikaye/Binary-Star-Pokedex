@@ -310,6 +310,100 @@
           "price": "Free"
         }
       ]
+    },
+    "Heahea Beach Tutor": {
+      "name": "Heahea Beach Tutor",
+      "items": [
+        {
+          "item": "False Swipe",
+          "price": "Free"
+        },
+        {
+          "item": "Thief",
+          "price": "Free"
+        },
+        {
+          "item": "Covet",
+          "price": "Free"
+        },
+        {
+          "item": "Smack Down",
+          "price": "Free"
+        },
+        {
+          "item": "Infestation",
+          "price": "Free"
+        },
+        {
+          "item": "Ally Switch",
+          "price": "Free"
+        },
+        {
+          "item": "Embargo",
+          "price": "Free"
+        },
+        {
+          "item": "Gravity",
+          "price": "Free"
+        },
+        {
+          "item": "Double Team",
+          "price": "Free"
+        },
+        {
+          "item": "Tailwind",
+          "price": "Free"
+        },
+        {
+          "item": "Telekinesis",
+          "price": "Free"
+        },
+        {
+          "item": "Magnet Rise",
+          "price": "Free"
+        },
+        {
+          "item": "Tickle",
+          "price": "Free"
+        },
+        {
+          "item": "Confide",
+          "price": "Free"
+        },
+        {
+          "item": "Stealth Rock",
+          "price": "Free"
+        },
+        {
+          "item": "Sticky Web",
+          "price": "Free"
+        }
+      ]
+    },
+    "Heahea City Pokecenter": {
+      "name": "Heahea City Pokecenter",
+      "items": [
+        {
+          "item": "TM16 (Light Screen)",
+          "price": "$10,000"
+        },
+        {
+          "item": "TM17 (Reflect)",
+          "price": "$10,000"
+        },
+        {
+          "item": "TM20 (Flame Charge)",
+          "price": "$12,000"
+        },
+        {
+          "item": "TM33 (Water Pulse)",
+          "price": "$15,000"
+        },
+        {
+          "item": "TM70 (Cold Snap)",
+          "price": "$24,000"
+        }
+      ]
     }
   }
 }

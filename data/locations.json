@@ -610,7 +610,7 @@
           "obtain": "North of the rail to the east of the entrance to the Trainers' School grounds (hidden)"
         },
         {
-          "item": "Ability Pillbox",
+          "item": "Ability Pills",
           "quantity": 1,
           "obtain": "Under a palm tree on the east side of the main entrance to the Trainers' School building"
         },
@@ -1322,7 +1322,7 @@
     {
       "id": "hauolimarina",
       "name": "Hau'oli Marina",
-      "notes": "Hau'oli Marina is now its own location as well. However, there's naturally no encounters here.",
+      "notes": "Hau'oli Marina is now its own location as well.",
       "encounters": [],
       "giftsTrades": [],
       "staticPokemon": [],
@@ -2687,7 +2687,7 @@
     {
       "id": "seawardcave",
       "name": "Seaward Cave",
-      "notes": "",
+      "notes": "Kala'e Bay is only fully accessible after obtaining Lapras.",
       "encounters": [
         {
           "spot": "Cave",
@@ -2943,6 +2943,506 @@
           "id": "649",
           "tag": "Boss",
           "notes": "Ultra Recon Squad Dulse Battle 1"
+        }
+      ]
+    },
+    {
+      "id": "tencarathill",
+      "name": "Ten Carat Hill",
+      "notes": "Ten Carat Hill is accessible via Ten Carat Beach after unlocking Tauros. | The surf section is accessible from Melemele Sea after obtaining Lapras.",
+      "encounters": [
+        {
+          "spot": "Cave",
+          "levelRange": {
+            "min": 16,
+            "max": 19
+          },
+          "pokemon": [
+            {
+              "name": "Carbink",
+              "chance": 10,
+              "sos": [
+                "Sableye"
+              ]
+            },
+            {
+              "name": "Roggenrola",
+              "chance": 10,
+              "sos": [
+                "Slugma"
+              ]
+            },
+            {
+              "name": "Wynaut",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Woobat",
+              "chance": 10,
+              "sos": [
+                "Zubat"
+              ]
+            },
+            {
+              "name": "Cleffa",
+              "chance": 10,
+              "sos": [
+                "Clefairy"
+              ]
+            },
+            {
+              "name": "Axew",
+              "chance": 10,
+              "sos": [
+                "Gible"
+              ]
+            },
+            {
+              "name": "Aron",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Onix",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Sableye",
+              "chance": 10,
+              "sos": [
+                "Mawile"
+              ]
+            },
+            {
+              "name": "Mawile",
+              "chance": 10,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Surf",
+          "levelRange": {
+            "min": 30,
+            "max": 37
+          },
+          "pokemon": [
+            {
+              "name": "Swoobat",
+              "chance": 30,
+              "sos": [
+                "Woobat"
+              ]
+            },
+            {
+              "name": "Kingler",
+              "chance": 20,
+              "sos": [
+                "Krabby"
+              ]
+            },
+            {
+              "name": "Binacle",
+              "chance": 20,
+              "sos": [
+                "Barbaracle"
+              ]
+            },
+            {
+              "name": "Gastrodon",
+              "chance": 20,
+              "sos": [
+                "Shellos"
+              ]
+            },
+            {
+              "name": "Dragonair",
+              "chance": 10,
+              "sos": [
+                "Dratini"
+              ]
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Muscle Band",
+          "quantity": 10,
+          "obtain": "Just north of entrance"
+        },
+        {
+          "item": "Aggronite",
+          "quantity": 1,
+          "obtain": "At the near end of the upper side of the ledge (requires Tauros Charge)"
+        },
+        {
+          "item": "Wise Glasses",
+          "quantity": 10,
+          "obtain": "At the far end of the upper side of the ledge (requires Tauros Charge)"
+        },
+        {
+          "item": "Rock Incense",
+          "quantity": 1,
+          "obtain": "On a rock on the west side of the cave, near the first entrance to the Farthest Hollow (hidden) (requires Tauros Charge)"
+        },
+        {
+          "item": "Tiny Mushroom",
+          "quantity": 10,
+          "obtain": "On the south side of a rock at the end of the path, near the second entrance to the Farthest Hollow (hidden) (requires Tauros Charge)"
+        }
+      ],
+      "battles": []
+    },
+    {
+      "id": "tencarathollow",
+      "name": "Ten Carat Hollow",
+      "notes": "Ten Carat Hollow is now a seperate encounter location to Ten Carat Hill. Flyinium Z is found through the left path in the cave blocked by Tauros Rocks.",
+      "encounters": [
+        {
+          "spot": "Grass",
+          "levelRange": {
+            "min": 16,
+            "max": 19
+          },
+          "pokemon": [
+            {
+              "name": "Rockruff",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Spinda",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Togepi",
+              "chance": 10,
+              "sos": [
+                "Exeggcute"
+              ]
+            },
+            {
+              "name": "Makuhita",
+              "chance": 10,
+              "sos": [
+                "Pancham"
+              ]
+            },
+            {
+              "name": "Natu",
+              "chance": 10,
+              "sos": [
+                "Hoothoot"
+              ]
+            },
+            {
+              "name": "Meditite",
+              "chance": 10,
+              "sos": [
+                "Darumaka"
+              ]
+            },
+            {
+              "name": "Ralts",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Nosepass",
+              "chance": 10,
+              "sos": [
+                "Beldum"
+              ]
+            },
+            {
+              "name": "Goomy",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Riolu",
+              "chance": 10,
+              "sos": [
+                "Chimchar"
+              ]
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Hard Stone",
+          "quantity": 10,
+          "obtain": "On the west side, halfway down the path through the middle of the Farthest Hollow"
+        },
+        {
+          "item": "Flying Gem",
+          "quantity": 900,
+          "obtain": "On the opposite side of the southwest grass patch"
+        },
+        {
+          "item": "Medichamite",
+          "quantity": 1,
+          "obtain": "Central north side of the Farthest Hollow"
+        },
+        {
+          "item": "Lax Incense",
+          "quantity": 1,
+          "obtain": "Near the back of the grass field in the northwest (hidden)"
+        },
+        {
+          "item": "Rock Gem",
+          "quantity": 900,
+          "obtain": "Northeast corner of the Farthest Hollow"
+        },
+        {
+          "item": "TM23 (Rock Tomb)",
+          "quantity": 1,
+          "obtain": "Before the grass patch reached by proceeding up the slope in the southeast"
+        },
+        {
+          "item": "Flyinium Z",
+          "quantity": 1,
+          "obtain": "On a cliff overlooking the hollow, via the path blocked by a heavy boulder in the cave"
+        }
+      ],
+      "battles": []
+    },
+    {
+      "id": "heaheabeach",
+      "name": "Heahea Beach",
+      "notes": "Oak is here. He will take Totem Stickers and exchange them for rare Pokemon. | !!!!Locations on this island forward need their items double checked!!!!!",
+      "encounters": [],
+      "giftsTrades": [
+        {
+          "name": "Porygon",
+          "description": "20 stickers, Held: Metronome, Ability: Download, Move: Ally Switch), Castform (40 Stickers, Held: Coba Berry, Ability: Delta Stream), Rotom (50 Stickers, Held: Life Orb, Ability: Lightning Rod, Move: Nasty Plot), Type: Null (70 Stickers, Held: Choice Scarf, Ability: Battle Armor, Move: Tri-Attack), Poipole (80 Stickers, CHANGE ME!), Zeraora (100 Stickers, Held: Choice Band, Ability: Motor Drive"
+        }
+      ],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [
+        "Beach BP Shop",
+        "Heahea Beach Tutor"
+      ],
+      "items": [
+        {
+          "item": "Pearl",
+          "quantity": 1,
+          "obtain": "South of the western Mantine (hidden)"
+        },
+        {
+          "item": "Soft Sand",
+          "quantity": 10,
+          "obtain": "In the northeast corner of the beach"
+        },
+        {
+          "item": "Big Pearl",
+          "quantity": 1,
+          "obtain": "In the center of the beach (hidden)"
+        }
+      ],
+      "battles": []
+    },
+    {
+      "id": "heaheacity",
+      "name": "Heahea City",
+      "notes": "The Name Rater is here, inside the Alola Ferry Terminal",
+      "encounters": [],
+      "giftsTrades": [
+        {
+          "name": "Mantyke",
+          "description": "Gift for getting the high score on all 4 Mantine Surf courses. Held: Gold Bottle Cap, Move: Oblivion Wing"
+        }
+      ],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [
+        "Heahea City Pokecenter"
+      ],
+      "items": [
+        {
+          "item": "Premier Ball",
+          "quantity": 1,
+          "obtain": "From a Gentleman in the Ferry Terminal"
+        },
+        {
+          "item": "Money",
+          "quantity": 10,
+          "obtain": "From the Beauty in the apparel shop if the player has Salazzle registered in their Pokédex"
+        },
+        {
+          "item": "Rare Candy",
+          "quantity": 1,
+          "obtain": "From the woman opposite the apparel store"
+        },
+        {
+          "item": "Full Restore",
+          "quantity": 1,
+          "obtain": "From Dexio after defeating him"
+        },
+        {
+          "item": "Charcoal",
+          "quantity": 1,
+          "obtain": "From the Bellhop in front of the Tide Song Hotel for showing him a Magmar"
+        },
+        {
+          "item": "Lemonade",
+          "quantity": 1,
+          "obtain": "From a lady in the Game Freak office"
+        },
+        {
+          "item": "Left Poké Ball",
+          "quantity": 1,
+          "obtain": "From a female Aether Foundation Employee in the Aether office"
+        },
+        {
+          "item": "Max Repel",
+          "quantity": 1,
+          "obtain": "Next to the lamppost opposite the Dimensional Research Lab and next to the bridge (hidden)"
+        },
+        {
+          "item": "Bright Powder",
+          "quantity": 10,
+          "obtain": "In the area behind the Dimensional Research Lab"
+        },
+        {
+          "item": "Zoom Lens",
+          "quantity": 1,
+          "obtain": "In the Dimensional Research Lab, from a Scientist if the player has Pokémon in their Battle Box"
+        },
+        {
+          "item": "Reveal Glass",
+          "quantity": 1,
+          "obtain": "In the Dimensional Research Lab, from Professor Burnet after passing Olivia's grand trial"
+        },
+        {
+          "item": "Gold Bottle Cap",
+          "quantity": 1,
+          "obtain": "Held by the Mantyke received from the Boss of the Surf Association after becoming No. 1 on all four Mantine Surf courses"
+        },
+        {
+          "item": "Oval Charm",
+          "quantity": 1,
+          "obtain": "In the Game Freak office, from Morimoto after defeating him for the first time"
+        },
+        {
+          "item": "Shiny Charm",
+          "quantity": 1,
+          "obtain": "In the Game Freak office, from the game director after completing the Alola Pokédex"
+        }
+      ],
+      "battles": [
+        {
+          "id": "74",
+          "tag": "Miniboss",
+          "notes": "Dexio battle. You must defeat Dexio to leave Heahea City."
+        },
+        {
+          "id": "557",
+          "tag": "Postgame Boss",
+          "notes": "Gamefreak"
+        },
+        {
+          "id": "578",
+          "tag": "Postgame Boss",
+          "notes": "Gamefreak"
+        }
+      ]
+    },
+    {
+      "id": "tidesonghotel",
+      "name": "Tide Song Hotel",
+      "notes": "",
+      "encounters": [],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Heart Scale",
+          "quantity": 1,
+          "obtain": "1F, from the Dancer after telling her about the bottle on Heahea Beach"
+        },
+        {
+          "item": "Kee Berry",
+          "quantity": 1,
+          "obtain": "3F, in the leftmost room"
+        },
+        {
+          "item": "Ability Capsule",
+          "quantity": 1,
+          "obtain": "3F, on the balcony of the leftmost room"
+        },
+        {
+          "item": "Snorlium Z",
+          "quantity": 1,
+          "obtain": "3F, from the Gentleman in the first room to the left of the elevator if the player has a Snorlax in their party"
+        },
+        {
+          "item": "Mewnium Z",
+          "quantity": 1,
+          "obtain": "3F, from the Gentleman in the first room to the left of the elevator if the player has a Mew in their party"
+        },
+        {
+          "item": "Marshadium Z",
+          "quantity": 1,
+          "obtain": "3F, from the Gentleman in the first room to the left of the elevator if the player has a Marshadow in their party"
+        },
+        {
+          "item": "Oran Berry",
+          "quantity": 1,
+          "obtain": "3F, after being forced out of the first room to the right of the elevator"
+        },
+        {
+          "item": "Shuca Berry",
+          "quantity": 1,
+          "obtain": "3F, in the first room to the right of the elevator"
+        },
+        {
+          "item": "Dragon Fang",
+          "quantity": 1,
+          "obtain": "3F, on the balcony of the first room to the right of the elevator"
+        },
+        {
+          "item": "Revival Herb",
+          "quantity": 1,
+          "obtain": "3F, from the old man in the rightmost room for finding all of his friends"
+        }
+      ],
+      "battles": [
+        {
+          "id": "364",
+          "tag": "Postgame Boss",
+          "notes": "Flareon User for Eevee quest."
         }
       ]
     }
