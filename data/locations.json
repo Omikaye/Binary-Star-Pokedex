@@ -3237,7 +3237,27 @@
       "giftsTrades": [
         {
           "name": "Porygon",
-          "description": "20 stickers, Held: Metronome, Ability: Download, Move: Ally Switch), Castform (40 Stickers, Held: Coba Berry, Ability: Delta Stream), Rotom (50 Stickers, Held: Life Orb, Ability: Lightning Rod, Move: Nasty Plot), Type: Null (70 Stickers, Held: Choice Scarf, Ability: Battle Armor, Move: Tri-Attack), Poipole (80 Stickers, CHANGE ME!), Zeraora (100 Stickers, Held: Choice Band, Ability: Motor Drive"
+          "description": "20 stickers, Held: Metronome, Ability: Download, Move: Ally Switch"
+        },
+        {
+          "name": "Castform",
+          "description": "40 Stickers, Held: Coba Berry, Ability: Delta Stream"
+        },
+        {
+          "name": "Rotom",
+          "description": "50 Stickers, Held: Life Orb, Ability: Lightning Rod, Move: Nasty Plot"
+        },
+        {
+          "name": "Type: Null",
+          "description": "70 Stickers, Held: Choice Scarf, Ability: Battle Armor, Move: Tri-Attack"
+        },
+        {
+          "name": "Poipole",
+          "description": "80 Stickers, CHANGE ME!"
+        },
+        {
+          "name": "Zeraora",
+          "description": "100 Stickers, Held: Choice Band, Ability: Motor Drive"
         }
       ],
       "staticPokemon": [],
@@ -3378,7 +3398,7 @@
     {
       "id": "tidesonghotel",
       "name": "Tide Song Hotel",
-      "notes": "",
+      "notes": "The Fairium Z can be found here early.",
       "encounters": [],
       "giftsTrades": [],
       "staticPokemon": [],

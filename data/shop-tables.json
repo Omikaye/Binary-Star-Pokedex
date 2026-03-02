@@ -163,7 +163,7 @@
           "price": "0 BP"
         },
         {
-          "item": "Ability Pillbox",
+          "item": "Ability Pills",
           "price": "0 BP"
         },
         {
@@ -180,6 +180,26 @@
         },
         {
           "item": "Leaf Stone",
+          "price": "1 BP"
+        },
+        {
+          "item": "Moon Stone",
+          "price": "1 BP"
+        },
+        {
+          "item": "Sun Stone",
+          "price": "1 BP"
+        },
+        {
+          "item": "Shiny Stone",
+          "price": "1 BP"
+        },
+        {
+          "item": "Dusk Stone",
+          "price": "1 BP"
+        },
+        {
+          "item": "Dawn Stone",
           "price": "1 BP"
         },
         {
