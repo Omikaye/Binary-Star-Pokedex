@@ -183,6 +183,72 @@ window.PokedexItemPanel = PokedexResultPanel.extend({
 		buf += '</ul>';
 	}
 
+	// Locations where this item can be obtained
+	var itemLocations = [];
+	var seenLocationIds = {};
+	var allLocations = window.Locations || [];
+	var allShopTables = window.ShopTables || {};
+	for (var li = 0; li < allLocations.length; li++) {
+		var loc = allLocations[li];
+		var locId = loc.id;
+		if (seenLocationIds[locId]) continue;
+		// Check items array
+		if (loc.items) {
+			for (var ii = 0; ii < loc.items.length; ii++) {
+				var rawItem = loc.items[ii].item || '';
+				var baseItemName = rawItem.replace(/\s*\(\d+\)$/, '');
+				if (toID(baseItemName) === id) {
+					itemLocations.push({id: locId, name: loc.name});
+					seenLocationIds[locId] = true;
+					break;
+				}
+			}
+		}
+		if (seenLocationIds[locId]) continue;
+		// Check shopTables references
+		if (loc.shopTables) {
+			for (var si = 0; si < loc.shopTables.length; si++) {
+				var shopTable = allShopTables[loc.shopTables[si]];
+				if (shopTable && shopTable.items) {
+					for (var shi = 0; shi < shopTable.items.length; shi++) {
+						var rawShopItem = shopTable.items[shi].item || '';
+						var baseShopItemName = rawShopItem.replace(/\s*\(\d+\)$/, '');
+						if (toID(baseShopItemName) === id) {
+							itemLocations.push({id: locId, name: loc.name});
+							seenLocationIds[locId] = true;
+							break;
+						}
+					}
+				}
+				if (seenLocationIds[locId]) break;
+			}
+		}
+		if (seenLocationIds[locId]) continue;
+		// Check legacy shops array
+		if (loc.shops) {
+			for (var lsi = 0; lsi < loc.shops.length; lsi++) {
+				var rawLegacyItem = loc.shops[lsi].item || '';
+				var baseLegacyItem = rawLegacyItem.replace(/\s*\(\d+\)$/, '');
+				if (toID(baseLegacyItem) === id) {
+					itemLocations.push({id: locId, name: loc.name});
+					seenLocationIds[locId] = true;
+					break;
+				}
+			}
+		}
+	}
+	if (itemLocations.length > 0) {
+		buf += '<h3>Location</h3>';
+		buf += '<ul class="utilichart nokbd">';
+		for (var locIdx = 0; locIdx < itemLocations.length; locIdx++) {
+			var iloc = itemLocations[locIdx];
+			buf += '<li class="result"><a href="' + Config.baseurl + 'locations/' + escapeHTML(iloc.id) + '" data-target="push">';
+			buf += '<span class="col namecol">' + escapeHTML(iloc.name) + '</span>';
+			buf += '</a></li>';
+		}
+		buf += '</ul>';
+	}
+
 	buf += '</div>';
 
 	this.html(buf);
