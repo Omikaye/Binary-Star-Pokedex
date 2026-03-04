@@ -3413,13 +3413,13 @@
           "obtain": "1F, from the Dancer after telling her about the bottle on Heahea Beach"
         },
         {
-          "item": "Kee Berry",
-          "quantity": 1,
+          "item": "Payapa Berry",
+          "quantity": 900,
           "obtain": "3F, in the leftmost room"
         },
         {
-          "item": "Ability Capsule",
-          "quantity": 1,
+          "item": "Poison Gem",
+          "quantity": 900,
           "obtain": "3F, on the balcony of the leftmost room"
         },
         {
@@ -3443,13 +3443,13 @@
           "obtain": "3F, after being forced out of the first room to the right of the elevator"
         },
         {
-          "item": "Shuca Berry",
+          "item": "Fairium Z",
           "quantity": 1,
           "obtain": "3F, in the first room to the right of the elevator"
         },
         {
           "item": "Dragon Fang",
-          "quantity": 1,
+          "quantity": 10,
           "obtain": "3F, on the balcony of the first room to the right of the elevator"
         },
         {
@@ -3465,6 +3465,237 @@
           "notes": "Flareon User for Eevee quest."
         }
       ]
+    },
+    {
+      "id": "route4",
+      "name": "Route 4",
+      "notes": "",
+      "encounters": [
+        {
+          "spot": "Table 1 (Day)",
+          "levelRange": {
+            "min": 18,
+            "max": 21
+          },
+          "pokemon": [
+            {
+              "name": "Lillipup",
+              "chance": 10,
+              "sos": [
+                "Minccino"
+              ]
+            },
+            {
+              "name": "Pidgey",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Venipede",
+              "chance": 10,
+              "sos": [
+                "Sewaddle"
+              ]
+            },
+            {
+              "name": "Taillow",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Patrat",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Nincada",
+              "chance": 10,
+              "sos": [
+                "Sandile"
+              ]
+            },
+            {
+              "name": "Shinx",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Eevee",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Chespin",
+              "chance": 10,
+              "sos": [
+                "Cacnea"
+              ]
+            },
+            {
+              "name": "Stunky",
+              "chance": 10,
+              "sos": [
+                "Spritzee"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "Table 7 (Day)",
+          "levelRange": {
+            "min": 18,
+            "max": 21
+          },
+          "pokemon": [
+            {
+              "name": "Crabrawler",
+              "chance": 30,
+              "sos": []
+            },
+            {
+              "name": "Burmy",
+              "chance": 30,
+              "sos": [
+                "Burmy 1",
+                "Burmy 2"
+              ]
+            },
+            {
+              "name": "Exeggcute",
+              "chance": 30,
+              "sos": []
+            },
+            {
+              "name": "Heracross",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Kasib Berry",
+          "quantity": 900,
+          "obtain": "In the clearing between the two grass fields to the east of the Heahea City entrance"
+        },
+        {
+          "item": "Stardust x2",
+          "quantity": 2,
+          "obtain": "On a rock at the end of the narrow path north of the first Trainer Tips sign (hidden)"
+        },
+        {
+          "item": "Nugget",
+          "quantity": 1,
+          "obtain": "On the land overhanging the cliff southwest of the Pokémon Breeder (hidden)"
+        },
+        {
+          "item": "Pixie Plate",
+          "quantity": 10,
+          "obtain": "Behind Collector Bryan"
+        },
+        {
+          "item": "Burn Drive",
+          "quantity": 1,
+          "obtain": "Against northern side of the rock formation in the northwest of the route (hidden)"
+        },
+        {
+          "item": "Salac Berry",
+          "quantity": 900,
+          "obtain": "On the opposite side of the grass field south of Sightseer Scotty"
+        },
+        {
+          "item": "Silver Powder",
+          "quantity": 10,
+          "obtain": "Opposite side of the grass patch opposite the Paniola Town entrance"
+        },
+        {
+          "item": "Big Mushroom",
+          "quantity": 1,
+          "obtain": "South of the Berry tree (hidden)"
+        },
+        {
+          "item": "Liechi Berry",
+          "quantity": 1,
+          "obtain": "Under the Berry Tree near Paniola"
+        },
+        {
+          "item": "Petaya Berry",
+          "quantity": 1,
+          "obtain": "Under the Berry Tree near Paniola"
+        },
+        {
+          "item": "Red Nectar",
+          "quantity": 1,
+          "obtain": "Under the Berry Tree near Paniola"
+        }
+      ],
+      "battles": [
+        {
+          "id": "61",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "64",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "182",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "333",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "513",
+          "tag": "Optional",
+          "notes": "None"
+        }
+      ]
+    },
+    {
+      "id": "pikachuvalley",
+      "name": "Pikachu Valley",
+      "notes": "",
+      "encounters": [],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [],
+      "battles": []
+    },
+    {
+      "id": "paniolatown",
+      "name": "Paniola Town",
+      "notes": "",
+      "encounters": [],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [],
+      "battles": []
     }
   ]
 }
