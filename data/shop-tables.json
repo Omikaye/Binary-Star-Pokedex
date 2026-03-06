@@ -424,6 +424,23 @@
           "price": "$24,000"
         }
       ]
+    },
+    "Paniola Pokecenter": {
+      "name": "Paniola Pokecenter",
+      "items": [
+        {
+          "item": "Scope Lens",
+          "price": "$4,000"
+        },
+        {
+          "item": "Metronome",
+          "price": "$3,800"
+        },
+        {
+          "item": "Iron Ball",
+          "price": "$2,100"
+        }
+      ]
     }
   }
 }

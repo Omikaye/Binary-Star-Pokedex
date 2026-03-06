@@ -3591,7 +3591,7 @@
           "obtain": "In the clearing between the two grass fields to the east of the Heahea City entrance"
         },
         {
-          "item": "Stardust x2",
+          "item": "Stardust",
           "quantity": 2,
           "obtain": "On a rock at the end of the narrow path north of the first Trainer Tips sign (hidden)"
         },
@@ -3618,7 +3618,7 @@
         {
           "item": "Silver Powder",
           "quantity": 10,
-          "obtain": "Opposite side of the grass patch opposite the Paniola Town entrance"
+          "obtain": ""
         },
         {
           "item": "Big Mushroom",
@@ -3643,9 +3643,14 @@
       ],
       "battles": [
         {
+          "id": "182",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
           "id": "61",
           "tag": "Optional",
-          "notes": "None"
+          "notes": "Reward: Pixie Plate x10"
         },
         {
           "id": "64",
@@ -3653,19 +3658,14 @@
           "notes": "None"
         },
         {
-          "id": "182",
-          "tag": "Mandatory",
+          "id": "513",
+          "tag": "Optional",
           "notes": "None"
         },
         {
           "id": "333",
           "tag": "Optional",
-          "notes": "None"
-        },
-        {
-          "id": "513",
-          "tag": "Optional",
-          "notes": "None"
+          "notes": "Reward: Silver Powder x10 and access to the route's Berry tree."
         }
       ]
     },
@@ -3674,28 +3674,217 @@
       "name": "Pikachu Valley",
       "notes": "",
       "encounters": [],
-      "giftsTrades": [],
+      "giftsTrades": [
+        {
+          "name": "Pikachu 7 (Gift Pikachu for scanning the special QR code. Here is the link. It works even on Emulator if you figure out how: https://imgur.com/a/qr-code-special-event-us-um-pok-mon-movie-i-choose-you-7iHwt",
+          "description": ""
+        },
+        {
+          "name": "Held: Comet Shard, Move: Substitute, Ability: Motor Drive)",
+          "description": ""
+        }
+      ],
       "staticPokemon": [],
       "trainers": [],
       "bossTrainers": [],
       "shops": [],
       "shopTables": [],
-      "items": [],
+      "items": [
+        {
+          "item": "Magnet",
+          "quantity": 10,
+          "obtain": "To the left of the trailer"
+        },
+        {
+          "item": "Comet Shard",
+          "quantity": 1,
+          "obtain": "Held by gift Partner Cap Pikachu"
+        },
+        {
+          "item": "Pikashunium Z",
+          "quantity": 1,
+          "obtain": "From the female Pikachu near the female Trial Guide after showing her a Pikachu in a cap"
+        }
+      ],
       "battles": []
     },
     {
       "id": "paniolatown",
       "name": "Paniola Town",
       "notes": "",
-      "encounters": [],
+      "encounters": [
+        {
+          "spot": "Table 1 (Day)",
+          "levelRange": {
+            "min": 22,
+            "max": 27
+          },
+          "pokemon": [
+            {
+              "name": "Barboach",
+              "chance": 29,
+              "sos": []
+            },
+            {
+              "name": "Tympole",
+              "chance": 29,
+              "sos": [
+                "Poliwag"
+              ]
+            },
+            {
+              "name": "Wooper",
+              "chance": 29,
+              "sos": []
+            },
+            {
+              "name": "Mudkip",
+              "chance": 10,
+              "sos": [
+                "Froakie"
+              ]
+            },
+            {
+              "name": "Stunfisk",
+              "chance": 3,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Table 2 (Day)",
+          "levelRange": {
+            "min": 27,
+            "max": 28
+          },
+          "pokemon": [
+            {
+              "name": "Barboach",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Palpitoad",
+              "chance": 20,
+              "sos": [
+                "Poliwhirl"
+              ]
+            },
+            {
+              "name": "Quagsire",
+              "chance": 20,
+              "sos": [
+                "Wooper"
+              ]
+            },
+            {
+              "name": "Marshtomp",
+              "chance": 20,
+              "sos": [
+                "Frogadier"
+              ]
+            },
+            {
+              "name": "Stunfisk",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
       "giftsTrades": [],
       "staticPokemon": [],
       "trainers": [],
       "bossTrainers": [],
       "shops": [],
-      "shopTables": [],
-      "items": [],
-      "battles": []
+      "shopTables": [
+        "Pokemart",
+        "Paniola Pokecenter"
+      ],
+      "items": [
+        {
+          "item": "Dire Hit",
+          "quantity": 1,
+          "obtain": "From Hau after battling him"
+        },
+        {
+          "item": "Money",
+          "quantity": 5,
+          "obtain": "From the old man next to the Pokémon Center, if the player sells him the requested item (daily)"
+        },
+        {
+          "item": "Stardust",
+          "quantity": 1,
+          "obtain": "In front of the cart of hay on the west side of town (hidden)"
+        },
+        {
+          "item": "Rare Bone",
+          "quantity": 1,
+          "obtain": "By the water in the southwest corner of town, near the fence (hidden)"
+        },
+        {
+          "item": "Moomoo Milk",
+          "quantity": 1,
+          "obtain": "From the Pokémon Breeder when interacting with the Miltank in the stall (daily)"
+        },
+        {
+          "item": "Quick Ball",
+          "quantity": 1,
+          "obtain": "From a Magmar in the hallway on the second floor of Kiawe's house"
+        },
+        {
+          "item": "TM88 (Aerial Ace)",
+          "quantity": 1,
+          "obtain": "South side of the area accessible from Route 6"
+        },
+        {
+          "item": "Big Nugget",
+          "quantity": 1,
+          "obtain": "North side of the area accessible from Route 6, on the hay bales (hidden)"
+        },
+        {
+          "item": "Bottle Cap",
+          "quantity": 1,
+          "obtain": "From the lady the day after rescuing Alolan Vulpix from Team Skull"
+        },
+        {
+          "item": "Protector",
+          "quantity": 1,
+          "obtain": "From Kiawe's father after becoming Champion"
+        }
+      ],
+      "battles": [
+        {
+          "id": "76",
+          "tag": "Boss",
+          "notes": "Hau Battle 4 | Rowlet Chosen"
+        },
+        {
+          "id": "77",
+          "tag": "Boss",
+          "notes": "Hau Battle 4 | Litten Chosen"
+        },
+        {
+          "id": "78",
+          "tag": "Boss",
+          "notes": "Hau Battle 4 | Popplio Chosen"
+        },
+        {
+          "id": "646",
+          "tag": "Optional",
+          "notes": "Reward: Bottle Cap"
+        }
+      ]
     }
   ]
 }
