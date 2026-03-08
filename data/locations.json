@@ -3618,7 +3618,7 @@
         {
           "item": "Silver Powder",
           "quantity": 10,
-          "obtain": ""
+          "obtain": "Below the Berry tree near Cook Ernie"
         },
         {
           "item": "Big Mushroom",
@@ -3676,12 +3676,8 @@
       "encounters": [],
       "giftsTrades": [
         {
-          "name": "Pikachu 7 (Gift Pikachu for scanning the special QR code. Here is the link. It works even on Emulator if you figure out how: https://imgur.com/a/qr-code-special-event-us-um-pok-mon-movie-i-choose-you-7iHwt",
-          "description": ""
-        },
-        {
-          "name": "Held: Comet Shard, Move: Substitute, Ability: Motor Drive)",
-          "description": ""
+          "name": "Pikachu-Partner",
+          "description": "Gift Pikachu for scanning the special QR code. Here is the link. It works even on Emulator if you figure out how: https://imgur.com/a/qr-code-special-event-us-um-pok-mon-movie-i-choose-you-7iHwt Held: Comet Shard, Move: Substitute, Ability: Motor Drive"
         }
       ],
       "staticPokemon": [],
@@ -3883,6 +3879,231 @@
           "id": "646",
           "tag": "Optional",
           "notes": "Reward: Bottle Cap"
+        }
+      ]
+    },
+    {
+      "id": "paniolaranch",
+      "name": "Paniola Ranch",
+      "notes": "The Pokemon Daycare is located here. They will give you an Egg on your first visit. | The Hidden Power NPC is also here, they will tell you your Pokemon's Hidden Power Type | The Miltank near the daycare will heal your team for free.",
+      "encounters": [
+        {
+          "spot": "Table 1 (Day)",
+          "levelRange": {
+            "min": 18,
+            "max": 21
+          },
+          "pokemon": [
+            {
+              "name": "Mudbray",
+              "chance": 10,
+              "sos": [
+                "Elgyem"
+              ]
+            },
+            {
+              "name": "Flaaffy",
+              "chance": 10,
+              "sos": [
+                "Mareep"
+              ]
+            },
+            {
+              "name": "Doduo",
+              "chance": 10,
+              "sos": [
+                "Spewpa 14"
+              ]
+            },
+            {
+              "name": "Ponyta",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Litleo",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Blitzle",
+              "chance": 10,
+              "sos": [
+                "Skiddo"
+              ]
+            },
+            {
+              "name": "Farfetch’d",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Miltank",
+              "chance": 10,
+              "sos": [
+                "Tauros"
+              ]
+            },
+            {
+              "name": "Tauros",
+              "chance": 10,
+              "sos": [
+                "Miltank"
+              ]
+            },
+            {
+              "name": "Torchic",
+              "chance": 10,
+              "sos": [
+                "Combusken"
+              ]
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [
+        {
+          "name": "Eevee",
+          "description": "Your first time speaking to the Daycare Attendant, she will gift you an Eevee Egg, it knows the move Last Resort"
+        }
+      ],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Stoutland Search",
+          "quantity": 1,
+          "obtain": "Moomoo Paddock, from Mallow on the player's first visit"
+        },
+        {
+          "item": "Adrenaline Orb",
+          "quantity": 5,
+          "obtain": "Moomoo Paddock, from the female Pokémon Breeder near the entrance"
+        },
+        {
+          "item": "Bug Gem",
+          "quantity": 900,
+          "obtain": "Moomoo Paddock, east of the trough on the north side (hidden) (Use Stoutland Search)"
+        },
+        {
+          "item": "Scope Lens",
+          "quantity": 1,
+          "obtain": "Moomoo Paddock, from Pokémon Breeder Wesley, after defeating him in the battle that the player agrees to have with the aggressive Tauros"
+        },
+        {
+          "item": "Ghost Gem",
+          "quantity": 900,
+          "obtain": "Moomoo Paddock, by the pool of water, north of the gap where the Tauros drink (hidden) (Use Stoutland Search)"
+        },
+        {
+          "item": "Dark Gem",
+          "quantity": 900,
+          "obtain": "Moomoo Paddock, east of the pair of hay bales on the south side (hidden) (Use Stoutland Search)"
+        },
+        {
+          "item": "Gold Bottle Cap",
+          "quantity": 1,
+          "obtain": "Paddock east of the pathway to Paniola Town, west of the northwestern ramp, against the elevated vegetation (hidden)"
+        },
+        {
+          "item": "Bottle Cap",
+          "quantity": 5,
+          "obtain": "Paddock east of the pathway to Paniola Town, against the south side of the northwestern ramp (hidden)"
+        },
+        {
+          "item": "Rare Bone",
+          "quantity": 1,
+          "obtain": "Paddock east of the pathway to Paniola Town, north of the Trainer Tips sign, inside the grass field (hidden)"
+        },
+        {
+          "item": "Colbur Berry",
+          "quantity": 900,
+          "obtain": "Paddock east of the pathway to Paniola Town, in the southwest corner"
+        },
+        {
+          "item": "TM10 (Hidden Power)",
+          "quantity": 1,
+          "obtain": "Pokémon Nursery, from a woman inside"
+        },
+        {
+          "item": "Roto Hatch",
+          "quantity": 1,
+          "obtain": "East side of the ranch, automatically used by the Rotom Pokédex after obtaining the Egg"
+        },
+        {
+          "item": "Tiny Mushroom",
+          "quantity": 6,
+          "obtain": "East side of the ranch, in the fenced area full of hay bales opposite the Pokémon Nursery, next to the spade (hidden)"
+        },
+        {
+          "item": "Amulet Coin",
+          "quantity": 1,
+          "obtain": "East side of the ranch, behind the truck to the east of the Pokémon Nursery"
+        },
+        {
+          "item": "Big Mushroom",
+          "quantity": 2,
+          "obtain": "East side of the ranch, in the center of the grass field southeast of the Pokémon Nursery (hidden)"
+        },
+        {
+          "item": "Blazikenite",
+          "quantity": 1,
+          "obtain": "East side of the ranch, opposite the grass field southeast of the Pokémon Nursery"
+        },
+        {
+          "item": "Mystic Water",
+          "quantity": 1,
+          "obtain": "East side of the ranch, from the kid for scaring off the Sudowoodo after defeating Dulse"
+        },
+        {
+          "item": "Water Stone",
+          "quantity": 1,
+          "obtain": "Pokémon Nursery, from a Pokémon Breeder after showing her an Eevee hatched from an egg (only one of the stones can be chosen)"
+        },
+        {
+          "item": "Fire Stone",
+          "quantity": 1,
+          "obtain": "Pokémon Nursery, from a Pokémon Breeder after showing her an Eevee hatched from an egg (only one of the stones can be chosen)"
+        },
+        {
+          "item": "Thunder Stone",
+          "quantity": 1,
+          "obtain": "Pokémon Nursery, from a Pokémon Breeder after showing her an Eevee hatched from an egg (only one of the stones can be chosen)"
+        }
+      ],
+      "battles": [
+        {
+          "id": "125",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "390",
+          "tag": "Optional",
+          "notes": "Inside Moomoo paddock, speak to the Tauros at the top left. Reward: Scope Lens"
+        },
+        {
+          "id": "122",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "124",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "516",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "652",
+          "tag": "Boss",
+          "notes": "Ultra Recon Squad Battle 2"
         }
       ]
     }
