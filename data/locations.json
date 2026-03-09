@@ -2541,7 +2541,7 @@
         {
           "id": "16",
           "tag": "Miniboss",
-          "notes": "Ace Trainer Makana is the first Z - Trainer. Reward: TM Roost"
+          "notes": "Ace Trainer Makana is the first Z - Trainer. Z - Trainers can only be battled after defeating every other trainer on the Route. Reward: TM Roost"
         },
         {
           "id": "12",
@@ -3677,7 +3677,7 @@
       "giftsTrades": [
         {
           "name": "Pikachu-Partner",
-          "description": "Gift Pikachu for scanning the special QR code. Here is the link. It works even on Emulator if you figure out how: https://imgur.com/a/qr-code-special-event-us-um-pok-mon-movie-i-choose-you-7iHwt Held: Comet Shard, Move: Substitute, Ability: Motor Drive"
+          "description": "Gift Pikachu for scanning the special QR code. Here is the link. It works even on Emulator: https://imgur.com/a/qr-code-special-event-us-um-pok-mon-movie-i-choose-you-7iHwt Held: Comet Shard, Moves: [Thunderbolt, Quick Attack, Iron Tail, Thunder], Ability: Surge Surfer [Hidden], Level: 30 [This is so you can't use it for Araquanid, if you choose to play with level caps, that is. This Pikachu and it's Z-move proved to be a little too strong at this stage of the game."
         }
       ],
       "staticPokemon": [],
@@ -4106,6 +4106,142 @@
           "notes": "Ultra Recon Squad Battle 2"
         }
       ]
+    },
+    {
+      "id": "route5",
+      "name": "Route 5",
+      "notes": "Route 5 is split into 2 zones, North and South, the northern half is only accessible from Route 8, but it is still considered Route 5.",
+      "encounters": [],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [
+        "Route 5 Pokecenter"
+      ],
+      "items": [
+        {
+          "item": "Sitrus Berry",
+          "quantity": 900,
+          "obtain": "Northeast of the Paniola Ranch entrance, against a rock formation"
+        },
+        {
+          "item": "Rose Incense",
+          "quantity": 1,
+          "obtain": "In the east, at the inward-most point of the rocky ledge's curve, at the base of a rock blocking a ramp up from the grass (hidden)"
+        },
+        {
+          "item": "TM41 (Power-Up Punch)",
+          "quantity": 1,
+          "obtain": "In the east, at the north end of the rocky crescent ledge"
+        },
+        {
+          "item": "Revive",
+          "quantity": 3,
+          "obtain": "From Hau after defeating Gladion"
+        },
+        {
+          "item": "Manectite",
+          "quantity": 1,
+          "obtain": "At the end of a narrow path south of the Pokémon Center"
+        },
+        {
+          "item": "Super Potion",
+          "quantity": 1,
+          "obtain": "From a Fisherman in the Pokémon Center"
+        },
+        {
+          "item": "Pearl String",
+          "quantity": 1,
+          "obtain": "Held by Dennis, a Rockruff the player can receive in a trade"
+        },
+        {
+          "item": "Money",
+          "quantity": 3,
+          "obtain": "From the Scientist in the Pokémon Center if the player has Corsola registered in their Pokédex"
+        },
+        {
+          "item": "TM96 (Nature Power)",
+          "quantity": 1,
+          "obtain": "From Trial Guide Bronson after defeating him"
+        },
+        {
+          "item": "Starf Berry",
+          "quantity": 1,
+          "obtain": "Berry Tree"
+        },
+        {
+          "item": "Figy Berry",
+          "quantity": 1,
+          "obtain": "Berry Tree"
+        },
+        {
+          "item": "Wiki Berry",
+          "quantity": 1,
+          "obtain": "Berry Tree"
+        },
+        {
+          "item": "Mago Berry",
+          "quantity": 1,
+          "obtain": "Berry Tree"
+        },
+        {
+          "item": "Aguav Berry",
+          "quantity": 1,
+          "obtain": "Berry Tree"
+        },
+        {
+          "item": "Iapapa Berry",
+          "quantity": 1,
+          "obtain": "Berry Tree"
+        },
+        {
+          "item": "Purple Nectar",
+          "quantity": 1,
+          "obtain": "Berry Tree"
+        },
+        {
+          "item": "Great Ball",
+          "quantity": 900,
+          "obtain": "(North) In front of a small rock south of the Lush Jungle entrance and just north of the signpost, on the east side of the path (hidden)"
+        },
+        {
+          "item": "Nugget",
+          "quantity": 1,
+          "obtain": "(North) In front of the western den on the first step down (hidden)"
+        },
+        {
+          "item": "Grass Gem",
+          "quantity": 900,
+          "obtain": "(North) In the northeast of the highest level, northeast of the Pokémon Center"
+        },
+        {
+          "item": "TM59 (Thunder Wave)",
+          "quantity": 1,
+          "obtain": "(North) At the south end of the highest level, northeast of the Pokémon Center"
+        },
+        {
+          "item": "Poisonium Z",
+          "quantity": 1,
+          "obtain": "(North) Northwest of the Pokémon Center, past Ace Trainer Alexis"
+        }
+      ],
+      "battles": []
+    },
+    {
+      "id": "brooklethill",
+      "name": "Brooklet Hill",
+      "notes": "Location of the second trial.",
+      "encounters": [],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [],
+      "battles": []
     }
   ]
 }

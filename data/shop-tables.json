@@ -441,6 +441,43 @@
           "price": "$2,100"
         }
       ]
+    },
+    "Route 5 Pokecenter": {
+      "name": "Route 5 Pokecenter",
+      "items": [
+        {
+          "item": "TM48 (Snarl)",
+          "price": "$18,000"
+        },
+        {
+          "item": "TM56 (Icy Wind)",
+          "price": "$23,500"
+        },
+        {
+          "item": "TM94 (Mega Punch)",
+          "price": "$11,500"
+        },
+        {
+          "item": "Gyaradosite",
+          "price": "$50,000"
+        },
+        {
+          "item": "Electric Seed",
+          "price": "$300"
+        },
+        {
+          "item": "Misty Seed",
+          "price": "$300"
+        },
+        {
+          "item": "Grassy Seed",
+          "price": "$300"
+        },
+        {
+          "item": "Psychic Seed",
+          "price": "$300"
+        }
+      ]
     }
   }
 }
