@@ -4110,9 +4110,245 @@
     {
       "id": "route5",
       "name": "Route 5",
-      "notes": "Route 5 is split into 2 zones, North and South, the northern half is only accessible from Route 8, but it is still considered Route 5.",
-      "encounters": [],
-      "giftsTrades": [],
+      "notes": "Route 5 is split into 2 zones, North and South, the northern half is only accessible from Route 8, but it is still considered Route 5. | The northern part contains a way to obtain the Poisonium Z early.",
+      "encounters": [
+        {
+          "spot": "Table 5 (Day)",
+          "levelRange": {
+            "min": 20,
+            "max": 22
+          },
+          "pokemon": [
+            {
+              "name": "Fomantis",
+              "chance": 10,
+              "sos": [
+                "Vivillon 4"
+              ]
+            },
+            {
+              "name": "Electrike",
+              "chance": 10,
+              "sos": [
+                "Houndour"
+              ]
+            },
+            {
+              "name": "Houndour",
+              "chance": 10,
+              "sos": [
+                "Electrike"
+              ]
+            },
+            {
+              "name": "Staravia",
+              "chance": 10,
+              "sos": [
+                "Starly"
+              ]
+            },
+            {
+              "name": "Nuzleaf",
+              "chance": 10,
+              "sos": [
+                "Seedot"
+              ]
+            },
+            {
+              "name": "Ledyba",
+              "chance": 10,
+              "sos": [
+                "Ledian"
+              ]
+            },
+            {
+              "name": "Cherubi",
+              "chance": 10,
+              "sos": [
+                "Swirlix"
+              ]
+            },
+            {
+              "name": "Gulpin",
+              "chance": 10,
+              "sos": [
+                "Trubbish"
+              ]
+            },
+            {
+              "name": "Dedenne",
+              "chance": 10,
+              "sos": [
+                "Emolga"
+              ]
+            },
+            {
+              "name": "Turtwig",
+              "chance": 10,
+              "sos": [
+                "Snover"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "Table 4 (Night)",
+          "levelRange": {
+            "min": 20,
+            "max": 24
+          },
+          "pokemon": [
+            {
+              "name": "Crabrawler",
+              "chance": 30,
+              "sos": []
+            },
+            {
+              "name": "Burmy 1",
+              "chance": 30,
+              "sos": [
+                "Burmy",
+                "Burmy 2"
+              ]
+            },
+            {
+              "name": "Exeggcute",
+              "chance": 30,
+              "sos": []
+            },
+            {
+              "name": "Heracross",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Table 10 (Day)",
+          "levelRange": {
+            "min": 27,
+            "max": 30
+          },
+          "pokemon": [
+            {
+              "name": "Fomantis",
+              "chance": 10,
+              "sos": [
+                "Vivillon 4"
+              ]
+            },
+            {
+              "name": "Manectric",
+              "chance": 10,
+              "sos": [
+                "Houndoom"
+              ]
+            },
+            {
+              "name": "Houndoom",
+              "chance": 10,
+              "sos": [
+                "Manectric"
+              ]
+            },
+            {
+              "name": "Staravia",
+              "chance": 10,
+              "sos": [
+                "Starly"
+              ]
+            },
+            {
+              "name": "Nuzleaf",
+              "chance": 10,
+              "sos": [
+                "Seedot"
+              ]
+            },
+            {
+              "name": "Swalot",
+              "chance": 10,
+              "sos": [
+                "Trubbish"
+              ]
+            },
+            {
+              "name": "Cherrim",
+              "chance": 10,
+              "sos": [
+                "Swirlix"
+              ]
+            },
+            {
+              "name": "Dedenne",
+              "chance": 10,
+              "sos": [
+                "Emolga"
+              ]
+            },
+            {
+              "name": "Ledian",
+              "chance": 10,
+              "sos": [
+                "Ledyba"
+              ]
+            },
+            {
+              "name": "Grotle",
+              "chance": 10,
+              "sos": [
+                "Snover"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "Table 1 (Day)",
+          "levelRange": {
+            "min": 27,
+            "max": 30
+          },
+          "pokemon": [
+            {
+              "name": "Diglett 1",
+              "chance": 50,
+              "sos": [
+                "Diglett"
+              ]
+            },
+            {
+              "name": "Nincada",
+              "chance": 25,
+              "sos": [
+                "Sandile"
+              ]
+            },
+            {
+              "name": "Watchog",
+              "chance": 25,
+              "sos": [
+                "Patrat"
+              ]
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [
+        {
+          "name": "Poipole",
+          "description": "Trade: A guy in the Pokecenter will trade you a Poipole in exchange for a Magikarp. Held: Pearl String, Nature: Calm"
+        }
+      ],
       "staticPokemon": [],
       "trainers": [],
       "bossTrainers": [],
@@ -4227,7 +4463,63 @@
           "obtain": "(North) Northwest of the Pokémon Center, past Ace Trainer Alexis"
         }
       ],
-      "battles": []
+      "battles": [
+        {
+          "id": "97",
+          "tag": "Optional",
+          "notes": "Twins Isa and Nico, Multi Battle"
+        },
+        {
+          "id": "98",
+          "tag": "Optional",
+          "notes": "Twins Isa and Nico, Multi Battle"
+        },
+        {
+          "id": "95",
+          "tag": "Optional",
+          "notes": "Reward: TM Power - Up Punch"
+        },
+        {
+          "id": "79",
+          "tag": "Boss",
+          "notes": "Gladion Battle 1"
+        },
+        {
+          "id": "92",
+          "tag": "Optional",
+          "notes": "Multi Battle, Justin and Lauren"
+        },
+        {
+          "id": "93",
+          "tag": "Optional",
+          "notes": "Multi Battle, Justin and Lauren"
+        },
+        {
+          "id": "94",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "96",
+          "tag": "Optional",
+          "notes": "(North)"
+        },
+        {
+          "id": "102",
+          "tag": "Optional",
+          "notes": "(North)"
+        },
+        {
+          "id": "104",
+          "tag": "Optional",
+          "notes": "(North) Reward: Poisonium Z"
+        },
+        {
+          "id": "395",
+          "tag": "Z",
+          "notes": "Trainer - Reward: TM Nature Power"
+        }
+      ]
     },
     {
       "id": "brooklethill",
