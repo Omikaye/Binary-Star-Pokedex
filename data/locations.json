@@ -4516,8 +4516,8 @@
         },
         {
           "id": "395",
-          "tag": "Z",
-          "notes": "Trainer - Reward: TM Nature Power"
+          "tag": "Miniboss",
+          "notes": "Route 5's Z - Trainer. He can only be battled after every other trainer here is beaten. Reward: TM Nature Power"
         }
       ]
     },
@@ -4532,7 +4532,48 @@
       "bossTrainers": [],
       "shops": [],
       "shopTables": [],
-      "items": [],
+      "items": [
+        {
+          "item": "Lapras Paddle",
+          "quantity": 1,
+          "obtain": ""
+        },
+        {
+          "item": "Passho Berry",
+          "quantity": 5,
+          "obtain": "x 900"
+        },
+        {
+          "item": "Water Gem",
+          "quantity": 5,
+          "obtain": "x 900"
+        },
+        {
+          "item": "Passho Berry",
+          "quantity": 5,
+          "obtain": "Sea Incense"
+        },
+        {
+          "item": "Deep Sea Scale",
+          "quantity": 5,
+          "obtain": ""
+        },
+        {
+          "item": "Water Gem",
+          "quantity": 5,
+          "obtain": "Mystic Water x 9"
+        },
+        {
+          "item": "Water Gem",
+          "quantity": 5,
+          "obtain": "Wave Incense"
+        },
+        {
+          "item": "TM57 (Charge Beam)",
+          "quantity": 5,
+          "obtain": ""
+        }
+      ],
       "battles": []
     }
   ]
