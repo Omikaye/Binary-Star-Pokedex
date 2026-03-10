@@ -129,7 +129,7 @@ function parseEncounterDataRow(str) {
   }
   if (current.trim()) entries.push(current.trim());
 
-  return entries.map(parseEncounterEntry).filter(e => e && e.name);
+  return entries.map(parseEncounterEntry).filter(e => e && e.name && e.name.toLowerCase() !== 'none' && (e.chance === null || e.chance > 0));
 }
 
 function parseEncounterName(str) {
@@ -396,6 +396,46 @@ if (!route2) {
     allTestsPassed = false;
   } else {
     console.log('✓ Route 2 has 1 encounter');
+  }
+}
+
+// Test 8: None entries and 0% entries are filtered out
+const SAMPLE_CSV_NONE = `"Row Labels","Route 3"
+"Gifts/Trades",""
+"Encounter 1 Name","Grass:"
+"Encounter 1 Row 1","Encounters (Levels 5-7): None (0%), Pidgey (50%), None (0%), Rattata (50%)"
+"Encounter 1 Row 2","SOS Slot 1 (Levels 5-7): None (0%), Pidgey (100%)"
+"Encounter 1 Row 3","","",""
+"Encounter 1 Row 4","","",""
+"Encounter 1 Row 5","","",""
+"Encounter 1 Row 6","","",""
+"Encounter 1 Row 7","","",""
+"Encounter 1 Row 8","","",""
+"Encounter 1 Row 9","Additional SOS encounters: (None)"`;
+
+const rowsNone = parseCSV(SAMPLE_CSV_NONE);
+const encounterDataNone = convertSheetToEncounterData(rowsNone);
+const route3 = encounterDataNone['route3'];
+
+if (!route3 || !route3.encounters || route3.encounters.length !== 1) {
+  console.error(`✗ Test 8: Expected 1 encounter for Route 3, got ${route3 ? route3.encounters.length : 'N/A'}`);
+  allTestsPassed = false;
+} else {
+  const grassEnc = route3.encounters[0];
+  // "None (0%)" entries should be filtered out — only Pidgey and Rattata remain
+  if (grassEnc.pokemon.length !== 2) {
+    console.error(`✗ Test 8: Expected 2 non-None pokemon, got ${grassEnc.pokemon.length}: ${JSON.stringify(grassEnc.pokemon.map(p => p.name))}`);
+    allTestsPassed = false;
+  } else {
+    console.log('✓ Test 8: None (0%) entries are filtered out from encounter list');
+  }
+
+  const noneEntry = grassEnc.pokemon.find(p => p.name.toLowerCase() === 'none');
+  if (noneEntry) {
+    console.error('✗ Test 8: "None" entry should not appear in pokemon list');
+    allTestsPassed = false;
+  } else {
+    console.log('✓ Test 8: No "None" entries in pokemon list');
   }
 }
 

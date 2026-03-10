@@ -114,11 +114,7 @@ function parseTableBasedItemLocations(rows) {
       const method = row[methodColumnIndex] ? row[methodColumnIndex].trim() : '';
       
       if (itemName) {
-        let quantity = 1;
-        const numMatch = numStr.match(/(\d+)/);
-        if (numMatch) {
-          quantity = parseInt(numMatch[1], 10);
-        }
+        const quantity = numStr || 1;
         
         locationItems[currentLocation].push({
           item: itemName,
@@ -195,11 +191,7 @@ function parseHorizontalItemLocations(rows) {
       const numStr = row[numCol] ? row[numCol].trim() : '1';
       const method = row[methodCol] ? row[methodCol].trim() : '';
       
-      let quantity = 1;
-      const numMatch = numStr.match(/(\d+)/);
-      if (numMatch) {
-        quantity = parseInt(numMatch[1], 10);
-      }
+      const quantity = numStr || 1;
       
       locationItems[locationId].push({
         item: itemName,
@@ -267,7 +259,7 @@ if (!route1Items) {
   }
   
   const pokeBall = route1Items.find(i => i.item === 'Poké Ball');
-  if (!pokeBall || pokeBall.quantity !== 10) {
+  if (!pokeBall || String(pokeBall.quantity) !== '10') {
     console.error('✗ Route 1: Poké Ball quantity incorrect');
     allTestsPassed = false;
   } else {
@@ -275,7 +267,7 @@ if (!route1Items) {
   }
   
   const miracleMedicine = route1Items.find(i => i.item === 'Miracle Medicine');
-  if (!miracleMedicine || miracleMedicine.quantity !== 1) {
+  if (!miracleMedicine || String(miracleMedicine.quantity) !== '1') {
     console.error('✗ Route 1: Miracle Medicine not found or quantity wrong');
     allTestsPassed = false;
   } else {
@@ -311,7 +303,7 @@ if (!route2Items) {
   }
   
   const rareCandy = route2Items.find(i => i.item === 'Rare Candy');
-  if (!rareCandy || rareCandy.quantity !== 2) {
+  if (!rareCandy || String(rareCandy.quantity) !== '2') {
     console.error(`✗ Route 2: Rare Candy quantity incorrect (expected 2, got ${rareCandy ? rareCandy.quantity : 'not found'})`);
     allTestsPassed = false;
   } else {
@@ -373,7 +365,7 @@ if (!route3Items) {
   }
   
   const repel = route3Items.find(i => i.item === 'Repel');
-  if (!repel || repel.quantity !== 3) {
+  if (!repel || String(repel.quantity) !== '3') {
     console.error(`✗ Route 3: Repel quantity incorrect (expected 3, got ${repel ? repel.quantity : 'not found'})`);
     allTestsPassed = false;
   } else {
@@ -462,6 +454,45 @@ if (locCountVNew !== 1 || !itemMapVNew['route1'] || itemMapVNew['route1'].length
   allTestsPassed = false;
 } else {
   console.log('✓ New vertical single-table: Route 1 with populated name cells parsed correctly (3 items)');
+}
+
+// ============================================================
+console.log('\n=== Testing Special Quantity Formats (Money and Ranges) ===\n');
+
+const SAMPLE_CSV_SPECIAL_QTY = `Special Town
+Item,Num,Method
+Prize Money,$3000,Reward
+Coins,"$1,200",Shop purchase
+Items Range,1-20,Random drop`;
+
+const rowsSpecial = parseCSV(SAMPLE_CSV_SPECIAL_QTY);
+const itemMapSpecial = parseTableBasedItemLocations(rowsSpecial);
+
+// Test S1: Money quantity "$3000" preserved as-is
+const prizeMoney = (itemMapSpecial['specialtown'] || []).find(i => i.item === 'Prize Money');
+if (!prizeMoney || prizeMoney.quantity !== '$3000') {
+  console.error(`✗ Money quantity not preserved: expected "$3000", got ${prizeMoney ? prizeMoney.quantity : 'not found'}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ Money quantity "$3000" preserved correctly');
+}
+
+// Test S2: Money quantity with comma "$1,200" preserved as-is (CSV-quoted)
+const coins = (itemMapSpecial['specialtown'] || []).find(i => i.item === 'Coins');
+if (!coins || coins.quantity !== '$1,200') {
+  console.error(`✗ Money quantity with comma not preserved: expected "$1,200", got ${coins ? coins.quantity : 'not found'}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ Money quantity "$1,200" (with comma) preserved correctly');
+}
+
+// Test S3: Range quantity "1-20" preserved as-is
+const itemRange = (itemMapSpecial['specialtown'] || []).find(i => i.item === 'Items Range');
+if (!itemRange || itemRange.quantity !== '1-20') {
+  console.error(`✗ Range quantity not preserved: expected "1-20", got ${itemRange ? itemRange.quantity : 'not found'}`);
+  allTestsPassed = false;
+} else {
+  console.log('✓ Range quantity "1-20" preserved correctly');
 }
 
 console.log('\n--- Test Summary ---');
