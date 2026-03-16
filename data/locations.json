@@ -457,8 +457,8 @@
           "obtain": "Random gift from the player's mom when first healing with her each day, after the capture tutorial (~5% chance) (daily)"
         },
         {
-          "item": "Money",
-          "quantity": 30,
+          "item": "$30,000",
+          "quantity": 1,
           "obtain": "From the player's mom when Lillie comes to guide the player to the Pokémon Research Lab"
         },
         {
@@ -1006,8 +1006,8 @@
           "obtain": "From the Sightseer in front of the Pokémon Center"
         },
         {
-          "item": "Money",
-          "quantity": 10,
+          "item": "$10,000",
+          "quantity": 1,
           "obtain": "Pokémon Center, from a Beauty if the player has Abra registered in their Pokédex as Caught"
         },
         {
@@ -1581,8 +1581,8 @@
           "obtain": "Recieved by accepting Rotom's gambling sponsorship deal"
         },
         {
-          "item": "Money",
-          "quantity": 3,
+          "item": "$3,000",
+          "quantity": 1,
           "obtain": "From a female Sightseer in the Pokémon Center if the player has Crabrawler registered in their Pokédex"
         },
         {
@@ -2517,8 +2517,8 @@
           "obtain": "Found in large berry pile"
         },
         {
-          "item": "Money",
-          "quantity": 3,
+          "item": "$3,000",
+          "quantity": 1,
           "obtain": "From a Sightseer near the Route 1 connection if the player has Sableye registered in their Pokédex"
         }
       ],
@@ -3303,6 +3303,7 @@
       "bossTrainers": [],
       "shops": [],
       "shopTables": [
+        "Pokemart",
         "Heahea City Pokecenter"
       ],
       "items": [
@@ -3312,8 +3313,8 @@
           "obtain": "From a Gentleman in the Ferry Terminal"
         },
         {
-          "item": "Money",
-          "quantity": 10,
+          "item": "$10,000",
+          "quantity": 1,
           "obtain": "From the Beauty in the apparel shop if the player has Salazzle registered in their Pokédex"
         },
         {
@@ -3814,8 +3815,8 @@
           "obtain": "From Hau after battling him"
         },
         {
-          "item": "Money",
-          "quantity": 5,
+          "item": "$5,000",
+          "quantity": 1,
           "obtain": "From the old man next to the Pokémon Center, if the player sells him the requested item (daily)"
         },
         {
@@ -4354,6 +4355,7 @@
       "bossTrainers": [],
       "shops": [],
       "shopTables": [
+        "Pokemart",
         "Route 5 Pokecenter"
       ],
       "items": [
@@ -4393,8 +4395,8 @@
           "obtain": "Held by Dennis, a Rockruff the player can receive in a trade"
         },
         {
-          "item": "Money",
-          "quantity": 3,
+          "item": "$3,000",
+          "quantity": 1,
           "obtain": "From the Scientist in the Pokémon Center if the player has Corsola registered in their Pokédex"
         },
         {
@@ -4525,7 +4527,258 @@
       "id": "brooklethill",
       "name": "Brooklet Hill",
       "notes": "Location of the second trial.",
-      "encounters": [],
+      "encounters": [
+        {
+          "spot": "Table 1 (Day)",
+          "levelRange": {
+            "min": 21,
+            "max": 25
+          },
+          "pokemon": [
+            {
+              "name": "Dewpider",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Surskit",
+              "chance": 10,
+              "sos": [
+                "Vivillon 12"
+              ]
+            },
+            {
+              "name": "Croagunk",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Buizel",
+              "chance": 10,
+              "sos": [
+                "Bidoof"
+              ]
+            },
+            {
+              "name": "Karrablast",
+              "chance": 10,
+              "sos": [
+                "Shelmet"
+              ]
+            },
+            {
+              "name": "Shelmet",
+              "chance": 10,
+              "sos": [
+                "Karrablast"
+              ]
+            },
+            {
+              "name": "Panpour",
+              "chance": 10,
+              "sos": [
+                "Popplio"
+              ]
+            },
+            {
+              "name": "Lotad",
+              "chance": 10,
+              "sos": [
+                "Lombre"
+              ]
+            },
+            {
+              "name": "Ducklett",
+              "chance": 10,
+              "sos": [
+                "Psyduck"
+              ]
+            },
+            {
+              "name": "Oshawott",
+              "chance": 10,
+              "sos": [
+                "Dewott"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "Table 2 (Day)",
+          "levelRange": {
+            "min": 21,
+            "max": 25
+          },
+          "pokemon": [
+            {
+              "name": "Surskit",
+              "chance": 15,
+              "sos": [
+                "Vivillon 12"
+              ]
+            },
+            {
+              "name": "Wishiwashi",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Goldeen",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Magikarp",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Oshawott",
+              "chance": 10,
+              "sos": [
+                "Dewott"
+              ]
+            },
+            {
+              "name": "Ducklett",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Lotad",
+              "chance": 10,
+              "sos": [
+                "Lombre"
+              ]
+            },
+            {
+              "name": "Basculin 1",
+              "chance": 5,
+              "sos": [
+                "Basculin"
+              ]
+            },
+            {
+              "name": "Basculin",
+              "chance": 5,
+              "sos": [
+                "Basculin 1"
+              ]
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Table 3 (Day)",
+          "levelRange": {
+            "min": 21,
+            "max": 25
+          },
+          "pokemon": [
+            {
+              "name": "Magikarp",
+              "chance": 35,
+              "sos": []
+            },
+            {
+              "name": "Goldeen",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Dewpider",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Wishiwashi",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Corphish",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Basculin",
+              "chance": 5,
+              "sos": [
+                "Basculin 1"
+              ]
+            },
+            {
+              "name": "Basculin 1",
+              "chance": 5,
+              "sos": [
+                "Basculin"
+              ]
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Table 12 (Day)",
+          "levelRange": {
+            "min": 25,
+            "max": 26
+          },
+          "pokemon": [
+            {
+              "name": "Corphish",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Magikarp",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Wishiwashi",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Goldeen",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Basculin",
+              "chance": 10,
+              "sos": [
+                "Basculin 1"
+              ]
+            },
+            {
+              "name": "Basculin 1",
+              "chance": 10,
+              "sos": [
+                "Basculin"
+              ]
+            },
+            {
+              "name": "Dewpider",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
       "giftsTrades": [],
       "staticPokemon": [],
       "trainers": [],
@@ -4574,6 +4827,140 @@
           "obtain": ""
         }
       ],
+      "battles": []
+    },
+    {
+      "id": "brookletcove",
+      "name": "Brooklet Cove",
+      "notes": "Brooklet Cove is the renamed Totem's Den. It is still a different location than the rest of Brooklet Hill.",
+      "encounters": [
+        {
+          "spot": "Table 1 (Day)",
+          "levelRange": {
+            "min": 21,
+            "max": 25
+          },
+          "pokemon": [
+            {
+              "name": "Shellos 1",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Finneon",
+              "chance": 25,
+              "sos": [
+                "Vivillon 13"
+              ]
+            },
+            {
+              "name": "Tentacool",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Castform",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Wingull",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Table 2 (Day)",
+          "levelRange": {
+            "min": 21,
+            "max": 25
+          },
+          "pokemon": [
+            {
+              "name": "Magikarp",
+              "chance": 40,
+              "sos": []
+            },
+            {
+              "name": "Wishiwashi",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Feebas",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Clamperl",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Luvdisc",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Table 8 (Day)",
+          "levelRange": {
+            "min": 25,
+            "max": 26
+          },
+          "pokemon": [
+            {
+              "name": "Feebas",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Clamperl",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Luvdisc",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Wishiwashi",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Magikarp",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "(None)",
+              "chance": 0,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [],
       "battles": []
     }
   ]
