@@ -48,16 +48,17 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       '.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
       '.dexentry .movedesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
       '.dexentry .namecol { float: none !important; display: inline !important; padding-top: 0 !important; height: auto !important; }' +
-      '.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; position: relative; z-index: 10; }' +
+      '.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; position: relative; z-index: 10; text-shadow: 0 0 6px #fff, 0 0 6px #fff, 0 0 10px rgba(255,255,255,0.8); }' +
       '.dexentry h1 a { display:inline-block; white-space:nowrap; vertical-align: middle; }' +
+      '.dexentry dt, .dexentry dd { text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 8px rgba(255,255,255,0.7); }' +
       '.dexentry > * { position: relative; z-index: 1; }' +
-      '.trainer-sprite { position: absolute; top: 0; left: 0; z-index: 20; pointer-events: none; }' +
+      '.trainer-sprite-img { position: absolute; top: 0; right: 0; max-height: 200px; opacity: 0.7; pointer-events: none; z-index: 0; }' +
       '</style>';
     buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Trainers</a>';
 
     // Trainer sprite image at top-right of the page
     if (spriteUrl) {
-      buf += '<img src="' + escapeHTML(spriteUrl) + '" alt="' + escapeHTML(trainer.name) + ' sprite" style="position:absolute;top:0;right:0;max-height:200px;opacity:0.7;pointer-events:none;z-index:0;" />';
+      buf += '<img class="trainer-sprite-img" src="' + escapeHTML(spriteUrl) + '" alt="' + escapeHTML(trainer.name) + ' sprite" />';
     }
 
     buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a></h1>';
