@@ -17,26 +17,33 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     this.trainer = trainer;
     this.shortTitle = trainer.name;
 
-    // Get trainer sprite - try multiple strategies:
-    // 1. Check personalName (if exists) - for named trainers like "Hau", "Gladion"
-    // 2. Check trainerClass - for generic classes like "Youngster", "Lass", "Pokémon Rancher"
-    // 3. Check full name with personal name extraction as fallback
-    var trainerSprite = 'background:transparent';
-    
-    // First, try personal name if it exists (named trainers like Hau, Gladion)
-    if (trainer.personalName && TrainerSpriteLinks && TrainerSpriteLinks[toID(trainer.personalName)]) {
-      trainerSprite = getTrainerIcon(trainer.personalName, false);
-    } 
-    // Second, try trainer class (Youngster, Lass, Pokémon Rancher, etc.)
-    else if (trainer.trainerClass && TrainerSpriteLinks && TrainerSpriteLinks[toID(trainer.trainerClass)]) {
-      trainerSprite = getTrainerIcon(trainer.trainerClass, false);
-    }
-    // Third, try extracting from full name as fallback
-    else if (trainer.name) {
-      trainerSprite = getTrainerIcon(trainer.name, true);
+    // Get trainer sprite URL - match by:
+    // 1. Last word of trainer name (personal name, e.g. "Hau" from "Punk Guy Hau")
+    // 2. Everything except last word (trainer class, e.g. "Surf Dude" from "Surf Dude Harry")
+    var spriteUrl = null;
+    if (TrainerSpriteLinks) {
+      // Try personal name first (last word of name)
+      if (trainer.personalName && TrainerSpriteLinks[toID(trainer.personalName)]) {
+        spriteUrl = TrainerSpriteLinks[toID(trainer.personalName)];
+      }
+      // Try trainer class (everything except last word)
+      else if (trainer.trainerClass && TrainerSpriteLinks[toID(trainer.trainerClass)]) {
+        spriteUrl = TrainerSpriteLinks[toID(trainer.trainerClass)];
+      }
+      // Fallback: extract from full name directly
+      else if (trainer.name) {
+        var nameParts = trainer.name.trim().split(/\s+/);
+        if (nameParts.length >= 2) {
+          var lastWordId = toID(nameParts[nameParts.length - 1]);
+          var classNameId = toID(nameParts.slice(0, -1).join(' '));
+          spriteUrl = TrainerSpriteLinks[lastWordId] || TrainerSpriteLinks[classNameId] || null;
+        } else {
+          spriteUrl = TrainerSpriteLinks[toID(trainer.name)] || null;
+        }
+      }
     }
 
-    var buf = '<div class="pfx-body dexentry" style="position:relative;' + trainerSprite + '">';
+    var buf = '<div class="pfx-body dexentry" style="position:relative;">';
     buf += '<style>' +
       '.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
       '.dexentry .movedesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
@@ -47,8 +54,12 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       '.trainer-sprite { position: absolute; top: 0; left: 0; z-index: 20; pointer-events: none; }' +
       '</style>';
     buf += '<a href="' + Config.baseurl + 'trainers/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Trainers</a>';
-    
-    // Trainer name without inline sprite
+
+    // Trainer sprite image at top-right of the page
+    if (spriteUrl) {
+      buf += '<img src="' + escapeHTML(spriteUrl) + '" alt="" style="position:absolute;top:0;right:0;max-height:200px;opacity:0.7;pointer-events:none;z-index:0;" />';
+    }
+
     buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a></h1>';
 
     // Prize Money
