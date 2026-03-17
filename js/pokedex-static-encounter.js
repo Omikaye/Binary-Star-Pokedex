@@ -83,6 +83,12 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
     }
     buf += '</dd>';
     
+    // Types
+    var types = (monData ? monData.types : null) || [];
+    if (types.length) {
+      buf += '<dt>Type:</dt> <dd style="display:flex;gap:4px;flex-wrap:wrap;padding-top:2px">' + types.map(function(t){return getTypeIcon(t);}).join(' ') + '</dd>';
+    }
+    
     // Location
     if (encounterLocation) {
       buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/' + encounterLocation.id + '" data-target="push">' + escapeHTML(encounterLocation.name) + '</a></dd>';
@@ -160,6 +166,14 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
       buf += '</div></div>';
     }
 
+    // Shared type color map used by both the moves card and SOS encounter move rendering
+    var typeColors = {
+      normal: '#A8A878', fighting: '#C03028', flying: '#A890F0', poison: '#A040A0', ground: '#E0C068',
+      rock: '#B8A038', bug: '#A8B820', ghost: '#705898', steel: '#B8B8D0', fire: '#F08030',
+      water: '#6890F0', grass: '#78C850', electric: '#F8D030', psychic: '#F85888', ice: '#98D8D8',
+      dragon: '#7038F8', dark: '#705848', fairy: '#EE99AC'
+    };
+
     // Moves card
     if (encounter.moves && encounter.moves.length > 0) {
       buf += '<div style="border-radius:10px;overflow:hidden;margin-bottom:12px;border:1px solid rgba(0,0,0,0.08);box-shadow:0 2px 6px rgba(0,0,0,0.08)">';
@@ -175,12 +189,6 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
         }
         
         var moveType = toID(move.type);
-        var typeColors = {
-          normal: '#A8A878', fighting: '#C03028', flying: '#A890F0', poison: '#A040A0', ground: '#E0C068',
-          rock: '#B8A038', bug: '#A8B820', ghost: '#705898', steel: '#B8B8D0', fire: '#F08030',
-          water: '#6890F0', grass: '#78C850', electric: '#F8D030', psychic: '#F85888', ice: '#98D8D8',
-          dragon: '#7038F8', dark: '#705848', fairy: '#EE99AC'
-        };
         var bgMoveColor = typeColors[moveType] || '#ccc';
         var typeIcon = '<span style="margin-left:6px;display:inline-block">' + getTypeIcon(move.type) + '</span>';
         
@@ -207,87 +215,118 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
       var sosEncounters = [];
       if (encounter.sos.primary) sosEncounters.push({ id: encounter.sos.primary, type: 'Primary' });
       if (encounter.sos.secondary) sosEncounters.push({ id: encounter.sos.secondary, type: 'Secondary' });
-      
+
       buf += '<div style="margin-top:12px">';
-      
-      var colors = ['#f15b5b', '#f28f44', '#f2c547', '#70c27a', '#5ba4f1', '#9a6df2'];
-      
+
+      var sosColors = ['#f15b5b', '#f28f44'];
+
+      var getSosTypeColor = function(type) {
+        return typeColors[toID(type)] || '#ccc';
+      };
+
+      var renderSosItemBox = function(itemName) {
+        if (!itemName) return '';
+        var itemID = toID(itemName);
+        var data = BattleItems[itemID];
+        var title = data ? data.name : itemName;
+        var desc = data ? (data.shortDesc || data.desc || '') : '';
+        var icon = '<span class="itemicon" style="' + getItemIcon(itemID) + ';width:32px;height:32px;display:inline-block;vertical-align:top;flex-shrink:0"></span>';
+        return '<a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:#fff;border:1px solid #ddd;border-radius:6px;padding:8px;display:flex;gap:8px;align-items:flex-start">' + icon + '<div style="flex:1"><strong>' + escapeHTML(title) + '</strong><br /><small>' + escapeHTML(desc) + '</small></div></div></a>';
+      };
+
+      var renderSosAbilityBox = function(abilityName) {
+        if (!abilityName) return '';
+        var rawName = abilityName.replace(/\s+\([HS]\)$/, '');
+        var abilityID = toID(rawName);
+        var data = BattleAbilities[abilityID];
+        var content = '<div class="infobox" style="background:#fff;border:1px solid #ddd;border-radius:6px;padding:8px"><strong>' + escapeHTML((data ? data.name : rawName)) + '</strong>';
+        if (abilityName.includes('(H)')) content += ' <em>(H)</em>';
+        if (abilityName.includes('(S)')) content += ' <em>(S)</em>';
+        content += '<br /><small>' + escapeHTML((data ? (data.shortDesc || data.desc || '') : '')) + '</small></div>';
+        return '<a href="' + Config.baseurl + 'abilities/' + abilityID + '" data-target="push" class="subtle" style="text-decoration:none">' + content + '</a>';
+      };
+
+      var renderSosMoveBox = function(moveName) {
+        if (!moveName) return '';
+        var sosMoveID = toID(moveName);
+        var data = BattleMovedex[sosMoveID];
+        var moveType = data ? toID(data.type) : 'normal';
+        var bgMoveColor = getSosTypeColor(moveType);
+        var typeIcon = '<span style="margin-left:6px;display:inline-block">' + getTypeIcon(moveType) + '</span>';
+        if (!data) return '<div class="infobox" style="background:' + bgMoveColor + '33;border:1px solid ' + bgMoveColor + ';border-radius:6px;padding:8px;color:#333">' + escapeHTML(moveName) + typeIcon + '</div>';
+        var statsText = '';
+        if (data.category !== 'Status') {
+          statsText += '<b>Pow:</b> ' + (data.basePower || '&mdash;') + ' ';
+        }
+        statsText += '<b>Acc:</b> ' + (data.accuracy && data.accuracy !== true ? data.accuracy + '%' : '&mdash;') + ' ';
+        var pp = data.noPPBoosts ? data.pp : Math.floor(data.pp * 8 / 5);
+        statsText += '<b>PP:</b> ' + pp;
+        return '<a href="' + Config.baseurl + 'moves/' + sosMoveID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:' + bgMoveColor + '33;border:1px solid ' + bgMoveColor + ';border-radius:6px;padding:8px;color:#333;display:flex;justify-content:space-between;align-items:center"><div><strong>' + escapeHTML(data.name) + '</strong><br /><small>' + statsText + '</small><br /><small>' + escapeHTML(data.shortDesc || data.desc || '') + '</small></div>' + typeIcon + '</div></a>';
+      };
+
       for (var si = 0; si < sosEncounters.length; si++) {
         var sosEnc = sosEncounters[si];
         var sosData = staticEncounters[sosEnc.id];
         if (!sosData) continue;
-        
+
         // Translate display name for SOS encounters
         var sosTranslatedName = window.translateDisplayName ? window.translateDisplayName(sosData.name) : sosData.name;
         var sosPokemonID = toID(sosTranslatedName);
         var sosPokemonData = BattlePokedex[sosPokemonID];
-        var bg = colors[si % colors.length];
-        
+        var bg = sosColors[si % sosColors.length];
+
         buf += '<div style="border-radius:10px;overflow:hidden;margin-bottom:12px;border:1px solid rgba(0,0,0,0.08);box-shadow:0 2px 6px rgba(0,0,0,0.08)">';
-        buf += '<div style="background:' + bg + ';color:#fff;padding:8px 12px;font-weight:bold">' + sosEnc.type + ' SOS Encounter</div>';
+        buf += '<div style="background:' + bg + ';color:#fff;padding:8px 12px;font-weight:bold">' + sosEnc.type + ' S.O.S. Encounter</div>';
         buf += '<div style="background:linear-gradient(180deg, ' + bg + '22, #fff);padding:12px">';
-        
-        // Pokemon name and level
-        buf += '<div style="margin-bottom:10px">';
-        if (sosPokemonData) {
-          buf += '<a href="' + Config.baseurl + 'pokemon/' + sosPokemonID + '" data-target="push" class="subtle" style="text-decoration:none"><div style="font-size:16px;font-weight:600">' + escapeHTML(sosPokemonData.name) + ' <small>(Lv. ' + sosData.level + ')</small></div></a>';
-        } else {
-          buf += '<div style="font-size:16px;font-weight:600">' + escapeHTML(sosTranslatedName) + ' <small>(Lv. ' + sosData.level + ')</small></div>';
-        }
+
+        // Pokemon sprite + name + level
+        buf += '<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
+        buf += '<span class="picon" style="' + getPokemonIcon(sosPokemonID) + ';display:inline-block;vertical-align:middle"></span>';
+        var sosMonName = sosPokemonData ? sosPokemonData.name : sosTranslatedName;
+        var sosMonLinkId = sosPokemonData ? toID(sosPokemonData.name) : sosPokemonID;
+        buf += '<a href="' + Config.baseurl + 'pokemon/' + sosMonLinkId + '" data-target="push" class="subtle" style="text-decoration:none"><div style="font-size:16px;font-weight:600">' + escapeHTML(sosMonName) + ' <small>(Lv. ' + sosData.level + ')</small></div></a>';
         buf += '</div>';
-        
-        // Nature
-        if (sosData.nature) {
-          var eff = NATURE_EFFECTS[sosData.nature] || null;
-          var natText = '<strong>Nature:</strong> ' + escapeHTML(sosData.nature);
-          if (eff) {
-            natText += ' (<span style="color:#1f9d3a">' + eff[0] + '&#8593;</span> / <span style="color:#c22e28">' + eff[1] + '&#8595;</span>)';
-          } else {
-            natText += ' (Neutral)';
-          }
-          buf += '<div style="margin-bottom:8px">' + natText + '</div>';
+
+        // Types
+        var sosTypes = (sosPokemonData ? sosPokemonData.types : null) || [];
+        if (sosTypes.length) {
+          buf += '<div style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap">' + sosTypes.map(function(t){return getTypeIcon(t);}).join(' ') + '</div>';
         }
-        
-        // Ability
-        if (sosData.ability) {
-          var sosAbilityName = sosData.ability.replace(/\s+\([HS]\)$/, '');
-          var sosAbilID = toID(sosAbilityName);
-          var sosAbilityObj = BattleAbilities[sosAbilID];
-          if (sosAbilityObj) {
-            buf += '<div style="margin-bottom:8px;background:#fff;border:1px solid #ddd;border-radius:4px;padding:6px"><small><strong><a href="' + Config.baseurl + 'abilities/' + sosAbilID + '" data-target="push" class="subtle" style="text-decoration:none;color:inherit">' + escapeHTML(sosAbilityObj.name) + '</a>';
-            if (sosData.ability.includes('(H)')) buf += ' <em>(H)</em>';
-            if (sosData.ability.includes('(S)')) buf += ' <em>(S)</em>';
-            buf += '</strong></a></small></div>';
-          }
-        }
-        
+
         // Item
         if (sosData.item) {
-          var sosItemID = toID(sosData.item);
-          var sosItemName = BattleItems[sosItemID]?.name || sosData.item;
-          buf += '<div style="margin-bottom:8px"><small><strong>Item:</strong> ' + escapeHTML(sosItemName) + '</small></div>';
+          buf += '<div style="margin-top:10px">' + renderSosItemBox(sosData.item) + '</div>';
         }
-        
+
+        // Ability
+        if (sosData.ability) {
+          buf += '<div style="margin-top:10px">' + renderSosAbilityBox(sosData.ability) + '</div>';
+        }
+
+        // Nature
+        if (sosData.nature) {
+          var sosEff = NATURE_EFFECTS[sosData.nature] || null;
+          var sosNatText = '<strong>Nature:</strong> ' + escapeHTML(sosData.nature);
+          if (sosEff) {
+            sosNatText += ' (<span style="color:#1f9d3a">' + sosEff[0] + '&#8593;</span> / <span style="color:#c22e28">' + sosEff[1] + '&#8595;</span>)';
+          } else {
+            sosNatText += ' (Neutral)';
+          }
+          buf += '<div style="margin-top:8px">' + sosNatText + '</div>';
+        }
+
         // Moves
         if (sosData.moves && sosData.moves.length > 0) {
-          buf += '<div style="margin-top:10px"><small><strong>Moves:</strong></small>';
-          buf += '<div style="display:flex;flex-direction:column;gap:4px;margin-top:4px">';
+          buf += '<div style="margin-top:10px;display:flex;flex-direction:column;gap:6px">';
           for (var sk = 0; sk < sosData.moves.length; sk++) {
-            var sosMoveID = toID(sosData.moves[sk]);
-            var sosMove = BattleMovedex[sosMoveID];
-            if (sosMove) {
-              buf += '<small>• ' + escapeHTML(sosMove.name) + '</small>';
-            } else {
-              buf += '<small>• ' + escapeHTML(sosData.moves[sk]) + '</small>';
-            }
+            buf += renderSosMoveBox(sosData.moves[sk]);
           }
           buf += '</div>';
-          buf += '</div>';
         }
-        
+
         buf += '</div></div>';
       }
-      
+
       buf += '</div>';
     }
 
