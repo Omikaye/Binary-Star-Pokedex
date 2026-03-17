@@ -272,7 +272,7 @@
           "obtain": "From a woman in the western house for telling her about the message in a bottle at Kala'e Bay"
         },
         {
-          "item": "Fightinium Z",
+          "item": "Fightinium Z Node",
           "quantity": 1,
           "obtain": "From Hala for defeating him in the grand trial"
         },
@@ -292,17 +292,17 @@
           "obtain": "From Kukui after defeating Hala in the grand trial"
         },
         {
-          "item": "Decidium Z",
+          "item": "Decidium Z Node",
           "quantity": 1,
           "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Rowlet"
         },
         {
-          "item": "Incinium Z",
+          "item": "Incinium Z Node",
           "quantity": 1,
           "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Litten"
         },
         {
-          "item": "Primarium Z",
+          "item": "Primarium Z Node",
           "quantity": 1,
           "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Popplio"
         }
@@ -2046,7 +2046,7 @@
       "shopTables": [],
       "items": [
         {
-          "item": "Icium Z",
+          "item": "Icium Z Node",
           "quantity": 1,
           "obtain": "In the center of an island in the middle of the cave (requires Lapras Surf or Sharpedo Jet)"
         },
@@ -2280,7 +2280,7 @@
       "shopTables": [],
       "items": [
         {
-          "item": "Normalium Z",
+          "item": "Normalium Z Node",
           "quantity": 1,
           "obtain": "Reward for completing the trial"
         },
@@ -3222,7 +3222,7 @@
           "obtain": "Before the grass patch reached by proceeding up the slope in the southeast"
         },
         {
-          "item": "Flyinium Z",
+          "item": "Flyinium Z Node",
           "quantity": 1,
           "obtain": "On a cliff overlooking the hollow, via the path blocked by a heavy boulder in the cave"
         }
@@ -3424,17 +3424,17 @@
           "obtain": "3F, on the balcony of the leftmost room"
         },
         {
-          "item": "Snorlium Z",
+          "item": "Snorlium Z Node",
           "quantity": 1,
           "obtain": "3F, from the Gentleman in the first room to the left of the elevator if the player has a Snorlax in their party"
         },
         {
-          "item": "Mewnium Z",
+          "item": "Mewnium Z Node",
           "quantity": 1,
           "obtain": "3F, from the Gentleman in the first room to the left of the elevator if the player has a Mew in their party"
         },
         {
-          "item": "Marshadium Z",
+          "item": "Marshadium Z Node",
           "quantity": 1,
           "obtain": "3F, from the Gentleman in the first room to the left of the elevator if the player has a Marshadow in their party"
         },
@@ -3444,7 +3444,7 @@
           "obtain": "3F, after being forced out of the first room to the right of the elevator"
         },
         {
-          "item": "Fairium Z",
+          "item": "Fairium Z Node",
           "quantity": 1,
           "obtain": "3F, in the first room to the right of the elevator"
         },
@@ -3698,7 +3698,7 @@
           "obtain": "Held by gift Partner Cap Pikachu"
         },
         {
-          "item": "Pikashunium Z",
+          "item": "Pikashunium Z Node",
           "quantity": 1,
           "obtain": "From the female Pikachu near the female Trial Guide after showing her a Pikachu in a cap"
         }
@@ -4460,7 +4460,7 @@
           "obtain": "(North) At the south end of the highest level, northeast of the Pokémon Center"
         },
         {
-          "item": "Poisonium Z",
+          "item": "Poisonium Z Node",
           "quantity": 1,
           "obtain": "(North) Northwest of the Pokémon Center, past Ace Trainer Alexis"
         }
@@ -4789,45 +4789,101 @@
         {
           "item": "Lapras Paddle",
           "quantity": 1,
-          "obtain": ""
+          "obtain": "From Lana upon starting the trial, at the trial gates"
         },
         {
           "item": "Passho Berry",
-          "quantity": 5,
-          "obtain": "x 900"
+          "quantity": 900,
+          "obtain": "On the west bank of the lake near the Route 5 entrance"
         },
         {
           "item": "Water Gem",
-          "quantity": 5,
-          "obtain": "x 900"
+          "quantity": 900,
+          "obtain": "On a beach on the south side of the lake near the Route 5 entrance (requires Lapras Paddle or Sharpedo Jet)"
         },
         {
-          "item": "Passho Berry",
-          "quantity": 5,
-          "obtain": "Sea Incense"
+          "item": "Sea Incense",
+          "quantity": 1,
+          "obtain": "At the southern tip of the bare patch next to the grass field closest to the Route 5 entrance (hidden)"
         },
         {
           "item": "Deep Sea Scale",
-          "quantity": 5,
-          "obtain": ""
+          "quantity": 1,
+          "obtain": "In the northeast corner of the shore north of the second lake from the Route 5 entrance"
         },
         {
-          "item": "Water Gem",
-          "quantity": 5,
-          "obtain": "Mystic Water x 9"
+          "item": "Mystic Water",
+          "quantity": 9,
+          "obtain": "On the southern shore of the second lake from the Route 5 entrance, on top of a Photo Spot"
         },
         {
-          "item": "Water Gem",
-          "quantity": 5,
-          "obtain": "Wave Incense"
+          "item": "Wave Incense",
+          "quantity": 1,
+          "obtain": "Between the two grass fields, on the land south of the second lake from the Route 5 entrance (hidden)"
         },
         {
           "item": "TM57 (Charge Beam)",
-          "quantity": 5,
-          "obtain": ""
+          "quantity": 1,
+          "obtain": "Past the grass field on the southeast side of the third lake from the Route 5 entrance"
         }
       ],
-      "battles": []
+      "battles": [
+        {
+          "id": "60",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "54",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "S139",
+          "tag": "Story",
+          "notes": "North Lake, \"Incorrect\" Splash"
+        },
+        {
+          "id": "S16",
+          "tag": "Story",
+          "notes": "North Lake, \"Correct\" Splash"
+        },
+        {
+          "id": "55",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "58",
+          "tag": "Mandatory",
+          "notes": "None"
+        },
+        {
+          "id": "S140",
+          "tag": "Story",
+          "notes": "South Lake, \"Incorrect\" Splash"
+        },
+        {
+          "id": "S17",
+          "tag": "Story",
+          "notes": "South Lake, \"Correct\" Splash"
+        },
+        {
+          "id": "56",
+          "tag": "Optional",
+          "notes": "Reward: TM Charge Beam"
+        },
+        {
+          "id": "576",
+          "tag": "Miniboss",
+          "notes": "Johnny will only battle you if it is raining. (It rains for 1 hour every day in brooklet hill, between 4pm and 5pm. He will only battle you if you've beaten the trial. Reward: $50,000)"
+        },
+        {
+          "id": "503",
+          "tag": "Postgame Boss",
+          "notes": "Lana Rematches you here."
+        }
+      ]
     },
     {
       "id": "brookletcove",
@@ -4960,8 +5016,35 @@
       "bossTrainers": [],
       "shops": [],
       "shopTables": [],
-      "items": [],
-      "battles": []
+      "items": [
+        {
+          "item": "Deep Sea Tooth",
+          "quantity": 1,
+          "obtain": "At the southwestern end of the beach"
+        },
+        {
+          "item": "Waterium Z Node",
+          "quantity": 1,
+          "obtain": "From Lana after completing the trial"
+        },
+        {
+          "item": "Fishing Rod",
+          "quantity": 1,
+          "obtain": "From Lana after completing the trial"
+        },
+        {
+          "item": "Dive Ball",
+          "quantity": 10,
+          "obtain": "From Lana after completing the trial"
+        }
+      ],
+      "battles": [
+        {
+          "id": "S138",
+          "tag": "Boss",
+          "notes": "Totem Megamax Araquanid"
+        }
+      ]
     }
   ]
 }
