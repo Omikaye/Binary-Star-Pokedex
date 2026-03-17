@@ -458,7 +458,7 @@
         },
         {
           "item": "$30,000",
-          "quantity": "$1",
+          "quantity": "1",
           "obtain": "From the player's mom when Lillie comes to guide the player to the Pokémon Research Lab"
         },
         {
@@ -1007,7 +1007,7 @@
         },
         {
           "item": "$10,000",
-          "quantity": "$1",
+          "quantity": "1",
           "obtain": "Pokémon Center, from a Beauty if the player has Abra registered in their Pokédex as Caught"
         },
         {
@@ -1572,7 +1572,7 @@
         },
         {
           "item": "$3,000",
-          "quantity": "$1",
+          "quantity": "1",
           "obtain": "From a female Sightseer in the Pokémon Center if the player has Crabrawler registered in their Pokédex"
         },
         {
@@ -2483,7 +2483,7 @@
         },
         {
           "item": "$3,000",
-          "quantity": "$1",
+          "quantity": "1",
           "obtain": "From a Sightseer near the Route 1 connection if the player has Sableye registered in their Pokédex"
         }
       ],
@@ -3259,7 +3259,7 @@
         },
         {
           "item": "$10,000",
-          "quantity": "$1",
+          "quantity": "1",
           "obtain": "From the Beauty in the apparel shop if the player has Salazzle registered in their Pokédex"
         },
         {
@@ -3746,7 +3746,7 @@
         },
         {
           "item": "$5,000",
-          "quantity": "$1",
+          "quantity": "1",
           "obtain": "From the old man next to the Pokémon Center, if the player sells him the requested item (daily)"
         },
         {
@@ -4316,7 +4316,7 @@
         },
         {
           "item": "$3,000",
-          "quantity": "$1",
+          "quantity": "1",
           "obtain": "From the Scientist in the Pokémon Center if the player has Corsola registered in their Pokédex"
         },
         {
