@@ -96,6 +96,37 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     }
     buf += '</dl>';
 
+    // === Team synopsis ===
+    var teamList = (trainer.team || []).slice(0, 6);
+    if (teamList.length > 0) {
+      buf += '<div style="margin-top:12px">';
+      buf += '<strong>Team:</strong>';
+      buf += '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;align-items:flex-end">';
+      for (var synopsisIndex = 0; synopsisIndex < teamList.length; synopsisIndex++) {
+        var teamMember = teamList[synopsisIndex];
+        var sDispName = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(teamMember.name || '') : (teamMember.name || '');
+        var sMonID = toID(sDispName);
+        var sMonData = BattlePokedex[sMonID];
+        if (!sMonData && sMonID) {
+          sMonData = BattlePokedex[sMonID.split('-')[0]];
+        }
+        var sMonLinkId = sMonData ? toID(sMonData.name) : sMonID;
+        buf += '<div style="position:relative;display:inline-block">';
+        buf += '<a href="' + Config.baseurl + 'pokemon/' + sMonLinkId + '" data-target="push">';
+        buf += '<img src="' + ResourcePrefix + 'sprites/gen5/' + sMonID + '.png" alt="' + escapeHTML(sDispName) + '" width="96" height="96" />';
+        buf += '</a>';
+        if (teamMember.item) {
+          var sItemID = toID(teamMember.item);
+          buf += '<a href="' + Config.baseurl + 'items/' + sItemID + '" data-target="push" style="position:absolute;bottom:0;right:0;display:block;width:32px;height:32px">';
+          buf += '<span class="itemicon" style="' + getItemIcon(sItemID) + ';width:32px;height:32px;display:block"></span>';
+          buf += '</a>';
+        }
+        buf += '</div>';
+      }
+      buf += '</div>';
+      buf += '</div>';
+    }
+
     // === Team layout ===
     var NATURE_EFFECTS = {
       Adamant: ['Atk', 'SpA'], Modest: ['SpA', 'Atk'], Jolly: ['Spe', 'SpA'], Timid: ['Spe', 'Atk'],
