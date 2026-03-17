@@ -184,7 +184,7 @@ function parseEncounterDataRow(str) {
   }
   if (current.trim()) entries.push(current.trim());
 
-  return entries.map(parseEncounterEntry).filter(e => e && e.name);
+  return entries.map(parseEncounterEntry).filter(e => e && e.name && e.name.toLowerCase() !== 'none' && (e.chance === null || e.chance > 0));
 }
 
 /**

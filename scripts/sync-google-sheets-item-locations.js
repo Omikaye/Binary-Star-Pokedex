@@ -145,11 +145,7 @@ function parseHorizontalItemLocations(rows) {
       const numStr = row[numCol] ? row[numCol].trim() : '1';
       const method = row[methodCol] ? row[methodCol].trim() : '';
       
-      let quantity = 1;
-      const numMatch = numStr.match(/(\d+)/);
-      if (numMatch) {
-        quantity = parseInt(numMatch[1], 10);
-      }
+      const quantity = numStr || 1;
       
       locationItems[locationId].push({
         item: itemName,
@@ -223,12 +219,7 @@ function parseTableBasedItemLocations(rows) {
       const method = row[methodColumnIndex] ? row[methodColumnIndex].trim() : '';
       
       if (itemName) {
-        // Parse quantity (could be a number or contain text like "x5")
-        let quantity = 1;
-        const numMatch = numStr.match(/(\d+)/);
-        if (numMatch) {
-          quantity = parseInt(numMatch[1], 10);
-        }
+        const quantity = numStr || 1;
         
         locationItems[currentLocation].push({
           item: itemName,
