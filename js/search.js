@@ -32,6 +32,57 @@
 		return __abilityUseCountCache[toID(id)] || 0;
 	}
 
+	// Cache item location counts (distinct locations that contain the item)
+	let __itemLocationCountCache = null;
+	function parseItemId(rawItem) {
+		// Handle TM format: "TM90 (Zen Headbutt)" -> "tm90"
+		var tmMatch = rawItem.match(/^(TM\d+)\s*\(/);
+		if (tmMatch) return toID(tmMatch[1]);
+		// Strip trailing quantity like " (2)" and convert to id
+		return toID(rawItem.replace(/\s*\(\d+\)$/, ''));
+	}
+	function getItemLocationCount(id) {
+		if (!__itemLocationCountCache) {
+			__itemLocationCountCache = {};
+			var allLocations = window.Locations || [];
+			var allShopTables = window.ShopTables || {};
+			for (var li = 0; li < allLocations.length; li++) {
+				var loc = allLocations[li];
+				var seenItems = new Set();
+				// Check items array
+				if (loc.items) {
+					for (var ii = 0; ii < loc.items.length; ii++) {
+						var itemId = parseItemId(loc.items[ii].item || '');
+						if (itemId) seenItems.add(itemId);
+					}
+				}
+				// Check shopTables references
+				if (loc.shopTables) {
+					for (var si = 0; si < loc.shopTables.length; si++) {
+						var shopTable = allShopTables[loc.shopTables[si]];
+						if (shopTable && shopTable.items) {
+							for (var shi = 0; shi < shopTable.items.length; shi++) {
+								var shopItemId = parseItemId(shopTable.items[shi].item || '');
+								if (shopItemId) seenItems.add(shopItemId);
+							}
+						}
+					}
+				}
+				// Check legacy shops array
+				if (loc.shops) {
+					for (var lsi = 0; lsi < loc.shops.length; lsi++) {
+						var legacyItemId = parseItemId(loc.shops[lsi].item || '');
+						if (legacyItemId) seenItems.add(legacyItemId);
+					}
+				}
+				seenItems.forEach(function(iid) {
+					__itemLocationCountCache[iid] = (__itemLocationCountCache[iid] || 0) + 1;
+				});
+			}
+		}
+		return __itemLocationCountCache[toID(id)] || 0;
+	}
+
 	// Cache move usage counts (distinct Pokémon that can learn the move; forms count separately)
 	let __moveUseCountCache = null;
 	function getMoveUseCount(id) {
@@ -858,7 +909,8 @@
 		if (matchLength) {
 			name = name.substr(0, matchStart) + '<b>' + name.substr(matchStart, matchLength) + '</b>' + name.substr(matchStart + matchLength);
 		}
-		buf += '<span class="col namecol">' + name + '</span> ';
+		var locationCount = getItemLocationCount(id);
+		buf += '<span class="col namecol"><small style="color:#888">' + locationCount + '</small> ' + name + '</span> ';
 
 		// error
 		if (errorMessage) {
