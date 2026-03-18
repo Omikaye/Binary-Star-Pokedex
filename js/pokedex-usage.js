@@ -136,14 +136,20 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
     }
 
     // Helper function to check if trainer has a location
+    // Returns the location name if found, or null if not found
     var trainerHasLocation = function(trainerId) {
-      if (!window.Locations) return false;
+      if (!window.Locations) return null;
       for (var i = 0; i < window.Locations.length; i++) {
         var loc = window.Locations[i];
-        if (loc.trainers && loc.trainers.indexOf(trainerId) !== -1) return true;
-        if (loc.bossTrainers && loc.bossTrainers.indexOf(trainerId) !== -1) return true;
+        if (loc.battles) {
+          for (var b = 0; b < loc.battles.length; b++) {
+            if (loc.battles[b].id === trainerId) return loc;
+          }
+        }
+        if (loc.trainers && loc.trainers.indexOf(trainerId) !== -1) return loc;
+        if (loc.bossTrainers && loc.bossTrainers.indexOf(trainerId) !== -1) return loc;
       }
-      return false;
+      return null;
     };
     
     // Helper function to check if static encounter has a location
@@ -161,7 +167,8 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
       for (var i = 0; i < window.Trainers.length; i++) {
         var trainer = window.Trainers[i];
         // Only include trainers that have a documented location
-        if (!trainerHasLocation(trainer.id)) continue;
+        var trainerLoc = trainerHasLocation(trainer.id);
+        if (!trainerLoc) continue;
         
         if (trainer.team && Array.isArray(trainer.team)) {
           for (var j = 0; j < trainer.team.length; j++) {
@@ -172,6 +179,7 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
               if (toID(dispName) === id) {
                 usage.trainer.push({
                   trainer: trainer,
+                  location: trainerLoc,
                   pokemon: teamMon,
                   type: 'trainer'
                 });
@@ -295,10 +303,13 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
         else {
           var trainer = trainerData.trainer;
           var mon = trainerData.pokemon;
+          var trainerLoc = trainerData.location;
           
           buf += '<a href="' + Config.baseurl + 'trainers/' + trainer.id + '" data-target="push">';
           
-          buf += '<span class="col namecol" style="width:250px">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</span> ';
+          var trainerLabel = escapeHTML(trainer.name);
+          if (trainerLoc) trainerLabel += ' <span style="color:#777">(' + escapeHTML(trainerLoc.name) + ')</span>';
+          buf += '<span class="col namecol" style="width:350px">' + trainerLabel + '</span> ';
           
           var levelText = mon.level ? 'Lv. ' + mon.level : '';
           buf += '<span class="col" style="width:80px">' + levelText + '</span> ';
