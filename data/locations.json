@@ -1963,7 +1963,7 @@
     {
       "id": "sandycave",
       "name": "Sandy Cave",
-      "notes": "Icium Z can be found here early after obtaining Lapras.",
+      "notes": "Icium Z can be found here early after obtaining Lapras. | There is constant Snow inside this cave.",
       "encounters": [
         {
           "spot": "Cave/Surf",
@@ -2528,7 +2528,7 @@
     {
       "id": "melemelemeadow",
       "name": "Melemele Meadow",
-      "notes": "",
+      "notes": "Permanent Harsh Sunlight",
       "encounters": [
         {
           "spot": "Grass",
@@ -2652,7 +2652,7 @@
     {
       "id": "seawardcave",
       "name": "Seaward Cave",
-      "notes": "Kala'e Bay is only fully accessible after obtaining Lapras.",
+      "notes": "Kala'e Bay is only fully accessible after obtaining Lapras. | There is persistent Snow inside this cave.",
       "encounters": [
         {
           "spot": "Cave",
@@ -3648,7 +3648,7 @@
     {
       "id": "paniolatown",
       "name": "Paniola Town",
-      "notes": "",
+      "notes": "Permanent Harsh Sunlight",
       "encounters": [
         {
           "spot": "Table 1 (Day)",
@@ -3816,7 +3816,7 @@
     {
       "id": "paniolaranch",
       "name": "Paniola Ranch",
-      "notes": "The Pokemon Daycare is located here. They will give you an Egg on your first visit. | The Hidden Power NPC is also here, they will tell you your Pokemon's Hidden Power Type | The Miltank near the daycare will heal your team for free.",
+      "notes": "The Pokemon Daycare is located here. They will give you an Egg on your first visit. | The Hidden Power NPC is also here, they will tell you your Pokemon's Hidden Power Type | The Miltank near the daycare will heal your team for free. | Permanent Harsh Sunlight",
       "encounters": [
         {
           "spot": "Table 1 (Day)",
@@ -4422,6 +4422,11 @@
           "notes": "None"
         },
         {
+          "id": "395",
+          "tag": "Miniboss",
+          "notes": "Route 5 (South)'s Z - Trainer. He can only be battled after every other trainer on the southern half here is beaten. Reward: TM Nature Power"
+        },
+        {
           "id": "96",
           "tag": "Optional",
           "notes": "(North)"
@@ -4435,18 +4440,13 @@
           "id": "104",
           "tag": "Optional",
           "notes": "(North) Reward: Poisonium Z"
-        },
-        {
-          "id": "395",
-          "tag": "Miniboss",
-          "notes": "Route 5's Z - Trainer. He can only be battled after every other trainer here is beaten. Reward: TM Nature Power"
         }
       ]
     },
     {
       "id": "brooklethill",
       "name": "Brooklet Hill",
-      "notes": "Location of the second trial.",
+      "notes": "Location of the second trial. | Permanent Rain after the trial ends.",
       "encounters": [
         {
           "spot": "Table 1 (Day)",
@@ -4781,7 +4781,7 @@
         {
           "id": "576",
           "tag": "Miniboss",
-          "notes": "Johnny will only battle you if it is raining. (It rains for 1 hour every day in brooklet hill, between 5pm and 6pm. He will only battle you if you've beaten the trial. Reward: $50,000)"
+          "notes": "Johnny will only battle you if it is raining. He will only battle you if you've beaten the trial. Reward: $50,000)"
         },
         {
           "id": "503",
@@ -4793,7 +4793,7 @@
     {
       "id": "brookletcove",
       "name": "Brooklet Cove",
-      "notes": "Brooklet Cove is the renamed Totem's Den. It is still a different location than the rest of Brooklet Hill.",
+      "notes": "Brooklet Cove is the renamed Totem's Den. It is still a different location than the rest of Brooklet Hill. | Permanent Rain",
       "encounters": [
         {
           "spot": "Table 1 (Day)",
