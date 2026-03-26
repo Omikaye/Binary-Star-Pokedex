@@ -478,6 +478,241 @@
           "price": "$300"
         }
       ]
+    },
+    "Royal Avenue Pokecenter": {
+      "name": "Royal Avenue Pokecenter",
+      "items": [
+        {
+          "item": "TM07 (Dig)",
+          "price": "$10,000"
+        },
+        {
+          "item": "TM11 (Fly)",
+          "price": "$10,000"
+        },
+        {
+          "item": "TM18 (Dive)",
+          "price": "$10,000"
+        },
+        {
+          "item": "TM37 (Phantom Force)",
+          "price": "$11,000"
+        }
+      ]
+    },
+    "Thrifty Megamart": {
+      "name": "Thrifty Megamart",
+      "items": [
+        {
+          "item": "Shell Bell",
+          "price": "$7,000"
+        },
+        {
+          "item": "Black Sludge",
+          "price": "$4,000"
+        },
+        {
+          "item": "Rocky Helmet",
+          "price": "$5,100"
+        },
+        {
+          "item": "Flame Orb",
+          "price": "$4,000"
+        },
+        {
+          "item": "Toxic Orb",
+          "price": "$4,000"
+        },
+        {
+          "item": "Sharp Beak",
+          "price": "$1,000"
+        },
+        {
+          "item": "Never-Melt Ice",
+          "price": "$1,000"
+        },
+        {
+          "item": "Black Belt",
+          "price": "$1,000"
+        },
+        {
+          "item": "Black Glasses",
+          "price": "$1,000"
+        },
+        {
+          "item": "Metal Coat",
+          "price": "$1,000"
+        },
+        {
+          "item": "Charcoal",
+          "price": "$1,000"
+        },
+        {
+          "item": "Miracle Seed",
+          "price": "$1,000"
+        },
+        {
+          "item": "TM26 (Dragon Claw)",
+          "price": "$19,000"
+        },
+        {
+          "item": "TM50 (Razor Wind)",
+          "price": "$27,450"
+        },
+        {
+          "item": "TM60 (Dragon Pulse)",
+          "price": "$19,000"
+        },
+        {
+          "item": "TM75 (Drill Run)",
+          "price": "$17,500"
+        },
+        {
+          "item": "TM90 (Zen Headbutt)",
+          "price": "$21,000"
+        }
+      ]
+    },
+    "Battle Royal Dome": {
+      "name": "Battle Royal Dome",
+      "items": [
+        {
+          "item": "Qualot Berry",
+          "price": "0 BP"
+        },
+        {
+          "item": "Pomeg Berry",
+          "price": "0 BP"
+        },
+        {
+          "item": "Kelpsy Berry",
+          "price": "0 BP"
+        },
+        {
+          "item": "Hondew Berry",
+          "price": "0 BP"
+        },
+        {
+          "item": "Grepa Berry",
+          "price": "0 BP"
+        },
+        {
+          "item": "Tomato Berry",
+          "price": "0 BP"
+        },
+        {
+          "item": "Bottle Cap",
+          "price": "0 BP"
+        },
+        {
+          "item": "Gold Bottle Cap",
+          "price": "1 BP"
+        },
+        {
+          "item": "Light Ball",
+          "price": "1 BP"
+        },
+        {
+          "item": "Douse Drive",
+          "price": "1 BP"
+        },
+        {
+          "item": "Shock Drive",
+          "price": "1 BP"
+        },
+        {
+          "item": "Burn Drive",
+          "price": "1 BP"
+        },
+        {
+          "item": "Chill Drive",
+          "price": "1 BP"
+        },
+        {
+          "item": "Thick Club",
+          "price": "1 BP"
+        },
+        {
+          "item": "Soul Dew",
+          "price": "12 BP"
+        },
+        {
+          "item": "Bug Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Dark Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Dragon Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Electric Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Fairy Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Fighting Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Fire Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Flying Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Ghost Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Grass Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Ground Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Ice Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Poison Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Psychic Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Rock Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Steel Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Water Memory",
+          "price": "Free"
+        },
+        {
+          "item": "Oval Charm",
+          "price": "1 BP"
+        }
+      ]
+    },
+    "Route 8 Pokecenter": {
+      "name": "Route 8 Pokecenter",
+      "items": []
     }
   }
 }

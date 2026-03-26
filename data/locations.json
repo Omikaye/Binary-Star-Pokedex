@@ -3,7 +3,7 @@
     {
       "id": "route1",
       "name": "Route 1",
-      "notes": "Route 1 is now only the road from your house to Iki Town. The beach and school are now officially labelled as different areas, so check your Pokemon's caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon.",
+      "notes": "Route 1 is now only the road from your house to Iki Town. The beach and school are now officially labelled as different areas, so check your Pokemon's caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon. | The starter's Met locations are set to be Iki Town.",
       "encounters": [
         {
           "spot": "Grass",
@@ -133,15 +133,15 @@
       "giftsTrades": [
         {
           "name": "Rowlet",
-          "description": "Starter, Held: Oran Berry"
+          "description": "Starter, Held: Oran Berry, Met: Iki Town"
         },
         {
           "name": "Litten",
-          "description": "Starter, Held: Oran Berry"
+          "description": "Starter, Held: Oran Berry, Met: Iki Town"
         },
         {
           "name": "Popplio",
-          "description": "Starter, Held: Oran Berry"
+          "description": "Starter, Held: Oran Berry, Met: Iki Town"
         }
       ],
       "staticPokemon": [],
@@ -237,7 +237,7 @@
     {
       "id": "ikitown",
       "name": "Iki Town",
-      "notes": "Iki Town technically has no natural encounters here, but the Starter Pokemon can be considered to be from here.",
+      "notes": "Iki Town technically has no natural encounters here, but the Starter Pokemon are considered to be from here, check their \"met\" locations.",
       "encounters": [],
       "giftsTrades": [],
       "staticPokemon": [],
@@ -2899,7 +2899,7 @@
     {
       "id": "tencarathill",
       "name": "Ten Carat Hill",
-      "notes": "Ten Carat Hill is accessible via Ten Carat Beach after unlocking Tauros. | The surf section is accessible from Melemele Sea after obtaining Lapras.",
+      "notes": "Ten Carat Hill is accessible via Ten Carat Beach after unlocking Tauros. | The surf section is accessible from Melemele Sea after obtaining Sharpedo.",
       "encounters": [
         {
           "spot": "Cave",
@@ -3048,6 +3048,11 @@
           "item": "Tiny Mushroom",
           "quantity": "10",
           "obtain": "On the south side of a rock at the end of the path, near the second entrance to the Farthest Hollow (hidden) (requires Tauros Charge)"
+        },
+        {
+          "item": "TM64 (Explosion)",
+          "quantity": "1",
+          "obtain": "Inside a cave accessible from Melemele Sea on the west side of Ten Carat Hill (requires Sharpedo Jet)"
         }
       ],
       "battles": []
@@ -4948,7 +4953,33 @@
       "shops": [],
       "shopTables": [],
       "items": [],
-      "battles": []
+      "battles": [
+        {
+          "id": "34",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "35",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "36",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "38",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "509",
+          "tag": "Optional",
+          "notes": "None"
+        }
+      ]
     },
     {
       "id": "melemelesea",
@@ -4962,13 +4993,209 @@
       "shops": [],
       "shopTables": [],
       "items": [],
-      "battles": []
+      "battles": [
+        {
+          "id": "37",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "39",
+          "tag": "Optional",
+          "notes": "None"
+        }
+      ]
     },
     {
       "id": "kalaebay",
       "name": "Kala'e Bay",
       "notes": "",
-      "encounters": [],
+      "encounters": [
+        {
+          "spot": "Grass (Bay)",
+          "levelRange": {
+            "min": 22,
+            "max": 27
+          },
+          "pokemon": [
+            {
+              "name": "Yungoos",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Rattata 1",
+              "chance": 10,
+              "sos": [
+                "Rattata"
+              ]
+            },
+            {
+              "name": "Slowpoke",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Wingull",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Inkay",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Binacle",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Exeggcute",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Shuckle",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Tynamo",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Bagon",
+              "chance": 10,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Surf",
+          "levelRange": {
+            "min": 22,
+            "max": 27
+          },
+          "pokemon": [
+            {
+              "name": "Mantyke",
+              "chance": 20,
+              "sos": [
+                "Remoraid"
+              ]
+            },
+            {
+              "name": "Horsea",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Dratini",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Remoraid",
+              "chance": 15,
+              "sos": [
+                "Wingull"
+              ]
+            },
+            {
+              "name": "Wingull",
+              "chance": 15,
+              "sos": [
+                "Lapras"
+              ]
+            },
+            {
+              "name": "Lapras",
+              "chance": 10,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Fish",
+          "levelRange": {
+            "min": 22,
+            "max": 27
+          },
+          "pokemon": [
+            {
+              "name": "Magikarp",
+              "chance": 40,
+              "sos": []
+            },
+            {
+              "name": "Shellder",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Staryu",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Feebas",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Horsea",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Dratini",
+              "chance": 10,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "Bubbles",
+          "levelRange": {
+            "min": 26,
+            "max": 28
+          },
+          "pokemon": [
+            {
+              "name": "Staryu",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Dratini",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Horsea",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Feebas",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Shellder",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Magikarp",
+              "chance": 5,
+              "sos": []
+            }
+          ]
+        }
+      ],
       "giftsTrades": [],
       "staticPokemon": [],
       "trainers": [],
@@ -4977,6 +5204,169 @@
       "shopTables": [],
       "items": [],
       "battles": []
+    },
+    {
+      "id": "route6",
+      "name": "Route 6",
+      "notes": "Permanent Harsh Sunlight",
+      "encounters": [
+        {
+          "spot": "Table 1 (Day)",
+          "levelRange": {
+            "min": 22,
+            "max": 27
+          },
+          "pokemon": [
+            {
+              "name": "Timburr",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Oricorio 2",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Skitty",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Lickitung",
+              "chance": 10,
+              "sos": [
+                "Stantler"
+              ]
+            },
+            {
+              "name": "Spinarak",
+              "chance": 10,
+              "sos": [
+                "Pineco"
+              ]
+            },
+            {
+              "name": "Fletchinder",
+              "chance": 10,
+              "sos": [
+                "Fletchling"
+              ]
+            },
+            {
+              "name": "Yanma",
+              "chance": 10,
+              "sos": [
+                "Vivillon 6"
+              ]
+            },
+            {
+              "name": "Volbeat",
+              "chance": 10,
+              "sos": [
+                "Illumise"
+              ]
+            },
+            {
+              "name": "Illumise",
+              "chance": 10,
+              "sos": [
+                "Volbeat"
+              ]
+            },
+            {
+              "name": "Pignite",
+              "chance": 10,
+              "sos": [
+                "Tepig"
+              ]
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [],
+      "battles": [
+        {
+          "id": "65",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "68",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "80",
+          "tag": "Story",
+          "notes": "None"
+        },
+        {
+          "id": "334",
+          "tag": "Optional",
+          "notes": "None"
+        },
+        {
+          "id": "529",
+          "tag": "Optional",
+          "notes": "Multi - Battle with Preschooler Fumiko"
+        },
+        {
+          "id": "530",
+          "tag": "Optional",
+          "notes": "Multi - Battle with Office Worker Fumiko"
+        }
+      ]
+    },
+    {
+      "id": "royalavenue",
+      "name": "Royal Avenue",
+      "notes": "",
+      "encounters": [],
+      "giftsTrades": [
+        {
+          "name": "Vulpix-Alola",
+          "description": "Trade: Trader requests a Wishiwashi"
+        }
+      ],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [
+        "Royal Avenue Pokecenter",
+        "Thrifty Megamart",
+        "Battle Royal Dome"
+      ],
+      "items": [],
+      "battles": [
+        {
+          "id": "81",
+          "tag": "Story",
+          "notes": "Masked Royal (Battle Royal)"
+        },
+        {
+          "id": "82",
+          "tag": "Story",
+          "notes": "Hau (Battle Royal)"
+        },
+        {
+          "id": "185",
+          "tag": "Story",
+          "notes": "Gladion (Battle Royal)"
+        },
+        {
+          "id": "537",
+          "tag": "Miniboss",
+          "notes": "Actor Meredith Battle 2 | She battles you here if you battle her in Melemele Meadow first."
+        }
+      ]
     }
   ]
 }
