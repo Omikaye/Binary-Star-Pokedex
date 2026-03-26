@@ -4935,6 +4935,48 @@
           "notes": "Totem Megamax Araquanid"
         }
       ]
+    },
+    {
+      "id": "tencaratsea",
+      "name": "Ten Carat Sea",
+      "notes": "Ten Carat Sea is a \"new\" location, renamed from the former Melemele Sea (East). Now both seas are different locations.",
+      "encounters": [],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [],
+      "battles": []
+    },
+    {
+      "id": "melemelesea",
+      "name": "Melemele Sea",
+      "notes": "Now Melemele Sea is only the smaller western half.",
+      "encounters": [],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [],
+      "battles": []
+    },
+    {
+      "id": "kalaebay",
+      "name": "Kala'e Bay",
+      "notes": "",
+      "encounters": [],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [],
+      "battles": []
     }
   ]
 }
