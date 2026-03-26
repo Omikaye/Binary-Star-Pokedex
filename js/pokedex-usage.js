@@ -143,7 +143,7 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
         var loc = window.Locations[i];
         if (loc.battles) {
           for (var b = 0; b < loc.battles.length; b++) {
-            if (loc.battles[b].id === trainerId) return loc;
+            if (loc.battles[b].id.padStart(3, '0') === trainerId) return loc;
           }
         }
         if (loc.trainers && loc.trainers.indexOf(trainerId) !== -1) return loc;
