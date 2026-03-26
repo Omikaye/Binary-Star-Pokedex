@@ -177,7 +177,7 @@
 				for (let loc of window.Locations) {
 					if (loc.battles) {
 						for (let battle of loc.battles) {
-							if (battle.id) trainerIdsWithLocation.add(battle.id);
+							if (battle.id) trainerIdsWithLocation.add(String(battle.id).padStart(3, '0'));
 						}
 					}
 					if (loc.trainers) loc.trainers.forEach(id => trainerIdsWithLocation.add(id));
