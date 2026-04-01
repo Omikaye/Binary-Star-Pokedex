@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gendata": "tsx build/build-indexes.ts",
+    "genbasegamelearnsets": "tsx build/build-basegame-learnsets.ts",
     "dist": "tsx build/dist.ts dist",
     "serve": "parcel serve index.html images/**/*.png --public-url /Binary-Star-Pokedex/",
     "convert-levelup": "node scripts/convert-levelup.js",
