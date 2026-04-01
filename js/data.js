@@ -21,6 +21,7 @@ import ShopTablesJson from "../data/shop-tables.json";
 // Import editable data copies for the Pokeedit feature
 import BattlePokedexEdit from "../data/pokedex-edit.json";
 import LearnsetsEdit from "../data/learnsets-edit.json";
+import BaseGameLearnsets from "../data/BaseGameLearnsets.json";
 // ...existing code...
 import './compat.js'; // ensure legacy helpers are available early
 // ...existing code...
@@ -48,6 +49,7 @@ window.ShopTables = ShopTablesJson.shopTables || {};
 // Expose editable data copies
 window.BattlePokedexEdit = BattlePokedexEdit;
 window.LearnsetsEdit = LearnsetsEdit;
+window.BaseGameLearnsets = BaseGameLearnsets;
 
 // Build reverse mapping: coordinate -> icon index for debugging
 window.ItemIconIndices = {};

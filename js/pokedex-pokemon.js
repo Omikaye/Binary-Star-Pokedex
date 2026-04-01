@@ -387,6 +387,7 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 	}
 
 		// learnset
+		buf += '<ul class="tabbar"><li><button class="button nav-first cur" value="learnset">Learnset</button></li><li><button class="button nav-last" value="compare">Compare Moves</button></li></ul>';
 		buf += '<ul class="utilichart nokbd">';
 		buf += '<li class="resultheader"><h3>Level-up</h3></li>';
 		buf += '</ul>';
@@ -395,6 +396,9 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		buf += '<ul class="utilichart nokbd prevo-moves" style="display:none">';
 		buf += '<li class="resultheader"><h3>Pre-evo only moves</h3></li>';
 		buf += '</ul>';
+		
+		// Compare Moves section placeholder (hidden until tab selected)
+		buf += '<div class="compare-moves" style="display:none"></div>';
 		
 		buf += '</div>';		this.html(buf);
 		setTimeout(this.renderFullLearnset.bind(this));
@@ -449,6 +453,16 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		this.$('.tabbar button').removeClass('cur');
 		$(e.currentTarget).addClass('cur');
 		switch (e.currentTarget.value) {
+		case 'learnset':
+			this.$('.utilichart, .prevo-moves').show();
+			this.$('.compare-moves').hide();
+			this.renderFullLearnset();
+			break;
+		case 'compare':
+			this.$('.utilichart, .prevo-moves').hide();
+			this.$('.compare-moves').show();
+			this.renderCompareMoves();
+			break;
 		case 'move':
 			this.renderFullLearnset();
 			break;
@@ -596,6 +610,73 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		}
 		
 		this.$('.prevo-moves').html(buf).show();
+	},
+	renderCompareMoves: function() {
+		var binaryStarLearnset = getLearnset(this.id) || [];
+		var baseGameMoves = (window.BaseGameLearnsets && window.BaseGameLearnsets[this.id]) || [];
+
+		// Build sets of move IDs for quick lookup
+		var binaryStarMoveIds = new Set();
+		for (var learn of binaryStarLearnset) {
+			binaryStarMoveIds.add(toID(learn.move));
+		}
+		var baseGameMoveIds = new Set(baseGameMoves.map(function(m) { return toID(m); }));
+
+		// Moves new to Binary Star: in Binary Star but NOT in base game
+		var newMoves = [];
+		for (var learn of binaryStarLearnset) {
+			var moveId = toID(learn.move);
+			if (!baseGameMoveIds.has(moveId)) {
+				newMoves.push(learn);
+			}
+		}
+
+		// Removed moves: in base game but NOT in Binary Star
+		var removedMoveIds = [];
+		for (var moveId of baseGameMoveIds) {
+			if (!binaryStarMoveIds.has(moveId)) {
+				removedMoveIds.push(moveId);
+			}
+		}
+		removedMoveIds.sort();
+
+		var buf = '';
+
+		// Section: Moves New to Binary Star
+		buf += '<ul class="utilichart nokbd">';
+		buf += '<li class="resultheader"><h3>Moves New to Binary Star</h3></li>';
+		if (newMoves.length > 0) {
+			for (var learn of newMoves) {
+				var move = getID(BattleMovedex, learn.move);
+				if (!move) {
+					buf += `<li class="result"><span class="col tagcol"></span> <span class="col shortmovenamecol">${escapeHTML(learn.move)}</span> <span class="col typecol">&mdash;</span> <span class="col labelcol"></span> <span class="col widelabelcol"></span> <span class="col pplabelcol"></span> <span class="col movedesccol"><em>Unknown move</em></span></li>`;
+					continue;
+				}
+				buf += BattleSearch.renderTaggedMoveRow(move, '');
+			}
+		} else {
+			buf += '<li class="result"><span class="col movedesccol" style="padding:6px 8px"><em>None</em></span></li>';
+		}
+		buf += '</ul>';
+
+		// Section: Removed Moves
+		buf += '<ul class="utilichart nokbd">';
+		buf += '<li class="resultheader"><h3>Removed Moves</h3></li>';
+		if (removedMoveIds.length > 0) {
+			for (var removedId of removedMoveIds) {
+				var move = getID(BattleMovedex, removedId);
+				if (!move) {
+					buf += `<li class="result"><span class="col tagcol"></span> <span class="col shortmovenamecol">${escapeHTML(removedId)}</span> <span class="col typecol">&mdash;</span> <span class="col labelcol"></span> <span class="col widelabelcol"></span> <span class="col pplabelcol"></span> <span class="col movedesccol"><em>Unknown move</em></span></li>`;
+					continue;
+				}
+				buf += BattleSearch.renderTaggedMoveRow(move, '');
+			}
+		} else {
+			buf += '<li class="result"><span class="col movedesccol" style="padding:6px 8px"><em>None</em></span></li>';
+		}
+		buf += '</ul>';
+
+		this.$('.compare-moves').html(buf);
 	},
 	getStat: function(baseStat, isHP, level, iv, ev, natureMult) {
 		if (isHP) {
