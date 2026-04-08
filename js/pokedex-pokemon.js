@@ -622,10 +622,16 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		}
 		var baseGameMoveIds = new Set(baseGameMoves.map(function(m) { return toID(m); }));
 
-		// Moves new to Binary Star: in Binary Star but NOT in base game
+		// Moves new to Binary Star: in Binary Star but NOT in base game, with data
+		// Unknown moves: in Binary Star learnset but have no BattleMovedex entry
 		var newMoves = [];
+		var unknownMoves = [];
 		for (var learn of binaryStarLearnset) {
 			var moveId = toID(learn.move);
+			if (!getID(BattleMovedex, learn.move)) {
+				unknownMoves.push(learn);
+				continue;
+			}
 			if (!baseGameMoveIds.has(moveId)) {
 				newMoves.push(learn);
 			}
@@ -642,17 +648,30 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 
 		var buf = '';
 
+		// Helper to generate learn method descriptor
+		var getLearnDesc = function(learn) {
+			switch (learn.how) {
+			case 'lvl':
+				if (learn.level === 0) return 'Evo';
+				return learn.level <= 1 ? '&ndash;' : '<small>L</small>' + learn.level;
+			case 'tm':
+				return `<span class="itemicon" style="margin-top:-3px;background:transparent url(${ResourcePrefix}sprites/itemicons-sheet.png) no-repeat scroll -133px -364px;width:32px;height:32px;display:inline-block"></span>`;
+			case 'tutor':
+				return `<img src="${ResourcePrefix}sprites/tutor.png" style="margin-top:-4px;opacity:.7" width="27" height="26" alt="T" />`;
+			case 'egg':
+				return '<span class="picon" style="margin-top:-12px;' + getPokemonIcon('egg') + '"></span>';
+			default:
+				return '';
+			}
+		};
+
 		// Section: Moves New to Binary Star
 		buf += '<ul class="utilichart nokbd">';
 		buf += '<li class="resultheader"><h3>Moves New to Binary Star</h3></li>';
 		if (newMoves.length > 0) {
 			for (var learn of newMoves) {
 				var move = getID(BattleMovedex, learn.move);
-				if (!move) {
-					buf += `<li class="result"><span class="col tagcol"></span> <span class="col shortmovenamecol">${escapeHTML(learn.move)}</span> <span class="col typecol">&mdash;</span> <span class="col labelcol"></span> <span class="col widelabelcol"></span> <span class="col pplabelcol"></span> <span class="col movedesccol"><em>Unknown move</em></span></li>`;
-					continue;
-				}
-				buf += BattleSearch.renderTaggedMoveRow(move, '');
+				buf += BattleSearch.renderTaggedMoveRow(move, getLearnDesc(learn));
 			}
 		} else {
 			buf += '<li class="result"><span class="col movedesccol" style="padding:6px 8px"><em>None</em></span></li>';
@@ -665,16 +684,23 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		if (removedMoveIds.length > 0) {
 			for (var removedId of removedMoveIds) {
 				var move = getID(BattleMovedex, removedId);
-				if (!move) {
-					buf += `<li class="result"><span class="col tagcol"></span> <span class="col shortmovenamecol">${escapeHTML(removedId)}</span> <span class="col typecol">&mdash;</span> <span class="col labelcol"></span> <span class="col widelabelcol"></span> <span class="col pplabelcol"></span> <span class="col movedesccol"><em>Unknown move</em></span></li>`;
-					continue;
-				}
+				if (!move) continue;
 				buf += BattleSearch.renderTaggedMoveRow(move, '');
 			}
 		} else {
 			buf += '<li class="result"><span class="col movedesccol" style="padding:6px 8px"><em>None</em></span></li>';
 		}
 		buf += '</ul>';
+
+		// Section: Moves not in Binary Star (moves in learnset with no move data)
+		if (unknownMoves.length > 0) {
+			buf += '<ul class="utilichart nokbd">';
+			buf += '<li class="resultheader"><h3>Moves not in Binary Star</h3></li>';
+			for (var learn of unknownMoves) {
+				buf += `<li class="result"><span class="col tagcol">${getLearnDesc(learn)}</span> <span class="col shortmovenamecol">${escapeHTML(learn.move)}</span> <span class="col typecol">&mdash;</span> <span class="col labelcol"></span> <span class="col widelabelcol"></span> <span class="col pplabelcol"></span> <span class="col movedesccol"><em>Not in Binary Star</em></span></li>`;
+			}
+			buf += '</ul>';
+		}
 
 		this.$('.compare-moves').html(buf);
 	},

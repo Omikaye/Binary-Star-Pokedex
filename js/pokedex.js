@@ -198,7 +198,8 @@ window.PokedexItemPanel = PokedexResultPanel.extend({
 				var rawItem = loc.items[ii].item || '';
 				var baseItemName = rawItem.replace(/\s*\(\d+\)$/, '');
 				if (toID(baseItemName) === id) {
-					itemLocations.push({id: locId, name: loc.name});
+					var qty = loc.items[ii].quantity != null ? loc.items[ii].quantity : 1;
+					itemLocations.push({id: locId, name: loc.name, detail: 'x' + qty, isShop: false});
 					seenLocationIds[locId] = true;
 					break;
 				}
@@ -214,7 +215,8 @@ window.PokedexItemPanel = PokedexResultPanel.extend({
 						var rawShopItem = shopTable.items[shi].item || '';
 						var baseShopItemName = rawShopItem.replace(/\s*\(\d+\)$/, '');
 						if (toID(baseShopItemName) === id) {
-							itemLocations.push({id: locId, name: loc.name});
+							var shopPrice = shopTable.items[shi].price || '';
+							itemLocations.push({id: locId, name: loc.name, detail: shopPrice, isShop: true});
 							seenLocationIds[locId] = true;
 							break;
 						}
@@ -230,7 +232,8 @@ window.PokedexItemPanel = PokedexResultPanel.extend({
 				var rawLegacyItem = loc.shops[lsi].item || '';
 				var baseLegacyItem = rawLegacyItem.replace(/\s*\(\d+\)$/, '');
 				if (toID(baseLegacyItem) === id) {
-					itemLocations.push({id: locId, name: loc.name});
+					var legacyPrice = loc.shops[lsi].price || '';
+					itemLocations.push({id: locId, name: loc.name, detail: legacyPrice, isShop: true});
 					seenLocationIds[locId] = true;
 					break;
 				}
@@ -244,6 +247,9 @@ window.PokedexItemPanel = PokedexResultPanel.extend({
 			var iloc = itemLocations[locIdx];
 			buf += '<li class="result"><a href="' + Config.baseurl + 'locations/' + escapeHTML(iloc.id) + '" data-target="push">';
 			buf += '<span class="col namecol">' + escapeHTML(iloc.name) + '</span>';
+			if (iloc.detail) {
+				buf += '<span class="col labelcol" style="color:#777">' + escapeHTML(iloc.detail) + '</span>';
+			}
 			buf += '</a></li>';
 		}
 		buf += '</ul>';
