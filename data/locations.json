@@ -161,8 +161,8 @@
           "obtain": "From Kukui after the capture tutorial"
         },
         {
-          "item": "Ability Pills",
-          "quantity": "1",
+          "item": "Max Repel",
+          "quantity": "900",
           "obtain": "North of the grass patch next to the Trainer Tips sign."
         },
         {
@@ -172,12 +172,12 @@
         },
         {
           "item": "Smoke Ball",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "On the cliffs overlooking the bay, west of Youngster Jimmy"
         },
         {
-          "item": "Max Repel",
-          "quantity": "900",
+          "item": "Ring Target",
+          "quantity": "10",
           "obtain": "West of the entrance to Iki Town"
         },
         {
@@ -187,7 +187,7 @@
         },
         {
           "item": "Haban Berry",
-          "quantity": "900",
+          "quantity": "10",
           "obtain": "At the end of the northern east path behind the rocks south of Iki Town (requires Tauros Charge)"
         }
       ],
@@ -267,7 +267,7 @@
           "obtain": "From Hala after battling Hau during the festival"
         },
         {
-          "item": "Stardust",
+          "item": "Bright Powder",
           "quantity": "1",
           "obtain": "From a woman in the western house for telling her about the message in a bottle at Kala'e Bay"
         },
@@ -287,7 +287,7 @@
           "obtain": "From Hala after defeating him in the grand trial"
         },
         {
-          "item": "TM54 (Twister)",
+          "item": "TM31 (Low Sweep)",
           "quantity": "1",
           "obtain": "From Kukui after defeating Hala in the grand trial"
         },
@@ -438,7 +438,7 @@
         },
         {
           "item": "Focus Band",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "On the north side of the grass north of the beach, next to Swimmer Natasha (Move to be behind youngster)"
         },
         {
@@ -463,7 +463,7 @@
         },
         {
           "item": "Premier Ball",
-          "quantity": "100",
+          "quantity": "5",
           "obtain": "At the south end of the beach, in front of the Pokémon Research Lab (hidden) (regenerates occasionally)"
         },
         {
@@ -492,7 +492,7 @@
           "obtain": "From Kukui at the Pokémon Research Lab, after becoming Champion (if the Lucky Egg is received first, the player must leave and re-enter)"
         },
         {
-          "item": "PP Up",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "From Meowth after defeating Madame Meowth, after completing Episode RR"
         }
@@ -611,12 +611,12 @@
         },
         {
           "item": "Mental Herb",
-          "quantity": "900",
+          "quantity": "10",
           "obtain": "Under a palm tree on the east side of the main entrance to the Trainers' School building"
         },
         {
           "item": "Destiny Knot",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "Under the second palm tree on the west side of the main entrance to the Trainers' School building"
         },
         {
@@ -626,12 +626,12 @@
         },
         {
           "item": "Jaboca Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "At the southwest corner of first grassy area of the fenced off grassy area on the west side of the Trainers' School"
         },
         {
           "item": "Rowap Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "West of the southernmost palm tree in the fenced off grassy area on the west side of the Trainers' School"
         },
         {
@@ -651,26 +651,26 @@
         },
         {
           "item": "Quick Claw",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "1F, from a Beauty in the area left of the stairs"
         },
         {
           "item": "Enigma Berry",
-          "quantity": "900",
+          "quantity": "3",
           "obtain": "1F, from Preschooler Mia after defeating her"
         },
         {
-          "item": "Ring Target",
+          "item": "Float Stone",
           "quantity": "10",
           "obtain": "2F, from a boy sitting in the front right seat in the classroom at the far end of the hall"
         },
         {
-          "item": "Great Ball",
-          "quantity": "5",
+          "item": "Ability Pills",
+          "quantity": "1",
           "obtain": "2F, from Teacher Emily after defeating her"
         },
         {
-          "item": "King's Rock",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "3F, from Principal Asuka for defeating her, after becoming Champion (change me)"
         }
@@ -834,13 +834,13 @@
       "shopTables": [],
       "items": [
         {
-          "item": "Float Stone",
-          "quantity": "10",
+          "item": "Grip Claw",
+          "quantity": "1",
           "obtain": "From a woman northeast of the yellow truck"
         },
         {
           "item": "Protective Pads",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "Next to the southeastern ramp to the beach"
         },
         {
@@ -854,7 +854,7 @@
           "obtain": "On the beach, by the northwestern-most palm tree (hidden) (regenerates occasionally)"
         },
         {
-          "item": "Luminous Moss",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "Received from a Beauty by helping her Corsola on the beach next to the southeastern ramp, after clearing Lana's trial (Change to mega stone)"
         },
@@ -992,17 +992,17 @@
         },
         {
           "item": "Sticky Barb",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "From a woman outside the apparel shop"
         },
         {
           "item": "Lagging Tail",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "In the southeast corner of the fenced area behind the Malasada Shop"
         },
         {
           "item": "Cleanse Tag",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "From the Sightseer in front of the Pokémon Center"
         },
         {
@@ -1012,22 +1012,22 @@
         },
         {
           "item": "Cell Battery",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "In the gated area opposite the Pokémon Center"
         },
         {
           "item": "Micle Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "At the north end of the front yard of Ilima's house"
         },
         {
           "item": "Leppa Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Ilima's house, from his mom in the kitchen"
         },
         {
           "item": "Starf Berry",
-          "quantity": "1",
+          "quantity": "3",
           "obtain": "Hau'oli City Hall, from a woman with a Pyukumuku"
         },
         {
@@ -1051,18 +1051,18 @@
           "obtain": "Shopping Mall, from the woman standing to the cashier's right in the Gracidea Apparel Shop"
         },
         {
-          "item": "Great Ball",
-          "quantity": "5",
+          "item": "Oran Berry",
+          "quantity": "50",
           "obtain": "Shopping Mall, from an Ace Trainer for watching the Alola Ride Show completely (Day)"
         },
         {
-          "item": "Dome Fossil",
+          "item": "Black Sludge",
           "quantity": "1",
           "obtain": "Shopping Mall, from the Janitor after cleaning up all the trash (Night)"
         },
         {
-          "item": "Bright Powder",
-          "quantity": "10",
+          "item": "Dome Fossil",
+          "quantity": "1",
           "obtain": "Hau'oli City Hall, from Gentleman Reginald after defeating him, after completing Hala's grand trial"
         },
         {
@@ -1111,7 +1111,7 @@
           "obtain": "Shopping Mall, held by gift Magearna, after becoming Champion"
         },
         {
-          "item": "Everstone",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "Ilima's house, from Ilima after defeating him at the Trainers' School, after becoming Champion"
         },
@@ -1333,22 +1333,22 @@
       "items": [
         {
           "item": "Absorb Bulb",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "From a man at the corner of the Ferry Terminal"
         },
         {
           "item": "Luminous Moss",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "From a woman at the corner of the Ferry Terminal"
         },
         {
-          "item": "Grip Claw",
-          "quantity": "10",
+          "item": "Binding Band",
+          "quantity": "1",
           "obtain": "At the end of the dock"
         },
         {
           "item": "Old Gateau",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "From the lady in the Ferry Terminal after Rotom fixes the vending machine, after completing Hala's grand trial"
         }
       ],
@@ -1506,8 +1506,8 @@
       ],
       "items": [
         {
-          "item": "Binding Band",
-          "quantity": "10",
+          "item": "Enigma Berry",
+          "quantity": "20",
           "obtain": "Near the ledge near the Hau'oli Cemetery entrance"
         },
         {
@@ -1522,7 +1522,7 @@
         },
         {
           "item": "Full Incense",
-          "quantity": "5",
+          "quantity": "1",
           "obtain": "From a Collector in the motel room"
         },
         {
@@ -1536,9 +1536,9 @@
           "obtain": "From the man by Guzma's house after finding his Alolan Meowth"
         },
         {
-          "item": "Pearl String",
+          "item": "Darkinium Z",
           "quantity": "1",
-          "obtain": "Held by Chomper, a Deino the player can receive in a trade if they give a Happiny"
+          "obtain": "Held by Chomper, a Deino the player can receive in a trade if they give a Happiny. (If the Darkinium Z is removed, it is lost. It is ONLY on this Deino until the player gets the actual Z-Crystal Node)"
         },
         {
           "item": "Balm Mushroom",
@@ -1552,12 +1552,12 @@
         },
         {
           "item": "Kee Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Atop the ledge west of the Pokémon Center"
         },
         {
           "item": "Maranga Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Northeast of the tall grass field south of the Pokémon Center"
         },
         {
@@ -1566,7 +1566,7 @@
           "obtain": "From Hau in the Pokémon Center"
         },
         {
-          "item": "Roto Boost",
+          "item": "Roto Catch",
           "quantity": "2",
           "obtain": "Recieved by accepting Rotom's gambling sponsorship deal"
         },
@@ -1591,8 +1591,33 @@
           "obtain": "From a Trial Guide for failing at volunteering to open gate for other island challengers, after completing Hala's grand trial (daily)"
         },
         {
-          "item": "Starf Berry",
-          "quantity": "4-8",
+          "item": "Cheri Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Rawst Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Chesto Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Aspear Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Pecha Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Persim Berry",
+          "quantity": "Up to 10",
           "obtain": "Found in berry tree pile"
         },
         {
@@ -1601,7 +1626,7 @@
           "obtain": "Found in large berry pile"
         },
         {
-          "item": "TM87 (Focus Blast)",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "From Guzma's mother after reaching the Pokémon League"
         }
@@ -1677,21 +1702,21 @@
       "items": [
         {
           "item": "Persim Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "From the old man"
         },
         {
-          "item": "Sitrus Berry",
-          "quantity": "900",
+          "item": "Lum Berry",
+          "quantity": "2",
           "obtain": "From the old man if the player wants to become a Berry Master and has a Persim Berry"
         },
         {
-          "item": "Custap Berry",
-          "quantity": "900",
+          "item": "Miracle Seed",
+          "quantity": "1",
           "obtain": "In the northeast corner, behind the house"
         },
         {
-          "item": "Plume Fossil",
+          "item": "Lucky Egg",
           "quantity": "1",
           "obtain": "From the Delibird by the couch inside the house"
         },
@@ -1702,12 +1727,37 @@
         },
         {
           "item": "White Herb",
-          "quantity": "900",
+          "quantity": "5",
           "obtain": "In the southwest corner of the soft soil fields"
         },
         {
-          "item": "Starf Berry",
-          "quantity": "4-8",
+          "item": "Cheri Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Rawst Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Chesto Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Aspear Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Pecha Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Persim Berry",
+          "quantity": "Up to 10",
           "obtain": "Found in berry tree pile"
         },
         {
@@ -1818,7 +1868,7 @@
           "obtain": "In front of the lamppost at the Route 2 entrance (hidden)"
         },
         {
-          "item": "TM100 (Trailblaze)",
+          "item": "TM59 (Thunder Wave)",
           "quantity": "1",
           "obtain": "Located past Breeder Ikue"
         },
@@ -1829,21 +1879,21 @@
         },
         {
           "item": "Ganlon Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Located past Preschooler Malia"
         },
         {
           "item": "Apicot Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Located past Preschooler Malia"
         },
         {
           "item": "Wide Lens",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "Located past Preschooler Malia"
         },
         {
-          "item": "TM56 (Icy Wind)",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "From a woman riding Machamp in the cemetery, after obtaining the Ride Pager (Night)"
         },
@@ -1853,7 +1903,7 @@
           "obtain": "In front of the dark grave at the end of the middle path, after completing Nanu's grand trial (hidden)"
         },
         {
-          "item": "Max Elixir",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "From Hau upon entering the cemetery after defeating Mina"
         },
@@ -1902,8 +1952,8 @@
       ],
       "items": [
         {
-          "item": "Leppa Berry",
-          "quantity": "900",
+          "item": "Pearl",
+          "quantity": "1",
           "obtain": "On the west side of the beach, on the shoreline southwest of the Mantine (hidden)"
         },
         {
@@ -1922,22 +1972,22 @@
           "obtain": "On the west side of the beach, a few steps north of the Surfer and Sightseer (hidden)"
         },
         {
-          "item": "Fresh Water",
+          "item": "Air Balloon",
           "quantity": "1",
           "obtain": "On the west side of the beach, from the Mantine Surf attendant for getting rid of the Team Skull Grunts"
         },
         {
-          "item": "Everstone",
-          "quantity": "10",
+          "item": "Pearl",
+          "quantity": "1",
           "obtain": "On the east side of the beach, at the second palm tree from the shore (hidden)"
         },
         {
-          "item": "Cell Battery",
-          "quantity": "900",
+          "item": "Mystic Water",
+          "quantity": "1",
           "obtain": "On the east side of the beach, behind the Move Tutor tent"
         },
         {
-          "item": "Hyper Potion",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "From the Youngster near the shore after solving the mysteries at the Trainers' School"
         }
@@ -2185,7 +2235,7 @@
       "items": [
         {
           "item": "Normal Gem",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Southeast corner, near the entrance"
         },
         {
@@ -2194,18 +2244,18 @@
           "obtain": "South of the mossy rock in front of the second den (hidden)"
         },
         {
-          "item": "TM31 (Low Sweep)",
+          "item": "TM45 (Twister)",
           "quantity": "1",
           "obtain": "At the top of the ledge northwest of the entrance"
         },
         {
           "item": "Chilan Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Northeast corner, through the tunnel"
         },
         {
           "item": "Lansat Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "West side of the cavern, south of the western den"
         }
       ],
@@ -2251,11 +2301,11 @@
         },
         {
           "item": "Silk Scarf",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "From Ilima after completing the trial"
         },
         {
-          "item": "Full Incense",
+          "item": "Odd Incense",
           "quantity": "1",
           "obtain": "On the land jutting out over the edge (requires Tauros Charge) (hidden)"
         },
@@ -2418,16 +2468,16 @@
       "items": [
         {
           "item": "Oran Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "In the middle of the lower path through the rocky area"
         },
         {
-          "item": "Red Card",
-          "quantity": "900",
+          "item": "Eject Button",
+          "quantity": "10",
           "obtain": "East of the northern grassy area"
         },
         {
-          "item": "Nugget",
+          "item": "Star Piece",
           "quantity": "1",
           "obtain": "In the recess on the north side of the rocky outcrop that the flying-Pokémon shadows circle (hidden)"
         },
@@ -2442,28 +2492,48 @@
           "obtain": "On the grassy outcrop just south of the entrance to Melemele Meadow"
         },
         {
-          "item": "TM19 (Roost)",
+          "item": "TM88 (Aerial Ace)",
           "quantity": "1",
           "obtain": "From Ace Trainer Makana for defeating him"
         },
         {
           "item": "Chople Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "South of the bridge, next to the rock"
         },
         {
           "item": "Fighting Gem",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Next to the eastern grass patch on the south side of the bridge"
         },
         {
+          "item": "Cheri Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Rawst Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
           "item": "Chesto Berry",
-          "quantity": "1-20",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Aspear Berry",
+          "quantity": "Up to 10",
+          "obtain": "Found in berry tree pile"
+        },
+        {
+          "item": "Pecha Berry",
+          "quantity": "Up to 10",
           "obtain": "Found in berry tree pile"
         },
         {
           "item": "Persim Berry",
-          "quantity": "1-20",
+          "quantity": "Up to 10",
           "obtain": "Found in berry tree pile"
         },
         {
@@ -2475,6 +2545,11 @@
           "item": "$3,000",
           "quantity": "1",
           "obtain": "From a Sightseer near the Route 1 connection if the player has Sableye registered in their Pokédex"
+        },
+        {
+          "item": "Sharp Beak",
+          "quantity": "1",
+          "obtain": "Flying Pokemon (REMOVE ME!!!)"
         }
       ],
       "battles": [
@@ -2617,17 +2692,17 @@
         },
         {
           "item": "Tanga Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "South of the first field of flowers, near the entrance"
         },
         {
           "item": "Custap Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "West of the large flower patch, on the plateau near the Seaward Cave entrance"
         },
         {
-          "item": "Eject Button",
-          "quantity": "900",
+          "item": "Safety Goggles",
+          "quantity": "1",
           "obtain": "On the west side of the meadow, on top of the cliff to the west of a flower field"
         }
       ],
@@ -2838,8 +2913,8 @@
       "shopTables": [],
       "items": [
         {
-          "item": "Yache Berry",
-          "quantity": "900",
+          "item": "Snowball",
+          "quantity": "20",
           "obtain": "Next to Melemele Meadow tunnel"
         },
         {
@@ -2848,13 +2923,13 @@
           "obtain": "West side of the cave, opposite the body of water, south of the fishing spot (requires Lapras Paddle or Sharpedo Jet)"
         },
         {
-          "item": "Snowball",
-          "quantity": "900",
+          "item": "Muscle Band",
+          "quantity": "1",
           "obtain": "West side of the cave, southwest of the Melemele Meadow tunnel"
         },
         {
           "item": "Kebia Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "North end of the cave. In a small crevice."
         },
         {
@@ -2863,8 +2938,8 @@
           "obtain": "In between the three big rocks west of the pool near the Kala'e Bay entrance (hidden)"
         },
         {
-          "item": "Steel Gem",
-          "quantity": "900",
+          "item": "Wise Glasses",
+          "quantity": "1",
           "obtain": "West of the pool near the Kala'e Bay entrance"
         },
         {
@@ -2874,7 +2949,7 @@
         },
         {
           "item": "Ice Gem",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "North of the pool near the Kala'e Bay entrance"
         }
       ],
@@ -3015,8 +3090,8 @@
       "shopTables": [],
       "items": [
         {
-          "item": "Muscle Band",
-          "quantity": "10",
+          "item": "Steel Gem",
+          "quantity": "20",
           "obtain": "Just north of entrance"
         },
         {
@@ -3025,8 +3100,8 @@
           "obtain": "At the near end of the upper side of the ledge (requires Tauros Charge)"
         },
         {
-          "item": "Wise Glasses",
-          "quantity": "10",
+          "item": "Yache Berry",
+          "quantity": "20",
           "obtain": "At the far end of the upper side of the ledge (requires Tauros Charge)"
         },
         {
@@ -3133,12 +3208,12 @@
       "items": [
         {
           "item": "Hard Stone",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "On the west side, halfway down the path through the middle of the Farthest Hollow"
         },
         {
           "item": "Flying Gem",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "On the opposite side of the southwest grass patch"
         },
         {
@@ -3153,7 +3228,7 @@
         },
         {
           "item": "Rock Gem",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Northeast corner of the Farthest Hollow"
         },
         {
@@ -3216,13 +3291,43 @@
         },
         {
           "item": "Soft Sand",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "In the northeast corner of the beach"
         },
         {
           "item": "Big Pearl",
           "quantity": "1",
           "obtain": "In the center of the beach (hidden)"
+        },
+        {
+          "item": "Metronome",
+          "quantity": "1",
+          "obtain": "Held by Gift Porygon"
+        },
+        {
+          "item": "Assault Vest",
+          "quantity": "1",
+          "obtain": "Held by gift Castform"
+        },
+        {
+          "item": "Life Orb",
+          "quantity": "1",
+          "obtain": "Held By Gift Rotom"
+        },
+        {
+          "item": "Magmarizer",
+          "quantity": "1",
+          "obtain": "Held By Gift Type Null"
+        },
+        {
+          "item": "Magmarizer",
+          "quantity": "1",
+          "obtain": "Held by Gift Poipole"
+        },
+        {
+          "item": "Magmarizer",
+          "quantity": "1",
+          "obtain": "Held by Gift Zeraora"
         }
       ],
       "battles": []
@@ -3248,7 +3353,7 @@
       ],
       "items": [
         {
-          "item": "Premier Ball",
+          "item": "Blackglasses",
           "quantity": "1",
           "obtain": "From a Gentleman in the Ferry Terminal"
         },
@@ -3258,23 +3363,23 @@
           "obtain": "From the Beauty in the apparel shop if the player has Salazzle registered in their Pokédex"
         },
         {
-          "item": "Rare Candy",
+          "item": "Sharp Beak",
           "quantity": "1",
           "obtain": "From the woman opposite the apparel store"
         },
         {
-          "item": "Full Restore",
+          "item": "Twisted Spoon",
           "quantity": "1",
           "obtain": "From Dexio after defeating him"
         },
         {
-          "item": "Charcoal",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "From the Bellhop in front of the Tide Song Hotel for showing him a Magmar"
         },
         {
-          "item": "Lemonade",
-          "quantity": "1",
+          "item": "Shalour Sable",
+          "quantity": "10",
           "obtain": "From a lady in the Game Freak office"
         },
         {
@@ -3283,7 +3388,7 @@
           "obtain": "From a female Aether Foundation Employee in the Aether office"
         },
         {
-          "item": "Max Repel",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "Next to the lamppost opposite the Dimensional Research Lab and next to the bridge (hidden)"
         },
@@ -3298,12 +3403,12 @@
           "obtain": "In the Dimensional Research Lab, from a Scientist if the player has Pokémon in their Battle Box"
         },
         {
-          "item": "Reveal Glass",
+          "item": "Beedrillite",
           "quantity": "1",
           "obtain": "In the Dimensional Research Lab, from Professor Burnet after passing Olivia's grand trial"
         },
         {
-          "item": "Gold Bottle Cap",
+          "item": "Comet Shard",
           "quantity": "1",
           "obtain": "Held by the Mantyke received from the Boss of the Surf Association after becoming No. 1 on all four Mantine Surf courses"
         },
@@ -3349,18 +3454,18 @@
       "shopTables": [],
       "items": [
         {
-          "item": "Heart Scale",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "1F, from the Dancer after telling her about the bottle on Heahea Beach"
         },
         {
-          "item": "Payapa Berry",
-          "quantity": "900",
+          "item": "Poison Barb",
+          "quantity": "1",
           "obtain": "3F, in the leftmost room"
         },
         {
           "item": "Poison Gem",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "3F, on the balcony of the leftmost room"
         },
         {
@@ -3379,8 +3484,8 @@
           "obtain": "3F, from the Gentleman in the first room to the left of the elevator if the player has a Marshadow in their party"
         },
         {
-          "item": "Oran Berry",
-          "quantity": "1",
+          "item": "Roseli Berry",
+          "quantity": "20",
           "obtain": "3F, after being forced out of the first room to the right of the elevator"
         },
         {
@@ -3394,7 +3499,7 @@
           "obtain": "3F, on the balcony of the first room to the right of the elevator"
         },
         {
-          "item": "Revival Herb",
+          "item": "Kangaskhanite",
           "quantity": "1",
           "obtain": "3F, from the old man in the rightmost room for finding all of his friends"
         }
@@ -3523,7 +3628,7 @@
       "items": [
         {
           "item": "Kasib Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "In the clearing between the two grass fields to the east of the Heahea City entrance"
         },
         {
@@ -3532,13 +3637,13 @@
           "obtain": "On a rock at the end of the narrow path north of the first Trainer Tips sign (hidden)"
         },
         {
-          "item": "Nugget",
-          "quantity": "1",
+          "item": "Honey",
+          "quantity": "20",
           "obtain": "On the land overhanging the cliff southwest of the Pokémon Breeder (hidden)"
         },
         {
           "item": "Pixie Plate",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "Behind Collector Bryan"
         },
         {
@@ -3547,13 +3652,13 @@
           "obtain": "Against northern side of the rock formation in the northwest of the route (hidden)"
         },
         {
-          "item": "Salac Berry",
-          "quantity": "900",
+          "item": "Red Card",
+          "quantity": "20",
           "obtain": "On the opposite side of the grass field south of Sightseer Scotty"
         },
         {
           "item": "Silver Powder",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "Below the Berry tree near Cook Ernie"
         },
         {
@@ -3562,13 +3667,23 @@
           "obtain": "South of the Berry tree (hidden)"
         },
         {
-          "item": "Liechi Berry",
-          "quantity": "1-20",
+          "item": "Grassy Seed",
+          "quantity": "Up to 10",
           "obtain": "Under the Berry Tree near Paniola"
         },
         {
-          "item": "Petaya Berry",
-          "quantity": "1-20",
+          "item": "Electric Seed",
+          "quantity": "Up to 10",
+          "obtain": "Under the Berry Tree near Paniola"
+        },
+        {
+          "item": "Psychic Seed",
+          "quantity": "Up to 10",
+          "obtain": "Under the Berry Tree near Paniola"
+        },
+        {
+          "item": "Misty Seed",
+          "quantity": "Up to 10",
           "obtain": "Under the Berry Tree near Paniola"
         },
         {
@@ -3624,7 +3739,7 @@
       "items": [
         {
           "item": "Magnet",
-          "quantity": "10",
+          "quantity": "1",
           "obtain": "To the left of the trailer"
         },
         {
@@ -3735,7 +3850,7 @@
       ],
       "items": [
         {
-          "item": "Dire Hit",
+          "item": "Shell Bell",
           "quantity": "1",
           "obtain": "From Hau after battling him"
         },
@@ -3745,7 +3860,7 @@
           "obtain": "From the old man next to the Pokémon Center, if the player sells him the requested item (daily)"
         },
         {
-          "item": "Stardust",
+          "item": "Luck Incense",
           "quantity": "1",
           "obtain": "In front of the cart of hay on the west side of town (hidden)"
         },
@@ -3760,12 +3875,12 @@
           "obtain": "From the Pokémon Breeder when interacting with the Miltank in the stall (daily)"
         },
         {
-          "item": "Quick Ball",
-          "quantity": "1",
+          "item": "Power Herb",
+          "quantity": "3",
           "obtain": "From a Magmar in the hallway on the second floor of Kiawe's house"
         },
         {
-          "item": "TM88 (Aerial Ace)",
+          "item": "TM19 (Roost)",
           "quantity": "1",
           "obtain": "South side of the area accessible from Route 6"
         },
@@ -3776,11 +3891,11 @@
         },
         {
           "item": "Bottle Cap",
-          "quantity": "1",
+          "quantity": "10",
           "obtain": "From the lady the day after rescuing Alolan Vulpix from Team Skull"
         },
         {
-          "item": "Protector",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "From Kiawe's father after becoming Champion"
         }
@@ -3906,12 +4021,12 @@
         },
         {
           "item": "Adrenaline Orb",
-          "quantity": "5",
+          "quantity": "10",
           "obtain": "Moomoo Paddock, from the female Pokémon Breeder near the entrance"
         },
         {
           "item": "Bug Gem",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Moomoo Paddock, east of the trough on the north side (hidden) (Use Stoutland Search)"
         },
         {
@@ -3921,12 +4036,12 @@
         },
         {
           "item": "Ghost Gem",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Moomoo Paddock, by the pool of water, north of the gap where the Tauros drink (hidden) (Use Stoutland Search)"
         },
         {
           "item": "Dark Gem",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Moomoo Paddock, east of the pair of hay bales on the south side (hidden) (Use Stoutland Search)"
         },
         {
@@ -3946,7 +4061,7 @@
         },
         {
           "item": "Colbur Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Paddock east of the pathway to Paniola Town, in the southwest corner"
         },
         {
@@ -3980,7 +4095,7 @@
           "obtain": "East side of the ranch, opposite the grass field southeast of the Pokémon Nursery"
         },
         {
-          "item": "Mystic Water",
+          "item": "Eviolite",
           "quantity": "1",
           "obtain": "East side of the ranch, from the kid for scaring off the Sudowoodo after defeating Dulse"
         },
@@ -4276,7 +4391,7 @@
       "items": [
         {
           "item": "Sitrus Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "Northeast of the Paniola Ranch entrance, against a rock formation"
         },
         {
@@ -4290,8 +4405,8 @@
           "obtain": "In the east, at the north end of the rocky crescent ledge"
         },
         {
-          "item": "Revive",
-          "quantity": "3",
+          "item": "Expert Belt",
+          "quantity": "1",
           "obtain": "From Hau after defeating Gladion"
         },
         {
@@ -4300,12 +4415,12 @@
           "obtain": "At the end of a narrow path south of the Pokémon Center"
         },
         {
-          "item": "Super Potion",
-          "quantity": "1",
+          "item": "Payapa Berry",
+          "quantity": "20",
           "obtain": "From a Fisherman in the Pokémon Center"
         },
         {
-          "item": "Pearl String",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "Held by Dennis, a Rockruff the player can receive in a trade"
         },
@@ -4320,34 +4435,24 @@
           "obtain": "From Trial Guide Bronson after defeating him"
         },
         {
-          "item": "Starf Berry",
-          "quantity": "1-20",
-          "obtain": "Berry Tree"
+          "item": "Grassy Seed",
+          "quantity": "Up to 10",
+          "obtain": "Under the Berry Tree near Paniola"
         },
         {
-          "item": "Figy Berry",
-          "quantity": "1-20",
-          "obtain": "Berry Tree"
+          "item": "Electric Seed",
+          "quantity": "Up to 10",
+          "obtain": "Under the Berry Tree near Paniola"
         },
         {
-          "item": "Wiki Berry",
-          "quantity": "1-20",
-          "obtain": "Berry Tree"
+          "item": "Psychic Seed",
+          "quantity": "Up to 10",
+          "obtain": "Under the Berry Tree near Paniola"
         },
         {
-          "item": "Mago Berry",
-          "quantity": "1-20",
-          "obtain": "Berry Tree"
-        },
-        {
-          "item": "Aguav Berry",
-          "quantity": "1-20",
-          "obtain": "Berry Tree"
-        },
-        {
-          "item": "Iapapa Berry",
-          "quantity": "1-20",
-          "obtain": "Berry Tree"
+          "item": "Misty Seed",
+          "quantity": "Up to 10",
+          "obtain": "Under the Berry Tree near Paniola"
         },
         {
           "item": "Purple Nectar",
@@ -4355,7 +4460,7 @@
           "obtain": "Berry Tree"
         },
         {
-          "item": "Great Ball",
+          "item": "Magmarizer",
           "quantity": "900",
           "obtain": "(North) In front of a small rock south of the Lush Jungle entrance and just north of the signpost, on the east side of the path (hidden)"
         },
@@ -4370,12 +4475,12 @@
           "obtain": "(North) In the northeast of the highest level, northeast of the Pokémon Center"
         },
         {
-          "item": "TM59 (Thunder Wave)",
+          "item": "TM100 (Trailblaze)",
           "quantity": "1",
           "obtain": "(North) At the south end of the highest level, northeast of the Pokémon Center"
         },
         {
-          "item": "Poisonium Z Node",
+          "item": "Magmarizer",
           "quantity": "1",
           "obtain": "(North) Northwest of the Pokémon Center, past Ace Trainer Alexis"
         }
@@ -4693,12 +4798,12 @@
         },
         {
           "item": "Passho Berry",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "On the west bank of the lake near the Route 5 entrance"
         },
         {
           "item": "Water Gem",
-          "quantity": "900",
+          "quantity": "20",
           "obtain": "On a beach on the south side of the lake near the Route 5 entrance (requires Lapras Paddle or Sharpedo Jet)"
         },
         {
@@ -4712,8 +4817,8 @@
           "obtain": "In the northeast corner of the shore north of the second lake from the Route 5 entrance"
         },
         {
-          "item": "Mystic Water",
-          "quantity": "9",
+          "item": "Black Belt",
+          "quantity": "1",
           "obtain": "On the southern shore of the second lake from the Route 5 entrance, on top of a Photo Spot"
         },
         {
@@ -4913,13 +5018,13 @@
           "obtain": "From Lana after completing the trial"
         },
         {
-          "item": "Fishing Rod",
+          "item": "TM33 (Water Pulse)",
           "quantity": "1",
           "obtain": "From Lana after completing the trial"
         },
         {
-          "item": "Dive Ball",
-          "quantity": "10",
+          "item": "Araquanite",
+          "quantity": "1",
           "obtain": "From Lana after completing the trial"
         }
       ],

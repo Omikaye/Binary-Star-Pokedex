@@ -134,7 +134,19 @@
           "price": "Free"
         },
         {
-          "item": "Tutor: Hail",
+          "item": "Tutor: Sunny Day",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Rain Dance",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Sandstorm",
+          "price": "Free"
+        },
+        {
+          "item": "Tutor: Snowscape",
           "price": "Free"
         },
         {
@@ -416,7 +428,7 @@
           "price": "$12,000"
         },
         {
-          "item": "TM33 (Water Pulse)",
+          "item": "TM33 (Aqua Tail)",
           "price": "$15,000"
         },
         {
@@ -429,11 +441,11 @@
       "name": "Paniola Pokecenter",
       "items": [
         {
-          "item": "Scope Lens",
+          "item": "Red Card",
           "price": "$4,000"
         },
         {
-          "item": "Metronome",
+          "item": "Eject Button",
           "price": "$3,800"
         },
         {
@@ -446,7 +458,7 @@
       "name": "Route 5 Pokecenter",
       "items": [
         {
-          "item": "TM48 (Snarl)",
+          "item": "TM100 (Trailblaze)",
           "price": "$18,000"
         },
         {
