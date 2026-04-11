@@ -622,6 +622,19 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		}
 		var baseGameMoveIds = new Set(baseGameMoves.map(function(m) { return toID(m); }));
 
+		// Also include base game moves from pre-evolutions so that evolution-inherited
+		// moves are not incorrectly flagged as "new" to Binary Star.
+		var visited = new Set([this.id]);
+		var prevoChainId = (getID(BattlePokedexEdit, this.id) || {}).prevo;
+		while (prevoChainId && !visited.has(prevoChainId)) {
+			visited.add(prevoChainId);
+			var prevoBaseMoves = (window.BaseGameLearnsets && window.BaseGameLearnsets[prevoChainId]) || [];
+			for (var pm of prevoBaseMoves) {
+				baseGameMoveIds.add(toID(pm));
+			}
+			prevoChainId = (BattlePokedexEdit[prevoChainId] || {}).prevo;
+		}
+
 		// Moves new to Binary Star: in Binary Star but NOT in base game, with data
 		// Unknown moves: in Binary Star learnset but have no BattleMovedex entry
 		var newMoves = [];
@@ -684,8 +697,11 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		if (removedMoveIds.length > 0) {
 			for (var removedId of removedMoveIds) {
 				var move = getID(BattleMovedex, removedId);
-				if (!move) continue;
-				buf += BattleSearch.renderTaggedMoveRow(move, '');
+				if (move) {
+					buf += BattleSearch.renderTaggedMoveRow(move, '');
+				} else {
+					buf += `<li class="result"><span class="col tagcol"></span> <span class="col shortmovenamecol">${escapeHTML(removedId)}</span> <span class="col typecol">&mdash;</span> <span class="col labelcol"></span> <span class="col widelabelcol"></span> <span class="col pplabelcol"></span> <span class="col movedesccol"><em>Not in Binary Star</em></span></li>`;
+				}
 			}
 		} else {
 			buf += '<li class="result"><span class="col movedesccol" style="padding:6px 8px"><em>None</em></span></li>';
