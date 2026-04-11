@@ -624,8 +624,10 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 
 		// Also include base game moves from pre-evolutions so that evolution-inherited
 		// moves are not incorrectly flagged as "new" to Binary Star.
+		var visited = new Set([this.id]);
 		var prevoChainId = (getID(BattlePokedexEdit, this.id) || {}).prevo;
-		while (prevoChainId) {
+		while (prevoChainId && !visited.has(prevoChainId)) {
+			visited.add(prevoChainId);
 			var prevoBaseMoves = (window.BaseGameLearnsets && window.BaseGameLearnsets[prevoChainId]) || [];
 			for (var pm of prevoBaseMoves) {
 				baseGameMoveIds.add(toID(pm));
