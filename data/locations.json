@@ -152,17 +152,17 @@
       "items": [
         {
           "item": "Poké Ball",
-          "quantity": "900",
+          "quantity": "10",
+          "obtain": "From Kukui after the capture tutorial"
+        },
+        {
+          "item": "Potion",
+          "quantity": "5",
           "obtain": "From Kukui after the capture tutorial"
         },
         {
           "item": "Miracle Medicine",
           "quantity": "1",
-          "obtain": "From Kukui after the capture tutorial"
-        },
-        {
-          "item": "Max Repel",
-          "quantity": "900",
           "obtain": "North of the grass patch next to the Trainer Tips sign."
         },
         {
@@ -177,7 +177,7 @@
         },
         {
           "item": "Ring Target",
-          "quantity": "10",
+          "quantity": "20",
           "obtain": "West of the entrance to Iki Town"
         },
         {
@@ -187,7 +187,7 @@
         },
         {
           "item": "Haban Berry",
-          "quantity": "10",
+          "quantity": "20",
           "obtain": "At the end of the northern east path behind the rocks south of Iki Town (requires Tauros Charge)"
         }
       ],
