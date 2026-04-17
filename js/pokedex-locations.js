@@ -223,31 +223,84 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     }
     this.shortTitle = loc.name || loc.id;
 
+    // ── Helpers ──────────────────────────────────────────────────
+    var noneText = '<p class="loc-none">None</p>';
+    var secStyle = function(bg, border) {
+      return 'background:' + bg + ';padding:12px;margin:8px 0;border-radius:6px;border-left:4px solid ' + border;
+    };
+    // Split a notes string on "|" and return an array of trimmed non-empty lines
+    var splitNotes = function(s) {
+      if (!s || s.trim().toLowerCase() === 'none') return [];
+      return s.split('|').map(function(l){ return l.trim(); }).filter(Boolean);
+    };
+    var renderNoteLines = function(lines, indent) {
+      if (!lines.length) return '';
+      var style = 'padding:0 8px 4px ' + (indent || '8px');
+      var out = '<div style="' + style + '">';
+      for (var i = 0; i < lines.length; i++) {
+        out += '<span class="battle-notes-line">' + escapeHTML(lines[i]) + '</span>';
+      }
+      out += '</div>';
+      return out;
+    };
+
     var buf = '<div class="pfx-body dexentry">';
+
+    // ── CSS ───────────────────────────────────────────────────────
+    buf += '<style>'
+      + '.utilitable th,.utilitable td{border-bottom:1px solid #ddd;padding:6px 8px}'
+      + '.utilitable thead th{border-bottom:2px solid #bbb}'
+      + '.chancepill{display:inline-block;min-width:42px;text-align:center;background:#f2f2f2;border:1px solid #ddd;border-radius:10px;padding:2px 6px;margin-right:8px;color:#444}'
+      + '.sos-row td{background:#ffecec}'
+      + '.spot-Grass tbody tr:nth-child(odd){background:#c8e6c9}.spot-Grass tbody tr:nth-child(even){background:#b2dfdb}'
+      + '.spot-Sky tbody tr:nth-child(odd){background:#bbdefb}.spot-Sky tbody tr:nth-child(even){background:#b3e5fc}'
+      + '.spot-Surf tbody tr:nth-child(odd){background:#c5cae9}.spot-Surf tbody tr:nth-child(even){background:#b3c8ef}'
+      + '.spot-Fish tbody tr:nth-child(odd){background:#d1c4e9}.spot-Fish tbody tr:nth-child(even){background:#c5b8e8}'
+      + '.spot-Cave tbody tr:nth-child(odd){background:#d7ccc8}.spot-Cave tbody tr:nth-child(even){background:#cfc0bc}'
+      + '.spot-BeachGrass tbody tr:nth-child(odd){background:#c8e6c9}.spot-BeachGrass tbody tr:nth-child(even){background:#b2dfdb}'
+      + '.loc-none{color:#666;margin:0;padding:4px 0;font-style:italic}'
+      + '.battle-notes-line{display:block;color:#555;font-size:0.85em;font-style:italic;margin-bottom:1px}'
+      + '.loc-description p{margin:0 0 4px}'
+      + '</style>';
+
     buf += '<a href="' + Config.baseurl + 'locations/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Locations</a>';
     buf += '<h1><a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" class="subtle">' + escapeHTML(loc.name || loc.id) + '</a></h1>';
 
-    // Lightweight CSS for tables and colors
-    buf += '<style>\n'
-      + '.utilitable th, .utilitable td{border-bottom:1px solid #ddd;padding:6px 8px} .utilitable thead th{border-bottom:2px solid #bbb}\n'
-      + '.chancepill{display:inline-block;min-width:42px;text-align:center;background:#f2f2f2;border:1px solid #ddd;border-radius:10px;padding:2px 6px;margin-right:8px;color:#444}\n'
-      + '.sos-row td{background:#ffecec}/* light red */\n'
-      + '.spot-Grass tbody tr:nth-child(odd){background:#e9f7e9} .spot-Grass tbody tr:nth-child(even){background:#d9f0d9}\n'
-      + '.spot-Sky tbody tr:nth-child(odd){background:#e8f4ff} .spot-Sky tbody tr:nth-child(even){background:#d9ecff}\n'
-      + '.spot-Surf tbody tr:nth-child(odd){background:#e0ecff} .spot-Surf tbody tr:nth-child(even){background:#d0e3ff}\n'
-      + '.spot-Fish tbody tr:nth-child(odd){background:#efe4ff} .spot-Fish tbody tr:nth-child(even){background:#e4d9ff}\n'
-      + '.spot-Cave tbody tr:nth-child(odd){background:#f5eee5} .spot-Cave tbody tr:nth-child(even){background:#ede5dc}\n'
-      + '</style>';
-
-    if ((loc.notes||'').trim()) {
-      buf += '<p class="resultsub">' + escapeHTML(loc.notes) + '</p>';
+    // ── Description (split on "|") ────────────────────────────────
+    var descLines = splitNotes(loc.notes || '');
+    if (descLines.length) {
+      buf += '<div class="resultsub loc-description" style="margin-bottom:12px">';
+      for (var di = 0; di < descLines.length; di++) {
+        buf += '<p>' + escapeHTML(descLines[di]) + '</p>';
+      }
+      buf += '</div>';
     }
 
-    // Gifts / Trades
-    var giftsTrades = loc.giftsTrades;
-    if (Array.isArray(giftsTrades) && giftsTrades.length) {
-      buf += '<div style="background:#f3e5f5;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0;color:#6a1b9a">Gifts &amp; Trades</h3>';
+    // ── Tab bar ───────────────────────────────────────────────────
+    buf += '<ul class="tabbar loc-tabbar">';
+    buf += '<li><button class="button nav-first cur" value="obtainable">Obtainable Pok&eacute;mon</button></li>';
+    buf += '<li><button class="button" value="items">Items</button></li>';
+    buf += '<li><button class="button nav-last" value="battles">Battles</button></li>';
+    buf += '</ul>';
+
+    // ── Partition the battles array ───────────────────────────────
+    var allBattles = loc.battles || [];
+    var trainerBattles  = allBattles.filter(function(b){ return !String(b.id).match(/^[A-Za-z]/); });
+    var staticBattles   = allBattles.filter(function(b){ return  String(b.id).match(/^[A-Za-z]/); });
+    var capturableStatics = staticBattles.filter(function(b){ return b.tag === 'Capturable'; });
+
+    // ─────────────────────────────────────────────────────────────
+    // TAB 1: Obtainable Pokémon
+    // ─────────────────────────────────────────────────────────────
+    buf += '<div class="loc-tab loc-tab-obtainable">';
+
+    // ── Gifts & Trades ──
+    var giftsTrades = loc.giftsTrades || [];
+    buf += '<div style="' + secStyle('#ce93d8', '#ab47bc') + '">';
+    buf += '<h3 style="margin-top:0;color:#4a148c">Gifts &amp; Trades</h3>';
+    if (!giftsTrades.length) {
+      buf += noneText;
+    } else {
       buf += '<ul class="utilichart nokbd">';
       for (var gi = 0; gi < giftsTrades.length; gi++) {
         var gt = giftsTrades[gi];
@@ -266,358 +319,308 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         buf += '</li>';
       }
       buf += '</ul>';
-      buf += '</div>';
     }
+    buf += '</div>';
 
-    // Encounters
+    // ── Static Encounters (Capturable only) ──
+    buf += '<div style="' + secStyle('#f48fb1', '#c2185b') + '">';
+    buf += '<h3 style="margin-top:0;color:#880e4f">Static Encounters</h3>';
+    if (!capturableStatics.length) {
+      buf += noneText;
+    } else {
+      buf += '<ul class="utilichart nokbd">';
+      for (var ci = 0; ci < capturableStatics.length; ci++) {
+        var cb = capturableStatics[ci];
+        var cbEnc = (window.StaticEncounters || {})[cb.id];
+        var cbName = cbEnc ? (window.translateDisplayName ? window.translateDisplayName(cbEnc.name) : cbEnc.name) : cb.id;
+        var cbID = toID(cbName);
+        var cbLevel = cbEnc ? cbEnc.level : '';
+        var cbNoteLines = splitNotes(cb.notes || '');
+        buf += '<li class="result" style="display:block;padding:6px 8px">';
+        buf += '<a href="' + Config.baseurl + 'encounters/' + cb.id + '" data-target="push" style="text-decoration:none">';
+        buf += '<span class="picon" style="' + getPokemonIcon(cbID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>';
+        buf += '<span style="vertical-align:middle;font-weight:600">' + escapeHTML(cbName) + '</span>';
+        if (cbLevel) buf += ' <span style="color:#666;font-size:0.85em">Lv.\u00a0' + cbLevel + '</span>';
+        buf += '</a>';
+        buf += renderNoteLines(cbNoteLines, '46px');
+        buf += '</li>';
+      }
+      buf += '</ul>';
+    }
+    buf += '</div>';
+
+    // ── Wild Pokémon ──
     var encounters = loc.encounters || [];
-    if (encounters.length) {
-      buf += '<div style="background:#e8f5e9;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0;color:#2e7d32">Wild Encounters</h3>';
-      for (var s=0; s<encounters.length; s++) {
+    buf += '<div style="' + secStyle('#a5d6a7', '#388e3c') + '">';
+    buf += '<h3 style="margin-top:0;color:#1b5e20">Wild Pok&eacute;mon</h3>';
+    if (!encounters.length) {
+      buf += noneText;
+    } else {
+      for (var s = 0; s < encounters.length; s++) {
         var spot = encounters[s];
         if (!spot || !spot.pokemon || !spot.pokemon.length) continue;
-        var range = (spot.levelRange && (spot.levelRange.min||spot.levelRange.max)) ? ' (Lv. ' + (spot.levelRange.min===spot.levelRange.max? spot.levelRange.min : (spot.levelRange.min+'-'+spot.levelRange.max)) + ')' : '';
-        var spotName = escapeHTML(spot.spot || 'Spot');
-        var spotClass = 'spot-' + (spot.spot || '').replace(/\s+/g,'');
-        buf += '<h4 style="margin:6px 0 4px">' + spotName + range + '</h4>';
+        var lvRange = (spot.levelRange && (spot.levelRange.min || spot.levelRange.max))
+          ? ' (Lv.\u00a0' + (spot.levelRange.min === spot.levelRange.max ? spot.levelRange.min : (spot.levelRange.min + '\u2013' + spot.levelRange.max)) + ')'
+          : '';
+        var spotClass = 'spot-' + (spot.spot || '').replace(/\s+/g, '');
+        buf += '<h4 style="margin:6px 0 4px">' + escapeHTML(spot.spot || 'Spot') + lvRange + '</h4>';
         buf += '<table class="utilitable ' + spotClass + '" style="width:100%;margin-bottom:8px">';
-        buf += '<thead><tr><th style="width:80px;text-align:center">Chance</th><th style="text-align:left">Pokémon</th></tr></thead><tbody>';
-        for (var p=0; p<spot.pokemon.length; p++) {
+        buf += '<thead><tr><th style="width:80px;text-align:center">Chance</th><th style="text-align:left">Pok&eacute;mon</th></tr></thead><tbody>';
+        for (var p = 0; p < spot.pokemon.length; p++) {
           var mon = spot.pokemon[p];
-          // Apply dictionary translation to Pokemon name
           var translatedName = window.translateDisplayName(mon.name);
           var monID = toID(translatedName);
           var pokeData = BattlePokedex[monID];
           var displayName = pokeData ? pokeData.name : translatedName;
-
-          // Main Pokemon row
           buf += '<tr>';
-          buf += '<td style="text-align:center"><span class="chancepill">' + (mon.chance!=null? (mon.chance + '%') : '&mdash;') + '</span></td>';
-          buf += '<td>'
-            + '<a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push" title="' + escapeHTML(displayName) + '">'
+          buf += '<td style="text-align:center"><span class="chancepill">' + (mon.chance != null ? mon.chance + '%' : '&mdash;') + '</span></td>';
+          buf += '<td><a href="' + Config.baseurl + 'pokemon/' + monID + '" data-target="push">'
             + '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>'
-            + escapeHTML(displayName)
-            + '</a>'
-            + '</td>';
+            + escapeHTML(displayName) + '</a></td>';
           buf += '</tr>';
-
-          // SOS Pokemon sub-rows (one per unique SOS pokemon)
           var sos = mon.sos || [];
-          for (var k=0; k<sos.length; k++) {
-            var child = sos[k];
-            var childTranslated = window.translateDisplayName(child);
+          for (var k = 0; k < sos.length; k++) {
+            var childTranslated = window.translateDisplayName(sos[k]);
             var childID = toID(childTranslated);
             var childData = BattlePokedex[childID];
             var childDisplayName = childData ? childData.name : childTranslated;
-            buf += '<tr class="sos-row">';
-            buf += '<td></td>';
-            buf += '<td style="padding-left:24px;font-size:0.9em">'
+            buf += '<tr class="sos-row"><td></td><td style="padding-left:24px;font-size:0.9em">'
               + '<span style="color:#c62828;font-weight:600;margin-right:6px">S.O.S.</span>'
-              + '<a href="' + Config.baseurl + 'pokemon/' + childID + '" data-target="push" title="' + escapeHTML(childDisplayName) + '">'
+              + '<a href="' + Config.baseurl + 'pokemon/' + childID + '" data-target="push">'
               + '<span class="picon" style="' + getPokemonIcon(childID) + ';display:inline-block;vertical-align:middle;margin-right:4px"></span>'
-              + escapeHTML(childDisplayName)
-              + '</a>'
-              + '</td>';
-            buf += '</tr>';
+              + escapeHTML(childDisplayName) + '</a></td></tr>';
           }
         }
         buf += '</tbody></table>';
       }
-      buf += '</div>'; // Close Wild Encounters section
     }
-    
-    // Static Pokemon (pink section)
-    if (loc.staticPokemon && loc.staticPokemon.length) {
-      buf += '<div style="background:#fce4ec;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0;color:#c2185b">Static Pokémon</h3>';
-      buf += '<p class="resultsub">Static encounter details coming soon.</p>';
-      buf += '</div>';
-    }
-    
-    // Trainers
-    function renderTrainerList(ids, isBoss) {
-      if (!ids || !ids.length) return '';
-      var out = '<ul class="utilichart nokbd" style="' + (isBoss ? 'background:#f5f0ff' : '') + '">';
-      for (var i=0;i<ids.length;i++) {
-        var tid = (ids[i]||'').trim();
-        if (!tid) continue;
-        var paddedTid = String(tid).padStart(3, '0');
-        var t = (window.Trainers||[]).find(function(tx){ return tx.id === paddedTid; });
-        var tname = t ? t.name : ('Trainer ' + tid);
-        // Get extra notes from trainer-notes.json
-        var tnotes = (window.TrainerNotes && window.TrainerNotes[paddedTid]) ? window.TrainerNotes[paddedTid].extraNotes : '';
-        out += '<li class="result"><a href="' + Config.baseurl + 'trainers/' + paddedTid + '" data-target="push">';
-        out += '<span class="col namecol">' + escapeHTML(tname);
-        if (tnotes) {
-          out += ' <span style="color:#777;font-size:0.85em">(' + escapeHTML(tnotes) + ')</span>';
-        }
-        out += '</span>';
-        out += '</a></li>';
-      }
-      out += '</ul>';
-      return out;
-    }
+    buf += '</div>';
 
-    if (loc.trainers && loc.trainers.length) {
-      buf += '<div style="background:#e3f2fd;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0;color:#1565c0">Trainers</h3>' + renderTrainerList(loc.trainers, false);
-      buf += '</div>';
-    }
-    if (loc.bossTrainers && loc.bossTrainers.length) {
-      buf += '<div style="background:#e3f2fd;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0;color:#7b4397">Boss Trainers</h3>' + renderTrainerList(loc.bossTrainers, true);
-      buf += '</div>';
-    }
-    
-    // Battles
-    if (loc.battles && loc.battles.length) {
-      buf += '<div style="background:#f5f5f5;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0;color:#424242">Battles</h3>';
-      buf += '<ul class="utilichart nokbd">';
-      for (var bi = 0; bi < loc.battles.length; bi++) {
-        var battle = loc.battles[bi];
-        var battleID = battle.id;
-        var battleTag = battle.tag;
-        var battleNotes = battle.notes || '';
-        
-        // Get tag styling
-        var tagConfig = (window.BattleTags && window.BattleTags[battleTag]) || {
-          color: '#666',
-          backgroundColor: '#f0f0f0',
-          description: battleTag
-        };
-        
-        // Determine if this is a trainer or static encounter
-        var isStatic = battleID.match(/^[A-Za-z]/);
-        var linkTarget = isStatic ? 'encounters' : 'trainers';
-        
-        // Get trainer/encounter name
-        var battleName = '';
-        var linkID = battleID;
-        if (isStatic) {
-          var staticEncounters = window.StaticEncounters || {};
-          var staticEnc = staticEncounters[battleID];
-          if (staticEnc) {
-            // Translate display name (e.g., "Rattata 1" -> "Rattata-Alola")
-            battleName = window.translateDisplayName ? window.translateDisplayName(staticEnc.name) : staticEnc.name;
-          } else {
-            battleName = 'Static Encounter ' + battleID;
-          }
-        } else {
-          // Pad trainer ID to 3 digits for lookup
-          var paddedTrainerID = String(battleID).padStart(3, '0');
-          var trainer = (window.Trainers || []).find(function(t) { return t.id === paddedTrainerID; });
-          battleName = trainer ? trainer.name : ('Trainer ' + battleID);
-          linkID = paddedTrainerID; // Use padded ID for the link
-        }
-        
-        buf += '<li class="result"><a href="' + Config.baseurl + linkTarget + '/' + linkID + '" data-target="push">';
-        buf += '<span class="col namecol">';
-        
-        // Add battle tag badge
-        buf += '<span class="battle-tag" style="display:inline-block;padding:2px 8px;margin-right:8px;border-radius:12px;font-size:0.75em;font-weight:600;color:' + tagConfig.color + ';background-color:' + tagConfig.backgroundColor + ';cursor:help" title="' + escapeHTML(tagConfig.description) + '">';
-        buf += escapeHTML(battleTag);
-        buf += '</span>';
-        
-        // Battle name
-        buf += escapeHTML(battleName);
-        
-        // Battle notes in lighter text (skip if "None")
-        if (battleNotes && battleNotes.trim().toLowerCase() !== 'none') {
-          buf += ' <span style="color:#999;font-size:0.85em;font-weight:normal">' + escapeHTML(battleNotes) + '</span>';
-        }
-        
-        buf += '</span>';
-        buf += '</a></li>';
-      }
-      buf += '</ul>';
-      buf += '</div>';
-    }
-    
-    // Shop Tables (new format)
-    if (loc.shopTables && loc.shopTables.length) {
-      for (var sti = 0; sti < loc.shopTables.length; sti++) {
-        var shopTableName = loc.shopTables[sti];
-        var shopTable = (window.ShopTables && window.ShopTables[shopTableName]) || null;
-        
-        buf += '<div style="background:#fffde7;padding:12px;margin:8px 0;border-radius:4px">';
-        buf += '<h3 style="margin-top:0;color:#f57f17">' + escapeHTML(shopTableName) + '</h3>';
-        
-        if (shopTable && shopTable.items && shopTable.items.length) {
-          buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
-          buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:110px;text-align:center">Price</th></tr></thead><tbody>';
-          
-          for (var stii = 0; stii < shopTable.items.length; stii++) {
-            var shopItem = shopTable.items[stii];
-            var tmMatch = shopItem.item.match(/^(TM\d+)\s*\((.+)\)$/);
-            var baseShopItem = shopItem.item.replace(/\s*\(\d+\)$/, '');
-            var shopIcon = '';
-            var linkTarget = '';
-            var linkType = 'items';
-            var itemID = '';
-            var shopItemData = null;
-            
-            if (tmMatch) {
-              // TM - use TM-specific sprite and link to move
-              var moveName = tmMatch[2].trim();
-              var tmItemId = toID(tmMatch[1]);
-              linkTarget = toID(moveName);
-              linkType = 'moves';
-              shopItemData = BattleItems[tmItemId];
-              shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData ? tmItemId : 'tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
-            } else if (baseShopItem === 'Poké Ball') {
-              // Fix Poké Ball to use pokball ID (toID removes the accented e)
-              itemID = 'pokball';
-              linkTarget = 'pokball';
-              shopItemData = BattleItems['pokball'];
-              if (shopItemData) {
-                shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
-              }
-            } else {
-              // Regular item - strip "(N)" suffix for sprite/link lookup
-              itemID = toID(baseShopItem);
-              linkTarget = itemID;
-              shopItemData = BattleItems[itemID];
-              if (shopItemData) {
-                shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
-              }
-            }
-            
-            buf += '<tr>';
-            buf += '<td>' + shopIcon + '</td>';
-            buf += '<td>';
-            if (tmMatch || shopItemData) {
-              buf += '<a href="' + Config.baseurl + linkType + '/' + linkTarget + '" data-target="push">' + escapeHTML(shopItem.item) + '</a>';
-            } else {
-              buf += escapeHTML(shopItem.item);
-            }
-            buf += '</td>';
-            buf += '<td style="text-align:center">' + escapeHTML(shopItem.price || '') + '</td>';
-            buf += '</tr>';
-          }
-          
-          buf += '</tbody></table>';
-        } else {
-          buf += '<p class="resultsub" style="color:#999">Shop data not available. Please update shop-tables.json.</p>';
-        }
-        
-        buf += '</div>';
-      }
-    }
-    
-    // Shops (legacy format)
-    if (loc.shops && loc.shops.length) {
-      buf += '<div style="background:#fffde7;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0;color:#f57f17">Shops</h3>';
-      buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
-      buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:110px;text-align:center">Price</th></tr></thead><tbody>';
-      for (var si=0; si<loc.shops.length; si++) {
-        var sh = loc.shops[si];
-        // Check for TM format: "TM90 (Zen Headbutt)"
-        var tmMatch = sh.item.match(/^(TM\d+)\s*\((.+)\)$/);
-        var baseShopItem = sh.item.replace(/\s*\(\d+\)$/, '');
-        var itemID = toID(baseShopItem);
-        var shopItemData = BattleItems[itemID];
-        var shopIcon = '';
-        var linkTarget = itemID;
-        var linkType = 'items';
-        
-        if (tmMatch) {
-          // TM - use TM-specific sprite and link to move
-          var moveName = tmMatch[2].trim();
-          var tmItemId = toID(tmMatch[1]);
-          linkTarget = toID(moveName);
-          linkType = 'moves';
-          shopItemData = BattleItems[tmItemId];
-          shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData ? tmItemId : 'tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
-        } else if (baseShopItem === 'Poké Ball') {
-          // Fix Poké Ball to use pokball ID (toID removes the accented e)
-          itemID = 'pokball';
-          linkTarget = 'pokball';
-          shopItemData = BattleItems['pokball'];
-          if (shopItemData) {
-            shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
-          }
-        } else if (shopItemData) {
-          shopIcon = '<span class="itemicon" style="' + getItemIcon(shopItemData) + ';width:32px;height:32px;display:inline-block"></span>';
-        }
-        
-        buf += '<tr>';
-        buf += '<td>' + shopIcon + '</td>';
-        buf += '<td>';
-        if (tmMatch || shopItemData) {
-          buf += '<a href="' + Config.baseurl + linkType + '/' + linkTarget + '" data-target="push">' + escapeHTML(sh.item) + '</a>';
-        } else {
-          buf += escapeHTML(sh.item);
-        }
-        buf += '</td>';
-        buf += '<td style="text-align:center">' + escapeHTML(sh.price || '') + '</td>';
-        buf += '</tr>';
-      }
-      buf += '</tbody></table>';
-      buf += '</div>';
-    }
-    
-    // Items (quantity own column)
-    if (loc.items && loc.items.length) {
-      buf += '<div style="background:#fff3e0;padding:12px;margin:8px 0;border-radius:4px">';
-      buf += '<h3 style="margin-top:0;color:#e65100">Items</h3>';
+    buf += '</div>'; // end loc-tab-obtainable
+
+    // ─────────────────────────────────────────────────────────────
+    // TAB 2: Items
+    // ─────────────────────────────────────────────────────────────
+    buf += '<div class="loc-tab loc-tab-items" style="display:none">';
+
+    // ── Items ──
+    var locItems = loc.items || [];
+    buf += '<div style="' + secStyle('#ffcc80', '#f57c00') + '">';
+    buf += '<h3 style="margin-top:0;color:#bf360c">Items</h3>';
+    if (!locItems.length) {
+      buf += noneText;
+    } else {
       buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
       buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:70px;text-align:center">Qty</th><th>Obtain</th></tr></thead><tbody>';
-      for (var ii=0; ii<loc.items.length; ii++) {
-        var it = loc.items[ii];
-        // Check for TM format: "TM90 (Zen Headbutt)"
-        var tmMatch = it.item.match(/^(TM\d+)\s*\((.+)\)$/);
-        var baseItem = it.item.replace(/\s*\(\d+\)$/, '');
-        var iid = toID(baseItem);
+      for (var ii = 0; ii < locItems.length; ii++) {
+        var it = locItems[ii];
+        var tmMatchI = it.item.match(/^(TM\d+)\s*\((.+)\)$/);
+        var baseItemI = it.item.replace(/\s*\(\d+\)$/, '');
+        var iid = toID(baseItemI);
         var itemData = BattleItems[iid];
         var itemIcon = '';
-        var linkTarget = iid;
-        var linkType = 'items';
-        
-        // Check if item is money (starts with $)
+        var itemLinkTarget = iid;
+        var itemLinkType = 'items';
         if (it.item && it.item.trim().startsWith('$')) {
           itemIcon = '<img src="' + ResourcePrefix + 'sprites/pokedollar_icon.png" style="width:32px;height:32px;display:inline-block" alt="Money" />';
-        } else if (tmMatch) {
-          // TM - use TM-specific sprite and link to move
-          var moveName = tmMatch[2].trim();
-          var tmItemId = toID(tmMatch[1]);
-          linkTarget = toID(moveName);
-          linkType = 'moves';
-          itemData = BattleItems[tmItemId];
-          itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData ? tmItemId : 'tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
-        } else if (baseItem === 'Poké Ball') {
-          // Fix Poké Ball to use pokball ID (toID removes the accented e)
-          iid = 'pokball';
-          linkTarget = 'pokball';
-          itemData = BattleItems['pokball'];
-          if (itemData) {
-            itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData) + ';width:32px;height:32px;display:inline-block"></span>';
-          }
+        } else if (tmMatchI) {
+          var iMoveName = tmMatchI[2].trim();
+          var iTmId = toID(tmMatchI[1]);
+          itemLinkTarget = toID(iMoveName);
+          itemLinkType = 'moves';
+          itemData = BattleItems[iTmId];
+          itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData ? iTmId : 'tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+        } else if (baseItemI === 'Poké Ball') {
+          iid = 'pokball'; itemLinkTarget = 'pokball'; itemData = BattleItems['pokball'];
+          if (itemData) itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData) + ';width:32px;height:32px;display:inline-block"></span>';
         } else if (itemData) {
-          // Only show icon if item exists in data
           itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData) + ';width:32px;height:32px;display:inline-block"></span>';
         }
-        
-        buf += '<tr>';
-        buf += '<td>' + itemIcon + '</td>';
-        buf += '<td>';
-        if (tmMatch || itemData) {
-          buf += '<a href="' + Config.baseurl + linkType + '/' + linkTarget + '" data-target="push">' + escapeHTML(it.item) + '</a>';
+        buf += '<tr><td>' + itemIcon + '</td><td>';
+        if (tmMatchI || itemData) {
+          buf += '<a href="' + Config.baseurl + itemLinkType + '/' + itemLinkTarget + '" data-target="push">' + escapeHTML(it.item) + '</a>';
         } else {
           buf += escapeHTML(it.item);
         }
-        buf += '</td>';
-        buf += '<td style="text-align:center">' + (it.quantity != null ? it.quantity : 1) + '</td>';
-        buf += '<td>' + escapeHTML(it.obtain || '') + '</td>';
-        buf += '</tr>';
+        buf += '</td><td style="text-align:center">' + (it.quantity != null ? it.quantity : 1) + '</td>';
+        buf += '<td>' + escapeHTML(it.obtain || '') + '</td></tr>';
       }
       buf += '</tbody></table>';
-      buf += '</div>';
     }
+    buf += '</div>';
+
+    // ── Shops ──
+    var hasShopTables = loc.shopTables && loc.shopTables.length;
+    var hasLegacyShops = loc.shops && loc.shops.length;
+    buf += '<div style="' + secStyle('#ffe082', '#ffa000') + '">';
+    buf += '<h3 style="margin-top:0;color:#e65100">Shops</h3>';
+    if (!hasShopTables && !hasLegacyShops) {
+      buf += noneText;
+    } else {
+      // Shop tables (new format)
+      if (hasShopTables) {
+        for (var sti = 0; sti < loc.shopTables.length; sti++) {
+          var shopTableName = loc.shopTables[sti];
+          var shopTable = (window.ShopTables && window.ShopTables[shopTableName]) || null;
+          buf += '<h4 style="margin:8px 0 4px">' + escapeHTML(shopTableName) + '</h4>';
+          if (shopTable && shopTable.items && shopTable.items.length) {
+            buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
+            buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:110px;text-align:center">Price</th></tr></thead><tbody>';
+            for (var stii = 0; stii < shopTable.items.length; stii++) {
+              var shopItem = shopTable.items[stii];
+              var tmMatchST = shopItem.item.match(/^(TM\d+)\s*\((.+)\)$/);
+              var baseShopItemST = shopItem.item.replace(/\s*\(\d+\)$/, '');
+              var shopIconST = '';
+              var shopLinkTargetST = '';
+              var shopLinkTypeST = 'items';
+              var shopItemDataST = null;
+              if (tmMatchST) {
+                var stMoveName = tmMatchST[2].trim();
+                var stTmId = toID(tmMatchST[1]);
+                shopLinkTargetST = toID(stMoveName);
+                shopLinkTypeST = 'moves';
+                shopItemDataST = BattleItems[stTmId];
+                shopIconST = '<span class="itemicon" style="' + getItemIcon(shopItemDataST ? stTmId : 'tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+              } else if (baseShopItemST === 'Poké Ball') {
+                shopLinkTargetST = 'pokball';
+                shopItemDataST = BattleItems['pokball'];
+                if (shopItemDataST) shopIconST = '<span class="itemicon" style="' + getItemIcon(shopItemDataST) + ';width:32px;height:32px;display:inline-block"></span>';
+              } else {
+                var stItemId = toID(baseShopItemST);
+                shopLinkTargetST = stItemId;
+                shopItemDataST = BattleItems[stItemId];
+                if (shopItemDataST) shopIconST = '<span class="itemicon" style="' + getItemIcon(shopItemDataST) + ';width:32px;height:32px;display:inline-block"></span>';
+              }
+              buf += '<tr><td>' + shopIconST + '</td><td>';
+              if (tmMatchST || shopItemDataST) {
+                buf += '<a href="' + Config.baseurl + shopLinkTypeST + '/' + shopLinkTargetST + '" data-target="push">' + escapeHTML(shopItem.item) + '</a>';
+              } else {
+                buf += escapeHTML(shopItem.item);
+              }
+              buf += '</td><td style="text-align:center">' + escapeHTML(shopItem.price || '') + '</td></tr>';
+            }
+            buf += '</tbody></table>';
+          } else {
+            buf += '<p class="resultsub" style="color:#999">Shop data not available.</p>';
+          }
+        }
+      }
+      // Legacy shops
+      if (hasLegacyShops) {
+        buf += '<table class="utilitable" style="width:100%;margin-bottom:8px">';
+        buf += '<thead><tr><th style="width:28px"></th><th style="text-align:left">Item</th><th style="width:110px;text-align:center">Price</th></tr></thead><tbody>';
+        for (var si = 0; si < loc.shops.length; si++) {
+          var sh = loc.shops[si];
+          var tmMatchLS = sh.item.match(/^(TM\d+)\s*\((.+)\)$/);
+          var baseShopItemLS = sh.item.replace(/\s*\(\d+\)$/, '');
+          var shopItemIdLS = toID(baseShopItemLS);
+          var shopItemDataLS = BattleItems[shopItemIdLS];
+          var shopIconLS = '';
+          var shopLinkTargetLS = shopItemIdLS;
+          var shopLinkTypeLS = 'items';
+          if (tmMatchLS) {
+            var lsMoveName = tmMatchLS[2].trim();
+            var lsTmId = toID(tmMatchLS[1]);
+            shopLinkTargetLS = toID(lsMoveName);
+            shopLinkTypeLS = 'moves';
+            shopItemDataLS = BattleItems[lsTmId];
+            shopIconLS = '<span class="itemicon" style="' + getItemIcon(shopItemDataLS ? lsTmId : 'tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
+          } else if (baseShopItemLS === 'Poké Ball') {
+            shopItemIdLS = 'pokball'; shopLinkTargetLS = 'pokball';
+            shopItemDataLS = BattleItems['pokball'];
+            if (shopItemDataLS) shopIconLS = '<span class="itemicon" style="' + getItemIcon(shopItemDataLS) + ';width:32px;height:32px;display:inline-block"></span>';
+          } else if (shopItemDataLS) {
+            shopIconLS = '<span class="itemicon" style="' + getItemIcon(shopItemDataLS) + ';width:32px;height:32px;display:inline-block"></span>';
+          }
+          buf += '<tr><td>' + shopIconLS + '</td><td>';
+          if (tmMatchLS || shopItemDataLS) {
+            buf += '<a href="' + Config.baseurl + shopLinkTypeLS + '/' + shopLinkTargetLS + '" data-target="push">' + escapeHTML(sh.item) + '</a>';
+          } else {
+            buf += escapeHTML(sh.item);
+          }
+          buf += '</td><td style="text-align:center">' + escapeHTML(sh.price || '') + '</td></tr>';
+        }
+        buf += '</tbody></table>';
+      }
+    }
+    buf += '</div>';
+
+    buf += '</div>'; // end loc-tab-items
+
+    // ─────────────────────────────────────────────────────────────
+    // TAB 3: Battles
+    // ─────────────────────────────────────────────────────────────
+    buf += '<div class="loc-tab loc-tab-battles" style="display:none">';
+
+    // ── Trainers ──
+    buf += '<div style="' + secStyle('#90caf9', '#1565c0') + '">';
+    buf += '<h3 style="margin-top:0;color:#0d47a1">Trainers</h3>';
+    if (!trainerBattles.length) {
+      buf += noneText;
+    } else {
+      buf += '<ul class="utilichart nokbd">';
+      for (var ti = 0; ti < trainerBattles.length; ti++) {
+        var tb = trainerBattles[ti];
+        var paddedTID = String(tb.id).padStart(3, '0');
+        var tTrainer = (window.Trainers || []).find(function(t){ return t.id === paddedTID; });
+        var tName = tTrainer ? tTrainer.name : ('Trainer\u00a0' + tb.id);
+        var tTagCfg = (window.BattleTags && window.BattleTags[tb.tag]) || { color: '#666', backgroundColor: '#f0f0f0', description: tb.tag };
+        var tNoteLines = splitNotes(tb.notes || '');
+        buf += '<li class="result" style="display:block;height:auto;min-height:32px;padding:0">';
+        buf += '<a href="' + Config.baseurl + 'trainers/' + paddedTID + '" data-target="push" style="display:block;padding:5px 8px;text-decoration:none">';
+        buf += '<span class="battle-tag" style="display:inline-block;padding:2px 8px;margin-right:8px;border-radius:12px;font-size:0.75em;font-weight:600;color:' + tTagCfg.color + ';background-color:' + tTagCfg.backgroundColor + ';cursor:help" title="' + escapeHTML(tTagCfg.description || '') + '">' + escapeHTML(tb.tag) + '</span>';
+        buf += '<span style="font-size:0.95em">' + escapeHTML(tName) + '</span>';
+        buf += '</a>';
+        buf += renderNoteLines(tNoteLines, '8px');
+        buf += '</li>';
+      }
+      buf += '</ul>';
+    }
+    buf += '</div>';
+
+    // ── Static Encounters (all) ──
+    buf += '<div style="' + secStyle('#ef9a9a', '#c62828') + '">';
+    buf += '<h3 style="margin-top:0;color:#b71c1c">Static Encounters</h3>';
+    if (!staticBattles.length) {
+      buf += noneText;
+    } else {
+      buf += '<ul class="utilichart nokbd">';
+      for (var sbi = 0; sbi < staticBattles.length; sbi++) {
+        var sb = staticBattles[sbi];
+        var sbEnc = (window.StaticEncounters || {})[sb.id];
+        var sbName = sbEnc ? (window.translateDisplayName ? window.translateDisplayName(sbEnc.name) : sbEnc.name) : ('Encounter\u00a0' + sb.id);
+        var sbID = toID(sbName);
+        var sbLevel = sbEnc ? sbEnc.level : '';
+        var sbTagCfg = (window.BattleTags && window.BattleTags[sb.tag]) || { color: '#666', backgroundColor: '#f0f0f0', description: sb.tag };
+        var sbNoteLines = splitNotes(sb.notes || '');
+        buf += '<li class="result" style="display:block;height:auto;min-height:32px;padding:0">';
+        buf += '<a href="' + Config.baseurl + 'encounters/' + sb.id + '" data-target="push" style="display:block;padding:5px 8px;text-decoration:none">';
+        buf += '<span class="battle-tag" style="display:inline-block;padding:2px 8px;margin-right:8px;border-radius:12px;font-size:0.75em;font-weight:600;color:' + sbTagCfg.color + ';background-color:' + sbTagCfg.backgroundColor + ';cursor:help" title="' + escapeHTML(sbTagCfg.description || '') + '">' + escapeHTML(sb.tag) + '</span>';
+        buf += '<span class="picon" style="' + getPokemonIcon(sbID) + ';display:inline-block;vertical-align:middle;margin-right:4px"></span>';
+        buf += '<span style="font-size:0.95em">' + escapeHTML(sbName) + '</span>';
+        if (sbLevel) buf += ' <span style="color:#888;font-size:0.85em">Lv.\u00a0' + sbLevel + '</span>';
+        buf += '</a>';
+        buf += renderNoteLines(sbNoteLines, '8px');
+        buf += '</li>';
+      }
+      buf += '</ul>';
+    }
+    buf += '</div>';
+
+    buf += '</div>'; // end loc-tab-battles
 
     buf += '</div>';
     this.html(buf);
+  },
+  events: {
+    'click .loc-tabbar button': 'selectTab'
+  },
+  selectTab: function(e) {
+    this.$('.loc-tabbar button').removeClass('cur');
+    $(e.currentTarget).addClass('cur');
+    var tab = e.currentTarget.value;
+    this.$('.loc-tab').hide();
+    this.$('.loc-tab-' + tab).show();
   }
 });
+
