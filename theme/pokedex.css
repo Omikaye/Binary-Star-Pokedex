@@ -113,6 +113,14 @@
 	float: left;
 	width: 225px;
 }
+.dexentry dl.typeeffectivenessentry {
+	float: none;
+	clear: left;
+	width: auto;
+}
+.dexentry dl.typeeffectivenessentry dd div {
+	margin: 2px 0;
+}
 .dexentry dl.colentry dt {
 	margin-top: 0;
 }
@@ -315,6 +323,11 @@ table.evos .arrow abbr {
 	overflow: hidden;
 	white-space: nowrap;
 	cursor: pointer;
+}
+.utilichart .shortmovenamecol .stab-move {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
 }
 .utilichart a.active,
 .utilichart a.active:hover,
@@ -600,6 +613,9 @@ body.dark-mode .resultheader h3 {
 
 body.dark-mode .utilichart a {
 	color: #c8d8ef;
+}
+body.dark-mode .utilichart .shortmovenamecol .stab-move {
+	color: #fff;
 }
 
 .search-no-results {

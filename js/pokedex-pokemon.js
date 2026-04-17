@@ -347,6 +347,60 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		}
 		buf += '</dd></dl>';
 
+		var getTypeEffectivenessGroups = function(defenderTypes) {
+			var groups = {
+				'4x Weak': [],
+				'2x Weak': [],
+				'2x Resist': [],
+				'4x Resist': [],
+				'Immune': [],
+			};
+			for (var attackTypeId in BattleTypeChart) {
+				var attackType = BattleTypeChart[attackTypeId];
+				if (!attackType || attackType.name === '???') continue;
+				var multiplier = 1;
+				for (var i = 0; i < defenderTypes.length; i++) {
+					var defendType = defenderTypes[i];
+					var typeEffectiveness = attackType.effectiveness[defendType];
+					multiplier *= (typeEffectiveness === undefined ? 1 : typeEffectiveness);
+				}
+				if (multiplier === 4) {
+					groups['4x Weak'].push(attackType.name);
+				} else if (multiplier === 2) {
+					groups['2x Weak'].push(attackType.name);
+				} else if (multiplier === 0.5) {
+					groups['2x Resist'].push(attackType.name);
+				} else if (multiplier === 0.25) {
+					groups['4x Resist'].push(attackType.name);
+				} else if (multiplier === 0) {
+					groups['Immune'].push(attackType.name);
+				}
+			}
+			return groups;
+		};
+
+		var effectivenessGroups = getTypeEffectivenessGroups(pokemon.types || []);
+		var effectivenessRows = ['4x Weak', '2x Weak', '2x Resist', '4x Resist', 'Immune'];
+		var hasEffectivenessRows = false;
+		buf += '<dl class="colentry typeeffectivenessentry"><dt>Type Effectiveness:</dt><dd>';
+		for (var rowIndex = 0; rowIndex < effectivenessRows.length; rowIndex++) {
+			var rowLabel = effectivenessRows[rowIndex];
+			var rowTypes = effectivenessGroups[rowLabel];
+			if (!rowTypes || !rowTypes.length) continue;
+			hasEffectivenessRows = true;
+			buf += `<div><strong>${rowLabel}:</strong> `;
+			for (var typeIndex = 0; typeIndex < rowTypes.length; typeIndex++) {
+				var typeName = rowTypes[typeIndex];
+				buf += `<a href="${Config.baseurl}types/${toID(typeName)}" data-target="push">${getTypeIcon(typeName)}</a> `;
+			}
+			buf += '</div>';
+		}
+		if (!hasEffectivenessRows) {
+			buf += '<em>Neutral to all types</em>';
+		}
+		buf += '</dd></dl>';
+		buf += '<div style="clear:left"></div>';
+
 		if (pokemon.eggGroups) {
 			buf += '<dl class="colentry"><dt>Egg groups:</dt><dd><span class="picon" style="margin-top:-12px;'+getPokemonIcon('egg')+`"></span><a href="${Config.baseurl}egggroups/`+pokemon.eggGroups.map(toID).join('+')+'" data-target="push">'+pokemon.eggGroups.join(', ')+'</a></dd></dl>';
 			buf += '<dl class="colentry"><dt>Gender ratio:</dt><dd>';
@@ -523,10 +577,10 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 				var moveTypeId = toID(move.type);
 				var hasMatchingType = pokemon.types.some(function(t) { return toID(t) === moveTypeId; });
 				if (hasMatchingType) {
-					// Wrap the move name in <b> tags with black color and no underline to override link styles
+					// Wrap the move name with a class so dark mode can style it correctly.
 					moveRow = moveRow.replace(
 						/<span class="col shortmovenamecol">([^<]*)<\/span>/,
-						'<span class="col shortmovenamecol"><b style="color:#000;text-decoration:none">$1</b></span>'
+						'<span class="col shortmovenamecol"><b class="stab-move">$1</b></span>'
 					);
 				}
 			}
