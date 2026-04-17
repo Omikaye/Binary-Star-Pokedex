@@ -350,10 +350,10 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		var getTypeEffectivenessGroups = function(defenderTypes) {
 			var groups = {
 				'4x Weak': [],
-				'2x Weak': [],
-				'2x Resist': [],
+				'Weaknesses': [],
+				'Resistances': [],
 				'4x Resist': [],
-				'Immune': [],
+				'Immunities': [],
 			};
 			for (var attackTypeId in BattleTypeChart) {
 				var attackType = BattleTypeChart[attackTypeId];
