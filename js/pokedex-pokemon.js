@@ -367,20 +367,20 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 				if (multiplier === 4) {
 					groups['4x Weak'].push(attackType.name);
 				} else if (multiplier === 2) {
-					groups['2x Weak'].push(attackType.name);
+					groups['Weaknesses'].push(attackType.name);
 				} else if (multiplier === 0.5) {
-					groups['2x Resist'].push(attackType.name);
+					groups['Resistances'].push(attackType.name);
 				} else if (multiplier === 0.25) {
 					groups['4x Resist'].push(attackType.name);
 				} else if (multiplier === 0) {
-					groups['Immune'].push(attackType.name);
+					groups['Immunities'].push(attackType.name);
 				}
 			}
 			return groups;
 		};
 
 		var effectivenessGroups = getTypeEffectivenessGroups(pokemon.types || []);
-		var effectivenessRows = ['4x Weak', '2x Weak', '2x Resist', '4x Resist', 'Immune'];
+		var effectivenessRows = ['4x Weak', 'Weaknesses', 'Resistances', '4x Resist', 'Immunities'];
 		var hasEffectivenessRows = false;
 		buf += '<dl class="colentry typeeffectivenessentry"><dt>Type Effectiveness:</dt><dd>';
 		for (var rowIndex = 0; rowIndex < effectivenessRows.length; rowIndex++) {
