@@ -589,7 +589,9 @@ body.dark-mode .utilichart .twoabilitycol {
 	color: #b0c4de;
 }
 
-body.dark-mode .utilichart h3 {
+body.dark-mode .utilichart h3,
+body.dark-mode .dexentry h3,
+body.dark-mode .resultheader h3 {
 	background: #1c2f4a;
 	color: #c8d8ef;
 	border-color: #3a5a88;
