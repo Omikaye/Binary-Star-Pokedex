@@ -133,7 +133,6 @@
 		if (!__pokemonUsageCache) {
 			__pokemonUsageCache = {};
 			__pokemonUsageDetail = {};
-			window.__pokemonUsageCache = __pokemonUsageCache;
 			// Count wild encounters from Locations
 			if (window.Locations) {
 				for (let loc of window.Locations) {
@@ -269,7 +268,9 @@
 			try {
 				self.engine.toggleSort(sortCol);
 				self.sortCol = self.engine.sortCol;
-			} catch (err) {}
+			} catch (err) {
+				console.warn('Sort toggle failed:', err);
+			}
 			self.find('');
 		});
 	}
