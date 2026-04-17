@@ -206,7 +206,7 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
       }
     }
     if (trainerLocations.length === 0 && wildLocations.length === 0) {
-      buf += '<li class="result"><p style="padding:8px;color:#999">No locations found for that Pokémon.</p></li>';
+      buf += '<li class="result"><p class="search-no-results">No locations found for that Pokémon.</p></li>';
     }
     this.$('.location-results').html(buf);
   }

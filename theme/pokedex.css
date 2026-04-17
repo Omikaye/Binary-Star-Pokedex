@@ -599,3 +599,12 @@ body.dark-mode .utilichart h3 {
 body.dark-mode .utilichart a {
 	color: #c8d8ef;
 }
+
+.search-no-results {
+	padding: 8px;
+	color: #888;
+}
+
+body.dark-mode .search-no-results {
+	color: #7a8fa8;
+}

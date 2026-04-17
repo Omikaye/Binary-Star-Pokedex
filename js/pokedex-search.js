@@ -455,7 +455,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 					for (const s of staticMatches) buf += renderStaticItem(s);
 				}
 				if (trainerMatches.length === 0 && staticMatches.length === 0) {
-					buf += '<li class="result"><p style="padding:8px;color:#999">No trainers or static encounters found for that Pokémon.</p></li>';
+					buf += '<li class="result"><p class="search-no-results">No trainers or static encounters found for that Pokémon.</p></li>';
 				}
 			} else {
 				// Normal search: filter trainers and statics by name/ID
