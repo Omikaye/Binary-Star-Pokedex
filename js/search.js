@@ -338,7 +338,7 @@
 			dataRows.sort(function(a,b){
 				var aUsers = (activeType === 'move' ? getMoveUseCount(a[1]) : getAbilityUseCount(a[1]));
 				var bUsers = (activeType === 'move' ? getMoveUseCount(b[1]) : getAbilityUseCount(b[1]));
-				if (aUsers !== bUsers) return aUsers - bUsers; // ascending least to most
+				if (aUsers !== bUsers) return bUsers - aUsers; // descending most to least
 				return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0; // tie-break alphabetically
 			});
 			this.resultSet = headerRows.concat(dataRows);

@@ -350,102 +350,133 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		}
 	},
 		renderTrainers: function(q) {
-		q = (q || '').toLowerCase();
+		q = (q || '').toLowerCase().trim();
 		const list = (window.Trainers || []);
 		const staticEncounters = Object.values(window.StaticEncounters || {});
 		let buf = '<ul class="utilichart nokbd">';
-		// Helper function to check if a Pokemon has illegal ability or moves
+
+		// Helper: check if a team member has an illegal ability or move
 		const isIllegal = function(pokemon, speciesData) {
 			if (!speciesData) return false;
-			// Check ability legality
 			if (pokemon.ability) {
 				let abilityLegal = false;
 				for (let slot in speciesData.abilities) {
-					if (speciesData.abilities[slot] === pokemon.ability) {
-						abilityLegal = true;
-						break;
-					}
+					if (speciesData.abilities[slot] === pokemon.ability) { abilityLegal = true; break; }
 				}
 				if (!abilityLegal) return true;
 			}
-			// Check move legality
 			if (pokemon.moves && pokemon.moves.length > 0) {
 				const speciesLearnset = window.Learnsets[speciesData.id] || [];
 				for (let j = 0; j < pokemon.moves.length; j++) {
 					const moveID = toID(pokemon.moves[j]);
 					const moveData = BattleMovedex[moveID];
-					if (!moveData) continue; // Skip unknown moves
+					if (!moveData) continue;
 					let moveLegal = false;
 					for (let k = 0; k < speciesLearnset.length; k++) {
-						if (toID(speciesLearnset[k].move) === moveID) {
-							moveLegal = true;
-							break;
-						}
+						if (toID(speciesLearnset[k].move) === moveID) { moveLegal = true; break; }
 					}
 					if (!moveLegal) return true;
 				}
 			}
 			return false;
 		};
-		
-		// Render trainers
-		for (let i = 0; i < list.length; i++) {
-			const t = list[i];
-			const display = '[' + t.id + '] ' + escapeHTML(t.name);
-			if (q && display.toLowerCase().indexOf(q) === -1) continue;
-			// Check if any team member has illegal moveset or ability
+
+		// Helper: render a single trainer list item
+		const renderTrainerItem = function(t) {
 			let hasIllegal = false;
 			for (let j = 0; j < (t.team || []).length; j++) {
 				const m = t.team[j];
 				const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
-				const monID = toID(disp);
-				const monData = BattlePokedex[monID];
-				if (isIllegal(m, monData)) {
-					hasIllegal = true;
-					break;
-				}
+				const monData = BattlePokedex[toID(disp)];
+				if (isIllegal(m, monData)) { hasIllegal = true; break; }
 			}
-			// Right-justified party sprites; hide prize money per request
+			const display = '[' + t.id + '] ' + escapeHTML(t.name);
 			const teamSprites = (t.team || []).map(m => {
 				const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
-				const monID = toID(disp);
-				return '<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>';
+				return '<span class="picon" style="' + getPokemonIcon(toID(disp)) + ';display:inline-block;vertical-align:middle"></span>';
 			}).join('');
-			// Get trainer background for compact thumbnail (using full name to check personal name first)
 			const trainerBg = (typeof getTrainerBackground === 'function') ? getTrainerBackground(t.name, true) : getTrainerIcon(t.name, true);
-			// Small thumbnail showing the upper third of the large sprite, scaled down ~30% more
 			const thumb = '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
-				'<div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;'+ trainerBg + ';"></div>' +
-			  '</div>';
+				'<div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;' + trainerBg + ';"></div>' +
+				'</div>';
 			const nameStyle = hasIllegal ? 'color:red;' : '';
-			buf += '<li class="result">' +
+			return '<li class="result">' +
 				'<a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' +
 					thumb +
 					'<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1;' + nameStyle + '">' + display + '</span>' +
 					'<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + teamSprites + '</span>' +
 				'</a>' +
-			'</li>';
-		}
-		
-		// Render static encounters
-		for (let i = 0; i < staticEncounters.length; i++) {
-			const s = staticEncounters[i];
-			const display = '[' + s.id + '] ' + escapeHTML(s.name);
-			if (q && display.toLowerCase().indexOf(q) === -1) continue;
-			
-			// Get pokemon icon for static encounter
-			const monID = toID(s.name);
-			const monIcon = getPokemonIcon(monID);
-			
-			buf += '<li class="result">' +
+				'</li>';
+		};
+
+		// Helper: render a single static encounter list item
+		const renderStaticItem = function(s) {
+			const translatedName = window.translateDisplayName ? window.translateDisplayName(s.name) : s.name;
+			const monID = toID(translatedName);
+			return '<li class="result">' +
 				'<a href="' + Config.baseurl + 'encounters/' + s.id + '" data-target="push">' +
-					'<span class="col namecol">' + display + ' (Lv. ' + s.level + ')</span>' +
+					'<span class="col namecol">[' + s.id + '] ' + escapeHTML(translatedName) + ' (Lv. ' + s.level + ')</span>' +
 					'<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px">' +
-						'<span class="picon" style="' + monIcon + ';display:inline-block;vertical-align:middle"></span>' +
+						'<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>' +
 					'</span>' +
 				'</a>' +
-			'</li>';
+				'</li>';
+		};
+
+		if (q) {
+			// Detect if the query matches any Pokémon name (partial)
+			const matchingPokemonIds = new Set();
+			for (const pokeId in BattlePokedex) {
+				const poke = BattlePokedex[pokeId];
+				if (poke && poke.name && poke.name.toLowerCase().indexOf(q) >= 0) {
+					matchingPokemonIds.add(pokeId);
+				}
+			}
+
+			if (matchingPokemonIds.size > 0) {
+				// Pokémon search mode: show categorised results
+				const trainerMatches = list.filter(t =>
+					(t.team || []).some(m => {
+						const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
+						return matchingPokemonIds.has(toID(disp));
+					})
+				);
+				const staticMatches = staticEncounters.filter(s => {
+					const translatedName = window.translateDisplayName ? window.translateDisplayName(s.name) : s.name;
+					return matchingPokemonIds.has(toID(translatedName));
+				});
+
+				if (trainerMatches.length > 0) {
+					buf += '<li class="result"><h3>Owned by Trainers</h3></li>';
+					for (const t of trainerMatches) buf += renderTrainerItem(t);
+				}
+				if (staticMatches.length > 0) {
+					buf += '<li class="result"><h3>Static Encounters</h3></li>';
+					for (const s of staticMatches) buf += renderStaticItem(s);
+				}
+				if (trainerMatches.length === 0 && staticMatches.length === 0) {
+					buf += '<li class="result"><p style="padding:8px;color:#999">No trainers or static encounters found for that Pokémon.</p></li>';
+				}
+			} else {
+				// Normal search: filter trainers and statics by name/ID
+				for (let i = 0; i < list.length; i++) {
+					const t = list[i];
+					if (('[' + t.id + '] ' + t.name).toLowerCase().indexOf(q) === -1) continue;
+					buf += renderTrainerItem(t);
+				}
+				for (let i = 0; i < staticEncounters.length; i++) {
+					const s = staticEncounters[i];
+					const translatedName = window.translateDisplayName ? window.translateDisplayName(s.name) : s.name;
+					if (('[' + s.id + '] ' + translatedName).toLowerCase().indexOf(q) === -1) continue;
+					buf += renderStaticItem(s);
+				}
+			}
+		} else {
+			// No query: render all trainers then all statics
+			for (let i = 0; i < list.length; i++) buf += renderTrainerItem(list[i]);
+			for (let i = 0; i < staticEncounters.length; i++) buf += renderStaticItem(staticEncounters[i]);
 		}
+
 		buf += '</ul>';
 		this.$('.results').html(buf);
 		this.$('.pokedex').addClass('aboveresults');

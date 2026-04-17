@@ -557,3 +557,45 @@ body.dark-mode .tabbar .button.cur:hover {
 	background: #16243a;
 	border-color: #455d83;
 }
+
+/* Dark mode: utilichart search result row text */
+body.dark-mode .utilichart .col {
+	color: #c8d8ef;
+}
+
+body.dark-mode .utilichart .namecol,
+body.dark-mode .utilichart .pokemonnamecol,
+body.dark-mode .utilichart .shortpokemonnamecol,
+body.dark-mode .utilichart .movenamecol,
+body.dark-mode .utilichart .shortmovenamecol,
+body.dark-mode .utilichart .tagcol {
+	color: #e8f0ff;
+}
+
+body.dark-mode .utilichart .numcol {
+	color: #7a8fa8;
+}
+
+body.dark-mode .utilichart .statcol em,
+body.dark-mode .utilichart .bstcol em,
+body.dark-mode .utilichart .labelcol em,
+body.dark-mode .utilichart .widelabelcol em,
+body.dark-mode .utilichart .pplabelcol em {
+	color: #6e85a0;
+}
+
+body.dark-mode .utilichart .abilitycol,
+body.dark-mode .utilichart .twoabilitycol {
+	color: #b0c4de;
+}
+
+body.dark-mode .utilichart h3 {
+	background: #1c2f4a;
+	color: #c8d8ef;
+	border-color: #3a5a88;
+	text-shadow: none;
+}
+
+body.dark-mode .utilichart a {
+	color: #c8d8ef;
+}

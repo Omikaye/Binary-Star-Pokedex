@@ -44,18 +44,83 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
   },
   handleSearch: function(e) {
     var query = this.$('.searchbox').val().toLowerCase().trim();
-    
+    var self = this;
+
     if (!query) {
       this.filteredLocations = this.allLocations;
+      this.renderLocationList(this.filteredLocations);
+      return;
+    }
+
+    // Detect if query matches any Pokémon name (partial)
+    var matchingPokemonIds = new Set();
+    for (var pokeId in BattlePokedex) {
+      var poke = BattlePokedex[pokeId];
+      if (poke && poke.name && poke.name.toLowerCase().indexOf(query) >= 0) {
+        matchingPokemonIds.add(pokeId);
+      }
+    }
+
+    if (matchingPokemonIds.size > 0) {
+      // Pokémon search mode: categorise by "Owned by Trainer" and "Wild Encounter"
+      var trainerLocations = [];
+      var wildLocations = [];
+
+      this.allLocations.forEach(function(loc) {
+        if (!loc) return;
+
+        // Check if any trainer in this location owns the Pokémon (via battles array)
+        var hasTrainer = false;
+        if (loc.battles) {
+          for (var bi = 0; bi < loc.battles.length; bi++) {
+            var battle = loc.battles[bi];
+            var tid = String(battle.id).padStart(3, '0');
+            var trainer = (window.Trainers || []).find(function(t) { return t.id === tid; });
+            if (trainer && (trainer.team || []).some(function(m) {
+              var disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
+              return matchingPokemonIds.has(toID(disp));
+            })) {
+              hasTrainer = true;
+              break;
+            }
+          }
+        }
+
+        // Check wild encounters
+        var hasWild = false;
+        if (loc.encounters) {
+          for (var ei = 0; ei < loc.encounters.length; ei++) {
+            var encounter = loc.encounters[ei];
+            if (encounter.pokemon) {
+              for (var pi = 0; pi < encounter.pokemon.length; pi++) {
+                var mon = encounter.pokemon[pi];
+                if (mon.name) {
+                  var translated = window.translateDisplayName ? window.translateDisplayName(mon.name) : mon.name;
+                  if (matchingPokemonIds.has(toID(translated))) { hasWild = true; break; }
+                }
+                if (!hasWild && mon.sos && Array.isArray(mon.sos)) {
+                  for (var si = 0; si < mon.sos.length; si++) {
+                    var sosT = window.translateDisplayName ? window.translateDisplayName(mon.sos[si]) : mon.sos[si];
+                    if (matchingPokemonIds.has(toID(sosT))) { hasWild = true; break; }
+                  }
+                }
+              }
+            }
+            if (hasWild) break;
+          }
+        }
+
+        if (hasTrainer) trainerLocations.push(loc);
+        if (hasWild) wildLocations.push(loc);
+      });
+
+      this.renderLocationListByPokemon(trainerLocations, wildLocations);
     } else {
+      // Normal search by name, items, etc.
       this.filteredLocations = this.allLocations.filter(function(loc) {
         if (!loc) return false;
-        
-        // Search by location name
         if ((loc.name || '').toLowerCase().indexOf(query) >= 0) return true;
         if ((loc.id || '').toLowerCase().indexOf(query) >= 0) return true;
-        
-        // Search by Pokemon in encounters
         if (loc.encounters) {
           for (var i = 0; i < loc.encounters.length; i++) {
             var encounter = loc.encounters[i];
@@ -66,11 +131,9 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
                   var translatedName = window.translateDisplayName ? window.translateDisplayName(mon.name) : mon.name;
                   if (translatedName.toLowerCase().indexOf(query) >= 0) return true;
                 }
-                // Check SOS encounters
                 if (mon.sos && Array.isArray(mon.sos)) {
                   for (var k = 0; k < mon.sos.length; k++) {
-                    var sosName = mon.sos[k];
-                    var sosTranslated = window.translateDisplayName ? window.translateDisplayName(sosName) : sosName;
+                    var sosTranslated = window.translateDisplayName ? window.translateDisplayName(mon.sos[k]) : mon.sos[k];
                     if (sosTranslated.toLowerCase().indexOf(query) >= 0) return true;
                   }
                 }
@@ -78,67 +141,72 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
             }
           }
         }
-        
-        // Search by gifts/trades
         if (loc.giftsTrades && Array.isArray(loc.giftsTrades)) {
           for (var i = 0; i < loc.giftsTrades.length; i++) {
-            var gt = loc.giftsTrades[i];
-            var gtName = window.translateDisplayName ? window.translateDisplayName(gt.name || '') : (gt.name || '');
+            var gtName = window.translateDisplayName ? window.translateDisplayName(loc.giftsTrades[i].name || '') : (loc.giftsTrades[i].name || '');
             if (gtName.toLowerCase().indexOf(query) >= 0) return true;
           }
         }
-        
-        // Search by items
         if (loc.items) {
           for (var i = 0; i < loc.items.length; i++) {
             if ((loc.items[i].item || '').toLowerCase().indexOf(query) >= 0) return true;
           }
         }
-        
-        // Search by shop items
         if (loc.shops) {
           for (var i = 0; i < loc.shops.length; i++) {
             if ((loc.shops[i].item || '').toLowerCase().indexOf(query) >= 0) return true;
           }
         }
-        
-        // Search by trainers
-        if (loc.trainers) {
-          for (var i = 0; i < loc.trainers.length; i++) {
-            var tid = loc.trainers[i];
-            var paddedTid = String(tid).padStart(3, '0');
-            var trainer = (window.Trainers || []).find(function(t) { return t.id === paddedTid; });
+        if (loc.battles) {
+          for (var i = 0; i < loc.battles.length; i++) {
+            var tid = String(loc.battles[i].id).padStart(3, '0');
+            var trainer = (window.Trainers || []).find(function(t) { return t.id === tid; });
             if (trainer && (trainer.name || '').toLowerCase().indexOf(query) >= 0) return true;
           }
         }
-        if (loc.bossTrainers) {
-          for (var i = 0; i < loc.bossTrainers.length; i++) {
-            var tid = loc.bossTrainers[i];
-            var paddedTid = String(tid).padStart(3, '0');
-            var trainer = (window.Trainers || []).find(function(t) { return t.id === paddedTid; });
-            if (trainer && (trainer.name || '').toLowerCase().indexOf(query) >= 0) return true;
-          }
-        }
-        
         return false;
       });
+      this.renderLocationList(this.filteredLocations);
     }
-    
-    this.renderLocationList(this.filteredLocations);
+  },
+  renderLocationItem: function(loc) {
+    var notes = (loc.notes || '').trim();
+    var buf = '<li class="result" style="display:block;padding:0;height:auto;min-height:initial;overflow:visible;position:relative">';
+    buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" style="display:block;padding:8px;text-decoration:none">';
+    buf += '<span class="col numcol">' + (this.allLocations.indexOf(loc) + 1) + '</span>';
+    buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span>';
+    buf += '</a>';
+    if (notes) buf += '<div style="padding:4px 12px 8px 12px;color:#666;font-size:0.9em;border-top:1px solid #eee;clear:both;width:100%;box-sizing:border-box;background:#f5f5f5">' + escapeHTML(notes) + '</div>';
+    buf += '</li>';
+    return buf;
   },
   renderLocationList: function(list) {
     var buf = '';
     for (var i = 0; i < list.length; i++) {
       var loc = list[i];
       if (!loc || !loc.id) continue;
-      var notes = (loc.notes || '').trim();
-      buf += '<li class="result" style="display:block;padding:0;height:auto;min-height:initial;overflow:visible;position:relative">';
-      buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" style="display:block;padding:8px;text-decoration:none">';
-      buf += '<span class="col numcol">' + (this.allLocations.indexOf(loc) + 1) + '</span>';
-      buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span>';
-      buf += '</a>';
-      if (notes) buf += '<div style="padding:4px 12px 8px 12px;color:#666;font-size:0.9em;border-top:1px solid #eee;clear:both;width:100%;box-sizing:border-box;background:#f5f5f5">' + escapeHTML(notes) + '</div>';
-      buf += '</li>';
+      buf += this.renderLocationItem(loc);
+    }
+    this.$('.location-results').html(buf);
+  },
+  renderLocationListByPokemon: function(trainerLocations, wildLocations) {
+    var buf = '';
+    if (trainerLocations.length > 0) {
+      buf += '<li class="result"><h3>Owned by Trainer</h3></li>';
+      for (var i = 0; i < trainerLocations.length; i++) {
+        if (!trainerLocations[i] || !trainerLocations[i].id) continue;
+        buf += this.renderLocationItem(trainerLocations[i]);
+      }
+    }
+    if (wildLocations.length > 0) {
+      buf += '<li class="result"><h3>Wild Encounter</h3></li>';
+      for (var i = 0; i < wildLocations.length; i++) {
+        if (!wildLocations[i] || !wildLocations[i].id) continue;
+        buf += this.renderLocationItem(wildLocations[i]);
+      }
+    }
+    if (trainerLocations.length === 0 && wildLocations.length === 0) {
+      buf += '<li class="result"><p style="padding:8px;color:#999">No locations found for that Pokémon.</p></li>';
     }
     this.$('.location-results').html(buf);
   }
