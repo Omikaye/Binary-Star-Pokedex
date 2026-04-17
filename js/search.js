@@ -205,7 +205,6 @@
 				}
 			}
 		}
-		window.__pokemonUsageCache = __pokemonUsageCache;
 		const usage = __pokemonUsageCache[toID(id)] || { wild: 0, trainer: 0 };
 		return usage;
 	}
@@ -265,11 +264,16 @@
 				self.find('');
 				return;
 			}
+			if (activeType === 'usage' && ['name', 'type', 'wild', 'trainer'].includes(sortCol)) {
+				self.sortCol = sortCol;
+				self.find('');
+				return;
+			}
 			try {
 				self.engine.toggleSort(sortCol);
 				self.sortCol = self.engine.sortCol;
 			} catch (err) {
-				console.warn('Sort toggle failed:', err);
+				console.warn('Sort toggle failed for column "' + sortCol + '".', err);
 			}
 			self.find('');
 		});
@@ -319,9 +323,6 @@
 		// Determine active search type (normalize singular/plural)
 		var rawType = this.engine && this.engine.typedSearch && this.engine.typedSearch.searchType;
 		var activeType = rawType ? (rawType.indexOf('move') !== -1 ? 'move' : (rawType.indexOf('ability') !== -1 ? 'ability' : rawType)) : null;
-		if (activeType === 'usage' && (this.sortCol === 'wild' || this.sortCol === 'trainer')) {
-			getPokemonUsage('');
-		}
 
 		// Custom sort by users for abilities or moves
 		if (this.sortCol === 'users') {
@@ -375,6 +376,30 @@
 				return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0;
 			}.bind(this));
 			this.resultSet = headerRowsM.concat(dataRowsM);
+		}
+		if (activeType === 'usage' && ['name', 'type', 'wild', 'trainer'].includes(this.sortCol)) {
+			var headerRowsU = [];
+			var dataRowsU = [];
+			for (var rU of this.resultSet) {
+				if (rU[0] === 'sortusage' || rU[0] === 'html') headerRowsU.push(rU);
+				else if (rU[0] === 'usage') dataRowsU.push(rU);
+				else headerRowsU.push(rU);
+			}
+			dataRowsU.sort(function(a, b) {
+				var idA = a[1];
+				var idB = b[1];
+				if (this.sortCol === 'wild' || this.sortCol === 'trainer') {
+					var usageA = getPokemonUsage(idA)[this.sortCol] || 0;
+					var usageB = getPokemonUsage(idB)[this.sortCol] || 0;
+					if (usageA !== usageB) return usageB - usageA;
+				} else if (this.sortCol === 'type') {
+					var typeA = ((getID(BattlePokedex, idA).types || [])[0] || '');
+					var typeB = ((getID(BattlePokedex, idB).types || [])[0] || '');
+					if (typeA !== typeB) return typeA < typeB ? -1 : 1;
+				}
+				return idA < idB ? -1 : idA > idB ? 1 : 0;
+			}.bind(this));
+			this.resultSet = headerRowsU.concat(dataRowsU);
 		}
 
 		this.renderedIndex = 0;
