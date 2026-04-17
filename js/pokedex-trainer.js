@@ -51,6 +51,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       '.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; position: relative; z-index: 10; text-shadow: 0 0 6px #fff, 0 0 6px #fff, 0 0 10px rgba(255,255,255,0.8); }' +
       '.dexentry h1 a { display:inline-block; white-space:nowrap; vertical-align: middle; }' +
       '.dexentry dt, .dexentry dd { text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 8px rgba(255,255,255,0.7); }' +
+      'body.dark-mode .dexentry h1, body.dark-mode .dexentry dt, body.dark-mode .dexentry dd { text-shadow: 0 0 6px rgba(0,0,0,0.65), 0 0 10px rgba(0,0,0,0.45); }' +
       '.dexentry > * { position: relative; z-index: 1; }' +
       '.trainer-sprite-img { position: absolute; top: 0; right: 0; max-height: 200px; opacity: 0.7; pointer-events: none; z-index: 0; }' +
       '</style>';
@@ -149,7 +150,10 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       Bashful: null, Docile: null, Serious: null, Hardy: null, Quirky: null
     };
 
-    var colors = ['#f15b5b', '#f28f44', '#f2c547', '#70c27a', '#5ba4f1', '#9a6df2'];
+    var isDarkMode = document.body && document.body.classList.contains('dark-mode');
+    var colors = isDarkMode
+      ? ['#9d2e2e', '#9a5a23', '#8a6b1a', '#2f6e39', '#2f5f97', '#58408f']
+      : ['#f15b5b', '#f28f44', '#f2c547', '#70c27a', '#5ba4f1', '#9a6df2'];
 
     // Type color mapping (similar to type sprite colors)
     var typeColors = {
@@ -170,7 +174,10 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var title = data ? data.name : itemName;
       var desc = data ? (data.shortDesc || data.desc || '') : '';
       var icon = '<span class="itemicon" style="' + getItemIcon(itemID) + ';width:32px;height:32px;display:inline-block;vertical-align:top;flex-shrink:0"></span>';
-      return '<a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:#fff;border:1px solid #ddd;border-radius:6px;padding:8px;display:flex;gap:8px;align-items:flex-start">' + icon + '<div style="flex:1"><strong>' + escapeHTML(title) + '</strong><br /><small>' + escapeHTML(desc) + '</small></div></div></a>';
+      var boxBg = isDarkMode ? '#1a2435' : '#fff';
+      var boxBorder = isDarkMode ? '#3f536f' : '#ddd';
+      var boxTextColor = isDarkMode ? '#d8e3f7' : '#333';
+      return '<a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:' + boxBg + ';border:1px solid ' + boxBorder + ';border-radius:6px;padding:8px;display:flex;gap:8px;align-items:flex-start;color:' + boxTextColor + '">' + icon + '<div style="flex:1"><strong>' + escapeHTML(title) + '</strong><br /><small>' + escapeHTML(desc) + '</small></div></div></a>';
     };
 
     var isAbilityLegal = function(abilityName, monData) {
@@ -207,7 +214,10 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var data = BattleAbilities[abilityID];
       var isLegal = isAbilityLegal(abilityName, monData);
       var nameColor = isLegal ? '' : 'color:red;';
-      var content = '<div class="infobox" style="background:#fff;border:1px solid #ddd;border-radius:6px;padding:8px"><strong style="' + nameColor + '">' + escapeHTML((data ? data.name : abilityName)) + '</strong><br /><small>' + escapeHTML((data ? (data.shortDesc || data.desc || '') : '')) + '</small></div>';
+      var boxBg = isDarkMode ? '#1a2435' : '#fff';
+      var boxBorder = isDarkMode ? '#3f536f' : '#ddd';
+      var boxTextColor = isDarkMode ? '#d8e3f7' : '#333';
+      var content = '<div class="infobox" style="background:' + boxBg + ';border:1px solid ' + boxBorder + ';border-radius:6px;padding:8px;color:' + boxTextColor + '"><strong style="' + nameColor + '">' + escapeHTML((data ? data.name : abilityName)) + '</strong><br /><small>' + escapeHTML((data ? (data.shortDesc || data.desc || '') : '')) + '</small></div>';
       return '<a href="' + Config.baseurl + 'abilities/' + abilityID + '" data-target="push" class="subtle" style="text-decoration:none">' + content + '</a>';
     };
 
@@ -218,9 +228,12 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var moveType = data ? toID(data.type) : 'normal';
       var bgColor = getTypeColor(moveType);
       var typeIcon = '<span style="margin-left:6px;display:inline-block">' + getTypeIcon(moveType) + '</span>';
+      var categoryIcon = data ? '<span style="display:inline-block;vertical-align:middle;margin-right:6px">' + getCategoryIcon(data.category) + '</span>' : '';
       var isLegal = isMoveLegal(moveName, monData);
       var nameColor = isLegal ? '' : 'color:red;';
-      if (!data) return '<div class="infobox" style="background:' + bgColor + '33;border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:#333">' + escapeHTML(moveName) + typeIcon + '</div>';
+      var moveTextColor = isDarkMode ? '#d8e3f7' : '#333';
+      var moveBg = isDarkMode ? (bgColor + '44') : (bgColor + '33');
+      if (!data) return '<div class="infobox" style="background:' + moveBg + ';border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:' + moveTextColor + '">' + escapeHTML(moveName) + typeIcon + '</div>';
       
       // Build stats string: "Pow: 40 Acc: 100 PP: 10"
       var statsText = '';
@@ -231,7 +244,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var pp = data.noPPBoosts ? data.pp : Math.floor(data.pp * 8 / 5);
       statsText += '<b>PP:</b> ' + pp;
       
-      return '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:' + bgColor + '33;border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:#333;display:flex;justify-content:space-between;align-items:center"><div><strong style="' + nameColor + '">' + escapeHTML(data.name) + '</strong><br /><small>' + statsText + '</small><br /><small>' + escapeHTML(data.shortDesc || data.desc || '') + '</small></div>' + typeIcon + '</div></a>';
+      return '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:' + moveBg + ';border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:' + moveTextColor + ';display:flex;justify-content:space-between;align-items:center"><div>' + categoryIcon + '<strong style="' + nameColor + '">' + escapeHTML(data.name) + '</strong><br /><small>' + statsText + '</small><br /><small>' + escapeHTML(data.shortDesc || data.desc || '') + '</small></div>' + typeIcon + '</div></a>';
     };
 
     // Team cards
@@ -249,9 +262,11 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       }
       var bg = colors[pi % colors.length];
 
-      buf += '<div style="border-radius:10px;overflow:hidden;margin-bottom:12px;border:1px solid rgba(0,0,0,0.08);box-shadow:0 2px 6px rgba(0,0,0,0.08)">';
+      var cardBorder = isDarkMode ? 'rgba(126,151,191,0.45)' : 'rgba(0,0,0,0.08)';
+      var cardBodyBg = isDarkMode ? ('linear-gradient(180deg, ' + bg + '88, #111c2e)') : ('linear-gradient(180deg, ' + bg + '22, #fff)');
+      buf += '<div style="border-radius:10px;overflow:hidden;margin-bottom:12px;border:1px solid ' + cardBorder + ';box-shadow:0 2px 6px rgba(0,0,0,0.08)">';
       buf += '<div style="background:' + bg + ';color:#fff;padding:8px 12px;font-weight:bold">Pokémon ' + (pi+1) + '</div>';
-      buf += '<div style="background:linear-gradient(180deg, ' + bg + '22, #fff);padding:12px">';
+      buf += '<div style="background:' + cardBodyBg + ';padding:12px">';
 
       buf += '<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
       buf += '<span class="picon" style="' + getPokemonIcon(iconId) + ';display:inline-block;vertical-align:middle"></span>';

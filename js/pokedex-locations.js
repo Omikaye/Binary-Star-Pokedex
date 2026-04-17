@@ -176,7 +176,7 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
     buf += '<span class="col numcol">' + (this.allLocations.indexOf(loc) + 1) + '</span>';
     buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span>';
     buf += '</a>';
-    if (notes) buf += '<div style="padding:4px 12px 8px 12px;color:#666;font-size:0.9em;border-top:1px solid #eee;clear:both;width:100%;box-sizing:border-box;background:#f5f5f5">' + escapeHTML(notes) + '</div>';
+    if (notes) buf += '<div class="loc-search-note">' + escapeHTML(notes) + '</div>';
     buf += '</li>';
     return buf;
   },
@@ -258,9 +258,16 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       + '.spot-Fish tbody tr:nth-child(odd){background:#d1c4e9}.spot-Fish tbody tr:nth-child(even){background:#c5b8e8}'
       + '.spot-Cave tbody tr:nth-child(odd){background:#d7ccc8}.spot-Cave tbody tr:nth-child(even){background:#cfc0bc}'
       + '.spot-BeachGrass tbody tr:nth-child(odd){background:#c8e6c9}.spot-BeachGrass tbody tr:nth-child(even){background:#b2dfdb}'
+      + '.loc-search-note{padding:4px 12px 8px 12px;color:#666;font-size:0.9em;border-top:1px solid #eee;clear:both;width:100%;box-sizing:border-box;background:#f5f5f5}'
+      + '.loc-section{color:#2f2f2f}'
+      + '.loc-section a{color:#1d4f8f}'
       + '.loc-none{color:#666;margin:0;padding:4px 0;font-style:italic}'
       + '.battle-notes-line{display:block;color:#555;font-size:0.85em;font-style:italic;margin-bottom:1px}'
       + '.loc-description p{margin:0 0 4px}'
+      + 'body.dark-mode .loc-search-note{color:#b8c6de;border-top-color:#3d516f;background:#1b2a42}'
+      + 'body.dark-mode .loc-section,body.dark-mode .loc-section td,body.dark-mode .loc-section th,body.dark-mode .loc-section p,body.dark-mode .loc-section .loc-none,body.dark-mode .loc-section .battle-notes-line{color:#252a33}'
+      + 'body.dark-mode .loc-section a,body.dark-mode .loc-section a:hover{color:#1d4f8f}'
+      + 'body.dark-mode .loc-section h4{color:#1f2d40}'
       + '</style>';
 
     buf += '<a href="' + Config.baseurl + 'locations/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Locations</a>';
@@ -296,7 +303,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
 
     // ── Gifts & Trades ──
     var giftsTrades = loc.giftsTrades || [];
-    buf += '<div style="' + secStyle('#ce93d8', '#ab47bc') + '">';
+    buf += '<div class="loc-section" style="' + secStyle('#ce93d8', '#ab47bc') + '">';
     buf += '<h3 style="margin-top:0;color:#4a148c">Gifts &amp; Trades</h3>';
     if (!giftsTrades.length) {
       buf += noneText;
@@ -308,7 +315,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         var gtID = toID(gtTranslated);
         var gtData = BattlePokedex[gtID];
         var gtDisplayName = gtData ? gtData.name : gtTranslated;
-        buf += '<li class="result" style="display:block;padding:6px 8px">';
+        buf += '<li class="result" style="display:block;height:auto;min-height:32px;padding:6px 8px">';
         buf += '<a href="' + Config.baseurl + 'pokemon/' + gtID + '" data-target="push" style="text-decoration:none">';
         buf += '<span class="picon" style="' + getPokemonIcon(gtID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>';
         buf += '<span style="vertical-align:middle;font-weight:600">' + escapeHTML(gtDisplayName) + '</span>';
@@ -323,7 +330,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     buf += '</div>';
 
     // ── Static Encounters (Capturable only) ──
-    buf += '<div style="' + secStyle('#f48fb1', '#c2185b') + '">';
+    buf += '<div class="loc-section" style="' + secStyle('#f48fb1', '#c2185b') + '">';
     buf += '<h3 style="margin-top:0;color:#880e4f">Static Encounters</h3>';
     if (!capturableStatics.length) {
       buf += noneText;
@@ -336,8 +343,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         var cbID = toID(cbName);
         var cbLevel = cbEnc ? cbEnc.level : '';
         var cbNoteLines = splitNotes(cb.notes || '');
-        buf += '<li class="result" style="display:block;padding:6px 8px">';
-        buf += '<a href="' + Config.baseurl + 'encounters/' + cb.id + '" data-target="push" style="text-decoration:none">';
+        buf += '<li class="result" style="display:block;height:auto;min-height:32px;padding:6px 8px">';
+        buf += '<a href="' + Config.baseurl + 'encounters/' + cb.id + '" data-target="push" style="display:block;height:auto;min-height:32px;text-decoration:none">';
         buf += '<span class="picon" style="' + getPokemonIcon(cbID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>';
         buf += '<span style="vertical-align:middle;font-weight:600">' + escapeHTML(cbName) + '</span>';
         if (cbLevel) buf += ' <span style="color:#666;font-size:0.85em">Lv.\u00a0' + cbLevel + '</span>';
@@ -351,7 +358,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
 
     // ── Wild Pokémon ──
     var encounters = loc.encounters || [];
-    buf += '<div style="' + secStyle('#a5d6a7', '#388e3c') + '">';
+    buf += '<div class="loc-section" style="' + secStyle('#a5d6a7', '#388e3c') + '">';
     buf += '<h3 style="margin-top:0;color:#1b5e20">Wild Pok&eacute;mon</h3>';
     if (!encounters.length) {
       buf += noneText;
@@ -405,7 +412,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
 
     // ── Items ──
     var locItems = loc.items || [];
-    buf += '<div style="' + secStyle('#ffcc80', '#f57c00') + '">';
+    buf += '<div class="loc-section" style="' + secStyle('#ffcc80', '#f57c00') + '">';
     buf += '<h3 style="margin-top:0;color:#bf360c">Items</h3>';
     if (!locItems.length) {
       buf += noneText;
@@ -454,7 +461,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     // ── Shops ──
     var hasShopTables = loc.shopTables && loc.shopTables.length;
     var hasLegacyShops = loc.shops && loc.shops.length;
-    buf += '<div style="' + secStyle('#ffe082', '#ffa000') + '">';
+    buf += '<div class="loc-section" style="' + secStyle('#ffe082', '#ffa000') + '">';
     buf += '<h3 style="margin-top:0;color:#e65100">Shops</h3>';
     if (!hasShopTables && !hasLegacyShops) {
       buf += noneText;
@@ -556,7 +563,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     buf += '<div class="loc-tab loc-tab-battles" style="display:none">';
 
     // ── Trainers ──
-    buf += '<div style="' + secStyle('#90caf9', '#1565c0') + '">';
+    buf += '<div class="loc-section" style="' + secStyle('#90caf9', '#1565c0') + '">';
     buf += '<h3 style="margin-top:0;color:#0d47a1">Trainers</h3>';
     if (!trainerBattles.length) {
       buf += noneText;
@@ -570,7 +577,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         var tTagCfg = (window.BattleTags && window.BattleTags[tb.tag]) || { color: '#666', backgroundColor: '#f0f0f0', description: tb.tag };
         var tNoteLines = splitNotes(tb.notes || '');
         buf += '<li class="result" style="display:block;height:auto;min-height:32px;padding:0">';
-        buf += '<a href="' + Config.baseurl + 'trainers/' + paddedTID + '" data-target="push" style="display:block;padding:5px 8px;text-decoration:none">';
+        buf += '<a href="' + Config.baseurl + 'trainers/' + paddedTID + '" data-target="push" style="display:block;height:auto;min-height:32px;padding:5px 8px;text-decoration:none">';
         buf += '<span class="battle-tag" style="display:inline-block;padding:2px 8px;margin-right:8px;border-radius:12px;font-size:0.75em;font-weight:600;color:' + tTagCfg.color + ';background-color:' + tTagCfg.backgroundColor + ';cursor:help" title="' + escapeHTML(tTagCfg.description || '') + '">' + escapeHTML(tb.tag) + '</span>';
         buf += '<span style="font-size:0.95em">' + escapeHTML(tName) + '</span>';
         buf += '</a>';
@@ -582,7 +589,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     buf += '</div>';
 
     // ── Static Encounters (all) ──
-    buf += '<div style="' + secStyle('#ef9a9a', '#c62828') + '">';
+    buf += '<div class="loc-section" style="' + secStyle('#ef9a9a', '#c62828') + '">';
     buf += '<h3 style="margin-top:0;color:#b71c1c">Static Encounters</h3>';
     if (!staticBattles.length) {
       buf += noneText;
@@ -597,7 +604,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         var sbTagCfg = (window.BattleTags && window.BattleTags[sb.tag]) || { color: '#666', backgroundColor: '#f0f0f0', description: sb.tag };
         var sbNoteLines = splitNotes(sb.notes || '');
         buf += '<li class="result" style="display:block;height:auto;min-height:32px;padding:0">';
-        buf += '<a href="' + Config.baseurl + 'encounters/' + sb.id + '" data-target="push" style="display:block;padding:5px 8px;text-decoration:none">';
+        buf += '<a href="' + Config.baseurl + 'encounters/' + sb.id + '" data-target="push" style="display:block;height:auto;min-height:32px;padding:5px 8px;text-decoration:none">';
         buf += '<span class="battle-tag" style="display:inline-block;padding:2px 8px;margin-right:8px;border-radius:12px;font-size:0.75em;font-weight:600;color:' + sbTagCfg.color + ';background-color:' + sbTagCfg.backgroundColor + ';cursor:help" title="' + escapeHTML(sbTagCfg.description || '') + '">' + escapeHTML(sb.tag) + '</span>';
         buf += '<span class="picon" style="' + getPokemonIcon(sbID) + ';display:inline-block;vertical-align:middle;margin-right:4px"></span>';
         buf += '<span style="font-size:0.95em">' + escapeHTML(sbName) + '</span>';
@@ -626,4 +633,3 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     this.$('.loc-tab-' + tab).show();
   }
 });
-
