@@ -189,6 +189,16 @@
           "item": "Haban Berry",
           "quantity": "20",
           "obtain": "At the end of the northern east path behind the rocks south of Iki Town (requires Tauros Charge)"
+        },
+        {
+          "item": "file 016 changed. Change back if the potion test does nothing.",
+          "quantity": "1",
+          "obtain": ""
+        },
+        {
+          "item": "Search \"244\" line 2393",
+          "quantity": "1",
+          "obtain": ""
         }
       ],
       "battles": [
@@ -305,6 +315,11 @@
           "item": "Primarium Z Node",
           "quantity": "1",
           "obtain": "From Hala after defeating him in a rematch after becoming Champion, if the player didn't choose Popplio"
+        },
+        {
+          "item": "For Iki Town Bright Powder, you need to check which stardust giver she is. CHECK QUANTITY ON PICKUP (There's 3 candidates)",
+          "quantity": "1",
+          "obtain": ""
         }
       ],
       "battles": [
@@ -505,12 +520,12 @@
         },
         {
           "id": "26",
-          "tag": "Mandatory",
-          "notes": "None"
+          "tag": "Optional",
+          "notes": "Reward: Focus Band"
         },
         {
           "id": "512",
-          "tag": "Optional",
+          "tag": "Mandatory",
           "notes": "None"
         }
       ]
@@ -606,7 +621,7 @@
         },
         {
           "item": "Repeat Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "North of the rail to the east of the entrance to the Trainers' School grounds (hidden)"
         },
         {
@@ -621,7 +636,7 @@
         },
         {
           "item": "Heal Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "In the center of the western battlefield in front of the Trainers' School building (hidden)"
         },
         {
@@ -656,12 +671,12 @@
         },
         {
           "item": "Enigma Berry",
-          "quantity": "3",
+          "quantity": "5",
           "obtain": "1F, from Preschooler Mia after defeating her"
         },
         {
-          "item": "Float Stone",
-          "quantity": "10",
+          "item": "Potion",
+          "quantity": "1",
           "obtain": "2F, from a boy sitting in the front right seat in the classroom at the far end of the hall"
         },
         {
@@ -689,27 +704,27 @@
         {
           "id": "24",
           "tag": "Mandatory",
-          "notes": "None"
+          "notes": "Reward: Enigma Berries x5"
         },
         {
           "id": "436",
           "tag": "Mandatory",
-          "notes": "None"
+          "notes": "Reward: TM01 (Protect)"
         },
         {
           "id": "485",
           "tag": "Story",
-          "notes": "Rowlet Chosen"
+          "notes": "Rowlet Chosen | Reward: Ability Pills"
         },
         {
           "id": "486",
           "tag": "Story",
-          "notes": "Litten Chosen"
+          "notes": "Litten Chosen | Reward: Ability Pills"
         },
         {
           "id": "487",
           "tag": "Story",
-          "notes": "Litten Chosen"
+          "notes": "Litten Chosen | Reward: Ability Pills"
         },
         {
           "id": "567",
@@ -845,12 +860,12 @@
         },
         {
           "item": "Lure Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "On the beach, by the palm tree behind the woman in the lounge chair (hidden) (regenerates occasionally)"
         },
         {
           "item": "Dive Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "On the beach, by the northwestern-most palm tree (hidden) (regenerates occasionally)"
         },
         {
@@ -1032,7 +1047,7 @@
         },
         {
           "item": "Love Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "East of the lamppost next to the two bushes east of the entrance to Hau'oli City Hall (hidden)"
         },
         {
@@ -1066,9 +1081,9 @@
           "obtain": "Hau'oli City Hall, from Gentleman Reginald after defeating him, after completing Hala's grand trial"
         },
         {
-          "item": "Nugget",
+          "item": "Shell Bell",
           "quantity": "1",
-          "obtain": "Hau'oli City Hall, from a Delibird after speaking to the woman at the front desk, after completing Hala's grand trial (swapped with above)"
+          "obtain": "Hau'oli City Hall, from a Delibird after speaking to the woman at the front desk, after completing Hala's grand trial"
         },
         {
           "item": "Photo Album",
@@ -1076,12 +1091,12 @@
           "obtain": "Alola Photo Club, from the attendant after visiting for the first time"
         },
         {
-          "item": "Lopunnite",
+          "item": "Lucarionite",
           "quantity": "1",
           "obtain": "Shopping Mall, from an Ace Trainer after dealing with the Bewear disturbance in the Bewear costume show, after completing Olivia's grand trial and seeing the Alola Ride Show (Day)"
         },
         {
-          "item": "Alakazite",
+          "item": "Lopunnite",
           "quantity": "1",
           "obtain": "Hau'oli Police Station, from Ilima as a reward for helping him solve the Hypno mystery, after completing Olivia's grand trial"
         },
@@ -1517,7 +1532,7 @@
         },
         {
           "item": "Fast Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "South of truck against the west fence of the motel area (hidden)"
         },
         {
@@ -1547,7 +1562,7 @@
         },
         {
           "item": "Level Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "Next to the trees in the clearing between two grass fields, behind the Berry fields (hidden)"
         },
         {
@@ -1566,7 +1581,7 @@
           "obtain": "From Hau in the Pokémon Center"
         },
         {
-          "item": "Roto Catch",
+          "item": "Roto Boost",
           "quantity": "2",
           "obtain": "Recieved by accepting Rotom's gambling sponsorship deal"
         },
@@ -1722,7 +1737,7 @@
         },
         {
           "item": "Friend Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "In the pot on the west side of the soft soil fields (hidden)"
         },
         {
@@ -1761,13 +1776,13 @@
           "obtain": "Found in berry tree pile"
         },
         {
-          "item": "Stick",
+          "item": "Grip Claw",
           "quantity": "1",
           "obtain": "Found in large berry pile"
         },
         {
           "item": "Heavy Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "In the basket next to the fertilizer box on the east side of the soft soil field (hidden)"
         }
       ],
@@ -1864,7 +1879,7 @@
       "items": [
         {
           "item": "Moon Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "In front of the lamppost at the Route 2 entrance (hidden)"
         },
         {
@@ -1874,7 +1889,7 @@
         },
         {
           "item": "Friend Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "At the southernmost path intersection (hidden)"
         },
         {
@@ -1968,7 +1983,7 @@
         },
         {
           "item": "Luxury Ball",
-          "quantity": "100",
+          "quantity": "10",
           "obtain": "On the west side of the beach, a few steps north of the Surfer and Sightseer (hidden)"
         },
         {
@@ -1987,8 +2002,8 @@
           "obtain": "On the east side of the beach, behind the Move Tutor tent"
         },
         {
-          "item": "Magmarizer",
-          "quantity": "1",
+          "item": "Air Balloon",
+          "quantity": "10",
           "obtain": "From the Youngster near the shore after solving the mysteries at the Trainers' School"
         }
       ],
@@ -2492,7 +2507,7 @@
           "obtain": "On the grassy outcrop just south of the entrance to Melemele Meadow"
         },
         {
-          "item": "TM88 (Aerial Ace)",
+          "item": "TM19 (Roost)",
           "quantity": "1",
           "obtain": "From Ace Trainer Makana for defeating him"
         },

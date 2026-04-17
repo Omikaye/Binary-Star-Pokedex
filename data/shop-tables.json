@@ -8,15 +8,15 @@
           "price": "$200"
         },
         {
-          "item": "Quick Ball",
+          "item": "Nest Ball",
           "price": "$1,000"
         },
         {
-          "item": "Heart Scale",
+          "item": "Heal Ball",
           "price": "$100"
         },
         {
-          "item": "Rare Candy",
+          "item": "Heart Scale",
           "price": "$10"
         },
         {
@@ -28,8 +28,28 @@
           "price": "$400"
         },
         {
+          "item": "Poké Doll",
+          "price": "$600"
+        },
+        {
+          "item": "Rare Candy",
+          "price": "$3,150"
+        },
+        {
+          "item": "Shiny Charm",
+          "price": "$250,000"
+        },
+        {
+          "item": "Adrenaline Orb (1)",
+          "price": "$870"
+        },
+        {
           "item": "Great Ball (1)",
           "price": "$600"
+        },
+        {
+          "item": "Escape Rope (1)",
+          "price": ""
         },
         {
           "item": "B.F.F. Heart (2)",
@@ -56,8 +76,8 @@
           "price": "$25,000"
         },
         {
-          "item": "Timer Ball (5)",
-          "price": "$1,400"
+          "item": "Quick Ball (5)",
+          "price": "$1,500"
         },
         {
           "item": "Ultra Ball (5)",
@@ -86,23 +106,35 @@
         },
         {
           "item": "Cheri Berry",
-          "price": "$1,120"
+          "price": "$200"
         },
         {
           "item": "Chesto Berry",
-          "price": "$770"
+          "price": "$200"
         },
         {
           "item": "Pecha Berry",
-          "price": "$1,800"
+          "price": "$200"
         },
         {
           "item": "Rawst Berry",
-          "price": "$2,220"
+          "price": "$200"
         },
         {
           "item": "Aspear Berry",
-          "price": "$2,000"
+          "price": "$200"
+        },
+        {
+          "item": "Persim Berry",
+          "price": "$200"
+        },
+        {
+          "item": "Leppa Berry",
+          "price": "$200"
+        },
+        {
+          "item": "Micle Berry",
+          "price": "$200"
         }
       ]
     },
@@ -248,12 +280,32 @@
           "price": "$4,300"
         },
         {
-          "item": "Everstone",
-          "price": "$3,000"
+          "item": "Mental Herb",
+          "price": "$450"
         },
         {
           "item": "Light Clay",
           "price": "$8,700"
+        },
+        {
+          "item": "Float Stone",
+          "price": "$400"
+        },
+        {
+          "item": "Grip Claw",
+          "price": "$670"
+        },
+        {
+          "item": "Destiny Knot",
+          "price": "$510"
+        },
+        {
+          "item": "Ring Target",
+          "price": "$140"
+        },
+        {
+          "item": "Everstone",
+          "price": "$3,000"
         }
       ]
     },
