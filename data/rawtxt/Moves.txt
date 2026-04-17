@@ -2534,6 +2534,8 @@ Accuracy: 101
 Type: Bug
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
+Stat Change: Speed -> -1 (100%)
+Stat Change: Evasion -> -1 (0%)
 Z-Power: 0
 Z-Effect: +3 Speed
 Flags: Protect, Reflectable, Snatch, Mirror, AnimateAlly
@@ -3857,7 +3859,7 @@ Priority: 1
 Z-Power: 0
 Z-Effect: +2 Special Defense
 Description:
-The user summons a hailstorm lasting five turns. It damages all Pokémon except the Ice type. (Priority) Z: +2 Sp.Def
+The user summons a snowstorm lasting five turns. It raises the Def of Ice-Types by 50%. (+1 Prio) Z: +2 Sp.Def
 
 ID: 259
 Name: Torment
@@ -4639,7 +4641,7 @@ Z-Power: 155
 Z-Effect: None
 Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
-This attack move varies in power and type depending on the weather. Doubles in power during weather. (Sun:Fire Rain:Water Sand:Rock Hail:Ice) (Bullet, Pulse)
+This attack move varies in power and type depending on the weather. Doubles in power during weather. (Sun:Fire Rain:Water Sand:Rock Snow:Ice) (Bullet, Pulse)
 
 ID: 312
 Name: Aromatherapy
@@ -4861,12 +4863,13 @@ Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Flinch Chance: 10%
+Crit Stage(s): 1
 Hits: Min 2 / Max 2
 Z-Power: 60
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
-The user pulls the target back and forth painfully. Hits two times. This may also make the target flinch on each hit. (10%) Z: +1 Sp.Atk
+The user pulls the target back and forth painfully. Hits two times. This may flinch. (10%) Crits land more easily.(+1 Crit) Z: +1 Sp.Atk
 
 ID: 327
 Name: Sky Uppercut
@@ -6546,18 +6549,19 @@ The user launches a huge boulder at the target to attack. The user can’t move 
 ID: 440
 Name: Cross Poison
 Category: Physical
-Power: 80
+Power: 40
 Accuracy: 100
 Type: Poison
 Targeting: Single Adjacent Ally/Foe
 Inflict: Poison (10%)
 Base PP: 20
 Crit Stage(s): 1
-Z-Power: 130
-Z-Effect: None
+Hits: Min 2 / Max 2
+Z-Power: 60
+Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
-A slashing attack with a poisonous blade that may also poison the target. (10%) Critical hits land more easily. (+1 Crit)
+A double slashing attack that hits twice with a blade that may also poison the target. (10%) Critical hits land more easily.(+1 Crit) Z:+1 Atk
 
 ID: 441
 Name: Gunk Shot
@@ -8628,11 +8632,12 @@ Accuracy: 101
 Type: Grass
 Targeting: Entire Field
 Base PP: 10
+Priority: 1
 Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: FailSkyBattle
 Description:
-The user turns the ground to grass for five turns. This restores the HP of Pokémon on the ground every turn and boosts Grass moves by 50%. Z:+2 SpD
+The user turns the ground to grass for five turns. This heals Pokémon on the ground each turn and boosts Grass moves by 50%. Z:+2 SpD (+1 Prio)
 
 ID: 581
 Name: Misty Terrain
@@ -8642,11 +8647,12 @@ Accuracy: 101
 Type: Fairy
 Targeting: Entire Field
 Base PP: 10
+Priority: 1
 Z-Power: 0
 Z-Effect: +2 Defense
 Flags: FailSkyBattle
 Description:
-This protects Pokémon on the ground from status conditions and halves damage from Dragon-type moves for five turns. Z: +2 Def
+This protects Pokémon on the ground from status conditions and halves damage from Dragon-type moves for five turns. Z: +2 Def (+1 Prio)
 
 ID: 582
 Name: Electrify
@@ -8994,11 +9000,12 @@ Accuracy: 101
 Type: Electric
 Targeting: Entire Field
 Base PP: 10
+Priority: 1
 Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: FailSkyBattle
 Description:
-The user electrifies the ground for five turns, powering up Electric-type moves by 50%. Pokémon on the ground can't sleep. Z: +2 Sp.Def
+The user electrifies the ground for five turns, powering up Electric-type moves by 50%. Sleep is nullified. Z: +2 Sp.Def (+1 Prio)
 
 ID: 605
 Name: Dazzling Gleam
@@ -9745,12 +9752,12 @@ In addition to protecting the user from attacks, this move also poisons any atta
 ID: 662
 Name: Spirit Shackle
 Category: Physical
-Power: 85
+Power: 90
 Accuracy: 100
 Type: Ghost
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 135
+Z-Power: 140
 Z-Effect: None
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -9986,11 +9993,12 @@ Accuracy: 101
 Type: Psychic
 Targeting: Entire Field
 Base PP: 10
+Priority: 1
 Z-Power: 0
 Z-Effect: +2 Defense
 Flags: FailSkyBattle
 Description:
-This protects Pokémon on the ground from priority moves and powers up Psychic-type moves by 50% for five turns. Z: +2 Defense
+This protects Pokémon on the ground from priority moves and powers up Psychic-type moves by 50% for five turns. Z: +2 Defense (+1 Prio)
 
 ID: 679
 Name: Lunge
@@ -10127,13 +10135,13 @@ If the Pokémon the user has inflicted damage on have already used their moves, 
 ID: 688
 Name: Trop Kick
 Category: Physical
-Power: 70
+Power: 80
 Accuracy: 100
 Type: Grass
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Stat Change: Attack -> -1 (100%)
-Z-Power: 120
+Z-Power: 130
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
@@ -10156,13 +10164,13 @@ The user instructs the target to use the target’s last move again. Z: Center o
 ID: 690
 Name: Beak Blast
 Category: Physical
-Power: 100
+Power: 120
 Accuracy: 100
 Type: Flying
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Priority: -3
-Z-Power: 150
+Z-Power: 160
 Z-Effect: None
 Flags: Protect, AnimateAlly, Ballistic, Pulse
 Description:
@@ -10580,7 +10588,7 @@ Stat Change: Special Attack -> 2 (100%)
 Stat Change: Speed -> 2 (100%)
 Flags: AnimateAlly
 Description:
-The user, Pikachu wearing a cap, powers up a jolt of electricity using its Z-Power and unleashes it. Critical hits always land. Raises Sp.Atk and Spe.2 stages after use.
+The user, Pikachu wearing a cap, powers up a jolt of electricity using its Z-Power and unleashes it. Always crits. Sharply raises Sp.Atk and Speed afterwards.
 
 ID: 720
 Name: Mind Blown
