@@ -263,7 +263,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var bg = colors[pi % colors.length];
 
       var cardBorder = isDarkMode ? 'rgba(126,151,191,0.45)' : 'rgba(0,0,0,0.08)';
-      var cardBodyBg = isDarkMode ? ('linear-gradient(180deg, ' + bg + '88, #111c2e)') : ('linear-gradient(180deg, ' + bg + '22, #fff)');
+      var cardBodyBg = isDarkMode ? ('linear-gradient(180deg, ' + bg + '88, #1a2435)') : ('linear-gradient(180deg, ' + bg + '22, #fff)');
       buf += '<div style="border-radius:10px;overflow:hidden;margin-bottom:12px;border:1px solid ' + cardBorder + ';box-shadow:0 2px 6px rgba(0,0,0,0.08)">';
       buf += '<div style="background:' + bg + ';color:#fff;padding:8px 12px;font-weight:bold">Pokémon ' + (pi+1) + '</div>';
       buf += '<div style="background:' + cardBodyBg + ';padding:12px">';

@@ -265,9 +265,9 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       + '.battle-notes-line{display:block;color:#555;font-size:0.85em;font-style:italic;margin-bottom:1px}'
       + '.loc-description p{margin:0 0 4px}'
       + 'body.dark-mode .loc-search-note{color:#b8c6de;border-top-color:#3d516f;background:#1b2a42}'
-      + 'body.dark-mode .loc-section,body.dark-mode .loc-section td,body.dark-mode .loc-section th,body.dark-mode .loc-section p,body.dark-mode .loc-section .loc-none,body.dark-mode .loc-section .battle-notes-line{color:#252a33}'
+      + 'body.dark-mode .loc-section,body.dark-mode .loc-section td,body.dark-mode .loc-section th,body.dark-mode .loc-section p,body.dark-mode .loc-section h4{color:#252a33}'
+      + 'body.dark-mode .loc-section .loc-none,body.dark-mode .loc-section .battle-notes-line{color:#252a33}'
       + 'body.dark-mode .loc-section a,body.dark-mode .loc-section a:hover{color:#1d4f8f}'
-      + 'body.dark-mode .loc-section h4{color:#1f2d40}'
       + '</style>';
 
     buf += '<a href="' + Config.baseurl + 'locations/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Locations</a>';
