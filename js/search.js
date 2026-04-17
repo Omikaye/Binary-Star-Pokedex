@@ -246,21 +246,36 @@
 			e.preventDefault();
 			e.stopPropagation();
 			var sortCol = e.currentTarget.dataset.sort;
-			// Custom sorts for Abilities/Moves list views
-			if (sortCol === 'users') {
-					self.sortCol = 'users';
-					self.find('');
-					return;
-				}
-			if (sortCol === 'name') {
-				// Ensure name sort works for abilities page too
+			var rawType = self.engine && self.engine.typedSearch && self.engine.typedSearch.searchType;
+			var activeType = rawType ? (rawType.indexOf('move') !== -1 ? 'move' : (rawType.indexOf('ability') !== -1 ? 'ability' : rawType)) : null;
+
+			if (sortCol === 'users' && (activeType === 'move' || activeType === 'ability')) {
+				self.sortCol = 'users';
+				self.find('');
+				return;
+			}
+			if (sortCol === 'name' && (activeType === 'move' || activeType === 'ability')) {
 				self.sortCol = 'name';
 				self.find('');
 				return;
 			}
+			if ((sortCol === 'type' || sortCol === 'category') && activeType === 'move') {
+				self.sortCol = sortCol;
+				self.find('');
+				return;
+			}
+			if (activeType === 'usage' && ['name', 'type', 'wild', 'trainer'].includes(sortCol)) {
+				self.sortCol = sortCol;
+				self.find('');
+				return;
+			}
+			try {
 				self.engine.toggleSort(sortCol);
 				self.sortCol = self.engine.sortCol;
-				self.find('');
+			} catch (err) {
+				console.warn('Sort toggle failed for column "' + sortCol + '".', err);
+			}
+			self.find('');
 		});
 	}
 
@@ -323,7 +338,7 @@
 			dataRows.sort(function(a,b){
 				var aUsers = (activeType === 'move' ? getMoveUseCount(a[1]) : getAbilityUseCount(a[1]));
 				var bUsers = (activeType === 'move' ? getMoveUseCount(b[1]) : getAbilityUseCount(b[1]));
-				if (aUsers !== bUsers) return aUsers - bUsers; // ascending least to most
+				if (aUsers !== bUsers) return bUsers - aUsers; // descending most to least
 				return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0; // tie-break alphabetically
 			});
 			this.resultSet = headerRows.concat(dataRows);
@@ -343,6 +358,48 @@
 				dataRowsN.sort(function(a,b){ return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0; });
 				this.resultSet = headerRowsN.concat(dataRowsN);
 			}
+		}
+		if (activeType === 'move' && (this.sortCol === 'type' || this.sortCol === 'category')) {
+			var headerRowsM = [];
+			var dataRowsM = [];
+			for (var rM of this.resultSet) {
+				if (rM[0] === 'sortmove' || rM[0] === 'html') headerRowsM.push(rM);
+				else if (rM[0] === 'move') dataRowsM.push(rM);
+				else headerRowsM.push(rM);
+			}
+			dataRowsM.sort(function(a, b) {
+				var moveA = getID(BattleMovedex, a[1]);
+				var moveB = getID(BattleMovedex, b[1]);
+				var valueA = (this.sortCol === 'type' ? moveA.type : moveA.category) || '';
+				var valueB = (this.sortCol === 'type' ? moveB.type : moveB.category) || '';
+				if (valueA !== valueB) return valueA < valueB ? -1 : 1;
+				return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0;
+			}.bind(this));
+			this.resultSet = headerRowsM.concat(dataRowsM);
+		}
+		if (activeType === 'usage' && ['name', 'type', 'wild', 'trainer'].includes(this.sortCol)) {
+			var headerRowsU = [];
+			var dataRowsU = [];
+			for (var rU of this.resultSet) {
+				if (rU[0] === 'sortusage' || rU[0] === 'html') headerRowsU.push(rU);
+				else if (rU[0] === 'usage') dataRowsU.push(rU);
+				else headerRowsU.push(rU);
+			}
+			dataRowsU.sort(function(a, b) {
+				var idA = a[1];
+				var idB = b[1];
+				if (this.sortCol === 'wild' || this.sortCol === 'trainer') {
+					var usageA = getPokemonUsage(idA)[this.sortCol] || 0;
+					var usageB = getPokemonUsage(idB)[this.sortCol] || 0;
+					if (usageA !== usageB) return usageB - usageA;
+				} else if (this.sortCol === 'type') {
+					var typeA = ((getID(BattlePokedex, idA).types || [])[0] || '');
+					var typeB = ((getID(BattlePokedex, idB).types || [])[0] || '');
+					if (typeA !== typeB) return typeA < typeB ? -1 : 1;
+				}
+				return idA < idB ? -1 : idA > idB ? 1 : 0;
+			}.bind(this));
+			this.resultSet = headerRowsU.concat(dataRowsU);
 		}
 
 		this.renderedIndex = 0;

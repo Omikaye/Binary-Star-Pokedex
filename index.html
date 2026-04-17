@@ -25,9 +25,18 @@
 			<ul class="nav">
 				<li><a class="button nav-first" href="/Binary-Star-Pokedex/"><img src="images/pokemonshowdownbeta.png" alt="Pok&eacute;mon Showdown! (beta)" /> Home</a></li>
 				<li><a class="button" href="/Binary-Star-Pokedex/dex">Pokédex</a></li>
+				<li><a class="button" href="/Binary-Star-Pokedex/moves/">Moves</a></li>
+				<li><a class="button" href="/Binary-Star-Pokedex/abilities/">Abilities</a></li>
+				<li><a class="button" href="/Binary-Star-Pokedex/mechanics/">Mechanics</a></li>
 				<li><a class="button" href="/Binary-Star-Pokedex/locations/">Locations</a></li>
 				<li><a class="button nav-last" href=https://github.com/Strackeror/Static-Showdown-Dex>GitHub</a></li>
 			</ul>
+			<div class="theme-toggle-wrap">
+				<label class="theme-toggle" title="Toggle light/dark mode">
+					<input id="theme-toggle" type="checkbox" aria-label="Toggle dark mode" />
+					<span class="theme-toggle-slider"></span>
+				</label>
+			</div>
 			<div style="clear:both"></div>
 		</div>
 	</div>
@@ -45,6 +54,7 @@
 		window._ = require("underscore")
 	</script>
 	<script type="module" src="js/panels.js"></script>
+	<script type="module" src="js/theme-toggle.js"></script>
 	<script type="module" src="js/name-dictionary.js"></script>
 	<script type="module" src="js/data.js"></script>
 	<script type="module" src="ts/battle-dex-search.ts"></script>
