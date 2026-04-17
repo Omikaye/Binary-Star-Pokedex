@@ -431,7 +431,9 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
           itemData = BattleItems[iTmId];
           itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData ? iTmId : 'tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
         } else if (baseItemI === 'Poké Ball') {
-          iid = 'pokball'; itemLinkTarget = 'pokball'; itemData = BattleItems['pokball'];
+          iid = 'pokball';
+          itemLinkTarget = 'pokball';
+          itemData = BattleItems['pokball'];
           if (itemData) itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData) + ';width:32px;height:32px;display:inline-block"></span>';
         } else if (itemData) {
           itemIcon = '<span class="itemicon" style="' + getItemIcon(itemData) + ';width:32px;height:32px;display:inline-block"></span>';
@@ -526,7 +528,8 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
             shopItemDataLS = BattleItems[lsTmId];
             shopIconLS = '<span class="itemicon" style="' + getItemIcon(shopItemDataLS ? lsTmId : 'tm-normal') + ';width:32px;height:32px;display:inline-block"></span>';
           } else if (baseShopItemLS === 'Poké Ball') {
-            shopItemIdLS = 'pokball'; shopLinkTargetLS = 'pokball';
+            shopItemIdLS = 'pokball';
+            shopLinkTargetLS = 'pokball';
             shopItemDataLS = BattleItems['pokball'];
             if (shopItemDataLS) shopIconLS = '<span class="itemicon" style="' + getItemIcon(shopItemDataLS) + ';width:32px;height:32px;display:inline-block"></span>';
           } else if (shopItemDataLS) {
