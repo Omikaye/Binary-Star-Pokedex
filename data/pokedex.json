@@ -5163,11 +5163,11 @@
     },
     "baseStats": {
       "hp": 65,
-      "atk": 115,
+      "atk": 118,
       "def": 50,
       "spa": 45,
       "spd": 110,
-      "spe": 95
+      "spe": 102
     },
     "heightm": 1.4,
     "weightkg": 35.6,
@@ -5224,9 +5224,9 @@
     "baseStats": {
       "hp": 75,
       "atk": 120,
-      "def": 75,
+      "def": 80,
       "spa": 55,
-      "spd": 75,
+      "spd": 80,
       "spe": 80
     },
     "heightm": 1.1,
@@ -7855,9 +7855,9 @@
     },
     "baseStats": {
       "hp": 70,
-      "atk": 100,
+      "atk": 110,
       "def": 65,
-      "spa": 105,
+      "spa": 95,
       "spd": 80,
       "spe": 120
     },
@@ -9341,7 +9341,7 @@
     "abilities": {
       "0": "Intimidate",
       "1": "Strong Jaw",
-      "H": "Sheer Force"
+      "H": "Serene Grace"
     },
     "baseStats": {
       "hp": 65,
@@ -9664,7 +9664,7 @@
       "def": 95,
       "spa": 55,
       "spd": 75,
-      "spe": 95
+      "spe": 97
     },
     "heightm": 0.7,
     "weightkg": 17.7,
@@ -9692,7 +9692,7 @@
       "def": 75,
       "spa": 105,
       "spd": 95,
-      "spe": 95
+      "spe": 97
     },
     "heightm": 0.6,
     "weightkg": 17.7,
@@ -9836,9 +9836,9 @@
     "baseStats": {
       "hp": 70,
       "atk": 120,
-      "def": 40,
+      "def": 45,
       "spa": 95,
-      "spd": 40,
+      "spd": 45,
       "spe": 103
     },
     "heightm": 1.8,
@@ -9959,7 +9959,7 @@
     },
     "baseStats": {
       "hp": 90,
-      "atk": 80,
+      "atk": 90,
       "def": 70,
       "spa": 113,
       "spd": 75,
@@ -10012,8 +10012,7 @@
     "num": 325,
     "name": "Spoink",
     "types": [
-      "Psychic",
-      "Dark"
+      "Psychic"
     ],
     "abilities": {
       "0": "Thick Fat",
@@ -12190,11 +12189,11 @@
     },
     "baseStats": {
       "hp": 84,
-      "atk": 75,
-      "def": 94,
+      "atk": 86,
+      "def": 92,
       "spa": 115,
-      "spd": 94,
-      "spe": 78
+      "spd": 101,
+      "spe": 62
     },
     "heightm": 1.7,
     "weightkg": 84.5,
@@ -12252,7 +12251,7 @@
     "abilities": {
       "0": "Intimidate",
       "1": "Reckless",
-      "H": "Gale Wings"
+      "H": "Big Pecks"
     },
     "baseStats": {
       "hp": 55,
@@ -12282,7 +12281,7 @@
     "abilities": {
       "0": "Intimidate",
       "1": "Reckless",
-      "H": "Gale Wings"
+      "H": "Big Pecks"
     },
     "baseStats": {
       "hp": 85,
@@ -13217,10 +13216,10 @@
     },
     "baseStats": {
       "hp": 65,
-      "atk": 108,
-      "def": 68,
+      "atk": 88,
+      "def": 78,
       "spa": 49,
-      "spd": 85,
+      "spd": 95,
       "spe": 105
     },
     "heightm": 1.2,
@@ -13313,9 +13312,9 @@
       "hp": 49,
       "atk": 65,
       "def": 42,
-      "spa": 42,
-      "spd": 37,
-      "spe": 95
+      "spa": 47,
+      "spd": 47,
+      "spe": 100
     },
     "heightm": 0.5,
     "weightkg": 3.9,
@@ -13340,9 +13339,9 @@
     },
     "baseStats": {
       "hp": 103,
-      "atk": 100,
-      "def": 76,
-      "spa": 64,
+      "atk": 92,
+      "def": 71,
+      "spa": 71,
       "spd": 69,
       "spe": 110
     },
@@ -13434,7 +13433,7 @@
       "def": 67,
       "spa": 101,
       "spd": 61,
-      "spe": 87
+      "spe": 81
     },
     "heightm": 1,
     "weightkg": 38,
@@ -13948,7 +13947,7 @@
       "Dark"
     ],
     "abilities": {
-      "0": "Tough Claws",
+      "0": "Battle Armor",
       "1": "Sniper",
       "H": "Poison Touch"
     },
@@ -14235,7 +14234,7 @@
     ],
     "abilities": {
       "0": "Inner Focus",
-      "1": "Technician",
+      "1": "Hyper Cutter",
       "H": "Pickpocket"
     },
     "baseStats": {
@@ -15017,10 +15016,10 @@
     "abilities": {
       "0": "Slow Start",
       "1": "Truant",
-      "H": "Slow Start"
+      "H": "Normalize"
     },
     "baseStats": {
-      "hp": 120,
+      "hp": 110,
       "atk": 160,
       "def": 110,
       "spa": 80,
@@ -15356,7 +15355,7 @@
       "Fire"
     ],
     "abilities": {
-      "0": "Sheer Force",
+      "0": "Reckless",
       "1": "Thick Fat",
       "H": "Blaze"
     },
@@ -15386,7 +15385,7 @@
       "Ground"
     ],
     "abilities": {
-      "0": "Sheer Force",
+      "0": "Reckless",
       "1": "Thick Fat",
       "H": "Blaze"
     },
@@ -15416,7 +15415,7 @@
       "Ground"
     ],
     "abilities": {
-      "0": "Sheer Force",
+      "0": "Reckless",
       "1": "Thick Fat",
       "H": "Blaze"
     },
@@ -15453,9 +15452,9 @@
       "hp": 55,
       "atk": 60,
       "def": 55,
-      "spa": 63,
+      "spa": 53,
       "spd": 55,
-      "spe": 52
+      "spe": 62
     },
     "heightm": 0.5,
     "weightkg": 5.9,
@@ -15483,9 +15482,9 @@
       "hp": 75,
       "atk": 89,
       "def": 71,
-      "spa": 84,
+      "spa": 74,
       "spd": 56,
-      "spe": 65
+      "spe": 75
     },
     "heightm": 0.8,
     "weightkg": 24.5,
@@ -15511,11 +15510,11 @@
     },
     "baseStats": {
       "hp": 95,
-      "atk": 112,
+      "atk": 121,
       "def": 85,
-      "spa": 108,
+      "spa": 78,
       "spd": 70,
-      "spe": 70
+      "spe": 91
     },
     "heightm": 1.5,
     "weightkg": 94.6,
@@ -17523,9 +17522,9 @@
     "baseStats": {
       "hp": 90,
       "atk": 95,
-      "def": 82,
+      "def": 88,
       "spa": 84,
-      "spd": 82,
+      "spd": 88,
       "spe": 75
     },
     "heightm": 1.9,
@@ -18281,7 +18280,7 @@
       "hp": 170,
       "atk": 75,
       "def": 80,
-      "spa": 70,
+      "spa": 60,
       "spd": 55,
       "spe": 65
     },
@@ -18539,7 +18538,8 @@
     "num": 603,
     "name": "Eelektrik",
     "types": [
-      "Electric"
+      "Electric",
+      "Poison"
     ],
     "abilities": {
       "0": "Levitate",
@@ -18568,7 +18568,8 @@
     "num": 604,
     "name": "Eelektross",
     "types": [
-      "Electric"
+      "Electric",
+      "Poison"
     ],
     "abilities": {
       "0": "Levitate",
@@ -21223,7 +21224,7 @@
     "abilities": {
       "0": "Mega Launcher",
       "1": "Shell Armor",
-      "H": "Swift Swim"
+      "H": "Sniper"
     },
     "baseStats": {
       "hp": 50,
@@ -21253,14 +21254,14 @@
     "abilities": {
       "0": "Mega Launcher",
       "1": "Shell Armor",
-      "H": "Swift Swim"
+      "H": "Sniper"
     },
     "baseStats": {
       "hp": 76,
-      "atk": 89,
-      "def": 91,
-      "spa": 123,
-      "spd": 83,
+      "atk": 73,
+      "def": 94,
+      "spa": 130,
+      "spd": 89,
       "spe": 63
     },
     "heightm": 1.3,
@@ -21576,10 +21577,10 @@
       "H": "Sturdy"
     },
     "baseStats": {
-      "hp": 60,
-      "atk": 50,
+      "hp": 50,
+      "atk": 55,
       "def": 150,
-      "spa": 50,
+      "spa": 55,
       "spd": 150,
       "spe": 40
     },
@@ -21598,7 +21599,7 @@
       "Dragon"
     ],
     "abilities": {
-      "0": "Sap Sipper",
+      "0": "Poison Heal",
       "1": "Dry Skin",
       "H": "Gooey"
     },
@@ -21627,7 +21628,7 @@
       "Dragon"
     ],
     "abilities": {
-      "0": "Sap Sipper",
+      "0": "Poison Heal",
       "1": "Dry Skin",
       "H": "Gooey"
     },
@@ -21656,7 +21657,7 @@
       "Dragon"
     ],
     "abilities": {
-      "0": "Sap Sipper",
+      "0": "Poison Heal",
       "1": "Dry Skin",
       "H": "Gooey"
     },
@@ -22658,11 +22659,11 @@
     },
     "baseStats": {
       "hp": 74,
-      "atk": 65,
-      "def": 75,
+      "atk": 55,
+      "def": 79,
       "spa": 145,
-      "spd": 61,
-      "spe": 80
+      "spd": 68,
+      "spe": 84
     },
     "heightm": 1.5,
     "weightkg": 45,
@@ -22686,9 +22687,9 @@
       "Water"
     ],
     "abilities": {
-      "0": "Hyper Cutter",
+      "0": "Anger Point",
       "1": "Iron Fist",
-      "H": "Anger Point"
+      "H": "Hydration"
     },
     "baseStats": {
       "hp": 47,
@@ -22716,9 +22717,9 @@
       "Ice"
     ],
     "abilities": {
-      "0": "Hyper Cutter",
+      "0": "Anger Point",
       "1": "Iron Fist",
-      "H": "Anger Point"
+      "H": "Ice Body"
     },
     "baseStats": {
       "hp": 109,
@@ -23979,7 +23980,7 @@
     ],
     "abilities": {
       "0": "Berserk",
-      "1": "Pure Power",
+      "1": "Drizzle",
       "H": "Fluffy"
     },
     "baseStats": {
@@ -27739,9 +27740,9 @@
     },
     "baseStats": {
       "hp": 70,
-      "atk": 130,
+      "atk": 135,
       "def": 75,
-      "spa": 135,
+      "spa": 130,
       "spd": 85,
       "spe": 145
     },
@@ -27935,7 +27936,7 @@
       "hp": 70,
       "atk": 140,
       "def": 70,
-      "spa": 110,
+      "spa": 120,
       "spd": 65,
       "spe": 113
     },
@@ -28334,8 +28335,8 @@
     "baseStats": {
       "hp": 90,
       "atk": 120,
-      "def": 98,
-      "spa": 145,
+      "def": 103,
+      "spa": 150,
       "spd": 95,
       "spe": 20
     },
@@ -29394,21 +29395,21 @@
     "num": 658,
     "name": "Greninja-Mega-X",
     "types": [
-      "Water",
-      "Dark"
+      "Dark",
+      "Poison"
     ],
     "abilities": {
-      "0": "Dark Aura",
-      "1": "Dark Aura",
-      "H": "Dark Aura"
+      "0": "Technician",
+      "1": "Technician",
+      "H": "Technician"
     },
     "baseStats": {
       "hp": 74,
-      "atk": 133,
-      "def": 76,
-      "spa": 113,
-      "spd": 96,
-      "spe": 148
+      "atk": 138,
+      "def": 73,
+      "spa": 123,
+      "spd": 89,
+      "spe": 143
     },
     "heightm": 1.5,
     "weightkg": 40,
@@ -29435,9 +29436,9 @@
       "Dark"
     ],
     "abilities": {
-      "0": "Beast Boost",
-      "1": "Beast Boost",
-      "H": "Beast Boost"
+      "0": "Protean",
+      "1": "Protean",
+      "H": "Protean"
     },
     "baseStats": {
       "hp": 74,
@@ -30192,8 +30193,8 @@
     "baseStats": {
       "hp": 74,
       "atk": 105,
-      "def": 95,
-      "spa": 165,
+      "def": 92,
+      "spa": 173,
       "spd": 75,
       "spe": 86
     },

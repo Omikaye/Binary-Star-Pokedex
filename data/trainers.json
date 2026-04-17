@@ -22,9 +22,35 @@
         "ability": "Serene Grace",
         "moves": [
           "Metronome",
-          "Safeguard",
           "Bestow",
+          "Safeguard",
           "Charm"
+        ]
+      },
+      {
+        "name": "Cleffa",
+        "level": 7,
+        "item": "Sticky Barb",
+        "nature": "Serious",
+        "ability": "Magic Guard",
+        "moves": [
+          "Sing",
+          "Metronome",
+          "Charm",
+          "Aromatherapy"
+        ]
+      },
+      {
+        "name": "Igglybuff",
+        "level": 7,
+        "item": "Chilan Berry",
+        "nature": "Serious",
+        "ability": "Competitive",
+        "moves": [
+          "Metronome",
+          "Sing",
+          "Defense Curl",
+          "Rollout"
         ]
       },
       {
@@ -32,25 +58,12 @@
         "level": 7,
         "item": "Lagging Tail",
         "nature": "Serious",
-        "ability": "Natural Cure",
+        "ability": "Friend Guard",
         "moves": [
           "Charm",
           "Copycat",
           "Bestow",
           "Round"
-        ]
-      },
-      {
-        "name": "Cleffa",
-        "level": 7,
-        "item": "Chilan Berry",
-        "nature": "Serious",
-        "ability": "Friend Guard",
-        "moves": [
-          "Sing",
-          "Metronome",
-          "Charm",
-          "Aromatherapy"
         ]
       }
     ]
@@ -60,58 +73,45 @@
     "name": "Lass Isabella",
     "trainerClass": "Lass",
     "personalName": "Isabella",
-    "prizeMoney": 528,
+    "prizeMoney": 624,
     "team": [
       {
-        "name": "Flabébé 3",
+        "name": "Eevee",
+        "level": 14,
+        "item": "Enigma Berry",
+        "nature": "Jolly",
+        "ability": "Protean",
+        "moves": [
+          "Wish",
+          "Detect",
+          "Curse",
+          "Quick Attack"
+        ]
+      },
+      {
+        "name": "Glameow",
         "level": 13,
-        "item": "Absorb Bulb",
-        "nature": "Modest",
-        "ability": "Flower Veil",
+        "item": "Liechi Berry",
+        "nature": "Jolly",
+        "ability": "Limber",
         "moves": [
-          "Stun Spore",
-          "Disarming Voice",
-          "Razor Leaf",
-          "Lucky Chant"
+          "Fake Out",
+          "Assist",
+          "Quick Attack",
+          "Bite"
         ]
       },
       {
-        "name": "Bounsweet",
-        "level": 11,
-        "item": "Absorb Bulb",
-        "nature": "Gentle",
-        "ability": "Sweet Veil",
+        "name": "Skitty",
+        "level": 13,
+        "item": "Normalium Z",
+        "nature": "Jolly",
+        "ability": "Normalize",
         "moves": [
+          "Attract",
+          "Assist",
           "Covet",
-          "Rapid Spin",
-          "Absorb",
-          "Play Nice"
-        ]
-      },
-      {
-        "name": "Sewaddle",
-        "level": 11,
-        "item": "Absorb Bulb",
-        "nature": "Lax",
-        "ability": "Overcoat",
-        "moves": [
-          "Absorb",
-          "Struggle Bug",
-          "Defense Curl",
-          "String Shot"
-        ]
-      },
-      {
-        "name": "Chikorita",
-        "level": 11,
-        "item": "Absorb Bulb",
-        "nature": "Sassy",
-        "ability": "Healer",
-        "moves": [
-          "Fairy Wind",
-          "Aromatic Mist",
-          "Vine Whip",
-          "Grass Whistle"
+          "Tail Whip"
         ]
       }
     ]
@@ -708,7 +708,7 @@
         "level": 18,
         "item": "Coba Berry",
         "nature": "Careful",
-        "ability": "Iron Fist",
+        "ability": "Guts",
         "moves": [
           "Rock Smash",
           "Bide",
@@ -719,7 +719,7 @@
       {
         "name": "Scraggy",
         "level": 18,
-        "item": "Black Glasses",
+        "item": "Dark Gem",
         "nature": "Sassy",
         "ability": "Intimidate",
         "moves": [
@@ -780,6 +780,7 @@
       {
         "name": "Wurmple",
         "level": 8,
+        "item": "Sitrus Berry",
         "nature": "Adamant",
         "ability": "Shield Dust",
         "moves": [
@@ -791,6 +792,7 @@
       {
         "name": "Scatterbug",
         "level": 8,
+        "item": "Sitrus Berry",
         "nature": "Calm",
         "ability": "Friend Guard",
         "moves": [
@@ -824,9 +826,10 @@
     "team": [
       {
         "name": "Caterpie",
-        "level": 3,
+        "level": 4,
+        "item": "Micle Berry",
         "nature": "Serious",
-        "ability": "Sticky Hold",
+        "ability": "Shield Dust",
         "moves": [
           "Tackle",
           "String Shot"
@@ -834,7 +837,7 @@
       },
       {
         "name": "Grubbin",
-        "level": 3,
+        "level": 4,
         "item": "Rowap Berry",
         "nature": "Serious",
         "ability": "Static",
@@ -847,8 +850,9 @@
       {
         "name": "Kricketot",
         "level": 5,
+        "item": "Shell Bell",
         "nature": "Rash",
-        "ability": "Swarm",
+        "ability": "Early Bird",
         "moves": [
           "Growl",
           "Bide",
@@ -889,6 +893,19 @@
           "Rock Smash",
           "Helping Hand"
         ]
+      },
+      {
+        "name": "Mienfoo",
+        "level": 7,
+        "item": "Focus Band",
+        "nature": "Serious",
+        "ability": "Inner Focus",
+        "moves": [
+          "Endure",
+          "Focus Energy",
+          "Tackle",
+          "Fake Out"
+        ]
       }
     ]
   },
@@ -897,7 +914,7 @@
     "name": "Kindergartener Oliver",
     "trainerClass": "Kindergartener",
     "personalName": "Oliver",
-    "prizeMoney": 128,
+    "prizeMoney": 160,
     "team": [
       {
         "name": "Rattata 1",
@@ -924,7 +941,7 @@
       },
       {
         "name": "Lillipup",
-        "level": 4,
+        "level": 5,
         "item": "Oran Berry",
         "nature": "Careful",
         "ability": "Pickup",
@@ -946,45 +963,33 @@
       {
         "name": "Wynaut",
         "level": 10,
-        "item": "Pecha Berry",
+        "item": "Maranga Berry",
         "nature": "Quirky",
         "ability": "Stamina",
         "moves": [
-          "Destiny Bond",
+          "Bide",
           "Counter",
-          "Mirror Coat",
-          "Safeguard"
+          "Encore",
+          "Mirror Coat"
         ]
       },
       {
-        "name": "Igglybuff",
+        "name": "Azurill",
         "level": 10,
-        "item": "Aspear Berry",
+        "item": "Kee Berry",
         "nature": "Docile",
-        "ability": "Friend Guard",
+        "ability": "Huge Power",
         "moves": [
-          "Echoed Voice",
-          "Defense Curl",
-          "Rollout",
-          "Sing"
-        ]
-      },
-      {
-        "name": "Smoochum",
-        "level": 10,
-        "item": "Chesto Berry {Dry Skin} <Lick/Fake Tears/Powder Snow/Heart Stamp>",
-        "ability": "Dry Skin",
-        "moves": [
-          "Lick",
-          "Fake Tears",
-          "Powder Snow",
-          "Heart Stamp"
+          "Bubble",
+          "Pummel",
+          "Tackle",
+          "Play Nice"
         ]
       },
       {
         "name": "Magby",
         "level": 10,
-        "item": "Cheri Berry",
+        "item": "Maranga Berry",
         "nature": "Bashful",
         "ability": "Flame Body",
         "moves": [
@@ -992,6 +997,18 @@
           "Haze",
           "Smoke Out",
           "Ember"
+        ]
+      },
+      {
+        "name": "Smoochum",
+        "level": 10,
+        "item": "Kee Berry {Dry Skin} <Powder Snow/Metronome/Heart Stamp/Lick>",
+        "ability": "Dry Skin",
+        "moves": [
+          "Powder Snow",
+          "Metronome",
+          "Heart Stamp",
+          "Lick"
         ]
       },
       {
@@ -1030,16 +1047,16 @@
         ]
       },
       {
-        "name": "Patrat",
+        "name": "Bounsweet",
         "level": 15,
         "item": "Sitrus Berry",
-        "nature": "Lonely",
-        "ability": "Stakeout",
+        "nature": "Impish",
+        "ability": "Sweet Veil",
         "moves": [
-          "Bite",
-          "Tackle",
-          "Detect",
-          "Confusion"
+          "Covet",
+          "Rapid Spin",
+          "Razor Leaf",
+          "Play Nice"
         ]
       },
       {
@@ -1568,6 +1585,7 @@
       {
         "name": "Taillow",
         "level": 12,
+        "item": "Mental Herb",
         "nature": "Docile",
         "ability": "Guts",
         "moves": [
@@ -1593,6 +1611,7 @@
       {
         "name": "Pidgey",
         "level": 12,
+        "item": "Figy Berry",
         "nature": "Timid",
         "ability": "Tangled Feet",
         "moves": [
@@ -1614,7 +1633,7 @@
       {
         "name": "Mime Jr.",
         "level": 10,
-        "item": "Chesto Berry",
+        "item": "Ganlon Berry",
         "nature": "Bashful",
         "ability": "Filter",
         "moves": [
@@ -1625,21 +1644,22 @@
         ]
       },
       {
-        "name": "Azurill",
+        "name": "Budew",
         "level": 10,
-        "item": "Pecha Berry {Huge Power} <Bubble/Pummel/Water Sport/Tackle>",
-        "ability": "Huge Power",
+        "item": "Apicot Berry",
+        "nature": "Docile",
+        "ability": "Poison Point",
         "moves": [
-          "Bubble",
-          "Pummel",
-          "Water Sport",
-          "Tackle"
+          "Poison Sting",
+          "Growth",
+          "Absorb",
+          "Poison Powder"
         ]
       },
       {
         "name": "Elekid",
         "level": 10,
-        "item": "Rawst Berry",
+        "item": "Ganlon Berry",
         "nature": "Quirky",
         "ability": "Battery",
         "moves": [
@@ -1650,16 +1670,16 @@
         ]
       },
       {
-        "name": "Budew",
+        "name": "Chingling",
         "level": 10,
-        "item": "Persim Berry",
+        "item": "Apicot Berry",
         "nature": "Docile",
-        "ability": "Poison Point",
+        "ability": "Levitate",
         "moves": [
-          "Poison Sting",
-          "Growth",
-          "Absorb",
-          "Poison Powder"
+          "Metal Sound",
+          "Echoed Voice",
+          "Confusion",
+          "Heal Bell"
         ]
       },
       {
@@ -1682,7 +1702,7 @@
     "name": "Gentleman Stanley",
     "trainerClass": "Gentleman",
     "personalName": "Stanley",
-    "prizeMoney": 4420,
+    "prizeMoney": 4080,
     "team": [
       {
         "name": "Nidoran-M",
@@ -1721,6 +1741,19 @@
           "Ice Shard",
           "Fake Tears",
           "Leer"
+        ]
+      },
+      {
+        "name": "Hoppip",
+        "level": 12,
+        "item": "Oran Berry",
+        "nature": "Bold",
+        "ability": "Harvest",
+        "moves": [
+          "Synthesis",
+          "Absorb",
+          "Fairy Wind",
+          "Gust"
         ]
       }
     ]
@@ -1836,8 +1869,8 @@
   },
   {
     "id": "052",
-    "name": "Plain Captain Ilima",
-    "trainerClass": "Plain Captain",
+    "name": "Trial Captain Ilima",
+    "trainerClass": "Trial Captain",
     "personalName": "Ilima",
     "prizeMoney": 3120,
     "team": [
@@ -1890,6 +1923,19 @@
           "Pursuit",
           "Super Fang",
           "Leer",
+          "Tackle"
+        ]
+      },
+      {
+        "name": "Minccino",
+        "level": 10,
+        "item": "Lum Berry",
+        "nature": "Quirky",
+        "ability": "Cute Charm",
+        "moves": [
+          "Helping Hand",
+          "Tickle",
+          "Attract",
           "Tackle"
         ]
       },
@@ -4875,7 +4921,7 @@
         "level": 38,
         "item": "Never-Melt Ice",
         "nature": "Adamant",
-        "ability": "Hyper Cutter",
+        "ability": "Anger Point",
         "moves": [
           "Ice Punch",
           "Arm Thrust",
@@ -5098,7 +5144,7 @@
           "Bite",
           "Detect",
           "Covet",
-          "Curse"
+          "Round"
         ]
       }
     ]
@@ -5393,8 +5439,8 @@
   },
   {
     "id": "144",
-    "name": "Hydro Captain Lana",
-    "trainerClass": "Hydro Captain",
+    "name": "Trial Captain Lana",
+    "trainerClass": "Trial Captain",
     "personalName": "Lana",
     "prizeMoney": 7200,
     "team": [
@@ -5439,8 +5485,8 @@
   },
   {
     "id": "146",
-    "name": "Nature Captain Mallow",
-    "trainerClass": "Nature Captain",
+    "name": "Trial Captain Mallow",
+    "trainerClass": "Trial Captain",
     "personalName": "Mallow",
     "prizeMoney": 7200,
     "team": [
@@ -6943,8 +6989,8 @@
   },
   {
     "id": "215",
-    "name": "Plain Captain Ilima",
-    "trainerClass": "Plain Captain",
+    "name": "Trial Captain Ilima",
+    "trainerClass": "Trial Captain",
     "personalName": "Ilima",
     "prizeMoney": 3120,
     "team": [
@@ -7001,6 +7047,19 @@
         ]
       },
       {
+        "name": "Minccino",
+        "level": 10,
+        "item": "Lum Berry",
+        "nature": "Quirky",
+        "ability": "Cute Charm",
+        "moves": [
+          "Helping Hand",
+          "Tickle",
+          "Attract",
+          "Tackle"
+        ]
+      },
+      {
         "name": "Smeargle",
         "level": 12,
         "item": "Normalium Z",
@@ -7017,8 +7076,8 @@
   },
   {
     "id": "216",
-    "name": "Plain Captain Ilima",
-    "trainerClass": "Plain Captain",
+    "name": "Trial Captain Ilima",
+    "trainerClass": "Trial Captain",
     "personalName": "Ilima",
     "prizeMoney": 3120,
     "team": [
@@ -7071,6 +7130,19 @@
           "Pursuit",
           "Super Fang",
           "Leer",
+          "Tackle"
+        ]
+      },
+      {
+        "name": "Minccino",
+        "level": 10,
+        "item": "Lum Berry",
+        "nature": "Quirky",
+        "ability": "Cute Charm",
+        "moves": [
+          "Helping Hand",
+          "Tickle",
+          "Attract",
           "Tackle"
         ]
       },
@@ -11988,8 +12060,8 @@
   },
   {
     "id": "396",
-    "name": "Plain Captain Ilima",
-    "trainerClass": "Plain Captain",
+    "name": "Trial Captain Ilima",
+    "trainerClass": "Trial Captain",
     "personalName": "Ilima",
     "prizeMoney": 7200,
     "team": [
@@ -12033,8 +12105,8 @@
   },
   {
     "id": "398",
-    "name": "Heat Captain Kiawe",
-    "trainerClass": "Heat Captain",
+    "name": "Trial Captain Kiawe",
+    "trainerClass": "Trial Captain",
     "personalName": "Kiawe",
     "prizeMoney": 7200,
     "team": [
@@ -14241,6 +14313,7 @@
       {
         "name": "Buneary",
         "level": 4,
+        "item": "Shed Shell",
         "nature": "Serious",
         "ability": "Run Away",
         "moves": [
@@ -14623,32 +14696,45 @@
     "name": "Preschooler Malia",
     "trainerClass": "Preschooler",
     "personalName": "Malia",
-    "prizeMoney": 448,
+    "prizeMoney": 416,
     "team": [
       {
-        "name": "Munchlax",
-        "level": 14,
-        "item": "Oran Berry",
-        "nature": "Brave",
-        "ability": "Gluttony",
+        "name": "Mareep",
+        "level": 13,
+        "item": "Terrain Extender",
+        "nature": "Quiet",
+        "ability": "Static",
         "moves": [
-          "Lick",
-          "Defense Curl",
-          "Tackle",
-          "Yawn"
+          "Thunder Wave",
+          "Ion Deluge",
+          "Electric Terrain",
+          "Shock Wave"
         ]
       },
       {
-        "name": "Hoppip",
-        "level": 14,
-        "item": "Oran Berry",
-        "nature": "Bold",
-        "ability": "Harvest",
+        "name": "Electrike",
+        "level": 13,
+        "item": "Cell Battery",
+        "nature": "Jolly",
+        "ability": "Static",
         "moves": [
-          "Mega Drain",
-          "Synthesis",
-          "Fairy Wind",
-          "Gust"
+          "Spark",
+          "Electric Terrain",
+          "Thunder Wave",
+          "Bite"
+        ]
+      },
+      {
+        "name": "Joltik",
+        "level": 13,
+        "item": "White Herb",
+        "nature": "Hasty",
+        "ability": "Compound Eyes",
+        "moves": [
+          "Spider Web",
+          "Bug Bite",
+          "Electroweb",
+          "Thunder Wave"
         ]
       }
     ]
@@ -14658,58 +14744,58 @@
     "name": "Kindergartener Dylan",
     "trainerClass": "Kindergartener",
     "personalName": "Dylan",
-    "prizeMoney": 352,
+    "prizeMoney": 384,
     "team": [
       {
-        "name": "Weedle",
-        "level": 11,
-        "item": "Poison Gem",
-        "nature": "Adamant",
-        "ability": "Sticky Hold",
+        "name": "Whismur",
+        "level": 12,
+        "item": "Chople Berry",
+        "nature": "Naughty",
+        "ability": "Scrappy",
         "moves": [
-          "Toxic Thread",
-          "Poison Sting",
-          "Constrict",
-          "Peck"
+          "Round",
+          "Pummel",
+          "Howl",
+          "Tackle"
         ]
       },
       {
-        "name": "Burmy",
-        "level": 11,
+        "name": "Bidoof",
+        "level": 12,
+        "item": "Apicot Berry",
+        "nature": "Brave",
+        "ability": "Simple",
+        "moves": [
+          "Defense Curl",
+          "Water Gun",
+          "Rollout",
+          "Tackle"
+        ]
+      },
+      {
+        "name": "Sentret",
+        "level": 12,
+        "item": "Normal Gem",
+        "nature": "Naive",
+        "ability": "Stakeout",
+        "moves": [
+          "Follow Me",
+          "Quick Attack",
+          "Helping Hand",
+          "Mud-Slap"
+        ]
+      },
+      {
+        "name": "Patrat",
+        "level": 12,
         "item": "Normalium Z",
-        "nature": "Sassy",
-        "ability": "Overcoat",
+        "nature": "Relaxed",
+        "ability": "Analytic",
         "moves": [
-          "Electroweb",
-          "Nature Power",
-          "Protect",
-          "Struggle Bug"
-        ]
-      },
-      {
-        "name": "Venonat",
-        "level": 11,
-        "item": "Toxic Orb",
-        "nature": "Bold",
-        "ability": "Poison Heal",
-        "moves": [
-          "Infestation",
-          "Confusion",
-          "Supersonic",
-          "Disable"
-        ]
-      },
-      {
-        "name": "Ledyba",
-        "level": 11,
-        "item": "Cheri Berry",
-        "nature": "Sassy",
-        "ability": "Iron Fist",
-        "moves": [
-          "Swift",
-          "Comet Punch",
-          "Struggle Bug",
-          "Supersonic"
+          "Bite",
+          "Bide",
+          "Detect",
+          "Foresight"
         ]
       }
     ]
@@ -15425,6 +15511,19 @@
         ]
       },
       {
+        "name": "Solosis",
+        "level": 10,
+        "item": "Red Card",
+        "nature": "Gentle",
+        "ability": "Rattled",
+        "moves": [
+          "Acid",
+          "Lucky Chant",
+          "Psywave",
+          "Reflect"
+        ]
+      },
+      {
         "name": "Tepig",
         "level": 11,
         "item": "Charcoal",
@@ -15486,6 +15585,19 @@
         ]
       },
       {
+        "name": "Solosis",
+        "level": 10,
+        "item": "Red Card",
+        "nature": "Gentle",
+        "ability": "Rattled",
+        "moves": [
+          "Acid",
+          "Lucky Chant",
+          "Psywave",
+          "Reflect"
+        ]
+      },
+      {
         "name": "Oshawott",
         "level": 11,
         "item": "Mystic Water",
@@ -15544,6 +15656,19 @@
           "Bite",
           "Howl",
           "Scary Face"
+        ]
+      },
+      {
+        "name": "Solosis",
+        "level": 10,
+        "item": "Red Card",
+        "nature": "Gentle",
+        "ability": "Rattled",
+        "moves": [
+          "Acid",
+          "Lucky Chant",
+          "Psywave",
+          "Reflect"
         ]
       },
       {
@@ -16193,8 +16318,8 @@
   },
   {
     "id": "502",
-    "name": "Plain Captain Ilima",
-    "trainerClass": "Plain Captain",
+    "name": "Trial Captain Ilima",
+    "trainerClass": "Trial Captain",
     "personalName": "Ilima",
     "prizeMoney": 6120,
     "team": [
@@ -16237,8 +16362,8 @@
   },
   {
     "id": "503",
-    "name": "Hydro Captain Lana",
-    "trainerClass": "Hydro Captain",
+    "name": "Trial Captain Lana",
+    "trainerClass": "Trial Captain",
     "personalName": "Lana",
     "prizeMoney": 6120,
     "team": [
@@ -16280,8 +16405,8 @@
   },
   {
     "id": "504",
-    "name": "Heat Captain Kiawe",
-    "trainerClass": "Heat Captain",
+    "name": "Trial Captain Kiawe",
+    "trainerClass": "Trial Captain",
     "personalName": "Kiawe",
     "prizeMoney": 6120,
     "team": [
@@ -16323,8 +16448,8 @@
   },
   {
     "id": "505",
-    "name": "Nature Captain Mallow",
-    "trainerClass": "Nature Captain",
+    "name": "Trial Captain Mallow",
+    "trainerClass": "Trial Captain",
     "personalName": "Mallow",
     "prizeMoney": 6120,
     "team": [
@@ -16366,8 +16491,8 @@
   },
   {
     "id": "506",
-    "name": "Shock Captain Sophocles",
-    "trainerClass": "Shock Captain",
+    "name": "Trial Captain Sophocles",
+    "trainerClass": "Trial Captain",
     "personalName": "Sophocles",
     "prizeMoney": 6120,
     "team": [
@@ -16409,8 +16534,8 @@
   },
   {
     "id": "507",
-    "name": "Fae Captain Mina",
-    "trainerClass": "Fae Captain",
+    "name": "Trial Captain Mina",
+    "trainerClass": "Trial Captain",
     "personalName": "Mina",
     "prizeMoney": 6120,
     "team": [
@@ -16650,7 +16775,8 @@
         "moves": [
           "Splash",
           "Soak",
-          "Tackle"
+          "Tackle",
+          "Rain Dance"
         ]
       },
       {
@@ -16818,7 +16944,7 @@
         "level": 22,
         "item": "Firium Z",
         "nature": "Naughty",
-        "ability": "Sheer Force",
+        "ability": "Reckless",
         "moves": [
           "Flame Charge",
           "Magnitude",
@@ -17380,7 +17506,7 @@
         "moves": [
           "Ingrain",
           "Leech Seed",
-          "Grass Whistle",
+          "Grassy Terrain",
           "Mega Drain"
         ]
       },
@@ -20643,7 +20769,7 @@
         "name": "Goodra",
         "level": 52,
         "nature": "Adamant",
-        "ability": "Sap Sipper",
+        "ability": "Poison Heal",
         "moves": [
           "Aqua Tail",
           "Power Whip",
@@ -21372,7 +21498,7 @@
       {
         "name": "Elgyem",
         "level": 17,
-        "item": "Mental Herb",
+        "item": "Kasib Berry",
         "nature": "Modest",
         "ability": "Synchronize",
         "moves": [
@@ -21386,25 +21512,13 @@
         "name": "Cosmog",
         "level": 18,
         "item": "Red Card",
-        "nature": "Modest",
+        "nature": "Timid",
         "ability": "Unaware",
         "moves": [
           "Teleport",
           "Confusion",
-          "Ally Switch"
-        ]
-      },
-      {
-        "name": "Bronzor",
-        "level": 16,
-        "item": "Occa Berry",
-        "nature": "Quiet",
-        "ability": "Levitate",
-        "moves": [
-          "Psybeam",
-          "Metal Sound",
-          "Confuse Ray",
-          "Magnet Bomb"
+          "Ally Switch",
+          "Psychic Terrain"
         ]
       },
       {
@@ -21418,6 +21532,19 @@
           "Magical Leaf",
           "Aromatic Mist",
           "Disarming Voice"
+        ]
+      },
+      {
+        "name": "Bronzor",
+        "level": 16,
+        "item": "Occa Berry",
+        "nature": "Quiet",
+        "ability": "Levitate",
+        "moves": [
+          "Psybeam",
+          "Metal Sound",
+          "Confuse Ray",
+          "Magnet Bomb"
         ]
       },
       {
