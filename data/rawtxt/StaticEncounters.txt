@@ -24,7 +24,7 @@ Aura: Sp. Defense (+2) (SOS: None, None)
 
 007 - Raticate 1
 Raticate 1 (Lv. 14) @Kee Berry [Impish] {Thick Fat} <Me First/Tackle/Slink Strike/Reversal>
-Aura: Defense (+1) (SOS: 014, None)
+Aura: Defense (+1) (SOS: None, None)
 
 008 - Teddiursa
 Teddiursa (Lv. 13) @(None) [Naughty] {Honey Gather} <Lick/Mud Shot/Fury Swipes/Yawn>
@@ -532,7 +532,7 @@ Aura: None (SOS: None, None)
 
 134 - Happiny
 Happiny (Lv. 13) @Oval Stone [Random] {Friend Guard} <Charm/Round/Fairy Wind/Sweet Kiss>
-Aura: Defense (+2) (SOS: 134, None)
+Aura: Defense (+2) (SOS: None, None)
 
 135 - Exeggutor 1
 Exeggutor 1 (Lv. 40) @(None) [Random] {Harvest} <(None)/(None)/(None)/(None)>
@@ -612,11 +612,11 @@ Aura: None (SOS: None, None)
 
 154 - Rattata 1
 Rattata 1 (Lv. 4) @Oran Berry [Random] {Pickup} <Quick Attack/Snatch/Fling/(None)>
-Aura: Sp. Defense (+1) (SOS: 152, None)
+Aura: Sp. Defense (+1) (SOS: None, None)
 
 155 - Spearow
 Spearow (Lv. 4) @(None) [Random] {Keen Eye} <Peck/Double Team/Leer/(None)>
-Aura: Sp. Defense (+1) (SOS: 011, None)
+Aura: Sp. Defense (+1) (SOS: None, None)
 
 156 - Pinsir
 Pinsir (Lv. 42) @(None) [Random] {Moxie} <(None)/(None)/(None)/(None)>
@@ -827,7 +827,7 @@ Swellow (Lv. 60) @(None) [Random] {Guts} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
 
 208 - Drapion
-Drapion (Lv. 60) @(None) [Random] {Tough Claws} <(None)/(None)/(None)/(None)>
+Drapion (Lv. 60) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
 
 209 - Audino
