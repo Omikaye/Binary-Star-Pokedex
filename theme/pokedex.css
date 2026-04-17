@@ -491,3 +491,69 @@ a.subtle:hover {
 .tabbar .button.nav-last {
 	border-top-right-radius: 5px;
 }
+
+body.dark-mode .pokedex h1 a {
+	color: #e4ecfa;
+}
+
+body.dark-mode .dexentry dt,
+body.dark-mode .dexentry .minor,
+body.dark-mode table.stats .ministat,
+body.dark-mode table.stats .bst,
+body.dark-mode .movetag {
+	color: #b9c7df;
+}
+
+body.dark-mode .utilichart a.active,
+body.dark-mode .utilichart a.active:hover,
+body.dark-mode .utilichart.nokbd a:hover {
+	border-color: #3a4f72;
+	background: #122036;
+}
+
+body.dark-mode .utilichart a.sel,
+body.dark-mode .utilichart a.sel:hover,
+body.dark-mode .utilichart a.cur,
+body.dark-mode .utilichart a.cur:hover {
+	border-color: #49638f;
+	background: #172844;
+}
+
+body.dark-mode .utilichart .itemdesccol,
+body.dark-mode .utilichart .abilitydesccol,
+body.dark-mode .utilichart .movedesccol {
+	color: #a9bad8;
+}
+
+body.dark-mode .utilichart .sortrow {
+	background: #1c2b44;
+	border-bottom-color: #4e678f;
+}
+
+body.dark-mode .utilichart .sortcol {
+	color: #dce6f8;
+}
+
+body.dark-mode .utilichart .sortcol.cur {
+	background: #2a3f62;
+}
+
+body.dark-mode .utilichart .sortcol:hover {
+	background: #30476e;
+}
+
+body.dark-mode .utilichart .sortcol.numsortcol.cur,
+body.dark-mode .utilichart .sortcol.numsortcol.cur:hover {
+	background: #1c2b44;
+}
+
+body.dark-mode .tabbar:after {
+	background: #16243a;
+	border-color: #455d83;
+}
+
+body.dark-mode .tabbar .button.cur,
+body.dark-mode .tabbar .button.cur:hover {
+	background: #16243a;
+	border-color: #455d83;
+}

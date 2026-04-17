@@ -133,6 +133,7 @@
 		if (!__pokemonUsageCache) {
 			__pokemonUsageCache = {};
 			__pokemonUsageDetail = {};
+			window.__pokemonUsageCache = __pokemonUsageCache;
 			// Count wild encounters from Locations
 			if (window.Locations) {
 				for (let loc of window.Locations) {
@@ -205,6 +206,7 @@
 				}
 			}
 		}
+		window.__pokemonUsageCache = __pokemonUsageCache;
 		const usage = __pokemonUsageCache[toID(id)] || { wild: 0, trainer: 0 };
 		return usage;
 	}
@@ -246,21 +248,29 @@
 			e.preventDefault();
 			e.stopPropagation();
 			var sortCol = e.currentTarget.dataset.sort;
-			// Custom sorts for Abilities/Moves list views
-			if (sortCol === 'users') {
-					self.sortCol = 'users';
-					self.find('');
-					return;
-				}
-			if (sortCol === 'name') {
-				// Ensure name sort works for abilities page too
+			var rawType = self.engine && self.engine.typedSearch && self.engine.typedSearch.searchType;
+			var activeType = rawType ? (rawType.indexOf('move') !== -1 ? 'move' : (rawType.indexOf('ability') !== -1 ? 'ability' : rawType)) : null;
+
+			if (sortCol === 'users' && (activeType === 'move' || activeType === 'ability')) {
+				self.sortCol = 'users';
+				self.find('');
+				return;
+			}
+			if (sortCol === 'name' && (activeType === 'move' || activeType === 'ability')) {
 				self.sortCol = 'name';
 				self.find('');
 				return;
 			}
+			if ((sortCol === 'type' || sortCol === 'category') && activeType === 'move') {
+				self.sortCol = sortCol;
+				self.find('');
+				return;
+			}
+			try {
 				self.engine.toggleSort(sortCol);
 				self.sortCol = self.engine.sortCol;
-				self.find('');
+			} catch (err) {}
+			self.find('');
 		});
 	}
 
@@ -308,6 +318,9 @@
 		// Determine active search type (normalize singular/plural)
 		var rawType = this.engine && this.engine.typedSearch && this.engine.typedSearch.searchType;
 		var activeType = rawType ? (rawType.indexOf('move') !== -1 ? 'move' : (rawType.indexOf('ability') !== -1 ? 'ability' : rawType)) : null;
+		if (activeType === 'usage' && (this.sortCol === 'wild' || this.sortCol === 'trainer')) {
+			getPokemonUsage('');
+		}
 
 		// Custom sort by users for abilities or moves
 		if (this.sortCol === 'users') {
@@ -343,6 +356,24 @@
 				dataRowsN.sort(function(a,b){ return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0; });
 				this.resultSet = headerRowsN.concat(dataRowsN);
 			}
+		}
+		if (activeType === 'move' && (this.sortCol === 'type' || this.sortCol === 'category')) {
+			var headerRowsM = [];
+			var dataRowsM = [];
+			for (var rM of this.resultSet) {
+				if (rM[0] === 'sortmove' || rM[0] === 'html') headerRowsM.push(rM);
+				else if (rM[0] === 'move') dataRowsM.push(rM);
+				else headerRowsM.push(rM);
+			}
+			dataRowsM.sort(function(a, b) {
+				var moveA = getID(BattleMovedex, a[1]);
+				var moveB = getID(BattleMovedex, b[1]);
+				var valueA = (this.sortCol === 'type' ? moveA.type : moveA.category) || '';
+				var valueB = (this.sortCol === 'type' ? moveB.type : moveB.category) || '';
+				if (valueA !== valueB) return valueA < valueB ? -1 : 1;
+				return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0;
+			}.bind(this));
+			this.resultSet = headerRowsM.concat(dataRowsM);
 		}
 
 		this.renderedIndex = 0;
