@@ -189,16 +189,6 @@
           "item": "Haban Berry",
           "quantity": "20",
           "obtain": "At the end of the northern east path behind the rocks south of Iki Town (requires Tauros Charge)"
-        },
-        {
-          "item": "file 016 changed. Change back if the potion test does nothing.",
-          "quantity": "1",
-          "obtain": ""
-        },
-        {
-          "item": "Search \"244\" line 2393",
-          "quantity": "1",
-          "obtain": ""
         }
       ],
       "battles": [
@@ -849,7 +839,7 @@
       "shopTables": [],
       "items": [
         {
-          "item": "Grip Claw",
+          "item": "Potion",
           "quantity": "1",
           "obtain": "From a woman northeast of the yellow truck"
         },
@@ -1041,8 +1031,8 @@
           "obtain": "Ilima's house, from his mom in the kitchen"
         },
         {
-          "item": "Starf Berry",
-          "quantity": "3",
+          "item": "Revive",
+          "quantity": "1",
           "obtain": "Hau'oli City Hall, from a woman with a Pyukumuku"
         },
         {
@@ -1526,8 +1516,8 @@
           "obtain": "Near the ledge near the Hau'oli Cemetery entrance"
         },
         {
-          "item": "Poke Doll",
-          "quantity": "900",
+          "item": "Fluffy Tail",
+          "quantity": "100",
           "obtain": "In the northwest corner of the motel area"
         },
         {
@@ -1655,7 +1645,7 @@
         {
           "id": "472",
           "tag": "Mandatory",
-          "notes": "None"
+          "notes": "Blocks Verdant Cavern"
         },
         {
           "id": "469",
@@ -1664,18 +1654,18 @@
         },
         {
           "id": "633",
-          "tag": "Optional",
+          "tag": "Mandatory",
           "notes": "None"
         },
         {
           "id": "2",
-          "tag": "Optional",
-          "notes": "Reward: Maranga Berry x 900"
+          "tag": "Mandatory",
+          "notes": "Blocks Verdant Cavern"
         },
         {
           "id": "30",
           "tag": "Optional",
-          "notes": "Reward: Kee Berry x 900"
+          "notes": "Reward: Kee Berry x 20, Maranga Berry x 20"
         },
         {
           "id": "42",
@@ -1888,8 +1878,8 @@
           "obtain": "Located past Breeder Ikue"
         },
         {
-          "item": "Friend Ball",
-          "quantity": "10",
+          "item": "White Herb",
+          "quantity": "2",
           "obtain": "At the southernmost path intersection (hidden)"
         },
         {
@@ -1988,7 +1978,7 @@
         },
         {
           "item": "Air Balloon",
-          "quantity": "1",
+          "quantity": "5",
           "obtain": "On the west side of the beach, from the Mantine Surf attendant for getting rid of the Team Skull Grunts"
         },
         {
@@ -2005,6 +1995,11 @@
           "item": "Air Balloon",
           "quantity": "10",
           "obtain": "From the Youngster near the shore after solving the mysteries at the Trainers' School"
+        },
+        {
+          "item": "FOUR FRESH WATERS!",
+          "quantity": "1",
+          "obtain": ""
         }
       ],
       "battles": [
@@ -2259,7 +2254,7 @@
           "obtain": "South of the mossy rock in front of the second den (hidden)"
         },
         {
-          "item": "TM45 (Twister)",
+          "item": "TM54 (Twister)",
           "quantity": "1",
           "obtain": "At the top of the ledge northwest of the entrance"
         },
