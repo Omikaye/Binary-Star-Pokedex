@@ -310,6 +310,11 @@
           "item": "For Iki Town Bright Powder, you need to check which stardust giver she is. CHECK QUANTITY ON PICKUP (There's 3 candidates)",
           "quantity": "1",
           "obtain": ""
+        },
+        {
+          "item": "2 stardusts!",
+          "quantity": "1",
+          "obtain": ""
         }
       ],
       "battles": [
@@ -1533,7 +1538,7 @@
         {
           "item": "Tiny Mushroom",
           "quantity": "4",
-          "obtain": "From the man by Guzma's house after finding his Alolan Meowth"
+          "obtain": "From the man by Guzma's house after finding his Alolan Meowth (It's under the front of the truck)"
         },
         {
           "item": "Big Mushroom",
@@ -1541,9 +1546,9 @@
           "obtain": "From the man by Guzma's house after finding his Alolan Meowth"
         },
         {
-          "item": "Darkinium Z",
+          "item": "Nugget",
           "quantity": "1",
-          "obtain": "Held by Chomper, a Deino the player can receive in a trade if they give a Happiny. (If the Darkinium Z is removed, it is lost. It is ONLY on this Deino until the player gets the actual Z-Crystal Node)"
+          "obtain": "Held by Chomper, a Rockruff-Midnight the player can receive in a trade if they give a Happiny."
         },
         {
           "item": "Balm Mushroom",
@@ -1645,11 +1650,6 @@
         {
           "id": "472",
           "tag": "Mandatory",
-          "notes": "Blocks Verdant Cavern"
-        },
-        {
-          "id": "469",
-          "tag": "Mandatory",
           "notes": "None"
         },
         {
@@ -1658,9 +1658,9 @@
           "notes": "None"
         },
         {
-          "id": "2",
-          "tag": "Mandatory",
-          "notes": "Blocks Verdant Cavern"
+          "id": "42",
+          "tag": "Optional",
+          "notes": "Required Battle if you wish to enter Berry Fields"
         },
         {
           "id": "30",
@@ -1668,9 +1668,14 @@
           "notes": "Reward: Kee Berry x 20, Maranga Berry x 20"
         },
         {
-          "id": "42",
-          "tag": "Optional",
-          "notes": "Required Battle if you wish to enter Berry Fields"
+          "id": "469",
+          "tag": "Mandatory",
+          "notes": "Blocks Verdant Cavern"
+        },
+        {
+          "id": "2",
+          "tag": "Mandatory",
+          "notes": "Blocks Verdant Cavern"
         }
       ]
     },
@@ -1875,7 +1880,7 @@
         {
           "item": "TM59 (Thunder Wave)",
           "quantity": "1",
-          "obtain": "Located past Breeder Ikue"
+          "obtain": "Located past Preschooler Malia"
         },
         {
           "item": "White Herb",
@@ -1885,17 +1890,17 @@
         {
           "item": "Ganlon Berry",
           "quantity": "20",
-          "obtain": "Located past Preschooler Malia"
+          "obtain": "Located past Breeder Ikue"
         },
         {
           "item": "Apicot Berry",
           "quantity": "20",
-          "obtain": "Located past Preschooler Malia"
+          "obtain": "Located past Breeder Ikue"
         },
         {
           "item": "Wide Lens",
           "quantity": "1",
-          "obtain": "Located past Preschooler Malia"
+          "obtain": "Located past Breeder Ikue"
         },
         {
           "item": "Magmarizer",
@@ -1927,12 +1932,12 @@
         {
           "id": "41",
           "tag": "Optional",
-          "notes": "Reward: TM 100 Trailblaze"
+          "notes": "Reward: TM83 Thunder Wave"
         },
         {
           "id": "468",
           "tag": "Optional",
-          "notes": "Reward: Luminous Moss, Ganlon/Apicot Berries"
+          "notes": "Reward: Wide Lens, Ganlon/Apicot Berries"
         },
         {
           "id": "367",
@@ -1995,11 +2000,6 @@
           "item": "Air Balloon",
           "quantity": "10",
           "obtain": "From the Youngster near the shore after solving the mysteries at the Trainers' School"
-        },
-        {
-          "item": "FOUR FRESH WATERS!",
-          "quantity": "1",
-          "obtain": ""
         }
       ],
       "battles": [
@@ -2341,7 +2341,7 @@
     {
       "id": "route3",
       "name": "Route 3",
-      "notes": "",
+      "notes": "Hau battles you here IMMEDIATELY after speaking to Nebby in Seaward Cavern, be careful!",
       "encounters": [
         {
           "spot": "Grass",
@@ -2566,17 +2566,17 @@
         {
           "id": "31",
           "tag": "Optional",
-          "notes": "TM for Shock Wave and access to the Soothe Bell"
-        },
-        {
-          "id": "32",
-          "tag": "Optional",
           "notes": "None"
         },
         {
           "id": "33",
           "tag": "Optional",
-          "notes": "None"
+          "notes": "Abra: HP Fighting"
+        },
+        {
+          "id": "32",
+          "tag": "Optional",
+          "notes": "TM Electroweb and access to the Soothe Bell"
         },
         {
           "id": "16",
@@ -2725,9 +2725,9 @@
       ]
     },
     {
-      "id": "seawardcave",
-      "name": "Seaward Cave",
-      "notes": "Kala'e Bay is only fully accessible after obtaining Lapras. | There is persistent Snow inside this cave.",
+      "id": "seawardcavern",
+      "name": "Seaward Cavern",
+      "notes": "Kala'e Bay is only fully accessible after obtaining Lapras. Though, you can fish for a Pokemon there early. | There is persistent Snow inside this cave.",
       "encounters": [
         {
           "spot": "Cave",
@@ -2923,8 +2923,8 @@
       "shopTables": [],
       "items": [
         {
-          "item": "Snowball",
-          "quantity": "20",
+          "item": "Muscle Band",
+          "quantity": "1",
           "obtain": "Next to Melemele Meadow tunnel"
         },
         {
@@ -2933,8 +2933,8 @@
           "obtain": "West side of the cave, opposite the body of water, south of the fishing spot (requires Lapras Paddle or Sharpedo Jet)"
         },
         {
-          "item": "Muscle Band",
-          "quantity": "1",
+          "item": "Snowball",
+          "quantity": "20",
           "obtain": "West side of the cave, southwest of the Melemele Meadow tunnel"
         },
         {
@@ -2955,7 +2955,7 @@
         {
           "item": "Pure Incense",
           "quantity": "1",
-          "obtain": "South of the pool near the Kala'e Bay entrance, behind a rock (hidden)"
+          "obtain": "South of the pool near the Kala'e Bay entrance, near a rock (hidden)"
         },
         {
           "item": "Ice Gem",
