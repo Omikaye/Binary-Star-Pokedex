@@ -130,7 +130,7 @@ function parse() {
 
     if (isPlaceholder) continue;
 
-    trainers.push({ id: idStr, name, trainerClass, personalName, prizeMoney, team });
+    trainers.push({ id: idStr, name, trainerClass: toID(trainerClass), personalName, prizeMoney, team });
   }
 
   // Sort by numeric id
