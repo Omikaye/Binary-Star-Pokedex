@@ -121,7 +121,10 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
         var sMonID = toID(sDispName);
         var sMonData = BattlePokedex[sMonID];
         if (!sMonData && sMonID) {
-          sMonData = BattlePokedex[sMonID.split('-')[0]];
+          // Split the display name (before toID removes dashes) to get the base species
+          var sDashIdx = sDispName.indexOf('-');
+          var sBaseID = sDashIdx !== -1 ? toID(sDispName.substring(0, sDashIdx)) : sMonID;
+          sMonData = BattlePokedex[sBaseID];
         }
         var sMonLinkId = sMonData ? toID(sMonData.name) : sMonID;
         buf += '<div style="position:relative;display:inline-block">';
@@ -256,8 +259,10 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var monData = BattlePokedex[monID];
       var iconId = monID;
       if (!monData && monID) {
-        var baseGuess = monID.split('-')[0];
-        monData = BattlePokedex[baseGuess];
+        // Split the display name (before toID removes dashes) to get the base species
+        var dashIdx = dispName.indexOf('-');
+        var baseID = dashIdx !== -1 ? toID(dispName.substring(0, dashIdx)) : monID;
+        monData = BattlePokedex[baseID];
         // Don't change iconId - keep the form information for correct sprite
       }
       var bg = colors[pi % colors.length];
@@ -270,7 +275,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
 
       buf += '<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
       buf += '<span class="picon" style="' + getPokemonIcon(iconId) + ';display:inline-block;vertical-align:middle"></span>';
-      var monName = monData ? monData.name : (m.name || '???');
+      var monName = dispName || (monData ? monData.name : '???');
       var monLinkId = monData ? toID(monData.name) : monID;
       buf += '<a href="' + Config.baseurl + 'pokemon/' + monLinkId + '" data-target="push" class="subtle" style="text-decoration:none"><div style="font-size:16px;font-weight:600">' + escapeHTML(monName) + ' <small>(Lv. ' + (m.level || '?') + ')</small></div></a>';
       buf += '</div>';
