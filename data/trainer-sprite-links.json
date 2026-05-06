@@ -1,79 +1,233 @@
 {
-  "royal": "https://archives.bulbagarden.net/media/upload/b/b6/VSThe_Royal.png",
-  "hau": "https://archives.bulbagarden.net/media/upload/3/31/VSHau_2.png",
-  "youngster": "https://archives.bulbagarden.net/media/upload/3/38/VSYoungster_2_USUM.png",
-  "lass": "https://archives.bulbagarden.net/media/upload/8/86/VSLass_SM.png",
-  "lysandre": "https://archives.bulbagarden.net/media/upload/c/c9/VSLysandre_USUM.png",
-  "kukui": "https://archives.bulbagarden.net/media/upload/7/78/VSKukui_3.png",
-  "kiawe": "https://archives.bulbagarden.net/media/upload/3/34/VSKiawe.png",
-  "kindergartener": "https://archives.bulbagarden.net/media/upload/6/6d/VSPreschooler_M_SM.png",
-  "preschooler": "https://archives.bulbagarden.net/media/upload/7/70/VSPreschooler_F_SM.png",
-  "cop": "https://archives.bulbagarden.net/media/upload/4/4d/VSPolice_Officer.png",
-  "swimgal": "https://archives.bulbagarden.net/media/upload/2/29/VSSwimmer_F_black_SM.png",
-  "athleteintraining": "https://archives.bulbagarden.net/media/upload/7/7b/VSYouth_Athlete_F_SM.png",
-  "risingstar": "https://archives.bulbagarden.net/media/upload/4/47/VSRising_Star_M_SM.png",
-  "upandcoming": "https://archives.bulbagarden.net/media/upload/8/88/VSRising_Star_F_SM.png",
-  "punkguy": "https://archives.bulbagarden.net/media/upload/4/4f/VSPunk_Guy_SM.png",
-  "punkgirl": "https://archives.bulbagarden.net/media/upload/6/69/VSPunk_Girl_SM.png",
-  "nurse": "https://archives.bulbagarden.net/media/upload/b/b4/VSPok%C3%A9mon_Center_Lady.png",
-  "teamskull": "https://archives.bulbagarden.net/media/upload/a/ad/VSTeam_Skull_Grunt_M.png",
-  "skullgang": "https://archives.bulbagarden.net/media/upload/0/0c/VSTeam_Skull_Grunt_F.png",
-  "ilima": "https://archives.bulbagarden.net/media/upload/b/bf/VSIlima_USUM.png",
-  "surfdude": "https://archives.bulbagarden.net/media/upload/5/51/VSSurfer.png",
-  "beauty": "https://archives.bulbagarden.net/media/upload/d/d4/VSBeauty_SM.png",
-  "gentleman": "https://archives.bulbagarden.net/media/upload/e/e8/VSGentleman_SM.png",
-  "madame": "https://archives.bulbagarden.net/media/upload/9/9e/VSMadame_SM.png",
-  "mallow": "https://archives.bulbagarden.net/media/upload/9/92/VSMallow.png",
-  "mina": "https://archives.bulbagarden.net/media/upload/4/48/VSMina_2_USUM.png",
-  "maxie": "https://archives.bulbagarden.net/media/upload/e/e9/VSMaxie_USUM.png",
-  "nanu": "https://archives.bulbagarden.net/media/upload/5/57/VSNanu_2.png",
-  "molayne": "https://archives.bulbagarden.net/media/upload/8/86/VSMolayne_USUM.png",
-  "teacher": "https://archives.bulbagarden.net/media/upload/a/ad/VSOffice_Worker_F_SM.png",
-  "actor": "https://archives.bulbagarden.net/media/upload/a/ad/VSOffice_Worker_F_SM.png",
-  "businesswoman": "https://archives.bulbagarden.net/media/upload/a/ad/VSOffice_Worker_F_SM.png",
-  "pokmonrancher": "https://archives.bulbagarden.net/media/upload/6/66/VSPok%C3%A9mon_Breeder_M_SM.png",
-  "pokmonbreeder": "https://archives.bulbagarden.net/media/upload/5/50/VSPok%C3%A9mon_Breeder_F_SM.png",
-  "officeworker": "https://archives.bulbagarden.net/media/upload/f/fc/VSOffice_Worker_M_SM.png",
-  "acetrainer": "https://archives.bulbagarden.net/media/upload/7/7e/VSAce_Trainer_M_2_USUM.png",
-  "startrainer": "https://archives.bulbagarden.net/media/upload/4/42/VSAce_Trainer_F_2_USUM.png",
-  "dulse": "https://archives.bulbagarden.net/media/upload/4/41/VSDulse.png",
-  "hala": "https://archives.bulbagarden.net/media/upload/4/4b/VSHala_USUM.png",
-  "dexio": "https://archives.bulbagarden.net/media/upload/4/4e/VSDexio.png",
-  "sina": "https://archives.bulbagarden.net/media/upload/5/54/VSSina.png",
-  "ryuki": "https://archives.bulbagarden.net/media/upload/8/87/VSRyuki.png",
-  "cook": "https://archives.bulbagarden.net/media/upload/9/99/VSCook_SM.png",
-  "dancer": "https://archives.bulbagarden.net/media/upload/a/a8/VSDancer_SM.png",
-  "blackbelt": "https://archives.bulbagarden.net/media/upload/a/a8/VSBlack_Belt_2_USUM.png",
-  "sightseer": "https://archives.bulbagarden.net/media/upload/0/0f/VSSightseer_F_SM.png",
-  "tourist": "https://archives.bulbagarden.net/media/upload/0/0e/VSSightseer_M_SM.png",
-  "bellhop": "https://archives.bulbagarden.net/media/upload/3/3c/VSBellhop.png",
-  "collector": "https://archives.bulbagarden.net/media/upload/8/88/VSCollector_2_USUM.png",
-  "kahili": "https://archives.bulbagarden.net/media/upload/3/37/VSKahili.png",
-  "lana": "https://archives.bulbagarden.net/media/upload/7/7e/VSLana.png",
-  "mother": "https://archives.bulbagarden.net/media/upload/d/d6/VSLusamine_2.png",
-  "olivia": "https://archives.bulbagarden.net/media/upload/f/ff/VSOlivia_2.png",
-  "bigsis": "https://archives.bulbagarden.net/media/upload/3/3d/VSPlumeria_2.png",
-  "trialguide": "https://archives.bulbagarden.net/media/upload/b/b6/VSTrial_Guide_F_2.png",
-  "challengeguide": "https://archives.bulbagarden.net/media/upload/b/b6/VSTrial_Guide_M_2.png",
-  "veteran": "https://archives.bulbagarden.net/media/upload/b/ba/VSVeteran_M_2_SM.png",
-  "virtuoso": "https://archives.bulbagarden.net/media/upload/f/f5/VSVeteran_F_2_SM.png",
-  "youthathlete": "https://archives.bulbagarden.net/media/upload/7/7b/VSYouth_Athlete_F_SM.png",
-  "acerola": "https://archives.bulbagarden.net/media/upload/6/6c/VSAcerola.png",
-  "aetherfoundation": "https://archives.bulbagarden.net/media/upload/a/a2/VSAether_Foundation_Employee_M.png",
-  "aetherscientist": "https://archives.bulbagarden.net/media/upload/1/17/VSAether_Foundation_Employee_scientist.png",
-  "backpacker": "https://archives.bulbagarden.net/media/upload/e/e4/VSBackpacker_F_SM.png",
-  "blue": "https://archives.bulbagarden.net/media/upload/e/ea/VSBlue_SM.png",
-  "colress": "https://archives.bulbagarden.net/media/upload/e/e1/VSColress_SM.png",
-  "cynthia": "https://archives.bulbagarden.net/media/upload/e/e4/VSCynthia_SM.png",
-  "cyrus": "https://archives.bulbagarden.net/media/upload/2/22/VSCyrus.png",
-  "faba": "https://archives.bulbagarden.net/media/upload/0/06/VSFaba.png",
-  "firefighter": "https://archives.bulbagarden.net/media/upload/e/e7/VSFirefighter.png",
-  "fisherman": "https://archives.bulbagarden.net/media/upload/b/b5/VSFisherman_SM.png",
-  "ghetsis": "https://archives.bulbagarden.net/media/upload/0/09/VSGhetsis_USUM.png",
-  "gladion": "https://archives.bulbagarden.net/media/upload/0/00/VSGladion_2_USUM.png",
-  "giovanni": "https://archives.bulbagarden.net/media/upload/2/22/VSGiovanni_2_USUM.png",
-  "guzma": "https://archives.bulbagarden.net/media/upload/e/eb/VSGuzma_2.png",
-  "pokmontrainer": "https://archives.bulbagarden.net/media/upload/6/6f/VSPok%C3%A9mon_Trainer_SM.png",
-  "pokemontrainer": "https://archives.bulbagarden.net/media/upload/6/6f/VSPok%C3%A9mon_Trainer_SM.png",
-  "trainer": "https://archives.bulbagarden.net/media/upload/6/6f/VSPok%C3%A9mon_Trainer_SM.png"
+  "royal": {
+    "unique": "https://archives.bulbagarden.net/media/upload/b/b6/VSThe_Royal.png"
+  },
+  "hau": {
+    "unique": "https://archives.bulbagarden.net/media/upload/3/31/VSHau_2.png"
+  },
+  "youngster": {
+    "class": "https://archives.bulbagarden.net/media/upload/3/38/VSYoungster_2_USUM.png"
+  },
+  "lass": {
+    "class": "https://archives.bulbagarden.net/media/upload/8/86/VSLass_SM.png"
+  },
+  "lysandre": {
+    "unique": "https://archives.bulbagarden.net/media/upload/c/c9/VSLysandre_USUM.png"
+  },
+  "kukui": {
+    "unique": "https://archives.bulbagarden.net/media/upload/7/78/VSKukui_3.png"
+  },
+  "kiawe": {
+    "unique": "https://archives.bulbagarden.net/media/upload/3/34/VSKiawe.png"
+  },
+  "kindergartener": {
+    "class": "https://archives.bulbagarden.net/media/upload/6/6d/VSPreschooler_M_SM.png"
+  },
+  "preschooler": {
+    "class": "https://archives.bulbagarden.net/media/upload/7/70/VSPreschooler_F_SM.png"
+  },
+  "cop": {
+    "class": "https://archives.bulbagarden.net/media/upload/4/4d/VSPolice_Officer.png"
+  },
+  "swimgal": {
+    "class": "https://archives.bulbagarden.net/media/upload/2/29/VSSwimmer_F_black_SM.png"
+  },
+  "athleteintraining": {
+    "class": "https://archives.bulbagarden.net/media/upload/7/7b/VSYouth_Athlete_F_SM.png"
+  },
+  "risingstar": {
+    "class": "https://archives.bulbagarden.net/media/upload/4/47/VSRising_Star_M_SM.png"
+  },
+  "upandcoming": {
+    "class": "https://archives.bulbagarden.net/media/upload/8/88/VSRising_Star_F_SM.png"
+  },
+  "punkguy": {
+    "class": "https://archives.bulbagarden.net/media/upload/4/4f/VSPunk_Guy_SM.png"
+  },
+  "punkgirl": {
+    "class": "https://archives.bulbagarden.net/media/upload/6/69/VSPunk_Girl_SM.png"
+  },
+  "nurse": {
+    "class": "https://archives.bulbagarden.net/media/upload/b/b4/VSPok%C3%A9mon_Center_Lady.png"
+  },
+  "teamskull": {
+    "class": "https://archives.bulbagarden.net/media/upload/a/ad/VSTeam_Skull_Grunt_M.png"
+  },
+  "skullgang": {
+    "class": "https://archives.bulbagarden.net/media/upload/0/0c/VSTeam_Skull_Grunt_F.png"
+  },
+  "ilima": {
+    "unique": "https://archives.bulbagarden.net/media/upload/b/bf/VSIlima_USUM.png"
+  },
+  "surfdude": {
+    "class": "https://archives.bulbagarden.net/media/upload/5/51/VSSurfer.png"
+  },
+  "beauty": {
+    "class": "https://archives.bulbagarden.net/media/upload/d/d4/VSBeauty_SM.png"
+  },
+  "gentleman": {
+    "class": "https://archives.bulbagarden.net/media/upload/e/e8/VSGentleman_SM.png"
+  },
+  "madame": {
+    "class": "https://archives.bulbagarden.net/media/upload/9/9e/VSMadame_SM.png"
+  },
+  "mallow": {
+    "unique": "https://archives.bulbagarden.net/media/upload/9/92/VSMallow.png"
+  },
+  "mina": {
+    "unique": "https://archives.bulbagarden.net/media/upload/4/48/VSMina_2_USUM.png"
+  },
+  "maxie": {
+    "unique": "https://archives.bulbagarden.net/media/upload/e/e9/VSMaxie_USUM.png"
+  },
+  "nanu": {
+    "unique": "https://archives.bulbagarden.net/media/upload/5/57/VSNanu_2.png"
+  },
+  "molayne": {
+    "unique": "https://archives.bulbagarden.net/media/upload/8/86/VSMolayne_USUM.png"
+  },
+  "teacher": {
+    "class": "https://archives.bulbagarden.net/media/upload/a/ad/VSOffice_Worker_F_SM.png"
+  },
+  "actor": {
+    "class": "https://archives.bulbagarden.net/media/upload/a/ad/VSOffice_Worker_F_SM.png"
+  },
+  "businesswoman": {
+    "class": "https://archives.bulbagarden.net/media/upload/a/ad/VSOffice_Worker_F_SM.png"
+  },
+  "pokmonrancher": {
+    "class": "https://archives.bulbagarden.net/media/upload/6/66/VSPok%C3%A9mon_Breeder_M_SM.png"
+  },
+  "pokmonbreeder": {
+    "class": "https://archives.bulbagarden.net/media/upload/5/50/VSPok%C3%A9mon_Breeder_F_SM.png"
+  },
+  "officeworker": {
+    "class": "https://archives.bulbagarden.net/media/upload/f/fc/VSOffice_Worker_M_SM.png"
+  },
+  "acetrainer": {
+    "class": "https://archives.bulbagarden.net/media/upload/7/7e/VSAce_Trainer_M_2_USUM.png"
+  },
+  "startrainer": {
+    "class": "https://archives.bulbagarden.net/media/upload/4/42/VSAce_Trainer_F_2_USUM.png"
+  },
+  "dulse": {
+    "unique": "https://archives.bulbagarden.net/media/upload/4/41/VSDulse.png"
+  },
+  "hala": {
+    "unique": "https://archives.bulbagarden.net/media/upload/4/4b/VSHala_USUM.png"
+  },
+  "dexio": {
+    "unique": "https://archives.bulbagarden.net/media/upload/4/4e/VSDexio.png"
+  },
+  "sina": {
+    "unique": "https://archives.bulbagarden.net/media/upload/5/54/VSSina.png"
+  },
+  "ryuki": {
+    "unique": "https://archives.bulbagarden.net/media/upload/8/87/VSRyuki.png"
+  },
+  "cook": {
+    "class": "https://archives.bulbagarden.net/media/upload/9/99/VSCook_SM.png"
+  },
+  "dancer": {
+    "class": "https://archives.bulbagarden.net/media/upload/a/a8/VSDancer_SM.png"
+  },
+  "blackbelt": {
+    "class": "https://archives.bulbagarden.net/media/upload/a/a8/VSBlack_Belt_2_USUM.png"
+  },
+  "sightseer": {
+    "class": "https://archives.bulbagarden.net/media/upload/0/0f/VSSightseer_F_SM.png"
+  },
+  "tourist": {
+    "class": "https://archives.bulbagarden.net/media/upload/0/0e/VSSightseer_M_SM.png"
+  },
+  "bellhop": {
+    "class": "https://archives.bulbagarden.net/media/upload/3/3c/VSBellhop.png"
+  },
+  "collector": {
+    "class": "https://archives.bulbagarden.net/media/upload/8/88/VSCollector_2_USUM.png"
+  },
+  "kahili": {
+    "unique": "https://archives.bulbagarden.net/media/upload/3/37/VSKahili.png"
+  },
+  "lana": {
+    "unique": "https://archives.bulbagarden.net/media/upload/7/7e/VSLana.png"
+  },
+  "mother": {
+    "unique": "https://archives.bulbagarden.net/media/upload/d/d6/VSLusamine_2.png"
+  },
+  "olivia": {
+    "unique": "https://archives.bulbagarden.net/media/upload/f/ff/VSOlivia_2.png"
+  },
+  "bigsis": {
+    "unique": "https://archives.bulbagarden.net/media/upload/3/3d/VSPlumeria_2.png"
+  },
+  "trialguide": {
+    "class": "https://archives.bulbagarden.net/media/upload/b/b6/VSTrial_Guide_F_2.png"
+  },
+  "challengeguide": {
+    "class": "https://archives.bulbagarden.net/media/upload/b/b6/VSTrial_Guide_M_2.png"
+  },
+  "veteran": {
+    "class": "https://archives.bulbagarden.net/media/upload/b/ba/VSVeteran_M_2_SM.png"
+  },
+  "virtuoso": {
+    "class": "https://archives.bulbagarden.net/media/upload/f/f5/VSVeteran_F_2_SM.png"
+  },
+  "youthathlete": {
+    "class": "https://archives.bulbagarden.net/media/upload/7/7b/VSYouth_Athlete_F_SM.png"
+  },
+  "acerola": {
+    "unique": "https://archives.bulbagarden.net/media/upload/6/6c/VSAcerola.png"
+  },
+  "aetherfoundation": {
+    "class": "https://archives.bulbagarden.net/media/upload/a/a2/VSAether_Foundation_Employee_M.png"
+  },
+  "aetherscientist": {
+    "class": "https://archives.bulbagarden.net/media/upload/1/17/VSAether_Foundation_Employee_scientist.png"
+  },
+  "backpacker": {
+    "class": "https://archives.bulbagarden.net/media/upload/e/e4/VSBackpacker_F_SM.png"
+  },
+  "blue": {
+    "unique": "https://archives.bulbagarden.net/media/upload/e/ea/VSBlue_SM.png"
+  },
+  "colress": {
+    "unique": "https://archives.bulbagarden.net/media/upload/e/e1/VSColress_SM.png"
+  },
+  "cynthia": {
+    "unique": "https://archives.bulbagarden.net/media/upload/e/e4/VSCynthia_SM.png"
+  },
+  "cyrus": {
+    "unique": "https://archives.bulbagarden.net/media/upload/2/22/VSCyrus.png"
+  },
+  "faba": {
+    "unique": "https://archives.bulbagarden.net/media/upload/0/06/VSFaba.png"
+  },
+  "firefighter": {
+    "class": "https://archives.bulbagarden.net/media/upload/e/e7/VSFirefighter.png"
+  },
+  "fisherman": {
+    "class": "https://archives.bulbagarden.net/media/upload/b/b5/VSFisherman_SM.png"
+  },
+  "ghetsis": {
+    "unique": "https://archives.bulbagarden.net/media/upload/0/09/VSGhetsis_USUM.png"
+  },
+  "gladion": {
+    "unique": "https://archives.bulbagarden.net/media/upload/0/00/VSGladion_2_USUM.png"
+  },
+  "giovanni": {
+    "unique": "https://archives.bulbagarden.net/media/upload/2/22/VSGiovanni_2_USUM.png"
+  },
+  "guzma": {
+    "unique": "https://archives.bulbagarden.net/media/upload/e/eb/VSGuzma_2.png"
+  },
+  "pokmontrainer": {
+    "class": "https://archives.bulbagarden.net/media/upload/6/6f/VSPok%C3%A9mon_Trainer_SM.png"
+  },
+  "pokemontrainer": {
+    "class": "https://archives.bulbagarden.net/media/upload/6/6f/VSPok%C3%A9mon_Trainer_SM.png"
+  },
+  "trainer": {
+    "class": "https://archives.bulbagarden.net/media/upload/6/6f/VSPok%C3%A9mon_Trainer_SM.png"
+  }
 }
