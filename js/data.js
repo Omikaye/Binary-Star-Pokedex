@@ -1,5 +1,17 @@
 // ...existing code...
 
+// Resolve a trainer sprite link entry to a URL.
+// Supports legacy format (string) and new format ({ unique, class }).
+const resolveTrainerSpriteUrl = (entry) => {
+  if (!entry) return null;
+  if (typeof entry === 'string') return entry;
+  if (typeof entry === 'object') {
+    // Prefer per-person sprite when present, else class sprite
+    return entry.unique || entry.class || null;
+  }
+  return null;
+};
+
 // Helper function to build trainer sprite background CSS from URL
 const buildTrainerSpriteBackgroundFromUrl = (url, includeSize = true) => {
   // Note: URLs from archives.bulbagarden.net are case-sensitive and should be used as-is.
@@ -27,11 +39,13 @@ window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
     // Prefer explicit personalName / trainerClass fields when available.
     const personalNameId = toID(personalName);
     if (personalNameId && TrainerSpriteLinks[personalNameId]) {
-      return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId]);
+      const url = resolveTrainerSpriteUrl(TrainerSpriteLinks[personalNameId]);
+      if (url) return buildTrainerSpriteBackgroundFromUrl(url);
     }
     const trainerClassId = toID(trainerClass);
     if (trainerClassId && TrainerSpriteLinks[trainerClassId]) {
-      return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[trainerClassId]);
+      const url = resolveTrainerSpriteUrl(TrainerSpriteLinks[trainerClassId]);
+      if (url) return buildTrainerSpriteBackgroundFromUrl(url);
     }
 
     // Fallback to parsing the last word as a personal name.
@@ -39,7 +53,8 @@ window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
     if (parts.length >= 2) {
       const lastWordId = toID(parts[parts.length - 1]);
       if (TrainerSpriteLinks[lastWordId]) {
-        return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[lastWordId]);
+        const url = resolveTrainerSpriteUrl(TrainerSpriteLinks[lastWordId]);
+        if (url) return buildTrainerSpriteBackgroundFromUrl(url);
       }
       const className = window.getTrainerClass(trainerClassOrName);
       classId = toID(className);
@@ -47,7 +62,8 @@ window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
   }
 
   if (TrainerSpriteLinks[classId]) {
-    return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId]);
+    const url = resolveTrainerSpriteUrl(TrainerSpriteLinks[classId]);
+    if (url) return buildTrainerSpriteBackgroundFromUrl(url);
   }
 
   return 'background:transparent';
@@ -71,18 +87,21 @@ window.getTrainerBackground = (trainerClassOrName, checkPersonalName) => {
   if (checkPersonalName) {
     const personalNameId = toID(personalName);
     if (personalNameId && TrainerSpriteLinks[personalNameId]) {
-      return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId], false);
+      const url = resolveTrainerSpriteUrl(TrainerSpriteLinks[personalNameId]);
+      if (url) return buildTrainerSpriteBackgroundFromUrl(url, false);
     }
     const trainerClassId = toID(trainerClass);
     if (trainerClassId && TrainerSpriteLinks[trainerClassId]) {
-      return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[trainerClassId], false);
+      const url = resolveTrainerSpriteUrl(TrainerSpriteLinks[trainerClassId]);
+      if (url) return buildTrainerSpriteBackgroundFromUrl(url, false);
     }
 
     const parts = String(trainerClassOrName).trim().split(/\s+/);
     if (parts.length >= 2) {
       const lastWordId = toID(parts[parts.length - 1]);
       if (TrainerSpriteLinks[lastWordId]) {
-        return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[lastWordId], false);
+        const url = resolveTrainerSpriteUrl(TrainerSpriteLinks[lastWordId]);
+        if (url) return buildTrainerSpriteBackgroundFromUrl(url, false);
       }
       const className = window.getTrainerClass(trainerClassOrName);
       classId = toID(className);
@@ -90,7 +109,8 @@ window.getTrainerBackground = (trainerClassOrName, checkPersonalName) => {
   }
 
   if (TrainerSpriteLinks[classId]) {
-    return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId], false);
+    const url = resolveTrainerSpriteUrl(TrainerSpriteLinks[classId]);
+    if (url) return buildTrainerSpriteBackgroundFromUrl(url, false);
   }
 
   return 'background:transparent';
