@@ -395,7 +395,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 				const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
 				return '<span class="picon" style="' + getPokemonIcon(toID(disp)) + ';display:inline-block;vertical-align:middle"></span>';
 			}).join('');
-			const trainerBg = (typeof getTrainerBackground === 'function') ? getTrainerBackground(t.name, true) : getTrainerIcon(t.name, true);
+			const trainerBg = (typeof getTrainerBackground === 'function') ? getTrainerBackground(t) : getTrainerIcon(t.name, true);
 			const thumb = '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
 				'<div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;' + trainerBg + ';"></div>' +
 				'</div>';

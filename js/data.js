@@ -240,62 +240,101 @@ const buildTrainerSpriteBackgroundFromUrl = (url, includeSize = true) => {
   return includeSize ? `${base}; background-size:auto;` : base;
 };
 
-window.getTrainerIcon = (trainerClassOrName, checkPersonalName) => {
-  if (!trainerClassOrName) return 'background:transparent';
-  
-  let classId = toID(trainerClassOrName);
-  
+// Resolve a trainer-sprite-links entry to a plain URL string.
+// Handles both the legacy string format and the current { unique, class } object format.
+const resolveTrainerSpriteEntry = (entry) => {
+  if (!entry) return null;
+  if (typeof entry === 'string') return entry;
+  if (typeof entry === 'object') return entry.unique || entry.class || null;
+  return null;
+};
+
+// Resolve a sprite URL for a trainer object using its explicit trainerClass / personalName fields.
+// Priority: personalName-keyed unique sprite first, then trainerClass sprite.
+window.getTrainerSpriteUrl = (trainer) => {
+  if (!trainer || !TrainerSpriteLinks) return null;
+  let url = null;
+  if (trainer.personalName) {
+    url = resolveTrainerSpriteEntry(TrainerSpriteLinks[toID(trainer.personalName)]);
+  }
+  if (!url && trainer.trainerClass) {
+    url = resolveTrainerSpriteEntry(TrainerSpriteLinks[toID(trainer.trainerClass)]);
+  }
+  return url;
+};
+
+window.getTrainerIcon = (trainerOrName, checkPersonalName) => {
+  if (!trainerOrName) return 'background:transparent';
+
+  // Accept a trainer object with explicit trainerClass / personalName fields
+  if (typeof trainerOrName === 'object') {
+    const url = window.getTrainerSpriteUrl(trainerOrName);
+    if (url) return buildTrainerSpriteBackgroundFromUrl(url);
+    return 'background:transparent';
+  }
+
+  let classId = toID(trainerOrName);
+
   // If checkPersonalName is true, try to extract and check the personal name first
   if (checkPersonalName) {
-    const parts = trainerClassOrName.trim().split(/\s+/);
+    const parts = trainerOrName.trim().split(/\s+/);
     if (parts.length >= 2) {
       // Check last word (personal name) - e.g., "Hau", "Gladion", "Olivia"
       const personalNameId = toID(parts[parts.length - 1]);
-      // First check if we have a sprite link for this personal name
-      if (TrainerSpriteLinks[personalNameId]) {
-        return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId]);
+      const personalUrl = resolveTrainerSpriteEntry(TrainerSpriteLinks[personalNameId]);
+      if (personalUrl) {
+        return buildTrainerSpriteBackgroundFromUrl(personalUrl);
       }
       // If personal name not found, fall back to class name
-      const className = window.getTrainerClass(trainerClassOrName);
+      const className = window.getTrainerClass(trainerOrName);
       classId = toID(className);
     }
   }
-  
+
   // Check if we have a sprite link for the class
-  if (TrainerSpriteLinks[classId]) {
-    return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId]);
+  const classUrl = resolveTrainerSpriteEntry(TrainerSpriteLinks[classId]);
+  if (classUrl) {
+    return buildTrainerSpriteBackgroundFromUrl(classUrl);
   }
-  
+
   // No fallback to sprite sheet - return transparent
   return 'background:transparent';
 };
 
 // Returns only the background image/position for use in compact thumbnails
-window.getTrainerBackground = (trainerClassOrName, checkPersonalName) => {
-  if (!trainerClassOrName) return 'background:transparent';
-  
-  let classId = toID(trainerClassOrName);
-  
+window.getTrainerBackground = (trainerOrName, checkPersonalName) => {
+  if (!trainerOrName) return 'background:transparent';
+
+  // Accept a trainer object with explicit trainerClass / personalName fields
+  if (typeof trainerOrName === 'object') {
+    const url = window.getTrainerSpriteUrl(trainerOrName);
+    if (url) return buildTrainerSpriteBackgroundFromUrl(url, false);
+    return 'background:transparent';
+  }
+
+  let classId = toID(trainerOrName);
+
   // If checkPersonalName is true, try to extract and check the personal name first
   if (checkPersonalName) {
-    const parts = trainerClassOrName.trim().split(/\s+/);
+    const parts = trainerOrName.trim().split(/\s+/);
     if (parts.length >= 2) {
       const personalNameId = toID(parts[parts.length - 1]);
-      // First check if we have a sprite link for this personal name
-      if (TrainerSpriteLinks[personalNameId]) {
-        return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[personalNameId], false);
+      const personalUrl = resolveTrainerSpriteEntry(TrainerSpriteLinks[personalNameId]);
+      if (personalUrl) {
+        return buildTrainerSpriteBackgroundFromUrl(personalUrl, false);
       }
       // If personal name not found, fall back to class name
-      const className = window.getTrainerClass(trainerClassOrName);
+      const className = window.getTrainerClass(trainerOrName);
       classId = toID(className);
     }
   }
-  
+
   // Check if we have a sprite link for the class
-  if (TrainerSpriteLinks[classId]) {
-    return buildTrainerSpriteBackgroundFromUrl(TrainerSpriteLinks[classId], false);
+  const classUrl = resolveTrainerSpriteEntry(TrainerSpriteLinks[classId]);
+  if (classUrl) {
+    return buildTrainerSpriteBackgroundFromUrl(classUrl, false);
   }
-  
+
   // No fallback to sprite sheet - return transparent
   return 'background:transparent';
 };
