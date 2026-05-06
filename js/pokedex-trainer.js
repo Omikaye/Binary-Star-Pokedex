@@ -17,36 +17,43 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     this.trainer = trainer;
     this.shortTitle = trainer.name;
 
-    // Get trainer sprite URL - match by:
-    // 1. Last word of trainer name (personal name, e.g. "Hau" from "Punk Guy Hau")
-    // 2. Everything except last word (trainer class, e.g. "Surf Dude" from "Surf Dude Harry")
+    // Resolve a trainer sprite link entry to a URL.
+    // Supports legacy format (string) and new format ({ unique, class }).
+    const resolveTrainerSpriteUrl = (entry) => {
+      if (!entry) return null;
+      if (typeof entry === 'string') return entry;
+      if (typeof entry === 'object') return entry.unique || entry.class || null;
+      return null;
+    };
+
+    // Get trainer sprite URL - prefer:
+    // 1) per-person (unique) via personalName
+    // 2) class sprite via trainerClass
+    // 3) fallback parsing full name
     var spriteUrl = null;
     if (TrainerSpriteLinks) {
-      // Try personal name first (last word of name)
-      if (trainer.personalName && TrainerSpriteLinks[toID(trainer.personalName)]) {
-        spriteUrl = TrainerSpriteLinks[toID(trainer.personalName)];
+      if (trainer.personalName) {
+        spriteUrl = resolveTrainerSpriteUrl(TrainerSpriteLinks[toID(trainer.personalName)]);
       }
-      // Try trainer class (everything except last word)
-      else if (trainer.trainerClass && TrainerSpriteLinks[toID(trainer.trainerClass)]) {
-        spriteUrl = TrainerSpriteLinks[toID(trainer.trainerClass)];
+      if (!spriteUrl && trainer.trainerClass) {
+        spriteUrl = resolveTrainerSpriteUrl(TrainerSpriteLinks[toID(trainer.trainerClass)]);
       }
-      // Fallback: extract from full name directly
-      else if (trainer.name) {
+      if (!spriteUrl && trainer.name) {
         var nameParts = trainer.name.trim().split(/\s+/);
         if (nameParts.length >= 2) {
           var lastWordId = toID(nameParts[nameParts.length - 1]);
           var classNameId = toID(nameParts.slice(0, -1).join(' '));
-          spriteUrl = TrainerSpriteLinks[lastWordId] || TrainerSpriteLinks[classNameId] || null;
+          spriteUrl = resolveTrainerSpriteUrl(TrainerSpriteLinks[lastWordId]) || resolveTrainerSpriteUrl(TrainerSpriteLinks[classNameId]) || null;
         } else {
-          spriteUrl = TrainerSpriteLinks[toID(trainer.name)] || null;
+          spriteUrl = resolveTrainerSpriteUrl(TrainerSpriteLinks[toID(trainer.name)]) || null;
         }
       }
     }
 
     var buf = '<div class="pfx-body dexentry" style="position:relative;">';
     buf += '<style>' +
-      '.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
-      '.dexentry .movedesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; display: inline !important; }' +
+      '.dexentry .abilitydesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; }' +
+      '.dexentry .movedesccol { white-space: normal !important; overflow: visible !important; width: auto !important; height: auto !important; max-width: none !important; float: none !important; }' +
       '.dexentry .namecol { float: none !important; display: inline !important; padding-top: 0 !important; height: auto !important; }' +
       '.dexentry h1 { margin-top: 0; margin-bottom: 6px; white-space: nowrap; position: relative; z-index: 10; text-shadow: 0 0 6px #fff, 0 0 6px #fff, 0 0 10px rgba(255,255,255,0.8); }' +
       '.dexentry h1 a { display:inline-block; white-space:nowrap; vertical-align: middle; }' +
@@ -74,7 +81,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     if (window.Locations) {
       for (var i = 0; i < window.Locations.length; i++) {
         var loc = window.Locations[i];
-        
+
         // Check battles array for trainer ID and get notes
         if (loc.battles) {
           for (var bi = 0; bi < loc.battles.length; bi++) {
@@ -88,21 +95,21 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
             }
           }
         }
-        
+
         if (!trainerLocation && loc.trainers && loc.trainers.indexOf(norm) !== -1) {
           trainerLocation = loc;
         }
         if (!trainerLocation && loc.bossTrainers && loc.bossTrainers.indexOf(norm) !== -1) {
           trainerLocation = loc;
         }
-        
+
         if (trainerLocation) break;
       }
     }
     if (trainerLocation) {
       buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/' + trainerLocation.id + '" data-target="push">' + escapeHTML(trainerLocation.name) + '</a></dd>';
     }
-    
+
     // Description from battle notes (skip if "None")
     if (battleNotes && battleNotes.trim() && battleNotes.trim().toLowerCase() !== 'none') {
       buf += '<dt>Description:</dt> <dd>' + escapeHTML(battleNotes) + '</dd>';
@@ -180,7 +187,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var boxBg = isDarkMode ? '#1a2435' : '#fff';
       var boxBorder = isDarkMode ? '#3f536f' : '#ddd';
       var boxTextColor = isDarkMode ? '#d8e3f7' : '#333';
-      return '<a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:' + boxBg + ';border:1px solid ' + boxBorder + ';border-radius:6px;padding:8px;display:flex;gap:8px;align-items:flex-start;color:' + boxTextColor + '">' + icon + '<div style="flex:1"><strong>' + escapeHTML(title) + '</strong><br /><small>' + escapeHTML(desc) + '</small></div></div></a>';
+      return '<a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:' + boxBg + ';border:1px solid ' + boxBorder + ';border-radius:6px;padding:8px;color:' + boxTextColor + '"><div style="display:flex;gap:10px;align-items:flex-start">' + icon + '<div><strong>' + escapeHTML(title) + '</strong><div style="color:#666;margin-top:4px">' + escapeHTML(desc) + '</div></div></div></div></a>';
     };
 
     var isAbilityLegal = function(abilityName, monData) {
@@ -220,7 +227,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var boxBg = isDarkMode ? '#1a2435' : '#fff';
       var boxBorder = isDarkMode ? '#3f536f' : '#ddd';
       var boxTextColor = isDarkMode ? '#d8e3f7' : '#333';
-      var content = '<div class="infobox" style="background:' + boxBg + ';border:1px solid ' + boxBorder + ';border-radius:6px;padding:8px;color:' + boxTextColor + '"><strong style="' + nameColor + '">' + escapeHTML((data ? data.name : abilityName)) + '</strong><br /><small>' + escapeHTML((data ? (data.shortDesc || data.desc || '') : '')) + '</small></div>';
+      var content = '<div class="infobox" style="background:' + boxBg + ';border:1px solid ' + boxBorder + ';border-radius:6px;padding:8px;color:' + boxTextColor + '"><strong style="' + nameColor + '">' + escapeHTML((data && data.name) ? data.name : abilityName) + '</strong><div style="color:#666;margin-top:4px">' + escapeHTML((data && (data.shortDesc || data.desc)) ? (data.shortDesc || data.desc) : '') + '</div></div>';
       return '<a href="' + Config.baseurl + 'abilities/' + abilityID + '" data-target="push" class="subtle" style="text-decoration:none">' + content + '</a>';
     };
 
@@ -236,9 +243,9 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var nameColor = isLegal ? '' : 'color:red;';
       var moveTextColor = isDarkMode ? '#d8e3f7' : '#333';
       var moveBg = isDarkMode ? (bgColor + '44') : (bgColor + '33');
-      if (!data) return '<div class="infobox" style="background:' + moveBg + ';border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:' + moveTextColor + '">' + escapeHTML(moveName) + typeIcon + '</div>';
-      
-      // Build stats string: "Pow: 40 Acc: 100 PP: 10"
+      if (!data) return '<div class="infobox" style="background:' + moveBg + ';border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:' + moveTextColor + '">' + escapeHTML(moveName) + '</div>';
+
+      // Build stats string
       var statsText = '';
       if (data.category !== 'Status') {
         statsText += '<b>Pow:</b> ' + (data.basePower || '&mdash;') + ' ';
@@ -246,8 +253,8 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       statsText += '<b>Acc:</b> ' + (data.accuracy && data.accuracy !== true ? data.accuracy + '%' : '&mdash;') + ' ';
       var pp = data.noPPBoosts ? data.pp : Math.floor(data.pp * 8 / 5);
       statsText += '<b>PP:</b> ' + pp;
-      
-      return '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:' + moveBg + ';border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:' + moveTextColor + ';display:flex;justify-content:space-between;align-items:center"><div>' + categoryIcon + '<strong style="' + nameColor + '">' + escapeHTML(data.name) + '</strong><br /><small>' + statsText + '</small><br /><small>' + escapeHTML(data.shortDesc || data.desc || '') + '</small></div>' + typeIcon + '</div></a>';
+
+      return '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push" class="subtle" style="text-decoration:none"><div class="infobox" style="background:' + moveBg + ';border:1px solid ' + bgColor + ';border-radius:6px;padding:8px;color:' + moveTextColor + '"><div style="display:flex;align-items:center;gap:6px"><strong style="' + nameColor + '">' + escapeHTML(data.name) + '</strong>' + categoryIcon + typeIcon + '</div><div style="margin-top:4px">' + statsText + '</div><div style="color:#666;margin-top:4px">' + escapeHTML(data.shortDesc || data.desc || '') + '</div></div></a>';
     };
 
     // Team cards
@@ -259,11 +266,9 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       var monData = BattlePokedex[monID];
       var iconId = monID;
       if (!monData && monID) {
-        // Split the display name (before toID removes dashes) to get the base species
         var dashIdx = dispName.indexOf('-');
         var baseID = dashIdx !== -1 ? toID(dispName.substring(0, dashIdx)) : monID;
         monData = BattlePokedex[baseID];
-        // Don't change iconId - keep the form information for correct sprite
       }
       var bg = colors[pi % colors.length];
 
@@ -277,7 +282,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       buf += '<span class="picon" style="' + getPokemonIcon(iconId) + ';display:inline-block;vertical-align:middle"></span>';
       var monName = dispName || (monData ? monData.name : '???');
       var monLinkId = monData ? toID(monData.name) : monID;
-      buf += '<a href="' + Config.baseurl + 'pokemon/' + monLinkId + '" data-target="push" class="subtle" style="text-decoration:none"><div style="font-size:16px;font-weight:600">' + escapeHTML(monName) + ' <small>(Lv. ' + (m.level || '?') + ')</small></div></a>';
+      buf += '<a href="' + Config.baseurl + 'pokemon/' + monLinkId + '" data-target="push" class="subtle" style="text-decoration:none"><div style="font-size:16px;font-weight:600">' + escapeHTML(monName) + (m.level ? ' <span style="color:#666;font-weight:400">Lv. ' + m.level + '</span>' : '') + '</div></a>';
       buf += '</div>';
 
       var types = (monData?.types || []);
