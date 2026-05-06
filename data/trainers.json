@@ -2,7 +2,7 @@
   {
     "id": "000",
     "name": "Pokémon Trainer",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "",
     "prizeMoney": 0,
     "team": []
@@ -10,7 +10,7 @@
   {
     "id": "001",
     "name": "Lass Madison",
-    "trainerClass": "Lass",
+    "trainerClass": "lass",
     "personalName": "Madison",
     "prizeMoney": 336,
     "team": [
@@ -71,7 +71,7 @@
   {
     "id": "002",
     "name": "Lass Isabella",
-    "trainerClass": "Lass",
+    "trainerClass": "lass",
     "personalName": "Isabella",
     "prizeMoney": 624,
     "team": [
@@ -119,7 +119,7 @@
   {
     "id": "009",
     "name": "Kahuna's Grandson Hau",
-    "trainerClass": "Kahuna's Grandson",
+    "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
     "prizeMoney": 420,
     "team": [
@@ -162,7 +162,7 @@
   {
     "id": "010",
     "name": "Kahuna's Grandson Hau",
-    "trainerClass": "Kahuna's Grandson",
+    "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
     "prizeMoney": 420,
     "team": [
@@ -205,7 +205,7 @@
   {
     "id": "011",
     "name": "Kahuna's Grandson Hau",
-    "trainerClass": "Kahuna's Grandson",
+    "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
     "prizeMoney": 420,
     "team": [
@@ -248,7 +248,7 @@
   {
     "id": "012",
     "name": "Tapu's Chosen Hau",
-    "trainerClass": "Tapu's Chosen",
+    "trainerClass": "tapuschosen",
     "personalName": "Hau",
     "prizeMoney": 2040,
     "team": [
@@ -322,7 +322,7 @@
   {
     "id": "013",
     "name": "Tapu's Chosen Hau",
-    "trainerClass": "Tapu's Chosen",
+    "trainerClass": "tapuschosen",
     "personalName": "Hau",
     "prizeMoney": 2040,
     "team": [
@@ -396,7 +396,7 @@
   {
     "id": "014",
     "name": "Tapu's Chosen Hau",
-    "trainerClass": "Tapu's Chosen",
+    "trainerClass": "tapuschosen",
     "personalName": "Hau",
     "prizeMoney": 2040,
     "team": [
@@ -470,7 +470,7 @@
   {
     "id": "016",
     "name": "Ace Trainer Makana",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Makana",
     "prizeMoney": 3740,
     "team": [
@@ -544,7 +544,7 @@
   {
     "id": "019",
     "name": "Team Skull Grunt Ay",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt Ay",
     "prizeMoney": 896,
     "team": [
@@ -592,7 +592,7 @@
   {
     "id": "021",
     "name": "Athlete In-Training Hiromi",
-    "trainerClass": "Athlete In-Training",
+    "trainerClass": "athleteintraining",
     "personalName": "Hiromi",
     "prizeMoney": 448,
     "team": [
@@ -638,7 +638,7 @@
   {
     "id": "022",
     "name": "Youngster Joey",
-    "trainerClass": "Youngster",
+    "trainerClass": "youngster",
     "personalName": "Joey",
     "prizeMoney": 800,
     "team": [
@@ -686,7 +686,7 @@
   {
     "id": "023",
     "name": "Melemele Kahuna Hala",
-    "trainerClass": "Melemele Kahuna",
+    "trainerClass": "melemelekahuna",
     "personalName": "Hala",
     "prizeMoney": 8400,
     "team": [
@@ -773,7 +773,7 @@
   {
     "id": "024",
     "name": "Preschooler Mia",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Mia",
     "prizeMoney": 352,
     "team": [
@@ -820,7 +820,7 @@
   {
     "id": "025",
     "name": "Youngster Jimmy",
-    "trainerClass": "Youngster",
+    "trainerClass": "youngster",
     "personalName": "Jimmy",
     "prizeMoney": 200,
     "team": [
@@ -864,7 +864,7 @@
   {
     "id": "026",
     "name": "Youngster Kevin",
-    "trainerClass": "Youngster",
+    "trainerClass": "youngster",
     "personalName": "Kevin",
     "prizeMoney": 280,
     "team": [
@@ -912,7 +912,7 @@
   {
     "id": "028",
     "name": "Kindergartener Oliver",
-    "trainerClass": "Kindergartener",
+    "trainerClass": "kindergartener",
     "personalName": "Oliver",
     "prizeMoney": 160,
     "team": [
@@ -956,7 +956,7 @@
   {
     "id": "030",
     "name": "Pokémon Rancher Jay",
-    "trainerClass": "Pokémon Rancher",
+    "trainerClass": "pokmonrancher",
     "personalName": "Jay",
     "prizeMoney": 960,
     "team": [
@@ -1029,7 +1029,7 @@
   {
     "id": "031",
     "name": "Rising Star Ian",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Ian",
     "prizeMoney": 1344,
     "team": [
@@ -1090,7 +1090,7 @@
   {
     "id": "032",
     "name": "Rising Star Joshua",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Joshua",
     "prizeMoney": 1664,
     "team": [
@@ -1151,7 +1151,7 @@
   {
     "id": "033",
     "name": "Up and Coming Tatiana",
-    "trainerClass": "Up and Coming",
+    "trainerClass": "upandcoming",
     "personalName": "Tatiana",
     "prizeMoney": 1568,
     "team": [
@@ -1212,7 +1212,7 @@
   {
     "id": "034",
     "name": "Swimmer Beau Yasu",
-    "trainerClass": "Swimmer Beau",
+    "trainerClass": "swimmerbeau",
     "personalName": "Yasu",
     "prizeMoney": 1836,
     "team": [
@@ -1273,7 +1273,7 @@
   {
     "id": "035",
     "name": "Swimmer Beau Kalani",
-    "trainerClass": "Swimmer Beau",
+    "trainerClass": "swimmerbeau",
     "personalName": "Kalani",
     "prizeMoney": 2128,
     "team": [
@@ -1334,7 +1334,7 @@
   {
     "id": "036",
     "name": "Swimsuit Kelsie",
-    "trainerClass": "Swimsuit",
+    "trainerClass": "swimsuit",
     "personalName": "Kelsie",
     "prizeMoney": 2184,
     "team": [
@@ -1408,7 +1408,7 @@
   {
     "id": "037",
     "name": "Swimsuit Portia",
-    "trainerClass": "Swimsuit",
+    "trainerClass": "swimsuit",
     "personalName": "Portia",
     "prizeMoney": 2576,
     "team": [
@@ -1469,7 +1469,7 @@
   {
     "id": "038",
     "name": "Swim Gal Shelby",
-    "trainerClass": "Swim Gal",
+    "trainerClass": "swimgal",
     "personalName": "Shelby",
     "prizeMoney": 2784,
     "team": [
@@ -1517,7 +1517,7 @@
   {
     "id": "039",
     "name": "Swim Gal Jade",
-    "trainerClass": "Swim Gal",
+    "trainerClass": "swimgal",
     "personalName": "Jade",
     "prizeMoney": 2376,
     "team": [
@@ -1578,7 +1578,7 @@
   {
     "id": "040",
     "name": "Office Worker Jeremy",
-    "trainerClass": "Office Worker",
+    "trainerClass": "officeworker",
     "personalName": "Jeremy",
     "prizeMoney": 864,
     "team": [
@@ -1626,7 +1626,7 @@
   {
     "id": "041",
     "name": "Pokémon Breeder Ikue",
-    "trainerClass": "Pokémon Breeder",
+    "trainerClass": "pokmonbreeder",
     "personalName": "Ikue",
     "prizeMoney": 960,
     "team": [
@@ -1700,7 +1700,7 @@
   {
     "id": "042",
     "name": "Gentleman Stanley",
-    "trainerClass": "Gentleman",
+    "trainerClass": "gentleman",
     "personalName": "Stanley",
     "prizeMoney": 4080,
     "team": [
@@ -1761,7 +1761,7 @@
   {
     "id": "043",
     "name": "Team Skull Grunt Ay",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt Ay",
     "prizeMoney": 1080,
     "team": [
@@ -1822,7 +1822,7 @@
   {
     "id": "047",
     "name": "Team Skull Grunt Bee",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt Bee",
     "prizeMoney": 768,
     "team": [
@@ -1870,7 +1870,7 @@
   {
     "id": "052",
     "name": "Trial Captain Ilima",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Ilima",
     "prizeMoney": 3120,
     "team": [
@@ -1957,7 +1957,7 @@
   {
     "id": "054",
     "name": "Fisherman Hal",
-    "trainerClass": "Fisherman",
+    "trainerClass": "fisherman",
     "personalName": "Hal",
     "prizeMoney": 2016,
     "team": [
@@ -2018,7 +2018,7 @@
   {
     "id": "055",
     "name": "Fisherman Herbert",
-    "trainerClass": "Fisherman",
+    "trainerClass": "fisherman",
     "personalName": "Herbert",
     "prizeMoney": 2400,
     "team": [
@@ -2066,7 +2066,7 @@
   {
     "id": "056",
     "name": "Fisherman Carl",
-    "trainerClass": "Fisherman",
+    "trainerClass": "fisherman",
     "personalName": "Carl",
     "prizeMoney": 2592,
     "team": [
@@ -2153,7 +2153,7 @@
   {
     "id": "058",
     "name": "Backpacker Mikiko",
-    "trainerClass": "Backpacker",
+    "trainerClass": "backpacker",
     "personalName": "Mikiko",
     "prizeMoney": 2000,
     "team": [
@@ -2214,7 +2214,7 @@
   {
     "id": "060",
     "name": "Fisherman Ernest",
-    "trainerClass": "Fisherman",
+    "trainerClass": "fisherman",
     "personalName": "Ernest",
     "prizeMoney": 1840,
     "team": [
@@ -2275,7 +2275,7 @@
   {
     "id": "061",
     "name": "Collector Bryan",
-    "trainerClass": "Collector",
+    "trainerClass": "collector",
     "personalName": "Bryan",
     "prizeMoney": 1900,
     "team": [
@@ -2336,7 +2336,7 @@
   {
     "id": "064",
     "name": "Tourist Scotty",
-    "trainerClass": "Tourist",
+    "trainerClass": "tourist",
     "personalName": "Scotty",
     "prizeMoney": 2400,
     "team": [
@@ -2397,7 +2397,7 @@
   {
     "id": "065",
     "name": "Beauty Brittney",
-    "trainerClass": "Beauty",
+    "trainerClass": "beauty",
     "personalName": "Brittney",
     "prizeMoney": 2016,
     "team": [
@@ -2458,7 +2458,7 @@
   {
     "id": "068",
     "name": "Pokémon Rancher William",
-    "trainerClass": "Pokémon Rancher",
+    "trainerClass": "pokmonrancher",
     "personalName": "William",
     "prizeMoney": 2700,
     "team": [
@@ -2532,7 +2532,7 @@
   {
     "id": "070",
     "name": "Swimmer Beau Dakota",
-    "trainerClass": "Swimmer Beau",
+    "trainerClass": "swimmerbeau",
     "personalName": "Dakota",
     "prizeMoney": 2320,
     "team": [
@@ -2580,7 +2580,7 @@
   {
     "id": "071",
     "name": "Swimmer Beau Casey",
-    "trainerClass": "Swimmer Beau",
+    "trainerClass": "swimmerbeau",
     "personalName": "Casey",
     "prizeMoney": 2784,
     "team": [
@@ -2628,7 +2628,7 @@
   {
     "id": "072",
     "name": "Swimsuit Vanessa",
-    "trainerClass": "Swimsuit",
+    "trainerClass": "swimsuit",
     "personalName": "Vanessa",
     "prizeMoney": 2480,
     "team": [
@@ -2702,7 +2702,7 @@
   {
     "id": "073",
     "name": "Swim Gal Tiare",
-    "trainerClass": "Swim Gal",
+    "trainerClass": "swimgal",
     "personalName": "Tiare",
     "prizeMoney": 2880,
     "team": [
@@ -2763,7 +2763,7 @@
   {
     "id": "074",
     "name": "Kalosian Man Dexio",
-    "trainerClass": "Kalosian Man",
+    "trainerClass": "kalosianman",
     "personalName": "Dexio",
     "prizeMoney": 6400,
     "team": [
@@ -2850,7 +2850,7 @@
   {
     "id": "075",
     "name": "Kalosian Woman Sina",
-    "trainerClass": "Kalosian Woman",
+    "trainerClass": "kalosianwoman",
     "personalName": "Sina",
     "prizeMoney": 2100,
     "team": [
@@ -2879,7 +2879,7 @@
   {
     "id": "076",
     "name": "Tapu's Chosen Hau",
-    "trainerClass": "Tapu's Chosen",
+    "trainerClass": "tapuschosen",
     "personalName": "Hau",
     "prizeMoney": 3080,
     "team": [
@@ -2966,7 +2966,7 @@
   {
     "id": "077",
     "name": "Tapu's Chosen Hau",
-    "trainerClass": "Tapu's Chosen",
+    "trainerClass": "tapuschosen",
     "personalName": "Hau",
     "prizeMoney": 3080,
     "team": [
@@ -3053,7 +3053,7 @@
   {
     "id": "078",
     "name": "Tapu's Chosen Hau",
-    "trainerClass": "Tapu's Chosen",
+    "trainerClass": "tapuschosen",
     "personalName": "Hau",
     "prizeMoney": 3080,
     "team": [
@@ -3140,7 +3140,7 @@
   {
     "id": "079",
     "name": "Skull Enforcer Gladion",
-    "trainerClass": "Skull Enforcer",
+    "trainerClass": "skullenforcer",
     "personalName": "Gladion",
     "prizeMoney": 3680,
     "team": [
@@ -3227,7 +3227,7 @@
   {
     "id": "080",
     "name": "Team Skull Grunt Ay",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt Ay",
     "prizeMoney": 3248,
     "team": [
@@ -3288,7 +3288,7 @@
   {
     "id": "081",
     "name": "Pro Wrestler The Royal",
-    "trainerClass": "Pro Wrestler",
+    "trainerClass": "prowrestler",
     "personalName": "The Royal",
     "prizeMoney": 3360,
     "team": [
@@ -3307,7 +3307,7 @@
   {
     "id": "082",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 2400,
     "team": [
@@ -3329,7 +3329,7 @@
   {
     "id": "083",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 2400,
     "team": [
@@ -3351,7 +3351,7 @@
   {
     "id": "084",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 2400,
     "team": [
@@ -3373,7 +3373,7 @@
   {
     "id": "088",
     "name": "Team Skull Grunt Harvey",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt Harvey",
     "prizeMoney": 3344,
     "team": [
@@ -3434,7 +3434,7 @@
   {
     "id": "089",
     "name": "Team Skull Admin Plumeria",
-    "trainerClass": "Team Skull Admin",
+    "trainerClass": "teamskulladmin",
     "personalName": "Plumeria",
     "prizeMoney": 17600,
     "team": [
@@ -3521,7 +3521,7 @@
   {
     "id": "090",
     "name": "Akala Kahuna Olivia",
-    "trainerClass": "Akala Kahuna",
+    "trainerClass": "akalakahuna",
     "personalName": "Olivia",
     "prizeMoney": 18040,
     "team": [
@@ -3608,7 +3608,7 @@
   {
     "id": "092",
     "name": "Rising Star Justin",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Justin",
     "prizeMoney": 2208,
     "team": [
@@ -3643,7 +3643,7 @@
   {
     "id": "093",
     "name": "Up and Coming Lauren",
-    "trainerClass": "Up and Coming",
+    "trainerClass": "upandcoming",
     "personalName": "Lauren",
     "prizeMoney": 2576,
     "team": [
@@ -3678,7 +3678,7 @@
   {
     "id": "094",
     "name": "Pokémon Rancher Cory",
-    "trainerClass": "Pokémon Rancher",
+    "trainerClass": "pokmonrancher",
     "personalName": "Cory",
     "prizeMoney": 2400,
     "team": [
@@ -3726,7 +3726,7 @@
   {
     "id": "095",
     "name": "Pokémon Breeder Yuka",
-    "trainerClass": "Pokémon Breeder",
+    "trainerClass": "pokmonbreeder",
     "personalName": "Yuka",
     "prizeMoney": 3168,
     "team": [
@@ -3774,7 +3774,7 @@
   {
     "id": "096",
     "name": "Youngster Caleb",
-    "trainerClass": "Youngster",
+    "trainerClass": "youngster",
     "personalName": "Caleb",
     "prizeMoney": 4624,
     "team": [
@@ -3822,7 +3822,7 @@
   {
     "id": "097",
     "name": "Preschooler Isa",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Isa",
     "prizeMoney": 1288,
     "team": [
@@ -3857,7 +3857,7 @@
   {
     "id": "098",
     "name": "Preschooler Nico",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Nico",
     "prizeMoney": 1656,
     "team": [
@@ -3892,7 +3892,7 @@
   {
     "id": "099",
     "name": "Rising Star Mikey",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Mikey",
     "prizeMoney": 5120,
     "team": [
@@ -3953,7 +3953,7 @@
   {
     "id": "100",
     "name": "Up and Coming Nicki",
-    "trainerClass": "Up and Coming",
+    "trainerClass": "upandcoming",
     "personalName": "Nicki",
     "prizeMoney": 5120,
     "team": [
@@ -4014,7 +4014,7 @@
   {
     "id": "101",
     "name": "Backpacker Kiana",
-    "trainerClass": "Backpacker",
+    "trainerClass": "backpacker",
     "personalName": "Kiana",
     "prizeMoney": 3432,
     "team": [
@@ -4062,7 +4062,7 @@
   {
     "id": "102",
     "name": "Hiker Gabriel",
-    "trainerClass": "Hiker",
+    "trainerClass": "hiker",
     "personalName": "Gabriel",
     "prizeMoney": 3360,
     "team": [
@@ -4110,7 +4110,7 @@
   {
     "id": "104",
     "name": "Star Trainer Alexis",
-    "trainerClass": "Star Trainer",
+    "trainerClass": "startrainer",
     "personalName": "Alexis",
     "prizeMoney": 5440,
     "team": [
@@ -4184,7 +4184,7 @@
   {
     "id": "105",
     "name": "Scientist Tyrone",
-    "trainerClass": "Scientist",
+    "trainerClass": "scientist",
     "personalName": "Tyrone",
     "prizeMoney": 4864,
     "team": [
@@ -4245,7 +4245,7 @@
   {
     "id": "108",
     "name": "Swimmer Beau Lawrence",
-    "trainerClass": "Swimmer Beau",
+    "trainerClass": "swimmerbeau",
     "personalName": "Lawrence",
     "prizeMoney": 2240,
     "team": [
@@ -4293,7 +4293,7 @@
   {
     "id": "109",
     "name": "Swimmer Beau Roddy",
-    "trainerClass": "Swimmer Beau",
+    "trainerClass": "swimmerbeau",
     "personalName": "Roddy",
     "prizeMoney": 3200,
     "team": [
@@ -4341,7 +4341,7 @@
   {
     "id": "110",
     "name": "Swimsuit Alicia",
-    "trainerClass": "Swimsuit",
+    "trainerClass": "swimsuit",
     "personalName": "Alicia",
     "prizeMoney": 2624,
     "team": [
@@ -4389,7 +4389,7 @@
   {
     "id": "111",
     "name": "Swimsuit Laura",
-    "trainerClass": "Swimsuit",
+    "trainerClass": "swimsuit",
     "personalName": "Laura",
     "prizeMoney": 960,
     "team": [
@@ -4450,7 +4450,7 @@
   {
     "id": "112",
     "name": "Swim Gal Chelsea",
-    "trainerClass": "Swim Gal",
+    "trainerClass": "swimgal",
     "personalName": "Chelsea",
     "prizeMoney": 2788,
     "team": [
@@ -4498,7 +4498,7 @@
   {
     "id": "113",
     "name": "Gentleman Smith",
-    "trainerClass": "Gentleman",
+    "trainerClass": "gentleman",
     "personalName": "Smith",
     "prizeMoney": 13680,
     "team": [
@@ -4559,7 +4559,7 @@
   {
     "id": "114",
     "name": "Madame Sayuri",
-    "trainerClass": "Madame",
+    "trainerClass": "madame",
     "personalName": "Sayuri",
     "prizeMoney": 13680,
     "team": [
@@ -4620,7 +4620,7 @@
   {
     "id": "115",
     "name": "Kindergartener Liam",
-    "trainerClass": "Kindergartener",
+    "trainerClass": "kindergartener",
     "personalName": "Liam",
     "prizeMoney": 2664,
     "team": [
@@ -4668,7 +4668,7 @@
   {
     "id": "116",
     "name": "Punk Girl Melissa",
-    "trainerClass": "Punk Girl",
+    "trainerClass": "punkgirl",
     "personalName": "Melissa",
     "prizeMoney": 3952,
     "team": [
@@ -4729,7 +4729,7 @@
   {
     "id": "117",
     "name": "Worker Vaclav",
-    "trainerClass": "Worker",
+    "trainerClass": "worker",
     "personalName": "Vaclav",
     "prizeMoney": 3360,
     "team": [
@@ -4777,7 +4777,7 @@
   {
     "id": "118",
     "name": "Worker Jeff",
-    "trainerClass": "Worker",
+    "trainerClass": "worker",
     "personalName": "Jeff",
     "prizeMoney": 2940,
     "team": [
@@ -4838,7 +4838,7 @@
   {
     "id": "119",
     "name": "Worker Frank",
-    "trainerClass": "Worker",
+    "trainerClass": "worker",
     "personalName": "Frank",
     "prizeMoney": 3080,
     "team": [
@@ -4886,7 +4886,7 @@
   {
     "id": "120",
     "name": "Black Belt Kenji",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Kenji",
     "prizeMoney": 2432,
     "team": [
@@ -4934,7 +4934,7 @@
   {
     "id": "121",
     "name": "Fisherman Vernon",
-    "trainerClass": "Fisherman",
+    "trainerClass": "fisherman",
     "personalName": "Vernon",
     "prizeMoney": 3120,
     "team": [
@@ -4982,7 +4982,7 @@
   {
     "id": "122",
     "name": "Pokémon Rancher Glenn",
-    "trainerClass": "Pokémon Rancher",
+    "trainerClass": "pokmonrancher",
     "personalName": "Glenn",
     "prizeMoney": 2200,
     "team": [
@@ -5043,7 +5043,7 @@
   {
     "id": "124",
     "name": "Gentleman Gerald",
-    "trainerClass": "Gentleman",
+    "trainerClass": "gentleman",
     "personalName": "Gerald",
     "prizeMoney": 7480,
     "team": [
@@ -5091,7 +5091,7 @@
   {
     "id": "125",
     "name": "Madame Elizabeth",
-    "trainerClass": "Madame",
+    "trainerClass": "madame",
     "personalName": "Elizabeth",
     "prizeMoney": 7920,
     "team": [
@@ -5152,7 +5152,7 @@
   {
     "id": "126",
     "name": "Fisherman Mike",
-    "trainerClass": "Fisherman",
+    "trainerClass": "fisherman",
     "personalName": "Mike",
     "prizeMoney": 3040,
     "team": [
@@ -5200,7 +5200,7 @@
   {
     "id": "131",
     "name": "Aether President Lusamine",
-    "trainerClass": "Aether President",
+    "trainerClass": "aetherpresident",
     "personalName": "Lusamine",
     "prizeMoney": 11280,
     "team": [
@@ -5268,7 +5268,7 @@
   {
     "id": "132",
     "name": "Aether Branch Chief Faba",
-    "trainerClass": "Aether Branch Chief",
+    "trainerClass": "aetherbranchchief",
     "personalName": "Faba",
     "prizeMoney": 5160,
     "team": [
@@ -5289,7 +5289,7 @@
   {
     "id": "134",
     "name": "Aether Foundatio Employee",
-    "trainerClass": "Aether Foundatio",
+    "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
     "prizeMoney": 1968,
     "team": [
@@ -5305,7 +5305,7 @@
   {
     "id": "136",
     "name": "Aether Foundati Employee",
-    "trainerClass": "Aether Foundati",
+    "trainerClass": "aetherfoundati",
     "personalName": "Employee",
     "prizeMoney": 1968,
     "team": [
@@ -5321,7 +5321,7 @@
   {
     "id": "137",
     "name": "Aether Foundation2 Employee",
-    "trainerClass": "Aether Foundation2",
+    "trainerClass": "aetherfoundation2",
     "personalName": "Employee",
     "prizeMoney": 1968,
     "team": [
@@ -5337,7 +5337,7 @@
   {
     "id": "138",
     "name": "Team Skull Boss Guzma",
-    "trainerClass": "Team Skull Boss",
+    "trainerClass": "teamskullboss",
     "personalName": "Guzma",
     "prizeMoney": 5640,
     "team": [
@@ -5424,7 +5424,7 @@
   {
     "id": "141",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1152,
     "team": [
@@ -5440,7 +5440,7 @@
   {
     "id": "144",
     "name": "Trial Captain Lana",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Lana",
     "prizeMoney": 7200,
     "team": [
@@ -5486,7 +5486,7 @@
   {
     "id": "146",
     "name": "Trial Captain Mallow",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Mallow",
     "prizeMoney": 7200,
     "team": [
@@ -5531,7 +5531,7 @@
   {
     "id": "149",
     "name": "Elite Four Acerola",
-    "trainerClass": "Elite Four",
+    "trainerClass": "elitefour",
     "personalName": "Acerola",
     "prizeMoney": 11400,
     "team": [
@@ -5601,7 +5601,7 @@
   {
     "id": "153",
     "name": "Elite Four Olivia",
-    "trainerClass": "Elite Four",
+    "trainerClass": "elitefour",
     "personalName": "Olivia",
     "prizeMoney": 11400,
     "team": [
@@ -5668,7 +5668,7 @@
   {
     "id": "154",
     "name": "Ula'ula Kahuna Nanu",
-    "trainerClass": "Ula'ula Kahuna",
+    "trainerClass": "ulaulakahuna",
     "personalName": "Nanu",
     "prizeMoney": 7040,
     "team": [
@@ -5712,7 +5712,7 @@
   {
     "id": "156",
     "name": "Elite Four Kahili",
-    "trainerClass": "Elite Four",
+    "trainerClass": "elitefour",
     "personalName": "Kahili",
     "prizeMoney": 11400,
     "team": [
@@ -5782,7 +5782,7 @@
   {
     "id": "159",
     "name": "Pokémon Trainer Red",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Red",
     "prizeMoney": 19600,
     "team": [
@@ -5864,7 +5864,7 @@
   {
     "id": "160",
     "name": "Pokémon Trainer Blue",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Blue",
     "prizeMoney": 19320,
     "team": [
@@ -5945,7 +5945,7 @@
   {
     "id": "170",
     "name": "Putter Alan",
-    "trainerClass": "Putter",
+    "trainerClass": "putter",
     "personalName": "Alan",
     "prizeMoney": 4356,
     "team": [
@@ -5992,7 +5992,7 @@
   {
     "id": "171",
     "name": "Golfer Maile",
-    "trainerClass": "Golfer",
+    "trainerClass": "golfer",
     "personalName": "Maile",
     "prizeMoney": 4620,
     "team": [
@@ -6039,7 +6039,7 @@
   {
     "id": "172",
     "name": "Businesswoman Kristen",
-    "trainerClass": "Businesswoman",
+    "trainerClass": "businesswoman",
     "personalName": "Kristen",
     "prizeMoney": 2000,
     "team": [
@@ -6070,7 +6070,7 @@
   {
     "id": "173",
     "name": "Cop Mitchell",
-    "trainerClass": "Cop",
+    "trainerClass": "cop",
     "personalName": "Mitchell",
     "prizeMoney": 1760,
     "team": [
@@ -6118,7 +6118,7 @@
   {
     "id": "174",
     "name": "Sightseer Mariah",
-    "trainerClass": "Sightseer",
+    "trainerClass": "sightseer",
     "personalName": "Mariah",
     "prizeMoney": 1920,
     "team": [
@@ -6153,7 +6153,7 @@
   {
     "id": "175",
     "name": "Cook Carver",
-    "trainerClass": "Cook",
+    "trainerClass": "cook",
     "personalName": "Carver",
     "prizeMoney": 1600,
     "team": [
@@ -6184,7 +6184,7 @@
   {
     "id": "177",
     "name": "Janitor Melvin",
-    "trainerClass": "Janitor",
+    "trainerClass": "janitor",
     "personalName": "Melvin",
     "prizeMoney": 1720,
     "team": [
@@ -6245,7 +6245,7 @@
   {
     "id": "178",
     "name": "Dancer Cara",
-    "trainerClass": "Dancer",
+    "trainerClass": "dancer",
     "personalName": "Cara",
     "prizeMoney": 1760,
     "team": [
@@ -6266,7 +6266,7 @@
   {
     "id": "180",
     "name": "Veteran Leon",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Leon",
     "prizeMoney": 5192,
     "team": [
@@ -6308,7 +6308,7 @@
   {
     "id": "181",
     "name": "Virtuoso Sheri",
-    "trainerClass": "Virtuoso",
+    "trainerClass": "virtuoso",
     "personalName": "Sheri",
     "prizeMoney": 5544,
     "team": [
@@ -6349,7 +6349,7 @@
   {
     "id": "182",
     "name": "Bellhop Jody",
-    "trainerClass": "Bellhop",
+    "trainerClass": "bellhop",
     "personalName": "Jody",
     "prizeMoney": 1840,
     "team": [
@@ -6397,7 +6397,7 @@
   {
     "id": "185",
     "name": "Skull Enforcer Gladion",
-    "trainerClass": "Skull Enforcer",
+    "trainerClass": "skullenforcer",
     "personalName": "Gladion",
     "prizeMoney": 2560,
     "team": [
@@ -6416,7 +6416,7 @@
   {
     "id": "186",
     "name": "Hiker David",
-    "trainerClass": "Hiker",
+    "trainerClass": "hiker",
     "personalName": "David",
     "prizeMoney": 3600,
     "team": [
@@ -6451,7 +6451,7 @@
   {
     "id": "187",
     "name": "Star Trainer Tori",
-    "trainerClass": "Star Trainer",
+    "trainerClass": "startrainer",
     "personalName": "Tori",
     "prizeMoney": 2800,
     "team": [
@@ -6483,7 +6483,7 @@
   {
     "id": "188",
     "name": "Star Trainer Tori",
-    "trainerClass": "Star Trainer",
+    "trainerClass": "startrainer",
     "personalName": "Tori",
     "prizeMoney": 3740,
     "team": [
@@ -6498,7 +6498,7 @@
   {
     "id": "189",
     "name": "Gentleman Ronald",
-    "trainerClass": "Gentleman",
+    "trainerClass": "gentleman",
     "personalName": "Ronald",
     "prizeMoney": 7200,
     "team": [
@@ -6529,7 +6529,7 @@
   {
     "id": "190",
     "name": "Gentleman Ronald",
-    "trainerClass": "Gentleman",
+    "trainerClass": "gentleman",
     "personalName": "Ronald",
     "prizeMoney": 11000,
     "team": [
@@ -6544,7 +6544,7 @@
   {
     "id": "191",
     "name": "Cook Carver",
-    "trainerClass": "Cook",
+    "trainerClass": "cook",
     "personalName": "Carver",
     "prizeMoney": 2200,
     "team": [
@@ -6560,7 +6560,7 @@
   {
     "id": "192",
     "name": "Madame Kathleen",
-    "trainerClass": "Madame",
+    "trainerClass": "madame",
     "personalName": "Kathleen",
     "prizeMoney": 7600,
     "team": [
@@ -6591,7 +6591,7 @@
   {
     "id": "193",
     "name": "Madame Kathleen",
-    "trainerClass": "Madame",
+    "trainerClass": "madame",
     "personalName": "Kathleen",
     "prizeMoney": 11000,
     "team": [
@@ -6606,7 +6606,7 @@
   {
     "id": "194",
     "name": "Black Belt Walter",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Walter",
     "prizeMoney": 2160,
     "team": [
@@ -6637,7 +6637,7 @@
   {
     "id": "195",
     "name": "Black Belt Walter",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Walter",
     "prizeMoney": 1760,
     "team": [
@@ -6653,7 +6653,7 @@
   {
     "id": "196",
     "name": "Pokémon Breeder Savannah",
-    "trainerClass": "Pokémon Breeder",
+    "trainerClass": "pokmonbreeder",
     "personalName": "Savannah",
     "prizeMoney": 1760,
     "team": [
@@ -6684,7 +6684,7 @@
   {
     "id": "197",
     "name": "Pokémon Breeder Savannah",
-    "trainerClass": "Pokémon Breeder",
+    "trainerClass": "pokmonbreeder",
     "personalName": "Savannah",
     "prizeMoney": 2200,
     "team": [
@@ -6699,7 +6699,7 @@
   {
     "id": "198",
     "name": "Office Worker Cody",
-    "trainerClass": "Office Worker",
+    "trainerClass": "officeworker",
     "personalName": "Cody",
     "prizeMoney": 1840,
     "team": [
@@ -6730,7 +6730,7 @@
   {
     "id": "199",
     "name": "Office Worker Cody",
-    "trainerClass": "Office Worker",
+    "trainerClass": "officeworker",
     "personalName": "Cody",
     "prizeMoney": 2200,
     "team": [
@@ -6745,7 +6745,7 @@
   {
     "id": "200",
     "name": "Businesswoman Kristen",
-    "trainerClass": "Businesswoman",
+    "trainerClass": "businesswoman",
     "personalName": "Kristen",
     "prizeMoney": 2200,
     "team": [
@@ -6760,7 +6760,7 @@
   {
     "id": "205",
     "name": "Youngster Kai",
-    "trainerClass": "Youngster",
+    "trainerClass": "youngster",
     "personalName": "Kai",
     "prizeMoney": 1200,
     "team": [
@@ -6791,7 +6791,7 @@
   {
     "id": "206",
     "name": "Youngster Kai",
-    "trainerClass": "Youngster",
+    "trainerClass": "youngster",
     "personalName": "Kai",
     "prizeMoney": 1100,
     "team": [
@@ -6806,7 +6806,7 @@
   {
     "id": "207",
     "name": "Preschooler Hannah",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Hannah",
     "prizeMoney": 720,
     "team": [
@@ -6837,7 +6837,7 @@
   {
     "id": "208",
     "name": "Preschooler Hannah",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Hannah",
     "prizeMoney": 660,
     "team": [
@@ -6852,7 +6852,7 @@
   {
     "id": "209",
     "name": "Rising Star Kainoa",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Kainoa",
     "prizeMoney": 1920,
     "team": [
@@ -6883,7 +6883,7 @@
   {
     "id": "210",
     "name": "Rising Star Kainoa",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Kainoa",
     "prizeMoney": 2640,
     "team": [
@@ -6898,7 +6898,7 @@
   {
     "id": "211",
     "name": "Beauty Carolyn",
-    "trainerClass": "Beauty",
+    "trainerClass": "beauty",
     "personalName": "Carolyn",
     "prizeMoney": 1360,
     "team": [
@@ -6929,7 +6929,7 @@
   {
     "id": "212",
     "name": "Beauty Carolyn",
-    "trainerClass": "Beauty",
+    "trainerClass": "beauty",
     "personalName": "Carolyn",
     "prizeMoney": 1760,
     "team": [
@@ -6944,7 +6944,7 @@
   {
     "id": "213",
     "name": "Lass Salla",
-    "trainerClass": "Lass",
+    "trainerClass": "lass",
     "personalName": "Salla",
     "prizeMoney": 1200,
     "team": [
@@ -6975,7 +6975,7 @@
   {
     "id": "214",
     "name": "Lass Salla",
-    "trainerClass": "Lass",
+    "trainerClass": "lass",
     "personalName": "Salla",
     "prizeMoney": 1320,
     "team": [
@@ -6990,7 +6990,7 @@
   {
     "id": "215",
     "name": "Trial Captain Ilima",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Ilima",
     "prizeMoney": 3120,
     "team": [
@@ -7077,7 +7077,7 @@
   {
     "id": "216",
     "name": "Trial Captain Ilima",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Ilima",
     "prizeMoney": 3120,
     "team": [
@@ -7164,7 +7164,7 @@
   {
     "id": "217",
     "name": "Tapu's Chosen Hau",
-    "trainerClass": "Tapu's Chosen",
+    "trainerClass": "tapuschosen",
     "personalName": "Hau",
     "prizeMoney": 2520,
     "team": [
@@ -7251,7 +7251,7 @@
   {
     "id": "218",
     "name": "Tapu's Chosen Hau",
-    "trainerClass": "Tapu's Chosen",
+    "trainerClass": "tapuschosen",
     "personalName": "Hau",
     "prizeMoney": 2520,
     "team": [
@@ -7338,7 +7338,7 @@
   {
     "id": "219",
     "name": "Tapu's Chosen Hau",
-    "trainerClass": "Tapu's Chosen",
+    "trainerClass": "tapuschosen",
     "personalName": "Hau",
     "prizeMoney": 2520,
     "team": [
@@ -7425,7 +7425,7 @@
   {
     "id": "220",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 2580,
     "team": [
@@ -7486,7 +7486,7 @@
   {
     "id": "221",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 2580,
     "team": [
@@ -7547,7 +7547,7 @@
   {
     "id": "222",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 2580,
     "team": [
@@ -7608,7 +7608,7 @@
   {
     "id": "223",
     "name": "Team Skull Grunt Grant",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt Grant",
     "prizeMoney": 1440,
     "team": [
@@ -7656,7 +7656,7 @@
   {
     "id": "224",
     "name": "Team Skull Grunt Bee",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt Bee",
     "prizeMoney": 1440,
     "team": [
@@ -7704,7 +7704,7 @@
   {
     "id": "227",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1152,
     "team": [
@@ -7720,7 +7720,7 @@
   {
     "id": "228",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1344,
     "team": [
@@ -7736,7 +7736,7 @@
   {
     "id": "229",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1344,
     "team": [
@@ -7752,7 +7752,7 @@
   {
     "id": "230",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1440,
     "team": [
@@ -7796,7 +7796,7 @@
   {
     "id": "231",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1152,
     "team": [
@@ -7812,7 +7812,7 @@
   {
     "id": "232",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1152,
     "team": [
@@ -7828,7 +7828,7 @@
   {
     "id": "233",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1440,
     "team": [
@@ -7844,7 +7844,7 @@
   {
     "id": "235",
     "name": "Team Skull Boss Guzma",
-    "trainerClass": "Team Skull Boss",
+    "trainerClass": "teamskullboss",
     "personalName": "Guzma",
     "prizeMoney": 4920,
     "team": [
@@ -7886,7 +7886,7 @@
   {
     "id": "236",
     "name": "Team Skull Boss Guzma",
-    "trainerClass": "Team Skull Boss",
+    "trainerClass": "teamskullboss",
     "personalName": "Guzma",
     "prizeMoney": 5400,
     "team": [
@@ -7941,7 +7941,7 @@
   {
     "id": "237",
     "name": "Kindergartener Hunter",
-    "trainerClass": "Kindergartener",
+    "trainerClass": "kindergartener",
     "personalName": "Hunter",
     "prizeMoney": 636,
     "team": [
@@ -8028,7 +8028,7 @@
   {
     "id": "238",
     "name": "Team Skull Admin Plumeria",
-    "trainerClass": "Team Skull Admin",
+    "trainerClass": "teamskulladmin",
     "personalName": "Plumeria",
     "prizeMoney": 6600,
     "team": [
@@ -8115,7 +8115,7 @@
   {
     "id": "239",
     "name": "Skull Enforcer Gladion",
-    "trainerClass": "Skull Enforcer",
+    "trainerClass": "skullenforcer",
     "personalName": "Gladion",
     "prizeMoney": 3440,
     "team": [
@@ -8156,7 +8156,7 @@
   {
     "id": "240",
     "name": "Pokémon Trainer Gladion",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
     "prizeMoney": 8480,
     "team": [
@@ -8211,7 +8211,7 @@
   {
     "id": "241",
     "name": "Aether Branch Chief Faba",
-    "trainerClass": "Aether Branch Chief",
+    "trainerClass": "aetherbranchchief",
     "personalName": "Faba",
     "prizeMoney": 5400,
     "team": [
@@ -8256,7 +8256,7 @@
   {
     "id": "242",
     "name": "Aether Foundation2 Employee",
-    "trainerClass": "Aether Foundation2",
+    "trainerClass": "aetherfoundation2",
     "personalName": "Employee",
     "prizeMoney": 1968,
     "team": [
@@ -8272,7 +8272,7 @@
   {
     "id": "243",
     "name": "Aether Foundation2 Employee",
-    "trainerClass": "Aether Foundation2",
+    "trainerClass": "aetherfoundation2",
     "personalName": "Employee",
     "prizeMoney": 1968,
     "team": [
@@ -8288,7 +8288,7 @@
   {
     "id": "245",
     "name": "Hiker Calhoun",
-    "trainerClass": "Hiker",
+    "trainerClass": "hiker",
     "personalName": "Calhoun",
     "prizeMoney": 2480,
     "team": [
@@ -8349,7 +8349,7 @@
   {
     "id": "246",
     "name": "Ace Trainer Jim",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Jim",
     "prizeMoney": 4340,
     "team": [
@@ -8410,7 +8410,7 @@
   {
     "id": "248",
     "name": "Beauty Andrea",
-    "trainerClass": "Beauty",
+    "trainerClass": "beauty",
     "personalName": "Andrea",
     "prizeMoney": 1408,
     "team": [
@@ -8471,7 +8471,7 @@
   {
     "id": "251",
     "name": "Star Trainer Karla",
-    "trainerClass": "Star Trainer",
+    "trainerClass": "startrainer",
     "personalName": "Karla",
     "prizeMoney": 3672,
     "team": [
@@ -8532,7 +8532,7 @@
   {
     "id": "253",
     "name": "Ace Trainer Yuki",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Yuki",
     "prizeMoney": 3604,
     "team": [
@@ -8593,7 +8593,7 @@
   {
     "id": "254",
     "name": "Scientist Jayson",
-    "trainerClass": "Scientist",
+    "trainerClass": "scientist",
     "personalName": "Jayson",
     "prizeMoney": 2352,
     "team": [
@@ -8641,7 +8641,7 @@
   {
     "id": "257",
     "name": "Fisherman Hisato",
-    "trainerClass": "Fisherman",
+    "trainerClass": "fisherman",
     "personalName": "Hisato",
     "prizeMoney": 1632,
     "team": [
@@ -8689,7 +8689,7 @@
   {
     "id": "258",
     "name": "Aether Foundatio Employee",
-    "trainerClass": "Aether Foundatio",
+    "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
     "prizeMoney": 1920,
     "team": [
@@ -8712,7 +8712,7 @@
   {
     "id": "259",
     "name": "Aether Foundati Employee",
-    "trainerClass": "Aether Foundati",
+    "trainerClass": "aetherfoundati",
     "personalName": "Employee",
     "prizeMoney": 1920,
     "team": [
@@ -8735,7 +8735,7 @@
   {
     "id": "260",
     "name": "Star Trainer Angela",
-    "trainerClass": "Star Trainer",
+    "trainerClass": "startrainer",
     "personalName": "Angela",
     "prizeMoney": 4012,
     "team": [
@@ -8758,7 +8758,7 @@
   {
     "id": "261",
     "name": "Star Trainer Junko",
-    "trainerClass": "Star Trainer",
+    "trainerClass": "startrainer",
     "personalName": "Junko",
     "prizeMoney": 3264,
     "team": [
@@ -8781,7 +8781,7 @@
   {
     "id": "262",
     "name": "Ace Trainer Aimee",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Aimee",
     "prizeMoney": 3196,
     "team": [
@@ -8801,7 +8801,7 @@
   {
     "id": "263",
     "name": "Ace Trainer Jackson",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Jackson",
     "prizeMoney": 3876,
     "team": [
@@ -8831,7 +8831,7 @@
   {
     "id": "264",
     "name": "Ace Trainer Hiroshi",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Hiroshi",
     "prizeMoney": 3264,
     "team": [
@@ -8854,7 +8854,7 @@
   {
     "id": "265",
     "name": "Ace Trainer Kent",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Kent",
     "prizeMoney": 3196,
     "team": [
@@ -8874,7 +8874,7 @@
   {
     "id": "266",
     "name": "Preschooler Nancy",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Nancy",
     "prizeMoney": 516,
     "team": [
@@ -8922,7 +8922,7 @@
   {
     "id": "269",
     "name": "Swimmer Beau Keoni",
-    "trainerClass": "Swimmer Beau",
+    "trainerClass": "swimmerbeau",
     "personalName": "Keoni",
     "prizeMoney": 1224,
     "team": [
@@ -8983,7 +8983,7 @@
   {
     "id": "270",
     "name": "Swimmer Jake",
-    "trainerClass": "Swimmer",
+    "trainerClass": "swimmer",
     "personalName": "Jake",
     "prizeMoney": 1296,
     "team": [
@@ -9018,7 +9018,7 @@
   {
     "id": "271",
     "name": "Swimmer Beau Jared",
-    "trainerClass": "Swimmer Beau",
+    "trainerClass": "swimmerbeau",
     "personalName": "Jared",
     "prizeMoney": 1296,
     "team": [
@@ -9053,7 +9053,7 @@
   {
     "id": "272",
     "name": "Black Belt Roy",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Roy",
     "prizeMoney": 1792,
     "team": [
@@ -9069,7 +9069,7 @@
   {
     "id": "273",
     "name": "Black Belt Tracy",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Tracy",
     "prizeMoney": 1984,
     "team": [
@@ -9092,7 +9092,7 @@
   {
     "id": "274",
     "name": "Black Belt Curtis",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Curtis",
     "prizeMoney": 1504,
     "team": [
@@ -9108,7 +9108,7 @@
   {
     "id": "275",
     "name": "Black Belt Terry",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Terry",
     "prizeMoney": 1504,
     "team": [
@@ -9124,7 +9124,7 @@
   {
     "id": "276",
     "name": "Sightseer Akali",
-    "trainerClass": "Sightseer",
+    "trainerClass": "sightseer",
     "personalName": "Akali",
     "prizeMoney": 2580,
     "team": [
@@ -9172,7 +9172,7 @@
   {
     "id": "277",
     "name": "Sightseer Jamie",
-    "trainerClass": "Sightseer",
+    "trainerClass": "sightseer",
     "personalName": "Jamie",
     "prizeMoney": 2640,
     "team": [
@@ -9195,7 +9195,7 @@
   {
     "id": "278",
     "name": "Sightseer Noriko",
-    "trainerClass": "Sightseer",
+    "trainerClass": "sightseer",
     "personalName": "Noriko",
     "prizeMoney": 3540,
     "team": [
@@ -9218,7 +9218,7 @@
   {
     "id": "279",
     "name": "Tourist Mitch",
-    "trainerClass": "Tourist",
+    "trainerClass": "tourist",
     "personalName": "Mitch",
     "prizeMoney": 2580,
     "team": [
@@ -9266,7 +9266,7 @@
   {
     "id": "280",
     "name": "Sightseer Devin",
-    "trainerClass": "Sightseer",
+    "trainerClass": "sightseer",
     "personalName": "Devin",
     "prizeMoney": 3540,
     "team": [
@@ -9296,7 +9296,7 @@
   {
     "id": "282",
     "name": "Scientist Kyle",
-    "trainerClass": "Scientist",
+    "trainerClass": "scientist",
     "personalName": "Kyle",
     "prizeMoney": 2928,
     "team": [
@@ -9319,7 +9319,7 @@
   {
     "id": "283",
     "name": "Scientist Ikaika",
-    "trainerClass": "Scientist",
+    "trainerClass": "scientist",
     "personalName": "Ikaika",
     "prizeMoney": 2208,
     "team": [
@@ -9335,7 +9335,7 @@
   {
     "id": "284",
     "name": "Collector Todd",
-    "trainerClass": "Collector",
+    "trainerClass": "collector",
     "personalName": "Todd",
     "prizeMoney": 1440,
     "team": [
@@ -9396,7 +9396,7 @@
   {
     "id": "285",
     "name": "Collector Raymond",
-    "trainerClass": "Collector",
+    "trainerClass": "collector",
     "personalName": "Raymond",
     "prizeMoney": 1408,
     "team": [
@@ -9419,7 +9419,7 @@
   {
     "id": "286",
     "name": "Hiker Thomas",
-    "trainerClass": "Hiker",
+    "trainerClass": "hiker",
     "personalName": "Thomas",
     "prizeMoney": 1440,
     "team": [
@@ -9467,7 +9467,7 @@
   {
     "id": "288",
     "name": "Hiker Ryan",
-    "trainerClass": "Hiker",
+    "trainerClass": "hiker",
     "personalName": "Ryan",
     "prizeMoney": 1824,
     "team": [
@@ -9483,7 +9483,7 @@
   {
     "id": "289",
     "name": "Hiker Zachary",
-    "trainerClass": "Hiker",
+    "trainerClass": "hiker",
     "personalName": "Zachary",
     "prizeMoney": 1472,
     "team": [
@@ -9506,7 +9506,7 @@
   {
     "id": "290",
     "name": "Hiker Travis",
-    "trainerClass": "Hiker",
+    "trainerClass": "hiker",
     "personalName": "Travis",
     "prizeMoney": 1888,
     "team": [
@@ -9529,7 +9529,7 @@
   {
     "id": "291",
     "name": "Lass Rylee",
-    "trainerClass": "Lass",
+    "trainerClass": "lass",
     "personalName": "Rylee",
     "prizeMoney": 840,
     "team": [
@@ -9552,7 +9552,7 @@
   {
     "id": "296",
     "name": "Backpacker Yuho",
-    "trainerClass": "Backpacker",
+    "trainerClass": "backpacker",
     "personalName": "Yuho",
     "prizeMoney": 1464,
     "team": [
@@ -9568,7 +9568,7 @@
   {
     "id": "297",
     "name": "Backpacker Perdy",
-    "trainerClass": "Backpacker",
+    "trainerClass": "backpacker",
     "personalName": "Perdy",
     "prizeMoney": 1080,
     "team": [
@@ -9584,7 +9584,7 @@
   {
     "id": "298",
     "name": "Backpacker Maria",
-    "trainerClass": "Backpacker",
+    "trainerClass": "backpacker",
     "personalName": "Maria",
     "prizeMoney": 1416,
     "team": [
@@ -9600,7 +9600,7 @@
   {
     "id": "299",
     "name": "Swimmer Yumi",
-    "trainerClass": "Swimmer",
+    "trainerClass": "swimmer",
     "personalName": "Yumi",
     "prizeMoney": 1296,
     "team": [
@@ -9635,7 +9635,7 @@
   {
     "id": "300",
     "name": "Swim Gal Alexandria",
-    "trainerClass": "Swim Gal",
+    "trainerClass": "swimgal",
     "personalName": "Alexandria",
     "prizeMoney": 1296,
     "team": [
@@ -9670,7 +9670,7 @@
   {
     "id": "301",
     "name": "Punk Guy Adam",
-    "trainerClass": "Punk Guy",
+    "trainerClass": "punkguy",
     "personalName": "Adam",
     "prizeMoney": 1472,
     "team": [
@@ -9693,7 +9693,7 @@
   {
     "id": "302",
     "name": "Punk Girl Anna",
-    "trainerClass": "Punk Girl",
+    "trainerClass": "punkgirl",
     "personalName": "Anna",
     "prizeMoney": 1472,
     "team": [
@@ -9709,7 +9709,7 @@
   {
     "id": "303",
     "name": "Veteran Tsunekazu",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Tsunekazu",
     "prizeMoney": 5544,
     "team": [
@@ -9752,7 +9752,7 @@
   {
     "id": "305",
     "name": "Veteran Eric",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Eric",
     "prizeMoney": 4224,
     "team": [
@@ -9803,7 +9803,7 @@
   {
     "id": "306",
     "name": "Veteran Harry",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Harry",
     "prizeMoney": 4136,
     "team": [
@@ -9833,7 +9833,7 @@
   {
     "id": "307",
     "name": "Veteran Nobuko",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Nobuko",
     "prizeMoney": 5544,
     "team": [
@@ -9878,7 +9878,7 @@
   {
     "id": "308",
     "name": "Virtuoso Heather",
-    "trainerClass": "Virtuoso",
+    "trainerClass": "virtuoso",
     "personalName": "Heather",
     "prizeMoney": 4224,
     "team": [
@@ -9922,7 +9922,7 @@
   {
     "id": "309",
     "name": "Virtuoso Lynn",
-    "trainerClass": "Virtuoso",
+    "trainerClass": "virtuoso",
     "personalName": "Lynn",
     "prizeMoney": 4224,
     "team": [
@@ -9964,7 +9964,7 @@
   {
     "id": "310",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1152,
     "team": [
@@ -9980,7 +9980,7 @@
   {
     "id": "311",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1152,
     "team": [
@@ -10003,7 +10003,7 @@
   {
     "id": "312",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1216,
     "team": [
@@ -10026,7 +10026,7 @@
   {
     "id": "313",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1216,
     "team": [
@@ -10049,7 +10049,7 @@
   {
     "id": "314",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1216,
     "team": [
@@ -10079,7 +10079,7 @@
   {
     "id": "315",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1184,
     "team": [
@@ -10095,7 +10095,7 @@
   {
     "id": "316",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1184,
     "team": [
@@ -10111,7 +10111,7 @@
   {
     "id": "318",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1184,
     "team": [
@@ -10134,7 +10134,7 @@
   {
     "id": "319",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1152,
     "team": [
@@ -10157,7 +10157,7 @@
   {
     "id": "321",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1216,
     "team": [
@@ -10173,7 +10173,7 @@
   {
     "id": "322",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1216,
     "team": [
@@ -10189,7 +10189,7 @@
   {
     "id": "323",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1216,
     "team": [
@@ -10212,7 +10212,7 @@
   {
     "id": "324",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1184,
     "team": [
@@ -10235,7 +10235,7 @@
   {
     "id": "326",
     "name": "Up and Coming Leilani",
-    "trainerClass": "Up and Coming",
+    "trainerClass": "upandcoming",
     "personalName": "Leilani",
     "prizeMoney": 2400,
     "team": [
@@ -10296,7 +10296,7 @@
   {
     "id": "327",
     "name": "Rising Star Matthew",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Matthew",
     "prizeMoney": 2400,
     "team": [
@@ -10357,7 +10357,7 @@
   {
     "id": "330",
     "name": "Cook Fil",
-    "trainerClass": "Cook",
+    "trainerClass": "cook",
     "personalName": "Fil",
     "prizeMoney": 1760,
     "team": [
@@ -10382,7 +10382,7 @@
   {
     "id": "331",
     "name": "Black Belt Guy",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Guy",
     "prizeMoney": 3960,
     "team": [
@@ -10417,7 +10417,7 @@
   {
     "id": "332",
     "name": "Preschooler Lee",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Lee",
     "prizeMoney": 1540,
     "team": [
@@ -10439,7 +10439,7 @@
   {
     "id": "333",
     "name": "Cook Ernie",
-    "trainerClass": "Cook",
+    "trainerClass": "cook",
     "personalName": "Ernie",
     "prizeMoney": 2000,
     "team": [
@@ -10500,7 +10500,7 @@
   {
     "id": "334",
     "name": "Dancer Maika",
-    "trainerClass": "Dancer",
+    "trainerClass": "dancer",
     "personalName": "Maika",
     "prizeMoney": 2592,
     "team": [
@@ -10559,7 +10559,7 @@
   {
     "id": "335",
     "name": "Cop Haruki",
-    "trainerClass": "Cop",
+    "trainerClass": "cop",
     "personalName": "Haruki",
     "prizeMoney": 3700,
     "team": [
@@ -10620,7 +10620,7 @@
   {
     "id": "340",
     "name": "Swimsuit Sara",
-    "trainerClass": "Swimsuit",
+    "trainerClass": "swimsuit",
     "personalName": "Sara",
     "prizeMoney": 1176,
     "team": [
@@ -10655,7 +10655,7 @@
   {
     "id": "341",
     "name": "Collector Kawika",
-    "trainerClass": "Collector",
+    "trainerClass": "collector",
     "personalName": "Kawika",
     "prizeMoney": 1632,
     "team": [
@@ -10716,7 +10716,7 @@
   {
     "id": "342",
     "name": "Scientist Reid",
-    "trainerClass": "Scientist",
+    "trainerClass": "scientist",
     "personalName": "Reid",
     "prizeMoney": 1680,
     "team": [
@@ -10739,7 +10739,7 @@
   {
     "id": "343",
     "name": "Dancer Mireille",
-    "trainerClass": "Dancer",
+    "trainerClass": "dancer",
     "personalName": "Mireille",
     "prizeMoney": 1440,
     "team": [
@@ -10755,7 +10755,7 @@
   {
     "id": "344",
     "name": "Businesswoman Jessica",
-    "trainerClass": "Businesswoman",
+    "trainerClass": "businesswoman",
     "personalName": "Jessica",
     "prizeMoney": 1840,
     "team": [
@@ -10790,7 +10790,7 @@
   {
     "id": "346",
     "name": "Aether Foundatio Employee",
-    "trainerClass": "Aether Foundatio",
+    "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
     "prizeMoney": 1920,
     "team": [
@@ -10820,7 +10820,7 @@
   {
     "id": "347",
     "name": "Aether Foundatio Employee",
-    "trainerClass": "Aether Foundatio",
+    "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
     "prizeMoney": 1920,
     "team": [
@@ -10836,7 +10836,7 @@
   {
     "id": "348",
     "name": "Aether Foundati Employee",
-    "trainerClass": "Aether Foundati",
+    "trainerClass": "aetherfoundati",
     "personalName": "Employee",
     "prizeMoney": 1920,
     "team": [
@@ -10859,7 +10859,7 @@
   {
     "id": "350",
     "name": "Elite Four Acerola",
-    "trainerClass": "Elite Four",
+    "trainerClass": "elitefour",
     "personalName": "Acerola",
     "prizeMoney": 13200,
     "team": [
@@ -10929,7 +10929,7 @@
   {
     "id": "351",
     "name": "Elite Four Olivia",
-    "trainerClass": "Elite Four",
+    "trainerClass": "elitefour",
     "personalName": "Olivia",
     "prizeMoney": 13200,
     "team": [
@@ -10999,7 +10999,7 @@
   {
     "id": "352",
     "name": "Elite Four Kahili",
-    "trainerClass": "Elite Four",
+    "trainerClass": "elitefour",
     "personalName": "Kahili",
     "prizeMoney": 13200,
     "team": [
@@ -11069,7 +11069,7 @@
   {
     "id": "356",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 11200,
     "team": [
@@ -11150,7 +11150,7 @@
   {
     "id": "357",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 11200,
     "team": [
@@ -11231,7 +11231,7 @@
   {
     "id": "358",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 11200,
     "team": [
@@ -11312,7 +11312,7 @@
   {
     "id": "359",
     "name": "Island Kahuna Hapu",
-    "trainerClass": "Island Kahuna",
+    "trainerClass": "islandkahuna",
     "personalName": "Hapu",
     "prizeMoney": 11040,
     "team": [
@@ -11382,7 +11382,7 @@
   {
     "id": "361",
     "name": "Vaporeon User Polly",
-    "trainerClass": "Vaporeon User",
+    "trainerClass": "vaporeonuser",
     "personalName": "Polly",
     "prizeMoney": 11000,
     "team": [
@@ -11398,7 +11398,7 @@
   {
     "id": "362",
     "name": "Jolteon User Jane",
-    "trainerClass": "Jolteon User",
+    "trainerClass": "jolteonuser",
     "personalName": "Jane",
     "prizeMoney": 11000,
     "team": [
@@ -11414,7 +11414,7 @@
   {
     "id": "363",
     "name": "Glaceon User Rea",
-    "trainerClass": "Glaceon User",
+    "trainerClass": "glaceonuser",
     "personalName": "Rea",
     "prizeMoney": 11000,
     "team": [
@@ -11430,7 +11430,7 @@
   {
     "id": "364",
     "name": "Flareon User Chad",
-    "trainerClass": "Flareon User",
+    "trainerClass": "flareonuser",
     "personalName": "Chad",
     "prizeMoney": 2200,
     "team": [
@@ -11446,7 +11446,7 @@
   {
     "id": "365",
     "name": "Espeon User Ishaan",
-    "trainerClass": "Espeon User",
+    "trainerClass": "espeonuser",
     "personalName": "Ishaan",
     "prizeMoney": 2200,
     "team": [
@@ -11462,7 +11462,7 @@
   {
     "id": "366",
     "name": "Janitor Shawn",
-    "trainerClass": "Janitor",
+    "trainerClass": "janitor",
     "personalName": "Shawn",
     "prizeMoney": 1720,
     "team": [
@@ -11510,7 +11510,7 @@
   {
     "id": "367",
     "name": "Umbreon User Braiden",
-    "trainerClass": "Umbreon User",
+    "trainerClass": "umbreonuser",
     "personalName": "Braiden",
     "prizeMoney": 11000,
     "team": [
@@ -11526,7 +11526,7 @@
   {
     "id": "368",
     "name": "Leafeon User Linnea",
-    "trainerClass": "Leafeon User",
+    "trainerClass": "leafeonuser",
     "personalName": "Linnea",
     "prizeMoney": 1320,
     "team": [
@@ -11542,7 +11542,7 @@
   {
     "id": "369",
     "name": "Sylveon User Kira",
-    "trainerClass": "Sylveon User",
+    "trainerClass": "sylveonuser",
     "personalName": "Kira",
     "prizeMoney": 648,
     "team": [
@@ -11558,7 +11558,7 @@
   {
     "id": "371",
     "name": "Preschooler Harper",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Harper",
     "prizeMoney": 672,
     "team": [
@@ -11578,7 +11578,7 @@
   {
     "id": "372",
     "name": "Preschooler Sarah",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Sarah",
     "prizeMoney": 672,
     "team": [
@@ -11598,7 +11598,7 @@
   {
     "id": "373",
     "name": "Swimmer Ashlyn",
-    "trainerClass": "Swimmer",
+    "trainerClass": "swimmer",
     "personalName": "Ashlyn",
     "prizeMoney": 1176,
     "team": [
@@ -11616,7 +11616,7 @@
   {
     "id": "374",
     "name": "Swimmer Kylie",
-    "trainerClass": "Swimmer",
+    "trainerClass": "swimmer",
     "personalName": "Kylie",
     "prizeMoney": 1152,
     "team": [
@@ -11634,7 +11634,7 @@
   {
     "id": "375",
     "name": "Golfer Tara",
-    "trainerClass": "Golfer",
+    "trainerClass": "golfer",
     "personalName": "Tara",
     "prizeMoney": 4680,
     "team": [
@@ -11669,7 +11669,7 @@
   {
     "id": "376",
     "name": "Golfer Tina",
-    "trainerClass": "Golfer",
+    "trainerClass": "golfer",
     "personalName": "Tina",
     "prizeMoney": 4680,
     "team": [
@@ -11704,7 +11704,7 @@
   {
     "id": "379",
     "name": "Eevee User Kagetora",
-    "trainerClass": "Eevee User",
+    "trainerClass": "eeveeuser",
     "personalName": "Kagetora",
     "prizeMoney": 5016,
     "team": [
@@ -11720,7 +11720,7 @@
   {
     "id": "380",
     "name": "Principal Asuka",
-    "trainerClass": "Principal",
+    "trainerClass": "principal",
     "personalName": "Asuka",
     "prizeMoney": 5472,
     "team": [
@@ -11765,7 +11765,7 @@
   {
     "id": "383",
     "name": "Ace Trainer Chase",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Chase",
     "prizeMoney": 2924,
     "team": [
@@ -11839,7 +11839,7 @@
   {
     "id": "386",
     "name": "Black Belt Duane",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Duane",
     "prizeMoney": 1792,
     "team": [
@@ -11862,7 +11862,7 @@
   {
     "id": "388",
     "name": "Tourist Marcus",
-    "trainerClass": "Tourist",
+    "trainerClass": "tourist",
     "personalName": "Marcus",
     "prizeMoney": 3300,
     "team": [
@@ -11878,7 +11878,7 @@
   {
     "id": "390",
     "name": "Pokémon Rancher Wesley",
-    "trainerClass": "Pokémon Rancher",
+    "trainerClass": "pokmonrancher",
     "personalName": "Wesley",
     "prizeMoney": 2116,
     "team": [
@@ -11913,7 +11913,7 @@
   {
     "id": "393",
     "name": "Collector Andrew",
-    "trainerClass": "Collector",
+    "trainerClass": "collector",
     "personalName": "Andrew",
     "prizeMoney": 1600,
     "team": [
@@ -11987,7 +11987,7 @@
   {
     "id": "395",
     "name": "Challenge Guide Bronson",
-    "trainerClass": "Challenge Guide",
+    "trainerClass": "challengeguide",
     "personalName": "Bronson",
     "prizeMoney": 14700,
     "team": [
@@ -12061,7 +12061,7 @@
   {
     "id": "396",
     "name": "Trial Captain Ilima",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Ilima",
     "prizeMoney": 7200,
     "team": [
@@ -12106,7 +12106,7 @@
   {
     "id": "398",
     "name": "Trial Captain Kiawe",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Kiawe",
     "prizeMoney": 7200,
     "team": [
@@ -12149,7 +12149,7 @@
   {
     "id": "401",
     "name": "Pokémon Trainer Plumeria",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Plumeria",
     "prizeMoney": 8040,
     "team": [
@@ -12219,7 +12219,7 @@
   {
     "id": "405",
     "name": "Shock Captain Sophocles",
-    "trainerClass": "Shock Captain",
+    "trainerClass": "shockcaptain",
     "personalName": "Sophocles",
     "prizeMoney": 8040,
     "team": [
@@ -12288,7 +12288,7 @@
   {
     "id": "409",
     "name": "Dragon Master Ryuki",
-    "trainerClass": "Dragon Master",
+    "trainerClass": "dragonmaster",
     "personalName": "Ryuki",
     "prizeMoney": 8040,
     "team": [
@@ -12357,7 +12357,7 @@
   {
     "id": "410",
     "name": "Aether Foundation Faba",
-    "trainerClass": "Aether Foundation",
+    "trainerClass": "aetherfoundation",
     "personalName": "Faba",
     "prizeMoney": 15120,
     "team": [
@@ -12426,7 +12426,7 @@
   {
     "id": "412",
     "name": "Kalosian Man Dexio",
-    "trainerClass": "Kalosian Man",
+    "trainerClass": "kalosianman",
     "personalName": "Dexio",
     "prizeMoney": 8400,
     "team": [
@@ -12496,7 +12496,7 @@
   {
     "id": "415",
     "name": "Pokémon Trainer Gladion",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
     "prizeMoney": 8800,
     "team": [
@@ -12551,7 +12551,7 @@
   {
     "id": "416",
     "name": "Pokémon Trainer Gladion",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
     "prizeMoney": 8480,
     "team": [
@@ -12606,7 +12606,7 @@
   {
     "id": "417",
     "name": "Pokémon Trainer Gladion",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
     "prizeMoney": 11200,
     "team": [
@@ -12689,7 +12689,7 @@
   {
     "id": "418",
     "name": "Pokémon Trainer Gladion",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
     "prizeMoney": 11200,
     "team": [
@@ -12772,7 +12772,7 @@
   {
     "id": "419",
     "name": "Pokémon Trainer Gladion",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
     "prizeMoney": 11200,
     "team": [
@@ -12855,7 +12855,7 @@
   {
     "id": "420",
     "name": "Firefighter Alex",
-    "trainerClass": "Firefighter",
+    "trainerClass": "firefighter",
     "personalName": "Alex",
     "prizeMoney": 1840,
     "team": [
@@ -12916,7 +12916,7 @@
   {
     "id": "421",
     "name": "Youth Athlete Alyssa",
-    "trainerClass": "Youth Athlete",
+    "trainerClass": "youthathlete",
     "personalName": "Alyssa",
     "prizeMoney": 1344,
     "team": [
@@ -12951,7 +12951,7 @@
   {
     "id": "422",
     "name": "Youth Athlete Sho",
-    "trainerClass": "Youth Athlete",
+    "trainerClass": "youthathlete",
     "personalName": "Sho",
     "prizeMoney": 1344,
     "team": [
@@ -12986,7 +12986,7 @@
   {
     "id": "424",
     "name": "Black Belt Clayton",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Clayton",
     "prizeMoney": 1536,
     "team": [
@@ -13047,7 +13047,7 @@
   {
     "id": "425",
     "name": "Punk Guy Lane",
-    "trainerClass": "Punk Guy",
+    "trainerClass": "punkguy",
     "personalName": "Lane",
     "prizeMoney": 1536,
     "team": [
@@ -13082,7 +13082,7 @@
   {
     "id": "426",
     "name": "Punk Girl Yoko",
-    "trainerClass": "Punk Girl",
+    "trainerClass": "punkgirl",
     "personalName": "Yoko",
     "prizeMoney": 1600,
     "team": [
@@ -13104,7 +13104,7 @@
   {
     "id": "427",
     "name": "Office Worker Shane",
-    "trainerClass": "Office Worker",
+    "trainerClass": "officeworker",
     "personalName": "Shane",
     "prizeMoney": 2000,
     "team": [
@@ -13178,7 +13178,7 @@
   {
     "id": "428",
     "name": "Businesswoman Michelle",
-    "trainerClass": "Businesswoman",
+    "trainerClass": "businesswoman",
     "personalName": "Michelle",
     "prizeMoney": 1440,
     "team": [
@@ -13207,7 +13207,7 @@
   {
     "id": "429",
     "name": "Punk Guy Troy",
-    "trainerClass": "Punk Guy",
+    "trainerClass": "punkguy",
     "personalName": "Troy",
     "prizeMoney": 1952,
     "team": [
@@ -13223,7 +13223,7 @@
   {
     "id": "430",
     "name": "Punk Girl Marie",
-    "trainerClass": "Punk Girl",
+    "trainerClass": "punkgirl",
     "personalName": "Marie",
     "prizeMoney": 1952,
     "team": [
@@ -13239,7 +13239,7 @@
   {
     "id": "431",
     "name": "Sightseer Amy",
-    "trainerClass": "Sightseer",
+    "trainerClass": "sightseer",
     "personalName": "Amy",
     "prizeMoney": 2480,
     "team": [
@@ -13270,7 +13270,7 @@
   {
     "id": "432",
     "name": "Sightseer Amy",
-    "trainerClass": "Sightseer",
+    "trainerClass": "sightseer",
     "personalName": "Amy",
     "prizeMoney": 3300,
     "team": [
@@ -13285,7 +13285,7 @@
   {
     "id": "433",
     "name": "Tourist George",
-    "trainerClass": "Tourist",
+    "trainerClass": "tourist",
     "personalName": "George",
     "prizeMoney": 2480,
     "team": [
@@ -13316,7 +13316,7 @@
   {
     "id": "434",
     "name": "Tourist George",
-    "trainerClass": "Tourist",
+    "trainerClass": "tourist",
     "personalName": "George",
     "prizeMoney": 3300,
     "team": [
@@ -13331,7 +13331,7 @@
   {
     "id": "436",
     "name": "Rising Star Joseph",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Joseph",
     "prizeMoney": 640,
     "team": [
@@ -13392,7 +13392,7 @@
   {
     "id": "437",
     "name": "Kindergartener Hayden",
-    "trainerClass": "Kindergartener",
+    "trainerClass": "kindergartener",
     "personalName": "Hayden",
     "prizeMoney": 576,
     "team": [
@@ -13440,7 +13440,7 @@
   {
     "id": "438",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 1480,
     "team": [
@@ -13488,7 +13488,7 @@
   {
     "id": "439",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 1480,
     "team": [
@@ -13536,7 +13536,7 @@
   {
     "id": "440",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 1480,
     "team": [
@@ -13584,7 +13584,7 @@
   {
     "id": "441",
     "name": "Skull Enforcer Gladion",
-    "trainerClass": "Skull Enforcer",
+    "trainerClass": "skullenforcer",
     "personalName": "Gladion",
     "prizeMoney": 3440,
     "team": [
@@ -13628,7 +13628,7 @@
   {
     "id": "442",
     "name": "Aether Foundatio Employee",
-    "trainerClass": "Aether Foundatio",
+    "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
     "prizeMoney": 2016,
     "team": [
@@ -13658,7 +13658,7 @@
   {
     "id": "443",
     "name": "Skull Gang Grunt DD",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt DD",
     "prizeMoney": 2520,
     "team": [
@@ -13706,7 +13706,7 @@
   {
     "id": "444",
     "name": "Team Skull Grunt Ed",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt Ed",
     "prizeMoney": 2800,
     "team": [
@@ -13754,7 +13754,7 @@
   {
     "id": "445",
     "name": "Ace Trainer Kekoa",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Kekoa",
     "prizeMoney": 3128,
     "team": [
@@ -13797,7 +13797,7 @@
   {
     "id": "446",
     "name": "Ace Trainer Lindsey",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Lindsey",
     "prizeMoney": 3128,
     "team": [
@@ -13830,7 +13830,7 @@
   {
     "id": "447",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 3440,
     "team": [
@@ -13891,7 +13891,7 @@
   {
     "id": "448",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 3440,
     "team": [
@@ -13952,7 +13952,7 @@
   {
     "id": "449",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 3440,
     "team": [
@@ -14013,7 +14013,7 @@
   {
     "id": "450",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 3520,
     "team": [
@@ -14074,7 +14074,7 @@
   {
     "id": "451",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 3520,
     "team": [
@@ -14135,7 +14135,7 @@
   {
     "id": "452",
     "name": "Pokémon Trainer Hau",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Hau",
     "prizeMoney": 3520,
     "team": [
@@ -14196,7 +14196,7 @@
   {
     "id": "453",
     "name": "Aether Foundatio Employee",
-    "trainerClass": "Aether Foundatio",
+    "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
     "prizeMoney": 1968,
     "team": [
@@ -14212,7 +14212,7 @@
   {
     "id": "454",
     "name": "Aether Foundatio Employee",
-    "trainerClass": "Aether Foundatio",
+    "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
     "prizeMoney": 1968,
     "team": [
@@ -14228,7 +14228,7 @@
   {
     "id": "455",
     "name": "Aether Foundatio Employee",
-    "trainerClass": "Aether Foundatio",
+    "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
     "prizeMoney": 2016,
     "team": [
@@ -14251,7 +14251,7 @@
   {
     "id": "456",
     "name": "Aether Foundatio Employee",
-    "trainerClass": "Aether Foundatio",
+    "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
     "prizeMoney": 2016,
     "team": [
@@ -14274,7 +14274,7 @@
   {
     "id": "457",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1216,
     "team": [
@@ -14290,7 +14290,7 @@
   {
     "id": "458",
     "name": "Skull Gang Grunt",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt",
     "prizeMoney": 1216,
     "team": [
@@ -14306,7 +14306,7 @@
   {
     "id": "459",
     "name": "Lass Audrey",
-    "trainerClass": "Lass",
+    "trainerClass": "lass",
     "personalName": "Audrey",
     "prizeMoney": 192,
     "team": [
@@ -14338,7 +14338,7 @@
   {
     "id": "460",
     "name": "Rising Star Elijah",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Elijah",
     "prizeMoney": 2304,
     "team": [
@@ -14386,7 +14386,7 @@
   {
     "id": "461",
     "name": "Lass Rika",
-    "trainerClass": "Lass",
+    "trainerClass": "lass",
     "personalName": "Rika",
     "prizeMoney": 1128,
     "team": [
@@ -14434,7 +14434,7 @@
   {
     "id": "462",
     "name": "Lass Emmy",
-    "trainerClass": "Lass",
+    "trainerClass": "lass",
     "personalName": "Emmy",
     "prizeMoney": 1128,
     "team": [
@@ -14482,7 +14482,7 @@
   {
     "id": "463",
     "name": "Youngster Tyler",
-    "trainerClass": "Youngster",
+    "trainerClass": "youngster",
     "personalName": "Tyler",
     "prizeMoney": 960,
     "team": [
@@ -14530,7 +14530,7 @@
   {
     "id": "464",
     "name": "Veteran Don",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Don",
     "prizeMoney": 4312,
     "team": [
@@ -14604,7 +14604,7 @@
   {
     "id": "465",
     "name": "Ace Trainer Dean",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Dean",
     "prizeMoney": 2340,
     "team": [
@@ -14637,7 +14637,7 @@
   {
     "id": "466",
     "name": "Veteran Julia",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Julia",
     "prizeMoney": 1840,
     "team": [
@@ -14694,7 +14694,7 @@
   {
     "id": "468",
     "name": "Preschooler Malia",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Malia",
     "prizeMoney": 416,
     "team": [
@@ -14742,7 +14742,7 @@
   {
     "id": "469",
     "name": "Kindergartener Dylan",
-    "trainerClass": "Kindergartener",
+    "trainerClass": "kindergartener",
     "personalName": "Dylan",
     "prizeMoney": 384,
     "team": [
@@ -14803,7 +14803,7 @@
   {
     "id": "471",
     "name": "Rising Star Sean",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Sean",
     "prizeMoney": 2256,
     "team": [
@@ -14851,7 +14851,7 @@
   {
     "id": "472",
     "name": "Beauty Krystal",
-    "trainerClass": "Beauty",
+    "trainerClass": "beauty",
     "personalName": "Krystal",
     "prizeMoney": 704,
     "team": [
@@ -14912,7 +14912,7 @@
   {
     "id": "473",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1696,
     "team": [
@@ -14960,7 +14960,7 @@
   {
     "id": "474",
     "name": "Ace Trainer Eileen",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Eileen",
     "prizeMoney": 14000,
     "team": [
@@ -15034,7 +15034,7 @@
   {
     "id": "475",
     "name": "Ace Trainer Cole",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Cole",
     "prizeMoney": 4012,
     "team": [
@@ -15077,7 +15077,7 @@
   {
     "id": "476",
     "name": "Veteran Akira",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Akira",
     "prizeMoney": 4048,
     "team": [
@@ -15151,7 +15151,7 @@
   {
     "id": "477",
     "name": "Pokémon Professor Kukui",
-    "trainerClass": "Pokémon Professor",
+    "trainerClass": "pokmonprofessor",
     "personalName": "Kukui",
     "prizeMoney": 16320,
     "team": [
@@ -15233,7 +15233,7 @@
   {
     "id": "478",
     "name": "Pokémon Professor Kukui",
-    "trainerClass": "Pokémon Professor",
+    "trainerClass": "pokmonprofessor",
     "personalName": "Kukui",
     "prizeMoney": 16320,
     "team": [
@@ -15315,7 +15315,7 @@
   {
     "id": "479",
     "name": "Pokémon Professor Kukui",
-    "trainerClass": "Pokémon Professor",
+    "trainerClass": "pokmonprofessor",
     "personalName": "Kukui",
     "prizeMoney": 16320,
     "team": [
@@ -15397,7 +15397,7 @@
   {
     "id": "480",
     "name": "Youngster Tristan",
-    "trainerClass": "Youngster",
+    "trainerClass": "youngster",
     "personalName": "Tristan",
     "prizeMoney": 1320,
     "team": [
@@ -15467,7 +15467,7 @@
   {
     "id": "485",
     "name": "Teacher Emily",
-    "trainerClass": "Teacher",
+    "trainerClass": "teacher",
     "personalName": "Emily",
     "prizeMoney": 792,
     "team": [
@@ -15541,7 +15541,7 @@
   {
     "id": "486",
     "name": "Teacher Emily",
-    "trainerClass": "Teacher",
+    "trainerClass": "teacher",
     "personalName": "Emily",
     "prizeMoney": 792,
     "team": [
@@ -15615,7 +15615,7 @@
   {
     "id": "487",
     "name": "Teacher Emily",
-    "trainerClass": "Teacher",
+    "trainerClass": "teacher",
     "personalName": "Emily",
     "prizeMoney": 792,
     "team": [
@@ -15689,7 +15689,7 @@
   {
     "id": "488",
     "name": "Swimsuit Kyra",
-    "trainerClass": "Swimsuit",
+    "trainerClass": "swimsuit",
     "personalName": "Kyra",
     "prizeMoney": 1296,
     "team": [
@@ -15724,7 +15724,7 @@
   {
     "id": "489",
     "name": "Elite Four Molayne",
-    "trainerClass": "Elite Four",
+    "trainerClass": "elitefour",
     "personalName": "Molayne",
     "prizeMoney": 11400,
     "team": [
@@ -15794,7 +15794,7 @@
   {
     "id": "490",
     "name": "Elite Four Molayne",
-    "trainerClass": "Elite Four",
+    "trainerClass": "elitefour",
     "personalName": "Molayne",
     "prizeMoney": 13200,
     "team": [
@@ -15864,7 +15864,7 @@
   {
     "id": "491",
     "name": "Kahuna's Grandson Hau",
-    "trainerClass": "Kahuna's Grandson",
+    "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
     "prizeMoney": 200,
     "team": [
@@ -15895,7 +15895,7 @@
   {
     "id": "492",
     "name": "Kahuna's Grandson Hau",
-    "trainerClass": "Kahuna's Grandson",
+    "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
     "prizeMoney": 200,
     "team": [
@@ -15926,7 +15926,7 @@
   {
     "id": "493",
     "name": "Kahuna's Grandson Hau",
-    "trainerClass": "Kahuna's Grandson",
+    "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
     "prizeMoney": 200,
     "team": [
@@ -15957,7 +15957,7 @@
   {
     "id": "494",
     "name": "Champion Hau",
-    "trainerClass": "Champion",
+    "trainerClass": "champion",
     "personalName": "Hau",
     "prizeMoney": 14400,
     "team": [
@@ -16038,7 +16038,7 @@
   {
     "id": "495",
     "name": "Champion Hau",
-    "trainerClass": "Champion",
+    "trainerClass": "champion",
     "personalName": "Hau",
     "prizeMoney": 14400,
     "team": [
@@ -16119,7 +16119,7 @@
   {
     "id": "496",
     "name": "Champion Hau",
-    "trainerClass": "Champion",
+    "trainerClass": "champion",
     "personalName": "Hau",
     "prizeMoney": 14400,
     "team": [
@@ -16200,7 +16200,7 @@
   {
     "id": "497",
     "name": "Poni Kahuna Hapu",
-    "trainerClass": "Poni Kahuna",
+    "trainerClass": "ponikahuna",
     "personalName": "Hapu",
     "prizeMoney": 8640,
     "team": [
@@ -16255,7 +16255,7 @@
   {
     "id": "498",
     "name": "Ultra Recon Squad Soliera",
-    "trainerClass": "Ultra Recon Squad",
+    "trainerClass": "ultrareconsquad",
     "personalName": "Soliera",
     "prizeMoney": 564,
     "team": [
@@ -16271,7 +16271,7 @@
   {
     "id": "499",
     "name": "Ultra Recon Squad Soliera",
-    "trainerClass": "Ultra Recon Squad",
+    "trainerClass": "ultrareconsquad",
     "personalName": "Soliera",
     "prizeMoney": 588,
     "team": [
@@ -16287,7 +16287,7 @@
   {
     "id": "500",
     "name": "Ultra Recon Squad Dulse",
-    "trainerClass": "Ultra Recon Squad",
+    "trainerClass": "ultrareconsquad",
     "personalName": "Dulse",
     "prizeMoney": 564,
     "team": [
@@ -16303,7 +16303,7 @@
   {
     "id": "501",
     "name": "Ultra Recon Squad Dulse",
-    "trainerClass": "Ultra Recon Squad",
+    "trainerClass": "ultrareconsquad",
     "personalName": "Dulse",
     "prizeMoney": 588,
     "team": [
@@ -16319,7 +16319,7 @@
   {
     "id": "502",
     "name": "Trial Captain Ilima",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Ilima",
     "prizeMoney": 6120,
     "team": [
@@ -16363,7 +16363,7 @@
   {
     "id": "503",
     "name": "Trial Captain Lana",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Lana",
     "prizeMoney": 6120,
     "team": [
@@ -16406,7 +16406,7 @@
   {
     "id": "504",
     "name": "Trial Captain Kiawe",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Kiawe",
     "prizeMoney": 6120,
     "team": [
@@ -16449,7 +16449,7 @@
   {
     "id": "505",
     "name": "Trial Captain Mallow",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Mallow",
     "prizeMoney": 6120,
     "team": [
@@ -16492,7 +16492,7 @@
   {
     "id": "506",
     "name": "Trial Captain Sophocles",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Sophocles",
     "prizeMoney": 6120,
     "team": [
@@ -16535,7 +16535,7 @@
   {
     "id": "507",
     "name": "Trial Captain Mina",
-    "trainerClass": "Trial Captain",
+    "trainerClass": "trialcaptain",
     "personalName": "Mina",
     "prizeMoney": 6120,
     "team": [
@@ -16578,7 +16578,7 @@
   {
     "id": "508",
     "name": "Island Kahuna Nanu",
-    "trainerClass": "Island Kahuna",
+    "trainerClass": "islandkahuna",
     "personalName": "Nanu",
     "prizeMoney": 8480,
     "team": [
@@ -16621,7 +16621,7 @@
   {
     "id": "509",
     "name": "Black Belt Francis",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Francis",
     "prizeMoney": 4320,
     "team": [
@@ -16682,7 +16682,7 @@
   {
     "id": "510",
     "name": "Black Belt Ross",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Ross",
     "prizeMoney": 4264,
     "team": [
@@ -16730,7 +16730,7 @@
   {
     "id": "511",
     "name": "Black Belt Douglas",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Douglas",
     "prizeMoney": 1440,
     "team": [
@@ -16751,7 +16751,7 @@
   {
     "id": "512",
     "name": "Swim Gal Natasha",
-    "trainerClass": "Swim Gal",
+    "trainerClass": "swimgal",
     "personalName": "Natasha",
     "prizeMoney": 336,
     "team": [
@@ -16797,7 +16797,7 @@
   {
     "id": "513",
     "name": "Sightseer Perdita",
-    "trainerClass": "Sightseer",
+    "trainerClass": "sightseer",
     "personalName": "Perdita",
     "prizeMoney": 2400,
     "team": [
@@ -16858,7 +16858,7 @@
   {
     "id": "514",
     "name": "Sightseer Yuriko",
-    "trainerClass": "Sightseer",
+    "trainerClass": "sightseer",
     "personalName": "Yuriko",
     "prizeMoney": 2580,
     "team": [
@@ -16906,7 +16906,7 @@
   {
     "id": "515",
     "name": "Sightseer Steve",
-    "trainerClass": "Sightseer",
+    "trainerClass": "sightseer",
     "personalName": "Steve",
     "prizeMoney": 3540,
     "team": [
@@ -16922,7 +16922,7 @@
   {
     "id": "516",
     "name": "Rising Star Micah",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Micah",
     "prizeMoney": 2760,
     "team": [
@@ -16983,7 +16983,7 @@
   {
     "id": "517",
     "name": "Aether Foundation2 Employee",
-    "trainerClass": "Aether Foundation2",
+    "trainerClass": "aetherfoundation2",
     "personalName": "Employee",
     "prizeMoney": 1968,
     "team": [
@@ -16999,7 +16999,7 @@
   {
     "id": "518",
     "name": "Veteran Brone",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Brone",
     "prizeMoney": 4576,
     "team": [
@@ -17073,7 +17073,7 @@
   {
     "id": "519",
     "name": "Virtuoso Leticia",
-    "trainerClass": "Virtuoso",
+    "trainerClass": "virtuoso",
     "personalName": "Leticia",
     "prizeMoney": 5368,
     "team": [
@@ -17102,7 +17102,7 @@
   {
     "id": "520",
     "name": "Preschooler Kindra",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Kindra",
     "prizeMoney": 408,
     "team": [
@@ -17118,7 +17118,7 @@
   {
     "id": "521",
     "name": "Bellhop Landon",
-    "trainerClass": "Bellhop",
+    "trainerClass": "bellhop",
     "personalName": "Landon",
     "prizeMoney": 1760,
     "team": [
@@ -17153,7 +17153,7 @@
   {
     "id": "522",
     "name": "Putter Sky",
-    "trainerClass": "Putter",
+    "trainerClass": "putter",
     "personalName": "Sky",
     "prizeMoney": 2700,
     "team": [
@@ -17201,7 +17201,7 @@
   {
     "id": "524",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1184,
     "team": [
@@ -17217,7 +17217,7 @@
   {
     "id": "525",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1472,
     "team": [
@@ -17233,7 +17233,7 @@
   {
     "id": "526",
     "name": "Swimmer Beau Derek",
-    "trainerClass": "Swimmer Beau",
+    "trainerClass": "swimmerbeau",
     "personalName": "Derek",
     "prizeMoney": 1056,
     "team": [
@@ -17249,7 +17249,7 @@
   {
     "id": "528",
     "name": "Cop Sheriff",
-    "trainerClass": "Cop",
+    "trainerClass": "cop",
     "personalName": "Sheriff",
     "prizeMoney": 2320,
     "team": [
@@ -17265,7 +17265,7 @@
   {
     "id": "529",
     "name": "Teacher Jen",
-    "trainerClass": "Teacher",
+    "trainerClass": "teacher",
     "personalName": "Jen",
     "prizeMoney": 4480,
     "team": [
@@ -17300,7 +17300,7 @@
   {
     "id": "530",
     "name": "Preschooler Fumiko",
-    "trainerClass": "Preschooler",
+    "trainerClass": "preschooler",
     "personalName": "Fumiko",
     "prizeMoney": 1200,
     "team": [
@@ -17348,7 +17348,7 @@
   {
     "id": "531",
     "name": "Youth Athlete Anton",
-    "trainerClass": "Youth Athlete",
+    "trainerClass": "youthathlete",
     "personalName": "Anton",
     "prizeMoney": 1624,
     "team": [
@@ -17364,7 +17364,7 @@
   {
     "id": "532",
     "name": "Firefighter Aiden",
-    "trainerClass": "Firefighter",
+    "trainerClass": "firefighter",
     "personalName": "Aiden",
     "prizeMoney": 2400,
     "team": [
@@ -17387,7 +17387,7 @@
   {
     "id": "533",
     "name": "Surf Dude Jennis",
-    "trainerClass": "Surf Dude",
+    "trainerClass": "surfdude",
     "personalName": "Jennis",
     "prizeMoney": 1272,
     "team": [
@@ -17448,7 +17448,7 @@
   {
     "id": "534",
     "name": "Punk Girl Reika",
-    "trainerClass": "Punk Girl",
+    "trainerClass": "punkgirl",
     "personalName": "Reika",
     "prizeMoney": 1888,
     "team": [
@@ -17464,7 +17464,7 @@
   {
     "id": "535",
     "name": "Hiker David",
-    "trainerClass": "Hiker",
+    "trainerClass": "hiker",
     "personalName": "David",
     "prizeMoney": 1536,
     "team": [
@@ -17480,7 +17480,7 @@
   {
     "id": "536",
     "name": "Actor Meredith",
-    "trainerClass": "Actor",
+    "trainerClass": "actor",
     "personalName": "Meredith",
     "prizeMoney": 1920,
     "team": [
@@ -17541,7 +17541,7 @@
   {
     "id": "537",
     "name": "Actor Meredith",
-    "trainerClass": "Actor",
+    "trainerClass": "actor",
     "personalName": "Meredith",
     "prizeMoney": 7200,
     "team": [
@@ -17628,7 +17628,7 @@
   {
     "id": "538",
     "name": "Actor Meredith",
-    "trainerClass": "Actor",
+    "trainerClass": "actor",
     "personalName": "Meredith",
     "prizeMoney": 1440,
     "team": [
@@ -17649,7 +17649,7 @@
   {
     "id": "539",
     "name": "Actor Meredith",
-    "trainerClass": "Actor",
+    "trainerClass": "actor",
     "personalName": "Meredith",
     "prizeMoney": 2280,
     "team": [
@@ -17670,7 +17670,7 @@
   {
     "id": "540",
     "name": "Reporter Rita",
-    "trainerClass": "Reporter",
+    "trainerClass": "reporter",
     "personalName": "Rita",
     "prizeMoney": 4800,
     "team": [
@@ -17731,7 +17731,7 @@
   {
     "id": "541",
     "name": "Team Aqua Archie",
-    "trainerClass": "Team Aqua",
+    "trainerClass": "teamaqua",
     "personalName": "Archie",
     "prizeMoney": 18480,
     "team": [
@@ -17800,7 +17800,7 @@
   {
     "id": "542",
     "name": "Team Galactic Cyrus",
-    "trainerClass": "Team Galactic",
+    "trainerClass": "teamgalactic",
     "personalName": "Cyrus",
     "prizeMoney": 18760,
     "team": [
@@ -17869,7 +17869,7 @@
   {
     "id": "543",
     "name": "Team Galactic Cyrus",
-    "trainerClass": "Team Galactic",
+    "trainerClass": "teamgalactic",
     "personalName": "Cyrus",
     "prizeMoney": 18760,
     "team": [
@@ -17938,7 +17938,7 @@
   {
     "id": "544",
     "name": "Aether Foundatio Employee",
-    "trainerClass": "Aether Foundatio",
+    "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
     "prizeMoney": 2928,
     "team": [
@@ -17975,7 +17975,7 @@
   {
     "id": "545",
     "name": "Ace Trainer Elwood",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Elwood",
     "prizeMoney": 3128,
     "team": [
@@ -18002,7 +18002,7 @@
   {
     "id": "547",
     "name": "Gym Trainer Brock?",
-    "trainerClass": "Gym Trainer",
+    "trainerClass": "gymtrainer",
     "personalName": "Brock?",
     "prizeMoney": 1344,
     "team": [
@@ -18050,7 +18050,7 @@
   {
     "id": "548",
     "name": "Gym Trainer Misty?",
-    "trainerClass": "Gym Trainer",
+    "trainerClass": "gymtrainer",
     "personalName": "Misty?",
     "prizeMoney": 1344,
     "team": [
@@ -18098,7 +18098,7 @@
   {
     "id": "549",
     "name": "Gym Trainer Surge?",
-    "trainerClass": "Gym Trainer",
+    "trainerClass": "gymtrainer",
     "personalName": "Surge?",
     "prizeMoney": 1344,
     "team": [
@@ -18146,7 +18146,7 @@
   {
     "id": "550",
     "name": "Gym Trainer Erika?",
-    "trainerClass": "Gym Trainer",
+    "trainerClass": "gymtrainer",
     "personalName": "Erika?",
     "prizeMoney": 1344,
     "team": [
@@ -18194,7 +18194,7 @@
   {
     "id": "551",
     "name": "Gym Trainer Koga?",
-    "trainerClass": "Gym Trainer",
+    "trainerClass": "gymtrainer",
     "personalName": "Koga?",
     "prizeMoney": 1760,
     "team": [
@@ -18210,7 +18210,7 @@
   {
     "id": "552",
     "name": "Gym Trainer Sabrina?",
-    "trainerClass": "Gym Trainer",
+    "trainerClass": "gymtrainer",
     "personalName": "Sabrina?",
     "prizeMoney": 1760,
     "team": [
@@ -18226,7 +18226,7 @@
   {
     "id": "553",
     "name": "Gym Trainer Blaine?",
-    "trainerClass": "Gym Trainer",
+    "trainerClass": "gymtrainer",
     "personalName": "Blaine?",
     "prizeMoney": 1760,
     "team": [
@@ -18242,7 +18242,7 @@
   {
     "id": "554",
     "name": "Gym Trainer Giovanni?",
-    "trainerClass": "Gym Trainer",
+    "trainerClass": "gymtrainer",
     "personalName": "Giovanni?",
     "prizeMoney": 1760,
     "team": [
@@ -18258,7 +18258,7 @@
   {
     "id": "555",
     "name": "Gym Leader Agatha",
-    "trainerClass": "Gym Leader",
+    "trainerClass": "gymleader",
     "personalName": "Agatha",
     "prizeMoney": 1376,
     "team": [
@@ -18319,7 +18319,7 @@
   {
     "id": "556",
     "name": "Gym Leader Lorelei?",
-    "trainerClass": "Gym Leader",
+    "trainerClass": "gymleader",
     "personalName": "Lorelei?",
     "prizeMoney": 1792,
     "team": [
@@ -18335,7 +18335,7 @@
   {
     "id": "557",
     "name": "GAME FREAK Iwao",
-    "trainerClass": "GAME FREAK",
+    "trainerClass": "gamefreak",
     "personalName": "Iwao",
     "prizeMoney": 1792,
     "team": [
@@ -18380,7 +18380,7 @@
   {
     "id": "558",
     "name": "Pokémon Trainer Guzma",
-    "trainerClass": "Pokémon Trainer",
+    "trainerClass": "pokmontrainer",
     "personalName": "Guzma",
     "prizeMoney": 7680,
     "team": [
@@ -18449,7 +18449,7 @@
   {
     "id": "559",
     "name": "Team Plasma Ghetsis",
-    "trainerClass": "Team Plasma",
+    "trainerClass": "teamplasma",
     "personalName": "Ghetsis",
     "prizeMoney": 19040,
     "team": [
@@ -18518,7 +18518,7 @@
   {
     "id": "560",
     "name": "Team Plasma Ghetsis",
-    "trainerClass": "Team Plasma",
+    "trainerClass": "teamplasma",
     "personalName": "Ghetsis",
     "prizeMoney": 19040,
     "team": [
@@ -18587,7 +18587,7 @@
   {
     "id": "561",
     "name": "Aether Branch Chief Faba",
-    "trainerClass": "Aether Branch Chief",
+    "trainerClass": "aetherbranchchief",
     "personalName": "Faba",
     "prizeMoney": 7560,
     "team": [
@@ -18632,7 +18632,7 @@
   {
     "id": "562",
     "name": "Team Rainbow Rocket Giovanni",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Giovanni",
     "prizeMoney": 22400,
     "team": [
@@ -18703,7 +18703,7 @@
   {
     "id": "563",
     "name": "Gentleman Reginald",
-    "trainerClass": "Gentleman",
+    "trainerClass": "gentleman",
     "personalName": "Reginald",
     "prizeMoney": 8400,
     "team": [
@@ -18761,7 +18761,7 @@
   {
     "id": "564",
     "name": "Skull Gang Grunt Fiona",
-    "trainerClass": "Skull Gang",
+    "trainerClass": "skullgang",
     "personalName": "Grunt Fiona",
     "prizeMoney": 1344,
     "team": [
@@ -18809,7 +18809,7 @@
   {
     "id": "565",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1120,
     "team": [
@@ -18825,7 +18825,7 @@
   {
     "id": "566",
     "name": "Team Skull Grunt",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt",
     "prizeMoney": 1280,
     "team": [
@@ -18841,7 +18841,7 @@
   {
     "id": "567",
     "name": "Athlete In-Training Deedra",
-    "trainerClass": "Athlete In-Training",
+    "trainerClass": "athleteintraining",
     "personalName": "Deedra",
     "prizeMoney": 3200,
     "team": [
@@ -18915,7 +18915,7 @@
   {
     "id": "568",
     "name": "Dancer Ronda",
-    "trainerClass": "Dancer",
+    "trainerClass": "dancer",
     "personalName": "Ronda",
     "prizeMoney": 4000,
     "team": [
@@ -18976,7 +18976,7 @@
   {
     "id": "569",
     "name": "Youngster Kenway",
-    "trainerClass": "Youngster",
+    "trainerClass": "youngster",
     "personalName": "Kenway",
     "prizeMoney": 960,
     "team": [
@@ -18992,7 +18992,7 @@
   {
     "id": "570",
     "name": "Office Worker Royce",
-    "trainerClass": "Office Worker",
+    "trainerClass": "officeworker",
     "personalName": "Royce",
     "prizeMoney": 1600,
     "team": [
@@ -19015,7 +19015,7 @@
   {
     "id": "571",
     "name": "Office Worker Dugal",
-    "trainerClass": "Office Worker",
+    "trainerClass": "officeworker",
     "personalName": "Dugal",
     "prizeMoney": 9360,
     "team": [
@@ -19050,7 +19050,7 @@
   {
     "id": "572",
     "name": "Team Flare Lysandre",
-    "trainerClass": "Team Flare",
+    "trainerClass": "teamflare",
     "personalName": "Lysandre",
     "prizeMoney": 18760,
     "team": [
@@ -19120,7 +19120,7 @@
   {
     "id": "573",
     "name": "Team Flare Lysandre",
-    "trainerClass": "Team Flare",
+    "trainerClass": "teamflare",
     "personalName": "Lysandre",
     "prizeMoney": 18760,
     "team": [
@@ -19190,7 +19190,7 @@
   {
     "id": "574",
     "name": "Virtuoso Kiara",
-    "trainerClass": "Virtuoso",
+    "trainerClass": "virtuoso",
     "personalName": "Kiara",
     "prizeMoney": 9360,
     "team": [
@@ -19277,7 +19277,7 @@
   {
     "id": "575",
     "name": "Veteran Angus",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Angus",
     "prizeMoney": 4400,
     "team": [
@@ -19351,7 +19351,7 @@
   {
     "id": "576",
     "name": "Veteran Johnny",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Johnny",
     "prizeMoney": 12960,
     "team": [
@@ -19425,7 +19425,7 @@
   {
     "id": "577",
     "name": "Veteran Aristo",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Aristo",
     "prizeMoney": 5720,
     "team": [
@@ -19490,7 +19490,7 @@
   {
     "id": "578",
     "name": "GAME FREAK Morimoto",
-    "trainerClass": "GAME FREAK",
+    "trainerClass": "gamefreak",
     "personalName": "Morimoto",
     "prizeMoney": 5016,
     "team": [
@@ -19535,7 +19535,7 @@
   {
     "id": "579",
     "name": "Rising Star Nainoa",
-    "trainerClass": "Rising Star",
+    "trainerClass": "risingstar",
     "personalName": "Nainoa",
     "prizeMoney": 1344,
     "team": [
@@ -19558,7 +19558,7 @@
   {
     "id": "580",
     "name": "Team Magma Maxie",
-    "trainerClass": "Team Magma",
+    "trainerClass": "teammagma",
     "personalName": "Maxie",
     "prizeMoney": 18480,
     "team": [
@@ -19627,7 +19627,7 @@
   {
     "id": "581",
     "name": "Lass Lisa",
-    "trainerClass": "Lass",
+    "trainerClass": "lass",
     "personalName": "Lisa",
     "prizeMoney": 1152,
     "team": [
@@ -19688,7 +19688,7 @@
   {
     "id": "582",
     "name": "Good Friend Lillie",
-    "trainerClass": "Good Friend",
+    "trainerClass": "goodfriend",
     "personalName": "Lillie",
     "prizeMoney": 2400,
     "team": [
@@ -19709,7 +19709,7 @@
   {
     "id": "583",
     "name": "Dragon Tamer Ryuki",
-    "trainerClass": "Dragon Tamer",
+    "trainerClass": "dragontamer",
     "personalName": "Ryuki",
     "prizeMoney": 6960,
     "team": [
@@ -19778,7 +19778,7 @@
   {
     "id": "584",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1952,
     "team": [
@@ -19794,7 +19794,7 @@
   {
     "id": "585",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1952,
     "team": [
@@ -19810,7 +19810,7 @@
   {
     "id": "586",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -19826,7 +19826,7 @@
   {
     "id": "587",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -19847,7 +19847,7 @@
   {
     "id": "588",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -19878,7 +19878,7 @@
   {
     "id": "589",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -19899,7 +19899,7 @@
   {
     "id": "590",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -19919,7 +19919,7 @@
   {
     "id": "591",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -19947,7 +19947,7 @@
   {
     "id": "592",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -19965,7 +19965,7 @@
   {
     "id": "593",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1952,
     "team": [
@@ -19981,7 +19981,7 @@
   {
     "id": "594",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1952,
     "team": [
@@ -19997,7 +19997,7 @@
   {
     "id": "595",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20013,7 +20013,7 @@
   {
     "id": "596",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20031,7 +20031,7 @@
   {
     "id": "597",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20049,7 +20049,7 @@
   {
     "id": "598",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20067,7 +20067,7 @@
   {
     "id": "599",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20086,7 +20086,7 @@
   {
     "id": "600",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20104,7 +20104,7 @@
   {
     "id": "601",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20134,7 +20134,7 @@
   {
     "id": "602",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20153,7 +20153,7 @@
   {
     "id": "603",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20173,7 +20173,7 @@
   {
     "id": "604",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20191,7 +20191,7 @@
   {
     "id": "605",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20210,7 +20210,7 @@
   {
     "id": "606",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20229,7 +20229,7 @@
   {
     "id": "607",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20250,7 +20250,7 @@
   {
     "id": "608",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20271,7 +20271,7 @@
   {
     "id": "609",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -20298,7 +20298,7 @@
   {
     "id": "610",
     "name": "Ultra Forest Kartenvoy",
-    "trainerClass": "Ultra Forest",
+    "trainerClass": "ultraforest",
     "personalName": "Kartenvoy",
     "prizeMoney": 2304,
     "team": [
@@ -20314,7 +20314,7 @@
   {
     "id": "611",
     "name": "Ultra Forest Kartenvoy",
-    "trainerClass": "Ultra Forest",
+    "trainerClass": "ultraforest",
     "personalName": "Kartenvoy",
     "prizeMoney": 2304,
     "team": [
@@ -20330,7 +20330,7 @@
   {
     "id": "612",
     "name": "Ace Trainer Seth",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Seth",
     "prizeMoney": 3536,
     "team": [
@@ -20353,7 +20353,7 @@
   {
     "id": "613",
     "name": "Ace Trainer Kaimana",
-    "trainerClass": "Ace Trainer",
+    "trainerClass": "acetrainer",
     "personalName": "Kaimana",
     "prizeMoney": 3604,
     "team": [
@@ -20376,7 +20376,7 @@
   {
     "id": "614",
     "name": "Star Trainer Kailee",
-    "trainerClass": "Star Trainer",
+    "trainerClass": "startrainer",
     "personalName": "Kailee",
     "prizeMoney": 3536,
     "team": [
@@ -20399,7 +20399,7 @@
   {
     "id": "615",
     "name": "Star Trainer Jada",
-    "trainerClass": "Star Trainer",
+    "trainerClass": "startrainer",
     "personalName": "Jada",
     "prizeMoney": 3604,
     "team": [
@@ -20422,7 +20422,7 @@
   {
     "id": "616",
     "name": "Black Belt Alvaro",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Alvaro",
     "prizeMoney": 1536,
     "team": [
@@ -20483,7 +20483,7 @@
   {
     "id": "617",
     "name": "Black Belt Allon",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Allon",
     "prizeMoney": 1632,
     "team": [
@@ -20506,7 +20506,7 @@
   {
     "id": "618",
     "name": "Black Belt Eimar",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Eimar",
     "prizeMoney": 1632,
     "team": [
@@ -20522,7 +20522,7 @@
   {
     "id": "619",
     "name": "Black Belt Craig",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Craig",
     "prizeMoney": 1632,
     "team": [
@@ -20538,7 +20538,7 @@
   {
     "id": "620",
     "name": "Black Belt Jason",
-    "trainerClass": "Black Belt",
+    "trainerClass": "blackbelt",
     "personalName": "Jason",
     "prizeMoney": 1632,
     "team": [
@@ -20561,7 +20561,7 @@
   {
     "id": "621",
     "name": "Collector Minty",
-    "trainerClass": "Collector",
+    "trainerClass": "collector",
     "personalName": "Minty",
     "prizeMoney": 1632,
     "team": [
@@ -20577,7 +20577,7 @@
   {
     "id": "622",
     "name": "Worker Ovid",
-    "trainerClass": "Worker",
+    "trainerClass": "worker",
     "personalName": "Ovid",
     "prizeMoney": 2000,
     "team": [
@@ -20593,7 +20593,7 @@
   {
     "id": "623",
     "name": "Kalosian Man Dexio",
-    "trainerClass": "Kalosian Man",
+    "trainerClass": "kalosianman",
     "personalName": "Dexio",
     "prizeMoney": 8820,
     "team": [
@@ -20674,7 +20674,7 @@
   {
     "id": "624",
     "name": "Backpacker Peren",
-    "trainerClass": "Backpacker",
+    "trainerClass": "backpacker",
     "personalName": "Peren",
     "prizeMoney": 1224,
     "team": [
@@ -20690,7 +20690,7 @@
   {
     "id": "625",
     "name": "Hiker Anuhea",
-    "trainerClass": "Hiker",
+    "trainerClass": "hiker",
     "personalName": "Anuhea",
     "prizeMoney": 1632,
     "team": [
@@ -20706,7 +20706,7 @@
   {
     "id": "626",
     "name": "Veteran Breon",
-    "trainerClass": "Veteran",
+    "trainerClass": "veteran",
     "personalName": "Breon",
     "prizeMoney": 4664,
     "team": [
@@ -20750,7 +20750,7 @@
   {
     "id": "627",
     "name": "Virtuoso Alonsa",
-    "trainerClass": "Virtuoso",
+    "trainerClass": "virtuoso",
     "personalName": "Alonsa",
     "prizeMoney": 4576,
     "team": [
@@ -20781,7 +20781,7 @@
   {
     "id": "628",
     "name": "Virtuoso Ella",
-    "trainerClass": "Virtuoso",
+    "trainerClass": "virtuoso",
     "personalName": "Ella",
     "prizeMoney": 4664,
     "team": [
@@ -20820,7 +20820,7 @@
   {
     "id": "629",
     "name": "Kindergartener Kaleb",
-    "trainerClass": "Kindergartener",
+    "trainerClass": "kindergartener",
     "personalName": "Kaleb",
     "prizeMoney": 2376,
     "team": [
@@ -20855,7 +20855,7 @@
   {
     "id": "630",
     "name": "Dragon Tamer Ryuki",
-    "trainerClass": "Dragon Tamer",
+    "trainerClass": "dragontamer",
     "personalName": "Ryuki",
     "prizeMoney": 5280,
     "team": [
@@ -20929,7 +20929,7 @@
   {
     "id": "631",
     "name": "Surf Dude Robert",
-    "trainerClass": "Surf Dude",
+    "trainerClass": "surfdude",
     "personalName": "Robert",
     "prizeMoney": 1176,
     "team": [
@@ -20964,7 +20964,7 @@
   {
     "id": "632",
     "name": "Surf Dude Joshah",
-    "trainerClass": "Surf Dude",
+    "trainerClass": "surfdude",
     "personalName": "Joshah",
     "prizeMoney": 1128,
     "team": [
@@ -20980,7 +20980,7 @@
   {
     "id": "633",
     "name": "Surf Dude Carlton",
-    "trainerClass": "Surf Dude",
+    "trainerClass": "surfdude",
     "personalName": "Carlton",
     "prizeMoney": 576,
     "team": [
@@ -21015,7 +21015,7 @@
   {
     "id": "634",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -21036,7 +21036,7 @@
   {
     "id": "635",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -21054,7 +21054,7 @@
   {
     "id": "636",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -21072,7 +21072,7 @@
   {
     "id": "637",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -21092,7 +21092,7 @@
   {
     "id": "638",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -21110,7 +21110,7 @@
   {
     "id": "639",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -21129,7 +21129,7 @@
   {
     "id": "640",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -21150,7 +21150,7 @@
   {
     "id": "641",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -21169,7 +21169,7 @@
   {
     "id": "642",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -21188,7 +21188,7 @@
   {
     "id": "643",
     "name": "Team Rainbow Rocket Grunt",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
     "prizeMoney": 1984,
     "team": [
@@ -21207,7 +21207,7 @@
   {
     "id": "644",
     "name": "Aether President Lusamine",
-    "trainerClass": "Aether President",
+    "trainerClass": "aetherpresident",
     "personalName": "Lusamine",
     "prizeMoney": 16320,
     "team": [
@@ -21275,7 +21275,7 @@
   {
     "id": "645",
     "name": "Team Rainbow Rocket Giovanni",
-    "trainerClass": "Team Rainbow Rocket",
+    "trainerClass": "teamrainbowrocket",
     "personalName": "Giovanni",
     "prizeMoney": 22400,
     "team": [
@@ -21346,7 +21346,7 @@
   {
     "id": "646",
     "name": "Team Skull Grunt Cecil",
-    "trainerClass": "Team Skull",
+    "trainerClass": "teamskull",
     "personalName": "Grunt Cecil",
     "prizeMoney": 1680,
     "team": [
@@ -21406,7 +21406,7 @@
   {
     "id": "647",
     "name": "Tapu Koko Chosen Guzma",
-    "trainerClass": "Tapu Koko Chosen",
+    "trainerClass": "tapukokochosen",
     "personalName": "Guzma",
     "prizeMoney": 8160,
     "team": [
@@ -21475,7 +21475,7 @@
   {
     "id": "648",
     "name": "Ultra Recon Squad Soliera",
-    "trainerClass": "Ultra Recon Squad",
+    "trainerClass": "ultrareconsquad",
     "personalName": "Soliera",
     "prizeMoney": 156,
     "team": [
@@ -21491,7 +21491,7 @@
   {
     "id": "649",
     "name": "Ultra Recon Squad Dulse",
-    "trainerClass": "Ultra Recon Squad",
+    "trainerClass": "ultrareconsquad",
     "personalName": "Dulse",
     "prizeMoney": 1408,
     "team": [
@@ -21565,7 +21565,7 @@
   {
     "id": "650",
     "name": "Melemele Kahuna Hala",
-    "trainerClass": "Melemele Kahuna",
+    "trainerClass": "melemelekahuna",
     "personalName": "Hala",
     "prizeMoney": 12600,
     "team": [
@@ -21635,7 +21635,7 @@
   {
     "id": "651",
     "name": "Ultra Recon Squad Soliera",
-    "trainerClass": "Ultra Recon Squad",
+    "trainerClass": "ultrareconsquad",
     "personalName": "Soliera",
     "prizeMoney": 240,
     "team": [
@@ -21651,7 +21651,7 @@
   {
     "id": "652",
     "name": "Ultra Recon Squad Dulse",
-    "trainerClass": "Ultra Recon Squad",
+    "trainerClass": "ultrareconsquad",
     "personalName": "Dulse",
     "prizeMoney": 3360,
     "team": [
