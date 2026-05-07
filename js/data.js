@@ -268,7 +268,7 @@ const getTrainerSpriteUrlFromName = (trainerName, checkPersonalName = true) => {
     url = getTrainerSpriteUrlById(personalName);
     if (url) return url;
 
-    const className = window.getTrainerClass(trainerName);
+    const className = (typeof window.getTrainerClass === 'function') ? window.getTrainerClass(trainerName) : '';
     url = getTrainerSpriteUrlById(className);
     if (url) return url;
 
