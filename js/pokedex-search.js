@@ -395,10 +395,15 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 				const disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
 				return '<span class="picon" style="' + getPokemonIcon(toID(disp)) + ';display:inline-block;vertical-align:middle"></span>';
 			}).join('');
-			const trainerBg = (typeof getTrainerBackground === 'function') ? getTrainerBackground(t) : getTrainerIcon(t.name, true);
-			const thumb = '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
-				'<div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;' + trainerBg + ';"></div>' +
-				'</div>';
+			const trainerSpriteUrl = (typeof getTrainerSpriteUrl === 'function') ? getTrainerSpriteUrl(t, true) : null;
+			const trainerBg = (typeof getTrainerBackground === 'function') ? getTrainerBackground(t, true) : getTrainerIcon(t.name, true);
+			const thumb = trainerSpriteUrl
+				? '<div style="position:absolute;left:-10px;top:-6px;width:148px;height:92px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
+					'<img src="' + escapeHTML(trainerSpriteUrl) + '" alt="" style="width:100%;height:100%;object-fit:contain;object-position:right top;" loading="lazy" />' +
+				  '</div>'
+				: '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
+					'<div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;' + trainerBg + ';"></div>' +
+				  '</div>';
 			const nameStyle = hasIllegal ? 'color:red;' : '';
 			return '<li class="result">' +
 				'<a href="' + Config.baseurl + 'trainers/' + t.id + '" data-target="push" style="position:relative;overflow:hidden;">' +

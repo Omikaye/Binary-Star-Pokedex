@@ -17,38 +17,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     this.trainer = trainer;
     this.shortTitle = trainer.name;
 
-    // Resolve a trainer sprite link entry to a URL.
-    // Supports legacy format (string) and new format ({ unique, class }).
-    const resolveTrainerSpriteUrl = (entry) => {
-      if (!entry) return null;
-      if (typeof entry === 'string') return entry;
-      if (typeof entry === 'object') return entry.unique || entry.class || null;
-      return null;
-    };
-
-    // Get trainer sprite URL - prefer:
-    // 1) per-person (unique) via personalName
-    // 2) class sprite via trainerClass
-    // 3) fallback parsing full name
-    var spriteUrl = null;
-    if (TrainerSpriteLinks) {
-      if (trainer.personalName) {
-        spriteUrl = resolveTrainerSpriteUrl(TrainerSpriteLinks[toID(trainer.personalName)]);
-      }
-      if (!spriteUrl && trainer.trainerClass) {
-        spriteUrl = resolveTrainerSpriteUrl(TrainerSpriteLinks[toID(trainer.trainerClass)]);
-      }
-      if (!spriteUrl && trainer.name) {
-        var nameParts = trainer.name.trim().split(/\s+/);
-        if (nameParts.length >= 2) {
-          var lastWordId = toID(nameParts[nameParts.length - 1]);
-          var classNameId = toID(nameParts.slice(0, -1).join(' '));
-          spriteUrl = resolveTrainerSpriteUrl(TrainerSpriteLinks[lastWordId]) || resolveTrainerSpriteUrl(TrainerSpriteLinks[classNameId]) || null;
-        } else {
-          spriteUrl = resolveTrainerSpriteUrl(TrainerSpriteLinks[toID(trainer.name)]) || null;
-        }
-      }
-    }
+    var spriteUrl = (typeof getTrainerSpriteUrl === 'function') ? getTrainerSpriteUrl(trainer, true) : null;
 
     var buf = '<div class="pfx-body dexentry" style="position:relative;">';
     buf += '<style>' +
