@@ -66,7 +66,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
 
     // Trainer sprite image at top-right of the page
     if (spriteUrl) {
-      buf += '<img class="trainer-sprite-img" src="' + escapeHTML(spriteUrl) + '" alt="' + escapeHTML(trainer.name) + ' sprite" onerror="this.remove()" />';
+      buf += '<img class="trainer-sprite-img" src="' + escapeHTML(spriteUrl) + '" alt="' + escapeHTML(trainer.name) + ' sprite" />';
     }
 
     buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a></h1>';
