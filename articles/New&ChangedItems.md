@@ -1,6 +1,6 @@
 # New and Changed Items
 
-(New) [Ability Pills] - Infinite use Ability Capsule. Cycles between all 3 Abilities. **(If I can add that, lmfao)**
+(New) [Ability Pills] - Infinite use Ability Capsule. Cycles between all 3 Abilities.
 (New) [B.F.F. Heart] - Raises a Pokemon's Friendship by 127 points
 (New) [Moldy Cookie] - Lowers a Pokemon's Friendship by 127 points
 [Sticky Barb] - Damage increased from 1/8 HP to 1/6 HP per turn
@@ -20,4 +20,4 @@
 (New) [Kanto Badge] - Evolves certain Pokemon into their Mainland forms.
 (New) [Blue Box] - Evolves certain Pokemon with split evolutions.
 (New) [Pink Box] - Evolves certain Pokemon with split evolutions.
-(New) New Mega Stones - [Greninjite], [Gumshoosite], [Ribombite], [Lurantite], [Vikavoltite], [Araquanite], [Salazzlite], [Togedemarinite], [Mimikyunite], [Kommo-onite], [Darmanitanite]
+(New) New Mega Stones - [Greninjite X], [Greninjite Y], [Gumshoosite], [Ribombite], [Lurantite], [Vikavoltite], [Araquanite], [Salazzlite], [Togedemarinite], [Mimikyunite], [Kommo-onite], [Darmanitanite], [Magearnite]
