@@ -85,6 +85,7 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 		}
 
 		buf += '<p>'+escapeHTML(move.desc||move.shortDesc)+'</p>';
+		buf += window.renderMechanicsTagLinks('move', id, move);
 
 		// Special case: Certain moves should link to their related tag pages
 		if (id === 'snatch') {

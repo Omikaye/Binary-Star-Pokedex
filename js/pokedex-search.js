@@ -57,18 +57,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		if (fragment === 'mechanics/') {
 			this.$('.buttonbar').remove();
 			this.$('.searchboxwrapper').remove();
-			var articles = [
-				{id: 'criticalhit', name: 'Critical Hits'},
-				{id: 'grounded', name: 'Grounded'},
-				{id: 'hazards', name: 'Entry Hazards'},
-				{id: 'maxmoves', name: 'Max Moves'},
-				{id: 'phazing', name: 'Phazing'},
-				{id: 'submoves', name: 'Substitute Moves'},
-				{id: 'terrain', name: 'Terrain'},
-				{id: 'zmoveresonation', name: 'Z-Move Resonation'},
-				{id: 'zpokemon', name: 'Z-Pokemon'},
-				{id: 'zmoves', name: 'Z-Moves'}
-			];
+			var articles = window.MechanicsHomepageArticles || [];
 			var articlesBuf = '<ul class="utilichart nokbd">';
 			for (var i = 0; i < articles.length; i++) {
 				var article = articles[i];
