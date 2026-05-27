@@ -133,6 +133,153 @@ function markdownToHTML(markdown) {
 	return result.join('\n');
 }
 
+window.MechanicsHomepageArticles = [
+	{id: 'miscchanges', name: 'Misc Changes'},
+	{id: 'newchangeditems', name: 'New and Changed Items'},
+	{id: 'updatechangelog', name: 'Changelog'},
+	{id: 'zmoveresonation', name: 'Z-Move Resonation'},
+	{id: 'zpokemon', name: 'Z-Pokemon'},
+	{id: 'ztrainers', name: 'Z-Trainers'}
+];
+
+(function () {
+	function makeIdTable(ids) {
+		var table = Object.create(null);
+		for (var i = 0; i < ids.length; i++) table[ids[i]] = true;
+		return table;
+	}
+	function getEntityText(data) {
+		return [data.name, data.desc, data.shortDesc].filter(Boolean).join(' ');
+	}
+	function textMatches(data, regex) {
+		return regex.test(getEntityText(data));
+	}
+	var criticalHitRegex = /\bcrit(?:s|ical(?:-hit)?s?)?\b/i;
+	var groundedMoveIds = makeIdTable(['gravity', 'ingrain', 'magnetrise', 'smackdown', 'telekinesis', 'thousandarrows']);
+	var groundedAbilityIds = makeIdTable(['levitate']);
+	var groundedItemIds = makeIdTable(['airballoon', 'ironball']);
+	var hazardsMoveIds = makeIdTable(['defog', 'rapidspin', 'spikes', 'stealthrock', 'stickyweb', 'toxicspikes']);
+	var phazingMoveIds = makeIdTable(['circlethrow', 'dragontail', 'roar', 'whirlwind']);
+
+	window.MechanicsTagData = {
+		criticalhit: {
+			name: 'Critical Hits',
+			articleId: 'criticalhit',
+			desc: 'Pages that raise, prevent, or directly mention critical hits. <a href="'+Config.baseurl+'articles/criticalhit" data-target="push">Open the full article</a>.',
+			matchers: {
+				move: function(id, move) {
+					return textMatches(move, criticalHitRegex);
+				},
+				ability: function(id, ability) {
+					return textMatches(ability, criticalHitRegex);
+				},
+				item: function(id, item) {
+					return textMatches(item, criticalHitRegex);
+				}
+			}
+		},
+		grounded: {
+			name: 'Grounded',
+			articleId: 'grounded',
+			desc: 'Pages that add or remove the grounded or airborne state. <a href="'+Config.baseurl+'articles/grounded" data-target="push">Open the full article</a>.',
+			matchers: {
+				move: function(id) {
+					return !!groundedMoveIds[id];
+				},
+				ability: function(id) {
+					return !!groundedAbilityIds[id];
+				},
+				item: function(id) {
+					return !!groundedItemIds[id];
+				}
+			}
+		},
+		hazards: {
+			name: 'Entry Hazards',
+			articleId: 'hazards',
+			desc: 'Pages for hazard setters and removers. <a href="'+Config.baseurl+'articles/hazards" data-target="push">Open the full article</a>.',
+			matchers: {
+				move: function(id) {
+					return !!hazardsMoveIds[id];
+				}
+			}
+		},
+		phazing: {
+			name: 'Phazing',
+			articleId: 'phazing',
+			desc: 'Pages for moves that force a switch. <a href="'+Config.baseurl+'articles/phazing" data-target="push">Open the full article</a>.',
+			matchers: {
+				move: function(id) {
+					return !!phazingMoveIds[id];
+				}
+			}
+		}
+	};
+
+	var mechanicsTagResultsCache = Object.create(null);
+
+	window.getMechanicsTagsForEntity = function(entityType, id, data) {
+		var tags = [];
+		for (var tagId in window.MechanicsTagData) {
+			var tagData = window.MechanicsTagData[tagId];
+			if (tagData.matchers[entityType] && tagData.matchers[entityType](id, data)) {
+				tags.push(tagId);
+			}
+		}
+		return tags;
+	};
+
+	window.renderMechanicsTagLinks = function(entityType, id, data) {
+		var tags = window.getMechanicsTagsForEntity(entityType, id, data);
+		var buf = '';
+		for (var i = 0; i < tags.length; i++) {
+			var tagId = tags[i];
+			var tagData = window.MechanicsTagData[tagId];
+			buf += '<p class="movetag"><a href="'+Config.baseurl+'tags/'+tagId+'" data-target="push">&#x2713; ' + escapeHTML(tagData.name) + '</a> <small>(see the <a class="subtle" href="'+Config.baseurl+'articles/'+tagData.articleId+'" data-target="push">' + escapeHTML(tagData.name) + '</a> article)</small></p>';
+		}
+		return buf;
+	};
+
+	window.getMechanicsTagResults = function(tagId) {
+		if (mechanicsTagResultsCache[tagId]) return mechanicsTagResultsCache[tagId];
+		var tagData = window.MechanicsTagData[tagId];
+		if (!tagData) return null;
+
+		var datasets = {
+			moves: BattleMovedex,
+			abilities: BattleAbilities,
+			items: BattleItems
+		};
+		var matcherKeys = {
+			moves: 'move',
+			abilities: 'ability',
+			items: 'item'
+		};
+		var results = {
+			moves: [],
+			abilities: [],
+			items: []
+		};
+
+		for (var section in datasets) {
+			var matcher = tagData.matchers[matcherKeys[section]];
+			if (!matcher) continue;
+			var dataset = datasets[section];
+			for (var entryId in dataset) {
+				if (matcher(entryId, dataset[entryId])) {
+					results[section].push(entryId);
+				}
+			}
+			results[section].sort(function(a, b) {
+				return dataset[a].name.localeCompare(dataset[b].name);
+			});
+		}
+
+		mechanicsTagResultsCache[tagId] = results;
+		return results;
+	};
+})();
+
 window.Topbar = Panels.Topbar.extend({
 	height: 51
 });
@@ -168,6 +315,7 @@ window.PokedexItemPanel = PokedexResultPanel.extend({
 	}
 	
 	buf += '<p>'+escapeHTML(item.desc||item.shortDesc)+'</p>';
+	buf += window.renderMechanicsTagLinks('item', id, item);
 
 	// Related Pokémon - Pokémon mentioned in this item's description
 	var relatedPokemonIds = ItemPokemonLinks.itemToPokemon[id] || [];
@@ -285,6 +433,7 @@ window. PokedexAbilityPanel = PokedexResultPanel.extend({
 		if (ability.isNonstandard && ability.id !== 'noability') buf += '<div class="warning"><strong>Note:</strong> This is a made-up ability by <a href="http://www.smogon.com/cap/" target="_blank">Smogon CAP</a>.</div>';
 
 		buf += '<p>'+escapeHTML(ability.desc)+'</p>';
+		buf += window.renderMechanicsTagLinks('ability', id, ability);
 
 		// Add tag links if this ability has associated tags
 		if (this.abilityTags[id]) {
@@ -566,6 +715,26 @@ window. PokedexTagPanel = PokedexResultPanel.extend({
 			name: 'G-Max Move',
 			tag: '',
 			desc: 'Is a <a class="subtle" href="'+Config.baseurl+'articles/gmaxmoves" data-target="push">G-Max Move</a>.'
+		},
+		criticalhit: {
+			name: 'Critical Hits',
+			tag: '',
+			desc: window.MechanicsTagData.criticalhit.desc
+		},
+		grounded: {
+			name: 'Grounded',
+			tag: '',
+			desc: window.MechanicsTagData.grounded.desc
+		},
+		hazards: {
+			name: 'Entry Hazards',
+			tag: '',
+			desc: window.MechanicsTagData.hazards.desc
+		},
+		phazing: {
+			name: 'Phazing',
+			tag: '',
+			desc: window.MechanicsTagData.phazing.desc
 		}
 	},
 	initialize: function(id) {
@@ -581,10 +750,27 @@ window. PokedexTagPanel = PokedexResultPanel.extend({
 
 		if (tag) buf += '<p>'+tag.desc+'</p>';
 
-		// distribution
-		buf += '<h3>'+name+' moves</h3>';
-		buf += '<ul class="utilichart metricchart nokbd">';
-		buf += '</ul>';
+		this.specialResults = window.getMechanicsTagResults ? window.getMechanicsTagResults(id) : null;
+		var hasSpecialResults = this.specialResults && (this.specialResults.moves.length || this.specialResults.abilities.length || this.specialResults.items.length);
+
+		if (hasSpecialResults) {
+			if (this.specialResults.moves.length) {
+				buf += '<h3>'+name+' moves</h3>';
+				buf += '<ul class="utilichart metricchart nokbd" data-tag-section="moves"></ul>';
+			}
+			if (this.specialResults.abilities.length) {
+				buf += '<h3>'+name+' abilities</h3>';
+				buf += '<ul class="utilichart nokbd" data-tag-section="abilities"></ul>';
+			}
+			if (this.specialResults.items.length) {
+				buf += '<h3>'+name+' items</h3>';
+				buf += '<ul class="utilichart nokbd" data-tag-section="items"></ul>';
+			}
+		} else {
+			buf += '<h3>'+name+' moves</h3>';
+			buf += '<ul class="utilichart metricchart nokbd">';
+			buf += '</ul>';
+		}
 
 		buf += '</div>';
 
@@ -640,6 +826,9 @@ window. PokedexTagPanel = PokedexResultPanel.extend({
 		return this.results = results;
 	},
 	renderDistribution: function() {
+		if (this.specialResults && (this.specialResults.moves.length || this.specialResults.abilities.length || this.specialResults.items.length)) {
+			return this.renderSpecialDistribution();
+		}
 		var results = this.getDistribution();
 		this.$chart = this.$('.utilichart');
 
@@ -671,6 +860,25 @@ window. PokedexTagPanel = PokedexResultPanel.extend({
 			}
 			this.$chart.html(buf);
 		}
+	},
+	renderSpecialDistribution: function() {
+		var movesBuf = '';
+		for (var i = 0; i < this.specialResults.moves.length; i++) {
+			movesBuf += '<li class="result">' + BattleSearch.renderMoveRowInner(BattleMovedex[this.specialResults.moves[i]]) + '</li>';
+		}
+		this.$('[data-tag-section="moves"]').html(movesBuf);
+
+		var abilitiesBuf = '';
+		for (var j = 0; j < this.specialResults.abilities.length; j++) {
+			abilitiesBuf += BattleSearch.renderAbilityRow(BattleAbilities[this.specialResults.abilities[j]]);
+		}
+		this.$('[data-tag-section="abilities"]').html(abilitiesBuf);
+
+		var itemsBuf = '';
+		for (var k = 0; k < this.specialResults.items.length; k++) {
+			itemsBuf += BattleSearch.renderItemRow(BattleItems[this.specialResults.items[k]]);
+		}
+		this.$('[data-tag-section="items"]').html(itemsBuf);
 	},
 	renderRow: function(i, offscreen) {
 		var results = this.results;
