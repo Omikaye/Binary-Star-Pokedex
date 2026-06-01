@@ -129,6 +129,21 @@
 	// Cache Pokemon wild/trainer usage counts (detailed list with encounter info)
 	let __pokemonUsageCache = null;
 	let __pokemonUsageDetail = null;
+	function normalizeTrainerMetaText(value) {
+		const out = (value || '').trim();
+		if (!out || /^\(?none\)?$/i.test(out)) return '';
+		return out;
+	}
+	function trainerHasMappedLocation(trainer) {
+		if (!trainer || !window.Locations) return false;
+		const trainerLocation = normalizeTrainerMetaText(trainer.location);
+		if (!trainerLocation) return false;
+		const trainerLocationID = toID(trainerLocation);
+		for (let loc of window.Locations) {
+			if (toID(loc.id) === trainerLocationID || toID(loc.name) === trainerLocationID) return true;
+		}
+		return false;
+	}
 	function getPokemonUsage(id) {
 		if (!__pokemonUsageCache) {
 			__pokemonUsageCache = {};
@@ -171,23 +186,10 @@
 					}
 				}
 			}
-			// Build set of trainer IDs that are placed in a location
-			const trainerIdsWithLocation = new Set();
-			if (window.Locations) {
-				for (let loc of window.Locations) {
-					if (loc.battles) {
-						for (let battle of loc.battles) {
-							if (battle.id) trainerIdsWithLocation.add(String(battle.id).padStart(3, '0'));
-						}
-					}
-					if (loc.trainers) loc.trainers.forEach(id => trainerIdsWithLocation.add(id));
-					if (loc.bossTrainers) loc.bossTrainers.forEach(id => trainerIdsWithLocation.add(id));
-				}
-			}
 			// Count trainer usage from Trainers (only those with a location)
 			if (window.Trainers) {
 				for (let trainer of window.Trainers) {
-					if (!trainerIdsWithLocation.has(trainer.id)) continue;
+					if (!trainerHasMappedLocation(trainer)) continue;
 					if (trainer.team && Array.isArray(trainer.team)) {
 						for (let pokemon of trainer.team) {
 							if (pokemon.name) {

@@ -44,44 +44,35 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     buf += '<dl>';
     buf += '<dt>Prize Money:</dt> <dd>$' + (trainer.prizeMoney || 0) + '</dd>';
 
-    // Location - find trainer's location from Locations data
+    var normalizeTrainerMetaText = function(value) {
+      var out = (value || '').trim();
+      if (!out || /^\(?none\)?$/i.test(out)) return '';
+      return out;
+    };
+
+    // Location - derive from trainer metadata and resolve to canonical location when possible
     var trainerLocation = null;
-    var battleNotes = '';
-    if (window.Locations) {
+    var trainerLocationText = normalizeTrainerMetaText(trainer.location);
+    if (trainerLocationText && window.Locations) {
+      var trainerLocationID = toID(trainerLocationText);
       for (var i = 0; i < window.Locations.length; i++) {
         var loc = window.Locations[i];
-
-        // Check battles array for trainer ID and get notes
-        if (loc.battles) {
-          for (var bi = 0; bi < loc.battles.length; bi++) {
-            var battle = loc.battles[bi];
-            // Convert both to strings and pad battle ID to match trainer ID format
-            var battleID = String(battle.id).padStart(3, '0');
-            if (battleID === norm) {
-              trainerLocation = loc;
-              battleNotes = battle.notes || '';
-              break;
-            }
-          }
-        }
-
-        if (!trainerLocation && loc.trainers && loc.trainers.indexOf(norm) !== -1) {
+        if (trainerLocationID === toID(loc.id) || trainerLocationID === toID(loc.name)) {
           trainerLocation = loc;
+          break;
         }
-        if (!trainerLocation && loc.bossTrainers && loc.bossTrainers.indexOf(norm) !== -1) {
-          trainerLocation = loc;
-        }
-
-        if (trainerLocation) break;
       }
     }
     if (trainerLocation) {
       buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/' + trainerLocation.id + '" data-target="push">' + escapeHTML(trainerLocation.name) + '</a></dd>';
+    } else if (trainerLocationText) {
+      buf += '<dt>Location:</dt> <dd>' + escapeHTML(trainerLocationText) + '</dd>';
     }
 
-    // Description from battle notes (skip if "None")
-    if (battleNotes && battleNotes.trim() && battleNotes.trim().toLowerCase() !== 'none') {
-      buf += '<dt>Description:</dt> <dd>' + escapeHTML(battleNotes) + '</dd>';
+    // Description from trainer metadata
+    var trainerDesc = normalizeTrainerMetaText(trainer.desc);
+    if (trainerDesc) {
+      buf += '<dt>Description:</dt> <dd>' + escapeHTML(trainerDesc) + '</dd>';
     }
     buf += '</dl>';
 

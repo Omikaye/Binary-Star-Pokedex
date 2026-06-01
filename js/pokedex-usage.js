@@ -135,19 +135,22 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
       }
     }
 
-    // Helper function to check if trainer has a location
-    // Returns the location name if found, or null if not found
-    var trainerHasLocation = function(trainerId) {
+    var normalizeTrainerMetaText = function(value) {
+      var out = (value || '').trim();
+      if (!out || /^\(?none\)?$/i.test(out)) return '';
+      return out;
+    };
+
+    // Helper function to resolve a trainer's metadata location to a known location object
+    var resolveTrainerLocation = function(trainer) {
+      if (!trainer) return null;
+      var trainerLocation = normalizeTrainerMetaText(trainer.location);
+      if (!trainerLocation) return null;
       if (!window.Locations) return null;
+      var trainerLocationID = toID(trainerLocation);
       for (var i = 0; i < window.Locations.length; i++) {
         var loc = window.Locations[i];
-        if (loc.battles) {
-          for (var b = 0; b < loc.battles.length; b++) {
-            if (loc.battles[b].id.padStart(3, '0') === trainerId) return loc;
-          }
-        }
-        if (loc.trainers && loc.trainers.indexOf(trainerId) !== -1) return loc;
-        if (loc.bossTrainers && loc.bossTrainers.indexOf(trainerId) !== -1) return loc;
+        if (trainerLocationID === toID(loc.id) || trainerLocationID === toID(loc.name)) return loc;
       }
       return null;
     };
@@ -167,7 +170,7 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
       for (var i = 0; i < window.Trainers.length; i++) {
         var trainer = window.Trainers[i];
         // Only include trainers that have a documented location
-        var trainerLoc = trainerHasLocation(trainer.id);
+        var trainerLoc = resolveTrainerLocation(trainer);
         if (!trainerLoc) continue;
         
         if (trainer.team && Array.isArray(trainer.team)) {

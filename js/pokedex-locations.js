@@ -1,4 +1,22 @@
 // Locations panels: list and detail
+function normalizeTrainerMetaText(value) {
+  var out = (value || '').trim();
+  if (!out || /^\(?none\)?$/i.test(out)) return '';
+  return out;
+}
+function trainerMatchesLocation(trainer, loc) {
+  if (!trainer || !loc) return false;
+  var trainerLocation = normalizeTrainerMetaText(trainer.location);
+  if (!trainerLocation) return false;
+  var trainerLocID = toID(trainerLocation);
+  return trainerLocID === toID(loc.id) || trainerLocID === toID(loc.name);
+}
+function getTrainersForLocation(loc) {
+  return (window.Trainers || []).filter(function(trainer) {
+    return trainerMatchesLocation(trainer, loc);
+  });
+}
+
 window.PokedexLocationsPanel = PokedexResultPanel.extend({
   initialize: function () {
     this.shortTitle = 'Locations';
@@ -69,20 +87,17 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
       this.allLocations.forEach(function(loc) {
         if (!loc) return;
 
-        // Check if any trainer in this location owns the Pokémon (via battles array)
+        // Check if any trainer mapped to this location owns the Pokémon
         var hasTrainer = false;
-        if (loc.battles) {
-          for (var bi = 0; bi < loc.battles.length; bi++) {
-            var battle = loc.battles[bi];
-            var tid = String(battle.id).padStart(3, '0');
-            var trainer = (window.Trainers || []).find(function(t) { return t.id === tid; });
-            if (trainer && (trainer.team || []).some(function(m) {
+        var locTrainers = getTrainersForLocation(loc);
+        for (var bi = 0; bi < locTrainers.length; bi++) {
+          var trainer = locTrainers[bi];
+          if (trainer && (trainer.team || []).some(function(m) {
               var disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
               return matchingPokemonIds.has(toID(disp));
-            })) {
-              hasTrainer = true;
-              break;
-            }
+          })) {
+            hasTrainer = true;
+            break;
           }
         }
 
@@ -157,12 +172,9 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
             if ((loc.shops[i].item || '').toLowerCase().indexOf(query) >= 0) return true;
           }
         }
-        if (loc.battles) {
-          for (var i = 0; i < loc.battles.length; i++) {
-            var tid = String(loc.battles[i].id).padStart(3, '0');
-            var trainer = (window.Trainers || []).find(function(t) { return t.id === tid; });
-            if (trainer && (trainer.name || '').toLowerCase().indexOf(query) >= 0) return true;
-          }
+        var locTrainers = getTrainersForLocation(loc);
+        for (var i = 0; i < locTrainers.length; i++) {
+          if ((locTrainers[i].name || '').toLowerCase().indexOf(query) >= 0) return true;
         }
         return false;
       });
@@ -290,9 +302,18 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     buf += '<li><button class="button nav-last" value="battles">Battles</button></li>';
     buf += '</ul>';
 
-    // ── Partition the battles array ───────────────────────────────
+    // ── Partition battle/static data and derive location trainers ─
     var allBattles = loc.battles || [];
-    var trainerBattles  = allBattles.filter(function(b){ return !String(b.id).match(/^[A-Za-z]/); });
+    var locationTrainers = getTrainersForLocation(loc).slice().sort(function(a, b) {
+      var routeA = parseInt(a.routeNumber, 10);
+      var routeB = parseInt(b.routeNumber, 10);
+      if (isNaN(routeA)) routeA = 0;
+      if (isNaN(routeB)) routeB = 0;
+      if (routeA !== routeB) return routeA - routeB;
+      var nameCmp = (a.name || '').localeCompare(b.name || '');
+      if (nameCmp !== 0) return nameCmp;
+      return String(a.id || '').localeCompare(String(b.id || ''));
+    });
     var staticBattles   = allBattles.filter(function(b){ return  String(b.id).match(/^[A-Za-z]/); });
     var capturableStatics = staticBattles.filter(function(b){ return b.tag === 'Capturable'; });
 
@@ -565,20 +586,17 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     // ── Trainers ──
     buf += '<div class="loc-section" style="' + secStyle('#90caf9', '#1565c0') + '">';
     buf += '<h3 style="margin-top:0;color:#0d47a1">Trainers</h3>';
-    if (!trainerBattles.length) {
+    if (!locationTrainers.length) {
       buf += noneText;
     } else {
       buf += '<ul class="utilichart nokbd">';
-      for (var ti = 0; ti < trainerBattles.length; ti++) {
-        var tb = trainerBattles[ti];
-        var paddedTID = String(tb.id).padStart(3, '0');
-        var tTrainer = (window.Trainers || []).find(function(t){ return t.id === paddedTID; });
-        var tName = tTrainer ? tTrainer.name : ('Trainer\u00a0' + tb.id);
-        var tTagCfg = (window.BattleTags && window.BattleTags[tb.tag]) || { color: '#666', backgroundColor: '#f0f0f0', description: tb.tag };
-        var tNoteLines = splitNotes(tb.notes || '');
+      for (var ti = 0; ti < locationTrainers.length; ti++) {
+        var tTrainer = locationTrainers[ti];
+        var paddedTID = String(tTrainer.id).padStart(3, '0');
+        var tName = tTrainer.name || ('Trainer\u00a0' + paddedTID);
+        var tNoteLines = splitNotes(tTrainer.desc || '');
         buf += '<li class="result" style="display:block;height:auto;min-height:32px;padding:0">';
         buf += '<a href="' + Config.baseurl + 'trainers/' + paddedTID + '" data-target="push" style="display:block;height:auto;min-height:32px;padding:5px 8px;text-decoration:none">';
-        buf += '<span class="battle-tag" style="display:inline-block;padding:2px 8px;margin-right:8px;border-radius:12px;font-size:0.75em;font-weight:600;color:' + tTagCfg.color + ';background-color:' + tTagCfg.backgroundColor + ';cursor:help" title="' + escapeHTML(tTagCfg.description || '') + '">' + escapeHTML(tb.tag) + '</span>';
         buf += '<span style="font-size:0.95em">' + escapeHTML(tName) + '</span>';
         buf += '</a>';
         buf += renderNoteLines(tNoteLines, '8px');

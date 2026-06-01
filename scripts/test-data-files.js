@@ -7,7 +7,8 @@ console.log('Testing data files...\n');
 const dataFiles = [
   'locations.json',
   'battle-tags.json',
-  'shop-tables.json'
+  'shop-tables.json',
+  'trainers.json'
 ];
 
 let allValid = true;
@@ -69,6 +70,38 @@ for (const file of dataFiles) {
       const shopTables = parsed.shopTables || {};
       const tableNames = Object.keys(shopTables);
       console.log(`  - Contains ${tableNames.length} shop table(s): ${tableNames.join(', ')}`);
+    }
+
+    if (file === 'trainers.json') {
+      const trainers = Array.isArray(parsed) ? parsed : [];
+      console.log(`  - Contains ${trainers.length} trainer record(s)`);
+      const missingMetadata = trainers.filter(trainer =>
+        !Object.prototype.hasOwnProperty.call(trainer, 'location') ||
+        !Object.prototype.hasOwnProperty.call(trainer, 'desc') ||
+        !Object.prototype.hasOwnProperty.call(trainer, 'routeNumber') ||
+        !Object.prototype.hasOwnProperty.call(trainer, 'prizeMoney')
+      );
+      if (missingMetadata.length) {
+        console.error(`  - ✗ ${missingMetadata.length} trainer(s) missing required metadata fields`);
+        allValid = false;
+      } else {
+        console.log('  - ✓ Trainer metadata fields (location, desc, routeNumber, prizeMoney) present');
+      }
+
+      const placeholderTrainers = trainers.filter(trainer => {
+        if (!trainer || !Array.isArray(trainer.team) || trainer.team.length !== 1) return false;
+        const mon = trainer.team[0];
+        return mon &&
+          String(mon.name || '').toLowerCase() === 'yungoos' &&
+          Number(mon.level || 0) === 5 &&
+          (!Array.isArray(mon.moves) || mon.moves.length === 0);
+      });
+      if (placeholderTrainers.length) {
+        console.error(`  - ✗ ${placeholderTrainers.length} placeholder trainer(s) were not filtered`);
+        allValid = false;
+      } else {
+        console.log('  - ✓ Placeholder trainers are filtered out');
+      }
     }
     
   } catch (error) {

@@ -4,6 +4,9 @@
     "name": "Pokémon Trainer",
     "trainerClass": "pokmontrainer",
     "personalName": "",
+    "location": "",
+    "desc": "",
+    "routeNumber": 1,
     "prizeMoney": 0,
     "team": []
   },
@@ -12,21 +15,11 @@
     "name": "Lass Madison",
     "trainerClass": "lass",
     "personalName": "Madison",
+    "location": "Ten Carat Beach",
+    "desc": "Mandatory - None",
+    "routeNumber": 0,
     "prizeMoney": 336,
     "team": [
-      {
-        "name": "Togepi",
-        "level": 8,
-        "item": "Ring Target",
-        "nature": "Serious",
-        "ability": "Serene Grace",
-        "moves": [
-          "Metronome",
-          "Bestow",
-          "Safeguard",
-          "Charm"
-        ]
-      },
       {
         "name": "Cleffa",
         "level": 7,
@@ -54,6 +47,19 @@
         ]
       },
       {
+        "name": "Togepi",
+        "level": 8,
+        "item": "Ring Target",
+        "nature": "Serious",
+        "ability": "Serene Grace",
+        "moves": [
+          "Metronome",
+          "Bestow",
+          "Safeguard",
+          "Charm"
+        ]
+      },
+      {
         "name": "Happiny",
         "level": 7,
         "item": "Lagging Tail",
@@ -73,24 +79,27 @@
     "name": "Lass Isabella",
     "trainerClass": "lass",
     "personalName": "Isabella",
-    "prizeMoney": 624,
+    "location": "Route 2",
+    "desc": "Mandatory - Blocks Verdant Cavern",
+    "routeNumber": 6,
+    "prizeMoney": 720,
     "team": [
       {
         "name": "Eevee",
-        "level": 14,
+        "level": 15,
         "item": "Enigma Berry",
         "nature": "Jolly",
         "ability": "Protean",
         "moves": [
           "Wish",
           "Detect",
-          "Curse",
+          "Charm",
           "Quick Attack"
         ]
       },
       {
         "name": "Glameow",
-        "level": 13,
+        "level": 16,
         "item": "Liechi Berry",
         "nature": "Jolly",
         "ability": "Limber",
@@ -103,7 +112,7 @@
       },
       {
         "name": "Skitty",
-        "level": 13,
+        "level": 15,
         "item": "Normalium Z",
         "nature": "Jolly",
         "ability": "Normalize",
@@ -121,7 +130,10 @@
     "name": "Kahuna's Grandson Hau",
     "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
-    "prizeMoney": 420,
+    "location": "Iki Town",
+    "desc": "Story - Hau Battle 2 | Rowlet Chosen",
+    "routeNumber": 0,
+    "prizeMoney": 480,
     "team": [
       {
         "name": "Torchic",
@@ -146,7 +158,7 @@
       },
       {
         "name": "Popplio",
-        "level": 7,
+        "level": 8,
         "item": "Enigma Berry",
         "nature": "Quiet",
         "ability": "Serene Grace",
@@ -164,7 +176,10 @@
     "name": "Kahuna's Grandson Hau",
     "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
-    "prizeMoney": 420,
+    "location": "Iki Town",
+    "desc": "Story - Hau Battle 2 | Litten Chosen",
+    "routeNumber": 1,
+    "prizeMoney": 480,
     "team": [
       {
         "name": "Mudkip",
@@ -189,7 +204,7 @@
       },
       {
         "name": "Rowlet",
-        "level": 7,
+        "level": 8,
         "item": "Enigma Berry",
         "nature": "Hasty",
         "ability": "Long Reach",
@@ -207,7 +222,10 @@
     "name": "Kahuna's Grandson Hau",
     "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
-    "prizeMoney": 420,
+    "location": "Iki Town",
+    "desc": "Story - Hau Battle 2 | Popplio Chosen",
+    "routeNumber": 2,
+    "prizeMoney": 480,
     "team": [
       {
         "name": "Treecko",
@@ -232,7 +250,7 @@
       },
       {
         "name": "Litten",
-        "level": 7,
+        "level": 8,
         "item": "Enigma Berry",
         "nature": "Naughty",
         "ability": "Intimidate",
@@ -250,11 +268,14 @@
     "name": "Tapu's Chosen Hau",
     "trainerClass": "tapuschosen",
     "personalName": "Hau",
-    "prizeMoney": 2040,
+    "location": "Route 3",
+    "desc": "Boss - Hau Battle 3 | Rowlet Chosen",
+    "routeNumber": 5,
+    "prizeMoney": 2160,
     "team": [
       {
         "name": "Diglett 1",
-        "level": 16,
+        "level": 17,
         "item": "Passho Berry",
         "nature": "Impish",
         "ability": "Tangling Hair",
@@ -267,7 +288,7 @@
       },
       {
         "name": "Rufflet",
-        "level": 16,
+        "level": 17,
         "item": "Normalium Z",
         "nature": "Naive",
         "ability": "Fluffy",
@@ -280,14 +301,14 @@
       },
       {
         "name": "Pikachu",
-        "level": 16,
+        "level": 18,
         "item": "Eject Button",
         "nature": "Timid",
         "ability": "Lightning Rod",
         "moves": [
           "Nuzzle",
-          "Disarming Voice",
-          "Quick Attack",
+          "Feint",
+          "Encore",
           "Electro Ball"
         ]
       },
@@ -306,7 +327,7 @@
       },
       {
         "name": "Popplio",
-        "level": 17,
+        "level": 18,
         "item": "Iapapa Berry",
         "nature": "Quiet",
         "ability": "Liquid Voice",
@@ -324,11 +345,14 @@
     "name": "Tapu's Chosen Hau",
     "trainerClass": "tapuschosen",
     "personalName": "Hau",
-    "prizeMoney": 2040,
+    "location": "Route 3",
+    "desc": "Boss - Hau Battle 3 | Litten Chosen",
+    "routeNumber": 6,
+    "prizeMoney": 2160,
     "team": [
       {
         "name": "Diglett 1",
-        "level": 16,
+        "level": 17,
         "item": "Passho Berry",
         "nature": "Impish",
         "ability": "Tangling Hair",
@@ -341,7 +365,7 @@
       },
       {
         "name": "Rufflet",
-        "level": 16,
+        "level": 17,
         "item": "Normalium Z",
         "nature": "Naive",
         "ability": "Fluffy",
@@ -354,14 +378,14 @@
       },
       {
         "name": "Pikachu",
-        "level": 16,
+        "level": 18,
         "item": "Eject Button",
         "nature": "Timid",
         "ability": "Lightning Rod",
         "moves": [
           "Nuzzle",
-          "Disarming Voice",
-          "Quick Attack",
+          "Feint",
+          "Encore",
           "Electro Ball"
         ]
       },
@@ -380,7 +404,7 @@
       },
       {
         "name": "Rowlet",
-        "level": 17,
+        "level": 18,
         "item": "Mago Berry",
         "nature": "Jolly",
         "ability": "Long Reach",
@@ -398,11 +422,14 @@
     "name": "Tapu's Chosen Hau",
     "trainerClass": "tapuschosen",
     "personalName": "Hau",
-    "prizeMoney": 2040,
+    "location": "Route 3",
+    "desc": "Boss - Hau Battle 3 | Popplio Chosen",
+    "routeNumber": 7,
+    "prizeMoney": 2160,
     "team": [
       {
         "name": "Diglett 1",
-        "level": 16,
+        "level": 17,
         "item": "Passho Berry",
         "nature": "Impish",
         "ability": "Tangling Hair",
@@ -415,7 +442,7 @@
       },
       {
         "name": "Rufflet",
-        "level": 16,
+        "level": 17,
         "item": "Normalium Z",
         "nature": "Naive",
         "ability": "Fluffy",
@@ -428,14 +455,14 @@
       },
       {
         "name": "Pikachu",
-        "level": 16,
+        "level": 18,
         "item": "Eject Button",
         "nature": "Timid",
         "ability": "Lightning Rod",
         "moves": [
           "Nuzzle",
-          "Disarming Voice",
-          "Quick Attack",
+          "Feint",
+          "Encore",
           "Electro Ball"
         ]
       },
@@ -454,7 +481,7 @@
       },
       {
         "name": "Litten",
-        "level": 17,
+        "level": 18,
         "item": "Aguav Berry",
         "nature": "Adamant",
         "ability": "Intimidate",
@@ -472,6 +499,9 @@
     "name": "Ace Trainer Makana",
     "trainerClass": "acetrainer",
     "personalName": "Makana",
+    "location": "Route 3",
+    "desc": "Miniboss - Ace Trainer Makana is the first Z-Trainer. Z-Trainers can only be battled after defeating every other trainer on the Route. Reward: TM Roost",
+    "routeNumber": 4,
     "prizeMoney": 3740,
     "team": [
       {
@@ -542,10 +572,64 @@
     ]
   },
   {
+    "id": "018",
+    "name": "Swim Gal Ariel",
+    "trainerClass": "swimgal",
+    "personalName": "Ariel",
+    "location": "Big Wave Beach",
+    "desc": "Story - Multi Battle Ally",
+    "routeNumber": 1,
+    "prizeMoney": 720,
+    "team": [
+      {
+        "name": "Mantyke",
+        "level": 12,
+        "item": "Waterium Z",
+        "nature": "Modest",
+        "ability": "Water Absorb",
+        "moves": [
+          "Bounce",
+          "Bubble",
+          "Splash",
+          "Confuse Ray"
+        ]
+      },
+      {
+        "name": "Remoraid",
+        "level": 13,
+        "item": "Psychic Gem",
+        "nature": "Hasty",
+        "ability": "Super Luck",
+        "moves": [
+          "Water Gun",
+          "Soak",
+          "Psybeam",
+          "Bullet Seed"
+        ]
+      },
+      {
+        "name": "Tentacool",
+        "level": 12,
+        "item": "Weakness Policy",
+        "nature": "Modest",
+        "ability": "Clear Body",
+        "moves": [
+          "Bubble",
+          "Acid",
+          "Constrict",
+          "Poison Sting"
+        ]
+      }
+    ]
+  },
+  {
     "id": "019",
     "name": "Team Skull Grunt Ay",
     "trainerClass": "teamskull",
     "personalName": "Grunt Ay",
+    "location": "Big Wave Beach",
+    "desc": "Story - Multi Battle with Grunt Bee",
+    "routeNumber": 2,
     "prizeMoney": 896,
     "team": [
       {
@@ -590,10 +674,64 @@
     ]
   },
   {
+    "id": "020",
+    "name": "Team Skull Grunt Bee",
+    "trainerClass": "teamskull",
+    "personalName": "Grunt Bee",
+    "location": "Big Wave Beach",
+    "desc": "Story - Multi Battle with Grunt Ay",
+    "routeNumber": 3,
+    "prizeMoney": 728,
+    "team": [
+      {
+        "name": "Stunky",
+        "level": 13,
+        "item": "Shuca Berry",
+        "nature": "Naive",
+        "ability": "Stench",
+        "moves": [
+          "Fury Swipes",
+          "Pursuit",
+          "Screech",
+          "Acid"
+        ]
+      },
+      {
+        "name": "Koffing",
+        "level": 13,
+        "item": "Oran Berry",
+        "nature": "Bold",
+        "ability": "Levitate",
+        "moves": [
+          "Smoke Out",
+          "Gust",
+          "Smog",
+          "Assertion"
+        ]
+      },
+      {
+        "name": "Zubat",
+        "level": 14,
+        "item": "Focus Sash",
+        "nature": "Jolly",
+        "ability": "Inner Focus",
+        "moves": [
+          "Bite",
+          "Aerial Ace",
+          "Supersonic",
+          "Poison Sting"
+        ]
+      }
+    ]
+  },
+  {
     "id": "021",
     "name": "Athlete In-Training Hiromi",
     "trainerClass": "athleteintraining",
     "personalName": "Hiromi",
+    "location": "Schoolyard",
+    "desc": "Mandatory - None",
+    "routeNumber": 0,
     "prizeMoney": 448,
     "team": [
       {
@@ -640,6 +778,9 @@
     "name": "Youngster Joey",
     "trainerClass": "youngster",
     "personalName": "Joey",
+    "location": "Schoolyard",
+    "desc": "Mandatory - None",
+    "routeNumber": 1,
     "prizeMoney": 800,
     "team": [
       {
@@ -688,6 +829,9 @@
     "name": "Melemele Kahuna Hala",
     "trainerClass": "melemelekahuna",
     "personalName": "Hala",
+    "location": "Iki Town",
+    "desc": "Boss - Kahuna Hala | First Grand Trial | Reward: Fightinium Z, TM Twister",
+    "routeNumber": 3,
     "prizeMoney": 8400,
     "team": [
       {
@@ -775,6 +919,9 @@
     "name": "Preschooler Mia",
     "trainerClass": "preschooler",
     "personalName": "Mia",
+    "location": "Schoolyard",
+    "desc": "Mandatory - None",
+    "routeNumber": 2,
     "prizeMoney": 352,
     "team": [
       {
@@ -822,6 +969,9 @@
     "name": "Youngster Jimmy",
     "trainerClass": "youngster",
     "personalName": "Jimmy",
+    "location": "Route 1",
+    "desc": "Mandatory - None",
+    "routeNumber": 4,
     "prizeMoney": 200,
     "team": [
       {
@@ -866,6 +1016,9 @@
     "name": "Youngster Kevin",
     "trainerClass": "youngster",
     "personalName": "Kevin",
+    "location": "Ten Carat Beach",
+    "desc": "Optional - Reward: Focus Band",
+    "routeNumber": 1,
     "prizeMoney": 280,
     "team": [
       {
@@ -914,6 +1067,9 @@
     "name": "Kindergartener Oliver",
     "trainerClass": "kindergartener",
     "personalName": "Oliver",
+    "location": "Route 1",
+    "desc": "Mandatory - None",
+    "routeNumber": 5,
     "prizeMoney": 160,
     "team": [
       {
@@ -958,6 +1114,9 @@
     "name": "Pokémon Rancher Jay",
     "trainerClass": "pokmonrancher",
     "personalName": "Jay",
+    "location": "Route 2",
+    "desc": "Optional - Reward: Kee Berry x20, Maranga Berry x20",
+    "routeNumber": 4,
     "prizeMoney": 960,
     "team": [
       {
@@ -1031,11 +1190,14 @@
     "name": "Rising Star Ian",
     "trainerClass": "risingstar",
     "personalName": "Ian",
-    "prizeMoney": 1344,
+    "location": "Route 3",
+    "desc": "Optional - None",
+    "routeNumber": 1,
+    "prizeMoney": 1536,
     "team": [
       {
         "name": "Psyduck",
-        "level": 14,
+        "level": 15,
         "item": "Rindo Berry",
         "nature": "Modest",
         "ability": "Unaware",
@@ -1048,7 +1210,7 @@
       },
       {
         "name": "Bounsweet",
-        "level": 15,
+        "level": 16,
         "item": "Sitrus Berry",
         "nature": "Impish",
         "ability": "Sweet Veil",
@@ -1061,7 +1223,7 @@
       },
       {
         "name": "Cyndaquil",
-        "level": 14,
+        "level": 15,
         "item": "Charcoal",
         "nature": "Naive",
         "ability": "Berserk",
@@ -1074,14 +1236,14 @@
       },
       {
         "name": "Purrloin",
-        "level": 14,
+        "level": 16,
         "item": "Normalium Z",
         "nature": "Hasty",
         "ability": "Prankster",
         "moves": [
-          "Thief",
+          "Snarl",
           "Torment",
-          "Taunt",
+          "Assist",
           "Fake Out"
         ]
       }
@@ -1092,6 +1254,9 @@
     "name": "Rising Star Joshua",
     "trainerClass": "risingstar",
     "personalName": "Joshua",
+    "location": "Route 3",
+    "desc": "Optional - Reward: TM Electroweb and access to the Soothe Bell",
+    "routeNumber": 3,
     "prizeMoney": 1664,
     "team": [
       {
@@ -1153,7 +1318,10 @@
     "name": "Up and Coming Tatiana",
     "trainerClass": "upandcoming",
     "personalName": "Tatiana",
-    "prizeMoney": 1568,
+    "location": "Route 3",
+    "desc": "Optional - Abra: HP Fighting",
+    "routeNumber": 2,
+    "prizeMoney": 1680,
     "team": [
       {
         "name": "Cottonee",
@@ -1170,7 +1338,7 @@
       },
       {
         "name": "Ralts",
-        "level": 14,
+        "level": 16,
         "item": "Normalium Z",
         "nature": "Bold",
         "ability": "Trace",
@@ -1196,7 +1364,7 @@
       },
       {
         "name": "Aron",
-        "level": 14,
+        "level": 15,
         "item": "Jaboca Berry",
         "nature": "Brave",
         "ability": "Sturdy",
@@ -1204,7 +1372,7 @@
           "Protect",
           "Metal Claw",
           "Rock Tomb",
-          "Mud Shot"
+          "Magnitude"
         ]
       }
     ]
@@ -1214,6 +1382,9 @@
     "name": "Swimmer Beau Yasu",
     "trainerClass": "swimmerbeau",
     "personalName": "Yasu",
+    "location": "Ten Carat Sea",
+    "desc": "Optional - None",
+    "routeNumber": 1,
     "prizeMoney": 1836,
     "team": [
       {
@@ -1275,6 +1446,9 @@
     "name": "Swimmer Beau Kalani",
     "trainerClass": "swimmerbeau",
     "personalName": "Kalani",
+    "location": "Ten Carat Sea",
+    "desc": "Optional - None",
+    "routeNumber": 2,
     "prizeMoney": 2128,
     "team": [
       {
@@ -1336,6 +1510,9 @@
     "name": "Swimsuit Kelsie",
     "trainerClass": "swimsuit",
     "personalName": "Kelsie",
+    "location": "Ten Carat Sea",
+    "desc": "Optional - None",
+    "routeNumber": 3,
     "prizeMoney": 2184,
     "team": [
       {
@@ -1410,6 +1587,9 @@
     "name": "Swimsuit Portia",
     "trainerClass": "swimsuit",
     "personalName": "Portia",
+    "location": "Hau'oli Sea",
+    "desc": "Optional - None",
+    "routeNumber": 1,
     "prizeMoney": 2576,
     "team": [
       {
@@ -1471,6 +1651,9 @@
     "name": "Swim Gal Shelby",
     "trainerClass": "swimgal",
     "personalName": "Shelby",
+    "location": "Ten Carat Sea",
+    "desc": "Optional - None",
+    "routeNumber": 4,
     "prizeMoney": 2784,
     "team": [
       {
@@ -1519,6 +1702,9 @@
     "name": "Swim Gal Jade",
     "trainerClass": "swimgal",
     "personalName": "Jade",
+    "location": "Hau'oli Sea",
+    "desc": "Optional - None",
+    "routeNumber": 2,
     "prizeMoney": 2376,
     "team": [
       {
@@ -1580,6 +1766,9 @@
     "name": "Office Worker Jeremy",
     "trainerClass": "officeworker",
     "personalName": "Jeremy",
+    "location": "Hau'oli Cemetery",
+    "desc": "Optional - Reward: Access to the Cemetery",
+    "routeNumber": 1,
     "prizeMoney": 864,
     "team": [
       {
@@ -1628,6 +1817,9 @@
     "name": "Pokémon Breeder Ikue",
     "trainerClass": "pokmonbreeder",
     "personalName": "Ikue",
+    "location": "Hau'oli Cemetery",
+    "desc": "Optional - Reward: Wide Lens, Ganlon/Apicot Berries x20",
+    "routeNumber": 2,
     "prizeMoney": 960,
     "team": [
       {
@@ -1702,6 +1894,9 @@
     "name": "Gentleman Stanley",
     "trainerClass": "gentleman",
     "personalName": "Stanley",
+    "location": "Route 2",
+    "desc": "Optional - Required if you wish to enter Berry Fields",
+    "routeNumber": 3,
     "prizeMoney": 4080,
     "team": [
       {
@@ -1763,6 +1958,9 @@
     "name": "Team Skull Grunt Ay",
     "trainerClass": "teamskull",
     "personalName": "Grunt Ay",
+    "location": "Verdant Cavern",
+    "desc": "Story - None",
+    "routeNumber": 0,
     "prizeMoney": 1080,
     "team": [
       {
@@ -1824,6 +2022,9 @@
     "name": "Team Skull Grunt Bee",
     "trainerClass": "teamskull",
     "personalName": "Grunt Bee",
+    "location": "Hau'oli City",
+    "desc": "Story - Multi Battle with Grunt Ay",
+    "routeNumber": 0,
     "prizeMoney": 768,
     "team": [
       {
@@ -1868,10 +2069,102 @@
     ]
   },
   {
+    "id": "048",
+    "name": "Team Skull Grunt Ay",
+    "trainerClass": "teamskull",
+    "personalName": "Grunt Ay",
+    "location": "Hau'oli City",
+    "desc": "Story - Multi Battle with Grunt Bee",
+    "routeNumber": 0,
+    "prizeMoney": 768,
+    "team": [
+      {
+        "name": "Poochyena",
+        "level": 12,
+        "item": "Tanga Berry",
+        "nature": "Lonely",
+        "ability": "Rattled",
+        "moves": [
+          "Growl",
+          "Howl",
+          "Bite",
+          "Torment"
+        ]
+      },
+      {
+        "name": "Rattata 1",
+        "level": 12,
+        "item": "Oran Berry",
+        "nature": "Naughty",
+        "ability": "Pickup",
+        "moves": [
+          "Thief",
+          "Quick Attack",
+          "Pursuit",
+          "Quash"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "049",
+    "name": "Kahuna's Grandson Hau",
+    "trainerClass": "kahunasgrandson",
+    "personalName": "Hau",
+    "location": "Hau'oli City",
+    "desc": "Story - Multibattle Ally Vs Team Skull",
+    "routeNumber": 0,
+    "prizeMoney": 504,
+    "team": [
+      {
+        "name": "Pichu",
+        "level": 10,
+        "item": "Apicot Berry",
+        "nature": "Timid",
+        "ability": "Battery",
+        "moves": [
+          "Quick Attack",
+          "Charm",
+          "Thunder Shock",
+          "Charge"
+        ]
+      },
+      {
+        "name": "Krabby",
+        "level": 9,
+        "item": "Oran Berry",
+        "nature": "Brave",
+        "ability": "Hyper Cutter",
+        "moves": [
+          "Clamp",
+          "Mud Shot",
+          "Mud Sport",
+          "Harden"
+        ]
+      },
+      {
+        "name": "Zigzagoon",
+        "level": 9,
+        "item": "Oran Berry",
+        "nature": "Hasty",
+        "ability": "Pickup",
+        "moves": [
+          "Pursuit",
+          "Charm",
+          "Headbutt",
+          "Sand Down"
+        ]
+      }
+    ]
+  },
+  {
     "id": "052",
     "name": "Trial Captain Ilima",
     "trainerClass": "trialcaptain",
     "personalName": "Ilima",
+    "location": "Hau'oli City",
+    "desc": "Boss - Ilima | Rowlet Chosen",
+    "routeNumber": 1,
     "prizeMoney": 3120,
     "team": [
       {
@@ -1888,16 +2181,16 @@
         ]
       },
       {
-        "name": "Shuppet",
-        "level": 11,
-        "item": "Ghost Gem",
-        "nature": "Naughty",
-        "ability": "Insomnia",
+        "name": "Minccino",
+        "level": 10,
+        "item": "Lum Berry",
+        "nature": "Quirky",
+        "ability": "Cute Charm",
         "moves": [
-          "Lick",
-          "Torment",
-          "Tackle",
-          "Grudge"
+          "Helping Hand",
+          "Tickle",
+          "Attract",
+          "Tackle"
         ]
       },
       {
@@ -1927,16 +2220,16 @@
         ]
       },
       {
-        "name": "Minccino",
-        "level": 10,
-        "item": "Lum Berry",
-        "nature": "Quirky",
-        "ability": "Cute Charm",
+        "name": "Shuppet",
+        "level": 11,
+        "item": "Ghost Gem",
+        "nature": "Naughty",
+        "ability": "Insomnia",
         "moves": [
-          "Helping Hand",
-          "Tickle",
-          "Attract",
-          "Tackle"
+          "Lick",
+          "Torment",
+          "Tackle",
+          "Grudge"
         ]
       },
       {
@@ -1959,6 +2252,9 @@
     "name": "Fisherman Hal",
     "trainerClass": "fisherman",
     "personalName": "Hal",
+    "location": "Brooklet Hill",
+    "desc": "Mandatory - None",
+    "routeNumber": 2,
     "prizeMoney": 2016,
     "team": [
       {
@@ -2020,6 +2316,9 @@
     "name": "Fisherman Herbert",
     "trainerClass": "fisherman",
     "personalName": "Herbert",
+    "location": "Brooklet Hill",
+    "desc": "Optional - None",
+    "routeNumber": 3,
     "prizeMoney": 2400,
     "team": [
       {
@@ -2068,6 +2367,9 @@
     "name": "Fisherman Carl",
     "trainerClass": "fisherman",
     "personalName": "Carl",
+    "location": "Brooklet Hill",
+    "desc": "Optional - Reward: TM Charge Beam",
+    "routeNumber": 5,
     "prizeMoney": 2592,
     "team": [
       {
@@ -2155,6 +2457,9 @@
     "name": "Backpacker Mikiko",
     "trainerClass": "backpacker",
     "personalName": "Mikiko",
+    "location": "Brooklet Hill",
+    "desc": "Mandatory - None",
+    "routeNumber": 4,
     "prizeMoney": 2000,
     "team": [
       {
@@ -2216,32 +2521,22 @@
     "name": "Fisherman Ernest",
     "trainerClass": "fisherman",
     "personalName": "Ernest",
-    "prizeMoney": 1840,
+    "location": "Brooklet Hill",
+    "desc": "Mandatory - None",
+    "routeNumber": 1,
+    "prizeMoney": 2000,
     "team": [
       {
-        "name": "Barboach",
-        "level": 24,
-        "item": "Rocky Helmet",
-        "nature": "Rash",
-        "ability": "Gooey",
+        "name": "Clamperl",
+        "level": 23,
+        "item": "Deep Sea Tooth",
+        "nature": "Modest",
+        "ability": "Rattled",
         "moves": [
-          "Mud Bomb",
-          "Amnesia",
-          "Mud Sport",
-          "Whirlpool"
-        ]
-      },
-      {
-        "name": "Staryu",
-        "level": 25,
-        "item": "Salac Berry",
-        "nature": "Mild",
-        "ability": "Victory Star",
-        "moves": [
-          "Confuse Ray",
-          "Camouflage",
-          "Bubble Beam",
-          "Recover"
+          "Aqua Ring",
+          "Icy Wind",
+          "Bubble",
+          "Refresh"
         ]
       },
       {
@@ -2258,6 +2553,19 @@
         ]
       },
       {
+        "name": "Barboach",
+        "level": 24,
+        "item": "Rocky Helmet",
+        "nature": "Rash",
+        "ability": "Gooey",
+        "moves": [
+          "Mud Bomb",
+          "Amnesia",
+          "Mud Sport",
+          "Whirlpool"
+        ]
+      },
+      {
         "name": "Goldeen",
         "level": 23,
         "item": "Liechi Berry",
@@ -2269,6 +2577,19 @@
           "Aqua Ring",
           "Flail"
         ]
+      },
+      {
+        "name": "Staryu",
+        "level": 25,
+        "item": "Salac Berry",
+        "nature": "Mild",
+        "ability": "Victory Star",
+        "moves": [
+          "Confuse Ray",
+          "Camouflage",
+          "Bubble Beam",
+          "Recover"
+        ]
       }
     ]
   },
@@ -2277,19 +2598,22 @@
     "name": "Collector Bryan",
     "trainerClass": "collector",
     "personalName": "Bryan",
-    "prizeMoney": 1900,
+    "location": "Route 4",
+    "desc": "Optional - Reward: Pixie Plate",
+    "routeNumber": 2,
+    "prizeMoney": 2100,
     "team": [
       {
         "name": "Larvitar",
-        "level": 19,
+        "level": 21,
         "item": "Toxic Orb",
         "nature": "Careful",
-        "ability": "Sand Force",
+        "ability": "Guts",
         "moves": [
           "Bulldoze",
           "Chip Away",
           "Smack Down",
-          "Screech"
+          "Protect"
         ]
       },
       {
@@ -2320,7 +2644,7 @@
       },
       {
         "name": "Phanpy",
-        "level": 19,
+        "level": 21,
         "item": "Soft Sand",
         "nature": "Impish",
         "ability": "Pickup",
@@ -2338,24 +2662,27 @@
     "name": "Tourist Scotty",
     "trainerClass": "tourist",
     "personalName": "Scotty",
-    "prizeMoney": 2400,
+    "location": "Route 4",
+    "desc": "Optional - None",
+    "routeNumber": 3,
+    "prizeMoney": 2520,
     "team": [
       {
         "name": "Grimer",
-        "level": 20,
+        "level": 21,
         "item": "Eject Button",
         "nature": "Relaxed",
         "ability": "Regenerator",
         "moves": [
           "Disable",
-          "Sludge",
+          "Acid Spray",
           "Acid Armor",
-          "Poison Fang"
+          "Toxic"
         ]
       },
       {
         "name": "Vulpix",
-        "level": 20,
+        "level": 22,
         "item": "Fire Gem",
         "nature": "Timid",
         "ability": "Flash Fire",
@@ -2368,20 +2695,20 @@
       },
       {
         "name": "Geodude",
-        "level": 20,
+        "level": 22,
         "item": "Weakness Policy",
         "nature": "Impish",
         "ability": "Sturdy",
         "moves": [
           "Mega Punch",
-          "Stealth Rock",
+          "Smack Down",
           "Rollout",
           "Bulldoze"
         ]
       },
       {
         "name": "Squirtle",
-        "level": 20,
+        "level": 21,
         "item": "Starf Berry",
         "nature": "Bold",
         "ability": "Shell Armor",
@@ -2399,6 +2726,9 @@
     "name": "Beauty Brittney",
     "trainerClass": "beauty",
     "personalName": "Brittney",
+    "location": "Route 6",
+    "desc": "Optional - None",
+    "routeNumber": 1,
     "prizeMoney": 2016,
     "team": [
       {
@@ -2460,6 +2790,9 @@
     "name": "Pokémon Rancher William",
     "trainerClass": "pokmonrancher",
     "personalName": "William",
+    "location": "Route 6",
+    "desc": "Optional - None",
+    "routeNumber": 2,
     "prizeMoney": 2700,
     "team": [
       {
@@ -2534,19 +2867,22 @@
     "name": "Swimmer Beau Dakota",
     "trainerClass": "swimmerbeau",
     "personalName": "Dakota",
+    "location": "Route 7",
+    "desc": "Optional - None",
+    "routeNumber": 1,
     "prizeMoney": 2320,
     "team": [
       {
         "name": "Kingler",
         "level": 29,
-        "item": "Pecha Berry",
+        "item": "Rockium Z",
         "nature": "Impish",
-        "ability": "Tough Claws",
+        "ability": "Shell Armor",
         "moves": [
-          "Metal Claw",
+          "Trample",
           "Razor Shell",
           "Wide Guard",
-          "Trample"
+          "Crush Claw"
         ]
       },
       {
@@ -2582,6 +2918,9 @@
     "name": "Swimmer Beau Casey",
     "trainerClass": "swimmerbeau",
     "personalName": "Casey",
+    "location": "Route 7",
+    "desc": "Optional - None",
+    "routeNumber": 2,
     "prizeMoney": 2784,
     "team": [
       {
@@ -2630,6 +2969,9 @@
     "name": "Swimsuit Vanessa",
     "trainerClass": "swimsuit",
     "personalName": "Vanessa",
+    "location": "Route 7",
+    "desc": "Optional - None",
+    "routeNumber": 3,
     "prizeMoney": 2480,
     "team": [
       {
@@ -2704,6 +3046,9 @@
     "name": "Swim Gal Tiare",
     "trainerClass": "swimgal",
     "personalName": "Tiare",
+    "location": "Route 7",
+    "desc": "Optional - None",
+    "routeNumber": 4,
     "prizeMoney": 2880,
     "team": [
       {
@@ -2765,6 +3110,9 @@
     "name": "Kalosian Man Dexio",
     "trainerClass": "kalosianman",
     "personalName": "Dexio",
+    "location": "Heahea City",
+    "desc": "Miniboss - Blocks access to Route 4",
+    "routeNumber": 1,
     "prizeMoney": 6400,
     "team": [
       {
@@ -2826,9 +3174,9 @@
         "nature": "Calm",
         "ability": "Soundproof",
         "moves": [
+          "Magnet Bomb",
           "Round",
           "Disarming Voice",
-          "Confusion",
           "Yawn"
         ]
       },
@@ -2852,6 +3200,9 @@
     "name": "Kalosian Woman Sina",
     "trainerClass": "kalosianwoman",
     "personalName": "Sina",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2100,
     "team": [
       {
@@ -2881,11 +3232,14 @@
     "name": "Tapu's Chosen Hau",
     "trainerClass": "tapuschosen",
     "personalName": "Hau",
-    "prizeMoney": 3080,
+    "location": "Paniola Town",
+    "desc": "Boss - Hau Battle 4 | Rowlet Chosen",
+    "routeNumber": 1,
+    "prizeMoney": 3220,
     "team": [
       {
         "name": "Brionne",
-        "level": 22,
+        "level": 23,
         "item": "Water Gem",
         "nature": "Modest",
         "ability": "Liquid Voice",
@@ -2898,7 +3252,7 @@
       },
       {
         "name": "Gulpin",
-        "level": 20,
+        "level": 21,
         "item": "Black Sludge",
         "nature": "Sassy",
         "ability": "Innards Out",
@@ -2911,7 +3265,7 @@
       },
       {
         "name": "Noibat",
-        "level": 21,
+        "level": 22,
         "item": "Flyinium Z",
         "nature": "Timid",
         "ability": "Soundproof",
@@ -2924,7 +3278,7 @@
       },
       {
         "name": "Pikachu",
-        "level": 20,
+        "level": 21,
         "item": "Focus Sash",
         "nature": "Timid",
         "ability": "Lightning Rod",
@@ -2937,20 +3291,20 @@
       },
       {
         "name": "Deerling 2",
-        "level": 20,
+        "level": 21,
         "item": "Silk Scarf",
         "nature": "Lonely",
         "ability": "Serene Grace",
         "moves": [
           "Mega Drain",
-          "Leech Seed",
+          "Growth",
           "Headbutt",
           "Double Kick"
         ]
       },
       {
         "name": "Combusken",
-        "level": 22,
+        "level": 23,
         "item": "Fist Plate",
         "nature": "Brave",
         "ability": "Speed Boost",
@@ -2968,11 +3322,14 @@
     "name": "Tapu's Chosen Hau",
     "trainerClass": "tapuschosen",
     "personalName": "Hau",
-    "prizeMoney": 3080,
+    "location": "Paniola Town",
+    "desc": "Boss - Hau Battle 4 | Litten Chosen",
+    "routeNumber": 2,
+    "prizeMoney": 3220,
     "team": [
       {
         "name": "Dartrix",
-        "level": 22,
+        "level": 23,
         "item": "Grass Gem",
         "nature": "Jolly",
         "ability": "Sniper",
@@ -2985,7 +3342,7 @@
       },
       {
         "name": "Gulpin",
-        "level": 20,
+        "level": 21,
         "item": "Black Sludge",
         "nature": "Sassy",
         "ability": "Innards Out",
@@ -2998,7 +3355,7 @@
       },
       {
         "name": "Noibat",
-        "level": 21,
+        "level": 22,
         "item": "Flyinium Z",
         "nature": "Timid",
         "ability": "Soundproof",
@@ -3011,7 +3368,7 @@
       },
       {
         "name": "Pikachu",
-        "level": 20,
+        "level": 21,
         "item": "Focus Sash",
         "nature": "Timid",
         "ability": "Lightning Rod",
@@ -3024,10 +3381,10 @@
       },
       {
         "name": "Litleo",
-        "level": 20,
+        "level": 21,
         "item": "Silk Scarf",
         "nature": "Modest",
-        "ability": "Scrappy",
+        "ability": "Unnerve",
         "moves": [
           "Roar",
           "Fire Fang",
@@ -3037,7 +3394,7 @@
       },
       {
         "name": "Marshtomp",
-        "level": 22,
+        "level": 23,
         "item": "Earth Plate",
         "nature": "Brave",
         "ability": "Dry Skin",
@@ -3055,11 +3412,14 @@
     "name": "Tapu's Chosen Hau",
     "trainerClass": "tapuschosen",
     "personalName": "Hau",
-    "prizeMoney": 3080,
+    "location": "Paniola Town",
+    "desc": "Boss - Hau Battle 4 | Popplio Chosen",
+    "routeNumber": 3,
+    "prizeMoney": 3220,
     "team": [
       {
         "name": "Torracat",
-        "level": 22,
+        "level": 23,
         "item": "Fire Gem",
         "nature": "Adamant",
         "ability": "Intimidate",
@@ -3072,7 +3432,7 @@
       },
       {
         "name": "Gulpin",
-        "level": 20,
+        "level": 21,
         "item": "Black Sludge",
         "nature": "Sassy",
         "ability": "Innards Out",
@@ -3085,7 +3445,7 @@
       },
       {
         "name": "Noibat",
-        "level": 21,
+        "level": 22,
         "item": "Flyinium Z",
         "nature": "Timid",
         "ability": "Soundproof",
@@ -3098,7 +3458,7 @@
       },
       {
         "name": "Pikachu",
-        "level": 20,
+        "level": 21,
         "item": "Focus Sash",
         "nature": "Timid",
         "ability": "Lightning Rod",
@@ -3111,10 +3471,10 @@
       },
       {
         "name": "Buizel",
-        "level": 20,
+        "level": 21,
         "item": "Silk Scarf",
         "nature": "Jolly",
-        "ability": "Frisk",
+        "ability": "Water Veil",
         "moves": [
           "Aqua Jet",
           "Rapid Spin",
@@ -3124,7 +3484,7 @@
       },
       {
         "name": "Grovyle",
-        "level": 22,
+        "level": 23,
         "item": "Draco Plate",
         "nature": "Hasty",
         "ability": "Technician",
@@ -3142,7 +3502,10 @@
     "name": "Skull Enforcer Gladion",
     "trainerClass": "skullenforcer",
     "personalName": "Gladion",
-    "prizeMoney": 3680,
+    "location": "Route 5",
+    "desc": "Boss - Gladion Battle 1",
+    "routeNumber": 3,
+    "prizeMoney": 3840,
     "team": [
       {
         "name": "Zorua",
@@ -3159,7 +3522,7 @@
       },
       {
         "name": "Porygon",
-        "level": 22,
+        "level": 23,
         "item": "Wise Glasses",
         "nature": "Modest",
         "ability": "Trace",
@@ -3211,7 +3574,7 @@
       },
       {
         "name": "Croagunk",
-        "level": 23,
+        "level": 24,
         "item": "Fighting Gem",
         "nature": "Hasty",
         "ability": "Poison Touch",
@@ -3229,21 +3592,11 @@
     "name": "Team Skull Grunt Ay",
     "trainerClass": "teamskull",
     "personalName": "Grunt Ay",
+    "location": "Route 6",
+    "desc": "Story - Multi Battle with Grunt Bee",
+    "routeNumber": 3,
     "prizeMoney": 3248,
     "team": [
-      {
-        "name": "Mightyena",
-        "level": 28,
-        "item": "Maranga Berry",
-        "nature": "Adamant",
-        "ability": "Intimidate",
-        "moves": [
-          "Howl",
-          "Me First",
-          "Beat Up",
-          "Thief"
-        ]
-      },
       {
         "name": "Gothorita",
         "level": 27,
@@ -3255,6 +3608,19 @@
           "Psyshock",
           "Ally Switch",
           "Fake Out"
+        ]
+      },
+      {
+        "name": "Mightyena",
+        "level": 28,
+        "item": "Maranga Berry",
+        "nature": "Adamant",
+        "ability": "Intimidate",
+        "moves": [
+          "Howl",
+          "Me First",
+          "Beat Up",
+          "Thief"
         ]
       },
       {
@@ -3290,6 +3656,9 @@
     "name": "Pro Wrestler The Royal",
     "trainerClass": "prowrestler",
     "personalName": "The Royal",
+    "location": "Royal Avenue",
+    "desc": "Story - Battle Royal",
+    "routeNumber": 1,
     "prizeMoney": 3360,
     "team": [
       {
@@ -3309,6 +3678,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "Royal Avenue",
+    "desc": "Story - Battle Royal",
+    "routeNumber": 2,
     "prizeMoney": 2400,
     "team": [
       {
@@ -3331,6 +3703,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2400,
     "team": [
       {
@@ -3353,6 +3728,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2400,
     "team": [
       {
@@ -3371,10 +3749,141 @@
     ]
   },
   {
+    "id": "085",
+    "name": "Team Skull [~ 85]",
+    "trainerClass": "teamskull",
+    "personalName": "[~ 85]",
+    "location": "Route 6",
+    "desc": "Story - Multi Battle with Grunt Ay",
+    "routeNumber": 3,
+    "prizeMoney": 2088,
+    "team": [
+      {
+        "name": "Stunky",
+        "level": 28,
+        "item": "Eviolite",
+        "nature": "Brave",
+        "ability": "White Smoke",
+        "moves": [
+          "Poison Tail",
+          "Night Slash",
+          "Toxic",
+          "Snarl"
+        ]
+      },
+      {
+        "name": "Koffing",
+        "level": 28,
+        "item": "Normal Gem",
+        "nature": "Brave",
+        "ability": "Levitate",
+        "moves": [
+          "Spite",
+          "Haze",
+          "Self-Destruct",
+          "Sludge"
+        ]
+      },
+      {
+        "name": "Haunter",
+        "level": 27,
+        "item": "Big Root",
+        "nature": "Timid",
+        "ability": "Levitate",
+        "moves": [
+          "Mega Drain",
+          "Confuse Ray",
+          "Hex",
+          "Sludge"
+        ]
+      },
+      {
+        "name": "Golbat",
+        "level": 29,
+        "item": "Black Sludge",
+        "nature": "Hasty",
+        "ability": "Inner Focus",
+        "moves": [
+          "Poison Fang",
+          "Detect",
+          "Whirlwind",
+          "Air Slash"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "087",
+    "name": "Poni Kahuna [~ 87]",
+    "trainerClass": "ponikahuna",
+    "personalName": "[~ 87]",
+    "location": "Route 6",
+    "desc": "Story - Multi Battle ally against Team Skull",
+    "routeNumber": 4,
+    "prizeMoney": 3600,
+    "team": [
+      {
+        "name": "Mudsdale",
+        "level": 30,
+        "item": "Groundium Z",
+        "nature": "Brave",
+        "ability": "Stamina",
+        "moves": [
+          "Rototiller",
+          "High Horsepower",
+          "Stealth Rock",
+          "Body Slam"
+        ]
+      },
+      {
+        "name": "Gastrodon",
+        "level": 30,
+        "item": "Leftovers",
+        "nature": "Quiet",
+        "ability": "Gooey",
+        "moves": [
+          "Aqua Ring",
+          "Mud Bomb",
+          "Recover",
+          "Whirlpool"
+        ]
+      },
+      {
+        "name": "Dugtrio 1",
+        "level": 30,
+        "item": "Groundium Z",
+        "nature": "Adamant",
+        "ability": "Multistriker",
+        "moves": [
+          "Dig",
+          "Fury Swipes",
+          "Sucker Punch",
+          "Cutting Edge"
+        ]
+      },
+      {
+        "name": "Wormadam 1",
+        "level": 30,
+        "item": "Sitrus Berry",
+        "nature": "Calm",
+        "ability": "Water Compaction",
+        "moves": [
+          "Mud Shot",
+          "Protect",
+          "Silver Wind",
+          "Ally Switch"
+        ]
+      }
+    ]
+  },
+  {
     "id": "088",
     "name": "Team Skull Grunt Harvey",
     "trainerClass": "teamskull",
     "personalName": "Grunt Harvey",
+    "location": "Memorial Hill",
+    "desc": "Story - None",
+    "routeNumber": 0,
     "prizeMoney": 3344,
     "team": [
       {
@@ -3436,6 +3945,9 @@
     "name": "Team Skull Admin Plumeria",
     "trainerClass": "teamskulladmin",
     "personalName": "Plumeria",
+    "location": "Akala Outskirts",
+    "desc": "Boss - Plumeria Battle 1",
+    "routeNumber": 3,
     "prizeMoney": 17600,
     "team": [
       {
@@ -3523,6 +4035,9 @@
     "name": "Akala Kahuna Olivia",
     "trainerClass": "akalakahuna",
     "personalName": "Olivia",
+    "location": "Ruins of Life",
+    "desc": "Boss - Kahuna Olivia",
+    "routeNumber": 1,
     "prizeMoney": 18040,
     "team": [
       {
@@ -3610,7 +4125,10 @@
     "name": "Rising Star Justin",
     "trainerClass": "risingstar",
     "personalName": "Justin",
-    "prizeMoney": 2208,
+    "location": "Route 5",
+    "desc": "Optional - Multi Battle with Lauren",
+    "routeNumber": 4,
+    "prizeMoney": 2304,
     "team": [
       {
         "name": "Kabuto",
@@ -3627,7 +4145,7 @@
       },
       {
         "name": "Shieldon",
-        "level": 23,
+        "level": 24,
         "item": "Steelium Z",
         "nature": "Relaxed",
         "ability": "Solid Rock",
@@ -3645,7 +4163,10 @@
     "name": "Up and Coming Lauren",
     "trainerClass": "upandcoming",
     "personalName": "Lauren",
-    "prizeMoney": 2576,
+    "location": "Route 5",
+    "desc": "Optional - Multi Battle with Justin",
+    "routeNumber": 4,
+    "prizeMoney": 2688,
     "team": [
       {
         "name": "Omanyte",
@@ -3662,7 +4183,7 @@
       },
       {
         "name": "Cranidos",
-        "level": 23,
+        "level": 24,
         "item": "Ghostium Z",
         "nature": "Brave",
         "ability": "Rock Head",
@@ -3680,11 +4201,66 @@
     "name": "Pokémon Rancher Cory",
     "trainerClass": "pokmonrancher",
     "personalName": "Cory",
-    "prizeMoney": 2400,
+    "location": "Route 5",
+    "desc": "Optional - None",
+    "routeNumber": 5,
+    "prizeMoney": 2200,
     "team": [
       {
-        "name": "Burmy 2",
+        "name": "Shelmet",
+        "level": 22,
+        "item": "Terrain Extender",
+        "nature": "Gentle",
+        "ability": "Hydration",
+        "moves": [
+          "Acid Spray",
+          "Withdraw",
+          "Grassy Terrain",
+          "Mega Drain"
+        ]
+      },
+      {
+        "name": "Kricketune",
+        "level": 23,
+        "item": "Damp Rock",
+        "nature": "Calm",
+        "ability": "Technician",
+        "moves": [
+          "Rain Dance",
+          "Disarming Voice",
+          "Bug Bite",
+          "Round"
+        ]
+      },
+      {
+        "name": "Wimpod",
         "level": 24,
+        "item": "Coba Berry",
+        "nature": "Naive",
+        "ability": "Wimp Out",
+        "moves": [
+          "Aqua Ring",
+          "Spikes",
+          "Water Pulse",
+          "Bug Bite"
+        ]
+      },
+      {
+        "name": "Whirlipede",
+        "level": 23,
+        "item": "Starf Berry",
+        "nature": "Brave",
+        "ability": "Speed Boost",
+        "moves": [
+          "Bug Bite",
+          "Pursuit",
+          "Poison Tail",
+          "Protect"
+        ]
+      },
+      {
+        "name": "Burmy 2",
+        "level": 22,
         "item": "Sitrus Berry",
         "nature": "Gentle",
         "ability": "Shed Skin",
@@ -3694,32 +4270,6 @@
           "Secret Power",
           "Hidden Power"
         ]
-      },
-      {
-        "name": "Kricketune",
-        "level": 23,
-        "item": "Salac Berry",
-        "nature": "Calm",
-        "ability": "Technician",
-        "moves": [
-          "Helping Hand",
-          "Disarming Voice",
-          "Bug Bite",
-          "Round"
-        ]
-      },
-      {
-        "name": "Venonat",
-        "level": 24,
-        "item": "Apicot Berry",
-        "nature": "Modest",
-        "ability": "Tinted Lens",
-        "moves": [
-          "Struggle Bug",
-          "Psybeam",
-          "Powder",
-          "Disable"
-        ]
       }
     ]
   },
@@ -3728,19 +4278,22 @@
     "name": "Pokémon Breeder Yuka",
     "trainerClass": "pokmonbreeder",
     "personalName": "Yuka",
-    "prizeMoney": 3168,
+    "location": "Route 5",
+    "desc": "Optional - Reward: TM PowerUp Punch",
+    "routeNumber": 2,
+    "prizeMoney": 2904,
     "team": [
       {
-        "name": "Shroomish",
-        "level": 24,
-        "item": "Sitrus Berry",
-        "nature": "Impish",
-        "ability": "Effect Spore",
+        "name": "Skiddo",
+        "level": 22,
+        "item": "Grassy Seed",
+        "nature": "Brave",
+        "ability": "Grass Pelt",
         "moves": [
-          "Bullet Seed",
-          "Spore",
-          "Leech Seed",
-          "Counter"
+          "Synthesis",
+          "Bulldoze",
+          "Razor Leaf",
+          "Grassy Terrain"
         ]
       },
       {
@@ -3768,6 +4321,32 @@
           "Tailwind",
           "Razor Leaf"
         ]
+      },
+      {
+        "name": "Swadloon",
+        "level": 23,
+        "item": "Starf Berry",
+        "nature": "Brave",
+        "ability": "Fur Coat",
+        "moves": [
+          "Trailblaze",
+          "Rage Powder",
+          "Razor Leaf",
+          "Bug Bite"
+        ]
+      },
+      {
+        "name": "Shroomish",
+        "level": 22,
+        "item": "Sitrus Berry",
+        "nature": "Impish",
+        "ability": "Immunity",
+        "moves": [
+          "Bullet Seed",
+          "Spore",
+          "Leech Seed",
+          "Counter"
+        ]
       }
     ]
   },
@@ -3776,6 +4355,9 @@
     "name": "Youngster Caleb",
     "trainerClass": "youngster",
     "personalName": "Caleb",
+    "location": "Route 5",
+    "desc": "Optional - (North)",
+    "routeNumber": 6,
     "prizeMoney": 4624,
     "team": [
       {
@@ -3824,6 +4406,9 @@
     "name": "Preschooler Isa",
     "trainerClass": "preschooler",
     "personalName": "Isa",
+    "location": "Route 5",
+    "desc": "Optional - Multi Battle with Nico",
+    "routeNumber": 1,
     "prizeMoney": 1288,
     "team": [
       {
@@ -3859,6 +4444,9 @@
     "name": "Preschooler Nico",
     "trainerClass": "preschooler",
     "personalName": "Nico",
+    "location": "Route 5",
+    "desc": "Optional - Multi Battle with Isa",
+    "routeNumber": 1,
     "prizeMoney": 1656,
     "team": [
       {
@@ -3894,6 +4482,9 @@
     "name": "Rising Star Mikey",
     "trainerClass": "risingstar",
     "personalName": "Mikey",
+    "location": "Route 8",
+    "desc": "Optional - None",
+    "routeNumber": 2,
     "prizeMoney": 5120,
     "team": [
       {
@@ -3955,6 +4546,9 @@
     "name": "Up and Coming Nicki",
     "trainerClass": "upandcoming",
     "personalName": "Nicki",
+    "location": "Route 8",
+    "desc": "Optional - None",
+    "routeNumber": 3,
     "prizeMoney": 5120,
     "team": [
       {
@@ -4016,6 +4610,9 @@
     "name": "Backpacker Kiana",
     "trainerClass": "backpacker",
     "personalName": "Kiana",
+    "location": "Route 8",
+    "desc": "Optional - None",
+    "routeNumber": 1,
     "prizeMoney": 3432,
     "team": [
       {
@@ -4064,6 +4661,9 @@
     "name": "Hiker Gabriel",
     "trainerClass": "hiker",
     "personalName": "Gabriel",
+    "location": "Route 5",
+    "desc": "Optional - (North)",
+    "routeNumber": 7,
     "prizeMoney": 3360,
     "team": [
       {
@@ -4112,6 +4712,9 @@
     "name": "Star Trainer Alexis",
     "trainerClass": "startrainer",
     "personalName": "Alexis",
+    "location": "",
+    "desc": "Optional - (North) Reward: UPDATE ME",
+    "routeNumber": 8,
     "prizeMoney": 5440,
     "team": [
       {
@@ -4186,6 +4789,9 @@
     "name": "Scientist Tyrone",
     "trainerClass": "scientist",
     "personalName": "Tyrone",
+    "location": "Route 8",
+    "desc": "Optional - None",
+    "routeNumber": 4,
     "prizeMoney": 4864,
     "team": [
       {
@@ -4247,6 +4853,9 @@
     "name": "Swimmer Beau Lawrence",
     "trainerClass": "swimmerbeau",
     "personalName": "Lawrence",
+    "location": "Hano Beach",
+    "desc": "Optional - None",
+    "routeNumber": 2,
     "prizeMoney": 2240,
     "team": [
       {
@@ -4295,6 +4904,9 @@
     "name": "Swimmer Beau Roddy",
     "trainerClass": "swimmerbeau",
     "personalName": "Roddy",
+    "location": "Hano Beach",
+    "desc": "Optional - None",
+    "routeNumber": 3,
     "prizeMoney": 3200,
     "team": [
       {
@@ -4343,6 +4955,9 @@
     "name": "Swimsuit Alicia",
     "trainerClass": "swimsuit",
     "personalName": "Alicia",
+    "location": "Hano Beach",
+    "desc": "Optional - None",
+    "routeNumber": 3,
     "prizeMoney": 2624,
     "team": [
       {
@@ -4391,6 +5006,9 @@
     "name": "Swimsuit Laura",
     "trainerClass": "swimsuit",
     "personalName": "Laura",
+    "location": "Hano Beach",
+    "desc": "Optional - None",
+    "routeNumber": 5,
     "prizeMoney": 960,
     "team": [
       {
@@ -4452,6 +5070,9 @@
     "name": "Swim Gal Chelsea",
     "trainerClass": "swimgal",
     "personalName": "Chelsea",
+    "location": "Hano Beach",
+    "desc": "Optional - None",
+    "routeNumber": 1,
     "prizeMoney": 2788,
     "team": [
       {
@@ -4500,6 +5121,9 @@
     "name": "Gentleman Smith",
     "trainerClass": "gentleman",
     "personalName": "Smith",
+    "location": "Memorial Hill",
+    "desc": "Optional - None",
+    "routeNumber": 2,
     "prizeMoney": 13680,
     "team": [
       {
@@ -4561,6 +5185,9 @@
     "name": "Madame Sayuri",
     "trainerClass": "madame",
     "personalName": "Sayuri",
+    "location": "Memorial Hill",
+    "desc": "Optional - None",
+    "routeNumber": 3,
     "prizeMoney": 13680,
     "team": [
       {
@@ -4622,6 +5249,9 @@
     "name": "Kindergartener Liam",
     "trainerClass": "kindergartener",
     "personalName": "Liam",
+    "location": "Memorial Hill",
+    "desc": "Optional - None",
+    "routeNumber": 1,
     "prizeMoney": 2664,
     "team": [
       {
@@ -4670,6 +5300,9 @@
     "name": "Punk Girl Melissa",
     "trainerClass": "punkgirl",
     "personalName": "Melissa",
+    "location": "Memorial Hill",
+    "desc": "Optional - None",
+    "routeNumber": 4,
     "prizeMoney": 3952,
     "team": [
       {
@@ -4731,6 +5364,9 @@
     "name": "Worker Vaclav",
     "trainerClass": "worker",
     "personalName": "Vaclav",
+    "location": "Diglett's Tunnel",
+    "desc": "Optional - None",
+    "routeNumber": 3,
     "prizeMoney": 3360,
     "team": [
       {
@@ -4779,6 +5415,9 @@
     "name": "Worker Jeff",
     "trainerClass": "worker",
     "personalName": "Jeff",
+    "location": "Diglett's Tunnel",
+    "desc": "Optional - None",
+    "routeNumber": 2,
     "prizeMoney": 2940,
     "team": [
       {
@@ -4840,6 +5479,9 @@
     "name": "Worker Frank",
     "trainerClass": "worker",
     "personalName": "Frank",
+    "location": "Diglett's Tunnel",
+    "desc": "Optional - None",
+    "routeNumber": 1,
     "prizeMoney": 3080,
     "team": [
       {
@@ -4888,6 +5530,9 @@
     "name": "Black Belt Kenji",
     "trainerClass": "blackbelt",
     "personalName": "Kenji",
+    "location": "Akala Outskirts",
+    "desc": "Optional - None",
+    "routeNumber": 2,
     "prizeMoney": 2432,
     "team": [
       {
@@ -4936,6 +5581,9 @@
     "name": "Fisherman Vernon",
     "trainerClass": "fisherman",
     "personalName": "Vernon",
+    "location": "Akala Outskirts",
+    "desc": "Optional - None",
+    "routeNumber": 1,
     "prizeMoney": 3120,
     "team": [
       {
@@ -4984,6 +5632,9 @@
     "name": "Pokémon Rancher Glenn",
     "trainerClass": "pokmonrancher",
     "personalName": "Glenn",
+    "location": "Paniola Ranch",
+    "desc": "Mandatory - None",
+    "routeNumber": 3,
     "prizeMoney": 2200,
     "team": [
       {
@@ -5045,6 +5696,9 @@
     "name": "Gentleman Gerald",
     "trainerClass": "gentleman",
     "personalName": "Gerald",
+    "location": "Paniola Ranch",
+    "desc": "Mandatory - None",
+    "routeNumber": 4,
     "prizeMoney": 7480,
     "team": [
       {
@@ -5093,32 +5747,35 @@
     "name": "Madame Elizabeth",
     "trainerClass": "madame",
     "personalName": "Elizabeth",
+    "location": "Paniola Ranch",
+    "desc": "Mandatory - None",
+    "routeNumber": 1,
     "prizeMoney": 7920,
     "team": [
       {
-        "name": "Furfrou 5",
+        "name": "Furfrou 8",
         "level": 21,
-        "item": "Black Sludge",
+        "item": "Sitrus Berry",
         "nature": "Sassy",
         "ability": "Fur Coat",
         "moves": [
           "Protect",
           "Headbutt",
           "Helping Hand",
-          "Sludge"
+          "Fire Spin"
         ]
       },
       {
-        "name": "Togetic",
+        "name": "Baltoy",
         "level": 21,
         "item": "Twisted Spoon",
         "nature": "Bold",
-        "ability": "Serene Grace",
+        "ability": "Magic Guard",
         "moves": [
-          "Extrasensory",
-          "Yawn",
-          "Wish",
-          "Disarming Voice"
+          "Speed Swap",
+          "Psybeam",
+          "Wonder Room",
+          "Drill Run"
         ]
       },
       {
@@ -5154,6 +5811,9 @@
     "name": "Fisherman Mike",
     "trainerClass": "fisherman",
     "personalName": "Mike",
+    "location": "Route 9",
+    "desc": "Optional - None",
+    "routeNumber": 2,
     "prizeMoney": 3040,
     "team": [
       {
@@ -5202,6 +5862,9 @@
     "name": "Aether President Lusamine",
     "trainerClass": "aetherpresident",
     "personalName": "Lusamine",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11280,
     "team": [
       {
@@ -5270,6 +5933,9 @@
     "name": "Aether Branch Chief Faba",
     "trainerClass": "aetherbranchchief",
     "personalName": "Faba",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5160,
     "team": [
       {
@@ -5291,6 +5957,9 @@
     "name": "Aether Foundatio Employee",
     "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1968,
     "team": [
       {
@@ -5307,6 +5976,9 @@
     "name": "Aether Foundati Employee",
     "trainerClass": "aetherfoundati",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1968,
     "team": [
       {
@@ -5323,6 +5995,9 @@
     "name": "Aether Foundation2 Employee",
     "trainerClass": "aetherfoundation2",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1968,
     "team": [
       {
@@ -5339,6 +6014,9 @@
     "name": "Team Skull Boss Guzma",
     "trainerClass": "teamskullboss",
     "personalName": "Guzma",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5640,
     "team": [
       {
@@ -5426,6 +6104,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1152,
     "team": [
       {
@@ -5442,6 +6123,9 @@
     "name": "Trial Captain Lana",
     "trainerClass": "trialcaptain",
     "personalName": "Lana",
+    "location": "Brooklet Hill",
+    "desc": "Postgame Boss - Lana rematches you here.",
+    "routeNumber": 7,
     "prizeMoney": 7200,
     "team": [
       {
@@ -5488,6 +6172,9 @@
     "name": "Trial Captain Mallow",
     "trainerClass": "trialcaptain",
     "personalName": "Mallow",
+    "location": "Lush Jungle",
+    "desc": "Postgame Boss - Mallow rematch",
+    "routeNumber": 3,
     "prizeMoney": 7200,
     "team": [
       {
@@ -5533,6 +6220,9 @@
     "name": "Elite Four Acerola",
     "trainerClass": "elitefour",
     "personalName": "Acerola",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11400,
     "team": [
       {
@@ -5603,6 +6293,9 @@
     "name": "Elite Four Olivia",
     "trainerClass": "elitefour",
     "personalName": "Olivia",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11400,
     "team": [
       {
@@ -5670,6 +6363,9 @@
     "name": "Ula'ula Kahuna Nanu",
     "trainerClass": "ulaulakahuna",
     "personalName": "Nanu",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 7040,
     "team": [
       {
@@ -5710,10 +6406,103 @@
     ]
   },
   {
+    "id": "155",
+    "name": "Top Golfer Kahili",
+    "trainerClass": "topgolfer",
+    "personalName": "Kahili",
+    "location": "Ten Carat Hollow",
+    "desc": "Miniboss - Reward: Flyinium Z",
+    "routeNumber": 1,
+    "prizeMoney": 4200,
+    "team": [
+      {
+        "name": "Trumbeak",
+        "level": 23,
+        "item": "Charti Berry",
+        "nature": "Jolly",
+        "ability": "Skill Link",
+        "moves": [
+          "Flame Burst",
+          "Fury Swipes",
+          "Pluck",
+          "Tailwind"
+        ]
+      },
+      {
+        "name": "Gligar",
+        "level": 22,
+        "item": "Adrenaline Orb",
+        "nature": "Adamant",
+        "ability": "Hyper Cutter",
+        "moves": [
+          "Poison Tail",
+          "Taunt",
+          "Bug Bite",
+          "Bulldoze"
+        ]
+      },
+      {
+        "name": "Murkrow",
+        "level": 22,
+        "item": "Flyinium Z",
+        "nature": "Jolly",
+        "ability": "Prankster",
+        "moves": [
+          "Slink Strike",
+          "Mirror Move",
+          "Pluck",
+          "Tailwind"
+        ]
+      },
+      {
+        "name": "Woobat",
+        "level": 23,
+        "item": "Ganlon Berry",
+        "nature": "Jolly",
+        "ability": "Simple",
+        "moves": [
+          "Meditate",
+          "Heart Stamp",
+          "Aerial Ace",
+          "Roost"
+        ]
+      },
+      {
+        "name": "Togetic",
+        "level": 21,
+        "item": "Shell Bell",
+        "nature": "Quiet",
+        "ability": "Super Luck",
+        "moves": [
+          "Extrasensory",
+          "Follow Me",
+          "Wish",
+          "Disarming Voice"
+        ]
+      },
+      {
+        "name": "Minior 4",
+        "level": 21,
+        "item": "Rocky Helmet",
+        "nature": "Adamant",
+        "ability": "Shields Down",
+        "moves": [
+          "Wide Guard",
+          "Rollout",
+          "Defense Curl",
+          "Aerial Ace"
+        ]
+      }
+    ]
+  },
+  {
     "id": "156",
     "name": "Elite Four Kahili",
     "trainerClass": "elitefour",
     "personalName": "Kahili",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11400,
     "team": [
       {
@@ -5784,6 +6573,9 @@
     "name": "Pokémon Trainer Red",
     "trainerClass": "pokmontrainer",
     "personalName": "Red",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 19600,
     "team": [
       {
@@ -5866,6 +6658,9 @@
     "name": "Pokémon Trainer Blue",
     "trainerClass": "pokmontrainer",
     "personalName": "Blue",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 19320,
     "team": [
       {
@@ -5947,6 +6742,9 @@
     "name": "Putter Alan",
     "trainerClass": "putter",
     "personalName": "Alan",
+    "location": "Route 8",
+    "desc": "Optional - None",
+    "routeNumber": 7,
     "prizeMoney": 4356,
     "team": [
       {
@@ -5994,6 +6792,9 @@
     "name": "Golfer Maile",
     "trainerClass": "golfer",
     "personalName": "Maile",
+    "location": "Route 8",
+    "desc": "Optional - None",
+    "routeNumber": 6,
     "prizeMoney": 4620,
     "team": [
       {
@@ -6041,6 +6842,9 @@
     "name": "Businesswoman Kristen",
     "trainerClass": "businesswoman",
     "personalName": "Kristen",
+    "location": "Hau'oli City",
+    "desc": "Buffet - These trainers appear in the Mall's buffet until becoming champion.",
+    "routeNumber": 0,
     "prizeMoney": 2000,
     "team": [
       {
@@ -6072,6 +6876,9 @@
     "name": "Cop Mitchell",
     "trainerClass": "cop",
     "personalName": "Mitchell",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1760,
     "team": [
       {
@@ -6120,12 +6927,15 @@
     "name": "Sightseer Mariah",
     "trainerClass": "sightseer",
     "personalName": "Mariah",
+    "location": "Wela Volcano",
+    "desc": "Optional - None",
+    "routeNumber": 1,
     "prizeMoney": 1920,
     "team": [
       {
         "name": "Persian",
         "level": 32,
-        "item": "Amulet Coin",
+        "item": "Steel Gem",
         "nature": "Hasty",
         "ability": "Technician",
         "moves": [
@@ -6136,9 +6946,22 @@
         ]
       },
       {
+        "name": "Kangaskhan",
+        "level": 30,
+        "item": "Rock Gem",
+        "nature": "Hasty",
+        "ability": "Scrappy",
+        "moves": [
+          "Low Kick",
+          "Crush Claw",
+          "Comet Punch",
+          "Chip Away"
+        ]
+      },
+      {
         "name": "Raticate",
         "level": 32,
-        "item": "Lucky Egg",
+        "item": "Dark Gem",
         "nature": "Naive",
         "ability": "Guts",
         "moves": [
@@ -6155,6 +6978,9 @@
     "name": "Cook Carver",
     "trainerClass": "cook",
     "personalName": "Carver",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 1600,
     "team": [
       {
@@ -6186,6 +7012,9 @@
     "name": "Janitor Melvin",
     "trainerClass": "janitor",
     "personalName": "Melvin",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1720,
     "team": [
       {
@@ -6247,6 +7076,9 @@
     "name": "Dancer Cara",
     "trainerClass": "dancer",
     "personalName": "Cara",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1760,
     "team": [
       {
@@ -6268,6 +7100,9 @@
     "name": "Veteran Leon",
     "trainerClass": "veteran",
     "personalName": "Leon",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5192,
     "team": [
       {
@@ -6310,6 +7145,9 @@
     "name": "Virtuoso Sheri",
     "trainerClass": "virtuoso",
     "personalName": "Sheri",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5544,
     "team": [
       {
@@ -6351,11 +7189,14 @@
     "name": "Bellhop Jody",
     "trainerClass": "bellhop",
     "personalName": "Jody",
-    "prizeMoney": 1840,
+    "location": "Route 4",
+    "desc": "Mandatory - None",
+    "routeNumber": 1,
+    "prizeMoney": 1932,
     "team": [
       {
         "name": "Fomantis",
-        "level": 19,
+        "level": 20,
         "item": "Miracle Seed",
         "nature": "Lonely",
         "ability": "Contrary",
@@ -6380,16 +7221,29 @@
         ]
       },
       {
-        "name": "Skitty",
+        "name": "Darumaka",
         "level": 20,
-        "item": "Pecha Berry",
+        "item": "Persim Berry",
         "nature": "Lax",
-        "ability": "Normalize",
+        "ability": "Inner Focus",
         "moves": [
-          "Natural Gift",
-          "Fake Out",
-          "Covet",
-          "Charm"
+          "Facade",
+          "Rage",
+          "Encore",
+          "Flame Wheel"
+        ]
+      },
+      {
+        "name": "Starly",
+        "level": 21,
+        "item": "Cheri Berry",
+        "nature": "Naughty",
+        "ability": "Reckless",
+        "moves": [
+          "Double Hit",
+          "Endeavor",
+          "Aerial Ace",
+          "Quick Attack"
         ]
       }
     ]
@@ -6399,6 +7253,9 @@
     "name": "Skull Enforcer Gladion",
     "trainerClass": "skullenforcer",
     "personalName": "Gladion",
+    "location": "Royal Avenue",
+    "desc": "Story - Battle Royal",
+    "routeNumber": 2,
     "prizeMoney": 2560,
     "team": [
       {
@@ -6418,6 +7275,9 @@
     "name": "Hiker David",
     "trainerClass": "hiker",
     "personalName": "David",
+    "location": "Wela Caldera",
+    "desc": "Story - Trial battle",
+    "routeNumber": 1,
     "prizeMoney": 3600,
     "team": [
       {
@@ -6453,6 +7313,9 @@
     "name": "Star Trainer Tori",
     "trainerClass": "startrainer",
     "personalName": "Tori",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 2800,
     "team": [
       {
@@ -6485,6 +7348,9 @@
     "name": "Star Trainer Tori",
     "trainerClass": "startrainer",
     "personalName": "Tori",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 3740,
     "team": [
       {
@@ -6500,6 +7366,9 @@
     "name": "Gentleman Ronald",
     "trainerClass": "gentleman",
     "personalName": "Ronald",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 7200,
     "team": [
       {
@@ -6531,6 +7400,9 @@
     "name": "Gentleman Ronald",
     "trainerClass": "gentleman",
     "personalName": "Ronald",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 11000,
     "team": [
       {
@@ -6546,6 +7418,9 @@
     "name": "Cook Carver",
     "trainerClass": "cook",
     "personalName": "Carver",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 2200,
     "team": [
       {
@@ -6562,6 +7437,9 @@
     "name": "Madame Kathleen",
     "trainerClass": "madame",
     "personalName": "Kathleen",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 7600,
     "team": [
       {
@@ -6593,6 +7471,9 @@
     "name": "Madame Kathleen",
     "trainerClass": "madame",
     "personalName": "Kathleen",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 11000,
     "team": [
       {
@@ -6608,6 +7489,9 @@
     "name": "Black Belt Walter",
     "trainerClass": "blackbelt",
     "personalName": "Walter",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 2160,
     "team": [
       {
@@ -6639,6 +7523,9 @@
     "name": "Black Belt Walter",
     "trainerClass": "blackbelt",
     "personalName": "Walter",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 1760,
     "team": [
       {
@@ -6655,6 +7542,9 @@
     "name": "Pokémon Breeder Savannah",
     "trainerClass": "pokmonbreeder",
     "personalName": "Savannah",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 1760,
     "team": [
       {
@@ -6686,6 +7576,9 @@
     "name": "Pokémon Breeder Savannah",
     "trainerClass": "pokmonbreeder",
     "personalName": "Savannah",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 2200,
     "team": [
       {
@@ -6701,6 +7594,9 @@
     "name": "Office Worker Cody",
     "trainerClass": "officeworker",
     "personalName": "Cody",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 1840,
     "team": [
       {
@@ -6732,6 +7628,9 @@
     "name": "Office Worker Cody",
     "trainerClass": "officeworker",
     "personalName": "Cody",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 2200,
     "team": [
       {
@@ -6747,6 +7646,9 @@
     "name": "Businesswoman Kristen",
     "trainerClass": "businesswoman",
     "personalName": "Kristen",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 2200,
     "team": [
       {
@@ -6762,6 +7664,9 @@
     "name": "Youngster Kai",
     "trainerClass": "youngster",
     "personalName": "Kai",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 1200,
     "team": [
       {
@@ -6793,6 +7698,9 @@
     "name": "Youngster Kai",
     "trainerClass": "youngster",
     "personalName": "Kai",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 1100,
     "team": [
       {
@@ -6808,6 +7716,9 @@
     "name": "Preschooler Hannah",
     "trainerClass": "preschooler",
     "personalName": "Hannah",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 720,
     "team": [
       {
@@ -6839,6 +7750,9 @@
     "name": "Preschooler Hannah",
     "trainerClass": "preschooler",
     "personalName": "Hannah",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 660,
     "team": [
       {
@@ -6854,6 +7768,9 @@
     "name": "Rising Star Kainoa",
     "trainerClass": "risingstar",
     "personalName": "Kainoa",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 1920,
     "team": [
       {
@@ -6885,6 +7802,9 @@
     "name": "Rising Star Kainoa",
     "trainerClass": "risingstar",
     "personalName": "Kainoa",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 2640,
     "team": [
       {
@@ -6900,6 +7820,9 @@
     "name": "Beauty Carolyn",
     "trainerClass": "beauty",
     "personalName": "Carolyn",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 1360,
     "team": [
       {
@@ -6931,6 +7854,9 @@
     "name": "Beauty Carolyn",
     "trainerClass": "beauty",
     "personalName": "Carolyn",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 1760,
     "team": [
       {
@@ -6946,6 +7872,9 @@
     "name": "Lass Salla",
     "trainerClass": "lass",
     "personalName": "Salla",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 1200,
     "team": [
       {
@@ -6977,6 +7906,9 @@
     "name": "Lass Salla",
     "trainerClass": "lass",
     "personalName": "Salla",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 1320,
     "team": [
       {
@@ -6992,6 +7924,9 @@
     "name": "Trial Captain Ilima",
     "trainerClass": "trialcaptain",
     "personalName": "Ilima",
+    "location": "Hau'oli City",
+    "desc": "Boss - Ilima | Litten Chosen",
+    "routeNumber": 2,
     "prizeMoney": 3120,
     "team": [
       {
@@ -7008,16 +7943,16 @@
         ]
       },
       {
-        "name": "Shuppet",
-        "level": 11,
-        "item": "Ghost Gem",
-        "nature": "Naughty",
-        "ability": "Insomnia",
+        "name": "Minccino",
+        "level": 10,
+        "item": "Lum Berry",
+        "nature": "Quirky",
+        "ability": "Cute Charm",
         "moves": [
-          "Lick",
-          "Torment",
-          "Tackle",
-          "Grudge"
+          "Helping Hand",
+          "Tickle",
+          "Attract",
+          "Tackle"
         ]
       },
       {
@@ -7047,16 +7982,16 @@
         ]
       },
       {
-        "name": "Minccino",
-        "level": 10,
-        "item": "Lum Berry",
-        "nature": "Quirky",
-        "ability": "Cute Charm",
+        "name": "Shuppet",
+        "level": 11,
+        "item": "Ghost Gem",
+        "nature": "Naughty",
+        "ability": "Insomnia",
         "moves": [
-          "Helping Hand",
-          "Tickle",
-          "Attract",
-          "Tackle"
+          "Lick",
+          "Torment",
+          "Tackle",
+          "Grudge"
         ]
       },
       {
@@ -7079,6 +8014,9 @@
     "name": "Trial Captain Ilima",
     "trainerClass": "trialcaptain",
     "personalName": "Ilima",
+    "location": "Hau'oli City",
+    "desc": "Boss - Ilima | Popplio Chosen",
+    "routeNumber": 3,
     "prizeMoney": 3120,
     "team": [
       {
@@ -7095,16 +8033,16 @@
         ]
       },
       {
-        "name": "Shuppet",
-        "level": 11,
-        "item": "Ghost Gem",
-        "nature": "Naughty",
-        "ability": "Insomnia",
+        "name": "Minccino",
+        "level": 10,
+        "item": "Lum Berry",
+        "nature": "Quirky",
+        "ability": "Cute Charm",
         "moves": [
-          "Lick",
-          "Torment",
-          "Tackle",
-          "Grudge"
+          "Helping Hand",
+          "Tickle",
+          "Attract",
+          "Tackle"
         ]
       },
       {
@@ -7134,16 +8072,16 @@
         ]
       },
       {
-        "name": "Minccino",
-        "level": 10,
-        "item": "Lum Berry",
-        "nature": "Quirky",
-        "ability": "Cute Charm",
+        "name": "Shuppet",
+        "level": 11,
+        "item": "Ghost Gem",
+        "nature": "Naughty",
+        "ability": "Insomnia",
         "moves": [
-          "Helping Hand",
-          "Tickle",
-          "Attract",
-          "Tackle"
+          "Lick",
+          "Torment",
+          "Tackle",
+          "Grudge"
         ]
       },
       {
@@ -7166,6 +8104,9 @@
     "name": "Tapu's Chosen Hau",
     "trainerClass": "tapuschosen",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2520,
     "team": [
       {
@@ -7253,6 +8194,9 @@
     "name": "Tapu's Chosen Hau",
     "trainerClass": "tapuschosen",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2520,
     "team": [
       {
@@ -7340,6 +8284,9 @@
     "name": "Tapu's Chosen Hau",
     "trainerClass": "tapuschosen",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2520,
     "team": [
       {
@@ -7427,6 +8374,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2580,
     "team": [
       {
@@ -7488,6 +8438,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2580,
     "team": [
       {
@@ -7549,6 +8502,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2580,
     "team": [
       {
@@ -7610,6 +8566,9 @@
     "name": "Team Skull Grunt Grant",
     "trainerClass": "teamskull",
     "personalName": "Grunt Grant",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1440,
     "team": [
       {
@@ -7658,6 +8617,9 @@
     "name": "Team Skull Grunt Bee",
     "trainerClass": "teamskull",
     "personalName": "Grunt Bee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1440,
     "team": [
       {
@@ -7706,6 +8668,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1152,
     "team": [
       {
@@ -7722,6 +8687,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1344,
     "team": [
       {
@@ -7738,6 +8706,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1344,
     "team": [
       {
@@ -7754,6 +8725,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1440,
     "team": [
       {
@@ -7798,6 +8772,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1152,
     "team": [
       {
@@ -7814,6 +8791,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1152,
     "team": [
       {
@@ -7830,6 +8810,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1440,
     "team": [
       {
@@ -7846,6 +8829,9 @@
     "name": "Team Skull Boss Guzma",
     "trainerClass": "teamskullboss",
     "personalName": "Guzma",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4920,
     "team": [
       {
@@ -7888,6 +8874,9 @@
     "name": "Team Skull Boss Guzma",
     "trainerClass": "teamskullboss",
     "personalName": "Guzma",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5400,
     "team": [
       {
@@ -7943,6 +8932,9 @@
     "name": "Kindergartener Hunter",
     "trainerClass": "kindergartener",
     "personalName": "Hunter",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 636,
     "team": [
       {
@@ -8030,6 +9022,9 @@
     "name": "Team Skull Admin Plumeria",
     "trainerClass": "teamskulladmin",
     "personalName": "Plumeria",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 6600,
     "team": [
       {
@@ -8117,6 +9112,9 @@
     "name": "Skull Enforcer Gladion",
     "trainerClass": "skullenforcer",
     "personalName": "Gladion",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3440,
     "team": [
       {
@@ -8158,6 +9156,9 @@
     "name": "Pokémon Trainer Gladion",
     "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 8480,
     "team": [
       {
@@ -8213,6 +9214,9 @@
     "name": "Aether Branch Chief Faba",
     "trainerClass": "aetherbranchchief",
     "personalName": "Faba",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5400,
     "team": [
       {
@@ -8258,6 +9262,9 @@
     "name": "Aether Foundation2 Employee",
     "trainerClass": "aetherfoundation2",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1968,
     "team": [
       {
@@ -8274,6 +9281,9 @@
     "name": "Aether Foundation2 Employee",
     "trainerClass": "aetherfoundation2",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1968,
     "team": [
       {
@@ -8290,6 +9300,9 @@
     "name": "Hiker Calhoun",
     "trainerClass": "hiker",
     "personalName": "Calhoun",
+    "location": "Wela Volcano",
+    "desc": "Optional - None",
+    "routeNumber": 2,
     "prizeMoney": 2480,
     "team": [
       {
@@ -8351,6 +9364,9 @@
     "name": "Ace Trainer Jim",
     "trainerClass": "acetrainer",
     "personalName": "Jim",
+    "location": "Wela Volcano",
+    "desc": "Optional - Reward: ADD ME",
+    "routeNumber": 3,
     "prizeMoney": 4340,
     "team": [
       {
@@ -8412,6 +9428,9 @@
     "name": "Beauty Andrea",
     "trainerClass": "beauty",
     "personalName": "Andrea",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1408,
     "team": [
       {
@@ -8473,6 +9492,9 @@
     "name": "Star Trainer Karla",
     "trainerClass": "startrainer",
     "personalName": "Karla",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3672,
     "team": [
       {
@@ -8534,6 +9556,9 @@
     "name": "Ace Trainer Yuki",
     "trainerClass": "acetrainer",
     "personalName": "Yuki",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3604,
     "team": [
       {
@@ -8595,6 +9620,9 @@
     "name": "Scientist Jayson",
     "trainerClass": "scientist",
     "personalName": "Jayson",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2352,
     "team": [
       {
@@ -8643,6 +9671,9 @@
     "name": "Fisherman Hisato",
     "trainerClass": "fisherman",
     "personalName": "Hisato",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1632,
     "team": [
       {
@@ -8691,6 +9722,9 @@
     "name": "Aether Foundatio Employee",
     "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1920,
     "team": [
       {
@@ -8714,6 +9748,9 @@
     "name": "Aether Foundati Employee",
     "trainerClass": "aetherfoundati",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1920,
     "team": [
       {
@@ -8737,6 +9774,9 @@
     "name": "Star Trainer Angela",
     "trainerClass": "startrainer",
     "personalName": "Angela",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4012,
     "team": [
       {
@@ -8760,6 +9800,9 @@
     "name": "Star Trainer Junko",
     "trainerClass": "startrainer",
     "personalName": "Junko",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3264,
     "team": [
       {
@@ -8783,6 +9826,9 @@
     "name": "Ace Trainer Aimee",
     "trainerClass": "acetrainer",
     "personalName": "Aimee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3196,
     "team": [
       {
@@ -8803,6 +9849,9 @@
     "name": "Ace Trainer Jackson",
     "trainerClass": "acetrainer",
     "personalName": "Jackson",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3876,
     "team": [
       {
@@ -8833,6 +9882,9 @@
     "name": "Ace Trainer Hiroshi",
     "trainerClass": "acetrainer",
     "personalName": "Hiroshi",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3264,
     "team": [
       {
@@ -8856,6 +9908,9 @@
     "name": "Ace Trainer Kent",
     "trainerClass": "acetrainer",
     "personalName": "Kent",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3196,
     "team": [
       {
@@ -8876,6 +9931,9 @@
     "name": "Preschooler Nancy",
     "trainerClass": "preschooler",
     "personalName": "Nancy",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 516,
     "team": [
       {
@@ -8924,6 +9982,9 @@
     "name": "Swimmer Beau Keoni",
     "trainerClass": "swimmerbeau",
     "personalName": "Keoni",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1224,
     "team": [
       {
@@ -8985,6 +10046,9 @@
     "name": "Swimmer Jake",
     "trainerClass": "swimmer",
     "personalName": "Jake",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1296,
     "team": [
       {
@@ -9020,6 +10084,9 @@
     "name": "Swimmer Beau Jared",
     "trainerClass": "swimmerbeau",
     "personalName": "Jared",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1296,
     "team": [
       {
@@ -9055,6 +10122,9 @@
     "name": "Black Belt Roy",
     "trainerClass": "blackbelt",
     "personalName": "Roy",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1792,
     "team": [
       {
@@ -9071,6 +10141,9 @@
     "name": "Black Belt Tracy",
     "trainerClass": "blackbelt",
     "personalName": "Tracy",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -9094,6 +10167,9 @@
     "name": "Black Belt Curtis",
     "trainerClass": "blackbelt",
     "personalName": "Curtis",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1504,
     "team": [
       {
@@ -9110,6 +10186,9 @@
     "name": "Black Belt Terry",
     "trainerClass": "blackbelt",
     "personalName": "Terry",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1504,
     "team": [
       {
@@ -9126,6 +10205,9 @@
     "name": "Sightseer Akali",
     "trainerClass": "sightseer",
     "personalName": "Akali",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2580,
     "team": [
       {
@@ -9174,6 +10256,9 @@
     "name": "Sightseer Jamie",
     "trainerClass": "sightseer",
     "personalName": "Jamie",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2640,
     "team": [
       {
@@ -9197,6 +10282,9 @@
     "name": "Sightseer Noriko",
     "trainerClass": "sightseer",
     "personalName": "Noriko",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3540,
     "team": [
       {
@@ -9220,6 +10308,9 @@
     "name": "Tourist Mitch",
     "trainerClass": "tourist",
     "personalName": "Mitch",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2580,
     "team": [
       {
@@ -9268,6 +10359,9 @@
     "name": "Sightseer Devin",
     "trainerClass": "sightseer",
     "personalName": "Devin",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3540,
     "team": [
       {
@@ -9298,6 +10392,9 @@
     "name": "Scientist Kyle",
     "trainerClass": "scientist",
     "personalName": "Kyle",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2928,
     "team": [
       {
@@ -9321,6 +10418,9 @@
     "name": "Scientist Ikaika",
     "trainerClass": "scientist",
     "personalName": "Ikaika",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2208,
     "team": [
       {
@@ -9337,6 +10437,9 @@
     "name": "Collector Todd",
     "trainerClass": "collector",
     "personalName": "Todd",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1440,
     "team": [
       {
@@ -9398,6 +10501,9 @@
     "name": "Collector Raymond",
     "trainerClass": "collector",
     "personalName": "Raymond",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1408,
     "team": [
       {
@@ -9421,6 +10527,9 @@
     "name": "Hiker Thomas",
     "trainerClass": "hiker",
     "personalName": "Thomas",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1440,
     "team": [
       {
@@ -9469,6 +10578,9 @@
     "name": "Hiker Ryan",
     "trainerClass": "hiker",
     "personalName": "Ryan",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1824,
     "team": [
       {
@@ -9485,6 +10597,9 @@
     "name": "Hiker Zachary",
     "trainerClass": "hiker",
     "personalName": "Zachary",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1472,
     "team": [
       {
@@ -9508,6 +10623,9 @@
     "name": "Hiker Travis",
     "trainerClass": "hiker",
     "personalName": "Travis",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1888,
     "team": [
       {
@@ -9531,6 +10649,9 @@
     "name": "Lass Rylee",
     "trainerClass": "lass",
     "personalName": "Rylee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 840,
     "team": [
       {
@@ -9554,6 +10675,9 @@
     "name": "Backpacker Yuho",
     "trainerClass": "backpacker",
     "personalName": "Yuho",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1464,
     "team": [
       {
@@ -9570,6 +10694,9 @@
     "name": "Backpacker Perdy",
     "trainerClass": "backpacker",
     "personalName": "Perdy",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1080,
     "team": [
       {
@@ -9586,6 +10713,9 @@
     "name": "Backpacker Maria",
     "trainerClass": "backpacker",
     "personalName": "Maria",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1416,
     "team": [
       {
@@ -9602,6 +10732,9 @@
     "name": "Swimmer Yumi",
     "trainerClass": "swimmer",
     "personalName": "Yumi",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1296,
     "team": [
       {
@@ -9637,6 +10770,9 @@
     "name": "Swim Gal Alexandria",
     "trainerClass": "swimgal",
     "personalName": "Alexandria",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1296,
     "team": [
       {
@@ -9672,6 +10808,9 @@
     "name": "Punk Guy Adam",
     "trainerClass": "punkguy",
     "personalName": "Adam",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1472,
     "team": [
       {
@@ -9695,6 +10834,9 @@
     "name": "Punk Girl Anna",
     "trainerClass": "punkgirl",
     "personalName": "Anna",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1472,
     "team": [
       {
@@ -9711,6 +10853,9 @@
     "name": "Veteran Tsunekazu",
     "trainerClass": "veteran",
     "personalName": "Tsunekazu",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5544,
     "team": [
       {
@@ -9754,6 +10899,9 @@
     "name": "Veteran Eric",
     "trainerClass": "veteran",
     "personalName": "Eric",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4224,
     "team": [
       {
@@ -9805,6 +10953,9 @@
     "name": "Veteran Harry",
     "trainerClass": "veteran",
     "personalName": "Harry",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4136,
     "team": [
       {
@@ -9835,6 +10986,9 @@
     "name": "Veteran Nobuko",
     "trainerClass": "veteran",
     "personalName": "Nobuko",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5544,
     "team": [
       {
@@ -9880,6 +11034,9 @@
     "name": "Virtuoso Heather",
     "trainerClass": "virtuoso",
     "personalName": "Heather",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4224,
     "team": [
       {
@@ -9924,6 +11081,9 @@
     "name": "Virtuoso Lynn",
     "trainerClass": "virtuoso",
     "personalName": "Lynn",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4224,
     "team": [
       {
@@ -9966,6 +11126,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1152,
     "team": [
       {
@@ -9982,6 +11145,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1152,
     "team": [
       {
@@ -10005,6 +11171,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1216,
     "team": [
       {
@@ -10028,6 +11197,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1216,
     "team": [
       {
@@ -10051,6 +11223,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1216,
     "team": [
       {
@@ -10081,6 +11256,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1184,
     "team": [
       {
@@ -10097,6 +11275,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1184,
     "team": [
       {
@@ -10113,6 +11294,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1184,
     "team": [
       {
@@ -10136,6 +11320,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1152,
     "team": [
       {
@@ -10159,6 +11346,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1216,
     "team": [
       {
@@ -10175,6 +11365,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1216,
     "team": [
       {
@@ -10191,6 +11384,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1216,
     "team": [
       {
@@ -10214,6 +11410,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1184,
     "team": [
       {
@@ -10237,6 +11436,9 @@
     "name": "Up and Coming Leilani",
     "trainerClass": "upandcoming",
     "personalName": "Leilani",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2400,
     "team": [
       {
@@ -10298,6 +11500,9 @@
     "name": "Rising Star Matthew",
     "trainerClass": "risingstar",
     "personalName": "Matthew",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2400,
     "team": [
       {
@@ -10359,6 +11564,9 @@
     "name": "Cook Fil",
     "trainerClass": "cook",
     "personalName": "Fil",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1760,
     "team": [
       {
@@ -10384,6 +11592,9 @@
     "name": "Black Belt Guy",
     "trainerClass": "blackbelt",
     "personalName": "Guy",
+    "location": "Route 8",
+    "desc": "Optional - Multi Battle with Lee",
+    "routeNumber": 8,
     "prizeMoney": 3960,
     "team": [
       {
@@ -10419,6 +11630,9 @@
     "name": "Preschooler Lee",
     "trainerClass": "preschooler",
     "personalName": "Lee",
+    "location": "Route 8",
+    "desc": "Optional - Multi Battle with Guy",
+    "routeNumber": 9,
     "prizeMoney": 1540,
     "team": [
       {
@@ -10441,11 +11655,14 @@
     "name": "Cook Ernie",
     "trainerClass": "cook",
     "personalName": "Ernie",
-    "prizeMoney": 2000,
+    "location": "Route 4",
+    "desc": "Optional - Reward: Silver Powder and access to the Berry Tree",
+    "routeNumber": 5,
+    "prizeMoney": 2200,
     "team": [
       {
         "name": "Spewpa",
-        "level": 20,
+        "level": 21,
         "item": "Berry Juice",
         "nature": "Relaxed",
         "ability": "Friend Guard",
@@ -10458,7 +11675,7 @@
       },
       {
         "name": "Cherubi",
-        "level": 20,
+        "level": 22,
         "item": "Leftovers",
         "nature": "Calm",
         "ability": "Chlorophyll",
@@ -10471,7 +11688,7 @@
       },
       {
         "name": "Paras",
-        "level": 20,
+        "level": 22,
         "item": "Leftovers",
         "nature": "Impish",
         "ability": "Immunity",
@@ -10484,7 +11701,7 @@
       },
       {
         "name": "Swirlix",
-        "level": 20,
+        "level": 22,
         "item": "Berry Juice",
         "nature": "Relaxed",
         "ability": "Unburden",
@@ -10502,6 +11719,9 @@
     "name": "Dancer Maika",
     "trainerClass": "dancer",
     "personalName": "Maika",
+    "location": "Route 6",
+    "desc": "Optional - None",
+    "routeNumber": 5,
     "prizeMoney": 2592,
     "team": [
       {
@@ -10561,6 +11781,9 @@
     "name": "Cop Haruki",
     "trainerClass": "cop",
     "personalName": "Haruki",
+    "location": "Route 9",
+    "desc": "Optional - None",
+    "routeNumber": 1,
     "prizeMoney": 3700,
     "team": [
       {
@@ -10622,6 +11845,9 @@
     "name": "Swimsuit Sara",
     "trainerClass": "swimsuit",
     "personalName": "Sara",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1176,
     "team": [
       {
@@ -10657,6 +11883,9 @@
     "name": "Collector Kawika",
     "trainerClass": "collector",
     "personalName": "Kawika",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1632,
     "team": [
       {
@@ -10718,6 +11947,9 @@
     "name": "Scientist Reid",
     "trainerClass": "scientist",
     "personalName": "Reid",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1680,
     "team": [
       {
@@ -10741,6 +11973,9 @@
     "name": "Dancer Mireille",
     "trainerClass": "dancer",
     "personalName": "Mireille",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1440,
     "team": [
       {
@@ -10757,6 +11992,9 @@
     "name": "Businesswoman Jessica",
     "trainerClass": "businesswoman",
     "personalName": "Jessica",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1840,
     "team": [
       {
@@ -10792,6 +12030,9 @@
     "name": "Aether Foundatio Employee",
     "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1920,
     "team": [
       {
@@ -10822,6 +12063,9 @@
     "name": "Aether Foundatio Employee",
     "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1920,
     "team": [
       {
@@ -10838,6 +12082,9 @@
     "name": "Aether Foundati Employee",
     "trainerClass": "aetherfoundati",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1920,
     "team": [
       {
@@ -10861,6 +12108,9 @@
     "name": "Elite Four Acerola",
     "trainerClass": "elitefour",
     "personalName": "Acerola",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 13200,
     "team": [
       {
@@ -10931,6 +12181,9 @@
     "name": "Elite Four Olivia",
     "trainerClass": "elitefour",
     "personalName": "Olivia",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 13200,
     "team": [
       {
@@ -11001,6 +12254,9 @@
     "name": "Elite Four Kahili",
     "trainerClass": "elitefour",
     "personalName": "Kahili",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 13200,
     "team": [
       {
@@ -11071,6 +12327,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11200,
     "team": [
       {
@@ -11152,6 +12411,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11200,
     "team": [
       {
@@ -11233,6 +12495,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11200,
     "team": [
       {
@@ -11314,6 +12579,9 @@
     "name": "Island Kahuna Hapu",
     "trainerClass": "islandkahuna",
     "personalName": "Hapu",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11040,
     "team": [
       {
@@ -11384,6 +12652,9 @@
     "name": "Vaporeon User Polly",
     "trainerClass": "vaporeonuser",
     "personalName": "Polly",
+    "location": "Schoolyard",
+    "desc": "Postgame Boss - This is the Vaporeon user for the Eevee User sidequest.",
+    "routeNumber": 10,
     "prizeMoney": 11000,
     "team": [
       {
@@ -11400,6 +12671,9 @@
     "name": "Jolteon User Jane",
     "trainerClass": "jolteonuser",
     "personalName": "Jane",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11000,
     "team": [
       {
@@ -11416,6 +12690,9 @@
     "name": "Glaceon User Rea",
     "trainerClass": "glaceonuser",
     "personalName": "Rea",
+    "location": "Iki Town",
+    "desc": "Postgame Boss - Eevee User Quest",
+    "routeNumber": 4,
     "prizeMoney": 11000,
     "team": [
       {
@@ -11432,6 +12709,9 @@
     "name": "Flareon User Chad",
     "trainerClass": "flareonuser",
     "personalName": "Chad",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2200,
     "team": [
       {
@@ -11448,6 +12728,9 @@
     "name": "Espeon User Ishaan",
     "trainerClass": "espeonuser",
     "personalName": "Ishaan",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2200,
     "team": [
       {
@@ -11464,6 +12747,9 @@
     "name": "Janitor Shawn",
     "trainerClass": "janitor",
     "personalName": "Shawn",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1720,
     "team": [
       {
@@ -11512,6 +12798,9 @@
     "name": "Umbreon User Braiden",
     "trainerClass": "umbreonuser",
     "personalName": "Braiden",
+    "location": "Hau'oli Cemetery",
+    "desc": "Postgame Boss - Umbreon User for the Eevee user Quest",
+    "routeNumber": 4,
     "prizeMoney": 11000,
     "team": [
       {
@@ -11528,6 +12817,9 @@
     "name": "Leafeon User Linnea",
     "trainerClass": "leafeonuser",
     "personalName": "Linnea",
+    "location": "Hano Beach",
+    "desc": "Postgame Boss - Leafeon user for the Eevee user Quest",
+    "routeNumber": 7,
     "prizeMoney": 1320,
     "team": [
       {
@@ -11544,6 +12836,9 @@
     "name": "Sylveon User Kira",
     "trainerClass": "sylveonuser",
     "personalName": "Kira",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 648,
     "team": [
       {
@@ -11560,6 +12855,9 @@
     "name": "Preschooler Harper",
     "trainerClass": "preschooler",
     "personalName": "Harper",
+    "location": "Konikoni City",
+    "desc": "Postgame Miniboss - Lana's Sisters",
+    "routeNumber": 2,
     "prizeMoney": 672,
     "team": [
       {
@@ -11580,6 +12878,9 @@
     "name": "Preschooler Sarah",
     "trainerClass": "preschooler",
     "personalName": "Sarah",
+    "location": "Konikoni City",
+    "desc": "Postgame Miniboss - Lana's Sisters",
+    "routeNumber": 3,
     "prizeMoney": 672,
     "team": [
       {
@@ -11600,6 +12901,9 @@
     "name": "Swimmer Ashlyn",
     "trainerClass": "swimmer",
     "personalName": "Ashlyn",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1176,
     "team": [
       {
@@ -11618,6 +12922,9 @@
     "name": "Swimmer Kylie",
     "trainerClass": "swimmer",
     "personalName": "Kylie",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1152,
     "team": [
       {
@@ -11636,6 +12943,9 @@
     "name": "Golfer Tara",
     "trainerClass": "golfer",
     "personalName": "Tara",
+    "location": "Hano Grand Resort",
+    "desc": "Optional - Multi Battle with Tina | Reward: TM45 Air Slash from the Machamp after beating them.",
+    "routeNumber": 2,
     "prizeMoney": 4680,
     "team": [
       {
@@ -11671,6 +12981,9 @@
     "name": "Golfer Tina",
     "trainerClass": "golfer",
     "personalName": "Tina",
+    "location": "Hano Grand Resort",
+    "desc": "Optional - Multi Battle with Tara",
+    "routeNumber": 3,
     "prizeMoney": 4680,
     "team": [
       {
@@ -11706,6 +13019,9 @@
     "name": "Eevee User Kagetora",
     "trainerClass": "eeveeuser",
     "personalName": "Kagetora",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5016,
     "team": [
       {
@@ -11722,6 +13038,9 @@
     "name": "Principal Asuka",
     "trainerClass": "principal",
     "personalName": "Asuka",
+    "location": "Schoolyard",
+    "desc": "Postgame Miniboss - None",
+    "routeNumber": 12,
     "prizeMoney": 5472,
     "team": [
       {
@@ -11767,6 +13086,9 @@
     "name": "Ace Trainer Chase",
     "trainerClass": "acetrainer",
     "personalName": "Chase",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2924,
     "team": [
       {
@@ -11841,6 +13163,9 @@
     "name": "Black Belt Duane",
     "trainerClass": "blackbelt",
     "personalName": "Duane",
+    "location": "Schoolyard",
+    "desc": "Postgame - None",
+    "routeNumber": 11,
     "prizeMoney": 1792,
     "team": [
       {
@@ -11864,6 +13189,9 @@
     "name": "Tourist Marcus",
     "trainerClass": "tourist",
     "personalName": "Marcus",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3300,
     "team": [
       {
@@ -11880,6 +13208,9 @@
     "name": "Pokémon Rancher Wesley",
     "trainerClass": "pokmonrancher",
     "personalName": "Wesley",
+    "location": "Paniola Ranch",
+    "desc": "Optional - Reward: Scope Lens",
+    "routeNumber": 2,
     "prizeMoney": 2116,
     "team": [
       {
@@ -11915,6 +13246,9 @@
     "name": "Collector Andrew",
     "trainerClass": "collector",
     "personalName": "Andrew",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1600,
     "team": [
       {
@@ -11989,71 +13323,74 @@
     "name": "Challenge Guide Bronson",
     "trainerClass": "challengeguide",
     "personalName": "Bronson",
-    "prizeMoney": 14700,
+    "location": "Route 5",
+    "desc": "Miniboss - Route 5 (South)'s Z-Trainer. He can only be battled after beating every other trainer on the southern half. Reward: TM Nature Power",
+    "routeNumber": 5,
+    "prizeMoney": 10500,
     "team": [
       {
         "name": "Carnivine",
-        "level": 35,
+        "level": 25,
         "item": "Grassy Seed",
         "nature": "Sassy",
         "ability": "Grassy Surge",
         "moves": [
+          "Clamp",
+          "Leech Seed",
           "Nature Power",
-          "Stockpile",
-          "Trailblaze",
-          "Swallow"
+          "Ingrain"
         ]
       },
       {
-        "name": "Gogoat",
-        "level": 36,
+        "name": "Wormadam",
+        "level": 25,
         "item": "Grassium Z",
-        "nature": "Brave",
+        "nature": "Quiet",
         "ability": "Grass Pelt",
         "moves": [
+          "Electroweb",
           "Nature Power",
-          "Spiky Shield",
-          "Rototiller",
-          "Trample"
+          "Protect",
+          "Hidden Power"
         ]
       },
       {
-        "name": "Zebstrika",
-        "level": 35,
+        "name": "Stunfisk",
+        "level": 24,
         "item": "Electric Seed",
-        "nature": "Naive",
+        "nature": "Relaxed",
         "ability": "Electric Surge",
         "moves": [
           "Protect",
-          "Nature Power",
-          "Trailblaze",
-          "Charge Beam"
+          "Mud Bomb",
+          "Aqua Tail",
+          "Nature Power"
         ]
       },
       {
         "name": "Girafarig",
-        "level": 35,
+        "level": 24,
         "item": "Psychic Seed",
         "nature": "Mild",
         "ability": "Psychic Surge",
         "moves": [
+          "Double Kick",
+          "Swift",
           "Nature Power",
-          "Double Hit",
-          "Trample",
-          "Meditate"
+          "Bite"
         ]
       },
       {
-        "name": "Shiinotic",
-        "level": 35,
+        "name": "Sylveon",
+        "level": 25,
         "item": "Misty Seed",
-        "nature": "Relaxed",
+        "nature": "Bold",
         "ability": "Misty Surge",
         "moves": [
-          "Moonlight",
-          "Giga Drain",
           "Nature Power",
-          "Leech Seed"
+          "Attract",
+          "Charm",
+          "Covet"
         ]
       }
     ]
@@ -12063,6 +13400,9 @@
     "name": "Trial Captain Ilima",
     "trainerClass": "trialcaptain",
     "personalName": "Ilima",
+    "location": "Schoolyard",
+    "desc": "Boss - Ilima battles you here during the Mina Trial Quest",
+    "routeNumber": 9,
     "prizeMoney": 7200,
     "team": [
       {
@@ -12108,6 +13448,9 @@
     "name": "Trial Captain Kiawe",
     "trainerClass": "trialcaptain",
     "personalName": "Kiawe",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 7200,
     "team": [
       {
@@ -12151,6 +13494,9 @@
     "name": "Pokémon Trainer Plumeria",
     "trainerClass": "pokmontrainer",
     "personalName": "Plumeria",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 8040,
     "team": [
       {
@@ -12221,6 +13567,9 @@
     "name": "Shock Captain Sophocles",
     "trainerClass": "shockcaptain",
     "personalName": "Sophocles",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 8040,
     "team": [
       {
@@ -12290,6 +13639,9 @@
     "name": "Dragon Master Ryuki",
     "trainerClass": "dragonmaster",
     "personalName": "Ryuki",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 8040,
     "team": [
       {
@@ -12359,6 +13711,9 @@
     "name": "Aether Foundation Faba",
     "trainerClass": "aetherfoundation",
     "personalName": "Faba",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 15120,
     "team": [
       {
@@ -12428,6 +13783,9 @@
     "name": "Kalosian Man Dexio",
     "trainerClass": "kalosianman",
     "personalName": "Dexio",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 8400,
     "team": [
       {
@@ -12498,6 +13856,9 @@
     "name": "Pokémon Trainer Gladion",
     "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 8800,
     "team": [
       {
@@ -12553,6 +13914,9 @@
     "name": "Pokémon Trainer Gladion",
     "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 8480,
     "team": [
       {
@@ -12608,6 +13972,9 @@
     "name": "Pokémon Trainer Gladion",
     "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11200,
     "team": [
       {
@@ -12691,6 +14058,9 @@
     "name": "Pokémon Trainer Gladion",
     "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11200,
     "team": [
       {
@@ -12774,6 +14144,9 @@
     "name": "Pokémon Trainer Gladion",
     "trainerClass": "pokmontrainer",
     "personalName": "Gladion",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11200,
     "team": [
       {
@@ -12857,6 +14230,9 @@
     "name": "Firefighter Alex",
     "trainerClass": "firefighter",
     "personalName": "Alex",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1840,
     "team": [
       {
@@ -12918,6 +14294,9 @@
     "name": "Youth Athlete Alyssa",
     "trainerClass": "youthathlete",
     "personalName": "Alyssa",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1344,
     "team": [
       {
@@ -12953,6 +14332,9 @@
     "name": "Youth Athlete Sho",
     "trainerClass": "youthathlete",
     "personalName": "Sho",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1344,
     "team": [
       {
@@ -12988,6 +14370,9 @@
     "name": "Black Belt Clayton",
     "trainerClass": "blackbelt",
     "personalName": "Clayton",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1536,
     "team": [
       {
@@ -13049,6 +14434,9 @@
     "name": "Punk Guy Lane",
     "trainerClass": "punkguy",
     "personalName": "Lane",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1536,
     "team": [
       {
@@ -13084,6 +14472,9 @@
     "name": "Punk Girl Yoko",
     "trainerClass": "punkgirl",
     "personalName": "Yoko",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1600,
     "team": [
       {
@@ -13106,6 +14497,9 @@
     "name": "Office Worker Shane",
     "trainerClass": "officeworker",
     "personalName": "Shane",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2000,
     "team": [
       {
@@ -13180,6 +14574,9 @@
     "name": "Businesswoman Michelle",
     "trainerClass": "businesswoman",
     "personalName": "Michelle",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1440,
     "team": [
       {
@@ -13209,6 +14606,9 @@
     "name": "Punk Guy Troy",
     "trainerClass": "punkguy",
     "personalName": "Troy",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1952,
     "team": [
       {
@@ -13225,6 +14625,9 @@
     "name": "Punk Girl Marie",
     "trainerClass": "punkgirl",
     "personalName": "Marie",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1952,
     "team": [
       {
@@ -13241,6 +14644,9 @@
     "name": "Sightseer Amy",
     "trainerClass": "sightseer",
     "personalName": "Amy",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 2480,
     "team": [
       {
@@ -13272,6 +14678,9 @@
     "name": "Sightseer Amy",
     "trainerClass": "sightseer",
     "personalName": "Amy",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 3300,
     "team": [
       {
@@ -13287,6 +14696,9 @@
     "name": "Tourist George",
     "trainerClass": "tourist",
     "personalName": "George",
+    "location": "Hau'oli City",
+    "desc": "Buffet - None",
+    "routeNumber": 0,
     "prizeMoney": 2480,
     "team": [
       {
@@ -13318,6 +14730,9 @@
     "name": "Tourist George",
     "trainerClass": "tourist",
     "personalName": "George",
+    "location": "Hau'oli City",
+    "desc": "Buffet - Postgame",
+    "routeNumber": 1,
     "prizeMoney": 3300,
     "team": [
       {
@@ -13333,6 +14748,9 @@
     "name": "Rising Star Joseph",
     "trainerClass": "risingstar",
     "personalName": "Joseph",
+    "location": "Schoolyard",
+    "desc": "Mandatory - Reward: TM01 Protect",
+    "routeNumber": 3,
     "prizeMoney": 640,
     "team": [
       {
@@ -13394,6 +14812,9 @@
     "name": "Kindergartener Hayden",
     "trainerClass": "kindergartener",
     "personalName": "Hayden",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 576,
     "team": [
       {
@@ -13442,6 +14863,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "Diglett's Tunnel",
+    "desc": "Story - Multi Battle Ally vs Team Skull (Rowlet)",
+    "routeNumber": 6,
     "prizeMoney": 1480,
     "team": [
       {
@@ -13482,6 +14906,19 @@
           "Fake Out",
           "Thunderbolt"
         ]
+      },
+      {
+        "name": "Braviary",
+        "level": 37,
+        "item": "Leftovers",
+        "nature": "Adamant",
+        "ability": "Defiant",
+        "moves": [
+          "Tailwind",
+          "Slash",
+          "Sky Drop",
+          "Roost"
+        ]
       }
     ]
   },
@@ -13490,6 +14927,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "Diglett's Tunnel",
+    "desc": "Story - Multi Battle Ally vs Team Skull (Litten)",
+    "routeNumber": 6,
     "prizeMoney": 1480,
     "team": [
       {
@@ -13530,6 +14970,19 @@
           "Fake Out",
           "Thunderbolt"
         ]
+      },
+      {
+        "name": "Braviary",
+        "level": 37,
+        "item": "Leftovers",
+        "nature": "Adamant",
+        "ability": "Defiant",
+        "moves": [
+          "Tailwind",
+          "Slash",
+          "Sky Drop",
+          "Roost"
+        ]
       }
     ]
   },
@@ -13538,6 +14991,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "Diglett's Tunnel",
+    "desc": "Story - Multi Battle Ally vs Team Skull (Popplio)",
+    "routeNumber": 6,
     "prizeMoney": 1480,
     "team": [
       {
@@ -13578,6 +15034,19 @@
           "Fake Out",
           "Thunderbolt"
         ]
+      },
+      {
+        "name": "Braviary",
+        "level": 37,
+        "item": "Leftovers",
+        "nature": "Adamant",
+        "ability": "Defiant",
+        "moves": [
+          "Tailwind",
+          "Slash",
+          "Sky Drop",
+          "Roost"
+        ]
       }
     ]
   },
@@ -13586,6 +15055,9 @@
     "name": "Skull Enforcer Gladion",
     "trainerClass": "skullenforcer",
     "personalName": "Gladion",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3440,
     "team": [
       {
@@ -13630,6 +15102,9 @@
     "name": "Aether Foundatio Employee",
     "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2016,
     "team": [
       {
@@ -13660,7 +15135,10 @@
     "name": "Skull Gang Grunt DD",
     "trainerClass": "skullgang",
     "personalName": "Grunt DD",
-    "prizeMoney": 2520,
+    "location": "Diglett's Tunnel",
+    "desc": "Story - Multi Battle with Grunt Ed",
+    "routeNumber": 4,
+    "prizeMoney": 2592,
     "team": [
       {
         "name": "Arbok",
@@ -13700,6 +15178,19 @@
           "Roost",
           "Mirror Move"
         ]
+      },
+      {
+        "name": "Seadra",
+        "level": 36,
+        "item": "Lansat Berry",
+        "nature": "Timid",
+        "ability": "Sniper",
+        "moves": [
+          "Aurora Beam",
+          "Weather Ball",
+          "Octazooka",
+          "Twister"
+        ]
       }
     ]
   },
@@ -13708,7 +15199,10 @@
     "name": "Team Skull Grunt Ed",
     "trainerClass": "teamskull",
     "personalName": "Grunt Ed",
-    "prizeMoney": 2800,
+    "location": "Diglett's Tunnel",
+    "desc": "Story - Multi Battle with Grunt DD",
+    "routeNumber": 5,
+    "prizeMoney": 2880,
     "team": [
       {
         "name": "Rapidash",
@@ -13738,7 +15232,7 @@
       },
       {
         "name": "Quilava",
-        "level": 35,
+        "level": 36,
         "item": "Eviolite",
         "nature": "Modest",
         "ability": "Berserk",
@@ -13756,6 +15250,9 @@
     "name": "Ace Trainer Kekoa",
     "trainerClass": "acetrainer",
     "personalName": "Kekoa",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3128,
     "team": [
       {
@@ -13799,6 +15296,9 @@
     "name": "Ace Trainer Lindsey",
     "trainerClass": "acetrainer",
     "personalName": "Lindsey",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3128,
     "team": [
       {
@@ -13832,6 +15332,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3440,
     "team": [
       {
@@ -13893,6 +15396,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3440,
     "team": [
       {
@@ -13954,6 +15460,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3440,
     "team": [
       {
@@ -14015,6 +15524,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3520,
     "team": [
       {
@@ -14076,6 +15588,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3520,
     "team": [
       {
@@ -14137,6 +15652,9 @@
     "name": "Pokémon Trainer Hau",
     "trainerClass": "pokmontrainer",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3520,
     "team": [
       {
@@ -14198,6 +15716,9 @@
     "name": "Aether Foundatio Employee",
     "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1968,
     "team": [
       {
@@ -14214,6 +15735,9 @@
     "name": "Aether Foundatio Employee",
     "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1968,
     "team": [
       {
@@ -14230,6 +15754,9 @@
     "name": "Aether Foundatio Employee",
     "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2016,
     "team": [
       {
@@ -14253,6 +15780,9 @@
     "name": "Aether Foundatio Employee",
     "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2016,
     "team": [
       {
@@ -14276,6 +15806,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1216,
     "team": [
       {
@@ -14292,6 +15825,9 @@
     "name": "Skull Gang Grunt",
     "trainerClass": "skullgang",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1216,
     "team": [
       {
@@ -14308,11 +15844,14 @@
     "name": "Lass Audrey",
     "trainerClass": "lass",
     "personalName": "Audrey",
-    "prizeMoney": 192,
+    "location": "Route 1",
+    "desc": "Mandatory - None",
+    "routeNumber": 6,
+    "prizeMoney": 240,
     "team": [
       {
         "name": "Buneary",
-        "level": 4,
+        "level": 5,
         "item": "Shed Shell",
         "nature": "Serious",
         "ability": "Run Away",
@@ -14325,7 +15864,7 @@
       },
       {
         "name": "Pikipek",
-        "level": 4,
+        "level": 5,
         "nature": "Serious",
         "ability": "Pickup",
         "moves": [
@@ -14340,6 +15879,9 @@
     "name": "Rising Star Elijah",
     "trainerClass": "risingstar",
     "personalName": "Elijah",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2304,
     "team": [
       {
@@ -14388,6 +15930,9 @@
     "name": "Lass Rika",
     "trainerClass": "lass",
     "personalName": "Rika",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1128,
     "team": [
       {
@@ -14436,6 +15981,9 @@
     "name": "Lass Emmy",
     "trainerClass": "lass",
     "personalName": "Emmy",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1128,
     "team": [
       {
@@ -14484,6 +16032,9 @@
     "name": "Youngster Tyler",
     "trainerClass": "youngster",
     "personalName": "Tyler",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 960,
     "team": [
       {
@@ -14532,6 +16083,9 @@
     "name": "Veteran Don",
     "trainerClass": "veteran",
     "personalName": "Don",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4312,
     "team": [
       {
@@ -14606,6 +16160,9 @@
     "name": "Ace Trainer Dean",
     "trainerClass": "acetrainer",
     "personalName": "Dean",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2340,
     "team": [
       {
@@ -14639,6 +16196,9 @@
     "name": "Veteran Julia",
     "trainerClass": "veteran",
     "personalName": "Julia",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1840,
     "team": [
       {
@@ -14696,6 +16256,9 @@
     "name": "Preschooler Malia",
     "trainerClass": "preschooler",
     "personalName": "Malia",
+    "location": "Hau'oli Cemetery",
+    "desc": "Optional - Reward: TM Thunder Wave",
+    "routeNumber": 3,
     "prizeMoney": 416,
     "team": [
       {
@@ -14736,6 +16299,19 @@
           "Electroweb",
           "Thunder Wave"
         ]
+      },
+      {
+        "name": "Voltorb",
+        "level": 13,
+        "item": "Passho Berry",
+        "nature": "Hasty",
+        "ability": "Soundproof",
+        "moves": [
+          "Thunder Wave",
+          "Thunder Shock",
+          "Supersonic",
+          "Flame Charge"
+        ]
       }
     ]
   },
@@ -14744,14 +16320,17 @@
     "name": "Kindergartener Dylan",
     "trainerClass": "kindergartener",
     "personalName": "Dylan",
-    "prizeMoney": 384,
+    "location": "Route 2",
+    "desc": "Mandatory - Blocks Verdant Cavern",
+    "routeNumber": 5,
+    "prizeMoney": 448,
     "team": [
       {
         "name": "Whismur",
-        "level": 12,
-        "item": "Chople Berry",
+        "level": 15,
+        "item": "Oran Berry",
         "nature": "Naughty",
-        "ability": "Scrappy",
+        "ability": "Rattled",
         "moves": [
           "Round",
           "Pummel",
@@ -14761,7 +16340,7 @@
       },
       {
         "name": "Bidoof",
-        "level": 12,
+        "level": 14,
         "item": "Apicot Berry",
         "nature": "Brave",
         "ability": "Simple",
@@ -14774,7 +16353,7 @@
       },
       {
         "name": "Sentret",
-        "level": 12,
+        "level": 14,
         "item": "Normal Gem",
         "nature": "Naive",
         "ability": "Stakeout",
@@ -14787,7 +16366,7 @@
       },
       {
         "name": "Patrat",
-        "level": 12,
+        "level": 14,
         "item": "Normalium Z",
         "nature": "Relaxed",
         "ability": "Analytic",
@@ -14805,6 +16384,9 @@
     "name": "Rising Star Sean",
     "trainerClass": "risingstar",
     "personalName": "Sean",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2256,
     "team": [
       {
@@ -14853,6 +16435,9 @@
     "name": "Beauty Krystal",
     "trainerClass": "beauty",
     "personalName": "Krystal",
+    "location": "Route 2",
+    "desc": "Mandatory - 1",
+    "routeNumber": 1,
     "prizeMoney": 704,
     "team": [
       {
@@ -14914,6 +16499,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1696,
     "team": [
       {
@@ -14962,6 +16550,9 @@
     "name": "Ace Trainer Eileen",
     "trainerClass": "acetrainer",
     "personalName": "Eileen",
+    "location": "Route 8",
+    "desc": "Miniboss - Z-Trainer | Only battles you after you defeat all other trainers on Route 8. | Reward: TM Mystical Fire",
+    "routeNumber": 9,
     "prizeMoney": 14000,
     "team": [
       {
@@ -15036,6 +16627,9 @@
     "name": "Ace Trainer Cole",
     "trainerClass": "acetrainer",
     "personalName": "Cole",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4012,
     "team": [
       {
@@ -15079,6 +16673,9 @@
     "name": "Veteran Akira",
     "trainerClass": "veteran",
     "personalName": "Akira",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4048,
     "team": [
       {
@@ -15153,6 +16750,9 @@
     "name": "Pokémon Professor Kukui",
     "trainerClass": "pokmonprofessor",
     "personalName": "Kukui",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 16320,
     "team": [
       {
@@ -15235,6 +16835,9 @@
     "name": "Pokémon Professor Kukui",
     "trainerClass": "pokmonprofessor",
     "personalName": "Kukui",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 16320,
     "team": [
       {
@@ -15317,6 +16920,9 @@
     "name": "Pokémon Professor Kukui",
     "trainerClass": "pokmonprofessor",
     "personalName": "Kukui",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 16320,
     "team": [
       {
@@ -15399,6 +17005,9 @@
     "name": "Youngster Tristan",
     "trainerClass": "youngster",
     "personalName": "Tristan",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1320,
     "team": [
       {
@@ -15469,6 +17078,9 @@
     "name": "Teacher Emily",
     "trainerClass": "teacher",
     "personalName": "Emily",
+    "location": "Schoolyard",
+    "desc": "Story - Rowlet Chosen | Reward: Ability Pills",
+    "routeNumber": 5,
     "prizeMoney": 792,
     "team": [
       {
@@ -15543,6 +17155,9 @@
     "name": "Teacher Emily",
     "trainerClass": "teacher",
     "personalName": "Emily",
+    "location": "Schoolyard",
+    "desc": "Story - Litten Chosen | Reward: Ability Pills",
+    "routeNumber": 6,
     "prizeMoney": 792,
     "team": [
       {
@@ -15617,6 +17232,9 @@
     "name": "Teacher Emily",
     "trainerClass": "teacher",
     "personalName": "Emily",
+    "location": "Schoolyard",
+    "desc": "Story - Popplio Chosen | Reward: Ability Pills",
+    "routeNumber": 7,
     "prizeMoney": 792,
     "team": [
       {
@@ -15691,6 +17309,9 @@
     "name": "Swimsuit Kyra",
     "trainerClass": "swimsuit",
     "personalName": "Kyra",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1296,
     "team": [
       {
@@ -15726,6 +17347,9 @@
     "name": "Elite Four Molayne",
     "trainerClass": "elitefour",
     "personalName": "Molayne",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 11400,
     "team": [
       {
@@ -15796,6 +17420,9 @@
     "name": "Elite Four Molayne",
     "trainerClass": "elitefour",
     "personalName": "Molayne",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 13200,
     "team": [
       {
@@ -15866,6 +17493,9 @@
     "name": "Kahuna's Grandson Hau",
     "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
+    "location": "Route 1",
+    "desc": "Story - Hau battle 1 | Rowlet Chosen",
+    "routeNumber": 1,
     "prizeMoney": 200,
     "team": [
       {
@@ -15897,6 +17527,9 @@
     "name": "Kahuna's Grandson Hau",
     "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
+    "location": "Route 1",
+    "desc": "Story - Hau battle 1 | Litten Chosen",
+    "routeNumber": 2,
     "prizeMoney": 200,
     "team": [
       {
@@ -15928,6 +17561,9 @@
     "name": "Kahuna's Grandson Hau",
     "trainerClass": "kahunasgrandson",
     "personalName": "Hau",
+    "location": "Route 1",
+    "desc": "Story - Hau battle 1 | Popplio Chosen",
+    "routeNumber": 3,
     "prizeMoney": 200,
     "team": [
       {
@@ -15959,6 +17595,9 @@
     "name": "Champion Hau",
     "trainerClass": "champion",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 14400,
     "team": [
       {
@@ -16040,6 +17679,9 @@
     "name": "Champion Hau",
     "trainerClass": "champion",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 14400,
     "team": [
       {
@@ -16121,6 +17763,9 @@
     "name": "Champion Hau",
     "trainerClass": "champion",
     "personalName": "Hau",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 14400,
     "team": [
       {
@@ -16202,6 +17847,9 @@
     "name": "Poni Kahuna Hapu",
     "trainerClass": "ponikahuna",
     "personalName": "Hapu",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 8640,
     "team": [
       {
@@ -16257,6 +17905,9 @@
     "name": "Ultra Recon Squad Soliera",
     "trainerClass": "ultrareconsquad",
     "personalName": "Soliera",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 564,
     "team": [
       {
@@ -16273,6 +17924,9 @@
     "name": "Ultra Recon Squad Soliera",
     "trainerClass": "ultrareconsquad",
     "personalName": "Soliera",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 588,
     "team": [
       {
@@ -16289,6 +17943,9 @@
     "name": "Ultra Recon Squad Dulse",
     "trainerClass": "ultrareconsquad",
     "personalName": "Dulse",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 564,
     "team": [
       {
@@ -16305,6 +17962,9 @@
     "name": "Ultra Recon Squad Dulse",
     "trainerClass": "ultrareconsquad",
     "personalName": "Dulse",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 588,
     "team": [
       {
@@ -16321,6 +17981,9 @@
     "name": "Trial Captain Ilima",
     "trainerClass": "trialcaptain",
     "personalName": "Ilima",
+    "location": "Schoolyard",
+    "desc": "Postgame Boss - Ilima Rematch",
+    "routeNumber": 13,
     "prizeMoney": 6120,
     "team": [
       {
@@ -16365,6 +18028,9 @@
     "name": "Trial Captain Lana",
     "trainerClass": "trialcaptain",
     "personalName": "Lana",
+    "location": "Lush Jungle",
+    "desc": "Boss - Battle during Mina's trial, after beating Mallow",
+    "routeNumber": 2,
     "prizeMoney": 6120,
     "team": [
       {
@@ -16408,6 +18074,9 @@
     "name": "Trial Captain Kiawe",
     "trainerClass": "trialcaptain",
     "personalName": "Kiawe",
+    "location": "Wela Caldera",
+    "desc": "Boss - Kiawe battle during Mina Trial",
+    "routeNumber": 2,
     "prizeMoney": 6120,
     "team": [
       {
@@ -16451,6 +18120,9 @@
     "name": "Trial Captain Mallow",
     "trainerClass": "trialcaptain",
     "personalName": "Mallow",
+    "location": "Lush Jungle",
+    "desc": "Boss - Battle during Mina's Trial",
+    "routeNumber": 1,
     "prizeMoney": 6120,
     "team": [
       {
@@ -16494,6 +18166,9 @@
     "name": "Trial Captain Sophocles",
     "trainerClass": "trialcaptain",
     "personalName": "Sophocles",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 6120,
     "team": [
       {
@@ -16537,6 +18212,9 @@
     "name": "Trial Captain Mina",
     "trainerClass": "trialcaptain",
     "personalName": "Mina",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 6120,
     "team": [
       {
@@ -16580,6 +18258,9 @@
     "name": "Island Kahuna Nanu",
     "trainerClass": "islandkahuna",
     "personalName": "Nanu",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 8480,
     "team": [
       {
@@ -16623,6 +18304,9 @@
     "name": "Black Belt Francis",
     "trainerClass": "blackbelt",
     "personalName": "Francis",
+    "location": "Ten Carat Sea",
+    "desc": "Optional - None",
+    "routeNumber": 5,
     "prizeMoney": 4320,
     "team": [
       {
@@ -16684,6 +18368,9 @@
     "name": "Black Belt Ross",
     "trainerClass": "blackbelt",
     "personalName": "Ross",
+    "location": "Hano Beach",
+    "desc": "Optional - None",
+    "routeNumber": 6,
     "prizeMoney": 4264,
     "team": [
       {
@@ -16732,6 +18419,9 @@
     "name": "Black Belt Douglas",
     "trainerClass": "blackbelt",
     "personalName": "Douglas",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1440,
     "team": [
       {
@@ -16753,6 +18443,9 @@
     "name": "Swim Gal Natasha",
     "trainerClass": "swimgal",
     "personalName": "Natasha",
+    "location": "Ten Carat Beach",
+    "desc": "Mandatory - None",
+    "routeNumber": 2,
     "prizeMoney": 336,
     "team": [
       {
@@ -16799,11 +18492,14 @@
     "name": "Sightseer Perdita",
     "trainerClass": "sightseer",
     "personalName": "Perdita",
-    "prizeMoney": 2400,
+    "location": "Route 4",
+    "desc": "Optional - None",
+    "routeNumber": 4,
+    "prizeMoney": 2520,
     "team": [
       {
         "name": "Diglett",
-        "level": 20,
+        "level": 22,
         "item": "Ground Gem",
         "nature": "Naive",
         "ability": "Sand Stream",
@@ -16816,7 +18512,7 @@
       },
       {
         "name": "Sandshrew",
-        "level": 20,
+        "level": 21,
         "item": "Air Balloon",
         "nature": "Impish",
         "ability": "Sand Rush",
@@ -16829,7 +18525,7 @@
       },
       {
         "name": "Meowth",
-        "level": 20,
+        "level": 22,
         "item": "Protective Pads",
         "nature": "Jolly",
         "ability": "Frisk",
@@ -16842,7 +18538,7 @@
       },
       {
         "name": "Charmander",
-        "level": 20,
+        "level": 21,
         "item": "Berry Juice",
         "nature": "Naive",
         "ability": "Flame Body",
@@ -16860,6 +18556,9 @@
     "name": "Sightseer Yuriko",
     "trainerClass": "sightseer",
     "personalName": "Yuriko",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2580,
     "team": [
       {
@@ -16908,6 +18607,9 @@
     "name": "Sightseer Steve",
     "trainerClass": "sightseer",
     "personalName": "Steve",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3540,
     "team": [
       {
@@ -16924,19 +18626,61 @@
     "name": "Rising Star Micah",
     "trainerClass": "risingstar",
     "personalName": "Micah",
-    "prizeMoney": 2760,
+    "location": "Paniola Ranch",
+    "desc": "Optional - None",
+    "routeNumber": 5,
+    "prizeMoney": 2640,
     "team": [
       {
-        "name": "Ferroseed",
+        "name": "Castform",
         "level": 22,
-        "item": "Jaboca Berry",
+        "item": "Fire Gem",
         "nature": "Relaxed",
-        "ability": "Iron Barbs",
+        "ability": "Forecast",
         "moves": [
-          "Pin Missile",
-          "Iron Head",
-          "Metal Claw",
-          "Bullet Seed"
+          "Ember",
+          "Sunny Day",
+          "Grass Knot",
+          "Tailwind"
+        ]
+      },
+      {
+        "name": "Salandit",
+        "level": 24,
+        "item": "Firium Z",
+        "nature": "Mild",
+        "ability": "Corrosion",
+        "moves": [
+          "Poison Tail",
+          "Encore",
+          "Flame Burst",
+          "Poison Gas"
+        ]
+      },
+      {
+        "name": "Fletchinder",
+        "level": 23,
+        "item": "Focus Sash",
+        "nature": "Adamant",
+        "ability": "Gale Wings",
+        "moves": [
+          "Aerial Ace",
+          "Quick Attack",
+          "Flame Charge",
+          "Quick Guard"
+        ]
+      },
+      {
+        "name": "Litwick",
+        "level": 23,
+        "item": "Spell Tag",
+        "nature": "Modest",
+        "ability": "Flame Body",
+        "moves": [
+          "Will-O-Wisp",
+          "Smog",
+          "Incinerate",
+          "Ominous Wind"
         ]
       },
       {
@@ -16951,32 +18695,6 @@
           "Rollout",
           "Defense Curl"
         ]
-      },
-      {
-        "name": "Magnemite",
-        "level": 23,
-        "item": "Magnet",
-        "nature": "Quiet",
-        "ability": "Sturdy",
-        "moves": [
-          "Sonic Boom",
-          "Shock Wave",
-          "Mirror Shot",
-          "Eerie Impulse"
-        ]
-      },
-      {
-        "name": "Doduo",
-        "level": 23,
-        "item": "Silk Scarf",
-        "nature": "Jolly",
-        "ability": "Multistriker",
-        "moves": [
-          "Agility",
-          "Quick Attack",
-          "Pluck",
-          "Pursuit"
-        ]
       }
     ]
   },
@@ -16985,6 +18703,9 @@
     "name": "Aether Foundation2 Employee",
     "trainerClass": "aetherfoundation2",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1968,
     "team": [
       {
@@ -17001,6 +18722,9 @@
     "name": "Veteran Brone",
     "trainerClass": "veteran",
     "personalName": "Brone",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4576,
     "team": [
       {
@@ -17075,6 +18799,9 @@
     "name": "Virtuoso Leticia",
     "trainerClass": "virtuoso",
     "personalName": "Leticia",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5368,
     "team": [
       {
@@ -17104,6 +18831,9 @@
     "name": "Preschooler Kindra",
     "trainerClass": "preschooler",
     "personalName": "Kindra",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 408,
     "team": [
       {
@@ -17120,6 +18850,9 @@
     "name": "Bellhop Landon",
     "trainerClass": "bellhop",
     "personalName": "Landon",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1760,
     "team": [
       {
@@ -17155,6 +18888,9 @@
     "name": "Putter Sky",
     "trainerClass": "putter",
     "personalName": "Sky",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2700,
     "team": [
       {
@@ -17203,6 +18939,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1184,
     "team": [
       {
@@ -17219,6 +18958,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1472,
     "team": [
       {
@@ -17235,6 +18977,9 @@
     "name": "Swimmer Beau Derek",
     "trainerClass": "swimmerbeau",
     "personalName": "Derek",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1056,
     "team": [
       {
@@ -17251,6 +18996,9 @@
     "name": "Cop Sheriff",
     "trainerClass": "cop",
     "personalName": "Sheriff",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2320,
     "team": [
       {
@@ -17267,6 +19015,9 @@
     "name": "Teacher Jen",
     "trainerClass": "teacher",
     "personalName": "Jen",
+    "location": "Route 6",
+    "desc": "Optional - Multi Battle with Fumiko",
+    "routeNumber": 6,
     "prizeMoney": 4480,
     "team": [
       {
@@ -17302,6 +19053,9 @@
     "name": "Preschooler Fumiko",
     "trainerClass": "preschooler",
     "personalName": "Fumiko",
+    "location": "Route 6",
+    "desc": "Optional - Multi battle with Jen",
+    "routeNumber": 6,
     "prizeMoney": 1200,
     "team": [
       {
@@ -17340,7 +19094,7 @@
           "Toxic Thread",
           "Bug Bite",
           "Poison Sting",
-          "String Shot"
+          "Protect"
         ]
       }
     ]
@@ -17350,6 +19104,9 @@
     "name": "Youth Athlete Anton",
     "trainerClass": "youthathlete",
     "personalName": "Anton",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1624,
     "team": [
       {
@@ -17366,6 +19123,9 @@
     "name": "Firefighter Aiden",
     "trainerClass": "firefighter",
     "personalName": "Aiden",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2400,
     "team": [
       {
@@ -17389,6 +19149,9 @@
     "name": "Surf Dude Jennis",
     "trainerClass": "surfdude",
     "personalName": "Jennis",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1272,
     "team": [
       {
@@ -17450,6 +19213,9 @@
     "name": "Punk Girl Reika",
     "trainerClass": "punkgirl",
     "personalName": "Reika",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1888,
     "team": [
       {
@@ -17466,6 +19232,9 @@
     "name": "Hiker David",
     "trainerClass": "hiker",
     "personalName": "David",
+    "location": "Wela Caldera",
+    "desc": "Story - David battles you during the Mina event, after Kiawe",
+    "routeNumber": 3,
     "prizeMoney": 1536,
     "team": [
       {
@@ -17482,7 +19251,10 @@
     "name": "Actor Meredith",
     "trainerClass": "actor",
     "personalName": "Meredith",
-    "prizeMoney": 1920,
+    "location": "Melemele Meadow",
+    "desc": "Optional - Actor Meredith Battle 1",
+    "routeNumber": 0,
+    "prizeMoney": 2040,
     "team": [
       {
         "name": "Oricorio 1",
@@ -17499,10 +19271,10 @@
       },
       {
         "name": "Petilil",
-        "level": 16,
-        "item": "Big Root",
+        "level": 17,
+        "item": "Terrain Extender",
         "nature": "Timid",
-        "ability": "Own Tempo",
+        "ability": "Leaf Guard",
         "moves": [
           "Ingrain",
           "Leech Seed",
@@ -17512,14 +19284,14 @@
       },
       {
         "name": "Lotad",
-        "level": 16,
+        "level": 17,
         "item": "Oran Berry",
         "nature": "Calm",
         "ability": "Rain Dish",
         "moves": [
           "Mega Drain",
           "Bubble Beam",
-          "Water Sport",
+          "Safeguard",
           "Startle"
         ]
       },
@@ -17535,6 +19307,19 @@
           "Acid",
           "Stun Spore"
         ]
+      },
+      {
+        "name": "Larvesta",
+        "level": 17,
+        "item": "Coba Berry",
+        "nature": "Calm",
+        "ability": "Solar Power",
+        "moves": [
+          "Absorb",
+          "Smoke Out",
+          "Fire Spin",
+          "Infestation"
+        ]
       }
     ]
   },
@@ -17543,6 +19328,9 @@
     "name": "Actor Meredith",
     "trainerClass": "actor",
     "personalName": "Meredith",
+    "location": "Royal Avenue",
+    "desc": "Miniboss - Meredith Battle 2 | She battles you here if you've fought her in Melemele Meadow first.",
+    "routeNumber": 4,
     "prizeMoney": 7200,
     "team": [
       {
@@ -17630,6 +19418,9 @@
     "name": "Actor Meredith",
     "trainerClass": "actor",
     "personalName": "Meredith",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1440,
     "team": [
       {
@@ -17651,6 +19442,9 @@
     "name": "Actor Meredith",
     "trainerClass": "actor",
     "personalName": "Meredith",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2280,
     "team": [
       {
@@ -17672,6 +19466,9 @@
     "name": "Reporter Rita",
     "trainerClass": "reporter",
     "personalName": "Rita",
+    "location": "Hano Grand Resort",
+    "desc": "Optional - Reward: Pikanium Z (From the Pikachu)",
+    "routeNumber": 1,
     "prizeMoney": 4800,
     "team": [
       {
@@ -17725,6 +19522,19 @@
           "Flame Burst",
           "Rock Slide"
         ]
+      },
+      {
+        "name": "Pikachu",
+        "level": 40,
+        "item": "Pikanium Z",
+        "nature": "Jolly",
+        "ability": "Lightning Rod",
+        "moves": [
+          "Volt Tackle",
+          "Play Rough",
+          "Protect",
+          "Iron Tail"
+        ]
       }
     ]
   },
@@ -17733,6 +19543,9 @@
     "name": "Team Aqua Archie",
     "trainerClass": "teamaqua",
     "personalName": "Archie",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 18480,
     "team": [
       {
@@ -17802,6 +19615,9 @@
     "name": "Team Galactic Cyrus",
     "trainerClass": "teamgalactic",
     "personalName": "Cyrus",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 18760,
     "team": [
       {
@@ -17871,6 +19687,9 @@
     "name": "Team Galactic Cyrus",
     "trainerClass": "teamgalactic",
     "personalName": "Cyrus",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 18760,
     "team": [
       {
@@ -17940,6 +19759,9 @@
     "name": "Aether Foundatio Employee",
     "trainerClass": "aetherfoundatio",
     "personalName": "Employee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2928,
     "team": [
       {
@@ -17977,6 +19799,9 @@
     "name": "Ace Trainer Elwood",
     "trainerClass": "acetrainer",
     "personalName": "Elwood",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3128,
     "team": [
       {
@@ -18004,6 +19829,9 @@
     "name": "Gym Trainer Brock?",
     "trainerClass": "gymtrainer",
     "personalName": "Brock?",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1344,
     "team": [
       {
@@ -18052,6 +19880,9 @@
     "name": "Gym Trainer Misty?",
     "trainerClass": "gymtrainer",
     "personalName": "Misty?",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1344,
     "team": [
       {
@@ -18100,6 +19931,9 @@
     "name": "Gym Trainer Surge?",
     "trainerClass": "gymtrainer",
     "personalName": "Surge?",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1344,
     "team": [
       {
@@ -18148,6 +19982,9 @@
     "name": "Gym Trainer Erika?",
     "trainerClass": "gymtrainer",
     "personalName": "Erika?",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1344,
     "team": [
       {
@@ -18196,6 +20033,9 @@
     "name": "Gym Trainer Koga?",
     "trainerClass": "gymtrainer",
     "personalName": "Koga?",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1760,
     "team": [
       {
@@ -18212,6 +20052,9 @@
     "name": "Gym Trainer Sabrina?",
     "trainerClass": "gymtrainer",
     "personalName": "Sabrina?",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1760,
     "team": [
       {
@@ -18228,6 +20071,9 @@
     "name": "Gym Trainer Blaine?",
     "trainerClass": "gymtrainer",
     "personalName": "Blaine?",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1760,
     "team": [
       {
@@ -18244,6 +20090,9 @@
     "name": "Gym Trainer Giovanni?",
     "trainerClass": "gymtrainer",
     "personalName": "Giovanni?",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1760,
     "team": [
       {
@@ -18260,6 +20109,9 @@
     "name": "Gym Leader Agatha",
     "trainerClass": "gymleader",
     "personalName": "Agatha",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1376,
     "team": [
       {
@@ -18321,6 +20173,9 @@
     "name": "Gym Leader Lorelei?",
     "trainerClass": "gymleader",
     "personalName": "Lorelei?",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1792,
     "team": [
       {
@@ -18337,6 +20192,9 @@
     "name": "GAME FREAK Iwao",
     "trainerClass": "gamefreak",
     "personalName": "Iwao",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1792,
     "team": [
       {
@@ -18382,6 +20240,9 @@
     "name": "Pokémon Trainer Guzma",
     "trainerClass": "pokmontrainer",
     "personalName": "Guzma",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 7680,
     "team": [
       {
@@ -18451,6 +20312,9 @@
     "name": "Team Plasma Ghetsis",
     "trainerClass": "teamplasma",
     "personalName": "Ghetsis",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 19040,
     "team": [
       {
@@ -18520,6 +20384,9 @@
     "name": "Team Plasma Ghetsis",
     "trainerClass": "teamplasma",
     "personalName": "Ghetsis",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 19040,
     "team": [
       {
@@ -18589,6 +20456,9 @@
     "name": "Aether Branch Chief Faba",
     "trainerClass": "aetherbranchchief",
     "personalName": "Faba",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 7560,
     "team": [
       {
@@ -18634,6 +20504,9 @@
     "name": "Team Rainbow Rocket Giovanni",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Giovanni",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 22400,
     "team": [
       {
@@ -18705,11 +20578,15 @@
     "name": "Gentleman Reginald",
     "trainerClass": "gentleman",
     "personalName": "Reginald",
+    "location": "Hau'oli City",
+    "desc": "Optional - Reginald will battle you after you beat Hala's Trial and you attempt to enter Hau'oli City Hall | Reward: Shell Bell (Talk to the clerk afterwards)",
+    "routeNumber": 4,
     "prizeMoney": 8400,
     "team": [
       {
         "name": "Panpour",
         "level": 20,
+        "item": "Shell Bell",
         "nature": "Mild",
         "ability": "Storm Drain",
         "moves": [
@@ -18722,6 +20599,7 @@
       {
         "name": "Pansear",
         "level": 20,
+        "item": "Shell Bell",
         "nature": "Timid",
         "ability": "Flash Fire",
         "moves": [
@@ -18734,6 +20612,7 @@
       {
         "name": "Pansage",
         "level": 20,
+        "item": "Shell Bell",
         "nature": "Lonely",
         "ability": "Sap Sipper",
         "moves": [
@@ -18763,6 +20642,9 @@
     "name": "Skull Gang Grunt Fiona",
     "trainerClass": "skullgang",
     "personalName": "Grunt Fiona",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1344,
     "team": [
       {
@@ -18811,6 +20693,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1120,
     "team": [
       {
@@ -18827,6 +20712,9 @@
     "name": "Team Skull Grunt",
     "trainerClass": "teamskull",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1280,
     "team": [
       {
@@ -18843,6 +20731,9 @@
     "name": "Athlete In-Training Deedra",
     "trainerClass": "athleteintraining",
     "personalName": "Deedra",
+    "location": "Schoolyard",
+    "desc": "Optional - Part of the \"Seven Mysteries\" sidequest started by speaking to a Youngster at Big Wave Beach after beating Hala, and visiting the Schoolyard at night.",
+    "routeNumber": 8,
     "prizeMoney": 3200,
     "team": [
       {
@@ -18917,6 +20808,9 @@
     "name": "Dancer Ronda",
     "trainerClass": "dancer",
     "personalName": "Ronda",
+    "location": "Hano Grand Resort",
+    "desc": "Optional - Ronda will rebattle you once per day if you do not use a Z-move during her battle. | If you do beat her while using a Z-move, she gives you 5 Full heals. (CHANGE TO SOMETHING USEFUL, AV maybe?)",
+    "routeNumber": 5,
     "prizeMoney": 4000,
     "team": [
       {
@@ -18978,6 +20872,9 @@
     "name": "Youngster Kenway",
     "trainerClass": "youngster",
     "personalName": "Kenway",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 960,
     "team": [
       {
@@ -18994,6 +20891,9 @@
     "name": "Office Worker Royce",
     "trainerClass": "officeworker",
     "personalName": "Royce",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1600,
     "team": [
       {
@@ -19017,6 +20917,9 @@
     "name": "Office Worker Dugal",
     "trainerClass": "officeworker",
     "personalName": "Dugal",
+    "location": "Konikoni City",
+    "desc": "Optional - Dugal will rebattle you each day as long as you don't use a Z-move against him.",
+    "routeNumber": 1,
     "prizeMoney": 9360,
     "team": [
       {
@@ -19052,6 +20955,9 @@
     "name": "Team Flare Lysandre",
     "trainerClass": "teamflare",
     "personalName": "Lysandre",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 18760,
     "team": [
       {
@@ -19122,6 +21028,9 @@
     "name": "Team Flare Lysandre",
     "trainerClass": "teamflare",
     "personalName": "Lysandre",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 18760,
     "team": [
       {
@@ -19192,6 +21101,9 @@
     "name": "Virtuoso Kiara",
     "trainerClass": "virtuoso",
     "personalName": "Kiara",
+    "location": "Hano Grand Resort",
+    "desc": "Miniboss - Reward: Metronome (CHANGE ME TO GROUNDIUM)",
+    "routeNumber": 4,
     "prizeMoney": 9360,
     "team": [
       {
@@ -19279,6 +21191,9 @@
     "name": "Veteran Angus",
     "trainerClass": "veteran",
     "personalName": "Angus",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4400,
     "team": [
       {
@@ -19353,7 +21268,10 @@
     "name": "Veteran Johnny",
     "trainerClass": "veteran",
     "personalName": "Johnny",
-    "prizeMoney": 12960,
+    "location": "Brooklet Hill",
+    "desc": "Miniboss - Johnny will only battle you if it is raining and after the trial here. Reward: $50,000",
+    "routeNumber": 6,
+    "prizeMoney": 12480,
     "team": [
       {
         "name": "Pelipper",
@@ -19419,6 +21337,19 @@
           "Silver Wind",
           "Rain Dance"
         ]
+      },
+      {
+        "name": "Quagsire",
+        "level": 26,
+        "item": "Rindo Berry",
+        "nature": "Relaxed",
+        "ability": "Water Absorb",
+        "moves": [
+          "Tail Slap",
+          "Aqua Tail",
+          "Amnesia",
+          "Bulldoze"
+        ]
       }
     ]
   },
@@ -19427,6 +21358,9 @@
     "name": "Veteran Aristo",
     "trainerClass": "veteran",
     "personalName": "Aristo",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5720,
     "team": [
       {
@@ -19492,6 +21426,9 @@
     "name": "GAME FREAK Morimoto",
     "trainerClass": "gamefreak",
     "personalName": "Morimoto",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5016,
     "team": [
       {
@@ -19537,6 +21474,9 @@
     "name": "Rising Star Nainoa",
     "trainerClass": "risingstar",
     "personalName": "Nainoa",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1344,
     "team": [
       {
@@ -19560,6 +21500,9 @@
     "name": "Team Magma Maxie",
     "trainerClass": "teammagma",
     "personalName": "Maxie",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 18480,
     "team": [
       {
@@ -19629,6 +21572,9 @@
     "name": "Lass Lisa",
     "trainerClass": "lass",
     "personalName": "Lisa",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1152,
     "team": [
       {
@@ -19690,6 +21636,9 @@
     "name": "Good Friend Lillie",
     "trainerClass": "goodfriend",
     "personalName": "Lillie",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2400,
     "team": [
       {
@@ -19711,6 +21660,9 @@
     "name": "Dragon Tamer Ryuki",
     "trainerClass": "dragontamer",
     "personalName": "Ryuki",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 6960,
     "team": [
       {
@@ -19780,6 +21732,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1952,
     "team": [
       {
@@ -19796,6 +21751,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1952,
     "team": [
       {
@@ -19812,6 +21770,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -19828,6 +21789,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -19849,6 +21813,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -19880,6 +21847,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -19901,6 +21871,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -19921,6 +21894,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -19949,6 +21925,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -19967,6 +21946,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1952,
     "team": [
       {
@@ -19983,6 +21965,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1952,
     "team": [
       {
@@ -19999,6 +21984,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20015,6 +22003,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20033,6 +22024,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20051,6 +22045,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20069,6 +22066,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20088,6 +22088,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20106,6 +22109,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20136,6 +22142,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20155,6 +22164,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20175,6 +22187,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20193,6 +22208,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20212,6 +22230,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20231,6 +22252,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20252,6 +22276,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20273,6 +22300,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -20300,6 +22330,9 @@
     "name": "Ultra Forest Kartenvoy",
     "trainerClass": "ultraforest",
     "personalName": "Kartenvoy",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2304,
     "team": [
       {
@@ -20316,6 +22349,9 @@
     "name": "Ultra Forest Kartenvoy",
     "trainerClass": "ultraforest",
     "personalName": "Kartenvoy",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2304,
     "team": [
       {
@@ -20332,6 +22368,9 @@
     "name": "Ace Trainer Seth",
     "trainerClass": "acetrainer",
     "personalName": "Seth",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3536,
     "team": [
       {
@@ -20355,6 +22394,9 @@
     "name": "Ace Trainer Kaimana",
     "trainerClass": "acetrainer",
     "personalName": "Kaimana",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3604,
     "team": [
       {
@@ -20378,6 +22420,9 @@
     "name": "Star Trainer Kailee",
     "trainerClass": "startrainer",
     "personalName": "Kailee",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3536,
     "team": [
       {
@@ -20401,6 +22446,9 @@
     "name": "Star Trainer Jada",
     "trainerClass": "startrainer",
     "personalName": "Jada",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 3604,
     "team": [
       {
@@ -20424,6 +22472,9 @@
     "name": "Black Belt Alvaro",
     "trainerClass": "blackbelt",
     "personalName": "Alvaro",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1536,
     "team": [
       {
@@ -20485,6 +22536,9 @@
     "name": "Black Belt Allon",
     "trainerClass": "blackbelt",
     "personalName": "Allon",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1632,
     "team": [
       {
@@ -20508,6 +22562,9 @@
     "name": "Black Belt Eimar",
     "trainerClass": "blackbelt",
     "personalName": "Eimar",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1632,
     "team": [
       {
@@ -20524,6 +22581,9 @@
     "name": "Black Belt Craig",
     "trainerClass": "blackbelt",
     "personalName": "Craig",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1632,
     "team": [
       {
@@ -20540,6 +22600,9 @@
     "name": "Black Belt Jason",
     "trainerClass": "blackbelt",
     "personalName": "Jason",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1632,
     "team": [
       {
@@ -20563,6 +22626,9 @@
     "name": "Collector Minty",
     "trainerClass": "collector",
     "personalName": "Minty",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1632,
     "team": [
       {
@@ -20579,6 +22645,9 @@
     "name": "Worker Ovid",
     "trainerClass": "worker",
     "personalName": "Ovid",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 2000,
     "team": [
       {
@@ -20595,6 +22664,9 @@
     "name": "Kalosian Man Dexio",
     "trainerClass": "kalosianman",
     "personalName": "Dexio",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 8820,
     "team": [
       {
@@ -20676,6 +22748,9 @@
     "name": "Backpacker Peren",
     "trainerClass": "backpacker",
     "personalName": "Peren",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1224,
     "team": [
       {
@@ -20692,6 +22767,9 @@
     "name": "Hiker Anuhea",
     "trainerClass": "hiker",
     "personalName": "Anuhea",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1632,
     "team": [
       {
@@ -20708,6 +22786,9 @@
     "name": "Veteran Breon",
     "trainerClass": "veteran",
     "personalName": "Breon",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4664,
     "team": [
       {
@@ -20752,6 +22833,9 @@
     "name": "Virtuoso Alonsa",
     "trainerClass": "virtuoso",
     "personalName": "Alonsa",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4576,
     "team": [
       {
@@ -20783,6 +22867,9 @@
     "name": "Virtuoso Ella",
     "trainerClass": "virtuoso",
     "personalName": "Ella",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 4664,
     "team": [
       {
@@ -20822,6 +22909,9 @@
     "name": "Kindergartener Kaleb",
     "trainerClass": "kindergartener",
     "personalName": "Kaleb",
+    "location": "Route 8",
+    "desc": "Optional - None",
+    "routeNumber": 5,
     "prizeMoney": 2376,
     "team": [
       {
@@ -20857,6 +22947,9 @@
     "name": "Dragon Tamer Ryuki",
     "trainerClass": "dragontamer",
     "personalName": "Ryuki",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 5280,
     "team": [
       {
@@ -20931,6 +23024,9 @@
     "name": "Surf Dude Robert",
     "trainerClass": "surfdude",
     "personalName": "Robert",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1176,
     "team": [
       {
@@ -20966,6 +23062,9 @@
     "name": "Surf Dude Joshah",
     "trainerClass": "surfdude",
     "personalName": "Joshah",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1128,
     "team": [
       {
@@ -20982,6 +23081,9 @@
     "name": "Surf Dude Carlton",
     "trainerClass": "surfdude",
     "personalName": "Carlton",
+    "location": "Route 2",
+    "desc": "Mandatory - None",
+    "routeNumber": 2,
     "prizeMoney": 576,
     "team": [
       {
@@ -21017,6 +23119,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -21038,6 +23143,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -21056,6 +23164,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -21074,6 +23185,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -21094,6 +23208,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -21112,6 +23229,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -21131,6 +23251,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -21152,6 +23275,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -21171,6 +23297,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -21190,6 +23319,9 @@
     "name": "Team Rainbow Rocket Grunt",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Grunt",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 1984,
     "team": [
       {
@@ -21209,6 +23341,9 @@
     "name": "Aether President Lusamine",
     "trainerClass": "aetherpresident",
     "personalName": "Lusamine",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 16320,
     "team": [
       {
@@ -21277,6 +23412,9 @@
     "name": "Team Rainbow Rocket Giovanni",
     "trainerClass": "teamrainbowrocket",
     "personalName": "Giovanni",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 22400,
     "team": [
       {
@@ -21345,60 +23483,64 @@
   },
   {
     "id": "646",
-    "name": "Team Skull Grunt Cecil",
+    "name": "Team Skull Grunt Ciferol",
     "trainerClass": "teamskull",
-    "personalName": "Grunt Cecil",
-    "prizeMoney": 1680,
+    "personalName": "Grunt Ciferol",
+    "location": "Paniola Town",
+    "desc": "Optional - Reward: Bottle Cap",
+    "routeNumber": 4,
+    "prizeMoney": 1848,
     "team": [
       {
-        "name": "Aipom",
-        "level": 21,
-        "item": "Oran Berry",
-        "nature": "Hasty",
-        "ability": "Technician",
-        "moves": [
-          "Tickle",
-          "Feint",
-          "Double Hit",
-          "Baton Pass"
-        ]
-      },
-      {
-        "name": "Sentret",
-        "level": 20,
-        "item": "Oran Berry {Stakeout} <Follow Me/Fury Swipes/Me First/Dig>",
-        "ability": "Stakeout",
-        "moves": [
-          "Follow Me",
-          "Fury Swipes",
-          "Me First",
-          "Dig"
-        ]
-      },
-      {
-        "name": "Pidove",
-        "level": 21,
-        "item": "Oran Berry",
-        "nature": "Mild",
-        "ability": "Super Luck",
-        "moves": [
-          "Roost",
-          "Quick Attack",
-          "Air Cutter",
-          "Round"
-        ]
-      },
-      {
-        "name": "Bidoof",
-        "level": 20,
+        "name": "Helioptile",
+        "level": 22,
         "item": "Oran Berry",
         "nature": "Naive",
-        "ability": "Unaware",
+        "ability": "Solar Power",
         "moves": [
-          "Yawn",
-          "Bite",
-          "Rollout",
-          "Headbutt"
+          "Electrify",
+          "Twister",
+          "Shock Wave",
+          "Swift"
+        ]
+      },
+      {
+        "name": "Weepinbell",
+        "level": 22,
+        "item": "Cell Battery",
+        "nature": "Adamant",
+        "ability": "Chlorophyll",
+        "moves": [
+          "Sunny Day",
+          "Razor Leaf",
+          "Acid Spray",
+          "Sleep Powder"
+        ]
+      },
+      {
+        "name": "Pansear",
+        "level": 22,
+        "item": "Apicot Berry",
+        "nature": "Jolly",
+        "ability": "Flash Fire",
+        "moves": [
+          "Acrobatics",
+          "Flame Charge",
+          "Natural Gift",
+          "Recycle"
+        ]
+      },
+      {
+        "name": "Slugma",
+        "level": 22,
+        "item": "Normalium Z",
+        "nature": "Jolly",
+        "ability": "Flame Body",
+        "moves": [
+          "Protect",
+          "Sunny Day",
+          "Incinerate",
+          "Clear Smog"
         ]
       }
     ]
@@ -21408,6 +23550,9 @@
     "name": "Tapu Koko Chosen Guzma",
     "trainerClass": "tapukokochosen",
     "personalName": "Guzma",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 8160,
     "team": [
       {
@@ -21477,6 +23622,9 @@
     "name": "Ultra Recon Squad Soliera",
     "trainerClass": "ultrareconsquad",
     "personalName": "Soliera",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 156,
     "team": [
       {
@@ -21493,7 +23641,10 @@
     "name": "Ultra Recon Squad Dulse",
     "trainerClass": "ultrareconsquad",
     "personalName": "Dulse",
-    "prizeMoney": 1408,
+    "location": "Seaward Cavern",
+    "desc": "Boss - Ultra Recon Squad Dulse Battle 1",
+    "routeNumber": 0,
+    "prizeMoney": 1496,
     "team": [
       {
         "name": "Elgyem",
@@ -21510,7 +23661,7 @@
       },
       {
         "name": "Cosmog",
-        "level": 18,
+        "level": 19,
         "item": "Red Card",
         "nature": "Timid",
         "ability": "Unaware",
@@ -21523,7 +23674,7 @@
       },
       {
         "name": "Clefairy",
-        "level": 16,
+        "level": 18,
         "item": "Sitrus Berry",
         "nature": "Calm",
         "ability": "Magic Guard",
@@ -21536,7 +23687,7 @@
       },
       {
         "name": "Bronzor",
-        "level": 16,
+        "level": 17,
         "item": "Occa Berry",
         "nature": "Quiet",
         "ability": "Levitate",
@@ -21549,7 +23700,7 @@
       },
       {
         "name": "Poipole",
-        "level": 16,
+        "level": 17,
         "item": "Poison Barb",
         "nature": "Timid",
         "ability": "Corrosion",
@@ -21567,6 +23718,9 @@
     "name": "Melemele Kahuna Hala",
     "trainerClass": "melemelekahuna",
     "personalName": "Hala",
+    "location": "Iki Town",
+    "desc": "Postgame Boss - Kahuna Hala Rematch",
+    "routeNumber": 6,
     "prizeMoney": 12600,
     "team": [
       {
@@ -21637,6 +23791,9 @@
     "name": "Ultra Recon Squad Soliera",
     "trainerClass": "ultrareconsquad",
     "personalName": "Soliera",
+    "location": "",
+    "desc": "",
+    "routeNumber": 0,
     "prizeMoney": 240,
     "team": [
       {
@@ -21653,6 +23810,9 @@
     "name": "Ultra Recon Squad Dulse",
     "trainerClass": "ultrareconsquad",
     "personalName": "Dulse",
+    "location": "Paniola Ranch",
+    "desc": "Boss - Ultra Recon Squad Battle 2",
+    "routeNumber": 6,
     "prizeMoney": 3360,
     "team": [
       {
@@ -21710,11 +23870,11 @@
       {
         "name": "Solrock",
         "level": 27,
-        "item": "Rocky Helmet",
-        "nature": "Adamant",
+        "item": "Assault Vest",
+        "nature": "Sassy",
         "ability": "Levitate",
         "moves": [
-          "Cosmic Power",
+          "Solar Beam",
           "Rock Slide",
           "Flame Charge",
           "Psycrush"

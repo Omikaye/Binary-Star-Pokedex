@@ -1,5 +1,6 @@
 // Parse data/rawtxt/Trainers.txt into data/trainers.json
-// Output is an array sorted by numeric id: [{ id:"002", name:"Lass Isabella", trainerClass:"Lass", personalName:"Isabella", prizeMoney:528, team:[{name, level, item, nature, ability, moves:[]}, ...] }]
+// Output is an array sorted by numeric id:
+// [{ id:"002", name:"Lass Isabella", trainerClass:"lass", personalName:"Isabella", location:"Route 2", desc:"...", routeNumber:6, prizeMoney:528, team:[{name, level, item, nature, ability, moves:[]}, ...] }]
 
 const fs = require('fs');
 const path = require('path');
@@ -16,24 +17,16 @@ const toID = (text) => {
 function parse() {
   const text = fs.readFileSync(SRC, 'utf8');
   const lines = text.split(/\r?\n/);
+  const normalizeMetaText = (value) => {
+    const out = (value || '').trim();
+    if (!out || /^\(?none\)?$/i.test(out)) return '';
+    return out;
+  };
 
   const trainers = [];
   let i = 0;
   while (i < lines.length) {
-    // Skip empties until a Prize line
-    while (i < lines.length && !/^Prize Money:/i.test(lines[i].trim())) {
-      i++;
-    }
-    if (i >= lines.length) break;
-
-    // Prize Money line
-    const prizeLine = lines[i].trim();
-    const prizeMatch = prizeLine.match(/^Prize Money:\s*\$\s*(\d+)/i);
-    let prizeMoney = 0;
-    if (prizeMatch) prizeMoney = parseInt(prizeMatch[1], 10) || 0;
-    i++;
-
-    // Next non-empty should be the ID + name line
+    // Skip empties until a trainer id line
     while (i < lines.length && !lines[i].trim()) i++;
     if (i >= lines.length) break;
     const idNameLine = lines[i].trim();
@@ -68,6 +61,43 @@ function parse() {
 
     const name = trainerClass && personalName ? `${trainerClass} ${personalName}` : (trainerClass || personalName);
     i++;
+
+    // Metadata lines before team
+    let location = '';
+    let desc = '';
+    let routeNumber = 0;
+    let prizeMoney = 0;
+    while (i < lines.length) {
+      const metaLine = lines[i].trim();
+      if (!metaLine || metaLine.includes('(Lv.')) break;
+
+      let match = metaLine.match(/^Location:\s*(.*)$/i);
+      if (match) {
+        location = normalizeMetaText(match[1]);
+        i++;
+        continue;
+      }
+      match = metaLine.match(/^Desc:\s*(.*)$/i);
+      if (match) {
+        desc = normalizeMetaText(match[1]);
+        i++;
+        continue;
+      }
+      match = metaLine.match(/^Route #:\s*([+-]?\d+)/i);
+      if (match) {
+        routeNumber = parseInt(match[1], 10) || 0;
+        i++;
+        continue;
+      }
+      match = metaLine.match(/^Prize Money:\s*\$\s*([0-9,]+)/i);
+      if (match) {
+        prizeMoney = parseInt(match[1].replace(/,/g, ''), 10) || 0;
+        i++;
+        continue;
+      }
+      // Unknown metadata line, skip defensively
+      i++;
+    }
 
     // Collect team lines until a blank line or EOF
     const team = [];
@@ -120,8 +150,8 @@ function parse() {
       i++;
     }
 
-    // Consume the blank line separator if present
-    if (i < lines.length && !lines[i].trim()) i++;
+    // Consume blank line separators if present
+    while (i < lines.length && !lines[i].trim()) i++;
 
     const isPlaceholder = team.length === 1 && team[0] &&
       toID(team[0].name) === 'yungoos' &&
@@ -130,7 +160,7 @@ function parse() {
 
     if (isPlaceholder) continue;
 
-    trainers.push({ id: idStr, name, trainerClass: toID(trainerClass), personalName, prizeMoney, team });
+    trainers.push({ id: idStr, name, trainerClass: toID(trainerClass), personalName, location, desc, routeNumber, prizeMoney, team });
   }
 
   // Sort by numeric id
