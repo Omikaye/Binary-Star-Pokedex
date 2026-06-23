@@ -6,8 +6,8 @@ Accuracy: 100
 Type: Fairy
 Targeting: Single Adjacent Ally/Foe
 Base PP: 35
-Z-Power: 100
-Z-Effect: None
+Z-Power: 40
+Z-Effect: +2 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The target is pummeled with a flail from a long tail, foreleg, arm, or other appendage.
@@ -21,8 +21,8 @@ Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 25
 Crit Stage(s): 1
-Z-Power: 100
-Z-Effect: None
+Z-Power: 60
+Z-Effect: raises critical-hit ratio two stages
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
 The target is attacked with a sharp chop. Critical hits land more easily. (+1 Crit, Punch)
@@ -52,7 +52,7 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Priority: 1
 Hits: Min 2 / Max 5
-Z-Power: 70
+Z-Power: 80
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
@@ -82,7 +82,7 @@ Type: Steel
 Targeting: All Foes
 Base PP: 15
 Stat Change: Evasion -> -1 (100%)
-Z-Power: 105
+Z-Power: 90
 Z-Effect: raises critical-hit ratio two stages
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -141,8 +141,8 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 35
-Z-Power: 100
-Z-Effect: None
+Z-Power: 80
+Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 Hard, pointed, sharp claws rake the target to inflict damage.
@@ -156,7 +156,7 @@ Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 25
 Z-Power: 105
-Z-Effect: None
+Z-Effect: +1 Defense
 Flags: Protect, Mirror, AnimateAlly
 Description:
 The target is squeezed from both sides with psychic power to inflict damage.
@@ -186,7 +186,7 @@ Type: Flying
 Targeting: All Foes
 Base PP: 10
 Stat Change: Special Attack -> 1 (100%)
-Z-Power: 145
+Z-Power: 130
 Z-Effect: +1 Speed
 Flags: Charge, Protect, Mirror, AnimateAlly
 Description:
@@ -216,8 +216,8 @@ Type: Steel
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Crit Stage(s): 1
-Z-Power: 125
-Z-Effect: None
+Z-Power: 75
+Z-Effect: raises critical-hit ratio two stages
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The target is cut with a scythe or claw. Critical hits land more easily.(+1 Crit)
@@ -230,8 +230,8 @@ Accuracy: 100
 Type: Flying
 Targeting: All Foes
 Base PP: 35
-Z-Power: 100
-Z-Effect: None
+Z-Power: 80
+Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, DistanceTriple, AnimateAlly
 Description:
 A gust of wind is whipped up and launched at the enemy side to inflict damage.
@@ -320,8 +320,8 @@ Type: Grass
 Targeting: Single Adjacent Ally/Foe
 Base PP: 25
 Flinch Chance: 20%
-Z-Power: 100
-Z-Effect: None
+Z-Power: 35
+Z-Effect: +2 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The target is struck with slender, whiplike vines to inflict damage. This may flinch the target. (20%)
@@ -426,7 +426,7 @@ Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Flinch Chance: 30%
-Z-Power: 100
+Z-Power: 110
 Z-Effect: +1 Defense
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
@@ -441,7 +441,7 @@ Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Crit Stage(s): 1
-Z-Power: 75
+Z-Power: 80
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
@@ -486,8 +486,8 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 35
-Z-Power: 100
-Z-Effect: None
+Z-Power: 90
+Z-Effect: +1 Defense
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 A physical attack in which the user charges and slams into the target with its whole body.
@@ -765,8 +765,8 @@ Type: Poison
 Targeting: All Foes
 Base PP: 30
 Stat Change: Special Defense -> -1 (25%)
-Z-Power: 100
-Z-Effect: None
+Z-Power: 40
+Z-Effect: +2 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
 The opposing Pokémon are attacked with a spray of harsh acid. This may also lower their Sp. Def stat. (25%)
@@ -780,8 +780,8 @@ Type: Fire
 Targeting: Single Adjacent Ally/Foe
 Inflict: Burn (10%)
 Base PP: 25
-Z-Power: 100
-Z-Effect: None
+Z-Power: 35
+Z-Effect: +2 Special Attack
 Flags: Protect, Mirror, Defrost, AnimateAlly
 Description:
 The target is attacked with small flames. This may also leave the target with a burn. (10%)
@@ -825,8 +825,8 @@ Accuracy: 100
 Type: Water
 Targeting: Single Adjacent Ally/Foe
 Base PP: 25
-Z-Power: 105
-Z-Effect: None
+Z-Power: 35
+Z-Effect: +2 Special Attack
 Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
 The target is blasted with a forceful shot of water. (Bullet, Pulse)
@@ -1020,7 +1020,7 @@ Type: Fighting
 Targeting: Self
 Base PP: 20
 Priority: -5
-Z-Power: 60
+Z-Power: 75
 Z-Effect: recovers all of user's HP
 Flags: MakesContact, Protect, AnimateAlly
 Description:
@@ -1078,8 +1078,8 @@ Accuracy: 100
 Type: Grass
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
-Z-Power: 105
-Z-Effect: None
+Z-Power: 110
+Z-Effect: +1 Special Defense
 Recoil: 50
 Flags: Protect, Mirror, Heal, AnimateAlly
 Description:
@@ -1125,8 +1125,8 @@ Type: Grass
 Targeting: All Foes
 Base PP: 25
 Crit Stage(s): 1
-Z-Power: 105
-Z-Effect: None
+Z-Power: 75
+Z-Effect: raises critical-hit ratio two stages
 Flags: Protect, Mirror, AnimateAlly
 Description:
 Sharp-edged leaves are launched to slash at the opposing Pokémon. Critical hits land more easily. (+1 Crit)
@@ -1230,7 +1230,7 @@ Accuracy: 100
 Type: Dragon
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 90
+Z-Power: 100
 Z-Effect: +2 Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -1259,10 +1259,10 @@ Power: 40
 Accuracy: 100
 Type: Electric
 Targeting: Single Adjacent Ally/Foe
-Inflict: Paralyze (10%)
+Inflict: Paralyze (20%)
 Base PP: 30
-Z-Power: 100
-Z-Effect: None
+Z-Power: 105
+Z-Effect: +1 Special Defense
 Flags: Protect, Mirror, AnimateAlly
 Description:
 A jolt of electricity crashes down on the target to inflict damage. This may also leave the target with paralysis. (10%)
@@ -1320,8 +1320,8 @@ Accuracy: 100
 Type: Rock
 Targeting: Single Adjacent Ally/Foe
 Base PP: 25
-Z-Power: 100
-Z-Effect: None
+Z-Power: 80
+Z-Effect: +2 Special Defense
 Flags: Protect, Mirror, AnimateAlly
 Description:
 The user launches a handful of geodes and gems at the target to attack.
@@ -1397,7 +1397,7 @@ Inflict: Confusion (10%)
 Base PP: 25
 Effect Turns: Min 2 / Max 5
 Z-Power: 105
-Z-Effect: None
+Z-Effect: +1 Special Defense
 Flags: Protect, Mirror, AnimateAlly
 Description:
 The target is hit by a weak telekinetic force. This may also confuse the target. (10%)
@@ -1530,6 +1530,7 @@ Accuracy: 101
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
+Priority: 6
 Z-Power: 0
 Z-Effect: raises critical-hit ratio two stages
 Flags: Protect, IgnoreSubstitute, AnimateAlly
@@ -1754,7 +1755,7 @@ Type: Normal
 Targeting: Self
 Base PP: 10
 Priority: 1
-Z-Power: 50
+Z-Power: 80
 Z-Effect: recovers all of user's HP
 Flags: MakesContact, Protect
 Description:
@@ -1782,6 +1783,7 @@ Accuracy: 101
 Type: Flying
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
+Priority: 1
 Z-Power: 0
 Z-Effect: +2 Attack
 Flags: AnimateAlly
@@ -1812,7 +1814,7 @@ Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Crit Stage(s): 1
-Z-Power: 50
+Z-Power: 90
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
@@ -1932,7 +1934,8 @@ Accuracy: 101
 Type: Normal
 Targeting: All Foes
 Base PP: 20
-Z-Power: 65
+Stat Change: Evasion -> -1 (20%)
+Z-Power: 85
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -2083,7 +2086,7 @@ Targeting: All Foes
 Inflict: Poison (0%)
 Base PP: 10
 Z-Power: 0
-Z-Effect: +1 Defense
+Z-Effect: +2 Special Defense
 Flags: Protect, Reflectable, Mirror
 Description:
 A cloud of poison gas is sprayed in the face of opposing Pokémon, poisoning those hit. Z: +1 Def
@@ -2143,7 +2146,7 @@ Type: Flying
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
 Crit Stage(s): 1
-Z-Power: 65
+Z-Power: 100
 Z-Effect: +1 Attack
 Recoil: 25
 Flags: MakesContact, Charge, Protect, Mirror, DistanceTriple, Heal, AnimateAlly
@@ -2158,7 +2161,7 @@ Accuracy: 101
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Priority: 1
+Priority: 3
 Z-Power: 0
 Z-Effect: recovers all of user's HP
 Flags: Snatch, AnimateAlly
@@ -2174,8 +2177,8 @@ Type: Water
 Targeting: All Foes
 Base PP: 30
 Stat Change: Speed -> -1 (10%)
-Z-Power: 100
-Z-Effect: None
+Z-Power: 75
+Z-Effect: +2 Special Defense
 Flags: Protect, Mirror, AnimateAlly
 Description:
 A spray of countless bubbles is jetted at the opposing Pokémon. This may also lower their Speed stat. (10%)
@@ -2297,6 +2300,7 @@ Accuracy: 100
 Type: Normal
 Targeting: Everyone but User
 Base PP: 5
+Crit Stage(s): 6
 Z-Power: 180
 Z-Effect: None
 Flags: Protect, Mirror, Ballistic
@@ -2418,7 +2422,7 @@ Targeting: Single Adjacent Ally/Foe
 Inflict: Special (8%)
 Base PP: 10
 Hits: Min 3 / Max 3
-Z-Power: 70
+Z-Power: 80
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, Pulse
 Description:
@@ -2432,8 +2436,8 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 140
-Z-Effect: None
+Z-Power: 100
+Z-Effect: +2 Defense
 Flags: MakesContact, Protect, Mirror, AnimateAlly, Bite
 Description:
 The user chomps hard on the target with its sharp front fangs. This cuts the target’s current HP in half. (Jaw)
@@ -2447,8 +2451,8 @@ Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Crit Stage(s): 1
-Z-Power: 135
-Z-Effect: None
+Z-Power: 75
+Z-Effect: raises critical-hit ratio two stages
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The target is attacked with a slash of claws or blades. Critical hits land more easily. (+1 Crit)
@@ -2597,8 +2601,8 @@ Type: Normal
 Targeting: All Foes
 Base PP: 15
 Flinch Chance: 30%
-Z-Power: 135
-Z-Effect: None
+Z-Power: 60
+Z-Effect: recovers all of user's HP
 Flags: Protect, Mirror, Sound, IgnoreSubstitute, AnimateAlly
 Description:
 This attack can be used only if the user is asleep. The harsh noise may also make the target flinch. (30%, Sound)
@@ -2625,8 +2629,8 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 160
-Z-Effect: None
+Z-Power: 75
+Z-Effect: recovers all of user's HP
 Flags: MakesContact, Protect, Mirror, AnimateAlly, Dance
 Description:
 The user flails about aimlessly to attack. The less HP the user has, the greater the move’s power. (20-200 Power, Dance)
@@ -2641,7 +2645,7 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Priority: 1
 Z-Power: 0
-Z-Effect: +3 Special Defense
+Z-Effect: +1 to all (except Accuracy or Evasiveness)
 Flags: Snatch, IgnoreSubstitute
 Description:
 The user changes its type to make itself resistant to the type of the attack the opponent used last. (+1 Priority) Z: +3 Sp.Def
@@ -2685,8 +2689,8 @@ Accuracy: 100
 Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 160
-Z-Effect: None
+Z-Power: 75
+Z-Effect: recovers all of user's HP
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 An all-out attack that becomes more powerful the less HP the user has. (20-200 Power)
@@ -2836,8 +2840,8 @@ Type: Ground
 Targeting: Single Adjacent Ally/Foe
 Base PP: 30
 Stat Change: Speed -> -1 (50%)
-Z-Power: 100
-Z-Effect: None
+Z-Power: 60
+Z-Effect: +2 Special Defense
 Flags: Protect, Mirror
 Description:
 The user hurls mud in the target’s path to inflict damage and may lower its Speed. (50%)
@@ -2852,7 +2856,7 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Crit Stage(s): 1
 Stat Change: Accuracy -> -1 (10%)
-Z-Power: 40
+Z-Power: 70
 Z-Effect: raises critical-hit ratio two stages
 Flags: Protect, Mirror, Ballistic, Pulse
 Description:
@@ -2866,6 +2870,7 @@ Accuracy: 101
 Type: Ground
 Targeting: Opponent's Field
 Base PP: 15
+Priority: 1
 Z-Power: 0
 Z-Effect: +2 Defense
 Flags: Reflectable, Snatch, FailSkyBattle
@@ -3089,8 +3094,8 @@ Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 40
 Crit Stage(s): 6
-Z-Power: 140
-Z-Effect: None
+Z-Power: 50
+Z-Effect: +2 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 A restrained attack that prevents the target from fainting. The target is left with at least 1 HP. This move always results in a critical hit.
@@ -3136,8 +3141,8 @@ Type: Electric
 Targeting: Single Adjacent Ally/Foe
 Inflict: Paralyze (30%)
 Base PP: 20
-Z-Power: 115
-Z-Effect: None
+Z-Power: 80
+Z-Effect: +2 Speed
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user throws an electrically charged tackle at the target. This may also leave the target with paralysis. (30%)
@@ -3165,7 +3170,7 @@ Type: Steel
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Stat Change: Defense -> 1 (25%)
-Z-Power: 95
+Z-Power: 110
 Z-Effect: +1 Defense
 Flags: MakesContact, Protect, Mirror
 Description:
@@ -3236,7 +3241,7 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 45
+Z-Power: 50
 Z-Effect: +2 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
@@ -3250,7 +3255,7 @@ Accuracy: 100
 Type: Ice
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
-Z-Power: 25
+Z-Power: 60
 Z-Effect: +2 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -3338,7 +3343,7 @@ Targeting: Single Adjacent Ally/Foe
 Inflict: Confusion (100%)
 Base PP: 5
 Effect Turns: Min 2 / Max 5
-Z-Power: 65
+Z-Power: 85
 Z-Effect: +1 Accuracy
 Flags: MakesContact, Protect, Mirror, Punch
 Description:
@@ -3367,7 +3372,7 @@ Type: Dragon
 Targeting: Single Adjacent Ally/Foe
 Inflict: Paralyze (30%)
 Base PP: 20
-Z-Power: 20
+Z-Power: 35
 Z-Effect: +2 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -3423,8 +3428,8 @@ Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Stat Change: Speed -> 1 (100%)
-Z-Power: 100
-Z-Effect: None
+Z-Power: 75
+Z-Effect: +2 Speed
 Flags: MakesContact, Protect, Mirror, AnimateAlly, Dance
 Description:
 A spin attack that can also eliminate such moves as Bind, Wrap, Leech Seed, and Spikes. Raises the user's Speed. (Dance)
@@ -3471,8 +3476,8 @@ Type: Steel
 Targeting: Single Adjacent Ally/Foe
 Base PP: 25
 Stat Change: Attack -> 1 (10%)
-Z-Power: 100
-Z-Effect: None
+Z-Power: 80
+Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The target is raked with steel claws. This may also raise the user’s Attack stat. (10%)
@@ -3575,7 +3580,7 @@ Type: Dragon
 Targeting: All Foes
 Base PP: 15
 Stat Change: Attack -> -1 (100%)
-Z-Power: 90
+Z-Power: 105
 Z-Effect: +1 Defense
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -3633,7 +3638,7 @@ Type: Psychic
 Targeting: Self
 Base PP: 20
 Priority: -5
-Z-Power: 60
+Z-Power: 75
 Z-Effect: recovers all of user's HP
 Flags: Protect, AnimateAlly
 Description:
@@ -3722,8 +3727,8 @@ Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 30
 Stat Change: Defense -> -1 (30%)
-Z-Power: 100
-Z-Effect: None
+Z-Power: 90
+Z-Effect: +1 Defense
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
 The user attacks with a punch. This may also lower the target’s Defense stat. (30%, Punch)
@@ -3811,7 +3816,7 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 80
+Z-Power: 100
 Z-Effect: +1 Special Attack
 Flags: Protect, AnimateAlly
 Description:
@@ -4087,6 +4092,7 @@ Accuracy: 101
 Type: Normal
 Targeting: Self
 Base PP: 15
+Priority: 1
 Z-Power: 0
 Z-Effect: raises critical-hit ratio two stages
 Description:
@@ -4148,7 +4154,7 @@ Type: Steel
 Targeting: Self
 Base PP: 10
 Z-Power: 0
-Z-Effect: recovers all of user's HP
+Z-Effect: +1 to all (except Accuracy or Evasiveness)
 Flags: Snatch
 Description:
 The user recycles a held item that has been used in battle so it can be used again. Z: Restores HP
@@ -4162,7 +4168,7 @@ Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Priority: -4
-Z-Power: 80
+Z-Power: 110
 Z-Effect: +1 Defense
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
@@ -4220,7 +4226,7 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
-Z-Power: 90
+Z-Power: 100
 Z-Effect: +1 Speed
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
@@ -4275,8 +4281,9 @@ Category: Status
 Power: 0
 Accuracy: 101
 Type: Normal
-Targeting: All Allies
+Targeting: Self
 Base PP: 10
+Priority: 1
 Z-Power: 0
 Z-Effect: recovers all of user's HP
 Flags: Snatch, Heal
@@ -4365,7 +4372,7 @@ Accuracy: 101
 Type: Normal
 Targeting: Self
 Base PP: 10
-Priority: -2
+Priority: 1
 Z-Power: 0
 Z-Effect: +1 to all (except Accuracy or Evasiveness)
 Flags: Snatch
@@ -4563,7 +4570,7 @@ Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
 Stat Change: Defense -> -1 (100%)
-Z-Power: 50
+Z-Power: 80
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
@@ -4623,8 +4630,8 @@ Type: Ghost
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Flinch Chance: 30%
-Z-Power: 100
-Z-Effect: None
+Z-Power: 75
+Z-Effect: +2 Speed
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user attacks the target while shouting in a startling fashion. This may also make the target flinch. (30%)
@@ -4865,7 +4872,7 @@ Base PP: 15
 Flinch Chance: 10%
 Crit Stage(s): 1
 Hits: Min 2 / Max 2
-Z-Power: 60
+Z-Power: 80
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -4954,8 +4961,8 @@ Accuracy: 101
 Type: Flying
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
-Z-Power: 50
-Z-Effect: +1 Attack
+Z-Power: 80
+Z-Effect: +2 Speed
 Flags: MakesContact, Protect, Mirror, DistanceTriple, AnimateAlly
 Description:
 The user confounds the target with speed, then slashes. This attack never misses. Z: +1 Attack
@@ -5106,8 +5113,8 @@ Targeting: Single Adjacent Ally/Foe
 Inflict: Poison (10%)
 Base PP: 25
 Crit Stage(s): 1
-Z-Power: 100
-Z-Effect: None
+Z-Power: 50
+Z-Effect: raises critical-hit ratio two stages
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user hits the target with its tail. This may also poison the target. (10%) Critical hits land more easily. (+1 Crit)
@@ -5150,8 +5157,8 @@ Type: Grass
 Targeting: All Foes
 Base PP: 20
 Stat Change: Evasion -> -1 (20%)
-Z-Power: 110
-Z-Effect: None
+Z-Power: 80
+Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
 The user scatters curious leaves that pelt both targets. This attack never misses. May lower evasion. (20%)
@@ -5242,8 +5249,8 @@ Type: Electric
 Targeting: All Foes
 Base PP: 15
 Stat Change: Evasion -> -1 (20%)
-Z-Power: 110
-Z-Effect: None
+Z-Power: 80
+Z-Effect: +1 Special Attack
 Flags: Protect, Mirror
 Description:
 The user zaps the targets with quick jolts of electricity. This attack never misses. May lower evasion. (20%)
@@ -5258,7 +5265,7 @@ Targeting: Single Adjacent Ally/Foe
 Inflict: Confusion (20%)
 Base PP: 20
 Effect Turns: Min 2 / Max 5
-Z-Power: 60
+Z-Power: 75
 Z-Effect: +2 Speed
 Flags: Protect, Mirror, DistanceTriple, AnimateAlly, Pulse
 Description:
@@ -5390,7 +5397,7 @@ Type: Psychic
 Targeting: Self
 Base PP: 10
 Z-Power: 0
-Z-Effect: +1 to all (except Accuracy or Evasiveness)
+Z-Effect: +2 to all (except Accuracy or Evasiveness)
 Flags: Snatch, Heal
 Description:
 The user faints. In return, the Pokémon taking its place will be fully healed. Z: +1 to all stats if no allies are available.
@@ -5417,8 +5424,8 @@ Accuracy: 100
 Type: Grass
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 160
-Z-Effect: None
+Z-Power: 150
+Z-Effect: resets lowered stats of the user
 Flags: Protect, Mirror, AnimateAlly
 Description:
 The user draws power to attack by using its held Berry. The Berry determines the move’s type and power.
@@ -5487,7 +5494,7 @@ Accuracy: 100
 Type: Steel
 Targeting: Self
 Base PP: 10
-Z-Power: 100
+Z-Power: 105
 Z-Effect: +1 Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -5547,7 +5554,7 @@ Accuracy: 100
 Type: Dark
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 70
+Z-Power: 80
 Z-Effect: +1 Special Attack
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
@@ -5578,7 +5585,7 @@ Accuracy: 100
 Type: Dark
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 100
+Z-Power: 115
 Z-Effect: +1 Attack
 Flags: Protect, Mirror, AnimateAlly, Pulse
 Description:
@@ -5606,7 +5613,7 @@ Accuracy: 101
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 3
-Z-Power: 140
+Z-Power: 150
 Z-Effect: None
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
@@ -5708,6 +5715,7 @@ Accuracy: 101
 Type: Normal
 Targeting: Self
 Base PP: 15
+Priority: 1
 Z-Power: 0
 Z-Effect: +2 Defense
 Flags: AnimateAlly
@@ -5807,6 +5815,7 @@ Accuracy: 101
 Type: Poison
 Targeting: Opponent's Field
 Base PP: 15
+Priority: 1
 Z-Power: 0
 Z-Effect: +2 Special Defense
 Flags: Reflectable, Snatch, FailSkyBattle, AnimateAlly
@@ -5881,7 +5890,7 @@ Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Inflict: Paralyze (30%)
 Base PP: 20
-Z-Power: 80
+Z-Power: 75
 Z-Effect: +1 Special Attack
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly, Pulse
 Description:
@@ -5970,8 +5979,8 @@ Accuracy: 100
 Type: Water
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
-Z-Power: 80
-Z-Effect: +1 Attack
+Z-Power: 110
+Z-Effect: +1 Defense
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The user attacks by swinging its tail as if it were a vicious wave in a raging storm. Z: +1 Attack
@@ -6087,8 +6096,8 @@ Accuracy: 100
 Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 125
-Z-Effect: None
+Z-Power: 55
+Z-Effect: +2 Special Defense
 Recoil: 50
 Flags: MakesContact, Protect, Mirror, Punch, Heal, AnimateAlly
 Description:
@@ -6237,8 +6246,8 @@ Type: Ice
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Priority: -4
-Z-Power: 140
-Z-Effect: None
+Z-Power: 80
+Z-Effect: +2 Defense
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The power of this attack move is doubled if the user has been hurt by the target in the same turn.
@@ -6495,8 +6504,8 @@ Type: Fire
 Targeting: Everyone but User
 Inflict: Burn (30%)
 Base PP: 15
-Z-Power: 135
-Z-Effect: None
+Z-Power: 85
+Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, Defrost
 Description:
 The user torches everything around it in an inferno of scarlet flames. This may also leave those it hits with a burn. (30%)
@@ -6601,7 +6610,7 @@ Accuracy: 101
 Type: Steel
 Targeting: Single Adjacent Ally/Foe
 Base PP: 20
-Z-Power: 50
+Z-Power: 80
 Z-Effect: +1 Attack
 Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
@@ -6645,6 +6654,7 @@ Accuracy: 101
 Type: Rock
 Targeting: Opponent's Field
 Base PP: 10
+Priority: 1
 Z-Power: 0
 Z-Effect: +2 Defense
 Flags: Reflectable, Snatch
@@ -6718,8 +6728,8 @@ Type: Electric
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Special Attack -> 1 (100%)
-Z-Power: 100
-Z-Effect: None
+Z-Power: 30
+Z-Effect: +2 Special Attack
 Flags: Protect, Mirror, AnimateAlly, Pulse
 Description:
 The user attacks with an electric charge. The user will use any remaining electricity to raise its Sp. Atk stat. (Pulse)
@@ -6825,7 +6835,7 @@ Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Hits: Min 2 / Max 2
-Z-Power: 60
+Z-Power: 85
 Z-Effect: +1 Attack
 Flags: MakesContact, Protect, Mirror, Punch, AnimateAlly
 Description:
@@ -6870,7 +6880,7 @@ Type: Psychic
 Targeting: Self
 Base PP: 10
 Z-Power: 0
-Z-Effect: +1 to all (except Accuracy or Evasiveness)
+Z-Effect: +2 to all (except Accuracy or Evasiveness)
 Flags: Snatch, Heal, Dance
 Description:
 The user faints. In return, the Pokémon taking its place will have its status and HP fully restored. Z: +1 All Stats if no allies are left to swap in.
@@ -6884,8 +6894,8 @@ Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 5
 Stat Change: Defense -> 1 (100%)
-Z-Power: 190
-Z-Effect: None
+Z-Power: 50
+Z-Effect: recovers all of user's HP
 Flags: MakesContact, Protect, Mirror, AnimateAlly
 Description:
 The target is crushed with great force. The more HP the target has left, the greater this move’s power. This raises the user's Defense. (1-120 Power)
@@ -7006,6 +7016,7 @@ Accuracy: 101
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
+Priority: 1
 Z-Power: 0
 Z-Effect: +3 Special Defense
 Flags: Protect, AnimateAlly
@@ -7020,6 +7031,7 @@ Accuracy: 101
 Type: Psychic
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
+Priority: 1
 Z-Power: 0
 Z-Effect: +2 Speed
 Flags: Protect, AnimateAlly
@@ -7242,7 +7254,7 @@ Accuracy: 100
 Type: Electric
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 40
+Z-Power: 80
 Z-Effect: +2 Speed
 Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
@@ -7318,7 +7330,7 @@ Type: Poison
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Special Defense -> -2 (100%)
-Z-Power: 70
+Z-Power: 75
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, AnimateAlly, Ballistic, Pulse
 Description:
@@ -7389,7 +7401,7 @@ Accuracy: 100
 Type: Normal
 Targeting: Single Adjacent Ally/Foe
 Base PP: 15
-Z-Power: 50
+Z-Power: 60
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, Sound, IgnoreSubstitute, AnimateAlly
 Description:
@@ -7547,8 +7559,8 @@ Accuracy: 100
 Type: Flying
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
-Z-Power: 100
-Z-Effect: +1 Attack
+Z-Power: 80
+Z-Effect: +2 Defense
 Flags: MakesContact, Charge, Protect, Mirror, Gravity, DistanceTriple, AnimateAlly
 Description:
 The user takes the target into the sky, then drops it during the next turn. The target cannot attack while in the sky. Heavy foes can't be lifted. Z: +1 Atk
@@ -7764,7 +7776,7 @@ Type: Bug
 Targeting: All Foes
 Base PP: 20
 Stat Change: Special Attack -> -1 (100%)
-Z-Power: 90
+Z-Power: 105
 Z-Effect: +1 Special Defense
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -8234,7 +8246,7 @@ Type: Ice
 Targeting: Single Adjacent Ally/Foe
 Inflict: Paralyze (30%)
 Base PP: 5
-Z-Power: 100
+Z-Power: 130
 Z-Effect: +1 Speed
 Flags: Charge, Protect, Mirror, AnimateAlly
 Description:
@@ -8249,7 +8261,7 @@ Type: Ice
 Targeting: Single Adjacent Ally/Foe
 Inflict: Burn (30%)
 Base PP: 5
-Z-Power: 100
+Z-Power: 130
 Z-Effect: +1 Speed
 Flags: Charge, Protect, Mirror, Defrost, AnimateAlly
 Description:
@@ -8264,7 +8276,7 @@ Type: Dark
 Targeting: All Foes
 Base PP: 20
 Stat Change: Special Attack -> -1 (100%)
-Z-Power: 90
+Z-Power: 105
 Z-Effect: +1 Special Defense
 Flags: Protect, Mirror, Sound, IgnoreSubstitute
 Description:
@@ -8542,8 +8554,8 @@ Accuracy: 101
 Type: Fairy
 Targeting: All Foes
 Base PP: 15
-Z-Power: 110
-Z-Effect: None
+Z-Power: 80
+Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, Sound, IgnoreSubstitute
 Description:
 Letting out a charming cry, the user does emotional damage to opposing Pokémon. This attack never misses. (Sound)
@@ -8694,8 +8706,8 @@ Targeting: Single Adjacent Ally/Foe
 Inflict: Attract (30%)
 Base PP: 25
 Effect Turns: Min 2 / Max 4
-Z-Power: 100
-Z-Effect: None
+Z-Power: 80
+Z-Effect: +2 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
 The user stirs up a fairy wind and strikes the target with it. This may infatuate an opponent for 2-4 turns. (30%)
@@ -8846,7 +8858,7 @@ Targeting: Single Adjacent Ally/Foe
 Base PP: 20
 Priority: 1
 Hits: Min 2 / Max 5
-Z-Power: 70
+Z-Power: 80
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, AnimateAlly
 Description:
@@ -8861,7 +8873,7 @@ Type: Fire
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Special Attack -> -1 (100%)
-Z-Power: 70
+Z-Power: 80
 Z-Effect: +1 Special Attack
 Flags: Protect, Mirror, Defrost, AnimateAlly
 Description:
@@ -9119,8 +9131,8 @@ Type: Fighting
 Targeting: Single Adjacent Ally/Foe
 Base PP: 10
 Stat Change: Attack -> 1 (100%)
-Z-Power: 100
-Z-Effect: None
+Z-Power: 30
+Z-Effect: +2 Attack
 Flags: MakesContact, Protect, Mirror, Punch
 Description:
 Striking opponents over and over makes the user’s fists harder. Hitting a target raises the Attack stat. (Punch)
