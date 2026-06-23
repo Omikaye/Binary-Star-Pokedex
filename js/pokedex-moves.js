@@ -153,15 +153,7 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 			buf += '<p class="movetag"><a href="'+Config.baseurl+'tags/wind" data-target="push">&#x2713; Wind</a> <small>(interacts with <a class="subtle" href="'+Config.baseurl+'abilities/windpower" data-target="push">Wind Power</a> and <a class="subtle" href="'+Config.baseurl+'abilities/windrider" data-target="push">Wind Rider</a>)</small></p>';
 		}
 
-		if (move.target === 'allAdjacent') {
-			buf += '<p class="movetag"><small>In Doubles, hits all adjacent Pokémon (including allies)</small></p>';
-		} else if (move.target === 'allAdjacentFoes') {
-			buf += '<p class="movetag"><small>In Doubles, hits all adjacent foes</small></p>';
-		} else if (move.target === 'randomNormal') {
-			buf += '<p class="movetag"><small>In Doubles, hits a random foe (you can\'t choose its target)</small></p>';
-		} else if (move.target === 'adjacentAllyOrSelf') {
-			buf += '<p class="movetag"><small>In Doubles, can be used either on the user or an adjacent ally</small></p>';
-		}
+		buf += '<p class="movetag"><small>' + this.getTargetDescription(move) + '</small></p>';
 
 		// Z-Move
 		var zMoveTable = {
@@ -194,7 +186,7 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 			sparklingaria: "Oceanic Operetta",
 			gigaimpact: "Pulverizing Pancake",
 			spectralthief: "Soul-Stealing 7-Star Strike",
-			thunderbolt: "Stoked Sparksurfer",
+			voltswitch: "Stoked Sparksurfer",
 			thunderbolt2: "10,000,000 Volt Thunderbolt",
 			photongeyser: "Light That Burns the Sky",
 			sunsteelstrike: "Searing Sunraze Smash",
@@ -331,7 +323,7 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 		}
 
 		// distribution
-		buf += '<h3>Pokémon that learn this move</h3>';
+		buf += '<h3>' + (move.isZ ? 'Pokémon that can use this Z-Move' : 'Pokémon that learn this move') + '</h3>';
 		buf += '<ul class="utilichart metricchart nokbd">';
 		buf += '</ul>';
 
@@ -340,6 +332,36 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 		this.html(buf);
 
 		setTimeout(this.renderDistribution.bind(this));
+	},
+	getTargetDescription: function(move) {
+		var descriptions = {
+			normal: 'Targets one adjacent Pokémon.',
+			adjacentFoe: 'Targets one adjacent foe.',
+			adjacentAlly: 'Targets one adjacent ally.',
+			adjacentAllyOrSelf: 'Can target the user or one adjacent ally.',
+			ally: 'Targets one ally.',
+			self: 'Targets the user.',
+			allAdjacent: 'In Doubles, hits all adjacent Pokémon (including allies).',
+			allAdjacentFoes: 'In Doubles, hits all adjacent foes.',
+			randomNormal: 'In Doubles, hits a random foe (you can\'t choose its target).',
+			allySide: 'Affects the user\'s side of the field.',
+			foeSide: 'Affects the opposing side of the field.',
+			allyTeam: 'Affects all allies.',
+			all: 'Affects all Pokémon on the field.',
+			any: 'Targets one Pokémon anywhere on the field.',
+		};
+		return descriptions[move.target] || 'Targets one adjacent Pokémon.';
+	},
+	formatZMoveEffect: function(effect) {
+		if (!effect) return '';
+		return effect
+			.replace(/Special Attack/g, 'SpA')
+			.replace(/Special Defense/g, 'SpD')
+			.replace(/Attack/g, 'Atk')
+			.replace(/Defense/g, 'Def')
+			.replace(/Speed/g, 'Spe')
+			.replace(/Accuracy/g, 'Acc')
+			.replace(/Evasion/g, 'Eva');
 	},
 	getDistribution: function() {
 		var results = []
@@ -363,7 +385,13 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 		for (let pokeId in BattlePokedex) {
 			let pokemon = BattlePokedex[pokeId];
 			if (pokemon.zmove && toID(pokemon.zmove.zMove) === moveId) {
-				results.push({ poke: pokeId, how: 'zmove', level: 0 });
+				results.push({
+					poke: pokeId,
+					how: 'zmove',
+					level: 0,
+					baseMove: pokemon.zmove.baseMove,
+					zCrystal: pokemon.zmove.zCrystal,
+				});
 			}
 		}
 		
@@ -435,8 +463,15 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 					return '<h3>Z-Move</h3>';
 			}
 		} else if (offscreen) {
+			if (results[i].how === 'zmove') {
+				var baseMove = results[i].baseMove ? getID(BattleMovedex, results[i].baseMove) : null;
+				return '' + template.name + ' ' + (baseMove?.name || '') + ' ' + (baseMove?.zMovePower || '') + ' ' + (baseMove?.zMoveEffect || '');
+			}
 			return ''+template.name+' '+template.abilities['0']+' '+(template.abilities['1']||'')+' '+(template.abilities['H']||'')+'';
 		} else {
+			if (results[i].how === 'zmove') {
+				return this.renderZMoveRow(template, results[i]);
+			}
 			var desc = '';
 			switch (results[i].how) {
 			case 'lvl': // level-up move
@@ -463,6 +498,35 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 			}
 			return BattleSearch.renderTaggedPokemonRowInner(template, desc);
 		}
+	},
+	renderZMoveRow: function(pokemon, result) {
+		var attrs = '';
+		if (BattleSearch.urlRoot) attrs = ' href="' + BattleSearch.urlRoot + 'pokemon/' + toID(pokemon.name) + '" data-target="push"';
+		var buf = '<a' + attrs + ' data-entry="pokemon|' + escapeHTML(pokemon.name) + '">';
+		var baseMove = result.baseMove ? getID(BattleMovedex, result.baseMove) : null;
+		var zEffect = baseMove && baseMove.zMoveEffect ? this.formatZMoveEffect(baseMove.zMoveEffect) : '';
+
+		buf += '<span class="col tagcol shorttagcol"><span style="font-size:20px;margin-right:4px">Z</span></span> ';
+		buf += '<span class="col iconcol"><span style="' + getPokemonIcon(pokemon.name) + '"></span></span> ';
+		var name = pokemon.name;
+		var tagStart = (pokemon.forme ? name.length - pokemon.forme.length - 1 : 0);
+		if (tagStart) name = name.substr(0, tagStart) + '<small>' + pokemon.name.substr(tagStart) + '</small>';
+		buf += '<span class="col shortpokemonnamecol">' + name + '</span> ';
+		buf += '<span class="col typecol">';
+		for (var i = 0; i < pokemon.types.length; i++) {
+			buf += getTypeIcon(pokemon.types[i]);
+		}
+		buf += '</span> ';
+
+		var details = '';
+		if (baseMove && baseMove.type) details += escapeHTML(baseMove.type) + ' ';
+		if (baseMove && baseMove.name) details += '<strong>Move:</strong> ' + escapeHTML(baseMove.name) + ' ';
+		if (baseMove && baseMove.zMovePower) details += '<strong>Pow:</strong> ' + baseMove.zMovePower + ' ';
+		if (zEffect) details += '<strong>Eff:</strong> ' + escapeHTML(zEffect);
+		if (!details) details = '<em>Special Z-Move user</em>';
+		buf += '<span class="col movedesccol">' + details.trim() + '</span> ';
+		buf += '</a>';
+		return buf;
 	},
 	handleScroll: function() {
 		var scrollLoc = this.$el.scrollTop();

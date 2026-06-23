@@ -44,14 +44,45 @@ function parseMovesTxt(src) {
 
   function mapTargeting(text) {
     // Map human-readable Targeting to simplified PS-like targets for UI
-    const t = text.toLowerCase();
-    // Distinguish between hitting only foes vs everyone except the user
-    if (t.includes('all foes')) return 'allAdjacentFoes';
-    if (t.includes("everyone but user")) return 'allAdjacent';
-    if (t.includes("user's field") || t.includes('users field')) return 'allySide';
-    if (t.includes('all allies')) return 'allyTeam';
-    if (t === 'self') return 'self';
-    if (t.includes('single adjacent ally')) return 'adjacentAlly';
+    const t = text
+      .toLowerCase()
+      .replace(/pokémon/g, 'pokemon')
+      .replace(/[’']/g, "'")
+      .replace(/\s+/g, ' ')
+      .trim();
+    switch (t) {
+      case 'single adjacent ally/foe':
+        return 'normal';
+      case 'single adjacent foe':
+      case 'single adjacent foe (2)':
+        return 'adjacentFoe';
+      case 'single adjacent ally':
+      case 'any adjacent ally':
+        return 'adjacentAlly';
+      case 'single adjacent ally or self':
+        return 'adjacentAllyOrSelf';
+      case 'any ally':
+        return 'ally';
+      case 'all foes':
+        return 'allAdjacentFoes';
+      case 'everyone but user':
+        return 'allAdjacent';
+      case "user's field":
+      case 'users field':
+        return 'allySide';
+      case "opponent's field":
+      case 'opponents field':
+        return 'foeSide';
+      case 'all allies':
+        return 'allyTeam';
+      case 'entire field':
+      case 'all pokemon on field':
+        return 'all';
+      case 'self':
+        return 'self';
+      case 'any pokemon':
+        return 'any';
+    }
     return 'normal';
   }
 
