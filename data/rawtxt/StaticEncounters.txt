@@ -1,1007 +1,1728 @@
-001 - Rattata 1
+S000 - Rattata 1
 Rattata 1 (Lv. 4) @Oran Berry [Random] {Hustle} <Quick Attack/Snatch/Fling/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-002 - Nihilego
+S001 - Nihilego
 Nihilego (Lv. 43) @Poisonium Z [Calm] {Clear Body} <Baneful Bunker/Giga Drain/Venoshock/Power Gem>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-003 - Solgaleo
+S002 - Solgaleo
 Solgaleo (Lv. 60) @(None) [Random] {Full Metal Body} <Sunsteel Strike/Cosmic Power/Crunch/Zen Headbutt>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-004 - Lunala
+S003 - Lunala
 Lunala (Lv. 60) @(None) [Random] {Shadow Shield} <Moongeist Beam/Cosmic Power/Night Daze/Moonblast>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-005 - Gumshoos 1
-Gumshoos 1 (Lv. 16) @Lum Berry [Modest] {Regal Presence} <Tackle/Odor Sleuth/Bite/Bide>
+S004 - Gumshoos 1
+Gumshoos 1 (Lv. 17) @Lum Berry [Modest] {Regal Presence} <Tackle/Odor Sleuth/Bite/Bide>
 Aura: Defense (+1) (SOS: 009, None)
+Location: 
+Description: 
 
-006 - Yungoos
+S005 - Yungoos
 Yungoos (Lv. 13) @(None) [Hardy] {Strong Jaw} <Pursuit/Bide/Bite/Tackle>
 Aura: Sp. Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-007 - Raticate 1
+S006 - Raticate 1
 Raticate 1 (Lv. 14) @Kee Berry [Impish] {Thick Fat} <Me First/Tackle/Slink Strike/Reversal>
 Aura: Defense (+1) (SOS: None, None)
+Location: 
+Description: 
 
-008 - Teddiursa
-Teddiursa (Lv. 13) @(None) [Naughty] {Honey Gather} <Lick/Mud Shot/Fury Swipes/Yawn>
+S007 - Teddiursa
+Teddiursa (Lv. 13) @(None) [Naughty] {Pickup} <Lick/Mud Shot/Fury Swipes/Yawn>
 Aura: Speed (+1) (SOS: None, None)
+Location: 
+Description: 
 
-009 - Rattata 1
+S008 - Rattata 1
 Rattata 1 (Lv. 12) @(None) [Lonely] {Pickpocket} <Slink Strike/Snatch/Quick Attack/Quash>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-010 - Raticate 2
+S009 - Raticate 2
 Raticate 2 (Lv. 12) @Pecha Berry [Modest] {Stamina} <Super Fang/Bite/Fury Swipes/Scary Face>
 Aura: Defense (+1) (SOS: 014, None)
+Location: 
+Description: 
 
-011 - Spearow
+S010 - Spearow
 Spearow (Lv. 2) @(None) [Modest] {Keen Eye} <Peck/Double Team/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-012 - Raticate 1
+S011 - Raticate 1
 Raticate 1 (Lv. 11) @(None) [Mild] {Thick Fat} <Focus Energy/Tail Whip/Tackle/Super Fang>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-013 - Rattata 1
+S012 - Rattata 1
 Rattata 1 (Lv. 11) @(None) [Hardy] {Hustle} <Tackle/Tail Whip/Quick Attack/Super Fang>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-014 - Rattata 1
+S013 - Rattata 1
 Rattata 1 (Lv. 10) @(None) [Timid] {Pickup} <Thief/Snatch/Pursuit/Quash>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-015 - Wishiwashi 1
+S014 - Wishiwashi 1
 Wishiwashi 1 (Lv. 20) @Sitrus Berry [Adamant] {Schooling} <Water Gun/Growl/Rain Dance/Soak>
 Aura: Defense (+1) (SOS: 018, 019)
+Location: 
+Description: 
 
-016 - Goldeen
+S015 - Goldeen
 Goldeen (Lv. 25) @(None) [Jolly] {Water Veil} <Water Pulse/Horn Attack/Aqua Ring/Aqua Jet>
 Aura: Attack (+1) (SOS: None, None)
+Location: 
+Description: 
 
-017 - Wishiwashi
+S016 - Wishiwashi
 Wishiwashi (Lv. 26) @(None) [Brave] {Schooling} <Aqua Ring/Whirlpool/Aqua Tail/U-turn>
 Aura: Sp. Defense (+1) (SOS: None, None)
+Location: 
+Description: 
 
-018 - Alomomola
+S017 - Alomomola
 Alomomola (Lv. 18) @(None) [Naughty] {Soul-Heart} <Helping Hand/Double Slap/Heal Pulse/Water Gun>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-019 - Wishiwashi
+S018 - Wishiwashi
 Wishiwashi (Lv. 18) @(None) [Random] {Schooling} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-020 - Salazzle 1
+S019 - Salazzle 1
 Salazzle 1 (Lv. 22) @Petaya Berry [Calm] {Merciless} <Torment/Venom Drench/Toxic/Flame Burst>
 Aura: Sp. Defense (+1) (SOS: 024, None)
+Location: 
+Description: 
 
-021 - Marowak 1
+S020 - Marowak 1
 Marowak 1 (Lv. 31) @(None) [Serious] {Cursed Body} <Will-O-Wisp/Bonemerang/Shadow Bone/Flame Wheel>
-Aura: None (SOS: None, None)
+Aura: Sp. Defense (+1) (SOS: None, None)
+Location: 
+Description: 
 
-022 - Marowak 1
+S021 - Marowak 1
 Marowak 1 (Lv. 31) @(None) [Serious] {Cursed Body} <Will-O-Wisp/Bonemerang/Shadow Bone/Flame Wheel>
-Aura: None (SOS: None, None)
+Aura: Sp. Defense (+1) (SOS: None, None)
+Location: 
+Description: 
 
-023 - Pikachu
+S022 - Pikachu
 Pikachu (Lv. 20) @(None) [Lax] {Lightning Rod} <Electro Ball/Thunder Wave/Quick Attack/Play Nice>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-024 - Salandit
+S023 - Salandit
 Salandit (Lv. 20) @(None) [Quiet] {Corrosion} <Poison Gas/Venoshock/Taunt/Scratch>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-025 - Lurantis 1
-Lurantis 1 (Lv. 37) @Coba Berry [Calm] {} <Low Sweep/Acrobatics/Leech Seed/Solar Blade>
+S024 - Lurantis 1
+Lurantis 1 (Lv. 37) @Coba Berry [Calm] {7} <Low Sweep/Acrobatics/Leech Seed/Solar Blade>
 Aura: Defense (+1) (SOS: 032, 033)
+Location: 
+Description: 
 
-026 - Parasect
+S025 - Parasect
 Parasect (Lv. 22) @(None) [Lonely] {Dry Skin} <Cross Poison/Leech Life/Fury Cutter/Spore>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-027 - Shiinotic
+S026 - Shiinotic
 Shiinotic (Lv. 22) @(None) [Calm] {Misty Surge} <Startle/Ingrain/Mega Drain/Sleep Powder>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-028 - Fomantis
+S027 - Fomantis
 Fomantis (Lv. 23) @(None) [Impish] {Contrary} <Razor Leaf/Trailblaze/Fury Cutter/Growth>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-029 - Fomantis
+S028 - Fomantis
 Fomantis (Lv. 23) @(None) [Adamant] {Contrary} <Razor Leaf/Trailblaze/Fury Cutter/Growth>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-030 - Fomantis
+S029 - Fomantis
 Fomantis (Lv. 23) @(None) [Gentle] {Contrary} <Trailblaze/Fury Cutter/Ingrain/Razor Leaf>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-031 - Fomantis
+S030 - Fomantis
 Fomantis (Lv. 23) @(None) [Sassy] {Contrary} <Trailblaze/Fury Cutter/Ingrain/Razor Leaf>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-032 - Whimsicott
+S031 - Whimsicott
 Whimsicott (Lv. 33) @(None) [Timid] {Fluffy} <Tailwind/Mega Drain/Aromatic Mist/Grassy Terrain>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-033 - Sunflora
+S032 - Sunflora
 Sunflora (Lv. 33) @(None) [Quiet] {Solar Power} <Flower Shield/Grassy Terrain/Incinerate/Will-O-Wisp>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-034 - Vikavolt 1
+S033 - Vikavolt 1
 Vikavolt 1 (Lv. 29) @Occa Berry [Sassy] {Electric Surge} <Psycrush/Charge/Bug Bite/Spark>
 Aura: All Stats (+1) (SOS: 039, 038)
+Location: 
+Description: 
 
-035 - Grubbin
+S034 - Grubbin
 Grubbin (Lv. 27) @(None) [Lonely] {Minus} <Psycrush/String Shot/Bite/Bug Bite>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-036 - Charjabug
+S035 - Charjabug
 Charjabug (Lv. 27) @(None) [Adamant] {Plus} <Charge/Psycrush/Bug Bite/Spark>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-037 - Charjabug
+S036 - Charjabug
 Charjabug (Lv. 27) @(None) [Naughty] {Plus} <Charge/Mud-Slap/Acrobatics/Spark>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-038 - Charjabug
+S037 - Charjabug
 Charjabug (Lv. 27) @(None) [Jolly] {Plus} <String Shot/Psycrush/Mud-Slap/Thunder Wave>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-039 - Charjabug
+S038 - Charjabug
 Charjabug (Lv. 28) @(None) [Brave] {Plus} <Bite/Thunder Wave/Mud-Slap/Spark>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-040 - Mimikyu 2
+S039 - Mimikyu 2
 Mimikyu 2 (Lv. 55) @Lum Berry [Impish] {Disguise} <Phantom Force/Hypnosis/Nightmare/Play Rough>
 Aura: Sp. Defense (+2) (SOS: 045, 044)
+Location: 
+Description: 
 
-041 - Banette
+S040 - Banette
 Banette (Lv. 50) @(None) [Timid] {Prankster} <Shadow Punch/Sucker Punch/Meditate/Snatch>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-042 - Mismagius
+S041 - Mismagius
 Mismagius (Lv. 51) @(None) [Rash] {Magic Guard} <Trick-or-Treat/Shadow Ball/Mystical Fire/Psychic>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-043 - Gengar
+S042 - Gengar
 Gengar (Lv. 52) @(None) [Quiet] {Cursed Body} <Sludge Bomb/Trick-or-Treat/Hypnosis/Dream Eater>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-044 - Palossand
+S043 - Palossand
 Palossand (Lv. 50) @(None) [Quiet] {Sand Stream} <Shore Up/Mud Bomb/Destiny Bond/Skill Swap>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-045 - Chandelure
+S044 - Chandelure
 Chandelure (Lv. 50) @(None) [Modest] {Shadow Tag} <Curse/Hex/Memento/Mystical Fire>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-046 - Kommo-o 1
+S045 - Kommo-o 1
 Kommo-o 1 (Lv. 49) @Roseli Berry [Calm] {Multiscale} <Drain Punch/Dragon Claw/Thunder Punch/Poison Jab>
 Aura: All Stats (+1) (SOS: 050, 049)
+Location: 
+Description: 
 
-047 - Jangmo-o
+S046 - Jangmo-o
 Jangmo-o (Lv. 42) @(None) [Naughty] {Soundproof} <Bide/Tackle/Leer/Headbutt>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-048 - Hakamo-o
+S047 - Hakamo-o
 Hakamo-o (Lv. 44) @(None) [Brave] {Soundproof} <Headbutt/Autotomize/Work Up/Sky Uppercut>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-049 - Noivern
+S048 - Noivern
 Noivern (Lv. 48) @(None) [Timid] {Frisk} <Boomburst/Screech/Dragon Pulse/Air Slash>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-050 - Scizor
+S049 - Scizor
 Scizor (Lv. 46) @(None) [Brave] {Light Metal} <Light Screen/Pursuit/Bullet Punch/X-Scissor>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-051 - Nihilego
+S050 - Nihilego
 Nihilego (Lv. 55) @(None) [Random] {Clear Body} <(None)/(None)/(None)/(None)>
 Aura: Sp. Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-052 - Nihilego
+S051 - Nihilego
 Nihilego (Lv. 55) @(None) [Random] {Clear Body} <(None)/(None)/(None)/(None)>
 Aura: Sp. Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-053 - Buzzwole
+S052 - Buzzwole
 Buzzwole (Lv. 65) @(None) [Random] {Guts} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-054 - Buzzwole
+S053 - Buzzwole
 Buzzwole (Lv. 65) @(None) [Random] {Guts} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-055 - Pheromosa
+S054 - Pheromosa
 Pheromosa (Lv. 60) @(None) [Random] {Regal Presence} <(None)/(None)/(None)/(None)>
 Aura: Speed (+2) (SOS: None, None)
+Location: 
+Description: 
 
-056 - Pheromosa
+S055 - Pheromosa
 Pheromosa (Lv. 60) @(None) [Random] {Regal Presence} <(None)/(None)/(None)/(None)>
 Aura: Speed (+2) (SOS: None, None)
+Location: 
+Description: 
 
-057 - Pheromosa
+S056 - Pheromosa
 Pheromosa (Lv. 60) @(None) [Random] {Regal Presence} <(None)/(None)/(None)/(None)>
 Aura: Speed (+2) (SOS: None, None)
+Location: 
+Description: 
 
-058 - Pheromosa
+S057 - Pheromosa
 Pheromosa (Lv. 60) @(None) [Random] {Regal Presence} <(None)/(None)/(None)/(None)>
 Aura: Speed (+2) (SOS: None, None)
+Location: 
+Description: 
 
-059 - Xurkitree
+S058 - Xurkitree
 Xurkitree (Lv. 65) @(None) [Random] {Dazzling} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-060 - Xurkitree
+S059 - Xurkitree
 Xurkitree (Lv. 65) @(None) [Random] {Dazzling} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-061 - Xurkitree
+S060 - Xurkitree
 Xurkitree (Lv. 65) @(None) [Random] {Dazzling} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-062 - Xurkitree
+S061 - Xurkitree
 Xurkitree (Lv. 65) @(None) [Random] {Dazzling} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-063 - Xurkitree
+S062 - Xurkitree
 Xurkitree (Lv. 65) @(None) [Random] {Dazzling} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-064 - Xurkitree
+S063 - Xurkitree
 Xurkitree (Lv. 65) @(None) [Random] {Dazzling} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-065 - Xurkitree
+S064 - Xurkitree
 Xurkitree (Lv. 65) @(None) [Random] {Dazzling} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-066 - Xurkitree
+S065 - Xurkitree
 Xurkitree (Lv. 65) @(None) [Random] {Dazzling} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-067 - Xurkitree
+S066 - Xurkitree
 Xurkitree (Lv. 65) @(None) [Random] {Dazzling} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-068 - Xurkitree
+S067 - Xurkitree
 Xurkitree (Lv. 65) @(None) [Random] {Dazzling} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-069 - Kartana
+S068 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-070 - Kartana
+S069 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-071 - Kartana
+S070 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-072 - Kartana
+S071 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-073 - Kartana
+S072 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-074 - Kartana
+S073 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-075 - Kartana
+S074 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-076 - Kartana
+S075 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-077 - Kartana
+S076 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-078 - Kartana
+S077 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-079 - Kartana
+S078 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-080 - Kartana
+S079 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-081 - Celesteela
+S080 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-082 - Celesteela
+S081 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-083 - Celesteela
+S082 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-084 - Celesteela
+S083 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-085 - Celesteela
+S084 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-086 - Celesteela
+S085 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-087 - Celesteela
+S086 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-088 - Celesteela
+S087 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-089 - Celesteela
+S088 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-090 - Celesteela
+S089 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-091 - Celesteela
+S090 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-092 - Celesteela
+S091 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-093 - Celesteela
+S092 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-094 - Celesteela
+S093 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-095 - Celesteela
+S094 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-096 - Celesteela
+S095 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-097 - Celesteela
+S096 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-098 - Celesteela
+S097 - Celesteela
 Celesteela (Lv. 65) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-099 - Guzzlord
+S098 - Guzzlord
 Guzzlord (Lv. 70) @(None) [Random] {Gluttony} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-100 - Necrozma
+S099 - Necrozma
 Necrozma (Lv. 75) @(None) [Random] {Prism Armor} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-101 - Charmander
+S100 - Charmander
 Charmander (Lv. 12) @(None) [Random] {Flame Body} <Counter/Smoke Out/Ember/Scratch>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-102 - Squirtle
+S101 - Squirtle
 Squirtle (Lv. 12) @(None) [Random] {Rain Dish} <Aqua Jet/Withdraw/Water Gun/Tackle>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-103 - Onix
+S102 - Onix
 Onix (Lv. 14) @(None) [Random] {Solid Rock} <Rototiller/Rage/Rock Tomb/Spall>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-104 - Horsea
+S103 - Horsea
 Horsea (Lv. 18) @(None) [Random] {Swift Swim} <Water Pulse/Twister/Water Gun/Leer>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-105 - Scatterbug 30
+S104 - Scatterbug 30
 Scatterbug 30 (Lv. 9) @(None) [Random] {Friend Guard} <Rage Powder/String Shot/Stun Spore/Tackle>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-106 - Bulbasaur
+S105 - Bulbasaur
 Bulbasaur (Lv. 10) @(None) [Random] {Leaf Guard} <Grassy Terrain/Vine Whip/Growl/Tackle>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-107 - Litwick
+S106 - Litwick
 Litwick (Lv. 9) @(None) [Random] {Flash Fire} <Endure/Ember/Fire Spin/Smog>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-108 - Ralts
+S107 - Ralts
 Ralts (Lv. 17) @(None) [Random] {Synchronize} <Misty Terrain/Magical Leaf/Lucky Chant/Disarming Voice>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-109 - Spheal
+S108 - Spheal
 Spheal (Lv. 19) @(None) [Random] {Snow Cloak} <Belly Drum/Brine/Ice Ball/Encore>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-110 - Combusken
+S109 - Combusken
 Combusken (Lv. 20) @(None) [Random] {Tough Claws} <Low Kick/Flame Charge/Peck/Sand Down>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-111 - Honedge
+S110 - Honedge
 Honedge (Lv. 24) @(None) [Random] {No Guard} <Wide Guard/Aerial Ace/Shadow Sneak/Autotomize>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-112 - Beedrill
+S111 - Beedrill
 Beedrill (Lv. 14) @(None) [Random] {Poison Touch} <Rage/Flurry Peck/Twineedle/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-113 - Grovyle
+S112 - Grovyle
 Grovyle (Lv. 16) @(None) [Random] {Lightning Rod} <Grassy Terrain/Mega Drain/Quick Attack/Absorb>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-114 - Marshtomp
+S113 - Marshtomp
 Marshtomp (Lv. 17) @(None) [Random] {Wonder Skin} <Counter/Foresight/Mud-Slap/Water Gun>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-115 - Rhyhorn
+S114 - Rhyhorn
 Rhyhorn (Lv. 32) @(None) [Random] {Lightning Rod} <Guard Split/Rock Blast/Chip Away/Bulldoze>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-116 - Swinub
+S115 - Swinub
 Swinub (Lv. 33) @(None) [Random] {Oblivious} <Icicle Spear/Take Down/Ice Shard/Icy Wind>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-117 - Prinplup
+S116 - Prinplup
 Prinplup (Lv. 35) @(None) [Random] {Competitive} <Power Trip/Brine/Flurry Peck/Bide>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-118 - Grotle
+S117 - Grotle
 Grotle (Lv. 36) @(None) [Random] {Sap Sipper} <Heavy Slam/Leech Seed/Mega Drain/Bite>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-119 - Grotle
+S118 - Grotle
 Grotle (Lv. 36) @(None) [Random] {Sap Sipper} <Heavy Slam/Leech Seed/Mega Drain/Bite>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-120 - Pidgeot
+S119 - Pidgeot
 Pidgeot (Lv. 29) @(None) [Random] {Keen Eye} <Steel Wing/Feather Dance/Twister/Quick Attack>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-121 - Monferno
+S120 - Monferno
 Monferno (Lv. 29) @(None) [Random] {Unburden} <Power-Up Punch/Flame Wheel/Fury Swipes/Torment>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-122 - Axew
+S121 - Axew
 Axew (Lv. 30) @(None) [Random] {Hyper Cutter} <Counter/Dragon Claw/False Swipe/Slash>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-123 - Eelektross
+S122 - Eelektross
 Eelektross (Lv. 55) @(None) [Random] {Levitate} <Crunch/Discharge/Headbutt/Crush Claw>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-124 - Aggron
+S123 - Aggron
 Aggron (Lv. 57) @(None) [Random] {Battle Armor} <Reversal/Heavy Slam/Double-Edge/Iron Defense>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-125 - Rotom
+S124 - Rotom
 Rotom (Lv. 61) @(None) [Random] {Levitate} <Charge/Hex/Electro Ball/Substitute>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-126 - Leavanny
+S125 - Leavanny
 Leavanny (Lv. 57) @(None) [Random] {Hyper Cutter} <Grassy Terrain/Leaf Storm/Swords Dance/Entrainment>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-127 - Chesnaught
+S126 - Chesnaught
 Chesnaught (Lv. 45) @(None) [Random] {Bulletproof} <Spikes/Mud Shot/Seed Bomb/Spiky Shield>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-128 - Greninja
+S127 - Greninja
 Greninja (Lv. 44) @(None) [Random] {Protean} <Bestow/Substitute/Slink Strike/Water Shuriken>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-129 - Delphox
+S128 - Delphox
 Delphox (Lv. 44) @(None) [Random] {Magician} <Wish/Psyshock/Light Screen/Mystical Fire>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-130 - Tapu Koko
+S129 - Tapu Koko
 Tapu Koko (Lv. 60) @(None) [Random] {Electric Surge} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-131 - Tapu Lele
+S130 - Tapu Lele
 Tapu Lele (Lv. 60) @(None) [Random] {Psychic Surge} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-132 - Tapu Bulu
+S131 - Tapu Bulu
 Tapu Bulu (Lv. 60) @(None) [Random] {Grassy Surge} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-133 - Tapu Fini
+S132 - Tapu Fini
 Tapu Fini (Lv. 60) @(None) [Random] {Misty Surge} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-134 - Happiny
+S133 - Happiny
 Happiny (Lv. 13) @Oval Stone [Random] {Friend Guard} <Charm/Round/Fairy Wind/Sweet Kiss>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-135 - Exeggutor 1
+S134 - Exeggutor 1
 Exeggutor 1 (Lv. 40) @(None) [Random] {Harvest} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-136 - Tapu Koko
+S135 - Tapu Koko
 Tapu Koko (Lv. 60) @(None) [Random] {Electric Surge} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-137 - Leavanny
+S136 - Leavanny
 Leavanny (Lv. 57) @(None) [Random] {Hyper Cutter} <Grassy Terrain/Leaf Storm/Swords Dance/Entrainment>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-138 - Araquanid 1
+S137 - Araquanid 1
 Araquanid 1 (Lv. 27) @Wacan Berry [Impish] {Water Bubble} <Icy Wind/Twineedle/Aqua Ring/Bubble>
 Aura: Defense (+1) (SOS: 141, 142)
+Location: 
+Description: 
 
-139 - Dewpider
+S138 - Dewpider
 Dewpider (Lv. 25) @(None) [Brave] {Water Bubble} <Bite/Bug Bite/Aqua Ring/Bubble Beam>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-140 - Ducklett
+S139 - Ducklett
 Ducklett (Lv. 26) @(None) [Lax] {Cloud Nine} <Aerial Ace/Feather Dance/Aqua Ring/Water Pulse>
 Aura: Sp. Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-141 - Luvdisc
+S140 - Luvdisc
 Luvdisc (Lv. 23) @(None) [Timid] {Soul-Heart} <Safeguard/Heart Stamp/Lucky Chant/Knock Off>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-142 - Tentacool
-Tentacool (Lv. 24) @(None) [Bold] {} <Acid Spray/Rain Dance/Clear Smog/Toxic>
+S141 - Tentacool
+Tentacool (Lv. 24) @(None) [Bold] {7} <Acid Spray/Rain Dance/Clear Smog/Toxic>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-143 - Fomantis
+S142 - Fomantis
 Fomantis (Lv. 35) @Mago Berry [Impish] {Contrary} <Leaf Blade/Needle Arm/Slash/Synthesis>
-Aura: None (SOS: None, None)
+Aura: Speed (+2) (SOS: None, None)
+Location: 
+Description: 
 
-144 - Beedrill
+S143 - Beedrill
 Beedrill (Lv. 34) @Honey [Lonely] {Swarm} <Flurry Peck/Poison Tail/Twineedle/Focus Energy>
-Aura: None (SOS: None, None)
+Aura: Attack (+1) (SOS: None, None)
+Location: 
+Description: 
 
-145 - Vespiquen
+S144 - Vespiquen
 Vespiquen (Lv. 34) @Honey [Sassy] {Multistriker} <Bug Buzz/Defend Order/Power Gem/Confuse Ray>
-Aura: None (SOS: None, None)
+Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-146 - Sudowoodo
+S145 - Sudowoodo
 Sudowoodo (Lv. 34) @Big Root [Brave] {Rock Head} <Block/Needle Arm/Rock Tomb/Forest’s Curse>
-Aura: None (SOS: None, None)
+Aura: Sp. Defense (+1) (SOS: None, None)
+Location: 
+Description: 
 
-147 - Togedemaru 1
+S146 - Togedemaru 1
 Togedemaru 1 (Lv. 48) @Leftovers [Impish] {Iron Barbs} <Zing Zap/Spiky Shield/Iron Head/Bounce>
 Aura: Sp. Defense (+2) (SOS: 149, 148)
+Location: 
+Description: 
 
-148 - Skarmory
+S147 - Skarmory
 Skarmory (Lv. 45) @(None) [Impish] {Sturdy} <Stealth Rock/Steel Wing/Tailwind/Torment>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-149 - Pachirisu
+S148 - Pachirisu
 Pachirisu (Lv. 45) @(None) [Jolly] {Cheek Pouch} <Follow Me/Nuzzle/Ion Deluge/Me First>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-150 - Electabuzz
+S149 - Electabuzz
 Electabuzz (Lv. 45) @(None) [Jolly] {Lightning Rod} <Discharge/Thunder Punch/Arm Thrust/Meditate>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-151 - Electrode
+S150 - Electrode
 Electrode (Lv. 45) @(None) [Timid] {Galvanize} <Self-Destruct/Discharge/Magnet Rise/Flamethrower>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-152 - Yungoos
+S151 - Yungoos
 Yungoos (Lv. 3) @(None) [Mild] {Strong Jaw} <Odor Sleuth/Tackle/Leer/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-153 - Rattata 1
+S152 - Rattata 1
 Rattata 1 (Lv. 3) @(None) [Mild] {Hustle} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-154 - Rattata 1
+S153 - Rattata 1
 Rattata 1 (Lv. 4) @Oran Berry [Random] {Pickup} <Quick Attack/Snatch/Fling/(None)>
 Aura: Sp. Defense (+1) (SOS: None, None)
+Location: 
+Description: 
 
-155 - Spearow
-Spearow (Lv. 4) @(None) [Random] {Keen Eye} <Peck/Double Team/Leer/(None)>
+S154 - Spearow
+Spearow (Lv. 5) @(None) [Random] {Keen Eye} <Peck/Double Team/Leer/(None)>
 Aura: Sp. Defense (+1) (SOS: None, None)
+Location: 
+Description: 
 
-156 - Pinsir
+S155 - Pinsir
 Pinsir (Lv. 42) @(None) [Random] {Moxie} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-157 - Pinsir
+S156 - Pinsir
 Pinsir (Lv. 43) @(None) [Random] {Moxie} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-158 - Pinsir
+S157 - Pinsir
 Pinsir (Lv. 42) @(None) [Random] {Moxie} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-159 - Necrozma 1
+S158 - Necrozma 1
 Necrozma 1 (Lv. 50) @(None) [Impish] {Prism Armor} <Sunsteel Strike/Morning Sun/Psycho Cut/Night Slash>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-160 - Necrozma 2
+S159 - Necrozma 2
 Necrozma 2 (Lv. 50) @(None) [Bold] {Prism Armor} <Moongeist Beam/Moonlight/Psychic/Power Gem>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-161 - Necrozma 3
+S160 - Necrozma 3
 Necrozma 3 (Lv. 60) @(None) [Bold] {Neuroforce} <Photon Geyser/Steel Trap/Power Gem/Dragon Pulse>
 Aura: All Stats (+1) (SOS: None, None)
+Location: 
+Description: 
 
-162 - Necrozma
+S161 - Necrozma
 Necrozma (Lv. 65) @Ultranecrozium Z [Random] {Prism Armor} <Photon Geyser/Iron Defense/Power Gem/Night Slash>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-163 - Ribombee 1
+S162 - Ribombee 1
 Ribombee 1 (Lv. 55) @Occa Berry [Impish] {Cute Charm} <Bug Buzz/Draining Kiss/Quiver Dance/Dazzling Gleam>
 Aura: All Stats (+2) (SOS: 165, 164)
+Location: 
+Description: 
 
-164 - Pelipper
+S163 - Pelipper
 Pelipper (Lv. 52) @(None) [Timid] {Rain Dish} <Stockpile/Scald/Spit Up/Seed Bomb>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-165 - Blissey
+S164 - Blissey
 Blissey (Lv. 53) @(None) [Naughty] {Healer} <Heal Pulse/Light Screen/Helping Hand/Dazzling Gleam>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-166 - Articuno
+S165 - Articuno
 Articuno (Lv. 60) @(None) [Random] {Slush Rush} <Ancient Power/Freeze-Dry/Reflect/Snowscape>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-167 - Zapdos
+S166 - Zapdos
 Zapdos (Lv. 60) @(None) [Random] {Teravolt} <Ancient Power/Discharge/Pluck/Rain Dance>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-168 - Moltres
+S167 - Moltres
 Moltres (Lv. 60) @(None) [Random] {Turboblaze} <Ancient Power/Flamethrower/Air Slash/Sunny Day>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-169 - Ho-Oh
+S168 - Ho-Oh
 Ho-Oh (Lv. 60) @Sacred Ash [Random] {Pressure} <Burn Up/Sacred Fire/Extrasensory/Ancient Power>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-170 - Rayquaza
+S169 - Rayquaza
 Rayquaza (Lv. 60) @(None) [Random] {Air Lock} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-171 - Cresselia
+S170 - Cresselia
 Cresselia (Lv. 60) @(None) [Random] {Sweet Veil} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-172 - Tornadus
+S171 - Tornadus
 Tornadus (Lv. 60) @(None) [Random] {Defiant} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-173 - Thundurus
+S172 - Thundurus
 Thundurus (Lv. 60) @(None) [Random] {Defiant} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-174 - Landorus
+S173 - Landorus
 Landorus (Lv. 60) @(None) [Random] {Sheer Force} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-175 - Yveltal
+S174 - Yveltal
 Yveltal (Lv. 60) @(None) [Random] {Dark Aura} <Oblivion Wing/Dark Pulse/Phantom Force/Psychic>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-176 - Mewtwo
+S175 - Mewtwo
 Mewtwo (Lv. 60) @(None) [Random] {Unnerve} <Psychic/Recover/Swift/Psycho Cut>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-177 - Raikou
+S176 - Raikou
 Raikou (Lv. 60) @(None) [Random] {Volt Absorb} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-178 - Entei
+S177 - Entei
 Entei (Lv. 60) @(None) [Random] {Flash Fire} <Trample/Bite/Swagger/Lava Plume>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-179 - Dialga
+S178 - Dialga
 Dialga (Lv. 60) @(None) [Random] {Telepathy} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-180 - Cobalion
+S179 - Cobalion
 Cobalion (Lv. 60) @(None) [Random] {Technician} <Sacred Sword/Swords Dance/Quick Attack/Iron Head>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-181 - Terrakion
+S180 - Terrakion
 Terrakion (Lv. 60) @(None) [Random] {Reckless} <Sacred Sword/Swords Dance/Rock Slide/Stone Edge>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-182 - Virizion
+S181 - Virizion
 Virizion (Lv. 60) @(None) [Random] {Leaf Guard} <Sacred Sword/Swords Dance/Giga Drain/Leaf Blade>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-183 - Reshiram
+S182 - Reshiram
 Reshiram (Lv. 60) @(None) [Random] {Pressure} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-184 - Zekrom
+S183 - Zekrom
 Zekrom (Lv. 60) @(None) [Random] {Pressure} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-185 - Xerneas
+S184 - Xerneas
 Xerneas (Lv. 60) @(None) [Random] {Fairy Aura} <Geomancy/Horn Leech/Night Slash/Moonblast>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-186 - Regirock
+S185 - Regirock
 Regirock (Lv. 60) @(None) [Random] {Sand Rush} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-187 - Regice
+S186 - Regice
 Regice (Lv. 60) @(None) [Random] {Slush Rush} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-188 - Registeel
+S187 - Registeel
 Registeel (Lv. 60) @(None) [Random] {Steelworker} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-189 - Groudon
+S188 - Groudon
 Groudon (Lv. 60) @(None) [Random] {Drought} <Earthquake/Precipice Blades/Bulk Up/Solar Beam>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-190 - Heatran
+S189 - Heatran
 Heatran (Lv. 60) @(None) [Random] {Flame Body} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-191 - Regigigas
+S190 - Regigigas
 Regigigas (Lv. 60) @(None) [Random] {Truant} <Zen Headbutt/Revenge/Dizzy Punch/Confuse Ray>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-192 - Palkia
+S191 - Palkia
 Palkia (Lv. 60) @(None) [Random] {Telepathy} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-193 - Giratina
+S192 - Giratina
 Giratina (Lv. 60) @(None) [Random] {Shadow Shield} <Shadow Force/Aura Sphere/Earth Power/Dragon Claw>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-194 - Suicune
+S193 - Suicune
 Suicune (Lv. 60) @(None) [Random] {Water Absorb} <Bubble Beam/Aurora Beam/Mist/Rain Dance>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-195 - Lugia
+S194 - Lugia
 Lugia (Lv. 60) @(None) [Random] {Pressure} <Skill Swap/Aeroblast/Extrasensory/Ancient Power>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-196 - Latias
+S195 - Latias
 Latias (Lv. 60) @(None) [Random] {Levitate} <Mist Ball/Dragon Pulse/Psycho Shift/Wish>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-197 - Latios
+S196 - Latios
 Latios (Lv. 60) @(None) [Random] {Levitate} <Luster Purge/Dragon Pulse/Psycho Shift/Dragon Breath>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-198 - Kyogre
+S197 - Kyogre
 Kyogre (Lv. 60) @(None) [Random] {Drizzle} <Ice Beam/Origin Pulse/Calm Mind/Mudslide>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-199 - Uxie
+S198 - Uxie
 Uxie (Lv. 60) @(None) [Random] {Forewarn} <Extrasensory/Yawn/Amnesia/Swift>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-200 - Mesprit
+S199 - Mesprit
 Mesprit (Lv. 60) @(None) [Random] {Aroma Veil} <Extrasensory/Charm/Future Sight/Swift>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-201 - Azelf
+S200 - Azelf
 Azelf (Lv. 60) @(None) [Random] {Own Tempo} <Extrasensory/Nasty Plot/Uproar/Swift>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-202 - Kyurem
+S201 - Kyurem
 Kyurem (Lv. 60) @(None) [Random] {Slush Rush} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-203 - Altaria
+S202 - Altaria
 Altaria (Lv. 60) @(None) [Random] {Natural Cure} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-204 - Yanmega
+S203 - Yanmega
 Yanmega (Lv. 60) @(None) [Random] {Speed Boost} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-205 - Sigilyph
+S204 - Sigilyph
 Sigilyph (Lv. 60) @(None) [Random] {Tinted Lens} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-206 - Swanna
+S205 - Swanna
 Swanna (Lv. 60) @(None) [Random] {Cloud Nine} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-207 - Swellow
+S206 - Swellow
 Swellow (Lv. 60) @(None) [Random] {Guts} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-208 - Drapion
+S207 - Drapion
 Drapion (Lv. 60) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-209 - Audino
+S208 - Audino
 Audino (Lv. 60) @(None) [Random] {Triage} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-210 - Heliolisk
+S209 - Heliolisk
 Heliolisk (Lv. 60) @(None) [Random] {Dry Skin} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-211 - Nuzleaf
+S210 - Nuzleaf
 Nuzleaf (Lv. 60) @(None) [Random] {Chlorophyll} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-212 - Grumpig
+S211 - Grumpig
 Grumpig (Lv. 60) @(None) [Random] {Thick Fat} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-213 - Abomasnow
+S212 - Abomasnow
 Abomasnow (Lv. 60) @(None) [Random] {Snow Warning} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-214 - Medicham
+S213 - Medicham
 Medicham (Lv. 60) @(None) [Random] {Pure Power} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-215 - Hippowdon
+S214 - Hippowdon
 Hippowdon (Lv. 60) @(None) [Random] {Sand Stream} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-216 - Crustle
+S215 - Crustle
 Crustle (Lv. 60) @(None) [Random] {Stamina} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-217 - Magcargo
+S216 - Magcargo
 Magcargo (Lv. 60) @(None) [Random] {Solid Rock} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-218 - Barbaracle
+S217 - Barbaracle
 Barbaracle (Lv. 60) @(None) [Random] {Multistriker} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-219 - Lombre
+S218 - Lombre
 Lombre (Lv. 60) @(None) [Random] {Hydration} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-220 - Stunfisk
+S219 - Stunfisk
 Stunfisk (Lv. 60) @(None) [Random] {Electric Surge} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-221 - Floatzel
+S220 - Floatzel
 Floatzel (Lv. 60) @(None) [Random] {Swift Swim} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-222 - Quagsire
+S221 - Quagsire
 Quagsire (Lv. 60) @(None) [Random] {Unaware} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-223 - Nihilego
+S222 - Nihilego
 Nihilego (Lv. 60) @(None) [Random] {Clear Body} <Power Gem/Acid Spray/Stealth Rock/Mirror Coat>
 Aura: Sp. Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-224 - Buzzwole
+S223 - Buzzwole
 Buzzwole (Lv. 60) @(None) [Random] {Guts} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-225 - Pheromosa
+S224 - Pheromosa
 Pheromosa (Lv. 60) @(None) [Random] {Regal Presence} <(None)/(None)/(None)/(None)>
 Aura: Speed (+2) (SOS: None, None)
+Location: 
+Description: 
 
-226 - Xurkitree
+S225 - Xurkitree
 Xurkitree (Lv. 60) @(None) [Random] {Dazzling} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-227 - Celesteela
+S226 - Celesteela
 Celesteela (Lv. 60) @(None) [Random] {Battle Armor} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-228 - Kartana
+S227 - Kartana
 Kartana (Lv. 60) @(None) [Random] {Hyper Cutter} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-229 - Guzzlord
+S228 - Guzzlord
 Guzzlord (Lv. 60) @(None) [Random] {Gluttony} <(None)/(None)/(None)/(None)>
 Aura: Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-230 - Gumshoos 1
+S229 - Gumshoos 1
 Gumshoos 1 (Lv. 60) @Chople Berry [Impish] {Regal Presence} <Hyper Fang/Ice Fang/Protect/Crunch>
 Aura: All Stats (+2) (SOS: 231, None)
+Location: 
+Description: 
 
-231 - Yungoos
+S230 - Yungoos
 Yungoos (Lv. 58) @(None) [Jolly] {Strong Jaw} <Yawn/Mud-Slap/Torment/Super Fang>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-232 - Raticate 2
-Raticate 2 (Lv. 60) @Chople Berry [Impish] {} <Hyper Fang/Throat Chop/Protect/Double Team>
+S231 - Raticate 2
+Raticate 2 (Lv. 60) @Chople Berry [Impish] {7} <Hyper Fang/Throat Chop/Protect/Double Team>
 Aura: All Stats (+2) (SOS: 233, None)
+Location: 
+Description: 
 
-233 - Rattata 1
-Rattata 1 (Lv. 58) @(None) [Jolly] {} <Super Fang/Tail Whip/Torment/Crunch>
+S232 - Rattata 1
+Rattata 1 (Lv. 58) @(None) [Jolly] {3} <Super Fang/Tail Whip/Torment/Crunch>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-234 - Bewear
+S233 - Bewear
 Bewear (Lv. 42) @Normalium Z [Random] {Sheer Force} <Pain Split/Take Down/Charm/Submission>
 Aura: Sp. Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-235 - Hypno
+S234 - Hypno
 Hypno (Lv. 42) @(None) [Random] {Telepathy} <Hypnosis/Nightmare/Dream Eater/Yawn>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-236 - Hypno
+S235 - Hypno
 Hypno (Lv. 42) @(None) [Random] {Bad Dreams} <Nasty Plot/Psybeam/Disable/Poison Gas>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-237 - Hypno
+S236 - Hypno
 Hypno (Lv. 42) @(None) [Random] {Bad Dreams} <Poison Jab/Disable/Meditate/Zen Headbutt>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-238 - Gastly
-Gastly (Lv. 23) @Sitrus Berry [Random] {Cursed Body} <Hex/Startle/Curse/Smog>
+S237 - Misdreavus
+Misdreavus (Lv. 23) @Sitrus Berry [Random] {Levitate} <Nightmare/Hypnosis/Psybeam/Startle>
 Aura: Sp. Attack (+1) (SOS: None, None)
+Location: 
+Description: 
 
-239 - Drifloon
-Drifloon (Lv. 23) @Sitrus Berry [Random] {Aftermath} <Startle/Payback/Air Cutter/Ominous Wind>
-Aura: Sp. Attack (+1) (SOS: None, None)
+S238 - Sableye
+Sableye (Lv. 23) @Sitrus Berry [Random] {Pickpocket} <Pursuit/Shadow Sneak/Disable/Slink Strike>
+Aura: Attack (+1) (SOS: None, None)
+Location: 
+Description: 
 
-240 - Sandygast
+S239 - Sandygast
 Sandygast (Lv. 30) @(None) [Random] {Water Compaction} <Startle/Bulldoze/Mega Drain/Sand Tomb>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-241 - Frillish
+S240 - Frillish
 Frillish (Lv. 34) @(None) [Random] {Water Absorb} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-242 - Ditto
+S241 - Ditto
 Ditto (Lv. 41) @Enigma Berry [Jolly] {Color Change} <Transform/Mimic/Me First/Copycat>
 Aura: Speed (+1) (SOS: None, None)
+Location: 
+Description: 
 
-243 - Ditto
+S242 - Ditto
 Ditto (Lv. 41) @Metal Powder [Bold] {Imposter} <Rest/Mimic/Sleep Talk/Copycat>
 Aura: Sp. Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-244 - Ditto
+S243 - Ditto
 Ditto (Lv. 41) @Assault Vest [Adamant] {Color Change} <Transform/Mimic/Me First/Copycat>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-245 - Ditto
-Ditto (Lv. 41) @Quick Powder [Modest] {} <Camouflage/Mimic/Me First/Copycat>
+S244 - Ditto
+Ditto (Lv. 41) @Quick Powder [Modest] {3} <Camouflage/Mimic/Me First/Copycat>
 Aura: All Stats (+2) (SOS: None, None)
+Location: 
+Description: 
 
-246 - Ditto
+S245 - Ditto
 Ditto (Lv. 41) @Leftovers [Timid] {Color Change} <Transform/Mimic/Me First/Copycat>
 Aura: All Stats (+1) (SOS: None, None)
+Location: 
+Description: 
 
-247 - Zygarde
+S246 - Zygarde
 Zygarde (Lv. 60) @(None) [Random] {Aura Break} <Land’s Wrath/Glare/Safeguard/Dragon Breath>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-248 - Stakataka
+S247 - Stakataka
 Stakataka (Lv. 60) @(None) [Random] {Solid Rock} <(None)/(None)/(None)/(None)>
 Aura: Defense (+2) (SOS: None, None)
+Location: 
+Description: 
 
-249 - Blacephalon
+S248 - Blacephalon
 Blacephalon (Lv. 60) @(None) [Random] {Aftermath} <(None)/(None)/(None)/(None)>
 Aura: Sp. Attack (+2) (SOS: None, None)
+Location: 
+Description: 
 
-250 - Marowak 2
+S249 - Marowak 2
 Marowak 2 (Lv. 33) @Chesto Berry [Impish] {Multistriker} <Rock Smash/Will-O-Wisp/Hex/Flame Wheel>
 Aura: Sp. Defense (+1) (SOS: 251, None)
+Location: 
+Description: 
 
-251 - Salandit
+S250 - Salandit
 Salandit (Lv. 31) @(None) [Calm] {Oblivious} <Torment/Venom Drench/Fire Lash/Toxic>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
 
-252 - Electrode
+S251 - Electrode
 Electrode (Lv. 60) @(None) [Random] {Galvanize} <(None)/(None)/(None)/(None)>
 Aura: None (SOS: None, None)
+Location: 
+Description: 
+
+G00 - Rowlet
+Rowlet (Lv. 5) @Oran Berry [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G01 - Litten
+Litten (Lv. 5) @Oran Berry [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G02 - Popplio
+Popplio (Lv. 5) @Oran Berry [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G03 - Omanyte
+Omanyte (Lv. 15) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G04 - Kabuto
+Kabuto (Lv. 15) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G05 - Aerodactyl
+Aerodactyl (Lv. 15) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G06 - Lileep
+Lileep (Lv. 15) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G07 - Anorith
+Anorith (Lv. 15) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G08 - Cranidos
+Cranidos (Lv. 15) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G09 - Shieldon
+Shieldon (Lv. 15) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G10 - Tirtouga
+Tirtouga (Lv. 15) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G11 - Archen
+Archen (Lv. 15) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G12 - Tyrunt
+Tyrunt (Lv. 15) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G13 - Amaura
+Amaura (Lv. 15) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G14 - Eevee
+Eevee (Lv. 1) @(None) [Random] {Protean} <Gift Move: Last Resort>
+Location: 
+Description: 
+
+G15 - Porygon
+Porygon (Lv. 30) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G16 - Type: Null
+Type: Null (Lv. 60) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G17 - Magearna
+Magearna (Lv. 50) @Bottle Cap [Random] {Soul-Heart} <Gift Move: (None)>
+Location: 
+Description: 
+
+G18 - Cosmog
+Cosmog (Lv. 5) @(None) [Random] {Unaware} <Gift Move: (None)>
+Location: 
+Description: 
+
+G19 - Aerodactyl
+Aerodactyl (Lv. 40) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G20 - Mantyke
+Mantyke (Lv. 1) @Gold Bottle Cap [Random] {Swift Swim} <Gift Move: Oblivion Wing>
+Location: 
+Description: 
+
+G21 - Poipole
+Poipole (Lv. 40) @(None) [Random] {Any (1 or 2)} <Gift Move: (None)>
+Location: 
+Description: 
+
+G22 - Porygon 1
+Porygon 1 (Lv. 20) @Metronome [Random] {Download} <Gift Move: Ally Switch>
+Location: 
+Description: 
+
+G23 - Raticate 2
+Raticate 2 (Lv. 20) @(None) [Random] {Stamina} <Gift Move: (None)>
+Location: 
+Description: 
+
+G24 - Castform
+Castform (Lv. 25) @Coba Berry [Random] {Delta Stream} <Gift Move: (None)>
+Location: 
+Description: 
+
+G25 - Araquanid 1
+Araquanid 1 (Lv. 25) @(None) [Random] {Water Bubble} <Gift Move: (None)>
+Location: 
+Description: 
+
+G26 - Rotom
+Rotom (Lv. 30) @Life Orb [Random] {Lightning Rod} <Gift Move: Nasty Plot>
+Location: 
+Description: 
+
+G27 - Salazzle 1
+Salazzle 1 (Lv. 30) @(None) [Random] {Merciless} <Gift Move: (None)>
+Location: 
+Description: 
+
+G28 - Type: Null
+Type: Null (Lv. 35) @Choice Scarf [Random] {Battle Armor} <Gift Move: Tri Attack>
+Location: 
+Description: 
+
+G29 - Togedemaru 1
+Togedemaru 1 (Lv. 35) @(None) [Random] {Iron Barbs} <Gift Move: (None)>
+Location: 
+Description: 
+
+G30 - Poipole
+Poipole (Lv. 40) @Choice Specs [Random] {Merciless} <Gift Move: Sticky Web>
+Location: 
+Description: 
+
+G31 - Zeraora
+Zeraora (Lv. 50) @Choice Band [Random] {Motor Drive} <Gift Move: (None)>
+Location: 
+Description: 
+
+G32 - Kommo-o 1
+Kommo-o 1 (Lv. 50) @(None) [Random] {Multiscale} <Gift Move: (None)>
+Location: 
+Description: 
+
+G33 - Zygarde 1
+Zygarde 1 (Lv. 63) @(None) [Random] {Aura Break} <Gift Move: (None)>
+Location: 
+Description: 
+
+G34 - Pikachu 7
+Pikachu 7 (Lv. 30) @Comet Shard [Random] {Surge Surfer} <Gift Move: Substitute>
+Location: 
+Description: 
+
+T00 - Rockruff 1
+Rockruff 1 (Lv. 15) @Nugget [Naughty] {Insomnia}
+Requested Species: Happiny
+Location: 
+Description: 
+
+T01 - Poipole
+Poipole (Lv. 20) @Pearl String [Calm] {Merciless}
+Requested Species: Magikarp
+Location: 
+Description: 
+
+T02 - Vulpix 1
+Vulpix 1 (Lv. 22) @Comet Shard [Timid] {Snow Warning}
+Requested Species: Wishiwashi
+Location: 
+Description: 
+
+T03 - Elgyem
+Elgyem (Lv. 27) @Comet Shard [Quiet] {Synchronize}
+Requested Species: Wimpod
+Location: 
+Description: 
+
+T04 - Scyther
+Scyther (Lv. 34) @Scizorite [Lonely] {Technician}
+Requested Species: Mimikyu
+Location: 
+Description: 
+
+T05 - Carbink
+Carbink (Lv. 50) @Diancite [Bashful] {Solid Rock}
+Requested Species: Phione
+Location: 
+Description: 
+
+T06 - Zeraora
+Zeraora (Lv. 75) @Gold Bottle Cap [Adamant] {Volt Absorb}
+Requested Species: Naganadel
+Location: 
+Description: 
