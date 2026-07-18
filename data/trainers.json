@@ -6,7 +6,7 @@
     "personalName": "",
     "location": "",
     "desc": "",
-    "routeNumber": 1,
+    "routeNumber": 2,
     "prizeMoney": 0,
     "team": []
   },
@@ -21,19 +21,6 @@
     "prizeMoney": 336,
     "team": [
       {
-        "name": "Cleffa",
-        "level": 7,
-        "item": "Sticky Barb",
-        "nature": "Serious",
-        "ability": "Magic Guard",
-        "moves": [
-          "Sing",
-          "Metronome",
-          "Charm",
-          "Aromatherapy"
-        ]
-      },
-      {
         "name": "Igglybuff",
         "level": 7,
         "item": "Chilan Berry",
@@ -44,6 +31,19 @@
           "Sing",
           "Defense Curl",
           "Rollout"
+        ]
+      },
+      {
+        "name": "Happiny",
+        "level": 7,
+        "item": "Lagging Tail",
+        "nature": "Serious",
+        "ability": "Friend Guard",
+        "moves": [
+          "Charm",
+          "Copycat",
+          "Bestow",
+          "Round"
         ]
       },
       {
@@ -60,16 +60,16 @@
         ]
       },
       {
-        "name": "Happiny",
+        "name": "Cleffa",
         "level": 7,
-        "item": "Lagging Tail",
+        "item": "Sticky Barb",
         "nature": "Serious",
-        "ability": "Friend Guard",
+        "ability": "Magic Guard",
         "moves": [
+          "Sing",
+          "Metronome",
           "Charm",
-          "Copycat",
-          "Bestow",
-          "Round"
+          "Aromatherapy"
         ]
       }
     ]
@@ -548,7 +548,7 @@
         "level": 17,
         "item": "Red Card",
         "nature": "Relaxed",
-        "ability": "Oblivious",
+        "ability": "Own Tempo",
         "moves": [
           "Confusion",
           "Disable",
@@ -572,6 +572,57 @@
     ]
   },
   {
+    "id": "017",
+    "name": "Swimsuit Sandra",
+    "trainerClass": "swimsuit",
+    "personalName": "Sandra",
+    "location": "Big Wave Beach",
+    "desc": "Optional - Blocks access to Sandy Cave",
+    "routeNumber": 5,
+    "prizeMoney": 792,
+    "team": [
+      {
+        "name": "Popplio",
+        "level": 12,
+        "item": "Lum Berry",
+        "nature": "Quiet",
+        "ability": "Serene Grace",
+        "moves": [
+          "Aqua Ring",
+          "Bubble",
+          "Helping Hand",
+          "Sweet Tooth"
+        ]
+      },
+      {
+        "name": "Wingull",
+        "level": 12,
+        "item": "Wide Lens",
+        "nature": "Hasty",
+        "ability": "Hydration",
+        "moves": [
+          "Supersonic",
+          "Round",
+          "Gust",
+          "Pluck"
+        ]
+      },
+      {
+        "name": "Binacle",
+        "level": 11,
+        "item": "Ganlon Berry",
+        "nature": "Brave",
+        "ability": "Multistriker",
+        "moves": [
+          "Smack Down",
+          "Withdraw",
+          "Tickle",
+          "Mud-Slap"
+        ]
+      }
+    ]
+  },
+  {
     "id": "018",
     "name": "Swim Gal Ariel",
     "trainerClass": "swimgal",
@@ -579,45 +630,58 @@
     "location": "Big Wave Beach",
     "desc": "Story - Multi Battle Ally",
     "routeNumber": 1,
-    "prizeMoney": 720,
+    "prizeMoney": 780,
     "team": [
       {
         "name": "Mantyke",
-        "level": 12,
+        "level": 13,
         "item": "Waterium Z",
-        "nature": "Modest",
+        "nature": "Quiet",
         "ability": "Water Absorb",
         "moves": [
           "Bounce",
+          "Aerial Ace",
           "Bubble",
-          "Splash",
-          "Confuse Ray"
+          "Splash"
         ]
       },
       {
         "name": "Remoraid",
         "level": 13,
         "item": "Psychic Gem",
-        "nature": "Hasty",
+        "nature": "Timid",
         "ability": "Super Luck",
         "moves": [
           "Water Gun",
-          "Soak",
+          "Lock-On",
           "Psybeam",
           "Bullet Seed"
         ]
       },
       {
         "name": "Tentacool",
-        "level": 12,
-        "item": "Weakness Policy",
-        "nature": "Modest",
-        "ability": "Clear Body",
+        "level": 13,
+        "item": "Waterium Z",
+        "nature": "Quiet",
+        "ability": "Liquid Ooze",
         "moves": [
           "Bubble",
           "Acid",
           "Constrict",
           "Poison Sting"
+        ]
+      },
+      {
+        "name": "Wailmer",
+        "level": 13,
+        "item": "Wide Lens",
+        "nature": "Quiet",
+        "ability": "Oblivious",
+        "moves": [
+          "Rollout",
+          "Soak",
+          "Water Gun",
+          "Defense Curl"
         ]
       }
     ]
@@ -1379,8 +1443,8 @@
   },
   {
     "id": "034",
-    "name": "Swimmer Beau Yasu",
-    "trainerClass": "swimmerbeau",
+    "name": "Swimmer Bro Yasu",
+    "trainerClass": "swimmerbro",
     "personalName": "Yasu",
     "location": "Ten Carat Sea",
     "desc": "Optional - None",
@@ -1443,8 +1507,8 @@
   },
   {
     "id": "035",
-    "name": "Swimmer Beau Kalani",
-    "trainerClass": "swimmerbeau",
+    "name": "Swimmer Bro Kalani",
+    "trainerClass": "swimmerbro",
     "personalName": "Kalani",
     "location": "Ten Carat Sea",
     "desc": "Optional - None",
@@ -2114,12 +2178,12 @@
     "location": "Hau'oli City",
     "desc": "Story - Multibattle Ally Vs Team Skull",
     "routeNumber": 0,
-    "prizeMoney": 504,
+    "prizeMoney": 560,
     "team": [
       {
         "name": "Pichu",
-        "level": 10,
-        "item": "Apicot Berry",
+        "level": 12,
+        "item": "Eviolite",
         "nature": "Timid",
         "ability": "Battery",
         "moves": [
@@ -2130,29 +2194,42 @@
         ]
       },
       {
-        "name": "Krabby",
-        "level": 9,
+        "name": "Diglett 1",
+        "level": 11,
         "item": "Oran Berry",
-        "nature": "Brave",
-        "ability": "Hyper Cutter",
+        "nature": "Adamant",
+        "ability": "Tangling Hair",
         "moves": [
-          "Clamp",
-          "Mud Shot",
-          "Mud Sport",
-          "Harden"
+          "Sand Tomb",
+          "Beat Up",
+          "Sand Down",
+          "Mirror Shot"
         ]
       },
       {
-        "name": "Zigzagoon",
-        "level": 9,
+        "name": "Rufflet",
+        "level": 11,
         "item": "Oran Berry",
         "nature": "Hasty",
-        "ability": "Pickup",
+        "ability": "Hustle",
         "moves": [
-          "Pursuit",
-          "Charm",
-          "Headbutt",
-          "Sand Down"
+          "Air Cutter",
+          "Peck",
+          "Tackle",
+          "Rock Smash"
+        ]
+      },
+      {
+        "name": "Grubbin",
+        "level": 10,
+        "item": "Kee Berry",
+        "nature": "Impish",
+        "ability": "Static",
+        "moves": [
+          "Charge",
+          "Thunder Wave",
+          "Electroweb",
+          "Constrict"
         ]
       }
     ]
@@ -2229,7 +2306,7 @@
           "Lick",
           "Torment",
           "Tackle",
-          "Grudge"
+          "Screech"
         ]
       },
       {
@@ -2694,16 +2771,16 @@
         ]
       },
       {
-        "name": "Geodude",
+        "name": "Meowth",
         "level": 22,
-        "item": "Weakness Policy",
-        "nature": "Impish",
-        "ability": "Sturdy",
+        "item": "Protective Pads",
+        "nature": "Jolly",
+        "ability": "Frisk",
         "moves": [
-          "Mega Punch",
-          "Smack Down",
-          "Rollout",
-          "Bulldoze"
+          "Fake Out",
+          "Hone Claws",
+          "Quick Attack",
+          "Uproar"
         ]
       },
       {
@@ -2781,6 +2858,83 @@
           "Will-O-Wisp",
           "Haze",
           "Mega Drain"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "066",
+    "name": "Challenge Guide Pikachu Fan",
+    "trainerClass": "challengeguide",
+    "personalName": "Pikachu Fan",
+    "location": "Pikachu Valley",
+    "desc": "Optional - Reward: Electrium Z",
+    "routeNumber": 1,
+    "prizeMoney": 2760,
+    "team": [
+      {
+        "name": "Pachirisu",
+        "level": 22,
+        "item": "Kee Berry",
+        "nature": "Calm",
+        "ability": "Cheek Pouch",
+        "moves": [
+          "Helping Hand",
+          "Magnet Rise",
+          "Thunder Shock",
+          "Recycle"
+        ]
+      },
+      {
+        "name": "Mimikyu",
+        "level": 22,
+        "item": "Terrain Extender",
+        "nature": "Sassy",
+        "ability": "Disguise",
+        "moves": [
+          "Copycat",
+          "Curse",
+          "Draining Kiss",
+          "Electric Terrain"
+        ]
+      },
+      {
+        "name": "Marill",
+        "level": 22,
+        "item": "Eviolite",
+        "nature": "Bold",
+        "ability": "Sap Sipper",
+        "moves": [
+          "Aqua Ring",
+          "Bubble Beam",
+          "Follow Me",
+          "Fake Tears"
+        ]
+      },
+      {
+        "name": "Pikachu",
+        "level": 22,
+        "item": "Air Balloon",
+        "nature": "Timid",
+        "ability": "Battery",
+        "moves": [
+          "Electric Terrain",
+          "Encore",
+          "Feint",
+          "Electro Ball"
+        ]
+      },
+      {
+        "name": "Pikachu 3",
+        "level": 23,
+        "item": "Electrium Z",
+        "nature": "Timid",
+        "ability": "Surge Surfer",
+        "moves": [
+          "Aurora Beam",
+          "Protect",
+          "Shock Wave",
+          "Electro Ball"
         ]
       }
     ]
@@ -2864,8 +3018,8 @@
   },
   {
     "id": "070",
-    "name": "Swimmer Beau Dakota",
-    "trainerClass": "swimmerbeau",
+    "name": "Swimmer Bro Dakota",
+    "trainerClass": "swimmerbro",
     "personalName": "Dakota",
     "location": "Route 7",
     "desc": "Optional - None",
@@ -2915,8 +3069,8 @@
   },
   {
     "id": "071",
-    "name": "Swimmer Beau Casey",
-    "trainerClass": "swimmerbeau",
+    "name": "Swimmer Bro Casey",
+    "trainerClass": "swimmerbro",
     "personalName": "Casey",
     "location": "Route 7",
     "desc": "Optional - None",
@@ -3111,10 +3265,23 @@
     "trainerClass": "kalosianman",
     "personalName": "Dexio",
     "location": "Heahea City",
-    "desc": "Miniboss - Blocks access to Route 4",
+    "desc": "Miniboss - Multi Battle with Sina, blocks access to Route 4",
     "routeNumber": 1,
     "prizeMoney": 6400,
     "team": [
+      {
+        "name": "Inkay",
+        "level": 19,
+        "item": "Normalium Z",
+        "nature": "Brave",
+        "ability": "Contrary",
+        "moves": [
+          "Protect",
+          "Psycrush",
+          "Topsy-Turvy",
+          "Power Trip"
+        ]
+      },
       {
         "name": "Espurr",
         "level": 20,
@@ -3126,58 +3293,6 @@
           "Psybeam",
           "Fake Out",
           "Reflect"
-        ]
-      },
-      {
-        "name": "Natu",
-        "level": 19,
-        "item": "Colbur Berry",
-        "nature": "Sassy",
-        "ability": "Anticipation",
-        "moves": [
-          "Stored Power",
-          "Air Cutter",
-          "Agility",
-          "Meditate"
-        ]
-      },
-      {
-        "name": "Inkay",
-        "level": 19,
-        "item": "Quick Claw",
-        "nature": "Brave",
-        "ability": "Contrary",
-        "moves": [
-          "Nightmare",
-          "Psycrush",
-          "Topsy-Turvy",
-          "Hypnosis"
-        ]
-      },
-      {
-        "name": "Exeggcute",
-        "level": 20,
-        "item": "Sitrus Berry",
-        "nature": "Quiet",
-        "ability": "Harvest",
-        "moves": [
-          "Bullet Seed",
-          "Soft-Boiled",
-          "Leech Seed",
-          "Psybeam"
-        ]
-      },
-      {
-        "name": "Chingling",
-        "level": 19,
-        "item": "Normalium Z",
-        "nature": "Calm",
-        "ability": "Soundproof",
-        "moves": [
-          "Magnet Bomb",
-          "Round",
-          "Disarming Voice",
-          "Yawn"
         ]
       },
       {
@@ -3200,29 +3315,48 @@
     "name": "Kalosian Woman Sina",
     "trainerClass": "kalosianwoman",
     "personalName": "Sina",
-    "location": "",
-    "desc": "",
-    "routeNumber": 0,
-    "prizeMoney": 2100,
+    "location": "Heahea City",
+    "desc": "Miniboss - Multi Battle with Dexio, blocks Route 4 access.",
+    "routeNumber": 2,
+    "prizeMoney": 2660,
     "team": [
       {
-        "name": "Smoochum",
-        "level": 15,
-        "nature": "Serious",
-        "ability": "Dry Skin",
+        "name": "Amaura",
+        "level": 20,
+        "item": "Icy Rock",
+        "nature": "Sassy",
+        "ability": "Snow Warning",
         "moves": [
-          "Powder Snow",
-          "Pummel"
+          "Take Down",
+          "Icy Wind",
+          "Rock Tomb",
+          "Avalanche"
+        ]
+      },
+      {
+        "name": "Bergmite",
+        "level": 20,
+        "item": "Hard Stone",
+        "nature": "Brave",
+        "ability": "Stamina",
+        "moves": [
+          "Stealth Rock",
+          "Cold Snap",
+          "Barrier",
+          "Power Gem"
         ]
       },
       {
         "name": "Glaceon",
-        "level": 15,
-        "nature": "Serious",
-        "ability": "Slush Rush",
+        "level": 19,
+        "item": "Normalium Z",
+        "nature": "Hasty",
+        "ability": "Ice Body",
         "moves": [
-          "Icy Wind",
-          "Quick Attack"
+          "Protect",
+          "Avalanche",
+          "Mud-Slap",
+          "Ice Shard"
         ]
       }
     ]
@@ -3238,16 +3372,16 @@
     "prizeMoney": 3220,
     "team": [
       {
-        "name": "Brionne",
-        "level": 23,
-        "item": "Water Gem",
-        "nature": "Modest",
-        "ability": "Liquid Voice",
+        "name": "Rhyhorn",
+        "level": 22,
+        "item": "Salac Berry",
+        "nature": "Adamant",
+        "ability": "Lightning Rod",
         "moves": [
-          "Double Slap",
-          "Icy Wind",
-          "Fake Out",
-          "Disarming Voice"
+          "Rock Tomb",
+          "Trample",
+          "Rock Polish",
+          "Horn Attack"
         ]
       },
       {
@@ -3264,16 +3398,16 @@
         ]
       },
       {
-        "name": "Noibat",
-        "level": 22,
-        "item": "Flyinium Z",
-        "nature": "Timid",
-        "ability": "Soundproof",
+        "name": "Brionne",
+        "level": 23,
+        "item": "Shell Bell",
+        "nature": "Modest",
+        "ability": "Liquid Voice",
         "moves": [
-          "Twister",
-          "Air Cutter",
-          "Dragon Breath",
-          "Sonic Boom"
+          "Double Slap",
+          "Icy Wind",
+          "Fake Out",
+          "Disarming Voice"
         ]
       },
       {
@@ -3292,9 +3426,9 @@
       {
         "name": "Deerling 2",
         "level": 21,
-        "item": "Silk Scarf",
+        "item": "Normalium Z",
         "nature": "Lonely",
-        "ability": "Serene Grace",
+        "ability": "Sap Sipper",
         "moves": [
           "Mega Drain",
           "Growth",
@@ -3328,16 +3462,16 @@
     "prizeMoney": 3220,
     "team": [
       {
-        "name": "Dartrix",
-        "level": 23,
-        "item": "Grass Gem",
-        "nature": "Jolly",
-        "ability": "Sniper",
+        "name": "Rhyhorn",
+        "level": 22,
+        "item": "Salac Berry",
+        "nature": "Adamant",
+        "ability": "Lightning Rod",
         "moves": [
-          "Focus Energy",
-          "Pluck",
-          "Razor Leaf",
-          "Trailblaze"
+          "Rock Tomb",
+          "Trample",
+          "Rock Polish",
+          "Horn Attack"
         ]
       },
       {
@@ -3354,16 +3488,16 @@
         ]
       },
       {
-        "name": "Noibat",
-        "level": 22,
-        "item": "Flyinium Z",
-        "nature": "Timid",
-        "ability": "Soundproof",
+        "name": "Dartrix",
+        "level": 23,
+        "item": "Shell Bell",
+        "nature": "Jolly",
+        "ability": "Sniper",
         "moves": [
-          "Twister",
-          "Air Cutter",
-          "Dragon Breath",
-          "Sonic Boom"
+          "Focus Energy",
+          "Pluck",
+          "Razor Leaf",
+          "Trailblaze"
         ]
       },
       {
@@ -3382,7 +3516,7 @@
       {
         "name": "Litleo",
         "level": 21,
-        "item": "Silk Scarf",
+        "item": "Normalium Z",
         "nature": "Modest",
         "ability": "Unnerve",
         "moves": [
@@ -3418,16 +3552,16 @@
     "prizeMoney": 3220,
     "team": [
       {
-        "name": "Torracat",
-        "level": 23,
-        "item": "Fire Gem",
+        "name": "Rhyhorn",
+        "level": 22,
+        "item": "Salac Berry",
         "nature": "Adamant",
-        "ability": "Intimidate",
+        "ability": "Lightning Rod",
         "moves": [
-          "Slink Strike",
-          "Flame Charge",
-          "Power Trip",
-          "Scary Face"
+          "Rock Tomb",
+          "Trample",
+          "Rock Polish",
+          "Horn Attack"
         ]
       },
       {
@@ -3444,16 +3578,16 @@
         ]
       },
       {
-        "name": "Noibat",
-        "level": 22,
-        "item": "Flyinium Z",
-        "nature": "Timid",
-        "ability": "Soundproof",
+        "name": "Torracat",
+        "level": 23,
+        "item": "Shell Bell",
+        "nature": "Adamant",
+        "ability": "Intimidate",
         "moves": [
-          "Twister",
-          "Air Cutter",
-          "Dragon Breath",
-          "Sonic Boom"
+          "Slink Strike",
+          "Flame Charge",
+          "Power Trip",
+          "Scary Face"
         ]
       },
       {
@@ -3472,7 +3606,7 @@
       {
         "name": "Buizel",
         "level": 21,
-        "item": "Silk Scarf",
+        "item": "Normalium Z",
         "nature": "Jolly",
         "ability": "Water Veil",
         "moves": [
@@ -3508,16 +3642,16 @@
     "prizeMoney": 3840,
     "team": [
       {
-        "name": "Zorua",
-        "level": 24,
-        "item": "Black Glasses",
-        "nature": "Timid",
-        "ability": "Illusion",
+        "name": "Yamask",
+        "level": 23,
+        "item": "Leftovers",
+        "nature": "Mild",
+        "ability": "Mummy",
         "moves": [
-          "Scary Face",
-          "Taunt",
-          "Psybeam",
-          "Snarl"
+          "Protect",
+          "Will-O-Wisp",
+          "Shadow Punch",
+          "Round"
         ]
       },
       {
@@ -3560,16 +3694,16 @@
         ]
       },
       {
-        "name": "Yamask",
-        "level": 23,
-        "item": "Leftovers",
-        "nature": "Mild",
-        "ability": "Mummy",
+        "name": "Zorua",
+        "level": 24,
+        "item": "Black Glasses",
+        "nature": "Timid",
+        "ability": "Illusion",
         "moves": [
-          "Protect",
-          "Will-O-Wisp",
-          "Shadow Punch",
-          "Round"
+          "Scary Face",
+          "Taunt",
+          "Psybeam",
+          "Snarl"
         ]
       },
       {
@@ -3750,9 +3884,9 @@
   },
   {
     "id": "085",
-    "name": "Team Skull [~ 85]",
+    "name": "Team Skull Grunt Bee",
     "trainerClass": "teamskull",
-    "personalName": "[~ 85]",
+    "personalName": "Grunt Bee",
     "location": "Route 6",
     "desc": "Story - Multi Battle with Grunt Ay",
     "routeNumber": 3,
@@ -3814,9 +3948,9 @@
   },
   {
     "id": "087",
-    "name": "Poni Kahuna [~ 87]",
+    "name": "Poni Kahuna Hapu",
     "trainerClass": "ponikahuna",
-    "personalName": "[~ 87]",
+    "personalName": "Hapu",
     "location": "Route 6",
     "desc": "Story - Multi Battle ally against Team Skull",
     "routeNumber": 4,
@@ -4708,6 +4842,83 @@
     ]
   },
   {
+    "id": "103",
+    "name": "Preschooler Mystery Kid",
+    "trainerClass": "preschooler",
+    "personalName": "Mystery Kid",
+    "location": "Schoolyard",
+    "desc": "Optional Miniboss - Seven Mysteries Sidequest | Reward: Ghostium Z + Gold Bottle Cap",
+    "routeNumber": 10,
+    "prizeMoney": 2520,
+    "team": [
+      {
+        "name": "Duskull",
+        "level": 21,
+        "item": "Iapapa Berry",
+        "nature": "Sassy",
+        "ability": "Levitate",
+        "moves": [
+          "Mega Drain",
+          "Pain Split",
+          "Infestation",
+          "Disable"
+        ]
+      },
+      {
+        "name": "Honedge",
+        "level": 21,
+        "item": "Normal Gem",
+        "nature": "Adamant",
+        "ability": "No Guard",
+        "moves": [
+          "False Swipe",
+          "Metal Claw",
+          "Shadow Sneak",
+          "Autotomize"
+        ]
+      },
+      {
+        "name": "Rotom",
+        "level": 20,
+        "item": "Shuca Berry",
+        "nature": "Timid",
+        "ability": "Lightning Rod",
+        "moves": [
+          "Electrify",
+          "Charge Beam",
+          "Ominous Wind",
+          "Pain Split"
+        ]
+      },
+      {
+        "name": "Drifloon",
+        "level": 22,
+        "item": "Ghostium Z",
+        "nature": "Timid",
+        "ability": "Aftermath",
+        "moves": [
+          "Protect",
+          "Minimize",
+          "Air Cutter",
+          "Ominous Wind"
+        ]
+      },
+      {
+        "name": "Golett",
+        "level": 21,
+        "item": "Chesto Berry",
+        "nature": "Adamant",
+        "ability": "Iron Fist",
+        "moves": [
+          "Rest",
+          "Mega Punch",
+          "Trample",
+          "Bullet Punch"
+        ]
+      }
+    ]
+  },
+  {
     "id": "104",
     "name": "Star Trainer Alexis",
     "trainerClass": "startrainer",
@@ -4850,8 +5061,8 @@
   },
   {
     "id": "108",
-    "name": "Swimmer Beau Lawrence",
-    "trainerClass": "swimmerbeau",
+    "name": "Swimmer Bro Lawrence",
+    "trainerClass": "swimmerbro",
     "personalName": "Lawrence",
     "location": "Hano Beach",
     "desc": "Optional - None",
@@ -4901,8 +5112,8 @@
   },
   {
     "id": "109",
-    "name": "Swimmer Beau Roddy",
-    "trainerClass": "swimmerbeau",
+    "name": "Swimmer Bro Roddy",
+    "trainerClass": "swimmerbro",
     "personalName": "Roddy",
     "location": "Hano Beach",
     "desc": "Optional - None",
@@ -5894,7 +6105,7 @@
         "name": "Lopunny",
         "level": 47,
         "nature": "Adamant",
-        "ability": "Cute Charm",
+        "ability": "Dancer",
         "moves": [
           "Dizzy Punch",
           "Thunder Punch",
@@ -6465,19 +6676,6 @@
           "Heart Stamp",
           "Aerial Ace",
           "Roost"
-        ]
-      },
-      {
-        "name": "Togetic",
-        "level": 21,
-        "item": "Shell Bell",
-        "nature": "Quiet",
-        "ability": "Super Luck",
-        "moves": [
-          "Extrasensory",
-          "Follow Me",
-          "Wish",
-          "Disarming Voice"
         ]
       },
       {
@@ -7991,7 +8189,7 @@
           "Lick",
           "Torment",
           "Tackle",
-          "Grudge"
+          "Screech"
         ]
       },
       {
@@ -8081,7 +8279,7 @@
           "Lick",
           "Torment",
           "Tackle",
-          "Grudge"
+          "Screech"
         ]
       },
       {
@@ -9438,7 +9636,7 @@
         "level": 44,
         "item": "Choice Band",
         "nature": "Jolly",
-        "ability": "Cute Charm",
+        "ability": "Dancer",
         "moves": [
           "Dizzy Punch",
           "U-turn",
@@ -9979,8 +10177,8 @@
   },
   {
     "id": "269",
-    "name": "Swimmer Beau Keoni",
-    "trainerClass": "swimmerbeau",
+    "name": "Swimmer Bro Keoni",
+    "trainerClass": "swimmerbro",
     "personalName": "Keoni",
     "location": "",
     "desc": "",
@@ -10081,8 +10279,8 @@
   },
   {
     "id": "271",
-    "name": "Swimmer Beau Jared",
-    "trainerClass": "swimmerbeau",
+    "name": "Swimmer Bro Jared",
+    "trainerClass": "swimmerbro",
     "personalName": "Jared",
     "location": "",
     "desc": "",
@@ -10755,7 +10953,7 @@
         "level": 54,
         "item": "Protective Pads",
         "nature": "Impish",
-        "ability": "Anticipation",
+        "ability": "Iron Fist",
         "moves": [
           "Will-O-Wisp",
           "Pain Split",
@@ -18495,7 +18693,7 @@
     "location": "Route 4",
     "desc": "Optional - None",
     "routeNumber": 4,
-    "prizeMoney": 2520,
+    "prizeMoney": 2640,
     "team": [
       {
         "name": "Diglett",
@@ -18524,19 +18722,6 @@
         ]
       },
       {
-        "name": "Meowth",
-        "level": 22,
-        "item": "Protective Pads",
-        "nature": "Jolly",
-        "ability": "Frisk",
-        "moves": [
-          "Fake Out",
-          "Hone Claws",
-          "Quick Attack",
-          "Uproar"
-        ]
-      },
-      {
         "name": "Charmander",
         "level": 21,
         "item": "Berry Juice",
@@ -18547,6 +18732,19 @@
           "Fire Spin",
           "Dragon Rage",
           "Rage"
+        ]
+      },
+      {
+        "name": "Geodude",
+        "level": 22,
+        "item": "Weakness Policy",
+        "nature": "Impish",
+        "ability": "Sturdy",
+        "moves": [
+          "Mega Punch",
+          "Smack Down",
+          "Rollout",
+          "Bulldoze"
         ]
       }
     ]
@@ -18974,8 +19172,8 @@
   },
   {
     "id": "526",
-    "name": "Swimmer Beau Derek",
-    "trainerClass": "swimmerbeau",
+    "name": "Swimmer Bro Derek",
+    "trainerClass": "swimmerbro",
     "personalName": "Derek",
     "location": "",
     "desc": "",
@@ -19283,16 +19481,16 @@
         ]
       },
       {
-        "name": "Lotad",
+        "name": "Buneary",
         "level": 17,
         "item": "Oran Berry",
         "nature": "Calm",
-        "ability": "Rain Dish",
+        "ability": "Overcoat",
         "moves": [
-          "Mega Drain",
-          "Bubble Beam",
-          "Safeguard",
-          "Startle"
+          "Covet",
+          "Charm",
+          "Quick Attack",
+          "Double Kick"
         ]
       },
       {
@@ -19334,6 +19532,32 @@
     "prizeMoney": 7200,
     "team": [
       {
+        "name": "Lilligant",
+        "level": 28,
+        "item": "Sitrus Berry",
+        "nature": "Adamant",
+        "ability": "Dancer",
+        "moves": [
+          "Rapid Spin",
+          "Encore",
+          "Dragon Dance",
+          "Petal Blizzard"
+        ]
+      },
+      {
+        "name": "Lopunny",
+        "level": 29,
+        "item": "Rawst Berry",
+        "nature": "Calm",
+        "ability": "Dancer",
+        "moves": [
+          "Encore",
+          "Headbutt",
+          "Double Slap",
+          "Follow Me"
+        ]
+      },
+      {
         "name": "Larvesta",
         "level": 29,
         "item": "Wiki Berry",
@@ -19347,19 +19571,6 @@
         ]
       },
       {
-        "name": "Lombre",
-        "level": 29,
-        "item": "Persim Berry",
-        "nature": "Calm",
-        "ability": "Hydration",
-        "moves": [
-          "Fake Out",
-          "Magical Leaf",
-          "Water Pulse",
-          "Water Sport"
-        ]
-      },
-      {
         "name": "Oricorio 2",
         "level": 30,
         "item": "Salac Berry",
@@ -19370,19 +19581,6 @@
           "Psybeam",
           "Acrobatics",
           "Teeter Dance"
-        ]
-      },
-      {
-        "name": "Lilligant",
-        "level": 28,
-        "item": "Sitrus Berry",
-        "nature": "Adamant",
-        "ability": "Dancer",
-        "moves": [
-          "Rapid Spin",
-          "Encore",
-          "Dragon Dance",
-          "Petal Blizzard"
         ]
       },
       {
@@ -19401,7 +19599,7 @@
       {
         "name": "Swablu",
         "level": 30,
-        "item": "Starf Berry",
+        "item": "Fairium Z",
         "nature": "Timid",
         "ability": "Cloud Nine",
         "moves": [
@@ -21271,7 +21469,7 @@
     "location": "Brooklet Hill",
     "desc": "Miniboss - Johnny will only battle you if it is raining and after the trial here. Reward: $50,000",
     "routeNumber": 6,
-    "prizeMoney": 12480,
+    "prizeMoney": 22880,
     "team": [
       {
         "name": "Pelipper",
@@ -23373,7 +23571,7 @@
         "name": "Lopunny",
         "level": 68,
         "nature": "Adamant",
-        "ability": "Cute Charm",
+        "ability": "Dancer",
         "moves": [
           "Dizzy Punch",
           "Thunder Punch",
@@ -23851,7 +24049,7 @@
           "Helping Hand",
           "Confusion",
           "Ally Switch",
-          "Mist"
+          "Wonder Room"
         ]
       },
       {

@@ -5631,6 +5631,7 @@
       "protect": 1,
       "reflectable": 1,
       "mirror": 1,
+      "sound": 1,
       "animateally": 1
     },
     "name": "Yawn",
@@ -5642,7 +5643,7 @@
     "pp": 10,
     "zMovePower": 0,
     "zMoveEffect": "+1 Special Defense",
-    "desc": "The user lets loose a huge yawn that lulls the target into falling asleep on the next turn. Z: +1 Sp.Def",
+    "desc": "The user lets loose a huge yawn that lulls the target into falling asleep on the next turn. (Sound) Z: +1 Sp.Def",
     "priority": 0,
     "shortDesc": ""
   },
