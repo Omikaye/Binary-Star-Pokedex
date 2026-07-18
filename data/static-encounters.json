@@ -1,9 +1,11 @@
 {
-  "S001": {
-    "id": "S001",
+  "S000": {
+    "id": "S000",
     "name": "Rattata 1",
     "level": 4,
     "item": "Oran Berry",
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hustle",
     "abilitySlot": 1,
@@ -20,11 +22,13 @@
       "secondary": null
     }
   },
-  "S002": {
-    "id": "S002",
+  "S001": {
+    "id": "S001",
     "name": "Nihilego",
     "level": 43,
     "item": "Poisonium Z",
+    "location": "",
+    "description": "",
     "nature": "Calm",
     "ability": "Clear Body",
     "abilitySlot": 1,
@@ -43,11 +47,13 @@
       "secondary": null
     }
   },
-  "S003": {
-    "id": "S003",
+  "S002": {
+    "id": "S002",
     "name": "Solgaleo",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Full Metal Body",
     "abilitySlot": 1,
@@ -65,11 +71,13 @@
       "secondary": null
     }
   },
-  "S004": {
-    "id": "S004",
+  "S003": {
+    "id": "S003",
     "name": "Lunala",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Shadow Shield",
     "abilitySlot": 1,
@@ -87,11 +95,13 @@
       "secondary": null
     }
   },
-  "S005": {
-    "id": "S005",
+  "S004": {
+    "id": "S004",
     "name": "Gumshoos 1",
-    "level": 16,
+    "level": 17,
     "item": "Lum Berry",
+    "location": "",
+    "description": "",
     "nature": "Modest",
     "ability": "Regal Presence",
     "abilitySlot": 1,
@@ -110,11 +120,13 @@
       "secondary": null
     }
   },
-  "S006": {
-    "id": "S006",
+  "S005": {
+    "id": "S005",
     "name": "Yungoos",
     "level": 13,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Hardy",
     "ability": "Strong Jaw",
     "abilitySlot": 1,
@@ -133,11 +145,13 @@
       "secondary": null
     }
   },
-  "S007": {
-    "id": "S007",
+  "S006": {
+    "id": "S006",
     "name": "Raticate 1",
     "level": 14,
     "item": "Kee Berry",
+    "location": "",
+    "description": "",
     "nature": "Impish",
     "ability": "Thick Fat",
     "abilitySlot": 1,
@@ -156,13 +170,15 @@
       "secondary": null
     }
   },
-  "S008": {
-    "id": "S008",
+  "S007": {
+    "id": "S007",
     "name": "Teddiursa",
     "level": 13,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Naughty",
-    "ability": "Honey Gather",
+    "ability": "Pickup",
     "abilitySlot": 1,
     "moves": [
       "Lick",
@@ -179,11 +195,13 @@
       "secondary": null
     }
   },
-  "S009": {
-    "id": "S009",
+  "S008": {
+    "id": "S008",
     "name": "Rattata 1",
     "level": 12,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Lonely",
     "ability": "Pickpocket",
     "abilitySlot": 1,
@@ -201,11 +219,13 @@
       "secondary": null
     }
   },
-  "S010": {
-    "id": "S010",
+  "S009": {
+    "id": "S009",
     "name": "Raticate 2",
     "level": 12,
     "item": "Pecha Berry",
+    "location": "",
+    "description": "",
     "nature": "Modest",
     "ability": "Stamina",
     "abilitySlot": 1,
@@ -224,11 +244,13 @@
       "secondary": null
     }
   },
-  "S011": {
-    "id": "S011",
+  "S010": {
+    "id": "S010",
     "name": "Spearow",
     "level": 2,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Modest",
     "ability": "Keen Eye",
     "abilitySlot": 1,
@@ -244,11 +266,13 @@
       "secondary": null
     }
   },
-  "S012": {
-    "id": "S012",
+  "S011": {
+    "id": "S011",
     "name": "Raticate 1",
     "level": 11,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Mild",
     "ability": "Thick Fat",
     "abilitySlot": 1,
@@ -266,11 +290,13 @@
       "secondary": null
     }
   },
-  "S013": {
-    "id": "S013",
+  "S012": {
+    "id": "S012",
     "name": "Rattata 1",
     "level": 11,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Hardy",
     "ability": "Hustle",
     "abilitySlot": 1,
@@ -288,11 +314,13 @@
       "secondary": null
     }
   },
-  "S014": {
-    "id": "S014",
+  "S013": {
+    "id": "S013",
     "name": "Rattata 1",
     "level": 10,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Timid",
     "ability": "Pickup",
     "abilitySlot": 1,
@@ -310,11 +338,13 @@
       "secondary": null
     }
   },
-  "S015": {
-    "id": "S015",
+  "S014": {
+    "id": "S014",
     "name": "Wishiwashi 1",
     "level": 20,
     "item": "Sitrus Berry",
+    "location": "",
+    "description": "",
     "nature": "Adamant",
     "ability": "Schooling",
     "abilitySlot": 1,
@@ -333,11 +363,13 @@
       "secondary": "S019"
     }
   },
-  "S016": {
-    "id": "S016",
+  "S015": {
+    "id": "S015",
     "name": "Goldeen",
     "level": 25,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Jolly",
     "ability": "Water Veil",
     "abilitySlot": 1,
@@ -356,11 +388,13 @@
       "secondary": null
     }
   },
-  "S017": {
-    "id": "S017",
+  "S016": {
+    "id": "S016",
     "name": "Wishiwashi",
     "level": 26,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Brave",
     "ability": "Schooling",
     "abilitySlot": 1,
@@ -379,11 +413,13 @@
       "secondary": null
     }
   },
-  "S018": {
-    "id": "S018",
+  "S017": {
+    "id": "S017",
     "name": "Alomomola",
     "level": 18,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Naughty",
     "ability": "Soul-Heart",
     "abilitySlot": 1,
@@ -401,11 +437,13 @@
       "secondary": null
     }
   },
-  "S019": {
-    "id": "S019",
+  "S018": {
+    "id": "S018",
     "name": "Wishiwashi",
     "level": 18,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Schooling",
     "abilitySlot": 1,
@@ -418,11 +456,13 @@
       "secondary": null
     }
   },
-  "S020": {
-    "id": "S020",
+  "S019": {
+    "id": "S019",
     "name": "Salazzle 1",
     "level": 22,
     "item": "Petaya Berry",
+    "location": "",
+    "description": "",
     "nature": "Calm",
     "ability": "Merciless",
     "abilitySlot": 1,
@@ -441,11 +481,13 @@
       "secondary": null
     }
   },
-  "S021": {
-    "id": "S021",
+  "S020": {
+    "id": "S020",
     "name": "Marowak 1",
     "level": 31,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Serious",
     "ability": "Cursed Body",
     "abilitySlot": 1,
@@ -456,7 +498,33 @@
       "Flame Wheel"
     ],
     "aura": {
-      "effect": "None"
+      "effect": "Sp. Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S021": {
+    "id": "S021",
+    "name": "Marowak 1",
+    "level": 31,
+    "item": null,
+    "location": "",
+    "description": "",
+    "nature": "Serious",
+    "ability": "Cursed Body",
+    "abilitySlot": 1,
+    "moves": [
+      "Will-O-Wisp",
+      "Bonemerang",
+      "Shadow Bone",
+      "Flame Wheel"
+    ],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+1"
     },
     "sos": {
       "primary": null,
@@ -465,31 +533,11 @@
   },
   "S022": {
     "id": "S022",
-    "name": "Marowak 1",
-    "level": 31,
-    "item": null,
-    "nature": "Serious",
-    "ability": "Cursed Body",
-    "abilitySlot": 1,
-    "moves": [
-      "Will-O-Wisp",
-      "Bonemerang",
-      "Shadow Bone",
-      "Flame Wheel"
-    ],
-    "aura": {
-      "effect": "None"
-    },
-    "sos": {
-      "primary": null,
-      "secondary": null
-    }
-  },
-  "S023": {
-    "id": "S023",
     "name": "Pikachu",
     "level": 20,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Lax",
     "ability": "Lightning Rod",
     "abilitySlot": 1,
@@ -507,11 +555,13 @@
       "secondary": null
     }
   },
-  "S024": {
-    "id": "S024",
+  "S023": {
+    "id": "S023",
     "name": "Salandit",
     "level": 20,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Quiet",
     "ability": "Corrosion",
     "abilitySlot": 1,
@@ -529,11 +579,38 @@
       "secondary": null
     }
   },
-  "S026": {
-    "id": "S026",
+  "S024": {
+    "id": "S024",
+    "name": "Lurantis 1",
+    "level": 37,
+    "item": "Coba Berry",
+    "location": "",
+    "description": "",
+    "nature": "Calm",
+    "ability": "Unknown",
+    "abilitySlot": 7,
+    "moves": [
+      "Low Sweep",
+      "Acrobatics",
+      "Leech Seed",
+      "Solar Blade"
+    ],
+    "aura": {
+      "effect": "Defense",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": "S032",
+      "secondary": "S033"
+    }
+  },
+  "S025": {
+    "id": "S025",
     "name": "Parasect",
     "level": 22,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Lonely",
     "ability": "Dry Skin",
     "abilitySlot": 1,
@@ -551,11 +628,13 @@
       "secondary": null
     }
   },
-  "S027": {
-    "id": "S027",
+  "S026": {
+    "id": "S026",
     "name": "Shiinotic",
     "level": 22,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Calm",
     "ability": "Misty Surge",
     "abilitySlot": 1,
@@ -573,12 +652,38 @@
       "secondary": null
     }
   },
+  "S027": {
+    "id": "S027",
+    "name": "Fomantis",
+    "level": 23,
+    "item": null,
+    "location": "",
+    "description": "",
+    "nature": "Impish",
+    "ability": "Contrary",
+    "abilitySlot": 1,
+    "moves": [
+      "Razor Leaf",
+      "Trailblaze",
+      "Fury Cutter",
+      "Growth"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
   "S028": {
     "id": "S028",
     "name": "Fomantis",
     "level": 23,
     "item": null,
-    "nature": "Impish",
+    "location": "",
+    "description": "",
+    "nature": "Adamant",
     "ability": "Contrary",
     "abilitySlot": 1,
     "moves": [
@@ -600,14 +705,16 @@
     "name": "Fomantis",
     "level": 23,
     "item": null,
-    "nature": "Adamant",
+    "location": "",
+    "description": "",
+    "nature": "Gentle",
     "ability": "Contrary",
     "abilitySlot": 1,
     "moves": [
-      "Razor Leaf",
       "Trailblaze",
       "Fury Cutter",
-      "Growth"
+      "Ingrain",
+      "Razor Leaf"
     ],
     "aura": {
       "effect": "None"
@@ -622,7 +729,9 @@
     "name": "Fomantis",
     "level": 23,
     "item": null,
-    "nature": "Gentle",
+    "location": "",
+    "description": "",
+    "nature": "Sassy",
     "ability": "Contrary",
     "abilitySlot": 1,
     "moves": [
@@ -641,31 +750,11 @@
   },
   "S031": {
     "id": "S031",
-    "name": "Fomantis",
-    "level": 23,
-    "item": null,
-    "nature": "Sassy",
-    "ability": "Contrary",
-    "abilitySlot": 1,
-    "moves": [
-      "Trailblaze",
-      "Fury Cutter",
-      "Ingrain",
-      "Razor Leaf"
-    ],
-    "aura": {
-      "effect": "None"
-    },
-    "sos": {
-      "primary": null,
-      "secondary": null
-    }
-  },
-  "S032": {
-    "id": "S032",
     "name": "Whimsicott",
     "level": 33,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Timid",
     "ability": "Fluffy",
     "abilitySlot": 1,
@@ -683,11 +772,13 @@
       "secondary": null
     }
   },
-  "S033": {
-    "id": "S033",
+  "S032": {
+    "id": "S032",
     "name": "Sunflora",
     "level": 33,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Quiet",
     "ability": "Solar Power",
     "abilitySlot": 1,
@@ -705,11 +796,13 @@
       "secondary": null
     }
   },
-  "S034": {
-    "id": "S034",
+  "S033": {
+    "id": "S033",
     "name": "Vikavolt 1",
     "level": 29,
     "item": "Occa Berry",
+    "location": "",
+    "description": "",
     "nature": "Sassy",
     "ability": "Electric Surge",
     "abilitySlot": 1,
@@ -728,11 +821,13 @@
       "secondary": "S038"
     }
   },
-  "S035": {
-    "id": "S035",
+  "S034": {
+    "id": "S034",
     "name": "Grubbin",
     "level": 27,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Lonely",
     "ability": "Minus",
     "abilitySlot": 1,
@@ -750,11 +845,13 @@
       "secondary": null
     }
   },
-  "S036": {
-    "id": "S036",
+  "S035": {
+    "id": "S035",
     "name": "Charjabug",
     "level": 27,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Adamant",
     "ability": "Plus",
     "abilitySlot": 1,
@@ -772,11 +869,13 @@
       "secondary": null
     }
   },
-  "S037": {
-    "id": "S037",
+  "S036": {
+    "id": "S036",
     "name": "Charjabug",
     "level": 27,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Naughty",
     "ability": "Plus",
     "abilitySlot": 1,
@@ -794,11 +893,13 @@
       "secondary": null
     }
   },
-  "S038": {
-    "id": "S038",
+  "S037": {
+    "id": "S037",
     "name": "Charjabug",
     "level": 27,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Jolly",
     "ability": "Plus",
     "abilitySlot": 1,
@@ -816,11 +917,13 @@
       "secondary": null
     }
   },
-  "S039": {
-    "id": "S039",
+  "S038": {
+    "id": "S038",
     "name": "Charjabug",
     "level": 28,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Brave",
     "ability": "Plus",
     "abilitySlot": 1,
@@ -838,11 +941,13 @@
       "secondary": null
     }
   },
-  "S040": {
-    "id": "S040",
+  "S039": {
+    "id": "S039",
     "name": "Mimikyu 2",
     "level": 55,
     "item": "Lum Berry",
+    "location": "",
+    "description": "",
     "nature": "Impish",
     "ability": "Disguise",
     "abilitySlot": 1,
@@ -861,11 +966,13 @@
       "secondary": "S044"
     }
   },
-  "S041": {
-    "id": "S041",
+  "S040": {
+    "id": "S040",
     "name": "Banette",
     "level": 50,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Timid",
     "ability": "Prankster",
     "abilitySlot": 1,
@@ -883,11 +990,13 @@
       "secondary": null
     }
   },
-  "S042": {
-    "id": "S042",
+  "S041": {
+    "id": "S041",
     "name": "Mismagius",
     "level": 51,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Rash",
     "ability": "Magic Guard",
     "abilitySlot": 1,
@@ -905,11 +1014,13 @@
       "secondary": null
     }
   },
-  "S043": {
-    "id": "S043",
+  "S042": {
+    "id": "S042",
     "name": "Gengar",
     "level": 52,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Quiet",
     "ability": "Cursed Body",
     "abilitySlot": 1,
@@ -927,11 +1038,13 @@
       "secondary": null
     }
   },
-  "S044": {
-    "id": "S044",
+  "S043": {
+    "id": "S043",
     "name": "Palossand",
     "level": 50,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Quiet",
     "ability": "Sand Stream",
     "abilitySlot": 1,
@@ -949,11 +1062,13 @@
       "secondary": null
     }
   },
-  "S045": {
-    "id": "S045",
+  "S044": {
+    "id": "S044",
     "name": "Chandelure",
     "level": 50,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Modest",
     "ability": "Shadow Tag",
     "abilitySlot": 1,
@@ -971,11 +1086,13 @@
       "secondary": null
     }
   },
-  "S046": {
-    "id": "S046",
+  "S045": {
+    "id": "S045",
     "name": "Kommo-o 1",
     "level": 49,
     "item": "Roseli Berry",
+    "location": "",
+    "description": "",
     "nature": "Calm",
     "ability": "Multiscale",
     "abilitySlot": 1,
@@ -994,11 +1111,13 @@
       "secondary": "S049"
     }
   },
-  "S047": {
-    "id": "S047",
+  "S046": {
+    "id": "S046",
     "name": "Jangmo-o",
     "level": 42,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Naughty",
     "ability": "Soundproof",
     "abilitySlot": 1,
@@ -1016,11 +1135,13 @@
       "secondary": null
     }
   },
-  "S048": {
-    "id": "S048",
+  "S047": {
+    "id": "S047",
     "name": "Hakamo-o",
     "level": 44,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Brave",
     "ability": "Soundproof",
     "abilitySlot": 1,
@@ -1038,11 +1159,13 @@
       "secondary": null
     }
   },
-  "S049": {
-    "id": "S049",
+  "S048": {
+    "id": "S048",
     "name": "Noivern",
     "level": 48,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Timid",
     "ability": "Frisk",
     "abilitySlot": 1,
@@ -1060,11 +1183,13 @@
       "secondary": null
     }
   },
-  "S050": {
-    "id": "S050",
+  "S049": {
+    "id": "S049",
     "name": "Scizor",
     "level": 46,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Brave",
     "ability": "Light Metal",
     "abilitySlot": 1,
@@ -1082,11 +1207,33 @@
       "secondary": null
     }
   },
+  "S050": {
+    "id": "S050",
+    "name": "Nihilego",
+    "level": 55,
+    "item": null,
+    "location": "",
+    "description": "",
+    "nature": "Random",
+    "ability": "Clear Body",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "Sp. Defense",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
   "S051": {
     "id": "S051",
     "name": "Nihilego",
     "level": 55,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Clear Body",
     "abilitySlot": 1,
@@ -1102,15 +1249,17 @@
   },
   "S052": {
     "id": "S052",
-    "name": "Nihilego",
-    "level": 55,
+    "name": "Buzzwole",
+    "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
-    "ability": "Clear Body",
+    "ability": "Guts",
     "abilitySlot": 1,
     "moves": [],
     "aura": {
-      "effect": "Sp. Defense",
+      "effect": "Defense",
       "boost": "+2"
     },
     "sos": {
@@ -1123,6 +1272,8 @@
     "name": "Buzzwole",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Guts",
     "abilitySlot": 1,
@@ -1138,15 +1289,17 @@
   },
   "S054": {
     "id": "S054",
-    "name": "Buzzwole",
-    "level": 65,
+    "name": "Pheromosa",
+    "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
-    "ability": "Guts",
+    "ability": "Regal Presence",
     "abilitySlot": 1,
     "moves": [],
     "aura": {
-      "effect": "Defense",
+      "effect": "Speed",
       "boost": "+2"
     },
     "sos": {
@@ -1159,6 +1312,8 @@
     "name": "Pheromosa",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Regal Presence",
     "abilitySlot": 1,
@@ -1177,6 +1332,8 @@
     "name": "Pheromosa",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Regal Presence",
     "abilitySlot": 1,
@@ -1195,6 +1352,8 @@
     "name": "Pheromosa",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Regal Presence",
     "abilitySlot": 1,
@@ -1210,15 +1369,17 @@
   },
   "S058": {
     "id": "S058",
-    "name": "Pheromosa",
-    "level": 60,
+    "name": "Xurkitree",
+    "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
-    "ability": "Regal Presence",
+    "ability": "Dazzling",
     "abilitySlot": 1,
     "moves": [],
     "aura": {
-      "effect": "Speed",
+      "effect": "Sp. Attack",
       "boost": "+2"
     },
     "sos": {
@@ -1231,6 +1392,8 @@
     "name": "Xurkitree",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dazzling",
     "abilitySlot": 1,
@@ -1249,6 +1412,8 @@
     "name": "Xurkitree",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dazzling",
     "abilitySlot": 1,
@@ -1267,6 +1432,8 @@
     "name": "Xurkitree",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dazzling",
     "abilitySlot": 1,
@@ -1285,6 +1452,8 @@
     "name": "Xurkitree",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dazzling",
     "abilitySlot": 1,
@@ -1303,6 +1472,8 @@
     "name": "Xurkitree",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dazzling",
     "abilitySlot": 1,
@@ -1321,6 +1492,8 @@
     "name": "Xurkitree",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dazzling",
     "abilitySlot": 1,
@@ -1339,6 +1512,8 @@
     "name": "Xurkitree",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dazzling",
     "abilitySlot": 1,
@@ -1357,6 +1532,8 @@
     "name": "Xurkitree",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dazzling",
     "abilitySlot": 1,
@@ -1375,6 +1552,8 @@
     "name": "Xurkitree",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dazzling",
     "abilitySlot": 1,
@@ -1390,15 +1569,17 @@
   },
   "S068": {
     "id": "S068",
-    "name": "Xurkitree",
-    "level": 65,
+    "name": "Kartana",
+    "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
-    "ability": "Dazzling",
+    "ability": "Hyper Cutter",
     "abilitySlot": 1,
     "moves": [],
     "aura": {
-      "effect": "Sp. Attack",
+      "effect": "Attack",
       "boost": "+2"
     },
     "sos": {
@@ -1411,6 +1592,8 @@
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -1429,6 +1612,8 @@
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -1447,6 +1632,8 @@
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -1465,6 +1652,8 @@
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -1483,6 +1672,8 @@
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -1501,6 +1692,8 @@
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -1519,6 +1712,8 @@
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -1537,6 +1732,8 @@
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -1555,6 +1752,8 @@
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -1573,6 +1772,8 @@
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -1591,6 +1792,8 @@
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -1606,15 +1809,17 @@
   },
   "S080": {
     "id": "S080",
-    "name": "Kartana",
-    "level": 60,
+    "name": "Celesteela",
+    "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
-    "ability": "Hyper Cutter",
+    "ability": "Battle Armor",
     "abilitySlot": 1,
     "moves": [],
     "aura": {
-      "effect": "Attack",
+      "effect": "Defense",
       "boost": "+2"
     },
     "sos": {
@@ -1627,6 +1832,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1645,6 +1852,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1663,6 +1872,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1681,6 +1892,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1699,6 +1912,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1717,6 +1932,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1735,6 +1952,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1753,6 +1972,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1771,6 +1992,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1789,6 +2012,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1807,6 +2032,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1825,6 +2052,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1843,6 +2072,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1861,6 +2092,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1879,6 +2112,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1897,6 +2132,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1915,6 +2152,8 @@
     "name": "Celesteela",
     "level": 65,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -1930,27 +2169,11 @@
   },
   "S098": {
     "id": "S098",
-    "name": "Celesteela",
-    "level": 65,
-    "item": null,
-    "nature": "Random",
-    "ability": "Battle Armor",
-    "abilitySlot": 1,
-    "moves": [],
-    "aura": {
-      "effect": "Defense",
-      "boost": "+2"
-    },
-    "sos": {
-      "primary": null,
-      "secondary": null
-    }
-  },
-  "S099": {
-    "id": "S099",
     "name": "Guzzlord",
     "level": 70,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Gluttony",
     "abilitySlot": 1,
@@ -1964,11 +2187,13 @@
       "secondary": null
     }
   },
-  "S100": {
-    "id": "S100",
+  "S099": {
+    "id": "S099",
     "name": "Necrozma",
     "level": 75,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Prism Armor",
     "abilitySlot": 1,
@@ -1981,11 +2206,13 @@
       "secondary": null
     }
   },
-  "S101": {
-    "id": "S101",
+  "S100": {
+    "id": "S100",
     "name": "Charmander",
     "level": 12,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Flame Body",
     "abilitySlot": 1,
@@ -2003,11 +2230,13 @@
       "secondary": null
     }
   },
-  "S102": {
-    "id": "S102",
+  "S101": {
+    "id": "S101",
     "name": "Squirtle",
     "level": 12,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Rain Dish",
     "abilitySlot": 1,
@@ -2025,11 +2254,13 @@
       "secondary": null
     }
   },
-  "S103": {
-    "id": "S103",
+  "S102": {
+    "id": "S102",
     "name": "Onix",
     "level": 14,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Solid Rock",
     "abilitySlot": 1,
@@ -2047,11 +2278,13 @@
       "secondary": null
     }
   },
-  "S104": {
-    "id": "S104",
+  "S103": {
+    "id": "S103",
     "name": "Horsea",
     "level": 18,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Swift Swim",
     "abilitySlot": 1,
@@ -2069,11 +2302,13 @@
       "secondary": null
     }
   },
-  "S105": {
-    "id": "S105",
+  "S104": {
+    "id": "S104",
     "name": "Scatterbug 30",
     "level": 9,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Friend Guard",
     "abilitySlot": 1,
@@ -2091,11 +2326,13 @@
       "secondary": null
     }
   },
-  "S106": {
-    "id": "S106",
+  "S105": {
+    "id": "S105",
     "name": "Bulbasaur",
     "level": 10,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Leaf Guard",
     "abilitySlot": 1,
@@ -2113,11 +2350,13 @@
       "secondary": null
     }
   },
-  "S107": {
-    "id": "S107",
+  "S106": {
+    "id": "S106",
     "name": "Litwick",
     "level": 9,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Flash Fire",
     "abilitySlot": 1,
@@ -2135,11 +2374,13 @@
       "secondary": null
     }
   },
-  "S108": {
-    "id": "S108",
+  "S107": {
+    "id": "S107",
     "name": "Ralts",
     "level": 17,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Synchronize",
     "abilitySlot": 1,
@@ -2157,11 +2398,13 @@
       "secondary": null
     }
   },
-  "S109": {
-    "id": "S109",
+  "S108": {
+    "id": "S108",
     "name": "Spheal",
     "level": 19,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Snow Cloak",
     "abilitySlot": 1,
@@ -2179,11 +2422,13 @@
       "secondary": null
     }
   },
-  "S110": {
-    "id": "S110",
+  "S109": {
+    "id": "S109",
     "name": "Combusken",
     "level": 20,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Tough Claws",
     "abilitySlot": 1,
@@ -2201,11 +2446,13 @@
       "secondary": null
     }
   },
-  "S111": {
-    "id": "S111",
+  "S110": {
+    "id": "S110",
     "name": "Honedge",
     "level": 24,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "No Guard",
     "abilitySlot": 1,
@@ -2223,11 +2470,13 @@
       "secondary": null
     }
   },
-  "S112": {
-    "id": "S112",
+  "S111": {
+    "id": "S111",
     "name": "Beedrill",
     "level": 14,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Poison Touch",
     "abilitySlot": 1,
@@ -2244,11 +2493,13 @@
       "secondary": null
     }
   },
-  "S113": {
-    "id": "S113",
+  "S112": {
+    "id": "S112",
     "name": "Grovyle",
     "level": 16,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Lightning Rod",
     "abilitySlot": 1,
@@ -2266,11 +2517,13 @@
       "secondary": null
     }
   },
-  "S114": {
-    "id": "S114",
+  "S113": {
+    "id": "S113",
     "name": "Marshtomp",
     "level": 17,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Wonder Skin",
     "abilitySlot": 1,
@@ -2288,11 +2541,13 @@
       "secondary": null
     }
   },
-  "S115": {
-    "id": "S115",
+  "S114": {
+    "id": "S114",
     "name": "Rhyhorn",
     "level": 32,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Lightning Rod",
     "abilitySlot": 1,
@@ -2310,11 +2565,13 @@
       "secondary": null
     }
   },
-  "S116": {
-    "id": "S116",
+  "S115": {
+    "id": "S115",
     "name": "Swinub",
     "level": 33,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Oblivious",
     "abilitySlot": 1,
@@ -2332,11 +2589,13 @@
       "secondary": null
     }
   },
-  "S117": {
-    "id": "S117",
+  "S116": {
+    "id": "S116",
     "name": "Prinplup",
     "level": 35,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Competitive",
     "abilitySlot": 1,
@@ -2354,11 +2613,37 @@
       "secondary": null
     }
   },
+  "S117": {
+    "id": "S117",
+    "name": "Grotle",
+    "level": 36,
+    "item": null,
+    "location": "",
+    "description": "",
+    "nature": "Random",
+    "ability": "Sap Sipper",
+    "abilitySlot": 1,
+    "moves": [
+      "Heavy Slam",
+      "Leech Seed",
+      "Mega Drain",
+      "Bite"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
   "S118": {
     "id": "S118",
     "name": "Grotle",
     "level": 36,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Sap Sipper",
     "abilitySlot": 1,
@@ -2378,31 +2663,11 @@
   },
   "S119": {
     "id": "S119",
-    "name": "Grotle",
-    "level": 36,
-    "item": null,
-    "nature": "Random",
-    "ability": "Sap Sipper",
-    "abilitySlot": 1,
-    "moves": [
-      "Heavy Slam",
-      "Leech Seed",
-      "Mega Drain",
-      "Bite"
-    ],
-    "aura": {
-      "effect": "None"
-    },
-    "sos": {
-      "primary": null,
-      "secondary": null
-    }
-  },
-  "S120": {
-    "id": "S120",
     "name": "Pidgeot",
     "level": 29,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Keen Eye",
     "abilitySlot": 1,
@@ -2420,11 +2685,13 @@
       "secondary": null
     }
   },
-  "S121": {
-    "id": "S121",
+  "S120": {
+    "id": "S120",
     "name": "Monferno",
     "level": 29,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Unburden",
     "abilitySlot": 1,
@@ -2442,11 +2709,13 @@
       "secondary": null
     }
   },
-  "S122": {
-    "id": "S122",
+  "S121": {
+    "id": "S121",
     "name": "Axew",
     "level": 30,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -2464,11 +2733,13 @@
       "secondary": null
     }
   },
-  "S123": {
-    "id": "S123",
+  "S122": {
+    "id": "S122",
     "name": "Eelektross",
     "level": 55,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Levitate",
     "abilitySlot": 1,
@@ -2486,11 +2757,13 @@
       "secondary": null
     }
   },
-  "S124": {
-    "id": "S124",
+  "S123": {
+    "id": "S123",
     "name": "Aggron",
     "level": 57,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -2508,11 +2781,13 @@
       "secondary": null
     }
   },
-  "S125": {
-    "id": "S125",
+  "S124": {
+    "id": "S124",
     "name": "Rotom",
     "level": 61,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Levitate",
     "abilitySlot": 1,
@@ -2530,11 +2805,13 @@
       "secondary": null
     }
   },
-  "S126": {
-    "id": "S126",
+  "S125": {
+    "id": "S125",
     "name": "Leavanny",
     "level": 57,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -2552,11 +2829,13 @@
       "secondary": null
     }
   },
-  "S127": {
-    "id": "S127",
+  "S126": {
+    "id": "S126",
     "name": "Chesnaught",
     "level": 45,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Bulletproof",
     "abilitySlot": 1,
@@ -2574,11 +2853,13 @@
       "secondary": null
     }
   },
-  "S128": {
-    "id": "S128",
+  "S127": {
+    "id": "S127",
     "name": "Greninja",
     "level": 44,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Protean",
     "abilitySlot": 1,
@@ -2596,11 +2877,13 @@
       "secondary": null
     }
   },
-  "S129": {
-    "id": "S129",
+  "S128": {
+    "id": "S128",
     "name": "Delphox",
     "level": 44,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Magician",
     "abilitySlot": 1,
@@ -2618,11 +2901,13 @@
       "secondary": null
     }
   },
-  "S130": {
-    "id": "S130",
+  "S129": {
+    "id": "S129",
     "name": "Tapu Koko",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Electric Surge",
     "abilitySlot": 1,
@@ -2635,11 +2920,13 @@
       "secondary": null
     }
   },
-  "S131": {
-    "id": "S131",
+  "S130": {
+    "id": "S130",
     "name": "Tapu Lele",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Psychic Surge",
     "abilitySlot": 1,
@@ -2652,11 +2939,13 @@
       "secondary": null
     }
   },
-  "S132": {
-    "id": "S132",
+  "S131": {
+    "id": "S131",
     "name": "Tapu Bulu",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Grassy Surge",
     "abilitySlot": 1,
@@ -2669,11 +2958,13 @@
       "secondary": null
     }
   },
-  "S133": {
-    "id": "S133",
+  "S132": {
+    "id": "S132",
     "name": "Tapu Fini",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Misty Surge",
     "abilitySlot": 1,
@@ -2686,11 +2977,13 @@
       "secondary": null
     }
   },
-  "S134": {
-    "id": "S134",
+  "S133": {
+    "id": "S133",
     "name": "Happiny",
     "level": 13,
     "item": "Oval Stone",
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Friend Guard",
     "abilitySlot": 1,
@@ -2709,11 +3002,13 @@
       "secondary": null
     }
   },
-  "S135": {
-    "id": "S135",
+  "S134": {
+    "id": "S134",
     "name": "Exeggutor 1",
     "level": 40,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Harvest",
     "abilitySlot": 1,
@@ -2726,11 +3021,13 @@
       "secondary": null
     }
   },
-  "S136": {
-    "id": "S136",
+  "S135": {
+    "id": "S135",
     "name": "Tapu Koko",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Electric Surge",
     "abilitySlot": 1,
@@ -2743,11 +3040,13 @@
       "secondary": null
     }
   },
-  "S137": {
-    "id": "S137",
+  "S136": {
+    "id": "S136",
     "name": "Leavanny",
     "level": 57,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -2765,11 +3064,13 @@
       "secondary": null
     }
   },
-  "S138": {
-    "id": "S138",
+  "S137": {
+    "id": "S137",
     "name": "Araquanid 1",
     "level": 27,
     "item": "Wacan Berry",
+    "location": "",
+    "description": "",
     "nature": "Impish",
     "ability": "Water Bubble",
     "abilitySlot": 1,
@@ -2788,11 +3089,13 @@
       "secondary": "S142"
     }
   },
-  "S139": {
-    "id": "S139",
+  "S138": {
+    "id": "S138",
     "name": "Dewpider",
     "level": 25,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Brave",
     "ability": "Water Bubble",
     "abilitySlot": 1,
@@ -2811,11 +3114,13 @@
       "secondary": null
     }
   },
-  "S140": {
-    "id": "S140",
+  "S139": {
+    "id": "S139",
     "name": "Ducklett",
     "level": 26,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Lax",
     "ability": "Cloud Nine",
     "abilitySlot": 1,
@@ -2834,11 +3139,13 @@
       "secondary": null
     }
   },
-  "S141": {
-    "id": "S141",
+  "S140": {
+    "id": "S140",
     "name": "Luvdisc",
     "level": 23,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Timid",
     "ability": "Soul-Heart",
     "abilitySlot": 1,
@@ -2856,11 +3163,37 @@
       "secondary": null
     }
   },
-  "S143": {
-    "id": "S143",
+  "S141": {
+    "id": "S141",
+    "name": "Tentacool",
+    "level": 24,
+    "item": null,
+    "location": "",
+    "description": "",
+    "nature": "Bold",
+    "ability": "Unknown",
+    "abilitySlot": 7,
+    "moves": [
+      "Acid Spray",
+      "Rain Dance",
+      "Clear Smog",
+      "Toxic"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S142": {
+    "id": "S142",
     "name": "Fomantis",
     "level": 35,
     "item": "Mago Berry",
+    "location": "",
+    "description": "",
     "nature": "Impish",
     "ability": "Contrary",
     "abilitySlot": 1,
@@ -2871,18 +3204,21 @@
       "Synthesis"
     ],
     "aura": {
-      "effect": "None"
+      "effect": "Speed",
+      "boost": "+2"
     },
     "sos": {
       "primary": null,
       "secondary": null
     }
   },
-  "S144": {
-    "id": "S144",
+  "S143": {
+    "id": "S143",
     "name": "Beedrill",
     "level": 34,
     "item": "Honey",
+    "location": "",
+    "description": "",
     "nature": "Lonely",
     "ability": "Swarm",
     "abilitySlot": 1,
@@ -2893,18 +3229,21 @@
       "Focus Energy"
     ],
     "aura": {
-      "effect": "None"
+      "effect": "Attack",
+      "boost": "+1"
     },
     "sos": {
       "primary": null,
       "secondary": null
     }
   },
-  "S145": {
-    "id": "S145",
+  "S144": {
+    "id": "S144",
     "name": "Vespiquen",
     "level": 34,
     "item": "Honey",
+    "location": "",
+    "description": "",
     "nature": "Sassy",
     "ability": "Multistriker",
     "abilitySlot": 1,
@@ -2915,18 +3254,21 @@
       "Confuse Ray"
     ],
     "aura": {
-      "effect": "None"
+      "effect": "Defense",
+      "boost": "+2"
     },
     "sos": {
       "primary": null,
       "secondary": null
     }
   },
-  "S146": {
-    "id": "S146",
+  "S145": {
+    "id": "S145",
     "name": "Sudowoodo",
     "level": 34,
     "item": "Big Root",
+    "location": "",
+    "description": "",
     "nature": "Brave",
     "ability": "Rock Head",
     "abilitySlot": 1,
@@ -2937,18 +3279,21 @@
       "Forest’s Curse"
     ],
     "aura": {
-      "effect": "None"
+      "effect": "Sp. Defense",
+      "boost": "+1"
     },
     "sos": {
       "primary": null,
       "secondary": null
     }
   },
-  "S147": {
-    "id": "S147",
+  "S146": {
+    "id": "S146",
     "name": "Togedemaru 1",
     "level": 48,
     "item": "Leftovers",
+    "location": "",
+    "description": "",
     "nature": "Impish",
     "ability": "Iron Barbs",
     "abilitySlot": 1,
@@ -2967,11 +3312,13 @@
       "secondary": "S148"
     }
   },
-  "S148": {
-    "id": "S148",
+  "S147": {
+    "id": "S147",
     "name": "Skarmory",
     "level": 45,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Impish",
     "ability": "Sturdy",
     "abilitySlot": 1,
@@ -2989,11 +3336,13 @@
       "secondary": null
     }
   },
-  "S149": {
-    "id": "S149",
+  "S148": {
+    "id": "S148",
     "name": "Pachirisu",
     "level": 45,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Jolly",
     "ability": "Cheek Pouch",
     "abilitySlot": 1,
@@ -3011,11 +3360,13 @@
       "secondary": null
     }
   },
-  "S150": {
-    "id": "S150",
+  "S149": {
+    "id": "S149",
     "name": "Electabuzz",
     "level": 45,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Jolly",
     "ability": "Lightning Rod",
     "abilitySlot": 1,
@@ -3033,11 +3384,13 @@
       "secondary": null
     }
   },
-  "S151": {
-    "id": "S151",
+  "S150": {
+    "id": "S150",
     "name": "Electrode",
     "level": 45,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Timid",
     "ability": "Galvanize",
     "abilitySlot": 1,
@@ -3055,11 +3408,13 @@
       "secondary": null
     }
   },
-  "S152": {
-    "id": "S152",
+  "S151": {
+    "id": "S151",
     "name": "Yungoos",
     "level": 3,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Mild",
     "ability": "Strong Jaw",
     "abilitySlot": 1,
@@ -3076,11 +3431,13 @@
       "secondary": null
     }
   },
-  "S153": {
-    "id": "S153",
+  "S152": {
+    "id": "S152",
     "name": "Rattata 1",
     "level": 3,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Mild",
     "ability": "Hustle",
     "abilitySlot": 1,
@@ -3093,11 +3450,13 @@
       "secondary": null
     }
   },
-  "S154": {
-    "id": "S154",
+  "S153": {
+    "id": "S153",
     "name": "Rattata 1",
     "level": 4,
     "item": "Oran Berry",
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Pickup",
     "abilitySlot": 1,
@@ -3115,11 +3474,13 @@
       "secondary": null
     }
   },
-  "S155": {
-    "id": "S155",
+  "S154": {
+    "id": "S154",
     "name": "Spearow",
-    "level": 4,
+    "level": 5,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Keen Eye",
     "abilitySlot": 1,
@@ -3137,11 +3498,32 @@
       "secondary": null
     }
   },
-  "S156": {
-    "id": "S156",
+  "S155": {
+    "id": "S155",
     "name": "Pinsir",
     "level": 42,
     "item": null,
+    "location": "",
+    "description": "",
+    "nature": "Random",
+    "ability": "Moxie",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S156": {
+    "id": "S156",
+    "name": "Pinsir",
+    "level": 43,
+    "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Moxie",
     "abilitySlot": 1,
@@ -3157,8 +3539,10 @@
   "S157": {
     "id": "S157",
     "name": "Pinsir",
-    "level": 43,
+    "level": 42,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Moxie",
     "abilitySlot": 1,
@@ -3173,26 +3557,11 @@
   },
   "S158": {
     "id": "S158",
-    "name": "Pinsir",
-    "level": 42,
-    "item": null,
-    "nature": "Random",
-    "ability": "Moxie",
-    "abilitySlot": 1,
-    "moves": [],
-    "aura": {
-      "effect": "None"
-    },
-    "sos": {
-      "primary": null,
-      "secondary": null
-    }
-  },
-  "S159": {
-    "id": "S159",
     "name": "Necrozma 1",
     "level": 50,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Impish",
     "ability": "Prism Armor",
     "abilitySlot": 1,
@@ -3210,11 +3579,13 @@
       "secondary": null
     }
   },
-  "S160": {
-    "id": "S160",
+  "S159": {
+    "id": "S159",
     "name": "Necrozma 2",
     "level": 50,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Bold",
     "ability": "Prism Armor",
     "abilitySlot": 1,
@@ -3232,11 +3603,13 @@
       "secondary": null
     }
   },
-  "S161": {
-    "id": "S161",
+  "S160": {
+    "id": "S160",
     "name": "Necrozma 3",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Bold",
     "ability": "Neuroforce",
     "abilitySlot": 1,
@@ -3255,11 +3628,13 @@
       "secondary": null
     }
   },
-  "S162": {
-    "id": "S162",
+  "S161": {
+    "id": "S161",
     "name": "Necrozma",
     "level": 65,
     "item": "Ultranecrozium Z",
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Prism Armor",
     "abilitySlot": 1,
@@ -3277,11 +3652,13 @@
       "secondary": null
     }
   },
-  "S163": {
-    "id": "S163",
+  "S162": {
+    "id": "S162",
     "name": "Ribombee 1",
     "level": 55,
     "item": "Occa Berry",
+    "location": "",
+    "description": "",
     "nature": "Impish",
     "ability": "Cute Charm",
     "abilitySlot": 1,
@@ -3300,11 +3677,13 @@
       "secondary": "S164"
     }
   },
-  "S164": {
-    "id": "S164",
+  "S163": {
+    "id": "S163",
     "name": "Pelipper",
     "level": 52,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Timid",
     "ability": "Rain Dish",
     "abilitySlot": 1,
@@ -3322,11 +3701,13 @@
       "secondary": null
     }
   },
-  "S165": {
-    "id": "S165",
+  "S164": {
+    "id": "S164",
     "name": "Blissey",
     "level": 53,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Naughty",
     "ability": "Healer",
     "abilitySlot": 1,
@@ -3344,11 +3725,13 @@
       "secondary": null
     }
   },
-  "S166": {
-    "id": "S166",
+  "S165": {
+    "id": "S165",
     "name": "Articuno",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Slush Rush",
     "abilitySlot": 1,
@@ -3366,11 +3749,13 @@
       "secondary": null
     }
   },
-  "S167": {
-    "id": "S167",
+  "S166": {
+    "id": "S166",
     "name": "Zapdos",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Teravolt",
     "abilitySlot": 1,
@@ -3388,11 +3773,13 @@
       "secondary": null
     }
   },
-  "S168": {
-    "id": "S168",
+  "S167": {
+    "id": "S167",
     "name": "Moltres",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Turboblaze",
     "abilitySlot": 1,
@@ -3410,11 +3797,13 @@
       "secondary": null
     }
   },
-  "S169": {
-    "id": "S169",
+  "S168": {
+    "id": "S168",
     "name": "Ho-Oh",
     "level": 60,
     "item": "Sacred Ash",
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Pressure",
     "abilitySlot": 1,
@@ -3432,11 +3821,13 @@
       "secondary": null
     }
   },
-  "S170": {
-    "id": "S170",
+  "S169": {
+    "id": "S169",
     "name": "Rayquaza",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Air Lock",
     "abilitySlot": 1,
@@ -3449,11 +3840,13 @@
       "secondary": null
     }
   },
-  "S171": {
-    "id": "S171",
+  "S170": {
+    "id": "S170",
     "name": "Cresselia",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Sweet Veil",
     "abilitySlot": 1,
@@ -3466,11 +3859,32 @@
       "secondary": null
     }
   },
-  "S172": {
-    "id": "S172",
+  "S171": {
+    "id": "S171",
     "name": "Tornadus",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
+    "nature": "Random",
+    "ability": "Defiant",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S172": {
+    "id": "S172",
+    "name": "Thundurus",
+    "level": 60,
+    "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Defiant",
     "abilitySlot": 1,
@@ -3485,26 +3899,11 @@
   },
   "S173": {
     "id": "S173",
-    "name": "Thundurus",
-    "level": 60,
-    "item": null,
-    "nature": "Random",
-    "ability": "Defiant",
-    "abilitySlot": 1,
-    "moves": [],
-    "aura": {
-      "effect": "None"
-    },
-    "sos": {
-      "primary": null,
-      "secondary": null
-    }
-  },
-  "S174": {
-    "id": "S174",
     "name": "Landorus",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Sheer Force",
     "abilitySlot": 1,
@@ -3517,11 +3916,13 @@
       "secondary": null
     }
   },
-  "S175": {
-    "id": "S175",
+  "S174": {
+    "id": "S174",
     "name": "Yveltal",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dark Aura",
     "abilitySlot": 1,
@@ -3539,11 +3940,13 @@
       "secondary": null
     }
   },
-  "S176": {
-    "id": "S176",
+  "S175": {
+    "id": "S175",
     "name": "Mewtwo",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Unnerve",
     "abilitySlot": 1,
@@ -3561,11 +3964,13 @@
       "secondary": null
     }
   },
-  "S177": {
-    "id": "S177",
+  "S176": {
+    "id": "S176",
     "name": "Raikou",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Volt Absorb",
     "abilitySlot": 1,
@@ -3578,11 +3983,13 @@
       "secondary": null
     }
   },
-  "S178": {
-    "id": "S178",
+  "S177": {
+    "id": "S177",
     "name": "Entei",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Flash Fire",
     "abilitySlot": 1,
@@ -3600,11 +4007,13 @@
       "secondary": null
     }
   },
-  "S179": {
-    "id": "S179",
+  "S178": {
+    "id": "S178",
     "name": "Dialga",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Telepathy",
     "abilitySlot": 1,
@@ -3617,11 +4026,13 @@
       "secondary": null
     }
   },
-  "S180": {
-    "id": "S180",
+  "S179": {
+    "id": "S179",
     "name": "Cobalion",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Technician",
     "abilitySlot": 1,
@@ -3639,11 +4050,13 @@
       "secondary": null
     }
   },
-  "S181": {
-    "id": "S181",
+  "S180": {
+    "id": "S180",
     "name": "Terrakion",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Reckless",
     "abilitySlot": 1,
@@ -3661,11 +4074,13 @@
       "secondary": null
     }
   },
-  "S182": {
-    "id": "S182",
+  "S181": {
+    "id": "S181",
     "name": "Virizion",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Leaf Guard",
     "abilitySlot": 1,
@@ -3683,11 +4098,32 @@
       "secondary": null
     }
   },
-  "S183": {
-    "id": "S183",
+  "S182": {
+    "id": "S182",
     "name": "Reshiram",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
+    "nature": "Random",
+    "ability": "Pressure",
+    "abilitySlot": 1,
+    "moves": [],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S183": {
+    "id": "S183",
+    "name": "Zekrom",
+    "level": 60,
+    "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Pressure",
     "abilitySlot": 1,
@@ -3702,26 +4138,11 @@
   },
   "S184": {
     "id": "S184",
-    "name": "Zekrom",
-    "level": 60,
-    "item": null,
-    "nature": "Random",
-    "ability": "Pressure",
-    "abilitySlot": 1,
-    "moves": [],
-    "aura": {
-      "effect": "None"
-    },
-    "sos": {
-      "primary": null,
-      "secondary": null
-    }
-  },
-  "S185": {
-    "id": "S185",
     "name": "Xerneas",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Fairy Aura",
     "abilitySlot": 1,
@@ -3739,11 +4160,13 @@
       "secondary": null
     }
   },
-  "S186": {
-    "id": "S186",
+  "S185": {
+    "id": "S185",
     "name": "Regirock",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Sand Rush",
     "abilitySlot": 1,
@@ -3756,11 +4179,13 @@
       "secondary": null
     }
   },
-  "S187": {
-    "id": "S187",
+  "S186": {
+    "id": "S186",
     "name": "Regice",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Slush Rush",
     "abilitySlot": 1,
@@ -3773,11 +4198,13 @@
       "secondary": null
     }
   },
-  "S188": {
-    "id": "S188",
+  "S187": {
+    "id": "S187",
     "name": "Registeel",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Steelworker",
     "abilitySlot": 1,
@@ -3790,11 +4217,13 @@
       "secondary": null
     }
   },
-  "S189": {
-    "id": "S189",
+  "S188": {
+    "id": "S188",
     "name": "Groudon",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Drought",
     "abilitySlot": 1,
@@ -3812,11 +4241,13 @@
       "secondary": null
     }
   },
-  "S190": {
-    "id": "S190",
+  "S189": {
+    "id": "S189",
     "name": "Heatran",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Flame Body",
     "abilitySlot": 1,
@@ -3829,11 +4260,13 @@
       "secondary": null
     }
   },
-  "S191": {
-    "id": "S191",
+  "S190": {
+    "id": "S190",
     "name": "Regigigas",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Truant",
     "abilitySlot": 1,
@@ -3851,11 +4284,13 @@
       "secondary": null
     }
   },
-  "S192": {
-    "id": "S192",
+  "S191": {
+    "id": "S191",
     "name": "Palkia",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Telepathy",
     "abilitySlot": 1,
@@ -3868,11 +4303,13 @@
       "secondary": null
     }
   },
-  "S193": {
-    "id": "S193",
+  "S192": {
+    "id": "S192",
     "name": "Giratina",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Shadow Shield",
     "abilitySlot": 1,
@@ -3890,11 +4327,13 @@
       "secondary": null
     }
   },
-  "S194": {
-    "id": "S194",
+  "S193": {
+    "id": "S193",
     "name": "Suicune",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Water Absorb",
     "abilitySlot": 1,
@@ -3912,11 +4351,13 @@
       "secondary": null
     }
   },
-  "S195": {
-    "id": "S195",
+  "S194": {
+    "id": "S194",
     "name": "Lugia",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Pressure",
     "abilitySlot": 1,
@@ -3934,11 +4375,13 @@
       "secondary": null
     }
   },
-  "S196": {
-    "id": "S196",
+  "S195": {
+    "id": "S195",
     "name": "Latias",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Levitate",
     "abilitySlot": 1,
@@ -3956,11 +4399,13 @@
       "secondary": null
     }
   },
-  "S197": {
-    "id": "S197",
+  "S196": {
+    "id": "S196",
     "name": "Latios",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Levitate",
     "abilitySlot": 1,
@@ -3978,11 +4423,13 @@
       "secondary": null
     }
   },
-  "S198": {
-    "id": "S198",
+  "S197": {
+    "id": "S197",
     "name": "Kyogre",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Drizzle",
     "abilitySlot": 1,
@@ -4000,11 +4447,13 @@
       "secondary": null
     }
   },
-  "S199": {
-    "id": "S199",
+  "S198": {
+    "id": "S198",
     "name": "Uxie",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Forewarn",
     "abilitySlot": 1,
@@ -4022,11 +4471,13 @@
       "secondary": null
     }
   },
-  "S200": {
-    "id": "S200",
+  "S199": {
+    "id": "S199",
     "name": "Mesprit",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Aroma Veil",
     "abilitySlot": 1,
@@ -4044,11 +4495,13 @@
       "secondary": null
     }
   },
-  "S201": {
-    "id": "S201",
+  "S200": {
+    "id": "S200",
     "name": "Azelf",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Own Tempo",
     "abilitySlot": 1,
@@ -4066,11 +4519,13 @@
       "secondary": null
     }
   },
-  "S202": {
-    "id": "S202",
+  "S201": {
+    "id": "S201",
     "name": "Kyurem",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Slush Rush",
     "abilitySlot": 1,
@@ -4083,11 +4538,13 @@
       "secondary": null
     }
   },
-  "S203": {
-    "id": "S203",
+  "S202": {
+    "id": "S202",
     "name": "Altaria",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Natural Cure",
     "abilitySlot": 1,
@@ -4100,11 +4557,13 @@
       "secondary": null
     }
   },
-  "S204": {
-    "id": "S204",
+  "S203": {
+    "id": "S203",
     "name": "Yanmega",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Speed Boost",
     "abilitySlot": 1,
@@ -4117,11 +4576,13 @@
       "secondary": null
     }
   },
-  "S205": {
-    "id": "S205",
+  "S204": {
+    "id": "S204",
     "name": "Sigilyph",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Tinted Lens",
     "abilitySlot": 1,
@@ -4134,11 +4595,13 @@
       "secondary": null
     }
   },
-  "S206": {
-    "id": "S206",
+  "S205": {
+    "id": "S205",
     "name": "Swanna",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Cloud Nine",
     "abilitySlot": 1,
@@ -4151,11 +4614,13 @@
       "secondary": null
     }
   },
-  "S207": {
-    "id": "S207",
+  "S206": {
+    "id": "S206",
     "name": "Swellow",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Guts",
     "abilitySlot": 1,
@@ -4168,11 +4633,13 @@
       "secondary": null
     }
   },
-  "S208": {
-    "id": "S208",
+  "S207": {
+    "id": "S207",
     "name": "Drapion",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -4185,11 +4652,13 @@
       "secondary": null
     }
   },
-  "S209": {
-    "id": "S209",
+  "S208": {
+    "id": "S208",
     "name": "Audino",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Triage",
     "abilitySlot": 1,
@@ -4202,11 +4671,13 @@
       "secondary": null
     }
   },
-  "S210": {
-    "id": "S210",
+  "S209": {
+    "id": "S209",
     "name": "Heliolisk",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dry Skin",
     "abilitySlot": 1,
@@ -4219,11 +4690,13 @@
       "secondary": null
     }
   },
-  "S211": {
-    "id": "S211",
+  "S210": {
+    "id": "S210",
     "name": "Nuzleaf",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Chlorophyll",
     "abilitySlot": 1,
@@ -4236,11 +4709,13 @@
       "secondary": null
     }
   },
-  "S212": {
-    "id": "S212",
+  "S211": {
+    "id": "S211",
     "name": "Grumpig",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Thick Fat",
     "abilitySlot": 1,
@@ -4253,11 +4728,13 @@
       "secondary": null
     }
   },
-  "S213": {
-    "id": "S213",
+  "S212": {
+    "id": "S212",
     "name": "Abomasnow",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Snow Warning",
     "abilitySlot": 1,
@@ -4270,11 +4747,13 @@
       "secondary": null
     }
   },
-  "S214": {
-    "id": "S214",
+  "S213": {
+    "id": "S213",
     "name": "Medicham",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Pure Power",
     "abilitySlot": 1,
@@ -4287,11 +4766,13 @@
       "secondary": null
     }
   },
-  "S215": {
-    "id": "S215",
+  "S214": {
+    "id": "S214",
     "name": "Hippowdon",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Sand Stream",
     "abilitySlot": 1,
@@ -4304,11 +4785,13 @@
       "secondary": null
     }
   },
-  "S216": {
-    "id": "S216",
+  "S215": {
+    "id": "S215",
     "name": "Crustle",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Stamina",
     "abilitySlot": 1,
@@ -4321,11 +4804,13 @@
       "secondary": null
     }
   },
-  "S217": {
-    "id": "S217",
+  "S216": {
+    "id": "S216",
     "name": "Magcargo",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Solid Rock",
     "abilitySlot": 1,
@@ -4338,11 +4823,13 @@
       "secondary": null
     }
   },
-  "S218": {
-    "id": "S218",
+  "S217": {
+    "id": "S217",
     "name": "Barbaracle",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Multistriker",
     "abilitySlot": 1,
@@ -4355,11 +4842,13 @@
       "secondary": null
     }
   },
-  "S219": {
-    "id": "S219",
+  "S218": {
+    "id": "S218",
     "name": "Lombre",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hydration",
     "abilitySlot": 1,
@@ -4372,11 +4861,13 @@
       "secondary": null
     }
   },
-  "S220": {
-    "id": "S220",
+  "S219": {
+    "id": "S219",
     "name": "Stunfisk",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Electric Surge",
     "abilitySlot": 1,
@@ -4389,11 +4880,13 @@
       "secondary": null
     }
   },
-  "S221": {
-    "id": "S221",
+  "S220": {
+    "id": "S220",
     "name": "Floatzel",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Swift Swim",
     "abilitySlot": 1,
@@ -4406,11 +4899,13 @@
       "secondary": null
     }
   },
-  "S222": {
-    "id": "S222",
+  "S221": {
+    "id": "S221",
     "name": "Quagsire",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Unaware",
     "abilitySlot": 1,
@@ -4423,11 +4918,13 @@
       "secondary": null
     }
   },
-  "S223": {
-    "id": "S223",
+  "S222": {
+    "id": "S222",
     "name": "Nihilego",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Clear Body",
     "abilitySlot": 1,
@@ -4446,11 +4943,13 @@
       "secondary": null
     }
   },
-  "S224": {
-    "id": "S224",
+  "S223": {
+    "id": "S223",
     "name": "Buzzwole",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Guts",
     "abilitySlot": 1,
@@ -4464,11 +4963,13 @@
       "secondary": null
     }
   },
-  "S225": {
-    "id": "S225",
+  "S224": {
+    "id": "S224",
     "name": "Pheromosa",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Regal Presence",
     "abilitySlot": 1,
@@ -4482,11 +4983,13 @@
       "secondary": null
     }
   },
-  "S226": {
-    "id": "S226",
+  "S225": {
+    "id": "S225",
     "name": "Xurkitree",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Dazzling",
     "abilitySlot": 1,
@@ -4500,11 +5003,13 @@
       "secondary": null
     }
   },
-  "S227": {
-    "id": "S227",
+  "S226": {
+    "id": "S226",
     "name": "Celesteela",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Battle Armor",
     "abilitySlot": 1,
@@ -4518,11 +5023,13 @@
       "secondary": null
     }
   },
-  "S228": {
-    "id": "S228",
+  "S227": {
+    "id": "S227",
     "name": "Kartana",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Hyper Cutter",
     "abilitySlot": 1,
@@ -4536,11 +5043,13 @@
       "secondary": null
     }
   },
-  "S229": {
-    "id": "S229",
+  "S228": {
+    "id": "S228",
     "name": "Guzzlord",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Gluttony",
     "abilitySlot": 1,
@@ -4554,11 +5063,13 @@
       "secondary": null
     }
   },
-  "S230": {
-    "id": "S230",
+  "S229": {
+    "id": "S229",
     "name": "Gumshoos 1",
     "level": 60,
     "item": "Chople Berry",
+    "location": "",
+    "description": "",
     "nature": "Impish",
     "ability": "Regal Presence",
     "abilitySlot": 1,
@@ -4577,11 +5088,13 @@
       "secondary": null
     }
   },
-  "S231": {
-    "id": "S231",
+  "S230": {
+    "id": "S230",
     "name": "Yungoos",
     "level": 58,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Jolly",
     "ability": "Strong Jaw",
     "abilitySlot": 1,
@@ -4599,11 +5112,62 @@
       "secondary": null
     }
   },
-  "S234": {
-    "id": "S234",
+  "S231": {
+    "id": "S231",
+    "name": "Raticate 2",
+    "level": 60,
+    "item": "Chople Berry",
+    "location": "",
+    "description": "",
+    "nature": "Impish",
+    "ability": "Unknown",
+    "abilitySlot": 7,
+    "moves": [
+      "Hyper Fang",
+      "Throat Chop",
+      "Protect",
+      "Double Team"
+    ],
+    "aura": {
+      "effect": "All Stats",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": "S233",
+      "secondary": null
+    }
+  },
+  "S232": {
+    "id": "S232",
+    "name": "Rattata 1",
+    "level": 58,
+    "item": null,
+    "location": "",
+    "description": "",
+    "nature": "Jolly",
+    "ability": "Unknown",
+    "abilitySlot": 3,
+    "moves": [
+      "Super Fang",
+      "Tail Whip",
+      "Torment",
+      "Crunch"
+    ],
+    "aura": {
+      "effect": "None"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S233": {
+    "id": "S233",
     "name": "Bewear",
     "level": 42,
     "item": "Normalium Z",
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Sheer Force",
     "abilitySlot": 1,
@@ -4622,11 +5186,13 @@
       "secondary": null
     }
   },
-  "S235": {
-    "id": "S235",
+  "S234": {
+    "id": "S234",
     "name": "Hypno",
     "level": 42,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Telepathy",
     "abilitySlot": 1,
@@ -4644,11 +5210,13 @@
       "secondary": null
     }
   },
-  "S236": {
-    "id": "S236",
+  "S235": {
+    "id": "S235",
     "name": "Hypno",
     "level": 42,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Bad Dreams",
     "abilitySlot": 1,
@@ -4666,11 +5234,13 @@
       "secondary": null
     }
   },
-  "S237": {
-    "id": "S237",
+  "S236": {
+    "id": "S236",
     "name": "Hypno",
     "level": 42,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Bad Dreams",
     "abilitySlot": 1,
@@ -4688,22 +5258,49 @@
       "secondary": null
     }
   },
-  "S238": {
-    "id": "S238",
-    "name": "Gastly",
+  "S237": {
+    "id": "S237",
+    "name": "Misdreavus",
     "level": 23,
     "item": "Sitrus Berry",
+    "location": "",
+    "description": "",
     "nature": "Random",
-    "ability": "Cursed Body",
+    "ability": "Levitate",
     "abilitySlot": 1,
     "moves": [
-      "Hex",
-      "Startle",
-      "Curse",
-      "Smog"
+      "Nightmare",
+      "Hypnosis",
+      "Psybeam",
+      "Startle"
     ],
     "aura": {
       "effect": "Sp. Attack",
+      "boost": "+1"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S238": {
+    "id": "S238",
+    "name": "Sableye",
+    "level": 23,
+    "item": "Sitrus Berry",
+    "location": "",
+    "description": "",
+    "nature": "Random",
+    "ability": "Pickpocket",
+    "abilitySlot": 1,
+    "moves": [
+      "Pursuit",
+      "Shadow Sneak",
+      "Disable",
+      "Slink Strike"
+    ],
+    "aura": {
+      "effect": "Attack",
       "boost": "+1"
     },
     "sos": {
@@ -4713,32 +5310,11 @@
   },
   "S239": {
     "id": "S239",
-    "name": "Drifloon",
-    "level": 23,
-    "item": "Sitrus Berry",
-    "nature": "Random",
-    "ability": "Aftermath",
-    "abilitySlot": 1,
-    "moves": [
-      "Startle",
-      "Payback",
-      "Air Cutter",
-      "Ominous Wind"
-    ],
-    "aura": {
-      "effect": "Sp. Attack",
-      "boost": "+1"
-    },
-    "sos": {
-      "primary": null,
-      "secondary": null
-    }
-  },
-  "S240": {
-    "id": "S240",
     "name": "Sandygast",
     "level": 30,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Water Compaction",
     "abilitySlot": 1,
@@ -4756,11 +5332,13 @@
       "secondary": null
     }
   },
-  "S241": {
-    "id": "S241",
+  "S240": {
+    "id": "S240",
     "name": "Frillish",
     "level": 34,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Water Absorb",
     "abilitySlot": 1,
@@ -4773,11 +5351,13 @@
       "secondary": null
     }
   },
-  "S242": {
-    "id": "S242",
+  "S241": {
+    "id": "S241",
     "name": "Ditto",
     "level": 41,
     "item": "Enigma Berry",
+    "location": "",
+    "description": "",
     "nature": "Jolly",
     "ability": "Color Change",
     "abilitySlot": 1,
@@ -4796,11 +5376,13 @@
       "secondary": null
     }
   },
-  "S243": {
-    "id": "S243",
+  "S242": {
+    "id": "S242",
     "name": "Ditto",
     "level": 41,
     "item": "Metal Powder",
+    "location": "",
+    "description": "",
     "nature": "Bold",
     "ability": "Imposter",
     "abilitySlot": 1,
@@ -4819,11 +5401,13 @@
       "secondary": null
     }
   },
-  "S244": {
-    "id": "S244",
+  "S243": {
+    "id": "S243",
     "name": "Ditto",
     "level": 41,
     "item": "Assault Vest",
+    "location": "",
+    "description": "",
     "nature": "Adamant",
     "ability": "Color Change",
     "abilitySlot": 1,
@@ -4842,11 +5426,38 @@
       "secondary": null
     }
   },
-  "S246": {
-    "id": "S246",
+  "S244": {
+    "id": "S244",
+    "name": "Ditto",
+    "level": 41,
+    "item": "Quick Powder",
+    "location": "",
+    "description": "",
+    "nature": "Modest",
+    "ability": "Unknown",
+    "abilitySlot": 3,
+    "moves": [
+      "Camouflage",
+      "Mimic",
+      "Me First",
+      "Copycat"
+    ],
+    "aura": {
+      "effect": "All Stats",
+      "boost": "+2"
+    },
+    "sos": {
+      "primary": null,
+      "secondary": null
+    }
+  },
+  "S245": {
+    "id": "S245",
     "name": "Ditto",
     "level": 41,
     "item": "Leftovers",
+    "location": "",
+    "description": "",
     "nature": "Timid",
     "ability": "Color Change",
     "abilitySlot": 1,
@@ -4865,11 +5476,13 @@
       "secondary": null
     }
   },
-  "S247": {
-    "id": "S247",
+  "S246": {
+    "id": "S246",
     "name": "Zygarde",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Aura Break",
     "abilitySlot": 1,
@@ -4887,11 +5500,13 @@
       "secondary": null
     }
   },
-  "S248": {
-    "id": "S248",
+  "S247": {
+    "id": "S247",
     "name": "Stakataka",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Solid Rock",
     "abilitySlot": 1,
@@ -4905,11 +5520,13 @@
       "secondary": null
     }
   },
-  "S249": {
-    "id": "S249",
+  "S248": {
+    "id": "S248",
     "name": "Blacephalon",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Aftermath",
     "abilitySlot": 1,
@@ -4923,11 +5540,13 @@
       "secondary": null
     }
   },
-  "S250": {
-    "id": "S250",
+  "S249": {
+    "id": "S249",
     "name": "Marowak 2",
     "level": 33,
     "item": "Chesto Berry",
+    "location": "",
+    "description": "",
     "nature": "Impish",
     "ability": "Multistriker",
     "abilitySlot": 1,
@@ -4946,11 +5565,13 @@
       "secondary": null
     }
   },
-  "S251": {
-    "id": "S251",
+  "S250": {
+    "id": "S250",
     "name": "Salandit",
     "level": 31,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Calm",
     "ability": "Oblivious",
     "abilitySlot": 1,
@@ -4968,11 +5589,13 @@
       "secondary": null
     }
   },
-  "S252": {
-    "id": "S252",
+  "S251": {
+    "id": "S251",
     "name": "Electrode",
     "level": 60,
     "item": null,
+    "location": "",
+    "description": "",
     "nature": "Random",
     "ability": "Galvanize",
     "abilitySlot": 1,

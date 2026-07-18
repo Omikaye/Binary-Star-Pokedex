@@ -1,5 +1,11 @@
 window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
   initialize: function (id) {
+    var normalizeMetaText = function(value) {
+      var out = (value || '').trim();
+      if (!out || /^\(?none\)?$/i.test(out)) return '';
+      return out;
+    };
+
     // Extract numeric ID from static encounter ID (e.g., "S238" -> "238")
     const raw = ('' + id).replace(/[^0-9]/g, '');
     const staticID = 'S' + raw;
@@ -48,7 +54,18 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
     // Find location and battle notes
     var encounterLocation = null;
     var battleNotes = '';
-    if (window.Locations) {
+    var encounterLocationText = normalizeMetaText(encounter.location);
+    if (window.Locations && encounterLocationText) {
+      var encounterLocID = toID(encounterLocationText);
+      for (var li = 0; li < window.Locations.length; li++) {
+        var staticLoc = window.Locations[li];
+        if (encounterLocID === toID(staticLoc.id) || encounterLocID === toID(staticLoc.name)) {
+          encounterLocation = staticLoc;
+          break;
+        }
+      }
+    }
+    if (window.Locations && (!encounterLocation || !normalizeMetaText(encounter.description))) {
       for (var i = 0; i < window.Locations.length; i++) {
         var loc = window.Locations[i];
         if (loc.battles) {
@@ -56,13 +73,13 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
             var battle = loc.battles[bi];
             // Convert both to strings for comparison
             if (String(battle.id) === String(staticID)) {
-              encounterLocation = loc;
+              if (!encounterLocation) encounterLocation = loc;
               battleNotes = battle.notes || '';
               break;
             }
           }
         }
-        if (encounterLocation) break;
+        if (battleNotes && encounterLocation) break;
       }
     }
 
@@ -94,9 +111,10 @@ window.PokedexStaticEncounterPanel = PokedexResultPanel.extend({
       buf += '<dt>Location:</dt> <dd><a href="' + Config.baseurl + 'locations/' + encounterLocation.id + '" data-target="push">' + escapeHTML(encounterLocation.name) + '</a></dd>';
     }
     
-    // Description from battle notes (skip if "None")
-    if (battleNotes && battleNotes.trim() && battleNotes.trim().toLowerCase() !== 'none') {
-      buf += '<dt>Description:</dt> <dd>' + escapeHTML(battleNotes) + '</dd>';
+    // Description from static metadata (fallback to location battle notes)
+    var encounterDescription = normalizeMetaText(encounter.description) || normalizeMetaText(battleNotes);
+    if (encounterDescription) {
+      buf += '<dt>Description:</dt> <dd>' + escapeHTML(encounterDescription) + '</dd>';
     }
     
     // Item

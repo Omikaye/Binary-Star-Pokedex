@@ -16,6 +16,21 @@ function getTrainersForLocation(loc) {
     return trainerMatchesLocation(trainer, loc);
   });
 }
+function staticEncounterMatchesLocation(staticEncounter, loc) {
+  if (!staticEncounter || !loc) return false;
+  var staticLocation = normalizeTrainerMetaText(staticEncounter.location);
+  if (!staticLocation) return false;
+  var staticLocID = toID(staticLocation);
+  return staticLocID === toID(loc.id) || staticLocID === toID(loc.name);
+}
+function getStaticEncountersForLocation(loc) {
+  var staticEncounters = window.StaticEncounters || {};
+  return Object.keys(staticEncounters).map(function(id) {
+    return staticEncounters[id];
+  }).filter(function(staticEncounter) {
+    return staticEncounterMatchesLocation(staticEncounter, loc);
+  });
+}
 
 window.PokedexLocationsPanel = PokedexResultPanel.extend({
   initialize: function () {
@@ -315,6 +330,26 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       return String(a.id || '').localeCompare(String(b.id || ''));
     });
     var staticBattles   = allBattles.filter(function(b){ return  String(b.id).match(/^[A-Za-z]/); });
+    var locationStaticEncounters = getStaticEncountersForLocation(loc).slice().sort(function(a, b) {
+      return String(a.id || '').localeCompare(String(b.id || ''));
+    });
+    var staticBattlesById = {};
+    for (var sbi = 0; sbi < staticBattles.length; sbi++) {
+      staticBattlesById[String(staticBattles[sbi].id)] = staticBattles[sbi];
+    }
+    for (var lsi = 0; lsi < locationStaticEncounters.length; lsi++) {
+      var locStaticEnc = locationStaticEncounters[lsi];
+      var locStaticId = String(locStaticEnc.id || '');
+      if (!locStaticId) continue;
+      if (!staticBattlesById[locStaticId]) {
+        staticBattlesById[locStaticId] = { id: locStaticId, tag: 'Static', notes: locStaticEnc.description || '' };
+      } else if (!normalizeTrainerMetaText(staticBattlesById[locStaticId].notes)) {
+        staticBattlesById[locStaticId].notes = locStaticEnc.description || '';
+      }
+    }
+    staticBattles = Object.keys(staticBattlesById).sort().map(function(id) {
+      return staticBattlesById[id];
+    });
     var capturableStatics = staticBattles.filter(function(b){ return b.tag === 'Capturable'; });
 
     // ─────────────────────────────────────────────────────────────
@@ -363,7 +398,10 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         var cbName = cbEnc ? (window.translateDisplayName ? window.translateDisplayName(cbEnc.name) : cbEnc.name) : cb.id;
         var cbID = toID(cbName);
         var cbLevel = cbEnc ? cbEnc.level : '';
-        var cbNoteLines = splitNotes(cb.notes || '');
+        var cbDesc = normalizeTrainerMetaText((cbEnc && cbEnc.description) || '');
+        var cbCombinedNotes = cb.notes || cbDesc;
+        if (cb.notes && cbDesc && toID(cb.notes) !== toID(cbDesc)) cbCombinedNotes = cb.notes + ' | ' + cbDesc;
+        var cbNoteLines = splitNotes(cbCombinedNotes || '');
         buf += '<li class="result" style="display:block;height:auto;min-height:32px;padding:6px 8px">';
         buf += '<a href="' + Config.baseurl + 'encounters/' + cb.id + '" data-target="push" style="display:block;height:auto;min-height:32px;text-decoration:none">';
         buf += '<span class="picon" style="' + getPokemonIcon(cbID) + ';display:inline-block;vertical-align:middle;margin-right:6px"></span>';
@@ -620,7 +658,10 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         var sbID = toID(sbName);
         var sbLevel = sbEnc ? sbEnc.level : '';
         var sbTagCfg = (window.BattleTags && window.BattleTags[sb.tag]) || { color: '#666', backgroundColor: '#f0f0f0', description: sb.tag };
-        var sbNoteLines = splitNotes(sb.notes || '');
+        var sbDesc = normalizeTrainerMetaText((sbEnc && sbEnc.description) || '');
+        var sbCombinedNotes = sb.notes || sbDesc;
+        if (sb.notes && sbDesc && toID(sb.notes) !== toID(sbDesc)) sbCombinedNotes = sb.notes + ' | ' + sbDesc;
+        var sbNoteLines = splitNotes(sbCombinedNotes || '');
         buf += '<li class="result" style="display:block;height:auto;min-height:32px;padding:0">';
         buf += '<a href="' + Config.baseurl + 'encounters/' + sb.id + '" data-target="push" style="display:block;height:auto;min-height:32px;padding:5px 8px;text-decoration:none">';
         buf += '<span class="battle-tag" style="display:inline-block;padding:2px 8px;margin-right:8px;border-radius:12px;font-size:0.75em;font-weight:600;color:' + sbTagCfg.color + ';background-color:' + sbTagCfg.backgroundColor + ';cursor:help" title="' + escapeHTML(sbTagCfg.description || '') + '">' + escapeHTML(sb.tag) + '</span>';

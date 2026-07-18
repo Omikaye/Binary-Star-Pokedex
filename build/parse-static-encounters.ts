@@ -6,6 +6,8 @@ interface StaticEncounter {
   name: string;
   level: number;
   item: string | null;
+  location: string;
+  description: string;
   nature: string;
   ability: string;
   abilitySlot: number;
@@ -18,6 +20,12 @@ interface StaticEncounter {
     primary: string | null;
     secondary: string | null;
   };
+}
+
+function normalizeMetaText(value: string): string {
+  const out = (value || '').trim();
+  if (!out || /^\(?none\)?$/i.test(out)) return '';
+  return out;
 }
 
 function parseStaticEncounters(filePath: string): StaticEncounter[] {
@@ -36,14 +44,14 @@ function parseStaticEncounters(filePath: string): StaticEncounter[] {
       continue;
     }
 
-    // Parse ID and name line (e.g., "001 - Rattata")
-    const idMatch = line.match(/^(\d+)\s*-\s*(.+)$/);
+    // Parse ID and name line (e.g., "S001 - Rattata" or "001 - Rattata")
+    const idMatch = line.match(/^S?(\d+)\s*-\s*(.+)$/i);
     if (!idMatch) {
       i++;
       continue;
     }
 
-    const id = 'S' + idMatch[1];
+    const id = 'S' + idMatch[1].padStart(3, '0');
     i++;
 
     // Parse Pokemon line (next non-empty line)
@@ -129,11 +137,36 @@ function parseStaticEncounters(filePath: string): StaticEncounter[] {
       ];
     }
 
+    i++;
+    let location = '';
+    let description = '';
+    while (i < lines.length) {
+      const metaLine = lines[i].trim();
+      if (!metaLine) break;
+
+      let match = metaLine.match(/^Location:\s*(.*)$/i);
+      if (match) {
+        location = normalizeMetaText(match[1]);
+        i++;
+        continue;
+      }
+      match = metaLine.match(/^(?:Description|Desc):\s*(.*)$/i);
+      if (match) {
+        description = normalizeMetaText(match[1]);
+        i++;
+        continue;
+      }
+      if (/^S?\d+\s*-\s*.+$/i.test(metaLine)) break;
+      i++;
+    }
+
     encounters.push({
       id,
       name: pokemon,
       level,
       item,
+      location,
+      description,
       nature,
       ability,
       abilitySlot,
@@ -147,8 +180,6 @@ function parseStaticEncounters(filePath: string): StaticEncounter[] {
         secondary: sosIds[1],
       },
     });
-
-    i++;
   }
 
   return encounters;
