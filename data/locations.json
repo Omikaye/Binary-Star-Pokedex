@@ -57,9 +57,7 @@
             {
               "name": "Igglybuff",
               "chance": 10,
-              "sos": [
-                "Buneary"
-              ]
+              "sos": []
             },
             {
               "name": "Sentret",
@@ -298,28 +296,24 @@
             {
               "name": "Kricketot",
               "chance": 10,
-              "sos": []
+              "sos": [
+                "Scatterbug 8"
+              ]
             },
             {
-              "name": "Corphish",
+              "name": "Krabby",
               "chance": 10,
-              "sos": [
-                "Krabby"
-              ]
+              "sos": []
             },
             {
               "name": "Seel",
               "chance": 10,
-              "sos": [
-                "Poliwag"
-              ]
+              "sos": []
             },
             {
               "name": "Slowpoke",
               "chance": 10,
-              "sos": [
-                "Wimpod"
-              ]
+              "sos": []
             },
             {
               "name": "Azurill",
@@ -329,9 +323,7 @@
             {
               "name": "Hoppip",
               "chance": 10,
-              "sos": [
-                "Scatterbug 8"
-              ]
+              "sos": []
             },
             {
               "name": "Inkay",
@@ -341,9 +333,7 @@
             {
               "name": "Zigzagoon",
               "chance": 10,
-              "sos": [
-                "Bidoof"
-              ]
+              "sos": []
             },
             {
               "name": "Piplup",
@@ -436,79 +426,7 @@
       "id": "schoolyard",
       "name": "Schoolyard",
       "notes": "Formerly was part of Route 1, now this is its own location. | Scatterbug found here will evolve into Pokeball Pattern Vivillon",
-      "encounters": [
-        {
-          "spot": "Grass",
-          "levelRange": {
-            "min": 7,
-            "max": 10
-          },
-          "pokemon": [
-            {
-              "name": "Grimer 1",
-              "chance": 10,
-              "sos": [
-                "Grimer"
-              ]
-            },
-            {
-              "name": "Meowth 1",
-              "chance": 10,
-              "sos": [
-                "Meowth"
-              ]
-            },
-            {
-              "name": "Caterpie",
-              "chance": 10,
-              "sos": [
-                "Scatterbug 19"
-              ]
-            },
-            {
-              "name": "Bellsprout",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Drifloon",
-              "chance": 10,
-              "sos": [
-                "Swirlix"
-              ]
-            },
-            {
-              "name": "Scraggy",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Bonsly",
-              "chance": 10,
-              "sos": [
-                "Mime Jr."
-              ]
-            },
-            {
-              "name": "Magnemite",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Chikorita",
-              "chance": 10,
-              "sos": [
-                "Pansage"
-              ]
-            },
-            {
-              "name": "Zorua",
-              "chance": 10,
-              "sos": []
-            }
-          ]
-        }
-      ],
+      "encounters": [],
       "giftsTrades": [],
       "staticPokemon": [],
       "trainers": [],
@@ -600,7 +518,7 @@
       "notes": "Hau'oli Beach is now a seperate location from the main city.",
       "encounters": [
         {
-          "spot": "Surf (East)",
+          "spot": "Surf",
           "levelRange": {
             "min": 22,
             "max": 27
@@ -713,83 +631,16 @@
       "notes": "Scatterbug found here will evolve into Modern Pattern Vivillon | The Move Deleter is in the Pokemon Center | The mall opens after defeating Kahuna Hala. The plate shop within the mall only opens after defeating Kahuna Nanu. The move tutors here require your Pokemon to be max friendship. To do this, you can purchase B.F.F. Hearts in any Pokemon Center after defeating Totem Araquanid.",
       "encounters": [
         {
-          "spot": "Grass",
+          "spot": "Set A (D)",
           "levelRange": {
-            "min": 10,
-            "max": 12
+            "min": 5,
+            "max": 10
           },
           "pokemon": [
             {
-              "name": "Pidove",
-              "chance": 15,
-              "sos": [
-                "Scatterbug 7"
-              ]
-            },
-            {
-              "name": "Tyrogue",
-              "chance": 10,
+              "name": "Pikipek",
+              "chance": 100,
               "sos": []
-            },
-            {
-              "name": "Purrloin",
-              "chance": 10,
-              "sos": [
-                "Poochyena"
-              ]
-            },
-            {
-              "name": "Munchlax",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Glameow",
-              "chance": 10,
-              "sos": [
-                "Snubbull"
-              ]
-            },
-            {
-              "name": "Chingling",
-              "chance": 10,
-              "sos": [
-                "Burmy 2"
-              ]
-            },
-            {
-              "name": "Klink",
-              "chance": 10,
-              "sos": [
-                "Trubbish"
-              ]
-            },
-            {
-              "name": "Voltorb",
-              "chance": 10,
-              "sos": [
-                "Joltik"
-              ]
-            },
-            {
-              "name": "Abra",
-              "chance": 10,
-              "sos": [
-                "Bronzor"
-              ]
-            },
-            {
-              "name": "Furfrou",
-              "chance": 5,
-              "sos": [
-                "Furfrou 1",
-                "Furfrou 2",
-                "Furfrou 3",
-                "Furfrou 4",
-                "Furfrou 9",
-                "Furfrou 6",
-                "Furfrou 8"
-              ]
             }
           ]
         }
@@ -1284,20 +1135,31 @@
       "notes": "To gain access to the berry fields, you must defeat Gentleman Stanley | Previously there were no wild Pokemon in Berry Fields. Now the berry tree always spawns a Crabrawler. | Note: Due to limitations, berry trees can only have 1 main encounter. Still looking for a fix, but using S.O.S. is the only way to get around it for now.",
       "encounters": [
         {
-          "spot": "Berry Tree",
+          "spot": "SOS Slot 3 (Levels 22-27): Magikarp (60%), Barboach (20%), Feebas (15%), Dhelmise (5%), (None) (0%)",
           "levelRange": {
-            "min": 11,
-            "max": 14
+            "min": 22,
+            "max": 27
           },
           "pokemon": [
             {
-              "name": "Crabrawler",
-              "chance": 100,
-              "sos": [
-                "Burmy",
-                "Exeggcute",
-                "Aipom"
-              ]
+              "name": "Magikarp",
+              "chance": 60,
+              "sos": []
+            },
+            {
+              "name": "Barboach",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Feebas",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Dhelmise",
+              "chance": 5,
+              "sos": []
             }
           ]
         }
@@ -1388,77 +1250,72 @@
       "notes": "To gain access to the cemetery, you must defeat Office Worker Jeremy",
       "encounters": [
         {
-          "spot": "Grass",
+          "spot": "SOS Slot 3 (Levels 16-19): Rockruff (10%), Spinda (10%), Exeggcute (10%), Pancham (10%), Hoothoot (10%), Darumaka (10%), Ralts (10%), Beldum (10%), Goomy (10%), Chimchar (10%)",
           "levelRange": {
-            "min": 11,
-            "max": 13
+            "min": 16,
+            "max": 19
           },
           "pokemon": [
             {
-              "name": "Duskull",
+              "name": "Rockruff",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Gastly",
+              "name": "Spinda",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Espurr",
+              "name": "Togepi",
+              "chance": 10,
+              "sos": [
+                "Exeggcute"
+              ]
+            },
+            {
+              "name": "Makuhita",
+              "chance": 10,
+              "sos": [
+                "Pancham"
+              ]
+            },
+            {
+              "name": "Natu",
+              "chance": 10,
+              "sos": [
+                "Hoothoot"
+              ]
+            },
+            {
+              "name": "Meditite",
+              "chance": 10,
+              "sos": [
+                "Darumaka"
+              ]
+            },
+            {
+              "name": "Ralts",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Litwick",
+              "name": "Nosepass",
               "chance": 10,
               "sos": [
-                "Golett"
+                "Beldum"
               ]
             },
             {
-              "name": "Vullaby",
+              "name": "Goomy",
               "chance": 10,
-              "sos": [
-                "Cubone"
-              ]
+              "sos": []
             },
             {
-              "name": "Gothita",
+              "name": "Riolu",
               "chance": 10,
               "sos": [
-                "Spoink"
-              ]
-            },
-            {
-              "name": "Solosis",
-              "chance": 10,
-              "sos": [
-                "Baltoy"
-              ]
-            },
-            {
-              "name": "Shuppet",
-              "chance": 10,
-              "sos": [
-                "Yamask"
-              ]
-            },
-            {
-              "name": "Phantump",
-              "chance": 10,
-              "sos": [
-                "Pumpkaboo",
-                "Pumpkaboo 1",
-                "Pumpkaboo 2",
-                "Pumpkaboo 3"
-              ]
-            },
-            {
-              "name": "Fennekin",
-              "chance": 10,
-              "sos": [
-                "Pansear"
+                "Chimchar"
               ]
             }
           ]
@@ -1588,7 +1445,126 @@
       "notes": "Icium Z can be found here early after obtaining Lapras. | There is constant Snow inside this cave.",
       "encounters": [
         {
-          "spot": "Cave/Surf",
+          "spot": "SOS Slot 7 (Levels 26-28): Barboach (30%), Feebas (25%), Dhelmise (25%), Magikarp (20%), (None) (0%)",
+          "levelRange": {
+            "min": 26,
+            "max": 28
+          },
+          "pokemon": [
+            {
+              "name": "Barboach",
+              "chance": 30,
+              "sos": []
+            },
+            {
+              "name": "Feebas",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Dhelmise",
+              "chance": 25,
+              "sos": []
+            },
+            {
+              "name": "Magikarp",
+              "chance": 20,
+              "sos": []
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Icium Z Node",
+          "quantity": "1",
+          "obtain": "In the center of an island in the middle of the cave (requires Lapras Surf or Sharpedo Jet)"
+        },
+        {
+          "item": "Sharpedonite",
+          "quantity": "1",
+          "obtain": "Above the ledge on the southeastern shore (requires Sharpedo Jet)"
+        },
+        {
+          "item": "TM24 (Hyper Beam)",
+          "quantity": "1",
+          "obtain": "Behind the boulder in the northern corner of the cave (requires Machamp Shove)"
+        }
+      ],
+      "battles": []
+    },
+    {
+      "id": "verdantcavern",
+      "name": "Verdant Cavern",
+      "notes": "Location of the first trial.",
+      "encounters": [
+        {
+          "spot": "SOS Slot 7 (Levels 11-14): Crabrawler (10%), Burmy (10%), Aipom (10%), Cherubi (10%), Combee (10%), Exeggcute (10%), Pineco (10%), Sunkern (10%), Wurmple (10%), Grubbin (10%)",
+          "levelRange": {
+            "min": 11,
+            "max": 14
+          },
+          "pokemon": [
+            {
+              "name": "Crabrawler",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Burmy",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Aipom",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Cherubi",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Combee",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Exeggcute",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Pineco",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Sunkern",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Wurmple",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Grubbin",
+              "chance": 10,
+              "sos": []
+            }
+          ]
+        },
+        {
+          "spot": "SOS Slot 3 (Levels 11-14): Tynamo (15%), Spheal (15%), Buizel (15%), Sandygast (15%), Clamperl (15%), Panpour (15%), Dratini (10%), (None) (0%)",
           "levelRange": {
             "min": 11,
             "max": 14
@@ -1635,174 +1611,6 @@
               "chance": 10,
               "sos": [
                 "Dratini"
-              ]
-            }
-          ]
-        }
-      ],
-      "giftsTrades": [],
-      "staticPokemon": [],
-      "trainers": [],
-      "bossTrainers": [],
-      "shops": [],
-      "shopTables": [],
-      "items": [
-        {
-          "item": "Icium Z Node",
-          "quantity": "1",
-          "obtain": "In the center of an island in the middle of the cave (requires Lapras Surf or Sharpedo Jet)"
-        },
-        {
-          "item": "Sharpedonite",
-          "quantity": "1",
-          "obtain": "Above the ledge on the southeastern shore (requires Sharpedo Jet)"
-        },
-        {
-          "item": "TM24 (Hyper Beam)",
-          "quantity": "1",
-          "obtain": "Behind the boulder in the northern corner of the cave (requires Machamp Shove)"
-        }
-      ],
-      "battles": []
-    },
-    {
-      "id": "verdantcavern",
-      "name": "Verdant Cavern",
-      "notes": "Location of the first trial.",
-      "encounters": [
-        {
-          "spot": "Cave",
-          "levelRange": {
-            "min": 12,
-            "max": 14
-          },
-          "pokemon": [
-            {
-              "name": "Diglett 1",
-              "chance": 10,
-              "sos": [
-                "Diglett"
-              ]
-            },
-            {
-              "name": "Noibat",
-              "chance": 10,
-              "sos": [
-                "Whismur"
-              ]
-            },
-            {
-              "name": "Venonat",
-              "chance": 10,
-              "sos": [
-                "Skorupi"
-              ]
-            },
-            {
-              "name": "Oddish",
-              "chance": 10,
-              "sos": [
-                "Gulpin"
-              ]
-            },
-            {
-              "name": "Bunnelby",
-              "chance": 10,
-              "sos": [
-                "Helioptile"
-              ]
-            },
-            {
-              "name": "Drilbur",
-              "chance": 10,
-              "sos": [
-                "Trapinch"
-              ]
-            },
-            {
-              "name": "Teddiursa",
-              "chance": 10,
-              "sos": [
-                "Swinub"
-              ]
-            },
-            {
-              "name": "Paras",
-              "chance": 10,
-              "sos": [
-                "Shroomish"
-              ]
-            },
-            {
-              "name": "Geodude 1",
-              "chance": 10,
-              "sos": [
-                "Geodude"
-              ]
-            },
-            {
-              "name": "Morelull",
-              "chance": 10,
-              "sos": [
-                "Foongus"
-              ]
-            }
-          ]
-        },
-        {
-          "spot": "Shaking Spot",
-          "levelRange": {
-            "min": 14,
-            "max": 16
-          },
-          "pokemon": [
-            {
-              "name": "Yungoos",
-              "chance": 25,
-              "sos": [
-                "Dunsparce"
-              ]
-            },
-            {
-              "name": "Rattata 1",
-              "chance": 25,
-              "sos": [
-                "Rattata"
-              ]
-            },
-            {
-              "name": "Teddiursa",
-              "chance": 10,
-              "sos": [
-                "Swinub"
-              ]
-            },
-            {
-              "name": "Diglett 1",
-              "chance": 10,
-              "sos": [
-                "Diglett"
-              ]
-            },
-            {
-              "name": "Bunnelby",
-              "chance": 10,
-              "sos": [
-                "Helioptile"
-              ]
-            },
-            {
-              "name": "Drilbur",
-              "chance": 10,
-              "sos": [
-                "Trapinch"
-              ]
-            },
-            {
-              "name": "Geodude 1",
-              "chance": 10,
-              "sos": [
-                "Geodude"
               ]
             }
           ]
@@ -1936,10 +1744,11 @@
               ]
             },
             {
-              "name": "Growlithe",
+              "name": "Mankey",
               "chance": 10,
               "sos": [
-                "Vulpix"
+                "Vulpix",
+                "Growlithe"
               ]
             },
             {
@@ -2110,84 +1919,76 @@
       "notes": "Permanent Harsh Sunlight",
       "encounters": [
         {
-          "spot": "Grass",
+          "spot": "SOS Slot 3 (Levels 11-13): Duskull (10%), Gastly (10%), Espurr (10%), Golett (10%), Cubone (10%), Spoink (10%), Baltoy (10%), Yamask (10%), Pumpkaboo (Forme 2) (10%), Pansear (10%)",
           "levelRange": {
-            "min": 13,
-            "max": 17
+            "min": 11,
+            "max": 13
           },
           "pokemon": [
             {
-              "name": "Flabébé 1",
-              "chance": 15,
-              "sos": [
-                "Flabébé 2",
-                "Flabébé 3",
-                "Flabébé 4",
-                "Flabébé"
-              ]
-            },
-            {
-              "name": "Combee",
+              "name": "Duskull",
               "chance": 10,
               "sos": []
             },
             {
-              "name": "Weedle",
+              "name": "Gastly",
               "chance": 10,
-              "sos": [
-                "Kakuna"
-              ]
-            },
-            {
-              "name": "Wurmple",
-              "chance": 10,
-              "sos": [
-                "Silcoon",
-                "Cascoon"
-              ]
-            },
-            {
-              "name": "Sunkern",
-              "chance": 10,
-              "sos": [
-                "Deerling",
-                "Deerling 1",
-                "Deerling 2",
-                "Deerling 3"
-              ]
-            },
-            {
-              "name": "Budew",
-              "chance": 10,
-              "sos": [
-                "Roselia"
-              ]
-            },
-            {
-              "name": "Cottonee",
-              "chance": 10,
-              "sos": [
-                "Swirlix"
-              ]
-            },
-            {
-              "name": "Petilil",
-              "chance": 10,
-              "sos": [
-                "Spritzee"
-              ]
-            },
-            {
-              "name": "Bulbasaur",
-              "chance": 10,
-              "sos": [
-                "Pansage"
-              ]
-            },
-            {
-              "name": "Oricorio 1",
-              "chance": 5,
               "sos": []
+            },
+            {
+              "name": "Espurr",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Litwick",
+              "chance": 10,
+              "sos": [
+                "Golett"
+              ]
+            },
+            {
+              "name": "Vullaby",
+              "chance": 10,
+              "sos": [
+                "Cubone"
+              ]
+            },
+            {
+              "name": "Gothita",
+              "chance": 10,
+              "sos": [
+                "Spoink"
+              ]
+            },
+            {
+              "name": "Solosis",
+              "chance": 10,
+              "sos": [
+                "Baltoy"
+              ]
+            },
+            {
+              "name": "Shuppet",
+              "chance": 10,
+              "sos": [
+                "Yamask"
+              ]
+            },
+            {
+              "name": "Phantump",
+              "chance": 10,
+              "sos": [
+                "Pumpkaboo 3",
+                "Pumpkaboo"
+              ]
+            },
+            {
+              "name": "Fennekin",
+              "chance": 10,
+              "sos": [
+                "Pansear"
+              ]
             }
           ]
         }
@@ -2227,6 +2028,163 @@
       "name": "Seaward Cavern",
       "notes": "Kala'e Bay is only fully accessible after obtaining Lapras. Though, you can fish for a Pokemon there early. | There is persistent Snow inside this cave.",
       "encounters": [
+        {
+          "spot": "SOS Slot 7 (Levels 11-13): Duskull (10%), Gastly (10%), Espurr (10%), Golett (10%), Cubone (10%), Spoink (10%), Baltoy (10%), Yamask (10%), Phantump (10%), Pansear (10%)",
+          "levelRange": {
+            "min": 11,
+            "max": 13
+          },
+          "pokemon": [
+            {
+              "name": "Duskull",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Gastly",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Espurr",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Litwick",
+              "chance": 10,
+              "sos": [
+                "Golett"
+              ]
+            },
+            {
+              "name": "Vullaby",
+              "chance": 10,
+              "sos": [
+                "Cubone"
+              ]
+            },
+            {
+              "name": "Gothita",
+              "chance": 10,
+              "sos": [
+                "Spoink"
+              ]
+            },
+            {
+              "name": "Solosis",
+              "chance": 10,
+              "sos": [
+                "Baltoy"
+              ]
+            },
+            {
+              "name": "Shuppet",
+              "chance": 10,
+              "sos": [
+                "Yamask"
+              ]
+            },
+            {
+              "name": "Phantump",
+              "chance": 10,
+              "sos": [
+                "Pumpkaboo",
+                "Pumpkaboo 1",
+                "Pumpkaboo 2",
+                "Pumpkaboo 3"
+              ]
+            },
+            {
+              "name": "Fennekin",
+              "chance": 10,
+              "sos": [
+                "Pansear"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "SOS Slot 3 (Levels 13-17): Flabébé (Forme 4) (15%), Combee (10%), Kakuna (10%), Wurmple (10%), Deerling (Forme 1) (10%), Budew (10%), Swirlix (10%), Spritzee (10%), Pansage (10%), Oricorio (Forme 1) (5%)",
+          "levelRange": {
+            "min": 13,
+            "max": 17
+          },
+          "pokemon": [
+            {
+              "name": "Flabébé 1",
+              "chance": 15,
+              "sos": [
+                "Flabébé 2",
+                "Flabébé 3",
+                "Flabébé 4",
+                "Flabébé"
+              ]
+            },
+            {
+              "name": "Combee",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Weedle",
+              "chance": 10,
+              "sos": [
+                "Kakuna"
+              ]
+            },
+            {
+              "name": "Wurmple",
+              "chance": 10,
+              "sos": [
+                "Silcoon",
+                "Cascoon"
+              ]
+            },
+            {
+              "name": "Sunkern",
+              "chance": 10,
+              "sos": [
+                "Deerling 2",
+                "Deerling 3",
+                "Deerling"
+              ]
+            },
+            {
+              "name": "Budew",
+              "chance": 10,
+              "sos": [
+                "Roselia"
+              ]
+            },
+            {
+              "name": "Cottonee",
+              "chance": 10,
+              "sos": [
+                "Swirlix"
+              ]
+            },
+            {
+              "name": "Petilil",
+              "chance": 10,
+              "sos": [
+                "Spritzee"
+              ]
+            },
+            {
+              "name": "Bulbasaur",
+              "chance": 10,
+              "sos": [
+                "Pansage"
+              ]
+            },
+            {
+              "name": "Oricorio 1",
+              "chance": 5,
+              "sos": []
+            }
+          ]
+        },
         {
           "spot": "Cave",
           "levelRange": {
@@ -2353,64 +2311,6 @@
               "sos": []
             }
           ]
-        },
-        {
-          "spot": "Fish",
-          "levelRange": {
-            "min": 22,
-            "max": 27
-          },
-          "pokemon": [
-            {
-              "name": "Magikarp",
-              "chance": 60,
-              "sos": []
-            },
-            {
-              "name": "Barboach",
-              "chance": 20,
-              "sos": []
-            },
-            {
-              "name": "Feebas",
-              "chance": 15,
-              "sos": []
-            },
-            {
-              "name": "Dhelmise",
-              "chance": 5,
-              "sos": []
-            }
-          ]
-        },
-        {
-          "spot": "Bubbles",
-          "levelRange": {
-            "min": 26,
-            "max": 28
-          },
-          "pokemon": [
-            {
-              "name": "Barboach",
-              "chance": 30,
-              "sos": []
-            },
-            {
-              "name": "Feebas",
-              "chance": 25,
-              "sos": []
-            },
-            {
-              "name": "Dhelmise",
-              "chance": 25,
-              "sos": []
-            },
-            {
-              "name": "Magikarp",
-              "chance": 20,
-              "sos": []
-            }
-          ]
         }
       ],
       "giftsTrades": [],
@@ -2469,117 +2369,46 @@
       "notes": "Ten Carat Hill is accessible via Ten Carat Beach after unlocking Tauros. | The surf section is accessible from Melemele Sea after obtaining Sharpedo.",
       "encounters": [
         {
-          "spot": "Cave",
+          "spot": "SOS Slot 5 (Levels 2-3): Spearow (20%), Pikipek (15%), Hoothoot (15%), Pineco (15%), Burmy (15%), Spinarak (10%), Ledyba (10%), (None) (0%)",
           "levelRange": {
-            "min": 16,
-            "max": 19
+            "min": 2,
+            "max": 3
           },
           "pokemon": [
             {
-              "name": "Carbink",
-              "chance": 10,
-              "sos": [
-                "Sableye"
-              ]
-            },
-            {
-              "name": "Roggenrola",
-              "chance": 10,
-              "sos": [
-                "Slugma"
-              ]
-            },
-            {
-              "name": "Wynaut",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Woobat",
-              "chance": 10,
-              "sos": [
-                "Zubat"
-              ]
-            },
-            {
-              "name": "Cleffa",
-              "chance": 10,
-              "sos": [
-                "Clefairy"
-              ]
-            },
-            {
-              "name": "Axew",
-              "chance": 10,
-              "sos": [
-                "Gible"
-              ]
-            },
-            {
-              "name": "Aron",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Onix",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Sableye",
-              "chance": 10,
-              "sos": [
-                "Mawile"
-              ]
-            },
-            {
-              "name": "Mawile",
-              "chance": 10,
-              "sos": []
-            }
-          ]
-        },
-        {
-          "spot": "Surf",
-          "levelRange": {
-            "min": 30,
-            "max": 37
-          },
-          "pokemon": [
-            {
-              "name": "Swoobat",
-              "chance": 30,
-              "sos": [
-                "Woobat"
-              ]
-            },
-            {
-              "name": "Kingler",
+              "name": "Spearow",
               "chance": 20,
-              "sos": [
-                "Krabby"
-              ]
+              "sos": []
             },
             {
-              "name": "Binacle",
-              "chance": 20,
-              "sos": [
-                "Barbaracle"
-              ]
+              "name": "Pikipek",
+              "chance": 15,
+              "sos": []
             },
             {
-              "name": "Gastrodon",
-              "chance": 20,
-              "sos": [
-                "Shellos"
-              ]
+              "name": "Hoothoot",
+              "chance": 15,
+              "sos": []
             },
             {
-              "name": "Dragonair",
+              "name": "Pineco",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Burmy",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Spinarak",
               "chance": 10,
-              "sos": [
-                "Dratini"
-              ]
+              "sos": []
+            },
+            {
+              "name": "Ledyba",
+              "chance": 10,
+              "sos": []
             }
           ]
         }
@@ -2630,72 +2459,45 @@
       "notes": "Ten Carat Hollow is now a seperate encounter location to Ten Carat Hill. Flyinium Z is found through the left path in the cave blocked by Tauros Rocks.",
       "encounters": [
         {
-          "spot": "Grass",
+          "spot": "SOS Slot 3 (Levels 30-37): Swoobat (30%), Krabby (20%), Binacle (20%), Shellos (20%), Dragonair (10%), (None) (0%)",
           "levelRange": {
-            "min": 16,
-            "max": 19
+            "min": 30,
+            "max": 37
           },
           "pokemon": [
             {
-              "name": "Rockruff",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Spinda",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Togepi",
-              "chance": 10,
+              "name": "Swoobat",
+              "chance": 30,
               "sos": [
-                "Exeggcute"
+                "Woobat"
               ]
             },
             {
-              "name": "Makuhita",
-              "chance": 10,
+              "name": "Kingler",
+              "chance": 20,
               "sos": [
-                "Pancham"
+                "Krabby"
               ]
             },
             {
-              "name": "Natu",
-              "chance": 10,
+              "name": "Binacle",
+              "chance": 20,
               "sos": [
-                "Hoothoot"
+                "Barbaracle"
               ]
             },
             {
-              "name": "Meditite",
-              "chance": 10,
+              "name": "Gastrodon",
+              "chance": 20,
               "sos": [
-                "Darumaka"
+                "Shellos"
               ]
             },
             {
-              "name": "Ralts",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Nosepass",
+              "name": "Dragonair",
               "chance": 10,
               "sos": [
-                "Beldum"
-              ]
-            },
-            {
-              "name": "Goomy",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Riolu",
-              "chance": 10,
-              "sos": [
-                "Chimchar"
+                "Dratini"
               ]
             }
           ]
@@ -2998,7 +2800,7 @@
       "notes": "",
       "encounters": [
         {
-          "spot": "Table 1 (Day)",
+          "spot": "Table 4 (Day)",
           "levelRange": {
             "min": 18,
             "max": 21
@@ -3063,38 +2865,6 @@
               "sos": [
                 "Spritzee"
               ]
-            }
-          ]
-        },
-        {
-          "spot": "Table 7 (Day)",
-          "levelRange": {
-            "min": 18,
-            "max": 21
-          },
-          "pokemon": [
-            {
-              "name": "Crabrawler",
-              "chance": 30,
-              "sos": []
-            },
-            {
-              "name": "Burmy",
-              "chance": 30,
-              "sos": [
-                "Burmy 1",
-                "Burmy 2"
-              ]
-            },
-            {
-              "name": "Exeggcute",
-              "chance": 30,
-              "sos": []
-            },
-            {
-              "name": "Heracross",
-              "chance": 10,
-              "sos": []
             }
           ]
         }
@@ -3215,79 +2985,88 @@
       "notes": "Permanent Harsh Sunlight",
       "encounters": [
         {
-          "spot": "Table 1 (Day)",
+          "spot": "SOS Slot 7 (Levels 30-40): Tentacool (20%), Pyukumuku (20%), Skrelp (15%), Clawitzer (15%), Frillish (Forme 1) (10%), Wailmer (10%), Frillish (10%), (None) (0%)",
           "levelRange": {
-            "min": 22,
-            "max": 27
+            "min": 30,
+            "max": 40
           },
           "pokemon": [
             {
-              "name": "Barboach",
-              "chance": 29,
-              "sos": []
-            },
-            {
-              "name": "Tympole",
-              "chance": 29,
+              "name": "Tentacruel",
+              "chance": 20,
               "sos": [
-                "Poliwag"
+                "Tentacool"
               ]
             },
             {
-              "name": "Wooper",
-              "chance": 29,
+              "name": "Pyukumuku",
+              "chance": 20,
               "sos": []
             },
             {
-              "name": "Mudkip",
+              "name": "Skrelp",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Clauncher",
+              "chance": 15,
+              "sos": [
+                "Clawitzer"
+              ]
+            },
+            {
+              "name": "Frillish",
               "chance": 10,
               "sos": [
-                "Froakie"
+                "Frillish 1"
               ]
             },
             {
-              "name": "Stunfisk",
-              "chance": 3,
+              "name": "Wailmer",
+              "chance": 10,
               "sos": []
+            },
+            {
+              "name": "Frillish 1",
+              "chance": 10,
+              "sos": [
+                "Frillish"
+              ]
             }
           ]
         },
         {
-          "spot": "Table 2 (Day)",
+          "spot": "SOS Slot 7 (Levels 40-44): Tentacool (47%), Jellicent (24%), Jellicent (Forme 1) (23%), Phione (6%), (None) (0%)",
           "levelRange": {
-            "min": 27,
-            "max": 28
+            "min": 40,
+            "max": 44
           },
           "pokemon": [
             {
-              "name": "Barboach",
-              "chance": 20,
-              "sos": []
-            },
-            {
-              "name": "Palpitoad",
-              "chance": 20,
+              "name": "Tentacruel",
+              "chance": 47,
               "sos": [
-                "Poliwhirl"
+                "Tentacool"
               ]
             },
             {
-              "name": "Quagsire",
-              "chance": 20,
+              "name": "Jellicent 1",
+              "chance": 24,
               "sos": [
-                "Wooper"
+                "Jellicent"
               ]
             },
             {
-              "name": "Marshtomp",
-              "chance": 20,
+              "name": "Jellicent",
+              "chance": 23,
               "sos": [
-                "Frogadier"
+                "Jellicent 1"
               ]
             },
             {
-              "name": "Stunfisk",
-              "chance": 20,
+              "name": "Phione",
+              "chance": 6,
               "sos": []
             }
           ]
@@ -3360,81 +3139,7 @@
       "id": "paniolaranch",
       "name": "Paniola Ranch",
       "notes": "The Pokemon Daycare is located here. They will give you an Egg on your first visit. | The Hidden Power NPC is also here, they will tell you your Pokemon's Hidden Power Type | The Miltank near the daycare will heal your team for free. | Permanent Harsh Sunlight",
-      "encounters": [
-        {
-          "spot": "Table 1 (Day)",
-          "levelRange": {
-            "min": 18,
-            "max": 21
-          },
-          "pokemon": [
-            {
-              "name": "Mudbray",
-              "chance": 10,
-              "sos": [
-                "Elgyem"
-              ]
-            },
-            {
-              "name": "Flaaffy",
-              "chance": 10,
-              "sos": [
-                "Mareep"
-              ]
-            },
-            {
-              "name": "Doduo",
-              "chance": 10,
-              "sos": [
-                "Spewpa 14"
-              ]
-            },
-            {
-              "name": "Ponyta",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Litleo",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Blitzle",
-              "chance": 10,
-              "sos": [
-                "Skiddo"
-              ]
-            },
-            {
-              "name": "Farfetch’d",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Miltank",
-              "chance": 10,
-              "sos": [
-                "Tauros"
-              ]
-            },
-            {
-              "name": "Tauros",
-              "chance": 10,
-              "sos": [
-                "Miltank"
-              ]
-            },
-            {
-              "name": "Torchic",
-              "chance": 10,
-              "sos": [
-                "Combusken"
-              ]
-            }
-          ]
-        }
-      ],
+      "encounters": [],
       "giftsTrades": [
         {
           "name": "Eevee",
@@ -3561,7 +3266,67 @@
       "notes": "Route 5 is split into 2 zones, North and South, the northern half is only accessible from Route 8, but it is still considered Route 5. | The northern part contains a way to obtain the Poisonium Z early.",
       "encounters": [
         {
-          "spot": "Table 5 (Day)",
+          "spot": "Table 2 (Day)",
+          "levelRange": {
+            "min": 27,
+            "max": 30
+          },
+          "pokemon": [
+            {
+              "name": "Diglett 1",
+              "chance": 50,
+              "sos": [
+                "Diglett"
+              ]
+            },
+            {
+              "name": "Nincada",
+              "chance": 25,
+              "sos": [
+                "Sandile"
+              ]
+            },
+            {
+              "name": "Watchog",
+              "chance": 25,
+              "sos": [
+                "Patrat"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "Table 1 (Night)",
+          "levelRange": {
+            "min": 27,
+            "max": 30
+          },
+          "pokemon": [
+            {
+              "name": "Diglett 1",
+              "chance": 50,
+              "sos": [
+                "Diglett"
+              ]
+            },
+            {
+              "name": "Nincada",
+              "chance": 25,
+              "sos": [
+                "Sandile"
+              ]
+            },
+            {
+              "name": "Watchog",
+              "chance": 25,
+              "sos": [
+                "Patrat"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "Table 7 (Day)",
           "levelRange": {
             "min": 20,
             "max": 22
@@ -3640,142 +3405,70 @@
           ]
         },
         {
-          "spot": "Table 4 (Night)",
+          "spot": "SOS Slot 3 (Levels 18-21): Minccino (10%), Pidgey (10%), Sewaddle (10%), Taillow (10%), Patrat (10%), Sandile (10%), Shinx (10%), Eevee (10%), Cacnea (10%), Spritzee (10%)",
           "levelRange": {
-            "min": 20,
-            "max": 24
+            "min": 18,
+            "max": 21
           },
           "pokemon": [
             {
-              "name": "Crabrawler",
-              "chance": 30,
+              "name": "Lillipup",
+              "chance": 10,
+              "sos": [
+                "Minccino"
+              ]
+            },
+            {
+              "name": "Pidgey",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Venipede",
+              "chance": 10,
+              "sos": [
+                "Sewaddle"
+              ]
+            },
+            {
+              "name": "Taillow",
+              "chance": 10,
               "sos": []
             },
             {
-              "name": "Burmy 1",
-              "chance": 30,
-              "sos": [
-                "Burmy",
-                "Burmy 2"
-              ]
-            },
-            {
-              "name": "Exeggcute",
-              "chance": 30,
-              "sos": []
-            },
-            {
-              "name": "Heracross",
+              "name": "Patrat",
               "chance": 10,
               "sos": []
-            }
-          ]
-        },
-        {
-          "spot": "Table 10 (Day)",
-          "levelRange": {
-            "min": 27,
-            "max": 30
-          },
-          "pokemon": [
-            {
-              "name": "Fomantis",
-              "chance": 10,
-              "sos": [
-                "Vivillon 4"
-              ]
-            },
-            {
-              "name": "Manectric",
-              "chance": 10,
-              "sos": [
-                "Houndoom"
-              ]
-            },
-            {
-              "name": "Houndoom",
-              "chance": 10,
-              "sos": [
-                "Manectric"
-              ]
-            },
-            {
-              "name": "Staravia",
-              "chance": 10,
-              "sos": [
-                "Starly"
-              ]
-            },
-            {
-              "name": "Nuzleaf",
-              "chance": 10,
-              "sos": [
-                "Seedot"
-              ]
-            },
-            {
-              "name": "Swalot",
-              "chance": 10,
-              "sos": [
-                "Trubbish"
-              ]
-            },
-            {
-              "name": "Cherrim",
-              "chance": 10,
-              "sos": [
-                "Swirlix"
-              ]
-            },
-            {
-              "name": "Dedenne",
-              "chance": 10,
-              "sos": [
-                "Emolga"
-              ]
-            },
-            {
-              "name": "Ledian",
-              "chance": 10,
-              "sos": [
-                "Ledyba"
-              ]
-            },
-            {
-              "name": "Grotle",
-              "chance": 10,
-              "sos": [
-                "Snover"
-              ]
-            }
-          ]
-        },
-        {
-          "spot": "Table 1 (Day)",
-          "levelRange": {
-            "min": 27,
-            "max": 30
-          },
-          "pokemon": [
-            {
-              "name": "Diglett 1",
-              "chance": 50,
-              "sos": [
-                "Diglett"
-              ]
             },
             {
               "name": "Nincada",
-              "chance": 25,
+              "chance": 10,
               "sos": [
                 "Sandile"
               ]
             },
             {
-              "name": "Watchog",
-              "chance": 25,
+              "name": "Shinx",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Eevee",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Chespin",
+              "chance": 10,
               "sos": [
-                "Patrat"
+                "Cacnea"
+              ]
+            },
+            {
+              "name": "Stunky",
+              "chance": 10,
+              "sos": [
+                "Spritzee"
               ]
             }
           ]
@@ -3900,7 +3593,324 @@
       "notes": "Location of the second trial. | Permanent Rain after the trial ends.",
       "encounters": [
         {
-          "spot": "Table 1 (Day)",
+          "spot": "SOS Slot 7 (Levels 26-30): Cubone (10%), Salandit (10%), Magmar (10%), Heatmor (10%), Gligar (10%), Litten (10%), Larvesta (10%), Turtonator (10%), Vivillon (Forme 15) (10%), Charmander (10%)",
+          "levelRange": {
+            "min": 26,
+            "max": 30
+          },
+          "pokemon": [
+            {
+              "name": "Cubone",
+              "chance": 10,
+              "sos": [
+                "Kangaskhan"
+              ]
+            },
+            {
+              "name": "Salandit",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Magby",
+              "chance": 10,
+              "sos": [
+                "Magmar"
+              ]
+            },
+            {
+              "name": "Slugma",
+              "chance": 10,
+              "sos": [
+                "Heatmor"
+              ]
+            },
+            {
+              "name": "Koffing",
+              "chance": 10,
+              "sos": [
+                "Gligar"
+              ]
+            },
+            {
+              "name": "Pansear",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Larvesta",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Numel",
+              "chance": 10,
+              "sos": [
+                "Turtonator"
+              ]
+            },
+            {
+              "name": "Torkoal",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Charmeleon",
+              "chance": 10,
+              "sos": [
+                "Charmander"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "SOS Slot 7 (Levels 26-30): Cubone (10%), Salandit (10%), Magmar (10%), Heatmor (10%), Gligar (10%), Litten (10%), Larvesta (10%), Turtonator (10%), Vivillon (Forme 15) (10%), Charmander (10%)",
+          "levelRange": {
+            "min": 26,
+            "max": 30
+          },
+          "pokemon": [
+            {
+              "name": "Cubone",
+              "chance": 10,
+              "sos": [
+                "Kangaskhan"
+              ]
+            },
+            {
+              "name": "Salandit",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Magby",
+              "chance": 10,
+              "sos": [
+                "Magmar"
+              ]
+            },
+            {
+              "name": "Slugma",
+              "chance": 10,
+              "sos": [
+                "Heatmor"
+              ]
+            },
+            {
+              "name": "Koffing",
+              "chance": 10,
+              "sos": [
+                "Gligar"
+              ]
+            },
+            {
+              "name": "Pansear",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Larvesta",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Numel",
+              "chance": 10,
+              "sos": [
+                "Turtonator"
+              ]
+            },
+            {
+              "name": "Torkoal",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Charmeleon",
+              "chance": 10,
+              "sos": [
+                "Charmander"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "SOS Slot 7 (Levels 26-30): Cubone (10%), Salandit (10%), Magmar (10%), Heatmor (10%), Gligar (10%), Litten (10%), Larvesta (10%), Turtonator (10%), Vivillon (Forme 15) (10%), Charmander (10%)",
+          "levelRange": {
+            "min": 26,
+            "max": 30
+          },
+          "pokemon": [
+            {
+              "name": "Cubone",
+              "chance": 10,
+              "sos": [
+                "Kangaskhan"
+              ]
+            },
+            {
+              "name": "Salandit",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Magby",
+              "chance": 10,
+              "sos": [
+                "Magmar"
+              ]
+            },
+            {
+              "name": "Slugma",
+              "chance": 10,
+              "sos": [
+                "Heatmor"
+              ]
+            },
+            {
+              "name": "Koffing",
+              "chance": 10,
+              "sos": [
+                "Gligar"
+              ]
+            },
+            {
+              "name": "Pansear",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Larvesta",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Numel",
+              "chance": 10,
+              "sos": [
+                "Turtonator"
+              ]
+            },
+            {
+              "name": "Torkoal",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Charmeleon",
+              "chance": 10,
+              "sos": [
+                "Charmander"
+              ]
+            }
+          ]
+        },
+        {
+          "spot": "Table 9 (Day)",
+          "levelRange": {
+            "min": 21,
+            "max": 25
+          },
+          "pokemon": [
+            {
+              "name": "Magikarp",
+              "chance": 35,
+              "sos": []
+            },
+            {
+              "name": "Goldeen",
+              "chance": 20,
+              "sos": []
+            },
+            {
+              "name": "Dewpider",
+              "chance": 15,
+              "sos": []
+            },
+            {
+              "name": "Wishiwashi",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Corphish",
+              "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Basculin",
+              "chance": 5,
+              "sos": [
+                "Basculin 1"
+              ]
+            },
+            {
+              "name": "Basculin 1",
+              "chance": 5,
+              "sos": [
+                "Basculin"
+              ]
+            }
+          ]
+        }
+      ],
+      "giftsTrades": [],
+      "staticPokemon": [],
+      "trainers": [],
+      "bossTrainers": [],
+      "shops": [],
+      "shopTables": [],
+      "items": [
+        {
+          "item": "Lapras Paddle",
+          "quantity": "1",
+          "obtain": "From Lana upon starting the trial, at the trial gates"
+        },
+        {
+          "item": "Passho Berry",
+          "quantity": "20",
+          "obtain": "On the west bank of the lake near the Route 5 entrance"
+        },
+        {
+          "item": "Water Gem",
+          "quantity": "20",
+          "obtain": "On a beach on the south side of the lake near the Route 5 entrance (requires Lapras Paddle or Sharpedo Jet)"
+        },
+        {
+          "item": "Sea Incense",
+          "quantity": "1",
+          "obtain": "At the southern tip of the bare patch next to the grass field closest to the Route 5 entrance (hidden)"
+        },
+        {
+          "item": "Deep Sea Scale",
+          "quantity": "1",
+          "obtain": "In the northeast corner of the shore north of the second lake from the Route 5 entrance"
+        },
+        {
+          "item": "Black Belt",
+          "quantity": "1",
+          "obtain": "On the southern shore of the second lake from the Route 5 entrance, on top of a Photo Spot"
+        },
+        {
+          "item": "Wave Incense",
+          "quantity": "1",
+          "obtain": "Between the two grass fields, on the land south of the second lake from the Route 5 entrance (hidden)"
+        },
+        {
+          "item": "TM57 (Charge Beam)",
+          "quantity": "1",
+          "obtain": "Past the grass field on the southeast side of the third lake from the Route 5 entrance"
+        }
+      ],
+      "battles": []
+    },
+    {
+      "id": "brookletcove",
+      "name": "Brooklet Cove",
+      "notes": "Brooklet Cove is the renamed Totem's Den. It is still a different location than the rest of Brooklet Hill. | Permanent Rain",
+      "encounters": [
+        {
+          "spot": "SOS Slot 3 (Levels 21-25): Dewpider (10%), Surskit (10%), Croagunk (10%), Bidoof (10%), Shelmet (10%), Karrablast (10%), Panpour (10%), Lotad (10%), Psyduck (10%), Oshawott (10%)",
           "levelRange": {
             "min": 21,
             "max": 25
@@ -3975,7 +3985,7 @@
           ]
         },
         {
-          "spot": "Table 2 (Day)",
+          "spot": "SOS Slot 3 (Levels 21-25): Surskit (15%), Wishiwashi (15%), Goldeen (15%), Magikarp (15%), Oshawott (10%), Ducklett (10%), Lotad (10%), Basculin (5%), Basculin (Forme 1) (5%), (None) (0%)",
           "levelRange": {
             "min": 21,
             "max": 25
@@ -4039,195 +4049,7 @@
           ]
         },
         {
-          "spot": "Table 3 (Day)",
-          "levelRange": {
-            "min": 21,
-            "max": 25
-          },
-          "pokemon": [
-            {
-              "name": "Magikarp",
-              "chance": 35,
-              "sos": []
-            },
-            {
-              "name": "Goldeen",
-              "chance": 20,
-              "sos": []
-            },
-            {
-              "name": "Dewpider",
-              "chance": 15,
-              "sos": []
-            },
-            {
-              "name": "Wishiwashi",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Corphish",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Basculin",
-              "chance": 5,
-              "sos": [
-                "Basculin 1"
-              ]
-            },
-            {
-              "name": "Basculin 1",
-              "chance": 5,
-              "sos": [
-                "Basculin"
-              ]
-            }
-          ]
-        },
-        {
-          "spot": "Table 12 (Day)",
-          "levelRange": {
-            "min": 25,
-            "max": 26
-          },
-          "pokemon": [
-            {
-              "name": "Corphish",
-              "chance": 25,
-              "sos": []
-            },
-            {
-              "name": "Magikarp",
-              "chance": 20,
-              "sos": []
-            },
-            {
-              "name": "Wishiwashi",
-              "chance": 15,
-              "sos": []
-            },
-            {
-              "name": "Goldeen",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Basculin",
-              "chance": 10,
-              "sos": [
-                "Basculin 1"
-              ]
-            },
-            {
-              "name": "Basculin 1",
-              "chance": 10,
-              "sos": [
-                "Basculin"
-              ]
-            },
-            {
-              "name": "Dewpider",
-              "chance": 10,
-              "sos": []
-            }
-          ]
-        }
-      ],
-      "giftsTrades": [],
-      "staticPokemon": [],
-      "trainers": [],
-      "bossTrainers": [],
-      "shops": [],
-      "shopTables": [],
-      "items": [
-        {
-          "item": "Lapras Paddle",
-          "quantity": "1",
-          "obtain": "From Lana upon starting the trial, at the trial gates"
-        },
-        {
-          "item": "Passho Berry",
-          "quantity": "20",
-          "obtain": "On the west bank of the lake near the Route 5 entrance"
-        },
-        {
-          "item": "Water Gem",
-          "quantity": "20",
-          "obtain": "On a beach on the south side of the lake near the Route 5 entrance (requires Lapras Paddle or Sharpedo Jet)"
-        },
-        {
-          "item": "Sea Incense",
-          "quantity": "1",
-          "obtain": "At the southern tip of the bare patch next to the grass field closest to the Route 5 entrance (hidden)"
-        },
-        {
-          "item": "Deep Sea Scale",
-          "quantity": "1",
-          "obtain": "In the northeast corner of the shore north of the second lake from the Route 5 entrance"
-        },
-        {
-          "item": "Black Belt",
-          "quantity": "1",
-          "obtain": "On the southern shore of the second lake from the Route 5 entrance, on top of a Photo Spot"
-        },
-        {
-          "item": "Wave Incense",
-          "quantity": "1",
-          "obtain": "Between the two grass fields, on the land south of the second lake from the Route 5 entrance (hidden)"
-        },
-        {
-          "item": "TM57 (Charge Beam)",
-          "quantity": "1",
-          "obtain": "Past the grass field on the southeast side of the third lake from the Route 5 entrance"
-        }
-      ],
-      "battles": []
-    },
-    {
-      "id": "brookletcove",
-      "name": "Brooklet Cove",
-      "notes": "Brooklet Cove is the renamed Totem's Den. It is still a different location than the rest of Brooklet Hill. | Permanent Rain",
-      "encounters": [
-        {
-          "spot": "Table 1 (Day)",
-          "levelRange": {
-            "min": 21,
-            "max": 25
-          },
-          "pokemon": [
-            {
-              "name": "Shellos 1",
-              "chance": 25,
-              "sos": []
-            },
-            {
-              "name": "Finneon",
-              "chance": 25,
-              "sos": [
-                "Vivillon 13"
-              ]
-            },
-            {
-              "name": "Tentacool",
-              "chance": 25,
-              "sos": []
-            },
-            {
-              "name": "Castform",
-              "chance": 15,
-              "sos": []
-            },
-            {
-              "name": "Wingull",
-              "chance": 10,
-              "sos": []
-            }
-          ]
-        },
-        {
-          "spot": "Table 2 (Day)",
+          "spot": "Table 5 (Day)",
           "levelRange": {
             "min": 21,
             "max": 25
@@ -4256,40 +4078,6 @@
             {
               "name": "Luvdisc",
               "chance": 15,
-              "sos": []
-            }
-          ]
-        },
-        {
-          "spot": "Table 8 (Day)",
-          "levelRange": {
-            "min": 25,
-            "max": 26
-          },
-          "pokemon": [
-            {
-              "name": "Feebas",
-              "chance": 25,
-              "sos": []
-            },
-            {
-              "name": "Clamperl",
-              "chance": 25,
-              "sos": []
-            },
-            {
-              "name": "Luvdisc",
-              "chance": 25,
-              "sos": []
-            },
-            {
-              "name": "Wishiwashi",
-              "chance": 15,
-              "sos": []
-            },
-            {
-              "name": "Magikarp",
-              "chance": 10,
               "sos": []
             }
           ]
@@ -4467,8 +4255,8 @@
         {
           "spot": "Fish",
           "levelRange": {
-            "min": 22,
-            "max": 27
+            "min": 13,
+            "max": 17
           },
           "pokemon": [
             {
@@ -4482,8 +4270,8 @@
               "sos": []
             },
             {
-              "name": "Staryu",
-              "chance": 15,
+              "name": "Remoraid",
+              "chance": 10,
               "sos": []
             },
             {
@@ -4499,6 +4287,11 @@
             {
               "name": "Dratini",
               "chance": 10,
+              "sos": []
+            },
+            {
+              "name": "Mantyke",
+              "chance": 5,
               "sos": []
             }
           ]
@@ -4506,34 +4299,49 @@
         {
           "spot": "Bubbles",
           "levelRange": {
-            "min": 26,
-            "max": 28
+            "min": 17,
+            "max": 20
           },
           "pokemon": [
             {
-              "name": "Staryu",
-              "chance": 25,
-              "sos": []
-            },
-            {
               "name": "Dratini",
               "chance": 25,
-              "sos": []
+              "sos": [
+                "Remoraid"
+              ]
             },
             {
               "name": "Horsea",
               "chance": 20,
-              "sos": []
+              "sos": [
+                "Dratini"
+              ]
             },
             {
               "name": "Feebas",
               "chance": 15,
-              "sos": []
+              "sos": [
+                "Horsea"
+              ]
+            },
+            {
+              "name": "Mantyke",
+              "chance": 15,
+              "sos": [
+                "Feebas"
+              ]
             },
             {
               "name": "Shellder",
               "chance": 10,
               "sos": []
+            },
+            {
+              "name": "Remoraid",
+              "chance": 10,
+              "sos": [
+                "Magikarp"
+              ]
             },
             {
               "name": "Magikarp",
@@ -4558,74 +4366,80 @@
       "notes": "Permanent Harsh Sunlight",
       "encounters": [
         {
-          "spot": "Table 1 (Day)",
+          "spot": "SOS Slot 3 (Levels 20-22): Fomantis (10%), Houndour (10%), Electrike (10%), Starly (10%), Seedot (10%), Ledyba (10%), Swirlix (10%), Trubbish (10%), Emolga (10%), Turtwig (10%)",
           "levelRange": {
-            "min": 22,
-            "max": 27
+            "min": 20,
+            "max": 22
           },
           "pokemon": [
             {
-              "name": "Timburr",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Oricorio 2",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Skitty",
-              "chance": 10,
-              "sos": []
-            },
-            {
-              "name": "Lickitung",
+              "name": "Fomantis",
               "chance": 10,
               "sos": [
-                "Stantler"
+                "Vivillon 4"
               ]
             },
             {
-              "name": "Spinarak",
+              "name": "Electrike",
               "chance": 10,
               "sos": [
-                "Pineco"
+                "Houndour"
               ]
             },
             {
-              "name": "Fletchinder",
+              "name": "Houndour",
               "chance": 10,
               "sos": [
-                "Fletchling"
+                "Electrike"
               ]
             },
             {
-              "name": "Yanma",
+              "name": "Staravia",
               "chance": 10,
               "sos": [
-                "Vivillon 6"
+                "Starly"
               ]
             },
             {
-              "name": "Volbeat",
+              "name": "Nuzleaf",
               "chance": 10,
               "sos": [
-                "Illumise"
+                "Seedot"
               ]
             },
             {
-              "name": "Illumise",
+              "name": "Ledyba",
               "chance": 10,
               "sos": [
-                "Volbeat"
+                "Ledian"
               ]
             },
             {
-              "name": "Pignite",
+              "name": "Cherubi",
               "chance": 10,
               "sos": [
-                "Tepig"
+                "Swirlix"
+              ]
+            },
+            {
+              "name": "Gulpin",
+              "chance": 10,
+              "sos": [
+                "Trubbish"
+              ]
+            },
+            {
+              "name": "Dedenne",
+              "chance": 10,
+              "sos": [
+                "Emolga"
+              ]
+            },
+            {
+              "name": "Turtwig",
+              "chance": 10,
+              "sos": [
+                "Snover"
               ]
             }
           ]
