@@ -21057,6 +21057,11 @@
       "level": 25
     },
     {
+      "move": "Gravity",
+      "how": "lvl",
+      "level": 25
+    },
+    {
       "move": "Relic Song",
       "how": "lvl",
       "level": 29
@@ -21090,11 +21095,6 @@
       "move": "Draining Kiss",
       "how": "lvl",
       "level": 47
-    },
-    {
-      "move": "Gravity",
-      "how": "lvl",
-      "level": 53
     },
     {
       "move": "Moonlight",
@@ -21616,6 +21616,11 @@
       "level": 25
     },
     {
+      "move": "Gravity",
+      "how": "lvl",
+      "level": 25
+    },
+    {
       "move": "Relic Song",
       "how": "lvl",
       "level": 29
@@ -21649,11 +21654,6 @@
       "move": "Draining Kiss",
       "how": "lvl",
       "level": 47
-    },
-    {
-      "move": "Gravity",
-      "how": "lvl",
-      "level": 53
     },
     {
       "move": "Moonlight",
@@ -62583,11 +62583,6 @@
       "level": 1
     },
     {
-      "move": "Captivate",
-      "how": "lvl",
-      "level": 1
-    },
-    {
       "move": "Charm",
       "how": "lvl",
       "level": 1
@@ -62603,12 +62598,7 @@
       "level": 1
     },
     {
-      "move": "Dizzy Punch",
-      "how": "lvl",
-      "level": 1
-    },
-    {
-      "move": "Focus Punch",
+      "move": "Gravity",
       "how": "lvl",
       "level": 1
     },
@@ -62633,27 +62623,12 @@
       "level": 1
     },
     {
-      "move": "Play Nice",
-      "how": "lvl",
-      "level": 1
-    },
-    {
       "move": "Power Swap",
       "how": "lvl",
       "level": 1
     },
     {
       "move": "Psybarrage",
-      "how": "lvl",
-      "level": 1
-    },
-    {
-      "move": "Pummel",
-      "how": "lvl",
-      "level": 1
-    },
-    {
-      "move": "Quick Guard",
       "how": "lvl",
       "level": 1
     },
@@ -62668,17 +62643,7 @@
       "level": 1
     },
     {
-      "move": "Roughhousing",
-      "how": "lvl",
-      "level": 1
-    },
-    {
       "move": "Safeguard",
-      "how": "lvl",
-      "level": 1
-    },
-    {
-      "move": "Skill Swap",
       "how": "lvl",
       "level": 1
     },
@@ -62689,11 +62654,6 @@
     },
     {
       "move": "Sucker Punch",
-      "how": "lvl",
-      "level": 1
-    },
-    {
-      "move": "Telekinesis",
       "how": "lvl",
       "level": 1
     },
@@ -83950,6 +83910,11 @@
       "move": "Cross Poison",
       "how": "lvl",
       "level": 30
+    },
+    {
+      "move": "Rage Powder",
+      "how": "lvl",
+      "level": 35
     },
     {
       "move": "Toxic",
@@ -203466,7 +203431,7 @@
       "level": 10
     },
     {
-      "move": "Double Kick",
+      "move": "Kick-Step",
       "how": "lvl",
       "level": 13
     },
@@ -203971,7 +203936,7 @@
       "level": 10
     },
     {
-      "move": "Double Kick",
+      "move": "Kick-Step",
       "how": "lvl",
       "level": 13
     },
@@ -204493,7 +204458,7 @@
       "level": 10
     },
     {
-      "move": "Double Kick",
+      "move": "Kick-Step",
       "how": "lvl",
       "level": 13
     },
@@ -208979,6 +208944,11 @@
     }
   ],
   "mimejr": [
+    {
+      "move": "Gravity",
+      "how": "lvl",
+      "level": 1
+    },
     {
       "move": "Metronome",
       "how": "lvl",
@@ -257219,6 +257189,11 @@
       "level": 57
     },
     {
+      "move": "Coil",
+      "how": "lvl",
+      "level": 60
+    },
+    {
       "move": "Megahorn",
       "how": "lvl",
       "level": 64
@@ -257530,6 +257505,11 @@
       "move": "Lunge",
       "how": "lvl",
       "level": 57
+    },
+    {
+      "move": "Coil",
+      "how": "lvl",
+      "level": 60
     },
     {
       "move": "Megahorn",
@@ -281970,6 +281950,11 @@
       "level": 14
     },
     {
+      "move": "Gravity",
+      "how": "lvl",
+      "level": 17
+    },
+    {
       "move": "Psybeam",
       "how": "lvl",
       "level": 17
@@ -282373,12 +282358,12 @@
   ],
   "beheeyem": [
     {
-      "move": "Guard Split",
+      "move": "Discharge",
       "how": "lvl",
       "level": 0
     },
     {
-      "move": "Discharge",
+      "move": "Guard Split",
       "how": "lvl",
       "level": 0
     },
@@ -282408,6 +282393,11 @@
       "level": 1
     },
     {
+      "move": "Discharge",
+      "how": "lvl",
+      "level": 1
+    },
+    {
       "move": "Electric Terrain",
       "how": "lvl",
       "level": 1
@@ -282429,11 +282419,6 @@
     },
     {
       "move": "Ion Deluge",
-      "how": "lvl",
-      "level": 1
-    },
-    {
-      "move": "Discharge",
       "how": "lvl",
       "level": 1
     },
@@ -282521,6 +282506,11 @@
       "move": "Charge Beam",
       "how": "lvl",
       "level": 14
+    },
+    {
+      "move": "Gravity",
+      "how": "lvl",
+      "level": 17
     },
     {
       "move": "Psybeam",
@@ -287609,6 +287599,14 @@
     },
     {
       "move": "Earth Power",
+      "how": "tm"
+    },
+    {
+      "move": "Knock Off",
+      "how": "tm"
+    },
+    {
+      "move": "Nature Power",
       "how": "tm"
     },
     {

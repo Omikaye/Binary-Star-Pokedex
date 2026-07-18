@@ -2488,9 +2488,9 @@
       "Psychic"
     ],
     "abilities": {
-      "0": "Oblivious",
+      "0": "Own Tempo",
       "1": "Regenerator",
-      "H": "Own Tempo"
+      "H": "Simple"
     },
     "baseStats": {
       "hp": 90,
@@ -5431,7 +5431,7 @@
     "abilities": {
       "0": "Super Luck",
       "1": "Serene Grace",
-      "H": "Hustle"
+      "H": "Cute Charm"
     },
     "baseStats": {
       "hp": 35,
@@ -5461,7 +5461,7 @@
     "abilities": {
       "0": "Super Luck",
       "1": "Serene Grace",
-      "H": "Hustle"
+      "H": "Cute Charm"
     },
     "baseStats": {
       "hp": 65,
@@ -6255,7 +6255,12 @@
     "eggGroups": [
       "Undiscovered"
     ],
-    "gender": "N"
+    "gender": "N",
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Hidden Power",
+      "zCrystal": "Psychium Z"
+    }
   },
   "wobbuffet": {
     "num": 202,
@@ -6284,6 +6289,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "All-Out Pummeling-R",
+      "baseMove": "Counter",
+      "zCrystal": "Psychium Z"
     }
   },
   "girafarig": {
@@ -7264,7 +7274,7 @@
     "abilities": {
       "0": "Intimidate",
       "1": "Slush Rush",
-      "H": "Sap Sipper"
+      "H": "Illusion"
     },
     "baseStats": {
       "hp": 86,
@@ -9117,6 +9127,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Acid Downpour-R",
+      "baseMove": "Belch",
+      "zCrystal": "Normalium Z"
     }
   },
   "makuhita": {
@@ -10399,7 +10414,7 @@
     "abilities": {
       "0": "Levitate",
       "1": "Water Compaction",
-      "H": "Cloud Nine"
+      "H": "Misty Surge"
     },
     "baseStats": {
       "hp": 90,
@@ -10430,8 +10445,8 @@
     ],
     "abilities": {
       "0": "Levitate",
-      "1": "Flash Fire",
-      "H": "Cloud Nine"
+      "1": "Solar Power",
+      "H": "Drought"
     },
     "baseStats": {
       "hp": 90,
@@ -10988,7 +11003,7 @@
     "abilities": {
       "0": "Cursed Body",
       "1": "Frisk",
-      "H": "Anticipation"
+      "H": "Mummy"
     },
     "baseStats": {
       "hp": 48,
@@ -12739,9 +12754,9 @@
       "Grass"
     ],
     "abilities": {
-      "0": "Flower Veil",
-      "1": "Overcoat",
-      "H": "Grass Pelt"
+      "0": "Grass Pelt",
+      "1": "Flower Veil",
+      "H": "Grassy Surge"
     },
     "baseStats": {
       "hp": 90,
@@ -13180,7 +13195,7 @@
     ],
     "abilities": {
       "0": "Run Away",
-      "1": "No Guard",
+      "1": "Overcoat",
       "H": "Limber"
     },
     "baseStats": {
@@ -13210,8 +13225,8 @@
       "Fairy"
     ],
     "abilities": {
-      "0": "Cute Charm",
-      "1": "No Guard",
+      "0": "Dancer",
+      "1": "Sap Sipper",
       "H": "Limber"
     },
     "baseStats": {
@@ -13231,6 +13246,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Return",
+      "zCrystal": "Fairium Z"
     },
     "formes": [
       "Lopunny",
@@ -14386,7 +14406,7 @@
       "F": 0.5
     },
     "zmove": {
-      "zMove": "Breakneck Blitz-R",
+      "zMove": "Acid Downpour-R",
       "baseMove": "Wring Out",
       "zCrystal": "Grassium Z"
     }
@@ -14470,7 +14490,7 @@
     "abilities": {
       "0": "Super Luck",
       "1": "Serene Grace",
-      "H": "Hustle"
+      "H": "Cute Charm"
     },
     "baseStats": {
       "hp": 85,
@@ -14747,7 +14767,7 @@
     "abilities": {
       "0": "Levitate",
       "1": "Shadow Shield",
-      "H": "Anticipation"
+      "H": "Iron Fist"
     },
     "baseStats": {
       "hp": 60,
@@ -15680,6 +15700,11 @@
     "genderRatio": {
       "M": 0.5,
       "F": 0.5
+    },
+    "zmove": {
+      "zMove": "Breakneck Blitz-R",
+      "baseMove": "Retaliate",
+      "zCrystal": "Darkinium Z"
     }
   },
   "purrloin": {
@@ -22754,7 +22779,7 @@
     "abilities": {
       "0": "Dancer",
       "1": "Dancer",
-      "H": "Dancer"
+      "H": "Honey Gather"
     },
     "baseStats": {
       "hp": 75,
@@ -28527,7 +28552,7 @@
     "abilities": {
       "0": "Dancer",
       "1": "Dancer",
-      "H": "Dancer"
+      "H": "Honey Gather"
     },
     "baseStats": {
       "hp": 75,
@@ -28565,7 +28590,7 @@
     "abilities": {
       "0": "Dancer",
       "1": "Dancer",
-      "H": "Dancer"
+      "H": "Honey Gather"
     },
     "baseStats": {
       "hp": 75,
@@ -28603,7 +28628,7 @@
     "abilities": {
       "0": "Dancer",
       "1": "Dancer",
-      "H": "Dancer"
+      "H": "Honey Gather"
     },
     "baseStats": {
       "hp": 75,
