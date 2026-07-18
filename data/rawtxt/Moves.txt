@@ -4200,9 +4200,9 @@ Base PP: 10
 Effect Turns: Min 2 / Max 2
 Z-Power: 0
 Z-Effect: +1 Special Defense
-Flags: Protect, Reflectable, Mirror, AnimateAlly
+Flags: Protect, Reflectable, Mirror, Sound, AnimateAlly
 Description:
-The user lets loose a huge yawn that lulls the target into falling asleep on the next turn. Z: +1 Sp.Def
+The user lets loose a huge yawn that lulls the target into falling asleep on the next turn. (Sound) Z: +1 Sp.Def
 
 ID: 282
 Name: Knock Off
