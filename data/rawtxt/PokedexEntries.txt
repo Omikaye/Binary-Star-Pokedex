@@ -1899,7 +1899,7 @@
     "num": 79,
     "name": "Slowpoke",
     "types": ["Water","Psychic"],
-    "abilities": { "0": "Oblivious", "1": "Regenerator", "H": "Own Tempo" },
+    "abilities": { "0": "Own Tempo", "1": "Regenerator", "H": "Simple" },
     "baseStats": {
       "hp": 90,
       "atk": 65,
@@ -4203,7 +4203,7 @@
     "num": 175,
     "name": "Togepi",
     "types": ["Fairy"],
-    "abilities": { "0": "Super Luck", "1": "Serene Grace", "H": "Hustle" },
+    "abilities": { "0": "Super Luck", "1": "Serene Grace", "H": "Cute Charm" },
     "baseStats": {
       "hp": 35,
       "atk": 20,
@@ -4227,7 +4227,7 @@
     "num": 176,
     "name": "Togetic",
     "types": ["Fairy","Flying"],
-    "abilities": { "0": "Super Luck", "1": "Serene Grace", "H": "Hustle" },
+    "abilities": { "0": "Super Luck", "1": "Serene Grace", "H": "Cute Charm" },
     "baseStats": {
       "hp": 65,
       "atk": 55,
@@ -4845,7 +4845,7 @@
     "gender": 255,
     "tms": ["Protect","Hidden Power","Earth Power","Nature Power"],
     "tutors": ["Superpower"],
-    "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
+    "zmove": { "Z-Move": "Breakneck Blitz-R", "Base Move": "Hidden Power", "Z-Crystal": "Psychium Z" }
   },
   {
     "num": 202,
@@ -4869,7 +4869,7 @@
     "gender": 127,
     "tms": ["Protect"],
     "tutors": ["Quash","Endeavor","Magic Coat","Ally Switch"],
-    "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
+    "zmove": { "Z-Move": "All-Out Pummeling-R", "Base Move": "Counter", "Z-Crystal": "Psychium Z" }
   },
   {
     "num": 203,
@@ -5619,7 +5619,7 @@
     "num": 234,
     "name": "Stantler",
     "types": ["Normal","Psychic"],
-    "abilities": { "0": "Intimidate", "1": "Slush Rush", "H": "Sap Sipper" },
+    "abilities": { "0": "Intimidate", "1": "Slush Rush", "H": "Illusion" },
     "baseStats": {
       "hp": 86,
       "atk": 105,
@@ -7101,7 +7101,7 @@
     "gender": 127,
     "tms": ["Protect","Earthquake","Thunderbolt","Brick Break","Surf","Hidden Power","Foul Play","Blizzard","Ice Beam","Flamethrower","Flame Charge","Nasty Plot","Facade","Rock Tomb","Hyper Beam","Solar Beam","Aqua Tail","Shadow Ball","Bulldoze","Water Pulse","Fire Blast","Power-Up Punch","Dizzy Punch","Snarl","Round","Icy Wind","Dragon Pulse","Drain Punch","Psychic Fangs","Ice Punch","Rock Slide","Tri Attack","Fire Punch","Shock Wave","Mega Kick","Focus Blast","Thunder Punch","Zen Headbutt","Mega Punch","Knock Off","Thunder","Trailblaze"],
     "tutors": ["Embargo","Rest","Tickle","Substitute","Skill Swap","Rain Dance","Psych Up","Hyper Voice","Attract","Snore","Overheat","Heat Wave","Confide","Echoed Voice","Smack Down","Sunny Day","Gastro Acid","Roar","Toxic","Endeavor","Outrage","Double Team","Stomping Tantrum","Sleep Talk"],
-    "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
+    "zmove": { "Z-Move": "Acid Downpour-R", "Base Move": "Belch", "Z-Crystal": "Normalium Z" }
   },
   {
     "num": 296,
@@ -8091,7 +8091,7 @@
     "num": 337,
     "name": "Lunatone",
     "types": ["Rock","Psychic"],
-    "abilities": { "0": "Levitate", "1": "Water Compaction", "H": "Cloud Nine" },
+    "abilities": { "0": "Levitate", "1": "Water Compaction", "H": "Misty Surge" },
     "baseStats": {
       "hp": 90,
       "atk": 45,
@@ -8115,7 +8115,7 @@
     "num": 338,
     "name": "Solrock",
     "types": ["Rock","Psychic"],
-    "abilities": { "0": "Levitate", "1": "Flash Fire", "H": "Cloud Nine" },
+    "abilities": { "0": "Levitate", "1": "Solar Power", "H": "Drought" },
     "baseStats": {
       "hp": 90,
       "atk": 110,
@@ -8547,7 +8547,7 @@
     "num": 356,
     "name": "Dusclops",
     "types": ["Ghost"],
-    "abilities": { "0": "Cursed Body", "1": "Frisk", "H": "Anticipation" },
+    "abilities": { "0": "Cursed Body", "1": "Frisk", "H": "Mummy" },
     "baseStats": {
       "hp": 48,
       "atk": 70,
@@ -9915,7 +9915,7 @@
     "num": 413,
     "name": "Wormadam",
     "types": ["Bug","Grass"],
-    "abilities": { "0": "Flower Veil", "1": "Overcoat", "H": "Grass Pelt" },
+    "abilities": { "0": "Grass Pelt", "1": "Flower Veil", "H": "Grassy Surge" },
     "baseStats": {
       "hp": 90,
       "atk": 50,
@@ -10251,7 +10251,7 @@
     "num": 427,
     "name": "Buneary",
     "types": ["Normal","Fairy"],
-    "abilities": { "0": "Run Away", "1": "No Guard", "H": "Limber" },
+    "abilities": { "0": "Run Away", "1": "Overcoat", "H": "Limber" },
     "baseStats": {
       "hp": 55,
       "atk": 66,
@@ -10275,7 +10275,7 @@
     "num": 428,
     "name": "Lopunny",
     "types": ["Normal","Fairy"],
-    "abilities": { "0": "Cute Charm", "1": "No Guard", "H": "Limber" },
+    "abilities": { "0": "Dancer", "1": "Sap Sipper", "H": "Limber" },
     "baseStats": {
       "hp": 65,
       "atk": 88,
@@ -10293,7 +10293,7 @@
     "gender": 127,
     "tms": ["Protect","Thunderbolt","Brick Break","Surf","Dig","Close Combat","Calm Mind","Hidden Power","Facade","Hyper Beam","Shadow Ball","Low Sweep","Bulldoze","Water Pulse","Play Rough","Bulk Up","Power-Up Punch","U-turn","Dizzy Punch","Round","Charge Beam","Thunder Wave","Acrobatics","Aura Sphere","Drain Punch","Ice Punch","Tri Attack","Fire Punch","Meditate","Shock Wave","Mega Kick","Blaze Kick","Focus Blast","Aerial Ace","Thunder Punch","Mega Punch","Thunder","Trailblaze"],
     "tutors": ["Embargo","Rest","Tickle","Substitute","Rain Dance","Iron Tail","Superpower","Fling","Grass Knot","Hyper Voice","Attract","Snore","Confide","Echoed Voice","Moonblast","Agility","Sunny Day","Thief","Covet","Helping Hand","Toxic","Endeavor","Double Team","Magic Coat","Heal Bell","Stomping Tantrum","Sleep Talk"],
-    "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
+    "zmove": { "Z-Move": "Breakneck Blitz-R", "Base Move": "Return", "Z-Crystal": "Fairium Z" }
   },
   {
     "num": 429,
@@ -11181,7 +11181,7 @@
     "gender": 127,
     "tms": ["Protect","Earthquake","Psyshock","Brick Break","Calm Mind","Hidden Power","Reflect","Facade","Rock Tomb","Hyper Beam","Solar Beam","Swords Dance","Bulldoze","Venoshock","Power-Up Punch","Round","Energy Ball","Aura Sphere","Explosion","Drain Punch","Psychic","Rock Slide","Sludge Bomb","Tri Attack","Giga Drain","Focus Blast","Aerial Ace","Zen Headbutt","Earth Power","Seed Bomb","Mega Punch","Knock Off","Nature Power","Poison Jab","Trailblaze"],
     "tutors": ["Frenzy Plant","Grassy Terrain","Embargo","Rest","Tickle","Substitute","Psych Up","Superpower","Grass Knot","Attract","Snore","Infestation","Confide","Pain Split","Sunny Day","Thief","Helping Hand","Toxic","Endeavor","Double Team","Stomping Tantrum","Throat Chop","Sleep Talk"],
-    "zmove": { "Z-Move": "Breakneck Blitz-R", "Base Move": "Wring Out", "Z-Crystal": "Grassium Z" }
+    "zmove": { "Z-Move": "Acid Downpour-R", "Base Move": "Wring Out", "Z-Crystal": "Grassium Z" }
   },
   {
     "num": 466,
@@ -11235,7 +11235,7 @@
     "num": 468,
     "name": "Togekiss",
     "types": ["Fairy","Flying"],
-    "abilities": { "0": "Super Luck", "1": "Serene Grace", "H": "Hustle" },
+    "abilities": { "0": "Super Luck", "1": "Serene Grace", "H": "Cute Charm" },
     "baseStats": {
       "hp": 85,
       "atk": 70,
@@ -11451,7 +11451,7 @@
     "num": 477,
     "name": "Dusknoir",
     "types": ["Ghost"],
-    "abilities": { "0": "Levitate", "1": "Shadow Shield", "H": "Anticipation" },
+    "abilities": { "0": "Levitate", "1": "Shadow Shield", "H": "Iron Fist" },
     "baseStats": {
       "hp": 60,
       "atk": 100,
@@ -12213,7 +12213,7 @@
     "gender": 127,
     "tms": ["Protect","Dig","Hidden Power","Facade","Rock Tomb","Hyper Beam","Shadow Ball","Bulldoze","Play Rough","Snarl","Round","Iron Head","Thunder Wave","Psychic Fangs","Tri Attack","Shock Wave","Mega Kick","Zen Headbutt","Thunder","Trailblaze"],
     "tutors": ["Super Fang","Rest","Substitute","Rain Dance","Superpower","Hyper Voice","Attract","Snore","Echoed Voice","Sunny Day","Covet","Helping Hand","Roar","Toxic","Endeavor","Double Team","Stomping Tantrum","Sleep Talk"],
-    "zmove": { "Z-Move": "", "Base Move": "", "Z-Crystal": "" }
+    "zmove": { "Z-Move": "Breakneck Blitz-R", "Base Move": "Retaliate", "Z-Crystal": "Darkinium Z" }
   },
   {
     "num": 509,
@@ -14851,7 +14851,7 @@
     "callrate": 15,
     "catchrate": 255,
     "gender": 127,
-    "tms": ["Protect","Earthquake","Thunderbolt","Surf","Dig","Hidden Power","Foul Play","Dive","Facade","Rock Tomb","Hyper Beam","Aqua Tail","Bulldoze","Water Pulse","Venoshock","Electroweb","Acid Armor","Round","Scald","Charge Beam","Thunder Wave","Volt Switch","Rock Slide","Sludge Bomb","Drill Run","Tri Attack","Mudslide","Shock Wave","Earth Power","Thunder","Trailblaze"],
+    "tms": ["Protect","Earthquake","Thunderbolt","Surf","Dig","Hidden Power","Foul Play","Dive","Facade","Rock Tomb","Hyper Beam","Aqua Tail","Bulldoze","Water Pulse","Venoshock","Electroweb","Acid Armor","Round","Scald","Charge Beam","Thunder Wave","Volt Switch","Rock Slide","Sludge Bomb","Drill Run","Tri Attack","Mudslide","Shock Wave","Earth Power","Knock Off","Nature Power","Thunder","Trailblaze"],
     "tutors": ["Electric Terrain","Rest","Gunk Shot","Substitute","Stealth Rock","Rain Dance","Magnet Rise","Sandstorm","Hyper Voice","Attract","Snore","Infestation","Confide","Echoed Voice","Pain Split","Toxic","Endeavor","Double Team","Magic Coat","Liquidation","Stomping Tantrum","Sleep Talk"],
     "zmove": { "Z-Move": "Gigavolt Havoc-R", "Base Move": "Discharge", "Z-Crystal": "Groundium Z" }
   },
@@ -17787,7 +17787,7 @@
     "num": 741,
     "name": "Oricorio",
     "types": ["Fire","Flying"],
-    "abilities": { "0": "Dancer", "1": "Dancer", "H": "Dancer" },
+    "abilities": { "0": "Dancer", "1": "Dancer", "H": "Honey Gather" },
     "baseStats": {
       "hp": 75,
       "atk": 85,
@@ -21819,7 +21819,7 @@
     "num": 909,
     "name": "Oricorio 1",
     "types": ["Electric","Flying"],
-    "abilities": { "0": "Dancer", "1": "Dancer", "H": "Dancer" },
+    "abilities": { "0": "Dancer", "1": "Dancer", "H": "Honey Gather" },
     "baseStats": {
       "hp": 75,
       "atk": 85,
@@ -21843,7 +21843,7 @@
     "num": 910,
     "name": "Oricorio 2",
     "types": ["Psychic","Flying"],
-    "abilities": { "0": "Dancer", "1": "Dancer", "H": "Dancer" },
+    "abilities": { "0": "Dancer", "1": "Dancer", "H": "Honey Gather" },
     "baseStats": {
       "hp": 75,
       "atk": 85,
@@ -21867,7 +21867,7 @@
     "num": 911,
     "name": "Oricorio 3",
     "types": ["Ghost","Flying"],
-    "abilities": { "0": "Dancer", "1": "Dancer", "H": "Dancer" },
+    "abilities": { "0": "Dancer", "1": "Dancer", "H": "Honey Gather" },
     "baseStats": {
       "hp": 75,
       "atk": 85,
