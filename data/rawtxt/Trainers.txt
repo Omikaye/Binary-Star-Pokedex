@@ -1,7 +1,7 @@
 000 - (Pokémon Trainer) 
 Location: (None)
 Desc: (None)
-Route #: 1
+Route #: 2
 Prize Money: $0
 
 001 - (Lass) Madison
@@ -9,10 +9,10 @@ Location: Ten Carat Beach
 Desc: Mandatory - None
 Route #: 0
 Prize Money: $336
-Cleffa (Lv. 7) @Sticky Barb [Serious] {Magic Guard} <Sing/Metronome/Charm/Aromatherapy>
 Igglybuff (Lv. 7) @Chilan Berry [Serious] {Competitive} <Metronome/Sing/Defense Curl/Rollout>
-Togepi (Lv. 8) @Ring Target [Serious] {Serene Grace} <Metronome/Bestow/Safeguard/Charm>
 Happiny (Lv. 7) @Lagging Tail [Serious] {Friend Guard} <Charm/Copycat/Bestow/Round>
+Togepi (Lv. 8) @Ring Target [Serious] {Serene Grace} <Metronome/Bestow/Safeguard/Charm>
+Cleffa (Lv. 7) @Sticky Barb [Serious] {Magic Guard} <Sing/Metronome/Charm/Aromatherapy>
 
 002 - (Lass) Isabella
 Location: Route 2
@@ -140,24 +140,27 @@ Prize Money: $3740
 Spinarak (Lv. 17) @Red Card [Jolly] {Intimidate} <Poison Fang/Sticky Web/Shadow Sneak/Toxic Thread>
 Rockruff (Lv. 17) @Red Card [Jolly] {Steadfast} <Roar/Stealth Rock/Bite/Smack Down>
 Cacnea (Lv. 17) @Red Card [Impish] {Rough Skin} <Leech Seed/Spikes/Needle Arm/Rapid Spin>
-Slowpoke (Lv. 17) @Red Card [Relaxed] {Oblivious} <Confusion/Disable/Yawn/Water Gun>
+Slowpoke (Lv. 17) @Red Card [Relaxed] {Own Tempo} <Confusion/Disable/Yawn/Water Gun>
 Pancham (Lv. 17) @Red Card [Jolly] {Scrappy} <Work Up/Torment/Comet Punch/Circle Throw>
 
-017 - (Black Belt) ●●●
-Location: (None)
-Desc: (None)
-Route #: 0
-Prize Money: $160
-Yungoos (Lv. 5) [Serious] {Any} <(None)/(None)/(None)/(None)>
+017 - (Swimsuit) Sandra
+Location: Big Wave Beach
+Desc: Optional - Blocks access to Sandy Cave
+Route #: 5
+Prize Money: $792
+Popplio (Lv. 12) @Lum Berry [Quiet] {Serene Grace} <Aqua Ring/Bubble/Helping Hand/Sweet Tooth>
+Wingull (Lv. 12) @Wide Lens [Hasty] {Hydration} <Supersonic/Round/Gust/Pluck>
+Binacle (Lv. 11) @Ganlon Berry [Brave] {Multistriker} <Smack Down/Withdraw/Tickle/Mud-Slap>
 
 018 - (Swim Gal) Ariel
 Location: Big Wave Beach
 Desc: Story - Multi Battle Ally
 Route #: 1
-Prize Money: $720
-Mantyke (Lv. 12) @Waterium Z [Modest] {Water Absorb} <Bounce/Bubble/Splash/Confuse Ray>
-Remoraid (Lv. 13) @Psychic Gem [Hasty] {Super Luck} <Water Gun/Soak/Psybeam/Bullet Seed>
-Tentacool (Lv. 12) @Weakness Policy [Modest] {Clear Body} <Bubble/Acid/Constrict/Poison Sting>
+Prize Money: $780
+Mantyke (Lv. 13) @Waterium Z [Quiet] {Water Absorb} <Bounce/Aerial Ace/Bubble/Splash>
+Remoraid (Lv. 13) @Psychic Gem [Timid] {Super Luck} <Water Gun/Lock-On/Psybeam/Bullet Seed>
+Tentacool (Lv. 13) @Waterium Z [Quiet] {Liquid Ooze} <Bubble/Acid/Constrict/Poison Sting>
+Wailmer (Lv. 13) @Wide Lens [Quiet] {Oblivious} <Rollout/Soak/Water Gun/Defense Curl>
 
 019 - (Team Skull) Grunt Ay
 Location: Big Wave Beach
@@ -298,7 +301,7 @@ Ralts (Lv. 16) @Normalium Z [Bold] {Trace} <Disarming Voice/Heart Stamp/Double T
 Abra (Lv. 16) @Toxic Orb [Timid] {Comatose} <Substitute/Trick/Ally Switch/Hidden Power>
 Aron (Lv. 15) @Jaboca Berry [Brave] {Sturdy} <Protect/Metal Claw/Rock Tomb/Magnitude>
 
-034 - (Swimmer Beau) Yasu
+034 - (Swimmer Bro) Yasu
 Location: Ten Carat Sea
 Desc: Optional - None
 Route #: 1
@@ -308,7 +311,7 @@ Shellos 1 (Lv. 28) @Water Gem [Bold] {Gooey} <Mud Bomb/Water Pulse/Hidden Power/
 Pyukumuku (Lv. 28) @Enigma Berry [Relaxed] {Innards Out} <Mirror Coat/Toxic/Purify/Aqua Ring>
 Krabby (Lv. 27) @Steelium Z [Brave] {Shell Armor} <Protect/Trample/Metal Claw/Razor Shell>
 
-035 - (Swimmer Beau) Kalani
+035 - (Swimmer Bro) Kalani
 Location: Ten Carat Sea
 Desc: Optional - None
 Route #: 2
@@ -440,10 +443,11 @@ Rattata 1 (Lv. 12) @Oran Berry [Naughty] {Pickup} <Thief/Quick Attack/Pursuit/Qu
 Location: Hau'oli City
 Desc: Story - Multibattle Ally Vs Team Skull
 Route #: 0
-Prize Money: $504
-Pichu (Lv. 10) @Apicot Berry [Timid] {Battery} <Quick Attack/Charm/Thunder Shock/Charge>
-Krabby (Lv. 9) @Oran Berry [Brave] {Hyper Cutter} <Clamp/Mud Shot/Mud Sport/Harden>
-Zigzagoon (Lv. 9) @Oran Berry [Hasty] {Pickup} <Pursuit/Charm/Headbutt/Sand Down>
+Prize Money: $560
+Pichu (Lv. 12) @Eviolite [Timid] {Battery} <Quick Attack/Charm/Thunder Shock/Charge>
+Diglett 1 (Lv. 11) @Oran Berry [Adamant] {Tangling Hair} <Sand Tomb/Beat Up/Sand Down/Mirror Shot>
+Rufflet (Lv. 11) @Oran Berry [Hasty] {Hustle} <Air Cutter/Peck/Tackle/Rock Smash>
+Grubbin (Lv. 10) @Kee Berry [Impish] {Static} <Charge/Thunder Wave/Electroweb/Constrict>
 
 050 - (Pokémon Trainer) [~ 50]
 Location: (None)
@@ -468,7 +472,7 @@ Pidove (Lv. 10) @Silk Scarf [Hasty] {Super Luck} <Gust/Leer/Tackle/Lucky Chant>
 Minccino (Lv. 10) @Lum Berry [Quirky] {Cute Charm} <Helping Hand/Tickle/Attract/Tackle>
 Pansear (Lv. 11) @Oran Berry [Naive] {Flame Body} <Ember/Lick/Quick Attack/Recycle>
 Yungoos (Lv. 12) @Shell Bell [Relaxed] {Stakeout} <Pursuit/Super Fang/Leer/Tackle>
-Shuppet (Lv. 11) @Ghost Gem [Naughty] {Insomnia} <Lick/Torment/Tackle/Grudge>
+Shuppet (Lv. 11) @Ghost Gem [Naughty] {Insomnia} <Lick/Torment/Tackle/Screech>
 Smeargle (Lv. 12) @Normalium Z [Quirky] {Trace} <Sketch/Thunder Shock/Poison Sting/Mud-Slap>
 
 053 - (Trial Guide) [~ 53]
@@ -575,7 +579,7 @@ Route #: 3
 Prize Money: $2520
 Grimer (Lv. 21) @Eject Button [Relaxed] {Regenerator} <Disable/Acid Spray/Acid Armor/Toxic>
 Vulpix (Lv. 22) @Fire Gem [Timid] {Flash Fire} <Will-O-Wisp/Confuse Ray/Fire Spin/Sweet Tooth>
-Geodude (Lv. 22) @Weakness Policy [Impish] {Sturdy} <Mega Punch/Smack Down/Rollout/Bulldoze>
+Meowth (Lv. 22) @Protective Pads [Jolly] {Frisk} <Fake Out/Hone Claws/Quick Attack/Uproar>
 Squirtle (Lv. 21) @Starf Berry [Bold] {Shell Armor} <Bite/Aqua Jet/Bubble Beam/Rapid Spin>
 
 065 - (Beauty) Brittney
@@ -588,12 +592,16 @@ Cubchoo (Lv. 26) @Ice Gem [Jolly] {Slush Rush} <Snowscape/Brine/Fury Swipes/Ice 
 Fraxure (Lv. 27) @Shell Bell [Impish] {Hyper Cutter} <Metal Claw/Slash/Dragon Tail/False Swipe>
 Duskull (Lv. 28) @Firium Z [Careful] {Levitate} <Ominous Wind/Will-O-Wisp/Haze/Mega Drain>
 
-066 - (Youngster) [~ 66]
-Location: (None)
-Desc: (None)
-Route #: 0
-Prize Money: $100
-Yungoos (Lv. 5) [Serious] {Any} <(None)/(None)/(None)/(None)>
+066 - (Challenge Guide) Pikachu Fan
+Location: Pikachu Valley
+Desc: Optional - Reward: Electrium Z
+Route #: 1
+Prize Money: $2760
+Pachirisu (Lv. 22) @Kee Berry [Calm] {Cheek Pouch} <Helping Hand/Magnet Rise/Thunder Shock/Recycle>
+Mimikyu (Lv. 22) @Terrain Extender [Sassy] {Disguise} <Copycat/Curse/Draining Kiss/Electric Terrain>
+Marill (Lv. 22) @Eviolite [Bold] {Sap Sipper} <Aqua Ring/Bubble Beam/Follow Me/Fake Tears>
+Pikachu (Lv. 22) @Air Balloon [Timid] {Battery} <Electric Terrain/Encore/Feint/Electro Ball>
+Pikachu 3 (Lv. 23) @Electrium Z [Timid] {Surge Surfer} <Aurora Beam/Protect/Shock Wave/Electro Ball>
 
 067 - (Up and Coming) [~ 67]
 Location: (None)
@@ -620,7 +628,7 @@ Route #: 0
 Prize Money: $200
 Yungoos (Lv. 5) [Serious] {Any} <(None)/(None)/(None)/(None)>
 
-070 - (Swimmer Beau) Dakota
+070 - (Swimmer Bro) Dakota
 Location: Route 7
 Desc: Optional - None
 Route #: 1
@@ -629,7 +637,7 @@ Kingler (Lv. 29) @Rockium Z [Impish] {Shell Armor} <Trample/Razor Shell/Wide Gua
 Quagsire (Lv. 30) @Ice Gem [Bold] {Water Absorb} <Mud Bomb/Amnesia/Ice Punch/Tail Slap>
 Golduck (Lv. 29) @Colbur Berry [Hasty] {Unaware} <Amnesia/Brave Bird/Water Pulse/Zen Headbutt>
 
-071 - (Swimmer Beau) Casey
+071 - (Swimmer Bro) Casey
 Location: Route 7
 Desc: Optional - None
 Route #: 2
@@ -661,34 +669,32 @@ Dewott (Lv. 30) @Shell Bell [Naive] {Shell Armor} <Razor Shell/Revenge/Fury Cutt
 
 074 - (Kalosian Man) Dexio
 Location: Heahea City
-Desc: Miniboss - Blocks access to Route 4
+Desc: Miniboss - Multi Battle with Sina, blocks access to Route 4
 Route #: 1
 Prize Money: $6400
+Inkay (Lv. 19) @Normalium Z [Brave] {Contrary} <Protect/Psycrush/Topsy-Turvy/Power Trip>
 Espurr (Lv. 20) @Light Clay [Timid] {Own Tempo} <Charm/Psybeam/Fake Out/Reflect>
-Natu (Lv. 19) @Colbur Berry [Sassy] {Anticipation} <Stored Power/Air Cutter/Agility/Meditate>
-Inkay (Lv. 19) @Quick Claw [Brave] {Contrary} <Nightmare/Psycrush/Topsy-Turvy/Hypnosis>
-Exeggcute (Lv. 20) @Sitrus Berry [Quiet] {Harvest} <Bullet Seed/Soft-Boiled/Leech Seed/Psybeam>
-Chingling (Lv. 19) @Normalium Z [Calm] {Soundproof} <Magnet Bomb/Round/Disarming Voice/Yawn>
 Kirlia (Lv. 20) @Muscle Band [Jolly] {Trace} <Heal Pulse/Kick-Step/Disarming Voice/Heart Stamp>
 
 075 - (Kalosian Woman) Sina
-Location: (None)
-Desc: (None)
-Route #: 0
-Prize Money: $2100
-Smoochum (Lv. 15) [Serious] {Dry Skin} <Powder Snow/Pummel/(None)/(None)>
-Glaceon (Lv. 15) [Serious] {Slush Rush} <Icy Wind/Quick Attack/(None)/(None)>
+Location: Heahea City
+Desc: Miniboss - Multi Battle with Dexio, blocks Route 4 access.
+Route #: 2
+Prize Money: $2660
+Amaura (Lv. 20) @Icy Rock [Sassy] {Snow Warning} <Take Down/Icy Wind/Rock Tomb/Avalanche>
+Bergmite (Lv. 20) @Hard Stone [Brave] {Stamina} <Stealth Rock/Cold Snap/Barrier/Power Gem>
+Glaceon (Lv. 19) @Normalium Z [Hasty] {Ice Body} <Protect/Avalanche/Mud-Slap/Ice Shard>
 
 076 - (Tapu's Chosen) Hau
 Location: Paniola Town
 Desc: Boss - Hau Battle 4 | Rowlet Chosen
 Route #: 1
 Prize Money: $3220
-Brionne (Lv. 23) @Water Gem [Modest] {Liquid Voice} <Double Slap/Icy Wind/Fake Out/Disarming Voice>
+Rhyhorn (Lv. 22) @Salac Berry [Adamant] {Lightning Rod} <Rock Tomb/Trample/Rock Polish/Horn Attack>
 Gulpin (Lv. 21) @Black Sludge [Sassy] {Innards Out} <Poison Gas/Acid Spray/Yawn/Encore>
-Noibat (Lv. 22) @Flyinium Z [Timid] {Soundproof} <Twister/Air Cutter/Dragon Breath/Sonic Boom>
+Brionne (Lv. 23) @Shell Bell [Modest] {Liquid Voice} <Double Slap/Icy Wind/Fake Out/Disarming Voice>
 Pikachu (Lv. 21) @Focus Sash [Timid] {Lightning Rod} <Electro Ball/Nuzzle/Wish/Feint>
-Deerling 2 (Lv. 21) @Silk Scarf [Lonely] {Serene Grace} <Mega Drain/Growth/Headbutt/Double Kick>
+Deerling 2 (Lv. 21) @Normalium Z [Lonely] {Sap Sipper} <Mega Drain/Growth/Headbutt/Double Kick>
 Combusken (Lv. 23) @Fist Plate [Brave] {Speed Boost} <Double Kick/Protect/Feather Dance/Flame Charge>
 
 077 - (Tapu's Chosen) Hau
@@ -696,11 +702,11 @@ Location: Paniola Town
 Desc: Boss - Hau Battle 4 | Litten Chosen
 Route #: 2
 Prize Money: $3220
-Dartrix (Lv. 23) @Grass Gem [Jolly] {Sniper} <Focus Energy/Pluck/Razor Leaf/Trailblaze>
+Rhyhorn (Lv. 22) @Salac Berry [Adamant] {Lightning Rod} <Rock Tomb/Trample/Rock Polish/Horn Attack>
 Gulpin (Lv. 21) @Black Sludge [Sassy] {Innards Out} <Poison Gas/Acid Spray/Yawn/Encore>
-Noibat (Lv. 22) @Flyinium Z [Timid] {Soundproof} <Twister/Air Cutter/Dragon Breath/Sonic Boom>
+Dartrix (Lv. 23) @Shell Bell [Jolly] {Sniper} <Focus Energy/Pluck/Razor Leaf/Trailblaze>
 Pikachu (Lv. 21) @Focus Sash [Timid] {Lightning Rod} <Electro Ball/Nuzzle/Wish/Feint>
-Litleo (Lv. 21) @Silk Scarf [Modest] {Unnerve} <Roar/Fire Fang/Swift/Snarl>
+Litleo (Lv. 21) @Normalium Z [Modest] {Unnerve} <Roar/Fire Fang/Swift/Snarl>
 Marshtomp (Lv. 23) @Earth Plate [Brave] {Dry Skin} <Bulldoze/Protect/Water Pulse/Mud Bomb>
 
 078 - (Tapu's Chosen) Hau
@@ -708,11 +714,11 @@ Location: Paniola Town
 Desc: Boss - Hau Battle 4 | Popplio Chosen
 Route #: 3
 Prize Money: $3220
-Torracat (Lv. 23) @Fire Gem [Adamant] {Intimidate} <Slink Strike/Flame Charge/Power Trip/Scary Face>
+Rhyhorn (Lv. 22) @Salac Berry [Adamant] {Lightning Rod} <Rock Tomb/Trample/Rock Polish/Horn Attack>
 Gulpin (Lv. 21) @Black Sludge [Sassy] {Innards Out} <Poison Gas/Acid Spray/Yawn/Encore>
-Noibat (Lv. 22) @Flyinium Z [Timid] {Soundproof} <Twister/Air Cutter/Dragon Breath/Sonic Boom>
+Torracat (Lv. 23) @Shell Bell [Adamant] {Intimidate} <Slink Strike/Flame Charge/Power Trip/Scary Face>
 Pikachu (Lv. 21) @Focus Sash [Timid] {Lightning Rod} <Electro Ball/Nuzzle/Wish/Feint>
-Buizel (Lv. 21) @Silk Scarf [Jolly] {Water Veil} <Aqua Jet/Rapid Spin/Pursuit/Quick Attack>
+Buizel (Lv. 21) @Normalium Z [Jolly] {Water Veil} <Aqua Jet/Rapid Spin/Pursuit/Quick Attack>
 Grovyle (Lv. 23) @Draco Plate [Hasty] {Technician} <Grass Whistle/Double Team/Twister/Razor Leaf>
 
 079 - (Skull Enforcer) Gladion
@@ -720,11 +726,11 @@ Location: Route 5
 Desc: Boss - Gladion Battle 1
 Route #: 3
 Prize Money: $3840
-Zorua (Lv. 24) @Black Glasses [Timid] {Illusion} <Scary Face/Taunt/Psybeam/Snarl>
+Yamask (Lv. 23) @Leftovers [Mild] {Mummy} <Protect/Will-O-Wisp/Shadow Punch/Round>
 Porygon (Lv. 23) @Wise Glasses [Modest] {Trace} <Agility/Charge Beam/Psybeam/Swift>
 Sneasel (Lv. 23) @Focus Sash [Lonely] {Inner Focus} <Thief/Pursuit/Fake Out/Ice Shard>
 Type: Null (Lv. 24) @Normalium Z [Naughty] {Color Change} <Aerial Ace/Rage/Tackle/Tailwind>
-Yamask (Lv. 23) @Leftovers [Mild] {Mummy} <Protect/Will-O-Wisp/Shadow Punch/Round>
+Zorua (Lv. 24) @Black Glasses [Timid] {Illusion} <Scary Face/Taunt/Psybeam/Snarl>
 Croagunk (Lv. 24) @Fighting Gem [Hasty] {Poison Touch} <Sludge/Comet Punch/Aura Palm/Fake Out>
 
 080 - (Team Skull) Grunt Ay
@@ -765,7 +771,7 @@ Route #: 0
 Prize Money: $2400
 Pikachu (Lv. 30) @Light Ball [Timid] {Lightning Rod} <Electro Ball/Light Screen/Disarming Voice/Tail Whip>
 
-085 - (Team Skull) [~ 85]
+085 - (Team Skull) Grunt Bee
 Location: Route 6
 Desc: Story - Multi Battle with Grunt Ay
 Route #: 3
@@ -782,7 +788,7 @@ Route #: 0
 Prize Money: $600
 Yungoos (Lv. 5) [Serious] {Any} <(None)/(None)/(None)/(None)>
 
-087 - (Poni Kahuna) [~ 87]
+087 - (Poni Kahuna) Hapu
 Location: Route 6
 Desc: Story - Multi Battle ally against Team Skull
 Route #: 4
@@ -934,12 +940,16 @@ Throh (Lv. 34) @Maranga Berry [Impish] {Stamina} <Mat Block/Storm Throw/Vital Th
 Sawk (Lv. 34) @Salac Berry [Jolly] {Sturdy} <Shadow Punch/Kick-Step/Howl/Mach Punch>
 Hariyama (Lv. 35) @Sitrus Berry [Brave] {Thick Fat} <Arm Thrust/Belly Drum/Smack Down/Fake Out>
 
-103 - (Ace Trainer) [~ 103]
-Location: (None)
-Desc: (None)
-Route #: 0
-Prize Money: $340
-Yungoos (Lv. 5) [Serious] {Any} <(None)/(None)/(None)/(None)>
+103 - (Preschooler) Mystery Kid
+Location: Schoolyard
+Desc: Optional Miniboss - Seven Mysteries Sidequest | Reward: Ghostium Z + Gold Bottle Cap
+Route #: 10
+Prize Money: $2520
+Duskull (Lv. 21) @Iapapa Berry [Sassy] {Levitate} <Mega Drain/Pain Split/Infestation/Disable>
+Honedge (Lv. 21) @Normal Gem [Adamant] {No Guard} <False Swipe/Metal Claw/Shadow Sneak/Autotomize>
+Rotom (Lv. 20) @Shuca Berry [Timid] {Lightning Rod} <Electrify/Charge Beam/Ominous Wind/Pain Split>
+Drifloon (Lv. 22) @Ghostium Z [Timid] {Aftermath} <Protect/Minimize/Air Cutter/Ominous Wind>
+Golett (Lv. 21) @Chesto Berry [Adamant] {Iron Fist} <Rest/Mega Punch/Trample/Bullet Punch>
 
 104 - (Star Trainer) Alexis
 Location: (None)
@@ -969,14 +979,14 @@ Route #: 0
 Prize Money: $120
 Yungoos (Lv. 5) [Serious] {Any} <(None)/(None)/(None)/(None)>
 
-107 - (Swimmer Beau) [~ 107]
+107 - (Swimmer Bro) [~ 107]
 Location: (None)
 Desc: (None)
 Route #: 0
 Prize Money: $120
 Yungoos (Lv. 5) [Serious] {Any} <(None)/(None)/(None)/(None)>
 
-108 - (Swimmer Beau) Lawrence
+108 - (Swimmer Bro) Lawrence
 Location: Hano Beach
 Desc: Optional - None
 Route #: 2
@@ -985,7 +995,7 @@ Araquanid (Lv. 40) @Luminous Moss [Adamant] {Water Bubble} <Waterfall/Sticky Web
 Politoed (Lv. 41) @Quick Claw [Quiet] {Drizzle} <Swagger/Dive/Uproar/Metronome>
 Jellicent (Lv. 40) @Focus Band [Sassy] {Cursed Body} <Icy Wind/Haze/Hex/Water Pulse>
 
-109 - (Swimmer Beau) Roddy
+109 - (Swimmer Bro) Roddy
 Location: Hano Beach
 Desc: Optional - None
 Route #: 3
@@ -1187,7 +1197,7 @@ Route #: 0
 Prize Money: $11280
 Clefable (Lv. 47) [Calm] {Magic Guard} <Moonblast/Charm/Psychic/Hyper Voice>
 Lilligant (Lv. 47) [Modest] {Dancer} <Petal Dance/Teeter Dance/Stun Spore/(None)>
-Lopunny (Lv. 47) [Adamant] {Cute Charm} <Dizzy Punch/Thunder Punch/Ice Punch/Fire Punch>
+Lopunny (Lv. 47) [Adamant] {Dancer} <Dizzy Punch/Thunder Punch/Ice Punch/Fire Punch>
 Milotic (Lv. 47) [Modest] {Regal Presence} <Hydro Pump/Icy Wind/Flail/Dragon Pulse>
 Bewear (Lv. 47) [Adamant] {Fluffy} <Zen Headbutt/Drain Punch/Take Down/Dual Chop>
 
@@ -1380,7 +1390,6 @@ Trumbeak (Lv. 23) @Charti Berry [Jolly] {Skill Link} <Flame Burst/Fury Swipes/Pl
 Gligar (Lv. 22) @Adrenaline Orb [Adamant] {Hyper Cutter} <Poison Tail/Taunt/Bug Bite/Bulldoze>
 Murkrow (Lv. 22) @Flyinium Z [Jolly] {Prankster} <Slink Strike/Mirror Move/Pluck/Tailwind>
 Woobat (Lv. 23) @Ganlon Berry [Jolly] {Simple} <Meditate/Heart Stamp/Aerial Ace/Roost>
-Togetic (Lv. 21) @Shell Bell [Quiet] {Super Luck} <Extrasensory/Follow Me/Wish/Disarming Voice>
 Minior 4 (Lv. 21) @Rocky Helmet [Adamant] {Shields Down} <Wide Guard/Rollout/Defense Curl/Aerial Ace>
 
 156 - (Elite Four) Kahili
@@ -1851,7 +1860,7 @@ Pidove (Lv. 10) @Silk Scarf [Hasty] {Super Luck} <Gust/Leer/Tackle/Lucky Chant>
 Minccino (Lv. 10) @Lum Berry [Quirky] {Cute Charm} <Helping Hand/Tickle/Attract/Tackle>
 Panpour (Lv. 11) @Oran Berry [Naive] {Storm Drain} <Water Gun/Lick/Quick Attack/Recycle>
 Yungoos (Lv. 12) @Shell Bell [Relaxed] {Stakeout} <Pursuit/Super Fang/Leer/Tackle>
-Shuppet (Lv. 11) @Ghost Gem [Naughty] {Insomnia} <Lick/Torment/Tackle/Grudge>
+Shuppet (Lv. 11) @Ghost Gem [Naughty] {Insomnia} <Lick/Torment/Tackle/Screech>
 Smeargle (Lv. 12) @Normalium Z [Quirky] {Trace} <Sketch/Thunder Shock/Poison Sting/Mud-Slap>
 
 216 - (Trial Captain) Ilima
@@ -1863,7 +1872,7 @@ Pidove (Lv. 10) @Silk Scarf [Hasty] {Super Luck} <Gust/Leer/Tackle/Lucky Chant>
 Minccino (Lv. 10) @Lum Berry [Quirky] {Cute Charm} <Helping Hand/Tickle/Attract/Tackle>
 Pansage (Lv. 11) @Oran Berry [Naive] {Sap Sipper} <Vine Whip/Lick/Quick Attack/Recycle>
 Yungoos (Lv. 12) @Shell Bell [Relaxed] {Stakeout} <Pursuit/Super Fang/Leer/Tackle>
-Shuppet (Lv. 11) @Ghost Gem [Naughty] {Insomnia} <Lick/Torment/Tackle/Grudge>
+Shuppet (Lv. 11) @Ghost Gem [Naughty] {Insomnia} <Lick/Torment/Tackle/Screech>
 Smeargle (Lv. 12) @Normalium Z [Quirky] {Trace} <Sketch/Thunder Shock/Poison Sting/Mud-Slap>
 
 217 - (Tapu's Chosen) Hau
@@ -2151,7 +2160,7 @@ Location: (None)
 Desc: (None)
 Route #: 0
 Prize Money: $1408
-Lopunny (Lv. 44) @Choice Band [Jolly] {Cute Charm} <Dizzy Punch/U-turn/Mega Punch/Play Rough>
+Lopunny (Lv. 44) @Choice Band [Jolly] {Dancer} <Dizzy Punch/U-turn/Mega Punch/Play Rough>
 Nidoqueen (Lv. 44) @Black Sludge [Calm] {Berserk} <Acid Armor/Sludge Bomb/Thunderbolt/Mudslide>
 Delcatty (Lv. 44) @Leftovers [Naive] {Normalize} <Assist/Copycat/Hyper Voice/Fake Out>
 Dedenne (Lv. 44) @Sitrus Berry [Bold] {Cheek Pouch} <Charm/Nuzzle/Parabolic Charge/Draining Kiss>
@@ -2315,7 +2324,7 @@ Route #: 0
 Prize Money: $160
 Yungoos (Lv. 5) [Serious] {Any} <(None)/(None)/(None)/(None)>
 
-269 - (Swimmer Beau) Keoni
+269 - (Swimmer Bro) Keoni
 Location: (None)
 Desc: (None)
 Route #: 0
@@ -2333,7 +2342,7 @@ Prize Money: $1296
 Jellicent 1 (Lv. 55) @Leftovers [Bold] {Dry Skin} <Rain Dance/Hex/Recover/Surf>
 Drifblim (Lv. 54) @Sitrus Berry [Mild] {Unburden} <Strength Sap/Air Slash/Weather Ball/Ally Switch>
 
-271 - (Swimmer Beau) Jared
+271 - (Swimmer Bro) Jared
 Location: (None)
 Desc: (None)
 Route #: 0
@@ -2555,7 +2564,7 @@ Desc: (None)
 Route #: 0
 Prize Money: $1296
 Jellicent (Lv. 55) @Leftovers [Quiet] {Dry Skin} <Rain Dance/Shadow Ball/Acid Armor/Surf>
-Dusknoir (Lv. 54) @Protective Pads [Impish] {Anticipation} <Will-O-Wisp/Pain Split/Shadow Punch/Snatch>
+Dusknoir (Lv. 54) @Protective Pads [Impish] {Iron Fist} <Will-O-Wisp/Pain Split/Shadow Punch/Snatch>
 
 300 - (Swim Gal) Alexandria
 Location: (None)
@@ -2870,7 +2879,7 @@ Route #: 0
 Prize Money: $160
 Yungoos (Lv. 5) [Serious] {Any} <(None)/(None)/(None)/(None)>
 
-339 - (Swimmer Beau) [~ 339]
+339 - (Swimmer Bro) [~ 339]
 Location: (None)
 Desc: (None)
 Route #: 0
@@ -4386,11 +4395,11 @@ Wishiwashi (Lv. 7) @Starf Berry [Serious] {Schooling} <Water Gun/Splash/Tearful 
 Location: Route 4
 Desc: Optional - None
 Route #: 4
-Prize Money: $2520
+Prize Money: $2640
 Diglett (Lv. 22) @Ground Gem [Naive] {Sand Stream} <Bulldoze/Beat Up/Fury Swipes/Magnitude>
 Sandshrew (Lv. 21) @Air Balloon [Impish] {Sand Rush} <Fury Cutter/Fury Swipes/Rapid Spin/Bulldoze>
-Meowth (Lv. 22) @Protective Pads [Jolly] {Frisk} <Fake Out/Hone Claws/Quick Attack/Uproar>
 Charmander (Lv. 21) @Berry Juice [Naive] {Flame Body} <Metal Claw/Fire Spin/Dragon Rage/Rage>
+Geodude (Lv. 22) @Weakness Policy [Impish] {Sturdy} <Mega Punch/Smack Down/Rollout/Bulldoze>
 
 514 - (Sightseer) Yuriko
 Location: (None)
@@ -4490,14 +4499,14 @@ Route #: 0
 Prize Money: $1472
 Pawniard (Lv. 46) [Serious] {Any} <(None)/(None)/(None)/(None)>
 
-526 - (Swimmer Beau) Derek
+526 - (Swimmer Bro) Derek
 Location: (None)
 Desc: (None)
 Route #: 0
 Prize Money: $1056
 Dragalge (Lv. 44) [Serious] {Any} <(None)/(None)/(None)/(None)>
 
-527 - (Swimmer Beau) [~ 527]
+527 - (Swimmer Bro) [~ 527]
 Location: (None)
 Desc: (None)
 Route #: 0
@@ -4574,7 +4583,7 @@ Route #: 0
 Prize Money: $2040
 Oricorio 1 (Lv. 15) @Normalium Z [Timid] {Dancer} <Air Cutter/Double Team/Baton Pass/Thunder Shock>
 Petilil (Lv. 17) @Terrain Extender [Timid] {Leaf Guard} <Ingrain/Leech Seed/Grassy Terrain/Mega Drain>
-Lotad (Lv. 17) @Oran Berry [Calm] {Rain Dish} <Mega Drain/Bubble Beam/Safeguard/Startle>
+Buneary (Lv. 17) @Oran Berry [Calm] {Overcoat} <Covet/Charm/Quick Attack/Double Kick>
 Oddish (Lv. 16) @Occa Berry [Timid] {Chlorophyll} <Razor Leaf/Lucky Chant/Acid/Stun Spore>
 Larvesta (Lv. 17) @Coba Berry [Calm] {Solar Power} <Absorb/Smoke Out/Fire Spin/Infestation>
 
@@ -4583,12 +4592,12 @@ Location: Royal Avenue
 Desc: Miniboss - Meredith Battle 2 | She battles you here if you've fought her in Melemele Meadow first.
 Route #: 4
 Prize Money: $7200
-Larvesta (Lv. 29) @Wiki Berry [Adamant] {Flash Fire} <Trailblaze/Flame Charge/U-turn/Sticky Web>
-Lombre (Lv. 29) @Persim Berry [Calm] {Hydration} <Fake Out/Magical Leaf/Water Pulse/Water Sport>
-Oricorio 2 (Lv. 30) @Salac Berry [Timid] {Dancer} <Double Team/Psybeam/Acrobatics/Teeter Dance>
 Lilligant (Lv. 28) @Sitrus Berry [Adamant] {Dancer} <Rapid Spin/Encore/Dragon Dance/Petal Blizzard>
+Lopunny (Lv. 29) @Rawst Berry [Calm] {Dancer} <Encore/Headbutt/Double Slap/Follow Me>
+Larvesta (Lv. 29) @Wiki Berry [Adamant] {Flash Fire} <Trailblaze/Flame Charge/U-turn/Sticky Web>
+Oricorio 2 (Lv. 30) @Salac Berry [Timid] {Dancer} <Double Team/Psybeam/Acrobatics/Teeter Dance>
 Gloom (Lv. 31) @Lum Berry [Bold] {Stench} <Smog/Acid Armor/Nature Power/Leech Seed>
-Swablu (Lv. 30) @Starf Berry [Timid] {Cloud Nine} <Roost/Air Cutter/Disarming Voice/Mirror Move>
+Swablu (Lv. 30) @Fairium Z [Timid] {Cloud Nine} <Roost/Air Cutter/Disarming Voice/Mirror Move>
 
 538 - (Actor) Meredith
 Location: (None)
@@ -4941,7 +4950,7 @@ Tyrantrum (Lv. 50) @Shell Bell [Adamant] {Intimidate} <Dragon Dance/Power Trip/D
 Location: Brooklet Hill
 Desc: Miniboss - Johnny will only battle you if it is raining and after the trial here. Reward: $50,000
 Route #: 6
-Prize Money: $12480
+Prize Money: $22880
 Pelipper (Lv. 26) @Sitrus Berry [Modest] {Rain Dish} <Air Cutter/Roost/Bubble Beam/U-turn>
 Castform (Lv. 26) @Mystic Water [Bold] {Forecast} <Shock Wave/Weather Ball/Icy Wind/Rain Dance>
 Anorith (Lv. 27) @Muscle Band [Adamant] {Swift Swim} <Bug Bite/Hone Claws/Rock Slide/Mud Sport>
@@ -5473,7 +5482,7 @@ Route #: 0
 Prize Money: $16320
 Clefable (Lv. 68) [Calm] {Magic Guard} <Moonblast/Charm/Psychic/Hyper Voice>
 Lilligant (Lv. 68) [Modest] {Dancer} <Petal Dance/Teeter Dance/Stun Spore/(None)>
-Lopunny (Lv. 68) [Adamant] {Cute Charm} <Dizzy Punch/Thunder Punch/Ice Punch/Fire Punch>
+Lopunny (Lv. 68) [Adamant] {Dancer} <Dizzy Punch/Thunder Punch/Ice Punch/Fire Punch>
 Milotic (Lv. 68) [Modest] {Regal Presence} <Hydro Pump/Icy Wind/Flail/Dragon Pulse>
 Bewear (Lv. 68) [Adamant] {Fluffy} <Zen Headbutt/Drain Punch/Take Down/Dual Chop>
 
@@ -5552,7 +5561,7 @@ Route #: 6
 Prize Money: $3360
 Bronzor (Lv. 27) @Leftovers [Quiet] {Levitate} <Mirror Shot/Safeguard/Psybeam/Iron Defense>
 Elgyem (Lv. 27) @Shell Bell [Quiet] {Analytic} <Psybeam/Heal Block/Shock Wave/Hidden Power>
-Cosmog (Lv. 30) @Psychium Z [Modest] {Unaware} <Helping Hand/Confusion/Ally Switch/Mist>
+Cosmog (Lv. 30) @Psychium Z [Modest] {Unaware} <Helping Hand/Confusion/Ally Switch/Wonder Room>
 Clefairy (Lv. 28) @Sitrus Berry [Bold] {Friend Guard} <Metronome/Light Screen/Disarming Voice/Psyshock>
 Solrock (Lv. 27) @Assault Vest [Sassy] {Levitate} <Solar Beam/Rock Slide/Flame Charge/Psycrush>
 Poipole (Lv. 28) @Air Balloon [Timid] {Beast Boost} <Twister/Air Cutter/Toxic/Venoshock>
