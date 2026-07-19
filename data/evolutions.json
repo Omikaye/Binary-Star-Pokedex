@@ -105,7 +105,7 @@
     {
       "target": "raichualola",
       "level": 38,
-      "condition": "Morning"
+      "condition": "Day"
     },
     {
       "target": "raichu",
@@ -207,7 +207,7 @@
     {
       "target": "bellossom",
       "level": 38,
-      "condition": "Morning"
+      "condition": "Day"
     },
     {
       "target": "vileplume",
@@ -283,7 +283,7 @@
     {
       "target": "politoed",
       "level": 39,
-      "condition": "Morning"
+      "condition": "Day"
     },
     {
       "target": "poliwrath",
@@ -461,7 +461,7 @@
     {
       "target": "exeggutoralola",
       "level": 37,
-      "condition": "Morning"
+      "condition": "Day"
     },
     {
       "target": "exeggutor",
@@ -473,7 +473,7 @@
     {
       "target": "marowak",
       "level": 28,
-      "condition": "Morning"
+      "condition": "Day"
     },
     {
       "target": "marowakalola",
@@ -2485,7 +2485,7 @@
     {
       "target": "lycanroc",
       "level": 28,
-      "condition": "Morning"
+      "condition": "Day"
     },
     {
       "target": "lycanrocmidnight",
@@ -2612,7 +2612,7 @@
     {
       "target": "solgaleo",
       "level": 60,
-      "condition": "Morning"
+      "condition": "Day"
     },
     {
       "target": "lunala",
@@ -2746,7 +2746,7 @@
     {
       "target": "lycanroc",
       "level": 28,
-      "condition": "Morning"
+      "condition": "Day"
     },
     {
       "target": "lycanrocmidnight",

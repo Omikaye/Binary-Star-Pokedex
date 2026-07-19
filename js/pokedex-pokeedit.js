@@ -364,6 +364,9 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 		case 'friendship':
 			return 'High Friendship';
 		default:
+			if (evo.level) {
+				return 'level ' + evo.level + ' (' + evo.condition + ')';
+			}
 			return evo.condition;
 		}
 	},
