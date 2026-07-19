@@ -478,7 +478,7 @@ window.PokedexMovePanel = PokedexResultPanel.extend({
 				desc = results[i].level <= 1 ?'&ndash;' : '<small>L</small>'+(results[i].level || '?');
 				break;
 			case 'tm': // tm/hm
-				desc = `<span class="itemicon" style="margin-top:-3px;${getItemIcon("tr01")}"></span>`;
+				desc = `<span class="itemicon" style="margin-top:-3px;background:transparent url(${ResourcePrefix}sprites/itemicons-sheet.png) no-repeat scroll -133px -364px;width:32px;height:32px;display:inline-block"></span>`;
 				break;
 			case 'tutor': // tutor
 				desc = '<img src="' + ResourcePrefix + 'sprites/tutor.png" style="margin-top:-4px;opacity:.7" width="27" height="26" alt="T" />';

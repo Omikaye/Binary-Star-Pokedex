@@ -107,7 +107,7 @@ function parseEvolutionLine(line, nameMap) {
         if (levelMatch) evo.level = parseInt(levelMatch[1], 10);
 
         // Check for conditions
-        if (cleanPart.includes('at Morning')) evo.condition = 'Morning';
+        if (cleanPart.includes('at Morning')) evo.condition = 'Day';
         if (cleanPart.includes('at Night')) evo.condition = 'Night';
         if (cleanPart.includes('Female')) evo.condition = 'Female';
         if (cleanPart.includes('Male')) evo.condition = 'Male';
