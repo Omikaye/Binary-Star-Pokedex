@@ -10,6 +10,7 @@ import phazingMd from 'bundle-text:../articles/phazing.md';
 import submovesMd from 'bundle-text:../articles/submoves.md';
 import terrainMd from 'bundle-text:../articles/terrain.md';
 import updateChangelogMd from 'bundle-text:../articles/UpdateChangelog.md';
+import weatherAndFieldEffectsMd from 'bundle-text:../articles/weatherandfieldeffects.md';
 import zMoveResonationMd from 'bundle-text:../articles/zMoveResonation.md';
 import zPokemonMd from 'bundle-text:../articles/zPokemon.md';
 import zTrainersMd from 'bundle-text:../articles/zTrainers.md';
@@ -24,6 +25,7 @@ export const articles = {
 	submoves: submovesMd,
 	terrain: terrainMd,
 	updatechangelog: updateChangelogMd,
+	weatherandfieldeffects: weatherAndFieldEffectsMd,
 	zmoveresonation: zMoveResonationMd,
 	zpokemon: zPokemonMd,
 	ztrainers: zTrainersMd

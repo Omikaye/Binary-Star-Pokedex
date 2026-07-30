@@ -32,6 +32,81 @@ function getStaticEncountersForLocation(loc) {
   });
 }
 
+var LOCATION_WEATHER_ARTICLE_ID = 'weatherandfieldeffects';
+var LOCATION_WEATHER_DATA = {
+  clear: {
+    id: 'clear',
+    name: 'Clear',
+    rowTint: '#d8f2ff',
+    noteTint: '#eef9ff',
+    rowAccent: '#58b7e8',
+    rowText: '#1f4760',
+    pageTint: '#eef9ff',
+    pageAccent: '#58b7e8'
+  },
+  rain: {
+    id: 'rain',
+    name: 'Rain',
+    rowTint: '#3f67af',
+    noteTint: '#dce7fb',
+    rowAccent: '#274a89',
+    rowText: '#ffffff',
+    pageTint: '#e6efff',
+    pageAccent: '#3f67af'
+  },
+  sun: {
+    id: 'sun',
+    name: 'Harsh Sunlight',
+    rowTint: '#f8bc63',
+    noteTint: '#fff0d8',
+    rowAccent: '#df8f11',
+    rowText: '#4f2c00',
+    pageTint: '#fff3dc',
+    pageAccent: '#df8f11'
+  },
+  snow: {
+    id: 'snow',
+    name: 'Snow',
+    rowTint: '#ffffff',
+    noteTint: '#f6fbff',
+    rowAccent: '#b8c9d6',
+    rowText: '#31424f',
+    pageTint: '#f8fcff',
+    pageAccent: '#b8c9d6'
+  },
+  sandstorm: {
+    id: 'sandstorm',
+    name: 'Sandstorm',
+    rowTint: '#dec08a',
+    noteTint: '#f5ebd5',
+    rowAccent: '#b48a47',
+    rowText: '#4d360e',
+    pageTint: '#f7efe0',
+    pageAccent: '#b48a47'
+  }
+};
+function getLocationWeather(loc) {
+  var notes = normalizeTrainerMetaText((loc && loc.notes) || '').toLowerCase();
+  if (!notes) return LOCATION_WEATHER_DATA.clear;
+  if (notes.indexOf('sandstorm') >= 0) return LOCATION_WEATHER_DATA.sandstorm;
+  if (notes.indexOf('harsh sunlight') >= 0 || notes.indexOf('sunny') >= 0 || notes.indexOf('sunlight') >= 0) return LOCATION_WEATHER_DATA.sun;
+  if (notes.indexOf('rain') >= 0) return LOCATION_WEATHER_DATA.rain;
+  if (notes.indexOf('snow') >= 0) return LOCATION_WEATHER_DATA.snow;
+  return LOCATION_WEATHER_DATA.clear;
+}
+function getLocationWeatherArticleUrl() {
+  return Config.baseurl + 'articles/' + LOCATION_WEATHER_ARTICLE_ID;
+}
+function renderLocationWeatherIcon(weatherData, options) {
+  options = options || {};
+  var size = options.size || 18;
+  var icon = '<img src="' + ResourcePrefix + 'weather/' + weatherData.id + '.svg" alt="' + escapeHTML(weatherData.name) + '" title="' + escapeHTML(weatherData.name) + '" style="width:' + size + 'px;height:' + size + 'px;display:inline-block;vertical-align:middle" />';
+  if (options.link && weatherData.id !== 'clear') {
+    return '<a href="' + getLocationWeatherArticleUrl() + '" data-target="push" title="Open Weather and Field Effects" style="display:inline-flex;align-items:center">' + icon + '</a>';
+  }
+  return icon;
+}
+
 window.PokedexLocationsPanel = PokedexResultPanel.extend({
   initialize: function () {
     this.shortTitle = 'Locations';
@@ -198,12 +273,15 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
   },
   renderLocationItem: function(loc) {
     var notes = (loc.notes || '').trim();
+    var weatherData = getLocationWeather(loc);
+    var linkBorderRadius = notes ? '6px 6px 0 0' : '6px';
     var buf = '<li class="result" style="display:block;padding:0;height:auto;min-height:initial;overflow:visible;position:relative">';
-    buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" style="display:block;padding:8px;text-decoration:none">';
+    buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" style="display:block;padding:8px;text-decoration:none;background:' + weatherData.rowTint + ';color:' + weatherData.rowText + ';border-left:4px solid ' + weatherData.rowAccent + ';border-radius:' + linkBorderRadius + '">';
     buf += '<span class="col numcol">' + (this.allLocations.indexOf(loc) + 1) + '</span>';
     buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span>';
+    buf += '<span style="float:right;display:inline-flex;align-items:center;height:30px;padding-right:4px">' + renderLocationWeatherIcon(weatherData, {size: 16}) + '</span>';
     buf += '</a>';
-    if (notes) buf += '<div class="loc-search-note">' + escapeHTML(notes) + '</div>';
+    if (notes) buf += '<div class="loc-search-note" style="background:' + weatherData.noteTint + ';color:' + weatherData.rowText + ';border-left:4px solid ' + weatherData.rowAccent + ';border-radius:0 0 6px 6px">' + escapeHTML(notes) + '</div>';
     buf += '</li>';
     return buf;
   },
@@ -249,6 +327,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       return;
     }
     this.shortTitle = loc.name || loc.id;
+    var weatherData = getLocationWeather(loc);
 
     // ── Helpers ──────────────────────────────────────────────────
     var noneText = '<p class="loc-none">None</p>';
@@ -271,7 +350,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       return out;
     };
 
-    var buf = '<div class="pfx-body dexentry">';
+    var buf = '<div class="pfx-body dexentry" style="background:' + weatherData.pageTint + ';border-left:6px solid ' + weatherData.pageAccent + ';border-radius:8px">';
 
     // ── CSS ───────────────────────────────────────────────────────
     buf += '<style>'
@@ -291,14 +370,29 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       + '.loc-none{color:#666;margin:0;padding:4px 0;font-style:italic}'
       + '.battle-notes-line{display:block;color:#555;font-size:0.85em;font-style:italic;margin-bottom:1px}'
       + '.loc-description p{margin:0 0 4px}'
+      + '.loc-page-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}'
+      + '.loc-page-header h1{margin:0}'
+      + '.loc-weather-summary{display:flex;align-items:center;gap:6px;margin:4px 0 0 auto;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.65);color:#2f2f2f;font-size:0.95em;font-weight:600}'
+      + '.loc-weather-summary strong{font-weight:700}'
       + 'body.dark-mode .loc-search-note{color:#b8c6de;border-top-color:#3d516f;background:#1b2a42}'
-      + 'body.dark-mode .loc-section,body.dark-mode .loc-section td,body.dark-mode .loc-section th,body.dark-mode .loc-section p,body.dark-mode .loc-section h4{color:#252a33}'
-      + 'body.dark-mode .loc-section .loc-none,body.dark-mode .loc-section .battle-notes-line{color:#252a33}'
+      + 'body.dark-mode .loc-section span,body.dark-mode .loc-section td,body.dark-mode .loc-section th,body.dark-mode .loc-section p,body.dark-mode .loc-section li,body.dark-mode .loc-section h4{color:#2f2f2f}'
+      + 'body.dark-mode .loc-section .loc-none,body.dark-mode .loc-section .battle-notes-line{color:#555}'
       + 'body.dark-mode .loc-section a,body.dark-mode .loc-section a:hover{color:#1d4f8f}'
+      + 'body.dark-mode .loc-weather-summary{background:rgba(255,255,255,.72);color:#2f2f2f}'
+      + 'body.dark-mode .loc-section-gifts h3{color:#9c27b0!important}'
+      + 'body.dark-mode .loc-section-statics-cap h3{color:#ad1457!important}'
+      + 'body.dark-mode .loc-section-wild h3{color:#388e3c!important}'
+      + 'body.dark-mode .loc-section-items h3{color:#e64a19!important}'
+      + 'body.dark-mode .loc-section-shops h3{color:#ef6c00!important}'
+      + 'body.dark-mode .loc-section-trainers h3{color:#0288d1!important}'
+      + 'body.dark-mode .loc-section-statics-all h3{color:#c62828!important}'
       + '</style>';
 
     buf += '<a href="' + Config.baseurl + 'locations/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Locations</a>';
+    buf += '<div class="loc-page-header">';
     buf += '<h1><a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" class="subtle">' + escapeHTML(loc.name || loc.id) + '</a></h1>';
+    buf += '<div class="loc-weather-summary"><span>Weather:</span><strong>' + escapeHTML(weatherData.name) + '</strong>' + renderLocationWeatherIcon(weatherData, {size: 20, link: true}) + '</div>';
+    buf += '</div>';
 
     // ── Description (split on "|") ────────────────────────────────
     var descLines = splitNotes(loc.notes || '');
@@ -359,7 +453,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
 
     // ── Gifts & Trades ──
     var giftsTrades = loc.giftsTrades || [];
-    buf += '<div class="loc-section" style="' + secStyle('#ce93d8', '#ab47bc') + '">';
+    buf += '<div class="loc-section loc-section-gifts" style="' + secStyle('#ce93d8', '#ab47bc') + '">';
     buf += '<h3 style="margin-top:0;color:#4a148c">Gifts &amp; Trades</h3>';
     if (!giftsTrades.length) {
       buf += noneText;
@@ -386,7 +480,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     buf += '</div>';
 
     // ── Static Encounters (Capturable only) ──
-    buf += '<div class="loc-section" style="' + secStyle('#f48fb1', '#c2185b') + '">';
+    buf += '<div class="loc-section loc-section-statics-cap" style="' + secStyle('#f48fb1', '#c2185b') + '">';
     buf += '<h3 style="margin-top:0;color:#880e4f">Static Encounters</h3>';
     if (!capturableStatics.length) {
       buf += noneText;
@@ -417,7 +511,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
 
     // ── Wild Pokémon ──
     var encounters = loc.encounters || [];
-    buf += '<div class="loc-section" style="' + secStyle('#a5d6a7', '#388e3c') + '">';
+    buf += '<div class="loc-section loc-section-wild" style="' + secStyle('#a5d6a7', '#388e3c') + '">';
     buf += '<h3 style="margin-top:0;color:#1b5e20">Wild Pok&eacute;mon</h3>';
     if (!encounters.length) {
       buf += noneText;
@@ -471,7 +565,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
 
     // ── Items ──
     var locItems = loc.items || [];
-    buf += '<div class="loc-section" style="' + secStyle('#ffcc80', '#f57c00') + '">';
+    buf += '<div class="loc-section loc-section-items" style="' + secStyle('#ffcc80', '#f57c00') + '">';
     buf += '<h3 style="margin-top:0;color:#bf360c">Items</h3>';
     if (!locItems.length) {
       buf += noneText;
@@ -520,7 +614,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     // ── Shops ──
     var hasShopTables = loc.shopTables && loc.shopTables.length;
     var hasLegacyShops = loc.shops && loc.shops.length;
-    buf += '<div class="loc-section" style="' + secStyle('#ffe082', '#ffa000') + '">';
+    buf += '<div class="loc-section loc-section-shops" style="' + secStyle('#ffe082', '#ffa000') + '">';
     buf += '<h3 style="margin-top:0;color:#e65100">Shops</h3>';
     if (!hasShopTables && !hasLegacyShops) {
       buf += noneText;
@@ -622,7 +716,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     buf += '<div class="loc-tab loc-tab-battles" style="display:none">';
 
     // ── Trainers ──
-    buf += '<div class="loc-section" style="' + secStyle('#90caf9', '#1565c0') + '">';
+    buf += '<div class="loc-section loc-section-trainers" style="' + secStyle('#90caf9', '#1565c0') + '">';
     buf += '<h3 style="margin-top:0;color:#0d47a1">Trainers</h3>';
     if (!locationTrainers.length) {
       buf += noneText;
@@ -633,9 +727,21 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         var paddedTID = String(tTrainer.id).padStart(3, '0');
         var tName = tTrainer.name || ('Trainer\u00a0' + paddedTID);
         var tNoteLines = splitNotes(tTrainer.desc || '');
-        buf += '<li class="result" style="display:block;height:auto;min-height:32px;padding:0">';
-        buf += '<a href="' + Config.baseurl + 'trainers/' + paddedTID + '" data-target="push" style="display:block;height:auto;min-height:32px;padding:5px 8px;text-decoration:none">';
-        buf += '<span style="font-size:0.95em">' + escapeHTML(tName) + '</span>';
+        var tTeamSprites = (tTrainer.team || []).slice(0, 6).map(function(m) {
+          var disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
+          return '<span class="picon" style="' + getPokemonIcon(toID(disp)) + ';display:inline-block;vertical-align:middle"></span>';
+        }).join('');
+        var tSpriteUrl = (typeof getTrainerSpriteUrl === 'function') ? getTrainerSpriteUrl(tTrainer, true) : null;
+        var tThumb = tSpriteUrl
+          ? '<div style="position:absolute;left:-10px;top:-6px;width:148px;height:92px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
+            '<img src="' + escapeHTML(tSpriteUrl) + '" alt="" style="width:100%;height:100%;object-fit:contain;object-position:right top;transform:scale(0.6);transform-origin:right top;" loading="lazy" referrerpolicy="no-referrer" />' +
+            '</div>'
+          : '';
+        buf += '<li class="result">';
+        buf += '<a href="' + Config.baseurl + 'trainers/' + paddedTID + '" data-target="push" style="position:relative;overflow:hidden;">';
+        buf += tThumb;
+        buf += '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">[' + escapeHTML(paddedTID) + '] ' + escapeHTML(tName) + '</span>';
+        buf += '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + tTeamSprites + '</span>';
         buf += '</a>';
         buf += renderNoteLines(tNoteLines, '8px');
         buf += '</li>';
@@ -645,7 +751,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     buf += '</div>';
 
     // ── Static Encounters (all) ──
-    buf += '<div class="loc-section" style="' + secStyle('#ef9a9a', '#c62828') + '">';
+    buf += '<div class="loc-section loc-section-statics-all" style="' + secStyle('#ef9a9a', '#c62828') + '">';
     buf += '<h3 style="margin-top:0;color:#b71c1c">Static Encounters</h3>';
     if (!staticBattles.length) {
       buf += noneText;
