@@ -137,6 +137,7 @@ window.MechanicsHomepageArticles = [
 	{id: 'miscchanges', name: 'Misc Changes'},
 	{id: 'newchangeditems', name: 'New and Changed Items'},
 	{id: 'updatechangelog', name: 'Changelog'},
+	{id: 'weatherandfieldeffects', name: 'Weather and Field Effects'},
 	{id: 'zmoveresonation', name: 'Z-Move Resonation'},
 	{id: 'zpokemon', name: 'Z-Pokemon'},
 	{id: 'ztrainers', name: 'Z-Trainers'}
