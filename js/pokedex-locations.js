@@ -37,6 +37,7 @@ var LOCATION_WEATHER_DATA = {
   clear: {
     id: 'clear',
     name: 'Clear',
+    iconFile: 'Clearweather.png',
     rowTint: '#d8f2ff',
     noteTint: '#eef9ff',
     rowAccent: '#58b7e8',
@@ -47,6 +48,7 @@ var LOCATION_WEATHER_DATA = {
   rain: {
     id: 'rain',
     name: 'Rain',
+    iconFile: 'raincloud.png',
     rowTint: '#3f67af',
     noteTint: '#dce7fb',
     rowAccent: '#274a89',
@@ -57,6 +59,7 @@ var LOCATION_WEATHER_DATA = {
   sun: {
     id: 'sun',
     name: 'Harsh Sunlight',
+    iconFile: 'HarshSunlight.png',
     rowTint: '#f8bc63',
     noteTint: '#fff0d8',
     rowAccent: '#df8f11',
@@ -67,6 +70,7 @@ var LOCATION_WEATHER_DATA = {
   snow: {
     id: 'snow',
     name: 'Snow',
+    iconFile: 'Snow.png',
     rowTint: '#ffffff',
     noteTint: '#f6fbff',
     rowAccent: '#b8c9d6',
@@ -77,6 +81,7 @@ var LOCATION_WEATHER_DATA = {
   sandstorm: {
     id: 'sandstorm',
     name: 'Sandstorm',
+    iconFile: 'Sandstorm.png',
     rowTint: '#dec08a',
     noteTint: '#f5ebd5',
     rowAccent: '#b48a47',
@@ -100,7 +105,7 @@ function getLocationWeatherArticleUrl() {
 function renderLocationWeatherIcon(weatherData, options) {
   options = options || {};
   var size = options.size || 18;
-  var icon = '<img src="' + ResourcePrefix + 'weather/' + weatherData.id + '.svg" alt="' + escapeHTML(weatherData.name) + '" title="' + escapeHTML(weatherData.name) + '" style="width:' + size + 'px;height:' + size + 'px;display:inline-block;vertical-align:middle" />';
+  var icon = '<img src="' + ResourcePrefix + weatherData.iconFile + '" alt="' + escapeHTML(weatherData.name) + '" title="' + escapeHTML(weatherData.name) + '" style="width:' + size + 'px;height:' + size + 'px;display:inline-block;vertical-align:middle" />';
   if (options.link && weatherData.id !== 'clear') {
     return '<a href="' + getLocationWeatherArticleUrl() + '" data-target="push" title="Open Weather and Field Effects" style="display:inline-flex;align-items:center">' + icon + '</a>';
   }
@@ -276,12 +281,12 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
     var weatherData = getLocationWeather(loc);
     var linkBorderRadius = notes ? '6px 6px 0 0' : '6px';
     var buf = '<li class="result" style="display:block;padding:0;height:auto;min-height:initial;overflow:visible;position:relative">';
-    buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" style="display:block;padding:8px;text-decoration:none;background:' + weatherData.rowTint + ';color:' + weatherData.rowText + ';border-left:4px solid ' + weatherData.rowAccent + ';border-radius:' + linkBorderRadius + '">';
+    buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" data-weather="' + weatherData.id + '" style="display:block;padding:8px;text-decoration:none;background:' + weatherData.rowTint + ';color:' + weatherData.rowText + ';border-left:4px solid ' + weatherData.rowAccent + ';border-radius:' + linkBorderRadius + '">';
     buf += '<span class="col numcol">' + (this.allLocations.indexOf(loc) + 1) + '</span>';
     buf += '<span class="col namecol">' + escapeHTML(loc.name || loc.id) + '</span>';
     buf += '<span style="float:right;display:inline-flex;align-items:center;height:30px;padding-right:4px">' + renderLocationWeatherIcon(weatherData, {size: 16}) + '</span>';
     buf += '</a>';
-    if (notes) buf += '<div class="loc-search-note" style="background:' + weatherData.noteTint + ';color:' + weatherData.rowText + ';border-left:4px solid ' + weatherData.rowAccent + ';border-radius:0 0 6px 6px">' + escapeHTML(notes) + '</div>';
+    if (notes) buf += '<div class="loc-search-note" data-weather="' + weatherData.id + '" style="padding:4px 12px 8px 37px;font-size:0.9em;box-sizing:border-box;background:' + weatherData.noteTint + ';color:' + weatherData.rowText + ';border-left:4px solid ' + weatherData.rowAccent + ';border-radius:0 0 6px 6px">' + escapeHTML(notes) + '</div>';
     buf += '</li>';
     return buf;
   },
@@ -350,7 +355,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       return out;
     };
 
-    var buf = '<div class="pfx-body dexentry" style="background:' + weatherData.pageTint + ';border-left:6px solid ' + weatherData.pageAccent + ';border-radius:8px">';
+    var buf = '<div class="pfx-body dexentry" data-weather="' + weatherData.id + '" style="background:' + weatherData.pageTint + ';border-left:6px solid ' + weatherData.pageAccent + ';border-radius:8px">';
 
     // ── CSS ───────────────────────────────────────────────────────
     buf += '<style>'
@@ -375,9 +380,10 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       + '.loc-weather-summary{display:flex;align-items:center;gap:6px;margin:4px 0 0 auto;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.65);color:#2f2f2f;font-size:0.95em;font-weight:600}'
       + '.loc-weather-summary strong{font-weight:700}'
       + 'body.dark-mode .loc-search-note{color:#b8c6de;border-top-color:#3d516f;background:#1b2a42}'
-      + 'body.dark-mode .loc-section span,body.dark-mode .loc-section td,body.dark-mode .loc-section th,body.dark-mode .loc-section p,body.dark-mode .loc-section li,body.dark-mode .loc-section h4{color:#2f2f2f}'
-      + 'body.dark-mode .loc-section .loc-none,body.dark-mode .loc-section .battle-notes-line{color:#555}'
-      + 'body.dark-mode .loc-section a,body.dark-mode .loc-section a:hover{color:#1d4f8f}'
+      + 'body.dark-mode .loc-section span,body.dark-mode .loc-section td,body.dark-mode .loc-section th,body.dark-mode .loc-section p,body.dark-mode .loc-section li,body.dark-mode .loc-section h4{color:#2f2f2f!important}'
+      + 'body.dark-mode .loc-section .col{color:#2f2f2f!important}'
+      + 'body.dark-mode .loc-section .loc-none,body.dark-mode .loc-section .battle-notes-line{color:#555!important}'
+      + 'body.dark-mode .loc-section a,body.dark-mode .loc-section a:hover{color:#1d4f8f!important}'
       + 'body.dark-mode .loc-weather-summary{background:rgba(255,255,255,.72);color:#2f2f2f}'
       + 'body.dark-mode .loc-section-gifts h3{color:#9c27b0!important}'
       + 'body.dark-mode .loc-section-statics-cap h3{color:#ad1457!important}'
@@ -391,7 +397,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     buf += '<a href="' + Config.baseurl + 'locations/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Locations</a>';
     buf += '<div class="loc-page-header">';
     buf += '<h1><a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push" class="subtle">' + escapeHTML(loc.name || loc.id) + '</a></h1>';
-    buf += '<div class="loc-weather-summary"><span>Weather:</span><strong>' + escapeHTML(weatherData.name) + '</strong>' + renderLocationWeatherIcon(weatherData, {size: 20, link: true}) + '</div>';
+    buf += '<div class="loc-weather-summary"><span>Weather:</span><strong>' + escapeHTML(weatherData.name) + '</strong>' + renderLocationWeatherIcon(weatherData, {size: 50, link: true}) + '</div>';
     buf += '</div>';
 
     // ── Description (split on "|") ────────────────────────────────
@@ -737,7 +743,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
             '<img src="' + escapeHTML(tSpriteUrl) + '" alt="" style="width:100%;height:100%;object-fit:contain;object-position:right top;transform:scale(0.6);transform-origin:right top;" loading="lazy" referrerpolicy="no-referrer" />' +
             '</div>'
           : '';
-        buf += '<li class="result">';
+        buf += '<li class="result" style="display:block;height:auto;min-height:initial;overflow:visible;padding:0">';
         buf += '<a href="' + Config.baseurl + 'trainers/' + paddedTID + '" data-target="push" style="position:relative;overflow:hidden;">';
         buf += tThumb;
         buf += '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">[' + escapeHTML(paddedTID) + '] ' + escapeHTML(tName) + '</span>';
