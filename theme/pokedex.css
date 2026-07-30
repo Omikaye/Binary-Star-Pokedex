@@ -626,3 +626,24 @@ body.dark-mode .utilichart .shortmovenamecol .stab-move {
 body.dark-mode .search-no-results {
 	color: #7a8fa8;
 }
+
+/* Dark mode weather tints - location list and detail pages */
+body.dark-mode a[data-weather="clear"] { background: #0d3347 !important; color: #bce4f8 !important; }
+body.dark-mode .loc-search-note[data-weather="clear"] { background: #081e2a !important; color: #bce4f8 !important; }
+body.dark-mode .dexentry[data-weather="clear"] { background: #081e2a !important; }
+
+body.dark-mode a[data-weather="rain"] { background: #162d5e !important; color: #c8deff !important; }
+body.dark-mode .loc-search-note[data-weather="rain"] { background: #0a1830 !important; color: #c8deff !important; }
+body.dark-mode .dexentry[data-weather="rain"] { background: #0a1830 !important; }
+
+body.dark-mode a[data-weather="sun"] { background: #4a2d00 !important; color: #fad68a !important; }
+body.dark-mode .loc-search-note[data-weather="sun"] { background: #2a1600 !important; color: #fad68a !important; }
+body.dark-mode .dexentry[data-weather="sun"] { background: #2a1600 !important; }
+
+body.dark-mode a[data-weather="snow"] { background: #1a2a35 !important; color: #b8d8e8 !important; }
+body.dark-mode .loc-search-note[data-weather="snow"] { background: #0d1820 !important; color: #b8d8e8 !important; }
+body.dark-mode .dexentry[data-weather="snow"] { background: #0d1820 !important; }
+
+body.dark-mode a[data-weather="sandstorm"] { background: #3d2200 !important; color: #e0b870 !important; }
+body.dark-mode .loc-search-note[data-weather="sandstorm"] { background: #201200 !important; color: #e0b870 !important; }
+body.dark-mode .dexentry[data-weather="sandstorm"] { background: #201200 !important; }
