@@ -292,9 +292,16 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       + '.battle-notes-line{display:block;color:#555;font-size:0.85em;font-style:italic;margin-bottom:1px}'
       + '.loc-description p{margin:0 0 4px}'
       + 'body.dark-mode .loc-search-note{color:#b8c6de;border-top-color:#3d516f;background:#1b2a42}'
-      + 'body.dark-mode .loc-section,body.dark-mode .loc-section td,body.dark-mode .loc-section th,body.dark-mode .loc-section p,body.dark-mode .loc-section h4{color:#252a33}'
-      + 'body.dark-mode .loc-section .loc-none,body.dark-mode .loc-section .battle-notes-line{color:#252a33}'
+      + 'body.dark-mode .loc-section span,body.dark-mode .loc-section td,body.dark-mode .loc-section th,body.dark-mode .loc-section p,body.dark-mode .loc-section li,body.dark-mode .loc-section h4{color:#2f2f2f}'
+      + 'body.dark-mode .loc-section .loc-none,body.dark-mode .loc-section .battle-notes-line{color:#555}'
       + 'body.dark-mode .loc-section a,body.dark-mode .loc-section a:hover{color:#1d4f8f}'
+      + 'body.dark-mode .loc-section-gifts h3{color:#9c27b0!important}'
+      + 'body.dark-mode .loc-section-statics-cap h3{color:#ad1457!important}'
+      + 'body.dark-mode .loc-section-wild h3{color:#388e3c!important}'
+      + 'body.dark-mode .loc-section-items h3{color:#e64a19!important}'
+      + 'body.dark-mode .loc-section-shops h3{color:#ef6c00!important}'
+      + 'body.dark-mode .loc-section-trainers h3{color:#0288d1!important}'
+      + 'body.dark-mode .loc-section-statics-all h3{color:#c62828!important}'
       + '</style>';
 
     buf += '<a href="' + Config.baseurl + 'locations/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Locations</a>';
@@ -359,7 +366,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
 
     // ── Gifts & Trades ──
     var giftsTrades = loc.giftsTrades || [];
-    buf += '<div class="loc-section" style="' + secStyle('#ce93d8', '#ab47bc') + '">';
+    buf += '<div class="loc-section loc-section-gifts" style="' + secStyle('#ce93d8', '#ab47bc') + '">';
     buf += '<h3 style="margin-top:0;color:#4a148c">Gifts &amp; Trades</h3>';
     if (!giftsTrades.length) {
       buf += noneText;
@@ -386,7 +393,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     buf += '</div>';
 
     // ── Static Encounters (Capturable only) ──
-    buf += '<div class="loc-section" style="' + secStyle('#f48fb1', '#c2185b') + '">';
+    buf += '<div class="loc-section loc-section-statics-cap" style="' + secStyle('#f48fb1', '#c2185b') + '">';
     buf += '<h3 style="margin-top:0;color:#880e4f">Static Encounters</h3>';
     if (!capturableStatics.length) {
       buf += noneText;
@@ -417,7 +424,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
 
     // ── Wild Pokémon ──
     var encounters = loc.encounters || [];
-    buf += '<div class="loc-section" style="' + secStyle('#a5d6a7', '#388e3c') + '">';
+    buf += '<div class="loc-section loc-section-wild" style="' + secStyle('#a5d6a7', '#388e3c') + '">';
     buf += '<h3 style="margin-top:0;color:#1b5e20">Wild Pok&eacute;mon</h3>';
     if (!encounters.length) {
       buf += noneText;
@@ -471,7 +478,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
 
     // ── Items ──
     var locItems = loc.items || [];
-    buf += '<div class="loc-section" style="' + secStyle('#ffcc80', '#f57c00') + '">';
+    buf += '<div class="loc-section loc-section-items" style="' + secStyle('#ffcc80', '#f57c00') + '">';
     buf += '<h3 style="margin-top:0;color:#bf360c">Items</h3>';
     if (!locItems.length) {
       buf += noneText;
@@ -520,7 +527,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     // ── Shops ──
     var hasShopTables = loc.shopTables && loc.shopTables.length;
     var hasLegacyShops = loc.shops && loc.shops.length;
-    buf += '<div class="loc-section" style="' + secStyle('#ffe082', '#ffa000') + '">';
+    buf += '<div class="loc-section loc-section-shops" style="' + secStyle('#ffe082', '#ffa000') + '">';
     buf += '<h3 style="margin-top:0;color:#e65100">Shops</h3>';
     if (!hasShopTables && !hasLegacyShops) {
       buf += noneText;
@@ -622,7 +629,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     buf += '<div class="loc-tab loc-tab-battles" style="display:none">';
 
     // ── Trainers ──
-    buf += '<div class="loc-section" style="' + secStyle('#90caf9', '#1565c0') + '">';
+    buf += '<div class="loc-section loc-section-trainers" style="' + secStyle('#90caf9', '#1565c0') + '">';
     buf += '<h3 style="margin-top:0;color:#0d47a1">Trainers</h3>';
     if (!locationTrainers.length) {
       buf += noneText;
@@ -633,9 +640,21 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         var paddedTID = String(tTrainer.id).padStart(3, '0');
         var tName = tTrainer.name || ('Trainer\u00a0' + paddedTID);
         var tNoteLines = splitNotes(tTrainer.desc || '');
-        buf += '<li class="result" style="display:block;height:auto;min-height:32px;padding:0">';
-        buf += '<a href="' + Config.baseurl + 'trainers/' + paddedTID + '" data-target="push" style="display:block;height:auto;min-height:32px;padding:5px 8px;text-decoration:none">';
-        buf += '<span style="font-size:0.95em">' + escapeHTML(tName) + '</span>';
+        var tTeamSprites = (tTrainer.team || []).slice(0, 6).map(function(m) {
+          var disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
+          return '<span class="picon" style="' + getPokemonIcon(toID(disp)) + ';display:inline-block;vertical-align:middle"></span>';
+        }).join('');
+        var tSpriteUrl = (typeof getTrainerSpriteUrl === 'function') ? getTrainerSpriteUrl(tTrainer, true) : null;
+        var tThumb = tSpriteUrl
+          ? '<div style="position:absolute;left:-10px;top:-6px;width:148px;height:92px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
+            '<img src="' + escapeHTML(tSpriteUrl) + '" alt="" style="width:100%;height:100%;object-fit:contain;object-position:right top;transform:scale(0.6);transform-origin:right top;" loading="lazy" referrerpolicy="no-referrer" />' +
+            '</div>'
+          : '';
+        buf += '<li class="result">';
+        buf += '<a href="' + Config.baseurl + 'trainers/' + paddedTID + '" data-target="push" style="position:relative;overflow:hidden;">';
+        buf += tThumb;
+        buf += '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">[' + escapeHTML(paddedTID) + '] ' + escapeHTML(tName) + '</span>';
+        buf += '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + tTeamSprites + '</span>';
         buf += '</a>';
         buf += renderNoteLines(tNoteLines, '8px');
         buf += '</li>';
@@ -645,7 +664,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
     buf += '</div>';
 
     // ── Static Encounters (all) ──
-    buf += '<div class="loc-section" style="' + secStyle('#ef9a9a', '#c62828') + '">';
+    buf += '<div class="loc-section loc-section-statics-all" style="' + secStyle('#ef9a9a', '#c62828') + '">';
     buf += '<h3 style="margin-top:0;color:#b71c1c">Static Encounters</h3>';
     if (!staticBattles.length) {
       buf += noneText;

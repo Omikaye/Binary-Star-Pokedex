@@ -388,7 +388,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 			const trainerBg = (typeof getTrainerBackground === 'function') ? getTrainerBackground(t, true) : getTrainerIcon(t, true);
 			const thumb = trainerSpriteUrl
 				? '<div style="position:absolute;left:-10px;top:-6px;width:148px;height:92px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
-					'<img src="' + escapeHTML(trainerSpriteUrl) + '" alt="" style="width:100%;height:100%;object-fit:contain;object-position:right top;" loading="lazy" referrerpolicy="no-referrer" />' +
+					'<img src="' + escapeHTML(trainerSpriteUrl) + '" alt="" style="width:100%;height:100%;object-fit:contain;object-position:right top;transform:scale(0.6);transform-origin:right top;" loading="lazy" referrerpolicy="no-referrer" />' +
 				  '</div>'
 				: '<div style="position:absolute;left:-30px;top:-4px;width:128px;height:85px;opacity:0.35;pointer-events:none;overflow:hidden;">' +
 					'<div style="width:512px;height:256px;transform:scale(0.175);transform-origin:top left;' + trainerBg + ';"></div>' +
