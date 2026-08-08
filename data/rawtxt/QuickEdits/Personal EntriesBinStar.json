@@ -2871,7 +2871,7 @@
   },
   {
     "PokemonID": 83,
-    "PokemonName": "Farfetch\u2019d",
+    "PokemonName": "Farfetch’d",
     "BaseStats": {
       "HP": 60,
       "Atk": 90,
@@ -23381,7 +23381,7 @@
   },
   {
     "PokemonID": 669,
-    "PokemonName": "Flab\u00E9b\u00E9",
+    "PokemonName": "Flabébé",
     "BaseStats": {
       "HP": 44,
       "Atk": 38,
@@ -27223,7 +27223,7 @@
     "Weight": 0.7,
     "Color": "Yellow",
     "ZMove": {
-      "ZMove": "Let\u2019s Snuggle Forever",
+      "ZMove": "Let’s Snuggle Forever",
       "ZCrystal": "Mimikium Z",
       "BaseMove": "Play Rough"
     },
@@ -27470,7 +27470,7 @@
     "ZMove": {
       "ZMove": "Guardian of Alola",
       "ZCrystal": "Tapunium Z",
-      "BaseMove": "Nature\u2019s Madness"
+      "BaseMove": "Nature’s Madness"
     },
     "CatchRate": 255
   },
@@ -27505,7 +27505,7 @@
     "ZMove": {
       "ZMove": "Guardian of Alola",
       "ZCrystal": "Tapunium Z",
-      "BaseMove": "Nature\u2019s Madness"
+      "BaseMove": "Nature’s Madness"
     },
     "CatchRate": 255
   },
@@ -27540,7 +27540,7 @@
     "ZMove": {
       "ZMove": "Guardian of Alola",
       "ZCrystal": "Tapunium Z",
-      "BaseMove": "Nature\u2019s Madness"
+      "BaseMove": "Nature’s Madness"
     },
     "CatchRate": 255
   },
@@ -27575,7 +27575,7 @@
     "ZMove": {
       "ZMove": "Guardian of Alola",
       "ZCrystal": "Tapunium Z",
-      "BaseMove": "Nature\u2019s Madness"
+      "BaseMove": "Nature’s Madness"
     },
     "CatchRate": 255
   },
@@ -28245,8 +28245,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 808,
-    "PokemonName": "Grookey 1",
+    "PokemonID": 1137,
+    "PokemonName": "Deoxys 1",
     "BaseStats": {
       "HP": 50,
       "Atk": 180,
@@ -28280,8 +28280,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 809,
-    "PokemonName": "Grookey 2",
+    "PokemonID": 1138,
+    "PokemonName": "Deoxys 2",
     "BaseStats": {
       "HP": 50,
       "Atk": 70,
@@ -28315,8 +28315,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 810,
-    "PokemonName": "Grookey 3",
+    "PokemonID": 1139,
+    "PokemonName": "Deoxys 3",
     "BaseStats": {
       "HP": 50,
       "Atk": 95,
@@ -28350,8 +28350,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 811,
-    "PokemonName": "Rillaboom 1",
+    "PokemonID": 1141,
+    "PokemonName": "Wormadam 1",
     "BaseStats": {
       "HP": 90,
       "Atk": 50,
@@ -28385,8 +28385,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 812,
-    "PokemonName": "Rillaboom 2",
+    "PokemonID": 1142,
+    "PokemonName": "Wormadam 2",
     "BaseStats": {
       "HP": 90,
       "Atk": 50,
@@ -28420,8 +28420,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 813,
-    "PokemonName": "Scorbunny 1",
+    "PokemonID": 1164,
+    "PokemonName": "Shaymin 1",
     "BaseStats": {
       "HP": 100,
       "Atk": 103,
@@ -28455,8 +28455,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 814,
-    "PokemonName": "Raboot 1",
+    "PokemonID": 1162,
+    "PokemonName": "Giratina 1",
     "BaseStats": {
       "HP": 150,
       "Atk": 120,
@@ -28490,8 +28490,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 815,
-    "PokemonName": "Skwovet 1",
+    "PokemonID": 1154,
+    "PokemonName": "Rotom 1",
     "BaseStats": {
       "HP": 55,
       "Atk": 65,
@@ -28525,8 +28525,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 816,
-    "PokemonName": "Skwovet 2",
+    "PokemonID": 1155,
+    "PokemonName": "Rotom 2",
     "BaseStats": {
       "HP": 55,
       "Atk": 65,
@@ -28560,8 +28560,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 817,
-    "PokemonName": "Skwovet 3",
+    "PokemonID": 1156,
+    "PokemonName": "Rotom 3",
     "BaseStats": {
       "HP": 55,
       "Atk": 65,
@@ -28595,8 +28595,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 818,
-    "PokemonName": "Skwovet 4",
+    "PokemonID": 1157,
+    "PokemonName": "Rotom 4",
     "BaseStats": {
       "HP": 55,
       "Atk": 65,
@@ -28630,8 +28630,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 819,
-    "PokemonName": "Skwovet 5",
+    "PokemonID": 1158,
+    "PokemonName": "Rotom 5",
     "BaseStats": {
       "HP": 55,
       "Atk": 65,
@@ -28665,8 +28665,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 820,
-    "PokemonName": "Corvisquire 1",
+    "PokemonID": 1122,
+    "PokemonName": "Castform 1",
     "BaseStats": {
       "HP": 70,
       "Atk": 50,
@@ -28700,8 +28700,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 821,
-    "PokemonName": "Corvisquire 2",
+    "PokemonID": 1123,
+    "PokemonName": "Castform 2",
     "BaseStats": {
       "HP": 70,
       "Atk": 50,
@@ -28735,8 +28735,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 822,
-    "PokemonName": "Corvisquire 3",
+    "PokemonID": 1124,
+    "PokemonName": "Castform 3",
     "BaseStats": {
       "HP": 70,
       "Atk": 50,
@@ -28770,8 +28770,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 823,
-    "PokemonName": "Corviknight 1",
+    "PokemonID": 1143,
+    "PokemonName": "Cherrim 1",
     "BaseStats": {
       "HP": 70,
       "Atk": 75,
@@ -28805,8 +28805,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 824,
-    "PokemonName": "Blipbug 1",
+    "PokemonID": 1144,
+    "PokemonName": "Shellos 1",
     "BaseStats": {
       "HP": 76,
       "Atk": 48,
@@ -28840,8 +28840,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 825,
-    "PokemonName": "Dottler 1",
+    "PokemonID": 1145,
+    "PokemonName": "Gastrodon 1",
     "BaseStats": {
       "HP": 121,
       "Atk": 83,
@@ -28875,8 +28875,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 826,
-    "PokemonName": "Orbeetle 1",
+    "PokemonID": 1171,
+    "PokemonName": "Basculin 1",
     "BaseStats": {
       "HP": 73,
       "Atk": 99,
@@ -28910,8 +28910,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 827,
-    "PokemonName": "Nickit 1",
+    "PokemonID": 1174,
+    "PokemonName": "Darmanitan 1",
     "BaseStats": {
       "HP": 105,
       "Atk": 40,
@@ -28945,8 +28945,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 828,
-    "PokemonName": "Thievul 1",
+    "PokemonID": 1192,
+    "PokemonName": "Meloetta 1",
     "BaseStats": {
       "HP": 100,
       "Atk": 128,
@@ -28980,8 +28980,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 829,
-    "PokemonName": "Eldegoss 1",
+    "PokemonID": 1189,
+    "PokemonName": "Kyurem 1",
     "BaseStats": {
       "HP": 125,
       "Atk": 120,
@@ -29015,8 +29015,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 830,
-    "PokemonName": "Eldegoss 2",
+    "PokemonID": 1190,
+    "PokemonName": "Kyurem 2",
     "BaseStats": {
       "HP": 125,
       "Atk": 170,
@@ -29050,8 +29050,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 831,
-    "PokemonName": "Wooloo 1",
+    "PokemonID": 1191,
+    "PokemonName": "Keldeo 1",
     "BaseStats": {
       "HP": 91,
       "Atk": 72,
@@ -29085,8 +29085,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 832,
-    "PokemonName": "Dubwool 1",
+    "PokemonID": 1186,
+    "PokemonName": "Tornadus 1",
     "BaseStats": {
       "HP": 79,
       "Atk": 100,
@@ -29120,8 +29120,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 833,
-    "PokemonName": "Chewtle 1",
+    "PokemonID": 1187,
+    "PokemonName": "Thundurus 1",
     "BaseStats": {
       "HP": 79,
       "Atk": 105,
@@ -29155,8 +29155,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 834,
-    "PokemonName": "Drednaw 1",
+    "PokemonID": 1188,
+    "PokemonName": "Landorus 1",
     "BaseStats": {
       "HP": 89,
       "Atk": 145,
@@ -29190,8 +29190,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 835,
-    "PokemonName": "Yamper 1",
+    "PokemonID": 1071,
+    "PokemonName": "Gengar 1",
     "BaseStats": {
       "HP": 60,
       "Atk": 70,
@@ -29225,8 +29225,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 836,
-    "PokemonName": "Boltund 1",
+    "PokemonID": 1214,
+    "PokemonName": "Meowstic 1",
     "BaseStats": {
       "HP": 74,
       "Atk": 42,
@@ -29260,8 +29260,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 837,
-    "PokemonName": "Cramorant 1",
+    "PokemonID": 1205,
+    "PokemonName": "Furfrou 1",
     "BaseStats": {
       "HP": 75,
       "Atk": 90,
@@ -29295,8 +29295,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 838,
-    "PokemonName": "Cramorant 2",
+    "PokemonID": 1206,
+    "PokemonName": "Furfrou 2",
     "BaseStats": {
       "HP": 75,
       "Atk": 90,
@@ -29330,8 +29330,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 839,
-    "PokemonName": "Cramorant 3",
+    "PokemonID": 1207,
+    "PokemonName": "Furfrou 3",
     "BaseStats": {
       "HP": 75,
       "Atk": 90,
@@ -29365,8 +29365,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 840,
-    "PokemonName": "Cramorant 4",
+    "PokemonID": 1208,
+    "PokemonName": "Furfrou 4",
     "BaseStats": {
       "HP": 75,
       "Atk": 90,
@@ -29400,8 +29400,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 841,
-    "PokemonName": "Cramorant 5",
+    "PokemonID": 1209,
+    "PokemonName": "Furfrou 5",
     "BaseStats": {
       "HP": 75,
       "Atk": 90,
@@ -29435,8 +29435,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 842,
-    "PokemonName": "Cramorant 6",
+    "PokemonID": 1210,
+    "PokemonName": "Furfrou 6",
     "BaseStats": {
       "HP": 75,
       "Atk": 90,
@@ -29470,8 +29470,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 843,
-    "PokemonName": "Cramorant 7",
+    "PokemonID": 1211,
+    "PokemonName": "Furfrou 7",
     "BaseStats": {
       "HP": 75,
       "Atk": 90,
@@ -29505,8 +29505,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 844,
-    "PokemonName": "Cramorant 8",
+    "PokemonID": 1212,
+    "PokemonName": "Furfrou 8",
     "BaseStats": {
       "HP": 75,
       "Atk": 90,
@@ -29540,8 +29540,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 845,
-    "PokemonName": "Cramorant 9",
+    "PokemonID": 1213,
+    "PokemonName": "Furfrou 9",
     "BaseStats": {
       "HP": 75,
       "Atk": 90,
@@ -29575,8 +29575,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 846,
-    "PokemonName": "Arrokuda 1",
+    "PokemonID": 1113,
+    "PokemonName": "Gardevoir 1",
     "BaseStats": {
       "HP": 68,
       "Atk": 85,
@@ -29610,8 +29610,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 847,
-    "PokemonName": "Barraskewda 1",
+    "PokemonID": 1096,
+    "PokemonName": "Ampharos 1",
     "BaseStats": {
       "HP": 90,
       "Atk": 95,
@@ -29645,8 +29645,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 848,
-    "PokemonName": "Toxel 1",
+    "PokemonID": 1026,
+    "PokemonName": "Venusaur 1",
     "BaseStats": {
       "HP": 90,
       "Atk": 100,
@@ -29680,8 +29680,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 849,
-    "PokemonName": "Sizzlipede 1",
+    "PokemonID": 1027,
+    "PokemonName": "Charizard 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 135,
@@ -29715,8 +29715,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 850,
-    "PokemonName": "Sizzlipede 2",
+    "PokemonID": 1028,
+    "PokemonName": "Charizard 2",
     "BaseStats": {
       "HP": 80,
       "Atk": 94,
@@ -29750,8 +29750,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 851,
-    "PokemonName": "Clobbopus 1",
+    "PokemonID": 1091,
+    "PokemonName": "Mewtwo 1",
     "BaseStats": {
       "HP": 106,
       "Atk": 190,
@@ -29785,8 +29785,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 852,
-    "PokemonName": "Clobbopus 2",
+    "PokemonID": 1092,
+    "PokemonName": "Mewtwo 2",
     "BaseStats": {
       "HP": 106,
       "Atk": 150,
@@ -29820,8 +29820,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 853,
-    "PokemonName": "Grapploct 1",
+    "PokemonID": 1109,
+    "PokemonName": "Blaziken 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 160,
@@ -29855,8 +29855,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 854,
-    "PokemonName": "Sinistea 1",
+    "PokemonID": 1117,
+    "PokemonName": "Medicham 1",
     "BaseStats": {
       "HP": 65,
       "Atk": 100,
@@ -29890,8 +29890,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 855,
-    "PokemonName": "Polteageist 1",
+    "PokemonID": 1106,
+    "PokemonName": "Houndoom 1",
     "BaseStats": {
       "HP": 75,
       "Atk": 90,
@@ -29925,8 +29925,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 856,
-    "PokemonName": "Hatenna 1",
+    "PokemonID": 1116,
+    "PokemonName": "Aggron 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 140,
@@ -29960,8 +29960,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 857,
-    "PokemonName": "Hattrem 1",
+    "PokemonID": 1125,
+    "PokemonName": "Banette 1",
     "BaseStats": {
       "HP": 64,
       "Atk": 165,
@@ -29995,8 +29995,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 858,
-    "PokemonName": "Hatterene 1",
+    "PokemonID": 1107,
+    "PokemonName": "Tyranitar 1",
     "BaseStats": {
       "HP": 100,
       "Atk": 164,
@@ -30030,8 +30030,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 859,
-    "PokemonName": "Impidimp 1",
+    "PokemonID": 1101,
+    "PokemonName": "Scizor 1",
     "BaseStats": {
       "HP": 70,
       "Atk": 150,
@@ -30065,8 +30065,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 860,
-    "PokemonName": "Morgrem 1",
+    "PokemonID": 1081,
+    "PokemonName": "Pinsir 1",
     "BaseStats": {
       "HP": 75,
       "Atk": 155,
@@ -30100,8 +30100,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 861,
-    "PokemonName": "Grimmsnarl 1",
+    "PokemonID": 1086,
+    "PokemonName": "Aerodactyl 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 135,
@@ -30135,8 +30135,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 862,
-    "PokemonName": "Obstagoon 1",
+    "PokemonID": 1149,
+    "PokemonName": "Lucario 1",
     "BaseStats": {
       "HP": 70,
       "Atk": 145,
@@ -30170,8 +30170,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 863,
-    "PokemonName": "Perrserker 1",
+    "PokemonID": 1151,
+    "PokemonName": "Abomasnow 1",
     "BaseStats": {
       "HP": 95,
       "Atk": 132,
@@ -30205,8 +30205,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 864,
-    "PokemonName": "Cursola 1",
+    "PokemonID": 1217,
+    "PokemonName": "Aegislash 1",
     "BaseStats": {
       "HP": 60,
       "Atk": 150,
@@ -30240,8 +30240,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 865,
-    "PokemonName": "Sirfetch\u0027d 1",
+    "PokemonID": 1029,
+    "PokemonName": "Blastoise 1",
     "BaseStats": {
       "HP": 89,
       "Atk": 95,
@@ -30275,8 +30275,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 866,
-    "PokemonName": "Mr. Rime 1",
+    "PokemonID": 1078,
+    "PokemonName": "Kangaskhan 1",
     "BaseStats": {
       "HP": 105,
       "Atk": 125,
@@ -30310,8 +30310,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 867,
-    "PokemonName": "Runerigus 1",
+    "PokemonID": 1085,
+    "PokemonName": "Gyarados 1",
     "BaseStats": {
       "HP": 95,
       "Atk": 155,
@@ -30345,8 +30345,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 868,
-    "PokemonName": "Milcery 1",
+    "PokemonID": 1127,
+    "PokemonName": "Absol 1",
     "BaseStats": {
       "HP": 65,
       "Atk": 150,
@@ -30380,8 +30380,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 869,
-    "PokemonName": "Alcremie 1",
+    "PokemonID": 1058,
+    "PokemonName": "Alakazam 1",
     "BaseStats": {
       "HP": 60,
       "Atk": 60,
@@ -30415,8 +30415,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 870,
-    "PokemonName": "Falinks 1",
+    "PokemonID": 1102,
+    "PokemonName": "Heracross 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 185,
@@ -30450,8 +30450,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 871,
-    "PokemonName": "Pincurchin 1",
+    "PokemonID": 1115,
+    "PokemonName": "Mawile 1",
     "BaseStats": {
       "HP": 65,
       "Atk": 105,
@@ -30485,8 +30485,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 872,
-    "PokemonName": "Snom 1",
+    "PokemonID": 1118,
+    "PokemonName": "Manectric 1",
     "BaseStats": {
       "HP": 70,
       "Atk": 105,
@@ -30520,8 +30520,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 873,
-    "PokemonName": "Frosmoth 1",
+    "PokemonID": 1147,
+    "PokemonName": "Garchomp 1",
     "BaseStats": {
       "HP": 108,
       "Atk": 170,
@@ -30555,8 +30555,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 874,
-    "PokemonName": "Stonjourner 1",
+    "PokemonID": 1133,
+    "PokemonName": "Latios 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 130,
@@ -30590,8 +30590,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 875,
-    "PokemonName": "Eiscue 1",
+    "PokemonID": 1132,
+    "PokemonName": "Latias 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 100,
@@ -30625,8 +30625,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 876,
-    "PokemonName": "Cufant 1",
+    "PokemonID": 1224,
+    "PokemonName": "Pumpkaboo 1",
     "BaseStats": {
       "HP": 44,
       "Atk": 66,
@@ -30660,8 +30660,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 877,
-    "PokemonName": "Cufant 2",
+    "PokemonID": 1225,
+    "PokemonName": "Pumpkaboo 2",
     "BaseStats": {
       "HP": 54,
       "Atk": 66,
@@ -30695,8 +30695,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 878,
-    "PokemonName": "Cufant 3",
+    "PokemonID": 1226,
+    "PokemonName": "Pumpkaboo 3",
     "BaseStats": {
       "HP": 59,
       "Atk": 66,
@@ -30730,8 +30730,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 879,
-    "PokemonName": "Arctozolt 1",
+    "PokemonID": 1227,
+    "PokemonName": "Gourgeist 1",
     "BaseStats": {
       "HP": 65,
       "Atk": 90,
@@ -30765,8 +30765,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 880,
-    "PokemonName": "Arctozolt 2",
+    "PokemonID": 1228,
+    "PokemonName": "Gourgeist 2",
     "BaseStats": {
       "HP": 85,
       "Atk": 100,
@@ -30800,8 +30800,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 881,
-    "PokemonName": "Arctozolt 3",
+    "PokemonID": 1229,
+    "PokemonName": "Gourgeist 3",
     "BaseStats": {
       "HP": 95,
       "Atk": 105,
@@ -30835,8 +30835,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 882,
-    "PokemonName": "Drakloak 1",
+    "PokemonID": 1199,
+    "PokemonName": "Floette 1",
     "BaseStats": {
       "HP": 54,
       "Atk": 45,
@@ -30870,8 +30870,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 883,
-    "PokemonName": "Drakloak 2",
+    "PokemonID": 1200,
+    "PokemonName": "Floette 2",
     "BaseStats": {
       "HP": 54,
       "Atk": 45,
@@ -30905,8 +30905,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 884,
-    "PokemonName": "Drakloak 3",
+    "PokemonID": 1201,
+    "PokemonName": "Floette 3",
     "BaseStats": {
       "HP": 54,
       "Atk": 45,
@@ -30940,8 +30940,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 885,
-    "PokemonName": "Drakloak 4",
+    "PokemonID": 1202,
+    "PokemonName": "Floette 4",
     "BaseStats": {
       "HP": 54,
       "Atk": 45,
@@ -30975,8 +30975,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 886,
-    "PokemonName": "Drakloak 5",
+    "PokemonID": 1203,
+    "PokemonName": "Floette 5",
     "BaseStats": {
       "HP": 74,
       "Atk": 65,
@@ -31010,8 +31010,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 887,
-    "PokemonName": "Dragapult 1",
+    "PokemonID": 1110,
+    "PokemonName": "Swampert 1",
     "BaseStats": {
       "HP": 100,
       "Atk": 150,
@@ -31045,8 +31045,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 888,
-    "PokemonName": "Zacian 1",
+    "PokemonID": 1108,
+    "PokemonName": "Sceptile 1",
     "BaseStats": {
       "HP": 70,
       "Atk": 135,
@@ -31080,8 +31080,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 889,
-    "PokemonName": "Zamazenta 1",
+    "PokemonID": 1114,
+    "PokemonName": "Sableye 1",
     "BaseStats": {
       "HP": 60,
       "Atk": 95,
@@ -31115,8 +31115,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 890,
-    "PokemonName": "Eternatus 1",
+    "PokemonID": 1121,
+    "PokemonName": "Altaria 1",
     "BaseStats": {
       "HP": 85,
       "Atk": 115,
@@ -31150,8 +31150,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 891,
-    "PokemonName": "Kubfu 1",
+    "PokemonID": 1152,
+    "PokemonName": "Gallade 1",
     "BaseStats": {
       "HP": 68,
       "Atk": 165,
@@ -31185,8 +31185,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 892,
-    "PokemonName": "Urshifu 1",
+    "PokemonID": 1168,
+    "PokemonName": "Audino 1",
     "BaseStats": {
       "HP": 125,
       "Atk": 80,
@@ -31220,8 +31220,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 893,
-    "PokemonName": "Zarude 1",
+    "PokemonID": 1119,
+    "PokemonName": "Sharpedo 1",
     "BaseStats": {
       "HP": 70,
       "Atk": 140,
@@ -31255,8 +31255,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 894,
-    "PokemonName": "Regieleki 1",
+    "PokemonID": 1066,
+    "PokemonName": "Slowbro 1",
     "BaseStats": {
       "HP": 100,
       "Atk": 75,
@@ -31290,8 +31290,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 895,
-    "PokemonName": "Regidrago 1",
+    "PokemonID": 1099,
+    "PokemonName": "Steelix 1",
     "BaseStats": {
       "HP": 75,
       "Atk": 130,
@@ -31325,8 +31325,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 896,
-    "PokemonName": "Glastrier 1",
+    "PokemonID": 1031,
+    "PokemonName": "Pidgeot 1",
     "BaseStats": {
       "HP": 83,
       "Atk": 80,
@@ -31360,8 +31360,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 897,
-    "PokemonName": "Spectrier 1",
+    "PokemonID": 1129,
+    "PokemonName": "Glalie 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 130,
@@ -31395,8 +31395,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 898,
-    "PokemonName": "Calyrex 1",
+    "PokemonID": 1236,
+    "PokemonName": "Diancie 1",
     "BaseStats": {
       "HP": 60,
       "Atk": 160,
@@ -31430,8 +31430,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 899,
-    "PokemonName": "Wyrdeer 1",
+    "PokemonID": 1131,
+    "PokemonName": "Metagross 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 145,
@@ -31465,8 +31465,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 900,
-    "PokemonName": "Kleavor 1",
+    "PokemonID": 1134,
+    "PokemonName": "Kyogre 1",
     "BaseStats": {
       "HP": 100,
       "Atk": 150,
@@ -31500,8 +31500,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 901,
-    "PokemonName": "Ursaluna 1",
+    "PokemonID": 1135,
+    "PokemonName": "Groudon 1",
     "BaseStats": {
       "HP": 100,
       "Atk": 180,
@@ -31535,8 +31535,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 902,
-    "PokemonName": "Basculegion 1",
+    "PokemonID": 1136,
+    "PokemonName": "Rayquaza 1",
     "BaseStats": {
       "HP": 105,
       "Atk": 180,
@@ -31570,8 +31570,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 903,
-    "PokemonName": "Sneasler 1",
+    "PokemonID": 1237,
+    "PokemonName": "Hoopa 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 160,
@@ -31605,8 +31605,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 904,
-    "PokemonName": "Overqwil 1",
+    "PokemonID": 1120,
+    "PokemonName": "Camerupt 1",
     "BaseStats": {
       "HP": 90,
       "Atk": 120,
@@ -31640,8 +31640,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 905,
-    "PokemonName": "Enamorus 1",
+    "PokemonID": 1146,
+    "PokemonName": "Lopunny 1",
     "BaseStats": {
       "HP": 65,
       "Atk": 136,
@@ -31675,8 +31675,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 906,
-    "PokemonName": "Sprigatito 1",
+    "PokemonID": 1130,
+    "PokemonName": "Salamence 1",
     "BaseStats": {
       "HP": 95,
       "Atk": 145,
@@ -31710,8 +31710,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 907,
-    "PokemonName": "Floragato 1",
+    "PokemonID": 1030,
+    "PokemonName": "Beedrill 1",
     "BaseStats": {
       "HP": 65,
       "Atk": 150,
@@ -31745,8 +31745,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 908,
-    "PokemonName": "Meowscarada 1",
+    "PokemonID": 1249,
+    "PokemonName": "Wishiwashi 1",
     "BaseStats": {
       "HP": 60,
       "Atk": 140,
@@ -31780,8 +31780,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 909,
-    "PokemonName": "Skeledirge 1",
+    "PokemonID": 1242,
+    "PokemonName": "Oricorio 1",
     "BaseStats": {
       "HP": 75,
       "Atk": 85,
@@ -31815,8 +31815,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 910,
-    "PokemonName": "Skeledirge 2",
+    "PokemonID": 1243,
+    "PokemonName": "Oricorio 2",
     "BaseStats": {
       "HP": 75,
       "Atk": 85,
@@ -31850,8 +31850,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 911,
-    "PokemonName": "Skeledirge 3",
+    "PokemonID": 1244,
+    "PokemonName": "Oricorio 3",
     "BaseStats": {
       "HP": 75,
       "Atk": 85,
@@ -31885,8 +31885,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 912,
-    "PokemonName": "Quaxwell 1",
+    "PokemonID": 1247,
+    "PokemonName": "Lycanroc 1",
     "BaseStats": {
       "HP": 85,
       "Atk": 125,
@@ -31920,8 +31920,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 913,
-    "PokemonName": "Quaxwell 2",
+    "PokemonID": 1248,
+    "PokemonName": "Lycanroc 2",
     "BaseStats": {
       "HP": 80,
       "Atk": 117,
@@ -31955,8 +31955,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 914,
-    "PokemonName": "Quaquaval 1",
+    "PokemonID": 1032,
+    "PokemonName": "Rattata 1",
     "BaseStats": {
       "HP": 45,
       "Atk": 60,
@@ -31990,8 +31990,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 915,
-    "PokemonName": "Oinkologne 1",
+    "PokemonID": 1033,
+    "PokemonName": "Raticate 1",
     "BaseStats": {
       "HP": 105,
       "Atk": 90,
@@ -32025,8 +32025,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 916,
-    "PokemonName": "Oinkologne 2",
+    "PokemonID": 1034,
+    "PokemonName": "Raticate 2",
     "BaseStats": {
       "HP": 105,
       "Atk": 122,
@@ -32060,8 +32060,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 917,
-    "PokemonName": "Tarountula 1",
+    "PokemonID": 1043,
+    "PokemonName": "Raichu 1",
     "BaseStats": {
       "HP": 65,
       "Atk": 95,
@@ -32095,8 +32095,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 918,
-    "PokemonName": "Spidops 1",
+    "PokemonID": 1046,
+    "PokemonName": "Sandshrew 1",
     "BaseStats": {
       "HP": 63,
       "Atk": 75,
@@ -32130,8 +32130,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 919,
-    "PokemonName": "Nymble 1",
+    "PokemonID": 1047,
+    "PokemonName": "Sandslash 1",
     "BaseStats": {
       "HP": 85,
       "Atk": 106,
@@ -32165,8 +32165,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 920,
-    "PokemonName": "Lokix 1",
+    "PokemonID": 1049,
+    "PokemonName": "Vulpix 1",
     "BaseStats": {
       "HP": 38,
       "Atk": 35,
@@ -32200,8 +32200,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 921,
-    "PokemonName": "Pawmi 1",
+    "PokemonID": 1050,
+    "PokemonName": "Ninetales 1",
     "BaseStats": {
       "HP": 75,
       "Atk": 60,
@@ -32235,8 +32235,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 922,
-    "PokemonName": "Pawmo 1",
+    "PokemonID": 1053,
+    "PokemonName": "Meowth 1",
     "BaseStats": {
       "HP": 40,
       "Atk": 35,
@@ -32270,8 +32270,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 923,
-    "PokemonName": "Pawmot 1",
+    "PokemonID": 1054,
+    "PokemonName": "Persian 1",
     "BaseStats": {
       "HP": 65,
       "Atk": 60,
@@ -32305,8 +32305,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 924,
-    "PokemonName": "Tandemaus 1",
+    "PokemonID": 1060,
+    "PokemonName": "Geodude 1",
     "BaseStats": {
       "HP": 40,
       "Atk": 80,
@@ -32340,8 +32340,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 925,
-    "PokemonName": "Maushold 1",
+    "PokemonID": 1061,
+    "PokemonName": "Graveler 1",
     "BaseStats": {
       "HP": 70,
       "Atk": 95,
@@ -32375,8 +32375,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 926,
-    "PokemonName": "Fidough 1",
+    "PokemonID": 1062,
+    "PokemonName": "Golem 1",
     "BaseStats": {
       "HP": 90,
       "Atk": 120,
@@ -32410,8 +32410,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 927,
-    "PokemonName": "Dachsbun 1",
+    "PokemonID": 1069,
+    "PokemonName": "Grimer 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 80,
@@ -32445,8 +32445,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 928,
-    "PokemonName": "Smoliv 1",
+    "PokemonID": 1070,
+    "PokemonName": "Muk 1",
     "BaseStats": {
       "HP": 110,
       "Atk": 105,
@@ -32480,8 +32480,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 929,
-    "PokemonName": "Dolliv 1",
+    "PokemonID": 1074,
+    "PokemonName": "Exeggutor 1",
     "BaseStats": {
       "HP": 105,
       "Atk": 125,
@@ -32515,8 +32515,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 930,
-    "PokemonName": "Squawkabilly 1",
+    "PokemonID": 1075,
+    "PokemonName": "Marowak 1",
     "BaseStats": {
       "HP": 70,
       "Atk": 80,
@@ -32550,8 +32550,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 931,
-    "PokemonName": "Squawkabilly 2",
+    "PokemonID": 1076,
+    "PokemonName": "Marowak 2",
     "BaseStats": {
       "HP": 70,
       "Atk": 140,
@@ -32585,8 +32585,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 932,
-    "PokemonName": "Naclstack 1",
+    "PokemonID": 1195,
+    "PokemonName": "Greninja 1",
     "BaseStats": {
       "HP": 74,
       "Atk": 138,
@@ -32620,8 +32620,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 933,
-    "PokemonName": "Naclstack 2",
+    "PokemonID": 1196,
+    "PokemonName": "Greninja 2",
     "BaseStats": {
       "HP": 74,
       "Atk": 145,
@@ -32655,8 +32655,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 934,
-    "PokemonName": "Ceruledge 1",
+    "PokemonID": 1231,
+    "PokemonName": "Zygarde 1",
     "BaseStats": {
       "HP": 54,
       "Atk": 100,
@@ -32690,8 +32690,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 935,
-    "PokemonName": "Ceruledge 2",
+    "PokemonID": 1232,
+    "PokemonName": "Zygarde 2",
     "BaseStats": {
       "HP": 54,
       "Atk": 100,
@@ -32725,8 +32725,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 936,
-    "PokemonName": "Ceruledge 3",
+    "PokemonID": 1233,
+    "PokemonName": "Zygarde 3",
     "BaseStats": {
       "HP": 108,
       "Atk": 100,
@@ -32760,8 +32760,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 937,
-    "PokemonName": "Ceruledge 4",
+    "PokemonID": 1234,
+    "PokemonName": "Zygarde 4",
     "BaseStats": {
       "HP": 216,
       "Atk": 100,
@@ -32795,8 +32795,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 938,
-    "PokemonName": "Klawf 1",
+    "PokemonID": 1254,
+    "PokemonName": "Minior 1",
     "BaseStats": {
       "HP": 75,
       "Atk": 60,
@@ -32830,8 +32830,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 939,
-    "PokemonName": "Klawf 2",
+    "PokemonID": 1255,
+    "PokemonName": "Minior 2",
     "BaseStats": {
       "HP": 75,
       "Atk": 60,
@@ -32865,8 +32865,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 940,
-    "PokemonName": "Klawf 3",
+    "PokemonID": 1256,
+    "PokemonName": "Minior 3",
     "BaseStats": {
       "HP": 75,
       "Atk": 60,
@@ -32900,8 +32900,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 941,
-    "PokemonName": "Klawf 4",
+    "PokemonID": 1257,
+    "PokemonName": "Minior 4",
     "BaseStats": {
       "HP": 75,
       "Atk": 60,
@@ -32935,8 +32935,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 942,
-    "PokemonName": "Klawf 5",
+    "PokemonID": 1258,
+    "PokemonName": "Minior 5",
     "BaseStats": {
       "HP": 75,
       "Atk": 60,
@@ -32970,8 +32970,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 943,
-    "PokemonName": "Klawf 6",
+    "PokemonID": 1259,
+    "PokemonName": "Minior 6",
     "BaseStats": {
       "HP": 75,
       "Atk": 60,
@@ -33005,8 +33005,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 944,
-    "PokemonName": "Klawf 7",
+    "PokemonID": 1260,
+    "PokemonName": "Minior 7",
     "BaseStats": {
       "HP": 75,
       "Atk": 100,
@@ -33040,8 +33040,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 945,
-    "PokemonName": "Klawf 8",
+    "PokemonID": 1261,
+    "PokemonName": "Minior 8",
     "BaseStats": {
       "HP": 75,
       "Atk": 100,
@@ -33075,8 +33075,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 946,
-    "PokemonName": "Klawf 9",
+    "PokemonID": 1262,
+    "PokemonName": "Minior 9",
     "BaseStats": {
       "HP": 75,
       "Atk": 100,
@@ -33110,8 +33110,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 947,
-    "PokemonName": "Klawf 10",
+    "PokemonID": 1263,
+    "PokemonName": "Minior 10",
     "BaseStats": {
       "HP": 75,
       "Atk": 100,
@@ -33145,8 +33145,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 948,
-    "PokemonName": "Klawf 11",
+    "PokemonID": 1264,
+    "PokemonName": "Minior 11",
     "BaseStats": {
       "HP": 75,
       "Atk": 100,
@@ -33180,8 +33180,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 949,
-    "PokemonName": "Klawf 12",
+    "PokemonID": 1265,
+    "PokemonName": "Minior 12",
     "BaseStats": {
       "HP": 75,
       "Atk": 100,
@@ -33215,8 +33215,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 950,
-    "PokemonName": "Klawf 13",
+    "PokemonID": 1266,
+    "PokemonName": "Minior 13",
     "BaseStats": {
       "HP": 75,
       "Atk": 100,
@@ -33250,8 +33250,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 951,
-    "PokemonName": "Capsakid 1",
+    "PokemonID": 1051,
+    "PokemonName": "Diglett 1",
     "BaseStats": {
       "HP": 25,
       "Atk": 60,
@@ -33285,8 +33285,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 952,
-    "PokemonName": "Scovillain 1",
+    "PokemonID": 1052,
+    "PokemonName": "Dugtrio 1",
     "BaseStats": {
       "HP": 60,
       "Atk": 105,
@@ -33320,8 +33320,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 953,
-    "PokemonName": "Espathra 1",
+    "PokemonID": 1268,
+    "PokemonName": "Mimikyu 1",
     "BaseStats": {
       "HP": 65,
       "Atk": 95,
@@ -33348,15 +33348,15 @@
     "Weight": 0.7,
     "Color": "Yellow",
     "ZMove": {
-      "ZMove": "Let\u2019s Snuggle Forever",
+      "ZMove": "Let’s Snuggle Forever",
       "ZCrystal": "Mimikium Z",
       "BaseMove": "Play Rough"
     },
     "CatchRate": 255
   },
   {
-    "PokemonID": 954,
-    "PokemonName": "Espathra 2",
+    "PokemonID": 1269,
+    "PokemonName": "Mimikyu 2",
     "BaseStats": {
       "HP": 65,
       "Atk": 140,
@@ -33383,15 +33383,15 @@
     "Weight": 2.8,
     "Color": "Yellow",
     "ZMove": {
-      "ZMove": "Let\u2019s Snuggle Forever",
+      "ZMove": "Let’s Snuggle Forever",
       "ZCrystal": "Mimikium Z",
       "BaseMove": "Play Rough"
     },
     "CatchRate": 255
   },
   {
-    "PokemonID": 955,
-    "PokemonName": "Espathra 3",
+    "PokemonID": 1270,
+    "PokemonName": "Mimikyu 3",
     "BaseStats": {
       "HP": 65,
       "Atk": 140,
@@ -33418,15 +33418,15 @@
     "Weight": 2.8,
     "Color": "Yellow",
     "ZMove": {
-      "ZMove": "Let\u2019s Snuggle Forever",
+      "ZMove": "Let’s Snuggle Forever",
       "ZCrystal": "Mimikium Z",
       "BaseMove": "Play Rough"
     },
     "CatchRate": 255
   },
   {
-    "PokemonID": 956,
-    "PokemonName": "Tinkatink 1",
+    "PokemonID": 1276,
+    "PokemonName": "Magearna 1",
     "BaseStats": {
       "HP": 80,
       "Atk": 125,
@@ -33460,8 +33460,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 957,
-    "PokemonName": "Palafin 1",
+    "PokemonID": 1035,
+    "PokemonName": "Pikachu 1",
     "BaseStats": {
       "HP": 53,
       "Atk": 70,
@@ -33495,8 +33495,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 958,
-    "PokemonName": "Palafin 2",
+    "PokemonID": 1036,
+    "PokemonName": "Pikachu 2",
     "BaseStats": {
       "HP": 53,
       "Atk": 70,
@@ -33530,8 +33530,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 959,
-    "PokemonName": "Palafin 3",
+    "PokemonID": 1037,
+    "PokemonName": "Pikachu 3",
     "BaseStats": {
       "HP": 53,
       "Atk": 70,
@@ -33565,8 +33565,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 960,
-    "PokemonName": "Palafin 4",
+    "PokemonID": 1038,
+    "PokemonName": "Pikachu 4",
     "BaseStats": {
       "HP": 53,
       "Atk": 70,
@@ -33600,8 +33600,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 961,
-    "PokemonName": "Palafin 5",
+    "PokemonID": 1039,
+    "PokemonName": "Pikachu 5",
     "BaseStats": {
       "HP": 53,
       "Atk": 70,
@@ -33635,8 +33635,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 962,
-    "PokemonName": "Palafin 6",
+    "PokemonID": 1040,
+    "PokemonName": "Pikachu 6",
     "BaseStats": {
       "HP": 53,
       "Atk": 70,
@@ -33670,8 +33670,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 963,
-    "PokemonName": "Palafin 7",
+    "PokemonID": 1041,
+    "PokemonName": "Pikachu 7",
     "BaseStats": {
       "HP": 53,
       "Atk": 70,
@@ -33705,8 +33705,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 964,
-    "PokemonName": "Varoom 1",
+    "PokemonID": 1239,
+    "PokemonName": "Gumshoos 1",
     "BaseStats": {
       "HP": 90,
       "Atk": 141,
@@ -33740,8 +33740,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 965,
-    "PokemonName": "Revavroom 1",
+    "PokemonID": 1240,
+    "PokemonName": "Vikavolt 1",
     "BaseStats": {
       "HP": 74,
       "Atk": 105,
@@ -33775,8 +33775,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 966,
-    "PokemonName": "Cyclizar 1",
+    "PokemonID": 1251,
+    "PokemonName": "Lurantis 1",
     "BaseStats": {
       "HP": 75,
       "Atk": 140,
@@ -33810,8 +33810,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 967,
-    "PokemonName": "Orthworm 1",
+    "PokemonID": 1252,
+    "PokemonName": "Salazzle 1",
     "BaseStats": {
       "HP": 68,
       "Atk": 120,
@@ -33845,8 +33845,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 968,
-    "PokemonName": "Glimmet 1",
+    "PokemonID": 1272,
+    "PokemonName": "Kommo-o 1",
     "BaseStats": {
       "HP": 75,
       "Atk": 140,
@@ -33880,8 +33880,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 969,
-    "PokemonName": "Houndstone 1",
+    "PokemonID": 1273,
+    "PokemonName": "Necrozma 1",
     "BaseStats": {
       "HP": 97,
       "Atk": 157,
@@ -33915,8 +33915,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 970,
-    "PokemonName": "Houndstone 2",
+    "PokemonID": 1274,
+    "PokemonName": "Necrozma 2",
     "BaseStats": {
       "HP": 97,
       "Atk": 113,
@@ -33950,8 +33950,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 971,
-    "PokemonName": "Houndstone 3",
+    "PokemonID": 1275,
+    "PokemonName": "Necrozma 3",
     "BaseStats": {
       "HP": 97,
       "Atk": 167,
@@ -33985,8 +33985,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 972,
-    "PokemonName": "Flamigo 1",
+    "PokemonID": 1250,
+    "PokemonName": "Araquanid 1",
     "BaseStats": {
       "HP": 74,
       "Atk": 100,
@@ -34020,8 +34020,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 973,
-    "PokemonName": "Cetoddle 1",
+    "PokemonID": 1267,
+    "PokemonName": "Togedemaru 1",
     "BaseStats": {
       "HP": 65,
       "Atk": 123,
@@ -34055,8 +34055,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 974,
-    "PokemonName": "Cetitan 1",
+    "PokemonID": 1245,
+    "PokemonName": "Ribombee 1",
     "BaseStats": {
       "HP": 60,
       "Atk": 66,
@@ -34090,8 +34090,8 @@
     "CatchRate": 255
   },
   {
-    "PokemonID": 975,
-    "PokemonName": "Veluza 1",
+    "PokemonID": 1246,
+    "PokemonName": "Rockruff 1",
     "BaseStats": {
       "HP": 50,
       "Atk": 70,
