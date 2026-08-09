@@ -1,0 +1,2 @@
+let e="pokedex-theme";function t(e,t){let d="dark"===e;document.body.classList.toggle("dark-mode",d),t&&(t.checked=d)}function d(){let d=document.getElementById("theme-toggle");d&&(t("dark"===function(){try{return window.localStorage.getItem(e)}catch(e){return null}}()?"dark":"light",d),d.addEventListener("change",()=>{let n=d.checked?"dark":"light";t(n,d);try{window.localStorage.setItem(e,n)}catch(e){}}))}"loading"===document.readyState?document.addEventListener("DOMContentLoaded",d):d();
+//# sourceMappingURL=Binary-Star-Pokedex.efc3a3ee.js.map
