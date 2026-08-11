@@ -78,3 +78,13 @@ npm run dist
 - [ItemLocations Guide](docs/ITEM_LOCATIONS_INTEGRATION.md) - Table-based item data
 - [Setup Guide](docs/SETUP_GOOGLE_SHEETS.md) - Making sheets public and running workflows
 - [Template](docs/GOOGLE_SHEETS_TEMPLATE.md) - Format examples
+
+## GitHub Pages deployment
+
+The site is deployed by the **Build and Deploy to GitHub Pages** workflow in `.github/workflows/deploy.yml`.
+
+- Automatic deployments run on pushes to `main`, `master`, or `Reset`.
+- Manual `workflow_dispatch` runs from other branches still build the site, but they intentionally skip the deploy job so protected environments do not reject the run.
+- In repository **Settings → Pages**, set **Source** to **GitHub Actions**.
+- If the `github-pages` environment has deployment branch restrictions enabled, allow the same deployment branches (`main`, `master`, and/or `Reset`).
+- After changing Pages settings, rerun the workflow from an allowed branch to republish the site.
