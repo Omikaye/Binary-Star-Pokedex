@@ -68,28 +68,57 @@ function plannerCloneTrainer(trainer) {
 }
 
 window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
+	STORAGE_KEY: 'plannerLocationsData_v2',
 	initialize: function () {
 		this.shortTitle = 'Location Planning';
-		this.plannerLocations = [];
-		this.selectedIndex = -1;
+		this.plannerLocations = this.loadFromStorage();
+		this.selectedIndex = this.plannerLocations.length > 0 ? 0 : -1;
 		this.activeTab = 'obtainable';
 		this.addingLocation = false;
 		this.editingTrainerSlotIndex = -1;
 		this.renderPlanner();
 	},
+	loadFromStorage: function () {
+		try {
+			var raw = localStorage.getItem(this.STORAGE_KEY);
+			if (!raw) return [];
+			var parsed = JSON.parse(raw);
+			if (!Array.isArray(parsed)) return [];
+			return parsed;
+		} catch (e) {
+			return [];
+		}
+	},
+	saveToStorage: function () {
+		try {
+			localStorage.setItem(this.STORAGE_KEY, JSON.stringify(this.plannerLocations));
+		} catch (e) {}
+	},
 	events: {
 		'click .planner-add-toggle': 'showAddLocation',
 		'click .planner-add-cancel': 'hideAddLocation',
 		'click .planner-add-submit': 'addLocation',
+		'click .planner-remove-location': 'removeLocation',
 		'click .planner-location-link': 'selectLocation',
 		'click .planner-tabbar button': 'selectTab',
 		'change .planner-slot-select': 'updateSlot',
 		'click .planner-add-slot': 'addSlot',
+		'click .planner-remove-slot': 'removeSlot',
+		'click .planner-add-encounter-table': 'addEncounterTable',
+		'click .planner-remove-encounter-table': 'removeEncounterTable',
+		'change .planner-encounter-table-field': 'updateEncounterTableField',
+		'click .planner-add-shop': 'addShop',
+		'click .planner-remove-shop': 'removeShop',
+		'change .planner-shop-field': 'updateShopField',
+		'click .planner-add-shop-item': 'addShopItem',
+		'click .planner-remove-shop-item': 'removeShopItem',
+		'change .planner-shop-item-select': 'updateShopItem',
 		'click .planner-edit-trainer': 'openTrainerEditor',
 		'click .planner-close-trainer-editor': 'closeTrainerEditor',
 		'click .planner-add-team-mon': 'addTrainerTeamMon',
 		'click .planner-remove-team-mon': 'removeTrainerTeamMon',
-		'change .planner-trainer-field': 'updateTrainerTeamField'
+		'change .planner-trainer-field': 'updateTrainerTeamField',
+		'input .planner-location-notes': 'updateLocationNotes'
 	},
 	getTrainerById: function (id) {
 		var norm = String(id || '').replace(/[^0-9]/g, '').padStart(3, '0');
@@ -224,6 +253,9 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 		for (var i = 0; i < this.plannerLocations.length; i++) {
 			if (i === skipIndex) continue;
 			var loc = this.plannerLocations[i];
+			(loc.encounterTables || []).forEach(function (tbl) {
+				(tbl.slots || []).forEach(function (pid) { add(counts.pokemonWild, pid); });
+			});
 			(loc.wildSlots || []).forEach(function (slot) { add(counts.pokemonWild, slot.pokemonId); });
 			(loc.obtainableStaticSlots || []).forEach(function (slot) { add(counts.pokemonWild, slot.pokemonId); });
 			(loc.battleStaticSlots || []).forEach(function (slot) { add(counts.pokemonWild, slot.pokemonId); });
@@ -279,9 +311,12 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 		var plan = {
 			id: toID(loc.id || loc.name || ('location' + (this.plannerLocations.length + 1))),
 			name: loc.name || loc.id || ('Location ' + (this.plannerLocations.length + 1)),
+			description: '',
+			encounterTables: [],
 			wildSlots: [],
 			obtainableStaticSlots: [],
 			itemSlots: [],
+			shopSlots: [],
 			trainerSlots: [],
 			battleStaticSlots: []
 		};
@@ -344,9 +379,12 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 		return {
 			id: toID(safeName || ('location' + (this.plannerLocations.length + 1))),
 			name: safeName || ('Location ' + (this.plannerLocations.length + 1)),
+			description: '',
+			encounterTables: [],
 			wildSlots: [],
 			obtainableStaticSlots: [],
 			itemSlots: [],
+			shopSlots: [],
 			trainerSlots: [],
 			battleStaticSlots: []
 		};
@@ -378,6 +416,19 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 		this.activeTab = 'obtainable';
 		this.addingLocation = false;
 		this.editingTrainerSlotIndex = -1;
+		this.saveToStorage();
+		this.renderPlanner();
+	},
+	removeLocation: function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		var index = Number($(e.currentTarget).attr('data-index'));
+		if (isNaN(index) || !this.plannerLocations[index]) return;
+		if (!confirm('Remove location "' + this.plannerLocations[index].name + '"?')) return;
+		this.plannerLocations.splice(index, 1);
+		if (this.selectedIndex >= this.plannerLocations.length) this.selectedIndex = this.plannerLocations.length - 1;
+		this.editingTrainerSlotIndex = -1;
+		this.saveToStorage();
 		this.renderPlanner();
 	},
 	selectLocation: function (e) {
@@ -393,13 +444,24 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 		this.activeTab = e.currentTarget.value;
 		this.renderPlanner();
 	},
+	updateLocationNotes: function (e) {
+		var loc = this.plannerLocations[this.selectedIndex];
+		if (!loc) return;
+		loc.description = $(e.currentTarget).val() || '';
+		this.saveToStorage();
+	},
 	updateSlot: function (e) {
 		var $el = $(e.currentTarget);
 		var section = $el.attr('data-section');
 		var index = Number($el.attr('data-index'));
+		var tableIndex = Number($el.attr('data-table-index'));
 		var value = $el.val() || '';
 		var loc = this.plannerLocations[this.selectedIndex];
 		if (!loc || isNaN(index)) return;
+		if (section === 'encounterTable') {
+			var table = (loc.encounterTables || [])[tableIndex];
+			if (table && table.slots[index] != null) table.slots[index] = value;
+		}
 		if (section === 'wild' && loc.wildSlots[index]) loc.wildSlots[index].pokemonId = value;
 		if (section === 'obtainableStatic' && loc.obtainableStaticSlots[index]) loc.obtainableStaticSlots[index].pokemonId = value;
 		if (section === 'items' && loc.itemSlots[index]) loc.itemSlots[index].itemId = value;
@@ -408,6 +470,7 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 			this.initPlanningTrainerForSlot(loc.trainerSlots[index]);
 		}
 		if (section === 'battleStatic' && loc.battleStaticSlots[index]) loc.battleStaticSlots[index].pokemonId = value;
+		this.saveToStorage();
 		this.renderPlanner();
 	},
 	addSlot: function (e) {
@@ -420,6 +483,117 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 		if (group === 'items') loc.itemSlots.push({ label: 'Item Slot ' + (loc.itemSlots.length + 1), itemId: '' });
 		if (group === 'trainers') loc.trainerSlots.push({ label: 'Trainer Slot ' + (loc.trainerSlots.length + 1), trainerId: '', planningTrainer: { id: '', name: 'Custom Trainer', prizeMoney: 0, desc: '', team: [] } });
 		if (group === 'battleStatic') loc.battleStaticSlots.push({ label: 'Static Slot ' + (loc.battleStaticSlots.length + 1), pokemonId: '' });
+		this.saveToStorage();
+		this.renderPlanner();
+	},
+	removeSlot: function (e) {
+		e.preventDefault();
+		var group = $(e.currentTarget).attr('data-slot-group');
+		var index = Number($(e.currentTarget).attr('data-index'));
+		var loc = this.plannerLocations[this.selectedIndex];
+		if (!loc || isNaN(index)) return;
+		if (group === 'wild' && loc.wildSlots[index] != null) loc.wildSlots.splice(index, 1);
+		if (group === 'obtainableStatic' && loc.obtainableStaticSlots[index] != null) loc.obtainableStaticSlots.splice(index, 1);
+		if (group === 'items' && loc.itemSlots[index] != null) loc.itemSlots.splice(index, 1);
+		if (group === 'trainers' && loc.trainerSlots[index] != null) {
+			loc.trainerSlots.splice(index, 1);
+			if (this.editingTrainerSlotIndex === index) this.editingTrainerSlotIndex = -1;
+			else if (this.editingTrainerSlotIndex > index) this.editingTrainerSlotIndex--;
+		}
+		if (group === 'battleStatic' && loc.battleStaticSlots[index] != null) loc.battleStaticSlots.splice(index, 1);
+		this.saveToStorage();
+		this.renderPlanner();
+	},
+	addEncounterTable: function (e) {
+		e.preventDefault();
+		var loc = this.plannerLocations[this.selectedIndex];
+		if (!loc) return;
+		if (!loc.encounterTables) loc.encounterTables = [];
+		var slots = [];
+		for (var i = 0; i < 10; i++) slots.push('');
+		loc.encounterTables.push({ name: 'Encounter Table ' + (loc.encounterTables.length + 1), levelMin: 1, levelMax: 5, slots: slots });
+		this.saveToStorage();
+		this.renderPlanner();
+	},
+	removeEncounterTable: function (e) {
+		e.preventDefault();
+		var index = Number($(e.currentTarget).attr('data-index'));
+		var loc = this.plannerLocations[this.selectedIndex];
+		if (!loc || !loc.encounterTables || isNaN(index)) return;
+		loc.encounterTables.splice(index, 1);
+		this.saveToStorage();
+		this.renderPlanner();
+	},
+	updateEncounterTableField: function (e) {
+		var $el = $(e.currentTarget);
+		var index = Number($el.attr('data-index'));
+		var field = $el.attr('data-field');
+		var value = $el.val();
+		var loc = this.plannerLocations[this.selectedIndex];
+		if (!loc || !loc.encounterTables || isNaN(index) || !loc.encounterTables[index]) return;
+		var table = loc.encounterTables[index];
+		if (field === 'name') table.name = value;
+		if (field === 'levelMin') table.levelMin = Number(value) || 1;
+		if (field === 'levelMax') table.levelMax = Number(value) || 5;
+		this.saveToStorage();
+		this.renderPlanner();
+	},
+	addShop: function (e) {
+		e.preventDefault();
+		var loc = this.plannerLocations[this.selectedIndex];
+		if (!loc) return;
+		if (!loc.shopSlots) loc.shopSlots = [];
+		loc.shopSlots.push({ name: 'Shop ' + (loc.shopSlots.length + 1), items: [] });
+		this.saveToStorage();
+		this.renderPlanner();
+	},
+	removeShop: function (e) {
+		e.preventDefault();
+		var index = Number($(e.currentTarget).attr('data-index'));
+		var loc = this.plannerLocations[this.selectedIndex];
+		if (!loc || !loc.shopSlots || isNaN(index)) return;
+		loc.shopSlots.splice(index, 1);
+		this.saveToStorage();
+		this.renderPlanner();
+	},
+	updateShopField: function (e) {
+		var $el = $(e.currentTarget);
+		var index = Number($el.attr('data-index'));
+		var value = $el.val();
+		var loc = this.plannerLocations[this.selectedIndex];
+		if (!loc || !loc.shopSlots || isNaN(index) || !loc.shopSlots[index]) return;
+		loc.shopSlots[index].name = value;
+		this.saveToStorage();
+		this.renderPlanner();
+	},
+	addShopItem: function (e) {
+		e.preventDefault();
+		var shopIndex = Number($(e.currentTarget).attr('data-shop-index'));
+		var loc = this.plannerLocations[this.selectedIndex];
+		if (!loc || !loc.shopSlots || isNaN(shopIndex) || !loc.shopSlots[shopIndex]) return;
+		loc.shopSlots[shopIndex].items.push('');
+		this.saveToStorage();
+		this.renderPlanner();
+	},
+	removeShopItem: function (e) {
+		e.preventDefault();
+		var shopIndex = Number($(e.currentTarget).attr('data-shop-index'));
+		var itemIndex = Number($(e.currentTarget).attr('data-item-index'));
+		var loc = this.plannerLocations[this.selectedIndex];
+		if (!loc || !loc.shopSlots || isNaN(shopIndex) || !loc.shopSlots[shopIndex]) return;
+		loc.shopSlots[shopIndex].items.splice(itemIndex, 1);
+		this.saveToStorage();
+		this.renderPlanner();
+	},
+	updateShopItem: function (e) {
+		var $el = $(e.currentTarget);
+		var shopIndex = Number($el.attr('data-shop-index'));
+		var itemIndex = Number($el.attr('data-item-index'));
+		var value = $el.val() || '';
+		var loc = this.plannerLocations[this.selectedIndex];
+		if (!loc || !loc.shopSlots || isNaN(shopIndex) || !loc.shopSlots[shopIndex]) return;
+		loc.shopSlots[shopIndex].items[itemIndex] = value;
+		this.saveToStorage();
 		this.renderPlanner();
 	},
 	openTrainerEditor: function (e) {
@@ -454,6 +628,7 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 			nature: 'Serious',
 			moves: ['', '', '', '']
 		});
+		this.saveToStorage();
 		this.renderPlanner();
 	},
 	removeTrainerTeamMon: function (e) {
@@ -465,6 +640,7 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 		var planningTrainer = loc.trainerSlots[slotIndex].planningTrainer;
 		if (!planningTrainer || !planningTrainer.team[monIndex]) return;
 		planningTrainer.team.splice(monIndex, 1);
+		this.saveToStorage();
 		this.renderPlanner();
 	},
 	updateTrainerTeamField: function (e) {
@@ -487,6 +663,7 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 			mon.moves = this.getLastLevelUpMoves(mon.pokemonId, level);
 			var abilities = this.getPokemonAbilityOptions(mon.pokemonId);
 			mon.ability = abilities.length ? abilities[0].id : '';
+			this.saveToStorage();
 			this.renderPlanner();
 			return;
 		}
@@ -497,6 +674,7 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 			if (parsed > 100) parsed = 100;
 			mon.level = parsed;
 			mon.moves = this.getLastLevelUpMoves(mon.pokemonId, mon.level);
+			this.saveToStorage();
 			this.renderPlanner();
 			return;
 		}
@@ -506,6 +684,7 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 		if (field === 'move' && !isNaN(moveIndex) && moveIndex >= 0 && moveIndex < 4) {
 			mon.moves[moveIndex] = value || '';
 		}
+		this.saveToStorage();
 		this.renderPlanner();
 	},
 	renderPlanner: function () {
@@ -522,8 +701,8 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 			+ '.planner-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}'
 			+ '.planner-add-box{background:#f5f7fb;border:1px solid #cfd8e3;border-radius:6px;padding:10px}'
 			+ '.planner-list{margin:0;padding:0;list-style:none}'
-			+ '.planner-list li{margin:0 0 6px 0}'
-			+ '.planner-location-link{display:block;padding:8px 10px;border:1px solid #d7dbe6;border-radius:6px;background:#fff;text-decoration:none}'
+			+ '.planner-list li{margin:0 0 6px 0;display:flex;align-items:center;gap:6px}'
+			+ '.planner-location-link{flex:1;display:block;padding:8px 10px;border:1px solid #d7dbe6;border-radius:6px;background:#fff;text-decoration:none}'
 			+ '.planner-location-link.cur{background:#eef5ff;border-color:#6ea5ff}'
 			+ '.planner-slot-table{width:100%;border-collapse:collapse}'
 			+ '.planner-slot-table th,.planner-slot-table td{padding:6px;border-bottom:1px solid #ddd;text-align:left;vertical-align:middle}'
@@ -536,6 +715,10 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 			+ '.planner-team-grid label{font-weight:600;color:#345}'
 			+ '.planner-moves-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}'
 			+ '.planner-edit-btn{font-size:11px;padding:2px 6px;line-height:1.3}'
+			+ '.planner-encounter-table-block{border:1px solid #d0daf0;border-radius:6px;padding:8px;margin-bottom:10px;background:#f9fbff}'
+			+ '.planner-encounter-table-header{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px}'
+			+ '.planner-shop-block{border:1px solid #d0daf0;border-radius:6px;padding:8px;margin-bottom:10px;background:#f9fbff}'
+			+ '.planner-shop-header{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px}'
 			+ 'body.dark-mode .planner-add-box{background:#1a2740;border-color:#405a84}'
 			+ 'body.dark-mode .planner-location-link{background:#17243b;border-color:#365179;color:#d9e6f8}'
 			+ 'body.dark-mode .planner-location-link.cur{background:#21365a;border-color:#78a8ff}'
@@ -543,6 +726,8 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 			+ 'body.dark-mode .planner-team-card{background:#122035;border-color:#3a547d}'
 			+ 'body.dark-mode .planner-team-card-head{background:#35598f}'
 			+ 'body.dark-mode .planner-team-grid label{color:#d5e3f8}'
+			+ 'body.dark-mode .planner-encounter-table-block{background:#14203a;border-color:#3a5480}'
+			+ 'body.dark-mode .planner-shop-block{background:#14203a;border-color:#3a5480}'
 			+ '</style>';
 		buf += '<a href="' + Config.baseurl + 'dex" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
 		buf += '<h1><a href="' + Config.baseurl + 'location-planning/" data-target="push" class="subtle">Location Planning</a></h1>';
@@ -570,59 +755,131 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 			buf += '<ul class="planner-list">';
 			for (var li = 0; li < this.plannerLocations.length; li++) {
 				var planningLoc = this.plannerLocations[li];
-				buf += '<li><a href="#" class="planner-location-link' + (li === this.selectedIndex ? ' cur' : '') + '" data-index="' + li + '">' + escapeHTML(planningLoc.name) + '</a></li>';
+				buf += '<li><a href="#" class="planner-location-link' + (li === this.selectedIndex ? ' cur' : '') + '" data-index="' + li + '">' + escapeHTML(planningLoc.name) + '</a>';
+				buf += '<button class="button planner-remove-location" data-index="' + li + '" title="Remove location" style="padding:2px 8px;font-size:15px;line-height:1;color:#c00;flex-shrink:0">−</button></li>';
 			}
 			buf += '</ul>';
 		}
 		buf += '</div>';
 		if (selected) {
 			buf += '<div>';
+			// Notes/description field at the very top
+			buf += '<div style="margin-bottom:10px">';
+			buf += '<label style="font-weight:600;display:block;margin-bottom:4px">Location Notes</label>';
+			buf += '<textarea class="textbox planner-location-notes" rows="3" style="width:100%;resize:vertical" placeholder="Add notes about this location...">' + escapeHTML(selected.description || '') + '</textarea>';
+			buf += '</div>';
+
 			buf += '<ul class="tabbar planner-tabbar">';
 			buf += '<li><button class="button nav-first' + (this.activeTab === 'obtainable' ? ' cur' : '') + '" value="obtainable">Obtainable Pok&eacute;mon</button></li>';
-			buf += '<li><button class="button' + (this.activeTab === 'items' ? ' cur' : '') + '" value="items">Items</button></li>';
+			buf += '<li><button class="button' + (this.activeTab === 'items' ? ' cur' : '') + '" value="items">Items &amp; Shops</button></li>';
 			buf += '<li><button class="button nav-last' + (this.activeTab === 'battles' ? ' cur' : '') + '" value="battles">Battles</button></li>';
 			buf += '</ul>';
 			if (this.activeTab === 'obtainable') {
-				buf += '<h3>Wild Pok&eacute;mon</h3>';
-				buf += '<table class="planner-slot-table"><thead><tr><th style="width:180px">Encounter Slot</th><th>Pok&eacute;mon</th></tr></thead><tbody>';
-				for (var ws = 0; ws < selected.wildSlots.length; ws++) {
-					var wildSlot = selected.wildSlots[ws];
-					buf += '<tr><td>' + escapeHTML(wildSlot.label) + '</td><td><select class="planner-slot-select" data-section="wild" data-index="' + ws + '">';
-					buf += this.buildPokemonSelectOptions(pokemonOptions, wildSlot.pokemonId, usage.pokemonWild, usage.pokemonTrainer);
-					buf += '</select></td></tr>';
+				// Encounter Tables section
+				buf += '<div style="display:flex;align-items:center;gap:8px;margin-top:8px">';
+				buf += '<h3 style="margin:0">Wild Pok&eacute;mon Encounter Tables</h3>';
+				buf += '<button class="button planner-add-encounter-table" title="Add encounter table" style="padding:2px 8px;font-size:16px;line-height:1">+</button>';
+				buf += '</div>';
+				if (!selected.encounterTables || !selected.encounterTables.length) {
+					buf += '<p class="resultsub">No encounter tables. Click <b>+</b> to add one.</p>';
 				}
-				buf += '</tbody></table><p><button class="button planner-add-slot" data-slot-group="wild">Add Wild Slot</button></p>';
-				buf += '<h3>Static / Gift Pok&eacute;mon</h3>';
-				buf += '<table class="planner-slot-table"><thead><tr><th style="width:180px">Slot</th><th>Pok&eacute;mon</th></tr></thead><tbody>';
-				for (var os = 0; os < selected.obtainableStaticSlots.length; os++) {
-					var obtainableSlot = selected.obtainableStaticSlots[os];
-					buf += '<tr><td>' + escapeHTML(obtainableSlot.label) + '</td><td><select class="planner-slot-select" data-section="obtainableStatic" data-index="' + os + '">';
-					buf += this.buildPokemonSelectOptions(pokemonOptions, obtainableSlot.pokemonId, usage.pokemonWild, usage.pokemonTrainer);
-					buf += '</select></td></tr>';
+				for (var et = 0; et < (selected.encounterTables || []).length; et++) {
+					var etbl = selected.encounterTables[et];
+					buf += '<div class="planner-encounter-table-block">';
+					buf += '<div class="planner-encounter-table-header">';
+					buf += '<input class="textbox planner-encounter-table-field" data-index="' + et + '" data-field="name" value="' + escapeHTML(etbl.name || '') + '" style="font-weight:600;width:200px" />';
+					buf += ' <span style="color:#666;font-size:12px">Lv.</span> ';
+					buf += '<input class="textbox planner-encounter-table-field" type="number" data-index="' + et + '" data-field="levelMin" value="' + escapeHTML(String(etbl.levelMin || 1)) + '" style="width:55px" min="1" max="100" /> ';
+					buf += '– <input class="textbox planner-encounter-table-field" type="number" data-index="' + et + '" data-field="levelMax" value="' + escapeHTML(String(etbl.levelMax || 5)) + '" style="width:55px" min="1" max="100" />';
+					buf += '<button class="button planner-remove-encounter-table" data-index="' + et + '" title="Remove this encounter table" style="margin-left:8px;padding:2px 7px;font-size:15px;line-height:1;color:#c00">−</button>';
+					buf += '</div>';
+					buf += '<table class="planner-slot-table"><thead><tr><th style="width:60px">Slot</th><th>Pok&eacute;mon</th></tr></thead><tbody>';
+					for (var es = 0; es < (etbl.slots || []).length; es++) {
+						buf += '<tr><td style="color:#888">' + (es + 1) + '</td><td><select class="planner-slot-select" data-section="encounterTable" data-table-index="' + et + '" data-index="' + es + '">';
+						buf += this.buildPokemonSelectOptions(pokemonOptions, etbl.slots[es] || '', usage.pokemonWild, usage.pokemonTrainer);
+						buf += '</select></td></tr>';
+					}
+					buf += '</tbody></table>';
+					buf += '</div>';
 				}
-				buf += '</tbody></table><p><button class="button planner-add-slot" data-slot-group="obtainableStatic">Add Static/Gift Slot</button></p>';
+
+				buf += '<div style="display:flex;align-items:center;gap:8px;margin-top:14px">';
+				buf += '<h3 style="margin:0">Static / Gift Pok&eacute;mon</h3>';
+				buf += '<button class="button planner-add-slot" data-slot-group="obtainableStatic" title="Add slot" style="padding:2px 8px;font-size:16px;line-height:1">+</button>';
+				buf += '</div>';
+				if (!selected.obtainableStaticSlots.length) buf += '<p class="resultsub">No slots. Click <b>+</b> to add one.</p>';
+				if (selected.obtainableStaticSlots.length) {
+					buf += '<table class="planner-slot-table"><thead><tr><th style="width:180px">Slot</th><th>Pok&eacute;mon</th><th style="width:36px"></th></tr></thead><tbody>';
+					for (var os = 0; os < selected.obtainableStaticSlots.length; os++) {
+						var obtainableSlot = selected.obtainableStaticSlots[os];
+						buf += '<tr><td>' + escapeHTML(obtainableSlot.label) + '</td><td><select class="planner-slot-select" data-section="obtainableStatic" data-index="' + os + '">';
+						buf += this.buildPokemonSelectOptions(pokemonOptions, obtainableSlot.pokemonId, usage.pokemonWild, usage.pokemonTrainer);
+						buf += '</select></td><td><button class="button planner-remove-slot" data-slot-group="obtainableStatic" data-index="' + os + '" title="Remove" style="padding:1px 6px;font-size:14px;color:#c00">−</button></td></tr>';
+					}
+					buf += '</tbody></table>';
+				}
 			}
 			if (this.activeTab === 'items') {
-				buf += '<h3>Items</h3>';
-				buf += '<table class="planner-slot-table"><thead><tr><th style="width:180px">Slot</th><th>Item</th></tr></thead><tbody>';
-				for (var is = 0; is < selected.itemSlots.length; is++) {
-					var itemSlot = selected.itemSlots[is];
-					buf += '<tr><td>' + escapeHTML(itemSlot.label) + '</td><td><select class="planner-slot-select" data-section="items" data-index="' + is + '">';
-					buf += this.buildBasicSelectOptions(itemOptions, itemSlot.itemId, usage.item, 'Choose Item...');
-					buf += '</select></td></tr>';
+				buf += '<div style="display:flex;align-items:center;gap:8px;margin-top:8px">';
+				buf += '<h3 style="margin:0">Items (Found/Hidden)</h3>';
+				buf += '<button class="button planner-add-slot" data-slot-group="items" title="Add item slot" style="padding:2px 8px;font-size:16px;line-height:1">+</button>';
+				buf += '</div>';
+				if (!selected.itemSlots.length) buf += '<p class="resultsub">No item slots. Click <b>+</b> to add one.</p>';
+				if (selected.itemSlots.length) {
+					buf += '<table class="planner-slot-table"><thead><tr><th style="width:180px">Slot</th><th>Item</th><th style="width:36px"></th></tr></thead><tbody>';
+					for (var is = 0; is < selected.itemSlots.length; is++) {
+						var itemSlot = selected.itemSlots[is];
+						buf += '<tr><td>' + escapeHTML(itemSlot.label) + '</td><td><select class="planner-slot-select" data-section="items" data-index="' + is + '">';
+						buf += this.buildBasicSelectOptions(itemOptions, itemSlot.itemId, usage.item, 'Choose Item...');
+						buf += '</select></td><td><button class="button planner-remove-slot" data-slot-group="items" data-index="' + is + '" title="Remove" style="padding:1px 6px;font-size:14px;color:#c00">−</button></td></tr>';
+					}
+					buf += '</tbody></table>';
 				}
-				buf += '</tbody></table><p><button class="button planner-add-slot" data-slot-group="items">Add Item Slot</button></p>';
+
+				buf += '<div style="display:flex;align-items:center;gap:8px;margin-top:14px">';
+				buf += '<h3 style="margin:0">Shops</h3>';
+				buf += '<button class="button planner-add-shop" title="Add shop" style="padding:2px 8px;font-size:16px;line-height:1">+</button>';
+				buf += '</div>';
+				if (!(selected.shopSlots || []).length) buf += '<p class="resultsub">No shops. Click <b>+</b> to add one.</p>';
+				for (var sh = 0; sh < (selected.shopSlots || []).length; sh++) {
+					var shop = selected.shopSlots[sh];
+					buf += '<div class="planner-shop-block">';
+					buf += '<div class="planner-shop-header">';
+					buf += '<input class="textbox planner-shop-field" data-index="' + sh + '" value="' + escapeHTML(shop.name || '') + '" style="font-weight:600;width:200px" />';
+					buf += '<button class="button planner-remove-shop" data-index="' + sh + '" title="Remove shop" style="margin-left:8px;padding:2px 7px;font-size:15px;line-height:1;color:#c00">−</button>';
+					buf += '<button class="button planner-add-shop-item" data-shop-index="' + sh + '" title="Add item" style="margin-left:6px;padding:2px 7px;font-size:15px;line-height:1">+</button>';
+					buf += '</div>';
+					if (!(shop.items || []).length) {
+						buf += '<p class="resultsub" style="margin:4px 0 4px 8px">No items. Click <b>+</b> to add.</p>';
+					} else {
+						buf += '<table class="planner-slot-table"><thead><tr><th style="width:50px">#</th><th>Item</th><th style="width:36px"></th></tr></thead><tbody>';
+						for (var si2 = 0; si2 < shop.items.length; si2++) {
+							buf += '<tr><td style="color:#888">' + (si2 + 1) + '</td><td><select class="planner-shop-item-select" data-shop-index="' + sh + '" data-item-index="' + si2 + '">';
+							buf += this.buildBasicSelectOptions(itemOptions, shop.items[si2] || '', null, 'Choose Item...');
+							buf += '</select></td><td><button class="button planner-remove-shop-item" data-shop-index="' + sh + '" data-item-index="' + si2 + '" title="Remove" style="padding:1px 6px;font-size:14px;color:#c00">−</button></td></tr>';
+						}
+						buf += '</tbody></table>';
+					}
+					buf += '</div>';
+				}
 			}
 			if (this.activeTab === 'battles') {
-				buf += '<h3>Trainers</h3>';
-				buf += '<table class="planner-slot-table"><thead><tr><th style="width:180px">Slot</th><th>Trainer</th><th style="width:80px;text-align:center">Edit</th></tr></thead><tbody>';
-				for (var ts = 0; ts < selected.trainerSlots.length; ts++) {
-					var trainerSlot = selected.trainerSlots[ts];
-					buf += '<tr><td>' + escapeHTML(trainerSlot.label) + '</td><td><select class="planner-slot-select" data-section="trainers" data-index="' + ts + '">';
-					buf += this.buildBasicSelectOptions(trainerOptions, trainerSlot.trainerId, usage.trainer, 'Choose Trainer...');
-					buf += '</select></td><td style="text-align:center"><button class="button planner-edit-trainer planner-edit-btn" data-index="' + ts + '" title="Edit planning team">➤</button></td></tr>';
+				buf += '<div style="display:flex;align-items:center;gap:8px;margin-top:8px">';
+				buf += '<h3 style="margin:0">Trainers</h3>';
+				buf += '<button class="button planner-add-slot" data-slot-group="trainers" title="Add trainer slot" style="padding:2px 8px;font-size:16px;line-height:1">+</button>';
+				buf += '</div>';
+				if (!selected.trainerSlots.length) buf += '<p class="resultsub">No trainer slots. Click <b>+</b> to add one.</p>';
+				if (selected.trainerSlots.length) {
+					buf += '<table class="planner-slot-table"><thead><tr><th style="width:180px">Slot</th><th>Trainer</th><th style="width:80px;text-align:center">Edit</th><th style="width:36px"></th></tr></thead><tbody>';
+					for (var ts = 0; ts < selected.trainerSlots.length; ts++) {
+						var trainerSlot = selected.trainerSlots[ts];
+						buf += '<tr><td>' + escapeHTML(trainerSlot.label) + '</td><td><select class="planner-slot-select" data-section="trainers" data-index="' + ts + '">';
+						buf += this.buildBasicSelectOptions(trainerOptions, trainerSlot.trainerId, usage.trainer, 'Choose Trainer...');
+						buf += '</select></td><td style="text-align:center"><button class="button planner-edit-trainer planner-edit-btn" data-index="' + ts + '" title="Edit planning team">➤</button></td>';
+						buf += '<td><button class="button planner-remove-slot" data-slot-group="trainers" data-index="' + ts + '" title="Remove" style="padding:1px 6px;font-size:14px;color:#c00">−</button></td></tr>';
+					}
+					buf += '</tbody></table>';
 				}
-				buf += '</tbody></table><p><button class="button planner-add-slot" data-slot-group="trainers">Add Trainer Slot</button></p>';
 
 				if (this.editingTrainerSlotIndex >= 0 && selected.trainerSlots[this.editingTrainerSlotIndex]) {
 					var editingSlot = selected.trainerSlots[this.editingTrainerSlotIndex];
@@ -673,15 +930,21 @@ window.PokedexLocationPlanningPanel = PokedexResultPanel.extend({
 					buf += '</div>';
 				}
 
-				buf += '<h3>Static Encounters</h3>';
-				buf += '<table class="planner-slot-table"><thead><tr><th style="width:180px">Slot</th><th>Pok&eacute;mon</th></tr></thead><tbody>';
-				for (var bs = 0; bs < selected.battleStaticSlots.length; bs++) {
-					var battleStaticSlot = selected.battleStaticSlots[bs];
-					buf += '<tr><td>' + escapeHTML(battleStaticSlot.label) + '</td><td><select class="planner-slot-select" data-section="battleStatic" data-index="' + bs + '">';
-					buf += this.buildPokemonSelectOptions(pokemonOptions, battleStaticSlot.pokemonId, usage.pokemonWild, usage.pokemonTrainer);
-					buf += '</select></td></tr>';
+				buf += '<div style="display:flex;align-items:center;gap:8px;margin-top:14px">';
+				buf += '<h3 style="margin:0">Static Encounters</h3>';
+				buf += '<button class="button planner-add-slot" data-slot-group="battleStatic" title="Add static encounter slot" style="padding:2px 8px;font-size:16px;line-height:1">+</button>';
+				buf += '</div>';
+				if (!selected.battleStaticSlots.length) buf += '<p class="resultsub">No static encounters. Click <b>+</b> to add one.</p>';
+				if (selected.battleStaticSlots.length) {
+					buf += '<table class="planner-slot-table"><thead><tr><th style="width:180px">Slot</th><th>Pok&eacute;mon</th><th style="width:36px"></th></tr></thead><tbody>';
+					for (var bs = 0; bs < selected.battleStaticSlots.length; bs++) {
+						var battleStaticSlot = selected.battleStaticSlots[bs];
+						buf += '<tr><td>' + escapeHTML(battleStaticSlot.label) + '</td><td><select class="planner-slot-select" data-section="battleStatic" data-index="' + bs + '">';
+						buf += this.buildPokemonSelectOptions(pokemonOptions, battleStaticSlot.pokemonId, usage.pokemonWild, usage.pokemonTrainer);
+						buf += '</select></td><td><button class="button planner-remove-slot" data-slot-group="battleStatic" data-index="' + bs + '" title="Remove" style="padding:1px 6px;font-size:14px;color:#c00">−</button></td></tr>';
+					}
+					buf += '</tbody></table>';
 				}
-				buf += '</tbody></table><p><button class="button planner-add-slot" data-slot-group="battleStatic">Add Static Slot</button></p>';
 			}
 			buf += '<p class="resultsub" style="margin-top:8px">⭐ used in wild/static planning elsewhere, ▲ used in trainer teams elsewhere (both remain selectable).</p>';
 			buf += '</div>';
