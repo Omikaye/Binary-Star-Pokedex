@@ -16,6 +16,7 @@ var Pokedex = Panels.App.extend({
 		'trainers/:id': PokedexTrainerPanel,
 		'encounters/:id': PokedexStaticEncounterPanel,
         'locations/:locid': PokedexLocationPanel,
+		'location-planning/': PokedexLocationPlanningPanel,
 		'usage/:pokemon': PokedexUsagePanel,
 
 		'': PokedexHomePanel,
@@ -27,6 +28,7 @@ var Pokedex = Panels.App.extend({
 		'items/': PokedexSearchPanel,
 		'mechanics/': PokedexSearchPanel,
 		'locations/': PokedexLocationsPanel,
+		'location-planning/': PokedexLocationPlanningPanel,
 		'trainers/': PokedexSearchPanel,
 		'encounters/': PokedexSearchPanel,
 		'usage/': PokedexSearchPanel,
