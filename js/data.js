@@ -1,9 +1,9 @@
-import BattlePokedex from "../data/pokedex.json";
+import NewPokedexData from "../data/Pokedex.json";
+import { NameDictionary } from "./name-dictionary.js";
 import BattleMovedex from "../data/moves.json";
 import BattleItems from "../data/items.json";
 import BattleAbilities from "../data/abilities.json";
 import BattleTypeChart from "../data/typechart.json";
-import Learnsets from "../data/learnsets.json";
 import Icons from "../data/icons.json";
 import Config from "../data/config.json";
 import BaseGameStats from "../data/basegame.json";
@@ -14,14 +14,203 @@ import StaticEncounters from "../data/static-encounters.json";
 import LocationsJson from "../data/locations.json";
 import TrainerSprites from "../data/trainer-sprites.json";
 import TrainerSpriteLinks from "../data/trainer-sprite-links.json";
-import BattleEvolutions from "../data/evolutions.json";
-import MegaEvolutions from "../data/mega-evolutions.json";
 import BattleTags from "../data/battle-tags.json";
 import ShopTablesJson from "../data/shop-tables.json";
-// Import editable data copies for the Pokeedit feature
-import BattlePokedexEdit from "../data/pokedex-edit.json";
-import LearnsetsEdit from "../data/learnsets-edit.json";
 import BaseGameLearnsets from "../data/BaseGameLearnsets.json";
+
+// ---------------------------------------------------------------------------
+// Build all pokedex globals from the new consolidated Pokedex.json
+// ---------------------------------------------------------------------------
+
+function _toIDRaw(text) {
+  if (typeof text !== 'string' && typeof text !== 'number') return '';
+  return ('' + text).toLowerCase().replace(/[^a-z0-9]+/g, '');
+}
+
+/**
+ * Given a display name like "Venusaur 1", return the canonical hyphenated name
+ * ("Venusaur-Mega") if it's in the NameDictionary, otherwise return as-is.
+ */
+function _canonicalName(displayName) {
+  return NameDictionary[displayName] || displayName;
+}
+
+/**
+ * Parse an evolution method string (the part after "TargetName: ") into an
+ * object compatible with getEvoMethod().
+ * Examples:
+ *   "Level Up [Level 22]"               -> {level: 22}
+ *   "Level Up Female [Level 22]"        -> {level: 22, condition: "Female"}
+ *   "Level Up with Friendship [Level 45]" -> {level: 45, condition: "friendship"}
+ *   "Level Up (Attack < Defense) [Level 21]" -> {level: 21, condition: "Attack < Defense"}
+ *   "Level Up (@) at Morning [Level 25]"    -> {level: 25, condition: "at Morning"}
+ *   "Used Item [Fire Stone]"            -> {item: "Fire Stone"}
+ *   "Used Item [Electirizer, Level 37]" -> {item: "Electirizer", level: 37}
+ */
+function _parseEvoMethod(methodStr) {
+  const evo = {};
+
+  // Extract level from "[Level N]"
+  const lvlMatch = methodStr.match(/\[Level\s+(\d+)\]/);
+  if (lvlMatch) evo.level = parseInt(lvlMatch[1], 10);
+
+  if (methodStr.startsWith('Used Item')) {
+    const bracketMatch = methodStr.match(/\[([^\]]+)\]/);
+    if (bracketMatch) {
+      const parts = bracketMatch[1].split(',').map(s => s.trim());
+      const itemPart = parts.find(p => !/^Level\s+\d+$/.test(p));
+      if (itemPart) evo.item = itemPart;
+    }
+    return evo;
+  }
+
+  if (methodStr.startsWith('Level Up')) {
+    // Parenthesised condition: "Level Up (condition) [Level N]"
+    const parenMatch = methodStr.match(/^Level Up\s+\(([^)]+)\)/);
+    if (parenMatch) {
+      const cond = parenMatch[1];
+      if (cond !== '@') {
+        evo.condition = cond;
+      } else {
+        // "Level Up (@) <suffix> [Level N]" – extract the suffix
+        const suffixMatch = methodStr.match(/^Level Up\s+\(@\)\s+(.+?)\s*\[Level/);
+        if (suffixMatch) evo.condition = suffixMatch[1].trim();
+      }
+      return evo;
+    }
+
+    // Keyword conditions without parens
+    if (/^Level Up\s+Female/.test(methodStr)) { evo.condition = 'Female'; return evo; }
+    if (/^Level Up\s+Male/.test(methodStr))   { evo.condition = 'Male';   return evo; }
+    if (/^Level Up\s+with Friendship/.test(methodStr)) { evo.condition = 'friendship'; return evo; }
+  }
+
+  return evo;
+}
+
+/**
+ * Parse a full evolution entry string like "Ivysaur: Level Up [Level 22]"
+ * and return {target, ...evoData} or null on parse failure.
+ */
+function _parseEvolution(evoStr, localToID) {
+  const colonIdx = evoStr.indexOf(':');
+  if (colonIdx === -1) return null;
+  const rawTarget = evoStr.slice(0, colonIdx).trim();
+  const method    = evoStr.slice(colonIdx + 1).trim();
+  const canonical = _canonicalName(rawTarget);
+  const target    = localToID(canonical);
+  if (!target) return null;
+  return Object.assign({ target }, _parseEvoMethod(method));
+}
+
+/**
+ * Parse a mega-evolution entry string like "Venusaur 1 (Venusaurite)"
+ * and return {forme, item}.
+ */
+function _parseMegaEvo(megaStr) {
+  const m = megaStr.match(/^(.+?)\s+\(([^)]+)\)$/);
+  if (!m) return null;
+  return { forme: m[1].trim(), item: m[2].trim() };
+}
+
+// Build the four globals from NewPokedexData (array of entries)
+const BattlePokedex    = {};
+const BattleEvolutions = {};
+const MegaEvolutions   = {};
+const Learnsets        = {};
+
+for (const entry of NewPokedexData) {
+  const displayName  = entry.PokemonName;
+  const canonical    = _canonicalName(displayName);
+  const id           = _toIDRaw(canonical);
+
+  // --- BattlePokedex entry ---
+  const baseStats = {
+    hp:  entry.Stats.HP,
+    atk: entry.Stats.Atk,
+    def: entry.Stats.Def,
+    spa: entry.Stats.SpA,
+    spd: entry.Stats.SpD,
+    spe: entry.Stats.Speed,
+  };
+
+  const abilitiesArr = entry.Abilities;
+  const abilities = {};
+  if (abilitiesArr[0]) abilities['0'] = abilitiesArr[0];
+  if (abilitiesArr[1]) abilities['1'] = abilitiesArr[1];
+  if (abilitiesArr[2]) abilities['H'] = abilitiesArr[2];
+
+  const pokedexEntry = {
+    num:       entry.PokemonID,
+    name:      canonical,
+    types:     entry.Types,
+    abilities,
+    baseStats,
+    expgroup:  entry.ExpGroup,
+    heightm:   entry.Height,
+    weightkg:  entry.Weight,
+    catchrate: entry.CatchRate,
+    eggGroups: entry.EggGroups,
+    color:     entry.Color,
+    expYield:  entry.ExpYield,
+  };
+
+  // Derive baseSpecies / forme for forms with hyphenated canonical names
+  if (canonical !== displayName && canonical.includes('-')) {
+    const dashIdx = canonical.indexOf('-');
+    pokedexEntry.baseSpecies = canonical.slice(0, dashIdx);
+    pokedexEntry.forme       = canonical.slice(dashIdx + 1);
+  }
+
+  BattlePokedex[id] = pokedexEntry;
+
+  // --- BattleEvolutions ---
+  const evos = (entry.Evolutions || [])
+    .map(s => _parseEvolution(s, _toIDRaw))
+    .filter(Boolean);
+  if (evos.length > 0) BattleEvolutions[id] = evos;
+
+  // --- MegaEvolutions ---
+  const megas = (entry.MegaEvolutions || [])
+    .map(_parseMegaEvo)
+    .filter(Boolean);
+  if (megas.length > 0) MegaEvolutions[id] = megas;
+
+  // --- Learnsets ---
+  const learnset = [];
+
+  // Level-up moves: "N - Move Name"
+  for (const moveStr of entry.LevelUpMoves || []) {
+    const m = moveStr.match(/^(\d+)\s*-\s*(.+)$/);
+    if (m) {
+      learnset.push({ move: _toIDRaw(m[2].trim()), how: 'lvl', level: parseInt(m[1], 10) });
+    }
+  }
+
+  // TMs: comma-separated string
+  if (entry.TMs) {
+    for (const name of entry.TMs.split(',')) {
+      const n = name.trim();
+      if (n) learnset.push({ move: _toIDRaw(n), how: 'tm' });
+    }
+  }
+
+  // Tutors: SpecialTutors + BeachTutors, comma-separated strings
+  for (const tutorField of [entry.SpecialTutors, entry.BeachTutors]) {
+    if (!tutorField) continue;
+    for (const name of tutorField.split(',')) {
+      const n = name.trim();
+      if (n) learnset.push({ move: _toIDRaw(n), how: 'tutor' });
+    }
+  }
+
+  Learnsets[id] = learnset;
+}
+
+// Editable copies – no separate edit files exist; initialise as empty so the
+// Pokeedit feature degrades gracefully rather than crashing on import.
+const BattlePokedexEdit = {};
+const LearnsetsEdit     = {};
 // ...existing code...
 import './compat.js'; // ensure legacy helpers are available early
 // ...existing code...
