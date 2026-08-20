@@ -69446,9 +69446,9 @@
       "Speed": 34
     },
     "Abilities": [
-      "Magnet Pull",
-      "Magnet Pull",
-      "Magnet Pull"
+      "Full Metal Body",
+      "Full Metal Body",
+      "Full Metal Body"
     ],
     "Types": [
       "Steel"
@@ -69463,9 +69463,9 @@
     "Weight": 8,
     "Color": "Gray",
     "CatchRate": 3,
-    "TMs": "",
+    "TMs": "Protect, Thunderbolt, Hidden Power, Facade, Rock Tomb, Hyper Beam, Solar Beam, Electroweb, Acid Armor, Round, Iron Head, Charge Beam, Thunder Wave, Explosion, Volt Switch, Signal Beam, Tri Attack, Shock Wave, Flash Cannon, Thunder, Terrain Pulse, Body Press",
     "SpecialTutors": "",
-    "BeachTutors": "",
+    "BeachTutors": "Heal Bell, Substitute, Rain Dance, Electric Terrain, Magnet Rise, Gyro Ball, Heal Block, Rest, Sleep Talk, Skill Swap, Toxic, Superpower, Steel Beam",
     "LevelUpMoves": [
       "1 - Thunder Shock",
       "1 - Harden",
@@ -69532,9 +69532,9 @@
     "Weight": 800,
     "Color": "Gray",
     "CatchRate": 3,
-    "TMs": "Terrain Pulse, Body Press",
+    "TMs": "Protect, Earthquake, Thunderbolt, Hidden Power, Facade, Rock Tomb, Hyper Beam, Solar Beam, Power-Up Punch, Dizzy Punch, Electroweb, Acid Armor, Round, Iron Head, Charge Beam, Thunder Wave, Explosion, Volt Switch, Ice Punch, Rock Slide, Signal Beam, Tri Attack, Fire Punch, Shock Wave, Thunder Punch, Flash Cannon, Mega Punch, Thunder, Terrain Pulse, Body Press",
     "SpecialTutors": "",
-    "BeachTutors": "",
+    "BeachTutors": "Heal Bell, Substitute, Rain Dance, Electric Terrain, Magnet Rise, Gyro Ball, Heal Block, Rest, Sleep Talk, Skill Swap, Toxic, Superpower, Steel Beam",
     "LevelUpMoves": [
       "0 - Thunder Punch",
       "0 - Meteor Mash",
