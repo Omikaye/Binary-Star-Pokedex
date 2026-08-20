@@ -7,7 +7,7 @@
 	word-wrap: normal;
 }
 
-.utilichart li > a, .utilitychart li > div {
+.utilichart li > a, .utilichart li > div {
 	display: block;
 	height: 30px;
 	padding: 0 0 0 4px;
