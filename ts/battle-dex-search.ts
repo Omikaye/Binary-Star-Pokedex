@@ -63,16 +63,16 @@ function hasAbility(pokemon: any, ability: ID) {
     if (toID(pokemon.abilities[key]) == toID(ability)) {
       return true;
     }
-
-    function shouldShowPokemonInSearch(pokemonId: ID) {
-      if (typeof hasTmOrTutorMoves === "function") {
-        return hasTmOrTutorMoves(pokemonId);
-      }
-      const learnset = Learnsets[pokemonId] || [];
-      return learnset.some((entry: any) => entry && (entry.how === "tm" || entry.how === "tutor"));
-    }
   }
   return false;
+}
+
+function shouldShowPokemonInSearch(pokemonId: ID) {
+  if (typeof hasTmOrTutorMoves === "function") {
+    return hasTmOrTutorMoves(pokemonId);
+  }
+  const learnset = Learnsets[pokemonId] || [];
+  return learnset.some((entry: any) => entry && (entry.how === "tm" || entry.how === "tutor"));
 }
 
 function canLearnEdit(pokemonId: ID, moveId: ID): boolean {
