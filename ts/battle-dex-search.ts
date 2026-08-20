@@ -50,6 +50,9 @@ declare const BattlePokedexEdit: any;
 declare const BattleItems: any;
 declare const Learnsets: any;
 declare const LearnsetsEdit: any;
+declare const hasTmOrTutorMoves:
+  | ((pokemonId: ID) => boolean)
+  | undefined;
 
 declare function toID(id: string): ID;
 declare function getID(set: any, text: string): any;
@@ -59,6 +62,14 @@ function hasAbility(pokemon: any, ability: ID) {
   for (let key in pokemon.abilities) {
     if (toID(pokemon.abilities[key]) == toID(ability)) {
       return true;
+    }
+
+    function shouldShowPokemonInSearch(pokemonId: ID) {
+      if (typeof hasTmOrTutorMoves === "function") {
+        return hasTmOrTutorMoves(pokemonId);
+      }
+      const learnset = Learnsets[pokemonId] || [];
+      return learnset.some((entry: any) => entry && (entry.how === "tm" || entry.how === "tutor"));
     }
   }
   return false;
@@ -74,7 +85,11 @@ function generateSearchIndex() {
   let index: string[] = [];
 
   // Filter out entries where the data object doesn't have a valid name
-  index = index.concat(Object.keys(BattlePokedex).filter(x => BattlePokedex[x]?.name).map((x) => x + " pokemon"));
+  index = index.concat(
+    Object.keys(BattlePokedex)
+      .filter((x) => BattlePokedex[x]?.name && shouldShowPokemonInSearch(x as ID))
+      .map((x) => x + " pokemon")
+  );
   index = index.concat(Object.keys(BattleMovedex).filter(x => BattleMovedex[x]?.name).map((x) => x + " move"));
   index = index.concat(Object.keys(BattleItems).filter(x => BattleItems[x]?.name).map((x) => x + " item"));
   index = index.concat(Object.keys(BattleAbilities).filter(x => BattleAbilities[x]?.name).map((x) => x + " ability"));
@@ -998,9 +1013,14 @@ class BattlePokemonSearch extends BattleTypedSearch<"pokemon"> {
         case "pikachucosplay":
           continue; // skip cosplay aggregate
       }
-      results.push(["pokemon", baseId]);
+      const visibleIds: ID[] = [];
+      if (shouldShowPokemonInSearch(baseId)) visibleIds.push(baseId);
       for (const fid of g.forms) {
-        results.push(["pokemon", fid]);
+        if (shouldShowPokemonInSearch(fid)) visibleIds.push(fid);
+      }
+      if (!visibleIds.length) continue;
+      for (const visibleId of visibleIds) {
+        results.push(["pokemon", visibleId]);
       }
     }
     return results;
