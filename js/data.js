@@ -1,6 +1,6 @@
 import NewPokedexData from "../data/Pokedex.json";
 import { NameDictionary } from "./name-dictionary.js";
-import BattleMovedex from "../data/moves.json";
+import RawBattleMovedex from "../data/moves.json";
 import BattleItems from "../data/items.json";
 import BattleAbilities from "../data/abilities.json";
 import BattleTypeChart from "../data/typechart.json";
@@ -25,6 +25,97 @@ import BaseGameLearnsets from "../data/BaseGameLearnsets.json";
 function _toIDRaw(text) {
   if (typeof text !== 'string' && typeof text !== 'number') return '';
   return ('' + text).toLowerCase().replace(/[^a-z0-9]+/g, '');
+}
+
+function _coerceMoveText(value) {
+  if (typeof value === 'string' || typeof value === 'number') return ('' + value).trim();
+  if (!value || typeof value !== 'object') return '';
+  return (
+    value.move ||
+    value.Move ||
+    value.name ||
+    value.Name ||
+    value.moveName ||
+    value.MoveName ||
+    ''
+  ).trim();
+}
+
+function _coerceMoveList(value) {
+  if (!value) return [];
+  if (Array.isArray(value)) return value.map(_coerceMoveText).filter(Boolean);
+  if (typeof value === 'string') return value.split(/[\n,]/).map(s => s.trim()).filter(Boolean);
+  if (typeof value === 'object') return Object.values(value).map(_coerceMoveText).filter(Boolean);
+  return [];
+}
+
+function _parseLevelUpMoveEntry(value) {
+  if (typeof value === 'string') {
+    const m = value.match(/^(\d+)\s*-\s*(.+)$/);
+    if (m) return { move: _toIDRaw(m[2].trim()), how: 'lvl', level: parseInt(m[1], 10) };
+    const move = _coerceMoveText(value);
+    if (move) return { move: _toIDRaw(move), how: 'lvl', level: 1 };
+    return null;
+  }
+  if (!value || typeof value !== 'object') return null;
+  const move = _coerceMoveText(value);
+  if (!move) return null;
+  const level = Number(
+    value.level ??
+    value.Level ??
+    value.lvl ??
+    value.Lvl ??
+    value.learnLevel ??
+    value.LearnLevel ??
+    1
+  );
+  return { move: _toIDRaw(move), how: 'lvl', level: Number.isFinite(level) ? level : 1 };
+}
+
+function _normalizeMoveFlags(flags) {
+  const normalized = {};
+  if (!flags || typeof flags !== 'object') return normalized;
+  const aliases = {
+    makescontact: 'contact',
+    ignoresubstitute: 'bypasssub',
+    biting: 'bite',
+    megalauncher: 'pulse',
+  };
+  for (const key in flags) {
+    if (!flags[key]) continue;
+    const normalizedKey = aliases[_toIDRaw(key)] || _toIDRaw(key);
+    if (normalizedKey) normalized[normalizedKey] = 1;
+  }
+  return normalized;
+}
+
+function _normalizeMoveEntry(id, move) {
+  const name = move?.name || move?.Name || id;
+  const normalized = {
+    ...move,
+    id,
+    name,
+    num: move?.num ?? move?.Num ?? 0,
+    flags: _normalizeMoveFlags(move?.flags ?? move?.Flags),
+    category: move?.category ?? move?.Category ?? 'Status',
+    basePower: move?.basePower ?? move?.BasePower ?? 0,
+    accuracy: move?.accuracy ?? move?.Accuracy ?? true,
+    type: move?.type ?? move?.Type ?? 'Normal',
+    target: move?.target ?? move?.Target ?? 'normal',
+    pp: move?.pp ?? move?.PP ?? 0,
+    priority: move?.priority ?? move?.Priority ?? 0,
+    desc: move?.desc ?? move?.Desc ?? '',
+    shortDesc: move?.shortDesc ?? move?.ShortDesc ?? move?.desc ?? move?.Desc ?? '',
+    zMovePower: move?.zMovePower ?? move?.ZMovePower,
+    zMoveEffect: move?.zMoveEffect ?? move?.ZMoveEffect,
+    zMoveBoost: move?.zMoveBoost ?? move?.ZMoveBoost,
+    isZ: move?.isZ ?? move?.IsZ,
+    isMax: move?.isMax ?? move?.IsMax,
+    gmaxPower: move?.gmaxPower ?? move?.GMaxPower,
+    noPPBoosts: move?.noPPBoosts ?? move?.NoPPBoosts ?? false,
+    isNonstandard: move?.isNonstandard ?? move?.IsNonstandard,
+  };
+  return normalized;
 }
 
 /**
@@ -114,6 +205,9 @@ function _parseMegaEvo(megaStr) {
 }
 
 // Build the four globals from NewPokedexData (array of entries)
+const BattleMovedex    = Object.fromEntries(
+  Object.entries(RawBattleMovedex || {}).map(([id, move]) => [id, _normalizeMoveEntry(id, move)])
+);
 const BattlePokedex    = {};
 const BattleEvolutions = {};
 const MegaEvolutions   = {};
@@ -155,6 +249,14 @@ for (const entry of NewPokedexData) {
     expYield:  entry.ExpYield,
   };
 
+  if (entry.ZMove && entry.ZMove.ZMove && entry.ZMove.ZMove !== 'None') {
+    pokedexEntry.zmove = {
+      zMove: entry.ZMove.ZMove,
+      zCrystal: entry.ZMove.ZCrystal,
+      baseMove: entry.ZMove.BaseMove,
+    };
+  }
+
   // Derive baseSpecies / forme for forms with hyphenated canonical names
   if (canonical !== displayName && canonical.includes('-')) {
     const dashIdx = canonical.indexOf('-');
@@ -179,28 +281,18 @@ for (const entry of NewPokedexData) {
   // --- Learnsets ---
   const learnset = [];
 
-  // Level-up moves: "N - Move Name"
-  for (const moveStr of entry.LevelUpMoves || []) {
-    const m = moveStr.match(/^(\d+)\s*-\s*(.+)$/);
-    if (m) {
-      learnset.push({ move: _toIDRaw(m[2].trim()), how: 'lvl', level: parseInt(m[1], 10) });
-    }
+  for (const moveEntry of (Array.isArray(entry.LevelUpMoves) ? entry.LevelUpMoves : _coerceMoveList(entry.LevelUpMoves))) {
+    const parsed = _parseLevelUpMoveEntry(moveEntry);
+    if (parsed) learnset.push(parsed);
   }
 
-  // TMs: comma-separated string
-  if (entry.TMs) {
-    for (const name of entry.TMs.split(',')) {
-      const n = name.trim();
-      if (n) learnset.push({ move: _toIDRaw(n), how: 'tm' });
-    }
+  for (const name of _coerceMoveList(entry.TMs)) {
+    learnset.push({ move: _toIDRaw(name), how: 'tm' });
   }
 
-  // Tutors: SpecialTutors + BeachTutors, comma-separated strings
-  for (const tutorField of [entry.SpecialTutors, entry.BeachTutors]) {
-    if (!tutorField) continue;
-    for (const name of tutorField.split(',')) {
-      const n = name.trim();
-      if (n) learnset.push({ move: _toIDRaw(n), how: 'tutor' });
+  for (const tutorField of [entry.SpecialTutors, entry.BeachTutors, entry.MoveTutors, entry.TutorMoves]) {
+    for (const name of _coerceMoveList(tutorField)) {
+      learnset.push({ move: _toIDRaw(name), how: 'tutor' });
     }
   }
 
@@ -367,6 +459,10 @@ window.getLearnset = (pokemonId) => {
     }
   }
   return learnset ?? [];
+};
+
+window.hasTmOrTutorMoves = (pokemonId) => {
+  return window.getLearnset(pokemonId).some(learn => learn && (learn.how === 'tm' || learn.how === 'tutor'));
 };
 
 window.canLearn = (pokemonId, moveId) => {
