@@ -5075,7 +5075,8 @@
     "Flags": {
       "protect": 1,
       "reflectable": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "Name": "Will-O-Wisp",
     "Category": "Status",
@@ -14259,19 +14260,25 @@
     "Desc": "",
     "Priority": 0
   },
-  "move741": {
+  "flashfreeze": {
     "Num": 741,
-    "Flags": {},
-    "Name": "\u2014\u2014\u2014",
+    "Flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "animateally": 1,
+      "wind": 1
+    },
+    "Name": "Flash Freeze",
     "Category": "Status",
     "BasePower": 0,
-    "Accuracy": 0,
-    "Type": "Normal",
+    "Accuracy": 90,
+    "Type": "Ice",
     "Target": "normal",
-    "PP": 0,
+    "PP": 10,
     "ZMovePower": 0,
-    "ZMoveEffect": "None",
-    "Desc": "",
+    "ZMoveEffect": "\u002B2 Special Defense",
+    "Desc": "The user inflicts Frostbite on the enemy by covering them in hypercooled air.",
     "Priority": 0
   },
   "doubleironbash": {
@@ -16315,10 +16322,10 @@
     "Category": "Physical",
     "BasePower": 120,
     "Accuracy": 90,
-    "Type": "Fighting",
+    "Type": "Dark",
     "Target": "normal",
     "PP": 10,
-    "ZMovePower": 195,
+    "ZMovePower": 150,
     "ZMoveEffect": "None",
     "Desc": "The user attacks with an axe-like kick that may confuse. If it misses, the user is also hurt.",
     "Priority": 0
