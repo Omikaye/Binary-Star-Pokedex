@@ -2109,8 +2109,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Raichu 2 (Raichunite X)",
-      "Raichu 3 (Raichunite Y)"
+      "Raichu 2 (Raichunite)"
     ],
     "ZMove": {
       "ZMove": "Stoked Sparksurfer",
@@ -30821,7 +30820,7 @@
     "Evolutions": [],
     "MegaEvolutions": [
       "Absol 1 (Absolite)",
-      "Absol 2 (Salazzlite)"
+      "Absol 2 (Absolite Z)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -38223,7 +38222,7 @@
     "Evolutions": [],
     "MegaEvolutions": [
       "Garchomp 1 (Garchompite)",
-      "Garchomp 2 (Togedemarinite)"
+      "Garchomp 2 (Garchompite Z)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -38500,7 +38499,7 @@
     "Evolutions": [],
     "MegaEvolutions": [
       "Lucario 1 (Lucarionite)",
-      "Lucario 2 (Mimikyunite)"
+      "Lucario 2 (Lucarionite Z)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -41599,7 +41598,7 @@
       "50 - Iron Defense",
       "50 - Iron Tail",
       "55 - Flash Cannon",
-      "60 - Steel Beam"
+      "60 - Roar of Time"
     ],
     "Evolutions": [],
     "MegaEvolutions": [],
@@ -47759,7 +47758,9 @@
       "85 - Inferno"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Darmanitan 1 (Darmanitanite)"
+    ],
     "ZMove": {
       "ZMove": "None",
       "ZCrystal": "None",
@@ -53698,7 +53699,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Golurk 1 (Raticatite)"
+      "Golurk 1 (Golurkite)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -56715,7 +56716,8 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Greninja 3 (Kommo-onite)"
+      "Greninja 2 (Greninjite X)",
+      "Greninja 3 (Greninjite Y)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -57602,7 +57604,7 @@
     ],
     "Evolutions": [
       "Floette: Level Up [Level 21]",
-      "Floette 5: Used Item [Gimmighoul Coin]"
+      "Floette 5: Used Item [Ange\u0027s Coin]"
     ],
     "MegaEvolutions": [],
     "ZMove": {
@@ -58383,7 +58385,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Meowstic 2 (Greninjite Y)"
+      "Meowstic 2 (Meowstite)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -63304,7 +63306,9 @@
       "77 - Giga Impact"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Gumshoos 1 (Gumshoosite)"
+    ],
     "ZMove": {
       "ZMove": "None",
       "ZCrystal": "None",
@@ -63561,7 +63565,9 @@
       "85 - Volt Tackle"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Vikavolt 1 (Vikavoltite)"
+    ],
     "ZMove": {
       "ZMove": "None",
       "ZCrystal": "None",
@@ -63720,7 +63726,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Crabominable 1 (Marowakite)"
+      "Crabominable 1 (Crabominite)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -63979,7 +63985,9 @@
       "80 - Healing Wish"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Ribombee 1 (Ribombite)"
+    ],
     "ZMove": {
       "ZMove": "None",
       "ZCrystal": "None",
@@ -64726,7 +64734,9 @@
       "81 - Belch"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Araquanid 1 (Araquanite)"
+    ],
     "ZMove": {
       "ZMove": "None",
       "ZCrystal": "None",
@@ -64899,7 +64909,9 @@
       "80 - Solar Beam"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Lurantis 1 (Lurantite)"
+    ],
     "ZMove": {
       "ZMove": "None",
       "ZCrystal": "None",
@@ -65248,7 +65260,9 @@
       "82 - Overheat"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Salazzle 1 (Salazzlite)"
+    ],
     "ZMove": {
       "ZMove": "None",
       "ZCrystal": "None",
@@ -66110,7 +66124,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Golisopod 1 (Gumshoosite)"
+      "Golisopod 1 (Golisopodite)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -66879,7 +66893,9 @@
       "85 - Volt Tackle"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Togedemaru 1 (Togedemarinite)"
+    ],
     "ZMove": {
       "ZMove": "None",
       "ZCrystal": "None",
@@ -66971,7 +66987,9 @@
       "76 - Roughhousing"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Mimikyu 2 (Mimikyunite)"
+    ],
     "ZMove": {
       "ZMove": "Let\u2019s Snuggle Forever",
       "ZCrystal": "Mimikium Z",
@@ -67140,7 +67158,7 @@
       "66 - Hydro Pump",
       "66 - Outrage",
       "69 - Hyper Beam",
-      "73 - Tri Attack",
+      "73 - Electro Shot",
       "79 - Synchronoise"
     ],
     "Evolutions": [],
@@ -67482,7 +67500,9 @@
       "86 - Outrage"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Kommo-o 1 (Kommo-onite)"
+    ],
     "ZMove": {
       "ZMove": "Clangorous Soulblaze",
       "ZCrystal": "Kommonium Z",
@@ -68921,7 +68941,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Magearna 2 (Data Card 15)"
+      "Magearna 2 (Magearnite)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -69439,7 +69459,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Zeraora 1 (Vikavoltite)"
+      "Zeraora 1 (Zeraorite)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -73209,7 +73229,7 @@
       "1 - Defog",
       "1 - Endure",
       "1 - Feather Dance",
-      "1 - Leer",
+      "1 - Reversal",
       "1 - Mirror Move",
       "1 - Peck",
       "1 - Pursuit",
@@ -80888,7 +80908,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Tatsugiri 3 (Data Card 16)"
+      "Tatsugiri 3 (Garchompite Z)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -82398,7 +82418,7 @@
       "1 - Tackle"
     ],
     "Evolutions": [
-      "Gholdengo: Used Item [Gimmighoul Coin]"
+      "Gholdengo: Used Item [Ange\u0027s Coin]"
     ],
     "MegaEvolutions": [],
     "ZMove": {
@@ -84843,7 +84863,9 @@
       "80 - Giga Impact"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Raticate 2 (AloRaticatite)"
+    ],
     "ZMove": {
       "ZMove": "None",
       "ZCrystal": "None",
@@ -85805,7 +85827,9 @@
       "85 - Volt Tackle"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Raichu 3 (AloRaichunite)"
+    ],
     "ZMove": {
       "ZMove": "Stoked Sparksurfer",
       "ZCrystal": "Raichium Z",
@@ -87889,12 +87913,13 @@
     "BeachTutors": "Snore, Echoed Voice, Fling, Substitute, Attract, Sunny Day, Grassy Terrain, False Swipe, Thief, Smack Down, Embargo, Double Team, Tailwind, Grass Knot, Agility, Rest, Sleep Talk, Taunt, Toxic, Sky Attack, Throat Chop, Dual Chop, Heat Wave, Hyper Voice, Superpower",
     "LevelUpMoves": [
       "1 - Peck",
-      "1 - Erode",
+      "1 - Rock Smash",
+      "1 - Feint",
       "4 - Fury Cutter",
       "8 - Air Cutter",
       "10 - Secret Sword",
       "10 - Detect",
-      "13 - Sharpen",
+      "13 - Reversal",
       "15 - False Swipe",
       "18 - Aerial Ace",
       "20 - U-turn",
@@ -87908,7 +87933,6 @@
       "41 - Focus Energy",
       "41 - Swords Dance",
       "44 - Drill Peck",
-      "49 - Feint",
       "49 - Solar Blade",
       "52 - Sacred Sword",
       "55 - Meteor Assault",
@@ -88567,7 +88591,9 @@
       "80 - Inferno"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Marowak 2 (AloMarowakite)"
+    ],
     "ZMove": {
       "ZMove": "None",
       "ZCrystal": "Firium Z",
@@ -96130,7 +96156,7 @@
       "50 - Iron Defense",
       "50 - Iron Tail",
       "55 - Flash Cannon",
-      "60 - Steel Beam"
+      "60 - Roar of Time"
     ],
     "Evolutions": [],
     "MegaEvolutions": [],
@@ -97465,7 +97491,9 @@
       "85 - Inferno"
     ],
     "Evolutions": [],
-    "MegaEvolutions": [],
+    "MegaEvolutions": [
+      "Darmanitan 3 (GalDarmanitanite)"
+    ],
     "ZMove": {
       "ZMove": "None",
       "ZCrystal": "None",
@@ -100011,7 +100039,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Floette 6 (Greninjite X)"
+      "Floette 6 (Floettite)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -100944,7 +100972,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Meowstic 3 (Greninjite Y)"
+      "Meowstic 3 (Meowstite)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -102723,7 +102751,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Zygarde 5 (Darmanitanite)"
+      "Zygarde 5 (Zygardite)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -106073,7 +106101,7 @@
       "66 - Hydro Pump",
       "66 - Outrage",
       "69 - Hyper Beam",
-      "73 - Tri Attack",
+      "73 - Electro Shot",
       "79 - Synchronoise"
     ],
     "Evolutions": [],
@@ -106537,7 +106565,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Magearna 3 (Data Card 15)"
+      "Magearna 3 (Magearnite)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -109242,7 +109270,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Tatsugiri 4 (Data Card 16)"
+      "Tatsugiri 4 (Garchompite Z)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -109307,7 +109335,7 @@
     ],
     "Evolutions": [],
     "MegaEvolutions": [
-      "Tatsugiri 5 (Data Card 16)"
+      "Tatsugiri 5 (Garchompite Z)"
     ],
     "ZMove": {
       "ZMove": "None",
@@ -109712,7 +109740,7 @@
       "1 - Tackle"
     ],
     "Evolutions": [
-      "Gholdengo: Used Item [Gimmighoul Coin]"
+      "Gholdengo: Used Item [Ange\u0027s Coin]"
     ],
     "MegaEvolutions": [],
     "ZMove": {
