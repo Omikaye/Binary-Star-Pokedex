@@ -4672,7 +4672,7 @@
     "Target": "allAdjacentFoes",
     "PP": 15,
     "ZMovePower": 105,
-    "ZMoveEffect": "\u002B1 Defense",
+    "ZMoveEffect": "\u002B1 Special Defense",
     "Desc": "The user whips up a vicious tornado to tear at the opposing Pok\u00E9mon. This also lowers the opponent\u0027s Attack stats. Z: \u002B1 Def",
     "Priority": 0
   },
@@ -14278,7 +14278,7 @@
     "PP": 10,
     "ZMovePower": 0,
     "ZMoveEffect": "\u002B2 Special Defense",
-    "Desc": "The user inflicts Frostbite on the enemy by covering them in hypercooled air.",
+    "Desc": "The user inflicts Frostbite on the enemy by covering them in hypercooled air. Z: \u002B2 Sp.Def",
     "Priority": 0
   },
   "doubleironbash": {
@@ -14869,7 +14869,7 @@
     "Type": "Fighting",
     "Target": "normal",
     "PP": 10,
-    "ZMovePower": 100,
+    "ZMovePower": 130,
     "ZMoveEffect": "\u002B1 Defense",
     "Desc": "The user attacks with its body. Its Defense stat is used to calculate damage instead of its Attack. Z: \u002B1 Defense",
     "Priority": 0
@@ -14967,9 +14967,9 @@
     "Type": "Steel",
     "Target": "normal",
     "PP": 5,
-    "ZMovePower": 180,
+    "ZMovePower": 160,
     "ZMoveEffect": "None",
-    "Desc": "The user becomes a gigantic sword and cuts the target with tremendous force.",
+    "Desc": "The user uses a gigantic sword and cuts the target with tremendous force.",
     "Priority": 0
   },
   "behemothbash": {
@@ -14988,7 +14988,7 @@
     "PP": 5,
     "ZMovePower": 160,
     "ZMoveEffect": "None",
-    "Desc": "The user becomes a gigantic shield and slams into the target with tremendous force.",
+    "Desc": "The user uses a gigantic shield and slams into the target with tremendous force.",
     "Priority": 0
   },
   "aurawheel": {
@@ -16389,17 +16389,19 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "punch": 1
+      "punch": 1,
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Jet Punch",
     "Category": "Physical",
     "BasePower": 60,
     "Accuracy": 100,
-    "Type": "Water",
+    "Type": "Flying",
     "Target": "normal",
     "PP": 15,
-    "ZMovePower": 100,
-    "ZMoveEffect": "None",
+    "ZMovePower": 120,
+    "ZMoveEffect": "\u002B1 Speed",
     "Desc": "The user surrounds its fist with a torrent and punches at blinding speed. This move goes first.",
     "Priority": 1
   },
