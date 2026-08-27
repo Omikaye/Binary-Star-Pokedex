@@ -17,6 +17,7 @@ import TrainerSpriteLinks from "../data/trainer-sprite-links.json";
 import BattleTags from "../data/battle-tags.json";
 import ShopTablesJson from "../data/shop-tables.json";
 import BaseGameLearnsets from "../data/BaseGameLearnsets.json";
+import PartySpriteFiles from "../data/party-sprite-files.json";
 
 // ---------------------------------------------------------------------------
 // Build all pokedex globals from the new consolidated Pokedex.json
@@ -411,8 +412,49 @@ window.getTypeIcon = (type) => {
 };
 
 
+function _getPartySpriteFilename(pokemon) {
+  let pokemonId = '';
+  let pokemonName = '';
+  let pokemonNum = 0;
+  let isForm = false;
+
+  if (pokemon && typeof pokemon === 'object') {
+    pokemonName = pokemon.name || '';
+    pokemonId = toID(pokemon.id || pokemonName);
+    pokemonNum = Number(pokemon.num) || 0;
+    isForm = !!(pokemon.forme && pokemon.name !== pokemon.baseSpecies);
+  } else {
+    const rawName = '' + pokemon;
+    const translated = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(rawName) : rawName;
+    pokemonId = toID(translated);
+    pokemonName = translated;
+    const template = BattlePokedex[pokemonId];
+    if (template) {
+      pokemonName = template.name || pokemonName;
+      pokemonNum = Number(template.num) || 0;
+      isForm = !!(template.forme && template.name !== template.baseSpecies);
+    }
+  }
+
+  if (PartySpriteFiles[pokemonId]) return PartySpriteFiles[pokemonId];
+
+  const nameId = toID(pokemonName);
+  if (PartySpriteFiles[nameId]) return PartySpriteFiles[nameId];
+
+  if (!isForm && pokemonNum >= 1 && pokemonNum <= 1025) {
+    const padded = String(pokemonNum).padStart(4, '0');
+    if (PartySpriteFiles[padded]) return PartySpriteFiles[padded];
+    return `${padded}.png`;
+  }
+  return '';
+}
+
 window.getPokemonIcon = (pokemon) => {
-  // Allow display-name translations (e.g., "Diglett 1" -> "Diglett-Alola")
+  const spriteFilename = _getPartySpriteFilename(pokemon);
+  if (spriteFilename) {
+    return `background:transparent url(${ResourcePrefix}sprites/Gen8and9Sprites/${encodeURIComponent(spriteFilename).replace(/%2F/g, "/")}) no-repeat scroll 0 0`;
+  }
+  // Fallback to the legacy icon sheet when needed.
   const translated = typeof window.translateDisplayName === 'function' ? window.translateDisplayName(pokemon) : pokemon;
   let [left, top] = Icons.pokemon[toID(translated)] ?? [0, 0];
   return `background:transparent url(${ResourcePrefix}sprites/pokemonicons-sheet.png?v14) no-repeat scroll ${left}px ${top}px`;
