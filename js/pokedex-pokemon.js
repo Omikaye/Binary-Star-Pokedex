@@ -303,13 +303,14 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 		if (megaEvos.length > 0) {
 			buf += '</dd><dt>Mega Evolution:</dt> <dd>';
 			for (let megaEvo of megaEvos) {
-				const megaFormeId = toID(megaEvo.forme);
+				const translatedForme = (typeof translateDisplayName === 'function') ? translateDisplayName(megaEvo.forme) : megaEvo.forme;
+				const megaFormeId = toID(translatedForme);
 				const megaFormePokemon = getID(BattlePokedex, megaFormeId);
 				if (megaFormePokemon) {
 					const formeName = megaFormePokemon.forme || megaEvo.forme;
 					buf += `<div><span class="picon" style="${getPokemonIcon(megaFormePokemon)}"></span>`;
 					buf += `<a href="${Config.baseurl}pokemon/${megaFormeId}" data-target="replace">${formeName}</a>`;
-					buf += ` <small>(requires ${megaEvo.item})</small></div>`;
+					buf += ` <small>(requires <a href="${Config.baseurl}items/${toID(megaEvo.item)}" data-target="push">${megaEvo.item}</a>)</small></div>`;
 				}
 			}
 		}
