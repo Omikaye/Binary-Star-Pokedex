@@ -333,6 +333,24 @@ window.BattlePokedexEdit = BattlePokedexEdit;
 window.LearnsetsEdit = LearnsetsEdit;
 window.BaseGameLearnsets = BaseGameLearnsets;
 
+// Build BattleFormOrder: base species id -> sorted array of form ids (by num, ascending)
+const BattleFormOrder = {};
+for (const [id, p] of Object.entries(BattlePokedex)) {
+  if (p.baseSpecies) {
+    const baseId = _toIDRaw(p.baseSpecies);
+    if (!BattleFormOrder[baseId]) BattleFormOrder[baseId] = [];
+    BattleFormOrder[baseId].push({ id, num: p.num });
+  }
+}
+for (const baseId of Object.keys(BattleFormOrder)) {
+  BattleFormOrder[baseId].sort((a, b) => a.num - b.num);
+  BattleFormOrder[baseId] = BattleFormOrder[baseId].map(x => x.id);
+}
+window.BattleFormOrder = BattleFormOrder;
+
+// Hard-set Minior to its real Pokédex number (774) rather than the custom Minior-13 ID
+if (BattlePokedex['minior']) BattlePokedex['minior'].num = 774;
+
 // Build reverse mapping: coordinate -> icon index for debugging
 window.ItemIconIndices = {};
 const BORDER = 1;

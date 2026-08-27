@@ -23,7 +23,9 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 			buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon is unreleased.</div>';
 		}
 
-		buf += `<img src="${ResourcePrefix}sprites/gen5/${id}.png" alt="" width="96" height="96" class="sprite" />`
+		var gen5SpriteId = id;
+		var gen5SpriteFallback = (pokemon.name || '').toLowerCase().replace(/[^a-z0-9-]/g, '');
+		buf += `<img src="${ResourcePrefix}sprites/gen5/${gen5SpriteId}.png" alt="" width="96" height="96" class="sprite" onerror="if(!this._tried){this._tried=true;this.src='${ResourcePrefix}sprites/gen5/${gen5SpriteFallback}.png';}" />`
 
 		buf += '<dl class="typeentry">';
 		buf += '<dt>Types:</dt> <dd>';

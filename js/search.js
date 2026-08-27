@@ -642,8 +642,13 @@
 		if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'pokemon/' + id + '" data-target="push"';
 		var buf = '<li class="result"><a' + attrs + ' data-entry="pokemon|' + escapeHTML(pokemon.name) + '">';
 
-		// Dex number with suffix for forms (A, B, C...), shown as 6-A, 10-B, etc. Base shows plain number.
-		var numDisplay = pokemon.num;
+		// Dex number: show base species num for forms (e.g. 3-A instead of 1026-A)
+		var _baseNum = pokemon.num;
+		if (pokemon.baseSpecies && window.BattlePokedex) {
+			var _base = window.BattlePokedex[toID(pokemon.baseSpecies)];
+			if (_base && _base.num) _baseNum = _base.num;
+		}
+		var numDisplay = _baseNum;
 		if (pokemon.forme && pokemon.name !== pokemon.baseSpecies && window.BattleFormOrder) {
 			var baseId = toID(pokemon.baseSpecies || pokemon.name);
 			var order = window.BattleFormOrder[baseId];
@@ -651,7 +656,7 @@
 				var idx = order.indexOf(pokemon.id);
 				if (idx >= 0) {
 					var letter = String.fromCharCode(65 + idx);
-					numDisplay = pokemon.num + '-' + letter;
+					numDisplay = _baseNum + '-' + letter;
 				}
 			}
 		}
@@ -738,8 +743,13 @@
 		if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'usage/' + id + '" data-target="push"';
 		var buf = '<li class="result"><a' + attrs + ' data-entry="usage|' + escapeHTML(pokemon.name) + '">';
 
-		// Dex number with suffix for forms (A, B, C...), shown as 6-A, 10-B, etc. Base shows plain number.
-		var numDisplay = pokemon.num;
+		// Dex number: show base species num for forms (e.g. 3-A instead of 1026-A)
+		var _baseNum = pokemon.num;
+		if (pokemon.baseSpecies && window.BattlePokedex) {
+			var _base = window.BattlePokedex[toID(pokemon.baseSpecies)];
+			if (_base && _base.num) _baseNum = _base.num;
+		}
+		var numDisplay = _baseNum;
 		if (pokemon.forme && pokemon.name !== pokemon.baseSpecies && window.BattleFormOrder) {
 			var baseId = toID(pokemon.baseSpecies || pokemon.name);
 			var order = window.BattleFormOrder[baseId];
@@ -747,7 +757,7 @@
 				var idx = order.indexOf(pokemon.id);
 				if (idx >= 0) {
 					var letter = String.fromCharCode(65 + idx);
-					numDisplay = pokemon.num + '-' + letter;
+					numDisplay = _baseNum + '-' + letter;
 				}
 			}
 		}
@@ -807,8 +817,13 @@
 		if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'pokeedit/' + id + '" data-target="push"';
 		var buf = '<li class="result"><a' + attrs + ' data-entry="pokeedit|' + escapeHTML(pokemon.name) + '">';
 
-		// Dex number with suffix for forms (A, B, C...), shown as 6-A, 10-B, etc. Base shows plain number.
-		var numDisplay = pokemon.num;
+		// Dex number: show base species num for forms (e.g. 3-A instead of 1026-A)
+		var _baseNum = pokemon.num;
+		if (pokemon.baseSpecies && window.BattlePokedex) {
+			var _base = window.BattlePokedex[toID(pokemon.baseSpecies)];
+			if (_base && _base.num) _baseNum = _base.num;
+		}
+		var numDisplay = _baseNum;
 		if (pokemon.forme && pokemon.name !== pokemon.baseSpecies && window.BattleFormOrder) {
 			var baseId = toID(pokemon.baseSpecies || pokemon.name);
 			var order = window.BattleFormOrder[baseId];
@@ -816,7 +831,7 @@
 				var idx = order.indexOf(pokemon.id);
 				if (idx >= 0) {
 					var letter = String.fromCharCode(65 + idx);
-					numDisplay = pokemon.num + '-' + letter;
+					numDisplay = _baseNum + '-' + letter;
 				}
 			}
 		}
