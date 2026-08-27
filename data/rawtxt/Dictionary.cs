@@ -1,6 +1,6 @@
 	public static readonly Dictionary<string, string> NameDictionary = new()
 	{
-		{ "Basculin", 	"Basculin-Red-Striped", "Basculin-Red" },
+		
 		{ "Basculin 1", 	"Basculin-Blue-Striped", "Basculin-Blue" },
 		{ "Basculin 2", 	"Basculin-White-Striped", "Basculin-White" },
 		{ "Deoxys 1",		"Deoxys-Attack" },
@@ -262,8 +262,8 @@
 		{ "Pikachu 6",		"Pikachu-Alola" },
 		{ "Pikachu 7",		"Pikachu-Partner" },
 		{ "Pikachu 8",		"Pikachu-World" },
-		{ "Raichu 2",		"Raichu-Mega-X", "Raichu-Mega"},
-		{ "Raichu 3",		"Raichu-Mega-Y", "Raichu-Alola-Mega" },
+		{ "Raichu 2",		"Raichu-Mega"},
+		{ "Raichu 3",		"Raichu-Alola-Mega" },
 		{ "Clefable 1",		"Clefable-Mega" },
 		{ "Meowth 2",		"Meowth-Galar" },
 		{ "Growlithe 1",		"Growlithe-Hisui" },
@@ -274,11 +274,11 @@
 		{ "Slowpoke 1",		"Slowpoke-Galar" },
 		{ "Slowbro 2",		"Slowbro-Galar" },
 		{ "Slowking 1",		"Slowking-Galar" },
-		{ "Farfetch'd 1",		"Farfetch'd-Galar", "Farfetchd-Galar", "Farfetchd 1" },
+		{ "Farfetch\u2019d 1",		"Farfetch\u2019d-Galar"},
 		{ "Voltorb 1",		"Voltorb-Hisui" },
 		{ "Electrode 1",		"Electrode-Hisui" },
 		{ "Weezing 1",		"Weezing-Galar" },
-		{ "Starmie 1",		"MrMime-Mega" },
+		{ "Mr. Mime 1",		"MrMime-Mega" },
 		{ "Tauros 1",		"Tauros-Paldea" },
 		{ "Tauros 2",		"Tauros-Blaze-Breed" },
 		{ "Tauros 3",		"Tauros-Aqua-Breed" },
@@ -344,7 +344,6 @@
 		{ "Magearna 3",		"Magearna-Original-Mega" },
 		{ "Zeraora 1",		"Zeraora-Mega" },
 		{ "Ursaluna 1",		"Ursaluna-Blood-Moon" },
-		{ "Basculegion",		"Basculegion-M" },
 		{ "Basculegion 1",		"Basculegion-F" },
 		{ "Dudunsparce 1",		"Dudunsparce-Three-Segment" },
 		
