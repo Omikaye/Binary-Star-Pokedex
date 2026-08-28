@@ -1,6 +1,5 @@
 	public static readonly Dictionary<string, string> NameDictionary = new()
 	{
-		
 		{ "Basculin 1", 	"Basculin-Blue-Striped", "Basculin-Blue" },
 		{ "Basculin 2", 	"Basculin-White-Striped", "Basculin-White" },
 		{ "Deoxys 1",		"Deoxys-Attack" },
@@ -278,7 +277,7 @@
 		{ "Voltorb 1",		"Voltorb-Hisui" },
 		{ "Electrode 1",		"Electrode-Hisui" },
 		{ "Weezing 1",		"Weezing-Galar" },
-		{ "Mr. Mime 1",		"MrMime-Mega" },
+		{ "Mr. Mime 1",		"MrMime-Galar" },
 		{ "Tauros 1",		"Tauros-Paldea" },
 		{ "Tauros 2",		"Tauros-Blaze-Breed" },
 		{ "Tauros 3",		"Tauros-Aqua-Breed" },
@@ -344,6 +343,7 @@
 		{ "Magearna 3",		"Magearna-Original-Mega" },
 		{ "Zeraora 1",		"Zeraora-Mega" },
 		{ "Ursaluna 1",		"Ursaluna-Blood-Moon" },
+		{ "Basculegion",		"Basculegion-M" },
 		{ "Basculegion 1",		"Basculegion-F" },
 		{ "Dudunsparce 1",		"Dudunsparce-Three-Segment" },
 		
