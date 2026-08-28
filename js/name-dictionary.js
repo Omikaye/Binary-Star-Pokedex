@@ -19,7 +19,6 @@ export const NameDictionary = {
   "Barbaracle 1": "Barbaracle-Mega",
   "Basculegion": "Basculegion-M",
   "Basculegion 1": "Basculegion-F",
-  "Basculin": "Basculin-Blue",
   "Basculin 1": "Basculin-Blue-Striped",
   "Basculin 2": "Basculin-White-Striped",
   "Beedrill 1": "Beedrill-Mega",

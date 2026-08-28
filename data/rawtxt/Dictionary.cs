@@ -1,6 +1,5 @@
 	public static readonly Dictionary<string, string> NameDictionary = new()
 	{
-		{ "Basculin", 		"Basculin-Blue" },
 		{ "Basculin 1", 	"Basculin-Blue-Striped", "Basculin-Blue" },
 		{ "Basculin 2", 	"Basculin-White-Striped", "Basculin-White" },
 		{ "Deoxys 1",		"Deoxys-Attack" },
