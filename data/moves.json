@@ -203,7 +203,7 @@
     "PP": 35,
     "ZMovePower": 80,
     "ZMoveEffect": "\u002B1 Attack",
-    "Desc": "Hard, pointed, sharp claws rake the target to inflict damage. Z-Effect: \u002B1 Attack",
+    "Desc": "Hard, pointed, sharp claws rake the target to inflict damage. Z-Effect: \u002B1 Attack (Slice)",
     "Priority": 0
   },
   "psycrush": {
@@ -231,7 +231,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Guillotine",
     "Category": "Physical",
@@ -242,7 +243,7 @@
     "PP": 5,
     "ZMovePower": 180,
     "ZMoveEffect": "None",
-    "Desc": "A vicious, tearing attack cuts the opponent. This slow and innaccurate move always lands as a Critical hit. (-2 Prio)",
+    "Desc": "A vicious, tearing attack cuts the opponent. This slow and innaccurate move always lands as a Critical hit. (-2 Prio, Slice)",
     "Priority": 254
   },
   "razorwind": {
@@ -251,7 +252,9 @@
       "charge": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1,
+      "wind": 1
     },
     "Name": "Razor Wind",
     "Category": "Special",
@@ -262,14 +265,15 @@
     "PP": 10,
     "ZMovePower": 130,
     "ZMoveEffect": "\u002B1 Speed",
-    "Desc": "In this two-turn attack, blades of wind hit opposing Pok\u00E9mon on the second turn. The user\u0027s Sp.Atk is raised after use. Z: \u002B1 Spe",
+    "Desc": "In this two-turn attack, blades of wind hit opposing Pok\u00E9mon on the second turn. The user\u0027s Sp.Atk is raised after use. Z: \u002B1 Spe (Wind, Slice)",
     "Priority": 0
   },
   "swordsdance": {
     "Num": 14,
     "Flags": {
       "snatch": 1,
-      "dance": 1
+      "dance": 1,
+      "slicing": 1
     },
     "Name": "Swords Dance",
     "Category": "Status",
@@ -280,7 +284,7 @@
     "PP": 5,
     "ZMovePower": 0,
     "ZMoveEffect": "\u002B1 Accuracy",
-    "Desc": "A frenetic dance to uplift the fighting spirit. This sharply raises the user\u2019s Attack stat. Z Effect: \u002B1 Acc",
+    "Desc": "A frenetic dance to uplift the fighting spirit. This sharply raises the user\u2019s Attack stat. Z Effect: \u002B1 Acc (Dance)",
     "Priority": 0
   },
   "cuttingedge": {
@@ -289,7 +293,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Cutting Edge",
     "Category": "Physical",
@@ -300,7 +305,7 @@
     "PP": 20,
     "ZMovePower": 75,
     "ZMoveEffect": "raises critical-hit ratio two stages",
-    "Desc": "The target is cut with a scythe or claw. Critical hits land more easily.(\u002B1 Crit)",
+    "Desc": "The target is cut with a scythe or claw. Critical hits land more easily. Z: \u002B2 Crit Stages (\u002B1 Crit, Slice)",
     "Priority": 0
   },
   "gust": {
@@ -309,7 +314,8 @@
       "protect": 1,
       "mirror": 1,
       "distancetriple": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Gust",
     "Category": "Special",
@@ -320,7 +326,7 @@
     "PP": 35,
     "ZMovePower": 80,
     "ZMoveEffect": "\u002B1 Special Attack",
-    "Desc": "A gust of wind is whipped up and launched at the enemy side to inflict damage. Z: \u002B1 Sp.Atk",
+    "Desc": "A gust of wind is whipped up and launched at the enemy side to inflict damage. Z: \u002B1 Sp.Atk (Wind)",
     "Priority": 0
   },
   "wingattack": {
@@ -350,7 +356,8 @@
       "reflectable": 1,
       "mirror": 1,
       "ignoresubstitute": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Whirlwind",
     "Category": "Status",
@@ -361,7 +368,7 @@
     "PP": 10,
     "ZMovePower": 0,
     "ZMoveEffect": "recovers all of user\u0027s HP",
-    "Desc": "The target is blown away, and a different Pok\u00E9mon is dragged out. In the wild, this ends a battle against a single Pok\u00E9mon. Z: Heals user fully.",
+    "Desc": "The target is blown away, and a different Pok\u00E9mon is dragged out. In the wild, this ends a battle against a single Pok\u00E9mon. Z: Heals user fully. (Wind)",
     "Priority": 250
   },
   "fly": {
@@ -455,7 +462,8 @@
       "protect": 1,
       "mirror": 1,
       "failskybattle": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f23": 1
     },
     "Name": "Trample",
     "Category": "Physical",
@@ -466,7 +474,7 @@
     "PP": 20,
     "ZMovePower": 120,
     "ZMoveEffect": "None",
-    "Desc": "The target is crushed underfoot. This may also make the target flinch. (20%)",
+    "Desc": "The target is crushed underfoot. This may also make the target flinch. (20%, Kick)",
     "Priority": 0
   },
   "doublekick": {
@@ -475,7 +483,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f23": 1
     },
     "Name": "Double Kick",
     "Category": "Physical",
@@ -486,7 +495,7 @@
     "PP": 30,
     "ZMovePower": 115,
     "ZMoveEffect": "None",
-    "Desc": "The target is quickly kicked twice in succession using both feet.",
+    "Desc": "The target is quickly kicked twice in succession using both feet. (Kick)",
     "Priority": 0
   },
   "megakick": {
@@ -495,7 +504,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f23": 1
     },
     "Name": "Mega Kick",
     "Category": "Physical",
@@ -506,7 +516,7 @@
     "PP": 5,
     "ZMovePower": 160,
     "ZMoveEffect": "None",
-    "Desc": "The target is attacked by a powerful kick. It also cuts the user\u0027s Defenses.",
+    "Desc": "The target is attacked by a powerful kick. It also cuts the user\u0027s Defenses. (Kick)",
     "Priority": 0
   },
   "jumpkick": {
@@ -516,7 +526,8 @@
       "protect": 1,
       "mirror": 1,
       "gravity": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f23": 1
     },
     "Name": "Jump Kick",
     "Category": "Physical",
@@ -527,7 +538,7 @@
     "PP": 10,
     "ZMovePower": 150,
     "ZMoveEffect": "None",
-    "Desc": "The user jumps and dropkicks onto the target to inflict damage. If this move misses, the user takes damage instead.",
+    "Desc": "The user jumps and dropkicks onto the target to inflict damage. If this move misses, the user takes damage instead. (Kick)",
     "Priority": 0
   },
   "kickstep": {
@@ -537,7 +548,8 @@
       "protect": 1,
       "mirror": 1,
       "animateally": 1,
-      "dance": 1
+      "dance": 1,
+      "f23": 1
     },
     "Name": "Kick-Step",
     "Category": "Physical",
@@ -548,7 +560,7 @@
     "PP": 25,
     "ZMovePower": 95,
     "ZMoveEffect": "\u002B1 Speed",
-    "Desc": "The user gracefully strikes with a swift kick. This may also raise the user\u0027s Speed. (30%, Dance) Z: \u002B1 Speed",
+    "Desc": "The user gracefully strikes with a swift kick. This may also raise the user\u0027s Speed. (30%, Dance, Kick) Z: \u002B1 Speed",
     "Priority": 0
   },
   "erode": {
@@ -637,7 +649,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Horn Drill",
     "Category": "Physical",
@@ -648,7 +661,7 @@
     "PP": 5,
     "ZMovePower": 180,
     "ZMoveEffect": "None",
-    "Desc": "The user stabs the target with a horn that rotates like a drill. This slow and innaccurate move always lands as a Critical hit. (-2 Prio)",
+    "Desc": "The user stabs the target with a horn that rotates like a drill. This slow and innaccurate move always lands as a Critical hit. (-2 Prio, Spin)",
     "Priority": 254
   },
   "tackle": {
@@ -1175,14 +1188,15 @@
     "PP": 10,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "The target is struck with an icy-cold beam of energy. This may also leave the target frozen. (10%, Pulse)",
+    "Desc": "The target is struck with an icy-cold beam of energy. This may inflict frostbite. (10%, Pulse)",
     "Priority": 0
   },
   "blizzard": {
     "Num": 59,
     "Flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "wind": 1
     },
     "Name": "Blizzard",
     "Category": "Special",
@@ -1193,7 +1207,7 @@
     "PP": 5,
     "ZMovePower": 155,
     "ZMoveEffect": "None",
-    "Desc": "A howling blizzard is summoned to strike opposing Pok\u00E9mon. This may also leave the opposing Pok\u00E9mon frozen. Can\u0027t miss in Snow. (10%)",
+    "Desc": "A howling blizzard is summoned to strike opposing Pok\u00E9mon. This may also inflict frostbite. Can\u0027t miss in Snow. (10%, Wind)",
     "Priority": 0
   },
   "psybeam": {
@@ -1306,7 +1320,8 @@
       "protect": 1,
       "mirror": 1,
       "distancetriple": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Drill Peck",
     "Category": "Physical",
@@ -1317,7 +1332,7 @@
     "PP": 20,
     "ZMovePower": 125,
     "ZMoveEffect": "None",
-    "Desc": "A corkscrewing attack with a sharp beak acting as a drill. Critical hits land more easily. (\u002B1 Crit)",
+    "Desc": "A corkscrewing attack with a sharp beak acting as a drill. Critical hits land more easily. (\u002B1 Crit, Spin)",
     "Priority": 0
   },
   "submission": {
@@ -1346,7 +1361,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f23": 1
     },
     "Name": "Low Kick",
     "Category": "Physical",
@@ -1357,7 +1373,7 @@
     "PP": 20,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "A powerful low kick that makes the target fall over. The heavier the target, the greater the move\u2019s power. (20 - 120 Power based on Target\u0027s Weight)",
+    "Desc": "A powerful low kick that makes the target fall over. The heavier the target, the stronger it becomes. (20 - 120 Power based on target weight, Kick)",
     "Priority": 0
   },
   "counter": {
@@ -1502,7 +1518,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Razor Leaf",
     "Category": "Physical",
@@ -1513,7 +1530,7 @@
     "PP": 25,
     "ZMovePower": 75,
     "ZMoveEffect": "raises critical-hit ratio two stages",
-    "Desc": "Sharp-edged leaves are launched to slash at the opposing Pok\u00E9mon. Critical hits land more easily. (\u002B1 Crit) Z-Effect: \u002B2 Crit Stages",
+    "Desc": "Sharp-edged leaves are launched to slash at the opposing Pok\u00E9mon. Critical hits land more easily. (\u002B1 Crit, Slice) Z-Effect: \u002B2 Crit Stages",
     "Priority": 0
   },
   "solarbeam": {
@@ -1604,7 +1621,8 @@
       "protect": 1,
       "mirror": 1,
       "animateally": 1,
-      "dance": 1
+      "dance": 1,
+      "f24": 1
     },
     "Name": "Petal Dance",
     "Category": "Special",
@@ -1615,7 +1633,7 @@
     "PP": 10,
     "ZMovePower": 160,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks the target by scattering petals for two to three turns. The user then becomes confused.",
+    "Desc": "The user attacks the target by scattering petals for two to three turns. The user then becomes confused. (Spin)",
     "Priority": 0
   },
   "stringshot": {
@@ -1663,7 +1681,8 @@
       "protect": 1,
       "mirror": 1,
       "defrost": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Fire Spin",
     "Category": "Special",
@@ -1674,7 +1693,7 @@
     "PP": 20,
     "ZMovePower": 75,
     "ZMoveEffect": "\u002B2 Special Defense",
-    "Desc": "The target becomes trapped within a fierce vortex, damaging for 1/8 Max HP for 4-5 turns. Z: \u002B2 Sp.Def",
+    "Desc": "The target becomes trapped within a fierce vortex, damaging for 1/8 Max HP for 4-5 turns. Z-Effect: \u002B2 Sp.Def (Spin)",
     "Priority": 0
   },
   "thundershock": {
@@ -2139,7 +2158,8 @@
       "protect": 1,
       "reflectable": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Smoke Out",
     "Category": "Status",
@@ -2150,7 +2170,7 @@
     "PP": 15,
     "ZMovePower": 0,
     "ZMoveEffect": "\u002B2 Special Defense",
-    "Desc": "The user releases a hot cloud of smoke or ink. This lowers both opponent\u0027s Sp.Atk stats. Z: \u002B2 Sp.Def",
+    "Desc": "The user releases a hot cloud of smoke or ink. This lowers both opponent\u0027s Sp.Atk stats. Z: \u002B2 Sp.Def (Wind)",
     "Priority": 0
   },
   "confuseray": {
@@ -2193,7 +2213,8 @@
   "defensecurl": {
     "Num": 111,
     "Flags": {
-      "snatch": 1
+      "snatch": 1,
+      "f24": 1
     },
     "Name": "Defense Curl",
     "Category": "Status",
@@ -2204,7 +2225,7 @@
     "PP": 15,
     "ZMovePower": 0,
     "ZMoveEffect": "\u002B1 Attack",
-    "Desc": "The user curls up to conceal weak spots and raise its Defense stat. Doubles the strength of Rollout and Ice Ball until the user switches out. Z: \u002B1 Atk",
+    "Desc": "The user curls up to conceal weak spots and raise its Defense stat. Doubles the strength of Rollout and Ice Ball until switch out. Z: \u002B1 Atk (Spin)",
     "Priority": 0
   },
   "barrier": {
@@ -2245,7 +2266,8 @@
   "haze": {
     "Num": 114,
     "Flags": {
-      "ignoresubstitute": 1
+      "ignoresubstitute": 1,
+      "wind": 1
     },
     "Name": "Haze",
     "Category": "Status",
@@ -2256,7 +2278,7 @@
     "PP": 15,
     "ZMovePower": 0,
     "ZMoveEffect": "recovers all of user\u0027s HP",
-    "Desc": "The user creates a haze that eliminates every stat change among all the Pok\u00E9mon engaged in battle. Z: Heals user to full.",
+    "Desc": "The user creates a haze that eliminates every stat change among all the Pok\u00E9mon engaged in battle. Z: Heals user to full. (Wind)",
     "Priority": 0
   },
   "reflect": {
@@ -2409,7 +2431,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Smog",
     "Category": "Special",
@@ -2420,7 +2443,7 @@
     "PP": 20,
     "ZMovePower": 105,
     "ZMoveEffect": "None",
-    "Desc": "The targets are attacked with a discharge of filthy gases. This may also poison the targets. (25%)",
+    "Desc": "The targets are attacked with a discharge of filthy gases. This may also poison the targets. (25%, Wind)",
     "Priority": 0
   },
   "sludge": {
@@ -2666,7 +2689,8 @@
       "protect": 1,
       "mirror": 1,
       "gravity": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f23": 1
     },
     "Name": "High Jump Kick",
     "Category": "Physical",
@@ -2677,7 +2701,7 @@
     "PP": 10,
     "ZMovePower": 130,
     "ZMoveEffect": "\u002B1 Accuracy",
-    "Desc": "The target is attacked with a knee kick from a jump. If it misses, the user is hurt instead. Z: \u002B1 Acc",
+    "Desc": "The target is attacked with a knee kick from a jump. If it misses, the user is hurt instead. Z: \u002B1 Acc (Kick)",
     "Priority": 0
   },
   "glare": {
@@ -2725,7 +2749,8 @@
     "Flags": {
       "protect": 1,
       "reflectable": 1,
-      "mirror": 1
+      "mirror": 1,
+      "wind": 1
     },
     "Name": "Poison Gas",
     "Category": "Status",
@@ -2736,7 +2761,7 @@
     "PP": 10,
     "ZMovePower": 0,
     "ZMoveEffect": "\u002B2 Special Defense",
-    "Desc": "A cloud of poison gas is sprayed in the face of opposing Pok\u00E9mon, poisoning those hit. Z: \u002B2 Sp.Def",
+    "Desc": "A cloud of poison gas is sprayed in the face of opposing Pok\u00E9mon, poisoning those hit. Z: \u002B2 Sp.Def (Wind)",
     "Priority": 0
   },
   "telebarrage": {
@@ -3024,7 +3049,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Fury Swipes",
     "Category": "Physical",
@@ -3035,7 +3061,7 @@
     "PP": 15,
     "ZMovePower": 130,
     "ZMoveEffect": "None",
-    "Desc": "The target is raked with sharp claws or scythes quickly two to five times in a row. Critical hits land more easily. (\u002B1 Crit)",
+    "Desc": "The target is raked with sharp claws or scythes quickly two to five times in a row. Critical hits land more easily. (\u002B1 Crit, Slice)",
     "Priority": 0
   },
   "bonemerang": {
@@ -3118,7 +3144,8 @@
   "sharpen": {
     "Num": 159,
     "Flags": {
-      "snatch": 1
+      "snatch": 1,
+      "slicing": 1
     },
     "Name": "Sharpen",
     "Category": "Status",
@@ -3195,7 +3222,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Slash",
     "Category": "Physical",
@@ -3206,7 +3234,7 @@
     "PP": 20,
     "ZMovePower": 75,
     "ZMoveEffect": "raises critical-hit ratio two stages",
-    "Desc": "The target is attacked with a slash of claws or blades. Critical hits land more easily. (\u002B1 Crit) Z-Effect: Raises the user\u0027s Crit by 2 stages.",
+    "Desc": "The target is attacked with a slash of claws or blades. Critical hits land more easily. Z-Effect: \u002B2 Crit Stages. (\u002B1 Crit, Slice)",
     "Priority": 0
   },
   "substitute": {
@@ -3271,7 +3299,8 @@
       "protect": 1,
       "mirror": 1,
       "animateally": 1,
-      "dance": 1
+      "dance": 1,
+      "f23": 1
     },
     "Name": "Jitterbug",
     "Category": "Physical",
@@ -3282,7 +3311,7 @@
     "PP": 10,
     "ZMovePower": 150,
     "ZMoveEffect": "None",
-    "Desc": "A consecutive three-step attack that becomes more powerful with each successful hit. Each hit has its own chance to miss. (20, 40, then 60 power, Dance) WIP",
+    "Desc": "A consecutive three-step attack that becomes more powerful with each successful hit. Each hit miss. miss. (20, 40, then 60 power, Dance, Kick) WIP",
     "Priority": 0
   },
   "thief": {
@@ -3374,7 +3403,8 @@
       "mirror": 1,
       "defrost": 1,
       "animateally": 1,
-      "dance": 1
+      "dance": 1,
+      "f24": 1
     },
     "Name": "Flame Wheel",
     "Category": "Physical",
@@ -3385,7 +3415,7 @@
     "PP": 20,
     "ZMovePower": 90,
     "ZMoveEffect": "\u002B1 Speed",
-    "Desc": "The user cloaks itself in fire and rolls at the target. This may also leave the target with a burn. (15%, Dance) Z: \u002B1 Speed",
+    "Desc": "The user cloaks itself in fire and rolls at the target. This may also leave the target with a burn. (15%, Dance, Spin) Z: \u002B1 Speed",
     "Priority": 0
   },
   "snore": {
@@ -3472,7 +3502,8 @@
       "protect": 1,
       "mirror": 1,
       "distancetriple": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Aeroblast",
     "Category": "Special",
@@ -3483,7 +3514,7 @@
     "PP": 15,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "A swirling maelstrom of air is shot at the target to inflict damage. The vacuum drowns out sound and has a 30% chance to Mute the target for 2-4 turns.",
+    "Desc": "A swirling maelstrom of air is shot at the target to inflict damage. The vacuum drowns out sound and has a 30% chance to Mute the target for 2-4 turns. (Wind)",
     "Priority": 0
   },
   "cottonspore": {
@@ -3552,7 +3583,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Powder Snow",
     "Category": "Special",
@@ -3563,7 +3595,7 @@
     "PP": 25,
     "ZMovePower": 35,
     "ZMoveEffect": "\u002B2 Special Attack",
-    "Desc": "The user attacks with a chilling gust of powdery snow. This may inflict frostbite on the opposing Pok\u00E9mon. (20%) Z: \u002B2 Sp.Atk",
+    "Desc": "The user attacks with a chilling gust of powdery snow. This may inflict frostbite on the opposing Pok\u00E9mon. (20%, Wind) Z: \u002B2 Sp.Atk",
     "Priority": 0
   },
   "protect": {
@@ -3840,7 +3872,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Icy Wind",
     "Category": "Special",
@@ -3851,7 +3884,7 @@
     "PP": 15,
     "ZMovePower": 110,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks with a gust of chilled air. This also lowers the opposing Pok\u00E9mon\u2019s Speed stats.",
+    "Desc": "The user attacks with a gust of chilled air. This also lowers the opposing Pok\u00E9mon\u2019s Speed stats. (Wind)",
     "Priority": 0
   },
   "detect": {
@@ -4007,7 +4040,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Rollout",
     "Category": "Physical",
@@ -4018,7 +4052,7 @@
     "PP": 20,
     "ZMovePower": 130,
     "ZMoveEffect": "None",
-    "Desc": "The user continually rolls into the target for up to five turns. It becomes more powerful each time it hits. 30, then 60, 120, 240, and Max 480 Power.",
+    "Desc": "The user continually rolls into the target for up to five turns. It becomes more powerful each time it hits. 30, then 60, 120, 240, and Max 480 Power. (Spin)",
     "Priority": 0
   },
   "falseswipe": {
@@ -4027,7 +4061,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "False Swipe",
     "Category": "Physical",
@@ -4038,7 +4073,7 @@
     "PP": 40,
     "ZMovePower": 50,
     "ZMoveEffect": "\u002B2 Attack",
-    "Desc": "A restrained attack that prevents the target from fainting. The target is left with at least 1 HP. This move always results in a critical hit. Z: \u002B2 Attack",
+    "Desc": "A restrained attack that prevents the target from fainting. The target is left with at least 1 HP. This move always results in a critical hit. Z: \u002B2 Attack (Slice)",
     "Priority": 0
   },
   "swagger": {
@@ -4105,7 +4140,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Fury Cutter",
     "Category": "Physical",
@@ -4116,7 +4152,7 @@
     "PP": 10,
     "ZMovePower": 125,
     "ZMoveEffect": "None",
-    "Desc": "The target is slashed with scythes or claws. This attack doubles in power for each hit in succession. (40, then 80, then 160 power max)",
+    "Desc": "The target is slashed with scythes or claws. This attack doubles in power for each hit in succession. (40, 80, then 160 max, Slice)",
     "Priority": 0
   },
   "steelwing": {
@@ -4307,7 +4343,7 @@
     "PP": 10,
     "ZMovePower": 0,
     "ZMoveEffect": "recovers all of user\u0027s HP",
-    "Desc": "The user adds its HP to the target\u2019s HP, then equally shares the combined HP with the target. Z: Restores HP to full. (Try using on allies)",
+    "Desc": "The user adds its HP to the target\u2019s HP, then equally shares the combined HP with the target. Z: Restores HP to full.",
     "Priority": 0
   },
   "sacredfire": {
@@ -4471,7 +4507,8 @@
       "protect": 1,
       "mirror": 1,
       "animateally": 1,
-      "dance": 1
+      "dance": 1,
+      "f24": 1
     },
     "Name": "Rapid Spin",
     "Category": "Physical",
@@ -4482,7 +4519,7 @@
     "PP": 20,
     "ZMovePower": 75,
     "ZMoveEffect": "\u002B2 Speed",
-    "Desc": "A spin attack that can also eliminate such moves as Bind, Wrap, Leech Seed, and Spikes. Raises the user\u0027s Speed. (Dance) Z: \u002B2 Speed",
+    "Desc": "A spin attack that can also eliminate such moves as Bind, Wrap, Leech Seed, and Spikes. Raises the user\u0027s Speed. (Dance, Spin) Z: \u002B2 Spe",
     "Priority": 0
   },
   "sweetscent": {
@@ -4531,7 +4568,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Metal Claw",
     "Category": "Physical",
@@ -4542,7 +4580,7 @@
     "PP": 25,
     "ZMovePower": 80,
     "ZMoveEffect": "\u002B1 Attack",
-    "Desc": "The target is raked with steel claws. This may also raise the user\u2019s Attack stat. (10%) Z: \u002B1 Attack",
+    "Desc": "The target is raked with steel claws. This may also raise the user\u2019s Attack stat. (10%, Slice) Z: \u002B1 Attack",
     "Priority": 0
   },
   "vitalthrow": {
@@ -4662,7 +4700,9 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1,
+      "f24": 1
     },
     "Name": "Twister",
     "Category": "Special",
@@ -4673,7 +4713,7 @@
     "PP": 15,
     "ZMovePower": 105,
     "ZMoveEffect": "\u002B1 Special Defense",
-    "Desc": "The user whips up a vicious tornado to tear at the opposing Pok\u00E9mon. This also lowers the opponent\u0027s Attack stats. Z: \u002B1 Def",
+    "Desc": "The user whips up a vicious tornado to tear at the opposing Pok\u00E9mon. This also lowers the opponent\u0027s Sp. Atk stats. (Wind, Spin) Z: \u002B1 Sp.Def",
     "Priority": 0
   },
   "raindance": {
@@ -4865,7 +4905,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Whirlpool",
     "Category": "Special",
@@ -4876,7 +4917,7 @@
     "PP": 10,
     "ZMovePower": 125,
     "ZMoveEffect": "None",
-    "Desc": "The user traps the target in a violent swirling whirlpool for four to five turns, damaging for 1/8 Max HP for 4-5 turns.",
+    "Desc": "The user traps the target in a violent swirling whirlpool for four to five turns, damaging for 1/8 Max HP for 4-5 turns. (Spin)",
     "Priority": 0
   },
   "beatup": {
@@ -4999,7 +5040,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "defrost": 1
+      "defrost": 1,
+      "wind": 1
     },
     "Name": "Heat Wave",
     "Category": "Special",
@@ -5010,13 +5052,13 @@
     "PP": 10,
     "ZMovePower": 145,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks by blowing hot wind on both opposing Pok\u00E9mon. This may also leave those Pok\u00E9mon with a burn. (10%)",
+    "Desc": "The user attacks by blowing hot wind on both opposing Pok\u00E9mon. This may also leave those Pok\u00E9mon with a burn. (10%, Wind)",
     "Priority": 0
   },
-  "hailfail": {
+  "hailstorm": {
     "Num": 258,
     "Flags": {},
-    "Name": "Hail Fail",
+    "Name": "Hailstorm",
     "Category": "Status",
     "BasePower": 0,
     "Accuracy": 101,
@@ -5732,7 +5774,8 @@
       "protect": 1,
       "mirror": 1,
       "animateally": 1,
-      "bullet": 1
+      "bullet": 1,
+      "wind": 1
     },
     "Name": "Mist Ball",
     "Category": "Special",
@@ -5743,7 +5786,7 @@
     "PP": 5,
     "ZMovePower": 125,
     "ZMoveEffect": "None",
-    "Desc": "A cold ball of mist envelops and damages the target. This may also lower the target\u2019s Sp. Atk stat. (50%, Bullet)",
+    "Desc": "A cold ball of mist envelops and damages the target. This may also lower the target\u2019s Sp. Atk stat. (50%, Bullet, Wind)",
     "Priority": 0
   },
   "featherdance": {
@@ -5793,7 +5836,8 @@
       "protect": 1,
       "mirror": 1,
       "defrost": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f23": 1
     },
     "Name": "Blaze Kick",
     "Category": "Physical",
@@ -5804,7 +5848,7 @@
     "PP": 5,
     "ZMovePower": 145,
     "ZMoveEffect": "None",
-    "Desc": "The user launches a kick that lands a critical hit more easily. This may also leave the target with a burn. (\u002B1 Crit, 10% Burn)",
+    "Desc": "The user launches a kick that lands a critical hit more easily. This may also leave the target with a burn. (\u002B1 Crit, 10% Burn, Kick)",
     "Priority": 0
   },
   "mudsport": {
@@ -5831,7 +5875,8 @@
       "protect": 1,
       "mirror": 1,
       "animateally": 1,
-      "bullet": 1
+      "bullet": 1,
+      "f24": 1
     },
     "Name": "Ice Ball",
     "Category": "Physical",
@@ -5842,7 +5887,7 @@
     "PP": 20,
     "ZMovePower": 130,
     "ZMoveEffect": "None",
-    "Desc": "The user continually rolls into the target for up to five turns. It becomes more powerful each time it hits. 30, then 60, 120, 240, and Max 480 Power. (Bullet)",
+    "Desc": "The user continually rolls into the target for up to five turns. It becomes more powerful each time it hits. 30, 60, 120, 240, then 480 max. (Bullet, Spin)",
     "Priority": 0
   },
   "needlearm": {
@@ -5931,7 +5976,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Crush Claw",
     "Category": "Physical",
@@ -5942,7 +5988,7 @@
     "PP": 15,
     "ZMovePower": 80,
     "ZMoveEffect": "\u002B1 Attack",
-    "Desc": "The user slashes the target with hard and sharp claws. This will also lower the target\u2019s Defense stat.  Z: \u002B1 Atk",
+    "Desc": "The user slashes the target with hard and sharp claws. This will also lower the target\u2019s Defense stat.  Z: \u002B1 Atk (Slice)",
     "Priority": 0
   },
   "blastburn": {
@@ -6036,7 +6082,8 @@
       "mirror": 1,
       "animateally": 1,
       "bullet": 1,
-      "megalauncher": 1
+      "megalauncher": 1,
+      "wind": 1
     },
     "Name": "Weather Ball",
     "Category": "Special",
@@ -6047,7 +6094,7 @@
     "PP": 15,
     "ZMovePower": 155,
     "ZMoveEffect": "None",
-    "Desc": "This attack move varies in power and type depending on the weather. Doubles in power during weather. (Sun:Fire Rain:Water Sand:Rock Snow:Ice) (Bullet, Pulse)",
+    "Desc": "This attack move varies in power and type depending on the weather. Doubles in power during weather. (Bullet, Pulse, Wind)",
     "Priority": 0
   },
   "aromatherapy": {
@@ -6093,7 +6140,9 @@
     "Num": 314,
     "Flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1,
+      "wind": 1
     },
     "Name": "Air Cutter",
     "Category": "Special",
@@ -6104,7 +6153,7 @@
     "PP": 25,
     "ZMovePower": 110,
     "ZMoveEffect": "None",
-    "Desc": "The user launches razor-like wind to slash the opposing Pok\u00E9mon. Critical hits land more easily. (\u002B1 Crit)",
+    "Desc": "The user launches razor-like wind to slash the opposing Pok\u00E9mon. Critical hits land more easily. (\u002B1 Crit, Wind, Slice)",
     "Priority": 0
   },
   "overheat": {
@@ -6172,7 +6221,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Silver Wind",
     "Category": "Special",
@@ -6183,7 +6233,7 @@
     "PP": 5,
     "ZMovePower": 110,
     "ZMoveEffect": "None",
-    "Desc": "The target is attacked with powdery scales blown by the wind. This may also raise all the user\u2019s stats. (10%)",
+    "Desc": "The target is attacked with powdery scales blown by the wind. This may also raise all the user\u2019s stats. (10%, Wind)",
     "Priority": 0
   },
   "metalsound": {
@@ -6370,7 +6420,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Sand Tomb",
     "Category": "Physical",
@@ -6381,7 +6432,7 @@
     "PP": 20,
     "ZMovePower": 75,
     "ZMoveEffect": "\u002B2 Defense",
-    "Desc": "The user traps the target inside a harshly raging sandstorm, dealing 1/8 MaxHP for 4-5 turns. Z: \u002B2 Defense",
+    "Desc": "The user traps the target inside a harshly raging sandstorm, dealing 1/8 MaxHP for 4-5 turns. Z: \u002B2 Defense (Spin)",
     "Priority": 0
   },
   "sheercold": {
@@ -6451,7 +6502,8 @@
       "protect": 1,
       "mirror": 1,
       "distancetriple": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Aerial Ace",
     "Category": "Physical",
@@ -6462,7 +6514,7 @@
     "PP": 20,
     "ZMovePower": 80,
     "ZMoveEffect": "\u002B2 Speed",
-    "Desc": "The user confounds the target with speed, then slashes. This attack never misses. Z: \u002B1 Attack",
+    "Desc": "The user confounds the target with speed, then slashes. This attack never misses. Z: \u002B1 Attack (Slice)",
     "Priority": 0
   },
   "iciclespear": {
@@ -6547,7 +6599,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Dragon Claw",
     "Category": "Physical",
@@ -6558,7 +6611,7 @@
     "PP": 15,
     "ZMovePower": 135,
     "ZMoveEffect": "None",
-    "Desc": "The user slashes the target with huge sharp claws. Has a chance to raise the user\u0027s Atk. (10%)",
+    "Desc": "The user slashes the target with huge sharp claws. Has a chance to raise the user\u0027s Atk. (10%, Slice)",
     "Priority": 0
   },
   "frenzyplant": {
@@ -6763,7 +6816,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1
     },
     "Name": "Leaf Blade",
     "Category": "Physical",
@@ -6774,7 +6828,7 @@
     "PP": 15,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "The user handles a sharp leaf like a sword and attacks by cutting its target. Critical hits land more easily. (\u002B1 Crit)",
+    "Desc": "The user handles a sharp leaf like a sword and attacks by cutting its target. Critical hits land more easily. (\u002B1 Crit, Slice)",
     "Priority": 0
   },
   "dragondance": {
@@ -6993,7 +7047,8 @@
       "protect": 1,
       "mirror": 1,
       "animateally": 1,
-      "bullet": 1
+      "bullet": 1,
+      "f24": 1
     },
     "Name": "Gyro Ball",
     "Category": "Physical",
@@ -7004,7 +7059,7 @@
     "PP": 10,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "The user tackles the target with a high-speed spin. The slower the user compared to the target, the greater the move\u2019s power. (150BP - 1BP, Bullet)",
+    "Desc": "The user tackles the target with a high-speed spin. The slower the user compared to the target, the stronger it becomes. (150BP - 1BP, Bullet, Spin)",
     "Priority": 0
   },
   "healingwish": {
@@ -7107,7 +7162,8 @@
   "tailwind": {
     "Num": 366,
     "Flags": {
-      "snatch": 1
+      "snatch": 1,
+      "wind": 1
     },
     "Name": "Tailwind",
     "Category": "Status",
@@ -7118,7 +7174,7 @@
     "PP": 15,
     "ZMovePower": 0,
     "ZMoveEffect": "raises critical-hit ratio two stages",
-    "Desc": "The user whips up a turbulent whirlwind that ups the Speed stat of the user and its allies for four turns. Z: \u002B2 Crit Stages",
+    "Desc": "The user whips up a turbulent whirlwind that ups the Speed stat of the user and its allies for four turns. Z: \u002B2 Crit Stages (Wind)",
     "Priority": 0
   },
   "acupressure": {
@@ -7161,7 +7217,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "U-turn",
     "Category": "Physical",
@@ -7172,7 +7229,7 @@
     "PP": 10,
     "ZMovePower": 120,
     "ZMoveEffect": "None",
-    "Desc": "After making its attack, the user rushes back to switch places with a party Pok\u00E9mon in waiting.",
+    "Desc": "After making its attack, the user rushes back to switch places with a party Pok\u00E9mon in waiting. (Spin)",
     "Priority": 0
   },
   "closecombat": {
@@ -7788,7 +7845,7 @@
     "PP": 15,
     "ZMovePower": 125,
     "ZMoveEffect": "None",
-    "Desc": "The user slashes the target the instant an opportunity arises. Critical hits land more easily.(\u002B1 Crit)",
+    "Desc": "The user slashes the target the instant an opportunity arises. Critical hits land more easily. (\u002B1 Crit, Slice)",
     "Priority": 0
   },
   "aquatail": {
@@ -7838,7 +7895,9 @@
       "protect": 1,
       "mirror": 1,
       "distancetriple": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1,
+      "wind": 1
     },
     "Name": "Air Slash",
     "Category": "Special",
@@ -7849,7 +7908,7 @@
     "PP": 15,
     "ZMovePower": 130,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks with a blade of air that slices even the sky. This may also make the target flinch. (30%)",
+    "Desc": "The user attacks with a blade of air that slices even the sky. This may also make the target flinch. (30%, Wind, Slice)",
     "Priority": 0
   },
   "xscissor": {
@@ -7858,7 +7917,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "X-Scissor",
     "Category": "Physical",
@@ -7869,7 +7929,7 @@
     "PP": 15,
     "ZMovePower": 130,
     "ZMoveEffect": "None",
-    "Desc": "The user slashes at the target by crossing its scythes or claws as if they were a pair of scissors. Critical hits land more easily. (\u002B1 Crit)",
+    "Desc": "The user slashes at the target by crossing its scythes or claws as if they were a pair of scissors. Critical hits land more easily. (\u002B1 Crit, Slice)",
     "Priority": 0
   },
   "bugbuzz": {
@@ -7982,7 +8042,8 @@
       "mirror": 1,
       "punch": 1,
       "animateally": 1,
-      "megalauncher": 1
+      "megalauncher": 1,
+      "wind": 1
     },
     "Name": "Vacuum Wave",
     "Category": "Special",
@@ -7993,7 +8054,7 @@
     "PP": 25,
     "ZMovePower": 90,
     "ZMoveEffect": "\u002B1 Speed",
-    "Desc": "The user whirls its fists to send a wave of pure vacuum at the target. This move usually goes first. (\u002B1 Prio, Punch, Pulse) Z: \u002B1 Speed",
+    "Desc": "The user whirls its fists to send a wave of pure vacuum at the target. This move usually goes first. (\u002B1 Prio, Punch, Pulse, Wind) Z: \u002B1 Speed",
     "Priority": 1
   },
   "focusblast": {
@@ -8204,7 +8265,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Shadow Claw",
     "Category": "Physical",
@@ -8215,7 +8277,7 @@
     "PP": 15,
     "ZMovePower": 130,
     "ZMoveEffect": "None",
-    "Desc": "The user slashes with a sharp claw made from shadows. Critical hits land more easily. (\u002B1 Crit)",
+    "Desc": "The user slashes with a sharp claw made from shadows. Critical hits land more easily. (\u002B1 Crit, Slice)",
     "Priority": 0
   },
   "thunderfang": {
@@ -8327,7 +8389,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Psycho Cut",
     "Category": "Physical",
@@ -8338,7 +8401,7 @@
     "PP": 20,
     "ZMovePower": 130,
     "ZMoveEffect": "None",
-    "Desc": "The user tears at the target with blades formed by psychic power. Critical hits land more easily. (\u002B1 Crit)",
+    "Desc": "The user tears at the target with blades formed by psychic power. Critical hits land more easily. (\u002B1 Crit, Slice)",
     "Priority": 0
   },
   "zenheadbutt": {
@@ -8520,7 +8583,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Leaf Storm",
     "Category": "Special",
@@ -8531,7 +8595,7 @@
     "PP": 5,
     "ZMovePower": 170,
     "ZMoveEffect": "None",
-    "Desc": "The user whips up a storm of leaves around the target. The attack\u2019s recoil harshly lowers the user\u2019s Sp. Atk stat.",
+    "Desc": "The user whips up a storm of leaves around the target. The attack\u2019s recoil harshly lowers the user\u2019s Sp. Atk stat. (Wind)",
     "Priority": 0
   },
   "powerwhip": {
@@ -8583,7 +8647,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Cross Poison",
     "Category": "Physical",
@@ -8594,7 +8659,7 @@
     "PP": 20,
     "ZMovePower": 60,
     "ZMoveEffect": "\u002B1 Attack",
-    "Desc": "A double slashing attack that hits twice with a blade that may also poison the target. (10%) Critical hits land more easily.(\u002B1 Crit) Z:\u002B1 Atk",
+    "Desc": "A double slashing attack that hits twice with a blade that may also poison the target. (10%) Crits more often. (\u002B1 Crit, Slice) Z:\u002B1 Atk",
     "Priority": 0
   },
   "gunkshot": {
@@ -8866,14 +8931,14 @@
     },
     "Name": "Attack Order",
     "Category": "Physical",
-    "BasePower": 33,
+    "BasePower": 95,
     "Accuracy": 100,
     "Type": "Bug",
-    "Target": "normal",
+    "Target": "allAdjacentFoes",
     "PP": 15,
     "ZMovePower": 75,
     "ZMoveEffect": "\u002B2 Speed",
-    "Desc": "The user calls out its underlings to pummel the target three times. Critical hits land more easily. (\u002B1 Crit) Z: \u002B2 Speed",
+    "Desc": "The user calls out its underlings to swarm the opponent\u2019s side. Critical hits land more easily. (\u002B1 Crit) Z: \u002B2 Speed",
     "Priority": 0
   },
   "defendorder": {
@@ -8981,7 +9046,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Spacial Rend",
     "Category": "Special",
@@ -8992,7 +9058,7 @@
     "PP": 5,
     "ZMovePower": 150,
     "ZMoveEffect": "None",
-    "Desc": "Palkia tears a hole in the fabric of space around the target. Critical hits land more easily. (\u002B1 Crit)",
+    "Desc": "Palkia tears a hole in the fabric of space around the target. Critical hits land more easily. (\u002B1 Crit, Slice)",
     "Priority": 0
   },
   "lunardance": {
@@ -9040,7 +9106,8 @@
       "protect": 1,
       "mirror": 1,
       "defrost": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Magma Storm",
     "Category": "Special",
@@ -9051,7 +9118,7 @@
     "PP": 10,
     "ZMovePower": 125,
     "ZMoveEffect": "None",
-    "Desc": "The target becomes trapped within a maelstrom of magma that rages for four to five turns.",
+    "Desc": "The target becomes trapped within a maelstrom of magma that rages for four to five turns. (Spin)",
     "Priority": 0
   },
   "darkvoid": {
@@ -9097,7 +9164,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Ominous Wind",
     "Category": "Special",
@@ -9108,7 +9176,7 @@
     "PP": 5,
     "ZMovePower": 110,
     "ZMoveEffect": "None",
-    "Desc": "The user blasts the target with a gust of repulsive wind. This may also raise all the user\u2019s stats at once. (10%)",
+    "Desc": "The user blasts the target with a gust of repulsive wind. This may also raise all the user\u2019s stats at once. (10%, Wind)",
     "Priority": 0
   },
   "shadowforce": {
@@ -9134,7 +9202,8 @@
   "honeclaws": {
     "Num": 468,
     "Flags": {
-      "snatch": 1
+      "snatch": 1,
+      "slicing": 1
     },
     "Name": "Hone Claws",
     "Category": "Status",
@@ -9421,7 +9490,7 @@
     "PP": 5,
     "ZMovePower": 0,
     "ZMoveEffect": "resets lowered stats of the user",
-    "Desc": "The user lightly performs a beautiful, mystic dance. This boosts the user\u2019s Sp. Atk, Sp. Def, and Speed stats. Z: Resets lowered stats",
+    "Desc": "The user lightly performs a beautiful, mystic dance. This boosts the user\u2019s Sp. Atk, Sp. Def, and Speed stats. Z: Resets lowered stats (Dance)",
     "Priority": 0
   },
   "heavyslam": {
@@ -9550,7 +9619,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f23": 1
     },
     "Name": "Low Sweep",
     "Category": "Physical",
@@ -9561,7 +9631,7 @@
     "PP": 20,
     "ZMovePower": 115,
     "ZMoveEffect": "None",
-    "Desc": "The user makes a swift attack on the target\u2019s legs, which lowers the target\u2019s Speed stat.",
+    "Desc": "The user makes a swift attack on the target\u2019s legs, which lowers the target\u2019s Speed stat. (Kick)",
     "Priority": 0
   },
   "acidspray": {
@@ -9730,7 +9800,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Clear Smog",
     "Category": "Special",
@@ -9741,7 +9812,7 @@
     "PP": 15,
     "ZMovePower": 100,
     "ZMoveEffect": "resets lowered stats of the user",
-    "Desc": "The user attacks by spewing a clump of special gases. All stat changes are returned to normal. This move cannot miss. Z: Resets lowered stats.",
+    "Desc": "The user attacks by spewing a clump of special gases. All stat changes are returned to normal. This can\u0027t miss. Z: Resets lowered stats. (Wind)",
     "Priority": 0
   },
   "storedpower": {
@@ -9920,7 +9991,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Circle Throw",
     "Category": "Physical",
@@ -9931,7 +10003,7 @@
     "PP": 10,
     "ZMovePower": 75,
     "ZMoveEffect": "\u002B2 Defense",
-    "Desc": "The target is thrown, and a different Pok\u00E9mon is dragged out. In the wild, this ends a battle against a single Pok\u00E9mon. (-6 Priority) Z: \u002B2 Def",
+    "Desc": "The target is thrown, and a different Pok\u00E9mon is dragged out. In the wild, this ends a battle against a single Pok\u00E9mon. (-6 Priority) Z: \u002B2 Def (Spin)",
     "Priority": 250
   },
   "incinerate": {
@@ -10212,7 +10284,8 @@
     "Num": 524,
     "Flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "wind": 1
     },
     "Name": "Frost Breath",
     "Category": "Special",
@@ -10223,7 +10296,7 @@
     "PP": 10,
     "ZMovePower": 130,
     "ZMoveEffect": "None",
-    "Desc": "The user blows its cold breath on the target. This attack always results in a critical hit.",
+    "Desc": "The user blows its cold breath on the target. This attack always results in a critical hit. (Wind)",
     "Priority": 0
   },
   "dragontail": {
@@ -10318,7 +10391,7 @@
     "PP": 15,
     "ZMovePower": 130,
     "ZMoveEffect": "None",
-    "Desc": "The user crashes into its target while rotating its body like a drill. Critical hits land more easily.(\u002B1 Crit)",
+    "Desc": "The user crashes into its target while rotating its body like a drill. Critical hits land more easily. (\u002B1 Crit, Spin)",
     "Priority": 0
   },
   "dualchop": {
@@ -10389,7 +10462,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Sacred Sword",
     "Category": "Physical",
@@ -10400,7 +10474,7 @@
     "PP": 15,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks by slicing with a long horn. The target\u2019s stat changes don\u2019t affect this attack\u2019s damage.",
+    "Desc": "The user attacks by slicing with a long horn. The target\u2019s stat changes don\u2019t affect this attack\u2019s damage. (Slice)",
     "Priority": 0
   },
   "razorshell": {
@@ -10409,7 +10483,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Razor Shell",
     "Category": "Physical",
@@ -10420,7 +10495,7 @@
     "PP": 10,
     "ZMovePower": 80,
     "ZMoveEffect": "\u002B1 Attack",
-    "Desc": "The user cuts its target with sharp shells. This may also lower the target\u2019s Defense stat. (50%) Z: \u002B1 Attack",
+    "Desc": "The user cuts its target with sharp shells. This may also lower the target\u2019s Defense stat. (50%, Slice) Z: \u002B1 Attack",
     "Priority": 0
   },
   "heatcrash": {
@@ -10450,7 +10525,9 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1,
+      "f24": 1
     },
     "Name": "Leaf Tornado",
     "Category": "Special",
@@ -10461,7 +10538,7 @@
     "PP": 10,
     "ZMovePower": 80,
     "ZMoveEffect": "raises critical-hit ratio two stages",
-    "Desc": "The user attacks its target by encircling it in sharp leaves. The target is trapped and damaged for 4-5 turns. Z: \u002B2 Crit Stages",
+    "Desc": "The user attacks its target by encircling it in sharp leaves. The target is trapped and damaged for 4-5 turns. (Spin, Wind) Z: \u002B2 Crit Stages",
     "Priority": 0
   },
   "steamroller": {
@@ -10470,7 +10547,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Steamroller",
     "Category": "Physical",
@@ -10481,7 +10559,7 @@
     "PP": 20,
     "ZMovePower": 105,
     "ZMoveEffect": "\u002B1 Speed",
-    "Desc": "The user crushes its target by rolling over the target with its rolled-up body. This may also make the target flinch. (30%) Z: \u002B1 Speed",
+    "Desc": "The user crushes its target by rolling over the target with its rolled-up body. This may also make the target flinch. (30%, Spin) Z: \u002B1 Speed",
     "Priority": 0
   },
   "cottonguard": {
@@ -10565,7 +10643,9 @@
       "protect": 1,
       "mirror": 1,
       "distancetriple": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1,
+      "f24": 1
     },
     "Name": "Hurricane",
     "Category": "Special",
@@ -10576,7 +10656,7 @@
     "PP": 10,
     "ZMovePower": 155,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks by wrapping its opponent in a fierce wind that flies up into the sky. This may also confuse the target. (30%)",
+    "Desc": "The user attacks by wrapping its opponent in a fierce wind that flies up into the sky. This may also confuse the target. (30%, Spin, Wind)",
     "Priority": 0
   },
   "spiritcrash": {
@@ -10683,7 +10763,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Secret Sword",
     "Category": "Special",
@@ -10694,7 +10775,7 @@
     "PP": 10,
     "ZMovePower": 135,
     "ZMoveEffect": "None",
-    "Desc": "The user slices using a hidden technique. This power does physical damage to the target.",
+    "Desc": "The user slices using a hidden technique. This power does physical damage to the target. (Slice)",
     "Priority": 0
   },
   "coldsnap": {
@@ -10702,7 +10783,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Cold Snap",
     "Category": "Physical",
@@ -10713,7 +10795,7 @@
     "PP": 15,
     "ZMovePower": 110,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks by blowing freezing cold air onto all nearby targets. This lowers their Speed stats.",
+    "Desc": "The user attacks by blowing freezing cold air onto all nearby targets. This lowers their Speed stats. (Wind)",
     "Priority": 0
   },
   "dracobolt": {
@@ -10774,7 +10856,7 @@
     "PP": 10,
     "ZMovePower": 130,
     "ZMoveEffect": "None",
-    "Desc": "Cloaked in flames, the user dances and flaps its wings. This may also raise the user\u2019s Sp. Atk stat. (50%)",
+    "Desc": "Cloaked in flames, the user dances and blows the flames at its target. This may also raise the user\u2019s Sp. Atk stat. (50%)",
     "Priority": 0
   },
   "freezeshock": {
@@ -11154,7 +11236,8 @@
     "Num": 572,
     "Flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "wind": 1
     },
     "Name": "Petal Blizzard",
     "Category": "Physical",
@@ -11165,7 +11248,7 @@
     "PP": 10,
     "ZMovePower": 150,
     "ZMoveEffect": "None",
-    "Desc": "The user stirs up a violent petal blizzard and attacks everything around it.",
+    "Desc": "The user stirs up a violent petal blizzard and attacks everything around it. (Wind)",
     "Priority": 0
   },
   "freezedry": {
@@ -11383,7 +11466,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Fairy Wind",
     "Category": "Special",
@@ -11394,7 +11478,7 @@
     "PP": 25,
     "ZMovePower": 80,
     "ZMoveEffect": "\u002B2 Special Attack",
-    "Desc": "The user stirs up a fairy wind and strikes the target with it. This may infatuate an opponent for 2-4 turns. (30%) Z-Effect: \u002B2 Sp.Def",
+    "Desc": "The user stirs up a fairy wind and strikes the target with it. This may infatuate an opponent for 2-4 turns. (30%, Wind) Z-Effect: \u002B2 Sp.Def",
     "Priority": 0
   },
   "moonblast": {
@@ -11576,7 +11660,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Water Shuriken",
     "Category": "Special",
@@ -11587,7 +11672,7 @@
     "PP": 20,
     "ZMovePower": 80,
     "ZMoveEffect": "\u002B1 Special Attack",
-    "Desc": "The user hits the target with throwing stars two to five times in a row. This move usually goes first. (\u002B1 Priority) Z: \u002B1 Sp.Atk",
+    "Desc": "The user hits the target with throwing stars two to five times in a row. This move usually goes first. (\u002B1 Priority, Slice) Z: \u002B1 Sp.Atk",
     "Priority": 1
   },
   "mysticalfire": {
@@ -12895,7 +12980,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f23": 1
     },
     "Name": "High Horsepower",
     "Category": "Physical",
@@ -12906,7 +12992,7 @@
     "PP": 10,
     "ZMovePower": 145,
     "ZMoveEffect": "None",
-    "Desc": "The user fiercely attacks the target using its entire body.",
+    "Desc": "The user fiercely attacks the target using its entire body. (Kick)",
     "Priority": 0
   },
   "strengthsap": {
@@ -12937,7 +13023,8 @@
       "charge": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "slicing": 1
     },
     "Name": "Solar Blade",
     "Category": "Physical",
@@ -12948,7 +13035,7 @@
     "PP": 10,
     "ZMovePower": 165,
     "ZMoveEffect": "None",
-    "Desc": "In this two-turn attack, the user gathers light and fills a blade with the light\u2019s energy, attacking the target on the next turn.",
+    "Desc": "In this two-turn attack, the user gathers light and fills a blade with the light\u2019s energy, attacking the target on the next turn. (Slice)",
     "Priority": 0
   },
   "leafage": {
@@ -12987,7 +13074,7 @@
     "PP": 5,
     "ZMovePower": 0,
     "ZMoveEffect": "\u002B1 Special Defense",
-    "Desc": "The user shines a spotlight on itself or an ally so that only they will be attacked during the turn. (\u002B2 Priority) Z: \u002B1 Sp.Def",
+    "Desc": "The user shines a spotlight on itself or an ally so that only they will be attacked during that turn. Also gives their next attack 100% crit! (\u002B2 Prio)",
     "Priority": 2
   },
   "toxicthread": {
@@ -13309,7 +13396,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f23": 1
     },
     "Name": "Trop Kick",
     "Category": "Physical",
@@ -13320,7 +13408,7 @@
     "PP": 15,
     "ZMovePower": 130,
     "ZMoveEffect": "None",
-    "Desc": "The user lands an intense kick of tropical origins on the target. This also lowers the target\u2019s Attack stat.",
+    "Desc": "The user lands an intense kick of tropical origins on the target. This also lowers the target\u2019s Attack stat. (Kick)",
     "Priority": 0
   },
   "instruct": {
@@ -13661,7 +13749,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f23": 1
     },
     "Name": "Stomping Tantrum",
     "Category": "Physical",
@@ -13672,7 +13761,7 @@
     "PP": 10,
     "ZMovePower": 125,
     "ZMoveEffect": "None",
-    "Desc": "Driven by frustration, the user attacks the target. If the user\u2019s previous move has failed, the power of this move doubles.",
+    "Desc": "Driven by frustration, the user attacks the target. If the user\u2019s previous move has failed, the power of this move doubles. (Kick)",
     "Priority": 0
   },
   "shadowbone": {
@@ -14996,7 +15085,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Aura Wheel",
     "Category": "Physical",
@@ -15007,7 +15097,7 @@
     "PP": 10,
     "ZMovePower": 110,
     "ZMoveEffect": "\u002B1 to all (except Accuracy or Evasiveness)",
-    "Desc": "The user attacks with cheek energy and raises its Speed. Z: \u002B1 All Stats",
+    "Desc": "The user attacks with cheek energy and raises its Speed. Z: \u002B1 All Stats (Spin)",
     "Priority": 0
   },
   "breakingswipe": {
@@ -15134,7 +15224,8 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Strange Steam",
     "Category": "Special",
@@ -15145,7 +15236,7 @@
     "PP": 10,
     "ZMovePower": 120,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks the target by emitting steam. This may also confuse the target. (20%)",
+    "Desc": "The user attacks the target by emitting steam. This may also confuse the target. (20%, Wind)",
     "Priority": 0
   },
   "lifedew": {
@@ -15291,7 +15382,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Steel Roller",
     "Category": "Physical",
@@ -15302,7 +15394,7 @@
     "PP": 5,
     "ZMovePower": 160,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks while destroying the terrain. This move fails when no terrain is active.",
+    "Desc": "The user attacks while destroying the terrain. This move fails when no terrain is active. (Spin)",
     "Priority": 0
   },
   "scaleshot": {
@@ -15523,7 +15615,8 @@
       "protect": 1,
       "reflectable": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "wind": 1
     },
     "Name": "Corrosive Gas",
     "Category": "Status",
@@ -15534,7 +15627,7 @@
     "PP": 40,
     "ZMovePower": 100,
     "ZMoveEffect": "\u002B1 Defense",
-    "Desc": "The user surrounds all nearby targets with corrosive gas, removing their held items. Z: Acid Downpour, \u002B1 Defense",
+    "Desc": "The user surrounds all nearby targets with corrosive gas, removing their held items. Z: Acid Downpour, \u002B1 Defense (Wind)",
     "Priority": 0
   },
   "coaching": {
@@ -15561,7 +15654,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "animateally": 1
+      "animateally": 1,
+      "f24": 1
     },
     "Name": "Flip Turn",
     "Category": "Physical",
@@ -15572,7 +15666,7 @@
     "PP": 20,
     "ZMovePower": 110,
     "ZMoveEffect": "None",
-    "Desc": "After making its attack, the user rushes back to switch places with a party Pok\u00E9mon in waiting.",
+    "Desc": "After making its attack, the user rushes back to switch places with a party Pok\u00E9mon in waiting. (Spin)",
     "Priority": 0
   },
   "tripleaxel": {
@@ -15580,7 +15674,9 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "dance": 1,
+      "f24": 1
     },
     "Name": "Triple Axel",
     "Category": "Physical",
@@ -15591,7 +15687,7 @@
     "PP": 10,
     "ZMovePower": 120,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks three times with consecutive kicks. Their power rises from 20 to 40 to 60.",
+    "Desc": "The user attacks three times with consecutive kicks. Their power rises from 20 to 40 to 60. (Dance, Spin)",
     "Priority": 0
   },
   "dualwingbeat": {
@@ -15668,7 +15764,7 @@
     "PP": 5,
     "ZMovePower": 120,
     "ZMoveEffect": "None",
-    "Desc": "The user strikes the target with a fierce blow. This attack always results in a critical hit.",
+    "Desc": "The user strikes the target with a fierce blow. This attack is always a critical hit. (Punch)",
     "Priority": 0
   },
   "surgingstrikes": {
@@ -15688,7 +15784,7 @@
     "PP": 5,
     "ZMovePower": 120,
     "ZMoveEffect": "None",
-    "Desc": "The user strikes with a flowing motion three times. These attacks always result in critical hits.",
+    "Desc": "The user strikes with a flowing motion three times. These attacks are critical hits. (Punch)",
     "Priority": 0
   },
   "thundercage": {
@@ -15742,7 +15838,7 @@
     "PP": 10,
     "ZMovePower": 175,
     "ZMoveEffect": "None",
-    "Desc": "The user shoots psychic power from its eyes. This may also leave the target frozen.",
+    "Desc": "The user shoots psychic power from its eyes. This may also leave the target frostbitten.",
     "Priority": 0
   },
   "fierywrath": {
@@ -15768,7 +15864,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "f23": 1
     },
     "Name": "Thunderous Kick",
     "Category": "Physical",
@@ -15779,7 +15876,7 @@
     "PP": 10,
     "ZMovePower": 160,
     "ZMoveEffect": "None",
-    "Desc": "The user overwhelms the target with lightning-like movement, then kicks. This lowers its Defense stat.",
+    "Desc": "The user overwhelms the target with lightning-like movement, then kicks. This lowers its Defense stat. (Kick)",
     "Priority": 0
   },
   "glaciallance": {
@@ -15843,7 +15940,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1
     },
     "Name": "Dire Claw",
     "Category": "Physical",
@@ -15854,7 +15952,7 @@
     "PP": 15,
     "ZMovePower": 160,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks with a ruinous claw. There is a 50 percent chance to poison, paralyze, or put the target to sleep.",
+    "Desc": "The user attacks with a ruinous claw. There is a 50 percent chance to poison, paralyze, or put the target to sleep. (50% chance, Slice)",
     "Priority": 0
   },
   "psyshieldbash": {
@@ -15898,7 +15996,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1
     },
     "Name": "Stone Axe",
     "Category": "Physical",
@@ -15909,7 +16008,7 @@
     "PP": 15,
     "ZMovePower": 120,
     "ZMoveEffect": "None",
-    "Desc": "The user swings a stone axe at the target. Stone splinters scatter around the opposing side like Stealth Rock.",
+    "Desc": "The user swings a stone axe at the target. Stone splinters scatter around the opposing side like Stealth Rock. (Slice)",
     "Priority": 0
   },
   "springtidestorm": {
@@ -15917,6 +16016,7 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
+      "wind": 1,
       "f27": 1
     },
     "Name": "Springtide Storm",
@@ -15928,7 +16028,7 @@
     "PP": 5,
     "ZMovePower": 175,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks opposing Pok\u00E9mon with fierce winds. This may also lower their Attack stats.",
+    "Desc": "The user attacks opposing Pok\u00E9mon with fierce winds. This may also lower their Attack stats. (Wind)",
     "Priority": 0
   },
   "mysticalpower": {
@@ -16159,7 +16259,7 @@
     "Category": "Special",
     "BasePower": 60,
     "Accuracy": 100,
-    "Type": "Ghost",
+    "Type": "Fire",
     "Target": "normal",
     "PP": 15,
     "ZMovePower": 160,
@@ -16172,7 +16272,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1
     },
     "Name": "Ceaseless Edge",
     "Category": "Physical",
@@ -16183,7 +16284,7 @@
     "PP": 15,
     "ZMovePower": 120,
     "ZMoveEffect": "None",
-    "Desc": "The user slashes with a shell blade. Shell splinters scatter as spikes around the opposing side.",
+    "Desc": "The user slashes with a shell blade. Shell splinters scatter as spikes around the opposing side. (Slice)",
     "Priority": 0
   },
   "bleakwindstorm": {
@@ -16191,6 +16292,7 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
+      "wind": 1,
       "f27": 1
     },
     "Name": "Bleakwind Storm",
@@ -16202,7 +16304,7 @@
     "PP": 10,
     "ZMovePower": 100,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks with savagely cold winds. This may also lower opposing Pok\u00E9mon\u2019s Speed stats.",
+    "Desc": "The user attacks with savagely cold winds. This may also lower opposing Pok\u00E9mon\u2019s Speed stats. (Wind)",
     "Priority": 0
   },
   "wildboltstorm": {
@@ -16210,6 +16312,7 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
+      "wind": 1,
       "f27": 1
     },
     "Name": "Wildbolt Storm",
@@ -16221,7 +16324,7 @@
     "PP": 10,
     "ZMovePower": 160,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks with a tempest of lightning and wind. This may also paralyze opposing Pok\u00E9mon.",
+    "Desc": "The user attacks with a tempest of lightning and wind. This may also paralyze opposing Pok\u00E9mon. (Wind)",
     "Priority": 0
   },
   "sandsearstorm": {
@@ -16229,6 +16332,7 @@
     "Flags": {
       "protect": 1,
       "mirror": 1,
+      "wind": 1,
       "f27": 1
     },
     "Name": "Sandsear Storm",
@@ -16240,7 +16344,7 @@
     "PP": 10,
     "ZMovePower": 175,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks with fierce winds and searing sand. This may also burn opposing Pok\u00E9mon.",
+    "Desc": "The user attacks with fierce winds and searing sand. This may also burn opposing Pok\u00E9mon. (Wind)",
     "Priority": 0
   },
   "lunarblessing": {
@@ -16316,7 +16420,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "f23": 1
     },
     "Name": "Axe Kick",
     "Category": "Physical",
@@ -16327,7 +16432,7 @@
     "PP": 10,
     "ZMovePower": 150,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks with an axe-like kick that may confuse. If it misses, the user is also hurt.",
+    "Desc": "The user attacks with an axe-like kick that may confuse. If it misses, the user is also hurt. (Kick)",
     "Priority": 0
   },
   "lastrespects": {
@@ -16402,7 +16507,7 @@
     "PP": 15,
     "ZMovePower": 120,
     "ZMoveEffect": "\u002B1 Speed",
-    "Desc": "The user surrounds its fist with a torrent and punches at blinding speed. This move goes first.",
+    "Desc": "The user surrounds its fist with a torrent of air and punches at blinding speed. This often goes first. (\u002B1 Prio, Punch)",
     "Priority": 1
   },
   "spicyextract": {
@@ -16429,7 +16534,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "f24": 1
     },
     "Name": "Spin Out",
     "Category": "Physical",
@@ -16440,7 +16546,7 @@
     "PP": 5,
     "ZMovePower": 180,
     "ZMoveEffect": "None",
-    "Desc": "The user spins furiously to attack the target. This also harshly lowers the user\u2019s Speed stat.",
+    "Desc": "The user spins furiously to attack the target. This also harshly lowers the user\u2019s Speed stat. (Spin)",
     "Priority": 0
   },
   "populationbomb": {
@@ -16448,7 +16554,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1
     },
     "Name": "Population Bomb",
     "Category": "Physical",
@@ -16459,7 +16566,7 @@
     "PP": 10,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "The user\u2019s fellows gather to attack the target up to ten times in a row.",
+    "Desc": "The user\u2019s fellows gather to attack the target up to ten times in a row. (Slice)",
     "Priority": 0
   },
   "icespinner": {
@@ -16467,7 +16574,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "f24": 1
     },
     "Name": "Ice Spinner",
     "Category": "Physical",
@@ -16478,7 +16586,7 @@
     "PP": 15,
     "ZMovePower": 100,
     "ZMoveEffect": "None",
-    "Desc": "The user covers its feet in thin ice and attacks while removing any terrain.",
+    "Desc": "The user covers its feet in thin ice and attacks while removing any terrain. (Spin)",
     "Priority": 0
   },
   "glaiverush": {
@@ -16486,7 +16594,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1
     },
     "Name": "Glaive Rush",
     "Category": "Physical",
@@ -16497,7 +16606,7 @@
     "PP": 5,
     "ZMovePower": 180,
     "ZMoveEffect": "None",
-    "Desc": "The user makes a reckless charge. Until its next action, incoming moves cannot miss and deal double damage.",
+    "Desc": "The user makes a reckless charge. Until its next action, incoming moves cannot miss and deal double damage. (Slice)",
     "Priority": 0
   },
   "revivalblessing": {
@@ -16570,7 +16679,7 @@
     "PP": 15,
     "ZMovePower": 100,
     "ZMoveEffect": "None",
-    "Desc": "The user spins to remove binding effects and hazards, poisons targets, and raises its Speed by one stage.",
+    "Desc": "The user spins to remove binding effects and hazards, poisons targets, and raises its Speed by one stage. (Spin)",
     "Priority": 0
   },
   "doodle": {
@@ -16591,7 +16700,8 @@
   "filletaway": {
     "Num": 868,
     "Flags": {
-      "snatch": 1
+      "snatch": 1,
+      "slicing": 1
     },
     "Name": "Fillet Away",
     "Category": "Status",
@@ -16610,7 +16720,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1
     },
     "Name": "Kowtow Cleave",
     "Category": "Physical",
@@ -16621,7 +16732,7 @@
     "PP": 10,
     "ZMovePower": 120,
     "ZMoveEffect": "None",
-    "Desc": "The user kowtows to make the target lower its guard, then slashes. This attack never misses.",
+    "Desc": "The user kowtows to make the target lower its guard, then slashes. This attack never misses. (Slice)",
     "Priority": 0
   },
   "flowertrick": {
@@ -16659,7 +16770,7 @@
     "PP": 10,
     "ZMovePower": 160,
     "ZMoveEffect": "None",
-    "Desc": "The user sings with raging flames to scorch the target. This also boosts the user\u2019s Sp. Atk stat.",
+    "Desc": "The user sings with raging flames to scorch the target. This also boosts the user\u2019s Sp. Atk stat. (Sound)",
     "Priority": 0
   },
   "aquastep": {
@@ -16668,7 +16779,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "dance": 1
+      "dance": 1,
+      "f23": 1
     },
     "Name": "Aqua Step",
     "Category": "Physical",
@@ -16679,7 +16791,7 @@
     "PP": 10,
     "ZMovePower": 100,
     "ZMoveEffect": "None",
-    "Desc": "The user attacks with light and fluid dance steps. This also boosts the user\u2019s Speed stat.",
+    "Desc": "The user attacks with light and fluid dance steps. This also boosts the user\u2019s Speed stat. (Kick, Dance)",
     "Priority": 0
   },
   "ragingbull": {
@@ -16724,7 +16836,8 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1
     },
     "Name": "Psyblade",
     "Category": "Physical",
@@ -16735,7 +16848,7 @@
     "PP": 15,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "The user rends the target with an ethereal blade. Its power rises by 50 percent on Electric Terrain.",
+    "Desc": "The user rends the target with an ethereal blade. Its power rises by 50 percent on Electric Terrain. (Slice)",
     "Priority": 0
   },
   "hydrosteam": {
@@ -16870,7 +16983,7 @@
     "PP": 10,
     "ZMovePower": 0,
     "ZMoveEffect": "\u002B1 Speed",
-    "Desc": "The user summons a hailstorm lasting five turns. It damages all Pok\u00E9mon except Ice types.",
+    "Desc": "The user summons a snowstorm lasting five turns. It damages all Pok\u00E9mon except Ice types.",
     "Priority": 0
   },
   "pounce": {
@@ -16933,7 +17046,8 @@
     "Num": 887,
     "Flags": {
       "makescontact": 1,
-      "mirror": 1
+      "mirror": 1,
+      "f24": 1
     },
     "Name": "Hyper Drill",
     "Category": "Physical",
@@ -16944,7 +17058,7 @@
     "PP": 5,
     "ZMovePower": 180,
     "ZMoveEffect": "None",
-    "Desc": "The user spins its pointed parts into the target. This move strikes through Protect and Detect.",
+    "Desc": "The user spins its pointed parts into the target. This move strikes through Protect and Detect. (Spin)",
     "Priority": 0
   },
   "twinbeam": {
@@ -17009,7 +17123,8 @@
       "makescontact": 1,
       "protect": 1,
       "mirror": 1,
-      "heal": 1
+      "heal": 1,
+      "slicing": 1
     },
     "Name": "Bitter Blade",
     "Category": "Physical",
@@ -17020,7 +17135,7 @@
     "PP": 10,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "The user focuses its bitter feelings into a slash. Its HP is restored by half the damage taken by the target.",
+    "Desc": "The user focuses its bitter feelings into a slash. Its HP is restored by half the damage taken by the target. (Slice)",
     "Priority": 0
   },
   "doubleshock": {
@@ -17083,7 +17198,8 @@
     "Num": 895,
     "Flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1
     },
     "Name": "Aqua Cutter",
     "Category": "Physical",
@@ -17094,13 +17210,14 @@
     "PP": 20,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "The user expels pressurized water to cut at the target. Critical hits land more easily.",
+    "Desc": "The user expels pressurized water to cut at the target. Critical hits land more easily. (Slice)",
     "Priority": 0
   },
   "blazingtorque": {
     "Num": 896,
     "Flags": {
-      "protect": 1
+      "protect": 1,
+      "f24": 1
     },
     "Name": "Blazing Torque",
     "Category": "Physical",
@@ -17111,13 +17228,14 @@
     "PP": 10,
     "ZMovePower": 175,
     "ZMoveEffect": "None",
-    "Desc": "The user revs its blazing engine and attacks the target. This may also leave the target with a burn.",
+    "Desc": "The user revs its blazing engine and attacks the target. This may also leave the target with a burn. (Spin)",
     "Priority": 0
   },
   "wickedtorque": {
     "Num": 897,
     "Flags": {
-      "protect": 1
+      "protect": 1,
+      "f24": 1
     },
     "Name": "Wicked Torque",
     "Category": "Physical",
@@ -17128,13 +17246,14 @@
     "PP": 10,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "The user revs its wicked engine and attacks the target. This may also make the target fall asleep.",
+    "Desc": "The user revs its wicked engine and attacks the target. This may also make the target fall asleep. (Spin)",
     "Priority": 0
   },
   "noxioustorque": {
     "Num": 898,
     "Flags": {
-      "protect": 1
+      "protect": 1,
+      "f24": 1
     },
     "Name": "Noxious Torque",
     "Category": "Physical",
@@ -17145,13 +17264,14 @@
     "PP": 10,
     "ZMovePower": 100,
     "ZMoveEffect": "None",
-    "Desc": "The user revs its noxious engine and attacks the target. This may also leave the target badly poisoned.",
+    "Desc": "The user revs its noxious engine and attacks the target. This may also leave the target badly poisoned. (Spin)",
     "Priority": 0
   },
   "combattorque": {
     "Num": 899,
     "Flags": {
-      "protect": 1
+      "protect": 1,
+      "f24": 1
     },
     "Name": "Combat Torque",
     "Category": "Physical",
@@ -17162,13 +17282,14 @@
     "PP": 10,
     "ZMovePower": 160,
     "ZMoveEffect": "None",
-    "Desc": "The user revs its combat engine and attacks the target. This may also leave the target with paralysis.",
+    "Desc": "The user revs its combat engine and attacks the target. This may also leave the target with paralysis. (Spin)",
     "Priority": 0
   },
   "magicaltorque": {
     "Num": 900,
     "Flags": {
-      "protect": 1
+      "protect": 1,
+      "f24": 1
     },
     "Name": "Magical Torque",
     "Category": "Physical",
@@ -17179,7 +17300,7 @@
     "PP": 10,
     "ZMovePower": 120,
     "ZMoveEffect": "None",
-    "Desc": "The user revs its magical engine and attacks the target. This may also confuse the target.",
+    "Desc": "The user revs its magical engine and attacks the target. This may also confuse the target. (Spin)",
     "Priority": 0
   },
   "bloodmoon": {
@@ -17348,7 +17469,8 @@
     "Num": 910,
     "Flags": {
       "makescontact": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1
     },
     "Name": "Mighty Cleave",
     "Category": "Physical",
@@ -17359,14 +17481,15 @@
     "PP": 5,
     "ZMovePower": 180,
     "ZMoveEffect": "None",
-    "Desc": "The user cleaves the target with horns of rock. This move strikes through Protect and Detect.",
+    "Desc": "The user cleaves the target with horns of rock. This move strikes through Protect and Detect. (Slice)",
     "Priority": 0
   },
   "tachyoncutter": {
     "Num": 911,
     "Flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "slicing": 1
     },
     "Name": "Tachyon Cutter",
     "Category": "Special",
@@ -17377,7 +17500,7 @@
     "PP": 10,
     "ZMovePower": 180,
     "ZMoveEffect": "None",
-    "Desc": "The user launches particle blades at the target twice in a row. This attack never misses.",
+    "Desc": "The user launches particle blades at the target twice in a row. This attack never misses. (Slice)",
     "Priority": 0
   },
   "hardpress": {
@@ -17500,19 +17623,20 @@
     "Flags": {
       "makescontact": 1,
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "punch": 1
     },
     "Name": "Upper Hand",
     "Category": "Physical",
-    "BasePower": 65,
+    "BasePower": 70,
     "Accuracy": 100,
     "Type": "Fighting",
     "Target": "normal",
-    "PP": 15,
+    "PP": 5,
     "ZMovePower": 140,
     "ZMoveEffect": "None",
-    "Desc": "A priority attack that makes the target flinch. It fails if the target did not select a damaging move.",
-    "Priority": 3
+    "Desc": "A priority punch that fails if the target did not select a damaging move. (\u002B1 Prio, Punch)",
+    "Priority": 1
   },
   "malignantchain": {
     "Num": 919,
