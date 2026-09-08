@@ -931,7 +931,7 @@
       "1 - Defog",
       "1 - Draining Kiss",
       "1 - Gust",
-      "1 - Heal Order",
+      "1 - Jitterbug",
       "1 - Iron Defense",
       "1 - Mega Drain",
       "1 - Mimic",
@@ -1159,6 +1159,7 @@
       "33 - Drill Peck",
       "35 - Toxic Spikes",
       "39 - Fell Stinger",
+      "43 - Jitterbug",
       "45 - Cross Poison",
       "50 - Lunge",
       "56 - Agility",
@@ -2299,7 +2300,7 @@
     "Abilities": [
       "Poison Point",
       "Berserk",
-      "Cute Charm"
+      "Rivalry"
     ],
     "Types": [
       "Poison"
@@ -2372,7 +2373,7 @@
     "Abilities": [
       "Poison Point",
       "Berserk",
-      "Cute Charm"
+      "Rivalry"
     ],
     "Types": [
       "Poison"
@@ -2450,7 +2451,7 @@
     "Abilities": [
       "Sheer Force",
       "Berserk",
-      "Thick Fat"
+      "Queenly Majesty"
     ],
     "Types": [
       "Poison",
@@ -2537,7 +2538,7 @@
     "Abilities": [
       "Poison Touch",
       "Defiant",
-      "Hustle"
+      "Rivalry"
     ],
     "Types": [
       "Poison"
@@ -2611,7 +2612,7 @@
     "Abilities": [
       "Poison Touch",
       "Defiant",
-      "Hustle"
+      "Rivalry"
     ],
     "Types": [
       "Poison"
@@ -2692,7 +2693,7 @@
     "Abilities": [
       "Sheer Force",
       "Defiant",
-      "Hustle"
+      "Supreme Overlord"
     ],
     "Types": [
       "Poison",
@@ -3926,7 +3927,7 @@
     "Abilities": [
       "Poison Heal",
       "Tinted Lens",
-      "Compound Eyes"
+      "Wonder Skin"
     ],
     "Types": [
       "Bug",
@@ -3967,8 +3968,8 @@
       "49 - Rage Powder",
       "54 - Quiver Dance",
       "57 - Bug Buzz",
-      "61 - Biokinesis",
-      "66 - Pollen Puff",
+      "61 - Psyshield Bash",
+      "66 - Jitterbug",
       "70 - Toxic Spikes",
       "76 - Psycho Boost",
       "80 - Lunar Dance"
@@ -4005,7 +4006,7 @@
     "Abilities": [
       "Poison Heal",
       "Tinted Lens",
-      "Compound Eyes"
+      "Wonder Skin"
     ],
     "Types": [
       "Bug",
@@ -4065,8 +4066,8 @@
       "49 - Rage Powder",
       "54 - Quiver Dance",
       "57 - Bug Buzz",
-      "61 - Biokinesis",
-      "66 - Pollen Puff",
+      "61 - Psyshield Bash",
+      "66 - Jitterbug",
       "70 - Magic Room",
       "70 - Wonder Room",
       "76 - Psycho Boost",
@@ -4178,7 +4179,7 @@
       "Speed": 130
     },
     "Abilities": [
-      "Sand Veil",
+      "Multistriker",
       "Sand Stream",
       "Arena Trap"
     ],
@@ -5589,7 +5590,7 @@
     },
     "Abilities": [
       "Guts",
-      "No Guard",
+      "Multistriker",
       "No Guard"
     ],
     "Types": [
@@ -9672,7 +9673,7 @@
     "Abilities": [
       "Swift Swim",
       "Sniper",
-      "Damp"
+      "Torrent"
     ],
     "Types": [
       "Water"
@@ -12968,7 +12969,7 @@
       "Speed": 70
     },
     "Abilities": [
-      "Triage",
+      "Healer",
       "Flower Veil",
       "Overgrow"
     ],
@@ -13145,7 +13146,7 @@
     },
     "Abilities": [
       "Berserk",
-      "Fire Mane",
+      "Flame Body",
       "Blaze"
     ],
     "Types": [
@@ -13838,6 +13839,7 @@
     "LevelUpMoves": [
       "0 - Dream Eater",
       "0 - Extrasensory",
+      "0 - Nightmare",
       "1 - Barrier",
       "1 - Brave Bird",
       "1 - Disable",
@@ -13851,7 +13853,7 @@
       "1 - Mirror Move",
       "1 - Nightmare",
       "1 - Ominous Wind",
-      "1 - Biokinesis",
+      "1 - Psyshield Bash",
       "1 - Psyshock",
       "1 - Sky Attack",
       "1 - Stored Power",
@@ -13868,6 +13870,7 @@
       "17 - Lucky Chant",
       "19 - Psycho Shift",
       "22 - Uproar",
+      "25 - Moonlight",
       "27 - Air Slash",
       "31 - Calm Mind",
       "35 - Future Sight",
@@ -14013,7 +14016,6 @@
       "1 - Arm Thrust",
       "1 - Bug Buzz",
       "1 - Defog",
-      "1 - Feint",
       "1 - Focus Punch",
       "1 - Gust",
       "1 - Knock Off",
@@ -14037,6 +14039,7 @@
       "40 - Sky Uppercut",
       "46 - Skitter Smack",
       "51 - Jet Punch",
+      "55 - Jitterbug",
       "58 - Shadow Punch",
       "64 - Cross Chop",
       "70 - Meteor Mash",
@@ -14093,15 +14096,15 @@
     "SpecialTutors": "",
     "BeachTutors": "Snore, Quash, Substitute, Attract, Sunny Day, Thief, Infestation, Double Team, Tickle, Confide, Sticky Web, Bug Bite, Agility, Heal Block, Rest, Sleep Talk, Toxic, Gastro Acid, Super Fang, Gunk Shot",
     "LevelUpMoves": [
-      "1 - Focus Energy",
       "1 - Infestation",
+      "1 - Focus Energy",
       "1 - Poison Sting",
       "1 - String Shot",
-      "4 - Constrict",
-      "5 - Electroweb",
+      "1 - Constrict",
+      "5 - Toxic Thread",
       "8 - Night Shade",
       "11 - Scary Face",
-      "13 - Toxic Thread",
+      "13 - Electroweb",
       "15 - Bug Bite",
       "17 - Spider Web",
       "17 - Sticky Web",
@@ -14115,8 +14118,8 @@
       "44 - Fell Stinger",
       "49 - Leech Life",
       "54 - Poison Jab",
-      "58 - Megahorn",
-      "65 - Powder",
+      "58 - Jitterbug",
+      "65 - Baneful Bunker",
       "73 - Crunch",
       "80 - Gunk Shot"
     ],
@@ -14204,8 +14207,8 @@
       "44 - Fell Stinger",
       "49 - Leech Life",
       "54 - Poison Jab",
-      "58 - Megahorn",
-      "65 - Powder",
+      "58 - Jitterbug",
+      "65 - Baneful Bunker",
       "73 - Crunch",
       "80 - Gunk Shot"
     ],
@@ -15334,7 +15337,7 @@
       "1 - Draining Kiss",
       "1 - Floral Healing",
       "1 - Growth",
-      "1 - Leaf Blade",
+      "1 - Petal Blizzard",
       "1 - Leaf Storm",
       "1 - Leech Seed",
       "1 - Magical Leaf",
@@ -15798,7 +15801,7 @@
       "59 - Razor Wind",
       "65 - Aeroblast",
       "68 - Strength Sap",
-      "74 - Petal Dance",
+      "74 - Chloroblast",
       "79 - Hurricane"
     ],
     "Evolutions": [
@@ -15893,7 +15896,7 @@
       "59 - Razor Wind",
       "65 - Aeroblast",
       "68 - Strength Sap",
-      "74 - Petal Dance",
+      "74 - Chloroblast",
       "79 - Hurricane"
     ],
     "Evolutions": [
@@ -16000,7 +16003,7 @@
       "59 - Razor Wind",
       "65 - Aeroblast",
       "68 - Strength Sap",
-      "74 - Petal Dance",
+      "74 - Chloroblast",
       "79 - Hurricane"
     ],
     "Evolutions": [],
@@ -16395,12 +16398,12 @@
       "1 - Water Sport",
       "5 - Erode",
       "9 - Mud Shot",
-      "13 - Bulldoze",
+      "13 - Magnitude",
       "16 - Tail Slap",
       "18 - Aqua Tail",
       "22 - Amnesia",
-      "27 - Ice Punch",
-      "31 - Trample",
+      "27 - Bulldoze",
+      "31 - Ice Punch",
       "34 - Earth Power",
       "34 - Mudslide",
       "39 - Waterfall",
@@ -16491,12 +16494,12 @@
       "1 - Yawn",
       "5 - Erode",
       "9 - Mud Shot",
-      "13 - Bulldoze",
+      "13 - Magnitude",
       "16 - Tail Slap",
       "18 - Aqua Tail",
       "22 - Amnesia",
-      "27 - Ice Punch",
-      "31 - Trample",
+      "27 - Bulldoze",
+      "31 - Ice Punch",
       "34 - Earth Power",
       "34 - Mudslide",
       "36 - Skull Bash",
@@ -16537,7 +16540,7 @@
       "Speed": 110
     },
     "Abilities": [
-      "Neuroforce",
+      "Analytic",
       "Magic Bounce",
       "Telepathy"
     ],
@@ -16641,7 +16644,7 @@
     },
     "Abilities": [
       "Shadow Shield",
-      "Magic Guard",
+      "Wonder Skin",
       "Telepathy"
     ],
     "Types": [
@@ -16708,11 +16711,10 @@
       "40 - Payback",
       "43 - Extreme Speed",
       "46 - Crunch",
-      "46 - Dark Pulse",
+      "46 - Blood Moon",
       "50 - Double-Edge",
       "50 - Moonblast",
       "56 - Baneful Bunker",
-      "61 - Brutal Smash",
       "61 - Night Daze",
       "67 - Follow Me",
       "74 - Lunar Dance",
@@ -17595,7 +17597,7 @@
     "Abilities": [
       "Filter",
       "Sheer Force",
-      "Heavy Metal"
+      "Heatproof"
     ],
     "Types": [
       "Steel",
@@ -19476,7 +19478,7 @@
     "Abilities": [
       "Intimidate",
       "Flash Fire",
-      "Unnerve"
+      "Solar Power"
     ],
     "Types": [
       "Dark",
@@ -19572,7 +19574,7 @@
     "Abilities": [
       "Swift Swim",
       "Sniper",
-      "Damp"
+      "Torrent"
     ],
     "Types": [
       "Water",
@@ -20066,7 +20068,7 @@
       "85 - Sketch",
       "90 - Sketch",
       "95 - Sketch",
-      "100 - Sketch"
+      "100 - Happy Hour"
     ],
     "Evolutions": [],
     "MegaEvolutions": [],
@@ -22496,7 +22498,7 @@
       "24 - Flail",
       "29 - Flame Wheel",
       "32 - Take Down",
-      "36 - Facade",
+      "36 - Tidy Up",
       "40 - Night Slash",
       "45 - Seed Bomb",
       "49 - Extreme Speed",
@@ -22693,7 +22695,7 @@
       "1 - Rage Powder",
       "1 - String Shot",
       "1 - Struggle Bug",
-      "1 - Tackle",
+      "1 - Jitterbug",
       "1 - Whirlwind",
       "14 - Stun Spore",
       "16 - Infestation",
@@ -22839,7 +22841,7 @@
       "1 - Psybeam",
       "1 - String Shot",
       "1 - Struggle Bug",
-      "1 - Tackle",
+      "1 - Jitterbug",
       "1 - Whirlwind",
       "14 - Toxic Thread",
       "16 - Infestation",
@@ -23151,7 +23153,7 @@
     "Abilities": [
       "Chlorophyll",
       "Early Bird",
-      "Pickpocket"
+      "Overgrow"
     ],
     "Types": [
       "Grass"
@@ -24775,7 +24777,7 @@
       "57 - Wing Attack",
       "62 - Leech Life",
       "67 - Foul Play",
-      "75 - Night Daze",
+      "75 - Jitterbug",
       "82 - Speed Swap"
     ],
     "Evolutions": [],
@@ -25869,7 +25871,7 @@
     "Abilities": [
       "Sturdy",
       "Rock Head",
-      "Heavy Metal"
+      "Heatproof"
     ],
     "Types": [
       "Steel",
@@ -25948,7 +25950,7 @@
     "Abilities": [
       "Battle Armor",
       "Rock Head",
-      "Heavy Metal"
+      "Heatproof"
     ],
     "Types": [
       "Steel",
@@ -26035,7 +26037,7 @@
     "Abilities": [
       "Battle Armor",
       "Rock Head",
-      "Heavy Metal"
+      "Heatproof"
     ],
     "Types": [
       "Steel",
@@ -27866,7 +27868,7 @@
       "1 - Me First",
       "1 - Miracle Eye",
       "1 - Payback",
-      "1 - Biokinesis",
+      "1 - Psyshield Bash",
       "1 - Pursuit",
       "1 - Recycle",
       "1 - Rest",
@@ -27993,7 +27995,7 @@
       "59 - Psycho Boost",
       "65 - Petal Dance",
       "65 - Roughhousing",
-      "72 - Mega Kick",
+      "72 - Jitterbug",
       "78 - Synchronoise",
       "85 - Last Resort"
     ],
@@ -28141,7 +28143,7 @@
       "1 - Rage",
       "1 - Erode",
       "1 - Signal Beam",
-      "1 - Slink",
+      "1 - Jitterbug",
       "1 - Sonic Boom",
       "1 - Struggle Bug",
       "1 - Breaking Swipe",
@@ -28235,7 +28237,7 @@
       "1 - Feint",
       "1 - Lunge",
       "1 - Mud Bomb",
-      "1 - Mudslide",
+      "1 - Jitterbug",
       "1 - Noble Roar",
       "1 - Rage",
       "1 - Erode",
@@ -28449,7 +28451,7 @@
       "35 - Rage Powder",
       "41 - Sucker Punch",
       "45 - Shore Up",
-      "49 - Dark Pulse",
+      "49 - Obstruct",
       "49 - Foul Play",
       "54 - Seed Bomb",
       "59 - Nasty Plot",
@@ -28905,8 +28907,8 @@
       "54 - Meteor Beam",
       "59 - Baton Pass",
       "65 - Moongeist Beam",
-      "71 - Explosion",
-      "76 - Night Daze",
+      "71 - Misty Explosion",
+      "76 - Blood Moon",
       "80 - Prismatic Laser"
     ],
     "Evolutions": [],
@@ -29483,7 +29485,7 @@
       "1 - Magic Coat",
       "1 - Mud-Slap",
       "1 - Power Swap",
-      "1 - Biokinesis",
+      "1 - Psyshield Bash",
       "1 - Psych Up",
       "1 - Expanding Force",
       "1 - Rock Polish",
@@ -29944,7 +29946,7 @@
       "Speed": 86
     },
     "Abilities": [
-      "Hydration",
+      "Queenly Majesty",
       "Marvel Scale",
       "Competitive"
     ],
@@ -32034,7 +32036,7 @@
     "Abilities": [
       "Clear Body",
       "Levitate",
-      "Heavy Metal"
+      "Heatproof"
     ],
     "Types": [
       "Steel",
@@ -32094,7 +32096,7 @@
     "Abilities": [
       "Clear Body",
       "Levitate",
-      "Heavy Metal"
+      "Heatproof"
     ],
     "Types": [
       "Steel",
@@ -32176,7 +32178,7 @@
     "Abilities": [
       "Full Metal Body",
       "Light Metal",
-      "Heavy Metal"
+      "Heatproof"
     ],
     "Types": [
       "Steel",
@@ -33843,7 +33845,7 @@
       "1 - Flurry Peck",
       "1 - Snowscape",
       "1 - Triple Dive",
-      "1 - Iron Head",
+      "1 - Vacuum Wave",
       "1 - Metal Claw",
       "1 - Mirror Shot",
       "1 - Noble Roar",
@@ -33987,7 +33989,7 @@
     "Abilities": [
       "Intimidate",
       "Reckless",
-      "Big Pecks"
+      "Rivalry"
     ],
     "Types": [
       "Normal",
@@ -34076,7 +34078,7 @@
     "Abilities": [
       "Intimidate",
       "Reckless",
-      "Big Pecks"
+      "Rivalry"
     ],
     "Types": [
       "Normal",
@@ -34364,7 +34366,7 @@
       "11 - Round",
       "15 - Helping Hand",
       "19 - Disarming Voice",
-      "22 - Bug Bite",
+      "22 - Lunge",
       "24 - Focus Energy",
       "27 - Uproar",
       "31 - Perish Song",
@@ -34432,10 +34434,8 @@
       "0 - Slash",
       "0 - Uproar",
       "1 - Bide",
-      "1 - Fake Out",
       "1 - Fury Cutter",
       "1 - Growl",
-      "1 - Heal Bell",
       "1 - Hone Claws",
       "1 - Lunge",
       "1 - Night Slash",
@@ -34450,13 +34450,15 @@
       "11 - Round",
       "15 - Helping Hand",
       "19 - Disarming Voice",
-      "22 - Bug Bite",
+      "22 - Karate Chop",
       "24 - Focus Energy",
+      "27 - Bug Bite",
       "27 - Fury Swipes",
       "31 - Perish Song",
       "35 - Bug Buzz",
       "35 - X-Scissor",
       "39 - Leaf Blade",
+      "41 - Fake Out",
       "44 - Hyper Voice",
       "44 - Leech Life",
       "44 - Quiver Dance",
@@ -34464,7 +34466,7 @@
       "48 - Fell Stinger",
       "48 - Alluring Voice",
       "55 - Sacred Sword",
-      "60 - Pin Missile",
+      "60 - Jitterbug",
       "66 - Boomburst",
       "73 - Relic Song",
       "80 - Megahorn"
@@ -35489,15 +35491,15 @@
       "33 - Air Slash",
       "33 - Fly",
       "37 - Agility",
-      "37 - Fell Stinger",
+      "37 - Jitterbug",
       "40 - Bug Buzz",
-      "40 - Quiver Dance",
-      "40 - Victory Dance",
       "44 - Wing Attack",
-      "50 - Razor Wind",
+      "47 - Razor Wind",
+      "50 - Quiver Dance",
+      "50 - Victory Dance",
       "55 - Lunge",
       "61 - Aeroblast",
-      "68 - Megahorn",
+      "68 - First Impression",
       "75 - Sky Attack"
     ],
     "Evolutions": [],
@@ -35969,7 +35971,7 @@
     },
     "Abilities": [
       "Chlorophyll",
-      "Chlorophyll",
+      "Solar Power",
       "Supersweet Syrup"
     ],
     "Types": [
@@ -36626,7 +36628,7 @@
       "26 - Agility",
       "31 - Spirit Break",
       "35 - Jump Kick",
-      "39 - Triple Axel",
+      "39 - Trop Kick",
       "43 - Play Rough",
       "47 - High Jump Kick",
       "53 - Mega Kick",
@@ -36666,7 +36668,7 @@
     },
     "Abilities": [
       "Cute Charm",
-      "Sap Sipper",
+      "Overcoat",
       "Limber"
     ],
     "Types": [
@@ -36728,11 +36730,11 @@
       "26 - Agility",
       "31 - Spirit Break",
       "35 - Jump Kick",
-      "39 - Triple Axel",
+      "39 - Trop Kick",
       "43 - Play Rough",
       "47 - High Jump Kick",
       "53 - Mega Kick",
-      "55 - Supercell Slam",
+      "55 - Triple Axel",
       "59 - Close Combat",
       "64 - Roughhousing",
       "69 - Double-Edge",
@@ -37751,7 +37753,7 @@
       "Speed": 30
     },
     "Abilities": [
-      "Natural Cure",
+      "Hospitality",
       "Serene Grace",
       "Friend Guard"
     ],
@@ -38433,7 +38435,7 @@
       "Speed": 95
     },
     "Abilities": [
-      "Mega Launcher",
+      "Steadfast",
       "Justified",
       "Inner Focus"
     ],
@@ -40318,7 +40320,7 @@
       "1 - Dragon Dance",
       "1 - Dragon Pulse",
       "1 - Dragon Tail",
-      "1 - Dream Eater",
+      "1 - Jitterbug",
       "1 - Feint",
       "1 - Fell Stinger",
       "1 - Foresight",
@@ -40616,7 +40618,7 @@
       "1 - Peck",
       "1 - Poison Jab",
       "1 - Sandstorm",
-      "1 - Slink",
+      "1 - Jitterbug",
       "1 - Spikes",
       "1 - Tailwind",
       "1 - Taunt",
@@ -44810,7 +44812,7 @@
       "65 - Aeroblast",
       "70 - Sky Attack",
       "78 - Brave Bird",
-      "85 - Hyper Beam"
+      "85 - Multi-Attack"
     ],
     "Evolutions": [],
     "MegaEvolutions": [],
@@ -46364,7 +46366,7 @@
       "41 - Sky Uppercut",
       "45 - Phantom Force",
       "50 - Upper Hand",
-      "54 - Triple Axel",
+      "54 - Trop Kick",
       "60 - Throat Chop",
       "65 - Mega Kick",
       "73 - Meteor Mash",
@@ -46444,7 +46446,7 @@
       "57 - First Impression",
       "64 - Leaf Storm",
       "64 - Wing Attack",
-      "69 - Power Whip",
+      "69 - Jitterbug",
       "77 - Solar Blade",
       "86 - Guillotine"
     ],
@@ -46531,7 +46533,7 @@
       "57 - First Impression",
       "64 - Leaf Storm",
       "64 - Wing Attack",
-      "69 - Power Whip",
+      "69 - Jitterbug",
       "77 - Solar Blade",
       "86 - Guillotine"
     ],
@@ -46632,7 +46634,7 @@
       "57 - First Impression",
       "64 - Leaf Storm",
       "64 - Wing Attack",
-      "69 - Power Whip",
+      "69 - Jitterbug",
       "77 - Solar Blade",
       "86 - Guillotine"
     ],
@@ -47097,9 +47099,9 @@
       "Speed": 40
     },
     "Abilities": [
-      "Own Tempo",
+      "Hospitality",
       "Leaf Guard",
-      "Chlorophyll"
+      "Healer"
     ],
     "Types": [
       "Grass"
@@ -47865,7 +47867,7 @@
       "49 - Foul Play",
       "49 - Whirlpool",
       "54 - Petal Dance",
-      "59 - Nasty Plot",
+      "59 - Strength Sap",
       "63 - Hydro Pump",
       "70 - Solar Beam",
       "79 - Leaf Storm",
@@ -48250,7 +48252,7 @@
     },
     "Abilities": [
       "Tinted Lens",
-      "Magic Guard",
+      "Wonder Skin",
       "Beast Boost"
     ],
     "Types": [
@@ -49253,7 +49255,7 @@
       "27 - Charm",
       "31 - Wake-Up Slap",
       "34 - Fake Out",
-      "37 - Sweet Tooth",
+      "37 - Tidy Up",
       "40 - Bullet Seed",
       "44 - Triple Axel",
       "49 - Hyper Voice",
@@ -49350,7 +49352,7 @@
       "31 - Spike Cannon",
       "31 - Wake-Up Slap",
       "34 - Fake Out",
-      "37 - Sweet Tooth",
+      "37 - Tidy Up",
       "40 - Bullet Seed",
       "44 - Triple Axel",
       "49 - Hyper Voice",
@@ -50970,7 +50972,7 @@
     "Abilities": [
       "Water Absorb",
       "Cursed Body",
-      "Damp"
+      "Torrent"
     ],
     "Types": [
       "Water",
@@ -51051,7 +51053,7 @@
     "Abilities": [
       "Water Absorb",
       "Cursed Body",
-      "Dry Skin"
+      "Torrent"
     ],
     "Types": [
       "Water",
@@ -53122,8 +53124,8 @@
     },
     "Abilities": [
       "No Guard",
-      "Speed Boost",
-      "Unburden"
+      "Wonder Skin",
+      "Speed Boost"
     ],
     "Types": [
       "Bug",
@@ -53987,7 +53989,7 @@
     },
     "Abilities": [
       "Fluffy",
-      "Sheer Force",
+      "Rivalry",
       "Hustle"
     ],
     "Types": [
@@ -54462,7 +54464,7 @@
       "24 - Dig",
       "24 - Hone Claws",
       "28 - Cutting Edge",
-      "31 - X-Scissor",
+      "31 - Skitter Smack",
       "36 - Crunch",
       "36 - Thunder Fang",
       "41 - Baton Pass",
@@ -54471,7 +54473,7 @@
       "46 - Iron Defense",
       "50 - Fell Stinger",
       "57 - Iron Head",
-      "61 - Skitter Smack",
+      "61 - Jitterbug",
       "68 - Guillotine",
       "68 - Rock Climb",
       "73 - First Impression",
@@ -54805,7 +54807,7 @@
       "53 - Bug Buzz",
       "59 - Aeroblast",
       "64 - Fire Blast",
-      "68 - Megahorn",
+      "68 - Jitterbug",
       "73 - Pollen Puff",
       "77 - Overheat",
       "81 - Hurricane",
@@ -54902,7 +54904,7 @@
       "53 - Bug Buzz",
       "59 - Aeroblast",
       "64 - Fire Blast",
-      "68 - Megahorn",
+      "68 - Jitterbug",
       "73 - Pollen Puff",
       "77 - Overheat",
       "81 - Hurricane",
@@ -57339,7 +57341,7 @@
       "1 - Safeguard",
       "1 - Swagger",
       "1 - Swift",
-      "1 - Tackle",
+      "1 - Jitterbug",
       "1 - Weather Ball",
       "1 - Wing Attack",
       "3 - String Shot",
@@ -57646,7 +57648,7 @@
     "Abilities": [
       "Flower Veil",
       "Symbiosis",
-      "Leaf Guard"
+      "Healer"
     ],
     "Types": [
       "Fairy"
@@ -57741,7 +57743,7 @@
     "Abilities": [
       "Flower Veil",
       "Symbiosis",
-      "Aroma Veil"
+      "Healer"
     ],
     "Types": [
       "Fairy"
@@ -58896,7 +58898,7 @@
       "35 - Draining Kiss",
       "42 - Belly Drum",
       "42 - Play Rough",
-      "47 - Syrup Bomb",
+      "47 - Recycle",
       "51 - Stored Power",
       "55 - Wish",
       "60 - Recycle",
@@ -68184,7 +68186,7 @@
       "43 - Magic Coat",
       "47 - Moonblast",
       "59 - Dream Eater",
-      "61 - Phantom Force",
+      "61 - Blood Moon",
       "67 - Wide Guard",
       "73 - Hyper Beam",
       "80 - Photon Geyser"
@@ -68410,7 +68412,7 @@
     "CatchRate": 255,
     "TMs": "Protect, Thunderbolt, Brick Break, Close Combat, Hidden Power, Foul Play, Blizzard, Ice Beam, Roost, Facade, Hyper Beam, Low Sweep, U-turn, Electroweb, Round, Icy Wind, Aura Sphere, Signal Beam, Drill Run, Tri Attack, Meditate, Mega Kick, Blaze Kick, Focus Blast, Aerial Ace, Mega Punch, Poison Jab, Trailblaze",
     "SpecialTutors": "",
-    "BeachTutors": "Snore, Echoed Voice, Substitute, Attract, False Swipe, Infestation, Embargo, Double Team, Tailwind, Sticky Web, Bug Bite, Agility, Rest, Sleep Talk, Skill Swap, Taunt, Toxic, Outrage, Sky Attack, Throat Chop, Superpower",
+    "BeachTutors": "Snore, Echoed Voice, Substitute, Attract, False Swipe, Infestation, Embargo, Double Team, Tailwind, Bug Bite, Agility, Rest, Sleep Talk, Skill Swap, Taunt, Toxic, Outrage, Sky Attack, Throat Chop, Superpower",
     "LevelUpMoves": [
       "1 - Double Kick",
       "1 - Leer",
@@ -68437,7 +68439,7 @@
       "50 - Axe Kick",
       "50 - Quiver Dance",
       "50 - Roost",
-      "50 - Sticky Web",
+      "50 - Jitterbug",
       "50 - Throat Chop",
       "50 - Twineedle",
       "50 - Vacuum Wave",
@@ -75528,7 +75530,7 @@
     "BeachTutors": "Snore, Echoed Voice, Heal Bell, Quash, Substitute, Attract, Helping Hand, Sunny Day, Rain Dance, Grassy Terrain, Psychic Terrain, Thief, Ally Switch, Embargo, Gravity, Double Team, Telekinesis, Confide, Grass Knot, Pain Split, Endeavor, Agility, Heal Block, Rest, Sleep Talk, Roar, Trick, Trick Room, Skill Swap, Toxic, Stomping Tantrum, Magic Coat, Psych Up, Hyper Voice, Superpower",
     "LevelUpMoves": [
       "0 - Psyshield Bash",
-      "1 - Captivate",
+      "1 - Trop Kick",
       "1 - Confuse Ray",
       "1 - Imprison",
       "1 - Leer",
@@ -84616,6 +84618,7 @@
       "33 - Drill Peck",
       "35 - Toxic Spikes",
       "39 - Fell Stinger",
+      "43 - Jitterbug",
       "45 - Cross Poison",
       "50 - Lunge",
       "56 - Agility",
@@ -87499,7 +87502,7 @@
     },
     "Abilities": [
       "Run Away",
-      "Sweet Veil",
+      "Psychic Surge",
       "Pastel Veil"
     ],
     "Types": [
@@ -87576,7 +87579,7 @@
     },
     "Abilities": [
       "Run Away",
-      "Pixilate",
+      "Psychic Surge",
       "Pastel Veil"
     ],
     "Types": [
@@ -87598,6 +87601,7 @@
     "BeachTutors": "Snore, Echoed Voice, Substitute, Attract, Helping Hand, Sunny Day, Rain Dance, Grassy Terrain, Misty Terrain, Psychic Terrain, Ally Switch, Gravity, Double Team, Tailwind, Telekinesis, Confide, Grass Knot, Pain Split, Agility, Heal Block, Rest, Sleep Talk, Trick, Trick Room, Skill Swap, Toxic, Stomping Tantrum, Magic Coat, Moonblast, Heat Wave, Hyper Voice, Overheat",
     "LevelUpMoves": [
       "0 - Horn Attack",
+      "0 - Expanding Force",
       "1 - Aromatic Mist",
       "1 - Bounce",
       "1 - Drill Peck",
@@ -87611,6 +87615,7 @@
       "1 - Moonlight",
       "1 - Quick Attack",
       "1 - Solar Blade",
+      "1 - Expanding Force",
       "4 - Aromatic Mist",
       "7 - Play Nice",
       "9 - Pummel",
@@ -89213,7 +89218,7 @@
     "Abilities": [
       "Intimidate",
       "Anger Point",
-      "Cud Chew"
+      "Reckless"
     ],
     "Types": [
       "Fighting"
@@ -89302,7 +89307,7 @@
     "Abilities": [
       "Intimidate",
       "Anger Point",
-      "Cud Chew"
+      "Blaze"
     ],
     "Types": [
       "Fighting",
@@ -89391,7 +89396,7 @@
     "Abilities": [
       "Intimidate",
       "Anger Point",
-      "Cud Chew"
+      "Torrent"
     ],
     "Types": [
       "Fighting",
@@ -95004,11 +95009,11 @@
       "26 - Agility",
       "31 - Spirit Break",
       "35 - Jump Kick",
-      "39 - Triple Axel",
+      "39 - Trop Kick",
       "43 - Play Rough",
       "47 - High Jump Kick",
       "53 - Mega Kick",
-      "55 - Supercell Slam",
+      "55 - Triple Axel",
       "59 - Close Combat",
       "64 - Roughhousing",
       "69 - Double-Edge",
@@ -95215,9 +95220,9 @@
       "Speed": 112
     },
     "Abilities": [
-      "Adaptability",
-      "Adaptability",
-      "Adaptability"
+      "Mega Launcher",
+      "Mega Launcher",
+      "Mega Launcher"
     ],
     "Types": [
       "Fighting",
@@ -99607,7 +99612,7 @@
     "Abilities": [
       "Flower Veil",
       "Symbiosis",
-      "Leaf Guard"
+      "Healer"
     ],
     "Types": [
       "Fairy"
@@ -99702,7 +99707,7 @@
     "Abilities": [
       "Flower Veil",
       "Symbiosis",
-      "Leaf Guard"
+      "Healer"
     ],
     "Types": [
       "Fairy"
@@ -99797,7 +99802,7 @@
     "Abilities": [
       "Flower Veil",
       "Symbiosis",
-      "Leaf Guard"
+      "Healer"
     ],
     "Types": [
       "Fairy"
@@ -99892,7 +99897,7 @@
     "Abilities": [
       "Flower Veil",
       "Symbiosis",
-      "Leaf Guard"
+      "Healer"
     ],
     "Types": [
       "Fairy"
@@ -99987,7 +99992,7 @@
     "Abilities": [
       "Flower Veil",
       "Symbiosis",
-      "Leaf Guard"
+      "Healer"
     ],
     "Types": [
       "Fairy",
@@ -103896,7 +103901,7 @@
       "1 - Rock Blast",
       "1 - Scary Face",
       "1 - Stealth Rock",
-      "1 - Tackle",
+      "1 - Blood Moon",
       "1 - Wide Guard",
       "4 - Odor Sleuth",
       "7 - Bite",
