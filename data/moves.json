@@ -3299,8 +3299,7 @@
       "protect": 1,
       "mirror": 1,
       "animateally": 1,
-      "dance": 1,
-      "f23": 1
+      "dance": 1
     },
     "Name": "Jitterbug",
     "Category": "Physical",
@@ -3311,7 +3310,7 @@
     "PP": 10,
     "ZMovePower": 150,
     "ZMoveEffect": "None",
-    "Desc": "A consecutive three-step attack that becomes more powerful with each successful hit. Each hit miss. miss. (20, 40, then 60 power, Dance, Kick) WIP",
+    "Desc": "A consecutive three-move dance that becomes more powerful with each successful hit. Each hit can miss. (20, 40, then 60 power, Dance) WIP",
     "Priority": 0
   },
   "thief": {
@@ -4661,7 +4660,8 @@
     "Num": 237,
     "Flags": {
       "protect": 1,
-      "mirror": 1
+      "mirror": 1,
+      "animateally": 1
     },
     "Name": "Hidden Power",
     "Category": "Special",
@@ -5728,8 +5728,8 @@
     "Target": "self",
     "PP": 10,
     "ZMovePower": 0,
-    "ZMoveEffect": "\u002B1 to all (except Accuracy or Evasiveness)",
-    "Desc": "The user\u2019s type is changed depending on its environment, such as at water\u2019s edge, in grass, or in a cave. (\u002B1 Prio) Z: \u002B1 All Stats",
+    "ZMoveEffect": "raises critical-hit ratio two stages",
+    "Desc": "The user\u2019s type is changed depending on its environment, such as at water\u2019s edge, in grass, or in a cave. (\u002B1 Prio) Z: \u002B2 Crit Stages",
     "Priority": 1
   },
   "tailglow": {
@@ -13979,7 +13979,7 @@
     "PP": 10,
     "ZMovePower": 155,
     "ZMoveEffect": "None",
-    "Desc": "Cloaking itself in high energy, the user slams into the target. The memory held determines the move\u2019s type.",
+    "Desc": "Cloaking itself in high energy, the user digs its claws into the target twice. The memory held determines the move\u2019s type.",
     "Priority": 0
   },
   "10000000voltthunderbolt": {
@@ -14381,7 +14381,7 @@
     },
     "Name": "Double Iron Bash",
     "Category": "Physical",
-    "BasePower": 50,
+    "BasePower": 55,
     "Accuracy": 100,
     "Type": "Steel",
     "Target": "normal",
@@ -15641,7 +15641,7 @@
     "BasePower": 0,
     "Accuracy": 101,
     "Type": "Fighting",
-    "Target": "allies",
+    "Target": "adjacentAlly",
     "PP": 10,
     "ZMovePower": 0,
     "ZMoveEffect": "\u002B2 Speed",
@@ -16228,7 +16228,7 @@
     "PP": 10,
     "ZMovePower": 0,
     "ZMoveEffect": "resets lowered stats of the user",
-    "Desc": "The user makes its skin as hard as an iron shield, sharply boosting its Defense stat.",
+    "Desc": "The user makes its skin as hard as an iron shield, boosting its Defense and Sp.Def stats.",
     "Priority": 0
   },
   "triplearrows": {
@@ -16984,7 +16984,7 @@
     "ZMovePower": 0,
     "ZMoveEffect": "\u002B1 Speed",
     "Desc": "The user summons a snowstorm lasting five turns. It damages all Pok\u00E9mon except Ice types.",
-    "Priority": 0
+    "Priority": 1
   },
   "pounce": {
     "Num": 884,
