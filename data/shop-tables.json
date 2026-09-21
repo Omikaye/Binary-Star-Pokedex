@@ -306,6 +306,10 @@
         {
           "item": "Everstone",
           "price": "$3,000"
+        },
+        {
+          "item": "Make Jaboca/Rowap",
+          "price": ""
         }
       ]
     },
@@ -480,7 +484,7 @@
           "price": "$12,000"
         },
         {
-          "item": "TM33 (Aqua Tail)",
+          "item": "TM05 (Brick Break)",
           "price": "$15,000"
         },
         {

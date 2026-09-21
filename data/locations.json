@@ -2975,6 +2975,11 @@
           "item": "Pikashunium Z Node",
           "quantity": "1",
           "obtain": "From the female Pikachu near the female Trial Guide after showing her a Pikachu in a cap"
+        },
+        {
+          "item": "Electrium Z Node",
+          "quantity": "1",
+          "obtain": "Prize for defeating Pikachu Fan"
         }
       ],
       "battles": []
@@ -3113,7 +3118,7 @@
           "obtain": "From a Magmar in the hallway on the second floor of Kiawe's house"
         },
         {
-          "item": "TM19 (Roost)",
+          "item": "TM88 (Aerial Ace)",
           "quantity": "1",
           "obtain": "South side of the area accessible from Route 6"
         },
