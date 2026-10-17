@@ -11,6 +11,7 @@ import ItemPokemonLinks from "../data/item-pokemon-links.json";
 import Trainers from "../data/trainers.json";
 import TrainerNotes from "../data/trainer-notes.json";
 import StaticEncounters from "../data/static-encounters.json";
+import StaticEncounterData from "../data/StaticEncounters.json";
 import LocationsJson from "../data/locations.json";
 import TrainerSprites from "../data/trainer-sprites.json";
 import TrainerSpriteLinks from "../data/trainer-sprite-links.json";
@@ -351,6 +352,7 @@ window.Trainers = trainerRecords
   });
 window.TrainerNotes = TrainerNotes;
 window.StaticEncounters = StaticEncounters;
+window.StaticEncounterData = StaticEncounterData;
 window.Locations = LocationsJson.locations || [];
 window.TrainerSprites = TrainerSprites;
 window.TrainerSpriteLinks = TrainerSpriteLinks;

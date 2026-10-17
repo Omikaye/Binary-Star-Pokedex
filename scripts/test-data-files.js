@@ -8,7 +8,8 @@ const dataFiles = [
   'locations.json',
   'battle-tags.json',
   'shop-tables.json',
-  'trainers.json'
+  'trainers.json',
+  'StaticEncounters.json'
 ];
 
 let allValid = true;
@@ -130,6 +131,28 @@ for (const file of dataFiles) {
         allValid = false;
       } else {
         console.log('  - ✓ Placeholder trainers are filtered out');
+      }
+    }
+
+    if (file === 'StaticEncounters.json') {
+      const categories = ['Gifts', 'Trades', 'Encounters'];
+      const invalidCategories = categories.filter(category => !Array.isArray(parsed[category]));
+      if (invalidCategories.length) {
+        console.error(`  - ✗ Missing static encounter categories: ${invalidCategories.join(', ')}`);
+        allValid = false;
+      } else {
+        console.log(`  - Contains ${categories.map(category => `${parsed[category].length} ${category.toLowerCase()}`).join(', ')}`);
+      }
+      const invalidEntries = categories.flatMap(category =>
+        Array.isArray(parsed[category]) ? parsed[category].filter(entry =>
+          !entry || !entry.Species || entry.Level == null
+        ) : []
+      );
+      if (invalidEntries.length) {
+        console.error(`  - ✗ ${invalidEntries.length} static encounter(s) missing species or level`);
+        allValid = false;
+      } else if (!invalidCategories.length) {
+        console.log('  - ✓ Static encounter species and level fields present');
       }
     }
     

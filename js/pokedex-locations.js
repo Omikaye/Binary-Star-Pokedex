@@ -129,6 +129,7 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
     buf += '<li><a class="button" href="' + Config.baseurl + 'mechanics/" data-target="push">Mechanics</a></li>';
     buf += '<li><a class="button cur" href="' + Config.baseurl + 'locations/" data-target="push">Locations</a></li>';
     buf += '<li><a class="button" href="' + Config.baseurl + 'trainers/" data-target="push">Trainers</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'statics/" data-target="push">Statics</a></li>';
     buf += '<li><a class="button nav-last" href="' + Config.baseurl + 'usage/" data-target="push">Usage</a></li>';
     buf += '</ul>';
     buf += '<div class="searchboxwrapper"><input class="textbox searchbox" type="search" name="q" value="" autocomplete="off" placeholder="Search locations by name, Pokémon, item, or trainer..." /></div>';
