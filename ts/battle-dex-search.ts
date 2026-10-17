@@ -304,7 +304,7 @@ class DexSearch {
   addFilter(entry: SearchFilter): boolean {
     if (!this.typedSearch) return false;
     let [type] = entry;
-    if (this.typedSearch.searchType === "pokemon" || this.typedSearch.searchType === "pokeedit") {
+    if (this.typedSearch.searchType === "pokemon" || this.typedSearch.searchType === "pokeedit" || this.typedSearch.searchType === "usage") {
       if (type === this.sortCol) this.sortCol = null;
       if (!["type", "move", "ability", "egggroup", "tier"].includes(type))
         return false;
@@ -382,6 +382,10 @@ class DexSearch {
 
     this.exactMatch = false;
     let searchType: SearchType | "" = this.typedSearch?.searchType || "";
+    // The usage search matches the same index entries as the pokemon search;
+    // its rows are converted to "usage" rows at the end.
+    const isUsageSearch = searchType === "usage";
+    if (isUsageSearch) searchType = "pokemon";
 
     // If searchType exists, we're searching mainly for results of that type.
     // We'll still search for results of other types, but those results
@@ -653,7 +657,13 @@ class DexSearch {
       bufs.push(this.instafilter(searchType, instafilter[0], instafilter[1]));
     }
 
-    this.results = Array.prototype.concat.apply(topbuf, bufs);
+    let allResults: SearchRow[] = Array.prototype.concat.apply(topbuf, bufs);
+    if (isUsageSearch) {
+      allResults = allResults.map((row) =>
+        row[0] === "pokemon" ? (["usage", ...row.slice(1)] as SearchRow) : row
+      );
+    }
+    this.results = allResults;
     return this.results ?? [];
   }
   private instafilter(
@@ -1268,14 +1278,14 @@ class BattleUsageSearch extends BattleTypedSearch<"usage"> {
     const sortOrder = reverseSort ? -1 : 1;
     if (sortCol === "wild") {
       return results.sort(([, id1], [, id2]) => {
-        const usage1 = (window as any).__pokemonUsageCache?.[id1 as ID]?.wild || 0;
-        const usage2 = (window as any).__pokemonUsageCache?.[id2 as ID]?.wild || 0;
+        const usage1 = (window as any).getPokemonUsage?.(id1)?.wild || 0;
+        const usage2 = (window as any).getPokemonUsage?.(id2)?.wild || 0;
         return (usage2 - usage1) * sortOrder;
       });
     } else if (sortCol === "trainer") {
       return results.sort(([, id1], [, id2]) => {
-        const usage1 = (window as any).__pokemonUsageCache?.[id1 as ID]?.trainer || 0;
-        const usage2 = (window as any).__pokemonUsageCache?.[id2 as ID]?.trainer || 0;
+        const usage1 = (window as any).getPokemonUsage?.(id1)?.trainer || 0;
+        const usage2 = (window as any).getPokemonUsage?.(id2)?.trainer || 0;
         return (usage2 - usage1) * sortOrder;
       });
     } else if (sortCol === "name") {

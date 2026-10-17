@@ -34,127 +34,9 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
     buf += '<img src="' + ResourcePrefix + 'sprites/gen5/' + id + '.png" alt="" width="96" height="96" class="sprite" />';
 
     // Get usage data
-    var usage = { wild: [], trainer: [] };
-    
-    // Helper function to get all pre-evolutions of a Pokemon
-    var getPreEvolutions = function(pokemonId) {
-      var prevos = [];
-      if (!window.BattleEvolutions) return prevos;
-      
-      // Search all Pokemon for those that evolve into our target
-      for (var evoId in window.BattleEvolutions) {
-        var evolutions = window.BattleEvolutions[evoId];
-        if (Array.isArray(evolutions)) {
-          for (var i = 0; i < evolutions.length; i++) {
-            var evo = evolutions[i];
-            if (toID(evo.target) === pokemonId) {
-              prevos.push(evoId);
-              // Recursively get pre-evolutions of the pre-evolution
-              var deeperPrevos = getPreEvolutions(evoId);
-              prevos = prevos.concat(deeperPrevos);
-            }
-          }
-        }
-      }
-      return prevos;
-    };
-    
-    // Get all pre-evolutions for this Pokemon
-    var preEvolutions = getPreEvolutions(id);
-    
-    // Collect wild encounters
-    if (window.Locations) {
-      for (var i = 0; i < window.Locations.length; i++) {
-        var loc = window.Locations[i];
-        if (loc.encounters && Array.isArray(loc.encounters)) {
-          for (var e = 0; e < loc.encounters.length; e++) {
-            var encounter = loc.encounters[e];
-            if (encounter.pokemon && Array.isArray(encounter.pokemon)) {
-              for (var j = 0; j < encounter.pokemon.length; j++) {
-                var mon = encounter.pokemon[j];
-                if (mon.name) {
-                  var dispName = typeof window.translateDisplayName === 'function' ? 
-                    window.translateDisplayName(mon.name) : mon.name;
-                  var monId = toID(dispName);
-                  
-                  // Direct match
-                  if (monId === id) {
-                    usage.wild.push({
-                      location: loc,
-                      encounter: encounter,
-                      pokemon: mon,
-                      type: 'normal'
-                    });
-                  }
-                  // Pre-evolution match (show evolved forms where pre-evos are found)
-                  else if (preEvolutions.indexOf(monId) !== -1) {
-                    usage.wild.push({
-                      location: loc,
-                      encounter: encounter,
-                      pokemon: mon,
-                      type: 'evolution',
-                      prevoName: dispName
-                    });
-                  }
-                }
-                // Check SOS encounters
-                if (mon.sos && Array.isArray(mon.sos)) {
-                  for (var s = 0; s < mon.sos.length; s++) {
-                    var sosName = mon.sos[s];
-                    var sosDispName = typeof window.translateDisplayName === 'function' ? 
-                      window.translateDisplayName(sosName) : sosName;
-                    var sosId = toID(sosDispName);
-                    
-                    // Direct SOS match
-                    if (sosId === id) {
-                      usage.wild.push({
-                        location: loc,
-                        encounter: encounter,
-                        pokemon: { name: sosName },
-                        type: 'sos',
-                        parentMon: mon
-                      });
-                    }
-                    // Pre-evolution SOS match
-                    else if (preEvolutions.indexOf(sosId) !== -1) {
-                      usage.wild.push({
-                        location: loc,
-                        encounter: encounter,
-                        pokemon: { name: sosName },
-                        type: 'sos-evolution',
-                        parentMon: mon,
-                        prevoName: sosDispName
-                      });
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+    var detail = window.getPokemonUsageDetail(id);
+    var usage = { wild: detail.wild, sos: detail.sos, prevo: detail.prevoWild, trainer: detail.trainer.slice() };
 
-    var normalizeTrainerMetaText = function(value) {
-      var out = (value || '').trim();
-      if (!out || /^\(?none\)?$/i.test(out)) return '';
-      return out;
-    };
-
-    // Helper function to resolve a trainer's metadata location to a known location object
-    var resolveTrainerLocation = function(trainer) {
-      if (!trainer) return null;
-      var trainerLocation = normalizeTrainerMetaText(trainer.location);
-      if (!trainerLocation) return null;
-      if (!window.Locations) return null;
-      var trainerLocationID = toID(trainerLocation);
-      for (var i = 0; i < window.Locations.length; i++) {
-        var loc = window.Locations[i];
-        if (trainerLocationID === toID(loc.id) || trainerLocationID === toID(loc.name)) return loc;
-      }
-      return null;
-    };
-    
     // Helper function to check if static encounter has a location
     var staticEncounterHasLocation = function(staticId) {
       if (!window.Locations) return false;
@@ -164,42 +46,12 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
       }
       return false;
     };
-    
-    // Collect trainer usage (only trainers with locations)
-    if (window.Trainers) {
-      for (var i = 0; i < window.Trainers.length; i++) {
-        var trainer = window.Trainers[i];
-        // Only include trainers that have a documented location
-        var trainerLoc = resolveTrainerLocation(trainer);
-        if (!trainerLoc) continue;
-        
-        if (trainer.team && Array.isArray(trainer.team)) {
-          for (var j = 0; j < trainer.team.length; j++) {
-            var teamMon = trainer.team[j];
-            if (teamMon.name) {
-              var dispName = typeof window.translateDisplayName === 'function' ? 
-                window.translateDisplayName(teamMon.name) : teamMon.name;
-              if (toID(dispName) === id) {
-                usage.trainer.push({
-                  trainer: trainer,
-                  location: trainerLoc,
-                  pokemon: teamMon,
-                  type: 'trainer'
-                });
-              }
-            }
-          }
-        }
-      }
-    }
-    
+
     // Collect static encounter usage (only static encounters with locations)
     if (window.StaticEncounters) {
       for (var staticId in window.StaticEncounters) {
         var staticEnc = window.StaticEncounters[staticId];
-        // Only include static encounters that have a documented location
         if (!staticEncounterHasLocation(staticEnc.id)) continue;
-        
         if (staticEnc.name) {
           var dispName = typeof window.translateDisplayName === 'function' ? 
             window.translateDisplayName(staticEnc.name) : staticEnc.name;
@@ -214,67 +66,40 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
       }
     }
 
-    // Display wild encounters
-    buf += '<h3>Wild Encounters (' + usage.wild.length + ')</h3>';
-    if (usage.wild.length > 0) {
-      buf += '<ul class="utilichart nokbd">';
-      for (var i = 0; i < usage.wild.length; i++) {
-        var wildData = usage.wild[i];
+    var renderWildList = function(list, emptyText, showPrevo) {
+      var out = '';
+      if (list.length === 0) return '<p style="color:#999;padding:10px">' + emptyText + '</p>';
+      out += '<ul class="utilichart nokbd">';
+      for (var i = 0; i < list.length; i++) {
+        var wildData = list[i];
         var loc = wildData.location;
         var encounter = wildData.encounter;
-        
-        var displayText = '';
-        
-        // Build level text
         var levelText = '';
         if (encounter.levelRange) {
-          if (encounter.levelRange.min === encounter.levelRange.max) {
-            levelText = 'Lvl ' + encounter.levelRange.min;
-          } else {
-            levelText = 'Lvl ' + encounter.levelRange.min + '-' + encounter.levelRange.max;
-          }
+          levelText = encounter.levelRange.min === encounter.levelRange.max ?
+            'Lvl ' + encounter.levelRange.min : 'Lvl ' + encounter.levelRange.min + '-' + encounter.levelRange.max;
         }
-        
-        // Build spot text
         var spotText = encounter.spot ? escapeHTML(encounter.spot) : '';
-        
-        // For evolution encounters, format as "PrevoName found at Location Lvl X-Y Spot"
-        if (wildData.type === 'evolution') {
-          displayText = escapeHTML(wildData.prevoName) + ' found at ' + escapeHTML(loc.name);
-          displayText += ' ' + levelText;
-          if (spotText) displayText += ' ' + spotText;
-        }
-        // For SOS evolution encounters
-        else if (wildData.type === 'sos-evolution') {
-          displayText = escapeHTML(wildData.prevoName) + ' found at ' + escapeHTML(loc.name);
-          displayText += ' ' + levelText;
-          if (spotText) displayText += ' ' + spotText;
-          displayText += ' (SOS)';
-        }
-        // For SOS encounters, format as "Location Lvl X-Y Spot (SOS)"
-        else if (wildData.type === 'sos') {
-          displayText = escapeHTML(loc.name);
-          displayText += ' ' + levelText;
-          if (spotText) displayText += ' ' + spotText;
-          displayText += ' (SOS)';
-        }
-        // For normal encounters
-        else {
-          displayText = escapeHTML(loc.name);
-          displayText += ' ' + levelText;
-          if (spotText) displayText += ' ' + spotText;
-        }
-        
-        buf += '<li class="result">';
-        buf += '<a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push">';
-        buf += '<span class="col namecol" style="width:100%">' + displayText + '</span>';
-        buf += '</a>';
-        buf += '</li>';
+        var displayText = '';
+        if (showPrevo) displayText += escapeHTML(wildData.prevoName) + ' found at ';
+        displayText += escapeHTML(loc.name) + ' ' + levelText;
+        if (spotText) displayText += ' ' + spotText;
+        if (wildData.type === 'sos') displayText += ' (SOS)';
+        out += '<li class="result"><a href="' + Config.baseurl + 'locations/' + loc.id + '" data-target="push">';
+        out += '<span class="col namecol" style="width:100%">' + displayText + '</span></a></li>';
       }
-      buf += '</ul>';
-    } else {
-      buf += '<p style="color:#999;padding:10px">No wild encounters found.</p>';
-    }
+      return out + '</ul>';
+    };
+
+    // Display wild encounters
+    buf += '<h3>Wild Encounters (' + usage.wild.length + ')</h3>';
+    buf += renderWildList(usage.wild, 'No wild encounters found.', false);
+
+    buf += '<h3>S.O.S. Encounters (' + usage.sos.length + ')</h3>';
+    buf += renderWildList(usage.sos, 'No S.O.S. encounters found.', false);
+
+    buf += '<h3>Pre-evolution Usage (' + usage.prevo.length + ')</h3>';
+    buf += renderWildList(usage.prevo, 'No pre-evolutions found in the wild.', true);
 
     // Display trainer usage
     buf += '<h3>Trainer Teams (' + usage.trainer.length + ')</h3>';
@@ -312,6 +137,7 @@ window.PokedexUsagePanel = PokedexResultPanel.extend({
           
           var trainerLabel = escapeHTML(trainer.name);
           if (trainerLoc) trainerLabel += ' <span style="color:#777">(' + escapeHTML(trainerLoc.name) + ')</span>';
+          if (trainerData.megaOf) trainerLabel += ' <small style="color:#777">[' + escapeHTML(trainerData.megaOf) + ' + Mega Stone]</small>';
           buf += '<span class="col namecol" style="width:350px">' + trainerLabel + '</span> ';
           
           var levelText = mon.level ? 'Lv. ' + mon.level : '';
