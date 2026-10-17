@@ -9,7 +9,8 @@ const dataFiles = [
   'battle-tags.json',
   'shop-tables.json',
   'trainers.json',
-  'StaticEncounters.json'
+  'StaticEncounters.json',
+  'location_export.json'
 ];
 
 let allValid = true;
@@ -153,6 +154,34 @@ for (const file of dataFiles) {
         allValid = false;
       } else if (!invalidCategories.length) {
         console.log('  - ✓ Static encounter species and level fields present');
+      }
+    }
+
+    if (file === 'location_export.json') {
+      const requiredArrays = ['Locations', 'Shops'];
+      const missingArrays = requiredArrays.filter(field => !Array.isArray(parsed[field]));
+      if (missingArrays.length) {
+        console.error(`  - ✗ Missing location export arrays: ${missingArrays.join(', ')}`);
+        allValid = false;
+      } else {
+        console.log(`  - Contains ${parsed.Locations.length} exported location(s)`);
+      }
+      const invalidLocations = (Array.isArray(parsed.Locations) ? parsed.Locations : []).filter(location =>
+        !location || !location.LocationName ||
+        !Array.isArray(location.Shops) ||
+        !Array.isArray(location.Trainers) ||
+        !Array.isArray(location.WildEncounters) ||
+        !Array.isArray(location.Items) ||
+        !Array.isArray(location.Statics) ||
+        location.Trainers.some(trainer => trainer.TrainerId == null || trainer.Route == null) ||
+        location.WildEncounters.some(encounter => !encounter.Area || !encounter.Encounters) ||
+        location.Statics.some(entry => !entry.Type || entry.Index == null || !entry.Species)
+      );
+      if (invalidLocations.length) {
+        console.error(`  - ✗ ${invalidLocations.length} location(s) are missing required fields or arrays`);
+        allValid = false;
+      } else if (!missingArrays.length) {
+        console.log('  - ✓ Exported location names, trainers, encounters, items, and statics present');
       }
     }
     

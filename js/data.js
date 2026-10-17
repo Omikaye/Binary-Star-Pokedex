@@ -12,7 +12,7 @@ import Trainers from "../data/trainers.json";
 import TrainerNotes from "../data/trainer-notes.json";
 import StaticEncounters from "../data/static-encounters.json";
 import StaticEncounterData from "../data/StaticEncounters.json";
-import LocationsJson from "../data/locations.json";
+import LocationExport from "../data/location_export.json";
 import TrainerSprites from "../data/trainer-sprites.json";
 import TrainerSpriteLinks from "../data/trainer-sprite-links.json";
 import BattleTags from "../data/battle-tags.json";
@@ -353,7 +353,87 @@ window.Trainers = trainerRecords
 window.TrainerNotes = TrainerNotes;
 window.StaticEncounters = StaticEncounters;
 window.StaticEncounterData = StaticEncounterData;
-window.Locations = LocationsJson.locations || [];
+const parseExportEncounterLevels = levels => {
+  const matches = String(levels || '').match(/(\d+)\s*-\s*(\d+)/);
+  return matches ? { min: Number(matches[1]), max: Number(matches[2]) } : { min: 1, max: 1 };
+};
+const splitExportEncounterPokemon = value => {
+  const entries = [];
+  let current = '';
+  let parentheses = 0;
+  for (const character of String(value || '')) {
+    if (character === ',' && !parentheses) {
+      if (current.trim()) entries.push(current.trim());
+      current = '';
+      continue;
+    }
+    if (character === '(') parentheses++;
+    if (character === ')') parentheses = Math.max(0, parentheses - 1);
+    current += character;
+  }
+  if (current.trim()) entries.push(current.trim());
+  return entries.map(entry => {
+    const sosMatch = entry.match(/^(.*?)\s*\(([^()]*)\)\s*$/);
+    return {
+      name: (sosMatch ? sosMatch[1] : entry).trim(),
+      chance: null,
+      sos: sosMatch ? sosMatch[2].split(/\s*,\s*/).filter(Boolean) : [],
+    };
+  }).filter(pokemon => pokemon.name);
+};
+window.Locations = (LocationExport.Locations || []).map(location => {
+  const statics = location.Statics || [];
+  const giftTrades = statics.filter(entry => /^(gifts|trades)$/i.test(entry.Type || '')).map(entry => ({
+    name: entry.Species || '',
+    description: entry.Description || '',
+    type: entry.Type || '',
+  }));
+  const staticBattles = statics.filter(entry => !/^(gifts|trades)$/i.test(entry.Type || '')).map(entry => {
+    const tags = String(entry.Tags || '').split(/\s*,\s*/).filter(Boolean);
+    return {
+      id: 'S' + String(entry.Index).padStart(3, '0'),
+      tag: tags.includes('Capturable') ? 'Capturable' : (tags[0] || 'Static'),
+      tags,
+      notes: entry.Description || '',
+      name: entry.Species || '',
+    };
+  });
+  return {
+    id: _toIDRaw(location.LocationName),
+    name: location.LocationName || '',
+    notes: location.Description || '',
+    weather: location.Weather || '',
+    encounters: (location.WildEncounters || []).map(encounter => {
+      const encounterSections = String(encounter.Encounters || '').split(/\s*\|\s*/);
+      const weatherSosMatch = (encounterSections[1] || '').match(/Weather\s+S\.O\.S:\s*(.*)/i);
+      return {
+        spot: encounter.Area || '',
+        levelRange: parseExportEncounterLevels(encounter.Levels),
+        pokemon: splitExportEncounterPokemon(encounterSections[0]),
+        weatherSos: weatherSosMatch ? splitExportEncounterPokemon(weatherSosMatch[1]).map(pokemon => pokemon.name) : [],
+      };
+    }),
+    giftsTrades: giftTrades,
+    staticPokemon: staticBattles.filter(battle => battle.tag === 'Capturable').map(battle => battle.id),
+    trainerRefs: (location.Trainers || []).map(trainer => ({
+      id: String(Number(trainer.TrainerId)).padStart(3, '0'),
+      name: trainer.Trainer || '',
+      routeNumber: trainer.Route,
+      desc: trainer.Description || '',
+      tags: trainer.Tags || '',
+    })),
+    trainers: [],
+    bossTrainers: [],
+    shops: [],
+    shopTables: location.Shops || [],
+    items: (location.Items || []).map(item => ({
+      item: item.Item || '',
+      quantity: item.Quantity || 1,
+      obtain: item.Method || '',
+    })),
+    battles: staticBattles,
+  };
+});
 window.TrainerSprites = TrainerSprites;
 window.TrainerSpriteLinks = TrainerSpriteLinks;
 window.BattleEvolutions = BattleEvolutions;
