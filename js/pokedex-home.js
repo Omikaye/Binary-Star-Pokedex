@@ -13,6 +13,7 @@ window.PokedexHomePanel = PokedexResultPanel.extend({
     buf += '<li><a class="button" href="' + Config.baseurl + 'mechanics/" data-target="push">Mechanics</a></li>';
     buf += '<li><a class="button" href="' + Config.baseurl + 'locations/" data-target="push">Locations</a></li>';
     buf += '<li><a class="button" href="' + Config.baseurl + 'trainers/" data-target="push">Trainers</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'statics/" data-target="push">Statics</a></li>';
     buf += '<li><a class="button nav-last" href="' + Config.baseurl + 'usage/" data-target="push">Usage</a></li>';
     buf += '</ul>';
     buf += '</form>';
@@ -31,6 +32,7 @@ window.PokedexHomePanel = PokedexResultPanel.extend({
     buf += '<li>Complete Pokémon data with stats, abilities, moves, and learnsets</li>';
     buf += '<li>Move and ability details with distribution lists</li>';
     buf += '<li>Trainer rosters with full team details</li>';
+    buf += '<li>Gift, trade, and static encounter details</li>';
     buf += '<li>Location guides with encounter tables, items, shops, and trainers</li>';
     buf += '<li>Item database with descriptions and Pokémon associations</li>';
     buf += '</ul>';
@@ -40,6 +42,7 @@ window.PokedexHomePanel = PokedexResultPanel.extend({
     buf += '<a href="' + Config.baseurl + 'dex" class="button" style="padding:12px 20px;background:#3572b0;color:white;text-decoration:none;border-radius:4px">Browse Pokédex</a>';
     buf += '<a href="' + Config.baseurl + 'locations/" class="button" style="padding:12px 20px;background:#68a968;color:white;text-decoration:none;border-radius:4px">Explore Locations</a>';
     buf += '<a href="' + Config.baseurl + 'trainers/" class="button" style="padding:12px 20px;background:#c9515c;color:white;text-decoration:none;border-radius:4px">View Trainers</a>';
+    buf += '<a href="' + Config.baseurl + 'statics/" class="button" style="padding:12px 20px;background:#8064a2;color:white;text-decoration:none;border-radius:4px">View Statics</a>';
     buf += '<a href="' + Config.baseurl + 'moves/" class="button" style="padding:12px 20px;background:#aa9038;color:white;text-decoration:none;border-radius:4px">Search Moves</a>';
     buf += '</div>';
 

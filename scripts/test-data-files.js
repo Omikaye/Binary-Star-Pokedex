@@ -8,7 +8,9 @@ const dataFiles = [
   'locations.json',
   'battle-tags.json',
   'shop-tables.json',
-  'trainers.json'
+  'trainers.json',
+  'StaticEncounters.json',
+  'location_export.json'
 ];
 
 let allValid = true;
@@ -73,34 +75,113 @@ for (const file of dataFiles) {
     }
 
     if (file === 'trainers.json') {
-      const trainers = Array.isArray(parsed) ? parsed : [];
+      const updatedFormat = !Array.isArray(parsed) && Array.isArray(parsed.Trainers);
+      const trainers = Array.isArray(parsed) ? parsed : (parsed.Trainers || []);
       console.log(`  - Contains ${trainers.length} trainer record(s)`);
-      const missingMetadata = trainers.filter(trainer =>
-        !Object.prototype.hasOwnProperty.call(trainer, 'location') ||
-        !Object.prototype.hasOwnProperty.call(trainer, 'desc') ||
-        !Object.prototype.hasOwnProperty.call(trainer, 'routeNumber') ||
-        !Object.prototype.hasOwnProperty.call(trainer, 'prizeMoney')
-      );
-      if (missingMetadata.length) {
-        console.error(`  - ✗ ${missingMetadata.length} trainer(s) missing required metadata fields`);
-        allValid = false;
+      if (updatedFormat) {
+        const requiredTrainerFields = ['TrainerName', 'TrainerClass', 'TrainerID', 'Money', 'AIFlags', 'Pokemon'];
+        const invalidTrainers = trainers.filter(trainer =>
+          requiredTrainerFields.some(field => !Object.prototype.hasOwnProperty.call(trainer, field)) ||
+          !Array.isArray(trainer.AIFlags) ||
+          !Array.isArray(trainer.Pokemon)
+        );
+        if (invalidTrainers.length) {
+          console.error(`  - ✗ ${invalidTrainers.length} trainer(s) missing required fields or arrays`);
+          allValid = false;
+        } else {
+          console.log('  - ✓ Updated trainer fields (name, class, ID, money, AI flags, Pokémon) present');
+        }
+
+        const requiredPokemonFields = ['Species', 'Form', 'Level', 'HPType', 'IsShiny', 'IVs', 'Moves'];
+        const invalidPokemon = trainers.flatMap(trainer => Array.isArray(trainer.Pokemon) ? trainer.Pokemon : []).filter(pokemon =>
+          requiredPokemonFields.some(field => !Object.prototype.hasOwnProperty.call(pokemon, field))
+        );
+        if (invalidPokemon.length) {
+          console.error(`  - ✗ ${invalidPokemon.length} Pokémon missing required fields`);
+          allValid = false;
+        } else {
+          console.log('  - ✓ Updated Pokémon fields (species, form, level, Hidden Power type, shiny, IVs, moves) present');
+        }
       } else {
-        console.log('  - ✓ Trainer metadata fields (location, desc, routeNumber, prizeMoney) present');
+        const missingMetadata = trainers.filter(trainer =>
+          !Object.prototype.hasOwnProperty.call(trainer, 'location') ||
+          !Object.prototype.hasOwnProperty.call(trainer, 'desc') ||
+          !Object.prototype.hasOwnProperty.call(trainer, 'routeNumber') ||
+          !Object.prototype.hasOwnProperty.call(trainer, 'prizeMoney')
+        );
+        if (missingMetadata.length) {
+          console.error(`  - ✗ ${missingMetadata.length} trainer(s) missing required metadata fields`);
+          allValid = false;
+        } else {
+          console.log('  - ✓ Trainer metadata fields (location, desc, routeNumber, prizeMoney) present');
+        }
       }
 
       const placeholderTrainers = trainers.filter(trainer => {
-        if (!trainer || !Array.isArray(trainer.team) || trainer.team.length !== 1) return false;
-        const mon = trainer.team[0];
+        if (!trainer) return false;
+        const team = updatedFormat ? trainer.Pokemon : trainer.team;
+        if (!Array.isArray(team) || team.length !== 1) return false;
+        const mon = team[0];
         return mon &&
-          String(mon.name || '').toLowerCase() === 'yungoos' &&
-          Number(mon.level || 0) === 5 &&
-          (!Array.isArray(mon.moves) || mon.moves.length === 0);
+          String(updatedFormat ? mon.Species : mon.name || '').toLowerCase() === 'yungoos' &&
+          Number((updatedFormat ? mon.Level : mon.level) || 0) === 5 &&
+          (!Array.isArray(updatedFormat ? mon.Moves : mon.moves) || (updatedFormat ? mon.Moves : mon.moves).length === 0);
       });
       if (placeholderTrainers.length) {
         console.error(`  - ✗ ${placeholderTrainers.length} placeholder trainer(s) were not filtered`);
         allValid = false;
       } else {
         console.log('  - ✓ Placeholder trainers are filtered out');
+      }
+    }
+
+    if (file === 'StaticEncounters.json') {
+      const categories = ['Gifts', 'Trades', 'Encounters'];
+      const invalidCategories = categories.filter(category => !Array.isArray(parsed[category]));
+      if (invalidCategories.length) {
+        console.error(`  - ✗ Missing static encounter categories: ${invalidCategories.join(', ')}`);
+        allValid = false;
+      } else {
+        console.log(`  - Contains ${categories.map(category => `${parsed[category].length} ${category.toLowerCase()}`).join(', ')}`);
+      }
+      const invalidEntries = categories.flatMap(category =>
+        Array.isArray(parsed[category]) ? parsed[category].filter(entry =>
+          !entry || !entry.Species || entry.Level == null
+        ) : []
+      );
+      if (invalidEntries.length) {
+        console.error(`  - ✗ ${invalidEntries.length} static encounter(s) missing species or level`);
+        allValid = false;
+      } else if (!invalidCategories.length) {
+        console.log('  - ✓ Static encounter species and level fields present');
+      }
+    }
+
+    if (file === 'location_export.json') {
+      const requiredArrays = ['Locations', 'Shops'];
+      const missingArrays = requiredArrays.filter(field => !Array.isArray(parsed[field]));
+      if (missingArrays.length) {
+        console.error(`  - ✗ Missing location export arrays: ${missingArrays.join(', ')}`);
+        allValid = false;
+      } else {
+        console.log(`  - Contains ${parsed.Locations.length} exported location(s)`);
+      }
+      const invalidLocations = (Array.isArray(parsed.Locations) ? parsed.Locations : []).filter(location =>
+        !location || !location.LocationName ||
+        !Array.isArray(location.Shops) ||
+        !Array.isArray(location.Trainers) ||
+        !Array.isArray(location.WildEncounters) ||
+        !Array.isArray(location.Items) ||
+        !Array.isArray(location.Statics) ||
+        location.Trainers.some(trainer => trainer.TrainerId == null || trainer.Route == null) ||
+        location.WildEncounters.some(encounter => !encounter.Area || !encounter.Encounters) ||
+        location.Statics.some(entry => !entry.Type || entry.Index == null || !entry.Species)
+      );
+      if (invalidLocations.length) {
+        console.error(`  - ✗ ${invalidLocations.length} location(s) are missing required fields or arrays`);
+        allValid = false;
+      } else if (!missingArrays.length) {
+        console.log('  - ✓ Exported location names, trainers, encounters, items, and statics present');
       }
     }
     

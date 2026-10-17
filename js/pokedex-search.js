@@ -28,6 +28,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		if (fragment === 'usage') fragment = 'usage/';
 		if (fragment === 'mechanics') fragment = 'mechanics/';
 		if (fragment === 'pokeedit') fragment = 'pokeedit/';
+		if (fragment === 'statics') fragment = 'statics/';
 		if (questionIndex >= 0) fragment = fragment.slice(0, questionIndex);
 		var buf = '<div class="pfx-body"><form class="pokedex">';
 		buf += '<h1><a href="'+Config.baseurl+'" data-target="replace">Pok&eacute;dex</a></h1>';
@@ -39,6 +40,7 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 		buf += '<li><button class="button' + (fragment === 'mechanics/' ? ' cur' : '') + '" value="'+Config.baseurl+'mechanics/">Mechanics</button></li>';
 		buf += '<li><button class="button' + (fragment === 'locations/' ? ' cur' : '') + '" value="'+Config.baseurl+'locations/">Locations</button></li>';
 		buf += '<li><button class="button' + (fragment === 'trainers/' ? ' cur' : '') + '" value="'+Config.baseurl+'trainers/">Trainers</button></li>';
+		buf += '<li><button class="button' + (fragment === 'statics/' ? ' cur' : '') + '" value="'+Config.baseurl+'statics/">Statics</button></li>';
 		buf += '<li><button class="button nav-last' + (fragment === 'usage/' ? ' cur' : '') + '" value="'+Config.baseurl+'usage/">Usage</button></li>';
 		buf += '<li style="display:none"><button class="button' + (fragment === 'pokeedit/' ? ' cur' : '') + '" value="'+Config.baseurl+'pokeedit/">Pok&eacute;edit</button></li></ul>';
 		buf += '<div class="searchboxwrapper"><input class="textbox searchbox" type="search" name="q" value="' + escapeHTML(this.$('.searchbox').val() || '') + '" autocomplete="off" autofocus placeholder="Search Pok&eacute;mon, moves, abilities, items, types, or more" /></div>';
@@ -105,6 +107,11 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 				this.$('.buttonbar').remove();
 				this.trainersMode = true;
 				this.renderTrainers('');
+			} else if (fragment === 'statics/') {
+				$searchbox.attr('placeholder', 'Search gifts, trades, and encounters');
+				this.$('.buttonbar').remove();
+				this.staticsMode = true;
+				this.renderStatics('');
 			} else if (fragment === 'usage/') {
 				// Usage tracking
 				search.setType('usage');
@@ -325,6 +332,10 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 			this.renderTrainers(val || '');
 			return;
 		}
+		if (this.staticsMode) {
+			this.renderStatics(val || '');
+			return;
+		}
 		if (!this.search) return;
 		if (!val) val = '';
 		this.updateFilters();
@@ -338,10 +349,9 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 			this.activeLink = null;
 		}
 	},
-		renderTrainers: function(q) {
+	renderTrainers: function(q) {
 		q = (q || '').toLowerCase().trim();
 		const list = (window.Trainers || []);
-		const staticEncounters = Object.values(window.StaticEncounters || {});
 		let buf = '<ul class="utilichart nokbd">';
 
 		// Helper: check if a team member has an illegal ability or move
@@ -403,20 +413,6 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 				'</li>';
 		};
 
-		// Helper: render a single static encounter list item
-		const renderStaticItem = function(s) {
-			const translatedName = window.translateDisplayName ? window.translateDisplayName(s.name) : s.name;
-			const monID = toID(translatedName);
-			return '<li class="result">' +
-				'<a href="' + Config.baseurl + 'encounters/' + s.id + '" data-target="push">' +
-					'<span class="col namecol">[' + s.id + '] ' + escapeHTML(translatedName) + ' (Lv. ' + s.level + ')</span>' +
-					'<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px">' +
-						'<span class="picon" style="' + getPokemonIcon(monID) + ';display:inline-block;vertical-align:middle"></span>' +
-					'</span>' +
-				'</a>' +
-				'</li>';
-		};
-
 		if (q) {
 			// Detect if the query matches any Pokémon name (partial)
 			const matchingPokemonIds = new Set();
@@ -435,43 +431,111 @@ window.PokedexSearchPanel = Panels.Panel.extend({
 						return matchingPokemonIds.has(toID(disp));
 					})
 				);
-				const staticMatches = staticEncounters.filter(s => {
-					const translatedName = window.translateDisplayName ? window.translateDisplayName(s.name) : s.name;
-					return matchingPokemonIds.has(toID(translatedName));
-				});
-
 				if (trainerMatches.length > 0) {
 					buf += '<li class="result"><h3>Owned by Trainers</h3></li>';
 					for (const t of trainerMatches) buf += renderTrainerItem(t);
 				}
-				if (staticMatches.length > 0) {
-					buf += '<li class="result"><h3>Static Encounters</h3></li>';
-					for (const s of staticMatches) buf += renderStaticItem(s);
-				}
-				if (trainerMatches.length === 0 && staticMatches.length === 0) {
-					buf += '<li class="result"><p class="search-no-results">No trainers or static encounters found for that Pokémon.</p></li>';
+				if (trainerMatches.length === 0) {
+					buf += '<li class="result"><p class="search-no-results">No trainers found for that Pokémon.</p></li>';
 				}
 			} else {
-				// Normal search: filter trainers and statics by name/ID
+				// Normal search: filter trainers by name/ID
 				for (let i = 0; i < list.length; i++) {
 					const t = list[i];
 					if (('[' + t.id + '] ' + t.name).toLowerCase().indexOf(q) === -1) continue;
 					buf += renderTrainerItem(t);
 				}
-				for (let i = 0; i < staticEncounters.length; i++) {
-					const s = staticEncounters[i];
-					const translatedName = window.translateDisplayName ? window.translateDisplayName(s.name) : s.name;
-					if (('[' + s.id + '] ' + translatedName).toLowerCase().indexOf(q) === -1) continue;
-					buf += renderStaticItem(s);
-				}
 			}
 		} else {
-			// No query: render all trainers then all statics
+			// No query: render all trainers
 			for (let i = 0; i < list.length; i++) buf += renderTrainerItem(list[i]);
-			for (let i = 0; i < staticEncounters.length; i++) buf += renderStaticItem(staticEncounters[i]);
 		}
 
 		buf += '</ul>';
+		this.$('.results').html(buf);
+		this.$('.pokedex').addClass('aboveresults');
+		this.activeLink = this.$('.results a')[0] || null;
+		if (this.activeLink) $(this.activeLink).addClass('active');
+	},
+	renderStatics: function(q) {
+		q = (q || '').toLowerCase().trim();
+		const categories = window.StaticEncounterData || {};
+		const natureEffects = {
+			Adamant: ['Atk', 'SpA'], Modest: ['SpA', 'Atk'], Jolly: ['Spe', 'SpA'], Timid: ['Spe', 'Atk'],
+			Impish: ['Def', 'SpA'], Bold: ['Def', 'Atk'], Careful: ['SpD', 'SpA'], Calm: ['SpD', 'Atk'],
+			Naughty: ['Atk', 'SpD'], Lonely: ['Atk', 'Def'], Hasty: ['Spe', 'Def'], Naive: ['Spe', 'SpD'],
+			Gentle: ['SpD', 'Def'], Lax: ['Def', 'SpD'], Rash: ['SpA', 'SpD'], Mild: ['SpA', 'Def'],
+			Quiet: ['SpA', 'Spe'], Brave: ['Atk', 'Spe'], Relaxed: ['Def', 'Spe'], Sassy: ['SpD', 'Spe'],
+			Bashful: null, Docile: null, Serious: null, Hardy: null, Quirky: null
+		};
+		const renderNature = function(nature) {
+			if (!nature) return 'Nature: Random';
+			const effects = natureEffects[nature];
+			const effectText = effects
+				? ' (<span style="color:#1f9d3a">' + effects[0] + '&#8593;</span> / <span style="color:#c22e28">' + effects[1] + '&#8595;</span>)'
+				: (Object.prototype.hasOwnProperty.call(natureEffects, nature) ? ' (Neutral)' : '');
+			return 'Nature: ' + escapeHTML(nature) + effectText;
+		};
+		const renderItem = function(item) {
+			if (!item) return '';
+			const itemID = toID(item);
+			const itemName = BattleItems[itemID]?.name || item;
+			return '<div style="display:flex;align-items:center;gap:4px"><span class="itemicon" style="' + getItemIcon(itemID) + ';width:32px;height:32px;display:inline-block"></span><a href="' + Config.baseurl + 'items/' + itemID + '" data-target="push">' + escapeHTML(itemName) + '</a></div>';
+		};
+		const renderStats = function(label, stats) {
+			if (!stats || !Object.keys(stats).length) return '';
+			const values = Object.entries(stats).map(function(entry) {
+				return escapeHTML(entry[0].replace(/ (IV|EV)$/, '') + ': ' + entry[1]);
+			});
+			return '<div><strong>' + label + ':</strong> ' + values.join(' / ') + '</div>';
+		};
+		const renderMove = function(moveName) {
+			if (!moveName) return '';
+			const moveID = toID(moveName);
+			const move = BattleMovedex[moveID];
+			return '<a href="' + Config.baseurl + 'moves/' + moveID + '" data-target="push">' + escapeHTML(move ? move.name : moveName) + '</a>';
+		};
+		const sections = [
+			['Gifts', 'Gift'],
+			['Trades', 'Trade'],
+			['Encounters', 'Encounter']
+		];
+		let buf = '';
+		for (const [key, title] of sections) {
+			const entries = Array.isArray(categories[key]) ? categories[key] : [];
+			const filtered = entries.filter(function(entry) {
+				return !q || JSON.stringify(entry).toLowerCase().includes(q);
+			});
+			buf += '<h2 style="margin:16px 0 8px">' + title + 's (' + filtered.length + ')</h2>';
+			if (!filtered.length) {
+				buf += '<p class="search-no-results">No ' + title.toLowerCase() + 's found.</p>';
+				continue;
+			}
+			for (const entry of filtered) {
+				const rawName = entry.Species || '';
+				const displayName = window.translateDisplayName ? window.translateDisplayName(rawName) : rawName;
+				const pokemonID = toID(displayName);
+				const pokemon = BattlePokedex[pokemonID];
+				const pokemonName = pokemon ? pokemon.name : displayName;
+				buf += '<div class="infobox" style="display:flex;gap:12px;align-items:flex-start;margin-bottom:8px;padding:10px">';
+				const spriteFallback = (pokemonName || '').toLowerCase().replace(/[^a-z0-9-]/g, '');
+				buf += '<a href="' + Config.baseurl + 'pokemon/' + pokemonID + '" data-target="push"><img src="' + ResourcePrefix + 'sprites/gen5/' + pokemonID + '.png" alt="' + escapeHTML(pokemonName) + '" width="96" height="96" class="sprite" onerror="if(!this._tried){this._tried=true;this.src=\'' + ResourcePrefix + 'sprites/gen5/' + spriteFallback + '.png\';}" /></a>';
+				buf += '<div style="display:flex;flex-direction:column;gap:5px;min-width:0"><strong><a href="' + Config.baseurl + 'pokemon/' + pokemonID + '" data-target="push">' + escapeHTML(pokemonName) + '</a> (Lv. ' + escapeHTML(String(entry.Level ?? '—')) + ')</strong>';
+				if (entry.Gender) buf += '<div>Gender: ' + escapeHTML(entry.Gender) + '</div>';
+				if (entry.Ability) buf += '<div>Ability: ' + escapeHTML(entry.Ability) + '</div>';
+				if (entry.HeldItem) buf += renderItem(entry.HeldItem);
+				buf += '<div>' + renderNature(entry.Nature) + '</div>';
+				if (key === 'Gifts' && entry.GiftMove) buf += '<div>Gift Move: ' + renderMove(entry.GiftMove) + '</div>';
+				if (key === 'Gifts' && entry.IsEgg) buf += '<div>This Pokémon is given as an egg.</div>';
+				if (key === 'Trades' && entry.RequestedSpecies) buf += '<div>Requested Pokémon: ' + escapeHTML(entry.RequestedSpecies) + '</div>';
+				if (key === 'Encounters' && entry.Aura && entry.Aura !== '(None)') buf += '<div>Aura: ' + escapeHTML(entry.Aura) + '</div>';
+				if (key === 'Encounters' && entry.SOSAllies && entry.SOSAllies.length) buf += '<div>SOS Allies: ' + escapeHTML(entry.SOSAllies.join(', ')) + '</div>';
+				if (key === 'Encounters' && entry.Moves && entry.Moves.length) buf += '<div>Moves: ' + entry.Moves.filter(Boolean).map(renderMove).join(', ') + '</div>';
+				buf += renderStats('IVs', entry.IVs);
+				buf += renderStats('EVs', entry.EVs);
+				buf += '</div></div>';
+			}
+		}
 		this.$('.results').html(buf);
 		this.$('.pokedex').addClass('aboveresults');
 		this.activeLink = this.$('.results a')[0] || null;

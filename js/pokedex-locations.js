@@ -12,6 +12,19 @@ function trainerMatchesLocation(trainer, loc) {
   return trainerLocID === toID(loc.id) || trainerLocID === toID(loc.name);
 }
 function getTrainersForLocation(loc) {
+  if (loc && Array.isArray(loc.trainerRefs)) {
+    return loc.trainerRefs.map(function(ref) {
+      var trainer = (window.Trainers || []).find(function(candidate) {
+        return String(candidate.id || '').padStart(3, '0') === String(ref.id || '').padStart(3, '0');
+      });
+      return trainer ? Object.assign({}, trainer, {
+        routeNumber: ref.routeNumber,
+        locationTrainerName: ref.name,
+        locationDescription: ref.desc,
+        locationTags: ref.tags,
+      }) : null;
+    }).filter(Boolean);
+  }
   return (window.Trainers || []).filter(function(trainer) {
     return trainerMatchesLocation(trainer, loc);
   });
@@ -91,6 +104,12 @@ var LOCATION_WEATHER_DATA = {
   }
 };
 function getLocationWeather(loc) {
+  var weather = normalizeTrainerMetaText(loc && loc.weather).toLowerCase();
+  if (weather === 'sun') return LOCATION_WEATHER_DATA.sun;
+  if (weather === 'sand') return LOCATION_WEATHER_DATA.sandstorm;
+  if (weather === 'rain') return LOCATION_WEATHER_DATA.rain;
+  if (weather === 'snow') return LOCATION_WEATHER_DATA.snow;
+  if (weather === 'clear') return LOCATION_WEATHER_DATA.clear;
   var notes = normalizeTrainerMetaText((loc && loc.notes) || '').toLowerCase();
   if (!notes) return LOCATION_WEATHER_DATA.clear;
   if (notes.indexOf('sandstorm') >= 0) return LOCATION_WEATHER_DATA.sandstorm;
@@ -129,6 +148,7 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
     buf += '<li><a class="button" href="' + Config.baseurl + 'mechanics/" data-target="push">Mechanics</a></li>';
     buf += '<li><a class="button cur" href="' + Config.baseurl + 'locations/" data-target="push">Locations</a></li>';
     buf += '<li><a class="button" href="' + Config.baseurl + 'trainers/" data-target="push">Trainers</a></li>';
+    buf += '<li><a class="button" href="' + Config.baseurl + 'statics/" data-target="push">Statics</a></li>';
     buf += '<li><a class="button nav-last" href="' + Config.baseurl + 'usage/" data-target="push">Usage</a></li>';
     buf += '</ul>';
     buf += '<div class="searchboxwrapper"><input class="textbox searchbox" type="search" name="q" value="" autocomplete="off" placeholder="Search locations by name, Pokémon, item, or trainer..." /></div>';
@@ -216,6 +236,12 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
                 }
               }
             }
+            if (!hasWild && encounter.weatherSos) {
+              for (var wi = 0; wi < encounter.weatherSos.length; wi++) {
+                var weatherSos = window.translateDisplayName ? window.translateDisplayName(encounter.weatherSos[wi]) : encounter.weatherSos[wi];
+                if (matchingPokemonIds.has(toID(weatherSos))) { hasWild = true; break; }
+              }
+            }
             if (hasWild) break;
           }
         }
@@ -248,6 +274,10 @@ window.PokedexLocationsPanel = PokedexResultPanel.extend({
                   }
                 }
               }
+              if (encounter.weatherSos && encounter.weatherSos.some(function(name) {
+                var translated = window.translateDisplayName ? window.translateDisplayName(name) : name;
+                return translated.toLowerCase().indexOf(query) >= 0;
+              })) return true;
             }
           }
         }
@@ -425,7 +455,9 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
       if (isNaN(routeA)) routeA = 0;
       if (isNaN(routeB)) routeB = 0;
       if (routeA !== routeB) return routeA - routeB;
-      var nameCmp = (a.name || '').localeCompare(b.name || '');
+      var nameCmp = (a.locationTrainerName || a.name || '').localeCompare(b.locationTrainerName || b.name || '');
+      if (nameCmp !== 0) return nameCmp;
+      nameCmp = (a.name || '').localeCompare(b.name || '');
       if (nameCmp !== 0) return nameCmp;
       return String(a.id || '').localeCompare(String(b.id || ''));
     });
@@ -556,6 +588,21 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
               + '<span class="picon" style="' + getPokemonIcon(childID) + ';display:inline-block;vertical-align:middle;margin-right:4px"></span>'
               + escapeHTML(childDisplayName) + '</a></td></tr>';
           }
+        }
+        var weatherSos = spot.weatherSos || [];
+        if (weatherSos.length) {
+          buf += '<tr class="sos-row"><td></td><td style="padding-left:24px;font-size:0.9em"><span style="color:#c62828;font-weight:600;margin-right:6px">Weather S.O.S.</span>';
+          for (var wi = 0; wi < weatherSos.length; wi++) {
+            var weatherName = window.translateDisplayName ? window.translateDisplayName(weatherSos[wi]) : weatherSos[wi];
+            var weatherID = toID(weatherName);
+            var weatherData = BattlePokedex[weatherID];
+            var weatherDisplayName = weatherData ? weatherData.name : weatherName;
+            if (wi) buf += ', ';
+            buf += '<a href="' + Config.baseurl + 'pokemon/' + weatherID + '" data-target="push">'
+              + '<span class="picon" style="' + getPokemonIcon(weatherID) + ';display:inline-block;vertical-align:middle;margin-right:4px"></span>'
+              + escapeHTML(weatherDisplayName) + '</a>';
+          }
+          buf += '</td></tr>';
         }
         buf += '</tbody></table>';
       }
@@ -732,7 +779,7 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         var tTrainer = locationTrainers[ti];
         var paddedTID = String(tTrainer.id).padStart(3, '0');
         var tName = tTrainer.name || ('Trainer\u00a0' + paddedTID);
-        var tNoteLines = splitNotes(tTrainer.desc || '');
+        var tNoteLines = splitNotes(tTrainer.locationDescription || tTrainer.desc || '');
         var tTeamSprites = (tTrainer.team || []).slice(0, 6).map(function(m) {
           var disp = window.translateDisplayName ? window.translateDisplayName(m.name || '') : (m.name || '');
           return '<span class="picon" style="' + getPokemonIcon(toID(disp)) + ';display:inline-block;vertical-align:middle"></span>';
@@ -749,6 +796,9 @@ window.PokedexLocationPanel = PokedexResultPanel.extend({
         buf += '<span class="col namecol" style="display:inline-block;vertical-align:middle;position:relative;z-index:1">[' + escapeHTML(paddedTID) + '] ' + escapeHTML(tName) + '</span>';
         buf += '<span class="col" style="float:right;text-align:right;white-space:nowrap;display:flex;align-items:center;gap:2px;position:relative;z-index:1">' + tTeamSprites + '</span>';
         buf += '</a>';
+        if (tTrainer.locationTags) {
+          buf += '<div style="color:#666;font-size:0.8em;padding:2px 8px 0">Tags: ' + escapeHTML(tTrainer.locationTags) + '</div>';
+        }
         buf += renderNoteLines(tNoteLines, '8px');
         buf += '</li>';
       }
