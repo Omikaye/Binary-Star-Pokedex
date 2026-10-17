@@ -1,0 +1,5322 @@
+{
+  "Locations": [
+    {
+      "LocationName": "Route 1",
+      "Weather": "Clear",
+      "Description": "Route 1 is now only the road from your house to Iki Town. The beach and school are now officially labelled as different areas, so check your Pokemon\u0027s caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon. | The starter\u0027s Met locations are set to be Iki Town.",
+      "LocationNumber": 1,
+      "Shops": [
+        "No Trials"
+      ],
+      "Trainers": [
+        {
+          "TrainerId": 491,
+          "Trainer": "Hau",
+          "Class": "Kahuna\u0027s Grandson",
+          "Route": 1,
+          "Tags": "Story, Mandatory",
+          "Description": "Hau Battle 1 | Rowlet Chosen"
+        },
+        {
+          "TrainerId": 492,
+          "Trainer": "Hau",
+          "Class": "Kahuna\u0027s Grandson",
+          "Route": 1,
+          "Tags": "Story, Mandatory",
+          "Description": "Hau Battle 1 | Litten Chosen"
+        },
+        {
+          "TrainerId": 493,
+          "Trainer": "Hau",
+          "Class": "Kahuna\u0027s Grandson",
+          "Route": 1,
+          "Tags": "Story, Mandatory",
+          "Description": "Hau Battle 1 | Popplio Chosen"
+        },
+        {
+          "TrainerId": 459,
+          "Trainer": "Audrey",
+          "Class": "Lass",
+          "Route": 2,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 25,
+          "Trainer": "Jimmy",
+          "Class": "Youngster",
+          "Route": 3,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 28,
+          "Trainer": "Oliver",
+          "Class": "Kindergartener",
+          "Route": 4,
+          "Tags": "Mandatory",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 9,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 3-5",
+          "Encounters": "Yungoos, Rattata 1 (Rattata), Pikipek, Grubbin, Pichu, Bounsweet, Scatterbug 16, Swablu, Igglybuff, Sentret"
+        },
+        {
+          "FileNumber": 9,
+          "TableIndex": 16,
+          "Area": "Grass (Behind Rocks)",
+          "Levels": "Lvl 17-20",
+          "Encounters": "Yungoos, Rattata 1 (Rattata), Pikipek, Grubbin, Pikachu, Bounsweet, Spewpa 16, Swablu, Jigglypuff, Sentret"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Rare Candy",
+          "Quantity": "999",
+          "Method": "From Kukui after the capture tutorial"
+        },
+        {
+          "Item": "Revival Flute",
+          "Quantity": "1",
+          "Method": "From Kukui after the capture tutorial"
+        },
+        {
+          "Item": "Gold Bottle Cap",
+          "Quantity": "1",
+          "Method": "North of the grass patch next to the Trainer Tips sign."
+        },
+        {
+          "Item": "Cheri Berries",
+          "Quantity": "3",
+          "Method": "North of the second grassy patch on the east side"
+        },
+        {
+          "Item": "Smoke Ball",
+          "Quantity": "1",
+          "Method": "On the cliffs overlooking the bay, east of Youngster Jimmy"
+        },
+        {
+          "Item": "Fluffy Tail",
+          "Quantity": "100",
+          "Method": "West of the entrance to Iki Town"
+        },
+        {
+          "Item": "TM83 (Shock Wave)",
+          "Quantity": "1",
+          "Method": "At the end of the west path behind the rocks south of Iki Town (requires Tauros Charge)"
+        },
+        {
+          "Item": "Haban Berry",
+          "Quantity": "20",
+          "Method": "At the end of the northern east path behind the rocks south of Iki Town (requires Tauros Charge)"
+        },
+        {
+          "Item": "Poke Balls",
+          "Quantity": "30",
+          "Method": "Given by Kukui after beating Hau"
+        },
+        {
+          "Item": "Miracle Medicine",
+          "Quantity": "1",
+          "Method": "Given by Kukui after beating Hau"
+        }
+      ],
+      "Statics": [
+        {
+          "Type": "Gifts",
+          "Index": 0,
+          "Species": "Rowlet",
+          "Tags": "Story",
+          "Description": "Rowlet\u0027s met location is set to Iki Town, rather than Route 1."
+        },
+        {
+          "Type": "Gifts",
+          "Index": 1,
+          "Species": "Litten",
+          "Tags": "Story",
+          "Description": "Litten\u0027s met location is set to Iki Town, rather than Route 1."
+        },
+        {
+          "Type": "Gifts",
+          "Index": 2,
+          "Species": "Popplio",
+          "Tags": "Story",
+          "Description": "Popplio\u0027s met location is set to Iki Town, rather than Route 1."
+        },
+        {
+          "Type": "Statics",
+          "Index": 151,
+          "Species": "Yungoos",
+          "Tags": "Story",
+          "Description": "This yungoos attacks you right after you pick your starter."
+        },
+        {
+          "Type": "Statics",
+          "Index": 153,
+          "Species": "Rattata 1",
+          "Tags": "Story, Capturable",
+          "Description": "This Rattata is always the first thing you encounter when entering the Route 1 grass after the catching tutorial."
+        }
+      ]
+    },
+    {
+      "LocationName": "Mahalo Trail",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 2,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 152,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 2-3",
+          "Encounters": "Spearow, Pikipek, Hoothoot, Pineco, Burmy, Spinarak, Ledyba"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Max Repel",
+          "Quantity": "900",
+          "Method": "In the middle of the path"
+        }
+      ],
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 154,
+          "Species": "Spearow",
+          "Tags": "Story, Capturable",
+          "Description": "This Spearow attacks you on the Mahalo Trail bridge. You can catch it."
+        }
+      ]
+    },
+    {
+      "LocationName": "Iki Town",
+      "Weather": "Clear",
+      "Description": "Iki Town technically has no natural encounters here, but the Starter Pokemon are considered to be from here, check their \u0022met\u0022 locations. | Upon unlocking Tauros Charge, the following locations are available to backtrack to that have breakable rocks: Iki Town, Route 1, Ten Carat Hill/Ten Carat Hollow (2 new locations), Route 2, Verdant Den (New Encounter location on the cliff above the trial ground) | Upon defeating Kahuna Hala, the following optional quests/locations/services become available: Hau\u0027oli City Mall (Hyper Training, Battle Buffet, Alola Ride Show Quest (Day), Mall Cleanup Quest(Night)), Hau\u0027oli City Hall Marriage Quest, Schoolyard Seven Mysteries Quest (Night. Begin the quest at Big Wave Beach)",
+      "LocationNumber": 3,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 9,
+          "Trainer": "Hau",
+          "Class": "Kahuna\u0027s Grandson",
+          "Route": 0,
+          "Tags": "Mandatory, Story",
+          "Description": "Hau Battle 2 | Rowlet"
+        },
+        {
+          "TrainerId": 10,
+          "Trainer": "Hau",
+          "Class": "Kahuna\u0027s Grandson",
+          "Route": 0,
+          "Tags": "Mandatory, Story",
+          "Description": "Hau Battle 2 | Litten"
+        },
+        {
+          "TrainerId": 11,
+          "Trainer": "Hau",
+          "Class": "Kahuna\u0027s Grandson",
+          "Route": 0,
+          "Tags": "Mandatory, Story",
+          "Description": "Hau Battle 2 | Popplio"
+        },
+        {
+          "TrainerId": 23,
+          "Trainer": "Hala",
+          "Class": "Melemele Kahuna",
+          "Route": 1,
+          "Tags": "Story Boss",
+          "Description": "First Grand Trial | Reward: Fightinium Z | Low Sweep TM"
+        },
+        {
+          "TrainerId": 363,
+          "Trainer": "Rea",
+          "Class": "Glaceon User",
+          "Route": 2,
+          "Tags": "Quest, Postgame Boss",
+          "Description": "Eevee User Quest"
+        },
+        {
+          "TrainerId": 650,
+          "Trainer": "Hala",
+          "Class": "Melemele Kahuna",
+          "Route": 3,
+          "Tags": "Optional, Postgame Boss",
+          "Description": "Hala Rematch"
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [
+        {
+          "Item": "Pok\u00E9dex",
+          "Quantity": "1",
+          "Method": "From Kukui after saving Nebby at Plank Bridge"
+        },
+        {
+          "Item": "Trainer Passport",
+          "Quantity": "1",
+          "Method": "From Kukui after saving Nebby at Plank Bridge"
+        },
+        {
+          "Item": "Z-Power Ring",
+          "Quantity": "1",
+          "Method": "From Hala after battling Hau during the festival"
+        },
+        {
+          "Item": "Island challenge Amulet",
+          "Quantity": "1",
+          "Method": "From Hala after battling Hau during the festival"
+        },
+        {
+          "Item": "Bright Powder",
+          "Quantity": "1",
+          "Method": "From a woman in the western house for telling her about the message in a bottle at Kala\u0027e Bay"
+        },
+        {
+          "Item": "Fightinium Z Node",
+          "Quantity": "1",
+          "Method": "From Hala for defeating him in the grand trial"
+        },
+        {
+          "Item": "Ride Pager",
+          "Quantity": "1",
+          "Method": "From Hala after defeating him in the grand trial"
+        },
+        {
+          "Item": "Tauros Charge",
+          "Quantity": "1",
+          "Method": "From Hala after defeating him in the grand trial"
+        },
+        {
+          "Item": "TM31 (Low Sweep)",
+          "Quantity": "1",
+          "Method": "From Kukui after defeating Hala in the grand trial"
+        },
+        {
+          "Item": "Decidium Z Node",
+          "Quantity": "1",
+          "Method": "From Hala after defeating him in a rematch after becoming Champion, if the player didn\u0027t choose Rowlet"
+        },
+        {
+          "Item": "Incinium Z Node",
+          "Quantity": "1",
+          "Method": "From Hala after defeating him in a rematch after becoming Champion, if the player didn\u0027t choose Litten"
+        },
+        {
+          "Item": "Primarium Z Node",
+          "Quantity": "1",
+          "Method": "From Hala after defeating him in a rematch after becoming Champion, if the player didn\u0027t choose Popplio"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Ten Carat Beach",
+      "Weather": "Clear",
+      "Description": "Formerly was part of Route 1, now this is its own location. | Scatterbug found here will evolve into Marine Pattern Vivillon | Every Pokemart has items with a number in parentheses. That is the number of trials needed to unlock that item. So an item with \u0022(2)\u0022 will unlock after completing two Totem battles.",
+      "LocationNumber": 4,
+      "Shops": [
+        "No Trials"
+      ],
+      "Trainers": [
+        {
+          "TrainerId": 512,
+          "Trainer": "Natasha",
+          "Class": "Swim Gal",
+          "Route": 0,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 57,
+          "Trainer": "Madison",
+          "Class": "Lass",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 26,
+          "Trainer": "Kevin",
+          "Class": "Youngster",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": "Reward: Focus Band"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 9,
+          "TableIndex": 4,
+          "Area": "Grass",
+          "Levels": "Lvl 6-8",
+          "Encounters": "Wingull, Kricketot (Scatterbug 8), Krabby, Seel, Slowpoke (Slowpoke 1), Azurill, Hoppip, Inkay, Zigzagoon (Zigzagoon 1), Piplup (Panpour)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "",
+          "Quantity": "",
+          "Method": "From Meowth the first time the player sleeps in their bed after getting their hat and Bag"
+        },
+        {
+          "Item": "Focus Band",
+          "Quantity": "1",
+          "Method": "On the sand on the east end of the beach, behind the Youngster"
+        },
+        {
+          "Item": "Pok\u00E9 Ball",
+          "Quantity": "1",
+          "Method": "Random gift from the player\u0027s mom when first healing with her each day, after the capture tutorial (~90% chance) (daily)"
+        },
+        {
+          "Item": "Great Ball",
+          "Quantity": "1",
+          "Method": "Random gift from the player\u0027s mom when first healing with her each day, after the capture tutorial (~5% chance) (daily)"
+        },
+        {
+          "Item": "Heal Ball",
+          "Quantity": "1",
+          "Method": "Random gift from the player\u0027s mom when first healing with her each day, after the capture tutorial (~5% chance) (daily)"
+        },
+        {
+          "Item": "$30,000",
+          "Quantity": "1",
+          "Method": "From the player\u0027s mom when Lillie comes to guide the player to the Pok\u00E9mon Research Lab"
+        },
+        {
+          "Item": "Premier Ball",
+          "Quantity": "5",
+          "Method": "At the south end of the beach, in front of the Pok\u00E9mon Research Lab (hidden) (regenerates occasionally)"
+        },
+        {
+          "Item": "Rotom Pok\u00E9dex",
+          "Quantity": "1",
+          "Method": "Upgraded from the Pok\u00E9dex by Kukui at the Pok\u00E9mon Research Lab on the player\u0027s first visit"
+        },
+        {
+          "Item": "Mind Plate",
+          "Quantity": "1",
+          "Method": "In front of the garage by the player\u0027s house, after defeating Nanu (hidden)"
+        },
+        {
+          "Item": "Earth Plate",
+          "Quantity": "1",
+          "Method": "By the palm tree on the east end of the beach, after defeating Nanu (hidden)"
+        },
+        {
+          "Item": "Lucky Egg",
+          "Quantity": "1",
+          "Method": "From Kukui at the Pok\u00E9mon Research Lab, after becoming Champion and registering 50 Pok\u00E9mon"
+        },
+        {
+          "Item": "Gold Bottle Cap",
+          "Quantity": "999",
+          "Method": "From Kukui at the Pok\u00E9mon Research Lab, after becoming Champion (if the Lucky Egg is received first, the player must leave and re-enter)"
+        },
+        {
+          "Item": "Gold Bottle Cap",
+          "Quantity": "1",
+          "Method": "From Meowth after defeating Madame Meowth, after completing Episode RR"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Schoolyard",
+      "Weather": "Clear",
+      "Description": "Formerly was part of Route 1, now this is its own location. | Scatterbug found here will evolve into Pokeball Pattern Vivillon",
+      "LocationNumber": 5,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 396,
+          "Trainer": "Ilima",
+          "Class": "Trial Captain",
+          "Route": 0,
+          "Tags": "Postgame Boss",
+          "Description": "Ilima Rematch"
+        },
+        {
+          "TrainerId": 21,
+          "Trainer": "Hiromi",
+          "Class": "Athlete In-Training",
+          "Route": 1,
+          "Tags": "Story",
+          "Description": ""
+        },
+        {
+          "TrainerId": 22,
+          "Trainer": "Joey",
+          "Class": "Youngster",
+          "Route": 2,
+          "Tags": "Story",
+          "Description": ""
+        },
+        {
+          "TrainerId": 24,
+          "Trainer": "Mia",
+          "Class": "Preschooler",
+          "Route": 3,
+          "Tags": "Story",
+          "Description": ""
+        },
+        {
+          "TrainerId": 436,
+          "Trainer": "Joseph",
+          "Class": "Rising Star",
+          "Route": 4,
+          "Tags": "Story, Miniboss",
+          "Description": "Reward: Protect TM"
+        },
+        {
+          "TrainerId": 485,
+          "Trainer": "Emily",
+          "Class": "Teacher",
+          "Route": 5,
+          "Tags": "Story, Miniboss",
+          "Description": "Rowlet | Reward: Ability Pills"
+        },
+        {
+          "TrainerId": 486,
+          "Trainer": "Emily",
+          "Class": "Teacher",
+          "Route": 5,
+          "Tags": "Story, Miniboss",
+          "Description": "Litten | Reward: Ability Pills"
+        },
+        {
+          "TrainerId": 487,
+          "Trainer": "Emily",
+          "Class": "Teacher",
+          "Route": 5,
+          "Tags": "Story, Miniboss",
+          "Description": "Popplio | Reward: Ability Pills"
+        },
+        {
+          "TrainerId": 567,
+          "Trainer": "Deedra",
+          "Class": "Athlete In-Training",
+          "Route": 6,
+          "Tags": "Quest",
+          "Description": "Part of the \u0022Seven Mysteries\u0022 sidequest started by speaking to a Youngster at Big Wave Beach after beating Hala, and visiting the Schoolyard at night."
+        },
+        {
+          "TrainerId": 103,
+          "Trainer": "Mystery Kid",
+          "Class": "Preschooler",
+          "Route": 7,
+          "Tags": "Quest, Miniboss",
+          "Description": "Seven Mysteries Sidequest | Reward: Ghostium Z"
+        },
+        {
+          "TrainerId": 502,
+          "Trainer": "Ilima",
+          "Class": "Trial Captain",
+          "Route": 8,
+          "Tags": "Story Boss",
+          "Description": "Ilima battles you here during the Mina Trial."
+        },
+        {
+          "TrainerId": 361,
+          "Trainer": "Polly",
+          "Class": "Vaporeon User",
+          "Route": 9,
+          "Tags": "Postgame, Quest",
+          "Description": "Eevee user quest"
+        },
+        {
+          "TrainerId": 386,
+          "Trainer": "Duane",
+          "Class": "Black Belt",
+          "Route": 10,
+          "Tags": "Postgame, Miniboss",
+          "Description": ""
+        },
+        {
+          "TrainerId": 380,
+          "Trainer": "Asuka",
+          "Class": "Principal",
+          "Route": 11,
+          "Tags": "Postgame Boss",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 526,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 7-10",
+          "Encounters": "Grimer 1 (Grimer), Meowth 1 (Meowth), Caterpie (Scatterbug 19), Bellsprout, Swirlix, Drifloon, Mime Jr., Buneary, Chikorita (Pansage), Zorua"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Exp. Share",
+          "Quantity": "1",
+          "Method": "From Professor Kukui outside the Trainers\u0027 School on the player\u0027s first visit"
+        },
+        {
+          "Item": "Repeat Ball",
+          "Quantity": "10",
+          "Method": "North of the rail to the east of the entrance to the Trainers\u0027 School grounds (hidden)"
+        },
+        {
+          "Item": "Mental Herb",
+          "Quantity": "10",
+          "Method": "Under a palm tree on the east side of the main entrance to the Trainers\u0027 School building"
+        },
+        {
+          "Item": "Destiny Knot",
+          "Quantity": "1",
+          "Method": "Under the second palm tree on the west side of the main entrance to the Trainers\u0027 School building"
+        },
+        {
+          "Item": "Heal Ball",
+          "Quantity": "10",
+          "Method": "In the center of the western battlefield in front of the Trainers\u0027 School building (hidden)"
+        },
+        {
+          "Item": "Jaboca Berry",
+          "Quantity": "20",
+          "Method": "At the southwest corner of first grassy area of the fenced off grassy area on the west side of the Trainers\u0027 School"
+        },
+        {
+          "Item": "Rowap Berry",
+          "Quantity": "20",
+          "Method": "West of the southernmost palm tree in the fenced off grassy area on the west side of the Trainers\u0027 School"
+        },
+        {
+          "Item": "TM01 (Protect)",
+          "Quantity": "1",
+          "Method": "From Rising Star Joseph after defeating him"
+        },
+        {
+          "Item": "Ghostium Z Node",
+          "Quantity": "1",
+          "Method": "From a Preschooler after solving the seven mysteries, after clearing Hala\u0027s grand trial (Night)"
+        },
+        {
+          "Item": "Flame Plate",
+          "Quantity": "1",
+          "Method": "Next to the furnace on the northeast side of the Trainer\u0027s School, after clearing Nanu\u0027s grand trial (hidden)"
+        },
+        {
+          "Item": "Quick Claw",
+          "Quantity": "1",
+          "Method": "1F, from a Beauty in the area left of the stairs"
+        },
+        {
+          "Item": "Enigma Berry",
+          "Quantity": "5",
+          "Method": "1F, from Preschooler Mia after defeating her"
+        },
+        {
+          "Item": "Potion",
+          "Quantity": "1",
+          "Method": "2F, from a boy sitting in the front right seat in the classroom at the far end of the hall"
+        },
+        {
+          "Item": "Ability Pills",
+          "Quantity": "1",
+          "Method": "2F, from Teacher Emily after defeating her"
+        },
+        {
+          "Item": "",
+          "Quantity": "1",
+          "Method": "3F, from Principal Asuka for defeating her, after becoming Champion (change me)"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Hau\u0027oli Beach",
+      "Weather": "Clear",
+      "Description": "Hau\u0027oli Beach is now a seperate location from the main city.",
+      "LocationNumber": 6,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 31,
+          "TableIndex": 0,
+          "Area": "Beach Sand",
+          "Levels": "Lvl 8-11",
+          "Encounters": "Wimpod, Krabby, Wingull, Exeggcute, Mareanie, Slowpoke 1 (Slowpoke), Staryu, Clauncher, Tyrogue, Mantyke"
+        },
+        {
+          "FileNumber": 31,
+          "TableIndex": 12,
+          "Area": "Surf",
+          "Levels": "Lvl 15-18",
+          "Encounters": "Tentacool, Wingull, Finneon, Mantyke (Remoraid)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Potion",
+          "Quantity": "1",
+          "Method": "From a woman northeast of the yellow truck"
+        },
+        {
+          "Item": "Protective Pads",
+          "Quantity": "1",
+          "Method": "Next to the southeastern ramp to the beach"
+        },
+        {
+          "Item": "Lure Ball",
+          "Quantity": "10",
+          "Method": "On the beach, by the palm tree behind the woman in the lounge chair (hidden) (regenerates occasionally)"
+        },
+        {
+          "Item": "Dive Ball",
+          "Quantity": "10",
+          "Method": "On the beach, by the northwestern-most palm tree (hidden) (regenerates occasionally)"
+        },
+        {
+          "Item": "",
+          "Quantity": "1",
+          "Method": "Received from a Beauty by helping her Corsola on the beach next to the southeastern ramp, after clearing Lana\u0027s trial (Change to mega stone)"
+        },
+        {
+          "Item": "Icicle Plate",
+          "Quantity": "1",
+          "Method": "On the coastline in front of the southeast stairwell, after defeating Nanu (hidden)"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Hau\u0027oli City",
+      "Weather": "Clear",
+      "Description": "Scatterbug found here will evolve into Modern Pattern Vivillon | The Move Deleter is in the Pokemon Center | The mall opens after defeating Kahuna Hala. The plate shop within the mall only opens after defeating Kahuna Nanu. The move tutors here require your Pokemon to be max friendship. To do this, you can purchase B.F.F. Hearts in any Pokemon Center after defeating Totem Araquanid.",
+      "LocationNumber": 7,
+      "Shops": [
+        "No Trials",
+        "Hau\u0027oli City [X Items]"
+      ],
+      "Trainers": [
+        {
+          "TrainerId": 49,
+          "Trainer": "Hau",
+          "Class": "Kahuna\u0027s Grandson",
+          "Route": 1,
+          "Tags": "Story, Tag Battle Ally",
+          "Description": "Ally Vs. Team Skull"
+        },
+        {
+          "TrainerId": 48,
+          "Trainer": "Grunt Ay",
+          "Class": "Team Skull",
+          "Route": 2,
+          "Tags": "Story, Tag Battle",
+          "Description": "Tag battle with Grunt Bee"
+        },
+        {
+          "TrainerId": 47,
+          "Trainer": "Grunt Bee",
+          "Class": "Team Skull",
+          "Route": 3,
+          "Tags": "Story, Tag Battle",
+          "Description": "Tag battle with Grunt Ay"
+        },
+        {
+          "TrainerId": 52,
+          "Trainer": "Ilima",
+          "Class": "Trial Captain",
+          "Route": 4,
+          "Tags": "Story Boss",
+          "Description": "Captain Ilima | Rowlet"
+        },
+        {
+          "TrainerId": 215,
+          "Trainer": "Ilima",
+          "Class": "Trial Captain",
+          "Route": 5,
+          "Tags": "Story Boss",
+          "Description": "Captain Ilima | Litten"
+        },
+        {
+          "TrainerId": 216,
+          "Trainer": "Ilima",
+          "Class": "Trial Captain",
+          "Route": 6,
+          "Tags": "Story Boss",
+          "Description": "Captain Ilima | Popplio"
+        },
+        {
+          "TrainerId": 563,
+          "Trainer": "Reginald",
+          "Class": "Gentleman",
+          "Route": 7,
+          "Tags": "Optional",
+          "Description": "Reginald will battle you if you\u0027ve beaten Hala\u0027s Trial and you enter Hau\u0027oli City Hall | Reward: Shell Bell (Talk to the clerk afterwards)"
+        },
+        {
+          "TrainerId": 172,
+          "Trainer": "Kristen",
+          "Class": "Businesswoman",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": "These trainers appear in the Mall\u0027s buffet until becoming champion."
+        },
+        {
+          "TrainerId": 175,
+          "Trainer": "Carver",
+          "Class": "Cook",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 187,
+          "Trainer": "Tori",
+          "Class": "Star Trainer",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 189,
+          "Trainer": "Ronald",
+          "Class": "Gentleman",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 192,
+          "Trainer": "Kathleen",
+          "Class": "Madame",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 194,
+          "Trainer": "Walter",
+          "Class": "Black Belt",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 196,
+          "Trainer": "Savannah",
+          "Class": "Pok\u00E9mon Breeder",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 198,
+          "Trainer": "Cody",
+          "Class": "Office Worker",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 205,
+          "Trainer": "Kai",
+          "Class": "Youngster",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 207,
+          "Trainer": "Hannah",
+          "Class": "Preschooler",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 209,
+          "Trainer": "Kainoa",
+          "Class": "Rising Star",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 211,
+          "Trainer": "Carolyn",
+          "Class": "Beauty",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 213,
+          "Trainer": "Salla",
+          "Class": "Lass",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 431,
+          "Trainer": "Amy",
+          "Class": "Sightseer",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 433,
+          "Trainer": "George",
+          "Class": "Tourist",
+          "Route": 8,
+          "Tags": "Battle Buffet",
+          "Description": ""
+        },
+        {
+          "TrainerId": 188,
+          "Trainer": "Tori",
+          "Class": "Star Trainer",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 190,
+          "Trainer": "Ronald",
+          "Class": "Gentleman",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 191,
+          "Trainer": "Carver",
+          "Class": "Cook",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 193,
+          "Trainer": "Kathleen",
+          "Class": "Madame",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 195,
+          "Trainer": "Walter",
+          "Class": "Black Belt",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 197,
+          "Trainer": "Savannah",
+          "Class": "Pok\u00E9mon Breeder",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 199,
+          "Trainer": "Cody",
+          "Class": "Office Worker",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 200,
+          "Trainer": "Kristen",
+          "Class": "Businesswoman",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 206,
+          "Trainer": "Kai",
+          "Class": "Youngster",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 208,
+          "Trainer": "Hannah",
+          "Class": "Preschooler",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 210,
+          "Trainer": "Kainoa",
+          "Class": "Rising Star",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 212,
+          "Trainer": "Carolyn",
+          "Class": "Beauty",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 214,
+          "Trainer": "Salla",
+          "Class": "Lass",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 432,
+          "Trainer": "Amy",
+          "Class": "Sightseer",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        },
+        {
+          "TrainerId": 434,
+          "Trainer": "George",
+          "Class": "Tourist",
+          "Route": 9,
+          "Tags": "Buffet Postgame",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 42,
+          "TableIndex": 4,
+          "Area": "Grass",
+          "Levels": "Lvl 10-12",
+          "Encounters": "Pidove (Scatterbug 7), Tyrogue, Purrloin, Zigzagoon 1 (Zigzagoon), Glameow, Chingling, Klink, Voltorb 1 (Voltorb), Abra, Trubbish (Burmy 2)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Nidogram",
+          "Quantity": "1",
+          "Method": "Alola Tourist Bureau, from the attendant in the Alola Tourist Bureau when visited for the first time"
+        },
+        {
+          "Item": "Ultra Ball",
+          "Quantity": "10",
+          "Method": "Alola Tourist Bureau, from a Scientist in the if the player has ten different Pok\u00E9mon registered as owned in their Pok\u00E9dex"
+        },
+        {
+          "Item": "Lens Case",
+          "Quantity": "1",
+          "Method": "Outside the apparel shop, from Lillie"
+        },
+        {
+          "Item": "Makeup Bag",
+          "Quantity": "1",
+          "Method": "Outside the apparel shop, from Lillie (if the player is female)"
+        },
+        {
+          "Item": "Sticky Barb",
+          "Quantity": "10",
+          "Method": "From a woman outside the apparel shop"
+        },
+        {
+          "Item": "Lagging Tail",
+          "Quantity": "1",
+          "Method": "In the southeast corner of the fenced area behind the Malasada Shop"
+        },
+        {
+          "Item": "Cleanse Tag",
+          "Quantity": "1",
+          "Method": "From the Sightseer in front of the Pok\u00E9mon Center"
+        },
+        {
+          "Item": "$10,000",
+          "Quantity": "1",
+          "Method": "Pok\u00E9mon Center, from a Beauty if the player has Abra registered in their Pok\u00E9dex as Caught"
+        },
+        {
+          "Item": "Cell Battery",
+          "Quantity": "20",
+          "Method": "In the gated area opposite the Pok\u00E9mon Center"
+        },
+        {
+          "Item": "Micle Berry",
+          "Quantity": "20",
+          "Method": "At the north end of the front yard of Ilima\u0027s house"
+        },
+        {
+          "Item": "Leppa Berry",
+          "Quantity": "20",
+          "Method": "Ilima\u0027s house, from his mom in the kitchen"
+        },
+        {
+          "Item": "Revive",
+          "Quantity": "1",
+          "Method": "Hau\u0027oli City Hall, from a woman with a Pyukumuku"
+        },
+        {
+          "Item": "Love Ball",
+          "Quantity": "10",
+          "Method": "East of the lamppost next to the two bushes east of the entrance to Hau\u0027oli City Hall (hidden)"
+        },
+        {
+          "Item": "TM49 (Round)",
+          "Quantity": "1",
+          "Method": "In the gated area opposite the Police Station"
+        },
+        {
+          "Item": "Fishing Rod",
+          "Quantity": "1",
+          "Method": "Near the Pok\u00E9mon Center, from Lillie after defeating Ilima"
+        },
+        {
+          "Item": "Gracidea",
+          "Quantity": "1",
+          "Method": "Shopping Mall, from the woman standing to the cashier\u0027s right in the Gracidea Apparel Shop"
+        },
+        {
+          "Item": "Oran Berry",
+          "Quantity": "50",
+          "Method": "Shopping Mall, from an Ace Trainer for watching the Alola Ride Show completely (Day)"
+        },
+        {
+          "Item": "Black Sludge",
+          "Quantity": "1",
+          "Method": "Shopping Mall, from the Janitor after cleaning up all the trash (Night)"
+        },
+        {
+          "Item": "Nugget",
+          "Quantity": "1",
+          "Method": "Hau\u0027oli City Hall, from Gentleman Reginald after defeating him, after completing Hala\u0027s grand trial"
+        },
+        {
+          "Item": "Shell Bell",
+          "Quantity": "1",
+          "Method": "Hau\u0027oli City Hall, from a Delibird after speaking to the woman at the front desk, after completing Hala\u0027s grand trial"
+        },
+        {
+          "Item": "Photo Album",
+          "Quantity": "1",
+          "Method": "Alola Photo Club, from the attendant after visiting for the first time"
+        },
+        {
+          "Item": "Lucarionite",
+          "Quantity": "1",
+          "Method": "Shopping Mall, from an Ace Trainer after dealing with the Bewear disturbance in the Bewear costume show, after completing Olivia\u0027s grand trial and seeing the Alola Ride Show (Day)"
+        },
+        {
+          "Item": "Lopunnite",
+          "Quantity": "1",
+          "Method": "Hau\u0027oli Police Station, from Ilima as a reward for helping him solve the Hypno mystery, after completing Olivia\u0027s grand trial"
+        },
+        {
+          "Item": "Insect Plate",
+          "Quantity": "1",
+          "Method": "In the front left of the salon, after completing Nanu\u0027s grand trial (hidden)"
+        },
+        {
+          "Item": "Toxic Plate",
+          "Quantity": "1",
+          "Method": "In front of the palm tree that is at the northwest corner of the Pok\u00E9mon Center, after completing Nanu\u0027s grand trial (hidden)"
+        },
+        {
+          "Item": "Meadow Plate",
+          "Quantity": "1",
+          "Method": "To the right of the three trees southwest of Hau\u0027oli City Hall, after completing Nanu\u0027s grand trial (hidden)"
+        },
+        {
+          "Item": "Draco Plate",
+          "Quantity": "1",
+          "Method": "In front of the police car, after completing Nanu\u0027s grand trial (hidden)"
+        },
+        {
+          "Item": "Magearnite",
+          "Quantity": "1",
+          "Method": "Shopping Mall, held by gift Magearna, after becoming Champion"
+        },
+        {
+          "Item": "",
+          "Quantity": "1",
+          "Method": "Ilima\u0027s house, from Ilima after defeating him at the Trainers\u0027 School, after becoming Champion"
+        },
+        {
+          "Item": "Ilima\u0027s Normalium Z",
+          "Quantity": "1",
+          "Method": "Ilima\u0027s house, from Ilima after defeating him at the Trainers\u0027 School, after becoming Champion"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Hau\u0027oli Marina",
+      "Weather": "Clear",
+      "Description": "Hau\u0027oli Marina is now its own location as well.",
+      "LocationNumber": 8,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 42,
+          "TableIndex": 12,
+          "Area": "Street (Near Pier)",
+          "Levels": "Lvl 8-13",
+          "Encounters": "Shellder, Wingull, Wailmer, Clauncher, Slowpoke 1 (Slowpoke), Koffing, Pidove (Scatterbug 7), Tentacool, Seel, Oshawott"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Absorb Bulb",
+          "Quantity": "20",
+          "Method": "From a man at the corner of the Ferry Terminal"
+        },
+        {
+          "Item": "Luminous Moss",
+          "Quantity": "20",
+          "Method": "From a woman at the corner of the Ferry Terminal"
+        },
+        {
+          "Item": "Binding Band",
+          "Quantity": "1",
+          "Method": "At the end of the dock"
+        },
+        {
+          "Item": "Old Gateau",
+          "Quantity": "10",
+          "Method": "From the lady in the Ferry Terminal after Rotom fixes the vending machine, after completing Hala\u0027s grand trial"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 2",
+      "Weather": "Clear",
+      "Description": "Note: Due to limitations, berry trees can only have 1 main encounter. Still looking for a fix, but using S.O.S. is the only way to get around it for now.",
+      "LocationNumber": 9,
+      "Shops": [
+        "1 Trial",
+        "Route 2 [Misc]"
+      ],
+      "Trainers": [
+        {
+          "TrainerId": 472,
+          "Trainer": "Krystal",
+          "Class": "Beauty",
+          "Route": 1,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 633,
+          "Trainer": "Carlton",
+          "Class": "Surf Dude",
+          "Route": 2,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 42,
+          "Trainer": "Stanley",
+          "Class": "Gentleman",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": "Required if you enter or wish to enter the Berry Fields"
+        },
+        {
+          "TrainerId": 30,
+          "Trainer": "Jay",
+          "Class": "Pok\u00E9mon Rancher",
+          "Route": 4,
+          "Tags": "Optional",
+          "Description": "Reward: Kee Berry x20, Maranga Berry x20"
+        },
+        {
+          "TrainerId": 469,
+          "Trainer": "Dylan",
+          "Class": "Kindergartener",
+          "Route": 5,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 2,
+          "Trainer": "Isabella",
+          "Class": "Lass",
+          "Route": 6,
+          "Tags": "Mandatory",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 64,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 10-12",
+          "Encounters": "Ekans, Snivy (Pansage), Drowzee, Smeargle (Skitty), Munna (Burmy), Cutiefly (Cherubi), Spearow (Pineco), Mankey (Aipom), Nidoran-M (Ledyba), Nidoran-F (Spinarak)"
+        },
+        {
+          "FileNumber": 64,
+          "TableIndex": 2,
+          "Area": "Shaking Grass",
+          "Levels": "Lvl 11-14",
+          "Encounters": "Audino, Drowzee, Happiny, Snivy (Pansage), Ekans"
+        },
+        {
+          "FileNumber": 64,
+          "TableIndex": 4,
+          "Area": "Berry Pile",
+          "Levels": "Lvl 11-14",
+          "Encounters": "Pineco (Aipom, Burmy, Cherubi, Burmy 1)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Enigma Berry",
+          "Quantity": "20",
+          "Method": "Near the ledge near the Hau\u0027oli Cemetery entrance"
+        },
+        {
+          "Item": "Fluffy Tail",
+          "Quantity": "100",
+          "Method": "In the northwest corner of the motel area"
+        },
+        {
+          "Item": "Fast Ball",
+          "Quantity": "10",
+          "Method": "South of truck against the west fence of the motel area (hidden)"
+        },
+        {
+          "Item": "Full Incense",
+          "Quantity": "1",
+          "Method": "From a Collector in the motel room"
+        },
+        {
+          "Item": "Tiny Mushroom",
+          "Quantity": "4",
+          "Method": "From the man by Guzma\u0027s house after finding his Alolan Meowth (It\u0027s under the front of the truck)"
+        },
+        {
+          "Item": "Big Mushroom",
+          "Quantity": "2",
+          "Method": "From the man by Guzma\u0027s house after finding his Alolan Meowth"
+        },
+        {
+          "Item": "Nugget",
+          "Quantity": "1",
+          "Method": "Held by Chomper, a Rockruff-Midnight the player can receive in a trade if they give a Happiny."
+        },
+        {
+          "Item": "Balm Mushroom",
+          "Quantity": "1",
+          "Method": "From the man by Guzma\u0027s house after finding his Alolan Meowth"
+        },
+        {
+          "Item": "Level Ball",
+          "Quantity": "10",
+          "Method": "Next to the trees in the clearing between two grass fields, behind the Berry fields (hidden)"
+        },
+        {
+          "Item": "Kee Berry",
+          "Quantity": "20",
+          "Method": "Atop the ledge west of the Pok\u00E9mon Center"
+        },
+        {
+          "Item": "Maranga Berry",
+          "Quantity": "20",
+          "Method": "Northeast of the tall grass field south of the Pok\u00E9mon Center"
+        },
+        {
+          "Item": "TM48 (Snarl)",
+          "Quantity": "1",
+          "Method": "From Hau in the Pok\u00E9mon Center"
+        },
+        {
+          "Item": "Roto Boost",
+          "Quantity": "2",
+          "Method": "Recieved by accepting Rotom\u0027s gambling sponsorship deal"
+        },
+        {
+          "Item": "$3,000",
+          "Quantity": "1",
+          "Method": "From a female Sightseer in the Pok\u00E9mon Center if the player has Crabrawler registered in their Pok\u00E9dex"
+        },
+        {
+          "Item": "Terrain Extender",
+          "Quantity": "1",
+          "Method": "Behind the rocks near the Hau\u0027oli City entrance (requires Tauros Charge)"
+        },
+        {
+          "Item": "Pearl",
+          "Quantity": "1",
+          "Method": "From a Trial Guide for succeeding at volunteering to open gate for other island challengers, after completing Hala\u0027s grand trial (daily)"
+        },
+        {
+          "Item": "Tiny Mushroom",
+          "Quantity": "1",
+          "Method": "From a Trial Guide for failing at volunteering to open gate for other island challengers, after completing Hala\u0027s grand trial (daily)"
+        },
+        {
+          "Item": "Cheri Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Rawst Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Chesto Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Aspear Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Pecha Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Persim Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Shed Shell",
+          "Quantity": "1",
+          "Method": "Found in large berry pile"
+        },
+        {
+          "Item": "Magmarizer",
+          "Quantity": "1",
+          "Method": "From Guzma\u0027s mother after reaching the Pok\u00E9mon League"
+        }
+      ],
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 133,
+          "Species": "Happiny",
+          "Tags": "Optional",
+          "Description": "This Happiny is the first thing encountered in the Route 2 grass nearest to Hau\u0027oli."
+        },
+        {
+          "Type": "Trades",
+          "Index": 0,
+          "Species": "Rockruff 1",
+          "Tags": "Requested: Any",
+          "Description": "This is a \u0022Wildcard\u0022 trade. You can give them any Pokemon in exchange for this Rockruff."
+        }
+      ]
+    },
+    {
+      "LocationName": "Berry Fields",
+      "Weather": "Clear",
+      "Description": "To gain access to the berry fields, you must defeat Gentleman Stanley",
+      "LocationNumber": 10,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 284,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 11-14",
+          "Encounters": "Crabrawler, Burmy, Aipom, Cherubi, Combee, Exeggcute, Pineco, Sunkern, Wurmple, Grubbin"
+        },
+        {
+          "FileNumber": 284,
+          "TableIndex": 1,
+          "Area": "Berry Pile (Crabrawler ONLY!)",
+          "Levels": "Lvl 11-14",
+          "Encounters": "Crabrawler, Burmy, Aipom, Cherubi, Combee, Exeggcute, Pineco, Sunkern, Wurmple, Grubbin"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Lum Berry",
+          "Quantity": "2",
+          "Method": "From the old man"
+        },
+        {
+          "Item": "Chilan Berry",
+          "Quantity": "2",
+          "Method": "From the old man if the player wants to become a Berry Master and has a Persim Berry"
+        },
+        {
+          "Item": "Miracle Seed",
+          "Quantity": "1",
+          "Method": "In the northeast corner, behind the house"
+        },
+        {
+          "Item": "Lucky Egg",
+          "Quantity": "1",
+          "Method": "From the Delibird by the couch inside the house"
+        },
+        {
+          "Item": "Friend Ball",
+          "Quantity": "10",
+          "Method": "In the pot on the west side of the soft soil fields (hidden)"
+        },
+        {
+          "Item": "White Herb",
+          "Quantity": "5",
+          "Method": "In the southwest corner of the soft soil fields"
+        },
+        {
+          "Item": "Cheri Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Rawst Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Chesto Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Aspear Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Pecha Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Persim Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Grip Claw",
+          "Quantity": "1",
+          "Method": "Found in large berry pile"
+        },
+        {
+          "Item": "Heavy Ball",
+          "Quantity": "10",
+          "Method": "In the basket next to the fertilizer box on the east side of the soft soil field (hidden)"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Hau\u0027oli Cemetery",
+      "Weather": "Clear",
+      "Description": "To gain access to the cemetery, you must defeat Office Worker Jeremy",
+      "LocationNumber": 11,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 367,
+          "Trainer": "Braiden",
+          "Class": "Umbreon User",
+          "Route": 0,
+          "Tags": "Postgame Boss, Quest",
+          "Description": "Eevee user Quest"
+        },
+        {
+          "TrainerId": 40,
+          "Trainer": "Jeremy",
+          "Class": "Office Worker",
+          "Route": 1,
+          "Tags": "Mandatory",
+          "Description": "Jeremy blocks access to the cemetery until battled."
+        },
+        {
+          "TrainerId": 41,
+          "Trainer": "Ikue",
+          "Class": "Pok\u00E9mon Breeder",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": "Reward: Wide Lens, Ganlon Berries x20, Apicot Berries x20"
+        },
+        {
+          "TrainerId": 468,
+          "Trainer": "Malia",
+          "Class": "Preschooler",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": "Reward: Thunder Wave TM"
+        },
+        {
+          "TrainerId": 444,
+          "Trainer": "Grunt Ed",
+          "Class": "Team Skull",
+          "Route": 5,
+          "Tags": "Story, Tag Battle",
+          "Description": "Partnered with Grunt DD in a Tag Battle versus the player and Hau"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 251,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 11-13",
+          "Encounters": "Duskull, Gastly, Espurr, Litwick (Golett), Vullaby (Cubone), Gothita (Spoink), Solosis (Baltoy), Shuppet (Yamask), Phantump (Pumpkaboo, Pumpkaboo 1, Pumpkaboo 2, Pumpkaboo 3), Fennekin (Pansear)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Moon Ball",
+          "Quantity": "10",
+          "Method": "In front of the lamppost at the Route 2 entrance (hidden)"
+        },
+        {
+          "Item": "TM59 (Thunder Wave)",
+          "Quantity": "1",
+          "Method": "Located past Preschooler Malia"
+        },
+        {
+          "Item": "White Herb",
+          "Quantity": "2",
+          "Method": "At the southernmost path intersection (hidden)"
+        },
+        {
+          "Item": "Ganlon Berry",
+          "Quantity": "20",
+          "Method": "Located past Breeder Ikue"
+        },
+        {
+          "Item": "Apicot Berry",
+          "Quantity": "20",
+          "Method": "Located past Breeder Ikue"
+        },
+        {
+          "Item": "Wide Lens",
+          "Quantity": "1",
+          "Method": "Located past Breeder Ikue"
+        },
+        {
+          "Item": "Magmarizer",
+          "Quantity": "1",
+          "Method": "From a woman riding Machamp in the cemetery, after obtaining the Ride Pager (Night)"
+        },
+        {
+          "Item": "Spooky Plate",
+          "Quantity": "1",
+          "Method": "In front of the dark grave at the end of the middle path, after completing Nanu\u0027s grand trial (hidden)"
+        },
+        {
+          "Item": "Magmarizer",
+          "Quantity": "1",
+          "Method": "From Hau upon entering the cemetery after defeating Mina"
+        },
+        {
+          "Item": "Orange Petal",
+          "Quantity": "1",
+          "Method": "From Ilima after defeating him (Mina\u0027s Trial)"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Big Wave Beach",
+      "Weather": "Clear",
+      "Description": "The \u0022School Mysteries\u0022 sidequest begins here. Speak to the youngster here after defeating Kahuna Hala, then go to the Schoolyard at night to begin.",
+      "LocationNumber": 12,
+      "Shops": [
+        "Big Wave Beach"
+      ],
+      "Trainers": [
+        {
+          "TrainerId": 18,
+          "Trainer": "Ariel",
+          "Class": "Swim Gal",
+          "Route": 1,
+          "Tags": "Story, Tag Battle Ally",
+          "Description": "Ariel helps you battle Team Skull"
+        },
+        {
+          "TrainerId": 19,
+          "Trainer": "Grunt Ay",
+          "Class": "Team Skull",
+          "Route": 2,
+          "Tags": "Story, Tag Battle",
+          "Description": "Tag battle with Grunt Bee"
+        },
+        {
+          "TrainerId": 20,
+          "Trainer": "Grunt Bee",
+          "Class": "Team Skull",
+          "Route": 3,
+          "Tags": "Story, Tag Battle",
+          "Description": "Tag battle with Grunt Ay"
+        },
+        {
+          "TrainerId": 17,
+          "Trainer": "Sandra",
+          "Class": "Swimsuit",
+          "Route": 4,
+          "Tags": "Optional",
+          "Description": "Sandra blocks access to Sandy Cave"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 75,
+          "TableIndex": 0,
+          "Area": "Sand (Behind Tutor Tents)",
+          "Levels": "Lvl 10-13",
+          "Encounters": "Binacle, Exeggcute, Mantyke, Wimpod, Wingull, Sandygast, Sandile, Inkay, Oshawott (Panpour), Kabuto"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Pearl",
+          "Quantity": "1",
+          "Method": "On the west side of the beach, on the shoreline southwest of the Mantine (hidden)"
+        },
+        {
+          "Item": "Douse Drive",
+          "Quantity": "1",
+          "Method": "On the west side of the beach, on the south side of the rock south of the palm tree near the Sandy Cave entrance (hidden)"
+        },
+        {
+          "Item": "Big Pearl",
+          "Quantity": "1",
+          "Method": "On top of the plateau (hidden)"
+        },
+        {
+          "Item": "Luxury Ball",
+          "Quantity": "10",
+          "Method": "On the west side of the beach, a few steps north of the Surfer and Sightseer (hidden)"
+        },
+        {
+          "Item": "Air Balloon",
+          "Quantity": "5",
+          "Method": "On the west side of the beach, from the Mantine Surf attendant for getting rid of the Team Skull Grunts"
+        },
+        {
+          "Item": "Pearl",
+          "Quantity": "1",
+          "Method": "On the east side of the beach, at the second palm tree from the shore (hidden)"
+        },
+        {
+          "Item": "Mystic Water",
+          "Quantity": "1",
+          "Method": "On the east side of the beach, behind the Move Tutor tent"
+        },
+        {
+          "Item": "Air Balloon",
+          "Quantity": "10",
+          "Method": "From the Youngster near the shore after solving the mysteries at the Trainers\u0027 School"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Sandy Cave",
+      "Weather": "Snow",
+      "Description": "Icium Z can be found here early after obtaining Lapras. | There is constant Snow inside this cave.",
+      "LocationNumber": 13,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 295,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 11-14",
+          "Encounters": "Tynamo, Spheal, Shellos (Buizel), Sandygast, Feebas (Dratini), Binacle (Clamperl), Squirtle (Panpour)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Icium Z Node",
+          "Quantity": "1",
+          "Method": "In the center of an island in the middle of the cave (requires Lapras Surf or Sharpedo Jet)"
+        },
+        {
+          "Item": "Sharpedonite",
+          "Quantity": "1",
+          "Method": "Above the ledge on the southeastern shore (requires Sharpedo Jet)"
+        },
+        {
+          "Item": "TM24 (Hyper Beam)",
+          "Quantity": "1",
+          "Method": "Behind the boulder in the northern corner of the cave (requires Machamp Shove)"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Verdant Cavern",
+      "Weather": "Clear",
+      "Description": "Location of the first trial.",
+      "LocationNumber": 14,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 43,
+          "Trainer": "Grunt Ay",
+          "Class": "Team Skull",
+          "Route": 1,
+          "Tags": "Story",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 306,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 12-14",
+          "Encounters": "Diglett 1 (Diglett), Noibat (Whismur), Venonat (Skorupi), Oddish (Gulpin), Bunnelby (Helioptile), Drilbur (Trapinch), Teddiursa (Swinub), Paras (Shroomish), Geodude 1 (Geodude), Morelull (Foongus)"
+        },
+        {
+          "FileNumber": 306,
+          "TableIndex": 2,
+          "Area": "Dust Spot",
+          "Levels": "Lvl 14-16",
+          "Encounters": "Yungoos (Dunsparce), Rattata 1 (Rattata), Teddiursa (Swinub), Diglett 1 (Diglett), Bunnelby (Helioptile), Drilbur (Trapinch), Geodude 1 (Geodude)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Normal Gem",
+          "Quantity": "20",
+          "Method": "Next to the second Pokemon Den, before the first ramp up."
+        },
+        {
+          "Item": "Shock Drive",
+          "Quantity": "1",
+          "Method": "South of the mossy rock in front of the second den (hidden)"
+        },
+        {
+          "Item": "TM54 (Twister)",
+          "Quantity": "1",
+          "Method": "At the top of the ledge northwest of the entrance"
+        },
+        {
+          "Item": "Oran Berry",
+          "Quantity": "2",
+          "Method": "Northeast corner, through the tunnel"
+        },
+        {
+          "Item": "Lansat Berry",
+          "Quantity": "20",
+          "Method": "West side of the cavern, south of the western den"
+        }
+      ],
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 5,
+          "Species": "Yungoos",
+          "Tags": "Story",
+          "Description": "Trial 1, dust cloud 1."
+        },
+        {
+          "Type": "Statics",
+          "Index": 6,
+          "Species": "Raticate 1",
+          "Tags": "Story",
+          "Description": "Trial 1, dust cloud 3."
+        },
+        {
+          "Type": "Statics",
+          "Index": 7,
+          "Species": "Teddiursa",
+          "Tags": "Story",
+          "Description": "Trial 1, dust cloud 2."
+        }
+      ]
+    },
+    {
+      "LocationName": "Verdant Den",
+      "Weather": "Clear",
+      "Description": "Verdant Den is now its own location. It is the small grotto that Totem Gumshoos resides in. There are Wild Encounters here, but only on the cliff. Tauros Charge is required.",
+      "LocationNumber": 15,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 317,
+          "TableIndex": 0,
+          "Area": "Walking (Cliff)",
+          "Levels": "Lvl 20-22",
+          "Encounters": "Diglett (Diglett 1), Whismur (Noibat), Skorupi (Venonat), Gulpin (Oddish), Helioptile (Bunnelby), Trapinch (Drilbur), Swinub (Teddiursa), Shroomish (Paras), Geodude (Geodude 1), Foongus (Morelull)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Normalium Z Node",
+          "Quantity": "1",
+          "Method": "Reward for completing the trial"
+        },
+        {
+          "Item": "Silk Scarf",
+          "Quantity": "1",
+          "Method": "From Ilima after completing the trial"
+        },
+        {
+          "Item": "Odd Incense",
+          "Quantity": "1",
+          "Method": "On the land jutting out over the edge (requires Tauros Charge) (hidden)"
+        },
+        {
+          "Item": "Gumshoosite",
+          "Quantity": "1",
+          "Method": "At the top of the ledge (requires Tauros Charge)"
+        }
+      ],
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 4,
+          "Species": "Gumshoos 1",
+          "Tags": "Story Boss",
+          "Description": "Totem Megamax Gumshoos: Trial 1"
+        },
+        {
+          "Type": "Statics",
+          "Index": 8,
+          "Species": "Rattata 1",
+          "Tags": "Story, S.O.S. Ally",
+          "Description": "Totem Gumshoos\u0027 ally."
+        }
+      ]
+    },
+    {
+      "LocationName": "Route 3",
+      "Weather": "Clear",
+      "Description": "Hau battles you here IMMEDIATELY after speaking to Nebby in Seaward Cavern, be careful!",
+      "LocationNumber": 16,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 31,
+          "Trainer": "Ian",
+          "Class": "Rising Star",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 33,
+          "Trainer": "Tatiana",
+          "Class": "Up and Coming",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": "Abra: Hidden Power Fighting"
+        },
+        {
+          "TrainerId": 32,
+          "Trainer": "Joshua",
+          "Class": "Rising Star",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": "Reward: Electroweb TM and the Soothe Bell (Speak to the Rancher)"
+        },
+        {
+          "TrainerId": 16,
+          "Trainer": "Makana",
+          "Class": "Ace Trainer",
+          "Route": 4,
+          "Tags": "Z-Trainer, Optional Miniboss",
+          "Description": ""
+        },
+        {
+          "TrainerId": 12,
+          "Trainer": "Hau",
+          "Class": "Tapu\u0027s Chosen",
+          "Route": 5,
+          "Tags": "Story, Miniboss",
+          "Description": "Hau Battle 3 | Rowlet"
+        },
+        {
+          "TrainerId": 13,
+          "Trainer": "Hau",
+          "Class": "Tapu\u0027s Chosen",
+          "Route": 6,
+          "Tags": "Story, Miniboss",
+          "Description": "Hau Battle 3 | Litten"
+        },
+        {
+          "TrainerId": 14,
+          "Trainer": "Hau",
+          "Class": "Tapu\u0027s Chosen",
+          "Route": 7,
+          "Tags": "Story, Miniboss",
+          "Description": "Hau Battle 3 | Popplio"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 53,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 13-15",
+          "Encounters": "Rufflet, Skiddo (Litleo), Phanpy (Hippopotas), Bagon, Pawniard (Cacnea), Mienfoo (Pancham), Rhyhorn (Snover), Mankey (Vulpix, Growlithe), Jangmo-o, Cyndaquil (Pansear)"
+        },
+        {
+          "FileNumber": 53,
+          "TableIndex": 4,
+          "Area": "Sky Spot",
+          "Levels": "Lvl 14-17",
+          "Encounters": "Rufflet, Spearow, Vullaby, Bagon, Burmy 1"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Charcoal",
+          "Quantity": "1",
+          "Method": "In the middle of the lower path through the rocky area"
+        },
+        {
+          "Item": "Eject Button",
+          "Quantity": "10",
+          "Method": "East of the northern grassy area"
+        },
+        {
+          "Item": "Star Piece",
+          "Quantity": "1",
+          "Method": "In the recess on the north side of the rocky outcrop that the flying-Pok\u00E9mon shadows circle (hidden)"
+        },
+        {
+          "Item": "Soothe Bell",
+          "Quantity": "1",
+          "Method": "From the Pok\u00E9mon Breeder next to the eastern grass patch on the north side of the bridge"
+        },
+        {
+          "Item": "TM46 (Electroweb)",
+          "Quantity": "1",
+          "Method": "On the grassy outcrop just south of the entrance to Melemele Meadow"
+        },
+        {
+          "Item": "TM19 (Roost)",
+          "Quantity": "1",
+          "Method": "From Ace Trainer Makana for defeating him"
+        },
+        {
+          "Item": "Chople Berry",
+          "Quantity": "20",
+          "Method": "South of the bridge, next to the rock"
+        },
+        {
+          "Item": "Fighting Gem",
+          "Quantity": "20",
+          "Method": "Next to the eastern grass patch on the south side of the bridge"
+        },
+        {
+          "Item": "Cheri Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Rawst Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Chesto Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Aspear Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Pecha Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Persim Berry",
+          "Quantity": "Up to 10",
+          "Method": "Found in berry tree pile"
+        },
+        {
+          "Item": "Big Root",
+          "Quantity": "1",
+          "Method": "Found in large berry pile"
+        },
+        {
+          "Item": "$3,000",
+          "Quantity": "1",
+          "Method": "From a Sightseer near the Route 1 connection if the player has Sableye registered in their Pok\u00E9dex"
+        },
+        {
+          "Item": "Sharp Beak",
+          "Quantity": "1",
+          "Method": "Flying Pokemon (REMOVE ME!!!)"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Melemele Meadow",
+      "Weather": "Sun",
+      "Description": "Permanent Harsh Sunlight",
+      "LocationNumber": 17,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 536,
+          "Trainer": "Meredith",
+          "Class": "Actor",
+          "Route": 1,
+          "Tags": "Optional Miniboss",
+          "Description": "Meredith Battle 1 - Reward: Berry Juice x5 (CHANGE)"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 262,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 13-17",
+          "Encounters": "Combee, Weedle (Kakuna), Wurmple (Silcoon, Cascoon), Sunkern (Deerling, Deerling 1, Deerling 2, Deerling 3), Oricorio 1, Budew (Roselia), Cottonee (Swirlix), Petilil (Spritzee), Flab\u00E9b\u00E9 1 (Flab\u00E9b\u00E9 2, Flab\u00E9b\u00E9 3, Flab\u00E9b\u00E9 4, Flab\u00E9b\u00E9), Bulbasaur (Pansage)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Yellow Nectar",
+          "Quantity": "3",
+          "Method": "In the sparkling flowers (Night, respawns daily)"
+        },
+        {
+          "Item": "Tanga Berry",
+          "Quantity": "20",
+          "Method": "South of the first field of flowers, near the entrance"
+        },
+        {
+          "Item": "Custap Berry",
+          "Quantity": "20",
+          "Method": "West of the large flower patch, on the plateau near the Seaward Cave entrance"
+        },
+        {
+          "Item": "Safety Goggles",
+          "Quantity": "1",
+          "Method": "On the west side of the meadow, on top of the cliff to the west of a flower field"
+        },
+        {
+          "Item": "Oran Berry",
+          "Quantity": "10",
+          "Method": "From Actor Meredith after beating her."
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Seaward Cavern",
+      "Weather": "Snow",
+      "Description": "Kala\u0027e Bay is only fully accessible after obtaining Lapras. Though, you can fish for a Pokemon there early. | There is persistent Snow inside this cave.",
+      "LocationNumber": 18,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 649,
+          "Trainer": "Dulse",
+          "Class": "Ultra Recon Squad",
+          "Route": 1,
+          "Tags": "Story, Miniboss",
+          "Description": "Ultra Recon Squad Dulse Battle 1"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 273,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 15-17",
+          "Encounters": "Smoochum (Elekid, Magby), Zubat (Woobat), Sandshrew 1 (Sandshrew), Wooper (Sneasel), Bergmite (Snorunt), Vanillite (Vulpix 1), Machop (Cubchoo), Dwebble (Ferroseed), Shuckle, Totodile (Panpour)"
+        },
+        {
+          "FileNumber": 273,
+          "TableIndex": 2,
+          "Area": "Surf",
+          "Levels": "Lvl 22-27",
+          "Encounters": "Magikarp, Zubat, Feebas, Spheal, Totodile, Wooper, Shellos, Delibird"
+        },
+        {
+          "FileNumber": 273,
+          "TableIndex": 4,
+          "Area": "Fish",
+          "Levels": "Lvl 22-27",
+          "Encounters": "Magikarp, Barboach, Feebas, Dhelmise"
+        },
+        {
+          "FileNumber": 273,
+          "TableIndex": 6,
+          "Area": "Bubbles",
+          "Levels": "Lvl 26-28",
+          "Encounters": "Barboach, Feebas, Dhelmise, Magikarp"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Muscle Band",
+          "Quantity": "1",
+          "Method": "Next to Melemele Meadow tunnel"
+        },
+        {
+          "Item": "TM79 (Frost Breath)",
+          "Quantity": "1",
+          "Method": "West side of the cave, opposite the body of water, south of the fishing spot (requires Lapras Paddle or Sharpedo Jet)"
+        },
+        {
+          "Item": "Snowball",
+          "Quantity": "20",
+          "Method": "West side of the cave, southwest of the Melemele Meadow tunnel"
+        },
+        {
+          "Item": "Kebia Berry",
+          "Quantity": "20",
+          "Method": "North end of the cave. In a small crevice."
+        },
+        {
+          "Item": "Chill Drive",
+          "Quantity": "1",
+          "Method": "In between the three big rocks west of the pool near the Kala\u0027e Bay entrance (hidden)"
+        },
+        {
+          "Item": "Wise Glasses",
+          "Quantity": "1",
+          "Method": "West of the pool near the Kala\u0027e Bay entrance"
+        },
+        {
+          "Item": "Pure Incense",
+          "Quantity": "1",
+          "Method": "South of the pool near the Kala\u0027e Bay entrance, near a rock (hidden)"
+        },
+        {
+          "Item": "Ice Gem",
+          "Quantity": "20",
+          "Method": "North of the pool near the Kala\u0027e Bay entrance"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Kala\u0027e Bay",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 19,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 53,
+          "TableIndex": 2,
+          "Area": "Grass",
+          "Levels": "Lvl 22-27",
+          "Encounters": "Yungoos, Rattata 1 (Rattata), Slowpoke, Wingull, Inkay, Binacle, Exeggcute, Shuckle, Tynamo, Bagon"
+        },
+        {
+          "FileNumber": 53,
+          "TableIndex": 6,
+          "Area": "Berry Pile",
+          "Levels": "Lvl 14-18",
+          "Encounters": "Exeggcute (Crabrawler, Cherubi, Aipom)"
+        },
+        {
+          "FileNumber": 53,
+          "TableIndex": 8,
+          "Area": "Fish",
+          "Levels": "Lvl 13-17",
+          "Encounters": "Magikarp, Shellder, Remoraid, Feebas, Horsea, Dratini, Mantyke (Remoraid)"
+        },
+        {
+          "FileNumber": 53,
+          "TableIndex": 16,
+          "Area": "Bubbles",
+          "Levels": "Lvl 17-20",
+          "Encounters": "Magikarp, Shellder, Remoraid, Feebas, Horsea, Dratini, Mantyke (Remoraid)"
+        },
+        {
+          "FileNumber": 53,
+          "TableIndex": 28,
+          "Area": "Surf",
+          "Levels": "Lvl 22-27",
+          "Encounters": "Mantyke (Remoraid), Remoraid, Wingull, Horsea, Dratini, Lapras"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Metronome",
+          "Quantity": "1",
+          "Method": "On the land around the Seaward Cave entrance"
+        },
+        {
+          "Item": "Star Piece",
+          "Quantity": "1",
+          "Method": "On the large sand island, in the shallow hole inset in the northernmost mound (requires Lapras Paddle or Sharpedo Jet) (hidden)"
+        },
+        {
+          "Item": "TM28 (Aqua Tail)",
+          "Quantity": "1",
+          "Method": "On the large sand island, on top of the central mound (requires Lapras Paddle or Sharpedo Jet)"
+        },
+        {
+          "Item": "Big Pearl",
+          "Quantity": "1",
+          "Method": "On the large sand island, on top of the southernmost mound (requires Lapras Paddle or Sharpedo Jet) (hidden) (regenerates occasionally)"
+        },
+        {
+          "Item": "Spell Tag",
+          "Quantity": "1",
+          "Method": "On the small eastern island (requires Lapras Paddle or Sharpedo Jet)"
+        },
+        {
+          "Item": "Pearl",
+          "Quantity": "1",
+          "Method": "North of the line where grass changes to sand on the beach in the southwest of the bay (requires Lapras Paddle or Sharpedo Jet) (hidden) (regenerates occasionally)"
+        },
+        {
+          "Item": "AloRaticatite",
+          "Quantity": "1",
+          "Method": "At the southern tip of the beach in the southwest of the bay (requires Lapras Paddle or Sharpedo Jet)"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Ten Carat Hill",
+      "Weather": "Clear",
+      "Description": "Ten Carat Hill is accessible via Ten Carat Beach after unlocking Tauros. | The surf section is accessible from Melemele Sea after obtaining Sharpedo.",
+      "LocationNumber": 20,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 229,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 16-19",
+          "Encounters": "Carbink (Sableye), Roggenrola (Slugma), Wynaut, Woobat (Zubat), Cleffa (Clefairy), Axew (Gible), Aron, Onix, Sableye, Mawile"
+        },
+        {
+          "FileNumber": 229,
+          "TableIndex": 2,
+          "Area": "Surf",
+          "Levels": "Lvl 30-37",
+          "Encounters": "Swoobat (Woobat), Kingler (Krabby), Binacle (Barbaracle), Gastrodon (Shellos), Dragonair (Dratini)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Steel Gem",
+          "Quantity": "20",
+          "Method": "Just north of entrance"
+        },
+        {
+          "Item": "Metal Coat",
+          "Quantity": "1",
+          "Method": "At the near end of the upper side of the ledge (requires Tauros Charge)"
+        },
+        {
+          "Item": "Yache Berry",
+          "Quantity": "20",
+          "Method": "At the far end of the upper side of the ledge (requires Tauros Charge)"
+        },
+        {
+          "Item": "Rock Incense",
+          "Quantity": "1",
+          "Method": "On a rock on the west side of the cave, near the first entrance to the Farthest Hollow (hidden) (requires Tauros Charge)"
+        },
+        {
+          "Item": "Tiny Mushroom",
+          "Quantity": "10",
+          "Method": "On the south side of a rock at the end of the path, near the second entrance to the Farthest Hollow (hidden) (requires Tauros Charge)"
+        },
+        {
+          "Item": "TM64 (Explosion)",
+          "Quantity": "1",
+          "Method": "Inside a cave accessible from Melemele Sea on the west side of Ten Carat Hill (requires Sharpedo Jet)"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Ten Carat Hollow",
+      "Weather": "Clear",
+      "Description": "Ten Carat Hollow is now a seperate encounter location to Ten Carat Hill. Flyinium Z is found through the left path in the cave blocked by Tauros Rocks.",
+      "LocationNumber": 21,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 155,
+          "Trainer": "Kahili",
+          "Class": "Top Golfer",
+          "Route": 1,
+          "Tags": "Optional Miniboss",
+          "Description": "Kahili battles you when you go to try to take the Flyinium Z from Ten Carat Hill\u0027s pedestal. | Reward: Flyinium Z"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 240,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 16-19",
+          "Encounters": "Rockruff, Spinda, Togepi (Exeggcute), Makuhita (Pancham), Natu (Hoothoot), Meditite (Darumaka), Ralts, Nosepass (Beldum), Goomy, Riolu (Chimchar)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Hard Stone",
+          "Quantity": "1",
+          "Method": "On the west side, halfway down the path through the middle of the Farthest Hollow"
+        },
+        {
+          "Item": "Flying Gem",
+          "Quantity": "20",
+          "Method": "On the opposite side of the southwest grass patch"
+        },
+        {
+          "Item": "Oran Berry",
+          "Quantity": "20",
+          "Method": "Central north side of the Farthest Hollow"
+        },
+        {
+          "Item": "Lax Incense",
+          "Quantity": "1",
+          "Method": "Near the back of the grass field in the northwest (hidden)"
+        },
+        {
+          "Item": "Rock Gem",
+          "Quantity": "20",
+          "Method": "Northeast corner of the Farthest Hollow"
+        },
+        {
+          "Item": "TM23 (Rock Tomb)",
+          "Quantity": "1",
+          "Method": "Before the grass patch reached by proceeding up the slope in the southeast"
+        },
+        {
+          "Item": "Flyinium Z Node",
+          "Quantity": "1",
+          "Method": "On a cliff overlooking the hollow, via the path blocked by a heavy boulder in the cave. Given before battling Kahili"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Heahea Beach",
+      "Weather": "Clear",
+      "Description": "Oak is here. He will take Totem Stickers and exchange them for rare Pokemon. | !!!!Locations on this island forward need their items double checked!!!!!",
+      "LocationNumber": 22,
+      "Shops": [
+        "Heahea Beach"
+      ],
+      "Trainers": [],
+      "WildEncounters": [],
+      "Items": [
+        {
+          "Item": "Pearl",
+          "Quantity": "1",
+          "Method": "South of the western Mantine (hidden)"
+        },
+        {
+          "Item": "Soft Sand",
+          "Quantity": "1",
+          "Method": "In the northeast corner of the beach"
+        },
+        {
+          "Item": "Big Pearl",
+          "Quantity": "1",
+          "Method": "In the center of the beach (hidden)"
+        },
+        {
+          "Item": "Metronome",
+          "Quantity": "1",
+          "Method": "Held by Gift Porygon"
+        },
+        {
+          "Item": "Assault Vest",
+          "Quantity": "1",
+          "Method": "Held by gift Castform"
+        },
+        {
+          "Item": "Life Orb",
+          "Quantity": "1",
+          "Method": "Held By Gift Rotom"
+        },
+        {
+          "Item": "Magmarizer",
+          "Quantity": "1",
+          "Method": "Held By Gift Type Null"
+        },
+        {
+          "Item": "Magmarizer",
+          "Quantity": "1",
+          "Method": "Held by Gift Poipole"
+        },
+        {
+          "Item": "Magmarizer",
+          "Quantity": "1",
+          "Method": "Held by Gift Zeraora"
+        }
+      ],
+      "Statics": [
+        {
+          "Type": "Gifts",
+          "Index": 22,
+          "Species": "Porygon 1",
+          "Tags": "Quest",
+          "Description": "20 Totem Stickers reward from Dark Oak."
+        },
+        {
+          "Type": "Gifts",
+          "Index": 24,
+          "Species": "Castform",
+          "Tags": "Quest",
+          "Description": "40 Totem Stickers reward from Dark Oak."
+        },
+        {
+          "Type": "Gifts",
+          "Index": 26,
+          "Species": "Rotom",
+          "Tags": "Quest",
+          "Description": "50 Totem Stickers reward from Dark Oak."
+        },
+        {
+          "Type": "Gifts",
+          "Index": 28,
+          "Species": "Type: Null",
+          "Tags": "Quest",
+          "Description": "60 Totem Stickers reward from Dark Oak."
+        },
+        {
+          "Type": "Gifts",
+          "Index": 30,
+          "Species": "Poipole",
+          "Tags": "Quest",
+          "Description": "80 Totem Stickers reward from Dark Oak."
+        },
+        {
+          "Type": "Gifts",
+          "Index": 31,
+          "Species": "Zeraora",
+          "Tags": "Quest",
+          "Description": "100 Totem Stickers reward from Dark Oak."
+        }
+      ]
+    },
+    {
+      "LocationName": "Heahea City",
+      "Weather": "Clear",
+      "Description": "The Name Rater is here, inside the Alola Ferry Terminal",
+      "LocationNumber": 23,
+      "Shops": [
+        "1 Trial",
+        "Heahea City [TMs]"
+      ],
+      "Trainers": [
+        {
+          "TrainerId": 75,
+          "Trainer": "Sina",
+          "Class": "Kalosian Woman",
+          "Route": 1,
+          "Tags": "Multi Battle, Story Miniboss",
+          "Description": "Multi Battle along with Dexio | Reward: Never-melt Ice"
+        },
+        {
+          "TrainerId": 74,
+          "Trainer": "Dexio",
+          "Class": "Kalosian Man",
+          "Route": 2,
+          "Tags": "Multi Battle, Story Miniboss",
+          "Description": "Multi Battle along with Sina | Reward: Twisted Spoon"
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [
+        {
+          "Item": "Blackglasses",
+          "Quantity": "1",
+          "Method": "From a Gentleman in the Ferry Terminal"
+        },
+        {
+          "Item": "$10,000",
+          "Quantity": "1",
+          "Method": "From the Beauty in the apparel shop if the player has Salazzle registered in their Pok\u00E9dex"
+        },
+        {
+          "Item": "Sharp Beak",
+          "Quantity": "1",
+          "Method": "From the woman opposite the apparel store"
+        },
+        {
+          "Item": "Twisted Spoon",
+          "Quantity": "1",
+          "Method": "From Dexio after defeating him."
+        },
+        {
+          "Item": "Never-Melt Ice",
+          "Quantity": "1",
+          "Method": "From Sina after defeating her."
+        },
+        {
+          "Item": "Magmarizer",
+          "Quantity": "1",
+          "Method": "From the Bellhop in front of the Tide Song Hotel for showing him a Magmar"
+        },
+        {
+          "Item": "Shalour Sable",
+          "Quantity": "10",
+          "Method": "From a lady in the Game Freak office"
+        },
+        {
+          "Item": "Left Pok\u00E9 Ball",
+          "Quantity": "1",
+          "Method": "From a female Aether Foundation Employee in the Aether office"
+        },
+        {
+          "Item": "Gold Bottle Cap",
+          "Quantity": "1",
+          "Method": "Next to the lamppost opposite the Dimensional Research Lab and next to the bridge (hidden)"
+        },
+        {
+          "Item": "Razor Fang",
+          "Quantity": "1",
+          "Method": "In the area behind the Dimensional Research Lab"
+        },
+        {
+          "Item": "Zoom Lens",
+          "Quantity": "1",
+          "Method": "In the Dimensional Research Lab, from a Scientist if the player has Pok\u00E9mon in their Battle Box"
+        },
+        {
+          "Item": "Beedrillite",
+          "Quantity": "1",
+          "Method": "In the Dimensional Research Lab, from Professor Burnet after passing Olivia\u0027s grand trial"
+        },
+        {
+          "Item": "Comet Shard",
+          "Quantity": "1",
+          "Method": "Held by the Mantyke received from the Boss of the Surf Association after becoming No. 1 on all four Mantine Surf courses"
+        },
+        {
+          "Item": "Oval Charm",
+          "Quantity": "1",
+          "Method": "In the Game Freak office, from Morimoto after defeating him for the first time"
+        },
+        {
+          "Item": "Shiny Charm",
+          "Quantity": "1",
+          "Method": "In the Game Freak office, from the game director after completing the Alola Pok\u00E9dex"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Tide Song Hotel",
+      "Weather": "Clear",
+      "Description": "The Fairium Z can be found here early.",
+      "LocationNumber": 24,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [],
+      "Items": [
+        {
+          "Item": "Magmarizer",
+          "Quantity": "1",
+          "Method": "1F, from the Dancer after telling her about the bottle on Heahea Beach"
+        },
+        {
+          "Item": "Poison Barb",
+          "Quantity": "1",
+          "Method": "3F, in the leftmost room"
+        },
+        {
+          "Item": "Poison Gem",
+          "Quantity": "20",
+          "Method": "3F, on the balcony of the leftmost room"
+        },
+        {
+          "Item": "Snorlium Z Node",
+          "Quantity": "1",
+          "Method": "3F, from the Gentleman in the first room to the left of the elevator if the player has a Snorlax in their party"
+        },
+        {
+          "Item": "Mewnium Z Node",
+          "Quantity": "1",
+          "Method": "3F, from the Gentleman in the first room to the left of the elevator if the player has a Mew in their party"
+        },
+        {
+          "Item": "Marshadium Z Node",
+          "Quantity": "1",
+          "Method": "3F, from the Gentleman in the first room to the left of the elevator if the player has a Marshadow in their party"
+        },
+        {
+          "Item": "Roseli Berry",
+          "Quantity": "20",
+          "Method": "3F, after being forced out of the first room to the right of the elevator"
+        },
+        {
+          "Item": "Fairium Z Node",
+          "Quantity": "1",
+          "Method": "3F, in the first room to the right of the elevator"
+        },
+        {
+          "Item": "Dragon Fang",
+          "Quantity": "1",
+          "Method": "3F, on the balcony of the first room to the right of the elevator"
+        },
+        {
+          "Item": "Kangaskhanite",
+          "Quantity": "1",
+          "Method": "3F, from the old man in the rightmost room for finding all of his friends"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 4",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 25,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 182,
+          "Trainer": "Jody",
+          "Class": "Bellhop",
+          "Route": 1,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 61,
+          "Trainer": "Bryan",
+          "Class": "Collector",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": "Reward: Pixie Plate"
+        },
+        {
+          "TrainerId": 64,
+          "Trainer": "Scotty",
+          "Class": "Tourist",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 513,
+          "Trainer": "Perdita",
+          "Class": "Sightseer",
+          "Route": 4,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 333,
+          "Trainer": "Ernie",
+          "Class": "Cook",
+          "Route": 5,
+          "Tags": "Optional",
+          "Description": "Reward: Silver Powder and Berry Tree pile."
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 735,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 18-21",
+          "Encounters": "Lillipup (Minccino), Pidgey, Venipede (Sewaddle), Taillow, Patrat, Nincada (Sandile), Shinx, Eevee, Chespin (Cacnea), Stunky (Spritzee)"
+        },
+        {
+          "FileNumber": 735,
+          "TableIndex": 12,
+          "Area": "Berry Pile",
+          "Levels": "Lvl 18-21",
+          "Encounters": "Crabrawler, Burmy (Burmy 1, Burmy 2), Exeggcute, Heracross"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Kasib Berry",
+          "Quantity": "20",
+          "Method": "In the clearing between the two grass fields to the east of the Heahea City entrance"
+        },
+        {
+          "Item": "Stardust",
+          "Quantity": "2",
+          "Method": "On a rock at the end of the narrow path north of the first Trainer Tips sign (hidden)"
+        },
+        {
+          "Item": "Honey",
+          "Quantity": "20",
+          "Method": "On the land overhanging the cliff southwest of the Pok\u00E9mon Breeder (hidden)"
+        },
+        {
+          "Item": "Pixie Plate",
+          "Quantity": "1",
+          "Method": "Behind Collector Bryan"
+        },
+        {
+          "Item": "Burn Drive",
+          "Quantity": "1",
+          "Method": "Against northern side of the rock formation in the northwest of the route (hidden)"
+        },
+        {
+          "Item": "Red Card",
+          "Quantity": "20",
+          "Method": "On the opposite side of the grass field south of Sightseer Scotty"
+        },
+        {
+          "Item": "Silver Powder",
+          "Quantity": "1",
+          "Method": "Below the Berry tree near Cook Ernie"
+        },
+        {
+          "Item": "Big Mushroom",
+          "Quantity": "3",
+          "Method": "South of the Berry tree (hidden)"
+        },
+        {
+          "Item": "Grassy Seed",
+          "Quantity": "Up to 10",
+          "Method": "Under the Berry Tree near Paniola"
+        },
+        {
+          "Item": "Electric Seed",
+          "Quantity": "Up to 10",
+          "Method": "Under the Berry Tree near Paniola"
+        },
+        {
+          "Item": "Psychic Seed",
+          "Quantity": "Up to 10",
+          "Method": "Under the Berry Tree near Paniola"
+        },
+        {
+          "Item": "Misty Seed",
+          "Quantity": "Up to 10",
+          "Method": "Under the Berry Tree near Paniola"
+        },
+        {
+          "Item": "Red Nectar",
+          "Quantity": "1",
+          "Method": "Under the Berry Tree near Paniola"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Pikachu Valley",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 26,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 66,
+          "Trainer": "Pikachu Fan",
+          "Class": "Challenge Guide",
+          "Route": 1,
+          "Tags": "Optional Miniboss",
+          "Description": "Reward: Electrium Z"
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [
+        {
+          "Item": "Magnet",
+          "Quantity": "1",
+          "Method": "To the left of the trailer"
+        },
+        {
+          "Item": "Comet Shard",
+          "Quantity": "1",
+          "Method": "Held by gift Partner Cap Pikachu"
+        },
+        {
+          "Item": "Pikashunium Z Node",
+          "Quantity": "1",
+          "Method": "From the female Pikachu near the female Trial Guide after showing her a Pikachu in a cap"
+        },
+        {
+          "Item": "Electrium Z Node",
+          "Quantity": "1",
+          "Method": "Prize for defeating Pikachu Fan"
+        }
+      ],
+      "Statics": [
+        {
+          "Type": "Gifts",
+          "Index": 34,
+          "Species": "Pikachu 7",
+          "Tags": "Quest",
+          "Description": "QR Code Gift. (Change to not require QR code, make it a raw gift, perhaps move it somewhere else (Hano resort battle? Or just Pikachu Fan)"
+        }
+      ]
+    },
+    {
+      "LocationName": "Paniola Town",
+      "Weather": "Sun",
+      "Description": "Permanent Harsh Sunlight",
+      "LocationNumber": 27,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 76,
+          "Trainer": "Hau",
+          "Class": "Tapu\u0027s Chosen",
+          "Route": 1,
+          "Tags": "Story Boss",
+          "Description": "Hau Battle 4 | Rowlet"
+        },
+        {
+          "TrainerId": 646,
+          "Trainer": "Grunt Cecil",
+          "Class": "Team Skull",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": "Reward: (CHANGE THIS INTO A TAG BATTLE WITH THE OLD LADY, MAKE CITRI AND SUNNY, CECIL USES GRASS TYPES AND SUNNY USES FIRE SUN TEAM)"
+        },
+        {
+          "TrainerId": 77,
+          "Trainer": "Hau",
+          "Class": "Tapu\u0027s Chosen",
+          "Route": 2,
+          "Tags": "Story Boss",
+          "Description": "Hau Battle 4 | Litten"
+        },
+        {
+          "TrainerId": 78,
+          "Trainer": "Hau",
+          "Class": "Tapu\u0027s Chosen",
+          "Route": 3,
+          "Tags": "Story Boss",
+          "Description": "Hau Battle 4 | Popplio"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 746,
+          "TableIndex": 0,
+          "Area": "Fish",
+          "Levels": "Lvl 22-27",
+          "Encounters": "Barboach, Tympole (Poliwag), Wooper, Mudkip (Froakie), Stunfisk"
+        },
+        {
+          "FileNumber": 746,
+          "TableIndex": 2,
+          "Area": "Bubbles",
+          "Levels": "Lvl 27-28",
+          "Encounters": "Barboach, Palpitoad (Poliwhirl), Quagsire (Wooper), Marshtomp (Frogadier), Stunfisk"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Shell Bell",
+          "Quantity": "1",
+          "Method": "From Hau after battling him"
+        },
+        {
+          "Item": "$5,000",
+          "Quantity": "1",
+          "Method": "From the old man next to the Pok\u00E9mon Center, if the player sells him the requested item (daily)"
+        },
+        {
+          "Item": "Luck Incense",
+          "Quantity": "1",
+          "Method": "In front of the cart of hay on the west side of town (hidden)"
+        },
+        {
+          "Item": "Rare Bone",
+          "Quantity": "1",
+          "Method": "By the water in the southwest corner of town, near the fence (hidden)"
+        },
+        {
+          "Item": "Moomoo Milk",
+          "Quantity": "1",
+          "Method": "From the Pok\u00E9mon Breeder when interacting with the Miltank in the stall (daily)"
+        },
+        {
+          "Item": "Power Herb",
+          "Quantity": "3",
+          "Method": "From a Magmar in the hallway on the second floor of Kiawe\u0027s house"
+        },
+        {
+          "Item": "TM88 (Aerial Ace)",
+          "Quantity": "1",
+          "Method": "South side of the area accessible from Route 6"
+        },
+        {
+          "Item": "Big Nugget",
+          "Quantity": "1",
+          "Method": "North side of the area accessible from Route 6, on the hay bales (hidden)"
+        },
+        {
+          "Item": "Bottle Cap",
+          "Quantity": "10",
+          "Method": "From the lady the day after rescuing Alolan Vulpix from Team Skull"
+        },
+        {
+          "Item": "Magmarizer",
+          "Quantity": "1",
+          "Method": "From Kiawe\u0027s father after becoming Champion"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Paniola Ranch",
+      "Weather": "Sun",
+      "Description": "The Pokemon Daycare is located here. They will give you an Egg on your first visit. | The Hidden Power NPC is also here, they will tell you your Pokemon\u0027s Hidden Power Type | The Miltank near the daycare will heal your team for free. | Permanent Harsh Sunlight",
+      "LocationNumber": 28,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 652,
+          "Trainer": "Dulse",
+          "Class": "Ultra Recon Squad",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 125,
+          "Trainer": "Elizabeth",
+          "Class": "Madame",
+          "Route": 1,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 390,
+          "Trainer": "Wesley",
+          "Class": "Pok\u00E9mon Rancher",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": "Speak to the ranchers in Moomoo paddock. | Reward: Scope Lens"
+        },
+        {
+          "TrainerId": 122,
+          "Trainer": "Glenn",
+          "Class": "Pok\u00E9mon Rancher",
+          "Route": 3,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 124,
+          "Trainer": "Gerald",
+          "Class": "Gentleman",
+          "Route": 4,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 516,
+          "Trainer": "Micah",
+          "Class": "Rising Star",
+          "Route": 5,
+          "Tags": "Optional",
+          "Description": "Reward: $20,000"
+        },
+        {
+          "TrainerId": 651,
+          "Trainer": "Soliera",
+          "Class": "Ultra Recon Squad",
+          "Route": 6,
+          "Tags": "Story Miniboss",
+          "Description": "This battle needs to replace Dulse 652 in paniola."
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1340,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 18-21",
+          "Encounters": "Mudbray (Elgyem), Flaaffy (Mareep), Doduo (Spewpa 14), Ponyta, Litleo, Blitzle (Skiddo), Farfetch\u2019d, Miltank (Tauros), Tauros (Miltank), Torchic (Combusken)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Stoutland Search",
+          "Quantity": "1",
+          "Method": "Moomoo Paddock, from Mallow on the player\u0027s first visit"
+        },
+        {
+          "Item": "Adrenaline Orb",
+          "Quantity": "10",
+          "Method": "Moomoo Paddock, from the female Pok\u00E9mon Breeder near the entrance"
+        },
+        {
+          "Item": "Bug Gem",
+          "Quantity": "20",
+          "Method": "Moomoo Paddock, east of the trough on the north side (hidden) (Use Stoutland Search)"
+        },
+        {
+          "Item": "Scope Lens",
+          "Quantity": "1",
+          "Method": "Moomoo Paddock, from Pok\u00E9mon Breeder Wesley, after defeating him in the battle that the player agrees to have with the aggressive Tauros"
+        },
+        {
+          "Item": "Ghost Gem",
+          "Quantity": "20",
+          "Method": "Moomoo Paddock, by the pool of water, north of the gap where the Tauros drink (hidden) (Use Stoutland Search)"
+        },
+        {
+          "Item": "Dark Gem",
+          "Quantity": "20",
+          "Method": "Moomoo Paddock, east of the pair of hay bales on the south side (hidden) (Use Stoutland Search)"
+        },
+        {
+          "Item": "Enigma Berry",
+          "Quantity": "10",
+          "Method": "Paddock east of the pathway to Paniola Town, west of the northwestern ramp, against the elevated vegetation (hidden)"
+        },
+        {
+          "Item": "Bottle Cap",
+          "Quantity": "3",
+          "Method": "Paddock east of the pathway to Paniola Town, against the south side of the northwestern ramp (hidden)"
+        },
+        {
+          "Item": "Star Piece",
+          "Quantity": "1",
+          "Method": "Paddock east of the pathway to Paniola Town, north of the Trainer Tips sign, inside the grass field (hidden)"
+        },
+        {
+          "Item": "Lucky Punch",
+          "Quantity": "1",
+          "Method": "Paddock east of the pathway to Paniola Town, in the southwest corner"
+        },
+        {
+          "Item": "TM10 (Hidden Power)",
+          "Quantity": "1",
+          "Method": "Pok\u00E9mon Nursery, from a woman inside"
+        },
+        {
+          "Item": "Roto Hatch",
+          "Quantity": "1",
+          "Method": "East side of the ranch, automatically used by the Rotom Pok\u00E9dex after obtaining the Egg"
+        },
+        {
+          "Item": "Tiny Mushroom",
+          "Quantity": "8",
+          "Method": "East side of the ranch, in the fenced area full of hay bales opposite the Pok\u00E9mon Nursery, next to the spade (hidden)"
+        },
+        {
+          "Item": "Amulet Coin",
+          "Quantity": "1",
+          "Method": "East side of the ranch, behind the truck to the east of the Pok\u00E9mon Nursery"
+        },
+        {
+          "Item": "Everstone",
+          "Quantity": "1",
+          "Method": "East side of the ranch, in the center of the grass field southeast of the Pok\u00E9mon Nursery (hidden)"
+        },
+        {
+          "Item": "Kangaskhanite",
+          "Quantity": "1",
+          "Method": "East side of the ranch, opposite the grass field southeast of the Pok\u00E9mon Nursery"
+        },
+        {
+          "Item": "Eviolite",
+          "Quantity": "1",
+          "Method": "East side of the ranch, from the kid for scaring off the Sudowoodo after defeating Soliera"
+        },
+        {
+          "Item": "Water Stone",
+          "Quantity": "1",
+          "Method": "Pok\u00E9mon Nursery, from a Pok\u00E9mon Breeder after showing her an Eevee hatched from an egg (only one of the stones can be chosen)"
+        },
+        {
+          "Item": "Fire Stone",
+          "Quantity": "1",
+          "Method": "Pok\u00E9mon Nursery, from a Pok\u00E9mon Breeder after showing her an Eevee hatched from an egg (only one of the stones can be chosen)"
+        },
+        {
+          "Item": "Thunder Stone",
+          "Quantity": "1",
+          "Method": "Pok\u00E9mon Nursery, from a Pok\u00E9mon Breeder after showing her an Eevee hatched from an egg (only one of the stones can be chosen)"
+        }
+      ],
+      "Statics": [
+        {
+          "Type": "Gifts",
+          "Index": 14,
+          "Species": "Eevee",
+          "Tags": "",
+          "Description": "NOTE: DO NOT EVOLVE THIS EEVEE AT LEVEL 1. (It won\u0027t break or crash or anything, but all the Eeveelutions get a lot of level 1 moves, so it will slow you down significantly if you do so.)"
+        }
+      ]
+    },
+    {
+      "LocationName": "Route 5",
+      "Weather": "Clear",
+      "Description": "Route 5 is split into 2 zones, North and South, the northern half is only accessible from Route 8, but it is still considered Route 5. | The northern part contains a way to obtain the Poisonium Z early.",
+      "LocationNumber": 29,
+      "Shops": [
+        "2 Trials"
+      ],
+      "Trainers": [
+        {
+          "TrainerId": 97,
+          "Trainer": "Isa",
+          "Class": "Preschooler",
+          "Route": 1,
+          "Tags": "Optional, Multi Battle",
+          "Description": "Multi Battle with Nico"
+        },
+        {
+          "TrainerId": 98,
+          "Trainer": "Nico",
+          "Class": "Preschooler",
+          "Route": 2,
+          "Tags": "Optional, Multi Battle",
+          "Description": "Multi Battle with Isa"
+        },
+        {
+          "TrainerId": 95,
+          "Trainer": "Yuka",
+          "Class": "Pok\u00E9mon Breeder",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": "Reward: Power-Up Punch TM"
+        },
+        {
+          "TrainerId": 79,
+          "Trainer": "Gladion",
+          "Class": "Skull Enforcer",
+          "Route": 4,
+          "Tags": "Story Boss",
+          "Description": "Gladion Battle 1"
+        },
+        {
+          "TrainerId": 92,
+          "Trainer": "Justin",
+          "Class": "Rising Star",
+          "Route": 5,
+          "Tags": "Optional, Multi Battle",
+          "Description": "Multi Battle with Lauren"
+        },
+        {
+          "TrainerId": 93,
+          "Trainer": "Lauren",
+          "Class": "Up and Coming",
+          "Route": 6,
+          "Tags": "Optional, Multi Battle",
+          "Description": "Multi Battle with Justin"
+        },
+        {
+          "TrainerId": 94,
+          "Trainer": "Cory",
+          "Class": "Pok\u00E9mon Rancher",
+          "Route": 7,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 395,
+          "Trainer": "Bronson",
+          "Class": "Challenge Guide",
+          "Route": 8,
+          "Tags": "Optional Miniboss, Z-Trainer",
+          "Description": "Route 5 (South)\u0027s Z-Trainer. He can only be battled after beating every other trainer on the southern half. Reward: Nature Power TM and Terrain Pulse TM"
+        },
+        {
+          "TrainerId": 96,
+          "Trainer": "Caleb",
+          "Class": "Youngster",
+          "Route": 9,
+          "Tags": "Optional",
+          "Description": "(North)"
+        },
+        {
+          "TrainerId": 102,
+          "Trainer": "Gabriel",
+          "Class": "Hiker",
+          "Route": 10,
+          "Tags": "Optional",
+          "Description": "(North)"
+        },
+        {
+          "TrainerId": 104,
+          "Trainer": "Alexis",
+          "Class": "Star Trainer",
+          "Route": 11,
+          "Tags": "Optional Miniboss",
+          "Description": "Reward: Somethin\u0027"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 757,
+          "TableIndex": 0,
+          "Area": "Dust Spot",
+          "Levels": "Lvl 27-30",
+          "Encounters": "Diglett 1 (Diglett), Nincada (Sandile), Watchog (Patrat)"
+        },
+        {
+          "FileNumber": 757,
+          "TableIndex": 6,
+          "Area": "Berry Pile",
+          "Levels": "Lvl 20-24",
+          "Encounters": "Crabrawler, Burmy 1 (Burmy, Burmy 2), Exeggcute, Heracross"
+        },
+        {
+          "FileNumber": 757,
+          "TableIndex": 8,
+          "Area": "Grass",
+          "Levels": "Lvl 20-22",
+          "Encounters": "Fomantis (Vivillon 4), Electrike (Houndour), Houndour (Electrike), Staravia (Starly), Nuzleaf (Seedot), Ledyba (Ledian), Cherubi (Swirlix), Gulpin (Trubbish), Dedenne (Emolga), Turtwig (Snover)"
+        },
+        {
+          "FileNumber": 757,
+          "TableIndex": 18,
+          "Area": "Grass (North)",
+          "Levels": "Lvl 27-30",
+          "Encounters": "Fomantis (Vivillon 4), Manectric (Houndoom), Houndoom (Manectric), Staravia (Starly), Nuzleaf (Seedot), Swalot (Trubbish), Cherrim (Swirlix), Dedenne (Emolga), Ledian (Ledyba), Grotle (Snover)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Sitrus Berry",
+          "Quantity": "30",
+          "Method": "Northeast of the Paniola Ranch entrance, against a rock formation"
+        },
+        {
+          "Item": "Rose Incense",
+          "Quantity": "1",
+          "Method": "In the east, at the inward-most point of the rocky ledge\u0027s curve, at the base of a rock blocking a ramp up from the grass (hidden)"
+        },
+        {
+          "Item": "TM41 (Power-Up Punch)",
+          "Quantity": "1",
+          "Method": "In the east, at the north end of the rocky crescent ledge"
+        },
+        {
+          "Item": "Expert Belt",
+          "Quantity": "1",
+          "Method": "From Hau after defeating Gladion"
+        },
+        {
+          "Item": "Audinite",
+          "Quantity": "1",
+          "Method": "At the end of a narrow path south of the Pok\u00E9mon Center"
+        },
+        {
+          "Item": "Payapa Berry",
+          "Quantity": "20",
+          "Method": "From a Fisherman in the Pok\u00E9mon Center"
+        },
+        {
+          "Item": "Magmarizer",
+          "Quantity": "1",
+          "Method": "Held by Dennis, a Rockruff the player can receive in a trade"
+        },
+        {
+          "Item": "$3,000",
+          "Quantity": "1",
+          "Method": "From the Scientist in the Pok\u00E9mon Center if the player has Corsola registered in their Pok\u00E9dex"
+        },
+        {
+          "Item": "TM96 (Nature Power)",
+          "Quantity": "1",
+          "Method": "From Trial Guide Bronson after defeating him"
+        },
+        {
+          "Item": "TM102 (Terrain Pulse)",
+          "Quantity": "1",
+          "Method": "From Trial Guide Bronson after defeating him"
+        },
+        {
+          "Item": "Grassy Seed",
+          "Quantity": "Up to 10",
+          "Method": "Under the Berry Tree near Paniola"
+        },
+        {
+          "Item": "Electric Seed",
+          "Quantity": "Up to 10",
+          "Method": "Under the Berry Tree near Paniola"
+        },
+        {
+          "Item": "Psychic Seed",
+          "Quantity": "Up to 10",
+          "Method": "Under the Berry Tree near Paniola"
+        },
+        {
+          "Item": "Misty Seed",
+          "Quantity": "Up to 10",
+          "Method": "Under the Berry Tree near Paniola"
+        },
+        {
+          "Item": "Purple Nectar",
+          "Quantity": "1",
+          "Method": "Berry Tree"
+        },
+        {
+          "Item": "Quick Ball",
+          "Quantity": "20",
+          "Method": "(North) In front of a small rock south of the Lush Jungle entrance and just north of the signpost, on the east side of the path (hidden)"
+        },
+        {
+          "Item": "Nugget",
+          "Quantity": "1",
+          "Method": "(North) In front of the western den on the first step down (hidden)"
+        },
+        {
+          "Item": "Grass Gem",
+          "Quantity": "20",
+          "Method": "(North) In the northeast of the highest level, northeast of the Pok\u00E9mon Center"
+        },
+        {
+          "Item": "TM100 (Trailblaze)",
+          "Quantity": "1",
+          "Method": "(North) At the south end of the highest level, northeast of the Pok\u00E9mon Center"
+        },
+        {
+          "Item": "TM101 (Flip Turn)",
+          "Quantity": "1",
+          "Method": "(North) Northwest of the Pok\u00E9mon Center, past Ace Trainer Alexis (CHANGEME!!!)"
+        }
+      ],
+      "Statics": [
+        {
+          "Type": "Trades",
+          "Index": 1,
+          "Species": "Poipole",
+          "Tags": "Requested: Any",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "LocationName": "Brooklet Hill",
+      "Weather": "Rain",
+      "Description": "Location of the second trial. | Permanent Rain after the trial ends. | Upon unlocking Lapras Surf, the following locations are available to backtrack to: Ten Carat Sea, Hau\u0027oli Sea, Sandy Cave, Seaward Cavern, Kala\u0027e Bay",
+      "LocationNumber": 30,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 54,
+          "Trainer": "Hal",
+          "Class": "Fisherman",
+          "Route": 1,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 60,
+          "Trainer": "Ernest",
+          "Class": "Fisherman",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 55,
+          "Trainer": "Herbert",
+          "Class": "Fisherman",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 58,
+          "Trainer": "Mikiko",
+          "Class": "Backpacker",
+          "Route": 4,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 56,
+          "Trainer": "Carl",
+          "Class": "Fisherman",
+          "Route": 5,
+          "Tags": "Optional",
+          "Description": "Reward: TM Charge Beam"
+        },
+        {
+          "TrainerId": 576,
+          "Trainer": "Johnny",
+          "Class": "Veteran",
+          "Route": 6,
+          "Tags": "Optional Miniboss",
+          "Description": "Johnny will battle you here after the trial if it is raining. Reward: (ADD GIFT POKEMON HERE, castform maybe)"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 944,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 21-25",
+          "Encounters": "Dewpider, Surskit (Vivillon 12), Croagunk, Buizel (Bidoof), Karrablast (Shelmet), Shelmet (Karrablast), Panpour (Popplio), Lotad (Lombre), Ducklett (Psyduck), Oshawott (Dewott)"
+        },
+        {
+          "FileNumber": 944,
+          "TableIndex": 2,
+          "Area": "Surf",
+          "Levels": "Lvl 21-25",
+          "Encounters": "Surskit (Vivillon 12), Oshawott (Dewott), Ducklett, Wishiwashi, Goldeen, Magikarp, Basculin 1 (Basculin), Basculin (Basculin 1), Lotad (Lombre)"
+        },
+        {
+          "FileNumber": 944,
+          "TableIndex": 4,
+          "Area": "Fish",
+          "Levels": "Lvl 21-25",
+          "Encounters": "Magikarp, Goldeen, Wishiwashi, Corphish, Basculin (Basculin 1), Basculin 1 (Basculin), Dewpider"
+        },
+        {
+          "FileNumber": 944,
+          "TableIndex": 22,
+          "Area": "Bubbles",
+          "Levels": "Lvl 25-26",
+          "Encounters": "Magikarp, Goldeen, Wishiwashi, Corphish, Basculin (Basculin 1), Basculin 1 (Basculin), Dewpider"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Lapras Paddle",
+          "Quantity": "1",
+          "Method": "From Lana upon starting the trial, at the trial gates"
+        },
+        {
+          "Item": "Passho Berry",
+          "Quantity": "20",
+          "Method": "On the west bank of the lake near the Route 5 entrance"
+        },
+        {
+          "Item": "Water Gem",
+          "Quantity": "20",
+          "Method": "On a beach on the south side of the lake near the Route 5 entrance (requires Lapras Paddle or Sharpedo Jet)"
+        },
+        {
+          "Item": "Sea Incense",
+          "Quantity": "1",
+          "Method": "At the southern tip of the bare patch next to the grass field closest to the Route 5 entrance (hidden)"
+        },
+        {
+          "Item": "Deep Sea Scale",
+          "Quantity": "1",
+          "Method": "In the northeast corner of the shore north of the second lake from the Route 5 entrance"
+        },
+        {
+          "Item": "Black Belt",
+          "Quantity": "1",
+          "Method": "On the southern shore of the second lake from the Route 5 entrance, on top of a Photo Spot"
+        },
+        {
+          "Item": "Wave Incense",
+          "Quantity": "1",
+          "Method": "Between the two grass fields, on the land south of the second lake from the Route 5 entrance (hidden)"
+        },
+        {
+          "Item": "TM57 (Charge Beam)",
+          "Quantity": "1",
+          "Method": "Past the grass field on the southeast side of the third lake from the Route 5 entrance"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Brooklet Cove",
+      "Weather": "Rain",
+      "Description": "Brooklet Cove is the renamed Totem\u0027s Den. It is still a different location than the rest of Brooklet Hill. | Permanent Rain",
+      "LocationNumber": 31,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 955,
+          "TableIndex": 0,
+          "Area": "Surf",
+          "Levels": "Lvl 21-25",
+          "Encounters": "Shellos 1, Finneon (Vivillon 13), Tentacool, Wingull, Castform | Weather S.O.S: Castform 1, Castform 2"
+        },
+        {
+          "FileNumber": 955,
+          "TableIndex": 2,
+          "Area": "Fish",
+          "Levels": "Lvl 21-25",
+          "Encounters": "Magikarp, Wishiwashi, Feebas, Clamperl, Luvdisc | Weather S.O.S: Castform 1, Castform 2"
+        },
+        {
+          "FileNumber": 955,
+          "TableIndex": 14,
+          "Area": "Bubbles",
+          "Levels": "Lvl 25-26",
+          "Encounters": "Magikarp, Wishiwashi, Feebas, Clamperl, Luvdisc | Weather S.O.S: Castform 1, Castform 2"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Deep Sea Tooth",
+          "Quantity": "1",
+          "Method": "At the southwestern end of the beach"
+        },
+        {
+          "Item": "Waterium Z Node",
+          "Quantity": "1",
+          "Method": "From Lana after completing the trial"
+        },
+        {
+          "Item": "TM33 (Water Pulse)",
+          "Quantity": "1",
+          "Method": "From Lana after completing the trial"
+        },
+        {
+          "Item": "Dive Ball",
+          "Quantity": "10",
+          "Method": "From Lana after completing the trial"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Ten Carat Sea",
+      "Weather": "Clear",
+      "Description": "Ten Carat Sea is a \u0022new\u0022 location, renamed from the former Melemele Sea (East). Now both seas are different locations.",
+      "LocationNumber": 32,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 38,
+          "Trainer": "Shelby",
+          "Class": "Swim Gal",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 36,
+          "Trainer": "Kelsie",
+          "Class": "Swimsuit",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 35,
+          "Trainer": "Kalani",
+          "Class": "Swimmer Bro",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 34,
+          "Trainer": "Yasu",
+          "Class": "Swimmer Bro",
+          "Route": 4,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 509,
+          "Trainer": "Francis",
+          "Class": "Black Belt",
+          "Route": 5,
+          "Tags": "Optional",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 9,
+          "TableIndex": 6,
+          "Area": "Fish",
+          "Levels": "Lvl 22-27",
+          "Encounters": "Magikarp, Corsola (Mareanie), Mareanie, Shellder, Krabby, Pyukumuku"
+        },
+        {
+          "FileNumber": 9,
+          "TableIndex": 14,
+          "Area": "Bubbles",
+          "Levels": "Lvl 26-28",
+          "Encounters": "Magikarp, Corsola (Mareanie), Mareanie, Shellder, Krabby, Pyukumuku"
+        },
+        {
+          "FileNumber": 9,
+          "TableIndex": 20,
+          "Area": "Surf",
+          "Levels": "Lvl 22-27",
+          "Encounters": "Tentacool, Wingull, Mantyke (Remoraid), Mareanie, Corsola (Mareanie), Luvdisc, Finneon, Wailmer, Remoraid, Prinplup (Piplup)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "TM105 (Scale Shot)",
+          "Quantity": "1",
+          "Method": "On the ocean floor southeast of the island east of the Pok\u00E9mon Research Lab (CHANGEME!!!)"
+        },
+        {
+          "Item": "Iron Ball",
+          "Quantity": "1",
+          "Method": "In the middle of the island east of the Pok\u00E9mon Research Lab"
+        },
+        {
+          "Item": "Malamarite",
+          "Quantity": "1",
+          "Method": "On the southeast island"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Hau\u0027oli Sea",
+      "Weather": "Clear",
+      "Description": "Hau\u0027oli Sea is a \u0022new\u0022 location, renamed from the former Melemele Sea (West). Now both seas are different locations.",
+      "LocationNumber": 33,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 37,
+          "Trainer": "Portia",
+          "Class": "Swimsuit",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 39,
+          "Trainer": "Jade",
+          "Class": "Swim Gal",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 31,
+          "TableIndex": 1,
+          "Area": "Beach Sand",
+          "Levels": "Lvl 8-11",
+          "Encounters": "Wimpod, Krabby, Wingull, Exeggcute, Mareanie, Slowpoke 1 (Slowpoke), Staryu, Clauncher, Tyrogue, Mantyke"
+        },
+        {
+          "FileNumber": 31,
+          "TableIndex": 2,
+          "Area": "Fish",
+          "Levels": "Lvl 10-17",
+          "Encounters": "Magikarp (Gyarados), Wishiwashi, Luvdisc, Corsola (Mareanie), Clamperl (Gorebyss), Remoraid (Octillery)"
+        },
+        {
+          "FileNumber": 31,
+          "TableIndex": 10,
+          "Area": "Bubbles",
+          "Levels": "Lvl 10-22",
+          "Encounters": "Magikarp (Gyarados), Wishiwashi, Luvdisc, Corsola (Mareanie), Clamperl (Gorebyss), Remoraid (Octillery)"
+        },
+        {
+          "FileNumber": 31,
+          "TableIndex": 13,
+          "Area": "Surf",
+          "Levels": "Lvl 15-18",
+          "Encounters": "Tentacool, Wingull, Finneon, Mantyke (Remoraid)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Big Pearl",
+          "Quantity": "1",
+          "Method": "On the small beach on the west side of Ten Carat Hill, in the easternmost nook (hidden) (regenerates occasionally)"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 6",
+      "Weather": "Sun",
+      "Description": "Permanent Harsh Sunlight",
+      "LocationNumber": 34,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 529,
+          "Trainer": "Jen",
+          "Class": "Teacher",
+          "Route": 1,
+          "Tags": "Multi Battle, Mandatory",
+          "Description": "Multi Battle with (Listed as mandatory, but technically optional as you can go around them through Heahea)"
+        },
+        {
+          "TrainerId": 530,
+          "Trainer": "Fumiko",
+          "Class": "Preschooler",
+          "Route": 1,
+          "Tags": "Multi Battle, Mandatory",
+          "Description": "Multi battle with Jen"
+        },
+        {
+          "TrainerId": 68,
+          "Trainer": "William",
+          "Class": "Pok\u00E9mon Rancher",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": "Reward: TM Aerial Ace"
+        },
+        {
+          "TrainerId": 87,
+          "Trainer": "Hapu",
+          "Class": "Poni Kahuna",
+          "Route": 3,
+          "Tags": "Tag Battle Ally, Story",
+          "Description": "Hapu helps you battle Team Skull"
+        },
+        {
+          "TrainerId": 80,
+          "Trainer": "Grunt Ay",
+          "Class": "Team Skull",
+          "Route": 4,
+          "Tags": "Story, Tag Battle",
+          "Description": ""
+        },
+        {
+          "TrainerId": 85,
+          "Trainer": "Grunt Bee",
+          "Class": "Team Skull",
+          "Route": 5,
+          "Tags": "Tag Battle, Story",
+          "Description": ""
+        },
+        {
+          "TrainerId": 65,
+          "Trainer": "Brittney",
+          "Class": "Beauty",
+          "Route": 6,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 334,
+          "Trainer": "Maika",
+          "Class": "Dancer",
+          "Route": 7,
+          "Tags": "Optional",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 768,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 22-27",
+          "Encounters": "Timburr, Oricorio 2, Skitty, Lickitung (Stantler), Spinarak (Pineco), Fletchinder (Fletchling), Yanma (Vivillon 6), Volbeat (Illumise), Illumise (Volbeat), Pignite (Tepig)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Flame Orb",
+          "Quantity": "1",
+          "Method": "Near the north end of the route on the west edge"
+        },
+        {
+          "Item": "Toxic Orb",
+          "Quantity": "1",
+          "Method": "On the west side, between the breakable rocks (requires Tauros Charge)"
+        },
+        {
+          "Item": "Sitrus Berry",
+          "Quantity": "10",
+          "Method": "In the bare patch between the southwest field of grass and the west edge of the route (hidden)"
+        },
+        {
+          "Item": "Lum Berry",
+          "Quantity": "2",
+          "Method": "In the bare patch of bare ground in the southeast field of grass (hidden)"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Royal Avenue",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 35,
+      "Shops": [
+        "2 Trials",
+        "Royal Avenue [TMs]",
+        "Thrifty Megamart, Left [Pok\u00E9 Balls]",
+        "Thrifty Megamart, Middle [Misc]",
+        "Thrifty Megamart, Right [Strange Souvenir]"
+      ],
+      "Trainers": [
+        {
+          "TrainerId": 537,
+          "Trainer": "Meredith",
+          "Class": "Actor",
+          "Route": 1,
+          "Tags": "Optional Miniboss",
+          "Description": "Reward: Eviolite | Meredith will only fight you here if you battle her in Melemele Meadow first."
+        },
+        {
+          "TrainerId": 569,
+          "Trainer": "Kenway",
+          "Class": "Youngster",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": "Kenway battles you after you travel to Ultra Megalopolis for the first time"
+        },
+        {
+          "TrainerId": 379,
+          "Trainer": "Kagetora",
+          "Class": "Eevee User",
+          "Route": 3,
+          "Tags": "Postgame Boss",
+          "Description": "Eevee user quest. Is only battled after every other Eeveelution user is defeated. Reward: Eevium Z, 200 Gold Bottle Caps"
+        },
+        {
+          "TrainerId": 398,
+          "Trainer": "Kiawe",
+          "Class": "Trial Captain",
+          "Route": 4,
+          "Tags": "Postgame Boss",
+          "Description": "Kiawe is battled here, but the encounter begins in Paniola Town."
+        },
+        {
+          "TrainerId": 81,
+          "Trainer": "The Royal",
+          "Class": "Pro Wrestler",
+          "Route": 5,
+          "Tags": "Story",
+          "Description": ""
+        },
+        {
+          "TrainerId": 82,
+          "Trainer": "Hau",
+          "Class": "Pok\u00E9mon Trainer",
+          "Route": 6,
+          "Tags": "Story",
+          "Description": ""
+        },
+        {
+          "TrainerId": 185,
+          "Trainer": "Gladion",
+          "Class": "Skull Enforcer",
+          "Route": 7,
+          "Tags": "Story",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [
+        {
+          "Item": "Pecha Berry",
+          "Quantity": "1",
+          "Method": "Held by Babo, a Barboach the player can receive in a trade"
+        },
+        {
+          "Item": "Meowstite",
+          "Quantity": "1",
+          "Method": "In the northwest corner, down the small path"
+        },
+        {
+          "Item": "Quick Ball",
+          "Quantity": "10",
+          "Method": "In the southeast corner, southwest of the Punks (hidden)"
+        },
+        {
+          "Item": "Rocky Helmet",
+          "Quantity": "1",
+          "Method": "In the area behind the Thrifty Megamart"
+        },
+        {
+          "Item": "Lemonade",
+          "Quantity": "1",
+          "Method": "From the Youngster\u0027s Drifloon in the Thrifty Megamart"
+        },
+        {
+          "Item": "TM44 (Dizzy Punch)",
+          "Quantity": "1",
+          "Method": "From the person disguised as a Hypno in the Thrifty Megamart, if the player gives him $1,000"
+        },
+        {
+          "Item": "Pink Nectar",
+          "Quantity": "1",
+          "Method": "From the southeast and northwest sparkling pink flower bushes in the gardenDay (daily)"
+        },
+        {
+          "Item": "Dawn Stone",
+          "Quantity": "1",
+          "Method": "From Youngster Kenway for defeating him"
+        },
+        {
+          "Item": "Shell Bell",
+          "Quantity": "1",
+          "Method": "South of the well (hidden)"
+        },
+        {
+          "Item": "Big Malasada",
+          "Quantity": "1",
+          "Method": "From Mala in the Malasada Shop in exchange for a Moomoo Milk"
+        },
+        {
+          "Item": "Iron",
+          "Quantity": "1",
+          "Method": "If the player has a Protein in their Bag, from a man in the well in front of the Malasada Shop if the player admits the Protein belonged to them"
+        },
+        {
+          "Item": "Power Belt",
+          "Quantity": "1",
+          "Method": "From the Black Belt with Tigrudo the Incineroar if the player has TM62 (Acrobatics)"
+        },
+        {
+          "Item": "TM08 (Close Combat)",
+          "Quantity": "1",
+          "Method": "After helping the Incineroar Black Belt; from a Black Belt with Macho \u0027Mon the Machamp in exchange for a Coba Berry"
+        },
+        {
+          "Item": "Eevium Z",
+          "Quantity": "1",
+          "Method": "From Kagetora in the Thrifty Megamart after defeating all of the other Eevee users and Kagetora himself, after becoming Champion"
+        }
+      ],
+      "Statics": [
+        {
+          "Type": "Trades",
+          "Index": 2,
+          "Species": "Vulpix 1",
+          "Tags": "Requested: Any",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "LocationName": "Route 7",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 36,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 70,
+          "Trainer": "Dakota",
+          "Class": "Swimmer Bro",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 73,
+          "Trainer": "Tiare",
+          "Class": "Swim Gal",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 71,
+          "Trainer": "Casey",
+          "Class": "Swimmer Bro",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 72,
+          "Trainer": "Vanessa",
+          "Class": "Swimsuit",
+          "Route": 4,
+          "Tags": "Optional",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 779,
+          "TableIndex": 0,
+          "Area": "Surf",
+          "Levels": "Lvl 24-29",
+          "Encounters": "Wingull (Vivillon 9), Tentacool, Qwilfish, Basculin (Basculin 1), Carvanha, Skrelp, Bruxish, Basculin 1 (Basculin)"
+        },
+        {
+          "FileNumber": 779,
+          "TableIndex": 2,
+          "Area": "Fish",
+          "Levels": "Lvl 24-29",
+          "Encounters": "Magikarp, Staryu, Wishiwashi, Carvanha, Clauncher, Bruxish"
+        },
+        {
+          "FileNumber": 779,
+          "TableIndex": 12,
+          "Area": "Bubbles",
+          "Levels": "Lvl 30-32",
+          "Encounters": "Clauncher, Starmie, Bruxish, Sharpedo, Wishiwashi, Gyarados"
+        },
+        {
+          "FileNumber": 779,
+          "TableIndex": 14,
+          "Area": "Dust Spot",
+          "Levels": "Lvl 24-29",
+          "Encounters": "Diglett 1 (Diglett), Krabby, Wimpod, Helioptile"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Net Ball",
+          "Quantity": "10",
+          "Method": "South of the Pok\u00E9mon Breeder on the beach (hidden) (regenerates occasionally)"
+        },
+        {
+          "Item": "Pearl",
+          "Quantity": "2",
+          "Method": "At the south end of the north half of the beach, against the large black rock (requires Lapras Paddle or Sharpedo Jet) (hidden) (regenerates occasionally)"
+        },
+        {
+          "Item": "Roto Encounter",
+          "Quantity": "50",
+          "Method": "South of the large cliff on the north half of the beach next to the shore (requires Lapras Paddle or Sharpedo Jet) (hidden) (regenerates occasionally)"
+        },
+        {
+          "Item": "Light Clay",
+          "Quantity": "1",
+          "Method": "At the end of the rocky path in the far north of the beach (requires Lapras Paddle or Sharpedo Jet)"
+        },
+        {
+          "Item": "King\u0027s Rock",
+          "Quantity": "1",
+          "Method": "At the bottom of the water in the northeast, near Swimmer Casey (requires Lapras Paddle or Sharpedo Jet)"
+        },
+        {
+          "Item": "TM32 (Bulldoze)",
+          "Quantity": "1",
+          "Method": "On the island, west of the fishing spot (requires Lapras Paddle or Sharpedo Jet)"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Wela Volcano Park",
+      "Weather": "Sun",
+      "Description": "Permanent Harsh Sunlight",
+      "LocationNumber": 37,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 174,
+          "Trainer": "Mariah",
+          "Class": "Sightseer",
+          "Route": 1,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 246,
+          "Trainer": "Jim",
+          "Class": "Ace Trainer",
+          "Route": 2,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 245,
+          "Trainer": "Calhoun",
+          "Class": "Hiker",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 922,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 26-30",
+          "Encounters": "Cubone (Kangaskhan), Salandit, Magby (Magmar), Slugma (Heatmor), Koffing (Gligar), Pansear (Litten), Larvesta, Numel (Turtonator), Torkoal (Vivillon 15), Charmeleon (Charmander)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Occa Berry",
+          "Quantity": "20",
+          "Method": "In the southeast corner of the first raised level from the Route 7 entrance"
+        },
+        {
+          "Item": "Iapapa Berry",
+          "Quantity": "20",
+          "Method": "Just west of the trial gate"
+        },
+        {
+          "Item": "Aguav Berry",
+          "Quantity": "20",
+          "Method": "On the third step down from the trial gate"
+        },
+        {
+          "Item": "TM39 (Venoshock)",
+          "Quantity": "1",
+          "Method": "In the area of the \u0022most charming\u0022 seismic sister, at the end of a narrow path at the edge of the cliff"
+        },
+        {
+          "Item": "Fire Gem",
+          "Quantity": "20",
+          "Method": "Above the step next to the \u0022cutest\u0022 Seismic Sister, on the descent down from the area with the \u0022most charming\u0022 Seismic Sister"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Wela Volcano Caldera",
+      "Weather": "Clear",
+      "Description": "Permanent Harsh Sunlight. (ADD ENCOUNTER AND 1 TRAINER HERE)",
+      "LocationNumber": 38,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 186,
+          "Trainer": "David",
+          "Class": "Hiker",
+          "Route": 1,
+          "Tags": "Story",
+          "Description": ""
+        },
+        {
+          "TrainerId": 504,
+          "Trainer": "Kiawe",
+          "Class": "Trial Captain",
+          "Route": 2,
+          "Tags": "Story, Boss",
+          "Description": ""
+        },
+        {
+          "TrainerId": 535,
+          "Trainer": "David",
+          "Class": "Hiker",
+          "Route": 3,
+          "Tags": "Story",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [
+        {
+          "Item": "Firium Z",
+          "Quantity": "1",
+          "Method": "From Kiawe for completing the trial"
+        },
+        {
+          "Item": "Quick Ball",
+          "Quantity": "10",
+          "Method": "From Kiawe after completing the trial"
+        },
+        {
+          "Item": "Charizard Glide",
+          "Quantity": "1",
+          "Method": "From Kiawe after completing the trial"
+        },
+        {
+          "Item": "Red Petal",
+          "Quantity": "1",
+          "Method": "From Kiawe after defeating him and Hiker David during Mina\u0027s trial"
+        }
+      ],
+      "Statics": []
+    },
+    {
+      "LocationName": "Poke Pelago",
+      "Weather": "Clear",
+      "Description": "Poke Pelago does have encounters. Look here. https://bulbapedia.bulbagarden.net/wiki/Pok\u00E9_Pelago",
+      "LocationNumber": 39,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Dividing Peak Tunnel",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 40,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 856,
+          "TableIndex": 0,
+          "Area": "Shadow",
+          "Levels": "Lvl 25-25",
+          "Encounters": "Unown (Unown 1, Unown 2, Unown 3, Unown 4, Unown 5, Unown 6, Unown 7), Unown 8 (Unown 9, Unown 10, Unown 11, Unown 12, Unown 13, Unown 14, Unown 15), Unown 16 (Unown 17, Unown 18, Unown 19, Unown 20, Unown 21, Unown 22, Unown 23), Unown 24 (Unown 25, Unown 26, Unown 27), Unown 26 (Unown 27, Unown), Unown"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 8",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 41,
+      "Shops": [
+        "3 Trials",
+        "Route 8 [Misc]"
+      ],
+      "Trainers": [
+        {
+          "TrainerId": 101,
+          "Trainer": "Kiana",
+          "Class": "Backpacker",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 99,
+          "Trainer": "Mikey",
+          "Class": "Rising Star",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": "Either Mikey or Nicki must be defeated to recieve TM53 (Energy Ball) and the Victreebelite"
+        },
+        {
+          "TrainerId": 100,
+          "Trainer": "Nicki",
+          "Class": "Up and Coming",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": "Either Mikey or Nicki must be defeated to recieve TM53 (Energy Ball) and the Victreebelite"
+        },
+        {
+          "TrainerId": 105,
+          "Trainer": "Tyrone",
+          "Class": "Scientist",
+          "Route": 4,
+          "Tags": "Optional",
+          "Description": "Tyrone must be defeated to gain access to the Fossil Park"
+        },
+        {
+          "TrainerId": 629,
+          "Trainer": "Kaleb",
+          "Class": "Kindergartener",
+          "Route": 5,
+          "Tags": "Optional",
+          "Description": "Must be spoken to near the Pokemon Center. Reward: (idk, a cubone maybe? Or the Thick Club)"
+        },
+        {
+          "TrainerId": 171,
+          "Trainer": "Maile",
+          "Class": "Golfer",
+          "Route": 6,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 170,
+          "Trainer": "Alan",
+          "Class": "Putter",
+          "Route": 7,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 331,
+          "Trainer": "Guy",
+          "Class": "Black Belt",
+          "Route": 8,
+          "Tags": "Optional, Multi Battle",
+          "Description": "Multi Battle with Lee"
+        },
+        {
+          "TrainerId": 332,
+          "Trainer": "Lee",
+          "Class": "Preschooler",
+          "Route": 9,
+          "Tags": "Optional, Multi Battle",
+          "Description": "Multi Battle with Guy"
+        },
+        {
+          "TrainerId": 474,
+          "Trainer": "Eileen",
+          "Class": "Ace Trainer",
+          "Route": 10,
+          "Tags": "Z-Trainer, Optional Miniboss",
+          "Description": "Route 8\u0027s Z-Trainer. Reward: TM Mystical Fire, Random Pool of Pokemon that learn Mystical Fire."
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 790,
+          "TableIndex": 0,
+          "Area": "Wimpod",
+          "Levels": "Lvl 25-25",
+          "Encounters": "Wimpod (Trumbeak)"
+        },
+        {
+          "FileNumber": 790,
+          "TableIndex": 2,
+          "Area": "Fish",
+          "Levels": "Lvl 26-29",
+          "Encounters": "Magikarp, Wishiwashi, Chinchou, Relicanth"
+        },
+        {
+          "FileNumber": 790,
+          "TableIndex": 8,
+          "Area": "Bubbles",
+          "Levels": "Lvl 30-32",
+          "Encounters": "Gyarados, Wishiwashi, Lanturn (Chinchou), Relicanth"
+        },
+        {
+          "FileNumber": 790,
+          "TableIndex": 10,
+          "Area": "Berry Pile",
+          "Levels": "Lvl 27-31",
+          "Encounters": "Crabrawler, Burmy 1 (Burmy, Burmy 2), Exeggcute, Heracross"
+        },
+        {
+          "FileNumber": 790,
+          "TableIndex": 12,
+          "Area": "Surf",
+          "Levels": "Lvl 24-29",
+          "Encounters": "Chinchou, Tirtouga, Tentacool, Carvanha, Relicanth, Shellos 1"
+        },
+        {
+          "FileNumber": 790,
+          "TableIndex": 14,
+          "Area": "Grass",
+          "Levels": "Lvl 27-31",
+          "Encounters": "Trumbeak (Pikipek), Stufful, Salandit (Drampa), Kecleon (Vivillon 10), Pachirisu (Plusle, Minun), Spoink (Girafarig), Granbull (Snubbull), Buneary (Lopunny), Helioptile (Durant), Mr. Mime (Mime Jr.)"
+        }
+      ],
+      "Items": [
+        {
+          "Item": "Lure Ball",
+          "Quantity": "10",
+          "Method": "On a rock next to the fishing spot north of the Route 7 entrance (hidden)"
+        },
+        {
+          "Item": "Rare Candy",
+          "Quantity": "1",
+          "Method": "From the boy in front of the Aether Foundation building after showing him PassimianUS/OranguruUM"
+        },
+        {
+          "Item": "TM43 (Draco Jet)",
+          "Quantity": "1",
+          "Method": "From Colress just past the Aether Foundation building"
+        },
+        {
+          "Item": "Money",
+          "Quantity": "$5,000",
+          "Method": "From an Aether Foundation Employee in the Aether Foundation building if the player has StuffulSM/GoomyUSUM registered in their Pok\u00E9dex"
+        },
+        {
+          "Item": "Focus Sash",
+          "Quantity": "10",
+          "Method": "On the cliff behind the Aether Foundation building"
+        },
+        {
+          "Item": "TM53 (Energy Ball)",
+          "Quantity": "1",
+          "Method": "On the north side of the road opposite a field of grass, in the corner formed by the elevated land"
+        },
+        {
+          "Item": "Victreebelite",
+          "Quantity": "1",
+          "Method": "South of the field of grass on the south side of the east-west stretch of road"
+        },
+        {
+          "Item": "Adrenaline Orb",
+          "Quantity": "10",
+          "Method": "At road level in the corner southeast of the Berry tree (hidden)"
+        },
+        {
+          "Item": "Wacan Berry",
+          "Quantity": "20",
+          "Method": "At the north end of the narrow field of grass west of the Berry tree"
+        },
+        {
+          "Item": "Moon Ball",
+          "Quantity": "10",
+          "Method": "On the north face of a rock to the north of the Pok\u00E9mon Center (hidden)"
+        },
+        {
+          "Item": "Ring Target",
+          "Quantity": "10",
+          "Method": "In the open box on the east end of the trailer at the Fossil Restoration Center (hidden)"
+        },
+        {
+          "Item": "Zoom Lens",
+          "Quantity": "1",
+          "Method": "Behind the trailer at the Fossil Restoration Center"
+        },
+        {
+          "Item": "Lum Berry",
+          "Quantity": "1",
+          "Method": "From a Rising Star after defeating Preschooler Kaleb"
+        },
+        {
+          "Item": "Balm Mushroom",
+          "Quantity": "1",
+          "Method": "Held by Arbo, an Arbok the player can receive in a trade"
+        },
+        {
+          "Item": "Coba Berry",
+          "Quantity": "20",
+          "Method": "Behind the Roadside Motel"
+        },
+        {
+          "Item": "Weakness Policy",
+          "Quantity": "10",
+          "Method": "On the seafloor in the southwest corner of the route, south of Karate Family Samuel and Guy (requires Lapras Paddle or Sharpedo Jet)"
+        },
+        {
+          "Item": "TM58 (Mystical Fire)",
+          "Quantity": "1",
+          "Method": "From Ace Trainer Eileen for defeating her"
+        },
+        {
+          "Item": "TM53 (Energy Ball)",
+          "Quantity": "1",
+          "Method": "On a cliff accessible through the cave in the east area of Lush Jungle (requires Machamp Shove)"
+        },
+        {
+          "Item": "Douse Drive",
+          "Quantity": "1",
+          "Method": "From Colress in front of the Aether Foundation building, after becoming Champion"
+        },
+        {
+          "Item": "Shock Drive",
+          "Quantity": "1",
+          "Method": "From Colress in front of the Aether Foundation building, after becoming Champion"
+        },
+        {
+          "Item": "Burn Drive",
+          "Quantity": "1",
+          "Method": "From Colress in front of the Aether Foundation building, after becoming Champion"
+        },
+        {
+          "Item": "Chill Drive",
+          "Quantity": "1",
+          "Method": "From Colress in front of the Aether Foundation building, after becoming Champion"
+        }
+      ],
+      "Statics": [
+        {
+          "Type": "Trades",
+          "Index": 3,
+          "Species": "Elgyem",
+          "Tags": "Requested: Any",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "LocationName": "Fossil Restoration Center",
+      "Weather": "Clear",
+      "Description": "This is now its own location.",
+      "LocationNumber": 42,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [],
+      "Items": [],
+      "Statics": [
+        {
+          "Type": "Gifts",
+          "Index": 3,
+          "Species": "Omanyte",
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "Type": "Gifts",
+          "Index": 4,
+          "Species": "Kabuto",
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "Type": "Gifts",
+          "Index": 5,
+          "Species": "Aerodactyl",
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "Type": "Gifts",
+          "Index": 6,
+          "Species": "Lileep",
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "Type": "Gifts",
+          "Index": 7,
+          "Species": "Anorith",
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "Type": "Gifts",
+          "Index": 8,
+          "Species": "Cranidos",
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "Type": "Gifts",
+          "Index": 9,
+          "Species": "Shieldon",
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "Type": "Gifts",
+          "Index": 10,
+          "Species": "Tirtouga",
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "Type": "Gifts",
+          "Index": 11,
+          "Species": "Archen",
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "Type": "Gifts",
+          "Index": 12,
+          "Species": "Tyrunt",
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "Type": "Gifts",
+          "Index": 13,
+          "Species": "Amaura",
+          "Tags": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "LocationName": "Lush Jungle",
+      "Weather": "Rain",
+      "Description": "Add 2 trainers here for during the trial battles. Permanent Rain.",
+      "LocationNumber": 43,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 505,
+          "Trainer": "Mallow",
+          "Class": "Trial Captain",
+          "Route": 1,
+          "Tags": "Story Boss",
+          "Description": "Battled during Mina\u0027s Trial. (CHANGE TO MULTI BATTLE WITH LANA)"
+        },
+        {
+          "TrainerId": 503,
+          "Trainer": "Lana",
+          "Class": "Trial Captain",
+          "Route": 2,
+          "Tags": "Story Boss",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 966,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 29-34",
+          "Encounters": "Shiinotic (Foongus), Breloom (Parasect), Vigoroth (Komala, Slakoth), Simisage (Pansage, Rowlet), Carnivine (Throh), Swadloon (Whirlipede), Comfey (Sawk), Tangela, Sawsbuck 1 (Sawsbuck, Sawsbuck 2, Sawsbuck 3, Deerling 1, Deerling, Deerling 2, Deerling 3), Grovyle (Treecko) | Weather S.O.S: Castform, Goomy"
+        },
+        {
+          "FileNumber": 966,
+          "TableIndex": 4,
+          "Area": "Shaking Grass",
+          "Levels": "Lvl 29-34",
+          "Encounters": "Oranguru (Passimian), Passimian (Oranguru), Lurantis (Fomantis), Steenee (Bounsweet), Pinsir (Heracross, Scyther), Sudowoodo (Bonsly), Tropius (Chatot), Vivillon 17 (Butterfree, Beautifly, Dustox), Vespiquen (Combee, Beedrill), Beedrill (Combee, Vespiquen) | Weather S.O.S: Castform, Goomy"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Lush Jungle Cavern",
+      "Weather": "Snow",
+      "Description": "This is now its own location. Permanent Snow",
+      "LocationNumber": 44,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 1010,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 45-55",
+          "Encounters": "Pinsir, Larvesta, Dugtrio 1 (Dugtrio), Golbat, Salandit, Throh, Sawk, Passimian, Oranguru"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Diglett\u0027s Tunnel",
+      "Weather": "Sand",
+      "Description": "Permanent Sandstorm.",
+      "LocationNumber": 45,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 119,
+          "Trainer": "Frank",
+          "Class": "Worker",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 118,
+          "Trainer": "Jeff",
+          "Class": "Worker",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 117,
+          "Trainer": "Vaclav",
+          "Class": "Worker",
+          "Route": 3,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 443,
+          "Trainer": "Grunt DD",
+          "Class": "Skull Gang",
+          "Route": 4,
+          "Tags": "Story, Tag Battle",
+          "Description": "Partnered with Grunt Ed in a Tag Battle versus the player and Hau"
+        },
+        {
+          "TrainerId": 127,
+          "Trainer": "Grunt Sandy",
+          "Class": "Skull Gang",
+          "Route": 5,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 128,
+          "Trainer": "Grunt Mason",
+          "Class": "Pok\u00E9mon Trainer",
+          "Route": 5,
+          "Tags": "Mandatory",
+          "Description": ""
+        },
+        {
+          "TrainerId": 438,
+          "Trainer": "Hau",
+          "Class": "Pok\u00E9mon Trainer",
+          "Route": 6,
+          "Tags": "Story, Tag Battle Ally",
+          "Description": "Is your Tag Battle ally versus Team Skull (Rowlet Chosen)"
+        },
+        {
+          "TrainerId": 439,
+          "Trainer": "Hau",
+          "Class": "Pok\u00E9mon Trainer",
+          "Route": 6,
+          "Tags": "Story, Tag Battle Ally",
+          "Description": "Is your Tag Battle ally versus Team Skull (Litten Chosen)"
+        },
+        {
+          "TrainerId": 440,
+          "Trainer": "Hau",
+          "Class": "Pok\u00E9mon Trainer",
+          "Route": 6,
+          "Tags": "Story, Tag Battle Ally",
+          "Description": "Is your Tag Battle ally versus Team Skull (Popplio Chosen)"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 911,
+          "TableIndex": 0,
+          "Area": "Dust Spot",
+          "Levels": "Lvl 27-33",
+          "Encounters": "Dugtrio 1 (Dugtrio), Dugtrio (Dugtrio 1), Drilbur, Druddigon, Sandslash (Sandslash 1)"
+        },
+        {
+          "FileNumber": 911,
+          "TableIndex": 2,
+          "Area": "Walking",
+          "Levels": "Lvl 24-30",
+          "Encounters": "Diglett 1 (Diglett, Dugtrio 1, Dugtrio), Larvitar (Pupitar), Diglett (Diglett 1, Dugtrio, Dugtrio 1), Golett (Woobat), Onix (Rhyhorn), Graveler (Graveler 1, Geodude, Geodude 1), Ferroseed (Togedemaru), Druddigon (Fraxure), Sandshrew (Sandshrew 1, Sandslash, Sandslash 1), Deino (Noibat)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 9",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 46,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 126,
+          "Trainer": "Mike",
+          "Class": "Fisherman",
+          "Route": 0,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 335,
+          "Trainer": "Haruki",
+          "Class": "Cop",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 801,
+          "TableIndex": 0,
+          "Area": "Fish",
+          "Levels": "Lvl 16-34",
+          "Encounters": "Luvdisc, Omanyte, Kabuto, Lileep, Anorith, Tirtouga, Relicanth"
+        },
+        {
+          "FileNumber": 801,
+          "TableIndex": 2,
+          "Area": "Bubbles",
+          "Levels": "Lvl 35-37",
+          "Encounters": "Alomomola, Omastar, Kabutops, Cradily, Armaldo, Carracosta, Relicanth"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Konikoni City",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 47,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 571,
+          "Trainer": "Dugal",
+          "Class": "Office Worker",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Memorial Hill",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 48,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 113,
+          "Trainer": "Smith",
+          "Class": "Gentleman",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 114,
+          "Trainer": "Sayuri",
+          "Class": "Madame",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 115,
+          "Trainer": "Liam",
+          "Class": "Kindergartener",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 88,
+          "Trainer": "Grunt Harv",
+          "Class": "Team Skull",
+          "Route": 4,
+          "Tags": "Story",
+          "Description": ""
+        },
+        {
+          "TrainerId": 116,
+          "Trainer": "Melissa",
+          "Class": "Punk Girl",
+          "Route": 4,
+          "Tags": "Optional",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 900,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 32-37",
+          "Encounters": "Misdreavus (Murkrow), Gourgeist (Gourgeist 1, Gourgeist 2, Gourgeist 3, Pumpkaboo 1, Pumpkaboo 2, Pumpkaboo 3, Pumpkaboo), Yamask (Cofagrigus), Doublade (Honedge), Baltoy, Mimikyu (Pikachu 7), Vulpix (Vulpix 1), Absol, Spiritomb, Murkrow (Misdreavus)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Akala Outskirts",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 49,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 120,
+          "Trainer": "Kenji",
+          "Class": "Black Belt",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 121,
+          "Trainer": "Vernon",
+          "Class": "Fisherman",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 89,
+          "Trainer": "Plumeria",
+          "Class": "Team Skull Admin",
+          "Route": 3,
+          "Tags": "Story, Boss",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 900,
+          "TableIndex": 4,
+          "Area": "Grass",
+          "Levels": "Lvl 32-38",
+          "Encounters": "Amaura (Aurorus), Noctowl, Aerodactyl, Archen (Archeops), Zangoose (Seviper), Seviper (Zangoose), Bronzong (Bronzor), Cranidos (Rampardos), Shieldon (Bastiodon), Tyrunt (Tyrantrum)"
+        },
+        {
+          "FileNumber": 900,
+          "TableIndex": 6,
+          "Area": "Fish",
+          "Levels": "Lvl 16-34",
+          "Encounters": "Omanyte, Kabuto, Anorith, Lileep, Tirtouga, Relicanth, Dhelmise"
+        },
+        {
+          "FileNumber": 900,
+          "TableIndex": 10,
+          "Area": "Bubbles",
+          "Levels": "Lvl 35-40",
+          "Encounters": "Carracosta, Omastar, Kabutops, Cradily, Armaldo, Relicanth, Dhelmise"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Ruins of Life",
+      "Weather": "Sand",
+      "Description": "Permanent Sandstorm",
+      "LocationNumber": 50,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 90,
+          "Trainer": "Olivia",
+          "Class": "Akala Kahuna",
+          "Route": 1,
+          "Tags": "Story Boss",
+          "Description": "Make sure this place has perma sand"
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Hano Grand Resort",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 51,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 375,
+          "Trainer": "Tara",
+          "Class": "Golfer",
+          "Route": 1,
+          "Tags": "Optional, Multi Battle",
+          "Description": "Teamed with Tina"
+        },
+        {
+          "TrainerId": 376,
+          "Trainer": "Tina",
+          "Class": "Golfer",
+          "Route": 1,
+          "Tags": "Optional, Multi Battle",
+          "Description": "Teamed with Tara"
+        },
+        {
+          "TrainerId": 540,
+          "Trainer": "Rita",
+          "Class": "Reporter",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 568,
+          "Trainer": "Ronda",
+          "Class": "Dancer",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 574,
+          "Trainer": "Kiara",
+          "Class": "Virtuoso",
+          "Route": 4,
+          "Tags": "Optional, Miniboss",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Hano Beach",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 52,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 108,
+          "Trainer": "Lawrence",
+          "Class": "Swimmer Bro",
+          "Route": 1,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 109,
+          "Trainer": "Roddy",
+          "Class": "Swimmer Bro",
+          "Route": 2,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 110,
+          "Trainer": "Alicia",
+          "Class": "Swimsuit",
+          "Route": 3,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 111,
+          "Trainer": "Laura",
+          "Class": "Swimsuit",
+          "Route": 4,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 112,
+          "Trainer": "Chelsea",
+          "Class": "Swim Gal",
+          "Route": 5,
+          "Tags": "Optional",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 812,
+          "TableIndex": 0,
+          "Area": "Sand Spot",
+          "Levels": "Lvl 36-40",
+          "Encounters": "Starmie (Staryu), Sandygast, Gible, Trapinch, Pyukumuku, Vivillon 5"
+        },
+        {
+          "FileNumber": 812,
+          "TableIndex": 2,
+          "Area": "Surf",
+          "Levels": "Lvl 30-40",
+          "Encounters": "Tentacruel (Tentacool), Skrelp, Clauncher (Clawitzer), Frillish (Frillish 1), Wailmer, Pyukumuku, Frillish 1 (Frillish)"
+        },
+        {
+          "FileNumber": 812,
+          "TableIndex": 4,
+          "Area": "Fish",
+          "Levels": "Lvl 40-44",
+          "Encounters": "Tentacruel (Tentacool), Jellicent 1 (Jellicent), Phione, Jellicent (Jellicent 1)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Malie City",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 53,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 218,
+          "Trainer": "Hau",
+          "Class": "Tapu\u0027s Chosen",
+          "Route": 0,
+          "Tags": "Story Boss",
+          "Description": "Hau Battle 5 | Litten"
+        },
+        {
+          "TrainerId": 217,
+          "Trainer": "Hau",
+          "Class": "Tapu\u0027s Chosen",
+          "Route": 1,
+          "Tags": "Story Boss",
+          "Description": "Hau Battle 5 | Rowlet"
+        },
+        {
+          "TrainerId": 219,
+          "Trainer": "Hau",
+          "Class": "Tapu\u0027s Chosen",
+          "Route": 2,
+          "Tags": "Story Boss",
+          "Description": "Hau Battle 5 | Popplio"
+        },
+        {
+          "TrainerId": 547,
+          "Trainer": "Brock?",
+          "Class": "Gym Trainer",
+          "Route": 3,
+          "Tags": "Optional Miniboss",
+          "Description": "Kantonian Gym | Reward: Aerodactylite/Choice Items (Boss)"
+        },
+        {
+          "TrainerId": 548,
+          "Trainer": "Misty?",
+          "Class": "Gym Trainer",
+          "Route": 4,
+          "Tags": "Optional Miniboss",
+          "Description": "Reward: Starminite"
+        },
+        {
+          "TrainerId": 549,
+          "Trainer": "Surge?",
+          "Class": "Gym Trainer",
+          "Route": 5,
+          "Tags": "Optional Miniboss",
+          "Description": "Reward: Raichunite"
+        },
+        {
+          "TrainerId": 550,
+          "Trainer": "Erika?",
+          "Class": "Gym Trainer",
+          "Route": 6,
+          "Tags": "Optional Miniboss",
+          "Description": "Reward: Victreebelite |"
+        },
+        {
+          "TrainerId": 630,
+          "Trainer": "Ryuki",
+          "Class": "Dragon Tamer",
+          "Route": 7,
+          "Tags": "Optional, Boss",
+          "Description": "Ryuki fights you in the Kantonian Gym after a second pass. (Put just npc ryuki here with amx to battle always. | Reward: Charizardite X, Choice Scarf"
+        },
+        {
+          "TrainerId": 555,
+          "Trainer": "Agatha",
+          "Class": "Gym Leader",
+          "Route": 8,
+          "Tags": "Optional, Boss",
+          "Description": "Reward: Gengarite, Choice Specs, Choice Band"
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Malie Garden",
+      "Weather": "Rain",
+      "Description": "Permanent Rain here. (Make Guzma say it reminds him of home.)",
+      "LocationNumber": 54,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 266,
+          "Trainer": "Nancy",
+          "Class": "Preschooler",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 276,
+          "Trainer": "Akali",
+          "Class": "Sightseer",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 279,
+          "Trainer": "Mitch",
+          "Class": "Tourist",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 514,
+          "Trainer": "Yuriko",
+          "Class": "Sightseer",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 521,
+          "Trainer": "Landon",
+          "Class": "Bellhop",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1637,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 40-44",
+          "Encounters": "Poliwhirl (Castform), Persian (Persian 1), Delcatty (Skitty), Frogadier (Froakie), Golduck (Psyduck), Araquanid (Dewpider), Bibarel (Bidoof), Masquerain (Surskit), Scyther, Ludicolo (Lombre) | Weather S.O.S: Castform"
+        },
+        {
+          "FileNumber": 1637,
+          "TableIndex": 2,
+          "Area": "Fish",
+          "Levels": "Lvl 30-40",
+          "Encounters": "Poliwhirl (Castform), Seaking (Goldeen), Gyarados (Magikarp), Basculin (Basculin 1), Basculin 1 (Basculin), Frogadier (Froakie) | Weather S.O.S: Castform"
+        },
+        {
+          "FileNumber": 1637,
+          "TableIndex": 14,
+          "Area": "Bubbles",
+          "Levels": "Lvl 40-44",
+          "Encounters": "Poliwrath (Poliwhirl), Seaking, Castform, Basculin (Basculin 1), Basculin 1 (Basculin), Greninja (Frogadier), Politoed (Poliwhirl) | Weather S.O.S: Castform"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    }
+  ],
+  "Shops": [
+    {
+      "Name": "1 Trial",
+      "Items": []
+    },
+    {
+      "Name": "2 Trials",
+      "Items": []
+    },
+    {
+      "Name": "3 Trials",
+      "Items": []
+    },
+    {
+      "Name": "Big Wave Beach",
+      "Items": []
+    },
+    {
+      "Name": "Hau\u0027oli City [X Items]",
+      "Items": []
+    },
+    {
+      "Name": "Heahea Beach",
+      "Items": []
+    },
+    {
+      "Name": "Heahea City [TMs]",
+      "Items": []
+    },
+    {
+      "Name": "No Trials",
+      "Items": []
+    },
+    {
+      "Name": "Route 2 [Misc]",
+      "Items": []
+    },
+    {
+      "Name": "Route 8 [Misc]",
+      "Items": []
+    },
+    {
+      "Name": "Royal Avenue [TMs]",
+      "Items": []
+    },
+    {
+      "Name": "Thrifty Megamart, Left [Pok\u00E9 Balls]",
+      "Items": []
+    },
+    {
+      "Name": "Thrifty Megamart, Middle [Misc]",
+      "Items": []
+    },
+    {
+      "Name": "Thrifty Megamart, Right [Strange Souvenir]",
+      "Items": []
+    }
+  ]
+}
