@@ -1,0 +1,6654 @@
+{
+  "Gifts": [
+    {
+      "Species": "Rowlet",
+      "Level": 5,
+      "HeldItem": "Oran Berry",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Litten",
+      "Level": 5,
+      "HeldItem": "Oran Berry",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Popplio",
+      "Level": 5,
+      "HeldItem": "Oran Berry",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Omanyte",
+      "Level": 15,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Kabuto",
+      "Level": 15,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Aerodactyl",
+      "Level": 15,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Lileep",
+      "Level": 15,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Anorith",
+      "Level": 15,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Cranidos",
+      "Level": 15,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Shieldon",
+      "Level": 15,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Tirtouga",
+      "Level": 15,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Archen",
+      "Level": 15,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Tyrunt",
+      "Level": 15,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Amaura",
+      "Level": 15,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Eevee",
+      "Level": 1,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "Last Resort",
+      "IsEgg": true
+    },
+    {
+      "Species": "Porygon",
+      "Level": 30,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Type: Null",
+      "Level": 60,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Magearna",
+      "Level": 50,
+      "HeldItem": "Bottle Cap",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Cosmog",
+      "Level": 5,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Aerodactyl",
+      "Level": 40,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Mantyke",
+      "Level": 1,
+      "HeldItem": "Gold Bottle Cap",
+      "Nature": "",
+      "GiftMove": "Oblivion Wing",
+      "IsEgg": false
+    },
+    {
+      "Species": "Poipole",
+      "Level": 40,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Porygon 1",
+      "Level": 20,
+      "HeldItem": "Metronome",
+      "Nature": "",
+      "GiftMove": "Ally Switch",
+      "IsEgg": false
+    },
+    {
+      "Species": "Raticate 2",
+      "Level": 20,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Castform",
+      "Level": 25,
+      "HeldItem": "Coba Berry",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Araquanid 1",
+      "Level": 25,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Rotom",
+      "Level": 30,
+      "HeldItem": "Life Orb",
+      "Nature": "",
+      "GiftMove": "Nasty Plot",
+      "IsEgg": false
+    },
+    {
+      "Species": "Salazzle 1",
+      "Level": 30,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Type: Null",
+      "Level": 35,
+      "HeldItem": "Choice Scarf",
+      "Nature": "",
+      "GiftMove": "Tri Attack",
+      "IsEgg": false
+    },
+    {
+      "Species": "Togedemaru 1",
+      "Level": 35,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Poipole",
+      "Level": 40,
+      "HeldItem": "Choice Specs",
+      "Nature": "",
+      "GiftMove": "Sticky Web",
+      "IsEgg": false
+    },
+    {
+      "Species": "Zeraora",
+      "Level": 50,
+      "HeldItem": "Choice Band",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Kommo-o 1",
+      "Level": 50,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Zygarde 1",
+      "Level": 63,
+      "HeldItem": "",
+      "Nature": "",
+      "GiftMove": "",
+      "IsEgg": false
+    },
+    {
+      "Species": "Pikachu 7",
+      "Level": 30,
+      "HeldItem": "Comet Shard",
+      "Nature": "",
+      "GiftMove": "Substitute",
+      "IsEgg": false
+    }
+  ],
+  "Encounters": [
+    {
+      "Species": "Rattata 1",
+      "Level": 4,
+      "Gender": "Genderless/Random",
+      "Ability": "Pickup",
+      "HeldItem": "Oran Berry",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Quick Attack",
+        "Snatch",
+        "Fling",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Nihilego",
+      "Level": 43,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "Poisonium Z",
+      "Nature": "Sassy",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Baneful Bunker",
+        "Giga Drain",
+        "Venoshock",
+        "Power Gem"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 1,
+        "DEF IV": 31,
+        "SPA IV": 1,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Solgaleo",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Full Metal Body",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Sunsteel Strike",
+        "Cosmic Power",
+        "Crunch",
+        "Zen Headbutt"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Lunala",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Shadow Shield",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Moongeist Beam",
+        "Cosmic Power",
+        "Night Daze",
+        "Moonblast"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Gumshoos 1",
+      "Level": 17,
+      "Gender": "Male",
+      "Ability": "Queenly Majesty",
+      "HeldItem": "Lum Berry",
+      "Nature": "Quiet",
+      "Aura": "Defense (\u002B1)",
+      "SOSAllies": [
+        9
+      ],
+      "Moves": [
+        "Tackle",
+        "Odor Sleuth",
+        "Bite",
+        "Bide"
+      ],
+      "IVs": {
+        "HP IV": 31
+      },
+      "EVs": {
+        "HP EV": 252
+      }
+    },
+    {
+      "Species": "Yungoos",
+      "Level": 13,
+      "Gender": "Genderless/Random",
+      "Ability": "Stakeout",
+      "HeldItem": "",
+      "Nature": "Brave",
+      "Aura": "Sp. Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Pursuit",
+        "Bide",
+        "Bite",
+        "Tackle"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Raticate 1",
+      "Level": 14,
+      "Gender": "Genderless/Random",
+      "Ability": "Cheek Pouch",
+      "HeldItem": "Kee Berry",
+      "Nature": "Timid",
+      "Aura": "Defense (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Me First",
+        "Tackle",
+        "Slink",
+        "Reversal"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Teddiursa",
+      "Level": 13,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Docile",
+      "Aura": "Speed (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Lick",
+        "Mud Shot",
+        "Fury Swipes",
+        "Yawn"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Rattata 1",
+      "Level": 12,
+      "Gender": "Genderless/Random",
+      "Ability": "Hustle",
+      "HeldItem": "",
+      "Nature": "Adamant",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Slink",
+        "Snatch",
+        "Quick Attack",
+        "Quash"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Raticate 2",
+      "Level": 12,
+      "Gender": "Male",
+      "Ability": "Stamina",
+      "HeldItem": "Pecha Berry",
+      "Nature": "Quiet",
+      "Aura": "Defense (\u002B1)",
+      "SOSAllies": [
+        14
+      ],
+      "Moves": [
+        "Super Fang",
+        "Bite",
+        "Fury Swipes",
+        "Scary Face"
+      ],
+      "IVs": {},
+      "EVs": {
+        "ATK EV": 100
+      }
+    },
+    {
+      "Species": "Spearow",
+      "Level": 2,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Quiet",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Peck",
+        "Double Team",
+        "",
+        ""
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Raticate 1",
+      "Level": 11,
+      "Gender": "Genderless/Random",
+      "Ability": "Cheek Pouch",
+      "HeldItem": "",
+      "Nature": "Bashful",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Focus Energy",
+        "Tail Whip",
+        "Tackle",
+        "Super Fang"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Rattata 1",
+      "Level": 11,
+      "Gender": "Genderless/Random",
+      "Ability": "Pickup",
+      "HeldItem": "",
+      "Nature": "Brave",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Tackle",
+        "Tail Whip",
+        "Quick Attack",
+        "Super Fang"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Rattata 1",
+      "Level": 10,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Serious",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Thief",
+        "Snatch",
+        "Pursuit",
+        "Quash"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Wishiwashi 1",
+      "Level": 20,
+      "Gender": "Male",
+      "Ability": "Schooling",
+      "HeldItem": "Sitrus Berry",
+      "Nature": "Bold",
+      "Aura": "Defense (\u002B1)",
+      "SOSAllies": [
+        18,
+        19
+      ],
+      "Moves": [
+        "Water Gun",
+        "Growl",
+        "Rain Dance",
+        "Soak"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Goldeen",
+      "Level": 25,
+      "Gender": "Genderless/Random",
+      "Ability": "Lightning Rod",
+      "HeldItem": "",
+      "Nature": "Modest",
+      "Aura": "Attack (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Water Pulse",
+        "Horn Attack",
+        "Aqua Ring",
+        "Aqua Jet"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Wishiwashi",
+      "Level": 26,
+      "Gender": "Genderless/Random",
+      "Ability": "Schooling",
+      "HeldItem": "",
+      "Nature": "Naughty",
+      "Aura": "Sp. Defense (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Aqua Ring",
+        "Whirlpool",
+        "Aqua Tail",
+        "U-turn"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Alomomola",
+      "Level": 18,
+      "Gender": "Genderless/Random",
+      "Ability": "Regenerator",
+      "HeldItem": "",
+      "Nature": "Docile",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Helping Hand",
+        "Double Slap",
+        "Heal Pulse",
+        "Water Gun"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Wishiwashi",
+      "Level": 18,
+      "Gender": "Genderless/Random",
+      "Ability": "Schooling",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Salazzle 1",
+      "Level": 22,
+      "Gender": "Female",
+      "Ability": "Merciless",
+      "HeldItem": "Petaya Berry",
+      "Nature": "Sassy",
+      "Aura": "Sp. Defense (\u002B1)",
+      "SOSAllies": [
+        24
+      ],
+      "Moves": [
+        "Torment",
+        "Venom Drench",
+        "Toxic",
+        "Flame Burst"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 1,
+        "DEF IV": 15,
+        "SPA IV": 1,
+        "SPD IV": 15,
+        "SPE IV": 1
+      },
+      "EVs": {
+        "HP EV": 132,
+        "DEF EV": 126,
+        "SPD EV": 252
+      }
+    },
+    {
+      "Species": "Marowak 1",
+      "Level": 31,
+      "Gender": "Genderless/Random",
+      "Ability": "Lightning Rod",
+      "HeldItem": "",
+      "Nature": "Naive",
+      "Aura": "Sp. Defense (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Will-O-Wisp",
+        "Bonemerang",
+        "Shadow Bone",
+        "Flame Wheel"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Marowak 1",
+      "Level": 31,
+      "Gender": "Genderless/Random",
+      "Ability": "Lightning Rod",
+      "HeldItem": "",
+      "Nature": "Naive",
+      "Aura": "Sp. Defense (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Will-O-Wisp",
+        "Bonemerang",
+        "Shadow Bone",
+        "Flame Wheel"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Pikachu",
+      "Level": 20,
+      "Gender": "Genderless/Random",
+      "Ability": "Battery",
+      "HeldItem": "",
+      "Nature": "Hasty",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Electro Ball",
+        "Thunder Wave",
+        "Quick Attack",
+        "Play Nice"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Salandit",
+      "Level": 20,
+      "Gender": "Male",
+      "Ability": "Poison Touch",
+      "HeldItem": "",
+      "Nature": "Rash",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Poison Gas",
+        "Venoshock",
+        "Taunt",
+        "Scratch"
+      ],
+      "IVs": {
+        "HP IV": 15,
+        "ATK IV": 15,
+        "DEF IV": 15,
+        "SPA IV": 15,
+        "SPD IV": 15,
+        "SPE IV": 15
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Lurantis 1",
+      "Level": 37,
+      "Gender": "Female",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "Coba Berry",
+      "Nature": "Sassy",
+      "Aura": "Defense (\u002B1)",
+      "SOSAllies": [
+        32,
+        33
+      ],
+      "Moves": [
+        "Low Sweep",
+        "Acrobatics",
+        "Leech Seed",
+        "Solar Blade"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "DEF IV": 31,
+        "SPD IV": 31
+      },
+      "EVs": {
+        "HP EV": 252,
+        "DEF EV": 252,
+        "SPD EV": 4
+      }
+    },
+    {
+      "Species": "Parasect",
+      "Level": 22,
+      "Gender": "Genderless/Random",
+      "Ability": "Poison Heal",
+      "HeldItem": "",
+      "Nature": "Adamant",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Cross Poison",
+        "Leech Life",
+        "Fury Cutter",
+        "Spore"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Shiinotic",
+      "Level": 22,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Sassy",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Astonish",
+        "Ingrain",
+        "Mega Drain",
+        "Sleep Powder"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Fomantis",
+      "Level": 23,
+      "Gender": "Genderless/Random",
+      "Ability": "Overgrow",
+      "HeldItem": "",
+      "Nature": "Timid",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Razor Leaf",
+        "Leafage",
+        "Fury Cutter",
+        "Growth"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Fomantis",
+      "Level": 23,
+      "Gender": "Genderless/Random",
+      "Ability": "Overgrow",
+      "HeldItem": "",
+      "Nature": "Bold",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Razor Leaf",
+        "Leafage",
+        "Fury Cutter",
+        "Growth"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Fomantis",
+      "Level": 23,
+      "Gender": "Genderless/Random",
+      "Ability": "Overgrow",
+      "HeldItem": "",
+      "Nature": "Careful",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Leafage",
+        "Fury Cutter",
+        "Ingrain",
+        "Razor Leaf"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Fomantis",
+      "Level": 23,
+      "Gender": "Genderless/Random",
+      "Ability": "Overgrow",
+      "HeldItem": "",
+      "Nature": "Quirky",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Leafage",
+        "Fury Cutter",
+        "Ingrain",
+        "Razor Leaf"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Whimsicott",
+      "Level": 33,
+      "Gender": "Female",
+      "Ability": "Prankster",
+      "HeldItem": "",
+      "Nature": "Serious",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Tailwind",
+        "Mega Drain",
+        "Aromatic Mist",
+        "Grassy Terrain"
+      ],
+      "IVs": {
+        "HP IV": 30,
+        "ATK IV": 30,
+        "DEF IV": 30,
+        "SPA IV": 30,
+        "SPD IV": 30,
+        "SPE IV": 30
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Sunflora",
+      "Level": 33,
+      "Gender": "Female",
+      "Ability": "Drought",
+      "HeldItem": "",
+      "Nature": "Rash",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Flower Shield",
+        "Grassy Terrain",
+        "Incinerate",
+        "Will-O-Wisp"
+      ],
+      "IVs": {
+        "HP IV": 30,
+        "ATK IV": 30,
+        "DEF IV": 30,
+        "SPA IV": 31,
+        "SPD IV": 30,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Vikavolt 1",
+      "Level": 29,
+      "Gender": "Male",
+      "Ability": "Electric Surge",
+      "HeldItem": "Occa Berry",
+      "Nature": "Quirky",
+      "Aura": "All Stats (\u002B1)",
+      "SOSAllies": [
+        39,
+        38
+      ],
+      "Moves": [
+        "Psycrush",
+        "Charge",
+        "Bug Bite",
+        "Spark"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 1,
+        "DEF IV": 31,
+        "SPA IV": 1,
+        "SPD IV": 31,
+        "SPE IV": 1
+      },
+      "EVs": {
+        "HP EV": 70,
+        "ATK EV": 170,
+        "DEF EV": 100,
+        "SPD EV": 170
+      }
+    },
+    {
+      "Species": "Grubbin",
+      "Level": 27,
+      "Gender": "Genderless/Random",
+      "Ability": "Static",
+      "HeldItem": "",
+      "Nature": "Adamant",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Psycrush",
+        "String Shot",
+        "Bite",
+        "Bug Bite"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Charjabug",
+      "Level": 27,
+      "Gender": "Genderless/Random",
+      "Ability": "Battery",
+      "HeldItem": "",
+      "Nature": "Bold",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Charge",
+        "Psycrush",
+        "Bug Bite",
+        "Spark"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Charjabug",
+      "Level": 27,
+      "Gender": "Genderless/Random",
+      "Ability": "Battery",
+      "HeldItem": "",
+      "Nature": "Docile",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Charge",
+        "Mud-Slap",
+        "Acrobatics",
+        "Spark"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Charjabug",
+      "Level": 27,
+      "Gender": "Genderless/Random",
+      "Ability": "Battery",
+      "HeldItem": "",
+      "Nature": "Modest",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "String Shot",
+        "Psycrush",
+        "Mud-Slap",
+        "Thunder Wave"
+      ],
+      "IVs": {
+        "HP IV": 15,
+        "ATK IV": 15,
+        "DEF IV": 15,
+        "SPA IV": 15,
+        "SPD IV": 15,
+        "SPE IV": 15
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Charjabug",
+      "Level": 28,
+      "Gender": "Genderless/Random",
+      "Ability": "Battery",
+      "HeldItem": "",
+      "Nature": "Naughty",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Bite",
+        "Thunder Wave",
+        "Mud-Slap",
+        "Spark"
+      ],
+      "IVs": {
+        "HP IV": 15,
+        "ATK IV": 15,
+        "DEF IV": 15,
+        "SPA IV": 15,
+        "SPD IV": 15,
+        "SPE IV": 15
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Mimikyu 2",
+      "Level": 55,
+      "Gender": "Female",
+      "Ability": "Disguise",
+      "HeldItem": "Lum Berry",
+      "Nature": "Timid",
+      "Aura": "Sp. Defense (\u002B2)",
+      "SOSAllies": [
+        45,
+        44
+      ],
+      "Moves": [
+        "Phantom Force",
+        "Hypnosis",
+        "Nightmare",
+        "Play Rough"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Banette",
+      "Level": 50,
+      "Gender": "Genderless/Random",
+      "Ability": "Cursed Body",
+      "HeldItem": "",
+      "Nature": "Serious",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Shadow Punch",
+        "Sucker Punch",
+        "Meditate",
+        "Snatch"
+      ],
+      "IVs": {
+        "HP IV": 15,
+        "ATK IV": 15,
+        "DEF IV": 15,
+        "SPA IV": 15,
+        "SPD IV": 15,
+        "SPE IV": 15
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Mismagius",
+      "Level": 51,
+      "Gender": "Genderless/Random",
+      "Ability": "Levitate",
+      "HeldItem": "",
+      "Nature": "Gentle",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Trick-or-Treat",
+        "Shadow Ball",
+        "Mystical Fire",
+        "Psychic"
+      ],
+      "IVs": {
+        "HP IV": 15,
+        "ATK IV": 15,
+        "DEF IV": 15,
+        "SPA IV": 15,
+        "SPD IV": 15,
+        "SPE IV": 15
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Gengar",
+      "Level": 52,
+      "Gender": "Genderless/Random",
+      "Ability": "Levitate",
+      "HeldItem": "",
+      "Nature": "Rash",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Sludge Bomb",
+        "Trick-or-Treat",
+        "Hypnosis",
+        "Dream Eater"
+      ],
+      "IVs": {
+        "HP IV": 15,
+        "ATK IV": 15,
+        "DEF IV": 15,
+        "SPA IV": 15,
+        "SPD IV": 15,
+        "SPE IV": 15
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Palossand",
+      "Level": 50,
+      "Gender": "Male",
+      "Ability": "Water Compaction",
+      "HeldItem": "",
+      "Nature": "Rash",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Shore Up",
+        "Mud Bomb",
+        "Destiny Bond",
+        "Skill Swap"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 15,
+        "DEF IV": 31,
+        "SPA IV": 15,
+        "SPD IV": 31,
+        "SPE IV": 15
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Chandelure",
+      "Level": 50,
+      "Gender": "Male",
+      "Ability": "Infiltrator",
+      "HeldItem": "",
+      "Nature": "Quiet",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Curse",
+        "Hex",
+        "Memento",
+        "Mystical Fire"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Kommo-o 1",
+      "Level": 49,
+      "Gender": "Male",
+      "Ability": "Multiscale",
+      "HeldItem": "Roseli Berry",
+      "Nature": "Sassy",
+      "Aura": "All Stats (\u002B1)",
+      "SOSAllies": [
+        50,
+        49
+      ],
+      "Moves": [
+        "Drain Punch",
+        "Dragon Claw",
+        "Thunder Punch",
+        "Poison Jab"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 1,
+        "DEF IV": 31,
+        "SPA IV": 1,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {
+        "HP EV": 120,
+        "DEF EV": 138,
+        "SPD EV": 252
+      }
+    },
+    {
+      "Species": "Jangmo-o",
+      "Level": 42,
+      "Gender": "Genderless/Random",
+      "Ability": "Bulletproof",
+      "HeldItem": "",
+      "Nature": "Docile",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Bide",
+        "Tackle",
+        "Leer",
+        "Headbutt"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Hakamo-o",
+      "Level": 44,
+      "Gender": "Genderless/Random",
+      "Ability": "Bulletproof",
+      "HeldItem": "",
+      "Nature": "Naughty",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Headbutt",
+        "Autotomize",
+        "Work Up",
+        "Sky Uppercut"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Noivern",
+      "Level": 48,
+      "Gender": "Genderless/Random",
+      "Ability": "Berserk",
+      "HeldItem": "",
+      "Nature": "Serious",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Boomburst",
+        "Screech",
+        "Dragon Pulse",
+        "Air Slash"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Scizor",
+      "Level": 46,
+      "Gender": "Genderless/Random",
+      "Ability": "Technician",
+      "HeldItem": "",
+      "Nature": "Naughty",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Light Screen",
+        "Pursuit",
+        "Bullet Punch",
+        "X-Scissor"
+      ],
+      "IVs": {
+        "HP IV": 15,
+        "ATK IV": 15,
+        "DEF IV": 15,
+        "SPA IV": 15,
+        "SPD IV": 15,
+        "SPE IV": 15
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Nihilego",
+      "Level": 55,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Nihilego",
+      "Level": 55,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Buzzwole",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Buzzwole",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Pheromosa",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Speed (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Pheromosa",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Speed (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Pheromosa",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Speed (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Pheromosa",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Speed (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xurkitree",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xurkitree",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xurkitree",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xurkitree",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xurkitree",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xurkitree",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xurkitree",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xurkitree",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xurkitree",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xurkitree",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Guzzlord",
+      "Level": 70,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Necrozma",
+      "Level": 75,
+      "Gender": "Genderless/Random",
+      "Ability": "Prism Armor",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Charmander",
+      "Level": 12,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Counter",
+        "Smoke Out",
+        "Ember",
+        "Scratch"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Squirtle",
+      "Level": 12,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Aqua Jet",
+        "Withdraw",
+        "Water Gun",
+        "Tackle"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Onix",
+      "Level": 14,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Rototiller",
+        "Rage",
+        "Rock Tomb",
+        "Spall"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Horsea",
+      "Level": 18,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Water Pulse",
+        "Twister",
+        "Water Gun",
+        "Leer"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Scatterbug 30",
+      "Level": 9,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Rage Powder",
+        "String Shot",
+        "Stun Spore",
+        "Tackle"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Bulbasaur",
+      "Level": 10,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Grassy Terrain",
+        "Vine Whip",
+        "Growl",
+        "Tackle"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Litwick",
+      "Level": 9,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Endure",
+        "Ember",
+        "Fire Spin",
+        "Smog"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Ralts",
+      "Level": 17,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Misty Terrain",
+        "Magical Leaf",
+        "Lucky Chant",
+        "Disarming Voice"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Spheal",
+      "Level": 19,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Belly Drum",
+        "Brine",
+        "Ice Ball",
+        "Encore"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Combusken",
+      "Level": 20,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Low Kick",
+        "Flame Charge",
+        "Peck",
+        "Erode"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Honedge",
+      "Level": 24,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Wide Guard",
+        "Aerial Ace",
+        "Shadow Sneak",
+        "Autotomize"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Beedrill",
+      "Level": 14,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Rage",
+        "Flurry Peck",
+        "Twineedle",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Grovyle",
+      "Level": 16,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Grassy Terrain",
+        "Mega Drain",
+        "Quick Attack",
+        "Absorb"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Marshtomp",
+      "Level": 17,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Counter",
+        "Foresight",
+        "Mud-Slap",
+        "Water Gun"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Rhyhorn",
+      "Level": 32,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Guard Split",
+        "Rock Blast",
+        "Chip Away",
+        "Bulldoze"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Swinub",
+      "Level": 33,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Icicle Spear",
+        "Take Down",
+        "Ice Shard",
+        "Icy Wind"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Prinplup",
+      "Level": 35,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Power Trip",
+        "Brine",
+        "Flurry Peck",
+        "Bide"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Grotle",
+      "Level": 36,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Heavy Slam",
+        "Leech Seed",
+        "Mega Drain",
+        "Bite"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Grotle",
+      "Level": 36,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Heavy Slam",
+        "Leech Seed",
+        "Mega Drain",
+        "Bite"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Pidgeot",
+      "Level": 29,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Steel Wing",
+        "Feather Dance",
+        "Twister",
+        "Quick Attack"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Monferno",
+      "Level": 29,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Power-Up Punch",
+        "Flame Wheel",
+        "Fury Swipes",
+        "Torment"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Axew",
+      "Level": 30,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Counter",
+        "Dragon Claw",
+        "False Swipe",
+        "Slash"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Eelektross",
+      "Level": 55,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Crunch",
+        "Discharge",
+        "Headbutt",
+        "Crush Claw"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Aggron",
+      "Level": 57,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Reversal",
+        "Heavy Slam",
+        "Double-Edge",
+        "Iron Defense"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Rotom",
+      "Level": 61,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Charge",
+        "Hex",
+        "Electro Ball",
+        "Substitute"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Leavanny",
+      "Level": 57,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Grassy Terrain",
+        "Leaf Storm",
+        "Swords Dance",
+        "Entrainment"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Chesnaught",
+      "Level": 45,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Spikes",
+        "Mud Shot",
+        "Seed Bomb",
+        "Spiky Shield"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Greninja",
+      "Level": 44,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Bestow",
+        "Substitute",
+        "Slink",
+        "Water Shuriken"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Delphox",
+      "Level": 44,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Wish",
+        "Psyshock",
+        "Light Screen",
+        "Mystical Fire"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Tapu Koko",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Electric Surge",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Tapu Lele",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Psychic Surge",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Tapu Bulu",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Grassy Surge",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Tapu Fini",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Misty Surge",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Happiny",
+      "Level": 13,
+      "Gender": "Genderless/Random",
+      "Ability": "Serene Grace",
+      "HeldItem": "Oval Stone",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Charm",
+        "Round",
+        "Fairy Wind",
+        "Sweet Kiss"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Exeggutor 1",
+      "Level": 40,
+      "Gender": "Genderless/Random",
+      "Ability": "Skill Link",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Tapu Koko",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Electric Surge",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Leavanny",
+      "Level": 57,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Grassy Terrain",
+        "Leaf Storm",
+        "Swords Dance",
+        "Entrainment"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Araquanid 1",
+      "Level": 27,
+      "Gender": "Male",
+      "Ability": "Water Bubble",
+      "HeldItem": "Wacan Berry",
+      "Nature": "Timid",
+      "Aura": "Defense (\u002B1)",
+      "SOSAllies": [
+        141,
+        142
+      ],
+      "Moves": [
+        "Icy Wind",
+        "Twineedle",
+        "Aqua Ring",
+        "Bubble"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "DEF IV": 31,
+        "SPD IV": 31
+      },
+      "EVs": {
+        "HP EV": 252,
+        "DEF EV": 4,
+        "SPD EV": 252
+      }
+    },
+    {
+      "Species": "Dewpider",
+      "Level": 25,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Naughty",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Bite",
+        "Bug Bite",
+        "Aqua Ring",
+        "Bubble Beam"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Ducklett",
+      "Level": 26,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Hasty",
+      "Aura": "Sp. Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Aerial Ace",
+        "Feather Dance",
+        "Aqua Ring",
+        "Water Pulse"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Luvdisc",
+      "Level": 23,
+      "Gender": "Genderless/Random",
+      "Ability": "Friend Guard",
+      "HeldItem": "",
+      "Nature": "Serious",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Safeguard",
+        "Heart Stamp",
+        "Lucky Chant",
+        "Knock Off"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Tentacool",
+      "Level": 24,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Relaxed",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Acid Spray",
+        "Rain Dance",
+        "Clear Smog",
+        "Toxic"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Fomantis",
+      "Level": 35,
+      "Gender": "Genderless/Random",
+      "Ability": "Overgrow",
+      "HeldItem": "Mago Berry",
+      "Nature": "Timid",
+      "Aura": "Speed (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Leaf Blade",
+        "Needle Arm",
+        "Slash",
+        "Synthesis"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Beedrill",
+      "Level": 34,
+      "Gender": "Genderless/Random",
+      "Ability": "Poison Touch",
+      "HeldItem": "Honey",
+      "Nature": "Adamant",
+      "Aura": "Attack (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Flurry Peck",
+        "Poison Tail",
+        "Twineedle",
+        "Focus Energy"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Vespiquen",
+      "Level": 34,
+      "Gender": "Genderless/Random",
+      "Ability": "Queenly Majesty",
+      "HeldItem": "Honey",
+      "Nature": "Quirky",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Bug Buzz",
+        "Defend Order",
+        "Power Gem",
+        "Confuse Ray"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Sudowoodo",
+      "Level": 34,
+      "Gender": "Genderless/Random",
+      "Ability": "Mimicry",
+      "HeldItem": "Big Root",
+      "Nature": "Naughty",
+      "Aura": "Sp. Defense (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Block",
+        "Needle Arm",
+        "Rock Tomb",
+        "Forest\u2019s Curse"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Togedemaru 1",
+      "Level": 48,
+      "Gender": "Male",
+      "Ability": "Quark Drive",
+      "HeldItem": "Leftovers",
+      "Nature": "Timid",
+      "Aura": "Sp. Defense (\u002B2)",
+      "SOSAllies": [
+        149,
+        148
+      ],
+      "Moves": [
+        "Zing Zap",
+        "Spiky Shield",
+        "Iron Head",
+        "Bounce"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 1,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Skarmory",
+      "Level": 45,
+      "Gender": "Genderless/Random",
+      "Ability": "Weak Armor",
+      "HeldItem": "",
+      "Nature": "Timid",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Stealth Rock",
+        "Steel Wing",
+        "Tailwind",
+        "Torment"
+      ],
+      "IVs": {
+        "HP IV": 15,
+        "ATK IV": 15,
+        "DEF IV": 15,
+        "SPA IV": 15,
+        "SPD IV": 15,
+        "SPE IV": 15
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Pachirisu",
+      "Level": 45,
+      "Gender": "Genderless/Random",
+      "Ability": "Volt Absorb",
+      "HeldItem": "",
+      "Nature": "Modest",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Follow Me",
+        "Nuzzle",
+        "Ion Deluge",
+        "Me First"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Electabuzz",
+      "Level": 45,
+      "Gender": "Genderless/Random",
+      "Ability": "Static",
+      "HeldItem": "",
+      "Nature": "Modest",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Discharge",
+        "Thunder Punch",
+        "Arm Thrust",
+        "Meditate"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Electrode",
+      "Level": 45,
+      "Gender": "Genderless/Random",
+      "Ability": "Soundproof",
+      "HeldItem": "",
+      "Nature": "Serious",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Self-Destruct",
+        "Discharge",
+        "Magnet Rise",
+        "Flamethrower"
+      ],
+      "IVs": {},
+      "EVs": {}
+    },
+    {
+      "Species": "Yungoos",
+      "Level": 3,
+      "Gender": "Genderless/Random",
+      "Ability": "Stakeout",
+      "HeldItem": "",
+      "Nature": "Bashful",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Odor Sleuth",
+        "Tackle",
+        "Leer",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Rattata 1",
+      "Level": 3,
+      "Gender": "Genderless/Random",
+      "Ability": "Pickup",
+      "HeldItem": "",
+      "Nature": "Bashful",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Rattata 1",
+      "Level": 4,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "Oran Berry",
+      "Nature": "Lonely",
+      "Aura": "Sp. Defense (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Quick Attack",
+        "Snatch",
+        "Fling",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Spearow",
+      "Level": 5,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Defense (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Peck",
+        "Double Team",
+        "Leer",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Pinsir",
+      "Level": 42,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Pinsir",
+      "Level": 43,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Pinsir",
+      "Level": 42,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Necrozma 1",
+      "Level": 50,
+      "Gender": "Genderless/Random",
+      "Ability": "Prism Armor",
+      "HeldItem": "",
+      "Nature": "Timid",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Sunsteel Strike",
+        "Morning Sun",
+        "Psycho Cut",
+        "Night Slash"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {
+        "HP EV": 6,
+        "DEF EV": 252,
+        "SPD EV": 252
+      }
+    },
+    {
+      "Species": "Necrozma 2",
+      "Level": 50,
+      "Gender": "Genderless/Random",
+      "Ability": "Prism Armor",
+      "HeldItem": "",
+      "Nature": "Relaxed",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Moongeist Beam",
+        "Moonlight",
+        "Psychic",
+        "Power Gem"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {
+        "HP EV": 6,
+        "DEF EV": 252,
+        "SPD EV": 252
+      }
+    },
+    {
+      "Species": "Necrozma 3",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Neuroforce",
+      "HeldItem": "",
+      "Nature": "Relaxed",
+      "Aura": "All Stats (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Photon Geyser",
+        "Steel Trap",
+        "Power Gem",
+        "Dragon Pulse"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {
+        "HP EV": 96,
+        "DEF EV": 252,
+        "SPD EV": 162
+      }
+    },
+    {
+      "Species": "Necrozma",
+      "Level": 65,
+      "Gender": "Genderless/Random",
+      "Ability": "Prism Armor",
+      "HeldItem": "Ultranecrozium Z",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Photon Geyser",
+        "Iron Defense",
+        "Power Gem",
+        "Night Slash"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Ribombee 1",
+      "Level": 55,
+      "Gender": "Female",
+      "Ability": "Cute Charm",
+      "HeldItem": "Occa Berry",
+      "Nature": "Timid",
+      "Aura": "All Stats (\u002B2)",
+      "SOSAllies": [
+        165,
+        164
+      ],
+      "Moves": [
+        "Bug Buzz",
+        "Draining Kiss",
+        "Quiver Dance",
+        "Dazzling Gleam"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 1,
+        "DEF IV": 31,
+        "SPA IV": 1,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {
+        "HP EV": 100,
+        "DEF EV": 252,
+        "SPD EV": 158
+      }
+    },
+    {
+      "Species": "Pelipper",
+      "Level": 52,
+      "Gender": "Female",
+      "Ability": "Drizzle",
+      "HeldItem": "",
+      "Nature": "Serious",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Stockpile",
+        "Scald",
+        "Spit Up",
+        "Seed Bomb"
+      ],
+      "IVs": {
+        "HP IV": 15,
+        "ATK IV": 31,
+        "DEF IV": 15,
+        "SPA IV": 15,
+        "SPD IV": 15,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Blissey",
+      "Level": 53,
+      "Gender": "Female",
+      "Ability": "Serene Grace",
+      "HeldItem": "",
+      "Nature": "Docile",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Heal Pulse",
+        "Light Screen",
+        "Helping Hand",
+        "Dazzling Gleam"
+      ],
+      "IVs": {
+        "HP IV": 15
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Articuno",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Snow Warning",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Ancient Power",
+        "Freeze-Dry",
+        "Reflect",
+        "Hailstorm"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Zapdos",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Static",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Ancient Power",
+        "Discharge",
+        "Pluck",
+        "Rain Dance"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Moltres",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Flame Body",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Ancient Power",
+        "Flamethrower",
+        "Air Slash",
+        "Sunny Day"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Ho-Oh",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Regenerator",
+      "HeldItem": "Sacred Ash",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Burn Up",
+        "Sacred Fire",
+        "Extrasensory",
+        "Ancient Power"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Rayquaza",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Air Lock",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Cresselia",
+      "Level": 60,
+      "Gender": "Female",
+      "Ability": "Levitate",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Tornadus",
+      "Level": 60,
+      "Gender": "Male",
+      "Ability": "Prankster",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Thundurus",
+      "Level": 60,
+      "Gender": "Male",
+      "Ability": "Prankster",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Landorus",
+      "Level": 60,
+      "Gender": "Male",
+      "Ability": "Sand Force",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Yveltal",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Dark Aura",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Oblivion Wing",
+        "Dark Pulse",
+        "Phantom Force",
+        "Psychic"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Mewtwo",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Pressure",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Psychic",
+        "Recover",
+        "Swift",
+        "Psycho Cut"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Raikou",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Pressure",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Entei",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Pressure",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Trample",
+        "Bite",
+        "Swagger",
+        "Lava Plume"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Dialga",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Pressure",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Cobalion",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Justified",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Sacred Sword",
+        "Swords Dance",
+        "Quick Attack",
+        "Iron Head"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Terrakion",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Justified",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Sacred Sword",
+        "Swords Dance",
+        "Rock Slide",
+        "Stone Edge"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Virizion",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Justified",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Sacred Sword",
+        "Swords Dance",
+        "Giga Drain",
+        "Leaf Blade"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Reshiram",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Turboblaze",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Zekrom",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Teravolt",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xerneas",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Fairy Aura",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Geomancy",
+        "Horn Leech",
+        "Night Slash",
+        "Moonblast"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Regirock",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Solid Rock",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Regice",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Prism Armor",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Registeel",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Filter",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Groudon",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Drought",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Earthquake",
+        "Precipice Blades",
+        "Bulk Up",
+        "Solar Beam"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Heatran",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Flash Fire",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Regigigas",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Slow Start",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Zen Headbutt",
+        "Revenge",
+        "Dizzy Punch",
+        "Confuse Ray"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Palkia",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Pressure",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Giratina",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Pressure",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Shadow Force",
+        "Aura Sphere",
+        "Earth Power",
+        "Dragon Claw"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Suicune",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Pressure",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Bubble Beam",
+        "Aurora Beam",
+        "Mist",
+        "Rain Dance"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Lugia",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Multiscale",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Skill Swap",
+        "Aeroblast",
+        "Extrasensory",
+        "Ancient Power"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Latias",
+      "Level": 60,
+      "Gender": "Female",
+      "Ability": "Levitate",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Mist Ball",
+        "Dragon Pulse",
+        "Psycho Shift",
+        "Wish"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Latios",
+      "Level": 60,
+      "Gender": "Male",
+      "Ability": "Levitate",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Luster Purge",
+        "Dragon Pulse",
+        "Psycho Shift",
+        "Dragon Breath"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kyogre",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Drizzle",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Ice Beam",
+        "Origin Pulse",
+        "Calm Mind",
+        "Mudslide"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Uxie",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Levitate",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Extrasensory",
+        "Yawn",
+        "Amnesia",
+        "Swift"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Mesprit",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Levitate",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Extrasensory",
+        "Charm",
+        "Future Sight",
+        "Swift"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Azelf",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Levitate",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Extrasensory",
+        "Nasty Plot",
+        "Uproar",
+        "Swift"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kyurem",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Snow Warning",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Altaria",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Yanmega",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Sigilyph",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Swanna",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Swellow",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Drapion",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Audino",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Heliolisk",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Nuzleaf",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Grumpig",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Abomasnow",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Medicham",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Hippowdon",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Crustle",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Magcargo",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Barbaracle",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Lombre",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Stunfisk",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Floatzel",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Quagsire",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Nihilego",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Power Gem",
+        "Acid Spray",
+        "Stealth Rock",
+        "Mirror Coat"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Buzzwole",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Pheromosa",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Speed (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Xurkitree",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Celesteela",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Kartana",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Guzzlord",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Gumshoos 1",
+      "Level": 60,
+      "Gender": "Male",
+      "Ability": "Queenly Majesty",
+      "HeldItem": "Chople Berry",
+      "Nature": "Timid",
+      "Aura": "All Stats (\u002B2)",
+      "SOSAllies": [
+        231
+      ],
+      "Moves": [
+        "Hyper Fang",
+        "Ice Fang",
+        "Protect",
+        "Crunch"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 29,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Yungoos",
+      "Level": 58,
+      "Gender": "Genderless/Random",
+      "Ability": "Stakeout",
+      "HeldItem": "",
+      "Nature": "Modest",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Yawn",
+        "Mud-Slap",
+        "Torment",
+        "Super Fang"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Raticate 2",
+      "Level": 60,
+      "Gender": "Male",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "Chople Berry",
+      "Nature": "Timid",
+      "Aura": "All Stats (\u002B2)",
+      "SOSAllies": [
+        233
+      ],
+      "Moves": [
+        "Hyper Fang",
+        "Throat Chop",
+        "Protect",
+        "Double Team"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {
+        "HP EV": 106,
+        "DEF EV": 200,
+        "SPD EV": 204
+      }
+    },
+    {
+      "Species": "Rattata 1",
+      "Level": 58,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Modest",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Super Fang",
+        "Tail Whip",
+        "Torment",
+        "Crunch"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Bewear",
+      "Level": 42,
+      "Gender": "Genderless/Random",
+      "Ability": "Fluffy",
+      "HeldItem": "Normalium Z",
+      "Nature": "Lonely",
+      "Aura": "Sp. Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Pain Split",
+        "Take Down",
+        "Charm",
+        "Submission"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Hypno",
+      "Level": 42,
+      "Gender": "Genderless/Random",
+      "Ability": "Bad Dreams",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Hypnosis",
+        "Nightmare",
+        "Dream Eater",
+        "Yawn"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Hypno",
+      "Level": 42,
+      "Gender": "Genderless/Random",
+      "Ability": "Psychic Surge",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Nasty Plot",
+        "Psybeam",
+        "Disable",
+        "Poison Gas"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Hypno",
+      "Level": 42,
+      "Gender": "Genderless/Random",
+      "Ability": "Psychic Surge",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Poison Jab",
+        "Disable",
+        "Meditate",
+        "Zen Headbutt"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Misdreavus",
+      "Level": 23,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "Sitrus Berry",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Nightmare",
+        "Hypnosis",
+        "Psybeam",
+        "Astonish"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Sableye",
+      "Level": 23,
+      "Gender": "Genderless/Random",
+      "Ability": "Dazzling",
+      "HeldItem": "Sitrus Berry",
+      "Nature": "Lonely",
+      "Aura": "Attack (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Pursuit",
+        "Shadow Sneak",
+        "Disable",
+        "Slink"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Sandygast",
+      "Level": 30,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Astonish",
+        "Bulldoze",
+        "Mega Drain",
+        "Sand Tomb"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Frillish",
+      "Level": 34,
+      "Gender": "Female",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Ditto",
+      "Level": 41,
+      "Gender": "Genderless/Random",
+      "Ability": "Imposter",
+      "HeldItem": "Enigma Berry",
+      "Nature": "Modest",
+      "Aura": "Speed (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Transform",
+        "Mimic",
+        "Me First",
+        "Copycat"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Ditto",
+      "Level": 41,
+      "Gender": "Genderless/Random",
+      "Ability": "Illusion",
+      "HeldItem": "Metal Powder",
+      "Nature": "Relaxed",
+      "Aura": "Sp. Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Rest",
+        "Mimic",
+        "Sleep Talk",
+        "Copycat"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Ditto",
+      "Level": 41,
+      "Gender": "Genderless/Random",
+      "Ability": "Imposter",
+      "HeldItem": "Assault Vest",
+      "Nature": "Bold",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Transform",
+        "Mimic",
+        "Me First",
+        "Copycat"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Ditto",
+      "Level": 41,
+      "Gender": "Genderless/Random",
+      "Ability": "Any (1 or 2)",
+      "HeldItem": "Quick Powder",
+      "Nature": "Quiet",
+      "Aura": "All Stats (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "Camouflage",
+        "Mimic",
+        "Me First",
+        "Copycat"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Ditto",
+      "Level": 41,
+      "Gender": "Genderless/Random",
+      "Ability": "Imposter",
+      "HeldItem": "Leftovers",
+      "Nature": "Serious",
+      "Aura": "All Stats (\u002B1)",
+      "SOSAllies": [],
+      "Moves": [
+        "Transform",
+        "Mimic",
+        "Me First",
+        "Copycat"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Zygarde",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Aura Break",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Land\u2019s Wrath",
+        "Glare",
+        "Safeguard",
+        "Dragon Breath"
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Stakataka",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Defense (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Blacephalon",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Beast Boost",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "Sp. Attack (\u002B2)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Marowak 2",
+      "Level": 33,
+      "Gender": "Male",
+      "Ability": "Multistriker",
+      "HeldItem": "Chesto Berry",
+      "Nature": "Timid",
+      "Aura": "Sp. Defense (\u002B1)",
+      "SOSAllies": [
+        251
+      ],
+      "Moves": [
+        "Rock Smash",
+        "Will-O-Wisp",
+        "Hex",
+        "Flame Wheel"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "DEF IV": 31,
+        "SPD IV": 31
+      },
+      "EVs": {
+        "HP EV": 252,
+        "DEF EV": 4,
+        "SPD EV": 252
+      }
+    },
+    {
+      "Species": "Salandit",
+      "Level": 31,
+      "Gender": "Male",
+      "Ability": "Corrosion",
+      "HeldItem": "",
+      "Nature": "Sassy",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "Torment",
+        "Venom Drench",
+        "Fire Lash",
+        "Toxic"
+      ],
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      },
+      "EVs": {}
+    },
+    {
+      "Species": "Electrode",
+      "Level": 60,
+      "Gender": "Genderless/Random",
+      "Ability": "Soundproof",
+      "HeldItem": "",
+      "Nature": "Lonely",
+      "Aura": "(None)",
+      "SOSAllies": [],
+      "Moves": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      },
+      "EVs": {}
+    }
+  ],
+  "Trades": [
+    {
+      "Species": "Rockruff 1",
+      "Level": 15,
+      "Gender": "Male",
+      "Ability": "Insomnia",
+      "HeldItem": "Nugget",
+      "Nature": "Bold",
+      "RequestedSpecies": "Any",
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": 31,
+        "DEF IV": "Random",
+        "SPA IV": 31,
+        "SPD IV": "Random",
+        "SPE IV": 31
+      }
+    },
+    {
+      "Species": "Poipole",
+      "Level": 20,
+      "Gender": "Male",
+      "Ability": "Merciless",
+      "HeldItem": "Pearl String",
+      "Nature": "Gentle",
+      "RequestedSpecies": "Any",
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": 31,
+        "SPA IV": "Random",
+        "SPD IV": 31,
+        "SPE IV": 31
+      }
+    },
+    {
+      "Species": "Vulpix 1",
+      "Level": 22,
+      "Gender": "Female",
+      "Ability": "Snow Warning",
+      "HeldItem": "Comet Shard",
+      "Nature": "Hasty",
+      "RequestedSpecies": "Any",
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": "Random",
+        "DEF IV": "Random",
+        "SPA IV": 31,
+        "SPD IV": 31,
+        "SPE IV": 31
+      }
+    },
+    {
+      "Species": "Elgyem",
+      "Level": 27,
+      "Gender": "Male",
+      "Ability": "Synchronize",
+      "HeldItem": "Comet Shard",
+      "Nature": "Bashful",
+      "RequestedSpecies": "Any",
+      "IVs": {
+        "HP IV": 31,
+        "ATK IV": "Random",
+        "DEF IV": 31,
+        "SPA IV": "Random",
+        "SPD IV": 31,
+        "SPE IV": "Random"
+      }
+    },
+    {
+      "Species": "Scyther",
+      "Level": 34,
+      "Gender": "Male",
+      "Ability": "Technician",
+      "HeldItem": "Scizorite",
+      "Nature": "Brave",
+      "RequestedSpecies": "Any",
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": 31,
+        "DEF IV": "Random",
+        "SPA IV": "Random",
+        "SPD IV": 31,
+        "SPE IV": 31
+      }
+    },
+    {
+      "Species": "Carbink",
+      "Level": 50,
+      "Gender": "Female",
+      "Ability": "Solid Rock",
+      "HeldItem": "Diancite",
+      "Nature": "Rash",
+      "RequestedSpecies": "Any",
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": 31,
+        "DEF IV": 31,
+        "SPA IV": 31,
+        "SPD IV": "Random",
+        "SPE IV": "Random"
+      }
+    },
+    {
+      "Species": "Zeraora",
+      "Level": 75,
+      "Gender": "Male",
+      "Ability": "Volt Absorb",
+      "HeldItem": "Gold Bottle Cap",
+      "Nature": "Naughty",
+      "RequestedSpecies": "Any",
+      "IVs": {
+        "HP IV": "Random",
+        "ATK IV": 31,
+        "DEF IV": "Random",
+        "SPA IV": 31,
+        "SPD IV": "Random",
+        "SPE IV": 31
+      }
+    }
+  ]
+}
