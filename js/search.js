@@ -126,89 +126,8 @@
 		return __moveUseCountCache[toID(id)] || 0;
 	}
 
-	// Cache Pokemon wild/trainer usage counts (detailed list with encounter info)
-	let __pokemonUsageCache = null;
-	let __pokemonUsageDetail = null;
-	function normalizeTrainerMetaText(value) {
-		const out = (value || '').trim();
-		if (!out || /^\(?none\)?$/i.test(out)) return '';
-		return out;
-	}
-	function trainerHasMappedLocation(trainer) {
-		if (!trainer || !window.Locations) return false;
-		const trainerLocation = normalizeTrainerMetaText(trainer.location);
-		if (!trainerLocation) return false;
-		const trainerLocationID = toID(trainerLocation);
-		for (let loc of window.Locations) {
-			if (toID(loc.id) === trainerLocationID || toID(loc.name) === trainerLocationID) return true;
-		}
-		return false;
-	}
 	function getPokemonUsage(id) {
-		if (!__pokemonUsageCache) {
-			__pokemonUsageCache = {};
-			__pokemonUsageDetail = {};
-			// Count wild encounters from Locations
-			if (window.Locations) {
-				for (let loc of window.Locations) {
-					if (loc.encounters && Array.isArray(loc.encounters)) {
-						for (let encounter of loc.encounters) {
-							if (encounter.pokemon && Array.isArray(encounter.pokemon)) {
-								for (let mon of encounter.pokemon) {
-									if (mon.name) {
-										const dispName = typeof window.translateDisplayName === 'function' ? 
-											window.translateDisplayName(mon.name) : mon.name;
-										const pokemonId = toID(dispName);
-										if (!__pokemonUsageCache[pokemonId]) {
-											__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
-											__pokemonUsageDetail[pokemonId] = { wild: [], trainer: [] };
-										}
-										__pokemonUsageCache[pokemonId].wild++;
-										__pokemonUsageDetail[pokemonId].wild.push({ location: loc, encounter: encounter, pokemon: mon, type: 'normal' });
-									}
-									// Also check SOS encounters
-									if (mon.sos && Array.isArray(mon.sos)) {
-										for (let sosName of mon.sos) {
-											const dispName = typeof window.translateDisplayName === 'function' ? 
-												window.translateDisplayName(sosName) : sosName;
-											const pokemonId = toID(dispName);
-											if (!__pokemonUsageCache[pokemonId]) {
-												__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
-												__pokemonUsageDetail[pokemonId] = { wild: [], trainer: [] };
-											}
-											__pokemonUsageCache[pokemonId].wild++;
-											__pokemonUsageDetail[pokemonId].wild.push({ location: loc, encounter: encounter, pokemon: { name: sosName }, type: 'sos' });
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			// Count trainer usage from Trainers (only those with a location)
-			if (window.Trainers) {
-				for (let trainer of window.Trainers) {
-					if (!trainerHasMappedLocation(trainer)) continue;
-					if (trainer.team && Array.isArray(trainer.team)) {
-						for (let pokemon of trainer.team) {
-							if (pokemon.name) {
-								const dispName = typeof window.translateDisplayName === 'function' ? 
-									window.translateDisplayName(pokemon.name) : pokemon.name;
-								const pokemonId = toID(dispName);
-								if (!__pokemonUsageCache[pokemonId]) {
-									__pokemonUsageCache[pokemonId] = { wild: 0, trainer: 0 };
-									__pokemonUsageDetail[pokemonId] = { wild: [], trainer: [] };
-								}
-								__pokemonUsageCache[pokemonId].trainer++;
-							}
-						}
-					}
-				}
-			}
-		}
-		const usage = __pokemonUsageCache[toID(id)] || { wild: 0, trainer: 0 };
-		return usage;
+		return window.getPokemonUsage ? window.getPokemonUsage(id) : { wild: 0, trainer: 0, status: '' };
 	}
 
 	function Search(elem, viewport) {
@@ -741,7 +660,9 @@
 		if (!pokemon) return '<li class="result">Unrecognized pokemon</li>';
 		var id = toID(pokemon.name);
 		if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'usage/' + id + '" data-target="push"';
-		var buf = '<li class="result"><a' + attrs + ' data-entry="usage|' + escapeHTML(pokemon.name) + '">';
+		var usageInfo = getPokemonUsage(id);
+		var usageStyle = usageInfo.status === 'unused' ? ' style="background:#f8c4c4"' : (usageInfo.status === 'trainer-only' ? ' style="background:#ffd9a0"' : '');
+		var buf = '<li class="result"><a' + attrs + usageStyle + ' data-entry="usage|' + escapeHTML(pokemon.name) + '">';
 
 		// Dex number: show base species num for forms (e.g. 3-A instead of 1026-A)
 		var _baseNum = pokemon.num;
