@@ -39,6 +39,9 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
     }
 
     buf += '<h1><a href="' + Config.baseurl + 'trainers/' + norm + '" data-target="push" class="subtle">[' + trainer.id + '] ' + escapeHTML(trainer.name) + '</a></h1>';
+    if (trainer.aiFlags && trainer.aiFlags.length) {
+      buf += '<div style="font-size:11px;color:#666;margin-bottom:8px">AI Flags: ' + trainer.aiFlags.map(escapeHTML).join(', ') + '</div>';
+    }
 
     // Prize Money
     buf += '<dl>';
@@ -191,11 +194,12 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       return '<a href="' + Config.baseurl + 'abilities/' + abilityID + '" data-target="push" class="subtle" style="text-decoration:none">' + content + '</a>';
     };
 
-    var renderMoveBox = function(moveName, monData) {
+    var renderMoveBox = function(moveName, monData, hpType) {
       if (!moveName) return '';
       var moveID = toID(moveName);
       var data = BattleMovedex[moveID];
       var moveType = data ? toID(data.type) : 'normal';
+      if (moveID === 'hiddenpower' && hpType) moveType = toID(hpType);
       var bgColor = getTypeColor(moveType);
       var typeIcon = '<span style="margin-left:6px;display:inline-block">' + getTypeIcon(moveType) + '</span>';
       var categoryIcon = data ? '<span style="display:inline-block;vertical-align:middle;margin-right:6px">' + getCategoryIcon(data.category) + '</span>' : '';
@@ -242,13 +246,23 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       buf += '<span class="picon" style="' + getPokemonIcon(iconId) + ';display:inline-block;vertical-align:middle"></span>';
       var monName = dispName || (monData ? monData.name : '???');
       var monLinkId = monData ? toID(monData.name) : monID;
-      buf += '<a href="' + Config.baseurl + 'pokemon/' + monLinkId + '" data-target="push" class="subtle" style="text-decoration:none"><div style="font-size:16px;font-weight:600">' + escapeHTML(monName) + (m.level ? ' <span style="color:#666;font-weight:400">Lv. ' + m.level + '</span>' : '') + '</div></a>';
+      buf += '<a href="' + Config.baseurl + 'pokemon/' + monLinkId + '" data-target="push" class="subtle" style="text-decoration:none"><div style="font-size:16px;font-weight:600">' + escapeHTML(monName) + (m.isShiny ? ' <span style="color:#c22e28" aria-label="Shiny">★</span>' : '') + (m.level ? ' <span style="color:#666;font-weight:400">Lv. ' + m.level + '</span>' : '') + '</div></a>';
       buf += '</div>';
 
       var types = (monData?.types || []);
       if (types.length) {
         buf += '<div style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap">' + types.map(function(t){return getTypeIcon(t);}).join(' ') + '</div>';
       }
+
+      var ivKeys = ['HP IV', 'ATK IV', 'DEF IV', 'SPA IV', 'SPD IV', 'SPE IV'];
+      var ivValues = ivKeys.map(function(key) { return m.ivs && m.ivs[key] != null ? m.ivs[key] : null; });
+      var ivText = ivValues.every(function(value) { return value != null; }) &&
+        ivValues.every(function(value) { return value === ivValues[0]; })
+        ? 'All ' + ivValues[0]
+        : (ivValues.some(function(value) { return value != null; })
+          ? ivValues.map(function(value) { return value == null ? '—' : value; }).join('/')
+          : 'Unspecified');
+      buf += '<div style="margin-top:4px;font-size:12px;color:#666">IVs: ' + escapeHTML(String(ivText)) + '</div>';
 
       if (m.item) {
         buf += '<div style="margin-top:10px">' + renderItemBox(m.item) + '</div>';
@@ -273,7 +287,7 @@ window.PokedexTrainerPanel = PokedexResultPanel.extend({
       if (moves.length) {
         buf += '<div style="margin-top:10px;display:flex;flex-direction:column;gap:6px">';
         for (var mj = 0; mj < moves.length; mj++) {
-          buf += renderMoveBox(moves[mj], monData);
+          buf += renderMoveBox(moves[mj], monData, m.hpType);
         }
         buf += '</div>';
       }

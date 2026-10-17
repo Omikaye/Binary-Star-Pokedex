@@ -73,28 +73,57 @@ for (const file of dataFiles) {
     }
 
     if (file === 'trainers.json') {
-      const trainers = Array.isArray(parsed) ? parsed : [];
+      const updatedFormat = !Array.isArray(parsed) && Array.isArray(parsed.Trainers);
+      const trainers = Array.isArray(parsed) ? parsed : (parsed.Trainers || []);
       console.log(`  - Contains ${trainers.length} trainer record(s)`);
-      const missingMetadata = trainers.filter(trainer =>
-        !Object.prototype.hasOwnProperty.call(trainer, 'location') ||
-        !Object.prototype.hasOwnProperty.call(trainer, 'desc') ||
-        !Object.prototype.hasOwnProperty.call(trainer, 'routeNumber') ||
-        !Object.prototype.hasOwnProperty.call(trainer, 'prizeMoney')
-      );
-      if (missingMetadata.length) {
-        console.error(`  - ✗ ${missingMetadata.length} trainer(s) missing required metadata fields`);
-        allValid = false;
+      if (updatedFormat) {
+        const requiredTrainerFields = ['TrainerName', 'TrainerClass', 'TrainerID', 'Money', 'AIFlags', 'Pokemon'];
+        const invalidTrainers = trainers.filter(trainer =>
+          requiredTrainerFields.some(field => !Object.prototype.hasOwnProperty.call(trainer, field)) ||
+          !Array.isArray(trainer.AIFlags) ||
+          !Array.isArray(trainer.Pokemon)
+        );
+        if (invalidTrainers.length) {
+          console.error(`  - ✗ ${invalidTrainers.length} trainer(s) missing required fields or arrays`);
+          allValid = false;
+        } else {
+          console.log('  - ✓ Updated trainer fields (name, class, ID, money, AI flags, Pokémon) present');
+        }
+
+        const requiredPokemonFields = ['Species', 'Form', 'Level', 'HPType', 'IsShiny', 'IVs', 'Moves'];
+        const invalidPokemon = trainers.flatMap(trainer => Array.isArray(trainer.Pokemon) ? trainer.Pokemon : []).filter(pokemon =>
+          requiredPokemonFields.some(field => !Object.prototype.hasOwnProperty.call(pokemon, field))
+        );
+        if (invalidPokemon.length) {
+          console.error(`  - ✗ ${invalidPokemon.length} Pokémon missing required fields`);
+          allValid = false;
+        } else {
+          console.log('  - ✓ Updated Pokémon fields (species, form, level, Hidden Power type, shiny, IVs, moves) present');
+        }
       } else {
-        console.log('  - ✓ Trainer metadata fields (location, desc, routeNumber, prizeMoney) present');
+        const missingMetadata = trainers.filter(trainer =>
+          !Object.prototype.hasOwnProperty.call(trainer, 'location') ||
+          !Object.prototype.hasOwnProperty.call(trainer, 'desc') ||
+          !Object.prototype.hasOwnProperty.call(trainer, 'routeNumber') ||
+          !Object.prototype.hasOwnProperty.call(trainer, 'prizeMoney')
+        );
+        if (missingMetadata.length) {
+          console.error(`  - ✗ ${missingMetadata.length} trainer(s) missing required metadata fields`);
+          allValid = false;
+        } else {
+          console.log('  - ✓ Trainer metadata fields (location, desc, routeNumber, prizeMoney) present');
+        }
       }
 
       const placeholderTrainers = trainers.filter(trainer => {
-        if (!trainer || !Array.isArray(trainer.team) || trainer.team.length !== 1) return false;
-        const mon = trainer.team[0];
+        if (!trainer) return false;
+        const team = updatedFormat ? trainer.Pokemon : trainer.team;
+        if (!Array.isArray(team) || team.length !== 1) return false;
+        const mon = team[0];
         return mon &&
-          String(mon.name || '').toLowerCase() === 'yungoos' &&
-          Number(mon.level || 0) === 5 &&
-          (!Array.isArray(mon.moves) || mon.moves.length === 0);
+          String(updatedFormat ? mon.Species : mon.name || '').toLowerCase() === 'yungoos' &&
+          Number((updatedFormat ? mon.Level : mon.level) || 0) === 5 &&
+          (!Array.isArray(updatedFormat ? mon.Moves : mon.moves) || (updatedFormat ? mon.Moves : mon.moves).length === 0);
       });
       if (placeholderTrainers.length) {
         console.error(`  - ✗ ${placeholderTrainers.length} placeholder trainer(s) were not filtered`);

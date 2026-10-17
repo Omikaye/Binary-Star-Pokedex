@@ -318,7 +318,37 @@ window.BattleTypeChart = BattleTypeChart;
 window.Learnsets = Learnsets;
 window.BaseGameStats = BaseGameStats;
 window.ItemPokemonLinks = ItemPokemonLinks;
-window.Trainers = Trainers;
+const trainerRecords = Array.isArray(Trainers) ? Trainers : (Trainers.Trainers || []);
+window.Trainers = trainerRecords
+  .filter(trainer => trainer && !(Number(trainer.TrainerID) === 0 && !trainer.TrainerName && !(trainer.Pokemon || []).length))
+  .map(trainer => {
+    const pokemon = Array.isArray(trainer.Pokemon) ? trainer.Pokemon : (trainer.team || []);
+    return {
+      ...trainer,
+      id: String(trainer.TrainerID ?? trainer.id ?? '').padStart(3, '0'),
+      name: trainer.name || [trainer.TrainerClass, trainer.TrainerName].filter(Boolean).join(' '),
+      trainerClass: trainer.trainerClass || trainer.TrainerClass || '',
+      personalName: trainer.personalName || trainer.TrainerName || '',
+      location: trainer.location || '',
+      desc: trainer.desc || '',
+      routeNumber: trainer.routeNumber || 0,
+      prizeMoney: trainer.prizeMoney ?? trainer.Money ?? 0,
+      aiFlags: trainer.aiFlags || trainer.AIFlags || [],
+      team: pokemon.map(mon => ({
+        ...mon,
+        name: mon.name || (mon.Species ? mon.Species + (Number(mon.Form) > 0 ? ' ' + mon.Form : '') : ''),
+        level: mon.level ?? mon.Level,
+        gender: mon.gender ?? mon.Gender,
+        hpType: mon.hpType ?? mon.HPType,
+        ability: mon.ability ?? mon.Ability,
+        item: mon.item ?? mon.Item,
+        moves: Array.isArray(mon.moves ?? mon.Moves) ? (mon.moves ?? mon.Moves).filter(Boolean) : [],
+        isShiny: mon.isShiny ?? mon.IsShiny,
+        ivs: mon.ivs ?? mon.IVs ?? {},
+        evs: mon.evs ?? mon.EVs ?? {},
+      })),
+    };
+  });
 window.TrainerNotes = TrainerNotes;
 window.StaticEncounters = StaticEncounters;
 window.Locations = LocationsJson.locations || [];
