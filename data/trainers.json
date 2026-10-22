@@ -2210,7 +2210,7 @@
     },
     {
       "TrainerName": "Oliver",
-      "TrainerClass": "Kindergartener",
+      "TrainerClass": "Kindergartner",
       "TrainerID": 28,
       "Money": 224,
       "AIFlags": [
@@ -7211,13 +7211,13 @@
       ],
       "Pokemon": [
         {
-          "Species": "Beedrill",
+          "Species": "Hawlucha",
           "Form": 0,
           "Level": 28,
           "Gender": "Genderless/Random",
           "HPType": "Electric",
-          "Ability": "Swarm",
-          "Item": "Beedrillite",
+          "Ability": "Limber",
+          "Item": "Hawluchanite",
           "Moves": [
             "Swords Dance",
             "",
@@ -7230,7 +7230,9 @@
             "SPA IV": 15,
             "SPD IV": 15
           },
-          "EVs": {}
+          "EVs": {
+            "SPE EV": 252
+          }
         }
       ]
     },
@@ -7596,6 +7598,31 @@
             "Protect",
             "Silver Wind",
             "Ally Switch"
+          ],
+          "IsShiny": false,
+          "IVs": {
+            "HP IV": 31,
+            "ATK IV": 31,
+            "DEF IV": 31,
+            "SPA IV": 31,
+            "SPD IV": 31,
+            "SPE IV": 31
+          },
+          "EVs": {}
+        },
+        {
+          "Species": "Ursaring",
+          "Form": 0,
+          "Level": 30,
+          "Gender": "Genderless/Random",
+          "HPType": "Dark",
+          "Ability": "Intimidate",
+          "Item": "Fairy Gem",
+          "Moves": [
+            "Moonblast",
+            "Metronome",
+            "Stomping Tantrum",
+            "Helping Hand"
           ],
           "IsShiny": false,
           "IVs": {
@@ -10305,7 +10332,7 @@
     },
     {
       "TrainerName": "Liam",
-      "TrainerClass": "Kindergartener",
+      "TrainerClass": "Kindergartner",
       "TrainerID": 115,
       "Money": 2736,
       "AIFlags": [
@@ -12128,18 +12155,18 @@
           "EVs": {}
         },
         {
-          "Species": "Wormadam",
-          "Form": 2,
+          "Species": "Kleavor",
+          "Form": 0,
           "Level": 46,
           "Gender": "Male",
           "HPType": "Dark",
-          "Ability": "Mirror Armor",
+          "Ability": "Sharpness",
           "Item": "Buginium Z",
           "Moves": [
-            "Protect",
-            "Struggle Bug",
-            "Flash Cannon",
-            "Ally Switch"
+            "Detect",
+            "Stone Axe",
+            "X-Scissor",
+            "False Swipe"
           ],
           "IsShiny": false,
           "IVs": {
@@ -13072,6 +13099,7 @@
         "Basic",
         "Strong",
         "Expert",
+        "Pokechange",
         "Item"
       ],
       "Pokemon": [
@@ -14389,7 +14417,8 @@
         "Basic",
         "Strong",
         "Expert",
-        "Doubles"
+        "Doubles",
+        "Pokechange"
       ],
       "Pokemon": [
         {
@@ -14428,7 +14457,7 @@
           "Moves": [
             "Accelerock",
             "Ice Fang",
-            "Assertion",
+            "Crunch",
             "Roar"
           ],
           "IsShiny": false,
@@ -14661,7 +14690,8 @@
         "Basic",
         "Strong",
         "Expert",
-        "Doubles"
+        "Doubles",
+        "Pokechange"
       ],
       "Pokemon": [
         {
@@ -17940,7 +17970,7 @@
       ]
     },
     {
-      "TrainerName": "Grunt Grant",
+      "TrainerName": "Grunt Invar",
       "TrainerClass": "Team Skull",
       "TrainerID": 223,
       "Money": 1440,
@@ -17948,59 +17978,10 @@
         "Basic",
         "Strong",
         "Expert",
-        "Doubles"
+        "Doubles",
+        "Pokechange"
       ],
       "Pokemon": [
-        {
-          "Species": "Accelgor",
-          "Form": 0,
-          "Level": 45,
-          "Gender": "Genderless/Random",
-          "HPType": "Dark",
-          "Ability": "Wonder Skin",
-          "Item": "Life Orb",
-          "Moves": [
-            "Signal Beam",
-            "Me First",
-            "Dark Pulse",
-            "U-turn"
-          ],
-          "IsShiny": false,
-          "IVs": {
-            "HP IV": 31,
-            "ATK IV": 31,
-            "DEF IV": 31,
-            "SPA IV": 31,
-            "SPD IV": 31,
-            "SPE IV": 31
-          },
-          "EVs": {}
-        },
-        {
-          "Species": "Murkrow",
-          "Form": 0,
-          "Level": 45,
-          "Gender": "Genderless/Random",
-          "HPType": "Dark",
-          "Ability": "Prankster",
-          "Item": "Eviolite",
-          "Moves": [
-            "Taunt",
-            "Tailwind",
-            "Roost",
-            "Foul Play"
-          ],
-          "IsShiny": false,
-          "IVs": {
-            "HP IV": 31,
-            "ATK IV": 31,
-            "DEF IV": 31,
-            "SPA IV": 31,
-            "SPD IV": 31,
-            "SPE IV": 31
-          },
-          "EVs": {}
-        },
         {
           "Species": "Bisharp",
           "Form": 0,
@@ -18025,6 +18006,81 @@
             "SPE IV": 31
           },
           "EVs": {}
+        },
+        {
+          "Species": "Wormadam",
+          "Form": 2,
+          "Level": 45,
+          "Gender": "Genderless/Random",
+          "HPType": "Dark",
+          "Ability": "Mirror Armor",
+          "Item": "Leftovers",
+          "Moves": [
+            "Mirror Shot",
+            "Silk Trap",
+            "Struggle Bug",
+            "Sticky Web"
+          ],
+          "IsShiny": false,
+          "IVs": {
+            "HP IV": 31,
+            "ATK IV": 31,
+            "DEF IV": 31,
+            "SPA IV": 31,
+            "SPD IV": 31,
+            "SPE IV": 31
+          },
+          "EVs": {}
+        },
+        {
+          "Species": "Lairon",
+          "Form": 0,
+          "Level": 45,
+          "Gender": "Genderless/Random",
+          "HPType": "Dark",
+          "Ability": "Battle Armor",
+          "Item": "Eviolite",
+          "Moves": [
+            "Curse",
+            "Body Press",
+            "Iron Head",
+            "Rock Slide"
+          ],
+          "IsShiny": false,
+          "IVs": {
+            "HP IV": 31,
+            "ATK IV": 31,
+            "DEF IV": 31,
+            "SPA IV": 31,
+            "SPD IV": 31,
+            "SPE IV": 31
+          },
+          "EVs": {}
+        },
+        {
+          "Species": "Perrserker",
+          "Form": 0,
+          "Level": 45,
+          "Gender": "Genderless/Random",
+          "HPType": "Dark",
+          "Ability": "Steely Spirit",
+          "Item": "Leftovers",
+          "Moves": [
+            "Cutting Edge",
+            "Fake Out",
+            "Autotomize",
+            "Power Trip"
+          ],
+          "IsShiny": false,
+          "IVs": {
+            "HP IV": 31,
+            "ATK IV": 31,
+            "DEF IV": 31,
+            "SPA IV": 31,
+            "SPD IV": 31,
+            "SPE IV": 31
+          },
+          "EVs": {}
         }
       ]
     },
@@ -18037,9 +18093,35 @@
         "Basic",
         "Strong",
         "Expert",
-        "Doubles"
+        "Doubles",
+        "Pokechange"
       ],
       "Pokemon": [
+        {
+          "Species": "Gengar",
+          "Form": 0,
+          "Level": 45,
+          "Gender": "Genderless/Random",
+          "HPType": "Dark",
+          "Ability": "Levitate",
+          "Item": "Focus Sash",
+          "Moves": [
+            "Shadow Ball",
+            "Perish Song",
+            "Mean Look",
+            "Protect"
+          ],
+          "IsShiny": false,
+          "IVs": {
+            "HP IV": 31,
+            "ATK IV": 31,
+            "DEF IV": 31,
+            "SPA IV": 31,
+            "SPD IV": 31,
+            "SPE IV": 31
+          },
+          "EVs": {}
+        },
         {
           "Species": "Golbat",
           "Form": 0,
@@ -18050,8 +18132,8 @@
           "Item": "Eviolite",
           "Moves": [
             "Leech Life",
-            "Haze",
-            "Poison Fang",
+            "Toxic",
+            "Mean Look",
             "Aerial Ace"
           ],
           "IsShiny": false,
@@ -18071,7 +18153,7 @@
           "Level": 45,
           "Gender": "Genderless/Random",
           "HPType": "Dark",
-          "Ability": "Levitate",
+          "Ability": "Neutralizing Gas",
           "Item": "Payapa Berry",
           "Moves": [
             "Stockpile",
@@ -18800,7 +18882,7 @@
     },
     {
       "TrainerName": "Hunter",
-      "TrainerClass": "Kindergartener",
+      "TrainerClass": "Kindergartner",
       "TrainerID": 237,
       "Money": 636,
       "AIFlags": [
@@ -19002,18 +19084,18 @@
           "EVs": {}
         },
         {
-          "Species": "Nidoqueen",
+          "Species": "Garbodor",
           "Form": 0,
-          "Level": 53,
+          "Level": 54,
           "Gender": "Genderless/Random",
           "HPType": "Dark",
-          "Ability": "Sheer Force",
-          "Item": "Life Orb",
+          "Ability": "Toxic Debris",
+          "Item": "Poisonium Z",
           "Moves": [
-            "Sludge Bomb",
-            "Mudslide",
-            "Ice Beam",
-            "Protect"
+            "Gunk Shot",
+            "Iron Head",
+            "Stealth Rock",
+            "Pain Split"
           ],
           "IsShiny": false,
           "IVs": {
@@ -19027,18 +19109,18 @@
           "EVs": {}
         },
         {
-          "Species": "Garbodor",
+          "Species": "Nidoqueen",
           "Form": 0,
-          "Level": 54,
+          "Level": 53,
           "Gender": "Genderless/Random",
           "HPType": "Dark",
-          "Ability": "Corrosion",
-          "Item": "Poisonium Z",
+          "Ability": "Sheer Force",
+          "Item": "Life Orb",
           "Moves": [
-            "Gunk Shot",
-            "Iron Head",
-            "Stealth Rock",
-            "Pain Split"
+            "Sludge Bomb",
+            "Mudslide",
+            "Ice Beam",
+            "Protect"
           ],
           "IsShiny": false,
           "IVs": {
@@ -19113,7 +19195,7 @@
             "Flamethrower",
             "Protect",
             "Sludge Bomb",
-            "Mud Bomb"
+            "Fake Out"
           ],
           "IsShiny": false,
           "IVs": {
@@ -20353,7 +20435,7 @@
     },
     {
       "TrainerName": "[~ 256]",
-      "TrainerClass": "Kindergartener",
+      "TrainerClass": "Kindergartner",
       "TrainerID": 256,
       "Money": 60,
       "AIFlags": [
@@ -22132,7 +22214,7 @@
           "Ability": "Pixilate",
           "Item": "Aguav Berry",
           "Moves": [
-            "Body Slam",
+            "Hyper Drill",
             "Drill Run",
             "Coil",
             "Roost"
@@ -27374,7 +27456,8 @@
         "Basic",
         "Strong",
         "Expert",
-        "Doubles"
+        "Doubles",
+        "Pokechange"
       ],
       "Pokemon": [
         {
@@ -28220,17 +28303,17 @@
         },
         {
           "Species": "Weezing",
-          "Form": 0,
+          "Form": 1,
           "Level": 42,
           "Gender": "Genderless/Random",
           "HPType": "Dark",
-          "Ability": "Neutralizing Gas",
+          "Ability": "Levitate",
           "Item": "Rocky Helmet",
           "Moves": [
             "Stockpile",
             "Sludge Bomb",
-            "Toxic Spikes",
-            "Gyro Ball"
+            "Misty Explosion",
+            "Strange Steam"
           ],
           "IsShiny": false,
           "IVs": {
@@ -31152,7 +31235,8 @@
         "Basic",
         "Strong",
         "Expert",
-        "Doubles"
+        "Doubles",
+        "Pokechange"
       ],
       "Pokemon": [
         {
@@ -31419,7 +31503,7 @@
       "TrainerName": "Lane",
       "TrainerClass": "Punk Guy",
       "TrainerID": 425,
-      "Money": 1536,
+      "Money": 1504,
       "AIFlags": [
         "Basic",
         "Strong",
@@ -31430,16 +31514,16 @@
         {
           "Species": "Krokorok",
           "Form": 0,
-          "Level": 48,
+          "Level": 47,
           "Gender": "Genderless/Random",
           "HPType": "Dark",
           "Ability": "Intimidate",
           "Item": "Eviolite",
           "Moves": [
             "Dig",
-            "Scary Face",
             "Bulldoze",
-            "Foul Play"
+            "Dragon Tail",
+            "Jaw Lock"
           ],
           "IsShiny": false,
           "IVs": {
@@ -31455,16 +31539,16 @@
         {
           "Species": "Nuzleaf",
           "Form": 0,
-          "Level": 48,
+          "Level": 47,
           "Gender": "Genderless/Random",
           "HPType": "Dark",
-          "Ability": "Early Bird",
+          "Ability": "Chlorophyll",
           "Item": "Eviolite",
           "Moves": [
-            "Leech Seed",
-            "Confide",
-            "Brutal Smash",
-            "Leaf Storm"
+            "Fake Out",
+            "Trop Kick",
+            "Sucker Punch",
+            "Synthesis"
           ],
           "IsShiny": false,
           "IVs": {
@@ -32142,7 +32226,7 @@
     },
     {
       "TrainerName": "Hayden",
-      "TrainerClass": "Kindergartener",
+      "TrainerClass": "Kindergartner",
       "TrainerID": 437,
       "Money": 576,
       "AIFlags": [
@@ -35141,7 +35225,7 @@
     },
     {
       "TrainerName": "Dylan",
-      "TrainerClass": "Kindergartener",
+      "TrainerClass": "Kindergartner",
       "TrainerID": 469,
       "Money": 480,
       "AIFlags": [
@@ -35259,7 +35343,7 @@
       "TrainerName": "Sean",
       "TrainerClass": "Rising Star",
       "TrainerID": 471,
-      "Money": 2304,
+      "Money": 3456,
       "AIFlags": [
         "Basic",
         "Strong",
@@ -35432,7 +35516,7 @@
       ]
     },
     {
-      "TrainerName": "Grunt",
+      "TrainerName": "Grunt Jay",
       "TrainerClass": "Team Skull",
       "TrainerID": 473,
       "Money": 1696,
@@ -35445,18 +35529,18 @@
       ],
       "Pokemon": [
         {
-          "Species": "Zangoose",
+          "Species": "Staraptor",
           "Form": 0,
           "Level": 52,
           "Gender": "Genderless/Random",
           "HPType": "Dark",
-          "Ability": "Immunity",
-          "Item": "Toxic Orb",
+          "Ability": "Intimidate",
+          "Item": "Sky Plate",
           "Moves": [
-            "Dig",
-            "Facade",
+            "Close Combat",
+            "Crush Claw",
             "Detect",
-            "Swords Dance"
+            "Sky Drop"
           ],
           "IsShiny": false,
           "IVs": {
@@ -35471,7 +35555,7 @@
         },
         {
           "Species": "Vivillon",
-          "Form": 0,
+          "Form": 9,
           "Level": 52,
           "Gender": "Genderless/Random",
           "HPType": "Dark",
@@ -35481,7 +35565,7 @@
             "Air Slash",
             "Quiver Dance",
             "Stun Spore",
-            "Signal Beam"
+            "Pollen Puff"
           ],
           "IsShiny": false,
           "IVs": {
@@ -35495,18 +35579,43 @@
           "EVs": {}
         },
         {
-          "Species": "Pumpkaboo",
-          "Form": 2,
+          "Species": "Mandibuzz",
+          "Form": 0,
           "Level": 53,
           "Gender": "Genderless/Random",
           "HPType": "Dark",
-          "Ability": "Frisk",
-          "Item": "Eviolite",
+          "Ability": "Shell Armor",
+          "Item": "Leftovers",
           "Moves": [
-            "Seed Bomb",
-            "Flame Wheel",
-            "Pain Split",
-            "Destiny Bond"
+            "Bonemerang",
+            "Tailwind",
+            "Roost",
+            "Punishment"
+          ],
+          "IsShiny": false,
+          "IVs": {
+            "HP IV": 31,
+            "ATK IV": 31,
+            "DEF IV": 31,
+            "SPA IV": 31,
+            "SPD IV": 31,
+            "SPE IV": 31
+          },
+          "EVs": {}
+        },
+        {
+          "Species": "Noivern",
+          "Form": 0,
+          "Level": 52,
+          "Gender": "Genderless/Random",
+          "HPType": "Dark",
+          "Ability": "Berserk",
+          "Item": "Power Herb",
+          "Moves": [
+            "Hyper Voice",
+            "Razor Wind",
+            "Twister",
+            "Agility"
           ],
           "IsShiny": false,
           "IVs": {
@@ -44985,7 +45094,7 @@
           "Gender": "Genderless/Random",
           "HPType": "Dark",
           "Ability": "Punk Rock",
-          "Item": "Choice Specs",
+          "Item": "Chimechite",
           "Moves": [
             "Alluring Voice",
             "Hyper Voice",
@@ -45480,7 +45589,8 @@
       "Money": 1392,
       "AIFlags": [
         "Basic",
-        "Expert"
+        "Expert",
+        "Pokechange"
       ],
       "Pokemon": [
         {
@@ -48365,7 +48475,7 @@
     },
     {
       "TrainerName": "Kaleb",
-      "TrainerClass": "Kindergartener",
+      "TrainerClass": "Kindergartner",
       "TrainerID": 629,
       "Money": 2520,
       "AIFlags": [
