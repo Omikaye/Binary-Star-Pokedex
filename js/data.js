@@ -468,6 +468,16 @@ window.toID = (text) => {
   return ("" + text).toLowerCase().replace(/[^a-z0-9]+/g, "");
 };
 
+// Cosmetic formes (e.g. sawsbuckfall, unownb) have no dex page; resolve them to the base species.
+window.resolveDexID = (id, dex) => {
+  if (dex[id]) return id;
+  let best = "";
+  for (const key in dex) {
+    if (key.length > best.length && id.startsWith(key)) best = key;
+  }
+  return best || id;
+};
+
 window.getID = (obj, text) => {
   return obj[toID(text)];
 };
