@@ -3,6 +3,7 @@ window.PokedexPokeeditPanel = PokedexResultPanel.extend({
 		// Translate display names (e.g., "Charizard 1" -> "Charizard-Mega-X") before converting to ID
 		id = translateDisplayName(id);
 		id = toID(id);
+		id = resolveDexID(id, BattlePokedexEdit);
 		var pokemon = BattlePokedexEdit[id]
 		this.id = id;
 		this.shortTitle = pokemon.baseSpecies || pokemon.name;

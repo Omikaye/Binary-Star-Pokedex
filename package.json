@@ -28,6 +28,7 @@
     "test-sheets-parsing": "node scripts/test-sheets-parsing.js",
     "test-battle-parsing": "node scripts/test-battle-parsing.js",
     "test-shop-tables-parsing": "node scripts/test-shop-tables-parsing.js",
+    "test-location-export-parsing": "node scripts/test-location-export-parsing.mjs",
     "test-data-files": "node scripts/test-data-files.js",
     "test-item-locations-parsing": "node scripts/test-item-locations-parsing.js",
     "test-encounter-parsing": "node scripts/test-encounter-parsing.js",

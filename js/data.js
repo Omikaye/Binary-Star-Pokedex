@@ -16,6 +16,7 @@ import LocationExport from "../data/location_export.json";
 import TrainerSprites from "../data/trainer-sprites.json";
 import TrainerSpriteLinks from "../data/trainer-sprite-links.json";
 import BattleTags from "../data/battle-tags.json";
+import { splitExportEncounterPokemon, parseShopInfo } from "./location-export-parsing.mjs";
 import ShopTablesJson from "../data/shop-tables.json";
 import BaseGameLearnsets from "../data/BaseGameLearnsets.json";
 import PartySpriteFiles from "../data/party-sprite-files.json";
@@ -357,30 +358,10 @@ const parseExportEncounterLevels = levels => {
   const matches = String(levels || '').match(/(\d+)\s*-\s*(\d+)/);
   return matches ? { min: Number(matches[1]), max: Number(matches[2]) } : { min: 1, max: 1 };
 };
-const splitExportEncounterPokemon = value => {
-  const entries = [];
-  let current = '';
-  let parentheses = 0;
-  for (const character of String(value || '')) {
-    if (character === ',' && !parentheses) {
-      if (current.trim()) entries.push(current.trim());
-      current = '';
-      continue;
-    }
-    if (character === '(') parentheses++;
-    if (character === ')') parentheses = Math.max(0, parentheses - 1);
-    current += character;
-  }
-  if (current.trim()) entries.push(current.trim());
-  return entries.map(entry => {
-    const sosMatch = entry.match(/^(.*?)\s*\(([^()]*)\)\s*$/);
-    return {
-      name: (sosMatch ? sosMatch[1] : entry).trim(),
-      chance: null,
-      sos: sosMatch ? sosMatch[2].split(/\s*,\s*/).filter(Boolean) : [],
-    };
-  }).filter(pokemon => pokemon.name);
-};
+const exportShops = {};
+(LocationExport.Shops || []).forEach(shop => {
+  exportShops[shop.Name] = parseShopInfo(shop.ShopInfo, BattleItems);
+});
 window.Locations = (LocationExport.Locations || []).map(location => {
   const statics = location.Statics || [];
   const giftTrades = statics.filter(entry => /^(gifts|trades)$/i.test(entry.Type || '')).map(entry => ({
@@ -424,8 +405,8 @@ window.Locations = (LocationExport.Locations || []).map(location => {
     })),
     trainers: [],
     bossTrainers: [],
-    shops: [],
-    shopTables: location.Shops || [],
+    shops: (location.Shops || []).filter(name => exportShops[name]).flatMap(name => exportShops[name]),
+    shopTables: (location.Shops || []).filter(name => !exportShops[name]),
     items: (location.Items || []).map(item => ({
       item: item.Item || '',
       quantity: item.Quantity || 1,
@@ -485,6 +466,16 @@ window.toID = (text) => {
   }
   if (typeof text !== "string" && typeof text !== "number") return "";
   return ("" + text).toLowerCase().replace(/[^a-z0-9]+/g, "");
+};
+
+// Cosmetic formes (e.g. sawsbuckfall, unownb) have no dex page; resolve them to the base species.
+window.resolveDexID = (id, dex) => {
+  if (dex[id]) return id;
+  let best = "";
+  for (const key in dex) {
+    if (key.length > best.length && id.startsWith(key)) best = key;
+  }
+  return best || id;
 };
 
 window.getID = (obj, text) => {
