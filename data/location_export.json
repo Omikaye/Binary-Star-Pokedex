@@ -5,9 +5,7 @@
       "Weather": "Clear",
       "Description": "Route 1 is now only the road from your house to Iki Town. The beach and school are now officially labelled as different areas, so check your Pokemon\u0027s caught locations. | Scatterbug and Spewpa caught here evolve into Ocean Pattern Vivillon. | The starter\u0027s Met locations are set to be Iki Town.",
       "LocationNumber": 1,
-      "Shops": [
-        "No Trials"
-      ],
+      "Shops": [],
       "Trainers": [
         {
           "TrainerId": 491,
@@ -52,7 +50,7 @@
         {
           "TrainerId": 28,
           "Trainer": "Oliver",
-          "Class": "Kindergartener",
+          "Class": "Kindergartner",
           "Route": 4,
           "Tags": "Mandatory",
           "Description": ""
@@ -64,14 +62,14 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 3-5",
-          "Encounters": "Yungoos, Rattata 1 (Rattata), Pikipek, Grubbin, Pichu, Bounsweet, Scatterbug 16, Swablu, Igglybuff, Sentret"
+          "Encounters": "Yungoos [10%], Rattata 1 [10%] (Rattata), Pikipek [10%], Grubbin [10%], Pichu [10%], Bounsweet [10%], Scatterbug 16 [10%], Swablu [10%], Igglybuff [10%], Sentret [10%]"
         },
         {
           "FileNumber": 9,
           "TableIndex": 16,
           "Area": "Grass (Behind Rocks)",
           "Levels": "Lvl 17-20",
-          "Encounters": "Yungoos, Rattata 1 (Rattata), Pikipek, Grubbin, Pikachu, Bounsweet, Spewpa 16, Swablu, Jigglypuff, Sentret"
+          "Encounters": "Yungoos [10%], Rattata 1 [10%] (Rattata), Pikipek [10%], Grubbin [10%], Pikachu [10%], Bounsweet [10%], Spewpa 16 [10%], Swablu [10%], Jigglypuff [10%], Sentret [10%]"
         }
       ],
       "Items": [
@@ -91,7 +89,7 @@
           "Method": "North of the grass patch next to the Trainer Tips sign."
         },
         {
-          "Item": "Cheri Berries",
+          "Item": "Cheri Berry",
           "Quantity": "3",
           "Method": "North of the second grassy patch on the east side"
         },
@@ -116,7 +114,7 @@
           "Method": "At the end of the northern east path behind the rocks south of Iki Town (requires Tauros Charge)"
         },
         {
-          "Item": "Poke Balls",
+          "Item": "Poke Ball",
           "Quantity": "30",
           "Method": "Given by Kukui after beating Hau"
         },
@@ -177,7 +175,7 @@
           "TableIndex": 0,
           "Area": "Walking",
           "Levels": "Lvl 2-3",
-          "Encounters": "Spearow, Pikipek, Hoothoot, Pineco, Burmy, Spinarak, Ledyba"
+          "Encounters": "Slakoth [10%], Pikipek [10%], Hoothoot [10%], Pineco [10%], Burmy [10%], Spinarak [10%], Ledyba [10%], Pansage [10%], Pansear [10%], Panpour [10%]"
         }
       ],
       "Items": [
@@ -358,7 +356,7 @@
           "TableIndex": 4,
           "Area": "Grass",
           "Levels": "Lvl 6-8",
-          "Encounters": "Wingull, Kricketot (Scatterbug 8), Krabby, Seel, Slowpoke (Slowpoke 1), Azurill, Hoppip, Inkay, Zigzagoon (Zigzagoon 1), Piplup (Panpour)"
+          "Encounters": "Wingull [10%], Kricketot [10%] (Scatterbug 8), Dwebble [10%], Seel [10%], Slowpoke [10%] (Slowpoke 1), Azurill [10%], Hoppip [10%], Inkay [10%], Zigzagoon [10%] (Zigzagoon 1), Piplup [10%] (Panpour)"
         }
       ],
       "Items": [
@@ -556,7 +554,7 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 7-10",
-          "Encounters": "Grimer 1 (Grimer), Meowth 1 (Meowth), Caterpie (Scatterbug 19), Bellsprout, Swirlix, Drifloon, Mime Jr., Buneary, Chikorita (Pansage), Zorua"
+          "Encounters": "Grimer 1 [10%] (Grimer), Meowth 1 [10%] (Meowth), Caterpie [10%] (Scatterbug 19), Bellsprout [10%], Swirlix [10%], Drifloon [10%], Mime Jr. [10%], Buneary [10%], Chikorita [10%] (Pansage), Zorua [10%]"
         }
       ],
       "Items": [
@@ -651,14 +649,14 @@
           "TableIndex": 0,
           "Area": "Beach Sand",
           "Levels": "Lvl 8-11",
-          "Encounters": "Wimpod, Krabby, Wingull, Exeggcute, Mareanie, Slowpoke 1 (Slowpoke), Staryu, Clauncher, Tyrogue, Mantyke"
+          "Encounters": "Wimpod [10%], Krabby [10%], Wingull [10%], Exeggcute [10%], Mareanie [10%], Slowpoke 1 [10%] (Slowpoke), Staryu [10%], Clauncher [10%], Tyrogue [10%], Mantyke [10%]"
         },
         {
           "FileNumber": 31,
           "TableIndex": 12,
           "Area": "Surf",
-          "Levels": "Lvl 15-18",
-          "Encounters": "Tentacool, Wingull, Finneon, Mantyke (Remoraid)"
+          "Levels": "Lvl 22-27",
+          "Encounters": "Tentacool [10%] (Frillish), Wingull [10%], Mantyke [10%] (Remoraid), Mareanie [10%] (Corsola 1), Corsola [10%] (Mareanie, Corsola 1), Luvdisc [10%], Finneon [10%], Wailmer [10%] (Lapras), Seel [10%] (Spheal), Wartortle [10%] (Squirtle)"
         }
       ],
       "Items": [
@@ -1008,7 +1006,7 @@
           "TableIndex": 4,
           "Area": "Grass",
           "Levels": "Lvl 10-12",
-          "Encounters": "Pidove (Scatterbug 7), Tyrogue, Purrloin, Zigzagoon 1 (Zigzagoon), Glameow, Chingling, Klink, Voltorb 1 (Voltorb), Abra, Trubbish (Burmy 2)"
+          "Encounters": "Pidove [10%] (Scatterbug 7), Tyrogue [10%], Purrloin [10%], Zigzagoon 1 [10%] (Zigzagoon), Glameow [10%], Chingling [10%], Klink [10%], Voltorb 1 [10%] (Voltorb), Abra [10%], Trubbish [10%] (Burmy 2)"
         }
       ],
       "Items": [
@@ -1178,7 +1176,7 @@
           "TableIndex": 12,
           "Area": "Street (Near Pier)",
           "Levels": "Lvl 8-13",
-          "Encounters": "Shellder, Wingull, Wailmer, Clauncher, Slowpoke 1 (Slowpoke), Koffing, Pidove (Scatterbug 7), Tentacool, Seel, Oshawott"
+          "Encounters": "Shellder [10%], Wingull [10%], Wailmer [10%], Clauncher [10%], Slowpoke 1 [10%] (Slowpoke), Koffing [10%], Pidove [10%] (Scatterbug 7), Tentacool [10%], Seel [10%], Oshawott [10%]"
         }
       ],
       "Items": [
@@ -1250,7 +1248,7 @@
         {
           "TrainerId": 469,
           "Trainer": "Dylan",
-          "Class": "Kindergartener",
+          "Class": "Kindergartner",
           "Route": 5,
           "Tags": "Mandatory",
           "Description": ""
@@ -1270,21 +1268,21 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 10-12",
-          "Encounters": "Ekans, Snivy (Pansage), Drowzee, Smeargle (Skitty), Munna (Burmy), Cutiefly (Cherubi), Spearow (Pineco), Mankey (Aipom), Nidoran-M (Ledyba), Nidoran-F (Spinarak)"
+          "Encounters": "Ekans [10%], Snivy [10%] (Pansage), Drowzee [10%], Smeargle [10%] (Lillipup), Munna [10%] (Burmy), Cutiefly [10%] (Cherubi), Spearow [10%] (Pineco), Skitty [10%] (Aipom), Nidoran-M [10%] (Ledyba), Nidoran-F [10%] (Spinarak)"
         },
         {
           "FileNumber": 64,
           "TableIndex": 2,
           "Area": "Shaking Grass",
           "Levels": "Lvl 11-14",
-          "Encounters": "Audino, Drowzee, Happiny, Snivy (Pansage), Ekans"
+          "Encounters": "Audino [15%], Drowzee [10%], Happiny [55%], Snivy [10%] (Pansage), Ekans [10%]"
         },
         {
           "FileNumber": 64,
           "TableIndex": 4,
           "Area": "Berry Pile",
           "Levels": "Lvl 11-14",
-          "Encounters": "Pineco (Aipom, Burmy, Cherubi, Burmy 1)"
+          "Encounters": "Pineco [100%] (Aipom, Burmy, Cherubi, Burmy 1)"
         }
       ],
       "Items": [
@@ -1444,14 +1442,14 @@
           "TableIndex": 0,
           "Area": "Walking",
           "Levels": "Lvl 11-14",
-          "Encounters": "Crabrawler, Burmy, Aipom, Cherubi, Combee, Exeggcute, Pineco, Sunkern, Wurmple, Grubbin"
+          "Encounters": "Crabrawler [10%], Burmy [10%], Aipom [10%], Cherubi [10%], Combee [10%], Exeggcute [10%], Pineco [10%], Sunkern [10%], Wurmple [10%], Grubbin [10%]"
         },
         {
           "FileNumber": 284,
           "TableIndex": 1,
           "Area": "Berry Pile (Crabrawler ONLY!)",
           "Levels": "Lvl 11-14",
-          "Encounters": "Crabrawler, Burmy, Aipom, Cherubi, Combee, Exeggcute, Pineco, Sunkern, Wurmple, Grubbin"
+          "Encounters": "Crabrawler [10%], Burmy [10%], Aipom [10%], Cherubi [10%], Combee [10%], Exeggcute [10%], Pineco [10%], Sunkern [10%], Wurmple [10%], Grubbin [10%]"
         }
       ],
       "Items": [
@@ -1582,7 +1580,7 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 11-13",
-          "Encounters": "Duskull, Gastly, Espurr, Litwick (Golett), Vullaby (Cubone), Gothita (Spoink), Solosis (Baltoy), Shuppet (Yamask), Phantump (Pumpkaboo, Pumpkaboo 1, Pumpkaboo 2, Pumpkaboo 3), Fennekin (Pansear)"
+          "Encounters": "Duskull [10%], Gastly [10%], Espurr [10%], Litwick [10%] (Golett), Vullaby [10%] (Cubone), Gothita [10%] (Spoink), Solosis [10%] (Baltoy), Shuppet [10%] (Yamask), Phantump [10%] (Pumpkaboo, Pumpkaboo 1, Pumpkaboo 2, Pumpkaboo 3), Fennekin [10%] (Pansear)"
         }
       ],
       "Items": [
@@ -1687,7 +1685,7 @@
           "TableIndex": 0,
           "Area": "Sand (Behind Tutor Tents)",
           "Levels": "Lvl 10-13",
-          "Encounters": "Binacle, Exeggcute, Mantyke, Wimpod, Wingull, Sandygast, Sandile, Inkay, Oshawott (Panpour), Kabuto"
+          "Encounters": "Binacle [10%], Exeggcute [10%], Mantyke [10%], Wimpod [10%], Wingull [10%], Sandygast [10%], Sandile [10%], Inkay [10%], Oshawott [10%] (Panpour), Kabuto [10%]"
         }
       ],
       "Items": [
@@ -1747,7 +1745,7 @@
           "TableIndex": 0,
           "Area": "Walking",
           "Levels": "Lvl 11-14",
-          "Encounters": "Tynamo, Spheal, Shellos (Buizel), Sandygast, Feebas (Dratini), Binacle (Clamperl), Squirtle (Panpour)"
+          "Encounters": "Tynamo [15%], Spheal [15%], Shellos [15%] (Buizel), Sandygast [15%], Feebas [10%] (Dratini), Binacle [15%] (Clamperl), Squirtle [15%] (Panpour)"
         }
       ],
       "Items": [
@@ -1791,14 +1789,14 @@
           "TableIndex": 0,
           "Area": "Walking",
           "Levels": "Lvl 12-14",
-          "Encounters": "Diglett 1 (Diglett), Noibat (Whismur), Venonat (Skorupi), Oddish (Gulpin), Bunnelby (Helioptile), Drilbur (Trapinch), Teddiursa (Swinub), Paras (Shroomish), Geodude 1 (Geodude), Morelull (Foongus)"
+          "Encounters": "Diglett 1 [10%] (Diglett), Noibat [10%] (Whismur), Venonat [10%] (Skorupi), Oddish [10%] (Gulpin), Bunnelby [10%] (Helioptile), Drilbur [10%] (Trapinch), Teddiursa [10%] (Swinub), Paras [10%] (Shroomish), Geodude 1 [10%] (Geodude), Morelull [10%] (Foongus)"
         },
         {
           "FileNumber": 306,
           "TableIndex": 2,
           "Area": "Dust Spot",
           "Levels": "Lvl 14-16",
-          "Encounters": "Yungoos (Dunsparce), Rattata 1 (Rattata), Teddiursa (Swinub), Diglett 1 (Diglett), Bunnelby (Helioptile), Drilbur (Trapinch), Geodude 1 (Geodude)"
+          "Encounters": "Yungoos [25%] (Dunsparce), Rattata 1 [25%] (Rattata), Teddiursa [10%] (Swinub), Diglett 1 [10%] (Diglett), Bunnelby [10%] (Helioptile), Drilbur [10%] (Trapinch), Geodude 1 [10%] (Geodude)"
         }
       ],
       "Items": [
@@ -1865,7 +1863,7 @@
           "TableIndex": 0,
           "Area": "Walking (Cliff)",
           "Levels": "Lvl 20-22",
-          "Encounters": "Diglett (Diglett 1), Whismur (Noibat), Skorupi (Venonat), Gulpin (Oddish), Helioptile (Bunnelby), Trapinch (Drilbur), Swinub (Teddiursa), Shroomish (Paras), Geodude (Geodude 1), Foongus (Morelull)"
+          "Encounters": "Diglett [10%] (Diglett 1), Whismur [10%] (Noibat), Skorupi [10%] (Venonat), Gulpin [10%] (Oddish), Helioptile [10%] (Bunnelby), Trapinch [10%] (Drilbur), Swinub [10%] (Teddiursa), Shroomish [10%] (Paras), Geodude [10%] (Geodude 1), Foongus [10%] (Morelull)"
         }
       ],
       "Items": [
@@ -1977,14 +1975,14 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 13-15",
-          "Encounters": "Rufflet, Skiddo (Litleo), Phanpy (Hippopotas), Bagon, Pawniard (Cacnea), Mienfoo (Pancham), Rhyhorn (Snover), Mankey (Vulpix, Growlithe), Jangmo-o, Cyndaquil (Pansear)"
+          "Encounters": "Rufflet [10%], Skiddo [10%] (Litleo), Phanpy [10%] (Hippopotas), Bagon [10%], Pawniard [10%] (Cacnea), Mienfoo [10%] (Pancham), Rhyhorn [10%] (Snover), Mankey [10%] (Meowth 2), Jangmo-o [10%], Cyndaquil [10%] (Pansear)"
         },
         {
           "FileNumber": 53,
           "TableIndex": 4,
           "Area": "Sky Spot",
           "Levels": "Lvl 14-17",
-          "Encounters": "Rufflet, Spearow, Vullaby, Bagon, Burmy 1"
+          "Encounters": "Rufflet [30%], Spearow [20%], Vullaby [20%], Bagon [15%], Burmy 1 [15%]"
         }
       ],
       "Items": [
@@ -2098,7 +2096,7 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 13-17",
-          "Encounters": "Combee, Weedle (Kakuna), Wurmple (Silcoon, Cascoon), Sunkern (Deerling, Deerling 1, Deerling 2, Deerling 3), Oricorio 1, Budew (Roselia), Cottonee (Swirlix), Petilil (Spritzee), Flab\u00E9b\u00E9 1 (Flab\u00E9b\u00E9 2, Flab\u00E9b\u00E9 3, Flab\u00E9b\u00E9 4, Flab\u00E9b\u00E9), Bulbasaur (Pansage)"
+          "Encounters": "Combee [10%], Weedle [10%] (Kakuna), Wurmple [10%] (Silcoon, Cascoon), Sunkern [10%] (Deerling, Deerling 1, Deerling 2, Deerling 3), Oricorio 1 [5%], Budew [10%] (Roselia), Cottonee [10%] (Swirlix), Petilil [10%] (Spritzee), Flab\u00E9b\u00E9 1 [15%] (Flab\u00E9b\u00E9 2, Flab\u00E9b\u00E9 3, Flab\u00E9b\u00E9 4, Flab\u00E9b\u00E9), Bulbasaur [10%] (Pansage)"
         }
       ],
       "Items": [
@@ -2152,28 +2150,28 @@
           "TableIndex": 0,
           "Area": "Walking",
           "Levels": "Lvl 15-17",
-          "Encounters": "Smoochum (Elekid, Magby), Zubat (Woobat), Sandshrew 1 (Sandshrew), Wooper (Sneasel), Bergmite (Snorunt), Vanillite (Vulpix 1), Machop (Cubchoo), Dwebble (Ferroseed), Shuckle, Totodile (Panpour)"
+          "Encounters": "Smoochum [10%] (Elekid, Magby), Zubat [10%] (Woobat), Sandshrew 1 [10%] (Sandshrew), Wooper [10%] (Wooper 1), Bergmite [10%] (Snorunt), Vanillite [10%] (Vulpix 1), Machop [10%] (Scraggy), Dwebble [10%] (Ferroseed), Cubchoo [10%] (Tyrogue), Totodile [10%] (Panpour)"
         },
         {
           "FileNumber": 273,
           "TableIndex": 2,
           "Area": "Surf",
           "Levels": "Lvl 22-27",
-          "Encounters": "Magikarp, Zubat, Feebas, Spheal, Totodile, Wooper, Shellos, Delibird"
+          "Encounters": "Magikarp [20%], Zubat [15%], Feebas [15%], Spheal [10%], Totodile [15%] (Panpour), Wooper [10%] (Wooper 1), Shellos [10%], Delibird [5%]"
         },
         {
           "FileNumber": 273,
           "TableIndex": 4,
           "Area": "Fish",
           "Levels": "Lvl 22-27",
-          "Encounters": "Magikarp, Barboach, Feebas, Dhelmise"
+          "Encounters": "Magikarp [60%], Barboach [20%], Feebas [15%], Dhelmise [5%]"
         },
         {
           "FileNumber": 273,
           "TableIndex": 6,
           "Area": "Bubbles",
           "Levels": "Lvl 26-28",
-          "Encounters": "Barboach, Feebas, Dhelmise, Magikarp"
+          "Encounters": "Barboach [30%], Feebas [25%], Dhelmise [25%], Magikarp [20%]"
         }
       ],
       "Items": [
@@ -2233,35 +2231,35 @@
           "TableIndex": 2,
           "Area": "Grass",
           "Levels": "Lvl 22-27",
-          "Encounters": "Yungoos, Rattata 1 (Rattata), Slowpoke, Wingull, Inkay, Binacle, Exeggcute, Shuckle, Tynamo, Bagon"
+          "Encounters": "Yungoos [10%], Rattata 1 [10%] (Rattata), Slowpoke [10%], Wingull [10%], Inkay [10%], Binacle [10%], Exeggcute [10%], Shuckle [10%], Tynamo [10%], Bagon [10%]"
         },
         {
           "FileNumber": 53,
           "TableIndex": 6,
           "Area": "Berry Pile",
           "Levels": "Lvl 14-18",
-          "Encounters": "Exeggcute (Crabrawler, Cherubi, Aipom)"
+          "Encounters": "Exeggcute [100%] (Crabrawler, Cherubi, Aipom)"
         },
         {
           "FileNumber": 53,
           "TableIndex": 8,
           "Area": "Fish",
           "Levels": "Lvl 13-17",
-          "Encounters": "Magikarp, Shellder, Remoraid, Feebas, Horsea, Dratini, Mantyke (Remoraid)"
+          "Encounters": "Magikarp [40%], Shellder [15%], Remoraid [10%], Feebas [10%], Horsea [10%], Dratini [10%], Mantyke [5%] (Remoraid)"
         },
         {
           "FileNumber": 53,
           "TableIndex": 16,
           "Area": "Bubbles",
           "Levels": "Lvl 17-20",
-          "Encounters": "Magikarp, Shellder, Remoraid, Feebas, Horsea, Dratini, Mantyke (Remoraid)"
+          "Encounters": "Magikarp [5%], Shellder [10%], Remoraid [10%], Feebas [15%], Horsea [20%], Dratini [25%], Mantyke [15%] (Remoraid)"
         },
         {
           "FileNumber": 53,
           "TableIndex": 28,
           "Area": "Surf",
           "Levels": "Lvl 22-27",
-          "Encounters": "Mantyke (Remoraid), Remoraid, Wingull, Horsea, Dratini, Lapras"
+          "Encounters": "Mantyke [20%] (Remoraid), Remoraid [15%], Wingull [15%], Horsea [20%], Dratini [20%], Lapras [10%]"
         }
       ],
       "Items": [
@@ -2316,14 +2314,14 @@
           "TableIndex": 0,
           "Area": "Walking",
           "Levels": "Lvl 16-19",
-          "Encounters": "Carbink (Sableye), Roggenrola (Slugma), Wynaut, Woobat (Zubat), Cleffa (Clefairy), Axew (Gible), Aron, Onix, Sableye, Mawile"
+          "Encounters": "Carbink [10%] (Sableye), Roggenrola [10%] (Slugma), Wynaut [10%], Woobat [10%] (Zubat), Cleffa [10%] (Clefairy), Axew [10%] (Gible), Aron [10%], Onix [10%], Sableye [10%], Mawile [10%]"
         },
         {
           "FileNumber": 229,
           "TableIndex": 2,
           "Area": "Surf",
           "Levels": "Lvl 30-37",
-          "Encounters": "Swoobat (Woobat), Kingler (Krabby), Binacle (Barbaracle), Gastrodon (Shellos), Dragonair (Dratini)"
+          "Encounters": "Swoobat [30%] (Woobat), Kingler [20%] (Krabby), Binacle [20%] (Barbaracle), Gastrodon [20%] (Shellos), Dragonair [10%] (Dratini)"
         }
       ],
       "Items": [
@@ -2382,7 +2380,7 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 16-19",
-          "Encounters": "Rockruff, Spinda, Togepi (Exeggcute), Makuhita (Pancham), Natu (Hoothoot), Meditite (Darumaka), Ralts, Nosepass (Beldum), Goomy, Riolu (Chimchar)"
+          "Encounters": "Rockruff [10%] (Rockruff 1), Spinda [10%], Togepi [10%] (Exeggcute), Makuhita [10%] (Pancham), Natu [10%] (Hoothoot), Meditite [10%] (Darumaka), Ralts [10%], Nosepass [10%] (Beldum), Goomy [10%], Riolu [10%] (Chimchar)"
         }
       ],
       "Items": [
@@ -2485,7 +2483,7 @@
         {
           "Type": "Gifts",
           "Index": 22,
-          "Species": "Porygon 1",
+          "Species": "Porygon",
           "Tags": "Quest",
           "Description": "20 Totem Stickers reward from Dark Oak."
         },
@@ -2749,14 +2747,14 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 18-21",
-          "Encounters": "Lillipup (Minccino), Pidgey, Venipede (Sewaddle), Taillow, Patrat, Nincada (Sandile), Shinx, Eevee, Chespin (Cacnea), Stunky (Spritzee)"
+          "Encounters": "Lillipup [10%] (Minccino, Herdier), Pidgey [10%] (Pidgeotto), Venipede [10%] (Sewaddle, Whirlipede, Swadloon), Taillow [10%] (Swellow), Patrat [10%] (Watchog), Nincada [10%] (Sandile), Shinx [10%] (Luxio), Spritzee [10%] (Swirlix), Chespin [10%] (Pansage), Stunky [10%] (Glameow)"
         },
         {
           "FileNumber": 735,
           "TableIndex": 12,
           "Area": "Berry Pile",
           "Levels": "Lvl 18-21",
-          "Encounters": "Crabrawler, Burmy (Burmy 1, Burmy 2), Exeggcute, Heracross"
+          "Encounters": "Munchlax [100%] (Heracross, Aipom)"
         }
       ],
       "Items": [
@@ -2922,15 +2920,15 @@
           "FileNumber": 746,
           "TableIndex": 0,
           "Area": "Fish",
-          "Levels": "Lvl 22-27",
-          "Encounters": "Barboach, Tympole (Poliwag), Wooper, Mudkip (Froakie), Stunfisk"
+          "Levels": "Lvl 22-25",
+          "Encounters": "Barboach [29%], Tympole [29%] (Poliwag, Poliwhirl, Palpitoad), Wooper 1 [29%] (Wooper), Mudkip [10%] (Panpour), Stunfisk [3%]"
         },
         {
           "FileNumber": 746,
           "TableIndex": 2,
           "Area": "Bubbles",
-          "Levels": "Lvl 27-28",
-          "Encounters": "Barboach, Palpitoad (Poliwhirl), Quagsire (Wooper), Marshtomp (Frogadier), Stunfisk"
+          "Levels": "Lvl 24-27",
+          "Encounters": "Barboach [20%], Palpitoad [20%] (Poliwhirl), Wooper 1 [20%] (Wooper), Marshtomp [20%] (Frogadier), Stunfisk [20%]"
         }
       ],
       "Items": [
@@ -3056,8 +3054,8 @@
           "FileNumber": 1340,
           "TableIndex": 0,
           "Area": "Grass",
-          "Levels": "Lvl 18-21",
-          "Encounters": "Mudbray (Elgyem), Flaaffy (Mareep), Doduo (Spewpa 14), Ponyta, Litleo, Blitzle (Skiddo), Farfetch\u2019d, Miltank (Tauros), Tauros (Miltank), Torchic (Combusken)"
+          "Levels": "Lvl 20-23",
+          "Encounters": "Mudbray [10%] (Elgyem), Flaaffy [10%] (Mareep), Doduo [10%] (Spewpa 14), Ponyta [10%] (Ponyta 1), Litleo [10%] (Poochyena), Blitzle [10%] (Skiddo), Farfetch\u2019d 1 [10%] (Farfetch\u2019d), Miltank [10%] (Tauros), Tauros [10%] (Tauros 1, Tauros 2, Tauros 3), Torchic [10%] (Pansear, Combusken)"
         }
       ],
       "Items": [
@@ -3276,28 +3274,28 @@
           "TableIndex": 0,
           "Area": "Dust Spot",
           "Levels": "Lvl 27-30",
-          "Encounters": "Diglett 1 (Diglett), Nincada (Sandile), Watchog (Patrat)"
+          "Encounters": "Diglett 1 [50%] (Diglett), Nincada [25%] (Sandile), Watchog [25%] (Patrat)"
         },
         {
           "FileNumber": 757,
           "TableIndex": 6,
           "Area": "Berry Pile",
           "Levels": "Lvl 20-24",
-          "Encounters": "Crabrawler, Burmy 1 (Burmy, Burmy 2), Exeggcute, Heracross"
+          "Encounters": "Aipom [100%] (Stantler, Heracross, Murkrow)"
         },
         {
           "FileNumber": 757,
           "TableIndex": 8,
           "Area": "Grass",
-          "Levels": "Lvl 20-22",
-          "Encounters": "Fomantis (Vivillon 4), Electrike (Houndour), Houndour (Electrike), Staravia (Starly), Nuzleaf (Seedot), Ledyba (Ledian), Cherubi (Swirlix), Gulpin (Trubbish), Dedenne (Emolga), Turtwig (Snover)"
+          "Levels": "Lvl 22-25",
+          "Encounters": "Fomantis [10%] (Vivillon 4), Electrike [10%] (Houndour), Houndour [10%] (Electrike), Staravia [10%] (Starly), Nuzleaf [10%] (Seedot), Ledyba [10%] (Spinarak, Ledian, Ariados), Cherubi [10%] (Steenee), Gulpin [10%] (Trubbish), Stantler [10%] (Girafarig), Turtwig [10%] (Pansage, Grotle)"
         },
         {
           "FileNumber": 757,
           "TableIndex": 18,
           "Area": "Grass (North)",
           "Levels": "Lvl 27-30",
-          "Encounters": "Fomantis (Vivillon 4), Manectric (Houndoom), Houndoom (Manectric), Staravia (Starly), Nuzleaf (Seedot), Swalot (Trubbish), Cherrim (Swirlix), Dedenne (Emolga), Ledian (Ledyba), Grotle (Snover)"
+          "Encounters": "Fomantis [10%] (Lurantis, Vivillon 4), Manectric [10%] (Houndoom, Electrike, Houndour), Houndoom [10%] (Manectric, Houndour, Electrike), Staravia [10%] (Starly), Nuzleaf [10%] (Seedot), Ledian [10%] (Ariados, Ledyba, Spinarak), Cherrim [10%] (Steenee, Cherubi), Swalot [10%] (Trubbish, Gulpin), Stantler [10%] (Girafarig), Grotle [10%] (Simisage, Turtwig, Pansage)"
         }
       ],
       "Items": [
@@ -3474,28 +3472,28 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 21-25",
-          "Encounters": "Dewpider, Surskit (Vivillon 12), Croagunk, Buizel (Bidoof), Karrablast (Shelmet), Shelmet (Karrablast), Panpour (Popplio), Lotad (Lombre), Ducklett (Psyduck), Oshawott (Dewott)"
+          "Encounters": "Dewpider [10%] (Corphish), Surskit [10%] (Masquerain, Vivillon 12), Croagunk [10%] (Poliwag), Buizel [10%] (Tympole), Karrablast [10%] (Shelmet), Shelmet [10%] (Karrablast), Panpour [10%] (Popplio, Brionne), Lotad [10%] (Lombre), Ducklett [10%] (Psyduck), Bidoof [10%] (Marill)"
         },
         {
           "FileNumber": 944,
           "TableIndex": 2,
           "Area": "Surf",
           "Levels": "Lvl 21-25",
-          "Encounters": "Surskit (Vivillon 12), Oshawott (Dewott), Ducklett, Wishiwashi, Goldeen, Magikarp, Basculin 1 (Basculin), Basculin (Basculin 1), Lotad (Lombre)"
+          "Encounters": "Surskit [10%] (Dewpider, Masquerain, Vivillon 12), Panpour [10%] (Popplio, Brionne), Ducklett [10%] (Psyduck), Wishiwashi [10%] (Wishiwashi 1), Goldeen [10%], Magikarp [10%] (Feebas), Basculin 2 [10%] (Basculin, Basculin 1), Buizel [10%] (Tympole), Lotad [10%] (Lombre), Marill [10%] (Bidoof, Azurill, Bibarel)"
         },
         {
           "FileNumber": 944,
           "TableIndex": 4,
           "Area": "Fish",
           "Levels": "Lvl 21-25",
-          "Encounters": "Magikarp, Goldeen, Wishiwashi, Corphish, Basculin (Basculin 1), Basculin 1 (Basculin), Dewpider"
+          "Encounters": "Magikarp [35%], Goldeen [20%], Wishiwashi [10%], Corphish [10%], Basculin [5%] (Basculin 1), Basculin 1 [5%] (Basculin), Dewpider [15%]"
         },
         {
           "FileNumber": 944,
           "TableIndex": 22,
           "Area": "Bubbles",
           "Levels": "Lvl 25-26",
-          "Encounters": "Magikarp, Goldeen, Wishiwashi, Corphish, Basculin (Basculin 1), Basculin 1 (Basculin), Dewpider"
+          "Encounters": "Magikarp [20%], Goldeen [10%], Wishiwashi [15%], Corphish [25%], Basculin [10%] (Basculin 1), Basculin 1 [10%] (Basculin), Dewpider [10%]"
         }
       ],
       "Items": [
@@ -3555,21 +3553,21 @@
           "TableIndex": 0,
           "Area": "Surf",
           "Levels": "Lvl 21-25",
-          "Encounters": "Shellos 1, Finneon (Vivillon 13), Tentacool, Wingull, Castform | Weather S.O.S: Castform 1, Castform 2"
+          "Encounters": "Shellos 1 [15%], Finneon [20%] (Vivillon 13), Tentacool [20%] (Frillish), Wingull [10%], Castform [15%] (Castform 1, Castform 2, Castform 3), Goldeen [10%], Wishiwashi [10%] (Wishiwashi 1) | Weather S.O.S: Castform 1, Castform 2, Castform 3"
         },
         {
           "FileNumber": 955,
           "TableIndex": 2,
           "Area": "Fish",
           "Levels": "Lvl 21-25",
-          "Encounters": "Magikarp, Wishiwashi, Feebas, Clamperl, Luvdisc | Weather S.O.S: Castform 1, Castform 2"
+          "Encounters": "Magikarp [40%], Wishiwashi [15%], Feebas [15%], Clamperl [15%], Luvdisc [15%] | Weather S.O.S: Castform 1, Castform 2"
         },
         {
           "FileNumber": 955,
           "TableIndex": 14,
           "Area": "Bubbles",
           "Levels": "Lvl 25-26",
-          "Encounters": "Magikarp, Wishiwashi, Feebas, Clamperl, Luvdisc | Weather S.O.S: Castform 1, Castform 2"
+          "Encounters": "Magikarp [10%], Wishiwashi [15%], Feebas [25%], Clamperl [25%], Luvdisc [25%] | Weather S.O.S: Castform 1, Castform 2"
         }
       ],
       "Items": [
@@ -3650,21 +3648,21 @@
           "TableIndex": 6,
           "Area": "Fish",
           "Levels": "Lvl 22-27",
-          "Encounters": "Magikarp, Corsola (Mareanie), Mareanie, Shellder, Krabby, Pyukumuku"
+          "Encounters": "Magikarp [50%], Corsola [10%] (Mareanie, Corsola 1), Mareanie [10%] (Corsola 1), Shellder [10%], Krabby [10%], Pyukumuku [10%]"
         },
         {
           "FileNumber": 9,
           "TableIndex": 14,
           "Area": "Bubbles",
           "Levels": "Lvl 26-28",
-          "Encounters": "Magikarp, Corsola (Mareanie), Mareanie, Shellder, Krabby, Pyukumuku"
+          "Encounters": "Magikarp [15%], Corsola [15%] (Mareanie, Corsola 1), Mareanie [15%] (Corsola 1), Shellder [20%], Krabby [20%], Pyukumuku [15%]"
         },
         {
           "FileNumber": 9,
           "TableIndex": 20,
           "Area": "Surf",
           "Levels": "Lvl 22-27",
-          "Encounters": "Tentacool, Wingull, Mantyke (Remoraid), Mareanie, Corsola (Mareanie), Luvdisc, Finneon, Wailmer, Remoraid, Prinplup (Piplup)"
+          "Encounters": "Tentacool [10%] (Frillish), Wingull [10%], Mantyke [10%] (Remoraid), Mareanie [10%] (Corsola 1), Corsola [10%] (Mareanie, Corsola 1), Luvdisc [10%], Finneon [10%], Wailmer [10%], Remoraid [10%], Prinplup [10%] (Piplup)"
         }
       ],
       "Items": [
@@ -3716,28 +3714,28 @@
           "TableIndex": 1,
           "Area": "Beach Sand",
           "Levels": "Lvl 8-11",
-          "Encounters": "Wimpod, Krabby, Wingull, Exeggcute, Mareanie, Slowpoke 1 (Slowpoke), Staryu, Clauncher, Tyrogue, Mantyke"
+          "Encounters": "Wimpod [10%], Krabby [10%], Wingull [10%], Exeggcute [10%], Mareanie [10%], Slowpoke 1 [10%] (Slowpoke), Staryu [10%], Clauncher [10%], Tyrogue [10%], Mantyke [10%]"
         },
         {
           "FileNumber": 31,
           "TableIndex": 2,
           "Area": "Fish",
-          "Levels": "Lvl 10-17",
-          "Encounters": "Magikarp (Gyarados), Wishiwashi, Luvdisc, Corsola (Mareanie), Clamperl (Gorebyss), Remoraid (Octillery)"
+          "Levels": "Lvl 20-27",
+          "Encounters": "Magikarp [25%] (Feebas), Wishiwashi [20%] (Wishiwashi 1), Luvdisc [20%], Corsola [5%] (Mareanie, Corsola 1), Clamperl [5%], Remoraid [10%], Corphish [10%], Corsola 1 [5%] (Mareanie, Mareanie 1, Corsola)"
         },
         {
           "FileNumber": 31,
           "TableIndex": 10,
           "Area": "Bubbles",
-          "Levels": "Lvl 10-22",
-          "Encounters": "Magikarp (Gyarados), Wishiwashi, Luvdisc, Corsola (Mareanie), Clamperl (Gorebyss), Remoraid (Octillery)"
+          "Levels": "Lvl 20-27",
+          "Encounters": "Magikarp [10%] (Feebas), Wishiwashi [15%] (Wishiwashi 1), Luvdisc [15%], Corsola [10%] (Mareanie, Corsola 1), Clamperl [15%], Remoraid [10%], Corphish [15%], Corsola 1 [10%] (Mareanie, Mareanie 1, Corsola)"
         },
         {
           "FileNumber": 31,
           "TableIndex": 13,
           "Area": "Surf",
-          "Levels": "Lvl 15-18",
-          "Encounters": "Tentacool, Wingull, Finneon, Mantyke (Remoraid)"
+          "Levels": "Lvl 22-27",
+          "Encounters": "Tentacool [10%] (Frillish), Wingull [10%], Mantyke [10%] (Remoraid), Mareanie [10%] (Corsola 1), Corsola [10%] (Mareanie, Corsola 1), Luvdisc [10%], Finneon [10%], Wailmer [10%] (Lapras), Seel [10%] (Spheal), Wartortle [10%] (Squirtle)"
         }
       ],
       "Items": [
@@ -3827,7 +3825,7 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 22-27",
-          "Encounters": "Timburr, Oricorio 2, Skitty, Lickitung (Stantler), Spinarak (Pineco), Fletchinder (Fletchling), Yanma (Vivillon 6), Volbeat (Illumise), Illumise (Volbeat), Pignite (Tepig)"
+          "Encounters": "Timburr [10%], Mightyena [10%] (Poochyena), Meowth [10%] (Meowth 1, Meowth 2), Lickitung [10%] (Stantler), Spinarak [10%] (Ariados, Ledyba, Ledian), Fletchinder [10%] (Fletchling), Yanma [10%] (Vivillon 6), Volbeat [10%] (Illumise), Illumise [10%] (Volbeat), Pignite [10%] (Pansear, Tepig)"
         }
       ],
       "Items": [
@@ -3857,7 +3855,7 @@
     {
       "LocationName": "Royal Avenue",
       "Weather": "Clear",
-      "Description": "",
+      "Description": "Encounters added here.",
       "LocationNumber": 35,
       "Shops": [
         "2 Trials",
@@ -3924,7 +3922,15 @@
           "Description": ""
         }
       ],
-      "WildEncounters": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 834,
+          "TableIndex": 0,
+          "Area": "Walking (Park area, near the fountain)",
+          "Levels": "Lvl 25-28",
+          "Encounters": "Oricorio 2 [10%] (Vivillon 7), Grimer [10%] (Grimer 1), Raticate [10%] (Raticate 1, Rattata, Rattata 1), Audino [10%] (Chansey), Scraggy [10%] (Hitmontop, Hitmonchan, Hitmonlee), Furfrou [10%] (Furfrou 1, Furfrou 2, Furfrou 3, Furfrou 4, Furfrou 5, Furfrou 6, Furfrou 7), Hawlucha [10%] (Machoke), Klefki [10%] (Comfey), Minccino [10%] (Pidove, Tranquill), Eevee [10%] (Yungoos, Gumshoos)"
+        }
+      ],
       "Items": [
         {
           "Item": "Pecha Berry",
@@ -4053,28 +4059,28 @@
           "TableIndex": 0,
           "Area": "Surf",
           "Levels": "Lvl 24-29",
-          "Encounters": "Wingull (Vivillon 9), Tentacool, Qwilfish, Basculin (Basculin 1), Carvanha, Skrelp, Bruxish, Basculin 1 (Basculin)"
+          "Encounters": "Wingull [10%] (Vivillon 9), Tentacool [10%] (Frillish), Qwilfish 1 [10%] (Qwilfish), Basculin 2 [10%] (Basculin, Basculin 1), Carvanha [15%], Skrelp [15%], Bruxish [10%], Murkrow [10%], Swablu [10%]"
         },
         {
           "FileNumber": 779,
           "TableIndex": 2,
           "Area": "Fish",
           "Levels": "Lvl 24-29",
-          "Encounters": "Magikarp, Staryu, Wishiwashi, Carvanha, Clauncher, Bruxish"
+          "Encounters": "Magikarp [30%], Staryu [20%], Wishiwashi [15%], Carvanha [15%], Clauncher [15%], Bruxish [5%]"
         },
         {
           "FileNumber": 779,
           "TableIndex": 12,
           "Area": "Bubbles",
           "Levels": "Lvl 30-32",
-          "Encounters": "Clauncher, Starmie, Bruxish, Sharpedo, Wishiwashi, Gyarados"
+          "Encounters": "Clauncher [20%], Starmie [20%], Bruxish [20%], Sharpedo [15%], Wishiwashi [15%] (Wishiwashi 1), Gyarados [10%]"
         },
         {
           "FileNumber": 779,
           "TableIndex": 14,
           "Area": "Dust Spot",
           "Levels": "Lvl 24-29",
-          "Encounters": "Diglett 1 (Diglett), Krabby, Wimpod, Helioptile"
+          "Encounters": "Diglett 1 [30%] (Diglett), Krabby [25%], Wimpod [25%], Helioptile [20%]"
         }
       ],
       "Items": [
@@ -4149,7 +4155,7 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 26-30",
-          "Encounters": "Cubone (Kangaskhan), Salandit, Magby (Magmar), Slugma (Heatmor), Koffing (Gligar), Pansear (Litten), Larvesta, Numel (Turtonator), Torkoal (Vivillon 15), Charmeleon (Charmander)"
+          "Encounters": "Cubone [10%] (Kangaskhan), Salandit [10%], Magby [10%] (Magmar), Slugma [10%] (Heatmor), Minccino [10%] (Durant), Pansear [10%] (Simisear, Litten, Torracat), Larvesta [10%], Numel [10%] (Turtonator), Torkoal [10%] (Vivillon 15), Growlithe [10%] (Growlithe 1)"
         }
       ],
       "Items": [
@@ -4183,7 +4189,7 @@
     },
     {
       "LocationName": "Wela Volcano Caldera",
-      "Weather": "Clear",
+      "Weather": "Sun",
       "Description": "Permanent Harsh Sunlight. (ADD ENCOUNTER AND 1 TRAINER HERE)",
       "LocationNumber": 38,
       "Shops": [],
@@ -4213,7 +4219,15 @@
           "Description": ""
         }
       ],
-      "WildEncounters": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 933,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 26-30",
+          "Encounters": "Heatmor [10%] (Durant), Skarmory [10%] (Salandit), Magby [10%] (Magmar), Slugma [10%] (Torkoal), Koffing [10%] (Grimer), Growlithe 1 [10%] (Growlithe), Gligar [10%] (Skorupi), Numel [10%] (Drifblim, Drifloon), Turtonator [10%] (Vivillon 15), Charmeleon [10%] (Charmander)"
+        }
+      ],
       "Items": [
         {
           "Item": "Firium Z",
@@ -4262,7 +4276,7 @@
           "TableIndex": 0,
           "Area": "Shadow",
           "Levels": "Lvl 25-25",
-          "Encounters": "Unown (Unown 1, Unown 2, Unown 3, Unown 4, Unown 5, Unown 6, Unown 7), Unown 8 (Unown 9, Unown 10, Unown 11, Unown 12, Unown 13, Unown 14, Unown 15), Unown 16 (Unown 17, Unown 18, Unown 19, Unown 20, Unown 21, Unown 22, Unown 23), Unown 24 (Unown 25, Unown 26, Unown 27), Unown 26 (Unown 27, Unown), Unown"
+          "Encounters": "Unown [30%] (Unown 1, Unown 2, Unown 3, Unown 4, Unown 5, Unown 6, Unown 7), Unown 8 [30%] (Unown 9, Unown 10, Unown 11, Unown 12, Unown 13, Unown 14, Unown 15), Unown 16 [30%] (Unown 17, Unown 18, Unown 19, Unown 20, Unown 21, Unown 22, Unown 23), Unown 24 [10%] (Unown 25, Unown 26, Unown 27)"
         }
       ],
       "Items": [],
@@ -4313,7 +4327,7 @@
         {
           "TrainerId": 629,
           "Trainer": "Kaleb",
-          "Class": "Kindergartener",
+          "Class": "Kindergartner",
           "Route": 5,
           "Tags": "Optional",
           "Description": "Must be spoken to near the Pokemon Center. Reward: (idk, a cubone maybe? Or the Thick Club)"
@@ -4365,42 +4379,42 @@
           "TableIndex": 0,
           "Area": "Wimpod",
           "Levels": "Lvl 25-25",
-          "Encounters": "Wimpod (Trumbeak)"
+          "Encounters": "Wimpod [100%] (Trumbeak)"
         },
         {
           "FileNumber": 790,
           "TableIndex": 2,
           "Area": "Fish",
           "Levels": "Lvl 26-29",
-          "Encounters": "Magikarp, Wishiwashi, Chinchou, Relicanth"
+          "Encounters": "Magikarp [50%], Wishiwashi [15%], Chinchou [25%], Relicanth [10%]"
         },
         {
           "FileNumber": 790,
           "TableIndex": 8,
           "Area": "Bubbles",
           "Levels": "Lvl 30-32",
-          "Encounters": "Gyarados, Wishiwashi, Lanturn (Chinchou), Relicanth"
+          "Encounters": "Gyarados [10%], Wishiwashi [25%], Lanturn [35%] (Chinchou), Relicanth [30%]"
         },
         {
           "FileNumber": 790,
           "TableIndex": 10,
           "Area": "Berry Pile",
           "Levels": "Lvl 27-31",
-          "Encounters": "Crabrawler, Burmy 1 (Burmy, Burmy 2), Exeggcute, Heracross"
+          "Encounters": "Heracross [100%] (Crabrawler, Combee, Snorlax)"
         },
         {
           "FileNumber": 790,
           "TableIndex": 12,
           "Area": "Surf",
           "Levels": "Lvl 24-29",
-          "Encounters": "Chinchou, Tirtouga, Tentacool, Carvanha, Relicanth, Shellos 1"
+          "Encounters": "Chinchou [25%], Tirtouga [10%], Tentacool [25%], Carvanha [20%], Relicanth [5%], Shellos 1 [15%]"
         },
         {
           "FileNumber": 790,
           "TableIndex": 14,
           "Area": "Grass",
           "Levels": "Lvl 27-31",
-          "Encounters": "Trumbeak (Pikipek), Stufful, Salandit (Drampa), Kecleon (Vivillon 10), Pachirisu (Plusle, Minun), Spoink (Girafarig), Granbull (Snubbull), Buneary (Lopunny), Helioptile (Durant), Mr. Mime (Mime Jr.)"
+          "Encounters": "Trumbeak [10%] (Pikipek, Pidgey, Pidgeotto), Stufful [10%] (Elekid, Electabuzz), Salandit [10%] (Drampa), Kecleon [10%] (Vivillon 10), Pachirisu [10%] (Plusle, Minun), Spoink [10%] (Girafarig), Granbull [10%] (Mightyena, Snubbull, Poochyena), Buneary [10%] (Lopunny), Helioptile [10%] (Durant), Mr. Mime [10%] (Mime Jr., Mr. Mime 1)"
         }
       ],
       "Items": [
@@ -4644,14 +4658,14 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 29-34",
-          "Encounters": "Shiinotic (Foongus), Breloom (Parasect), Vigoroth (Komala, Slakoth), Simisage (Pansage, Rowlet), Carnivine (Throh), Swadloon (Whirlipede), Comfey (Sawk), Tangela, Sawsbuck 1 (Sawsbuck, Sawsbuck 2, Sawsbuck 3, Deerling 1, Deerling, Deerling 2, Deerling 3), Grovyle (Treecko) | Weather S.O.S: Castform, Goomy"
+          "Encounters": "Shiinotic [10%] (Foongus), Breloom [10%] (Parasect, Shroomish, Paras), Vigoroth [10%] (Komala, Slakoth), Simisage [10%] (Pansage, Rowlet, Dartrix), Carnivine [10%] (Throh), Swadloon [10%] (Whirlipede, Venipede, Sewaddle), Comfey [10%] (Sawk), Tangela [10%] (Ponyta 1), Sawsbuck 1 [10%] (Sawsbuck, Sawsbuck 2, Sawsbuck 3, Deerling 1, Deerling, Deerling 2, Deerling 3), Grovyle [10%] (Treecko) | Weather S.O.S: Castform, Goomy"
         },
         {
           "FileNumber": 966,
           "TableIndex": 4,
           "Area": "Shaking Grass",
           "Levels": "Lvl 29-34",
-          "Encounters": "Oranguru (Passimian), Passimian (Oranguru), Lurantis (Fomantis), Steenee (Bounsweet), Pinsir (Heracross, Scyther), Sudowoodo (Bonsly), Tropius (Chatot), Vivillon 17 (Butterfree, Beautifly, Dustox), Vespiquen (Combee, Beedrill), Beedrill (Combee, Vespiquen) | Weather S.O.S: Castform, Goomy"
+          "Encounters": "Oranguru [10%] (Passimian), Passimian [10%] (Oranguru), Lurantis [15%] (Fomantis), Steenee [15%] (Bounsweet), Pinsir [10%] (Heracross, Scyther), Sudowoodo [10%] (Bonsly), Tropius [10%] (Chatot), Vivillon 17 [10%] (Butterfree, Beautifly, Dustox), Vespiquen [5%] (Combee, Beedrill), Beedrill [5%] (Combee, Vespiquen) | Weather S.O.S: Castform, Goomy"
         }
       ],
       "Items": [],
@@ -4670,7 +4684,7 @@
           "TableIndex": 0,
           "Area": "Walking",
           "Levels": "Lvl 45-55",
-          "Encounters": "Pinsir, Larvesta, Dugtrio 1 (Dugtrio), Golbat, Salandit, Throh, Sawk, Passimian, Oranguru"
+          "Encounters": "Pinsir [10%] (Scyther, Scizor, Kleavor), Sneasel 1 [10%] (Sneasel, Weavile 1, Sneasler), Snorunt [10%] (Glalie, Froslass), Swoobat [10%] (Woobat), Sandslash 1 [10%] (Sandshrew 1, Sandslash, Sandshrew), Throh [10%] (Sawk), Sawk [10%] (Throh), Passimian [10%] (Oranguru), Oranguru [10%] (Passimian), Delibird [10%] (Dunsparce, Dudunsparce)"
         }
       ],
       "Items": [],
@@ -4762,14 +4776,14 @@
           "TableIndex": 0,
           "Area": "Dust Spot",
           "Levels": "Lvl 27-33",
-          "Encounters": "Dugtrio 1 (Dugtrio), Dugtrio (Dugtrio 1), Drilbur, Druddigon, Sandslash (Sandslash 1)"
+          "Encounters": "Dugtrio 1 [15%] (Dugtrio, Diglett 1, Diglett), Dugtrio [15%] (Dugtrio 1, Diglett, Diglett 1), Drilbur [25%] (Excadrill), Druddigon [15%] (Fraxure), Sandslash [15%] (Sandslash 1, Sandshrew, Sandshrew 1), Dunsparce [15%]"
         },
         {
           "FileNumber": 911,
           "TableIndex": 2,
           "Area": "Walking",
           "Levels": "Lvl 24-30",
-          "Encounters": "Diglett 1 (Diglett, Dugtrio 1, Dugtrio), Larvitar (Pupitar), Diglett (Diglett 1, Dugtrio, Dugtrio 1), Golett (Woobat), Onix (Rhyhorn), Graveler (Graveler 1, Geodude, Geodude 1), Ferroseed (Togedemaru), Druddigon (Fraxure), Sandshrew (Sandshrew 1, Sandslash, Sandslash 1), Deino (Noibat)"
+          "Encounters": "Diglett 1 [10%] (Diglett, Dugtrio 1, Dugtrio), Larvitar [10%] (Pupitar), Diglett [10%] (Diglett 1, Dugtrio, Dugtrio 1), Golett [10%] (Woobat, Swoobat), Dunsparce [10%] (Onix), Graveler [10%] (Graveler 1, Geodude, Geodude 1), Ferroseed [10%] (Togedemaru), Druddigon [10%] (Fraxure), Sandshrew [10%] (Sandshrew 1, Sandslash, Sandslash 1), Deino [10%] (Noibat, Zweilous) | Weather S.O.S: Diglett, Diglett 1"
         }
       ],
       "Items": [],
@@ -4805,14 +4819,14 @@
           "TableIndex": 0,
           "Area": "Fish",
           "Levels": "Lvl 16-34",
-          "Encounters": "Luvdisc, Omanyte, Kabuto, Lileep, Anorith, Tirtouga, Relicanth"
+          "Encounters": "Luvdisc [40%], Omanyte [10%], Kabuto [10%], Lileep [10%], Anorith [10%], Tirtouga [10%], Relicanth [10%]"
         },
         {
           "FileNumber": 801,
           "TableIndex": 2,
           "Area": "Bubbles",
           "Levels": "Lvl 35-37",
-          "Encounters": "Alomomola, Omastar, Kabutops, Cradily, Armaldo, Carracosta, Relicanth"
+          "Encounters": "Alomomola [5%], Omastar [15%], Kabutops [15%], Cradily [15%], Armaldo [15%], Carracosta [15%], Relicanth [20%]"
         }
       ],
       "Items": [],
@@ -4864,7 +4878,7 @@
         {
           "TrainerId": 115,
           "Trainer": "Liam",
-          "Class": "Kindergartener",
+          "Class": "Kindergartner",
           "Route": 3,
           "Tags": "Optional",
           "Description": ""
@@ -4892,7 +4906,7 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 32-37",
-          "Encounters": "Misdreavus (Murkrow), Gourgeist (Gourgeist 1, Gourgeist 2, Gourgeist 3, Pumpkaboo 1, Pumpkaboo 2, Pumpkaboo 3, Pumpkaboo), Yamask (Cofagrigus), Doublade (Honedge), Baltoy, Mimikyu (Pikachu 7), Vulpix (Vulpix 1), Absol, Spiritomb, Murkrow (Misdreavus)"
+          "Encounters": "Misdreavus [10%] (Murkrow), Gourgeist [10%] (Gourgeist 1, Gourgeist 2, Gourgeist 3, Pumpkaboo 1, Pumpkaboo 2, Pumpkaboo 3, Pumpkaboo), Yamask [10%] (Cofagrigus, Yamask 1, Runerigus), Doublade [10%] (Honedge), Baltoy [10%] (Grumpig), Mimikyu [10%] (Mimikyu 1, Pikachu 8, Pikachu 5, Pikachu 7, Pikachu 6), Vulpix [10%] (Vulpix 1, Ninetales, Ninetales 1), Absol [10%] (Liepard), Spiritomb [10%] (Dusclops), Murkrow [10%] (Misdreavus)"
         }
       ],
       "Items": [],
@@ -4936,21 +4950,21 @@
           "TableIndex": 4,
           "Area": "Grass",
           "Levels": "Lvl 32-38",
-          "Encounters": "Amaura (Aurorus), Noctowl, Aerodactyl, Archen (Archeops), Zangoose (Seviper), Seviper (Zangoose), Bronzong (Bronzor), Cranidos (Rampardos), Shieldon (Bastiodon), Tyrunt (Tyrantrum)"
+          "Encounters": "Amaura [10%] (Aurorus), Noctowl [10%] (Xatu, Hoothoot, Natu), Aerodactyl [10%], Archen [10%] (Archeops), Zangoose [10%] (Seviper), Seviper [10%] (Zangoose), Bronzong [10%] (Bronzor), Cranidos [10%] (Rampardos), Shieldon [10%] (Bastiodon), Tyrunt [10%] (Tyrantrum)"
         },
         {
           "FileNumber": 900,
           "TableIndex": 6,
           "Area": "Fish",
           "Levels": "Lvl 16-34",
-          "Encounters": "Omanyte, Kabuto, Anorith, Lileep, Tirtouga, Relicanth, Dhelmise"
+          "Encounters": "Omanyte [15%], Kabuto [15%], Anorith [15%], Lileep [15%], Tirtouga [15%], Relicanth [15%], Dhelmise [10%]"
         },
         {
           "FileNumber": 900,
           "TableIndex": 10,
           "Area": "Bubbles",
           "Levels": "Lvl 35-40",
-          "Encounters": "Carracosta, Omastar, Kabutops, Cradily, Armaldo, Relicanth, Dhelmise"
+          "Encounters": "Carracosta [10%], Omastar [10%], Kabutops [10%], Cradily [10%], Armaldo [10%], Relicanth [25%], Dhelmise [25%]"
         }
       ],
       "Items": [],
@@ -5082,21 +5096,21 @@
           "TableIndex": 0,
           "Area": "Sand Spot",
           "Levels": "Lvl 36-40",
-          "Encounters": "Starmie (Staryu), Sandygast, Gible, Trapinch, Pyukumuku, Vivillon 5"
+          "Encounters": "Starmie [20%] (Staryu), Sandygast [40%] (Palossand), Gible [5%] (Gabite), Trapinch [10%] (Vibrava), Pyukumuku [20%], Vivillon 6 [5%]"
         },
         {
           "FileNumber": 812,
           "TableIndex": 2,
           "Area": "Surf",
           "Levels": "Lvl 30-40",
-          "Encounters": "Tentacruel (Tentacool), Skrelp, Clauncher (Clawitzer), Frillish (Frillish 1), Wailmer, Pyukumuku, Frillish 1 (Frillish)"
+          "Encounters": "Tentacruel [20%] (Tentacool), Skrelp [15%], Clauncher [15%] (Clawitzer), Frillish [10%] (Frillish 1, Jellicent, Jellicent 1), Wailmer [10%] (Lapras), Pyukumuku [20%], Frillish 1 [10%] (Frillish)"
         },
         {
           "FileNumber": 812,
           "TableIndex": 4,
-          "Area": "Fish",
+          "Area": "Splashes",
           "Levels": "Lvl 40-44",
-          "Encounters": "Tentacruel (Tentacool), Jellicent 1 (Jellicent), Phione, Jellicent (Jellicent 1)"
+          "Encounters": "Tentacruel [47%] (Tentacool), Jellicent 1 [24%] (Jellicent), Phione [6%], Jellicent [23%] (Jellicent 1)"
         }
       ],
       "Items": [],
@@ -5180,6 +5194,30 @@
           "Route": 8,
           "Tags": "Optional, Boss",
           "Description": "Reward: Gengarite, Choice Specs, Choice Band"
+        },
+        {
+          "TrainerId": 564,
+          "Trainer": "Grunt Fiona",
+          "Class": "Skull Gang",
+          "Route": 9,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 154,
+          "Trainer": "Nanu",
+          "Class": "Ula\u0027ula Kahuna",
+          "Route": 10,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 362,
+          "Trainer": "Jane",
+          "Class": "Jolteon User",
+          "Route": 11,
+          "Tags": "Postgame Boss",
+          "Description": ""
         }
       ],
       "WildEncounters": [],
@@ -5194,11 +5232,19 @@
       "Shops": [],
       "Trainers": [
         {
+          "TrainerId": 138,
+          "Trainer": "Guzma",
+          "Class": "Team Skull Boss",
+          "Route": 0,
+          "Tags": "Story Boss",
+          "Description": ""
+        },
+        {
           "TrainerId": 266,
           "Trainer": "Nancy",
           "Class": "Preschooler",
           "Route": 0,
-          "Tags": "",
+          "Tags": "Optional",
           "Description": ""
         },
         {
@@ -5206,7 +5252,7 @@
           "Trainer": "Akali",
           "Class": "Sightseer",
           "Route": 0,
-          "Tags": "",
+          "Tags": "Optional",
           "Description": ""
         },
         {
@@ -5214,21 +5260,77 @@
           "Trainer": "Mitch",
           "Class": "Tourist",
           "Route": 0,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 460,
+          "Trainer": "Elijah",
+          "Class": "Rising Star",
+          "Route": 0,
+          "Tags": "Optional",
+          "Description": ""
+        },
+        {
+          "TrainerId": 461,
+          "Trainer": "Rika",
+          "Class": "Lass",
+          "Route": 0,
           "Tags": "",
           "Description": ""
+        },
+        {
+          "TrainerId": 462,
+          "Trainer": "Emmy",
+          "Class": "Lass",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 463,
+          "Trainer": "Tyler",
+          "Class": "Youngster",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 464,
+          "Trainer": "Don",
+          "Class": "Veteran",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 471,
+          "Trainer": "Sean",
+          "Class": "Rising Star",
+          "Route": 0,
+          "Tags": "",
+          "Description": "bomb team"
         },
         {
           "TrainerId": 514,
           "Trainer": "Yuriko",
           "Class": "Sightseer",
           "Route": 0,
-          "Tags": "",
-          "Description": ""
+          "Tags": "Optional, Multi Battle",
+          "Description": "Multi Battle with Landon"
         },
         {
           "TrainerId": 521,
           "Trainer": "Landon",
           "Class": "Bellhop",
+          "Route": 0,
+          "Tags": "Optional, Multi Battle",
+          "Description": "Multi Battle with Yuriko"
+        },
+        {
+          "TrainerId": 581,
+          "Trainer": "Lisa",
+          "Class": "Lass",
           "Route": 0,
           "Tags": "",
           "Description": ""
@@ -5240,23 +5342,1134 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 40-44",
-          "Encounters": "Poliwhirl (Castform), Persian (Persian 1), Delcatty (Skitty), Frogadier (Froakie), Golduck (Psyduck), Araquanid (Dewpider), Bibarel (Bidoof), Masquerain (Surskit), Scyther, Ludicolo (Lombre) | Weather S.O.S: Castform"
+          "Encounters": "Poliwhirl [10%] (Poliwag, Castform), Persian 1 [10%] (Persian, Perrserker, Meowth, Meowth 1, Meowth 2), Delcatty [10%] (Skitty, Purugly, Glameow), Frogadier [10%] (Froakie, Simipour, Panpour), Golduck [10%] (Psyduck, Swanna, Ducklett), Araquanid [10%] (Dewpider), Bibarel [10%] (Bidoof), Masquerain [10%] (Surskit), Scyther [10%] (Pinsir), Ludicolo [10%] (Lombre) | Weather S.O.S: Castform"
         },
         {
           "FileNumber": 1637,
           "TableIndex": 2,
           "Area": "Fish",
           "Levels": "Lvl 30-40",
-          "Encounters": "Poliwhirl (Castform), Seaking (Goldeen), Gyarados (Magikarp), Basculin (Basculin 1), Basculin 1 (Basculin), Frogadier (Froakie) | Weather S.O.S: Castform"
+          "Encounters": "Poliwhirl [25%] (Castform), Seaking [15%] (Goldeen), Gyarados [20%] (Magikarp), Basculin [15%] (Basculin 1), Basculin 1 [15%] (Basculin), Frogadier [10%] (Froakie) | Weather S.O.S: Castform"
         },
         {
           "FileNumber": 1637,
           "TableIndex": 14,
           "Area": "Bubbles",
           "Levels": "Lvl 40-44",
-          "Encounters": "Poliwrath (Poliwhirl), Seaking, Castform, Basculin (Basculin 1), Basculin 1 (Basculin), Greninja (Frogadier), Politoed (Poliwhirl) | Weather S.O.S: Castform"
+          "Encounters": "Poliwrath [15%] (Poliwhirl), Seaking [10%], Castform [20%], Basculin [10%] (Basculin 1), Basculin 1 [10%] (Basculin), Greninja [20%] (Frogadier), Politoed [15%] (Poliwhirl) | Weather S.O.S: Castform"
         }
       ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Malie Dump",
+      "Weather": "Clear",
+      "Description": "This is now a seperate location.",
+      "LocationNumber": 55,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 177,
+          "Trainer": "Melvin",
+          "Class": "Janitor",
+          "Route": 1,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 366,
+          "Trainer": "Shawn",
+          "Class": "Janitor",
+          "Route": 2,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 383,
+          "Trainer": "Chase",
+          "Class": "Ace Trainer",
+          "Route": 3,
+          "Tags": "Miniboss",
+          "Description": ""
+        },
+        {
+          "TrainerId": 579,
+          "Trainer": "Nainoa",
+          "Class": "Rising Star",
+          "Route": 4,
+          "Tags": "",
+          "Description": "After finding the letter in a bottle at Ula\u0027ula Beach | Reward:"
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1494,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 40-45",
+          "Encounters": "Muk [10%] (Muk 1, Grimer, Grimer 1), Muk 1 [10%] (Muk, Grimer 1, Grimer), Raticate [10%] (Raticate 1, Rattata, Rattata 1), Magneton [10%] (Magnemite, Klang, Klink), Cinccino [10%] (Furfrou, Minccino), Garbodor [10%] (Trubbish, Drowzee, Hypno), Aromatisse [10%] (Spritzee, Nidorina, Nidoran-F), Slurpuff [10%] (Swirlix, Nidorino, Nidoran-M), Weezing 1 [10%] (Koffing, Weezing), Klefki [10%]"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 10",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 56,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 173,
+          "Trainer": "Mitchell",
+          "Class": "Cop",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 223,
+          "Trainer": "Grunt Invar",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": "change this guys team"
+        },
+        {
+          "TrainerId": 224,
+          "Trainer": "Grunt Bee",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 248,
+          "Trainer": "Andrea",
+          "Class": "Beauty",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 420,
+          "Trainer": "Alex",
+          "Class": "Firefighter",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1505,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 40-44",
+          "Encounters": "Perrserker [10%] (Meowth 2), Skarmory [10%] (Fearow, Spearow), Stunfisk 1 [10%] (Stunfisk), Charjabug [10%] (Loudred, Grubbin, Whismur), Galvantula [10%] (Joltik, Vivillon), Tauros 1 [10%] (Tauros, Tauros 2, Tauros 3), Bouffalant [10%] (Miltank), Wormadam [10%] (Wormadam 1, Wormadam 2, Mothim), Tauros 2 [10%] (Tauros 1, Tauros 3, Tauros), Tauros 3 [10%] (Tauros 2, Tauros 1, Tauros)"
+        },
+        {
+          "FileNumber": 1505,
+          "TableIndex": 2,
+          "Area": "Shaking Tree",
+          "Levels": "Lvl 35-44",
+          "Encounters": "Forretress [15%] (Pineco, Ariados, Ledian), Skarmory [15%] (Fearow), Pinsir [15%] (Scyther, Heracross), Scyther [15%] (Pinsir, Heracross), Ambipom [15%] (Aipom), Burmy [15%], Charjabug [10%]"
+        },
+        {
+          "FileNumber": 1505,
+          "TableIndex": 22,
+          "Area": "Berry Pile",
+          "Levels": "Lvl 40-44",
+          "Encounters": "Burmy [100%] (Mothim, Wormadam 1, Wormadam 2, Wormadam)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Mount Hokulani",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 57,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 284,
+          "Trainer": "Todd",
+          "Class": "Collector",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 286,
+          "Trainer": "Thomas",
+          "Class": "Hiker",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 344,
+          "Trainer": "Jessica",
+          "Class": "Businesswoman",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 476,
+          "Trainer": "Akira",
+          "Class": "Veteran",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 522,
+          "Trainer": "Sky",
+          "Class": "Putter",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1648,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 42-46",
+          "Encounters": "Beheeyem [10%] (Elgyem, Ditto), Minior 7 [10%] (Minior 8, Minior 9, Minior 10, Minior 11, Minior 12, Minior 13, Minior), Clefable [10%] (Wigglytuff, Clefairy, Jigglypuff, Vivillon 1), Metang [10%] (Porygon, Beldum, Porygon2, Ditto), Emolga [10%] (Minun, Ditto), Togedemaru [10%] (Plusle, Ditto), Solrock [10%] (Lunatone, Ditto), Lunatone [10%] (Solrock, Ditto), Sigilyph [10%] (Xatu, Ditto), Sneasel 1 [10%] (Sneasel, Weavile, Sneasler, Ditto)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Hokulani Observatory",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 58,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 506,
+          "Trainer": "Sophocles",
+          "Class": "Trial Captain",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 11",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 59,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 421,
+          "Trainer": "Alyssa",
+          "Class": "Youth Athlete",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 422,
+          "Trainer": "Sho",
+          "Class": "Youth Athlete",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 424,
+          "Trainer": "Clayton",
+          "Class": "Black Belt",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 437,
+          "Trainer": "Hayden",
+          "Class": "Kindergartner",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 616,
+          "Trainer": "Alvaro",
+          "Class": "Black Belt",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1571,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 34-39",
+          "Encounters": "Komala [10%] (Farfetch\u2019d), Staraptor [10%] (Toucannon, Staravia, Trumbeak), Parasect [10%] (Breloom, Paras, Shroomish), Pangoro [10%] (Scrafty, Pancham, Scraggy), Amoonguss [10%] (Shiinotic, Morelull, Foongus), Girafarig [10%] (Audino), Stantler [10%] (Wyrdeer), Sawsbuck [10%] (Sawsbuck 1, Sawsbuck 2, Sawsbuck 3), Chatot [10%] (Dodrio), Shiftry [10%] (Nuzleaf)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 12",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 60,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 254,
+          "Trainer": "Jayson",
+          "Class": "Scientist",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 326,
+          "Trainer": "Leilani",
+          "Class": "Up and Coming",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 327,
+          "Trainer": "Matthew",
+          "Class": "Rising Star",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 340,
+          "Trainer": "Sara",
+          "Class": "Swimsuit",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 393,
+          "Trainer": "Andrew",
+          "Class": "Collector",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 425,
+          "Trainer": "Lane",
+          "Class": "Punk Guy",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 426,
+          "Trainer": "Yoko",
+          "Class": "Punk Girl",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 631,
+          "Trainer": "Robert",
+          "Class": "Surf Dude",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1516,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 39-44",
+          "Encounters": "Graveler 1 [10%] (Graveler, Golem 1, Golem), Mudsdale [10%] (Zebstrika, Mudbray, Blitzle), Arcanine 1 [10%] (Arcanine, Growlithe 1), Turtonator [10%] (Torkoal), Houndoom [10%] (Manectric), Drampa [10%] (Druddigon), Heatmor [10%] (Durant), Durant [10%] (Heatmor), Mienshao [10%] (Primeape, Mienfoo, Mankey), Runerigus [10%] (Cofagrigus, Yamask 1, Yamask)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 13",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 61,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 1527,
+          "TableIndex": 0,
+          "Area": "Fish",
+          "Levels": "Lvl 36-42",
+          "Encounters": "Magikarp [25%] (Feebas), Seadra [15%] (Pyukumuku), Eelektrik [15%] (Chinchou), Bruxish [15%] (Staryu), Shellder [15%] (Clamperl), Qwilfish [15%] (Qwilfish 1)"
+        },
+        {
+          "FileNumber": 1527,
+          "TableIndex": 4,
+          "Area": "Bubbles",
+          "Levels": "Lvl 43-47",
+          "Encounters": "Gyarados [10%] (Milotic), Seadra [20%] (Pyukumuku, Kingdra), Eelektrik [20%] (Lanturn), Bruxish [20%] (Starmie), Cloyster [10%] (Gorebyss, Huntail), Qwilfish [20%] (Overqwil)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Ula\u0027ula Beach",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 61,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 1582,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 30-40",
+          "Encounters": "Dedenne [10%] (Pachirisu, Swalot, Grumpig), Hippowdon [10%] (Krokorok, Hippopotas, Sandile), Palossand [10%] (Crustle, Sandygast, Dwebble), Chatot [10%] (Hawlucha), Slowpoke [10%] (Slowpoke 1, Slowbro, Slowbro 2, Slowking, Slowking 1), Tyrogue [10%] (Hitmontop, Hitmonchan, Hitmonlee), Chansey [10%] (Blissey, Happiny), Chimecho [10%] (Ribombee, Chingling, Cutiefly), Furret [10%] (Diggersby, Sentret, Bunnelby), Corsola 1 [10%] (Corsola, Cursola)"
+        },
+        {
+          "FileNumber": 1582,
+          "TableIndex": 1,
+          "Area": "Berry Tree (Dedenne ONLY)",
+          "Levels": "Lvl 30-40",
+          "Encounters": "Dedenne [10%] (Pachirisu, Swalot, Grumpig), Hippowdon [10%] (Krokorok, Hippopotas, Sandile), Palossand [10%] (Crustle, Sandygast, Dwebble), Chatot [10%] (Hawlucha), Slowpoke [10%] (Slowpoke 1, Slowbro, Slowbro 2, Slowking, Slowking 1), Tyrogue [10%] (Hitmontop, Hitmonchan, Hitmonlee), Chansey [10%] (Blissey, Happiny), Chimecho [10%] (Ribombee, Chingling, Cutiefly), Furret [10%] (Diggersby, Sentret, Bunnelby), Corsola 1 [10%] (Corsola, Cursola)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Blush Mountain",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 62,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 365,
+          "Trainer": "Ishaan",
+          "Class": "Espeon User",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 427,
+          "Trainer": "Shane",
+          "Class": "Office Worker",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Tapu Village",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 62,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 575,
+          "Trainer": "Angus",
+          "Class": "Veteran",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1538,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 39-46",
+          "Encounters": "Ninetales 1 [10%] (Ninetales, Vulpix 1, Vulpix), Sandslash 1 [10%] (Sandslash, Sandshrew 1, Sandshrew), Piloswine [10%] (Gogoat, Swinub, Skiddo), Snorunt [10%] (Glalie, Froslass), Sneasel [10%] (Sneasel 1, Weavile, Sneasler), Absol [10%] (Delibird), Vanillish [10%] (Cryogonal, Vanillite), Beartic [10%] (Ursaring, Cubchoo, Teddiursa), Bergmite [10%] (Avalugg, Avalugg 1), Darmanitan 2 [10%] (Jynx, Darumaka 1) | Weather S.O.S: Castform, Cryogonal"
+        }
+      ],
+      "Items": [],
+      "Statics": [
+        {
+          "Type": "Trades",
+          "Index": 4,
+          "Species": "Scyther",
+          "Tags": "Requested: Any",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "LocationName": "Lanakila Base",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 63,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 240,
+          "Trainer": "Gladion",
+          "Class": "Pok\u00E9mon Trainer",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 415,
+          "Trainer": "Gladion",
+          "Class": "Pok\u00E9mon Trainer",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 416,
+          "Trainer": "Gladion",
+          "Class": "Pok\u00E9mon Trainer",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1791,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 39-46",
+          "Encounters": "Ninetales 1 [10%] (Ninetales, Vulpix 1, Vulpix), Sandslash 1 [10%] (Sandslash, Sandshrew 1, Sandshrew), Mr. Mime 1 [10%] (Mr. Mime, Mime Jr.), Jynx [10%] (Perrserker, Smoochum, Meowth 2), Sneasel [10%] (Sneasel 1, Weavile, Sneasler), Zoroark 1 [10%] (Zoroark, Zorua 1), Cryogonal [10%] (Vanillish), Abomasnow [10%] (Crabominable, Snover), Delibird [10%] (Beartic, Cubchoo), Darmanitan 2 [10%] (Amaura, Darumaka 1) | Weather S.O.S: Castform, Castform 3, Cryogonal"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 14",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 64,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 257,
+          "Trainer": "Hisato",
+          "Class": "Fisherman",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 269,
+          "Trainer": "Keoni",
+          "Class": "Swimmer Bro",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 341,
+          "Trainer": "Kawika",
+          "Class": "Collector",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 518,
+          "Trainer": "Brone",
+          "Class": "Veteran",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1538,
+          "TableIndex": 2,
+          "Area": "Fish",
+          "Levels": "Lvl 34-41",
+          "Encounters": "Luvdisc [30%], Bruxish [10%], Magikarp [20%], Feebas [15%], Relicanth [10%], Frillish [10%] (Frillish 1), Phione [5%]"
+        },
+        {
+          "FileNumber": 1538,
+          "TableIndex": 12,
+          "Area": "Bubbles",
+          "Levels": "Lvl 34-41",
+          "Encounters": "Alomomola [10%], Bruxish [20%], Gyarados [10%], Milotic [15%], Relicanth [20%], Jellicent [10%] (Jellicent 1), Phione [15%]"
+        },
+        {
+          "FileNumber": 1538,
+          "TableIndex": 14,
+          "Area": "Surf",
+          "Levels": "Lvl 33-43",
+          "Encounters": "Pelipper [10%] (Wingull), Tentacruel [10%] (Tentacool), Lapras [10%], Lumineon [10%] (Finneon), Frillish [10%] (Jellicent, Frillish 1, Jellicent 1), Alomomola [10%] (Luvdisc), Mantine [10%] (Mantyke), Floatzel [10%] (Buizel), Dewgong [10%] (Seel), Phione [10%]"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Thrifty Megamart",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 65,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 2033,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 36-44",
+          "Encounters": "Haunter [10%] (Gengar, Gastly), Dusclops [10%] (Wobbuffet), Banette [10%] (Shuppet), Klefki [10%] (Garbodor), Mimikyu [10%] (Pikachu 1, Mimikyu 1), Runerigus [10%] (Golurk), Spiritomb [10%] (Chimecho), Cofagrigus [10%] (Bronzong), Lampent [10%] (Gothorita), Rotom [10%] (Duosion)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Haina Desert",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 66,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 1604,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 40-47",
+          "Encounters": "Krookodile [10%] (Mandibuzz, Krokorok, Vullaby), Golurk [10%] (Runerigus, Golett, Yamask 1), Heliolisk [10%] (Scrafty, Helioptile, Scraggy), Claydol [10%] (Swellow, Baltoy, Taillow), Sigilyph [10%] (Cofagrigus, Yamask), Flygon [10%] (Gabite, Vibrava, Gible), Darmanitan [10%] (Delphox, Darumaka, Braixen), Hippowdon [10%] (Donphan, Hippopotas, Phanpy), Drapion [10%] (Gliscor), Cacnea [10%] (Cacturne, Maractus) | Weather S.O.S: Castform, Gabite"
+        },
+        {
+          "FileNumber": 1615,
+          "TableIndex": 8,
+          "Area": "Dust Spot",
+          "Levels": "Lvl 40-47",
+          "Encounters": "Krokorok [20%] (Mandibuzz, Krookodile, Vullaby), Dugtrio [20%] (Dugtrio 1), Heliolisk [15%] (Scrafty, Helioptile, Scraggy), Dunsparce [15%] (Dudunsparce, Dudunsparce 1), Gabite [15%] (Skorupi, Drapion), Trapinch [15%] (Hippopotas, Vibrava) | Weather S.O.S: Castform, Gabite"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 15",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 67,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 238,
+          "Trainer": "Plumeria",
+          "Class": "Team Skull Admin",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 251,
+          "Trainer": "Karla",
+          "Class": "Star Trainer",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 253,
+          "Trainer": "Yuki",
+          "Class": "Ace Trainer",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 270,
+          "Trainer": "Jake",
+          "Class": "Swimmer",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 271,
+          "Trainer": "Jared",
+          "Class": "Swimmer Bro",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 299,
+          "Trainer": "Yumi",
+          "Class": "Swimmer",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 300,
+          "Trainer": "Alexandria",
+          "Class": "Swim Gal",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 473,
+          "Trainer": "Grunt Jay",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 488,
+          "Trainer": "Kyra",
+          "Class": "Swimsuit",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 533,
+          "Trainer": "Jennis",
+          "Class": "Surf Dude",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1549,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 42-49",
+          "Encounters": "Pelipper [10%] (Masquerain), Swanna [10%] (Golduck, Ducklett, Psyduck), Slowpoke 1 [10%] (Slowpoke, Slowbro, Slowbro 2, Slowking, Slowking 1), Raichu 1 [10%] (Raichu, Pikachu), Crawdaunt [10%] (Corphish), Chatot [10%], Shuckle [10%] (Pyukumuku), Gumshoos [10%] (Bibarel, Yungoos, Bidoof), Raticate 1 [10%] (Raticate), Swellow [10%] (Taillow)"
+        },
+        {
+          "FileNumber": 1549,
+          "TableIndex": 2,
+          "Area": "Fish",
+          "Levels": "Lvl 25-35",
+          "Encounters": "Chinchou [20%], Wishiwashi [30%], Relicanth [15%], Clamperl [15%], Finneon [15%], Dhelmise [5%]"
+        },
+        {
+          "FileNumber": 1549,
+          "TableIndex": 6,
+          "Area": "Bubbles",
+          "Levels": "Lvl 35-45",
+          "Encounters": "Wishiwashi [20%], Lanturn [15%], Relicanth [15%], Huntail [10%], Gorebyss [10%], Lumineon [15%], Dhelmise [15%]"
+        },
+        {
+          "FileNumber": 1549,
+          "TableIndex": 16,
+          "Area": "Surf",
+          "Levels": "Lvl 42-49",
+          "Encounters": "Lapras [15%], Sharpedo [15%] (Carvanha), Wailord [10%] (Wailmer), Dragalge [15%] (Skrelp), Clawitzer [15%] (Clauncher), Mantine [15%] (Remoraid, Mantyke), Dragonair [5%] (Dratini), Walrein [10%] (Sealeo)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 16",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 68,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 342,
+          "Trainer": "Reid",
+          "Class": "Scientist",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 520,
+          "Trainer": "Kindra",
+          "Class": "Preschooler",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 565,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 623,
+          "Trainer": "Dexio",
+          "Class": "Kalosian Man",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1549,
+          "TableIndex": 8,
+          "Area": "Berry Pile",
+          "Levels": "Lvl 38-44",
+          "Encounters": "Kricketune [100%] (Volbeat, Illumise, Electrode 1)"
+        },
+        {
+          "FileNumber": 1549,
+          "TableIndex": 10,
+          "Area": "Grass",
+          "Levels": "Lvl 43-50",
+          "Encounters": "Scrafty [10%] (Scraggy), Porygon [10%] (Castform), Reuniclus [10%] (Duosion), Gothitelle [10%] (Gothorita), Farfetch\u2019d [10%] (Farfetch\u2019d 1, Sirfetch\u2019d), Kricketune [10%] (Kricketot), Linoone [10%] (Linoone 1, Zigzagoon, Zigzagoon 1), Walrein [10%] (Sealeo, Spheal), Arbok [10%], Ditto [10%] (Type: Null) | Weather S.O.S: Castform"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Ula\u0027ula Meadow",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 69,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 291,
+          "Trainer": "Rylee",
+          "Class": "Lass",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 343,
+          "Trainer": "Mireille",
+          "Class": "Dancer",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 428,
+          "Trainer": "Michelle",
+          "Class": "Businesswoman",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 465,
+          "Trainer": "Dean",
+          "Class": "Ace Trainer",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 538,
+          "Trainer": "Meredith",
+          "Class": "Actor",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1626,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 44-51",
+          "Encounters": "Oricorio [10%], Ariados [10%] (Spinarak), Ledian [10%] (Ledyba), Floette [10%] (Floette 1, Floette 2, Floette 3, Flab\u00E9b\u00E9 4, Flab\u00E9b\u00E9 1, Flab\u00E9b\u00E9 2, Flab\u00E9b\u00E9), Ribombee [10%] (Cutiefly), Cottonee [10%] (Whimsicott), Petilil [10%] (Lilligant, Lilligant 1), Roserade [10%] (Roselia), Vespiquen [10%] (Combee, Beedrill), Girafarig [10%] (Stantler)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Route 17",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 70,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 141,
+          "Trainer": "Grunt",
+          "Class": "Skull Gang",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 227,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 232,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 310,
+          "Trainer": "Grunt",
+          "Class": "Skull Gang",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 311,
+          "Trainer": "Grunt",
+          "Class": "Skull Gang",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 319,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1560,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 42-47",
+          "Encounters": "Fearow [10%], Sliggoo [10%] (Sliggoo 1, Goomy), Toxicroak [10%] (Scrafty, Croagunk, Scraggy), Skarmory [10%], Sliggoo 1 [10%] (Sliggoo, Goomy), Stantler [10%] (Girafarig), Bisharp [10%] (Pawniard), Bouffalant [10%], Dodrio [10%], Talonflame [10%] | Weather S.O.S: Castform, Goomy"
+        },
+        {
+          "FileNumber": 1560,
+          "TableIndex": 2,
+          "Area": "Berry Pile",
+          "Levels": "Lvl 42-47",
+          "Encounters": "Tropius [100%] (Oranguru, Passimian, Scyther)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Po Town",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 71,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 231,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 235,
+          "Trainer": "Guzma",
+          "Class": "Team Skull Boss",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 312,
+          "Trainer": "Grunt",
+          "Class": "Skull Gang",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 313,
+          "Trainer": "Grunt",
+          "Class": "Skull Gang",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 314,
+          "Trainer": "Grunt",
+          "Class": "Skull Gang",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 315,
+          "Trainer": "Grunt",
+          "Class": "Skull Gang",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 316,
+          "Trainer": "Grunt",
+          "Class": "Skull Gang",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 318,
+          "Trainer": "Grunt",
+          "Class": "Skull Gang",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 321,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 322,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 323,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 324,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 457,
+          "Trainer": "Grunt",
+          "Class": "Skull Gang",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 458,
+          "Trainer": "Grunt",
+          "Class": "Skull Gang",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 524,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 525,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 566,
+          "Trainer": "Grunt",
+          "Class": "Team Skull",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        },
+        {
+          "TrainerId": 570,
+          "Trainer": "Royce",
+          "Class": "Office Worker",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [
+        {
+          "FileNumber": 1593,
+          "TableIndex": 0,
+          "Area": "Walking",
+          "Levels": "Lvl 46-53",
+          "Encounters": "Smeargle [10%], Raticate 1 [10%] (Raticate, Rattata 1, Rattata), Garbodor [10%] (Weezing, Weezing 1), Muk 1 [10%] (Muk, Grimer 1, Grimer), Honchkrow [10%] (Mismagius, Murkrow, Misdreavus), Scrafty [10%] (Whirlipede, Scraggy, Scolipede), Skuntank [10%] (Purugly, Stunky, Glameow), Mandibuzz [10%] (Golbat, Vullaby, Crobat), Obstagoon [10%] (Linoone, Linoone 1), Liepard [10%] (Persian 1)"
+        }
+      ],
+      "Items": [],
+      "Statics": []
+    },
+    {
+      "LocationName": "Mount Lanakila",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 99,
+      "Shops": [],
+      "Trainers": [],
+      "WildEncounters": [],
       "Items": [],
       "Statics": []
     }
@@ -5264,59 +6477,59 @@
   "Shops": [
     {
       "Name": "1 Trial",
-      "Items": []
+      "ShopInfo": "Pok\u00E9 Doll, Escape Rope, Shiny Charm, Pok\u00E9 Ball, Heal Ball, Nest Ball, Great Ball, Net Ball, Dusk Ball, Heart Scale, Rare Candy, Adrenaline Orb, Blue Box, Pink Box, B.F.F Heart, Moldy Cookie, Max Repel, Max Elixir, Pok\u00E9 Doll, Escape Rope, Shiny Charm"
     },
     {
       "Name": "2 Trials",
-      "Items": []
+      "ShopInfo": "Pok\u00E9 Ball, Heal Ball, Nest Ball, Great Ball, Net Ball, Dusk Ball, Quick Ball, Ultra Ball, Heart Scale, Rare Candy, Adrenaline Orb, Blue Box, Pink Box, B.F.F Heart, Moldy Cookie, Max Repel, Max Elixir, Pok\u00E9 Doll, Escape Rope, Shiny Charm, Pok\u00E9 Ball, Heal Ball, Nest Ball, Great Ball, Net Ball, Dusk Ball, Quick Ball, Ultra Ball, Heart Scale, Rare Candy, Adrenaline Orb, PP Max, Blue Box, Pink Box, B.F.F Heart, Moldy Cookie, Max Repel"
     },
     {
       "Name": "3 Trials",
-      "Items": []
+      "ShopInfo": "Max Elixir, Pok\u00E9 Doll, Escape Rope, Shiny Charm, Master Ball, Pok\u00E9 Ball, Heal Ball, Nest Ball, Great Ball, Net Ball, Dusk Ball, Quick Ball, Ultra Ball, Heart Scale, Rare Candy, Adrenaline Orb, PP Max, Blue Box, Pink Box, B.F.F Heart, Moldy Cookie, Max Repel, Max Elixir, Pok\u00E9 Doll, Escape Rope, Shiny Charm, Sea Incense, Lax Incense, Rose Incense, Pure Incense, Rock Incense, Odd Incense, Luck Incense, Full Incense, Wave Incense, Mental Herb, White Herb, Power Herb, Revival Herb, Cheri Berry, Chesto Berry, Pecha Berry, Rawst Berry, Aspear Berry, Persim Berry, Leppa Berry, Micle Berry, Heat Rock, Damp Rock, Icy Rock, Smooth Rock, Terrain Extender, Mental Herb, Light Clay, Float Stone, Grip Claw, Destiny Knot, Ring Target, Everstone, TM016, TM017, TM020, TM033, TM070, TM007, TM011, TM018, TM037, Helix Fossil, Dome Fossil, Old Amber, Root Fossil, Claw Fossil, Armor Fossil, Skull Fossil, Cover Fossil, Plume Fossil, Sail Fossil, Jaw Fossil, Scope Lens, Metronome, Iron Ball, TM042, TM065, TM069, TM077, TM089, Decidium Z, Incinium Z, Primarium Z, Dragonium Z, Fairium Z, Eevium Z, TM004, TM014, TM015, TM022, TM025, TM034, TM038, TM052, TM068, TM071, TM009, TM040, TM047, TM051, TM078, Fire Stone, Thunder Stone, Water Stone, Leaf Stone, Light Clay, Big Root, King\u2019s Rock, Flame Orb, Toxic Orb, Sharp Beak, Never-Melt Ice, Black Belt, Black Glasses, Metal Coat, Charcoal, Miracle Seed, TM026, TM050, TM060, TM075, TM090, TM048, TM056, TM094, Gyaradosite, Yellow Nectar, Pink Nectar, Red Nectar, Purple Nectar, X Speed, X Attack, X Defense, Guard Spec., Dire Hit, X Accuracy, X Sp. Atk, X Sp. Def, Blue Box, Pink Box, TM026, TM050, TM090, TM094, TM097, TM098, X Speed, X Attack, X Defense, Guard Spec., Dire Hit, X Accuracy, X Sp. Atk, X Sp. Def, Qualot Berry, Tamato Berry, Hondew Berry, Grepa Berry, Kelpsy Berry, Pomeg Berry, Bottle Cap, Gold Bottle Cap"
     },
     {
       "Name": "Big Wave Beach",
-      "Items": []
+      "ShopInfo": ""
     },
     {
       "Name": "Hau\u0027oli City [X Items]",
-      "Items": []
+      "ShopInfo": "Energy Root, Delphoxite, Energy Root, Greninjite X, Energy Root, Greninjite Y, Energy Root, Absolite, Fresh Water, Absolite Z, Fresh Water, Venusaurite, Energy Root, Charizardite X, Energy Root, Charizardite Y, Energy Root, Blastoisinite, Energy Root, Meganiumite, Energy Root, Feraligite, Energy Root, Darmanitanite, Elixir, GalDarmanitanite, Elixir, Lucarionite, Elixir, Lucarionite Z, Elixir, Golurkite, Energy Root, Crabominite, Energy Root, Altarianite, Energy Root, Alakazite, Elixir, Steelixite, Elixir, Sceptilite, Energy Root, Blazikenite, Energy Root, Swampertite, Energy Root, Gyaradosite, Elixir, Medichamite, Energy Root, Sharpedonite, Fresh Water"
     },
     {
       "Name": "Heahea Beach",
-      "Items": []
+      "ShopInfo": ""
     },
     {
       "Name": "Heahea City [TMs]",
-      "Items": []
+      "ShopInfo": "Aggronite, Elixir, Banettite, Energy Root, Glalitite, Elixir, Froslassite, Elixir, Aerodactylite, Elixir, Slowbronite, Elixir, Clefablite, Energy Root, Raichunite, Energy Root, AloRaichunite, Energy Root, Starminite, Elixir, Skarmorite, Energy Root, Emboarite, Energy Root, Excadrite, Fresh Water, Scolipite, Fresh Water, Scraftinite, Fresh Water, Eelektrossite, Energy Root, Chandelurite, Elixir, Barbaracite, Elixir, Pyroarite, Fresh Water, Dragalgite, Elixir, Hawluchanite, Energy Root, Drampanite, Elixir, Staraptite, Energy Root, Lansat Berry, Pinap Berry, TM016, Lost Item, Ability Urge, GB Sounds, TM046, TM029, Armor Fossil, TM039, Squirt Bottle, TM066, Protector, Relic Crown, Good Rod, Normal Gem, Eevium Z, Ice Mem., TM033, Super Rod, Choice Band, Bike, Meowstite, Smooth Rock, Stable Mulch, TM070, TM050, Persim Berry, White Herb, Protein, Power Herb, Journal"
     },
     {
       "Name": "No Trials",
-      "Items": []
+      "ShopInfo": "Pok\u00E9 Ball, Nest Ball, Heal Ball, Heart Scale, Max Repel, Max Elixir, Pok\u00E9 Doll, Rare Candy, Shiny Charm, Pok\u00E9 Ball, Nest Ball, Heal Ball, Great Ball, Heart Scale, Rare Candy, Adrenaline Orb, Max Repel, Max Elixir, Pok\u00E9 Doll, Escape Rope, Shiny Charm, Pok\u00E9 Ball, Heal Ball, Nest Ball, Great Ball, Heart Scale, Rare Candy, Adrenaline Orb, B.F.F Heart, Moldy Cookie, Max Repel, Max Elixir, Pok\u00E9 Doll, Escape Rope, Shiny Charm, Pok\u00E9 Ball, Heal Ball, Nest Ball, Great Ball, Net Ball, Dusk Ball, Heart Scale, Rare Candy, Adrenaline Orb, B.F.F Heart, Moldy Cookie, Max Repel, Max Elixir"
     },
     {
       "Name": "Route 2 [Misc]",
-      "Items": []
+      "ShopInfo": "Cameruptite, Fresh Water"
     },
     {
       "Name": "Route 8 [Misc]",
-      "Items": []
+      "ShopInfo": "Icium Z Node, Normalium Z, Incinium Z"
     },
     {
       "Name": "Royal Avenue [TMs]",
-      "Items": []
+      "ShopInfo": "Damp Rock, Light Clay, Nugget"
     },
     {
       "Name": "Thrifty Megamart, Left [Pok\u00E9 Balls]",
-      "Items": []
+      "ShopInfo": "Thick Club"
     },
     {
       "Name": "Thrifty Megamart, Middle [Misc]",
-      "Items": []
+      "ShopInfo": "Thick Club, Thick Club, Thick Club, Thick Club, Thick Club, Thick Club, Thick Club, Thick Club, Thick Club, Thick Club, Thick Club, Thick Club, Thick Club"
     },
     {
       "Name": "Thrifty Megamart, Right [Strange Souvenir]",
-      "Items": []
+      "ShopInfo": "Thick Club, Thick Club, Thick Club"
     }
   ]
 }
