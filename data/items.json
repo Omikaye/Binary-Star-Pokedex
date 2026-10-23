@@ -23,8 +23,8 @@
     "buyPrice": 600,
     "sellPrice": 300
   },
-  "pok\u00E9ball": {
-    "name": "Pok\u00E9 Ball",
+  "pokeball": {
+    "name": "Poke Ball",
     "num": 4,
     "desc": "A device for catching wild Pok\u00E9mon. It\u2019s thrown like a ball at a Pok\u00E9mon, comfortably encapsulating its target. (1x Catch Rate)",
     "shortDesc": "",
@@ -495,8 +495,8 @@
     "buyPrice": 2000,
     "sellPrice": 1000
   },
-  "pok\u00E9doll": {
-    "name": "Pok\u00E9 Doll",
+  "pokedoll": {
+    "name": "Poke Doll",
     "num": 63,
     "desc": "A doll that attracts the attention of a Pok\u00E9mon. It guarantees escape from any battle with wild Pok\u00E9mon.",
     "shortDesc": "",
@@ -3439,8 +3439,8 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "pok\u00E9radar": {
-    "name": "Pok\u00E9 Radar",
+  "pokeradar": {
+    "name": "Poke Radar",
     "num": 431,
     "desc": "A tool that can search out Pok\u00E9mon that are hiding in the tall grass. Its battery is recharged as you walk.",
     "shortDesc": "",
@@ -4607,8 +4607,8 @@
     "buyPrice": 2320,
     "sellPrice": 1160
   },
-  "pok\u00E9toy": {
-    "name": "Pok\u00E9 Toy",
+  "poketoy": {
+    "name": "Poke Toy",
     "num": 577,
     "desc": "A toy that attracts the attention of a Pok\u00E9mon. It guarantees escape from any battle with wild Pok\u00E9mon.",
     "shortDesc": "",
@@ -4999,7 +4999,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "xtransceiver_626": {
+  "xtransceiver": {
     "name": "Xtransceiver",
     "num": 626,
     "desc": "A high-tech transceiver with a camera function. It allows up to four-way calls.",
@@ -5023,7 +5023,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "dnasplicers_629": {
+  "dnasplicers2": {
     "name": "DNA Splicers",
     "num": 629,
     "desc": "A splicer that separates Kyurem and a certain Pok\u00E9mon when they have been fused.",
@@ -5087,7 +5087,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "droppeditem_637": {
+  "droppeditem637": {
     "name": "Dropped Item",
     "num": 637,
     "desc": "The Xtransceiver found at the Nimbasa City amusement park. It seems it belongs to a girl.",
@@ -5199,8 +5199,8 @@
     "buyPrice": 4500,
     "sellPrice": 2250
   },
-  "pok\u00E9flute": {
-    "name": "Pok\u00E9 Flute",
+  "pokeflute": {
+    "name": "Poke Flute",
     "num": 651,
     "desc": "A flute that can play with such a beautiful tone that even sleeping Pok\u00E9mon find themselves roused.",
     "shortDesc": "",
@@ -5695,7 +5695,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "bike_713": {
+  "bike713": {
     "name": "Bike",
     "num": 713,
     "desc": "A folding Bike that enables a rider to get around much faster than with Running Shoes.",
@@ -5703,7 +5703,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "holocaster_714": {
+  "holocaster714": {
     "name": "Holo Caster",
     "num": 714,
     "desc": "A device that allows users to receive and view hologram clips at any time. It\u2019s also used to chat with others.",
@@ -5775,7 +5775,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "basementkey_723": {
+  "basementkey723": {
     "name": "Basement Key",
     "num": 723,
     "desc": "The key to New Mauville, which was constructed beneath Mauville City.",
@@ -5783,8 +5783,8 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "pok\u00E9blockkit": {
-    "name": "Pok\u00E9block Kit",
+  "pokeblockkit": {
+    "name": "Pokeblock Kit",
     "num": 724,
     "desc": "A set containing a Berry Blender for making Pok\u00E9blocks and a Pok\u00E9block Case for storing Pok\u00E9blocks.",
     "shortDesc": "",
@@ -5863,7 +5863,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "storagekey_734": {
+  "storagekey734": {
     "name": "Storage Key",
     "num": 734,
     "desc": "A key that opens the storage hold inside Sea Mauville.",
@@ -5879,7 +5879,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "ssticket_736": {
+  "ssticket736": {
     "name": "S.S. Ticket",
     "num": 736,
     "desc": "Ticket required for sailing on a ferry.",
@@ -5911,7 +5911,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "contestcostume_740": {
+  "contestcostume740": {
     "name": "Contest Costume",
     "num": 740,
     "desc": "A very cute dress to be worn during the Contest Spectacular.",
@@ -5999,7 +5999,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "meteorite_751": {
+  "meteorite751": {
     "name": "Meteorite",
     "num": 751,
     "desc": "A Meteorite that you got at Mt. Chimney. It gives off a faint glow.",
@@ -6159,7 +6159,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "meteorite_771": {
+  "meteorite771": {
     "name": "Meteorite",
     "num": 771,
     "desc": "A Meteorite that you got at Mt. Chimney. It continues to give off a faint glow and is slightly warm to the touch.",
@@ -6167,7 +6167,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "meteorite_772": {
+  "meteorite772": {
     "name": "Meteorite",
     "num": 772,
     "desc": "A Meteorite that you got at Mt. Chimney. Some sort of pattern has risen to the surface, and it\u2019s shining with seven colors of light.",
@@ -7551,7 +7551,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "nsolarizer_945": {
+  "nsolarizer945": {
     "name": "N-Solarizer",
     "num": 945,
     "desc": "A machine to separate Necrozma, which needed light, from Solgaleo.",
@@ -7559,7 +7559,7 @@
     "buyPrice": 0,
     "sellPrice": 0
   },
-  "nlunarizer_946": {
+  "nlunarizer946": {
     "name": "N-Lunarizer",
     "num": 946,
     "desc": "A machine to separate Necrozma, which needed light, from Lunala.",
