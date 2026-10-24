@@ -127,13 +127,27 @@
     };
   };
 
+  function countLocations(entries) {
+    var seen = {};
+    var n = 0;
+    entries.forEach(function (e) {
+      var key = e.location && (e.location.id != null ? e.location.id : e.location.name);
+      if (!seen[key]) { seen[key] = true; n++; }
+    });
+    return n;
+  }
+
+  // wild/sos count each location once, however many encounter methods match
   window.getPokemonUsage = function (id) {
     var d = window.getPokemonUsageDetail(id);
-    var wild = d.wild.length + d.sos.length;
+    var wild = countLocations(d.wild);
+    var sos = countLocations(d.sos);
     var trainer = d.trainer.length;
     var status = '';
-    if (!wild && !trainer) status = 'unused';
-    else if (!wild && trainer && !d.prevoWild.length) status = 'trainer-only';
-    return { wild: wild, trainer: trainer, status: status };
+    if (!wild && !sos && !trainer) status = 'unused';
+    else if (!wild && !sos && trainer && !d.prevoWild.length) status = 'trainer-only';
+    else if (!trainer && wild) status = 'wild-only';
+    else if (!trainer && !wild && sos) status = 'sos-only';
+    return { wild: wild, sos: sos, trainer: trainer, status: status };
   };
 })();
