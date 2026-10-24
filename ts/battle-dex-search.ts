@@ -817,7 +817,9 @@ abstract class BattleTypedSearch<T extends SearchType> {
     sortCol?: string | null,
     reverseSort?: boolean
   ): SearchRow[] {
-    if (sortCol === "type") {
+    if (this.searchType === "usage") {
+      // usage search handles its own sorting below
+    } else if (sortCol === "type") {
       return [
         this.sortRow!,
         ...BattleTypeSearch.prototype.getDefaultResults.call(this),
@@ -1280,6 +1282,12 @@ class BattleUsageSearch extends BattleTypedSearch<"usage"> {
       return results.sort(([, id1], [, id2]) => {
         const usage1 = (window as any).getPokemonUsage?.(id1)?.wild || 0;
         const usage2 = (window as any).getPokemonUsage?.(id2)?.wild || 0;
+        return (usage2 - usage1) * sortOrder;
+      });
+    } else if (sortCol === "sos") {
+      return results.sort(([, id1], [, id2]) => {
+        const usage1 = (window as any).getPokemonUsage?.(id1)?.sos || 0;
+        const usage2 = (window as any).getPokemonUsage?.(id2)?.sos || 0;
         return (usage2 - usage1) * sortOrder;
       });
     } else if (sortCol === "trainer") {

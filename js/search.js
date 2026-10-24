@@ -185,8 +185,9 @@
 				self.find('');
 				return;
 			}
-			if (activeType === 'usage' && ['name', 'type', 'wild', 'trainer'].includes(sortCol)) {
-				self.sortCol = sortCol;
+			if (activeType === 'usage' && ['name', 'type', 'wild', 'sos', 'trainer'].includes(sortCol)) {
+				self.engine.toggleSort(sortCol);
+				self.sortCol = self.engine.sortCol;
 				self.find('');
 				return;
 			}
@@ -298,7 +299,7 @@
 			}.bind(this));
 			this.resultSet = headerRowsM.concat(dataRowsM);
 		}
-		if (activeType === 'usage' && ['name', 'type', 'wild', 'trainer'].includes(this.sortCol)) {
+		if (activeType === 'usage' && ['name', 'type', 'wild', 'sos', 'trainer'].includes(this.sortCol)) {
 			var headerRowsU = [];
 			var dataRowsU = [];
 			for (var rU of this.resultSet) {
@@ -306,19 +307,22 @@
 				else if (rU[0] === 'usage') dataRowsU.push(rU);
 				else headerRowsU.push(rU);
 			}
+			var dirU = this.engine.reverseSort ? -1 : 1;
 			dataRowsU.sort(function(a, b) {
 				var idA = a[1];
 				var idB = b[1];
-				if (this.sortCol === 'wild' || this.sortCol === 'trainer') {
+				if (this.sortCol === 'wild' || this.sortCol === 'sos' || this.sortCol === 'trainer') {
 					var usageA = getPokemonUsage(idA)[this.sortCol] || 0;
 					var usageB = getPokemonUsage(idB)[this.sortCol] || 0;
-					if (usageA !== usageB) return usageB - usageA;
+					if (usageA !== usageB) return (usageB - usageA) * dirU;
+					return 0;
 				} else if (this.sortCol === 'type') {
 					var typeA = ((getID(BattlePokedex, idA).types || [])[0] || '');
 					var typeB = ((getID(BattlePokedex, idB).types || [])[0] || '');
-					if (typeA !== typeB) return typeA < typeB ? -1 : 1;
+					if (typeA !== typeB) return (typeA < typeB ? -1 : 1) * dirU;
+					return 0;
 				}
-				return idA < idB ? -1 : idA > idB ? 1 : 0;
+				return (idA < idB ? -1 : idA > idB ? 1 : 0) * dirU;
 			}.bind(this));
 			this.resultSet = headerRowsU.concat(dataRowsU);
 		}
@@ -550,6 +554,7 @@
 		buf += '<button class="sortcol pnamesortcol' + (this.sortCol === 'name' ? ' cur' : '') + '" data-sort="name">Name</button>';
 		buf += '<button class="sortcol typesortcol' + (this.sortCol === 'type' ? ' cur' : '') + '" data-sort="type">Types</button>';
 		buf += '<button class="sortcol userssortcol' + (this.sortCol === 'wild' ? ' cur' : '') + '" data-sort="wild">Wild</button>';
+		buf += '<button class="sortcol userssortcol' + (this.sortCol === 'sos' ? ' cur' : '') + '" data-sort="sos">SOS</button>';
 		buf += '<button class="sortcol userssortcol' + (this.sortCol === 'trainer' ? ' cur' : '') + '" data-sort="trainer">Trainer</button>';
 		buf += '</div></li>';
 		return buf;
@@ -661,7 +666,7 @@
 		var id = toID(pokemon.name);
 		if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'usage/' + id + '" data-target="push"';
 		var usageInfo = getPokemonUsage(id);
-		var usageStyle = usageInfo.status === 'unused' ? ' style="background:#f8c4c4"' : (usageInfo.status === 'trainer-only' ? ' style="background:#ffd9a0"' : '');
+		var usageStyle = usageInfo.status === 'unused' ? ' style="background:#f8c4c4"' : (usageInfo.status === 'trainer-only' ? ' style="background:#ffd9a0"' : (usageInfo.status === 'wild-only' ? ' style="background:#bcd8f8"' : (usageInfo.status === 'sos-only' ? ' style="background:#c4f0c4"' : '')));
 		var buf = '<li class="result"><a' + attrs + usageStyle + ' data-entry="usage|' + escapeHTML(pokemon.name) + '">';
 
 		// Dex number: show base species num for forms (e.g. 3-A instead of 1026-A)
@@ -725,6 +730,7 @@
 		// Get usage counts
 		var usage = getPokemonUsage(id);
 		buf += '<span class="col statcol" style="width:80px"><em>Wild</em><br />' + usage.wild + '</span> ';
+		buf += '<span class="col statcol" style="width:80px"><em>SOS</em><br />' + usage.sos + '</span> ';
 		buf += '<span class="col statcol" style="width:80px"><em>Trainer</em><br />' + usage.trainer + '</span> ';
 
 		buf += '</a></li>';
