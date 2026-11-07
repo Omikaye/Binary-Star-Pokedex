@@ -321,9 +321,7 @@
       "Weather": "Clear",
       "Description": "Formerly was part of Route 1, now this is its own location. | Scatterbug found here will evolve into Marine Pattern Vivillon | Every Pokemart has items with a number in parentheses. That is the number of trials needed to unlock that item. So an item with \u0022(2)\u0022 will unlock after completing two Totem battles.",
       "LocationNumber": 4,
-      "Shops": [
-        "No Trials"
-      ],
+      "Shops": [],
       "Trainers": [
         {
           "TrainerId": 512,
@@ -634,7 +632,22 @@
           "Method": "3F, from Principal Asuka for defeating her, after becoming Champion (change me)"
         }
       ],
-      "Statics": []
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 237,
+          "Species": "Misdreavus",
+          "Tags": "Quest, Capturable",
+          "Description": "Seven Mysteries Quest"
+        },
+        {
+          "Type": "Statics",
+          "Index": 238,
+          "Species": "Sableye",
+          "Tags": "Quest, Capturable",
+          "Description": "Seven Mysteries Quest"
+        }
+      ]
     },
     {
       "LocationName": "Hau\u0027oli Beach",
@@ -1161,7 +1174,36 @@
           "Method": "Ilima\u0027s house, from Ilima after defeating him at the Trainers\u0027 School, after becoming Champion"
         }
       ],
-      "Statics": []
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 233,
+          "Species": "Bewear",
+          "Tags": "Quest, Capturable",
+          "Description": "Quest in Hau\u0027oli City Mall. Bewear disturbance quest in the Bewear costume show, after completing Olivia\u0027s grand trial and seeing the Alola Ride Show (daytime)"
+        },
+        {
+          "Type": "Statics",
+          "Index": 234,
+          "Species": "Hypno",
+          "Tags": "Quest, Capturable",
+          "Description": "Quest: Hau\u0027oli Police Station quest, after defeating Kahuna Olivia"
+        },
+        {
+          "Type": "Statics",
+          "Index": 235,
+          "Species": "Hypno",
+          "Tags": "Quest, Capturable",
+          "Description": "Quest: Hau\u0027oli Police Station quest, after defeating Kahuna Olivia"
+        },
+        {
+          "Type": "Statics",
+          "Index": 236,
+          "Species": "Hypno",
+          "Tags": "Quest, Capturable",
+          "Description": "Quest: Hau\u0027oli Police Station quest, after defeating Kahuna Olivia"
+        }
+      ]
     },
     {
       "LocationName": "Hau\u0027oli Marina",
@@ -1206,7 +1248,7 @@
     {
       "LocationName": "Route 2",
       "Weather": "Clear",
-      "Description": "Note: Due to limitations, berry trees can only have 1 main encounter. Still looking for a fix, but using S.O.S. is the only way to get around it for now.",
+      "Description": "",
       "LocationNumber": 9,
       "Shops": [
         "1 Trial",
@@ -1418,7 +1460,7 @@
           "Index": 133,
           "Species": "Happiny",
           "Tags": "Optional",
-          "Description": "This Happiny is the first thing encountered in the Route 2 grass nearest to Hau\u0027oli."
+          "Description": "This Happiny is always the first thing encountered in the Route 2 grass nearest to Hau\u0027oli."
         },
         {
           "Type": "Trades",
@@ -1432,7 +1474,7 @@
     {
       "LocationName": "Berry Fields",
       "Weather": "Clear",
-      "Description": "To gain access to the berry fields, you must defeat Gentleman Stanley",
+      "Description": "To gain access to the berry fields, you must defeat Gentleman Stanley. | Note: Due to limitations, berry trees can only have 1 main encounter. Still looking for a fix, but using S.O.S. is the only way to get around it for now. The berry tree will ALWAYS have crabrawler as its first encounter.",
       "LocationNumber": 10,
       "Shops": [],
       "Trainers": [],
@@ -1832,21 +1874,21 @@
           "Index": 5,
           "Species": "Yungoos",
           "Tags": "Story",
-          "Description": "Trial 1, dust cloud 1."
+          "Description": "Normal Trial - Dust cloud 1"
         },
         {
           "Type": "Statics",
           "Index": 6,
           "Species": "Raticate 1",
           "Tags": "Story",
-          "Description": "Trial 1, dust cloud 3."
+          "Description": "Normal Trial - Dust cloud 3"
         },
         {
           "Type": "Statics",
           "Index": 7,
           "Species": "Teddiursa",
           "Tags": "Story",
-          "Description": "Trial 1, dust cloud 2."
+          "Description": "Normal Trial - Dust cloud 2"
         }
       ]
     },
@@ -1894,14 +1936,14 @@
           "Index": 4,
           "Species": "Gumshoos 1",
           "Tags": "Story Boss",
-          "Description": "Totem Megamax Gumshoos: Trial 1"
+          "Description": "Normal Trial - Totem Megamax Gumshoos"
         },
         {
           "Type": "Statics",
           "Index": 8,
           "Species": "Rattata 1",
           "Tags": "Story, S.O.S. Ally",
-          "Description": "Totem Gumshoos\u0027 ally."
+          "Description": "Normal Trial - Totem Gumshoos\u0027 ally."
         }
       ]
     },
@@ -3538,7 +3580,36 @@
           "Method": "Past the grass field on the southeast side of the third lake from the Route 5 entrance"
         }
       ],
-      "Statics": []
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 15,
+          "Species": "Goldeen",
+          "Tags": "Story",
+          "Description": "Water Trial - North Lake Splashes"
+        },
+        {
+          "Type": "Statics",
+          "Index": 16,
+          "Species": "Wishiwashi",
+          "Tags": "Story",
+          "Description": "Water Trial - South Lake Splashes"
+        },
+        {
+          "Type": "Statics",
+          "Index": 138,
+          "Species": "Dewpider",
+          "Tags": "Story",
+          "Description": "Water Trial - South Lake Splashes"
+        },
+        {
+          "Type": "Statics",
+          "Index": 139,
+          "Species": "Ducklett",
+          "Tags": "Story",
+          "Description": "Water Trial - North Lake Splashes"
+        }
+      ]
     },
     {
       "LocationName": "Brooklet Cove",
@@ -3592,7 +3663,29 @@
           "Method": "From Lana after completing the trial"
         }
       ],
-      "Statics": []
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 137,
+          "Species": "Araquanid 1",
+          "Tags": "Story Boss",
+          "Description": "Water Trial - Totem Megamax Araquanid"
+        },
+        {
+          "Type": "Statics",
+          "Index": 140,
+          "Species": "Luvdisc",
+          "Tags": "Story, S.O.S. Ally",
+          "Description": "Water Trial - Araquanid Ally 1 (Will appear first if Araquanid \u003E50% HP)"
+        },
+        {
+          "Type": "Statics",
+          "Index": 141,
+          "Species": "Tentacool",
+          "Tags": "Story, S.O.S. Ally",
+          "Description": "Water Trial - Araquanid Ally 1 (Will appear first if Araquanid \u003C50% HP)"
+        }
+      ]
     },
     {
       "LocationName": "Ten Carat Sea",
@@ -4250,7 +4343,36 @@
           "Method": "From Kiawe after defeating him and Hiker David during Mina\u0027s trial"
         }
       ],
-      "Statics": []
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 20,
+          "Species": "Marowak 1",
+          "Tags": "Story",
+          "Description": "Fire Trial - Dancing Marowak 1"
+        },
+        {
+          "Type": "Statics",
+          "Index": 21,
+          "Species": "Marowak 1",
+          "Tags": "Story",
+          "Description": "Fire Trial - Dancing Marowak 2"
+        },
+        {
+          "Type": "Statics",
+          "Index": 249,
+          "Species": "Marowak 2",
+          "Tags": "Story Boss",
+          "Description": "Fire Trial - Totem Megamax Marowak"
+        },
+        {
+          "Type": "Statics",
+          "Index": 250,
+          "Species": "Salandit",
+          "Tags": "Story, S.O.S. Ally",
+          "Description": "Totem Marowak\u0027s S.O.S. ally."
+        }
+      ]
     },
     {
       "LocationName": "Poke Pelago",
@@ -4669,7 +4791,57 @@
         }
       ],
       "Items": [],
-      "Statics": []
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 24,
+          "Species": "Lurantis 1",
+          "Tags": "Story Boss",
+          "Description": "Grass Trial - Totem Megamax Lurantis"
+        },
+        {
+          "Type": "Statics",
+          "Index": 31,
+          "Species": "Whimsicott",
+          "Tags": "Story, S.O.S. Ally",
+          "Description": "Grass Trial - Lurantis Ally 1 (Will appear first if Lurantis \u003E50% HP)"
+        },
+        {
+          "Type": "Statics",
+          "Index": 32,
+          "Species": "Gogoat",
+          "Tags": "Story, S.O.S. Ally",
+          "Description": "Grass Trial - Lurantis Ally 2 (Will appear first if Lurantis \u003C50% HP)"
+        },
+        {
+          "Type": "Statics",
+          "Index": 142,
+          "Species": "Fomantis",
+          "Tags": "Story",
+          "Description": "Grass Trial - Pre-Lurantis fights. (Punishment for picking \u0027incorrect\u0027 ingredients)"
+        },
+        {
+          "Type": "Statics",
+          "Index": 143,
+          "Species": "Beedrill",
+          "Tags": "Story",
+          "Description": "Grass Trial - Pre-Lurantis fights. (Punishment for picking \u0027incorrect\u0027 ingredients)"
+        },
+        {
+          "Type": "Statics",
+          "Index": 144,
+          "Species": "Vespiquen",
+          "Tags": "Story",
+          "Description": "Grass Trial - Pre-Lurantis fights. (Punishment for picking \u0027incorrect\u0027 ingredients)"
+        },
+        {
+          "Type": "Statics",
+          "Index": 145,
+          "Species": "Sudowoodo",
+          "Tags": "Story",
+          "Description": "Grass Trial - Pre-Lurantis fights. (Punishment for picking \u0027incorrect\u0027 ingredients)"
+        }
+      ]
     },
     {
       "LocationName": "Lush Jungle Cavern",
@@ -4830,7 +5002,15 @@
         }
       ],
       "Items": [],
-      "Statics": []
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 241,
+          "Species": "Ditto",
+          "Tags": "Quest, Capturable",
+          "Description": "Ditto Five Quest"
+        }
+      ]
     },
     {
       "LocationName": "Konikoni City",
@@ -4850,7 +5030,36 @@
       ],
       "WildEncounters": [],
       "Items": [],
-      "Statics": []
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 242,
+          "Species": "Ditto",
+          "Tags": "Quest, Capturable",
+          "Description": "Ditto Five Quest"
+        },
+        {
+          "Type": "Statics",
+          "Index": 243,
+          "Species": "Ditto",
+          "Tags": "Quest, Capturable",
+          "Description": "Ditto Five Quest"
+        },
+        {
+          "Type": "Statics",
+          "Index": 244,
+          "Species": "Ditto",
+          "Tags": "Quest, Capturable",
+          "Description": "Ditto Five Quest"
+        },
+        {
+          "Type": "Statics",
+          "Index": 245,
+          "Species": "Ditto",
+          "Tags": "Quest, Capturable",
+          "Description": "Ditto Five Quest"
+        }
+      ]
     },
     {
       "LocationName": "Memorial Hill",
@@ -5115,6 +5324,34 @@
       ],
       "Items": [],
       "Statics": []
+    },
+    {
+      "LocationName": "Aether Paradise - Conservation Area",
+      "Weather": "Clear",
+      "Description": "",
+      "LocationNumber": 53,
+      "Shops": [],
+      "Trainers": [
+        {
+          "TrainerId": 241,
+          "Trainer": "Faba",
+          "Class": "Aether Branch Chief",
+          "Route": 0,
+          "Tags": "",
+          "Description": ""
+        }
+      ],
+      "WildEncounters": [],
+      "Items": [],
+      "Statics": [
+        {
+          "Type": "Statics",
+          "Index": 1,
+          "Species": "Nihilego",
+          "Tags": "Story Miniboss",
+          "Description": "Aether Paradise Nihilego Battle. Nihilego will flee after 5 turns if it is not defeated by then."
+        }
+      ]
     },
     {
       "LocationName": "Malie City",
@@ -5622,7 +5859,7 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 34-39",
-          "Encounters": "Komala [10%] (Farfetch\u2019d), Staraptor [10%] (Toucannon, Staravia, Trumbeak), Parasect [10%] (Breloom, Paras, Shroomish), Pangoro [10%] (Scrafty, Pancham, Scraggy), Amoonguss [10%] (Shiinotic, Morelull, Foongus), Girafarig [10%] (Audino), Stantler [10%] (Wyrdeer), Sawsbuck [10%] (Sawsbuck 1, Sawsbuck 2, Sawsbuck 3), Chatot [10%] (Dodrio), Shiftry [10%] (Nuzleaf)"
+          "Encounters": "Komala [10%] (Farfetch\u2019d), Staraptor [10%] (Toucannon, Staravia, Trumbeak), Parasect [10%] (Breloom, Paras, Shroomish), Pangoro [10%] (Scrafty, Pancham, Scraggy), Amoonguss [10%] (Shiinotic, Morelull, Foongus), Girafarig [10%] (Audino), Stantler [10%] (Wyrdeer), Sawsbuck [10%] (Sawsbuck 1, Sawsbuck 2, Sawsbuck 3), Infernape [10%] (Simisear, Monferno, Pansear), Shiftry [10%] (Nuzleaf)"
         }
       ],
       "Items": [],
@@ -5788,7 +6025,15 @@
           "Description": ""
         }
       ],
-      "WildEncounters": [],
+      "WildEncounters": [
+        {
+          "FileNumber": 1659,
+          "TableIndex": 0,
+          "Area": "Grass",
+          "Levels": "Lvl 40-45",
+          "Encounters": "Charjabug [10%] (Joltik, Vikavolt, Galvantula), Graveler 1 [10%] (Graveler), Luxray [10%] (Ampharos, Luxio, Flaaffy), Electabuzz [10%] (Heliolisk, Elekid, Helioptile), Manectric [10%] (Houndoom), Plusle [10%] (Minun, Pichu), Minun [10%] (Plusle, Pichu), Rotom [10%] (Meltan), Magneton [10%] (Eelektrik, Magnemite, Tynamo), Electrode [10%] (Electrode 1, Voltorb, Voltorb 1)"
+        }
+      ],
       "Items": [],
       "Statics": []
     },
@@ -6217,7 +6462,7 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 44-51",
-          "Encounters": "Oricorio [10%], Ariados [10%] (Spinarak), Ledian [10%] (Ledyba), Floette [10%] (Floette 1, Floette 2, Floette 3, Flab\u00E9b\u00E9 4, Flab\u00E9b\u00E9 1, Flab\u00E9b\u00E9 2, Flab\u00E9b\u00E9), Ribombee [10%] (Cutiefly), Cottonee [10%] (Whimsicott), Petilil [10%] (Lilligant, Lilligant 1), Roserade [10%] (Roselia), Vespiquen [10%] (Combee, Beedrill), Girafarig [10%] (Stantler)"
+          "Encounters": "Oricorio [10%], Ariados [10%] (Spinarak), Ledian [10%] (Ledyba), Floette [10%] (Floette 1, Floette 2, Floette 3, Flab\u00E9b\u00E9 4, Flab\u00E9b\u00E9 1, Flab\u00E9b\u00E9 2, Flab\u00E9b\u00E9), Ribombee [10%] (Cutiefly), Cottonee [10%] (Jumpluff, Whimsicott, Skiploom), Petilil [10%] (Tangrowth, Lilligant, Lilligant 1), Roserade [10%] (Kirlia, Roselia), Ponyta 1 [10%] (Ponyta, Rapidash 1, Rapidash), Girafarig [10%] (Stantler)"
         }
       ],
       "Items": [],
@@ -6285,7 +6530,7 @@
           "TableIndex": 0,
           "Area": "Grass",
           "Levels": "Lvl 42-47",
-          "Encounters": "Fearow [10%], Sliggoo [10%] (Sliggoo 1, Goomy), Toxicroak [10%] (Scrafty, Croagunk, Scraggy), Skarmory [10%], Sliggoo 1 [10%] (Sliggoo, Goomy), Stantler [10%] (Girafarig), Bisharp [10%] (Pawniard), Bouffalant [10%], Dodrio [10%], Talonflame [10%] | Weather S.O.S: Castform, Goomy"
+          "Encounters": "Fearow [10%] (Gligar), Goomy [10%] (Sliggoo 1, Sliggoo), Toxicroak [10%] (Scrafty, Croagunk, Scraggy), Skarmory [10%] (Magneton), Sliggoo 1 [10%] (Sliggoo, Goomy), Kangaskhan [10%] (Cubone), Bisharp [10%] (Pawniard), Bouffalant [10%] (Gloom), Dodrio [10%] (Weepinbell, Doduo), Talonflame [10%] (Unfezant, Fletchinder, Tranquill) | Weather S.O.S: Castform, Goomy"
         },
         {
           "FileNumber": 1560,
@@ -6485,7 +6730,7 @@
     },
     {
       "Name": "3 Trials",
-      "ShopInfo": "Max Elixir, Pok\u00E9 Doll, Escape Rope, Shiny Charm, Master Ball, Pok\u00E9 Ball, Heal Ball, Nest Ball, Great Ball, Net Ball, Dusk Ball, Quick Ball, Ultra Ball, Heart Scale, Rare Candy, Adrenaline Orb, PP Max, Blue Box, Pink Box, B.F.F Heart, Moldy Cookie, Max Repel, Max Elixir, Pok\u00E9 Doll, Escape Rope, Shiny Charm, Sea Incense, Lax Incense, Rose Incense, Pure Incense, Rock Incense, Odd Incense, Luck Incense, Full Incense, Wave Incense, Mental Herb, White Herb, Power Herb, Revival Herb, Cheri Berry, Chesto Berry, Pecha Berry, Rawst Berry, Aspear Berry, Persim Berry, Leppa Berry, Micle Berry, Heat Rock, Damp Rock, Icy Rock, Smooth Rock, Terrain Extender, Mental Herb, Light Clay, Float Stone, Grip Claw, Destiny Knot, Ring Target, Everstone, TM016, TM017, TM020, TM033, TM070, TM007, TM011, TM018, TM037, Helix Fossil, Dome Fossil, Old Amber, Root Fossil, Claw Fossil, Armor Fossil, Skull Fossil, Cover Fossil, Plume Fossil, Sail Fossil, Jaw Fossil, Scope Lens, Metronome, Iron Ball, TM042, TM065, TM069, TM077, TM089, Decidium Z, Incinium Z, Primarium Z, Dragonium Z, Fairium Z, Eevium Z, TM004, TM014, TM015, TM022, TM025, TM034, TM038, TM052, TM068, TM071, TM009, TM040, TM047, TM051, TM078, Fire Stone, Thunder Stone, Water Stone, Leaf Stone, Light Clay, Big Root, King\u2019s Rock, Flame Orb, Toxic Orb, Sharp Beak, Never-Melt Ice, Black Belt, Black Glasses, Metal Coat, Charcoal, Miracle Seed, TM026, TM050, TM060, TM075, TM090, TM048, TM056, TM094, Gyaradosite, Yellow Nectar, Pink Nectar, Red Nectar, Purple Nectar, X Speed, X Attack, X Defense, Guard Spec., Dire Hit, X Accuracy, X Sp. Atk, X Sp. Def, Blue Box, Pink Box, TM026, TM050, TM090, TM094, TM097, TM098, X Speed, X Attack, X Defense, Guard Spec., Dire Hit, X Accuracy, X Sp. Atk, X Sp. Def, Qualot Berry, Tamato Berry, Hondew Berry, Grepa Berry, Kelpsy Berry, Pomeg Berry, Bottle Cap, Gold Bottle Cap"
+      "ShopInfo": "Max Elixir, Pok\u00E9 Doll, Escape Rope, Shiny Charm, Master Ball, Pok\u00E9 Ball, Heal Ball, Nest Ball, Great Ball, Net Ball, Dusk Ball, Quick Ball, Ultra Ball, Heart Scale, Rare Candy, Adrenaline Orb, PP Max, Blue Box, Pink Box, B.F.F Heart, Moldy Cookie, Max Repel, Max Elixir, Pok\u00E9 Doll, Escape Rope, Shiny Charm, Sea Incense, Lax Incense, Rose Incense, Pure Incense, Rock Incense, Odd Incense, Luck Incense, Full Incense, Wave Incense, Mental Herb, White Herb, Power Herb, Revival Herb, Cheri Berry, Rawst Berry, Pecha Berry, Chesto Berry, Aspear Berry, Persim Berry, Leppa Berry, Micle Berry, Heat Rock, Damp Rock, Icy Rock, Smooth Rock, Terrain Extender, Mental Herb, Light Clay, Float Stone, Grip Claw, Destiny Knot, Ring Target, Everstone, TM016, TM017, TM020, TM033, TM070, TM007, TM011, TM018, TM037, Helix Fossil, Dome Fossil, Old Amber, Root Fossil, Claw Fossil, Armor Fossil, Skull Fossil, Cover Fossil, Plume Fossil, Sail Fossil, Jaw Fossil, Scope Lens, Metronome, Iron Ball, TM042, TM065, TM069, TM077, TM089, Decidium Z, Incinium Z, Primarium Z, Dragonium Z, Fairium Z, Eevium Z, TM004, TM014, TM015, TM022, TM025, TM034, TM038, TM052, TM068, TM071, TM009, TM040, TM047, TM051, TM078, Fire Stone, Thunder Stone, Water Stone, Leaf Stone, Light Clay, Big Root, King\u2019s Rock, Flame Orb, Toxic Orb, Sharp Beak, Never-Melt Ice, Black Belt, Black Glasses, Metal Coat, Charcoal, Miracle Seed, TM026, TM050, TM060, TM075, TM090, TM048, TM056, TM094, Gyaradosite, Yellow Nectar, Pink Nectar, Red Nectar, Purple Nectar, X Speed, X Attack, X Defense, Guard Spec., Dire Hit, X Accuracy, X Sp. Atk, X Sp. Def, Blue Box, Pink Box, TM026, TM050, TM090, TM094, TM097, TM098, X Speed, X Attack, X Defense, Guard Spec., Dire Hit, X Accuracy, X Sp. Atk, X Sp. Def, Qualot Berry, Tamato Berry, Hondew Berry, Grepa Berry, Kelpsy Berry, Pomeg Berry, Bottle Cap, Gold Bottle Cap"
     },
     {
       "Name": "Big Wave Beach",
@@ -6501,7 +6746,7 @@
     },
     {
       "Name": "Heahea City [TMs]",
-      "ShopInfo": "Aggronite, Elixir, Banettite, Energy Root, Glalitite, Elixir, Froslassite, Elixir, Aerodactylite, Elixir, Slowbronite, Elixir, Clefablite, Energy Root, Raichunite, Energy Root, AloRaichunite, Energy Root, Starminite, Elixir, Skarmorite, Energy Root, Emboarite, Energy Root, Excadrite, Fresh Water, Scolipite, Fresh Water, Scraftinite, Fresh Water, Eelektrossite, Energy Root, Chandelurite, Elixir, Barbaracite, Elixir, Pyroarite, Fresh Water, Dragalgite, Elixir, Hawluchanite, Energy Root, Drampanite, Elixir, Staraptite, Energy Root, Lansat Berry, Pinap Berry, TM016, Lost Item, Ability Urge, GB Sounds, TM046, TM029, Armor Fossil, TM039, Squirt Bottle, TM066, Protector, Relic Crown, Good Rod, Normal Gem, Eevium Z, Ice Mem., TM033, Super Rod, Choice Band, Bike, Meowstite, Smooth Rock, Stable Mulch, TM070, TM050, Persim Berry, White Herb, Protein, Power Herb, Journal"
+      "ShopInfo": "Aggronite, Elixir, Banettite, Energy Root, Glalitite, Elixir, Froslassite, Elixir, Aerodactylite, Elixir, Slowbronite, Elixir, Clefablite, Energy Root, Raichunite, Energy Root, AloRaichunite, Energy Root, Starminite, Elixir, Skarmorite, Energy Root, Emboarite, Energy Root, Excadrite, Fresh Water, Scolipite, Fresh Water, Scraftinite, Fresh Water, Eelektrossite, Energy Root, Chandelurite, Elixir, Barbaracite, Elixir, Pyroarite, Fresh Water, Dragalgite, Elixir, Hawluchanite, Energy Root, Drampanite, Elixir, Staraptite, Energy Root, Lansat Berry, Pinap Berry, TM016, Lost Item, Ability Urge, GB Sounds, TM046, TM029, Armor Fossil, TM039, Squirt Bottle, TM066, Protector, Relic Crown, Good Rod, Normal Gem, Eevium Z, Ice Mem., Super Rod, Choice Band, Bike, Meowstite, Smooth Rock, Stable Mulch, TM070, TM050, Persim Berry, White Herb, Protein, Power Herb, Journal"
     },
     {
       "Name": "No Trials",
