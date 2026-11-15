@@ -223,12 +223,12 @@ for (const entry of NewPokedexData) {
 
   // --- BattlePokedex entry ---
   const baseStats = {
-    hp:  entry.Stats.HP,
-    atk: entry.Stats.Atk,
-    def: entry.Stats.Def,
-    spa: entry.Stats.SpA,
-    spd: entry.Stats.SpD,
-    spe: entry.Stats.Speed,
+    hp:  entry.BaseStats.HP,
+    atk: entry.BaseStats.Atk,
+    def: entry.BaseStats.Def,
+    spa: entry.BaseStats.SpA,
+    spd: entry.BaseStats.SpD,
+    spe: entry.BaseStats.Speed,
   };
 
   const abilitiesArr = entry.Abilities;
