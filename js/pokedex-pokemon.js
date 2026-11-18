@@ -711,6 +711,28 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 			}
 		}
 
+		// Duplicate moves: learned by level-up and also by TM or Tutor
+		var learnMethodsByMove = new Map();
+		for (var learn of binaryStarLearnset) {
+			var moveId = toID(learn.move);
+			var methods = learnMethodsByMove.get(moveId);
+			if (!methods) {
+				methods = { levelUp: null, tmOrTutor: false };
+				learnMethodsByMove.set(moveId, methods);
+			}
+			if (learn.how === 'lvl' && !methods.levelUp) {
+				methods.levelUp = learn;
+			} else if (learn.how === 'tm' || learn.how === 'tutor') {
+				methods.tmOrTutor = true;
+			}
+		}
+		var duplicateMoves = [];
+		for (var methods of learnMethodsByMove.values()) {
+			if (methods.levelUp && methods.tmOrTutor) {
+				duplicateMoves.push(methods.levelUp);
+			}
+		}
+
 		// Removed moves: in base game but NOT in Binary Star
 		var removedMoveIds = [];
 		for (var moveId of baseGameMoveIds) {
@@ -738,6 +760,23 @@ window.PokedexPokemonPanel = PokedexResultPanel.extend({
 				return '';
 			}
 		};
+
+		// Section: Duplicate Moves
+		buf += '<ul class="utilichart nokbd">';
+		buf += '<li class="resultheader"><h3>Duplicate Moves</h3></li>';
+		if (duplicateMoves.length > 0) {
+			for (var learn of duplicateMoves) {
+				var move = getID(BattleMovedex, learn.move);
+				if (move) {
+					buf += BattleSearch.renderTaggedMoveRow(move, getLearnDesc(learn));
+				} else {
+					buf += `<li class="result"><span class="col tagcol">${getLearnDesc(learn)}</span> <span class="col shortmovenamecol">${escapeHTML(learn.move)}</span> <span class="col typecol">&mdash;</span> <span class="col labelcol"></span> <span class="col widelabelcol"></span> <span class="col pplabelcol"></span> <span class="col movedesccol"><em>Unknown move</em></span></li>`;
+				}
+			}
+		} else {
+			buf += '<li class="result"><span class="col movedesccol" style="padding:6px 8px"><em>None</em></span></li>';
+		}
+		buf += '</ul>';
 
 		// Section: Moves New to Binary Star
 		buf += '<ul class="utilichart nokbd">';
